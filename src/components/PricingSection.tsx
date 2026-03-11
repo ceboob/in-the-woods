@@ -4,16 +4,16 @@ import { Check, Star, Bath, Dog, Flame } from 'lucide-react';
 const packages = [
   {
     name: 'Pobyt w tygodniu',
-    price: '650',
+    price: '499',
     note: 'poza sezonem',
-    features: ['Dom na wyłączność', 'Ogród, taras, kominek', 'Maksymalnie 6 osób dorosłych', 'Zwierzęta mile widziane'],
+    features: ['Dom', 'Ogród, taras, kominek', 'Maksymalnie 6 osób dorosłych', 'Zwierzęta mile widziane'],
     featured: false,
   },
   {
     name: 'Weekend + bania',
-    price: '900',
+    price: '749',
     note: 'min. 2 noce',
-    features: ['Maksymalnie 6 osób dorosłych', 'Drewno opałowe w cenie', 'Dom na wyłączność', 'Priorytetowa dostępność'],
+    features: ['Maksymalnie 6 osób dorosłych', 'Drewno opałowe w cenie', 'Dom', 'Priorytetowa dostępność'],
     featured: true,
   },
 ];
@@ -21,7 +21,7 @@ const packages = [
 const extras = [
   { icon: Bath, text: 'Ruska bania — w cenie pobytu' },
   { icon: Dog, text: 'Pobyt z psem — możliwy' },
-  { icon: Flame, text: 'Drewno do ogniska — opcjonalnie' },
+  { icon: Flame, text: 'Drewno do ogniska — dodatkowo płatne' },
 ];
 
 const PricingSection = () => {
