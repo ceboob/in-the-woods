@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Phone, Mail, Home, Flame, Droplets, TreePine, Cross, ShieldCheck, Bath, AlertTriangle, Bug, Heart, BookOpen, Users } from 'lucide-react';
+import guestGuideBook from '@/assets/guest-guide-book.jpg';
+import livingWide from '@/assets/living-wide.jpg';
+import stoveDetail from '@/assets/stove-detail.jpg';
+import kitchenBrick from '@/assets/kitchen-brick.jpg';
 import {
   Accordion,
   AccordionContent,
@@ -56,6 +60,16 @@ const Informator = () => {
           w jakim został przekazany.
         </p>
       </header>
+
+      {/* Photo strip */}
+      <div className="max-w-5xl mx-auto px-6 md:px-12 pb-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
+          <img src={guestGuideBook} alt="Informator gościa — książka powitalna Krzemienna Chata Supraśl" className="w-full h-[180px] md:h-[220px] object-cover rounded-lg" loading="lazy" />
+          <img src={livingWide} alt="Salon z kominkiem i fotele — wnętrze domu na wynajem Supraśl" className="w-full h-[180px] md:h-[220px] object-cover rounded-lg" loading="lazy" />
+          <img src={stoveDetail} alt="Kaflowy piec kuchenny — tradycyjne ogrzewanie chaty w Puszczy Knyszyńskiej" className="w-full h-[180px] md:h-[220px] object-cover rounded-lg" loading="lazy" />
+          <img src={kitchenBrick} alt="Kuchnia z ceglanym piecem i porcelaną — dom Supraśl kuchnia" className="w-full h-[180px] md:h-[220px] object-cover rounded-lg" loading="lazy" />
+        </div>
+      </div>
 
       {/* Content */}
       <main className="max-w-4xl mx-auto px-6 md:px-12 pb-16">

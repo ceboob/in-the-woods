@@ -10,19 +10,26 @@ import exteriorMain from '@/assets/exterior-main.jpg';
 import interiorImg from '@/assets/interior-living.webp';
 import bedroomImg from '@/assets/bedroom.jpg';
 import kitchenTraditional from '@/assets/kitchen-traditional.jpg';
+import livingFireplace from '@/assets/living-fireplace.jpg';
+import kitchenBrick from '@/assets/kitchen-brick.jpg';
+import detailShelf from '@/assets/detail-shelf.jpg';
+import bathroom from '@/assets/bathroom.jpg';
 
 const images = [
-  { src: jacuzziNight, alt: 'Noclegi Supraśl — prywatna ruska bania z jacuzzi pod gwiazdami', className: 'col-span-2 row-span-2' },
-  { src: kitchenDining, alt: 'Dom Supraśl — drewniana jadalnia z nakrytym stołem', className: 'col-span-1 row-span-1' },
-  { src: terracePorch, alt: 'Domek Supraśl — taras z kanapą w otoczeniu Puszczy Knyszyńskiej', className: 'col-span-1 row-span-1' },
-  { src: kitchenTraditional, alt: 'Nocleg Podlasie — tradycyjna kuchnia z ceramiką w domu w lesie', className: 'col-span-1 row-span-1' },
-  { src: terraceBreakfast, alt: 'Weekend Supraśl — śniadanie na tarasie z widokiem na las', className: 'col-span-1 row-span-1' },
-  { src: winterGolden, alt: 'Noclegi Supraśl zimą — chata w złotym zimowym świetle Puszczy Knyszyńskiej', className: 'col-span-2 row-span-1' },
-  { src: interiorImg, alt: 'Dom Supraśl — salon z kominkiem w Krzemiennej Chacie', className: 'col-span-1 row-span-1' },
-  { src: bedroomImg, alt: 'Nocleg Supraśl — komfortowa sypialnia z dużym łóżkiem', className: 'col-span-1 row-span-1' },
-  { src: exteriorMain, alt: 'Domek Supraśl — widok na chatę z ogrodu w Puszczy Knyszyńskiej', className: 'col-span-1 row-span-1' },
-  { src: winterCabin, alt: 'Noclegi Puszcza Knyszyńska — drewniana chata w śnieżnej scenerii', className: 'col-span-1 row-span-1' },
-  { src: winterForest, alt: 'Nocleg Podlasie — zimowy las Puszczy Knyszyńskiej blisko Supraśla', className: 'col-span-1 row-span-1' },
+  { src: jacuzziNight, alt: 'Ruska bania z jacuzzi pod gwiazdami — noclegi Supraśl, Krzemienna Chata', className: 'col-span-2 row-span-2' },
+  { src: livingFireplace, alt: 'Salon z kominkiem i drewnianym wnętrzem — dom na wynajem Supraśl', className: 'col-span-1 row-span-1' },
+  { src: terracePorch, alt: 'Taras z sofą w otoczeniu Puszczy Knyszyńskiej — weekend Supraśl', className: 'col-span-1 row-span-1' },
+  { src: kitchenBrick, alt: 'Kuchnia z ceglanym piecem i ceramiką — wnętrze chaty Supraśl', className: 'col-span-1 row-span-1' },
+  { src: terraceBreakfast, alt: 'Śniadanie na tarasie z widokiem na las — Krzemienna Chata Supraśl', className: 'col-span-1 row-span-1' },
+  { src: winterGolden, alt: 'Drewniana chata w złotym zimowym świetle — noclegi Puszcza Knyszyńska', className: 'col-span-2 row-span-1' },
+  { src: interiorImg, alt: 'Przytulny salon z drewnianymi belkami — dom w lesie Supraśl', className: 'col-span-1 row-span-1' },
+  { src: bedroomImg, alt: 'Sypialnia z dużym łóżkiem — komfortowy nocleg Supraśl', className: 'col-span-1 row-span-1' },
+  { src: detailShelf, alt: 'Ręcznie rzeźbiona drewniana półka z ceramiką — detale Krzemiennej Chaty', className: 'col-span-1 row-span-1' },
+  { src: bathroom, alt: 'Nowoczesna łazienka z kabiną prysznicową — wynajem domu Supraśl', className: 'col-span-1 row-span-1' },
+  { src: exteriorMain, alt: 'Widok na chatę z ogrodu — dom w Puszczy Knyszyńskiej blisko Supraśla', className: 'col-span-1 row-span-1' },
+  { src: winterCabin, alt: 'Chata w śnieżnej scenerii — zimowy nocleg Puszcza Knyszyńska', className: 'col-span-1 row-span-1' },
+  { src: kitchenTraditional, alt: 'Tradycyjna kuchnia z ceramiką — autentyczne wnętrze chaty Supraśl', className: 'col-span-1 row-span-1' },
+  { src: winterForest, alt: 'Zimowy las Puszczy Knyszyńskiej — atrakcje przyrodnicze Supraśla', className: 'col-span-1 row-span-1' },
 ];
 
 const GallerySection = () => {
