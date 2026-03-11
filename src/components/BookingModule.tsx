@@ -20,7 +20,7 @@ const BookingModule = () => {
   const [sending, setSending] = useState(false);
   const { toast } = useToast();
   const [data, setData] = useState<BookingData>({
-    checkIn: '', checkOut: '', guests: '2', name: '', email: '', phone: '', message: '',
+    checkIn: '', checkOut: '', guests: '2', name: '', email: '', phone: '', message: ''
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -38,7 +38,7 @@ const BookingModule = () => {
           name: data.name || null,
           email: data.email,
           phone: data.phone,
-          message: data.message || null,
+          message: data.message || null
         });
         if (error) throw error;
         setStep('sent');
@@ -51,9 +51,9 @@ const BookingModule = () => {
     }
   };
 
-  const nights = data.checkIn && data.checkOut
-    ? Math.max(0, Math.ceil((new Date(data.checkOut).getTime() - new Date(data.checkIn).getTime()) / 86400000))
-    : 0;
+  const nights = data.checkIn && data.checkOut ?
+  Math.max(0, Math.ceil((new Date(data.checkOut).getTime() - new Date(data.checkIn).getTime()) / 86400000)) :
+  0;
 
   return (
     <section id="rezerwacja" className="section-padding bg-background">
@@ -64,8 +64,8 @@ const BookingModule = () => {
         </div>
 
         <div className="card-premium bg-warm-white">
-          {step === 'sent' ? (
-            <div className="text-center py-12 space-y-4">
+          {step === 'sent' ?
+          <div className="text-center py-12 space-y-4">
               <div className="w-16 h-16 mx-auto rounded-full bg-forest/10 flex items-center justify-center">
                 <Send className="w-7 h-7 text-forest" />
               </div>
@@ -73,35 +73,35 @@ const BookingModule = () => {
               <p className="text-muted-foreground text-sm max-w-md mx-auto">
                 Potwierdzimy dostępność i cenę w ciągu kilku godzin. Sprawdź telefon lub skrzynkę mailową.
               </p>
-              <button onClick={() => { setStep('form'); setData({ checkIn: '', checkOut: '', guests: '2', name: '', email: '', phone: '', message: '' }); }}
-                className="btn-outline mt-4 text-xs">
+              <button onClick={() => {setStep('form');setData({ checkIn: '', checkOut: '', guests: '2', name: '', email: '', phone: '', message: '' });}}
+            className="btn-outline mt-4 text-xs">
                 Nowe zapytanie
               </button>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-5">
-              {step === 'summary' && (
-                <button type="button" onClick={() => setStep('form')} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+            </div> :
+
+          <form onSubmit={handleSubmit} className="space-y-5">
+              {step === 'summary' &&
+            <button type="button" onClick={() => setStep('form')} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
                   <ArrowLeft className="w-4 h-4" /> Wróć do edycji
                 </button>
-              )}
+            }
 
-              {step === 'form' && (
-                <>
+              {step === 'form' &&
+            <>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
                         <Calendar className="w-4 h-4" /> Przyjazd
                       </label>
-                      <input type="date" value={data.checkIn} onChange={e => setData({ ...data, checkIn: e.target.value })}
-                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required />
+                      <input type="date" value={data.checkIn} onChange={(e) => setData({ ...data, checkIn: e.target.value })}
+                  className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required />
                     </div>
                     <div className="space-y-2">
                       <label className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
                         <Calendar className="w-4 h-4" /> Wyjazd
                       </label>
-                      <input type="date" value={data.checkOut} onChange={e => setData({ ...data, checkOut: e.target.value })}
-                        min={data.checkIn} className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required />
+                      <input type="date" value={data.checkOut} onChange={(e) => setData({ ...data, checkOut: e.target.value })}
+                  min={data.checkIn} className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required />
                     </div>
                   </div>
 
@@ -110,17 +110,17 @@ const BookingModule = () => {
                       <label className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
                         <Users className="w-4 h-4" /> Goście
                       </label>
-                      <select value={data.guests} onChange={e => setData({ ...data, guests: e.target.value })}
-                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest">
-                        {[1,2,3,4,5,6,7,8].map(n => <option key={n} value={n}>{n} {n === 1 ? 'osoba' : n < 5 ? 'osoby' : 'osób'}</option>)}
+                      <select value={data.guests} onChange={(e) => setData({ ...data, guests: e.target.value })}
+                  className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest">
+                        {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => <option key={n} value={n}>{n} {n === 1 ? 'osoba' : n < 5 ? 'osoby' : 'osób'}</option>)}
                       </select>
                     </div>
                     <div className="space-y-2">
                       <label className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
                         <Phone className="w-4 h-4" /> Telefon
                       </label>
-                      <input type="tel" placeholder="Numer telefonu" value={data.phone} onChange={e => setData({ ...data, phone: e.target.value })}
-                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required maxLength={20} />
+                      <input type="tel" placeholder="Numer telefonu" value={data.phone} onChange={(e) => setData({ ...data, phone: e.target.value })}
+                  className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required maxLength={20} />
                     </div>
                   </div>
 
@@ -128,20 +128,20 @@ const BookingModule = () => {
                     <label className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
                       <Mail className="w-4 h-4" /> E-mail
                     </label>
-                    <input type="email" placeholder="Adres e-mail" value={data.email} onChange={e => setData({ ...data, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required maxLength={255} />
+                    <input type="email" placeholder="Adres e-mail" value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })}
+                className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required maxLength={255} />
                   </div>
 
                   <div className="space-y-2">
                     <label className="text-xs tracking-wider uppercase text-muted-foreground">Wiadomość (opcjonalnie)</label>
-                    <textarea placeholder="Dodatkowe informacje..." value={data.message} onChange={e => setData({ ...data, message: e.target.value })}
-                      className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest resize-none" rows={3} maxLength={1000} />
+                    <textarea placeholder="Dodatkowe informacje..." value={data.message} onChange={(e) => setData({ ...data, message: e.target.value })}
+                className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest resize-none" rows={3} maxLength={1000} />
                   </div>
                 </>
-              )}
+            }
 
-              {step === 'summary' && (
-                <div className="space-y-4">
+              {step === 'summary' &&
+            <div className="space-y-4">
                   <h3 className="font-serif text-xl font-medium">Podsumowanie zapytania</h3>
                   <div className="bg-secondary p-5 space-y-2 text-sm">
                     <div className="flex justify-between"><span className="text-muted-foreground">Przyjazd</span><span>{data.checkIn}</span></div>
@@ -156,25 +156,25 @@ const BookingModule = () => {
                     To wstępne zapytanie — potwierdzimy dostępność i cenę.
                   </p>
                 </div>
-              )}
+            }
 
               <button type="submit" className="btn-primary w-full" disabled={sending}>
                 {sending ? <Loader2 className="w-4 h-4 animate-spin mx-auto" /> : step === 'form' ? 'Sprawdź dostępność' : 'Wyślij zapytanie'}
               </button>
 
-              {step === 'form' && (
-                <div className="flex flex-wrap justify-center gap-4 pt-2">
+              {step === 'form' &&
+            <div className="flex flex-wrap justify-center gap-4 pt-2">
                   <span className="flex items-center gap-1.5 text-xs text-muted-foreground"><Clock className="w-3.5 h-3.5" /> Szybka odpowiedź</span>
                   <span className="flex items-center gap-1.5 text-xs text-muted-foreground"><CreditCard className="w-3.5 h-3.5" /> Bez prowizji</span>
-                  <span className="flex items-center gap-1.5 text-xs text-muted-foreground"><ShieldCheck className="w-3.5 h-3.5" /> Bezpośrednio</span>
+                  <span className="flex items-center gap-1.5 text-xs text-muted-foreground"><ShieldCheck className="w-3.5 h-3.5" />Rabaty dla powracających klientów</span>
                 </div>
-              )}
+            }
             </form>
-          )}
+          }
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default BookingModule;

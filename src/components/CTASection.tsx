@@ -22,12 +22,12 @@ const CTASection = () => {
           </div>
         </div>
 
-        <p className="text-xs text-muted-foreground italic">
-          Najlepsze terminy rezerwowane z wyprzedzeniem.
+        <p className="text-xs text-muted-foreground italic">Najlepsze terminy są rezerwowane z odpowiednim wyprzedzeniem.
+
         </p>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CTASection;
