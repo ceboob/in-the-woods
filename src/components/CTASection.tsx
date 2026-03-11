@@ -15,7 +15,7 @@ const CTASection = () => {
             <Clock className="w-4 h-4 text-forest" /> Szybka odpowiedź
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <CreditCard className="w-4 h-4 text-forest" /> Bez prowizji
+            <CreditCard className="w-4 h-4 text-forest" /> Bez prowizji pośrednika
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <ShieldCheck className="w-4 h-4 text-forest" /> Bezpośrednia rezerwacja
