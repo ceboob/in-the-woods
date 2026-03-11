@@ -16,6 +16,7 @@ import CTASection from '@/components/CTASection';
 import BookingModule from '@/components/BookingModule';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import FAQSection from '@/components/FAQSection';
+import GuestGuideSection from '@/components/GuestGuideSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import SEOTextSection from '@/components/SEOTextSection';
@@ -42,6 +43,7 @@ const Index = () => {
         <BookingModule />
         <TestimonialsSection />
         <FAQSection />
+        <GuestGuideSection />
         <SEOTextSection />
         <ContactSection />
       </main>
