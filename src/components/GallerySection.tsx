@@ -2,8 +2,6 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import jacuzziNight from '@/assets/jacuzzi-night.jpg';
 import winterCabin from '@/assets/winter-cabin-real.jpg';
 import winterGolden from '@/assets/winter-cabin-golden.jpg';
-import cabinNightStars from '@/assets/cabin-night-stars.jpg';
-import cabinMilkyway from '@/assets/cabin-night-milkyway.jpg';
 import terracePorch from '@/assets/terrace-porch.jpg';
 import terraceBreakfast from '@/assets/terrace-breakfast.jpg';
 import kitchenDining from '@/assets/kitchen-dining.jpg';
@@ -13,8 +11,7 @@ import interiorImg from '@/assets/interior-living.webp';
 import bedroomImg from '@/assets/bedroom.jpg';
 
 const images = [
-  { src: cabinNightStars, alt: 'Krzemienna Chata nocą pod gwiazdami', className: 'col-span-2 row-span-2' },
-  { src: jacuzziNight, alt: 'Ruska bania nocą — prywatne SPA', className: 'col-span-1 row-span-1' },
+  { src: jacuzziNight, alt: 'Ruska bania nocą — prywatne SPA', className: 'col-span-2 row-span-2' },
   { src: kitchenDining, alt: 'Drewniana jadalnia z nakrytym stołem', className: 'col-span-1 row-span-1' },
   { src: terracePorch, alt: 'Taras z kanapą w otoczeniu lasu', className: 'col-span-1 row-span-1' },
   { src: terraceBreakfast, alt: 'Śniadanie na tarasie w słońcu', className: 'col-span-1 row-span-1' },
@@ -22,7 +19,6 @@ const images = [
   { src: interiorImg, alt: 'Salon z kominkiem', className: 'col-span-1 row-span-1' },
   { src: bedroomImg, alt: 'Sypialnia z dużym łóżkiem', className: 'col-span-1 row-span-1' },
   { src: exteriorMain, alt: 'Widok na chatę z ogrodu', className: 'col-span-1 row-span-1' },
-  { src: cabinMilkyway, alt: 'Chata pod Drogą Mleczną', className: 'col-span-1 row-span-1' },
   { src: winterCabin, alt: 'Chata w śnieżnej scenerii', className: 'col-span-1 row-span-1' },
   { src: winterForest, alt: 'Zimowy las Puszczy Knyszyńskiej', className: 'col-span-1 row-span-1' },
 ];
