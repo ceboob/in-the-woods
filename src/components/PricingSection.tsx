@@ -6,20 +6,20 @@ const packages = [
     name: 'Pobyt w tygodniu',
     price: '650',
     note: 'poza sezonem',
-    features: ['Dom na wyłączność', 'Ogród, taras, kominek', 'Wi-Fi, klimatyzacja', 'Zwierzęta mile widziane'],
+    features: ['Dom na wyłączność', 'Ogród, taras, kominek', 'Maksymalnie 6 osób dorosłych', 'Zwierzęta mile widziane'],
     featured: false,
   },
   {
     name: 'Weekend + bania',
     price: '900',
     note: 'min. 2 noce',
-    features: ['Wszystko z pakietu dobowego', 'Ruska bania / jacuzzi', 'Drewno na ognisko', 'Priorytetowa dostępność'],
+    features: ['Maksymalnie 6 osób dorosłych', 'Drewno opałowe w cenie', 'Dom na wyłączność', 'Priorytetowa dostępność'],
     featured: true,
   },
 ];
 
 const extras = [
-  { icon: Bath, text: 'Ruska bania — dodatkowo płatna' },
+  { icon: Bath, text: 'Ruska bania — w cenie pobytu' },
   { icon: Dog, text: 'Pobyt z psem — możliwy' },
   { icon: Flame, text: 'Drewno do ogniska — opcjonalnie' },
 ];
