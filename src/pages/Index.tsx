@@ -14,6 +14,7 @@ import LocationSection from '@/components/LocationSection';
 import PricingSection from '@/components/PricingSection';
 import CTASection from '@/components/CTASection';
 import BookingModule from '@/components/BookingModule';
+import TestimonialsSection from '@/components/TestimonialsSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
