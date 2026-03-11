@@ -1,0 +1,71 @@
+import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+
+const links = [
+  { label: 'O miejscu', href: '#o-miejscu' },
+  { label: 'Dom', href: '#dom' },
+  { label: 'Relaks', href: '#relaks' },
+  { label: 'Galeria', href: '#galeria' },
+  { label: 'Kontakt', href: '#kontakt' },
+];
+
+const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const handleClick = (href: string) => {
+    setMenuOpen(false);
+    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  return (
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      scrolled ? 'bg-background/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+    }`}>
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
+        <button onClick={() => handleClick('#hero')} className="font-serif text-xl md:text-2xl font-light tracking-wide text-foreground">
+          Krzemienna Chata
+        </button>
+
+        {/* Desktop */}
+        <div className="hidden md:flex items-center gap-8">
+          {links.map(l => (
+            <button key={l.href} onClick={() => handleClick(l.href)} className="nav-link text-foreground/70 hover:text-foreground">
+              {l.label}
+            </button>
+          ))}
+          <button onClick={() => handleClick('#rezerwacja')} className="btn-primary text-xs py-2.5 px-6">
+            Rezerwuj
+          </button>
+        </div>
+
+        {/* Mobile toggle */}
+        <button className="md:hidden text-foreground" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-background/98 backdrop-blur-md border-t border-border px-6 py-6 space-y-4">
+          {links.map(l => (
+            <button key={l.href} onClick={() => handleClick(l.href)} className="block nav-link text-foreground/70 hover:text-foreground w-full text-left">
+              {l.label}
+            </button>
+          ))}
+          <button onClick={() => handleClick('#rezerwacja')} className="btn-primary text-xs py-2.5 px-6 w-full">
+            Rezerwuj
+          </button>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
