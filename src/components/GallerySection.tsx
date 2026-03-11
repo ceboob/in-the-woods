@@ -9,11 +9,13 @@ import winterForest from '@/assets/winter-forest.jpg';
 import exteriorMain from '@/assets/exterior-main.jpg';
 import interiorImg from '@/assets/interior-living.webp';
 import bedroomImg from '@/assets/bedroom.jpg';
+import kitchenTraditional from '@/assets/kitchen-traditional.jpg';
 
 const images = [
   { src: jacuzziNight, alt: 'Ruska bania nocą — prywatne SPA', className: 'col-span-2 row-span-2' },
   { src: kitchenDining, alt: 'Drewniana jadalnia z nakrytym stołem', className: 'col-span-1 row-span-1' },
   { src: terracePorch, alt: 'Taras z kanapą w otoczeniu lasu', className: 'col-span-1 row-span-1' },
+  { src: kitchenTraditional, alt: 'Tradycyjna kuchnia z ceramiką', className: 'col-span-1 row-span-1' },
   { src: terraceBreakfast, alt: 'Śniadanie na tarasie w słońcu', className: 'col-span-1 row-span-1' },
   { src: winterGolden, alt: 'Chata w złotym zimowym świetle', className: 'col-span-2 row-span-1' },
   { src: interiorImg, alt: 'Salon z kominkiem', className: 'col-span-1 row-span-1' },
