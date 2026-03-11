@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Calendar, Users, Phone, Mail, Send, ArrowLeft, Clock, ShieldCheck, CreditCard } from 'lucide-react';
+import { Calendar, Users, Phone, Mail, Send, ArrowLeft, Clock, ShieldCheck, CreditCard, Loader2 } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 interface BookingData {
   checkIn: string;
@@ -15,17 +17,37 @@ interface BookingData {
 const BookingModule = () => {
   const { ref, isVisible } = useScrollAnimation();
   const [step, setStep] = useState<'form' | 'summary' | 'sent'>('form');
+  const [sending, setSending] = useState(false);
+  const { toast } = useToast();
   const [data, setData] = useState<BookingData>({
     checkIn: '', checkOut: '', guests: '2', name: '', email: '', phone: '', message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (step === 'form') {
       if (!data.checkIn || !data.checkOut || !data.phone || !data.email) return;
       setStep('summary');
     } else if (step === 'summary') {
-      setStep('sent');
+      setSending(true);
+      try {
+        const { error } = await supabase.from('booking_inquiries').insert({
+          check_in: data.checkIn,
+          check_out: data.checkOut,
+          guests: parseInt(data.guests),
+          name: data.name || null,
+          email: data.email,
+          phone: data.phone,
+          message: data.message || null,
+        });
+        if (error) throw error;
+        setStep('sent');
+      } catch (err) {
+        console.error('Booking error:', err);
+        toast({ title: 'Błąd', description: 'Nie udało się wysłać zapytania. Spróbuj ponownie lub zadzwoń.', variant: 'destructive' });
+      } finally {
+        setSending(false);
+      }
     }
   };
 
