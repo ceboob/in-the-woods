@@ -4,7 +4,9 @@ import BadgesBar from '@/components/BadgesBar';
 import TrustSection from '@/components/TrustSection';
 import AmenitiesSection from '@/components/AmenitiesSection';
 import JacuzziSection from '@/components/JacuzziSection';
+import RelaxSection from '@/components/RelaxSection';
 import ExperienceSection from '@/components/ExperienceSection';
+import ForWhoSection from '@/components/ForWhoSection';
 import GallerySection from '@/components/GallerySection';
 import WinterSection from '@/components/WinterSection';
 import SupraslSection from '@/components/SupraslSection';
@@ -26,7 +28,9 @@ const Index = () => {
         <TrustSection />
         <AmenitiesSection />
         <JacuzziSection />
+        <RelaxSection />
         <ExperienceSection />
+        <ForWhoSection />
         <GallerySection />
         <WinterSection />
         <SupraslSection />

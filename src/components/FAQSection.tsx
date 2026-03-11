@@ -7,6 +7,7 @@ import {
 } from '@/components/ui/accordion';
 
 const faqs = [
+  { q: 'Gdzie znajduje się Krzemienna Chata?', a: 'Dom znajduje się w miejscowości Konne koło Supraśla, w Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku.' },
   { q: 'Czy jest jacuzzi / ruska bania?', a: 'Tak — do dyspozycji gości jest prywatna ruska bania z balią z gorącą wodą, dostępna jako opcjonalny dodatek do pobytu.' },
   { q: 'Czy dom jest prywatny?', a: 'Tak — dom i cały ogród wynajmujecie na wyłączność. Żadnych innych gości.' },
   { q: 'Czy można przyjechać z psem?', a: 'Tak, zwierzęta są mile widziane. Ogrodzony ogród i las za progiem to raj dla czworonogów.' },

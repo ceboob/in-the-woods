@@ -1,33 +1,30 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import jacuzziNight from '@/assets/jacuzzi-night.jpg';
+import winterCabin from '@/assets/winter-cabin-real.jpg';
+import winterGolden from '@/assets/winter-cabin-golden.jpg';
+import cabinNightStars from '@/assets/cabin-night-stars.jpg';
+import cabinMilkyway from '@/assets/cabin-night-milkyway.jpg';
+import terracePorch from '@/assets/terrace-porch.jpg';
+import terraceBreakfast from '@/assets/terrace-breakfast.jpg';
+import kitchenDining from '@/assets/kitchen-dining.jpg';
+import winterForest from '@/assets/winter-forest.jpg';
 import exteriorMain from '@/assets/exterior-main.jpg';
 import interiorImg from '@/assets/interior-living.webp';
-import baniaImg from '@/assets/bania-relax.jpg';
 import bedroomImg from '@/assets/bedroom.jpg';
-import terraceImg from '@/assets/outdoor-terrace.jpg';
-import kitchenImg from '@/assets/kitchen.jpg';
-import forestImg from '@/assets/forest-nature.jpg';
-import exteriorSide from '@/assets/exterior-side.webp';
-import bedroom2 from '@/assets/bedroom2.webp';
-import bedroom3 from '@/assets/bedroom3.webp';
-import kitchenInterior from '@/assets/kitchen-interior.jpg';
-import gardenFirepit from '@/assets/garden-firepit.webp';
-import exteriorEntrance from '@/assets/exterior-entrance.webp';
-import bedroomTerrace from '@/assets/bedroom-terrace.webp';
-import forestPanorama from '@/assets/forest-panorama.webp';
 
 const images = [
-  { src: exteriorMain, alt: 'Krzemienna Chata — widok z zewnątrz', className: 'col-span-2 row-span-2' },
-  { src: baniaImg, alt: 'Ruska bania i balia', className: 'col-span-1 row-span-1' },
-  { src: kitchenImg, alt: 'Wnętrze chaty', className: 'col-span-1 row-span-1' },
-  { src: bedroomImg, alt: 'Sypialnia z łóżkiem king size', className: 'col-span-1 row-span-1' },
-  { src: terraceImg, alt: 'Taras i ogród', className: 'col-span-1 row-span-1' },
-  { src: exteriorSide, alt: 'Chata z boku — drewno i natura', className: 'col-span-1 row-span-1' },
-  { src: bedroom2, alt: 'Druga sypialnia', className: 'col-span-1 row-span-1' },
-  { src: forestPanorama, alt: 'Panorama Puszczy Knyszyńskiej', className: 'col-span-2 row-span-1' },
-  { src: kitchenInterior, alt: 'Kuchnia z jadalnią', className: 'col-span-1 row-span-1' },
-  { src: gardenFirepit, alt: 'Ogród i ognisko', className: 'col-span-1 row-span-1' },
-  { src: exteriorEntrance, alt: 'Wejście do chaty', className: 'col-span-1 row-span-1' },
-  { src: bedroomTerrace, alt: 'Sypialnia z tarasem', className: 'col-span-1 row-span-1' },
+  { src: cabinNightStars, alt: 'Krzemienna Chata nocą pod gwiazdami', className: 'col-span-2 row-span-2' },
+  { src: jacuzziNight, alt: 'Ruska bania nocą — prywatne SPA', className: 'col-span-1 row-span-1' },
+  { src: kitchenDining, alt: 'Drewniana jadalnia z nakrytym stołem', className: 'col-span-1 row-span-1' },
+  { src: terracePorch, alt: 'Taras z kanapą w otoczeniu lasu', className: 'col-span-1 row-span-1' },
+  { src: terraceBreakfast, alt: 'Śniadanie na tarasie w słońcu', className: 'col-span-1 row-span-1' },
+  { src: winterGolden, alt: 'Chata w złotym zimowym świetle', className: 'col-span-2 row-span-1' },
+  { src: interiorImg, alt: 'Salon z kominkiem', className: 'col-span-1 row-span-1' },
+  { src: bedroomImg, alt: 'Sypialnia z dużym łóżkiem', className: 'col-span-1 row-span-1' },
+  { src: exteriorMain, alt: 'Widok na chatę z ogrodu', className: 'col-span-1 row-span-1' },
+  { src: cabinMilkyway, alt: 'Chata pod Drogą Mleczną', className: 'col-span-1 row-span-1' },
+  { src: winterCabin, alt: 'Chata w śnieżnej scenerii', className: 'col-span-1 row-span-1' },
+  { src: winterForest, alt: 'Zimowy las Puszczy Knyszyńskiej', className: 'col-span-1 row-span-1' },
 ];
 
 const GallerySection = () => {

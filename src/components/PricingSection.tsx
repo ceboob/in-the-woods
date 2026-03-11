@@ -1,8 +1,35 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Check, Star } from 'lucide-react';
+import { Check, Star, Bath, Dog, Flame } from 'lucide-react';
+
+const packages = [
+  {
+    name: 'Pobyt w tygodniu',
+    price: '650',
+    note: 'poza sezonem',
+    features: ['Dom na wyłączność', 'Ogród, taras, kominek', 'Wi-Fi, klimatyzacja', 'Zwierzęta mile widziane'],
+    featured: false,
+  },
+  {
+    name: 'Weekend + bania',
+    price: '900',
+    note: 'min. 2 noce',
+    features: ['Wszystko z pakietu dobowego', 'Ruska bania / jacuzzi', 'Drewno na ognisko', 'Priorytetowa dostępność'],
+    featured: true,
+  },
+];
+
+const extras = [
+  { icon: Bath, text: 'Ruska bania — dodatkowo płatna' },
+  { icon: Dog, text: 'Pobyt z psem — możliwy' },
+  { icon: Flame, text: 'Drewno do ogniska — opcjonalnie' },
+];
 
 const PricingSection = () => {
   const { ref, isVisible } = useScrollAnimation();
+
+  const scrollTo = (id: string) => {
+    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <section id="cennik" className="section-padding bg-background">
@@ -12,48 +39,56 @@ const PricingSection = () => {
           <h2 className="section-title">Prosto i przejrzyście</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-          {/* Doba */}
-          <div className="border border-border bg-card p-8 text-center space-y-4">
-            <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Doba</p>
-            <div>
-              <span className="font-serif text-4xl md:text-5xl font-light text-foreground">650</span>
-              <span className="text-muted-foreground ml-1">zł / noc</span>
+        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-10">
+          {packages.map((pkg, i) => (
+            <div key={i} className={`${pkg.featured ? 'border-2 border-forest' : 'border border-border'} bg-card p-8 text-center space-y-4 relative`}>
+              {pkg.featured && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-forest text-primary-foreground text-xs tracking-wider uppercase px-4 py-1 flex items-center gap-1">
+                  <Star className="w-3 h-3" /> Najczęściej wybierany
+                </div>
+              )}
+              <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">{pkg.name}</p>
+              <div>
+                <span className="font-serif text-4xl md:text-5xl font-light text-foreground">{pkg.price}</span>
+                <span className="text-muted-foreground ml-1">zł / noc</span>
+              </div>
+              <p className="text-xs text-muted-foreground">{pkg.note}</p>
+              <ul className="text-sm text-muted-foreground space-y-2 text-left pt-4">
+                {pkg.features.map((f, j) => (
+                  <li key={j} className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-forest" /> {f}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="text-sm text-muted-foreground space-y-2 text-left pt-4">
-              <li className="flex items-center gap-2"><Check className="w-4 h-4 text-forest" /> Dom na wyłączność</li>
-              <li className="flex items-center gap-2"><Check className="w-4 h-4 text-forest" /> Ogród, taras, kominek</li>
-              <li className="flex items-center gap-2"><Check className="w-4 h-4 text-forest" /> Wi-Fi, klimatyzacja</li>
-              <li className="flex items-center gap-2"><Check className="w-4 h-4 text-forest" /> Zwierzęta mile widziane</li>
-            </ul>
-          </div>
-
-          {/* Weekend — najczęściej wybierany */}
-          <div className="border-2 border-forest bg-card p-8 text-center space-y-4 relative">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-forest text-primary-foreground text-xs tracking-wider uppercase px-4 py-1 flex items-center gap-1">
-              <Star className="w-3 h-3" /> Najczęściej wybierany
-            </div>
-            <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Weekend + jacuzzi</p>
-            <div>
-              <span className="font-serif text-4xl md:text-5xl font-light text-foreground">900</span>
-              <span className="text-muted-foreground ml-1">zł / noc</span>
-            </div>
-            <ul className="text-sm text-muted-foreground space-y-2 text-left pt-4">
-              <li className="flex items-center gap-2"><Check className="w-4 h-4 text-forest" /> Wszystko z pakietu dobowego</li>
-              <li className="flex items-center gap-2"><Check className="w-4 h-4 text-forest" /> Ruska bania / jacuzzi</li>
-              <li className="flex items-center gap-2"><Check className="w-4 h-4 text-forest" /> Drewno na ognisko</li>
-              <li className="flex items-center gap-2"><Check className="w-4 h-4 text-forest" /> Priorytetowa dostępność</li>
-            </ul>
-          </div>
+          ))}
         </div>
 
-        <div className="text-center mt-8 space-y-2">
+        {/* Extras */}
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          {extras.map((e, i) => (
+            <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
+              <e.icon className="w-4 h-4 text-forest" strokeWidth={1.5} />
+              <span>{e.text}</span>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center space-y-3">
           <p className="text-xs text-muted-foreground">
-            Ceny orientacyjne — końcowa kwota zależy od terminu, długości pobytu i wybranych dodatków.
+            Cena zależy od terminu, liczby gości i sezonu. Wyślij zapytanie, aby otrzymać dokładną ofertę.
           </p>
           <p className="text-xs text-muted-foreground font-medium">
             Rezerwacja bezpośrednia — bez prowizji pośredników.
           </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">
+            <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary">
+              Sprawdź dostępność
+            </button>
+            <a href="tel:+48790625990" className="btn-outline">
+              Zapytaj o pobyt
+            </a>
+          </div>
         </div>
       </div>
     </section>

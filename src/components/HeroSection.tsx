@@ -1,4 +1,4 @@
-import baniaImg from '@/assets/bania-relax.jpg';
+import jacuzziImg from '@/assets/jacuzzi-night.jpg';
 import { Phone, Star, Users, TreePine, Sparkles } from 'lucide-react';
 
 const HeroSection = () => {
@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={baniaImg} alt="Jacuzzi pod gwiazdami — Krzemienna Chata" className="w-full h-full object-cover" />
+        <img src={jacuzziImg} alt="Prywatna ruska bania nocą — Krzemienna Chata Supraśl" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-graphite/60 via-graphite/30 to-graphite/70" />
       </div>
       
@@ -26,7 +26,6 @@ const HeroSection = () => {
           <p className="font-serif text-lg md:text-xl text-cream/90 italic">Kominek. Ruska bania. Cisza natury.</p>
         </div>
 
-        {/* USPs */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
           <div className="flex items-center gap-2 text-cream/80">
             <Users className="w-4 h-4" />
@@ -42,7 +41,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-up delay-300">
           <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary bg-cream text-graphite hover:bg-cream/90">
             Sprawdź dostępność
@@ -52,7 +50,6 @@ const HeroSection = () => {
           </a>
         </div>
 
-        {/* Micro trust */}
         <div className="flex flex-wrap justify-center gap-6 animate-fade-in delay-400">
           <div className="flex items-center gap-1.5 text-cream/60 text-xs">
             <Star className="w-3.5 h-3.5 fill-cream/60 text-cream/60" />
