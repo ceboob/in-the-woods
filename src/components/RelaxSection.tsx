@@ -20,12 +20,12 @@ const RelaxSection = () => {
           <h2 className="section-title">Zwolnij. Oddychaj. Odpoczywaj.</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-12">
           <div className="overflow-hidden">
-            <img src={baniaImg} alt="Ruska bania w ogrodzie Krzemiennej Chaty" className="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700" />
+            <img src={baniaImg} alt="Ruska bania i balia w ogrodzie Krzemiennej Chaty" className="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="overflow-hidden">
-            <img src={terraceImg} alt="Taras z ogniskiem i grillem" className="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700" />
+            <img src={terraceImg} alt="Taras z widokiem na ogród" className="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700" />
           </div>
         </div>
 
