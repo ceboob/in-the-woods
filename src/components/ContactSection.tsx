@@ -13,11 +13,11 @@ const ContactSection = () => {
             <p className="font-serif text-lg font-medium">Gospodarz: Maciej</p>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="tel:+48790625990" className="btn-primary inline-flex items-center gap-2">
-              <Phone className="w-4 h-4" /> 790 625 990
-            </a>
-            <a href="tel:+48722765101" className="btn-outline inline-flex items-center gap-2">
+            <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
               <Phone className="w-4 h-4" /> 722 765 101
+            </a>
+            <a href="mailto:tutinthewood@gmail.com" className="btn-outline inline-flex items-center gap-2">
+              <Mail className="w-4 h-4" /> tutinthewood@gmail.com
             </a>
           </div>
         </div>
