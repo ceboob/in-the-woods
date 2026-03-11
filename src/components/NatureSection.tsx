@@ -18,7 +18,7 @@ const NatureSection = () => {
   return (
     <section className="relative">
       <div className="relative h-[50vh] min-h-[350px]">
-        <img src={forestImg} alt="Puszcza Knyszyńska o poranku" className="w-full h-full object-cover" />
+        <img src={forestImg} alt="Noclegi Puszcza Knyszyńska — poranny widok na las blisko Supraśla" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-graphite/30" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
@@ -46,7 +46,7 @@ const NatureSection = () => {
             </div>
           </div>
           <div className="overflow-hidden">
-            <img src={riverImg} alt="Spływ kajakowy na rzece Supraśl" className="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700" />
+            <img src={riverImg} alt="Weekend Supraśl — spływ kajakowy na rzece Supraśl w Puszczy Knyszyńskiej" className="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700" />
           </div>
         </div>
       </div>

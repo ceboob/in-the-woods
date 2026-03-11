@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Phone, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <footer className="bg-graphite text-cream/70 px-6 md:px-12 py-12">
@@ -25,7 +26,19 @@ const Footer = () => (
           <a href="#" aria-label="Facebook" className="text-cream/50 hover:text-cream transition-colors"><Facebook className="w-5 h-5" /></a>
         </div>
       </div>
-      <div className="mt-8 pt-6 border-t border-cream/10 text-center">
+
+      {/* SEO Internal Links */}
+      <div className="mt-8 pt-6 border-t border-cream/10">
+        <div className="flex flex-wrap justify-center gap-4 text-xs text-cream/40">
+          <Link to="/noclegi-suprasl" className="hover:text-cream/70 transition-colors">Noclegi Supraśl</Link>
+          <Link to="/dom-w-lesie-suprasl" className="hover:text-cream/70 transition-colors">Dom w lesie Supraśl</Link>
+          <Link to="/weekend-suprasl" className="hover:text-cream/70 transition-colors">Weekend Supraśl</Link>
+          <Link to="/atrakcje-suprasl" className="hover:text-cream/70 transition-colors">Atrakcje Supraśla</Link>
+          <Link to="/puszcza-knyszynska-nocleg" className="hover:text-cream/70 transition-colors">Nocleg Puszcza Knyszyńska</Link>
+        </div>
+      </div>
+
+      <div className="mt-6 text-center">
         <p className="text-xs text-cream/40">© 2026 Krzemienna Chata. Wszelkie prawa zastrzeżone.</p>
       </div>
     </div>

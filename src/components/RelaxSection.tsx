@@ -26,13 +26,13 @@ const RelaxSection = () => {
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-16">
           <div className="overflow-hidden relative group">
-            <img src={jacuzziImg} alt="Wieczorne kąpiele pod gwiazdami — ruska bania" className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <img src={jacuzziImg} alt="Noclegi Supraśl z jacuzzi — wieczorne kąpiele pod gwiazdami w ruskiej bani" className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
               <p className="font-serif text-lg text-cream italic">Wieczorne kąpiele pod gwiazdami</p>
             </div>
           </div>
           <div className="overflow-hidden relative group">
-            <img src={forestImg} alt="Las Puszczy Knyszyńskiej — relaks w sercu natury" className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <img src={forestImg} alt="Nocleg Podlasie — las Puszczy Knyszyńskiej, relaks w sercu natury blisko Supraśla" className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
               <p className="font-serif text-lg text-cream italic">Relaks w sercu natury</p>
             </div>

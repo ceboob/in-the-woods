@@ -12,17 +12,17 @@ import bedroomImg from '@/assets/bedroom.jpg';
 import kitchenTraditional from '@/assets/kitchen-traditional.jpg';
 
 const images = [
-  { src: jacuzziNight, alt: 'Ruska bania nocą — prywatne SPA', className: 'col-span-2 row-span-2' },
-  { src: kitchenDining, alt: 'Drewniana jadalnia z nakrytym stołem', className: 'col-span-1 row-span-1' },
-  { src: terracePorch, alt: 'Taras z kanapą w otoczeniu lasu', className: 'col-span-1 row-span-1' },
-  { src: kitchenTraditional, alt: 'Tradycyjna kuchnia z ceramiką', className: 'col-span-1 row-span-1' },
-  { src: terraceBreakfast, alt: 'Śniadanie na tarasie w słońcu', className: 'col-span-1 row-span-1' },
-  { src: winterGolden, alt: 'Chata w złotym zimowym świetle', className: 'col-span-2 row-span-1' },
-  { src: interiorImg, alt: 'Salon z kominkiem', className: 'col-span-1 row-span-1' },
-  { src: bedroomImg, alt: 'Sypialnia z dużym łóżkiem', className: 'col-span-1 row-span-1' },
-  { src: exteriorMain, alt: 'Widok na chatę z ogrodu', className: 'col-span-1 row-span-1' },
-  { src: winterCabin, alt: 'Chata w śnieżnej scenerii', className: 'col-span-1 row-span-1' },
-  { src: winterForest, alt: 'Zimowy las Puszczy Knyszyńskiej', className: 'col-span-1 row-span-1' },
+  { src: jacuzziNight, alt: 'Noclegi Supraśl — prywatna ruska bania z jacuzzi pod gwiazdami', className: 'col-span-2 row-span-2' },
+  { src: kitchenDining, alt: 'Dom Supraśl — drewniana jadalnia z nakrytym stołem', className: 'col-span-1 row-span-1' },
+  { src: terracePorch, alt: 'Domek Supraśl — taras z kanapą w otoczeniu Puszczy Knyszyńskiej', className: 'col-span-1 row-span-1' },
+  { src: kitchenTraditional, alt: 'Nocleg Podlasie — tradycyjna kuchnia z ceramiką w domu w lesie', className: 'col-span-1 row-span-1' },
+  { src: terraceBreakfast, alt: 'Weekend Supraśl — śniadanie na tarasie z widokiem na las', className: 'col-span-1 row-span-1' },
+  { src: winterGolden, alt: 'Noclegi Supraśl zimą — chata w złotym zimowym świetle Puszczy Knyszyńskiej', className: 'col-span-2 row-span-1' },
+  { src: interiorImg, alt: 'Dom Supraśl — salon z kominkiem w Krzemiennej Chacie', className: 'col-span-1 row-span-1' },
+  { src: bedroomImg, alt: 'Nocleg Supraśl — komfortowa sypialnia z dużym łóżkiem', className: 'col-span-1 row-span-1' },
+  { src: exteriorMain, alt: 'Domek Supraśl — widok na chatę z ogrodu w Puszczy Knyszyńskiej', className: 'col-span-1 row-span-1' },
+  { src: winterCabin, alt: 'Noclegi Puszcza Knyszyńska — drewniana chata w śnieżnej scenerii', className: 'col-span-1 row-span-1' },
+  { src: winterForest, alt: 'Nocleg Podlasie — zimowy las Puszczy Knyszyńskiej blisko Supraśla', className: 'col-span-1 row-span-1' },
 ];
 
 const GallerySection = () => {

@@ -11,7 +11,7 @@ const WinterSection = () => {
   return (
     <section className="relative">
       <div className="relative h-[50vh] min-h-[350px]">
-        <img src={winterGolden} alt="Krzemienna Chata zimą — śnieg i złote światło" className="w-full h-full object-cover" />
+        <img src={winterGolden} alt="Noclegi Supraśl zimą — Krzemienna Chata w złotym zimowym świetle Puszczy Knyszyńskiej" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-graphite/30" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6 max-w-2xl">
@@ -25,10 +25,10 @@ const WinterSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-4 mb-12">
             <div className="overflow-hidden">
-              <img src={winterCabin} alt="Drewniana chata w śnieżnej puszczy" className="w-full h-[280px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+              <img src={winterCabin} alt="Domek Supraśl — drewniana chata w śnieżnej Puszczy Knyszyńskiej" className="w-full h-[280px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
             </div>
             <div className="overflow-hidden">
-              <img src={winterForest} alt="Zimowy las Puszczy Knyszyńskiej" className="w-full h-[280px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+              <img src={winterForest} alt="Nocleg Podlasie — zimowy las Puszczy Knyszyńskiej blisko Supraśla" className="w-full h-[280px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
             </div>
           </div>
 

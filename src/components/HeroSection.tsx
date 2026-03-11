@@ -9,16 +9,16 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={jacuzziImg} alt="Prywatna ruska bania nocą — Krzemienna Chata Supraśl" className="w-full h-full object-cover" />
+        <img src={jacuzziImg} alt="Noclegi Supraśl — prywatna ruska bania nocą w Krzemiennej Chacie, Puszcza Knyszyńska" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-graphite/60 via-graphite/30 to-graphite/70" />
       </div>
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-light text-cream leading-tight mb-4 animate-fade-up">
-          Krzemienna Chata
+          Noclegi Supraśl – Krzemienna Chata
         </h1>
         <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-cream/70 mb-8 animate-fade-in">
-          Dom w sercu Puszczy Knyszyńskiej
+          Dom na wynajem w Puszczy Knyszyńskiej
         </p>
 
         <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">

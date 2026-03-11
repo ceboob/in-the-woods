@@ -5,6 +5,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import NoclegiSuprasl from "./pages/NoclegiSuprasl.tsx";
+import DomWLesieSuprasl from "./pages/DomWLesieSuprasl.tsx";
+import WeekendSuprasl from "./pages/WeekendSuprasl.tsx";
+import AtrakcjeSuprasl from "./pages/AtrakcjeSuprasl.tsx";
+import PuszczaKnyszynskaNocleg from "./pages/PuszczaKnyszynskaNocleg.tsx";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +21,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/noclegi-suprasl" element={<NoclegiSuprasl />} />
+          <Route path="/dom-w-lesie-suprasl" element={<DomWLesieSuprasl />} />
+          <Route path="/weekend-suprasl" element={<WeekendSuprasl />} />
+          <Route path="/atrakcje-suprasl" element={<AtrakcjeSuprasl />} />
+          <Route path="/puszcza-knyszynska-nocleg" element={<PuszczaKnyszynskaNocleg />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

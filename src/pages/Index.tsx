@@ -18,6 +18,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import SEOTextSection from '@/components/SEOTextSection';
 
 const Index = () => {
   return (
@@ -41,6 +42,7 @@ const Index = () => {
         <BookingModule />
         <TestimonialsSection />
         <FAQSection />
+        <SEOTextSection />
         <ContactSection />
       </main>
       <Footer />
