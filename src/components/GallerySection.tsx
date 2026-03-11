@@ -1,21 +1,33 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import heroImg from '@/assets/hero-cabin.jpg';
-import interiorImg from '@/assets/interior-living.jpg';
+import exteriorMain from '@/assets/exterior-main.jpg';
+import interiorImg from '@/assets/interior-living.webp';
 import baniaImg from '@/assets/bania-relax.jpg';
 import bedroomImg from '@/assets/bedroom.jpg';
 import terraceImg from '@/assets/outdoor-terrace.jpg';
 import kitchenImg from '@/assets/kitchen.jpg';
 import forestImg from '@/assets/forest-nature.jpg';
-import riverImg from '@/assets/river-kayak.jpg';
+import exteriorSide from '@/assets/exterior-side.webp';
+import bedroom2 from '@/assets/bedroom2.webp';
+import bedroom3 from '@/assets/bedroom3.webp';
+import kitchenInterior from '@/assets/kitchen-interior.jpg';
+import gardenFirepit from '@/assets/garden-firepit.webp';
+import exteriorEntrance from '@/assets/exterior-entrance.webp';
+import bedroomTerrace from '@/assets/bedroom-terrace.webp';
+import forestPanorama from '@/assets/forest-panorama.webp';
 
 const images = [
-  { src: heroImg, alt: 'Krzemienna Chata — widok z zewnątrz', className: 'col-span-2 row-span-2' },
-  { src: interiorImg, alt: 'Salon z kominkiem', className: 'col-span-1 row-span-1' },
-  { src: baniaImg, alt: 'Ruska bania', className: 'col-span-1 row-span-1' },
-  { src: bedroomImg, alt: 'Sypialnia', className: 'col-span-1 row-span-1' },
-  { src: kitchenImg, alt: 'Kuchnia', className: 'col-span-1 row-span-1' },
-  { src: terraceImg, alt: 'Taras i ognisko', className: 'col-span-1 row-span-1' },
-  { src: forestImg, alt: 'Puszcza Knyszyńska', className: 'col-span-1 row-span-1' },
+  { src: exteriorMain, alt: 'Krzemienna Chata — widok z zewnątrz', className: 'col-span-2 row-span-2' },
+  { src: baniaImg, alt: 'Ruska bania i balia', className: 'col-span-1 row-span-1' },
+  { src: kitchenImg, alt: 'Wnętrze chaty', className: 'col-span-1 row-span-1' },
+  { src: bedroomImg, alt: 'Sypialnia z łóżkiem king size', className: 'col-span-1 row-span-1' },
+  { src: terraceImg, alt: 'Taras i ogród', className: 'col-span-1 row-span-1' },
+  { src: exteriorSide, alt: 'Chata z boku — drewno i natura', className: 'col-span-1 row-span-1' },
+  { src: bedroom2, alt: 'Druga sypialnia', className: 'col-span-1 row-span-1' },
+  { src: forestPanorama, alt: 'Panorama Puszczy Knyszyńskiej', className: 'col-span-2 row-span-1' },
+  { src: kitchenInterior, alt: 'Kuchnia z jadalnią', className: 'col-span-1 row-span-1' },
+  { src: gardenFirepit, alt: 'Ogród i ognisko', className: 'col-span-1 row-span-1' },
+  { src: exteriorEntrance, alt: 'Wejście do chaty', className: 'col-span-1 row-span-1' },
+  { src: bedroomTerrace, alt: 'Sypialnia z tarasem', className: 'col-span-1 row-span-1' },
 ];
 
 const GallerySection = () => {
@@ -29,7 +41,7 @@ const GallerySection = () => {
           <h2 className="section-title">Obrazy mówią więcej</h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[200px] md:auto-rows-[250px]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 auto-rows-[180px] md:auto-rows-[220px]">
           {images.map((img, i) => (
             <div key={i} className={`overflow-hidden group ${img.className}`}>
               <img

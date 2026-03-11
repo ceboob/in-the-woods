@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import interiorImg from '@/assets/interior-living.jpg';
+import interiorImg from '@/assets/interior-living.webp';
 
 const AboutSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -26,7 +26,7 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="overflow-hidden">
-          <img src={interiorImg} alt="Wnętrze Krzemiennej Chaty — salon z kominkiem" className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700" />
+          <img src={interiorImg} alt="Krzemienna Chata — widok z zewnątrz na drewnianą chatę z bala" className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700" />
         </div>
       </div>
     </section>
