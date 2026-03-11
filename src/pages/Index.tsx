@@ -43,6 +43,7 @@ const Index = () => {
         <BookingModule />
         <TestimonialsSection />
         <FAQSection />
+        <GuestGuideSection />
         <SEOTextSection />
         <ContactSection />
       </main>
