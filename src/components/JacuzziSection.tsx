@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import baniaImg from '@/assets/bania-relax.jpg';
+import jacuzziImg from '@/assets/jacuzzi-night.jpg';
 import { Snowflake, Leaf, Bike, Heart } from 'lucide-react';
 
 const bullets = [
@@ -15,7 +15,7 @@ const JacuzziSection = () => {
   return (
     <section id="jacuzzi" className="relative">
       <div className="relative h-[50vh] min-h-[400px]">
-        <img src={baniaImg} alt="Prywatna ruska bania — Krzemienna Chata" className="w-full h-full object-cover" />
+        <img src={jacuzziImg} alt="Prywatna ruska bania nocą — Krzemienna Chata" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-graphite/40" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
