@@ -6,14 +6,14 @@ const packages = [
     name: 'Pobyt w tygodniu',
     price: '499',
     note: 'poza sezonem',
-    features: ['Dom', 'Ogród, taras, kominek', 'Maksymalnie 6 osób dorosłych', 'Zwierzęta mile widziane'],
+    features: ['Dom i ogród tylko dla Was', 'Ogród, taras, kominek', 'Maksymalnie 6 osób dorosłych', 'Zwierzęta mile widziane'],
     featured: false,
   },
   {
     name: 'Weekend + bania',
     price: '749',
     note: 'min. 2 noce',
-    features: ['Maksymalnie 6 osób dorosłych', 'Drewno opałowe w cenie', 'Dom', 'Priorytetowa dostępność'],
+    features: ['Maksymalnie 6 osób dorosłych', 'Drewno opałowe w cenie', 'Dom i ogród tylko dla Was', 'Priorytetowa dostępność'],
     featured: true,
   },
 ];
