@@ -10,6 +10,7 @@ import DomWLesieSuprasl from "./pages/DomWLesieSuprasl.tsx";
 import WeekendSuprasl from "./pages/WeekendSuprasl.tsx";
 import AtrakcjeSuprasl from "./pages/AtrakcjeSuprasl.tsx";
 import PuszczaKnyszynskaNocleg from "./pages/PuszczaKnyszynskaNocleg.tsx";
+import Informator from "./pages/Informator.tsx";
 
 const queryClient = new QueryClient();
 
