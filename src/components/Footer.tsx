@@ -13,11 +13,11 @@ const Footer = () => (
         <div className="text-center space-y-2">
           <div className="flex items-center justify-center gap-2">
             <Phone className="w-4 h-4 text-cream/50" />
-            <a href="tel:+48790625990" className="text-sm text-cream/70 hover:text-cream transition-colors">790 625 990</a>
+            <a href="tel:+48722765101" className="text-sm text-cream/70 hover:text-cream transition-colors">722 765 101</a>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <Phone className="w-4 h-4 text-cream/50" />
-            <a href="tel:+48722765101" className="text-sm text-cream/70 hover:text-cream transition-colors">722 765 101</a>
+            <Mail className="w-4 h-4 text-cream/50" />
+            <a href="mailto:tutinthewood@gmail.com" className="text-sm text-cream/70 hover:text-cream transition-colors">tutinthewood@gmail.com</a>
           </div>
         </div>
         <div className="flex items-center gap-6">
