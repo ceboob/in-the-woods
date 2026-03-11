@@ -158,8 +158,8 @@ const BookingModule = () => {
                 </div>
               )}
 
-              <button type="submit" className="btn-primary w-full">
-                {step === 'form' ? 'Sprawdź dostępność' : 'Wyślij zapytanie'}
+              <button type="submit" className="btn-primary w-full" disabled={sending}>
+                {sending ? <Loader2 className="w-4 h-4 animate-spin mx-auto" /> : step === 'form' ? 'Sprawdź dostępność' : 'Wyślij zapytanie'}
               </button>
 
               {step === 'form' && (
