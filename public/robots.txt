@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://chata-w-puszczy-azyl.lovable.app/sitemap.xml
