@@ -25,10 +25,10 @@ const WinterSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-4 mb-12">
             <div className="overflow-hidden">
-              <img src={winterCabin} alt="Drewniana chata w śnieżnej puszczy" className="w-full h-[280px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+              <img src={winterCabin} alt="Domek Supraśl — drewniana chata w śnieżnej Puszczy Knyszyńskiej" className="w-full h-[280px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
             </div>
             <div className="overflow-hidden">
-              <img src={winterForest} alt="Zimowy las Puszczy Knyszyńskiej" className="w-full h-[280px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+              <img src={winterForest} alt="Nocleg Podlasie — zimowy las Puszczy Knyszyńskiej blisko Supraśla" className="w-full h-[280px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
             </div>
           </div>
 
