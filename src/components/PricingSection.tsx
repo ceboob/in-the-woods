@@ -85,7 +85,7 @@ const PricingSection = () => {
             <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary">
               Sprawdź dostępność
             </button>
-            <a href="tel:+48790625990" className="btn-outline">
+            <a href="tel:+48722765101" className="btn-outline">
               Zapytaj o pobyt
             </a>
           </div>

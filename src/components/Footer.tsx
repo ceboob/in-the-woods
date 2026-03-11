@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Phone } from 'lucide-react';
+import { Instagram, Facebook, Phone, Mail } from 'lucide-react';
 
 const Footer = () => (
   <footer className="bg-graphite text-cream/70 px-6 md:px-12 py-12">

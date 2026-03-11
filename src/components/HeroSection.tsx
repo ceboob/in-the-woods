@@ -45,7 +45,7 @@ const HeroSection = () => {
           <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary bg-cream text-graphite hover:bg-cream/90">
             Sprawdź dostępność
           </button>
-          <a href="tel:+48790625990" className="btn-outline border-cream text-cream hover:bg-cream hover:text-graphite inline-flex items-center justify-center gap-2">
+          <a href="tel:+48722765101" className="btn-outline border-cream text-cream hover:bg-cream hover:text-graphite inline-flex items-center justify-center gap-2">
             <Phone className="w-4 h-4" /> Zadzwoń
           </a>
         </div>

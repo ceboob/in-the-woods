@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Phone, User } from 'lucide-react';
+import { Phone, User, Mail } from 'lucide-react';
 
 const ContactSection = () => {
   const { ref, isVisible } = useScrollAnimation();
