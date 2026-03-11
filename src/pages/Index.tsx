@@ -1,14 +1,18 @@
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import AboutSection from '@/components/AboutSection';
+import BadgesBar from '@/components/BadgesBar';
+import TrustSection from '@/components/TrustSection';
 import AmenitiesSection from '@/components/AmenitiesSection';
-import RelaxSection from '@/components/RelaxSection';
-import ForWhoSection from '@/components/ForWhoSection';
-import NatureSection from '@/components/NatureSection';
+import JacuzziSection from '@/components/JacuzziSection';
+import ExperienceSection from '@/components/ExperienceSection';
 import GallerySection from '@/components/GallerySection';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import FAQSection from '@/components/FAQSection';
+import WinterSection from '@/components/WinterSection';
+import SupraslSection from '@/components/SupraslSection';
+import LocationSection from '@/components/LocationSection';
+import PricingSection from '@/components/PricingSection';
+import CTASection from '@/components/CTASection';
 import BookingModule from '@/components/BookingModule';
+import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
@@ -18,13 +22,17 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
-        <AboutSection />
+        <BadgesBar />
+        <TrustSection />
         <AmenitiesSection />
-        <RelaxSection />
-        <ForWhoSection />
-        <NatureSection />
+        <JacuzziSection />
+        <ExperienceSection />
         <GallerySection />
-        <TestimonialsSection />
+        <WinterSection />
+        <SupraslSection />
+        <LocationSection />
+        <PricingSection />
+        <CTASection />
         <BookingModule />
         <FAQSection />
         <ContactSection />
