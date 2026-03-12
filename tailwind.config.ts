@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-        sans: ['"Inter"', 'system-ui', 'sans-serif'],
+        serif: ['"Grand Hotel"', 'cursive'],
+        sans: ['"Mulish"', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -29,7 +29,7 @@ const Navbar = () => {
       scrolled ? 'bg-background/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
-        <button onClick={() => handleClick('#hero')} className={`font-serif text-xl md:text-2xl font-semibold tracking-tight transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-cream'}`}>
+        <button onClick={() => handleClick('#hero')} className={`font-serif text-2xl md:text-3xl transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-cream'}`}>
           Krzemienna Chata
         </button>
 
