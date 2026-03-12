@@ -25,7 +25,7 @@ const AboutSection = () => {
             </p>
           </div>
         </div>
-        <div className="overflow-hidden">
+        <div className="overflow-hidden rounded-lg">
           <img src={interiorImg} alt="Krzemienna Chata — widok z zewnątrz na drewnianą chatę z bala" className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700" />
         </div>
       </div>
