@@ -43,9 +43,9 @@ const GallerySection = () => {
           <h2 className="section-title">Obrazy mówią więcej</h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 auto-rows-[180px] md:auto-rows-[220px]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[180px] md:auto-rows-[220px]">
           {images.map((img, i) => (
-            <div key={i} className={`overflow-hidden group ${img.className}`}>
+            <div key={i} className={`overflow-hidden group rounded-lg ${img.className}`}>
               <img
                 src={img.src}
                 alt={img.alt}
