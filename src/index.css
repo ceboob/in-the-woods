@@ -134,8 +134,8 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center px-9 py-4 bg-primary text-primary-foreground text-sm tracking-[0.1em] uppercase font-medium transition-all duration-300;
-    font-family: 'Inter', system-ui, sans-serif;
+    @apply inline-flex items-center justify-center px-9 py-4 bg-primary text-primary-foreground text-sm tracking-[0.1em] uppercase font-semibold transition-all duration-300;
+    font-family: 'Mulish', system-ui, sans-serif;
     border-radius: 0.5rem;
   }
 
