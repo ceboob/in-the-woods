@@ -163,11 +163,15 @@
 
 @layer utilities {
   .font-serif {
-    font-family: 'Grand Hotel', cursive;
+    font-family: 'Mulish', system-ui, sans-serif;
   }
 
   .font-sans {
     font-family: 'Mulish', system-ui, sans-serif;
+  }
+
+  .font-display {
+    font-family: 'Grand Hotel', cursive;
   }
 
   .animate-fade-up {

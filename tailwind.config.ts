@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['"Grand Hotel"', 'cursive'],
+        display: ['"Grand Hotel"', 'cursive'],
+        serif: ['"Mulish"', 'system-ui', 'sans-serif'],
         sans: ['"Mulish"', 'system-ui', 'sans-serif'],
       },
       colors: {
