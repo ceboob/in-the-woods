@@ -62,7 +62,9 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    line-height: 1.6;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -71,23 +73,26 @@
 
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight;
-    line-height: 1.1;
+    line-height: 1.08;
+    margin-bottom: 1.2rem;
   }
 
   h2 {
     @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
+    letter-spacing: -0.025em;
+    line-height: 1.12;
+    margin-bottom: 1rem;
   }
 
   h3 {
     @apply text-xl md:text-2xl font-medium;
     letter-spacing: -0.01em;
     line-height: 1.25;
+    margin-bottom: 0.75rem;
   }
 
   p {
-    margin-bottom: 0.75em;
+    margin-bottom: 1em;
   }
 
   p:last-child {
