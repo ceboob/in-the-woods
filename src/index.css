@@ -85,9 +85,11 @@
 
   h2 {
     @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
-    letter-spacing: -0.025em;
-    line-height: 1.12;
+    font-family: 'Mulish', system-ui, sans-serif;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
     margin-bottom: 1rem;
+  }
   }
 
   h3 {
