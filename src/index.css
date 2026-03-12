@@ -171,11 +171,11 @@
 
 @layer utilities {
   .font-serif {
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: 'Grand Hotel', cursive;
   }
 
   .font-sans {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Mulish', system-ui, sans-serif;
   }
 
   .animate-fade-up {
