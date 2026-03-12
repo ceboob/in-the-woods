@@ -67,8 +67,8 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  h1 {
+    font-family: 'Grand Hotel', cursive;
   }
 
   h1 {
