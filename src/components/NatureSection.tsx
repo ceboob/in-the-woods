@@ -46,7 +46,7 @@ const NatureSection = () => {
             </div>
           </div>
           <div className="overflow-hidden">
-            <img src={riverImg} alt="Weekend Supraśl — spływ kajakowy na rzece Supraśl w Puszczy Knyszyńskiej" className="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700" />
+            <img src={riverImg} alt="Weekend Supraśl — spływ kajakowy na rzece Supraśl w Puszczy Knyszyńskiej" className="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
           </div>
         </div>
       </div>
