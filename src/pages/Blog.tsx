@@ -11,7 +11,7 @@ const articles = [
     slug: 'supraski-system-wodny',
     title: 'Supraski System Wodny – zapomniany cud inżynierii Podlasia',
     excerpt: 'Odkryj fascynującą historię supraskiego systemu wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia, które do dziś zachwyca turystów.',
-    image: riverKayak,
+    image: blogKanal,
     date: '2026-03-10',
     readTime: '12 min',
     keywords: ['Supraski System Wodny', 'atrakcje Supraśl'],
