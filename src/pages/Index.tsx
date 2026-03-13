@@ -35,7 +35,7 @@ const Index = () => {
         <TrustSection />
         <AmenitiesSection />
         <JacuzziSection />
-        <BeforeAfterSlider />
+        
         <RelaxSection />
         <ExperienceSection />
         <ForWhoSection />
