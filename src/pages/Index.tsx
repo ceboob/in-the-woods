@@ -55,6 +55,7 @@ const Index = () => {
       </main>
       <Footer />
       <ExitIntentPopup />
+      <StickyMobileCTA />
     </div>
   );
 };
