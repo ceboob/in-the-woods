@@ -16,7 +16,7 @@ const Informator = () => {
   useEffect(() => {
     document.title = 'Informator gościa – In The Woods Supraśl';
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Informator gościa Krzemienna Chata – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl.');
+    if (metaDesc) metaDesc.setAttribute('content', 'Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl.');
     window.scrollTo(0, 0);
   }, []);
 
