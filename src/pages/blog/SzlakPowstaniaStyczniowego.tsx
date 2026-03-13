@@ -9,7 +9,7 @@ const SzlakPowstaniaStyczniowego = () => {
     { question: 'Czym jest Szlak Powstania Styczniowego w Puszczy Knyszyńskiej?', answer: 'To szlak turystyczny prowadzący przez miejsca związane z walkami powstańczymi w 1863 roku na terenie Puszczy Knyszyńskiej. Łączy pomniki, mogiły i miejsca bitew.' },
     { question: 'Jak długi jest szlak?', answer: 'Szlak ma kilka wariantów — od krótkich spacerów (3–5 km) po całodzienne trasy (15–20 km). Można go pokonać pieszo lub rowerem.' },
     { question: 'Czy szlak jest oznakowany?', answer: 'Tak, szlak jest oznakowany tablicami informacyjnymi i znakami szlakowymi. W kluczowych punktach znajdują się tablice z opisem historycznych wydarzeń.' },
-    { question: 'Gdzie nocować przy szlaku?', answer: 'Krzemienna Chata to idealny nocleg w okolicy szlaku – prywatny dom w lesie z jacuzzi, położony w Puszczy Knyszyńskiej blisko Supraśla.' },
+    { question: 'Gdzie nocować przy szlaku?', answer: 'In The Woods to idealny nocleg w okolicy szlaku – prywatny dom w lesie z jacuzzi, położony w Puszczy Knyszyńskiej blisko Supraśla.' },
   ];
 
   const relatedArticles = [
