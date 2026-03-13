@@ -36,6 +36,7 @@ const Footer = () => (
           <Link to="/atrakcje-suprasl" className="hover:text-cream/70 transition-colors">Atrakcje Supraśla</Link>
           <Link to="/puszcza-knyszynska-nocleg" className="hover:text-cream/70 transition-colors">Nocleg Puszcza Knyszyńska</Link>
           <Link to="/informator" className="hover:text-cream/70 transition-colors">Informator gościa</Link>
+          <Link to="/blog" className="hover:text-cream/70 transition-colors">Blog</Link>
         </div>
       </div>
 

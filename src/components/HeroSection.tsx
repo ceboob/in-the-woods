@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={jacuzziImg} alt="Noclegi Supraśl — prywatna ruska bania nocą w In The Woods, Puszcza Knyszyńska" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
+        <img src={jacuzziImg} alt="Noclegi Supraśl — dom w lesie z jacuzzi, In The Woods, Puszcza Knyszyńska" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
         <div className="absolute inset-0 bg-gradient-to-b from-graphite/60 via-graphite/30 to-graphite/70" />
       </div>
       
