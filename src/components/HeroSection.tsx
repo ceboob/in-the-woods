@@ -9,16 +9,16 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={jacuzziImg} alt="Noclegi Supraśl — prywatna ruska bania nocą w In The Woods, Puszcza Knyszyńska" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
+        <img src={jacuzziImg} alt="Noclegi Supraśl — dom w lesie z jacuzzi, In The Woods, Puszcza Knyszyńska" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
         <div className="absolute inset-0 bg-gradient-to-b from-graphite/60 via-graphite/30 to-graphite/70" />
       </div>
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-tight mb-4 animate-fade-up" style={{ letterSpacing: '0.01em' }}>
-          In The Woods
+          In The Woods – noclegi Supraśl
         </h1>
         <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-cream/70 mb-3 animate-fade-in">
-          Noclegi Supraśl · Dom na wynajem w Puszczy Knyszyńskiej
+          Dom w lesie z jacuzzi blisko Supraśla
         </p>
 
         <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
