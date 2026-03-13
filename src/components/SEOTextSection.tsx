@@ -28,7 +28,7 @@ const SEOTextSection = () => {
             <Link to="/puszcza-knyszynska-nocleg" className="text-forest underline hover:text-forest-light transition-colors"> Puszczy Knyszyńskiej</Link>.
           </p>
           <p>
-            Krzemienna Chata to doskonały wybór zarówno na <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light transition-colors">weekend w Supraślu</Link>, 
+            In The Woods to doskonały wybór zarówno na <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light transition-colors">weekend w Supraślu</Link>, 
             jak i dłuższy <strong>pobyt na Podlasiu</strong>. Zwierzęta są mile widziane, a ogrodzony ogród i las za progiem to raj dla czworonogów. 
             Sprawdź <Link to="/atrakcje-suprasl" className="text-forest underline hover:text-forest-light transition-colors">atrakcje Supraśla</Link> i zaplanuj swój wymarzony 
             <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> pobyt w domu w lesie</Link>.

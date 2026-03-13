@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NoclegiSuprasl = () => (
   <SEOPageLayout
-    title="Noclegi Supraśl – gdzie nocować w Supraślu | Krzemienna Chata"
+    title="Noclegi Supraśl – gdzie nocować w Supraślu | In The Woods"
     description="Noclegi Supraśl – prywatny dom na wynajem w Puszczy Knyszyńskiej. Jacuzzi, kominek, ogród. Sprawdź ofertę noclegów blisko Supraśla i Białegostoku."
   >
     <article className="prose prose-lg max-w-none space-y-8">
@@ -12,7 +12,7 @@ const NoclegiSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed text-lg">
         Supraśl to jedno z najbardziej wyjątkowych miejsc na Podlasiu — uzdrowiskowe miasteczko położone w sercu Puszczy Knyszyńskiej, 
         zaledwie 25 minut od Białegostoku. Jeśli szukasz <strong>noclegu w Supraślu</strong>, który oferuje coś więcej niż standardowy hotel, 
-        Krzemienna Chata jest miejscem stworzonym właśnie dla Ciebie.
+        In The Woods jest miejscem stworzonym właśnie dla Ciebie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Nasz <strong>dom na wynajem w Supraślu</strong> to prywatna posiadłość otoczona lasem, położona przy rezerwacie przyrody Krzemienne Góry. 
@@ -43,7 +43,7 @@ const NoclegiSuprasl = () => (
         przestronnym ogrodem i tarasem z widokiem na las.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Krzemienna Chata to <strong>domek w Supraślu</strong> idealny zarówno dla par szukających romantycznego azylu, jak i dla rodzin z dziećmi. 
+        In The Woods to <strong>domek w Supraślu</strong> idealny zarówno dla par szukających romantycznego azylu, jak i dla rodzin z dziećmi. 
         Ogrodzony ogród z placem zabaw, bezpieczna przestrzeń do zabawy i las na wyciągnięcie ręki — to warunki, których żaden hotel nie jest w stanie zapewnić.
       </p>
       <p className="text-muted-foreground leading-relaxed">
@@ -76,7 +76,7 @@ const NoclegiSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Noclegi blisko natury</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Krzemienna Chata to <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">dom w lesie blisko Supraśla</Link>, 
+        In The Woods to <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">dom w lesie blisko Supraśla</Link>, 
         położony przy rezerwacie przyrody Krzemienne Góry. To jeden z nielicznych <strong>noclegów w okolicach Supraśla</strong>, 
         gdzie budzisz się z widokiem na prawdziwą puszczę i słyszysz tylko śpiew ptaków.
       </p>
@@ -95,9 +95,9 @@ const NoclegiSuprasl = () => (
         Pobyt z psem jest bezpłatny, bo wierzymy, że wakacje to czas dla całej rodziny.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego Krzemienna Chata</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego In The Woods</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Krzemienna Chata to rodzinny obiekt prowadzony przez gospodarza Macieja, który osobiście dba o komfort każdego gościa. 
+        In The Woods to rodzinny obiekt prowadzony przez gospodarza Macieja, który osobiście dba o komfort każdego gościa. 
         Ponad 100 zadowolonych gości i oceny 5★ potwierdzają, że to miejsce, do którego chce się wracać.
       </p>
       <p className="text-muted-foreground leading-relaxed">
@@ -110,7 +110,7 @@ const NoclegiSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Planując <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light">weekend w Supraślu</Link>, 
-        dłuższy urlop czy workation — Krzemienna Chata to Twoja baza wypadowa na poznawanie Podlasia. 
+        dłuższy urlop czy workation — In The Woods to Twoja baza wypadowa na poznawanie Podlasia. 
         Dom w lesie z jacuzzi, kominkiem i ogrodem — nocleg, jakiego szukasz.
       </p>
 

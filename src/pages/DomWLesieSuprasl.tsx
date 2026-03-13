@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 const DomWLesieSuprasl = () => (
   <SEOPageLayout
-    title="Dom w lesie Supraśl – domek w Puszczy Knyszyńskiej | Krzemienna Chata"
+    title="Dom w lesie Supraśl – domek w Puszczy Knyszyńskiej | In The Woods"
     description="Dom w lesie blisko Supraśla — prywatny domek w Puszczy Knyszyńskiej na wyłączność. Slow travel, natura, kominek i ruska bania. Nocleg Podlasie."
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">Dom w lesie blisko Supraśla – slow travel w Puszczy Knyszyńskiej</h1>
 
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Marzysz o pobycie w <strong>domu w lesie blisko Supraśla</strong>? Krzemienna Chata to drewniany dom na wyłączność, 
+        Marzysz o pobycie w <strong>domu w lesie blisko Supraśla</strong>? In The Woods to drewniany dom na wyłączność, 
         otoczony Puszczą Knyszyńską — jednym z największych i najpiękniejszych kompleksów leśnych w Polsce. 
         To miejsce stworzone dla tych, którzy szukają prawdziwego kontaktu z naturą, ciszy i slow life.
       </p>
@@ -21,7 +21,7 @@ const DomWLesieSuprasl = () => (
         słyszysz śpiew ptaków zamiast budzika, a poranna kawa na tarasie smakuje zupełnie inaczej, gdy za ogrodzeniem zaczyna się puszcza.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Krzemienna Chata leży przy rezerwacie przyrody Krzemienne Góry, w miejscowości Konne, zaledwie 10 minut samochodem od Supraśla 
+        In The Woods leży przy rezerwacie przyrody Krzemienne Góry, w miejscowości Konne, zaledwie 10 minut samochodem od Supraśla 
         i 25 minut od Białegostoku. To idealna proporcja — bliskość natury z łatwym dostępem do atrakcji i infrastruktury miasta.
       </p>
       <p className="text-muted-foreground leading-relaxed">
@@ -36,7 +36,7 @@ const DomWLesieSuprasl = () => (
         <strong>Domek w lesie na Podlasiu</strong> to idealna baza do praktykowania tego podejścia.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        W Krzemiennej Chacie czas płynie wolniej. Poranki zaczynasz od kawy na tarasie, obserwując las budzący się do życia. 
+        W In The Woods czas płynie wolniej. Poranki zaczynasz od kawy na tarasie, obserwując las budzący się do życia. 
         Przedpołudnia spędzasz na spacerach po Puszczy Knyszyńskiej — szlaki piesze zaczynają się tuż za progiem domu.
       </p>
       <p className="text-muted-foreground leading-relaxed">
@@ -62,7 +62,7 @@ const DomWLesieSuprasl = () => (
         gorąca ruska bania — prywatne SPA pod gwiazdami.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Krzemienna Chata jest przyjazna zwierzętom. Pobyt z psem jest bezpłatny. Ogrodzony ogród zapewnia bezpieczeństwo, 
+        In The Woods jest przyjazny zwierzętom. Pobyt z psem jest bezpłatny. Ogrodzony ogród zapewnia bezpieczeństwo, 
         a kilometry leśnych ścieżek tuż za płotem to marzenie każdego czworonoga.
       </p>
 
@@ -77,7 +77,7 @@ const DomWLesieSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Minimalny czas pobytu to 2 noce — i szczerze rekomendujemy dłuższe pobyty. Dopiero po dwóch dniach zaczynasz naprawdę 
-        zwalniać i odczuwać dobrodziejstwa kontaktu z naturą. Wielu gości wraca regularnie, traktując Krzemienną Chatę 
+        zwalniać i odczuwać dobrodziejstwa kontaktu z naturą. Wielu gości wraca regularnie, traktując In The Woods 
         jako swoje „miejsce na ziemi".
       </p>
 

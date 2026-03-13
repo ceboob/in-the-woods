@@ -398,7 +398,7 @@ const Informator = () => {
             <Link to="/noclegi-suprasl" className="hover:text-cream transition-colors">Noclegi Supraśl</Link>
             <Link to="/informator" className="hover:text-cream transition-colors">Informator gościa</Link>
           </div>
-          <p className="text-xs text-cream/40">© 2026 Krzemienna Chata. Wszelkie prawa zastrzeżone.</p>
+          <p className="text-xs text-cream/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
         </div>
       </footer>
     </div>

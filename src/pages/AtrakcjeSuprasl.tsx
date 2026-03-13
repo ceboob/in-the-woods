@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AtrakcjeSuprasl = () => (
   <SEOPageLayout
-    title="Atrakcje Supraśla – co zobaczyć, co robić | Krzemienna Chata"
+    title="Atrakcje Supraśla – co zobaczyć, co robić | In The Woods"
     description="Co zobaczyć w Supraślu? Monaster, Muzeum Ikon, bulwary, szlaki rowerowe, spływy kajakowe. Odkryj atrakcje Supraśla i Puszczy Knyszyńskiej."
   >
     <article className="prose prose-lg max-w-none space-y-8">
@@ -12,7 +12,7 @@ const AtrakcjeSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed text-lg">
         Supraśl i okolice to skarbnica <strong>atrakcji turystycznych</strong>, które łączą kulturę, historię i przyrodę w unikalne doświadczenie. 
         Miasteczko uzdrowiskowe w sercu Puszczy Knyszyńskiej przyciąga turystów z całej Polski — i nie bez powodu. 
-        Oto przewodnik po najważniejszych atrakcjach, które warto odwiedzić podczas pobytu w Krzemiennej Chacie.
+        Oto przewodnik po najważniejszych atrakcjach, które warto odwiedzić podczas pobytu w In The Woods.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Monaster Zwiastowania NMP</h2>
@@ -26,7 +26,7 @@ const AtrakcjeSuprasl = () => (
         Regularne nabożeństwa z tradycyjnym śpiewem cerkiewnym to wyjątkowe doświadczenie duchowe.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Monaster znajduje się zaledwie 10 minut samochodem od Krzemiennej Chaty, w centrum Supraśla.
+        Monaster znajduje się zaledwie 10 minut samochodem od In The Woods, w centrum Supraśla.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Muzeum Ikon</h2>
@@ -59,7 +59,7 @@ const AtrakcjeSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Warto spróbować lokalnych specjałów: kartacze (podlaskie kluski z nadzieniem mięsnym), sękacz (tradycyjne ciasto piecone na rożnie), 
-        pierogi z nadzieniem z darów Puszczy Knyszyńskiej. Wielu gości Krzemiennej Chaty łączy wizytę w Supraślu z obiadem 
+        pierogi z nadzieniem z darów Puszczy Knyszyńskiej. Wielu gości In The Woods łączy wizytę w Supraślu z obiadem 
         w jednej z lokalnych restauracji.
       </p>
 
@@ -86,13 +86,13 @@ const AtrakcjeSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Arboretum Kopna Góra</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Arboretum Kopna Góra, oddalone 20 minut od Krzemiennej Chaty, to unikatowy ogród botaniczny w sercu puszczy. 
+        Arboretum Kopna Góra, oddalone 20 minut od In The Woods, to unikatowy ogród botaniczny w sercu puszczy. 
         Na 10 hektarach rosną drzewa i krzewy z całego świata. Spacer po arboretum to lekcja botaniki w pięknych przyrodniczych wnętrzach.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Kruszyniany — tatarski ślad</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Kruszyniany to jedna z najstarszych osad tatarskich w Polsce, oddalona 45 minut od Krzemiennej Chaty. 
+        Kruszyniany to jedna z najstarszych osad tatarskich w Polsce, oddalona 45 minut od In The Woods. 
         Zabytkowy drewniany meczet i mizar (cmentarz tatarski) to unikalne zabytki. Lokalne jadłodajnie serwują autentyczną 
         kuchnię tatarską — pierekaczewnik (tatarski placek z mięsem) to obowiązkowy punkt programu.
       </p>
@@ -101,12 +101,12 @@ const AtrakcjeSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Białystok, stolica Podlasia, to nowoczesne miasto z bogatą ofertą kulturalną i gastronomiczną. 
         Pałac Branickich (polski Wersal), teatr dramatyczny, galerie sztuki, restauracje i kawiarnie — 
-        to doskonałe uzupełnienie pobytu w Krzemiennej Chacie dla tych, którzy szukają miejskich atrakcji.
+        to doskonałe uzupełnienie pobytu w In The Woods dla tych, którzy szukają miejskich atrakcji.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Krzemienna Chata — Twoja baza wypadowa</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">In The Woods — Twoja baza wypadowa</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Krzemienna Chata to idealna baza do odkrywania atrakcji Supraśla i Puszczy Knyszyńskiej. 
+        In The Woods to idealna baza do odkrywania atrakcji Supraśla i Puszczy Knyszyńskiej. 
         Prywatny <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">dom w lesie</Link> z kominkiem, 
         ruską banią i ogrodem — po dniu pełnym wrażeń wracasz do swojego azylu ciszy i natury.
       </p>

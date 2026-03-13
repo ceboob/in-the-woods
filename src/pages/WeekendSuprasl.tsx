@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const WeekendSuprasl = () => (
   <SEOPageLayout
-    title="Weekend w Supraślu – plan pobytu i noclegi | Krzemienna Chata"
+    title="Weekend w Supraślu – plan pobytu i noclegi | In The Woods"
     description="Planuj idealny weekend w Supraślu. Monaster, Puszcza Knyszyńska, ruska bania. Prywatny dom na wynajem z kominkiem i ogrodem."
   >
     <article className="prose prose-lg max-w-none space-y-8">
@@ -17,7 +17,7 @@ const WeekendSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Piątek — przyjazd i pierwszy wieczór</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Wyruszaj w piątek po południu. Z Białegostoku dojedziesz do Krzemiennej Chaty w 25 minut, z Warszawy — w około 2,5 godziny trasą S8. 
+        Wyruszaj w piątek po południu. Z Białegostoku dojedziesz do In The Woods w 25 minut, z Warszawy — w około 2,5 godziny trasą S8. 
         Po przyjeździe gospodarz Maciej pokaże Ci dom i ogród, opowie o atrakcjach okolicy.
       </p>
       <p className="text-muted-foreground leading-relaxed">
@@ -34,7 +34,7 @@ const WeekendSuprasl = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Sobota — odkrywanie Supraśla i Puszczy</h2>
       <p className="text-muted-foreground leading-relaxed">
         Poranny spacer po lesie to najlepszy sposób na rozpoczęcie sobotniego dnia. Szlaki piesze Puszczy Knyszyńskiej 
-        zaczynają się tuż za progiem Krzemiennej Chaty. Rezerwat Krzemienne Góry oferuje malownicze trasy 
+        zaczynają się tuż za progiem In The Woods. Rezerwat Krzemienne Góry oferuje malownicze trasy 
         prowadzące przez stary drzewostan.
       </p>
       <p className="text-muted-foreground leading-relaxed">
@@ -58,7 +58,7 @@ const WeekendSuprasl = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Niedziela — slow morning i powrót</h2>
       <p className="text-muted-foreground leading-relaxed">
         Niedziela to dzień slow morning. Kawa na tarasie, leniwe śniadanie przy drewnianym stole, ostatni spacer po lesie. 
-        Nie spiesz się — to część doświadczenia. Wielu gości mówi, że właśnie niedzielny poranek w Krzemiennej Chacie 
+        Nie spiesz się — to część doświadczenia. Wielu gości mówi, że właśnie niedzielny poranek w In The Woods 
         jest tym momentem, kiedy czują się naprawdę zregenerowani.
       </p>
       <p className="text-muted-foreground leading-relaxed">
@@ -73,7 +73,7 @@ const WeekendSuprasl = () => (
         zdalnie, które chcą połączyć workation z wypoczynkiem.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Krzemienna Chata jest przyjazna zwierzętom. Pobyt z psem jest bezpłatny. Ogrodzony ogród i kilometry 
+        In The Woods jest przyjazny zwierzętom. Pobyt z psem jest bezpłatny. Ogrodzony ogród i kilometry 
         leśnych ścieżek to raj dla czworonogów.
       </p>
 
