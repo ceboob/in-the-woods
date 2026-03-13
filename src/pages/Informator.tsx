@@ -392,7 +392,7 @@ const Informator = () => {
       {/* Footer */}
       <footer className="bg-graphite text-cream/70 px-6 md:px-12 py-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <p className="font-serif text-lg text-cream">Krzemienna Chata</p>
+          <p className="font-serif text-lg text-cream">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <Link to="/" className="hover:text-cream transition-colors">Strona główna</Link>
             <Link to="/noclegi-suprasl" className="hover:text-cream transition-colors">Noclegi Supraśl</Link>
