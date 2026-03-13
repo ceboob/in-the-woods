@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import forestNature from '@/assets/forest-nature.jpg';
-import forestPanorama from '@/assets/forest-panorama.webp';
+import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
+import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
 import winterForest from '@/assets/winter-forest.jpg';
 
 const SzlakPowstaniaStyczniowego = () => {
@@ -40,7 +40,7 @@ const SzlakPowstaniaStyczniowego = () => {
         Dziś śladami powstańców można przejść <strong>Szlakiem Powstania Styczniowego</strong> — jednym z najbardziej poruszających szlaków turystycznych w okolicach Supraśla. To trasa, która łączy w sobie historię, naturę i głęboką refleksję, prowadząc przez miejsca bitew, mogiły powstańcze i pomniki pamięci ukryte wśród drzew.
       </p>
 
-      <img src={forestNature} alt="Puszcza Knyszyńska – Szlak Powstania Styczniowego, atrakcje Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogSzlak} alt="Puszcza Knyszyńska – Szlak Powstania Styczniowego, atrakcje Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Historia Powstania w regionie</h2>
 
@@ -66,7 +66,7 @@ const SzlakPowstaniaStyczniowego = () => {
         Mniejsze potyczki i zasadzki miały miejsce w dziesiątkach punktów rozsianych po całej puszczy. Powstańcy atakowali posterunki, przechwytywali transporty i prowadzili wojnę podjazdową, która przez miesiące wiązała znaczne siły carskie.
       </p>
 
-      <img src={forestPanorama} alt="Puszcza Knyszyńska panorama – szlaki historyczne Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogPomnik} alt="Pomnik Powstania Styczniowego – Puszcza Knyszyńska, historia Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Miejsca pamięci</h2>
 

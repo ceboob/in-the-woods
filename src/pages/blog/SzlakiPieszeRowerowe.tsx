@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import forestPanorama from '@/assets/forest-panorama.webp';
-import forestNature from '@/assets/forest-nature.jpg';
+import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
+import blogRowerowa from '@/assets/blog-trasa-rowerowa.jpg';
 import jacuzziNight from '@/assets/jacuzzi-night.jpg';
 
 const SzlakiPieszeRowerowe = () => {
@@ -40,7 +40,7 @@ const SzlakiPieszeRowerowe = () => {
         Ten przewodnik zbiera najlepsze szlaki w okolicy Supraśla: piesze, rowerowe, rodzinne i przyrodnicze. Niezależnie od tego, czy jesteś doświadczonym turystą, czy szukasz łatwej trasy na popołudniowy spacer — znajdziesz tu coś dla siebie.
       </p>
 
-      <img src={forestPanorama} alt="Puszcza Knyszyńska – szlaki piesze i rowerowe Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogSzlak} alt="Puszcza Knyszyńska – szlaki piesze i rowerowe Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Najlepsze szlaki piesze</h2>
 
@@ -96,7 +96,7 @@ const SzlakiPieszeRowerowe = () => {
         Szlak prowadzi przez zróżnicowany teren — od płaskich partii leśnych po łagodne wzniesienia morenowe. Na szczycie Kopnej Góry znajduje się wieża widokowa, z której widać panoramę puszczy.
       </p>
 
-      <img src={forestNature} alt="Szlaki piesze Puszcza Knyszyńska – natura, noclegi Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogRowerowa} alt="Trasy rowerowe Supraśl – Puszcza Knyszyńska" className="w-full rounded-lg my-8" />
 
       <h2>Najlepsze trasy rowerowe</h2>
 

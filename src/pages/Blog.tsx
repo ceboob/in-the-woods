@@ -1,17 +1,17 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, ArrowRight, Calendar, Clock } from 'lucide-react';
-import forestPanorama from '@/assets/forest-panorama.webp';
-import riverKayak from '@/assets/river-kayak.jpg';
-import forestNature from '@/assets/forest-nature.jpg';
-import cabinDay from '@/assets/cabin-day-garden.jpg';
+import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
+import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
+import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
+import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
 
 const articles = [
   {
     slug: 'supraski-system-wodny',
     title: 'Supraski System Wodny – zapomniany cud inżynierii Podlasia',
     excerpt: 'Odkryj fascynującą historię supraskiego systemu wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia, które do dziś zachwyca turystów.',
-    image: riverKayak,
+    image: blogKanal,
     date: '2026-03-10',
     readTime: '12 min',
     keywords: ['Supraski System Wodny', 'atrakcje Supraśl'],
@@ -20,7 +20,7 @@ const articles = [
     slug: 'szlak-powstania-styczniowego-suprasl',
     title: 'Szlak Powstania Styczniowego w Puszczy Knyszyńskiej',
     excerpt: 'Śladami powstańców styczniowych przez najpiękniejsze zakątki Puszczy Knyszyńskiej. Historia, miejsca pamięci i szlaki spacerowe.',
-    image: forestNature,
+    image: blogPomnik,
     date: '2026-03-08',
     readTime: '10 min',
     keywords: ['Szlak Powstania Styczniowego', 'historia Supraśl'],
@@ -29,7 +29,7 @@ const articles = [
     slug: 'suprasl-atrakcje-national-geographic',
     title: 'Supraśl – perła Podlasia według podróżników',
     excerpt: 'Co sprawia, że Supraśl jest jednym z najpiękniejszych miasteczek Podlasia? Architektura, Monaster, Muzeum Ikon i slow tourism.',
-    image: cabinDay,
+    image: blogMonaster,
     date: '2026-03-05',
     readTime: '11 min',
     keywords: ['Supraśl atrakcje', 'co zobaczyć Supraśl'],
@@ -38,7 +38,7 @@ const articles = [
     slug: 'szlaki-piesze-rowerowe-suprasl',
     title: 'Najlepsze szlaki piesze i rowerowe – Supraśl i Puszcza Knyszyńska',
     excerpt: 'Kompletny przewodnik po szlakach pieszych i rowerowych w okolicach Supraśla. Trasy rodzinne, przyrodnicze i dla aktywnych.',
-    image: forestPanorama,
+    image: blogSzlak,
     date: '2026-03-01',
     readTime: '13 min',
     keywords: ['szlaki Supraśl', 'trasy rowerowe Supraśl'],

@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import riverKayak from '@/assets/river-kayak.jpg';
-import forestNature from '@/assets/forest-nature.jpg';
+import blogRzeka from '@/assets/blog-rzeka-suprasl.jpg';
+import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
 import cabinDay from '@/assets/cabin-day-garden.jpg';
 
 const SupraskiSystemWodny = () => {
@@ -40,7 +40,7 @@ const SupraskiSystemWodny = () => {
         Ten rozległy kompleks kanałów, stawów, grobli i młynów, tworzony przez wieki przez mnichów z monasteru bazylianów, stanowi unikatowe świadectwo ludzkiej pomysłowości i harmonijnego współistnienia z naturą. Choć dziś częściowo zapomniany, system ten wciąż zachwyca swoim rozmachem i pozostaje jedną z najciekawszych <Link to="/atrakcje-suprasl">atrakcji Supraśla</Link>.
       </p>
 
-      <img src={riverKayak} alt="Rzeka Supraśl – Supraski System Wodny, atrakcje Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogRzeka} alt="Rzeka Supraśl – Supraski System Wodny, atrakcje Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Historia Supraskiego Systemu Wodnego</h2>
 
@@ -66,7 +66,7 @@ const SupraskiSystemWodny = () => {
         W XVIII wieku system osiągnął swój szczyt rozwoju. Obejmował wówczas kilkanaście stawów hodowlanych, sieć kanałów o łącznej długości przekraczającej 10 kilometrów, kilka młynów wodnych i inne urządzenia przemysłowe. Pod względem skali i zaawansowania technicznego nie miał sobie równych w tej części Europy.
       </p>
 
-      <img src={forestNature} alt="Puszcza Knyszyńska – szlaki turystyczne, noclegi Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogKanal} alt="Kanał Kopanica – Supraski System Wodny, noclegi Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Jak powstał system – inżynieria i natura</h2>
 

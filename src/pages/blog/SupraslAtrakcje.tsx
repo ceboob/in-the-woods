@@ -1,8 +1,8 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import cabinDay from '@/assets/cabin-day-garden.jpg';
+import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
+import blogRzeka from '@/assets/blog-rzeka-suprasl.jpg';
 import exteriorMain from '@/assets/exterior-main.jpg';
-import riverKayak from '@/assets/river-kayak.jpg';
 
 const SupraslAtrakcje = () => {
   const faqs = [
@@ -40,7 +40,7 @@ const SupraslAtrakcje = () => {
         Położone na skraju Puszczy Knyszyńskiej, zaledwie 15 kilometrów od Białegostoku, Supraśl łączy uzdrowiskowy spokój z fascynującą wielokulturowością i bliskością jednych z najcenniejszych lasów w Europie. To idealne miejsce na <Link to="/weekend-suprasl">weekend</Link>, romantyczny wyjazd lub rodzinne wakacje.
       </p>
 
-      <img src={cabinDay} alt="Supraśl okolice – dom w Puszczy Knyszyńskiej, atrakcje Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogMonaster} alt="Monaster Supraśl – atrakcje, co zobaczyć" className="w-full rounded-lg my-8" />
 
       <h2>Dlaczego Supraśl jest wyjątkowy?</h2>
 
@@ -68,7 +68,7 @@ const SupraslAtrakcje = () => {
         Muzeum nie jest jednak tylko zbiorem obrazów — to opowieść o duchowości, tradycji i kunszcie artystycznym, które przez wieki kształtowały kulturę regionu. Ekspozycja jest przemyślanie zaaranżowana, z doskonałym oświetleniem i informacyjnymi opisami, które pozwalają zrozumieć kontekst i symbolikę każdego dzieła.
       </p>
 
-      <img src={riverKayak} alt="Rzeka Supraśl – kajaki, atrakcje Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogRzeka} alt="Rzeka Supraśl – kajaki, atrakcje Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Największe atrakcje Supraśla</h2>
 
