@@ -40,7 +40,7 @@ const SzlakPowstaniaStyczniowego = () => {
         Dziś śladami powstańców można przejść <strong>Szlakiem Powstania Styczniowego</strong> — jednym z najbardziej poruszających szlaków turystycznych w okolicach Supraśla. To trasa, która łączy w sobie historię, naturę i głęboką refleksję, prowadząc przez miejsca bitew, mogiły powstańcze i pomniki pamięci ukryte wśród drzew.
       </p>
 
-      <img src={forestNature} alt="Puszcza Knyszyńska – Szlak Powstania Styczniowego, atrakcje Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogSzlak} alt="Puszcza Knyszyńska – Szlak Powstania Styczniowego, atrakcje Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Historia Powstania w regionie</h2>
 
