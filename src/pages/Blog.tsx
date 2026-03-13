@@ -38,7 +38,7 @@ const articles = [
     slug: 'szlaki-piesze-rowerowe-suprasl',
     title: 'Najlepsze szlaki piesze i rowerowe – Supraśl i Puszcza Knyszyńska',
     excerpt: 'Kompletny przewodnik po szlakach pieszych i rowerowych w okolicach Supraśla. Trasy rodzinne, przyrodnicze i dla aktywnych.',
-    image: forestPanorama,
+    image: blogSzlak,
     date: '2026-03-01',
     readTime: '13 min',
     keywords: ['szlaki Supraśl', 'trasy rowerowe Supraśl'],
