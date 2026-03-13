@@ -62,7 +62,7 @@ const RelaxSection = () => {
             <p>Ogień. Gwiazdy. Cisza. Ciepła woda.</p>
           </div>
           <p className="font-serif text-lg text-foreground/80 italic pt-4">
-            To właśnie esencja odpoczynku w Krzemiennej Chacie.
+            To właśnie esencja odpoczynku w In The Woods.
           </p>
         </div>
       </div>
