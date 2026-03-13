@@ -15,7 +15,7 @@ const HeroSection = () => {
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-tight mb-4 animate-fade-up" style={{ letterSpacing: '0.01em' }}>
-          Krzemienna Chata
+          In The Woods
         </h1>
         <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-cream/70 mb-3 animate-fade-in">
           Noclegi Supraśl · Dom na wynajem w Puszczy Knyszyńskiej
