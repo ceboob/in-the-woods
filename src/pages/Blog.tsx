@@ -122,7 +122,7 @@ const Blog = () => {
       <section className="px-6 md:px-12 py-16 bg-secondary">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="font-serif text-3xl font-light text-foreground">Planujesz wizytę w Supraślu?</h2>
-          <p className="text-muted-foreground">Krzemienna Chata to komfortowy dom w lesie z jacuzzi — idealna baza wypadowa na zwiedzanie okolicy.</p>
+          <p className="text-muted-foreground">In The Woods to komfortowy dom w lesie z jacuzzi — idealna baza wypadowa na zwiedzanie okolicy.</p>
           <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
             <Phone className="w-4 h-4" /> Sprawdź dostępność
           </a>

@@ -155,7 +155,7 @@ const BlogArticleLayout = ({
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="font-serif text-3xl font-light text-foreground">Gdzie nocować w Supraślu?</h2>
           <p className="text-foreground/70 max-w-xl mx-auto">
-            Jeśli szukasz komfortowego noclegu w Supraślu, Krzemienna Chata oferuje prywatny dom w lesie z jacuzzi i kominkiem.
+            Jeśli szukasz komfortowego noclegu w Supraślu, In The Woods oferuje prywatny dom w lesie z jacuzzi i kominkiem.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">

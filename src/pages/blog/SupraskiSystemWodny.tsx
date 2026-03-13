@@ -9,7 +9,7 @@ const SupraskiSystemWodny = () => {
     { question: 'Czym jest Supraski System Wodny?', answer: 'To historyczny system hydrotechniczny zbudowany przez mnichów z monasteru w Supraślu w XVI–XVIII wieku, obejmujący kanały, stawy i młyny wodne. Służył celom gospodarczym i przemysłowym klasztoru.' },
     { question: 'Gdzie można zobaczyć Supraski System Wodny?', answer: 'Pozostałości systemu widoczne są w okolicach Supraśla – wzdłuż rzeki Supraśl, kanału Kopanica oraz w pobliżu monasteru. Najlepiej zwiedzać pieszo lub rowerem.' },
     { question: 'Czy warto odwiedzić kanał Kopanica?', answer: 'Tak, kanał Kopanica to unikatowy zabytek inżynierii wodnej, otoczony pięknym lasem. Idealny na spacer łączący historię z naturą.' },
-    { question: 'Gdzie nocować podczas zwiedzania Supraśla?', answer: 'Krzemienna Chata to komfortowy dom w lesie z jacuzzi, położony blisko Supraśla – idealna baza noclegowa na zwiedzanie regionu.' },
+    { question: 'Gdzie nocować podczas zwiedzania Supraśla?', answer: 'In The Woods to komfortowy dom w lesie z jacuzzi, położony blisko Supraśla – idealna baza noclegowa na zwiedzanie regionu.' },
   ];
 
   const relatedArticles = [
@@ -128,7 +128,7 @@ const SupraskiSystemWodny = () => {
         Zachowały się też fragmenty grobli, ślady dawnych stawów hodowlanych i fundamenty młynów. W okolicach monasteru widoczne są elementy systemu nawadniającego, który zasilał klasztorne ogrody. Wszystko to tworzy fascynujący „szlak wodny", który można zwiedzać pieszo lub rowerem.
       </p>
 
-      <img src={cabinDay} alt="Krzemienna Chata – noclegi Supraśl, dom w lesie" className="w-full rounded-lg my-8" />
+      <img src={cabinDay} alt="In The Woods – noclegi Supraśl, dom w lesie" className="w-full rounded-lg my-8" />
 
       <h2>Dlaczego warto zobaczyć Supraski System Wodny?</h2>
 
@@ -161,7 +161,7 @@ const SupraskiSystemWodny = () => {
       </p>
 
       <p>
-        Jeśli planujesz zwiedzanie Supraśla i szukasz <Link to="/noclegi-suprasl">noclegu w spokojnej okolicy</Link>, Krzemienna Chata oferuje komfortowy dom na wynajem blisko tych atrakcji. To idealna baza do odkrywania zarówno Supraskiego Systemu Wodnego, jak i innych <Link to="/atrakcje-suprasl">atrakcji Supraśla</Link> i Puszczy Knyszyńskiej.
+        Jeśli planujesz zwiedzanie Supraśla i szukasz <Link to="/noclegi-suprasl">noclegu w spokojnej okolicy</Link>, In The Woods oferuje komfortowy dom na wynajem blisko tych atrakcji. To idealna baza do odkrywania zarówno Supraskiego Systemu Wodnego, jak i innych <Link to="/atrakcje-suprasl">atrakcji Supraśla</Link> i Puszczy Knyszyńskiej.
       </p>
     </BlogArticleLayout>
   );

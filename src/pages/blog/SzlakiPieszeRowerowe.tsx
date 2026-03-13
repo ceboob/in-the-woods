@@ -9,7 +9,7 @@ const SzlakiPieszeRowerowe = () => {
     { question: 'Jakie szlaki piesze są w Supraślu?', answer: 'W okolicach Supraśla znajdziesz szlaki przez rezerwat Krzemienne Góry, szlak wzdłuż rzeki Supraśl, Szlak Powstania Styczniowego i wiele tras w Puszczy Knyszyńskiej o różnym stopniu trudności.' },
     { question: 'Czy w Supraślu są trasy rowerowe?', answer: 'Tak – Green Velo przebiega w pobliżu, jest też wiele lokalnych tras leśnych i ścieżek gravelowych w Puszczy Knyszyńskiej.' },
     { question: 'Czy szlaki są odpowiednie dla rodzin z dziećmi?', answer: 'Tak, wiele szlaków jest łatwych i dobrze oznakowanych. Polecamy trasy wzdłuż rzeki i krótkie pętle po rezerwacie.' },
-    { question: 'Gdzie nocować po wędrówce?', answer: 'Krzemienna Chata to dom w lesie z jacuzzi – idealny na regenerację po aktywnym dniu w Puszczy Knyszyńskiej.' },
+    { question: 'Gdzie nocować po wędrówce?', answer: 'In The Woods to dom w lesie z jacuzzi – idealny na regenerację po aktywnym dniu w Puszczy Knyszyńskiej.' },
   ];
 
   const relatedArticles = [
@@ -191,7 +191,7 @@ const SzlakiPieszeRowerowe = () => {
         Najlepsza pora na birdwatching: wczesny ranek (maj–czerwiec) lub późne popołudnie. Lornetka jest niezbędna, a cierpliwość — nagrodzona.
       </p>
 
-      <img src={jacuzziNight} alt="Jacuzzi po wędrówce – Krzemienna Chata, noclegi Supraśl" className="w-full rounded-lg my-8" />
+      <img src={jacuzziNight} alt="Jacuzzi po wędrówce – In The Woods, noclegi Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Praktyczne wskazówki na szlak</h2>
 
@@ -207,11 +207,11 @@ const SzlakiPieszeRowerowe = () => {
       <h2>Po aktywnym dniu — regeneracja</h2>
 
       <p>
-        Po aktywnym dniu warto odpocząć w jacuzzi Krzemiennej Chaty. Gorąca woda, cisza lasu i niebo pełne gwiazd — to najlepszy sposób na regenerację po całodziennej wędrówce lub rajdzie rowerowym po Puszczy Knyszyńskiej.
+        Po aktywnym dniu warto odpocząć w jacuzzi In The Woods. Gorąca woda, cisza lasu i niebo pełne gwiazd — to najlepszy sposób na regenerację po całodziennej wędrówce lub rajdzie rowerowym po Puszczy Knyszyńskiej.
       </p>
 
       <p>
-        <Link to="/noclegi-suprasl">Krzemienna Chata</Link> to prywatny <Link to="/dom-w-lesie-suprasl">dom w lesie</Link> z jacuzzi, kominkiem i pełną kuchnią. Położona w sercu puszczy, blisko Supraśla — idealna baza na aktywny <Link to="/weekend-suprasl">weekend w Supraślu</Link>.
+        <Link to="/noclegi-suprasl">In The Woods</Link> to prywatny <Link to="/dom-w-lesie-suprasl">dom w lesie</Link> z jacuzzi, kominkiem i pełną kuchnią. Położona w sercu puszczy, blisko Supraśla — idealna baza na aktywny <Link to="/weekend-suprasl">weekend w Supraślu</Link>.
       </p>
     </BlogArticleLayout>
   );

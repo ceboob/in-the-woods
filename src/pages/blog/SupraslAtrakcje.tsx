@@ -9,7 +9,7 @@ const SupraslAtrakcje = () => {
     { question: 'Co warto zobaczyć w Supraślu?', answer: 'Najważniejsze atrakcje to Monaster Zwiastowania NMP, Muzeum Ikon, ulica Cieliczańska, rzeka Supraśl, Park Konstytucji 3 Maja oraz okoliczne szlaki w Puszczy Knyszyńskiej.' },
     { question: 'Czy Supraśl nadaje się na weekend?', answer: 'Tak, Supraśl to idealne miejsce na weekendowy wypad. W 2–3 dni można zwiedzić monaster, muzeum, spacerować po puszczy i zrelaksować się w kameralnej atmosferze uzdrowiskowego miasteczka.' },
     { question: 'Jak daleko jest Supraśl od Białegostoku?', answer: 'Supraśl leży zaledwie 15 km od centrum Białegostoku – dojazd samochodem zajmuje ok. 20 minut.' },
-    { question: 'Gdzie nocować w Supraślu?', answer: 'Krzemienna Chata to prywatny dom w lesie z jacuzzi, położony blisko Supraśla w Puszczy Knyszyńskiej – idealny nocleg dla par, rodzin i grup.' },
+    { question: 'Gdzie nocować w Supraślu?', answer: 'In The Woods to prywatny dom w lesie z jacuzzi, położony blisko Supraśla w Puszczy Knyszyńskiej – idealny nocleg dla par, rodzin i grup.' },
   ];
 
   const relatedArticles = [
@@ -111,7 +111,7 @@ const SupraslAtrakcje = () => {
       <h3>Dzień 2: Natura i aktywność</h3>
 
       <p>
-        Rano — <Link to="/blog/szlaki-piesze-rowerowe-suprasl">szlak pieszy lub rowerowy</Link> w Puszczy Knyszyńskiej. Polecamy rezerwat Krzemienne Góry lub <Link to="/blog/szlak-powstania-styczniowego-suprasl">Szlak Powstania Styczniowego</Link>. Po południu — spływ kajakowy rzeką Supraśl lub spacer wzdłuż <Link to="/blog/supraski-system-wodny">Supraskiego Systemu Wodnego</Link>. Wieczorem — rozpalony kominek i jacuzzi w Krzemiennej Chacie.
+        Rano — <Link to="/blog/szlaki-piesze-rowerowe-suprasl">szlak pieszy lub rowerowy</Link> w Puszczy Knyszyńskiej. Polecamy rezerwat Krzemienne Góry lub <Link to="/blog/szlak-powstania-styczniowego-suprasl">Szlak Powstania Styczniowego</Link>. Po południu — spływ kajakowy rzeką Supraśl lub spacer wzdłuż <Link to="/blog/supraski-system-wodny">Supraskiego Systemu Wodnego</Link>. Wieczorem — rozpalony kominek i jacuzzi w In The Woods.
       </p>
 
       <h3>Dzień 3: Slow morning i powrót</h3>
@@ -120,7 +120,7 @@ const SupraslAtrakcje = () => {
         Leniwy poranek z kawą na tarasie w lesie. Odwiedzenie lokalnego targu (w sezonie) lub jeszcze jeden krótki spacer po okolicy. Powrót do domu z poczuciem, że weekend trwał tydzień.
       </p>
 
-      <img src={exteriorMain} alt="Krzemienna Chata – noclegi Supraśl, dom w lesie z jacuzzi" className="w-full rounded-lg my-8" />
+      <img src={exteriorMain} alt="In The Woods – noclegi Supraśl, dom w lesie z jacuzzi" className="w-full rounded-lg my-8" />
 
       <h2>Dlaczego warto nocować blisko natury?</h2>
 
@@ -129,7 +129,7 @@ const SupraslAtrakcje = () => {
       </p>
 
       <p>
-        Jeśli szukasz <Link to="/noclegi-suprasl">noclegu w Supraślu</Link>, sprawdź Krzemienną Chatę — <Link to="/dom-w-lesie-suprasl">dom w lesie</Link> zapewniający ciszę i komfort. Jacuzzi pod gwiazdami, kominek, pełna kuchnia i ogród w sercu Puszczy Knyszyńskiej. To baza wypadowa, która sama w sobie jest atrakcją.
+        Jeśli szukasz <Link to="/noclegi-suprasl">noclegu w Supraślu</Link>, sprawdź In The Woods — <Link to="/dom-w-lesie-suprasl">dom w lesie</Link> zapewniający ciszę i komfort. Jacuzzi pod gwiazdami, kominek, pełna kuchnia i ogród w sercu Puszczy Knyszyńskiej. To baza wypadowa, która sama w sobie jest atrakcją.
       </p>
 
       <h2>Supraśl w różnych porach roku</h2>
