@@ -6,6 +6,7 @@ interface SEOPageLayoutProps {
   children: ReactNode;
   title: string;
   description: string;
+  breadcrumbName?: string;
 }
 
 const SEOPageLayout = ({ children, title, description }: SEOPageLayoutProps) => {
