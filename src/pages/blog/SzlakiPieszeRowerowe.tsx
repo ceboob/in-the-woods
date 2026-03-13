@@ -211,7 +211,7 @@ const SzlakiPieszeRowerowe = () => {
       </p>
 
       <p>
-        <Link to="/noclegi-suprasl">Krzemienna Chata</Link> to prywatny <Link to="/dom-w-lesie-suprasl">dom w lesie</Link> z jacuzzi, kominkiem i pełną kuchnią. Położona w sercu puszczy, blisko Supraśla — idealna baza na aktywny <Link to="/weekend-suprasl">weekend w Supraślu</Link>.
+        <Link to="/noclegi-suprasl">In The Woods</Link> to prywatny <Link to="/dom-w-lesie-suprasl">dom w lesie</Link> z jacuzzi, kominkiem i pełną kuchnią. Położona w sercu puszczy, blisko Supraśla — idealna baza na aktywny <Link to="/weekend-suprasl">weekend w Supraślu</Link>.
       </p>
     </BlogArticleLayout>
   );

@@ -136,7 +136,7 @@ const SzlakPowstaniaStyczniowego = () => {
       <h2>Nocleg w okolicach szlaku</h2>
 
       <p>
-        Krzemienna Chata to idealna baza noclegowa dla osób chcących odkrywać historyczne szlaki Supraśla. Prywatny <Link to="/dom-w-lesie-suprasl">dom w lesie</Link> z jacuzzi i kominkiem, położony w Puszczy Knyszyńskiej, zapewnia komfort i ciszę po całym dniu wędrówki.
+        In The Woods to idealna baza noclegowa dla osób chcących odkrywać historyczne szlaki Supraśla. Prywatny <Link to="/dom-w-lesie-suprasl">dom w lesie</Link> z jacuzzi i kominkiem, położony w Puszczy Knyszyńskiej, zapewnia komfort i ciszę po całym dniu wędrówki.
       </p>
 
       <p>

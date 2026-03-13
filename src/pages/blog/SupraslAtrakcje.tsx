@@ -129,7 +129,7 @@ const SupraslAtrakcje = () => {
       </p>
 
       <p>
-        Jeśli szukasz <Link to="/noclegi-suprasl">noclegu w Supraślu</Link>, sprawdź Krzemienną Chatę — <Link to="/dom-w-lesie-suprasl">dom w lesie</Link> zapewniający ciszę i komfort. Jacuzzi pod gwiazdami, kominek, pełna kuchnia i ogród w sercu Puszczy Knyszyńskiej. To baza wypadowa, która sama w sobie jest atrakcją.
+        Jeśli szukasz <Link to="/noclegi-suprasl">noclegu w Supraślu</Link>, sprawdź In The Woods — <Link to="/dom-w-lesie-suprasl">dom w lesie</Link> zapewniający ciszę i komfort. Jacuzzi pod gwiazdami, kominek, pełna kuchnia i ogród w sercu Puszczy Knyszyńskiej. To baza wypadowa, która sama w sobie jest atrakcją.
       </p>
 
       <h2>Supraśl w różnych porach roku</h2>

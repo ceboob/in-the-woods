@@ -161,7 +161,7 @@ const SupraskiSystemWodny = () => {
       </p>
 
       <p>
-        Jeśli planujesz zwiedzanie Supraśla i szukasz <Link to="/noclegi-suprasl">noclegu w spokojnej okolicy</Link>, Krzemienna Chata oferuje komfortowy dom na wynajem blisko tych atrakcji. To idealna baza do odkrywania zarówno Supraskiego Systemu Wodnego, jak i innych <Link to="/atrakcje-suprasl">atrakcji Supraśla</Link> i Puszczy Knyszyńskiej.
+        Jeśli planujesz zwiedzanie Supraśla i szukasz <Link to="/noclegi-suprasl">noclegu w spokojnej okolicy</Link>, In The Woods oferuje komfortowy dom na wynajem blisko tych atrakcji. To idealna baza do odkrywania zarówno Supraskiego Systemu Wodnego, jak i innych <Link to="/atrakcje-suprasl">atrakcji Supraśla</Link> i Puszczy Knyszyńskiej.
       </p>
     </BlogArticleLayout>
   );
