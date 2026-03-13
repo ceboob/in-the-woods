@@ -191,7 +191,7 @@ const SzlakiPieszeRowerowe = () => {
         Najlepsza pora na birdwatching: wczesny ranek (maj–czerwiec) lub późne popołudnie. Lornetka jest niezbędna, a cierpliwość — nagrodzona.
       </p>
 
-      <img src={jacuzziNight} alt="Jacuzzi po wędrówce – Krzemienna Chata, noclegi Supraśl" className="w-full rounded-lg my-8" />
+      <img src={jacuzziNight} alt="Jacuzzi po wędrówce – In The Woods, noclegi Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Praktyczne wskazówki na szlak</h2>
 
