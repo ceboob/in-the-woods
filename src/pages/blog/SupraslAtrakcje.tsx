@@ -9,7 +9,7 @@ const SupraslAtrakcje = () => {
     { question: 'Co warto zobaczyć w Supraślu?', answer: 'Najważniejsze atrakcje to Monaster Zwiastowania NMP, Muzeum Ikon, ulica Cieliczańska, rzeka Supraśl, Park Konstytucji 3 Maja oraz okoliczne szlaki w Puszczy Knyszyńskiej.' },
     { question: 'Czy Supraśl nadaje się na weekend?', answer: 'Tak, Supraśl to idealne miejsce na weekendowy wypad. W 2–3 dni można zwiedzić monaster, muzeum, spacerować po puszczy i zrelaksować się w kameralnej atmosferze uzdrowiskowego miasteczka.' },
     { question: 'Jak daleko jest Supraśl od Białegostoku?', answer: 'Supraśl leży zaledwie 15 km od centrum Białegostoku – dojazd samochodem zajmuje ok. 20 minut.' },
-    { question: 'Gdzie nocować w Supraślu?', answer: 'Krzemienna Chata to prywatny dom w lesie z jacuzzi, położony blisko Supraśla w Puszczy Knyszyńskiej – idealny nocleg dla par, rodzin i grup.' },
+    { question: 'Gdzie nocować w Supraślu?', answer: 'In The Woods to prywatny dom w lesie z jacuzzi, położony blisko Supraśla w Puszczy Knyszyńskiej – idealny nocleg dla par, rodzin i grup.' },
   ];
 
   const relatedArticles = [
