@@ -6,7 +6,7 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
         <div className="text-center md:text-left">
-          <p className="font-serif text-xl text-cream mb-1">In The Woods</p>
+          <p className="font-serif text-xl text-cream mb-1">In The Woods – noclegi Supraśl</p>
           <p className="text-xs tracking-wider mb-3">Dom w Puszczy · Supraśl · Podlasie</p>
           <p className="text-xs text-cream/50">Konne 109/1, 16-030 Supraśl</p>
           <p className="text-xs text-cream/50">Gospodarz: Maciej</p>
