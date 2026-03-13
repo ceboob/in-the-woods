@@ -9,7 +9,7 @@ Deno.serve(async (req) => {
   }
 
   try {
-    const icalUrl = 'https://ical.booking.com/v1/export?t=d559af2c-801c-48b1-b8c8-2cff307403f5';
+    const icalUrl = 'https://www.airbnb.pl/calendar/ical/1165170256851279014.ics?t=d357c9fac8df4263a54c66683ed05f43';
     
     const response = await fetch(icalUrl);
     if (!response.ok) {
