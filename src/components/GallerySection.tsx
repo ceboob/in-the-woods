@@ -20,7 +20,7 @@ const images = [
   { src: livingFireplace, alt: 'Salon z kominkiem i drewnianym wnętrzem — dom na wynajem Supraśl', className: 'col-span-1 row-span-1' },
   { src: terracePorch, alt: 'Taras z sofą w otoczeniu Puszczy Knyszyńskiej — weekend Supraśl', className: 'col-span-1 row-span-1' },
   { src: kitchenBrick, alt: 'Kuchnia z ceglanym piecem i ceramiką — wnętrze chaty Supraśl', className: 'col-span-1 row-span-1' },
-  { src: terraceBreakfast, alt: 'Śniadanie na tarasie z widokiem na las — Krzemienna Chata Supraśl', className: 'col-span-1 row-span-1' },
+  { src: terraceBreakfast, alt: 'Śniadanie na tarasie z widokiem na las — In The Woods Supraśl', className: 'col-span-1 row-span-1' },
   { src: winterGolden, alt: 'Drewniana chata w złotym zimowym świetle — noclegi Puszcza Knyszyńska', className: 'col-span-2 row-span-1' },
   { src: interiorImg, alt: 'Przytulny salon z drewnianymi belkami — dom w lesie Supraśl', className: 'col-span-1 row-span-1' },
   { src: bedroomImg, alt: 'Sypialnia z dużym łóżkiem — komfortowy nocleg Supraśl', className: 'col-span-1 row-span-1' },
