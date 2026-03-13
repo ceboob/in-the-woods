@@ -47,11 +47,11 @@ const BeforeAfterSlider = () => {
           onPointerUp={handlePointerUp}
         >
           {/* Night (background) */}
-          <img src={cabinNight} alt="In The Woods nocą — chata pod gwiazdami" className="absolute inset-0 w-full h-full object-cover object-bottom" draggable={false} />
+          <img src={cabinNight} alt="In The Woods nocą — chata pod gwiazdami" className="absolute inset-0 w-full h-full object-cover object-center" draggable={false} />
           
           {/* Day (clipped) */}
           <div className="absolute inset-0 overflow-hidden" style={{ width: `${sliderPos}%` }}>
-            <img src={cabinDay} alt="In The Woods w dzień — chata w słońcu" className="absolute inset-0 w-full h-full object-cover object-bottom" style={{ width: `${containerRef.current ? containerRef.current.offsetWidth : 1000}px`, maxWidth: 'none' }} draggable={false} />
+            <img src={cabinDay} alt="In The Woods w dzień — chata w słońcu" className="absolute inset-0 w-full h-full object-cover object-center" style={{ width: `${containerRef.current ? containerRef.current.offsetWidth : 1000}px`, maxWidth: 'none' }} draggable={false} />
           </div>
 
           {/* Slider line */}
