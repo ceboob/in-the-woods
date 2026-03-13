@@ -41,17 +41,17 @@ const BeforeAfterSlider = () => {
 
         <div
           ref={containerRef}
-          className="relative w-full aspect-[16/10] md:aspect-[16/9] rounded-xl overflow-hidden cursor-col-resize select-none touch-none"
+          className="relative w-full aspect-[4/5] sm:aspect-[3/4] md:aspect-[16/10] rounded-xl overflow-hidden cursor-col-resize select-none touch-none"
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
         >
           {/* Night (background) */}
-          <img src={cabinNight} alt="In The Woods nocą — chata pod gwiazdami" className="absolute inset-0 w-full h-full object-cover" draggable={false} />
+          <img src={cabinNight} alt="In The Woods nocą — chata pod gwiazdami" className="absolute inset-0 w-full h-full object-cover object-bottom" draggable={false} />
           
           {/* Day (clipped) */}
           <div className="absolute inset-0 overflow-hidden" style={{ width: `${sliderPos}%` }}>
-            <img src={cabinDay} alt="In The Woods w dzień — chata w słońcu" className="absolute inset-0 w-full h-full object-cover" style={{ width: `${containerRef.current ? containerRef.current.offsetWidth : 1000}px`, maxWidth: 'none' }} draggable={false} />
+            <img src={cabinDay} alt="In The Woods w dzień — chata w słońcu" className="absolute inset-0 w-full h-full object-cover object-bottom" style={{ width: `${containerRef.current ? containerRef.current.offsetWidth : 1000}px`, maxWidth: 'none' }} draggable={false} />
           </div>
 
           {/* Slider line */}
