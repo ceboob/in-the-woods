@@ -40,7 +40,7 @@ const SupraslAtrakcje = () => {
         Położone na skraju Puszczy Knyszyńskiej, zaledwie 15 kilometrów od Białegostoku, Supraśl łączy uzdrowiskowy spokój z fascynującą wielokulturowością i bliskością jednych z najcenniejszych lasów w Europie. To idealne miejsce na <Link to="/weekend-suprasl">weekend</Link>, romantyczny wyjazd lub rodzinne wakacje.
       </p>
 
-      <img src={cabinDay} alt="Supraśl okolice – dom w Puszczy Knyszyńskiej, atrakcje Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogMonaster} alt="Monaster Supraśl – atrakcje, co zobaczyć" className="w-full rounded-lg my-8" />
 
       <h2>Dlaczego Supraśl jest wyjątkowy?</h2>
 
