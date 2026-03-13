@@ -207,7 +207,7 @@ const SzlakiPieszeRowerowe = () => {
       <h2>Po aktywnym dniu — regeneracja</h2>
 
       <p>
-        Po aktywnym dniu warto odpocząć w jacuzzi Krzemiennej Chaty. Gorąca woda, cisza lasu i niebo pełne gwiazd — to najlepszy sposób na regenerację po całodziennej wędrówce lub rajdzie rowerowym po Puszczy Knyszyńskiej.
+        Po aktywnym dniu warto odpocząć w jacuzzi In The Woods. Gorąca woda, cisza lasu i niebo pełne gwiazd — to najlepszy sposób na regenerację po całodziennej wędrówce lub rajdzie rowerowym po Puszczy Knyszyńskiej.
       </p>
 
       <p>
