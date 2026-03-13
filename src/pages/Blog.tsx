@@ -29,7 +29,7 @@ const articles = [
     slug: 'suprasl-atrakcje-national-geographic',
     title: 'Supraśl – perła Podlasia według podróżników',
     excerpt: 'Co sprawia, że Supraśl jest jednym z najpiękniejszych miasteczek Podlasia? Architektura, Monaster, Muzeum Ikon i slow tourism.',
-    image: cabinDay,
+    image: blogMonaster,
     date: '2026-03-05',
     readTime: '11 min',
     keywords: ['Supraśl atrakcje', 'co zobaczyć Supraśl'],
