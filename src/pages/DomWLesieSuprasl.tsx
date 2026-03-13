@@ -5,6 +5,7 @@ const DomWLesieSuprasl = () => (
   <SEOPageLayout
     title="Dom w lesie Supraśl – domek w Puszczy Knyszyńskiej | In The Woods"
     description="Dom w lesie blisko Supraśla — prywatny domek w Puszczy Knyszyńskiej na wyłączność. Slow travel, natura, kominek i ruska bania. Nocleg Podlasie."
+    breadcrumbName="Dom w lesie Supraśl"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">Dom w lesie blisko Supraśla – slow travel w Puszczy Knyszyńskiej</h1>
