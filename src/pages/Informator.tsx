@@ -48,7 +48,7 @@ const Informator = () => {
       <header className="max-w-4xl mx-auto px-6 md:px-12 pt-12 pb-8 text-center">
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-4">Informator gościa</p>
         <h1 className="font-serif text-3xl md:text-5xl font-light text-foreground mb-6">
-          Witamy w Krzemiennej Chacie
+          Witamy w In The Woods
         </h1>
         <div className="w-16 h-px bg-forest mx-auto mb-8" />
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
