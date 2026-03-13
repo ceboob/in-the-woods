@@ -128,7 +128,7 @@ const SupraskiSystemWodny = () => {
         Zachowały się też fragmenty grobli, ślady dawnych stawów hodowlanych i fundamenty młynów. W okolicach monasteru widoczne są elementy systemu nawadniającego, który zasilał klasztorne ogrody. Wszystko to tworzy fascynujący „szlak wodny", który można zwiedzać pieszo lub rowerem.
       </p>
 
-      <img src={cabinDay} alt="Krzemienna Chata – noclegi Supraśl, dom w lesie" className="w-full rounded-lg my-8" />
+      <img src={cabinDay} alt="In The Woods – noclegi Supraśl, dom w lesie" className="w-full rounded-lg my-8" />
 
       <h2>Dlaczego warto zobaczyć Supraski System Wodny?</h2>
 
