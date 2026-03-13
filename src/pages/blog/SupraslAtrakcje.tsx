@@ -68,7 +68,7 @@ const SupraslAtrakcje = () => {
         Muzeum nie jest jednak tylko zbiorem obrazów — to opowieść o duchowości, tradycji i kunszcie artystycznym, które przez wieki kształtowały kulturę regionu. Ekspozycja jest przemyślanie zaaranżowana, z doskonałym oświetleniem i informacyjnymi opisami, które pozwalają zrozumieć kontekst i symbolikę każdego dzieła.
       </p>
 
-      <img src={riverKayak} alt="Rzeka Supraśl – kajaki, atrakcje Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogRzeka} alt="Rzeka Supraśl – kajaki, atrakcje Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Największe atrakcje Supraśla</h2>
 

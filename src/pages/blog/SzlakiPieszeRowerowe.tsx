@@ -96,7 +96,7 @@ const SzlakiPieszeRowerowe = () => {
         Szlak prowadzi przez zróżnicowany teren — od płaskich partii leśnych po łagodne wzniesienia morenowe. Na szczycie Kopnej Góry znajduje się wieża widokowa, z której widać panoramę puszczy.
       </p>
 
-      <img src={forestNature} alt="Szlaki piesze Puszcza Knyszyńska – natura, noclegi Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogRowerowa} alt="Trasy rowerowe Supraśl – Puszcza Knyszyńska" className="w-full rounded-lg my-8" />
 
       <h2>Najlepsze trasy rowerowe</h2>
 

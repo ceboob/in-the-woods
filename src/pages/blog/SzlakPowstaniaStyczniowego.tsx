@@ -66,7 +66,7 @@ const SzlakPowstaniaStyczniowego = () => {
         Mniejsze potyczki i zasadzki miały miejsce w dziesiątkach punktów rozsianych po całej puszczy. Powstańcy atakowali posterunki, przechwytywali transporty i prowadzili wojnę podjazdową, która przez miesiące wiązała znaczne siły carskie.
       </p>
 
-      <img src={forestPanorama} alt="Puszcza Knyszyńska panorama – szlaki historyczne Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogPomnik} alt="Pomnik Powstania Styczniowego – Puszcza Knyszyńska, historia Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Miejsca pamięci</h2>
 

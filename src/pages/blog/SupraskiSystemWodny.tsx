@@ -66,7 +66,7 @@ const SupraskiSystemWodny = () => {
         W XVIII wieku system osiągnął swój szczyt rozwoju. Obejmował wówczas kilkanaście stawów hodowlanych, sieć kanałów o łącznej długości przekraczającej 10 kilometrów, kilka młynów wodnych i inne urządzenia przemysłowe. Pod względem skali i zaawansowania technicznego nie miał sobie równych w tej części Europy.
       </p>
 
-      <img src={forestNature} alt="Puszcza Knyszyńska – szlaki turystyczne, noclegi Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogKanal} alt="Kanał Kopanica – Supraski System Wodny, noclegi Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Jak powstał system – inżynieria i natura</h2>
 
