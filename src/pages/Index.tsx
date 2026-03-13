@@ -21,7 +21,7 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import SEOTextSection from '@/components/SEOTextSection';
 import AvailabilityCalendar from '@/components/AvailabilityCalendar';
-import BeforeAfterSlider from '@/components/BeforeAfterSlider';
+
 import ExitIntentPopup from '@/components/ExitIntentPopup';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
 
@@ -35,7 +35,7 @@ const Index = () => {
         <TrustSection />
         <AmenitiesSection />
         <JacuzziSection />
-        <BeforeAfterSlider />
+        
         <RelaxSection />
         <ExperienceSection />
         <ForWhoSection />
