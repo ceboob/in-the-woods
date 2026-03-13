@@ -40,7 +40,7 @@ const SzlakiPieszeRowerowe = () => {
         Ten przewodnik zbiera najlepsze szlaki w okolicy Supraśla: piesze, rowerowe, rodzinne i przyrodnicze. Niezależnie od tego, czy jesteś doświadczonym turystą, czy szukasz łatwej trasy na popołudniowy spacer — znajdziesz tu coś dla siebie.
       </p>
 
-      <img src={forestPanorama} alt="Puszcza Knyszyńska – szlaki piesze i rowerowe Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogSzlak} alt="Puszcza Knyszyńska – szlaki piesze i rowerowe Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Najlepsze szlaki piesze</h2>
 
