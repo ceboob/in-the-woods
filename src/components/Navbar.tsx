@@ -60,6 +60,9 @@ const Navbar = () => {
               {l.label}
             </button>
           ))}
+          <Link to="/blog" className="block nav-link text-foreground/70 hover:text-foreground w-full text-left" onClick={() => setMenuOpen(false)}>
+            Blog
+          </Link>
           <button onClick={() => handleClick('#rezerwacja')} className="btn-primary text-xs py-2.5 px-6 w-full">
             Rezerwuj
           </button>
