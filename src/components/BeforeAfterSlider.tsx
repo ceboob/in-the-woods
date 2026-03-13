@@ -1,8 +1,8 @@
 import { useState, useRef, useCallback } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Sun, Moon } from 'lucide-react';
-import jacuzziNight from '@/assets/jacuzzi-night.jpg';
-import gardenDay from '@/assets/garden-firepit.webp';
+import cabinNight from '@/assets/cabin-night-stars.jpg';
+import cabinDay from '@/assets/cabin-day-garden.jpg';
 
 const BeforeAfterSlider = () => {
   const { ref, isVisible } = useScrollAnimation();
