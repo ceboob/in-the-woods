@@ -64,6 +64,8 @@ const BookingModule = () => {
           <p className="section-subtitle mx-auto">Wypełnij formularz — odpowiemy zwykle w kilka godzin.</p>
         </div>
 
+        <SocialProof />
+
         <div className="card-premium bg-warm-white">
           {step === 'sent' ?
           <div className="text-center py-12 space-y-4">

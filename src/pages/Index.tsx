@@ -34,6 +34,7 @@ const Index = () => {
         <TrustSection />
         <AmenitiesSection />
         <JacuzziSection />
+        <BeforeAfterSlider />
         <RelaxSection />
         <ExperienceSection />
         <ForWhoSection />
@@ -43,6 +44,7 @@ const Index = () => {
         <LocationSection />
         <PricingSection />
         <CTASection />
+        <AvailabilityCalendar />
         <BookingModule />
         <TestimonialsSection />
         <FAQSection />
@@ -51,6 +53,7 @@ const Index = () => {
         <ContactSection />
       </main>
       <Footer />
+      <ExitIntentPopup />
     </div>
   );
 };
