@@ -12,7 +12,7 @@ const AboutSection = () => {
           <h2 className="section-title">Tam, gdzie las<br />opowiada historie</h2>
           <div className="space-y-4 section-subtitle">
             <p>
-              Krzemienna Chata to drewniany dom z bala ukryty w sercu Puszczy Knyszyńskiej, 
+              In The Woods to drewniany dom z bala ukryty w sercu Puszczy Knyszyńskiej, 
               tuż przy rezerwacie przyrody Krzemienne Góry. Miejsce, które zabierasz na wyłączność — 
               z dala od zgiełku, blisko tego, co naprawdę ważne.
             </p>
