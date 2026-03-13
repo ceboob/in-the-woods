@@ -32,7 +32,7 @@ const NatureSection = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-6">
             <p className="section-subtitle">
-              Krzemienna Chata leży przy rezerwacie przyrody Krzemienne Góry, w otoczeniu jednego 
+              In The Woods leży przy rezerwacie przyrody Krzemienne Góry, w otoczeniu jednego 
               z najcenniejszych kompleksów leśnych w Polsce. Rzeka Supraśl płynie nieopodal, 
               a urokliwy Supraśl z Monasterem i klimatycznymi kawiarniami jest na wyciągnięcie ręki.
             </p>

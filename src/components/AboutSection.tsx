@@ -12,7 +12,7 @@ const AboutSection = () => {
           <h2 className="section-title">Tam, gdzie las<br />opowiada historie</h2>
           <div className="space-y-4 section-subtitle">
             <p>
-              Krzemienna Chata to drewniany dom z bala ukryty w sercu Puszczy Knyszyńskiej, 
+              In The Woods to drewniany dom z bala ukryty w sercu Puszczy Knyszyńskiej, 
               tuż przy rezerwacie przyrody Krzemienne Góry. Miejsce, które zabierasz na wyłączność — 
               z dala od zgiełku, blisko tego, co naprawdę ważne.
             </p>
@@ -26,7 +26,7 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img src={interiorImg} alt="Krzemienna Chata — widok z zewnątrz na drewnianą chatę z bala" className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700" />
+          <img src={interiorImg} alt="In The Woods — widok z zewnątrz na drewnianą chatę z bala" className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700" />
         </div>
       </div>
     </section>

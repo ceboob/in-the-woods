@@ -7,12 +7,12 @@ import {
 } from '@/components/ui/accordion';
 
 const faqs = [
-  { q: 'Gdzie znajduje się Krzemienna Chata?', a: 'Dom znajduje się w miejscowości Konne koło Supraśla, w Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku.' },
-  { q: 'Gdzie nocować w Supraślu?', a: 'Krzemienna Chata to prywatny dom na wynajem w Puszczy Knyszyńskiej, zaledwie 10 minut od centrum Supraśla. Idealny nocleg w Supraślu dla par, rodzin i grup przyjaciół szukających ciszy i natury.' },
-  { q: 'Czy są domy na wynajem w Supraślu?', a: 'Tak — Krzemienna Chata to dom na wyłączność blisko Supraśla, w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania i pełna prywatność. Idealny dom na wynajem w okolicach Supraśla.' },
-  { q: 'Czy można wynająć dom w Puszczy Knyszyńskiej?', a: 'Tak, Krzemienna Chata znajduje się w sercu Puszczy Knyszyńskiej przy rezerwacie Krzemienne Góry. To jeden z nielicznych domów na wynajem otoczonych prawdziwą puszczą.' },
-  { q: 'Czy Supraśl jest dobry na weekend?', a: 'Supraśl to idealne miejsce na weekend — uzdrowiskowe miasteczko z Monasterem, Muzeum Ikon, kawiarniami i szlakami w Puszczy Knyszyńskiej. Krzemienna Chata to najlepsza baza wypadowa na weekend w Supraślu.' },
-  { q: 'Czy są noclegi z jacuzzi w Supraślu?', a: 'Krzemienna Chata oferuje prywatną ruską banię z balią z gorącą wodą — idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu za 250 zł.' },
+  { q: 'Gdzie znajduje się In The Woods?', a: 'Dom znajduje się w miejscowości Konne koło Supraśla, w Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku.' },
+  { q: 'Gdzie nocować w Supraślu?', a: 'In The Woods to prywatny dom na wynajem w Puszczy Knyszyńskiej, zaledwie 10 minut od centrum Supraśla. Idealny nocleg w Supraślu dla par, rodzin i grup przyjaciół szukających ciszy i natury.' },
+  { q: 'Czy są domy na wynajem w Supraślu?', a: 'Tak — In The Woods to dom na wyłączność blisko Supraśla, w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania i pełna prywatność. Idealny dom na wynajem w okolicach Supraśla.' },
+  { q: 'Czy można wynająć dom w Puszczy Knyszyńskiej?', a: 'Tak, In The Woods znajduje się w sercu Puszczy Knyszyńskiej przy rezerwacie Krzemienne Góry. To jeden z nielicznych domów na wynajem otoczonych prawdziwą puszczą.' },
+  { q: 'Czy Supraśl jest dobry na weekend?', a: 'Supraśl to idealne miejsce na weekend — uzdrowiskowe miasteczko z Monasterem, Muzeum Ikon, kawiarniami i szlakami w Puszczy Knyszyńskiej. In The Woods to najlepsza baza wypadowa na weekend w Supraślu.' },
+  { q: 'Czy są noclegi z jacuzzi w Supraślu?', a: 'In The Woods oferuje prywatną ruską banię z balią z gorącą wodą — idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu za 250 zł.' },
   { q: 'Czy jest jacuzzi / ruska bania?', a: 'Tak — do dyspozycji gości jest prywatna ruska bania z balią z gorącą wodą, dostępna jako opcjonalny dodatek do pobytu za 250 zł.' },
   { q: 'Czy dom jest prywatny?', a: 'Tak — dom i cały ogród wynajmujecie na wyłączność. Żadnych innych gości.' },
   { q: 'Czy można przyjechać z psem?', a: 'Tak, zwierzęta są mile widziane. Pobyt z psem jest bezpłatny. Ogrodzony ogród i las za progiem to raj dla czworonogów.' },

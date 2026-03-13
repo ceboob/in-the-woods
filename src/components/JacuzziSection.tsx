@@ -15,7 +15,7 @@ const JacuzziSection = () => {
   return (
     <section id="jacuzzi" className="relative">
       <div className="relative h-[50vh] min-h-[400px]">
-        <img src={jacuzziImg} alt="Jacuzzi Supraśl — prywatna ruska bania nocą w Krzemiennej Chacie" className="w-full h-full object-cover" />
+        <img src={jacuzziImg} alt="Jacuzzi Supraśl — prywatna ruska bania nocą w In The Woods" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-graphite/40" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">

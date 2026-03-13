@@ -22,7 +22,7 @@ const SEOPageLayout = ({ children, title, description }: SEOPageLayoutProps) => 
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
           <Link to="/" className="font-serif text-xl font-light tracking-wide text-foreground">
-            Krzemienna Chata
+            In The Woods
           </Link>
           <div className="hidden md:flex items-center gap-6">
             <Link to="/noclegi-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Noclegi</Link>
@@ -67,7 +67,7 @@ const SEOPageLayout = ({ children, title, description }: SEOPageLayoutProps) => 
       {/* Footer */}
       <footer className="bg-graphite text-cream/70 px-6 md:px-12 py-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <p className="font-serif text-lg text-cream">Krzemienna Chata</p>
+          <p className="font-serif text-lg text-cream">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <Link to="/" className="hover:text-cream transition-colors">Strona główna</Link>
             <Link to="/noclegi-suprasl" className="hover:text-cream transition-colors">Noclegi Supraśl</Link>
@@ -76,7 +76,7 @@ const SEOPageLayout = ({ children, title, description }: SEOPageLayoutProps) => 
             <Link to="/atrakcje-suprasl" className="hover:text-cream transition-colors">Atrakcje Supraśla</Link>
             <Link to="/puszcza-knyszynska-nocleg" className="hover:text-cream transition-colors">Puszcza Knyszyńska</Link>
           </div>
-          <p className="text-xs text-cream/40">© 2026 Krzemienna Chata. Wszelkie prawa zastrzeżone.</p>
+          <p className="text-xs text-cream/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
         </div>
       </footer>
     </div>

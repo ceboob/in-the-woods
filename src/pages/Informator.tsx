@@ -14,9 +14,9 @@ import {
 
 const Informator = () => {
   useEffect(() => {
-    document.title = 'Informator gościa – Krzemienna Chata Supraśl';
+    document.title = 'Informator gościa – In The Woods Supraśl';
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Informator gościa Krzemienna Chata – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl.');
+    if (metaDesc) metaDesc.setAttribute('content', 'Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl.');
     window.scrollTo(0, 0);
   }, []);
 
@@ -26,7 +26,7 @@ const Informator = () => {
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
           <Link to="/" className="font-serif text-xl font-light tracking-wide text-foreground">
-            Krzemienna Chata
+            In The Woods
           </Link>
           <div className="hidden md:flex items-center gap-6">
             <Link to="/" className="nav-link text-foreground/70 hover:text-foreground">Strona główna</Link>
@@ -48,7 +48,7 @@ const Informator = () => {
       <header className="max-w-4xl mx-auto px-6 md:px-12 pt-12 pb-8 text-center">
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-4">Informator gościa</p>
         <h1 className="font-serif text-3xl md:text-5xl font-light text-foreground mb-6">
-          Witamy w Krzemiennej Chacie
+          Witamy w In The Woods
         </h1>
         <div className="w-16 h-px bg-forest mx-auto mb-8" />
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
@@ -64,7 +64,7 @@ const Informator = () => {
       {/* Photo strip */}
       <div className="max-w-5xl mx-auto px-6 md:px-12 pb-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
-          <img src={guestGuideBook} alt="Informator gościa — książka powitalna Krzemienna Chata Supraśl" className="w-full h-[180px] md:h-[220px] object-cover rounded-lg" loading="lazy" />
+          <img src={guestGuideBook} alt="Informator gościa — książka powitalna In The Woods Supraśl" className="w-full h-[180px] md:h-[220px] object-cover rounded-lg" loading="lazy" />
           <img src={livingWide} alt="Salon z kominkiem i fotele — wnętrze domu na wynajem Supraśl" className="w-full h-[180px] md:h-[220px] object-cover rounded-lg" loading="lazy" />
           <img src={stoveDetail} alt="Kaflowy piec kuchenny — tradycyjne ogrzewanie chaty w Puszczy Knyszyńskiej" className="w-full h-[180px] md:h-[220px] object-cover rounded-lg" loading="lazy" />
           <img src={kitchenBrick} alt="Kuchnia z ceglanym piecem i porcelaną — dom Supraśl kuchnia" className="w-full h-[180px] md:h-[220px] object-cover rounded-lg" loading="lazy" />
@@ -383,7 +383,7 @@ const Informator = () => {
           <div className="w-16 h-px bg-forest mx-auto" />
           <p className="text-muted-foreground text-sm leading-relaxed max-w-lg mx-auto">
             Dziękujemy za zapoznanie się z informatorem. Życzymy spokojnego 
-            i regenerującego pobytu w Krzemiennej Chacie.
+            i regenerującego pobytu w In The Woods.
           </p>
           <p className="font-serif text-lg text-foreground">— Maciej, gospodarz</p>
         </div>
@@ -392,13 +392,13 @@ const Informator = () => {
       {/* Footer */}
       <footer className="bg-graphite text-cream/70 px-6 md:px-12 py-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <p className="font-serif text-lg text-cream">Krzemienna Chata</p>
+          <p className="font-serif text-lg text-cream">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <Link to="/" className="hover:text-cream transition-colors">Strona główna</Link>
             <Link to="/noclegi-suprasl" className="hover:text-cream transition-colors">Noclegi Supraśl</Link>
             <Link to="/informator" className="hover:text-cream transition-colors">Informator gościa</Link>
           </div>
-          <p className="text-xs text-cream/40">© 2026 Krzemienna Chata. Wszelkie prawa zastrzeżone.</p>
+          <p className="text-xs text-cream/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
         </div>
       </footer>
     </div>

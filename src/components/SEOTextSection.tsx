@@ -14,7 +14,7 @@ const SEOTextSection = () => {
         <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground leading-relaxed">
           <p>
             Jeśli szukasz <strong>noclegu w Supraślu</strong>, oferujemy wyjątkowy dom na wynajem położony w sercu Puszczy Knyszyńskiej.
-            Krzemienna Chata to idealna alternatywa dla hotelu — prywatny dom zapewniający ciszę, naturę i komfort pobytu.
+            In The Woods to idealna alternatywa dla hotelu — prywatny dom zapewniający ciszę, naturę i komfort pobytu.
           </p>
           <p>
             Obiekt znajduje się blisko <strong>Supraśla</strong> — jednego z najpiękniejszych uzdrowisk Podlasia. 
@@ -28,7 +28,7 @@ const SEOTextSection = () => {
             <Link to="/puszcza-knyszynska-nocleg" className="text-forest underline hover:text-forest-light transition-colors"> Puszczy Knyszyńskiej</Link>.
           </p>
           <p>
-            Krzemienna Chata to doskonały wybór zarówno na <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light transition-colors">weekend w Supraślu</Link>, 
+            In The Woods to doskonały wybór zarówno na <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light transition-colors">weekend w Supraślu</Link>, 
             jak i dłuższy <strong>pobyt na Podlasiu</strong>. Zwierzęta są mile widziane, a ogrodzony ogród i las za progiem to raj dla czworonogów. 
             Sprawdź <Link to="/atrakcje-suprasl" className="text-forest underline hover:text-forest-light transition-colors">atrakcje Supraśla</Link> i zaplanuj swój wymarzony 
             <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> pobyt w domu w lesie</Link>.

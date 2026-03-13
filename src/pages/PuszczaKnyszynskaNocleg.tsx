@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PuszczaKnyszynskaNocleg = () => (
   <SEOPageLayout
-    title="Nocleg w Puszczy Knyszyńskiej – dom w lesie | Krzemienna Chata"
+    title="Nocleg w Puszczy Knyszyńskiej – dom w lesie | In The Woods"
     description="Nocleg w Puszczy Knyszyńskiej — prywatny dom w lesie blisko Supraśla. Kominek, ruska bania, ogród. Rezerwat przyrody za progiem."
   >
     <article className="prose prose-lg max-w-none space-y-8">
@@ -12,7 +12,7 @@ const PuszczaKnyszynskaNocleg = () => (
       <p className="text-muted-foreground leading-relaxed text-lg">
         Puszcza Knyszyńska to jeden z największych i najlepiej zachowanych kompleksów leśnych w Polsce. 
         Jeśli szukasz <strong>noclegu w Puszczy Knyszyńskiej</strong>, który oferuje prawdziwy kontakt z naturą 
-        bez rezygnacji z komfortu, Krzemienna Chata jest miejscem idealnym.
+        bez rezygnacji z komfortu, In The Woods jest miejscem idealnym.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Puszcza Knyszyńska — dlaczego warto</h2>
@@ -30,9 +30,9 @@ const PuszczaKnyszynskaNocleg = () => (
         Knyszyńską to jedno z najciemniejszych w Polsce — idealne do obserwacji gwiazd, szczególnie z gorącej ruskiej bani.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Krzemienna Chata — Twój dom w Puszczy</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">In The Woods — Twój dom w Puszczy</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Krzemienna Chata to prywatny <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">dom w lesie</Link> położony 
+        In The Woods to prywatny <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">dom w lesie</Link> położony 
         przy rezerwacie przyrody Krzemienne Góry, w samym sercu Puszczy Knyszyńskiej. To jeden z nielicznych noclegów, 
         gdzie las zaczyna się dosłownie za płotem ogrodu.
       </p>
@@ -52,7 +52,7 @@ const PuszczaKnyszynskaNocleg = () => (
         po wielodniowe wyprawy — każdy znajdzie coś dla siebie. Szlaki są dobrze oznakowane i utrzymane.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Z Krzemiennej Chaty możesz ruszyć na spacer do rezerwatu Krzemienne Góry bez użycia samochodu. 
+        Z In The Woods możesz ruszyć na spacer do rezerwatu Krzemienne Góry bez użycia samochodu. 
         Stary drzewostan, mchy, paprocie i cisza — to leśna kąpiel (shinrin-yoku) w najczystszej formie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
@@ -67,7 +67,7 @@ const PuszczaKnyszynskaNocleg = () => (
       <p className="text-muted-foreground leading-relaxed">
         Grzybobranie jesienią to tradycja, którą Puszcza Knyszyńska celebruje jak mało który las w Polsce. 
         Borowiki, podgrzybki, kurki, maślaki — sezon grzybowy trwa od sierpnia do listopada. 
-        Wielu gości Krzemiennej Chaty planuje pobyty specjalnie w tym okresie.
+        Wielu gości In The Woods planuje pobyty specjalnie w tym okresie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Zimą Puszcza zamienia się w magiczną krainę śniegu. Narty biegowe, rakiety śnieżne, spacery po zaśnieżonych szlakach — 
@@ -89,7 +89,7 @@ const PuszczaKnyszynskaNocleg = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Lokalizacja i dojazd</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Krzemienna Chata znajduje się w miejscowości Konne (Konne 109/1, 16-030 Supraśl), przy rezerwacie Krzemienne Góry. 
+        In The Woods znajduje się w miejscowości Konne (Konne 109/1, 16-030 Supraśl), przy rezerwacie Krzemienne Góry. 
         10 minut samochodem od Supraśla, 25 minut od Białegostoku, 2,5 godziny od Warszawy.
       </p>
       <p className="text-muted-foreground leading-relaxed">

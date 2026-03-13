@@ -25,7 +25,7 @@ const LocationSection = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Lokalizacja Krzemiennej Chaty"
+            title="Lokalizacja In The Woods"
             className="w-full"
           />
         </div>
