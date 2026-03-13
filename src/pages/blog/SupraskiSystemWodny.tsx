@@ -40,7 +40,7 @@ const SupraskiSystemWodny = () => {
         Ten rozległy kompleks kanałów, stawów, grobli i młynów, tworzony przez wieki przez mnichów z monasteru bazylianów, stanowi unikatowe świadectwo ludzkiej pomysłowości i harmonijnego współistnienia z naturą. Choć dziś częściowo zapomniany, system ten wciąż zachwyca swoim rozmachem i pozostaje jedną z najciekawszych <Link to="/atrakcje-suprasl">atrakcji Supraśla</Link>.
       </p>
 
-      <img src={riverKayak} alt="Rzeka Supraśl – Supraski System Wodny, atrakcje Supraśl" className="w-full rounded-lg my-8" />
+      <img src={blogRzeka} alt="Rzeka Supraśl – Supraski System Wodny, atrakcje Supraśl" className="w-full rounded-lg my-8" />
 
       <h2>Historia Supraskiego Systemu Wodnego</h2>
 
