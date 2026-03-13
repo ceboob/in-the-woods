@@ -24,7 +24,7 @@ const images = [
   { src: winterGolden, alt: 'Drewniana chata w złotym zimowym świetle — noclegi Puszcza Knyszyńska', className: 'col-span-2 row-span-1' },
   { src: interiorImg, alt: 'Przytulny salon z drewnianymi belkami — dom w lesie Supraśl', className: 'col-span-1 row-span-1' },
   { src: bedroomImg, alt: 'Sypialnia z dużym łóżkiem — komfortowy nocleg Supraśl', className: 'col-span-1 row-span-1' },
-  { src: detailShelf, alt: 'Ręcznie rzeźbiona drewniana półka z ceramiką — detale Krzemiennej Chaty', className: 'col-span-1 row-span-1' },
+  { src: detailShelf, alt: 'Ręcznie rzeźbiona drewniana półka z ceramiką — detale In The Woods', className: 'col-span-1 row-span-1' },
   { src: bathroom, alt: 'Nowoczesna łazienka z kabiną prysznicową — wynajem domu Supraśl', className: 'col-span-1 row-span-1' },
   { src: exteriorMain, alt: 'Widok na chatę z ogrodu — dom w Puszczy Knyszyńskiej blisko Supraśla', className: 'col-span-1 row-span-1' },
   { src: winterCabin, alt: 'Chata w śnieżnej scenerii — zimowy nocleg Puszcza Knyszyńska', className: 'col-span-1 row-span-1' },
