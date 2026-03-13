@@ -22,7 +22,7 @@ const SEOPageLayout = ({ children, title, description }: SEOPageLayoutProps) => 
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
           <Link to="/" className="font-serif text-xl font-light tracking-wide text-foreground">
-            Krzemienna Chata
+            In The Woods
           </Link>
           <div className="hidden md:flex items-center gap-6">
             <Link to="/noclegi-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Noclegi</Link>
