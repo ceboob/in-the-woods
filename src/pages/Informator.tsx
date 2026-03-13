@@ -383,7 +383,7 @@ const Informator = () => {
           <div className="w-16 h-px bg-forest mx-auto" />
           <p className="text-muted-foreground text-sm leading-relaxed max-w-lg mx-auto">
             Dziękujemy za zapoznanie się z informatorem. Życzymy spokojnego 
-            i regenerującego pobytu w Krzemiennej Chacie.
+            i regenerującego pobytu w In The Woods.
           </p>
           <p className="font-serif text-lg text-foreground">— Maciej, gospodarz</p>
         </div>
