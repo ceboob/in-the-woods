@@ -20,7 +20,7 @@ const articles = [
     slug: 'szlak-powstania-styczniowego-suprasl',
     title: 'Szlak Powstania Styczniowego w Puszczy Knyszyńskiej',
     excerpt: 'Śladami powstańców styczniowych przez najpiękniejsze zakątki Puszczy Knyszyńskiej. Historia, miejsca pamięci i szlaki spacerowe.',
-    image: forestNature,
+    image: blogPomnik,
     date: '2026-03-08',
     readTime: '10 min',
     keywords: ['Szlak Powstania Styczniowego', 'historia Supraśl'],
