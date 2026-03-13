@@ -3,6 +3,7 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Calendar, Users, Phone, Mail, Send, ArrowLeft, Clock, ShieldCheck, CreditCard, Loader2 } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
+import SocialProof from '@/components/SocialProof';
 
 interface BookingData {
   checkIn: string;
@@ -62,6 +63,8 @@ const BookingModule = () => {
           <h2 className="section-title">Sprawdź termin</h2>
           <p className="section-subtitle mx-auto">Wypełnij formularz — odpowiemy zwykle w kilka godzin.</p>
         </div>
+
+        <SocialProof />
 
         <div className="card-premium bg-warm-white">
           {step === 'sent' ?
