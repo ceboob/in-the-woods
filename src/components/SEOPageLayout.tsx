@@ -70,6 +70,7 @@ const SEOPageLayout = ({ children, title, description }: SEOPageLayoutProps) => 
           <p className="font-serif text-lg text-cream">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <Link to="/" className="hover:text-cream transition-colors">Strona główna</Link>
+            <Link to="/blog" className="hover:text-cream transition-colors">Blog</Link>
             <Link to="/noclegi-suprasl" className="hover:text-cream transition-colors">Noclegi Supraśl</Link>
             <Link to="/dom-w-lesie-suprasl" className="hover:text-cream transition-colors">Dom w lesie</Link>
             <Link to="/weekend-suprasl" className="hover:text-cream transition-colors">Weekend Supraśl</Link>

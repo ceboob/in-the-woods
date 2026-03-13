@@ -11,6 +11,11 @@ import WeekendSuprasl from "./pages/WeekendSuprasl.tsx";
 import AtrakcjeSuprasl from "./pages/AtrakcjeSuprasl.tsx";
 import PuszczaKnyszynskaNocleg from "./pages/PuszczaKnyszynskaNocleg.tsx";
 import Informator from "./pages/Informator.tsx";
+import Blog from "./pages/Blog.tsx";
+import SupraskiSystemWodny from "./pages/blog/SupraskiSystemWodny.tsx";
+import SzlakPowstaniaStyczniowego from "./pages/blog/SzlakPowstaniaStyczniowego.tsx";
+import SupraslAtrakcje from "./pages/blog/SupraslAtrakcje.tsx";
+import SzlakiPieszeRowerowe from "./pages/blog/SzlakiPieszeRowerowe.tsx";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +33,11 @@ const App = () => (
           <Route path="/atrakcje-suprasl" element={<AtrakcjeSuprasl />} />
           <Route path="/puszcza-knyszynska-nocleg" element={<PuszczaKnyszynskaNocleg />} />
           <Route path="/informator" element={<Informator />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/supraski-system-wodny" element={<SupraskiSystemWodny />} />
+          <Route path="/blog/szlak-powstania-styczniowego-suprasl" element={<SzlakPowstaniaStyczniowego />} />
+          <Route path="/blog/suprasl-atrakcje-national-geographic" element={<SupraslAtrakcje />} />
+          <Route path="/blog/szlaki-piesze-rowerowe-suprasl" element={<SzlakiPieszeRowerowe />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

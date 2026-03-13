@@ -1,33 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chata-w-puszczy-azyl.lovable.app/</loc>
+    <loc>https://suprasl.online/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://chata-w-puszczy-azyl.lovable.app/noclegi-suprasl</loc>
+    <loc>https://suprasl.online/noclegi-suprasl</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chata-w-puszczy-azyl.lovable.app/dom-w-lesie-suprasl</loc>
+    <loc>https://suprasl.online/dom-w-lesie-suprasl</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chata-w-puszczy-azyl.lovable.app/weekend-suprasl</loc>
+    <loc>https://suprasl.online/weekend-suprasl</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chata-w-puszczy-azyl.lovable.app/atrakcje-suprasl</loc>
+    <loc>https://suprasl.online/atrakcje-suprasl</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chata-w-puszczy-azyl.lovable.app/puszcza-knyszynska-nocleg</loc>
+    <loc>https://suprasl.online/puszcza-knyszynska-nocleg</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://suprasl.online/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://suprasl.online/blog/supraski-system-wodny</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suprasl.online/blog/szlak-powstania-styczniowego-suprasl</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suprasl.online/blog/suprasl-atrakcje-national-geographic</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suprasl.online/blog/szlaki-piesze-rowerowe-suprasl</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
