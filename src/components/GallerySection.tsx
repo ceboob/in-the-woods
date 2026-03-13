@@ -16,7 +16,7 @@ import detailShelf from '@/assets/detail-shelf.jpg';
 import bathroom from '@/assets/bathroom.jpg';
 
 const images = [
-  { src: jacuzziNight, alt: 'Ruska bania z jacuzzi pod gwiazdami — noclegi Supraśl, Krzemienna Chata', className: 'col-span-2 row-span-2' },
+  { src: jacuzziNight, alt: 'Ruska bania z jacuzzi pod gwiazdami — noclegi Supraśl, In The Woods', className: 'col-span-2 row-span-2' },
   { src: livingFireplace, alt: 'Salon z kominkiem i drewnianym wnętrzem — dom na wynajem Supraśl', className: 'col-span-1 row-span-1' },
   { src: terracePorch, alt: 'Taras z sofą w otoczeniu Puszczy Knyszyńskiej — weekend Supraśl', className: 'col-span-1 row-span-1' },
   { src: kitchenBrick, alt: 'Kuchnia z ceglanym piecem i ceramiką — wnętrze chaty Supraśl', className: 'col-span-1 row-span-1' },
