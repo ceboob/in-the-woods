@@ -51,7 +51,7 @@ const BeforeAfterSlider = () => {
           
           {/* Day (clipped) */}
           <div className="absolute inset-0 overflow-hidden" style={{ width: `${sliderPos}%` }}>
-            <img src={gardenDay} alt="In The Woods w dzień — ogród i ognisko" className="absolute inset-0 w-full h-full object-cover" style={{ width: `${containerRef.current ? containerRef.current.offsetWidth : 1000}px`, maxWidth: 'none' }} draggable={false} />
+            <img src={cabinDay} alt="In The Woods w dzień — chata w słońcu" className="absolute inset-0 w-full h-full object-cover" style={{ width: `${containerRef.current ? containerRef.current.offsetWidth : 1000}px`, maxWidth: 'none' }} draggable={false} />
           </div>
 
           {/* Slider line */}
