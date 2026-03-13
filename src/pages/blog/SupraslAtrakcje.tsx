@@ -1,8 +1,8 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import cabinDay from '@/assets/cabin-day-garden.jpg';
+import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
+import blogRzeka from '@/assets/blog-rzeka-suprasl.jpg';
 import exteriorMain from '@/assets/exterior-main.jpg';
-import riverKayak from '@/assets/river-kayak.jpg';
 
 const SupraslAtrakcje = () => {
   const faqs = [

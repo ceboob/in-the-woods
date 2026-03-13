@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import forestPanorama from '@/assets/forest-panorama.webp';
-import forestNature from '@/assets/forest-nature.jpg';
+import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
+import blogRowerowa from '@/assets/blog-trasa-rowerowa.jpg';
 import jacuzziNight from '@/assets/jacuzzi-night.jpg';
 
 const SzlakiPieszeRowerowe = () => {

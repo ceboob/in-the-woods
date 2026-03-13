@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import forestNature from '@/assets/forest-nature.jpg';
-import forestPanorama from '@/assets/forest-panorama.webp';
+import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
+import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
 import winterForest from '@/assets/winter-forest.jpg';
 
 const SzlakPowstaniaStyczniowego = () => {

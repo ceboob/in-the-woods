@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, ArrowRight, Calendar, Clock } from 'lucide-react';
-import forestPanorama from '@/assets/forest-panorama.webp';
-import riverKayak from '@/assets/river-kayak.jpg';
-import forestNature from '@/assets/forest-nature.jpg';
-import cabinDay from '@/assets/cabin-day-garden.jpg';
+import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
+import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
+import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
+import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
 
 const articles = [
   {
