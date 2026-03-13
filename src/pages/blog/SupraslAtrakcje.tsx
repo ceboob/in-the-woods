@@ -111,7 +111,7 @@ const SupraslAtrakcje = () => {
       <h3>Dzień 2: Natura i aktywność</h3>
 
       <p>
-        Rano — <Link to="/blog/szlaki-piesze-rowerowe-suprasl">szlak pieszy lub rowerowy</Link> w Puszczy Knyszyńskiej. Polecamy rezerwat Krzemienne Góry lub <Link to="/blog/szlak-powstania-styczniowego-suprasl">Szlak Powstania Styczniowego</Link>. Po południu — spływ kajakowy rzeką Supraśl lub spacer wzdłuż <Link to="/blog/supraski-system-wodny">Supraskiego Systemu Wodnego</Link>. Wieczorem — rozpalony kominek i jacuzzi w Krzemiennej Chacie.
+        Rano — <Link to="/blog/szlaki-piesze-rowerowe-suprasl">szlak pieszy lub rowerowy</Link> w Puszczy Knyszyńskiej. Polecamy rezerwat Krzemienne Góry lub <Link to="/blog/szlak-powstania-styczniowego-suprasl">Szlak Powstania Styczniowego</Link>. Po południu — spływ kajakowy rzeką Supraśl lub spacer wzdłuż <Link to="/blog/supraski-system-wodny">Supraskiego Systemu Wodnego</Link>. Wieczorem — rozpalony kominek i jacuzzi w In The Woods.
       </p>
 
       <h3>Dzień 3: Slow morning i powrót</h3>
