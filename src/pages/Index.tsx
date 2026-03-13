@@ -20,6 +20,9 @@ import GuestGuideSection from '@/components/GuestGuideSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import SEOTextSection from '@/components/SEOTextSection';
+import AvailabilityCalendar from '@/components/AvailabilityCalendar';
+import BeforeAfterSlider from '@/components/BeforeAfterSlider';
+import ExitIntentPopup from '@/components/ExitIntentPopup';
 
 const Index = () => {
   return (
