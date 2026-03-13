@@ -5,6 +5,7 @@ const PuszczaKnyszynskaNocleg = () => (
   <SEOPageLayout
     title="Nocleg w Puszczy Knyszyńskiej – dom w lesie | In The Woods"
     description="Nocleg w Puszczy Knyszyńskiej — prywatny dom w lesie blisko Supraśla. Kominek, ruska bania, ogród. Rezerwat przyrody za progiem."
+    breadcrumbName="Puszcza Knyszyńska"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">Nocleg w Puszczy Knyszyńskiej – dom w sercu natury</h1>
