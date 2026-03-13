@@ -40,6 +40,9 @@ const Navbar = () => {
               {l.label}
             </button>
           ))}
+          <Link to="/blog" className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}>
+            Blog
+          </Link>
           <button onClick={() => handleClick('#rezerwacja')} className="btn-primary text-xs py-2.5 px-6">
             Rezerwuj
           </button>
