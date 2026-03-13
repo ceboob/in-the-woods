@@ -90,8 +90,9 @@ const WeekendSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Najlepsze terminy weekendowe rezerwowane są z wyprzedzeniem — szczególnie w sezonie letnim i podczas długich weekendów. 
-        Sprawdź również pełną ofertę <Link to="/noclegi-suprasl" className="text-forest underline hover:text-forest-light">noclegów w Supraślu</Link> 
-        i zaplanuj swój <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">pobyt w domu w lesie</Link>.
+        Sprawdź również pełną ofertę <Link to="/noclegi-suprasl" className="text-forest underline hover:text-forest-light">noclegów w Supraślu</Link>, 
+        zaplanuj <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">pobyt w domu w lesie</Link> lub 
+        odkryj <Link to="/puszcza-knyszynska-nocleg" className="text-forest underline hover:text-forest-light">noclegi w Puszczy Knyszyńskiej</Link>.
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">

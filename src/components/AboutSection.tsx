@@ -26,7 +26,7 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img src={interiorImg} alt="In The Woods — widok z zewnątrz na drewnianą chatę z bala" className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700" />
+          <img src={interiorImg} alt="In The Woods — widok z zewnątrz na drewnianą chatę z bala" className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
         </div>
       </div>
     </section>

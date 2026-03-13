@@ -111,7 +111,9 @@ const NoclegiSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Planując <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light">weekend w Supraślu</Link>, 
         dłuższy urlop czy workation — In The Woods to Twoja baza wypadowa na poznawanie Podlasia. 
-        Dom w lesie z jacuzzi, kominkiem i ogrodem — nocleg, jakiego szukasz.
+        Dom w lesie z jacuzzi, kominkiem i ogrodem — nocleg, jakiego szukasz. Odkryj również 
+        <Link to="/atrakcje-suprasl" className="text-forest underline hover:text-forest-light"> atrakcje Supraśla</Link> i 
+        zaplanuj <Link to="/puszcza-knyszynska-nocleg" className="text-forest underline hover:text-forest-light">nocleg w Puszczy Knyszyńskiej</Link>.
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">

@@ -23,6 +23,7 @@ import SEOTextSection from '@/components/SEOTextSection';
 import AvailabilityCalendar from '@/components/AvailabilityCalendar';
 import BeforeAfterSlider from '@/components/BeforeAfterSlider';
 import ExitIntentPopup from '@/components/ExitIntentPopup';
+import StickyMobileCTA from '@/components/StickyMobileCTA';
 
 const Index = () => {
   return (
@@ -54,6 +55,7 @@ const Index = () => {
       </main>
       <Footer />
       <ExitIntentPopup />
+      <StickyMobileCTA />
     </div>
   );
 };
