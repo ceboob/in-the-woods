@@ -120,7 +120,7 @@ const SupraslAtrakcje = () => {
         Leniwy poranek z kawą na tarasie w lesie. Odwiedzenie lokalnego targu (w sezonie) lub jeszcze jeden krótki spacer po okolicy. Powrót do domu z poczuciem, że weekend trwał tydzień.
       </p>
 
-      <img src={exteriorMain} alt="Krzemienna Chata – noclegi Supraśl, dom w lesie z jacuzzi" className="w-full rounded-lg my-8" />
+      <img src={exteriorMain} alt="In The Woods – noclegi Supraśl, dom w lesie z jacuzzi" className="w-full rounded-lg my-8" />
 
       <h2>Dlaczego warto nocować blisko natury?</h2>
 
