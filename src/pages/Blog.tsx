@@ -53,8 +53,18 @@ const Blog = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://suprasl.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suprasl.online/blog" }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">

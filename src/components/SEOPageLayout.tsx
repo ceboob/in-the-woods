@@ -9,7 +9,7 @@ interface SEOPageLayoutProps {
   breadcrumbName?: string;
 }
 
-const SEOPageLayout = ({ children, title, description }: SEOPageLayoutProps) => {
+const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPageLayoutProps) => {
   useEffect(() => {
     document.title = title;
     const metaDesc = document.querySelector('meta[name="description"]');
@@ -17,8 +17,20 @@ const SEOPageLayout = ({ children, title, description }: SEOPageLayoutProps) => 
     window.scrollTo(0, 0);
   }, [title, description]);
 
+  const breadcrumbSchema = breadcrumbName ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://suprasl.online/" },
+      { "@type": "ListItem", "position": 2, "name": breadcrumbName, "item": `https://suprasl.online${window.location.pathname}` }
+    ]
+  } : null;
+
   return (
     <div className="min-h-screen bg-background">
+      {breadcrumbSchema && (
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      )}
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
