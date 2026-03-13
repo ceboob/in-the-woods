@@ -9,7 +9,7 @@ const SzlakiPieszeRowerowe = () => {
     { question: 'Jakie szlaki piesze są w Supraślu?', answer: 'W okolicach Supraśla znajdziesz szlaki przez rezerwat Krzemienne Góry, szlak wzdłuż rzeki Supraśl, Szlak Powstania Styczniowego i wiele tras w Puszczy Knyszyńskiej o różnym stopniu trudności.' },
     { question: 'Czy w Supraślu są trasy rowerowe?', answer: 'Tak – Green Velo przebiega w pobliżu, jest też wiele lokalnych tras leśnych i ścieżek gravelowych w Puszczy Knyszyńskiej.' },
     { question: 'Czy szlaki są odpowiednie dla rodzin z dziećmi?', answer: 'Tak, wiele szlaków jest łatwych i dobrze oznakowanych. Polecamy trasy wzdłuż rzeki i krótkie pętle po rezerwacie.' },
-    { question: 'Gdzie nocować po wędrówce?', answer: 'Krzemienna Chata to dom w lesie z jacuzzi – idealny na regenerację po aktywnym dniu w Puszczy Knyszyńskiej.' },
+    { question: 'Gdzie nocować po wędrówce?', answer: 'In The Woods to dom w lesie z jacuzzi – idealny na regenerację po aktywnym dniu w Puszczy Knyszyńskiej.' },
   ];
 
   const relatedArticles = [
