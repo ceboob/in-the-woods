@@ -82,12 +82,8 @@ const AvailabilityCalendar = () => {
         </div>
 
         <div className="card-premium bg-background">
-          {loading ? (
-            <div className="flex items-center justify-center py-16">
-              <Loader2 className="w-6 h-6 animate-spin text-muted-foreground" />
-            </div>
-          ) : (
-            <>
+          <>
+
               <div className="flex items-center justify-between mb-6">
                 <button onClick={prevMonth} disabled={!canGoPrev()} className="p-2 hover:bg-secondary rounded-lg transition-colors disabled:opacity-30">
                   <ChevronLeft className="w-5 h-5" />
