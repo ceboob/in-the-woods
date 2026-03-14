@@ -1,41 +1,37 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { ChevronLeft, ChevronRight, Loader2 } from 'lucide-react';
-import { supabase } from '@/integrations/supabase/client';
-
-interface BookedRange {
-  start: string;
-  end: string;
-}
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const MONTH_NAMES = ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
 const DAY_NAMES = ['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So', 'Nd'];
 
+// Hardcoded blocked dates for 2026
+const BLOCKED_DATES: Set<string> = new Set([
+  // Marzec
+  ...[14,15,16,20,21,27,28].map(d => `2026-03-${String(d).padStart(2,'0')}`),
+  // Kwiecień
+  ...[4,5,17,18].map(d => `2026-04-${String(d).padStart(2,'0')}`),
+  // Maj
+  ...[8,9,10,15,16].map(d => `2026-05-${String(d).padStart(2,'0')}`),
+  // Czerwiec 1-7, 14-17
+  ...[1,2,3,4,5,6,7,14,15,16,17].map(d => `2026-06-${String(d).padStart(2,'0')}`),
+  // Lipiec — cały miesiąc z wyjątkiem 5-8, 12, 18
+  ...Array.from({length:31},(_,i)=>i+1).filter(d => ![5,6,7,8,12,18].includes(d)).map(d => `2026-07-${String(d).padStart(2,'0')}`),
+  // Sierpień 2-6, 10-12, 16-28
+  ...[2,3,4,5,6,10,11,12,16,17,18,19,20,21,22,23,24,25,26,27,28].map(d => `2026-08-${String(d).padStart(2,'0')}`),
+  // Wrzesień - Grudzień — wszystkie dni
+  ...Array.from({length:30},(_,i)=>i+1).map(d => `2026-09-${String(d).padStart(2,'0')}`),
+  ...Array.from({length:31},(_,i)=>i+1).map(d => `2026-10-${String(d).padStart(2,'0')}`),
+  ...Array.from({length:30},(_,i)=>i+1).map(d => `2026-11-${String(d).padStart(2,'0')}`),
+  ...Array.from({length:31},(_,i)=>i+1).map(d => `2026-12-${String(d).padStart(2,'0')}`),
+]);
+
 const AvailabilityCalendar = () => {
   const { ref, isVisible } = useScrollAnimation();
-  const [bookedRanges, setBookedRanges] = useState<BookedRange[]>([]);
-  const [loading, setLoading] = useState(true);
   const [currentMonth, setCurrentMonth] = useState(() => {
     const now = new Date();
     return new Date(now.getFullYear(), now.getMonth(), 1);
   });
-
-  useEffect(() => {
-    const fetchCalendar = async () => {
-      try {
-        const { data, error } = await supabase.functions.invoke('fetch-calendar');
-        if (error) throw error;
-        if (data?.success && data.events) {
-          setBookedRanges(data.events.map((e: any) => ({ start: e.start, end: e.end })));
-        }
-      } catch (err) {
-        console.error('Failed to fetch calendar:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchCalendar();
-  }, []);
 
   const isDateBooked = (date: Date) => {
     const dateStr = date.toISOString().split('T')[0];
