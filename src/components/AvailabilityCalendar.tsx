@@ -34,8 +34,10 @@ const AvailabilityCalendar = () => {
   });
 
   const isDateBooked = (date: Date) => {
-    const dateStr = date.toISOString().split('T')[0];
-    return bookedRanges.some(range => dateStr >= range.start && dateStr < range.end);
+    const y = date.getFullYear();
+    const m = String(date.getMonth() + 1).padStart(2, '0');
+    const d = String(date.getDate()).padStart(2, '0');
+    return BLOCKED_DATES.has(`${y}-${m}-${d}`);
   };
 
   const isPast = (date: Date) => {
