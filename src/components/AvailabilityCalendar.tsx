@@ -137,7 +137,7 @@ const AvailabilityCalendar = () => {
                 </div>
               </div>
             </>
-          )}
+
         </div>
       </div>
     </section>
