@@ -4,6 +4,8 @@ import { Church, Image, Trees, UtensilsCrossed, Bike, Waves, MapPin, Clock, Arro
 import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
 import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
 import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
+import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
+import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
 
 const attractions = [
   { icon: Church, name: 'Monaster Zwiastowania NMP' },
@@ -42,6 +44,20 @@ const guides = [
     excerpt: 'Monaster, Muzeum Ikon, bulwary i Teatr Wierszalin — kompletny przewodnik po perle Podlasia.',
     image: blogSupraslUzdrowisko,
     alt: 'Supraśl atrakcje uzdrowisko – Monaster, Muzeum Ikon, co zobaczyć',
+  },
+  {
+    slug: 'kajaki-suprasl',
+    title: 'Kajaki Supraśl – spływy rzeką Supraśl',
+    excerpt: 'Spokojna rzeka w sercu puszczy — idealna na rodzinny spływ kajakowy i obserwację przyrody.',
+    image: blogKajaki,
+    alt: 'kajaki Supraśl – spływ kajakowy rzeką Supraśl w Puszczy Knyszyńskiej',
+  },
+  {
+    slug: 'restauracje-suprasl',
+    title: 'Restauracje Supraśl – gdzie zjeść',
+    excerpt: 'Kartacze, babka ziemniaczana i kuchnia tatarska — przewodnik kulinarny po Supraślu.',
+    image: blogRestauracje,
+    alt: 'restauracje Supraśl – kuchnia podlaska jedzenie Supraśl',
   },
 ];
 

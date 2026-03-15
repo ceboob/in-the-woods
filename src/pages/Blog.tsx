@@ -8,8 +8,28 @@ import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
 import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
 import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
 import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
+import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
+import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
 
 const articles = [
+  {
+    slug: 'kajaki-suprasl',
+    title: 'Kajaki Supraśl – przewodnik po spływach rzeką Supraśl',
+    excerpt: 'Spokojna rzeka, dzika przyroda i Puszcza Knyszyńska z poziomu wody. Wszystko o spływach kajakowych w Supraślu.',
+    image: blogKajaki,
+    date: '2026-03-15',
+    readTime: '11 min',
+    keywords: ['kajaki Supraśl', 'spływ Supraśl'],
+  },
+  {
+    slug: 'restauracje-suprasl',
+    title: 'Restauracje Supraśl – gdzie zjeść podczas pobytu',
+    excerpt: 'Kartacze, babka ziemniaczana, sękacz i kuchnia tatarska. Przewodnik kulinarny po Supraślu i Podlasiu.',
+    image: blogRestauracje,
+    date: '2026-03-15',
+    readTime: '12 min',
+    keywords: ['restauracje Supraśl', 'gdzie zjeść Supraśl'],
+  },
   {
     slug: 'szlak-bioroznorodnosci-suprasl',
     title: 'Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej',
