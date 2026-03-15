@@ -16,6 +16,9 @@ import SupraskiSystemWodny from "./pages/blog/SupraskiSystemWodny.tsx";
 import SzlakPowstaniaStyczniowego from "./pages/blog/SzlakPowstaniaStyczniowego.tsx";
 import SupraslAtrakcje from "./pages/blog/SupraslAtrakcje.tsx";
 import SzlakiPieszeRowerowe from "./pages/blog/SzlakiPieszeRowerowe.tsx";
+import SzlakBioroznorodnosci from "./pages/blog/SzlakBioroznorodnosci.tsx";
+import KruszynianyTatarskaWies from "./pages/blog/KruszynianyTatarskaWies.tsx";
+import SupraslAtrakcjeUzdrowisko from "./pages/blog/SupraslAtrakcjeUzdrowisko.tsx";
 
 const queryClient = new QueryClient();
 
