@@ -36,7 +36,6 @@ const Index = () => {
         <JacuzziSection />
         
         <RelaxSection />
-        <TourismHubSection />
         <ForWhoSection />
         <GallerySection />
         <WinterSection />
