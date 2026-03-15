@@ -32,7 +32,7 @@ const RestauracjeSuprasl = () => {
       slug="restauracje-suprasl"
       publishDate="2026-03-15"
       readTime="12 min"
-      keywords={['restauracje Supraśl', 'gdzie zjeść Supraśl', 'Supraśl restauracje', 'jedzenie Supraśl', 'Supraśl gastronomia', 'kuchnia podlaska', 'babka ziemniaczana Podlasie', 'noclegi Supraśl']}
+      keywords={['restauracje Supraśl', 'gdzie zjeść Supraśl', 'Supraśl restauracje', 'jedzenie Supraśl', 'Supraśl gastronomia', 'kuchnia podlaska', 'babka ziemniaczana Podlasie', 'noclegi Supraśl', 'Bar Jarząbinka Supraśl', 'Bohema Supraśl', 'Łukaszówka Supraśl']}
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
