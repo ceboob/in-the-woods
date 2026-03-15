@@ -16,6 +16,9 @@ import SupraskiSystemWodny from "./pages/blog/SupraskiSystemWodny.tsx";
 import SzlakPowstaniaStyczniowego from "./pages/blog/SzlakPowstaniaStyczniowego.tsx";
 import SupraslAtrakcje from "./pages/blog/SupraslAtrakcje.tsx";
 import SzlakiPieszeRowerowe from "./pages/blog/SzlakiPieszeRowerowe.tsx";
+import SzlakBioroznorodnosci from "./pages/blog/SzlakBioroznorodnosci.tsx";
+import KruszynianyTatarskaWies from "./pages/blog/KruszynianyTatarskaWies.tsx";
+import SupraslAtrakcjeUzdrowisko from "./pages/blog/SupraslAtrakcjeUzdrowisko.tsx";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +41,9 @@ const App = () => (
           <Route path="/blog/szlak-powstania-styczniowego-suprasl" element={<SzlakPowstaniaStyczniowego />} />
           <Route path="/blog/suprasl-atrakcje-national-geographic" element={<SupraslAtrakcje />} />
           <Route path="/blog/szlaki-piesze-rowerowe-suprasl" element={<SzlakiPieszeRowerowe />} />
+          <Route path="/blog/szlak-bioroznorodnosci-suprasl" element={<SzlakBioroznorodnosci />} />
+          <Route path="/blog/kruszyniany-tatarska-wies" element={<KruszynianyTatarskaWies />} />
+          <Route path="/blog/suprasl-atrakcje-uzdrowisko" element={<SupraslAtrakcjeUzdrowisko />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
