@@ -19,6 +19,8 @@ import SzlakiPieszeRowerowe from "./pages/blog/SzlakiPieszeRowerowe.tsx";
 import SzlakBioroznorodnosci from "./pages/blog/SzlakBioroznorodnosci.tsx";
 import KruszynianyTatarskaWies from "./pages/blog/KruszynianyTatarskaWies.tsx";
 import SupraslAtrakcjeUzdrowisko from "./pages/blog/SupraslAtrakcjeUzdrowisko.tsx";
+import KajakiSuprasl from "./pages/blog/KajakiSuprasl.tsx";
+import RestauracjeSuprasl from "./pages/blog/RestauracjeSuprasl.tsx";
 
 const queryClient = new QueryClient();
 
