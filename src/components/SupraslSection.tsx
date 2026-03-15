@@ -4,6 +4,8 @@ import { Church, Image, Trees, UtensilsCrossed, Bike, Waves, MapPin, Clock, Arro
 import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
 import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
 import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
+import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
+import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
 
 const attractions = [
   { icon: Church, name: 'Monaster Zwiastowania NMP' },
