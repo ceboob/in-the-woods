@@ -5,12 +5,42 @@ import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
 import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
 import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
 import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
+import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
+import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
+import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
 
 const articles = [
   {
+    slug: 'szlak-bioroznorodnosci-suprasl',
+    title: 'Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej',
+    excerpt: 'Edukacyjna ścieżka o długości 7 km przez zróżnicowane ekosystemy Puszczy Knyszyńskiej. Flora, fauna i tablice edukacyjne.',
+    image: blogSzlakBio,
+    date: '2026-03-14',
+    readTime: '10 min',
+    keywords: ['Supraśl szlak bioróżnorodności', 'atrakcje Supraśl'],
+  },
+  {
+    slug: 'kruszyniany-tatarska-wies',
+    title: 'Kruszyniany – tatarska wieś Podlasia',
+    excerpt: 'Meczet, kuchnia tatarska i wielowiekowa tradycja — odkryj jedno z najbardziej niezwykłych miejsc w Polsce.',
+    image: blogKruszyniany,
+    date: '2026-03-14',
+    readTime: '9 min',
+    keywords: ['Kruszyniany atrakcje', 'tatarska wieś Podlasie'],
+  },
+  {
+    slug: 'suprasl-atrakcje-uzdrowisko',
+    title: 'Supraśl – atrakcje uzdrowiska Podlasia',
+    excerpt: 'Monaster, Muzeum Ikon, bulwary, Teatr Wierszalin i uzdrowiskowy klimat. Kompletny przewodnik po perle Podlasia.',
+    image: blogSupraslUzdrowisko,
+    date: '2026-03-14',
+    readTime: '12 min',
+    keywords: ['Supraśl atrakcje', 'co zobaczyć Supraśl'],
+  },
+  {
     slug: 'supraski-system-wodny',
     title: 'Supraski System Wodny – zapomniany cud inżynierii Podlasia',
-    excerpt: 'Odkryj fascynującą historię supraskiego systemu wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia, które do dziś zachwyca turystów.',
+    excerpt: 'Odkryj fascynującą historię supraskiego systemu wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia.',
     image: blogKanal,
     date: '2026-03-10',
     readTime: '12 min',
@@ -19,7 +49,7 @@ const articles = [
   {
     slug: 'szlak-powstania-styczniowego-suprasl',
     title: 'Szlak Powstania Styczniowego w Puszczy Knyszyńskiej',
-    excerpt: 'Śladami powstańców styczniowych przez najpiękniejsze zakątki Puszczy Knyszyńskiej. Historia, miejsca pamięci i szlaki spacerowe.',
+    excerpt: 'Śladami powstańców styczniowych przez najpiękniejsze zakątki Puszczy Knyszyńskiej. Historia, miejsca pamięci i szlaki.',
     image: blogPomnik,
     date: '2026-03-08',
     readTime: '10 min',
@@ -28,7 +58,7 @@ const articles = [
   {
     slug: 'suprasl-atrakcje-national-geographic',
     title: 'Supraśl – perła Podlasia według podróżników',
-    excerpt: 'Co sprawia, że Supraśl jest jednym z najpiękniejszych miasteczek Podlasia? Architektura, Monaster, Muzeum Ikon i slow tourism.',
+    excerpt: 'Co sprawia, że Supraśl jest jednym z najpiękniejszych miasteczek Podlasia? Architektura, Monaster i slow tourism.',
     image: blogMonaster,
     date: '2026-03-05',
     readTime: '11 min',
@@ -37,7 +67,7 @@ const articles = [
   {
     slug: 'szlaki-piesze-rowerowe-suprasl',
     title: 'Najlepsze szlaki piesze i rowerowe – Supraśl i Puszcza Knyszyńska',
-    excerpt: 'Kompletny przewodnik po szlakach pieszych i rowerowych w okolicach Supraśla. Trasy rodzinne, przyrodnicze i dla aktywnych.',
+    excerpt: 'Kompletny przewodnik po szlakach pieszych i rowerowych w okolicach Supraśla.',
     image: blogSzlak,
     date: '2026-03-01',
     readTime: '13 min',
