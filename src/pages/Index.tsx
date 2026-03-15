@@ -5,7 +5,7 @@ import TrustSection from '@/components/TrustSection';
 import AmenitiesSection from '@/components/AmenitiesSection';
 import JacuzziSection from '@/components/JacuzziSection';
 import RelaxSection from '@/components/RelaxSection';
-import ExperienceSection from '@/components/ExperienceSection';
+import TourismHubSection from '@/components/TourismHubSection';
 import ForWhoSection from '@/components/ForWhoSection';
 import GallerySection from '@/components/GallerySection';
 import WinterSection from '@/components/WinterSection';
