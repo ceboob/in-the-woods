@@ -41,6 +41,9 @@ const App = () => (
           <Route path="/blog/szlak-powstania-styczniowego-suprasl" element={<SzlakPowstaniaStyczniowego />} />
           <Route path="/blog/suprasl-atrakcje-national-geographic" element={<SupraslAtrakcje />} />
           <Route path="/blog/szlaki-piesze-rowerowe-suprasl" element={<SzlakiPieszeRowerowe />} />
+          <Route path="/blog/szlak-bioroznorodnosci-suprasl" element={<SzlakBioroznorodnosci />} />
+          <Route path="/blog/kruszyniany-tatarska-wies" element={<KruszynianyTatarskaWies />} />
+          <Route path="/blog/suprasl-atrakcje-uzdrowisko" element={<SupraslAtrakcjeUzdrowisko />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

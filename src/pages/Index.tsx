@@ -37,7 +37,7 @@ const Index = () => {
         <JacuzziSection />
         
         <RelaxSection />
-        <ExperienceSection />
+        <TourismHubSection />
         <ForWhoSection />
         <GallerySection />
         <WinterSection />
