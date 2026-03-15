@@ -81,6 +81,33 @@ const RestauracjeSuprasl = () => {
 
       <img src={blogMonaster} alt="Supraśl centrum – klimatyczne miasteczko uzdrowiskowe na Podlasiu" className="w-full rounded-lg my-8" />
 
+      <h2>Polecane przez nas lokale w Supraślu</h2>
+
+      <p>
+        Podczas wielu wizyt w Supraślu przetestowaliśmy lokalne restauracje i wybraliśmy trzy miejsca, które szczególnie polecamy naszym gościom. Każde z nich oferuje autentyczne smaki Podlasia w wyjątkowej atmosferze.
+      </p>
+
+      <h3>🍽️ Bar Jarząbinka</h3>
+      <p className="text-sm text-muted-foreground mb-2"><strong>Adres:</strong> ul. 3-go Maja 22, 16-030 Supraśl</p>
+      <img src={blogBarJarzebinka} alt="Bar Jarząbinka Supraśl – kultowy bar z kuchnią podlaską, babka ziemniaczana i kartacze" className="w-full rounded-lg my-4" />
+      <p>
+        Kultowy <strong>Bar Jarząbinka</strong> to obowiązkowy przystanek na kulinarnej mapie Supraśla. Ten niewielki, klimatyczny lokal przy ulicy 3-go Maja serwuje jedne z najlepszych dań kuchni podlaskiej w regionie. Specjalnością domu jest doskonała <strong>babka ziemniaczana</strong> — chrupiąca z zewnątrz, miękka w środku, podawana z surówkami. Warto spróbować również <strong>kiszki ziemniaczanej</strong> — lokalnego przysmaku w formie jelita wieprzowego wypełnionego masą ziemniaczaną z boczkiem i przyprawami. Na stole nie może zabraknąć <strong>kartaczy ziemniaczanych</strong> — dużych, sycących kluch z ciasta ziemniaczanego z mięsnym nadzieniem. Zamówienia składa się przy barze, a atmosfera jest autentycznie domowa i bezpretensjonalna. Na deser polecamy domowe ciasto Marcinek i szklankę tradycyjnego podpiwku. Mimo niewielkich rozmiarów, Jarząbinka to absolutny klasyk — miejsce, które trzeba odwiedzić choć raz, będąc w Supraślu.
+      </p>
+
+      <h3>🍽️ Bohema Restauracja i Noclegi</h3>
+      <p className="text-sm text-muted-foreground mb-2"><strong>Adres:</strong> Plac Tadeusza Kościuszki 1, 16-030 Supraśl</p>
+      <img src={blogBohema} alt="Bohema Supraśl – elegancka restauracja z kuchnią polską i regionalną na Placu Kościuszki" className="w-full rounded-lg my-4" />
+      <p>
+        <strong>Bohema</strong> to restauracja z charakterem, usytuowana w samym sercu Supraśla, na Placu Tadeusza Kościuszki. To miejsce łączy elegancję z podlaską gościnnością, oferując starannie przygotowane dania kuchni polskiej i regionalnej. W menu znajdziesz <strong>tradycyjny tatar wołowy</strong>, <strong>śledzia podlaskiego</strong> z cebulą, <strong>półmisek rozmaitości</strong> z wędlinami własnego wyrobu i regionalnymi serami, a także dania mięsne i sezonowe propozycje szefa kuchni. Bohema to doskonały wybór na <strong>romantyczną kolację</strong> lub elegancki obiad po zwiedzaniu Monasteru i Muzeum Ikon. Restauracja posiada również ogródek letni, z którego można podziwiać zabytkową architekturę placu. Wysoko oceniana przez gości (9.7/10 za lokalizację), stanowi jedno z najlepszych miejsc gastronomicznych w Supraślu.
+      </p>
+
+      <h3>🍽️ Łukaszówka</h3>
+      <p className="text-sm text-muted-foreground mb-2"><strong>Adres:</strong> ul. Nowy Świat 2, 16-030 Supraśl</p>
+      <img src={blogLukaszowka} alt="Łukaszówka Supraśl – domowe pierogi, kartacze i kuchnia regionalna Podlasia" className="w-full rounded-lg my-4" />
+      <p>
+        <strong>Łukaszówka</strong> to miejsce, które przywołuje wspomnienia babcinych obiadów. Ta rodzinna restauracja przy ulicy Nowy Świat specjalizuje się w <strong>domowych obiadach</strong> przygotowywanych z lokalnych produktów. W menu królują <strong>kartacze litewskie z mięsem wieprzowym</strong>, <strong>babka ziemniaczana z sosem pieczarkowym</strong>, gołąbki w sosie pomidorowym oraz bogaty wybór <strong>pierogów</strong> — od ruskich po nadziewane kaszą gryczaną z białym serem. Łukaszówka słynie również z <strong>legendarnych pączków</strong>, wyrabianych od ponad 30 lat według przepisu prababci właścicieli — to jeden z najsmaczniejszych deserów, jakie spotkasz w Supraślu. Lokal prowadzi również catering i sklep z produktami regionalnymi, więc ulubione smaki Podlasia możesz zabrać ze sobą do domu.
+      </p>
+
       <h2>Najlepsze restauracje Supraśla</h2>
 
       <p>
