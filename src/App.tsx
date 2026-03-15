@@ -46,6 +46,8 @@ const App = () => (
           <Route path="/blog/szlak-bioroznorodnosci-suprasl" element={<SzlakBioroznorodnosci />} />
           <Route path="/blog/kruszyniany-tatarska-wies" element={<KruszynianyTatarskaWies />} />
           <Route path="/blog/suprasl-atrakcje-uzdrowisko" element={<SupraslAtrakcjeUzdrowisko />} />
+          <Route path="/blog/kajaki-suprasl" element={<KajakiSuprasl />} />
+          <Route path="/blog/restauracje-suprasl" element={<RestauracjeSuprasl />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

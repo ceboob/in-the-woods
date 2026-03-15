@@ -45,6 +45,20 @@ const guides = [
     image: blogSupraslUzdrowisko,
     alt: 'Supraśl atrakcje uzdrowisko – Monaster, Muzeum Ikon, co zobaczyć',
   },
+  {
+    slug: 'kajaki-suprasl',
+    title: 'Kajaki Supraśl – spływy rzeką Supraśl',
+    excerpt: 'Spokojna rzeka w sercu puszczy — idealna na rodzinny spływ kajakowy i obserwację przyrody.',
+    image: blogKajaki,
+    alt: 'kajaki Supraśl – spływ kajakowy rzeką Supraśl w Puszczy Knyszyńskiej',
+  },
+  {
+    slug: 'restauracje-suprasl',
+    title: 'Restauracje Supraśl – gdzie zjeść',
+    excerpt: 'Kartacze, babka ziemniaczana i kuchnia tatarska — przewodnik kulinarny po Supraślu.',
+    image: blogRestauracje,
+    alt: 'restauracje Supraśl – kuchnia podlaska jedzenie Supraśl',
+  },
 ];
 
 const SupraslSection = () => {
