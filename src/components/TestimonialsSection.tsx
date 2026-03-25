@@ -40,39 +40,7 @@ const testimonials = [
   },
 ];
 
-const reviewSchemaMarkup = {
-  "@context": "https://schema.org",
-  "@type": "VacationRental",
-  "name": "In The Woods – dom w lesie Supraśl",
-  "url": "https://suprasl.online",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "bestRating": "5",
-    "reviewCount": "100"
-  },
-  "review": testimonials.map(t => ({
-    "@type": "Review",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5",
-      "bestRating": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": t.author
-    },
-    "datePublished": t.date,
-    "reviewBody": t.text
-  }))
-};
-
-const TestimonialsSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
-
-  return (
-    <section className="section-padding bg-warm-white">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchemaMarkup) }} />
+      {/* Review schema is now in index.html main VacationRental markup */}
       
       <div ref={ref} className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="text-center mb-16 space-y-4">
