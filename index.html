@@ -33,72 +33,141 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
+      "@type": "VacationRental",
+      "additionalType": "https://schema.org/VacationRental",
+      "identifier": "https://suprasl.online",
+      "name": "In The Woods – noclegi Supraśl",
+      "description": "Private vacation rental in Puszcza Knyszyńska forest near Supraśl, Poland. A wooden cabin with hot tub (ruska bania), fireplace, garden, and full privacy. Ideal for couples, families, and groups seeking nature retreat.",
+      "url": "https://suprasl.online",
+      "telephone": "+48722765101",
+      "email": "tutinthewood@gmail.com",
+      "image": [
+        "https://suprasl.online/og-image.jpg",
+        "https://suprasl.online/src/assets/jacuzzi-night.jpg",
+        "https://suprasl.online/src/assets/exterior-main.jpg",
+        "https://suprasl.online/src/assets/living-fireplace.jpg",
+        "https://suprasl.online/src/assets/terrace-porch.jpg",
+        "https://suprasl.online/src/assets/bedroom.jpg",
+        "https://suprasl.online/src/assets/kitchen-brick.jpg",
+        "https://suprasl.online/src/assets/winter-cabin-golden.jpg",
+        "https://suprasl.online/src/assets/bathroom.jpg",
+        "https://suprasl.online/src/assets/terrace-breakfast.jpg"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Konne 109/1",
+        "addressLocality": "Supraśl",
+        "addressRegion": "podlaskie",
+        "postalCode": "16-030",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.208577,
+        "longitude": 23.436622
+      },
+      "containsPlace": {
+        "@type": "Accommodation",
+        "name": "In The Woods – main cabin",
+        "description": "3-bedroom wooden cabin in Puszcza Knyszyńska forest with full kitchen, living room with fireplace, and private garden.",
+        "numberOfRooms": 3,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 8,
+          "unitText": "guests"
+        },
+        "bed": [
+          { "@type": "BedDetails", "numberOfBeds": 2, "typeOfBed": "Double" },
+          { "@type": "BedDetails", "numberOfBeds": 2, "typeOfBed": "Single" }
+        ],
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Hot tub / Ruska bania", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Fireplace", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Garden", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Pet-friendly", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free parking", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "BBQ / Fire pit", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Fully equipped kitchen", "value": true }
+        ],
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 120,
+          "unitCode": "MTK"
+        },
+        "petsAllowed": true
+      },
+      "checkinTime": "15:00",
+      "checkoutTime": "11:00",
+      "numberOfRooms": 3,
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "maxValue": 8,
+        "unitText": "guests"
+      },
+      "petsAllowed": true,
+      "priceRange": "399-549 PLN/night",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "100",
+        "ratingCount": "100"
+      },
+      "review": [
         {
-          "@type": "LocalBusiness",
-          "name": "In The Woods",
-          "description": "Prywatny dom na wynajem w Puszczy Knyszyńskiej blisko Supraśla. Jacuzzi, kominek, ogród. Idealny nocleg w Supraślu.",
-          "url": "https://suprasl.online",
-          "telephone": "+48722765101",
-          "email": "tutinthewood@gmail.com",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Konne 109/1",
-            "addressLocality": "Supraśl",
-            "postalCode": "16-030",
-            "addressRegion": "podlaskie",
-            "addressCountry": "PL"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 53.208577,
-            "longitude": 23.436622
-          },
-          "image": "https://suprasl.online/og-image.jpg",
-          "priceRange": "399-549 PLN/noc",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "100"
-          }
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Marta i Tomek" },
+          "datePublished": "2025-11-15",
+          "reviewBody": "Miejsce, do którego chce się wracać. Cisza, zapach drewna, kominek wieczorem i balia pod gwiazdami — to był najlepszy weekend od lat."
         },
         {
-          "@type": "VacationRental",
-          "name": "In The Woods – dom w lesie Supraśl",
-          "description": "Drewniany dom na wyłączność w Puszczy Knyszyńskiej. Kominek, ruska bania, ogród. Noclegi Supraśl.",
-          "url": "https://suprasl.online",
-          "numberOfRooms": 3,
-          "occupancy": {
-            "@type": "QuantitativeValue",
-            "maxValue": 8
-          },
-          "amenityFeature": [
-            {"@type": "LocationFeatureSpecification", "name": "Jacuzzi / Ruska bania", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Kominek", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Ogród", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Klimatyzacja", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Przyjazny zwierzętom", "value": true}
-          ],
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Konne 109/1",
-            "addressLocality": "Supraśl",
-            "postalCode": "16-030",
-            "addressCountry": "PL"
-          },
-          "petsAllowed": true
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Rodzina Kowalskich" },
+          "datePublished": "2025-08-22",
+          "reviewBody": "Dzieci nie chciały wyjeżdżać. Ogród, plac zabaw, las za płotem i ognisko każdego wieczoru. Idealne miejsce na rodzinny odpoczynek."
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {"@type": "Question", "name": "Gdzie nocować w Supraślu?", "acceptedAnswer": {"@type": "Answer", "text": "In The Woods to prywatny dom na wynajem w Puszczy Knyszyńskiej, zaledwie 10 minut od centrum Supraśla. Idealny nocleg w Supraślu dla par, rodzin i grup przyjaciół szukających ciszy i natury."}},
-            {"@type": "Question", "name": "Czy są domy na wynajem w Supraślu?", "acceptedAnswer": {"@type": "Answer", "text": "Tak — In The Woods to dom na wyłączność blisko Supraśla, w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania i pełna prywatność."}},
-            {"@type": "Question", "name": "Czy można wynająć dom w Puszczy Knyszyńskiej?", "acceptedAnswer": {"@type": "Answer", "text": "Tak, In The Woods znajduje się w sercu Puszczy Knyszyńskiej przy rezerwacie Krzemienne Góry. To jeden z nielicznych domów na wynajem otoczonych prawdziwą puszczą."}},
-            {"@type": "Question", "name": "Czy Supraśl jest dobry na weekend?", "acceptedAnswer": {"@type": "Answer", "text": "Supraśl to idealne miejsce na weekend — uzdrowiskowe miasteczko z Monasterem, Muzeum Ikon, kawiarniami i szlakami w Puszczy Knyszyńskiej. In The Woods to najlepsza baza wypadowa."}},
-            {"@type": "Question", "name": "Czy są noclegi z jacuzzi w Supraślu?", "acceptedAnswer": {"@type": "Answer", "text": "In The Woods oferuje prywatną ruską banię z balią z gorącą wodą — idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu."}}
-          ]
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Anna i Piotr" },
+          "datePublished": "2026-01-10",
+          "reviewBody": "Ruska bania pod gwiazdami to coś, co trzeba przeżyć. Do tego kominek, las i cisza — pełna regeneracja po tygodniu pracy."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Michał" },
+          "datePublished": "2026-02-14",
+          "reviewBody": "Już trzeci raz u Macieja i za każdym razem jest lepiej. Dom pięknie utrzymany, ogród zadbany, a puszcza za płotem to skarb."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Ewa i Marek" },
+          "datePublished": "2025-07-18",
+          "reviewBody": "Szukaliśmy ciszy i natury — znaleźliśmy raj. Poranki z kawą na tarasie, wieczory przy ognisku. In The Woods to definicja slow life."
         }
+      ],
+      "sameAs": [
+        "https://chatpuszczy.pl"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Gdzie nocować w Supraślu?", "acceptedAnswer": {"@type": "Answer", "text": "In The Woods to prywatny dom na wynajem w Puszczy Knyszyńskiej, zaledwie 10 minut od centrum Supraśla. Idealny nocleg w Supraślu dla par, rodzin i grup przyjaciół szukających ciszy i natury."}},
+        {"@type": "Question", "name": "Czy są domy na wynajem w Supraślu?", "acceptedAnswer": {"@type": "Answer", "text": "Tak — In The Woods to dom na wyłączność blisko Supraśla, w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania i pełna prywatność."}},
+        {"@type": "Question", "name": "Czy można wynająć dom w Puszczy Knyszyńskiej?", "acceptedAnswer": {"@type": "Answer", "text": "Tak, In The Woods znajduje się w sercu Puszczy Knyszyńskiej przy rezerwacie Krzemienne Góry. To jeden z nielicznych domów na wynajem otoczonych prawdziwą puszczą."}},
+        {"@type": "Question", "name": "Czy Supraśl jest dobry na weekend?", "acceptedAnswer": {"@type": "Answer", "text": "Supraśl to idealne miejsce na weekend — uzdrowiskowe miasteczko z Monasterem, Muzeum Ikon, kawiarniami i szlakami w Puszczy Knyszyńskiej. In The Woods to najlepsza baza wypadowa."}},
+        {"@type": "Question", "name": "Czy są noclegi z jacuzzi w Supraślu?", "acceptedAnswer": {"@type": "Answer", "text": "In The Woods oferuje prywatną ruską banię z balią z gorącą wodą — idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu."}}
       ]
     }
     </script>
