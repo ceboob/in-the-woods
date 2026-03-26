@@ -7,6 +7,7 @@ const links = [
   { label: 'Jacuzzi', href: '#jacuzzi' },
   { label: 'Okolica', href: '#lokalizacja' },
   { label: 'Cennik', href: '#cennik' },
+  { label: 'Imprezy', href: '/wieczor-panienski-suprasl', isRoute: true },
   { label: 'Kontakt', href: '#kontakt' },
 ];
 
