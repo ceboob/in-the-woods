@@ -39,9 +39,11 @@ const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPage
           </Link>
           <div className="hidden md:flex items-center gap-6">
             <Link to="/noclegi-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Noclegi</Link>
+            <Link to="/domek-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Domek</Link>
+            <Link to="/domek-z-jacuzzi-podlasie" className="nav-link text-foreground/70 hover:text-foreground">Jacuzzi</Link>
             <Link to="/atrakcje-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Atrakcje</Link>
             <Link to="/weekend-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Weekend</Link>
-            <Link to="/dom-w-lesie-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Dom w lesie</Link>
+            <Link to="/wieczor-panienski-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Imprezy</Link>
             <Link to="/puszcza-knyszynska-nocleg" className="nav-link text-foreground/70 hover:text-foreground">Puszcza</Link>
             <a href="tel:+48722765101" className="btn-primary text-xs py-2.5 px-6">Zadzwoń</a>
           </div>
