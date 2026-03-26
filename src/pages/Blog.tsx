@@ -19,7 +19,7 @@ const articles = [
     slug: 'co-robic-suprasl',
     title: 'Co robić w Supraślu? Kompletny przewodnik po atrakcjach',
     excerpt: 'Monaster, Muzeum Ikon, kajaki, szlaki w Puszczy Knyszyńskiej i kuchnia regionalna. Wszystko, co warto zobaczyć w Supraślu.',
-    image: blogMonaster,
+    image: blogCoRobic,
     date: '2026-03-25',
     readTime: '10 min',
     keywords: ['co robić w Supraślu', 'Supraśl atrakcje'],
