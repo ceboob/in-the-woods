@@ -34,12 +34,7 @@
     {
       "@context": "https://schema.org",
       "@type": "VacationRental",
-      "additionalType": "https://schema.org/VacationRental",
-      "identifier": {
-        "@type": "PropertyValue",
-        "name": "URL",
-        "value": "https://suprasl.online"
-      },
+      "identifier": "suprasl-online-in-the-woods",
       "name": "In The Woods – noclegi Supraśl",
       "description": "Private vacation rental in Puszcza Knyszyńska forest near Supraśl, Poland. A wooden cabin with hot tub (ruska bania), fireplace, garden, and full privacy. 3 bedrooms, sleeps up to 8 guests. Ideal for couples, families, and groups seeking a nature retreat with modern comforts.",
       "url": "https://suprasl.online",
@@ -74,11 +69,15 @@
       },
       "containsPlace": {
         "@type": "Accommodation",
+        "additionalType": "https://schema.org/House",
         "name": "In The Woods – main cabin",
         "description": "3-bedroom wooden cabin in Puszcza Knyszyńska forest with full kitchen, living room with fireplace, and private garden.",
         "numberOfRooms": 3,
+        "numberOfBedrooms": 3,
+        "numberOfBathroomsTotal": 1,
         "occupancy": {
           "@type": "QuantitativeValue",
+          "value": 8,
           "maxValue": 8,
           "unitText": "guests"
         },
