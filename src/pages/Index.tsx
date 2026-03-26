@@ -49,6 +49,7 @@ const Index = () => {
         <TestimonialsSection />
         <FAQSection />
         <GuestGuideSection />
+        <EventsSection />
         <SEOTextSection />
         <ContactSection />
       </main>
