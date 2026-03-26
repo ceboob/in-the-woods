@@ -31,8 +31,11 @@ const Footer = () => (
       <div className="mt-8 pt-6 border-t border-cream/10">
         <div className="flex flex-wrap justify-center gap-4 text-xs text-cream/40">
           <Link to="/noclegi-suprasl" className="hover:text-cream/70 transition-colors">Noclegi Supraśl</Link>
+          <Link to="/domek-suprasl" className="hover:text-cream/70 transition-colors">Domek Supraśl</Link>
+          <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-cream/70 transition-colors">Domek z jacuzzi</Link>
           <Link to="/dom-w-lesie-suprasl" className="hover:text-cream/70 transition-colors">Dom w lesie Supraśl</Link>
           <Link to="/weekend-suprasl" className="hover:text-cream/70 transition-colors">Weekend Supraśl</Link>
+          <Link to="/wieczor-panienski-suprasl" className="hover:text-cream/70 transition-colors">Wieczór panieński</Link>
           <Link to="/atrakcje-suprasl" className="hover:text-cream/70 transition-colors">Atrakcje Supraśla</Link>
           <Link to="/puszcza-knyszynska-nocleg" className="hover:text-cream/70 transition-colors">Nocleg Puszcza Knyszyńska</Link>
           <Link to="/informator" className="hover:text-cream/70 transition-colors">Informator gościa</Link>

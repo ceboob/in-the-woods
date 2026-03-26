@@ -187,7 +187,10 @@ const BlogArticleLayout = ({
             <Link to="/" className="hover:text-cream transition-colors">Strona główna</Link>
             <Link to="/blog" className="hover:text-cream transition-colors">Blog</Link>
             <Link to="/noclegi-suprasl" className="hover:text-cream transition-colors">Noclegi Supraśl</Link>
+            <Link to="/domek-suprasl" className="hover:text-cream transition-colors">Domek Supraśl</Link>
+            <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-cream transition-colors">Domek z jacuzzi</Link>
             <Link to="/atrakcje-suprasl" className="hover:text-cream transition-colors">Atrakcje Supraśla</Link>
+            <Link to="/wieczor-panienski-suprasl" className="hover:text-cream transition-colors">Wieczór panieński</Link>
             <Link to="/weekend-suprasl" className="hover:text-cream transition-colors">Weekend Supraśl</Link>
             <Link to="/puszcza-knyszynska-nocleg" className="hover:text-cream transition-colors">Puszcza Knyszyńska</Link>
           </div>

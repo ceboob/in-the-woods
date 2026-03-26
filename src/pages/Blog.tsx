@@ -10,13 +10,16 @@ import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
 import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
 import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
+import blogCoRobic from '@/assets/blog-co-robic-suprasl.jpg';
+import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.jpg';
+import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.jpg';
 
 const articles = [
   {
     slug: 'co-robic-suprasl',
     title: 'Co robić w Supraślu? Kompletny przewodnik po atrakcjach',
     excerpt: 'Monaster, Muzeum Ikon, kajaki, szlaki w Puszczy Knyszyńskiej i kuchnia regionalna. Wszystko, co warto zobaczyć w Supraślu.',
-    image: blogMonaster,
+    image: blogCoRobic,
     date: '2026-03-25',
     readTime: '10 min',
     keywords: ['co robić w Supraślu', 'Supraśl atrakcje'],
@@ -25,7 +28,7 @@ const articles = [
     slug: 'weekend-suprasl-plan',
     title: 'Weekend w Supraślu – plan pobytu na 2-3 dni',
     excerpt: 'Sprawdzony plan na weekend w Supraślu: zwiedzanie, szlaki, kajaki, kuchnia regionalna i relaks w jacuzzi pod gwiazdami.',
-    image: blogSzlak,
+    image: blogWeekendPlan,
     date: '2026-03-25',
     readTime: '9 min',
     keywords: ['weekend Supraśl', 'plan pobytu Supraśl'],
@@ -34,7 +37,7 @@ const articles = [
     slug: 'najlepsze-miejsca-puszcza-knyszynska',
     title: 'Najlepsze miejsca w Puszczy Knyszyńskiej – co warto zobaczyć',
     excerpt: 'Rezerwaty, szlaki, arboretum, rzeki i dzikie ostępy. Kompletny przewodnik po największym lesie Podlasia.',
-    image: blogSzlakBio,
+    image: blogNajlepszeMiejsca,
     date: '2026-03-25',
     readTime: '11 min',
     keywords: ['Puszcza Knyszyńska', 'najlepsze miejsca'],

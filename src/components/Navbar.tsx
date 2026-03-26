@@ -7,6 +7,7 @@ const links = [
   { label: 'Jacuzzi', href: '#jacuzzi' },
   { label: 'Okolica', href: '#lokalizacja' },
   { label: 'Cennik', href: '#cennik' },
+  { label: 'Imprezy', href: '/wieczor-panienski-suprasl', isRoute: true },
   { label: 'Kontakt', href: '#kontakt' },
 ];
 
@@ -36,9 +37,15 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-8">
           {links.map(l => (
-            <button key={l.href} onClick={() => handleClick(l.href)} className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}>
-              {l.label}
-            </button>
+            l.isRoute ? (
+              <Link key={l.href} to={l.href} className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}>
+                {l.label}
+              </Link>
+            ) : (
+              <button key={l.href} onClick={() => handleClick(l.href)} className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}>
+                {l.label}
+              </button>
+            )
           ))}
           <Link to="/blog" className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}>
             Blog
@@ -56,9 +63,15 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-background/98 backdrop-blur-md border-t border-border px-6 py-6 space-y-4">
           {links.map(l => (
-            <button key={l.href} onClick={() => handleClick(l.href)} className="block nav-link text-foreground/70 hover:text-foreground w-full text-left">
-              {l.label}
-            </button>
+            l.isRoute ? (
+              <Link key={l.href} to={l.href} className="block nav-link text-foreground/70 hover:text-foreground w-full text-left" onClick={() => setMenuOpen(false)}>
+                {l.label}
+              </Link>
+            ) : (
+              <button key={l.href} onClick={() => handleClick(l.href)} className="block nav-link text-foreground/70 hover:text-foreground w-full text-left">
+                {l.label}
+              </button>
+            )
           ))}
           <Link to="/blog" className="block nav-link text-foreground/70 hover:text-foreground w-full text-left" onClick={() => setMenuOpen(false)}>
             Blog
