@@ -28,7 +28,7 @@ const articles = [
     slug: 'weekend-suprasl-plan',
     title: 'Weekend w Supraślu – plan pobytu na 2-3 dni',
     excerpt: 'Sprawdzony plan na weekend w Supraślu: zwiedzanie, szlaki, kajaki, kuchnia regionalna i relaks w jacuzzi pod gwiazdami.',
-    image: blogSzlak,
+    image: blogWeekendPlan,
     date: '2026-03-25',
     readTime: '9 min',
     keywords: ['weekend Supraśl', 'plan pobytu Supraśl'],
