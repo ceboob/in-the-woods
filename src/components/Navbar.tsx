@@ -37,9 +37,15 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-8">
           {links.map(l => (
-            <button key={l.href} onClick={() => handleClick(l.href)} className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}>
-              {l.label}
-            </button>
+            l.isRoute ? (
+              <Link key={l.href} to={l.href} className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}>
+                {l.label}
+              </Link>
+            ) : (
+              <button key={l.href} onClick={() => handleClick(l.href)} className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}>
+                {l.label}
+              </button>
+            )
           ))}
           <Link to="/blog" className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}>
             Blog
