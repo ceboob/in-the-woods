@@ -11,6 +11,9 @@ import WeekendSuprasl from "./pages/WeekendSuprasl.tsx";
 import AtrakcjeSuprasl from "./pages/AtrakcjeSuprasl.tsx";
 import PuszczaKnyszynskaNocleg from "./pages/PuszczaKnyszynskaNocleg.tsx";
 import Informator from "./pages/Informator.tsx";
+import DomekSuprasl from "./pages/DomekSuprasl.tsx";
+import DomekZJacuzziPodlasie from "./pages/DomekZJacuzziPodlasie.tsx";
+import WieczorPanienskiSuprasl from "./pages/WieczorPanienskiSuprasl.tsx";
 import Blog from "./pages/Blog.tsx";
 import SupraskiSystemWodny from "./pages/blog/SupraskiSystemWodny.tsx";
 import SzlakPowstaniaStyczniowego from "./pages/blog/SzlakPowstaniaStyczniowego.tsx";
@@ -21,6 +24,9 @@ import KruszynianyTatarskaWies from "./pages/blog/KruszynianyTatarskaWies.tsx";
 import SupraslAtrakcjeUzdrowisko from "./pages/blog/SupraslAtrakcjeUzdrowisko.tsx";
 import KajakiSuprasl from "./pages/blog/KajakiSuprasl.tsx";
 import RestauracjeSuprasl from "./pages/blog/RestauracjeSuprasl.tsx";
+import CoRobicSuprasl from "./pages/blog/CoRobicSuprasl.tsx";
+import WeekendSupraslPlan from "./pages/blog/WeekendSupraslPlan.tsx";
+import NajlepszeMiejscaPuszcza from "./pages/blog/NajlepszeMiejscaPuszcza.tsx";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +44,9 @@ const App = () => (
           <Route path="/atrakcje-suprasl" element={<AtrakcjeSuprasl />} />
           <Route path="/puszcza-knyszynska-nocleg" element={<PuszczaKnyszynskaNocleg />} />
           <Route path="/informator" element={<Informator />} />
+          <Route path="/domek-suprasl" element={<DomekSuprasl />} />
+          <Route path="/domek-z-jacuzzi-podlasie" element={<DomekZJacuzziPodlasie />} />
+          <Route path="/wieczor-panienski-suprasl" element={<WieczorPanienskiSuprasl />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/supraski-system-wodny" element={<SupraskiSystemWodny />} />
           <Route path="/blog/szlak-powstania-styczniowego-suprasl" element={<SzlakPowstaniaStyczniowego />} />
@@ -48,6 +57,9 @@ const App = () => (
           <Route path="/blog/suprasl-atrakcje-uzdrowisko" element={<SupraslAtrakcjeUzdrowisko />} />
           <Route path="/blog/kajaki-suprasl" element={<KajakiSuprasl />} />
           <Route path="/blog/restauracje-suprasl" element={<RestauracjeSuprasl />} />
+          <Route path="/blog/co-robic-suprasl" element={<CoRobicSuprasl />} />
+          <Route path="/blog/weekend-suprasl-plan" element={<WeekendSupraslPlan />} />
+          <Route path="/blog/najlepsze-miejsca-puszcza-knyszynska" element={<NajlepszeMiejscaPuszcza />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

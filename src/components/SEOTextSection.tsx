@@ -15,7 +15,7 @@ const SEOTextSection = () => {
           <p>
             Szukasz <strong>noclegu w Supraślu</strong>? In The Woods – noclegi Supraśl to prywatny <strong>dom w lesie z jacuzzi</strong>,
             położony w sercu Puszczy Knyszyńskiej, zaledwie 10 minut jazdy od centrum Supraśla.
-            To wyjątkowa alternatywa dla hotelu — <strong>domek Supraśl</strong> na wyłączność, otoczony lasem i ciszą natury.
+            To wyjątkowa alternatywa dla hotelu — <Link to="/domek-suprasl" className="text-forest underline hover:text-forest-light transition-colors">domek Supraśl</Link> na wyłączność, otoczony lasem i ciszą natury.
           </p>
 
           <h3 className="font-serif text-xl text-foreground">Noclegi Supraśl – dom na wynajem</h3>
@@ -26,19 +26,20 @@ const SEOTextSection = () => {
             To jeden z nielicznych <strong>noclegów w Puszczy Knyszyńskiej</strong> łączących komfort z prawdziwą bliskością natury.
           </p>
 
-          <h3 className="font-serif text-xl text-foreground">Dom w lesie Puszcza Knyszyńska</h3>
+          <h3 className="font-serif text-xl text-foreground">Domek z jacuzzi Podlasie</h3>
           <p>
-            Obiekt znajduje się przy rezerwacie przyrody Krzemienne Góry — w otoczeniu starych drzew, 
-            ptaków i leśnych ścieżek. <strong>Nocleg Supraśl</strong> w In The Woods to turystyka przyrodnicza 
-            w najlepszym wydaniu. Poranki pachną żywicą, wieczory płoną w kominku, a niebo pełne gwiazd 
-            zaprasza do relaksu w balii z gorącą wodą.
+            Szukasz <Link to="/domek-z-jacuzzi-podlasie" className="text-forest underline hover:text-forest-light transition-colors">domku z jacuzzi na Podlasiu</Link>?
+            Nasza ruska bania z balią z gorącą wodą to wyjątkowy element oferty. Gorąca woda pod gwiazdami, 
+            w otoczeniu Puszczy Knyszyńskiej — to rytuał relaksu, który goście wspominają najczęściej.
+            Obiekt znajduje się przy rezerwacie przyrody Krzemienne Góry — w otoczeniu starych drzew i leśnych ścieżek.
           </p>
 
           <h3 className="font-serif text-xl text-foreground">Weekend w Supraślu</h3>
           <p>
             In The Woods to doskonały wybór na <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light transition-colors">weekend w Supraślu</Link> —
-            zarówno romantyczny wypad we dwoje, jak i dłuższy pobyt z rodziną. Zwierzęta są mile widziane, 
-            a ogrodzony ogród to raj dla czworonogów. Odkryj
+            zarówno romantyczny wypad we dwoje, jak i dłuższy pobyt z rodziną. Organizujemy również
+            <Link to="/wieczor-panienski-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> wieczory panieńskie</Link> i 
+            imprezy okolicznościowe. Odkryj
             <Link to="/atrakcje-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> atrakcje Supraśla</Link>,
             <Link to="/blog/szlaki-piesze-rowerowe-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> szlaki piesze i rowerowe</Link> oraz
             <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> dom w lesie</Link> w Puszczy Knyszyńskiej.

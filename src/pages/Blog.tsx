@@ -13,6 +13,33 @@ import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
 
 const articles = [
   {
+    slug: 'co-robic-suprasl',
+    title: 'Co robić w Supraślu? Kompletny przewodnik po atrakcjach',
+    excerpt: 'Monaster, Muzeum Ikon, kajaki, szlaki w Puszczy Knyszyńskiej i kuchnia regionalna. Wszystko, co warto zobaczyć w Supraślu.',
+    image: blogMonaster,
+    date: '2026-03-25',
+    readTime: '10 min',
+    keywords: ['co robić w Supraślu', 'Supraśl atrakcje'],
+  },
+  {
+    slug: 'weekend-suprasl-plan',
+    title: 'Weekend w Supraślu – plan pobytu na 2-3 dni',
+    excerpt: 'Sprawdzony plan na weekend w Supraślu: zwiedzanie, szlaki, kajaki, kuchnia regionalna i relaks w jacuzzi pod gwiazdami.',
+    image: blogSzlak,
+    date: '2026-03-25',
+    readTime: '9 min',
+    keywords: ['weekend Supraśl', 'plan pobytu Supraśl'],
+  },
+  {
+    slug: 'najlepsze-miejsca-puszcza-knyszynska',
+    title: 'Najlepsze miejsca w Puszczy Knyszyńskiej – co warto zobaczyć',
+    excerpt: 'Rezerwaty, szlaki, arboretum, rzeki i dzikie ostępy. Kompletny przewodnik po największym lesie Podlasia.',
+    image: blogSzlakBio,
+    date: '2026-03-25',
+    readTime: '11 min',
+    keywords: ['Puszcza Knyszyńska', 'najlepsze miejsca'],
+  },
+  {
     slug: 'kajaki-suprasl',
     title: 'Kajaki Supraśl – przewodnik po spływach rzeką Supraśl',
     excerpt: 'Spokojna rzeka, dzika przyroda i Puszcza Knyszyńska z poziomu wody. Wszystko o spływach kajakowych w Supraślu.',

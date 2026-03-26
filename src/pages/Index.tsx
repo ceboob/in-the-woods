@@ -19,6 +19,7 @@ import GuestGuideSection from '@/components/GuestGuideSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import SEOTextSection from '@/components/SEOTextSection';
+import EventsSection from '@/components/EventsSection';
 import AvailabilityCalendar from '@/components/AvailabilityCalendar';
 
 import ExitIntentPopup from '@/components/ExitIntentPopup';
@@ -48,6 +49,7 @@ const Index = () => {
         <TestimonialsSection />
         <FAQSection />
         <GuestGuideSection />
+        <EventsSection />
         <SEOTextSection />
         <ContactSection />
       </main>
