@@ -37,7 +37,7 @@ const articles = [
     slug: 'najlepsze-miejsca-puszcza-knyszynska',
     title: 'Najlepsze miejsca w Puszczy Knyszyńskiej – co warto zobaczyć',
     excerpt: 'Rezerwaty, szlaki, arboretum, rzeki i dzikie ostępy. Kompletny przewodnik po największym lesie Podlasia.',
-    image: blogSzlakBio,
+    image: blogNajlepszeMiejsca,
     date: '2026-03-25',
     readTime: '11 min',
     keywords: ['Puszcza Knyszyńska', 'najlepsze miejsca'],
