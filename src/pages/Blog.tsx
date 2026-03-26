@@ -10,6 +10,9 @@ import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
 import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
 import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
+import blogCoRobic from '@/assets/blog-co-robic-suprasl.jpg';
+import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.jpg';
+import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.jpg';
 
 const articles = [
   {
