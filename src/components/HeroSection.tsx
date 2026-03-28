@@ -1,4 +1,4 @@
-import jacuzziImg from '@/assets/jacuzzi-night.jpg';
+import heroImg from '@/assets/exterior-main.jpg';
 import { Phone, Star, Users, TreePine, Sparkles } from 'lucide-react';
 
 const HeroSection = () => {
