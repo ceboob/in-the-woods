@@ -6,6 +6,7 @@ import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
 import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
 import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
+import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
 
 const attractions = [
   { icon: Church, name: 'Monaster Zwiastowania NMP' },
@@ -58,6 +59,13 @@ const guides = [
     excerpt: 'Kartacze, babka ziemniaczana i kuchnia tatarska — przewodnik kulinarny po Supraślu.',
     image: blogRestauracje,
     alt: 'restauracje Supraśl – kuchnia podlaska jedzenie Supraśl',
+  },
+  {
+    slug: 'puszcza-knyszynska-historie',
+    title: 'Puszcza Knyszyńska – 7 niezwykłych historii',
+    excerpt: 'Galeria Leśna Powstania Styczniowego, legendy, duchy powstańców i dom w lesie 300 m od atrakcji.',
+    image: blogPuszczaHistorie,
+    alt: 'Puszcza Knyszyńska historie – leśna droga w porannej mgle',
   },
 ];
 
