@@ -60,6 +60,13 @@ const guides = [
     image: blogRestauracje,
     alt: 'restauracje Supraśl – kuchnia podlaska jedzenie Supraśl',
   },
+  {
+    slug: 'puszcza-knyszynska-historie',
+    title: 'Puszcza Knyszyńska – 7 niezwykłych historii',
+    excerpt: 'Galeria Leśna Powstania Styczniowego, legendy, duchy powstańców i dom w lesie 300 m od atrakcji.',
+    image: blogPuszczaHistorie,
+    alt: 'Puszcza Knyszyńska historie – leśna droga w porannej mgle',
+  },
 ];
 
 const SupraslSection = () => {
