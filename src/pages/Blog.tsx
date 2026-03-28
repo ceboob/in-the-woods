@@ -13,8 +13,18 @@ import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
 import blogCoRobic from '@/assets/blog-co-robic-suprasl.jpg';
 import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.jpg';
 import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.jpg';
+import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
 
 const articles = [
+  {
+    slug: 'puszcza-knyszynska-historie',
+    title: 'Puszcza Knyszyńska historie – 7 niezwykłych opowieści',
+    excerpt: 'Galeria Leśna Powstania Styczniowego, legendy, duchy powstańców i dom w lesie z jacuzzi 300 m od atrakcji.',
+    image: blogPuszczaHistorie,
+    date: '2026-03-28',
+    readTime: '14 min',
+    keywords: ['Puszcza Knyszyńska historie', 'Galeria Leśna'],
+  },
   {
     slug: 'co-robic-suprasl',
     title: 'Co robić w Supraślu? Kompletny przewodnik po atrakcjach',
