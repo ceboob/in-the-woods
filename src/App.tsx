@@ -27,6 +27,7 @@ import RestauracjeSuprasl from "./pages/blog/RestauracjeSuprasl.tsx";
 import CoRobicSuprasl from "./pages/blog/CoRobicSuprasl.tsx";
 import WeekendSupraslPlan from "./pages/blog/WeekendSupraslPlan.tsx";
 import NajlepszeMiejscaPuszcza from "./pages/blog/NajlepszeMiejscaPuszcza.tsx";
+import PuszczaKnyszynskaHistorie from "./pages/blog/PuszczaKnyszynskaHistorie.tsx";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +61,7 @@ const App = () => (
           <Route path="/blog/co-robic-suprasl" element={<CoRobicSuprasl />} />
           <Route path="/blog/weekend-suprasl-plan" element={<WeekendSupraslPlan />} />
           <Route path="/blog/najlepsze-miejsca-puszcza-knyszynska" element={<NajlepszeMiejscaPuszcza />} />
+          <Route path="/blog/puszcza-knyszynska-historie" element={<PuszczaKnyszynskaHistorie />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
