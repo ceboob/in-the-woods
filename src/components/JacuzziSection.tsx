@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import jacuzziImg from '@/assets/jacuzzi-night.jpg';
+import nightSkyImg from '@/assets/night-sky-stars.jpg';
 import { Snowflake, Leaf, Bike, Heart } from 'lucide-react';
 
 const bullets = [
@@ -15,12 +15,12 @@ const JacuzziSection = () => {
   return (
     <section id="jacuzzi" className="relative">
       <div className="relative h-[50vh] min-h-[400px]">
-        <img src={jacuzziImg} alt="Jacuzzi Supraśl — prywatna ruska bania nocą w In The Woods" className="w-full h-full object-cover" />
+        <img src={nightSkyImg} alt="Nocne niebo z gwiazdami nad Puszczą Knyszyńską — In The Woods Supraśl" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-graphite/40" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
             <p className="text-xs tracking-[0.3em] uppercase text-cream/80 font-sans mb-4">WYJĄTKOWE CHWILE</p>
-            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-cream">Prywatna ruska bania</h2>
+            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-cream">Prywatna ruska bania pod gwiazdami</h2>
           </div>
         </div>
       </div>
