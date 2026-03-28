@@ -18,7 +18,7 @@ const NatureSection = () => {
   return (
     <section className="relative">
       <div className="relative h-[50vh] min-h-[350px]">
-        <img src={forestImg} alt="Noclegi Puszcza Knyszyńska — poranny widok na las blisko Supraśla" className="w-full h-full object-cover" loading="lazy" />
+        <img src={forestPanorama} alt="Noclegi Puszcza Knyszyńska — panorama lasu blisko Supraśla" className="w-full h-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-graphite/30" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
