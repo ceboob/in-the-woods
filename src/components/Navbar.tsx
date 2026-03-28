@@ -61,7 +61,7 @@ const Navbar = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-background/98 backdrop-blur-md border-t border-border px-6 py-6 space-y-4">
+        <div className="md:hidden bg-background border-t border-border px-6 py-6 space-y-4">
           {links.map(l => (
             l.isRoute ? (
               <Link key={l.href} to={l.href} className="block nav-link text-foreground/70 hover:text-foreground w-full text-left" onClick={() => setMenuOpen(false)}>
