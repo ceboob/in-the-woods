@@ -5,7 +5,7 @@ const ContactSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="kontakt" className="px-6 md:px-12 py-16 bg-secondary">
+    <section id="kontakt" className="px-6 md:px-12 py-16 bg-background">
       <div ref={ref} className={`max-w-3xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="space-y-4 mb-8">
           <div className="flex items-center justify-center gap-2">

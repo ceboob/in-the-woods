@@ -36,7 +36,7 @@ const GallerySection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="galeria" className="section-padding bg-secondary">
+    <section id="galeria" className="section-padding bg-background">
       <div ref={ref} className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="text-center mb-16 space-y-4">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">Galeria</p>
