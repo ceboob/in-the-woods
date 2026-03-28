@@ -10,7 +10,7 @@ const badges = [
 ];
 
 const BadgesBar = () => (
-  <div className="px-6 md:px-12 py-8 bg-background border-y border-border overflow-x-auto">
+  <div className="px-6 md:px-12 py-8 bg-secondary border-y border-border overflow-x-auto">
     <div className="flex items-center justify-center gap-4 md:gap-8 min-w-max mx-auto">
       {badges.map((b, i) => (
         <div key={i} className="flex items-center gap-2 text-muted-foreground">

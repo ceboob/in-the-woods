@@ -13,7 +13,7 @@ const GuestGuideSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="section-padding bg-warm-white">
+    <section className="section-padding bg-secondary">
       <div ref={ref} className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="space-y-4 mb-10">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">Dla gości</p>
