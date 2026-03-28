@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import forestImg from '@/assets/forest-nature.jpg';
+import forestPanorama from '@/assets/forest-panorama.webp';
 import riverImg from '@/assets/river-kayak.jpg';
 import { TreePine, Waves, Bike, Fish, Eye, Compass } from 'lucide-react';
 
