@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import baniaImg from '@/assets/bania-relax.jpg';
+
 import outdoorImg from '@/assets/outdoor-terrace.jpg';
 import { Snowflake, Sun, Leaf, Flower2 } from 'lucide-react';
 

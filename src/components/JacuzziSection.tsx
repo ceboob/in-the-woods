@@ -20,7 +20,7 @@ const JacuzziSection = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
             <p className="text-xs tracking-[0.3em] uppercase text-cream/80 font-sans mb-4">WYJĄTKOWE CHWILE</p>
-            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-cream">Prywatna ruska bania</h2>
+            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-cream">Prywatna ruska bania pod gwiazdami</h2>
           </div>
         </div>
       </div>
