@@ -27,6 +27,7 @@ import RestauracjeSuprasl from "./pages/blog/RestauracjeSuprasl.tsx";
 import CoRobicSuprasl from "./pages/blog/CoRobicSuprasl.tsx";
 import WeekendSupraslPlan from "./pages/blog/WeekendSupraslPlan.tsx";
 import NajlepszeMiejscaPuszcza from "./pages/blog/NajlepszeMiejscaPuszcza.tsx";
+import PuszczaKnyszynskaHistorie from "./pages/blog/PuszczaKnyszynskaHistorie.tsx";
 
 const queryClient = new QueryClient();
 
