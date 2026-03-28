@@ -6,6 +6,7 @@ import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
 import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
 import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
+import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
 
 const attractions = [
   { icon: Church, name: 'Monaster Zwiastowania NMP' },
