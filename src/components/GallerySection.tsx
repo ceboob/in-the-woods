@@ -1,11 +1,9 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import jacuzziNight from '@/assets/jacuzzi-night.jpg';
 import winterCabin from '@/assets/winter-cabin-real.jpg';
-import winterGolden from '@/assets/winter-cabin-golden.jpg';
 import terracePorch from '@/assets/terrace-porch.jpg';
 import terraceBreakfast from '@/assets/terrace-breakfast.jpg';
 import kitchenDining from '@/assets/kitchen-dining.jpg';
-import winterForest from '@/assets/winter-forest.jpg';
 import exteriorMain from '@/assets/exterior-main.jpg';
 import interiorImg from '@/assets/interior-living.webp';
 import bedroomImg from '@/assets/bedroom.jpg';
@@ -14,6 +12,8 @@ import livingFireplace from '@/assets/living-fireplace.jpg';
 import kitchenBrick from '@/assets/kitchen-brick.jpg';
 import detailShelf from '@/assets/detail-shelf.jpg';
 import bathroom from '@/assets/bathroom.jpg';
+import heroCabin from '@/assets/hero-cabin.jpg';
+import cabinDayGarden from '@/assets/cabin-day-garden.jpg';
 
 const images = [
   { src: jacuzziNight, alt: 'Ruska bania z jacuzzi pod gwiazdami — noclegi Supraśl, In The Woods', className: 'col-span-2 row-span-2' },
@@ -21,15 +21,15 @@ const images = [
   { src: terracePorch, alt: 'Taras z sofą w otoczeniu Puszczy Knyszyńskiej — weekend Supraśl', className: 'col-span-1 row-span-1' },
   { src: kitchenBrick, alt: 'Kuchnia z ceglanym piecem i ceramiką — wnętrze chaty Supraśl', className: 'col-span-1 row-span-1' },
   { src: terraceBreakfast, alt: 'Śniadanie na tarasie z widokiem na las — In The Woods Supraśl', className: 'col-span-1 row-span-1' },
-  { src: winterGolden, alt: 'Drewniana chata w złotym zimowym świetle — noclegi Puszcza Knyszyńska', className: 'col-span-2 row-span-1' },
+  { src: cabinDayGarden, alt: 'Chata z ogrodem w dziennym świetle — dom w lesie Puszcza Knyszyńska', className: 'col-span-2 row-span-1' },
   { src: interiorImg, alt: 'Przytulny salon z drewnianymi belkami — dom w lesie Supraśl', className: 'col-span-1 row-span-1' },
   { src: bedroomImg, alt: 'Sypialnia z dużym łóżkiem — komfortowy nocleg Supraśl', className: 'col-span-1 row-span-1' },
   { src: detailShelf, alt: 'Ręcznie rzeźbiona drewniana półka z ceramiką — detale In The Woods', className: 'col-span-1 row-span-1' },
   { src: bathroom, alt: 'Nowoczesna łazienka z kabiną prysznicową — wynajem domu Supraśl', className: 'col-span-1 row-span-1' },
-  { src: exteriorMain, alt: 'Widok na chatę z ogrodu — dom w Puszczy Knyszyńskiej blisko Supraśla', className: 'col-span-1 row-span-1' },
-  { src: winterCabin, alt: 'Chata w śnieżnej scenerii — zimowy nocleg Puszcza Knyszyńska', className: 'col-span-1 row-span-1' },
+  { src: heroCabin, alt: 'Widok na chatę z dalekiej perspektywy — dom w Puszczy Knyszyńskiej', className: 'col-span-1 row-span-1' },
+  { src: kitchenDining, alt: 'Jadalnia z kuchnią w drewnianym domu — In The Woods Supraśl', className: 'col-span-1 row-span-1' },
   { src: kitchenTraditional, alt: 'Tradycyjna kuchnia z ceramiką — autentyczne wnętrze chaty Supraśl', className: 'col-span-1 row-span-1' },
-  { src: winterForest, alt: 'Zimowy las Puszczy Knyszyńskiej — atrakcje przyrodnicze Supraśla', className: 'col-span-1 row-span-1' },
+  { src: exteriorMain, alt: 'Widok na chatę z ogrodu — dom w Puszczy Knyszyńskiej blisko Supraśla', className: 'col-span-1 row-span-1' },
 ];
 
 const GallerySection = () => {
@@ -45,14 +45,20 @@ const GallerySection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[180px] md:auto-rows-[220px]">
           {images.map((img, i) => (
-            <div key={i} className={`overflow-hidden group rounded-lg ${img.className}`}>
+            <a
+              key={i}
+              href={img.src}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`overflow-hidden group rounded-lg cursor-pointer ${img.className}`}
+            >
               <img
                 src={img.src}
                 alt={img.alt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>

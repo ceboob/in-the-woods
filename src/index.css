@@ -6,43 +6,43 @@
 
 @layer base {
   :root {
-    --background: 40 20% 97%;
-    --foreground: 220 10% 18%;
+    --background: 45 30% 80%;
+    --foreground: 159 51% 14%;
 
-    --card: 40 15% 95%;
-    --card-foreground: 220 10% 18%;
+    --card: 45 28% 84%;
+    --card-foreground: 159 51% 14%;
 
-    --popover: 40 20% 97%;
-    --popover-foreground: 220 10% 18%;
+    --popover: 45 30% 80%;
+    --popover-foreground: 159 51% 14%;
 
-    --primary: 150 8% 35%;
-    --primary-foreground: 40 20% 97%;
+    --primary: 159 51% 14%;
+    --primary-foreground: 45 30% 92%;
 
-    --secondary: 30 20% 90%;
-    --secondary-foreground: 220 10% 18%;
+    --secondary: 91 18% 68%;
+    --secondary-foreground: 159 51% 14%;
 
-    --muted: 30 15% 92%;
-    --muted-foreground: 220 5% 45%;
+    --muted: 91 14% 74%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 30 30% 85%;
-    --accent-foreground: 220 10% 18%;
+    --accent: 141 22% 34%;
+    --accent-foreground: 45 30% 92%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 15% 88%;
-    --input: 30 15% 88%;
-    --ring: 150 8% 35%;
+    --border: 91 15% 62%;
+    --input: 91 15% 62%;
+    --ring: 159 51% 14%;
 
     --radius: 0.375rem;
 
-    --wood: 30 35% 45%;
-    --wood-light: 30 25% 75%;
-    --forest: 150 15% 30%;
-    --forest-light: 150 10% 55%;
-    --cream: 40 30% 95%;
-    --graphite: 220 10% 25%;
-    --warm-white: 40 25% 98%;
+    --wood: 141 22% 34%;
+    --wood-light: 91 18% 68%;
+    --forest: 159 51% 14%;
+    --forest-light: 141 22% 34%;
+    --cream: 45 30% 92%;
+    --graphite: 159 51% 14%;
+    --warm-white: 45 30% 86%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

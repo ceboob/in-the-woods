@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import winterCabin from '@/assets/winter-cabin-real.jpg';
+import winterCabin from '@/assets/winter-cabin.jpg';
 import winterGolden from '@/assets/winter-cabin-golden.jpg';
 import winterForest from '@/assets/winter-forest.jpg';
 
