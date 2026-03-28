@@ -1,6 +1,6 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import jacuzziImg from '@/assets/jacuzzi-night.jpg';
-import forestImg from '@/assets/forest-nature.jpg';
+import baniaImg from '@/assets/bania-relax.jpg';
+import outdoorImg from '@/assets/outdoor-terrace.jpg';
 import { Snowflake, Sun, Leaf, Flower2 } from 'lucide-react';
 
 const rituals = [
