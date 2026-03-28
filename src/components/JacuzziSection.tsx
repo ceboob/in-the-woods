@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import jacuzziImg from '@/assets/jacuzzi-night.jpg';
+import nightSkyImg from '@/assets/night-sky-stars.jpg';
 import { Snowflake, Leaf, Bike, Heart } from 'lucide-react';
 
 const bullets = [
