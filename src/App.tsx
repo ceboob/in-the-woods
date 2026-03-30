@@ -28,6 +28,7 @@ import CoRobicSuprasl from "./pages/blog/CoRobicSuprasl.tsx";
 import WeekendSupraslPlan from "./pages/blog/WeekendSupraslPlan.tsx";
 import NajlepszeMiejscaPuszcza from "./pages/blog/NajlepszeMiejscaPuszcza.tsx";
 import PuszczaKnyszynskaHistorie from "./pages/blog/PuszczaKnyszynskaHistorie.tsx";
+import WydarzeniaSupra2026 from "./pages/blog/WydarzeniaSupra2026.tsx";
 
 const queryClient = new QueryClient();
 
