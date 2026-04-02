@@ -25,14 +25,6 @@ const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPage
     ]
   } : null;
 
-  const breadcrumbSchema = breadcrumbName ? {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://suprasl.online/" },
-      { "@type": "ListItem", "position": 2, "name": breadcrumbName, "item": `https://suprasl.online${window.location.pathname}` }
-    ]
-  } : null;
 
   return (
     <div className="min-h-screen bg-background">

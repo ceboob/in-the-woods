@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import SEOHead from '@/components/SEOHead';
 import { Phone, ArrowRight, Calendar, Clock } from 'lucide-react';
 import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
 import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
