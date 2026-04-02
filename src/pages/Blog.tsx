@@ -148,24 +148,24 @@ const articles = [
 
 const Blog = () => {
   useEffect(() => {
-    document.title = 'Blog – Supraśl atrakcje, szlaki i turystyka | In The Woods';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Blog o Supraślu – atrakcje, szlaki, historia i turystyka w Puszczy Knyszyńskiej. Przewodnik turystyczny.');
     window.scrollTo(0, 0);
   }, []);
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://suprasl.online/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suprasl.online/blog" }
-    ]
-  };
-
   return (
     <div className="min-h-screen bg-background">
-      <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      <SEOHead
+        title="Blog – Supraśl atrakcje, szlaki i turystyka | In The Woods"
+        description="Blog o Supraślu – atrakcje, szlaki, historia i turystyka w Puszczy Knyszyńskiej. Przewodnik turystyczny."
+        canonical="https://suprasl.online/blog"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://suprasl.online/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suprasl.online/blog" }
+          ]
+        }}
+      />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
