@@ -39,10 +39,10 @@ const ExitIntentPopup = () => {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-      <div className="absolute inset-0 bg-graphite/60 backdrop-blur-sm" onClick={handleClose} />
+      <div className="absolute inset-0 bg-graphite/60 backdrop-blur-sm" onClick={handleClose} aria-hidden="true" />
       
-      <div className="relative bg-background rounded-xl shadow-2xl max-w-md w-full p-8 animate-fade-up" style={{ animationDelay: '0s' }}>
-        <button onClick={handleClose} className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors">
+      <div className="relative bg-background rounded-xl shadow-2xl max-w-md w-full p-8 animate-fade-up" role="dialog" aria-modal="true" aria-label="Zostaw numer telefonu" style={{ animationDelay: '0s' }}>
+        <button onClick={handleClose} className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors" aria-label="Zamknij okno">
           <X className="w-5 h-5" />
         </button>
 
@@ -69,18 +69,19 @@ const ExitIntentPopup = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex gap-3">
                 <div className="relative flex-1">
-                  <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                  <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" aria-hidden="true" />
                   <input
                     type="tel"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder="Twój numer telefonu"
+                    aria-label="Numer telefonu"
                     className="w-full pl-10 pr-4 py-3 bg-secondary border border-border text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-forest/30"
                     required
                     maxLength={15}
                   />
                 </div>
-                <button type="submit" className="btn-primary py-3 px-5 !text-xs">
+                <button type="submit" className="btn-primary py-3 px-5 !text-xs" aria-label="Wyślij numer telefonu">
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>

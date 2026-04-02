@@ -55,7 +55,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <button className={`md:hidden transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-cream'}`} onClick={() => setMenuOpen(!menuOpen)}>
+        <button className={`md:hidden transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-cream'}`} onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Zamknij menu' : 'Otwórz menu'} aria-expanded={menuOpen}>
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>

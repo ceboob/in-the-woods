@@ -93,51 +93,51 @@ const BookingModule = () => {
             <>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
+                      <label htmlFor="booking-checkin" className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
                         <Calendar className="w-4 h-4" /> Przyjazd
                       </label>
-                      <input type="date" value={data.checkIn} onChange={(e) => setData({ ...data, checkIn: e.target.value })}
+                      <input id="booking-checkin" type="date" value={data.checkIn} onChange={(e) => setData({ ...data, checkIn: e.target.value })}
                   className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
+                      <label htmlFor="booking-checkout" className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
                         <Calendar className="w-4 h-4" /> Wyjazd
                       </label>
-                      <input type="date" value={data.checkOut} onChange={(e) => setData({ ...data, checkOut: e.target.value })}
+                      <input id="booking-checkout" type="date" value={data.checkOut} onChange={(e) => setData({ ...data, checkOut: e.target.value })}
                   min={data.checkIn} className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required />
                     </div>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
+                      <label htmlFor="booking-guests" className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
                         <Users className="w-4 h-4" /> Goście
                       </label>
-                      <select value={data.guests} onChange={(e) => setData({ ...data, guests: e.target.value })}
+                      <select id="booking-guests" value={data.guests} onChange={(e) => setData({ ...data, guests: e.target.value })}
                   className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest">
                         {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => <option key={n} value={n}>{n} {n === 1 ? 'osoba' : n < 5 ? 'osoby' : 'osób'}</option>)}
                       </select>
                     </div>
                     <div className="space-y-2">
-                      <label className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
+                      <label htmlFor="booking-phone" className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
                         <Phone className="w-4 h-4" /> Telefon
                       </label>
-                      <input type="tel" placeholder="Numer telefonu" value={data.phone} onChange={(e) => setData({ ...data, phone: e.target.value })}
+                      <input id="booking-phone" type="tel" placeholder="Numer telefonu" value={data.phone} onChange={(e) => setData({ ...data, phone: e.target.value })}
                   className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required maxLength={20} />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
+                    <label htmlFor="booking-email" className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2">
                       <Mail className="w-4 h-4" /> E-mail
                     </label>
-                    <input type="email" placeholder="Adres e-mail" value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })}
+                    <input id="booking-email" type="email" placeholder="Adres e-mail" value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })}
                 className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest" required maxLength={255} />
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-xs tracking-wider uppercase text-muted-foreground">Wiadomość (opcjonalnie)</label>
-                    <textarea placeholder="Dodatkowe informacje..." value={data.message} onChange={(e) => setData({ ...data, message: e.target.value })}
+                    <label htmlFor="booking-message" className="text-xs tracking-wider uppercase text-muted-foreground">Wiadomość (opcjonalnie)</label>
+                    <textarea id="booking-message" placeholder="Dodatkowe informacje..." value={data.message} onChange={(e) => setData({ ...data, message: e.target.value })}
                 className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest resize-none" rows={3} maxLength={1000} />
                   </div>
                 </>
