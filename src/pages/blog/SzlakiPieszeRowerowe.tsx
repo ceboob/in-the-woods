@@ -2,7 +2,7 @@ import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
 import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
 import blogRowerowa from '@/assets/blog-trasa-rowerowa.jpg';
-import jacuzziNight from '@/assets/jacuzzi-night.jpg';
+import jacuzziNight from '@/assets/jacuzzi-night.webp';
 
 const SzlakiPieszeRowerowe = () => {
   const faqs = [

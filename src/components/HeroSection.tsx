@@ -1,4 +1,4 @@
-import heroImg from '@/assets/exterior-main.jpg';
+import heroImg from '@/assets/exterior-main.webp';
 import { Phone, Star, Users, TreePine, Sparkles } from 'lucide-react';
 
 const HeroSection = () => {

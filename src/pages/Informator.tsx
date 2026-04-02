@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Phone, Mail, Home, Flame, Droplets, TreePine, Cross, ShieldCheck, Bath, AlertTriangle, Bug, Heart, BookOpen, Users } from 'lucide-react';
-import guestGuideBook from '@/assets/guest-guide-book.jpg';
-import livingWide from '@/assets/living-wide.jpg';
-import stoveDetail from '@/assets/stove-detail.jpg';
-import kitchenBrick from '@/assets/kitchen-brick.jpg';
+import guestGuideBook from '@/assets/guest-guide-book.webp';
+import livingWide from '@/assets/living-wide.webp';
+import stoveDetail from '@/assets/stove-detail.webp';
+import kitchenBrick from '@/assets/kitchen-brick.webp';
 import {
   Accordion,
   AccordionContent,

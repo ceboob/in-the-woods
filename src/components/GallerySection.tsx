@@ -1,19 +1,19 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import jacuzziNight from '@/assets/jacuzzi-night.jpg';
-import winterCabin from '@/assets/winter-cabin-real.jpg';
-import terracePorch from '@/assets/terrace-porch.jpg';
-import terraceBreakfast from '@/assets/terrace-breakfast.jpg';
-import kitchenDining from '@/assets/kitchen-dining.jpg';
-import exteriorMain from '@/assets/exterior-main.jpg';
+import jacuzziNight from '@/assets/jacuzzi-night.webp';
+import winterCabin from '@/assets/winter-cabin-real.webp';
+import terracePorch from '@/assets/terrace-porch.webp';
+import terraceBreakfast from '@/assets/terrace-breakfast.webp';
+import kitchenDining from '@/assets/kitchen-dining.webp';
+import exteriorMain from '@/assets/exterior-main.webp';
 import interiorImg from '@/assets/interior-living.webp';
 import bedroomImg from '@/assets/bedroom.jpg';
-import kitchenTraditional from '@/assets/kitchen-traditional.jpg';
-import livingFireplace from '@/assets/living-fireplace.jpg';
-import kitchenBrick from '@/assets/kitchen-brick.jpg';
-import detailShelf from '@/assets/detail-shelf.jpg';
-import bathroom from '@/assets/bathroom.jpg';
-import heroCabin from '@/assets/hero-cabin.jpg';
-import cabinDayGarden from '@/assets/cabin-day-garden.jpg';
+import kitchenTraditional from '@/assets/kitchen-traditional.webp';
+import livingFireplace from '@/assets/living-fireplace.webp';
+import kitchenBrick from '@/assets/kitchen-brick.webp';
+import detailShelf from '@/assets/detail-shelf.webp';
+import bathroom from '@/assets/bathroom.webp';
+import heroCabin from '@/assets/hero-cabin.webp';
+import cabinDayGarden from '@/assets/cabin-day-garden.webp';
 
 const images = [
   { src: jacuzziNight, alt: 'Ruska bania z jacuzzi pod gwiazdami — noclegi Supraśl, In The Woods', className: 'col-span-2 row-span-2' },

@@ -2,7 +2,7 @@ import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
 import blogRzeka from '@/assets/blog-rzeka-suprasl.jpg';
 import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
-import cabinDay from '@/assets/cabin-day-garden.jpg';
+import cabinDay from '@/assets/cabin-day-garden.webp';
 
 const SupraskiSystemWodny = () => {
   const faqs = [
