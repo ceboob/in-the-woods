@@ -1,7 +1,7 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import winterCabin from '@/assets/winter-cabin.jpg';
-import winterGolden from '@/assets/winter-cabin-golden.jpg';
-import winterForest from '@/assets/winter-forest.jpg';
+import winterCabin from '@/assets/winter-cabin.webp';
+import winterGolden from '@/assets/winter-cabin-golden.webp';
+import winterForest from '@/assets/winter-forest.webp';
 
 const ideas = ['Święta w lesie', 'Ferie zimowe', 'Romantyczny wyjazd', 'Reset od miasta'];
 

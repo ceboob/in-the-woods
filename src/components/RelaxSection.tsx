@@ -1,7 +1,7 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import baniaImg from '@/assets/bania-relax.jpg';
+import baniaImg from '@/assets/bania-relax.webp';
 
-import outdoorImg from '@/assets/outdoor-terrace.jpg';
+import outdoorImg from '@/assets/outdoor-terrace.webp';
 import { Snowflake, Sun, Leaf, Flower2 } from 'lucide-react';
 
 const rituals = [

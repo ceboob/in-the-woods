@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import nightSkyImg from '@/assets/night-sky-stars.jpg';
+import nightSkyImg from '@/assets/night-sky-stars.webp';
 import { Snowflake, Leaf, Bike, Heart } from 'lucide-react';
 
 const bullets = [

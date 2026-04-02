@@ -2,7 +2,7 @@ import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
 import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
 import blogRzeka from '@/assets/blog-rzeka-suprasl.jpg';
-import exteriorMain from '@/assets/exterior-main.jpg';
+import exteriorMain from '@/assets/exterior-main.webp';
 
 const SupraslAtrakcje = () => {
   const faqs = [
