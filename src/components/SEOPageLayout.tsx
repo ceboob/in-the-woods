@@ -1,6 +1,7 @@
 import { ReactNode, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
 
 interface SEOPageLayoutProps {
   children: ReactNode;
@@ -11,11 +12,18 @@ interface SEOPageLayoutProps {
 
 const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPageLayoutProps) => {
   useEffect(() => {
-    document.title = title;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', description);
     window.scrollTo(0, 0);
-  }, [title, description]);
+  }, []);
+
+  const canonical = `https://suprasl.online${window.location.pathname}`;
+  const breadcrumbSchema = breadcrumbName ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://suprasl.online/" },
+      { "@type": "ListItem", "position": 2, "name": breadcrumbName, "item": canonical }
+    ]
+  } : null;
 
   const breadcrumbSchema = breadcrumbName ? {
     "@context": "https://schema.org",
@@ -28,9 +36,7 @@ const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPage
 
   return (
     <div className="min-h-screen bg-background">
-      {breadcrumbSchema && (
-        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
-      )}
+      <SEOHead title={title} description={description} canonical={canonical} jsonLd={breadcrumbSchema || undefined} />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
