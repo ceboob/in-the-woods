@@ -1,3 +1,4 @@
+import SEOHead from '@/components/SEOHead';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import BadgesBar from '@/components/BadgesBar';
@@ -28,6 +29,11 @@ import StickyMobileCTA from '@/components/StickyMobileCTA';
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Noclegi Supraśl – In The Woods | dom w lesie z jacuzzi"
+        description="Szukasz noclegu w Supraślu? In The Woods to prywatny dom w lesie z jacuzzi w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania – idealny wypoczynek blisko natury."
+        canonical="https://suprasl.online/"
+      />
       <Navbar />
       <main>
         <HeroSection />
