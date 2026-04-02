@@ -85,13 +85,13 @@ const AvailabilityCalendar = () => {
           <>
 
               <div className="flex items-center justify-between mb-6">
-                <button onClick={prevMonth} disabled={!canGoPrev()} className="p-2 hover:bg-secondary rounded-lg transition-colors disabled:opacity-30">
+                <button onClick={prevMonth} disabled={!canGoPrev()} className="p-2 hover:bg-secondary rounded-lg transition-colors disabled:opacity-30" aria-label="Poprzedni miesiąc">
                   <ChevronLeft className="w-5 h-5" />
                 </button>
                 <h3 className="font-serif text-lg font-semibold !mb-0">
                   {MONTH_NAMES[currentMonth.getMonth()]} {currentMonth.getFullYear()}
                 </h3>
-                <button onClick={nextMonth} className="p-2 hover:bg-secondary rounded-lg transition-colors">
+                <button onClick={nextMonth} className="p-2 hover:bg-secondary rounded-lg transition-colors" aria-label="Następny miesiąc">
                   <ChevronRight className="w-5 h-5" />
                 </button>
               </div>
