@@ -23,6 +23,7 @@ import SEOTextSection from '@/components/SEOTextSection';
 import EventsSection from '@/components/EventsSection';
 import AvailabilityCalendar from '@/components/AvailabilityCalendar';
 
+import HeroWelcome from '@/components/HeroWelcome';
 import ExitIntentPopup from '@/components/ExitIntentPopup';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
 
@@ -37,6 +38,7 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
+        <HeroWelcome />
         <BadgesBar />
         <TrustSection />
         <AmenitiesSection />
