@@ -40,6 +40,16 @@ import ogniskoNocne from '@/assets/gallery-ognisko-nocne-thumb.avif';
 import drogaLesnaPlot from '@/assets/gallery-droga-lesna-plot-thumb.avif';
 import kuchniaCegla from '@/assets/gallery-kuchnia-cegla-thumb.avif';
 import jadalniaOwoce from '@/assets/gallery-jadalnia-owoce-thumb.avif';
+import jacuzziNoc from '@/assets/gallery-jacuzzi-noc-thumb.avif';
+import kuchniaZlew from '@/assets/gallery-kuchnia-zlew-thumb.avif';
+import salonKominekSzerokie from '@/assets/gallery-salon-kominek-szerokie-thumb.avif';
+import polkaCeramika from '@/assets/gallery-polka-ceramika-thumb.avif';
+import balkonLezak from '@/assets/gallery-balkon-lezak-thumb.avif';
+import lazienkaUmywalka from '@/assets/gallery-lazienka-umywalka-thumb.avif';
+import prysznicCiemny from '@/assets/gallery-prysznic-ciemny-thumb.avif';
+import sniadanieKrata from '@/assets/gallery-sniadanie-krata-thumb.avif';
+import informatorGosci from '@/assets/gallery-informator-gosci-thumb.avif';
+import salonSchodyKwiaty from '@/assets/gallery-salon-schody-kwiaty-thumb.avif';
 
 interface GalleryImage {
   thumb: string;
