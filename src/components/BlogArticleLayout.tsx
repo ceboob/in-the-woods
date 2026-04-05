@@ -47,16 +47,16 @@ const BlogArticleLayout = ({
     "@type": "Article",
     "headline": title,
     "description": metaDescription,
-    "url": `https://suprasl.online/blog/${slug}`,
+    "url": `https://www.suprasl.online/blog/${slug}`,
     "datePublished": publishDate,
     "dateModified": publishDate,
     "author": { "@type": "Organization", "name": "In The Woods" },
     "publisher": {
       "@type": "Organization",
       "name": "In The Woods",
-      "url": "https://suprasl.online"
+      "url": "https://www.suprasl.online"
     },
-    "mainEntityOfPage": `https://suprasl.online/blog/${slug}`,
+    "mainEntityOfPage": `https://www.suprasl.online/blog/${slug}`,
     "keywords": keywords.join(', ')
   };
 
