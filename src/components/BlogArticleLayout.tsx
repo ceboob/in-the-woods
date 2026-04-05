@@ -19,6 +19,7 @@ interface BlogArticleLayoutProps {
   keywords: string[];
   faqs: FAQ[];
   relatedArticles?: { title: string; slug: string }[];
+  ogImage?: string;
 }
 
 const BlogArticleLayout = ({
