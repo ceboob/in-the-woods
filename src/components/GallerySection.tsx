@@ -125,6 +125,8 @@ const moreImages: GalleryImage[] = [
   { thumb: jadalniaKacik, full: '/images/gallery-jadalnia-kacik.avif', alt: 'Kącik jadalniany przy kominku i oknie — ciepłe wnętrze domu w lesie' },
   { thumb: poddaszeFotel, full: '/images/gallery-poddasze-fotel.avif', alt: 'Poddasze z biblioteką, fotelem i telewizorem — dodatkowa strefa relaksu' },
   { thumb: wejscieTaras, full: '/images/gallery-wejscie-taras.avif', alt: 'Wejście na taras i schody do domu — zewnętrzny widok obiektu In The Woods' },
+  { thumb: domOgrodPanorama, full: '/images/gallery-dom-ogrod-panorama.avif', alt: 'Panorama domu i ogrodu z czerwonym dachem — pełny widok obiektu wśród drzew' },
+  { thumb: piecKaflowyZblizenie, full: '/images/gallery-piec-kaflowy-zblizenie.avif', alt: 'Zbliżenie na kaflowy piec i ceglaną ścianę — rustykalne detale kuchni' },
 ];
 
 const allImages = [...heroImages, ...moreImages];
