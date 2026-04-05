@@ -47,16 +47,16 @@ const BlogArticleLayout = ({
     "@type": "Article",
     "headline": title,
     "description": metaDescription,
-    "url": `https://suprasl.online/blog/${slug}`,
+    "url": `https://www.suprasl.online/blog/${slug}`,
     "datePublished": publishDate,
     "dateModified": publishDate,
     "author": { "@type": "Organization", "name": "In The Woods" },
     "publisher": {
       "@type": "Organization",
       "name": "In The Woods",
-      "url": "https://suprasl.online"
+      "url": "https://www.suprasl.online"
     },
-    "mainEntityOfPage": `https://suprasl.online/blog/${slug}`,
+    "mainEntityOfPage": `https://www.suprasl.online/blog/${slug}`,
     "keywords": keywords.join(', ')
   };
 
@@ -74,9 +74,9 @@ const BlogArticleLayout = ({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://suprasl.online/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suprasl.online/blog" },
-      { "@type": "ListItem", "position": 3, "name": title, "item": `https://suprasl.online/blog/${slug}` }
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.suprasl.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.suprasl.online/blog" },
+      { "@type": "ListItem", "position": 3, "name": title, "item": `https://www.suprasl.online/blog/${slug}` }
     ]
   };
 
