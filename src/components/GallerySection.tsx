@@ -29,6 +29,11 @@ import ogniskoDziecko from '@/assets/gallery-ognisko-dziecko-thumb.webp';
 import ogniskoDzieci from '@/assets/gallery-ognisko-dzieci-thumb.webp';
 import foteleVintage from '@/assets/gallery-fotele-vintage-thumb.webp';
 import altanaPies from '@/assets/gallery-altana-pies-thumb.webp';
+import lazienkaPrysznic from '@/assets/gallery-lazienka-prysznic-thumb.avif';
+import sypialniaBalkon from '@/assets/gallery-sypialnia-balkon-thumb.avif';
+import tarasObiad from '@/assets/gallery-taras-obiad-thumb.avif';
+import konneDroga from '@/assets/gallery-konne-droga-thumb.avif';
+import toaletaJasna from '@/assets/gallery-toaleta-jasna-thumb.avif';
 
 interface GalleryImage {
   thumb: string;
