@@ -20,6 +20,7 @@ interface BlogArticleLayoutProps {
   faqs: FAQ[];
   relatedArticles?: { title: string; slug: string }[];
   ogImage?: string;
+  dateModified?: string;
 }
 
 const BlogArticleLayout = ({
