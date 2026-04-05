@@ -30,7 +30,7 @@ const SEOPageLayout = ({ children, title, description, breadcrumbName, ogImage }
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead title={title} description={description} canonical={canonical} jsonLd={breadcrumbSchema || undefined} />
+      <SEOHead title={title} description={description} canonical={canonical} ogImage={ogImage} jsonLd={breadcrumbSchema || undefined} />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">

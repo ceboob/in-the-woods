@@ -6,6 +6,7 @@ const WeekendSuprasl = () => (
     title="Weekend w Supraślu – plan pobytu i noclegi | In The Woods"
     description="Planuj idealny weekend w Supraślu. Monaster, Puszcza Knyszyńska, ruska bania. Prywatny dom na wynajem z kominkiem i ogrodem."
     breadcrumbName="Weekend w Supraślu"
+    ogImage="https://www.suprasl.online/images/terrace-breakfast.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">Weekend w Supraślu – jak zaplanować idealny pobyt</h1>

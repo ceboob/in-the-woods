@@ -6,6 +6,7 @@ const NoclegiSuprasl = () => (
     title="Noclegi Supraśl – gdzie nocować w Supraślu | In The Woods"
     description="Noclegi Supraśl – prywatny dom na wynajem w Puszczy Knyszyńskiej. Jacuzzi, kominek, ogród. Sprawdź ofertę noclegów blisko Supraśla i Białegostoku."
     breadcrumbName="Noclegi Supraśl"
+    ogImage="https://www.suprasl.online/images/exterior-main.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">Noclegi Supraśl – gdzie nocować w Supraślu</h1>

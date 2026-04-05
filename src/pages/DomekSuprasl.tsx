@@ -6,6 +6,7 @@ const DomekSuprasl = () => (
     title="Domek Supraśl – prywatny dom na wynajem w Puszczy Knyszyńskiej | In The Woods"
     description="Domek Supraśl na wyłączność – kominek, jacuzzi, ogród i cisza Puszczy Knyszyńskiej. Idealny na weekend, urlop lub workation. Sprawdź ofertę In The Woods."
     breadcrumbName="Domek Supraśl"
+    ogImage="https://www.suprasl.online/images/living-fireplace.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">Domek Supraśl – Twój prywatny azyl w Puszczy Knyszyńskiej</h1>
