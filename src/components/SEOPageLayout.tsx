@@ -12,7 +12,7 @@ interface SEOPageLayoutProps {
   ogImage?: string;
 }
 
-const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPageLayoutProps) => {
+const SEOPageLayout = ({ children, title, description, breadcrumbName, ogImage }: SEOPageLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
