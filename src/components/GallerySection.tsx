@@ -34,6 +34,12 @@ import sypialniaBalkon from '@/assets/gallery-sypialnia-balkon-thumb.avif';
 import tarasObiad from '@/assets/gallery-taras-obiad-thumb.avif';
 import konneDroga from '@/assets/gallery-konne-droga-thumb.avif';
 import toaletaJasna from '@/assets/gallery-toaleta-jasna-thumb.avif';
+import kominekZblizenie from '@/assets/gallery-kominek-zblizenie-thumb.avif';
+import domSchody from '@/assets/gallery-dom-schody-thumb.avif';
+import ogniskoNocne from '@/assets/gallery-ognisko-nocne-thumb.avif';
+import drogaLesnaPlot from '@/assets/gallery-droga-lesna-plot-thumb.avif';
+import kuchniaCegla from '@/assets/gallery-kuchnia-cegla-thumb.avif';
+import jadalniaOwoce from '@/assets/gallery-jadalnia-owoce-thumb.avif';
 
 interface GalleryImage {
   thumb: string;
@@ -73,6 +79,12 @@ const moreImages: GalleryImage[] = [
   { thumb: foteleVintage, full: '/images/gallery-fotele-vintage.webp', alt: 'Zabytkowe fotele w salonie — klimatyczne wnętrze chaty Supraśl' },
   { thumb: altanaPies, full: '/images/gallery-altana-pies.webp', alt: 'Altana z nakrytym stołem i pieskiem — jedzenie na świeżym powietrzu' },
   { thumb: toaletaJasna, full: '/images/gallery-toaleta-jasna.avif', alt: 'Jasna łazienka z drewnianym wykończeniem — rustykalne wnętrze domu w lesie' },
+  { thumb: kominekZblizenie, full: '/images/gallery-kominek-zblizenie.avif', alt: 'Zbliżenie na rozpalony kominek — wieczorny klimat In The Woods' },
+  { thumb: domSchody, full: '/images/gallery-dom-schody.avif', alt: 'Widok na drewniany dom i schody wejściowe — autentyczny charakter obiektu' },
+  { thumb: ogniskoNocne, full: '/images/gallery-ognisko-nocne.avif', alt: 'Nocne ognisko przy altanie — wieczór w ogrodzie In The Woods' },
+  { thumb: drogaLesnaPlot, full: '/images/gallery-droga-lesna-plot.avif', alt: 'Leśna droga przy ogrodzeniu — spokojna okolica domu w Puszczy Knyszyńskiej' },
+  { thumb: kuchniaCegla, full: '/images/gallery-kuchnia-cegla.avif', alt: 'Kuchnia z piecem kaflowym i ceglaną ścianą — rustykalne wnętrze domu' },
+  { thumb: jadalniaOwoce, full: '/images/gallery-jadalnia-owoce.avif', alt: 'Jadalnia z owocami i nakrytym stołem — rodzinne śniadanie w domu w lesie' },
 ];
 
 const allImages = [...heroImages, ...moreImages];
