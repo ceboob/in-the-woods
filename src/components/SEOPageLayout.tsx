@@ -9,6 +9,7 @@ interface SEOPageLayoutProps {
   title: string;
   description: string;
   breadcrumbName?: string;
+  ogImage?: string;
 }
 
 const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPageLayoutProps) => {
