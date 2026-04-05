@@ -44,6 +44,15 @@ const SEOTextSection = () => {
             <Link to="/blog/szlaki-piesze-rowerowe-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> szlaki piesze i rowerowe</Link> oraz
             <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> dom w lesie</Link> w Puszczy Knyszyńskiej.
           </p>
+
+          <h3 className="font-serif text-xl text-foreground">Sprawdź noclegi w Supraślu</h3>
+          <p>
+            Szukasz sprawdzonego <Link to="/noclegi-suprasl" className="text-forest underline hover:text-forest-light transition-colors">noclegu w Supraślu</Link>?
+            Sprawdź nasz <Link to="/blog/weekend-suprasl-plan" className="text-forest underline hover:text-forest-light transition-colors">plan na weekend w Supraślu</Link>,
+            dowiedz się <Link to="/blog/co-robic-suprasl" className="text-forest underline hover:text-forest-light transition-colors">co robić w Supraślu</Link>,
+            odkryj najlepsze <Link to="/blog/restauracje-suprasl" className="text-forest underline hover:text-forest-light transition-colors">restauracje Supraśla</Link> i zaplanuj
+            <Link to="/blog/kajaki-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> spływ kajakowy rzeką Supraśl</Link>.
+          </p>
         </div>
       </div>
     </section>
