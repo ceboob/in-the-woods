@@ -38,6 +38,7 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
+        <HeroWelcome />
         <BadgesBar />
         <TrustSection />
         <AmenitiesSection />
