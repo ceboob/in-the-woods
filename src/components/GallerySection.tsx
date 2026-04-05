@@ -40,6 +40,16 @@ import ogniskoNocne from '@/assets/gallery-ognisko-nocne-thumb.avif';
 import drogaLesnaPlot from '@/assets/gallery-droga-lesna-plot-thumb.avif';
 import kuchniaCegla from '@/assets/gallery-kuchnia-cegla-thumb.avif';
 import jadalniaOwoce from '@/assets/gallery-jadalnia-owoce-thumb.avif';
+import jacuzziNoc from '@/assets/gallery-jacuzzi-noc-thumb.avif';
+import kuchniaZlew from '@/assets/gallery-kuchnia-zlew-thumb.avif';
+import salonKominekSzerokie from '@/assets/gallery-salon-kominek-szerokie-thumb.avif';
+import polkaCeramika from '@/assets/gallery-polka-ceramika-thumb.avif';
+import balkonLezak from '@/assets/gallery-balkon-lezak-thumb.avif';
+import lazienkaUmywalka from '@/assets/gallery-lazienka-umywalka-thumb.avif';
+import prysznicCiemny from '@/assets/gallery-prysznic-ciemny-thumb.avif';
+import sniadanieKrata from '@/assets/gallery-sniadanie-krata-thumb.avif';
+import informatorGosci from '@/assets/gallery-informator-gosci-thumb.avif';
+import salonSchodyKwiaty from '@/assets/gallery-salon-schody-kwiaty-thumb.avif';
 
 interface GalleryImage {
   thumb: string;
@@ -85,6 +95,16 @@ const moreImages: GalleryImage[] = [
   { thumb: drogaLesnaPlot, full: '/images/gallery-droga-lesna-plot.avif', alt: 'Leśna droga przy ogrodzeniu — spokojna okolica domu w Puszczy Knyszyńskiej' },
   { thumb: kuchniaCegla, full: '/images/gallery-kuchnia-cegla.avif', alt: 'Kuchnia z piecem kaflowym i ceglaną ścianą — rustykalne wnętrze domu' },
   { thumb: jadalniaOwoce, full: '/images/gallery-jadalnia-owoce.avif', alt: 'Jadalnia z owocami i nakrytym stołem — rodzinne śniadanie w domu w lesie' },
+  { thumb: jacuzziNoc, full: '/images/gallery-jacuzzi-noc.avif', alt: 'Jacuzzi z niebieskim podświetleniem nocą — prywatne SPA w ogrodzie In The Woods' },
+  { thumb: kuchniaZlew, full: '/images/gallery-kuchnia-zlew.avif', alt: 'Kuchnia z ceglaną ścianą, niebieskimi talerzami i owocami — dom w Puszczy Knyszyńskiej' },
+  { thumb: salonKominekSzerokie, full: '/images/gallery-salon-kominek-szerokie.avif', alt: 'Panorama salonu z kominkiem i fotelami — przytulne wnętrze domu Supraśl' },
+  { thumb: polkaCeramika, full: '/images/gallery-polka-ceramika.avif', alt: 'Drewniana półka z ceramiką i szufladkami — detale wnętrza In The Woods' },
+  { thumb: balkonLezak, full: '/images/gallery-balkon-lezak.avif', alt: 'Balkon z leżakiem i widokiem na las — wypoczynek na świeżym powietrzu' },
+  { thumb: lazienkaUmywalka, full: '/images/gallery-lazienka-umywalka.avif', alt: 'Nowoczesna łazienka z podświetlanym lustrem — komfort w domu w lesie' },
+  { thumb: prysznicCiemny, full: '/images/gallery-prysznic-ciemny.avif', alt: 'Prysznic z deszczownicą w ciemnych kaflach — elegancka łazienka In The Woods' },
+  { thumb: sniadanieKrata, full: '/images/gallery-sniadanie-krata.avif', alt: 'Śniadanie na stole w kratę z tulipanami — poranek w chacie Supraśl' },
+  { thumb: informatorGosci, full: '/images/gallery-informator-gosci.avif', alt: 'Informator dla gości na drewnianym stoliku — In The Wood branding' },
+  { thumb: salonSchodyKwiaty, full: '/images/gallery-salon-schody-kwiaty.avif', alt: 'Salon z kominkiem, schodami i kwiatami — klimatyczne wnętrze domu w Puszczy' },
 ];
 
 const allImages = [...heroImages, ...moreImages];
