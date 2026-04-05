@@ -2,6 +2,7 @@ import { ReactNode, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
+import RelatedPages from '@/components/RelatedPages';
 
 interface SEOPageLayoutProps {
   children: ReactNode;
