@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ['"Grand Hotel"', 'cursive'],
-        script: ['"Cookie"', 'cursive'],
+        script: ['"Sacramento"', 'cursive'],
         serif: ['"Mulish"', 'system-ui', 'sans-serif'],
         sans: ['"Mulish"', 'system-ui', 'sans-serif'],
       },
