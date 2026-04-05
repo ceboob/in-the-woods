@@ -2,24 +2,8 @@ import { useState } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
 
-// Main gallery grid images (existing real photos)
 import jacuzziNight from '@/assets/jacuzzi-night.webp';
-import winterCabin from '@/assets/winter-cabin-real.webp';
-import terracePorch from '@/assets/terrace-porch.webp';
-import terraceBreakfast from '@/assets/terrace-breakfast.webp';
-import kitchenDining from '@/assets/kitchen-dining.webp';
-import exteriorMain from '@/assets/exterior-main.webp';
-import interiorImg from '@/assets/interior-living.webp';
-import bedroomImg from '@/assets/bedroom.jpg';
-import kitchenTraditional from '@/assets/kitchen-traditional.webp';
-import livingFireplace from '@/assets/living-fireplace.webp';
-import kitchenBrick from '@/assets/kitchen-brick.webp';
-import detailShelf from '@/assets/detail-shelf.webp';
-import bathroom from '@/assets/bathroom.webp';
-import heroCabin from '@/assets/hero-cabin.webp';
-import cabinDayGarden from '@/assets/cabin-day-garden.webp';
 
-// New gallery thumbnails from archive
 import salonKominek from '@/assets/gallery-salon-kominek-thumb.webp';
 import salonPanorama from '@/assets/gallery-salon-panorama-thumb.webp';
 import salonFotele from '@/assets/gallery-salon-fotele-thumb.webp';
@@ -53,61 +37,49 @@ interface GalleryImage {
   className?: string;
 }
 
-const mainImages: GalleryImage[] = [
+const heroImages: GalleryImage[] = [
   { thumb: jacuzziNight, full: '/images/jacuzzi-night.jpg', alt: 'Ruska bania z jacuzzi pod gwiazdami — noclegi Supraśl, In The Woods', className: 'col-span-2 row-span-2' },
-  { thumb: livingFireplace, full: '/images/living-fireplace.jpg', alt: 'Salon z kominkiem i drewnianym wnętrzem — dom na wynajem Supraśl' },
-  { thumb: terracePorch, full: '/images/terrace-porch.jpg', alt: 'Taras z sofą w otoczeniu Puszczy Knyszyńskiej — weekend Supraśl' },
-  { thumb: kitchenBrick, full: '/images/kitchen-brick.jpg', alt: 'Kuchnia z ceglanym piecem i ceramiką — wnętrze chaty Supraśl' },
-  { thumb: terraceBreakfast, full: '/images/terrace-breakfast.jpg', alt: 'Śniadanie na tarasie z widokiem na las — In The Woods Supraśl' },
-  { thumb: cabinDayGarden, full: '/images/hero-cabin.jpg', alt: 'Chata z ogrodem w dziennym świetle — dom w lesie Puszcza Knyszyńska', className: 'col-span-2' },
-  { thumb: interiorImg, full: '/images/interior-living.webp', alt: 'Przytulny salon z drewnianymi belkami — dom w lesie Supraśl' },
-  { thumb: bedroomImg, full: '/images/bedroom.jpg', alt: 'Sypialnia z dużym łóżkiem — komfortowy nocleg Supraśl' },
-  { thumb: detailShelf, full: '/images/interior-living.webp', alt: 'Ręcznie rzeźbiona drewniana półka z ceramiką — detale In The Woods' },
-  { thumb: bathroom, full: '/images/bathroom.jpg', alt: 'Nowoczesna łazienka z kabiną prysznicową — wynajem domu Supraśl' },
-  { thumb: heroCabin, full: '/images/hero-cabin.jpg', alt: 'Widok na chatę z dalekiej perspektywy — dom w Puszczy Knyszyńskiej' },
-  { thumb: kitchenDining, full: '/images/kitchen-dining.jpg', alt: 'Jadalnia z kuchnią w drewnianym domu — In The Woods Supraśl' },
-  { thumb: kitchenTraditional, full: '/images/kitchen-dining.jpg', alt: 'Tradycyjna kuchnia z ceramiką — autentyczne wnętrze chaty Supraśl' },
-  { thumb: exteriorMain, full: '/images/exterior-main.jpg', alt: 'Widok na chatę z ogrodu — dom w Puszczy Knyszyńskiej blisko Supraśla' },
+  { thumb: salonKominek, full: '/images/gallery-salon-kominek.webp', alt: 'Salon z kominkiem i drewnianymi schodami — In The Woods wnętrze' },
+  { thumb: domLato, full: '/images/gallery-dom-lato.webp', alt: 'Dom z czerwonym dachem latem — In The Woods widok z ogrodu' },
+  { thumb: sypialniaGorna, full: '/images/gallery-sypialnia-gorna.webp', alt: 'Sypialnia na poddaszu z widokiem na las — nocleg Supraśl' },
+  { thumb: jadalniaSniadanie, full: '/images/gallery-jadalnia-sniadanie.webp', alt: 'Jadalnia ze śniadaniem — poranek w chacie Puszcza Knyszyńska' },
+  { thumb: baniaFront, full: '/images/gallery-bania-front.webp', alt: 'Ruska bania z drewnianą obudową — prywatne SPA Supraśl', className: 'col-span-2' },
+  { thumb: tarasSofa, full: '/images/gallery-taras-sofa.webp', alt: 'Taras z sofą i trawami pampasowymi — relaks w Puszczy Knyszyńskiej' },
+  { thumb: kuchniaCeramika, full: '/images/gallery-kuchnia-ceramika.webp', alt: 'Kuchnia z ceglanym piecem i owocami — In The Woods kuchnia' },
+  { thumb: ogrodZielen, full: '/images/gallery-ogrod-zielen.webp', alt: 'Zielony ogród z hamakiem — teren In The Woods Supraśl' },
+  { thumb: tarasGrill, full: '/images/gallery-taras-grill.webp', alt: 'Obiad na tarasie z grillem — jedzenie na świeżym powietrzu Supraśl' },
+  { thumb: salonPanorama, full: '/images/gallery-salon-panorama.webp', alt: 'Panorama salonu z fotelem i kominkiem — dom na wynajem Supraśl' },
+  { thumb: ogniskoDzieci, full: '/images/gallery-ognisko-dzieci.webp', alt: 'Dzieci przy ognisku z widokiem na chatę — rodzinne noclegi Supraśl' },
 ];
 
-const extraImages: GalleryImage[] = [
-  { thumb: salonKominek, full: '/images/gallery-salon-kominek.webp', alt: 'Salon z kominkiem i drewnianymi schodami — In The Woods wnętrze' },
-  { thumb: salonPanorama, full: '/images/gallery-salon-panorama.webp', alt: 'Panorama salonu z fotelem i kominkiem — dom na wynajem Supraśl' },
+const moreImages: GalleryImage[] = [
   { thumb: salonFotele, full: '/images/gallery-salon-fotele.webp', alt: 'Wygodne fotele przy kominku — wieczór w chacie Supraśl' },
-  { thumb: sypialniaGorna, full: '/images/gallery-sypialnia-gorna.webp', alt: 'Sypialnia na poddaszu z widokiem na las — nocleg Supraśl' },
-  { thumb: kuchniaCeramika, full: '/images/gallery-kuchnia-ceramika.webp', alt: 'Kuchnia z ceglanym piecem i owocami — In The Woods kuchnia' },
-  { thumb: jadalniaSniadanie, full: '/images/gallery-jadalnia-sniadanie.webp', alt: 'Jadalnia ze śniadaniem — poranek w chacie Puszcza Knyszyńska' },
   { thumb: jadalniaSerwis, full: '/images/gallery-jadalnia-serwis.webp', alt: 'Nakryty stół z domowym jedzeniem — śniadanie Supraśl' },
   { thumb: jadalniaKwiaty, full: '/images/gallery-jadalnia-kwiaty.webp', alt: 'Jadalnia z tulipanami i drewnianymi meblami — dom Supraśl' },
-  { thumb: tarasSofa, full: '/images/gallery-taras-sofa.webp', alt: 'Taras z sofą i trawami pampasowymi — relaks w Puszczy Knyszyńskiej' },
-  { thumb: tarasGrill, full: '/images/gallery-taras-grill.webp', alt: 'Obiad na tarasie z grillem — jedzenie na świeżym powietrzu Supraśl' },
   { thumb: toaletaDrewniana, full: '/images/gallery-toaleta-drewniana.webp', alt: 'Drewniana toaleta w stylu rustykalnym — In The Woods łazienka' },
   { thumb: lazienkaNowa, full: '/images/gallery-lazienka-nowoczesna.webp', alt: 'Nowoczesna łazienka z kabiną — komfort w chacie Supraśl' },
-  { thumb: domLato, full: '/images/gallery-dom-lato.webp', alt: 'Dom z czerwonym dachem latem — In The Woods widok z ogrodu' },
-  { thumb: ogrodZielen, full: '/images/gallery-ogrod-zielen.webp', alt: 'Zielony ogród z hamakiem — teren In The Woods Supraśl' },
-  { thumb: baniaFront, full: '/images/gallery-bania-front.webp', alt: 'Ruska bania z drewnianą obudową — prywatne SPA Supraśl' },
   { thumb: baniaDom, full: '/images/gallery-bania-dom.webp', alt: 'Bania na tle chaty z czerwonym dachem — In The Woods ogród' },
   { thumb: baniaOgrod, full: '/images/gallery-bania-ogrod.webp', alt: 'Bania w ogrodzie z widokiem na las — relaks Puszcza Knyszyńska' },
   { thumb: dabPuszcza, full: '/images/gallery-dab-puszcza.webp', alt: 'Stary dąb w Puszczy Knyszyńskiej — natura blisko Supraśla' },
+  { thumb: drogaLesna, full: '/images/gallery-droga-lesna.webp', alt: 'Leśna droga w Puszczy Knyszyńskiej — okolica In The Woods' },
   { thumb: tarasPies, full: '/images/gallery-taras-pies-wieczor.webp', alt: 'Pies na tarasie przy świecach — wieczór w In The Woods' },
   { thumb: tarasRelaks, full: '/images/gallery-taras-relaks.webp', alt: 'Relaks na tarasie z kawą — letni wieczór w Puszczy Knyszyńskiej' },
   { thumb: ogniskoDziecko, full: '/images/gallery-ognisko-dziecko.webp', alt: 'Dziecko przy ognisku — rodzinny weekend w In The Woods' },
-  { thumb: ogniskoDzieci, full: '/images/gallery-ognisko-dzieci.webp', alt: 'Dzieci przy ognisku z widokiem na chatę — rodzinne noclegi Supraśl' },
   { thumb: foteleVintage, full: '/images/gallery-fotele-vintage.webp', alt: 'Zabytkowe fotele w salonie — klimatyczne wnętrze chaty Supraśl' },
   { thumb: altanaPies, full: '/images/gallery-altana-pies.webp', alt: 'Altana z nakrytym stołem i pieskiem — jedzenie na świeżym powietrzu' },
 ];
 
-const allImages = [...mainImages, ...extraImages];
+const allImages = [...heroImages, ...moreImages];
 
 const GallerySection = () => {
   const { ref, isVisible } = useScrollAnimation();
   const [showAll, setShowAll] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  const displayImages = showAll ? allImages : mainImages;
+  const displayImages = showAll ? allImages : heroImages;
 
-  const openLightbox = (globalIndex: number) => {
-    setLightboxIndex(globalIndex);
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
     document.body.style.overflow = 'hidden';
   };
 
@@ -129,7 +101,7 @@ const GallerySection = () => {
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">Galeria</p>
           <h2 className="section-title">Obrazy mówią więcej</h2>
           <p className="section-subtitle mx-auto">
-            Autentyczne zdjęcia naszego domu, wnętrz, ogrodu i okolicy — tak naprawdę wygląda In The Woods.
+            Autentyczne zdjęcia naszego domu, wnętrz, ogrodu i okolicy — tak naprawdę wygląda In&nbsp;The&nbsp;Woods.
           </p>
         </div>
 
@@ -137,7 +109,7 @@ const GallerySection = () => {
           {displayImages.map((img, i) => (
             <button
               key={i}
-              onClick={() => openLightbox(showAll ? i : i)}
+              onClick={() => openLightbox(i)}
               className={`overflow-hidden group rounded-lg cursor-pointer relative ${img.className || 'col-span-1 row-span-1'}`}
               aria-label={`Otwórz zdjęcie: ${img.alt}`}
             >
@@ -167,7 +139,6 @@ const GallerySection = () => {
         )}
       </div>
 
-      {/* Lightbox */}
       {lightboxIndex !== null && (
         <div
           className="fixed inset-0 z-50 bg-graphite/95 flex items-center justify-center"
@@ -175,27 +146,13 @@ const GallerySection = () => {
           role="dialog"
           aria-label="Powiększone zdjęcie galerii"
         >
-          <button
-            onClick={closeLightbox}
-            className="absolute top-4 right-4 text-cream/80 hover:text-cream z-10 p-2"
-            aria-label="Zamknij galerię"
-          >
+          <button onClick={closeLightbox} className="absolute top-4 right-4 text-cream/80 hover:text-cream z-10 p-2" aria-label="Zamknij galerię">
             <X className="w-7 h-7" />
           </button>
-
-          <button
-            onClick={(e) => { e.stopPropagation(); navigate(-1); }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 text-cream/80 hover:text-cream z-10 p-2"
-            aria-label="Poprzednie zdjęcie"
-          >
+          <button onClick={(e) => { e.stopPropagation(); navigate(-1); }} className="absolute left-4 top-1/2 -translate-y-1/2 text-cream/80 hover:text-cream z-10 p-2" aria-label="Poprzednie zdjęcie">
             <ChevronLeft className="w-8 h-8" />
           </button>
-
-          <button
-            onClick={(e) => { e.stopPropagation(); navigate(1); }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-cream/80 hover:text-cream z-10 p-2"
-            aria-label="Następne zdjęcie"
-          >
+          <button onClick={(e) => { e.stopPropagation(); navigate(1); }} className="absolute right-4 top-1/2 -translate-y-1/2 text-cream/80 hover:text-cream z-10 p-2" aria-label="Następne zdjęcie">
             <ChevronRight className="w-8 h-8" />
           </button>
 
