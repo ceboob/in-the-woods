@@ -16,12 +16,12 @@ const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPage
     window.scrollTo(0, 0);
   }, []);
 
-  const canonical = `https://suprasl.online${window.location.pathname}`;
+  const canonical = `https://www.suprasl.online${window.location.pathname}`;
   const breadcrumbSchema = breadcrumbName ? {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://suprasl.online/" },
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.suprasl.online/" },
       { "@type": "ListItem", "position": 2, "name": breadcrumbName, "item": canonical }
     ]
   } : null;

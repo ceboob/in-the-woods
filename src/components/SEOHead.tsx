@@ -13,7 +13,7 @@ const SEOHead = ({
   title, 
   description, 
   canonical, 
-  ogImage = 'https://suprasl.online/og-image.jpg',
+  ogImage = 'https://www.suprasl.online/og-image.jpg',
   type = 'website',
   jsonLd
 }: SEOHeadProps) => (

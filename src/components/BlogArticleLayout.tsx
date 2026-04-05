@@ -74,9 +74,9 @@ const BlogArticleLayout = ({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://suprasl.online/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suprasl.online/blog" },
-      { "@type": "ListItem", "position": 3, "name": title, "item": `https://suprasl.online/blog/${slug}` }
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.suprasl.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.suprasl.online/blog" },
+      { "@type": "ListItem", "position": 3, "name": title, "item": `https://www.suprasl.online/blog/${slug}` }
     ]
   };
 
