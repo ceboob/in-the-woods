@@ -25,10 +25,7 @@ import baniaOgrod from '@/assets/gallery-bania-ogrod-thumb.webp';
 import dabPuszcza from '@/assets/gallery-dab-puszcza-thumb.webp';
 import tarasPies from '@/assets/gallery-taras-pies-wieczor-thumb.webp';
 import tarasRelaks from '@/assets/gallery-taras-relaks-thumb.webp';
-import ogniskoDziecko from '@/assets/gallery-ognisko-dziecko-thumb.webp';
 import ogniskoDzieci from '@/assets/gallery-ognisko-dzieci-thumb.webp';
-import foteleVintage from '@/assets/gallery-fotele-vintage-thumb.webp';
-import altanaPies from '@/assets/gallery-altana-pies-thumb.webp';
 import lazienkaPrysznic from '@/assets/gallery-lazienka-prysznic-thumb.avif';
 import sypialniaBalkon from '@/assets/gallery-sypialnia-balkon-thumb.avif';
 import tarasObiad from '@/assets/gallery-taras-obiad-thumb.avif';
@@ -61,6 +58,10 @@ import poddaszeFotel from '@/assets/gallery-poddasze-fotel-thumb.avif';
 import wejscieTaras from '@/assets/gallery-wejscie-taras-thumb.avif';
 import domOgrodPanorama from '@/assets/gallery-dom-ogrod-panorama-thumb.avif';
 import piecKaflowyZblizenie from '@/assets/gallery-piec-kaflowy-zblizenie-thumb.avif';
+import sypialniaZieloneZaslony from '@/assets/gallery-sypialnia-zielone-zaslony-thumb.avif';
+import konneZnak from '@/assets/gallery-konne-znak-thumb.avif';
+import jadalniaTulipanyZblizenie from '@/assets/gallery-jadalnia-tulipany-zblizenie-thumb.avif';
+import tarasSofaWejscie from '@/assets/gallery-taras-sofa-wejscie-thumb.avif';
 
 interface GalleryImage {
   thumb: string;
@@ -96,9 +97,6 @@ const moreImages: GalleryImage[] = [
   { thumb: drogaLesna, full: '/images/gallery-droga-lesna.webp', alt: 'Leśna droga w Puszczy Knyszyńskiej — okolica In The Woods' },
   { thumb: tarasPies, full: '/images/gallery-taras-pies-wieczor.webp', alt: 'Pies na tarasie przy świecach — wieczór w In The Woods' },
   { thumb: tarasRelaks, full: '/images/gallery-taras-relaks.webp', alt: 'Relaks na tarasie z kawą — letni wieczór w Puszczy Knyszyńskiej' },
-  { thumb: ogniskoDziecko, full: '/images/gallery-ognisko-dziecko.webp', alt: 'Dziecko przy ognisku — rodzinny weekend w In The Woods' },
-  { thumb: foteleVintage, full: '/images/gallery-fotele-vintage.webp', alt: 'Zabytkowe fotele w salonie — klimatyczne wnętrze chaty Supraśl' },
-  { thumb: altanaPies, full: '/images/gallery-altana-pies.webp', alt: 'Altana z nakrytym stołem i pieskiem — jedzenie na świeżym powietrzu' },
   { thumb: toaletaJasna, full: '/images/gallery-toaleta-jasna.avif', alt: 'Jasna łazienka z drewnianym wykończeniem — rustykalne wnętrze domu w lesie' },
   { thumb: kominekZblizenie, full: '/images/gallery-kominek-zblizenie.avif', alt: 'Zbliżenie na rozpalony kominek — wieczorny klimat In The Woods' },
   { thumb: domSchody, full: '/images/gallery-dom-schody.avif', alt: 'Widok na drewniany dom i schody wejściowe — autentyczny charakter obiektu' },
@@ -127,6 +125,10 @@ const moreImages: GalleryImage[] = [
   { thumb: wejscieTaras, full: '/images/gallery-wejscie-taras.avif', alt: 'Wejście na taras i schody do domu — zewnętrzny widok obiektu In The Woods' },
   { thumb: domOgrodPanorama, full: '/images/gallery-dom-ogrod-panorama.avif', alt: 'Panorama domu i ogrodu z czerwonym dachem — pełny widok obiektu wśród drzew' },
   { thumb: piecKaflowyZblizenie, full: '/images/gallery-piec-kaflowy-zblizenie.avif', alt: 'Zbliżenie na kaflowy piec i ceglaną ścianę — rustykalne detale kuchni' },
+  { thumb: sypialniaZieloneZaslony, full: '/images/gallery-sypialnia-zielone-zaslony.avif', alt: 'Sypialnia z zielonymi zasłonami i widokiem na ogród — nocleg w Puszczy Knyszyńskiej' },
+  { thumb: konneZnak, full: '/images/gallery-konne-znak.avif', alt: 'Znak kierunkowy na leśnej drodze w okolicy Konnych — okolica In The Woods Supraśl' },
+  { thumb: jadalniaTulipanyZblizenie, full: '/images/gallery-jadalnia-tulipany-zblizenie.avif', alt: 'Zbliżenie na tulipany w jadalni — detale wystroju domu w lesie Supraśl' },
+  { thumb: tarasSofaWejscie, full: '/images/gallery-taras-sofa-wejscie.avif', alt: 'Sofa na tarasie przy wejściu do domu — relaks na świeżym powietrzu In The Woods' },
 ];
 
 const allImages = [...heroImages, ...moreImages];
@@ -177,7 +179,9 @@ const GallerySection = () => {
                 src={img.thumb}
                 alt={img.alt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                loading="lazy"
+                loading={i < 2 ? 'eager' : 'lazy'}
+                fetchPriority={i < 2 ? 'high' : undefined}
+                decoding="async"
                 width="400"
                 height="300"
               />
@@ -221,6 +225,7 @@ const GallerySection = () => {
               src={allImages[lightboxIndex].full}
               alt={allImages[lightboxIndex].alt}
               className="max-w-full max-h-[80vh] object-contain mx-auto"
+              decoding="async"
             />
             <p className="text-cream/70 text-sm text-center mt-4 font-sans">
               {allImages[lightboxIndex].alt}
