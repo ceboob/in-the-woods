@@ -53,7 +53,7 @@ const BlogArticleLayout = ({
     "description": metaDescription,
     "url": `https://www.suprasl.online/blog/${slug}`,
     "datePublished": publishDate,
-    "dateModified": publishDate,
+    "dateModified": dateModified || publishDate,
     "author": { "@type": "Organization", "name": "In The Woods" },
     "publisher": {
       "@type": "Organization",
