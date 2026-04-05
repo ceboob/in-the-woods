@@ -6,6 +6,7 @@ const DomekZJacuzziPodlasie = () => (
     title="Domek z jacuzzi Podlasie – prywatny dom z balią w Puszczy Knyszyńskiej | In The Woods"
     description="Domek z jacuzzi na Podlasiu – ruska bania z balią z gorącą wodą, kominek i las za oknem. In The Woods to prywatny dom w Puszczy Knyszyńskiej blisko Supraśla."
     breadcrumbName="Domek z jacuzzi Podlasie"
+    ogImage="https://www.suprasl.online/images/jacuzzi-night.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">Domek z jacuzzi Podlasie – relaks w sercu Puszczy Knyszyńskiej</h1>

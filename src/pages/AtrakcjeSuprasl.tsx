@@ -6,6 +6,7 @@ const AtrakcjeSuprasl = () => (
     title="Atrakcje Supraśla – co zobaczyć, co robić | In The Woods"
     description="Co zobaczyć w Supraślu? Monaster, Muzeum Ikon, bulwary, szlaki rowerowe, spływy kajakowe. Odkryj atrakcje Supraśla i Puszczy Knyszyńskiej."
     breadcrumbName="Atrakcje Supraśla"
+    ogImage="https://www.suprasl.online/images/terrace-porch.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">Atrakcje Supraśla – co zobaczyć, co robić w okolicy</h1>

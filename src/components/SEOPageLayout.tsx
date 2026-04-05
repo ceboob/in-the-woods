@@ -9,9 +9,10 @@ interface SEOPageLayoutProps {
   title: string;
   description: string;
   breadcrumbName?: string;
+  ogImage?: string;
 }
 
-const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPageLayoutProps) => {
+const SEOPageLayout = ({ children, title, description, breadcrumbName, ogImage }: SEOPageLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -29,7 +30,7 @@ const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPage
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead title={title} description={description} canonical={canonical} jsonLd={breadcrumbSchema || undefined} />
+      <SEOHead title={title} description={description} canonical={canonical} ogImage={ogImage} jsonLd={breadcrumbSchema || undefined} />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">

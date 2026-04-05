@@ -19,6 +19,7 @@ interface BlogArticleLayoutProps {
   keywords: string[];
   faqs: FAQ[];
   relatedArticles?: { title: string; slug: string }[];
+  ogImage?: string;
 }
 
 const BlogArticleLayout = ({
@@ -32,6 +33,7 @@ const BlogArticleLayout = ({
   keywords,
   faqs,
   relatedArticles = [],
+  ogImage = 'https://www.suprasl.online/og-image.jpg',
 }: BlogArticleLayoutProps) => {
   useEffect(() => {
     document.title = metaTitle;
@@ -82,9 +84,25 @@ const BlogArticleLayout = ({
 
   return (
     <div className="min-h-screen bg-background">
-      <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
-      <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-      <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      <Helmet>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+        <link rel="canonical" href={`https://www.suprasl.online/blog/${slug}`} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:url" content={`https://www.suprasl.online/blog/${slug}`} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="pl_PL" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={metaTitle} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={ogImage} />
+        <meta name="keywords" content={keywords.join(', ')} />
+        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      </Helmet>
 
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
