@@ -35,6 +35,7 @@ const BlogArticleLayout = ({
   faqs,
   relatedArticles = [],
   ogImage = 'https://www.suprasl.online/og-image.jpg',
+  dateModified,
 }: BlogArticleLayoutProps) => {
   useEffect(() => {
     document.title = metaTitle;
