@@ -59,6 +59,7 @@ const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPage
       {/* Content */}
       <main className="max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-16">
         {children}
+        <RelatedPages />
       </main>
 
       {/* CTA */}

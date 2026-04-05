@@ -248,7 +248,14 @@ const Blog = () => {
             <Link to="/" className="hover:text-cream transition-colors">Strona główna</Link>
             <Link to="/blog" className="hover:text-cream transition-colors">Blog</Link>
             <Link to="/noclegi-suprasl" className="hover:text-cream transition-colors">Noclegi Supraśl</Link>
+            <Link to="/domek-suprasl" className="hover:text-cream transition-colors">Domek Supraśl</Link>
+            <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-cream transition-colors">Domek z jacuzzi</Link>
+            <Link to="/dom-w-lesie-suprasl" className="hover:text-cream transition-colors">Dom w lesie</Link>
+            <Link to="/weekend-suprasl" className="hover:text-cream transition-colors">Weekend Supraśl</Link>
+            <Link to="/wieczor-panienski-suprasl" className="hover:text-cream transition-colors">Wieczór panieński</Link>
             <Link to="/atrakcje-suprasl" className="hover:text-cream transition-colors">Atrakcje Supraśla</Link>
+            <Link to="/puszcza-knyszynska-nocleg" className="hover:text-cream transition-colors">Puszcza Knyszyńska</Link>
+            <Link to="/informator" className="hover:text-cream transition-colors">Informator gościa</Link>
           </div>
           <p className="text-xs text-cream/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
         </div>
