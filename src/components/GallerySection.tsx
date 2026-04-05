@@ -59,6 +59,8 @@ import salonFoteleSchody from '@/assets/gallery-salon-fotele-schody-thumb.avif';
 import jadalniaKacik from '@/assets/gallery-jadalnia-kacik-thumb.avif';
 import poddaszeFotel from '@/assets/gallery-poddasze-fotel-thumb.avif';
 import wejscieTaras from '@/assets/gallery-wejscie-taras-thumb.avif';
+import domOgrodPanorama from '@/assets/gallery-dom-ogrod-panorama-thumb.avif';
+import piecKaflowyZblizenie from '@/assets/gallery-piec-kaflowy-zblizenie-thumb.avif';
 
 interface GalleryImage {
   thumb: string;
