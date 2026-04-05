@@ -29,6 +29,11 @@ import ogniskoDziecko from '@/assets/gallery-ognisko-dziecko-thumb.webp';
 import ogniskoDzieci from '@/assets/gallery-ognisko-dzieci-thumb.webp';
 import foteleVintage from '@/assets/gallery-fotele-vintage-thumb.webp';
 import altanaPies from '@/assets/gallery-altana-pies-thumb.webp';
+import lazienkaPrysznic from '@/assets/gallery-lazienka-prysznic-thumb.avif';
+import sypialniaBalkon from '@/assets/gallery-sypialnia-balkon-thumb.avif';
+import tarasObiad from '@/assets/gallery-taras-obiad-thumb.avif';
+import konneDroga from '@/assets/gallery-konne-droga-thumb.avif';
+import toaletaJasna from '@/assets/gallery-toaleta-jasna-thumb.avif';
 
 interface GalleryImage {
   thumb: string;
@@ -41,13 +46,13 @@ const heroImages: GalleryImage[] = [
   { thumb: jacuzziNight, full: '/images/jacuzzi-night.jpg', alt: 'Ruska bania z jacuzzi pod gwiazdami — noclegi Supraśl, In The Woods', className: 'col-span-2 row-span-2' },
   { thumb: salonKominek, full: '/images/gallery-salon-kominek.webp', alt: 'Salon z kominkiem i drewnianymi schodami — In The Woods wnętrze' },
   { thumb: domLato, full: '/images/gallery-dom-lato.webp', alt: 'Dom z czerwonym dachem latem — In The Woods widok z ogrodu' },
-  { thumb: sypialniaGorna, full: '/images/gallery-sypialnia-gorna.webp', alt: 'Sypialnia na poddaszu z widokiem na las — nocleg Supraśl' },
+  { thumb: sypialniaBalkon, full: '/images/gallery-sypialnia-balkon.avif', alt: 'Drewniana sypialnia z wyjściem na balkon i widokiem na las — nocleg Supraśl' },
   { thumb: jadalniaSniadanie, full: '/images/gallery-jadalnia-sniadanie.webp', alt: 'Jadalnia ze śniadaniem — poranek w chacie Puszcza Knyszyńska' },
   { thumb: baniaFront, full: '/images/gallery-bania-front.webp', alt: 'Ruska bania z drewnianą obudową — prywatne SPA Supraśl', className: 'col-span-2' },
-  { thumb: tarasSofa, full: '/images/gallery-taras-sofa.webp', alt: 'Taras z sofą i trawami pampasowymi — relaks w Puszczy Knyszyńskiej' },
+  { thumb: tarasObiad, full: '/images/gallery-taras-obiad.avif', alt: 'Obiad na tarasie wśród zieleni — wypoczynek na świeżym powietrzu blisko Supraśla' },
   { thumb: kuchniaCeramika, full: '/images/gallery-kuchnia-ceramika.webp', alt: 'Kuchnia z ceglanym piecem i owocami — In The Woods kuchnia' },
-  { thumb: ogrodZielen, full: '/images/gallery-ogrod-zielen.webp', alt: 'Zielony ogród z hamakiem — teren In The Woods Supraśl' },
-  { thumb: tarasGrill, full: '/images/gallery-taras-grill.webp', alt: 'Obiad na tarasie z grillem — jedzenie na świeżym powietrzu Supraśl' },
+  { thumb: lazienkaPrysznic, full: '/images/gallery-lazienka-prysznic.avif', alt: 'Nowoczesna łazienka z prysznicem — komfortowy pobyt w In The Woods' },
+  { thumb: konneDroga, full: '/images/gallery-konne-droga.avif', alt: 'Leśna droga w stronę Konnych — spokojna okolica domu w Puszczy Knyszyńskiej' },
   { thumb: salonPanorama, full: '/images/gallery-salon-panorama.webp', alt: 'Panorama salonu z fotelem i kominkiem — dom na wynajem Supraśl' },
   { thumb: ogniskoDzieci, full: '/images/gallery-ognisko-dzieci.webp', alt: 'Dzieci przy ognisku z widokiem na chatę — rodzinne noclegi Supraśl' },
 ];
@@ -67,6 +72,7 @@ const moreImages: GalleryImage[] = [
   { thumb: ogniskoDziecko, full: '/images/gallery-ognisko-dziecko.webp', alt: 'Dziecko przy ognisku — rodzinny weekend w In The Woods' },
   { thumb: foteleVintage, full: '/images/gallery-fotele-vintage.webp', alt: 'Zabytkowe fotele w salonie — klimatyczne wnętrze chaty Supraśl' },
   { thumb: altanaPies, full: '/images/gallery-altana-pies.webp', alt: 'Altana z nakrytym stołem i pieskiem — jedzenie na świeżym powietrzu' },
+  { thumb: toaletaJasna, full: '/images/gallery-toaleta-jasna.avif', alt: 'Jasna łazienka z drewnianym wykończeniem — rustykalne wnętrze domu w lesie' },
 ];
 
 const allImages = [...heroImages, ...moreImages];
