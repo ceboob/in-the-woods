@@ -2,6 +2,7 @@ import { ReactNode, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
+import RelatedPages from '@/components/RelatedPages';
 
 interface SEOPageLayoutProps {
   children: ReactNode;
@@ -58,6 +59,7 @@ const SEOPageLayout = ({ children, title, description, breadcrumbName }: SEOPage
       {/* Content */}
       <main className="max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-16">
         {children}
+        <RelatedPages />
       </main>
 
       {/* CTA */}
