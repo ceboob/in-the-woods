@@ -1,12 +1,32 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Heart, Users, Dog, Laptop, Baby } from 'lucide-react';
+import { Heart, Users, Dog, Laptop, PartyPopper } from 'lucide-react';
 
 const audiences = [
-  { icon: Heart, title: 'Pary', desc: 'Romantyczny azyl z balią pod gwiazdami, kominkiem i leśną ciszą. Czas tylko dla Was.' },
-  { icon: Users, title: 'Rodziny', desc: 'Bezpieczny ogród, plac zabaw, przestrzeń do wspólnego gotowania i wieczory przy ognisku.' },
-  { icon: Users, title: 'Przyjaciele', desc: 'Kameralne spotkania z grillem, balią i rozmowami, które trwają do rana.' },
-  { icon: Dog, title: 'Z psem', desc: 'Twój pies pokocha las za progiem. Ogrodzony teren i kilometry leśnych ścieżek.' },
-  { icon: Laptop, title: 'Workation', desc: 'Wi-Fi, biurko, kawa i las za oknem. Praca nigdy nie wyglądała tak dobrze.' },
+  { 
+    icon: Heart, 
+    title: 'Pary', 
+    desc: 'Romantyczny azyl z balią pod gwiazdami, kominkiem i leśną ciszą. Śniadanie we dwoje na tarasie, wieczorna kąpiel w bani i niebo pełne gwiazd — czas tylko dla Was.',
+  },
+  { 
+    icon: Users, 
+    title: 'Rodziny', 
+    desc: 'Bezpieczny ogrodzony teren z placem zabaw, ogniskiem i przestrzenią do wspólnego gotowania. Dzieci biegają po ogrodzie, a rodzice odpoczywają na tarasie z widokiem na las.',
+  },
+  { 
+    icon: Users, 
+    title: 'Przyjaciele', 
+    desc: 'Kameralne spotkania z grillem w altanie, gorącą balią i rozmowami przy ognisku, które trwają do rana. Dom na wyłączność — bez obcych gości.',
+  },
+  { 
+    icon: Dog, 
+    title: 'Z psem', 
+    desc: 'Twój pies pokocha las za progiem. Ogrodzony teren, kilometry leśnych ścieżek i altana z miską wody — u nas czworonogi są pełnoprawnymi gośćmi.',
+  },
+  { 
+    icon: Laptop, 
+    title: 'Workation', 
+    desc: 'Szybkie Wi-Fi, biurko przy oknie z widokiem na las i kawa parzzona w ciszy. Po pracy — kajaki, rower lub spacer. Praca nigdy nie wyglądała tak dobrze.',
+  },
 ];
 
 const ForWhoSection = () => {
@@ -18,6 +38,10 @@ const ForWhoSection = () => {
         <div className="text-center mb-16 space-y-4">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">Dla kogo</p>
           <h2 className="section-title">Twój pobyt, Twoje zasady</h2>
+          <p className="section-subtitle mx-auto">
+            In The Woods wynajmujesz na wyłączność — nie dzielisz domu z innymi gośćmi. 
+            To Twoja prywatna przestrzeń w lesie, gdzie sam decydujesz o rytmie dnia.
+          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
