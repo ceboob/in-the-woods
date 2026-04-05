@@ -50,6 +50,15 @@ import prysznicCiemny from '@/assets/gallery-prysznic-ciemny-thumb.avif';
 import sniadanieKrata from '@/assets/gallery-sniadanie-krata-thumb.avif';
 import informatorGosci from '@/assets/gallery-informator-gosci-thumb.avif';
 import salonSchodyKwiaty from '@/assets/gallery-salon-schody-kwiaty-thumb.avif';
+import rustykalnaToaletaPolki from '@/assets/gallery-rustykalna-toaleta-polki-thumb.avif';
+import kuchniaNiebieskieTalerze from '@/assets/gallery-kuchnia-niebieskie-talerze-thumb.avif';
+import wiataLesna from '@/assets/gallery-wiata-lesna-thumb.avif';
+import tablicaSzurakowo from '@/assets/gallery-tablica-szurakowo-thumb.avif';
+import ramkiWnetrze from '@/assets/gallery-ramki-wnetrze-thumb.avif';
+import salonFoteleSchody from '@/assets/gallery-salon-fotele-schody-thumb.avif';
+import jadalniaKacik from '@/assets/gallery-jadalnia-kacik-thumb.avif';
+import poddaszeFotel from '@/assets/gallery-poddasze-fotel-thumb.avif';
+import wejscieTaras from '@/assets/gallery-wejscie-taras-thumb.avif';
 
 interface GalleryImage {
   thumb: string;
@@ -103,8 +112,17 @@ const moreImages: GalleryImage[] = [
   { thumb: lazienkaUmywalka, full: '/images/gallery-lazienka-umywalka.avif', alt: 'Nowoczesna łazienka z podświetlanym lustrem — komfort w domu w lesie' },
   { thumb: prysznicCiemny, full: '/images/gallery-prysznic-ciemny.avif', alt: 'Prysznic z deszczownicą w ciemnych kaflach — elegancka łazienka In The Woods' },
   { thumb: sniadanieKrata, full: '/images/gallery-sniadanie-krata.avif', alt: 'Śniadanie na stole w kratę z tulipanami — poranek w chacie Supraśl' },
-  { thumb: informatorGosci, full: '/images/gallery-informator-gosci.avif', alt: 'Informator dla gości na drewnianym stoliku — In The Wood branding' },
+  { thumb: informatorGosci, full: '/images/gallery-informator-gosci.avif', alt: 'Informator dla gości na drewnianym stoliku — In The Woods branding' },
   { thumb: salonSchodyKwiaty, full: '/images/gallery-salon-schody-kwiaty.avif', alt: 'Salon z kominkiem, schodami i kwiatami — klimatyczne wnętrze domu w Puszczy' },
+  { thumb: rustykalnaToaletaPolki, full: '/images/gallery-rustykalna-toaleta-polki.avif', alt: 'Rustykalna toaleta z drewnianymi półkami — charakterystyczne wnętrze domu w lesie' },
+  { thumb: kuchniaNiebieskieTalerze, full: '/images/gallery-kuchnia-niebieskie-talerze.avif', alt: 'Kuchnia z niebieskimi talerzami i drewnianą zabudową — autentyczne wnętrze obiektu' },
+  { thumb: wiataLesna, full: '/images/gallery-wiata-lesna.avif', alt: 'Leśne wiaty i okolica obiektu — spokojny zakątek blisko Supraśla' },
+  { thumb: tablicaSzurakowo, full: '/images/gallery-tablica-szurakowo.avif', alt: 'Tablica rezerwatu Szurakowo w zimowym lesie — atrakcje w okolicy Supraśla' },
+  { thumb: ramkiWnetrze, full: '/images/gallery-ramki-wnetrze.avif', alt: 'Galeria ramek i drewniana komoda — detale wystroju In The Woods' },
+  { thumb: salonFoteleSchody, full: '/images/gallery-salon-fotele-schody.avif', alt: 'Salon z fotelami, schodami i kominkiem — przytulna strefa wypoczynku' },
+  { thumb: jadalniaKacik, full: '/images/gallery-jadalnia-kacik.avif', alt: 'Kącik jadalniany przy kominku i oknie — ciepłe wnętrze domu w lesie' },
+  { thumb: poddaszeFotel, full: '/images/gallery-poddasze-fotel.avif', alt: 'Poddasze z biblioteką, fotelem i telewizorem — dodatkowa strefa relaksu' },
+  { thumb: wejscieTaras, full: '/images/gallery-wejscie-taras.avif', alt: 'Wejście na taras i schody do domu — zewnętrzny widok obiektu In The Woods' },
 ];
 
 const allImages = [...heroImages, ...moreImages];
