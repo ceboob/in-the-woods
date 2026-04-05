@@ -59,6 +59,8 @@ import salonFoteleSchody from '@/assets/gallery-salon-fotele-schody-thumb.avif';
 import jadalniaKacik from '@/assets/gallery-jadalnia-kacik-thumb.avif';
 import poddaszeFotel from '@/assets/gallery-poddasze-fotel-thumb.avif';
 import wejscieTaras from '@/assets/gallery-wejscie-taras-thumb.avif';
+import domOgrodPanorama from '@/assets/gallery-dom-ogrod-panorama-thumb.avif';
+import piecKaflowyZblizenie from '@/assets/gallery-piec-kaflowy-zblizenie-thumb.avif';
 
 interface GalleryImage {
   thumb: string;
@@ -123,6 +125,8 @@ const moreImages: GalleryImage[] = [
   { thumb: jadalniaKacik, full: '/images/gallery-jadalnia-kacik.avif', alt: 'Kącik jadalniany przy kominku i oknie — ciepłe wnętrze domu w lesie' },
   { thumb: poddaszeFotel, full: '/images/gallery-poddasze-fotel.avif', alt: 'Poddasze z biblioteką, fotelem i telewizorem — dodatkowa strefa relaksu' },
   { thumb: wejscieTaras, full: '/images/gallery-wejscie-taras.avif', alt: 'Wejście na taras i schody do domu — zewnętrzny widok obiektu In The Woods' },
+  { thumb: domOgrodPanorama, full: '/images/gallery-dom-ogrod-panorama.avif', alt: 'Panorama domu i ogrodu z czerwonym dachem — pełny widok obiektu wśród drzew' },
+  { thumb: piecKaflowyZblizenie, full: '/images/gallery-piec-kaflowy-zblizenie.avif', alt: 'Zbliżenie na kaflowy piec i ceglaną ścianę — rustykalne detale kuchni' },
 ];
 
 const allImages = [...heroImages, ...moreImages];
