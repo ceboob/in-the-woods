@@ -34,6 +34,12 @@ import sypialniaBalkon from '@/assets/gallery-sypialnia-balkon-thumb.avif';
 import tarasObiad from '@/assets/gallery-taras-obiad-thumb.avif';
 import konneDroga from '@/assets/gallery-konne-droga-thumb.avif';
 import toaletaJasna from '@/assets/gallery-toaleta-jasna-thumb.avif';
+import kominekZblizenie from '@/assets/gallery-kominek-zblizenie-thumb.avif';
+import domSchody from '@/assets/gallery-dom-schody-thumb.avif';
+import ogniskoNocne from '@/assets/gallery-ognisko-nocne-thumb.avif';
+import drogaLesnaPlot from '@/assets/gallery-droga-lesna-plot-thumb.avif';
+import kuchniaCegla from '@/assets/gallery-kuchnia-cegla-thumb.avif';
+import jadalniaOwoce from '@/assets/gallery-jadalnia-owoce-thumb.avif';
 
 interface GalleryImage {
   thumb: string;
