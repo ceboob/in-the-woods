@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import interiorImg from '@/assets/interior-living.webp';
+import salonImg from '@/assets/gallery-salon-panorama-thumb.webp';
 
 const AboutSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -17,16 +17,30 @@ const AboutSection = () => {
               z dala od zgiełku, blisko tego, co naprawdę ważne.
             </p>
             <p>
-              Poranki pachną tu żywicą i kawą parzoną w ciszy. Wieczory płoną w kominku. 
-              A między nimi — las, rzeka, niebo pełne gwiazd i czas, który wreszcie zwalnia.
+              Dom powstał z pasji do natury i drewna. Każdy element wnętrza — od rzeźbionej drewnianej 
+              szafki z serduszkami, przez ceglany kominek, po sossnowe belki sufitowe — opowiada 
+              historię Podlasia. To nie jest sztuczna stylizacja, lecz autentyczne miejsce z duszą.
             </p>
             <p>
-              To nie jest kolejny nocleg. To rytuał odpoczynku w otoczeniu natury Podlasia.
+              Poranki pachną tu żywicą i kawą parzoną w ciszy. Wieczory płoną w kominku, 
+              a między nimi — las, rzeka, niebo pełne gwiazd i czas, który wreszcie zwalnia.
+              Ogrodzony teren zapewnia prywatność i bezpieczeństwo — zarówno dzieciom, jak i czworonogom.
+            </p>
+            <p>
+              To nie jest kolejny nocleg. To rytuał odpoczynku w otoczeniu natury Podlasia, 
+              w miejscu, gdzie rano budzi Cię śpiew ptaków, a wieczorem — trzask drewna w kominku.
             </p>
           </div>
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img src={interiorImg} alt="In The Woods — widok z zewnątrz na drewnianą chatę z bala" className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+          <img 
+            src={salonImg} 
+            alt="Salon z kominkiem w drewnianym domu In The Woods — noclegi Supraśl" 
+            className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700" 
+            loading="lazy"
+            width="600"
+            height="550"
+          />
         </div>
       </div>
     </section>
