@@ -81,6 +81,21 @@ const PricingSection = () => {
           <p className="text-xs text-muted-foreground font-medium">
             Rezerwacja bezpośrednia — bez prowizji pośredników.
           </p>
+
+          {/* Stripe payment info */}
+          <div className="flex items-center justify-center gap-3 pt-2 pb-1">
+            <div className="flex items-center gap-2.5 text-xs text-muted-foreground bg-background/80 border border-border rounded-full px-5 py-2.5">
+              <svg viewBox="0 0 60 25" className="w-12 h-5 shrink-0" aria-label="Stripe" role="img">
+                <rect width="60" height="25" rx="4" fill="#635BFF"/>
+                <text x="30" y="17" textAnchor="middle" fill="white" fontFamily="Arial, sans-serif" fontSize="13" fontWeight="700">stripe</text>
+              </svg>
+              <span className="font-medium">Zaliczka 30% · Reszta na miejscu</span>
+            </div>
+          </div>
+          <p className="text-[11px] text-muted-foreground/70">
+            Akceptujemy BLIK, karty płatnicze i przelewy online
+          </p>
+
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">
             <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary">
               Sprawdź dostępność

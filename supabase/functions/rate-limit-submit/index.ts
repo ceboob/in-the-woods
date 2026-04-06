@@ -122,6 +122,33 @@ Deno.serve(async (req) => {
           { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
         );
       }
+
+      // Notify host about new booking inquiry
+      try {
+        const HOST_EMAIL = "tutinthewood@gmail.com";
+        const notifBody = `Nowe zapytanie rezerwacyjne:\n\nPrzyjazd: ${check_in}\nWyjazd: ${check_out}\nGoście: ${guests}\nTelefon: ${phone}\nE-mail: ${email}\nImię: ${name || '—'}\nWiadomość: ${message || '—'}`;
+        
+        // Try sending via transactional email system (if configured)
+        const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
+        const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY")!;
+        const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+        
+        await fetch(`${supabaseUrl}/functions/v1/send-transactional-email`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${serviceKey}`,
+          },
+          body: JSON.stringify({
+            templateName: "host-booking-notification",
+            recipientEmail: HOST_EMAIL,
+            idempotencyKey: `booking-notify-${Date.now()}`,
+            templateData: { check_in, check_out, guests, name, email, phone, message },
+          }),
+        }).catch((e) => console.log("Email notification skipped (not configured yet):", e.message));
+      } catch (notifErr) {
+        console.log("Host notification error (non-blocking):", notifErr);
+      }
     } else {
       // callback
       const { phone, source } = body;
