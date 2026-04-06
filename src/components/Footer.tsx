@@ -14,32 +14,74 @@ const Footer = () => (
         <div className="text-center space-y-2">
           <div className="flex items-center justify-center gap-2">
             <Phone className="w-4 h-4 text-cream/50" />
-            <a href="tel:+48722765101" className="text-sm text-cream/70 hover:text-cream transition-colors">722 765 101</a>
+            <a
+              href="tel:+48722765101"
+              className="text-sm text-cream/70 hover:text-cream transition-colors"
+            >
+              722 765 101
+            </a>
           </div>
           <div className="flex items-center justify-center gap-2">
             <Mail className="w-4 h-4 text-cream/50" />
-            <a href="mailto:tutinthewood@gmail.com" className="text-sm text-cream/70 hover:text-cream transition-colors">tutinthewood@gmail.com</a>
+            <a
+              href="mailto:tutinthewood@gmail.com"
+              className="text-sm text-cream/70 hover:text-cream transition-colors"
+            >
+              tutinthewood@gmail.com
+            </a>
           </div>
         </div>
         <div className="flex items-center gap-6">
-          <a href="#" aria-label="Instagram" className="text-cream/50 hover:text-cream transition-colors"><Instagram className="w-5 h-5" /></a>
-          <a href="#" aria-label="Facebook" className="text-cream/50 hover:text-cream transition-colors"><Facebook className="w-5 h-5" /></a>
+          <a
+            href="#"
+            aria-label="Instagram"
+            className="text-cream/50 hover:text-cream transition-colors"
+          >
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a
+            href="#"
+            aria-label="Facebook"
+            className="text-cream/50 hover:text-cream transition-colors"
+          >
+            <Facebook className="w-5 h-5" />
+          </a>
         </div>
       </div>
 
       {/* SEO Internal Links */}
       <div className="mt-8 pt-6 border-t border-cream/10">
         <div className="flex flex-wrap justify-center gap-4 text-xs text-cream/40">
-          <Link to="/noclegi-suprasl" className="hover:text-cream/70 transition-colors">Noclegi Supraśl</Link>
-          <Link to="/domek-suprasl" className="hover:text-cream/70 transition-colors">Domek Supraśl</Link>
-          <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-cream/70 transition-colors">Domek z jacuzzi</Link>
-          <Link to="/dom-w-lesie-suprasl" className="hover:text-cream/70 transition-colors">Dom w lesie Supraśl</Link>
-          <Link to="/weekend-suprasl" className="hover:text-cream/70 transition-colors">Weekend Supraśl</Link>
-          <Link to="/wieczor-panienski-suprasl" className="hover:text-cream/70 transition-colors">Wieczór panieński</Link>
-          <Link to="/atrakcje-suprasl" className="hover:text-cream/70 transition-colors">Atrakcje Supraśla</Link>
-          <Link to="/puszcza-knyszynska-nocleg" className="hover:text-cream/70 transition-colors">Nocleg Puszcza Knyszyńska</Link>
-          <Link to="/informator" className="hover:text-cream/70 transition-colors">Informator gościa</Link>
-          <Link to="/blog" className="hover:text-cream/70 transition-colors">Blog</Link>
+          <Link to="/noclegi-suprasl" className="hover:text-cream/70 transition-colors">
+            Noclegi Supraśl
+          </Link>
+          <Link to="/domek-suprasl" className="hover:text-cream/70 transition-colors">
+            Domek Supraśl
+          </Link>
+          <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-cream/70 transition-colors">
+            Domek z jacuzzi
+          </Link>
+          <Link to="/dom-w-lesie-suprasl" className="hover:text-cream/70 transition-colors">
+            Dom w lesie Supraśl
+          </Link>
+          <Link to="/weekend-suprasl" className="hover:text-cream/70 transition-colors">
+            Weekend Supraśl
+          </Link>
+          <Link to="/wieczor-panienski-suprasl" className="hover:text-cream/70 transition-colors">
+            Wieczór panieński
+          </Link>
+          <Link to="/atrakcje-suprasl" className="hover:text-cream/70 transition-colors">
+            Atrakcje Supraśla
+          </Link>
+          <Link to="/puszcza-knyszynska-nocleg" className="hover:text-cream/70 transition-colors">
+            Nocleg Puszcza Knyszyńska
+          </Link>
+          <Link to="/informator" className="hover:text-cream/70 transition-colors">
+            Informator gościa
+          </Link>
+          <Link to="/blog" className="hover:text-cream/70 transition-colors">
+            Blog
+          </Link>
         </div>
       </div>
 

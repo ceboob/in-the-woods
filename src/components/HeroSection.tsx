@@ -7,14 +7,26 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Noclegi Supraśl — dom w lesie z jacuzzi, In The Woods, Puszcza Knyszyńska" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
+        <img
+          src={heroImg}
+          alt="Noclegi Supraśl — dom w lesie z jacuzzi, In The Woods, Puszcza Knyszyńska"
+          className="w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-graphite/60 via-graphite/30 to-graphite/70" />
       </div>
-      
+
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-tight mb-4 animate-fade-up" style={{ letterSpacing: '0.01em' }}>
+        <h1
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-tight mb-4 animate-fade-up"
+          style={{ letterSpacing: '0.01em' }}
+        >
           In The Woods – noclegi Supraśl
         </h1>
         <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-cream/70 mb-3 animate-fade-in">
@@ -22,8 +34,12 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
-          <p className="font-serif text-lg md:text-xl text-cream/90 italic">Prywatny dom w lesie.</p>
-          <p className="font-serif text-lg md:text-xl text-cream/90 italic">Kominek. Ruska bania. Cisza natury.</p>
+          <p className="font-serif text-lg md:text-xl text-cream/90 italic">
+            Prywatny dom w lesie.
+          </p>
+          <p className="font-serif text-lg md:text-xl text-cream/90 italic">
+            Kominek. Ruska bania. Cisza natury.
+          </p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
@@ -42,10 +58,16 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-up delay-300">
-          <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary bg-cream text-graphite hover:bg-cream/90">
+          <button
+            onClick={() => scrollTo('#rezerwacja')}
+            className="btn-primary bg-cream text-graphite hover:bg-cream/90"
+          >
             Sprawdź dostępność
           </button>
-          <a href="tel:+48722765101" className="btn-outline border-cream text-cream hover:bg-cream hover:text-graphite inline-flex items-center justify-center gap-2">
+          <a
+            href="tel:+48722765101"
+            className="btn-outline border-cream text-cream hover:bg-cream hover:text-graphite inline-flex items-center justify-center gap-2"
+          >
             <Phone className="w-4 h-4" /> Zadzwoń
           </a>
         </div>

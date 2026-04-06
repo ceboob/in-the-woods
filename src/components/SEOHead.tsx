@@ -25,7 +25,12 @@ const SEOHead = ({
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1'} />
+      <meta
+        name="robots"
+        content={
+          noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1'
+        }
+      />
       <link rel="canonical" href={canonical} />
 
       {/* Hreflang */}
@@ -55,7 +60,9 @@ const SEOHead = ({
 
       {/* JSON-LD */}
       {jsonLdArray.map((data, i) => (
-        <script key={i} type="application/ld+json">{JSON.stringify(data)}</script>
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(data)}
+        </script>
       ))}
     </Helmet>
   );

@@ -21,7 +21,8 @@ const articles = [
   {
     slug: 'wydarzenia-suprasl-2026',
     title: 'Największe imprezy i wydarzenia w Supraślu 2026 – kalendarz + daty',
-    excerpt: 'Pełny kalendarz wydarzeń w Supraślu na 2026: Dni Supraśla, Festiwal Wertep, Święto Chleba i więcej. Daty, opisy i gdzie nocować.',
+    excerpt:
+      'Pełny kalendarz wydarzeń w Supraślu na 2026: Dni Supraśla, Festiwal Wertep, Święto Chleba i więcej. Daty, opisy i gdzie nocować.',
     image: blogWydarzenia,
     date: '2026-03-30',
     readTime: '12 min',
@@ -30,7 +31,8 @@ const articles = [
   {
     slug: 'puszcza-knyszynska-historie',
     title: 'Puszcza Knyszyńska historie – 7 niezwykłych opowieści',
-    excerpt: 'Galeria Leśna Powstania Styczniowego, legendy, duchy powstańców i dom w lesie z jacuzzi 300 m od atrakcji.',
+    excerpt:
+      'Galeria Leśna Powstania Styczniowego, legendy, duchy powstańców i dom w lesie z jacuzzi 300 m od atrakcji.',
     image: blogPuszczaHistorie,
     date: '2026-03-28',
     readTime: '14 min',
@@ -39,7 +41,8 @@ const articles = [
   {
     slug: 'co-robic-suprasl',
     title: 'Co robić w Supraślu? Kompletny przewodnik po atrakcjach',
-    excerpt: 'Monaster, Muzeum Ikon, kajaki, szlaki w Puszczy Knyszyńskiej i kuchnia regionalna. Wszystko, co warto zobaczyć w Supraślu.',
+    excerpt:
+      'Monaster, Muzeum Ikon, kajaki, szlaki w Puszczy Knyszyńskiej i kuchnia regionalna. Wszystko, co warto zobaczyć w Supraślu.',
     image: blogCoRobic,
     date: '2026-03-25',
     readTime: '10 min',
@@ -48,7 +51,8 @@ const articles = [
   {
     slug: 'weekend-suprasl-plan',
     title: 'Weekend w Supraślu – plan pobytu na 2-3 dni',
-    excerpt: 'Sprawdzony plan na weekend w Supraślu: zwiedzanie, szlaki, kajaki, kuchnia regionalna i relaks w jacuzzi pod gwiazdami.',
+    excerpt:
+      'Sprawdzony plan na weekend w Supraślu: zwiedzanie, szlaki, kajaki, kuchnia regionalna i relaks w jacuzzi pod gwiazdami.',
     image: blogWeekendPlan,
     date: '2026-03-25',
     readTime: '9 min',
@@ -57,7 +61,8 @@ const articles = [
   {
     slug: 'najlepsze-miejsca-puszcza-knyszynska',
     title: 'Najlepsze miejsca w Puszczy Knyszyńskiej – co warto zobaczyć',
-    excerpt: 'Rezerwaty, szlaki, arboretum, rzeki i dzikie ostępy. Kompletny przewodnik po największym lesie Podlasia.',
+    excerpt:
+      'Rezerwaty, szlaki, arboretum, rzeki i dzikie ostępy. Kompletny przewodnik po największym lesie Podlasia.',
     image: blogNajlepszeMiejsca,
     date: '2026-03-25',
     readTime: '11 min',
@@ -66,7 +71,8 @@ const articles = [
   {
     slug: 'kajaki-suprasl',
     title: 'Kajaki Supraśl – przewodnik po spływach rzeką Supraśl',
-    excerpt: 'Spokojna rzeka, dzika przyroda i Puszcza Knyszyńska z poziomu wody. Wszystko o spływach kajakowych w Supraślu.',
+    excerpt:
+      'Spokojna rzeka, dzika przyroda i Puszcza Knyszyńska z poziomu wody. Wszystko o spływach kajakowych w Supraślu.',
     image: blogKajaki,
     date: '2026-03-15',
     readTime: '11 min',
@@ -75,7 +81,8 @@ const articles = [
   {
     slug: 'restauracje-suprasl',
     title: 'Restauracje Supraśl – gdzie zjeść podczas pobytu',
-    excerpt: 'Kartacze, babka ziemniaczana, sękacz i kuchnia tatarska. Przewodnik kulinarny po Supraślu i Podlasiu.',
+    excerpt:
+      'Kartacze, babka ziemniaczana, sękacz i kuchnia tatarska. Przewodnik kulinarny po Supraślu i Podlasiu.',
     image: blogRestauracje,
     date: '2026-03-15',
     readTime: '12 min',
@@ -84,7 +91,8 @@ const articles = [
   {
     slug: 'szlak-bioroznorodnosci-suprasl',
     title: 'Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej',
-    excerpt: 'Edukacyjna ścieżka o długości 7 km przez zróżnicowane ekosystemy Puszczy Knyszyńskiej. Flora, fauna i tablice edukacyjne.',
+    excerpt:
+      'Edukacyjna ścieżka o długości 7 km przez zróżnicowane ekosystemy Puszczy Knyszyńskiej. Flora, fauna i tablice edukacyjne.',
     image: blogSzlakBio,
     date: '2026-03-14',
     readTime: '10 min',
@@ -93,7 +101,8 @@ const articles = [
   {
     slug: 'kruszyniany-tatarska-wies',
     title: 'Kruszyniany – tatarska wieś Podlasia',
-    excerpt: 'Meczet, kuchnia tatarska i wielowiekowa tradycja — odkryj jedno z najbardziej niezwykłych miejsc w Polsce.',
+    excerpt:
+      'Meczet, kuchnia tatarska i wielowiekowa tradycja — odkryj jedno z najbardziej niezwykłych miejsc w Polsce.',
     image: blogKruszyniany,
     date: '2026-03-14',
     readTime: '9 min',
@@ -102,7 +111,8 @@ const articles = [
   {
     slug: 'suprasl-atrakcje-uzdrowisko',
     title: 'Supraśl – atrakcje uzdrowiska Podlasia',
-    excerpt: 'Monaster, Muzeum Ikon, bulwary, Teatr Wierszalin i uzdrowiskowy klimat. Kompletny przewodnik po perle Podlasia.',
+    excerpt:
+      'Monaster, Muzeum Ikon, bulwary, Teatr Wierszalin i uzdrowiskowy klimat. Kompletny przewodnik po perle Podlasia.',
     image: blogSupraslUzdrowisko,
     date: '2026-03-14',
     readTime: '12 min',
@@ -111,7 +121,8 @@ const articles = [
   {
     slug: 'supraski-system-wodny',
     title: 'Supraski System Wodny – zapomniany cud inżynierii Podlasia',
-    excerpt: 'Odkryj fascynującą historię supraskiego systemu wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia.',
+    excerpt:
+      'Odkryj fascynującą historię supraskiego systemu wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia.',
     image: blogKanal,
     date: '2026-03-10',
     readTime: '12 min',
@@ -120,7 +131,8 @@ const articles = [
   {
     slug: 'szlak-powstania-styczniowego-suprasl',
     title: 'Szlak Powstania Styczniowego w Puszczy Knyszyńskiej',
-    excerpt: 'Śladami powstańców styczniowych przez najpiękniejsze zakątki Puszczy Knyszyńskiej. Historia, miejsca pamięci i szlaki.',
+    excerpt:
+      'Śladami powstańców styczniowych przez najpiękniejsze zakątki Puszczy Knyszyńskiej. Historia, miejsca pamięci i szlaki.',
     image: blogPomnik,
     date: '2026-03-08',
     readTime: '10 min',
@@ -129,7 +141,8 @@ const articles = [
   {
     slug: 'suprasl-atrakcje-national-geographic',
     title: 'Supraśl – perła Podlasia według podróżników',
-    excerpt: 'Co sprawia, że Supraśl jest jednym z najpiękniejszych miasteczek Podlasia? Architektura, Monaster i slow tourism.',
+    excerpt:
+      'Co sprawia, że Supraśl jest jednym z najpiękniejszych miasteczek Podlasia? Architektura, Monaster i slow tourism.',
     image: blogMonaster,
     date: '2026-03-05',
     readTime: '11 min',
@@ -158,12 +171,22 @@ const Blog = () => {
         description="Blog o Supraślu – atrakcje, szlaki, historia i turystyka w Puszczy Knyszyńskiej. Przewodnik turystyczny."
         canonical="https://www.suprasl.online/blog"
         jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.suprasl.online/" },
-            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.suprasl.online/blog" }
-          ]
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Strona główna',
+              item: 'https://www.suprasl.online/',
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Blog',
+              item: 'https://www.suprasl.online/blog',
+            },
+          ],
         }}
       />
       {/* Navbar */}
@@ -173,11 +196,30 @@ const Blog = () => {
             In The Woods
           </Link>
           <div className="hidden md:flex items-center gap-6">
-            <Link to="/blog" className="nav-link text-foreground font-medium">Blog</Link>
-            <Link to="/noclegi-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Noclegi</Link>
-            <Link to="/atrakcje-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Atrakcje</Link>
-            <Link to="/weekend-suprasl" className="nav-link text-foreground/70 hover:text-foreground">Weekend</Link>
-            <a href="tel:+48722765101" className="btn-primary text-xs py-2.5 px-6">Zadzwoń</a>
+            <Link to="/blog" className="nav-link text-foreground font-medium">
+              Blog
+            </Link>
+            <Link
+              to="/noclegi-suprasl"
+              className="nav-link text-foreground/70 hover:text-foreground"
+            >
+              Noclegi
+            </Link>
+            <Link
+              to="/atrakcje-suprasl"
+              className="nav-link text-foreground/70 hover:text-foreground"
+            >
+              Atrakcje
+            </Link>
+            <Link
+              to="/weekend-suprasl"
+              className="nav-link text-foreground/70 hover:text-foreground"
+            >
+              Weekend
+            </Link>
+            <a href="tel:+48722765101" className="btn-primary text-xs py-2.5 px-6">
+              Zadzwoń
+            </a>
           </div>
         </div>
       </nav>
@@ -189,7 +231,8 @@ const Blog = () => {
             Blog — Supraśl i okolice
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Odkryj historię, atrakcje i szlaki Supraśla oraz Puszczy Knyszyńskiej. Przewodnik turystyczny dla miłośników natury i slow travel.
+            Odkryj historię, atrakcje i szlaki Supraśla oraz Puszczy Knyszyńskiej. Przewodnik
+            turystyczny dla miłośników natury i slow travel.
           </p>
         </div>
       </header>
@@ -213,8 +256,14 @@ const Blog = () => {
               </div>
               <div className="p-6 space-y-3">
                 <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                  <span className="inline-flex items-center gap-1"><Calendar className="w-3 h-3" />{article.date}</span>
-                  <span className="inline-flex items-center gap-1"><Clock className="w-3 h-3" />{article.readTime}</span>
+                  <span className="inline-flex items-center gap-1">
+                    <Calendar className="w-3 h-3" />
+                    {article.date}
+                  </span>
+                  <span className="inline-flex items-center gap-1">
+                    <Clock className="w-3 h-3" />
+                    {article.readTime}
+                  </span>
                 </div>
                 <h2 className="font-serif text-xl font-light text-foreground group-hover:text-primary transition-colors">
                   {article.title}
@@ -232,8 +281,13 @@ const Blog = () => {
       {/* CTA */}
       <section className="px-6 md:px-12 py-16 bg-secondary">
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="font-serif text-3xl font-light text-foreground">Planujesz wizytę w Supraślu?</h2>
-          <p className="text-muted-foreground">In The Woods to komfortowy dom w lesie z jacuzzi — idealna baza wypadowa na zwiedzanie okolicy.</p>
+          <h2 className="font-serif text-3xl font-light text-foreground">
+            Planujesz wizytę w Supraślu?
+          </h2>
+          <p className="text-muted-foreground">
+            In The Woods to komfortowy dom w lesie z jacuzzi — idealna baza wypadowa na zwiedzanie
+            okolicy.
+          </p>
           <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
             <Phone className="w-4 h-4" /> Sprawdź dostępność
           </a>
@@ -245,17 +299,39 @@ const Blog = () => {
         <div className="max-w-7xl mx-auto text-center space-y-4">
           <p className="font-serif text-lg text-cream">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <Link to="/" className="hover:text-cream transition-colors">Strona główna</Link>
-            <Link to="/blog" className="hover:text-cream transition-colors">Blog</Link>
-            <Link to="/noclegi-suprasl" className="hover:text-cream transition-colors">Noclegi Supraśl</Link>
-            <Link to="/domek-suprasl" className="hover:text-cream transition-colors">Domek Supraśl</Link>
-            <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-cream transition-colors">Domek z jacuzzi</Link>
-            <Link to="/dom-w-lesie-suprasl" className="hover:text-cream transition-colors">Dom w lesie</Link>
-            <Link to="/weekend-suprasl" className="hover:text-cream transition-colors">Weekend Supraśl</Link>
-            <Link to="/wieczor-panienski-suprasl" className="hover:text-cream transition-colors">Wieczór panieński</Link>
-            <Link to="/atrakcje-suprasl" className="hover:text-cream transition-colors">Atrakcje Supraśla</Link>
-            <Link to="/puszcza-knyszynska-nocleg" className="hover:text-cream transition-colors">Puszcza Knyszyńska</Link>
-            <Link to="/informator" className="hover:text-cream transition-colors">Informator gościa</Link>
+            <Link to="/" className="hover:text-cream transition-colors">
+              Strona główna
+            </Link>
+            <Link to="/blog" className="hover:text-cream transition-colors">
+              Blog
+            </Link>
+            <Link to="/noclegi-suprasl" className="hover:text-cream transition-colors">
+              Noclegi Supraśl
+            </Link>
+            <Link to="/domek-suprasl" className="hover:text-cream transition-colors">
+              Domek Supraśl
+            </Link>
+            <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-cream transition-colors">
+              Domek z jacuzzi
+            </Link>
+            <Link to="/dom-w-lesie-suprasl" className="hover:text-cream transition-colors">
+              Dom w lesie
+            </Link>
+            <Link to="/weekend-suprasl" className="hover:text-cream transition-colors">
+              Weekend Supraśl
+            </Link>
+            <Link to="/wieczor-panienski-suprasl" className="hover:text-cream transition-colors">
+              Wieczór panieński
+            </Link>
+            <Link to="/atrakcje-suprasl" className="hover:text-cream transition-colors">
+              Atrakcje Supraśla
+            </Link>
+            <Link to="/puszcza-knyszynska-nocleg" className="hover:text-cream transition-colors">
+              Puszcza Knyszyńska
+            </Link>
+            <Link to="/informator" className="hover:text-cream transition-colors">
+              Informator gościa
+            </Link>
           </div>
           <p className="text-xs text-cream/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
         </div>

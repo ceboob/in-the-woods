@@ -17,16 +17,20 @@ const HeroWelcome = () => {
         </h2>
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed">
           <p className="font-script text-2xl md:text-3xl text-foreground/90 leading-snug">
-            Oddajemy w Wasze ręce nasz dom — miejsce, w&nbsp;które włożyliśmy mnóstwo serca, potu, pracy i&nbsp;litry kawy.
+            Oddajemy w Wasze ręce nasz dom — miejsce, w&nbsp;które włożyliśmy mnóstwo serca, potu,
+            pracy i&nbsp;litry kawy.
           </p>
           <p>
-            Chcemy, żebyście czuli się tu swobodnie, ciepło i&nbsp;komfortowo. Mamy tylko jedną prośbę: traktujcie ten dom jak swój własny
-            (a&nbsp;nawet odrobinę lepiej) i&nbsp;zostawcie go po sobie w&nbsp;takim stanie, w&nbsp;jakim go zastaliście.
+            Chcemy, żebyście czuli się tu swobodnie, ciepło i&nbsp;komfortowo. Mamy tylko jedną
+            prośbę: traktujcie ten dom jak swój własny (a&nbsp;nawet odrobinę lepiej)
+            i&nbsp;zostawcie go po sobie w&nbsp;takim stanie, w&nbsp;jakim go zastaliście.
           </p>
           <p>
-            „In The Woods” to żywy organizm. Jesteśmy w&nbsp;ciągłym procesie metamorfoz, adaptacji i&nbsp;remontów, dlatego dom ma swój unikalny,
-            <strong> rustykalny charakter</strong>. Znajdziecie tu wszystko, czego potrzeba do wygodnego pobytu: czystą pościel i&nbsp;ręczniki,
-            książki, zabawki dla dzieci, dobrze wyposażoną kuchnię oraz spokojną przestrzeń do wypoczynku blisko natury.
+            „In The Woods” to żywy organizm. Jesteśmy w&nbsp;ciągłym procesie metamorfoz, adaptacji
+            i&nbsp;remontów, dlatego dom ma swój unikalny,
+            <strong> rustykalny charakter</strong>. Znajdziecie tu wszystko, czego potrzeba do
+            wygodnego pobytu: czystą pościel i&nbsp;ręczniki, książki, zabawki dla dzieci, dobrze
+            wyposażoną kuchnię oraz spokojną przestrzeń do wypoczynku blisko natury.
           </p>
           <p className="font-script text-2xl md:text-3xl text-foreground/80 leading-snug">
             Pamiętajcie: dom jest dla ludzi, a&nbsp;nie ludzie dla domu. Bawcie się dobrze!

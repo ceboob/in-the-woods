@@ -36,10 +36,11 @@ const AdminLogin = () => {
       }
 
       navigate('/admin');
-    } catch (err: any) {
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Nieprawidłowe dane logowania';
       toast({
         title: 'Błąd logowania',
-        description: err.message || 'Nieprawidłowe dane logowania',
+        description: message,
         variant: 'destructive',
       });
     } finally {

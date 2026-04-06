@@ -17,7 +17,7 @@ const SocialProof = () => {
     const interval = setInterval(() => {
       setVisible(false);
       setTimeout(() => {
-        setCurrentMsg(prev => (prev + 1) % MESSAGES.length);
+        setCurrentMsg((prev) => (prev + 1) % MESSAGES.length);
         setVisible(true);
       }, 400);
     }, 5000);
@@ -28,9 +28,13 @@ const SocialProof = () => {
     <div className="space-y-3 mb-6">
       <div className="flex items-center gap-2 text-xs text-forest bg-forest/5 px-3 py-2 rounded-lg">
         <Eye className="w-3.5 h-3.5 flex-shrink-0" />
-        <span><strong>{viewerCount} osób</strong> ogląda teraz ten obiekt</span>
+        <span>
+          <strong>{viewerCount} osób</strong> ogląda teraz ten obiekt
+        </span>
       </div>
-      <div className={`flex items-center gap-2 text-xs text-muted-foreground bg-secondary px-3 py-2 rounded-lg transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}>
+      <div
+        className={`flex items-center gap-2 text-xs text-muted-foreground bg-secondary px-3 py-2 rounded-lg transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}
+      >
         <Clock className="w-3.5 h-3.5 flex-shrink-0" />
         <span>{MESSAGES[currentMsg]}</span>
       </div>
