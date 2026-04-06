@@ -26,6 +26,7 @@ export default defineConfig(({ mode }) => ({
           'vendor-ui': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-popover', '@radix-ui/react-tooltip', '@radix-ui/react-tabs', '@radix-ui/react-select', '@radix-ui/react-dropdown-menu'],
           'vendor-utils': ['@tanstack/react-query', 'react-helmet-async', 'date-fns', 'clsx', 'tailwind-merge'],
           'vendor-icons': ['lucide-react'],
+          'vendor-supabase': ['@supabase/supabase-js'],
         },
       },
     },
