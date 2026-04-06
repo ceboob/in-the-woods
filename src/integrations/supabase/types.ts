@@ -50,6 +50,27 @@ export type Database = {
         }
         Relationships: []
       }
+      callback_requests: {
+        Row: {
+          created_at: string
+          id: string
+          phone: string
+          source: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          phone: string
+          source?: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          phone?: string
+          source?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { X, Phone, ArrowRight } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
 
 const ExitIntentPopup = () => {
   const [show, setShow] = useState(false);
@@ -24,10 +25,19 @@ const ExitIntentPopup = () => {
     setDismissed(true);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!phone) return;
-    // Just show confirmation — host will call back
+
+    try {
+      await supabase.from('callback_requests').insert({
+        phone,
+        source: 'exit_intent',
+      });
+    } catch (err) {
+      console.error('Callback save error:', err);
+    }
+
     setSubmitted(true);
     setTimeout(() => {
       setShow(false);
