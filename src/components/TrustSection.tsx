@@ -12,7 +12,10 @@ const TrustSection = () => {
 
   return (
     <section className="px-6 md:px-12 py-12 md:py-16 bg-background">
-      <div ref={ref} className={`max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div
+        ref={ref}
+        className={`max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+      >
         {items.map((item, i) => (
           <div key={i} className="text-center py-8 px-6 border border-border bg-card">
             <item.icon className="w-8 h-8 mx-auto mb-4 text-forest" strokeWidth={1.5} />

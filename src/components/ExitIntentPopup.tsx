@@ -8,12 +8,15 @@ const ExitIntentPopup = () => {
   const [phone, setPhone] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleMouseLeave = useCallback((e: MouseEvent) => {
-    if (e.clientY <= 5 && !dismissed && !sessionStorage.getItem('exit_popup_shown')) {
-      setShow(true);
-      sessionStorage.setItem('exit_popup_shown', 'true');
-    }
-  }, [dismissed]);
+  const handleMouseLeave = useCallback(
+    (e: MouseEvent) => {
+      if (e.clientY <= 5 && !dismissed && !sessionStorage.getItem('exit_popup_shown')) {
+        setShow(true);
+        sessionStorage.setItem('exit_popup_shown', 'true');
+      }
+    },
+    [dismissed],
+  );
 
   useEffect(() => {
     document.addEventListener('mouseleave', handleMouseLeave);
@@ -34,7 +37,10 @@ const ExitIntentPopup = () => {
       const { data: result, error } = await supabase.functions.invoke('rate-limit-submit', {
         body: { type: 'callback', phone, source: 'exit_intent' },
       });
-      const body = result ?? (error as any)?.context ? await (error as any)?.context?.json?.().catch(() => null) : null;
+      const body =
+        (result ?? (error as any)?.context)
+          ? await (error as any)?.context?.json?.().catch(() => null)
+          : null;
       if (body?.error?.includes?.('Too many')) {
         return;
       }
@@ -54,10 +60,24 @@ const ExitIntentPopup = () => {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-      <div className="absolute inset-0 bg-graphite/60 backdrop-blur-sm" onClick={handleClose} aria-hidden="true" />
-      
-      <div className="relative bg-background rounded-xl shadow-2xl max-w-md w-full p-8 animate-fade-up" role="dialog" aria-modal="true" aria-label="Zostaw numer telefonu" style={{ animationDelay: '0s' }}>
-        <button onClick={handleClose} className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors" aria-label="Zamknij okno">
+      <div
+        className="absolute inset-0 bg-graphite/60 backdrop-blur-sm"
+        onClick={handleClose}
+        aria-hidden="true"
+      />
+
+      <div
+        className="relative bg-background rounded-xl shadow-2xl max-w-md w-full p-8 animate-fade-up"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Zostaw numer telefonu"
+        style={{ animationDelay: '0s' }}
+      >
+        <button
+          onClick={handleClose}
+          className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
+          aria-label="Zamknij okno"
+        >
           <X className="w-5 h-5" />
         </button>
 
@@ -67,14 +87,19 @@ const ExitIntentPopup = () => {
               <Phone className="w-6 h-6 text-forest" />
             </div>
             <h3 className="font-serif text-xl font-semibold">Dziękujemy!</h3>
-            <p className="text-sm text-muted-foreground">Oddzwonimy w ciągu 15 minut w godzinach pracy.</p>
+            <p className="text-sm text-muted-foreground">
+              Oddzwonimy w ciągu 15 minut w godzinach pracy.
+            </p>
           </div>
         ) : (
           <>
             <div className="text-center space-y-3 mb-6">
-              <p className="text-xs tracking-[0.2em] uppercase text-forest font-medium">Zanim wyjdziesz</p>
+              <p className="text-xs tracking-[0.2em] uppercase text-forest font-medium">
+                Zanim wyjdziesz
+              </p>
               <h3 className="font-serif text-2xl font-semibold leading-tight">
-                Zostaw numer —<br />oddzwonimy w 15 minut
+                Zostaw numer —<br />
+                oddzwonimy w 15 minut
               </h3>
               <p className="text-sm text-muted-foreground">
                 Chętnie odpowiemy na pytania o dostępność, cenę i pobyt w In The Woods.
@@ -84,7 +109,10 @@ const ExitIntentPopup = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex gap-3">
                 <div className="relative flex-1">
-                  <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" aria-hidden="true" />
+                  <Phone
+                    className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground"
+                    aria-hidden="true"
+                  />
                   <input
                     type="tel"
                     value={phone}
@@ -96,11 +124,17 @@ const ExitIntentPopup = () => {
                     maxLength={15}
                   />
                 </div>
-                <button type="submit" className="btn-primary py-3 px-5 !text-xs" aria-label="Wyślij numer telefonu">
+                <button
+                  type="submit"
+                  className="btn-primary py-3 px-5 !text-xs"
+                  aria-label="Wyślij numer telefonu"
+                >
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
-              <p className="text-xs text-center text-muted-foreground">Bez zobowiązań. Dzwonimy raz, nie spamujemy.</p>
+              <p className="text-xs text-center text-muted-foreground">
+                Bez zobowiązań. Dzwonimy raz, nie spamujemy.
+              </p>
             </form>
           </>
         )}

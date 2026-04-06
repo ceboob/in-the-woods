@@ -39,7 +39,8 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'VacationRental',
   name: 'In The Woods – noclegi Supraśl',
-  description: 'Prywatny dom w lesie z jacuzzi w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania – idealny nocleg w Supraślu.',
+  description:
+    'Prywatny dom w lesie z jacuzzi w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania – idealny nocleg w Supraślu.',
   url: 'https://www.suprasl.online/',
   telephone: '+48722765101',
   email: 'tutinthewood@gmail.com',
@@ -95,12 +96,54 @@ const faqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
-    { '@type': 'Question', name: 'Gdzie znajduje się In The Woods?', acceptedAnswer: { '@type': 'Answer', text: 'Dom znajduje się w miejscowości Konne koło Supraśla, w Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku.' } },
-    { '@type': 'Question', name: 'Czy są noclegi z jacuzzi w Supraślu?', acceptedAnswer: { '@type': 'Answer', text: 'In The Woods oferuje prywatną ruską banię z balią z gorącą wodą — idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu za 250 zł.' } },
-    { '@type': 'Question', name: 'Czy dom jest prywatny?', acceptedAnswer: { '@type': 'Answer', text: 'Tak — dom i cały ogród wynajmujecie na wyłączność. Żadnych innych gości.' } },
-    { '@type': 'Question', name: 'Czy można przyjechać z psem?', acceptedAnswer: { '@type': 'Answer', text: 'Tak, zwierzęta są mile widziane. Pobyt z psem jest bezpłatny. Ogrodzony ogród i las za progiem to raj dla czworonogów.' } },
-    { '@type': 'Question', name: 'Dla ilu osób jest dom?', acceptedAnswer: { '@type': 'Answer', text: 'Dom jest komfortowy dla 6–8 osób. Dwie sypialnie z dużymi łóżkami na piętrze oraz dodatkowa przestrzeń w salonie.' } },
-    { '@type': 'Question', name: 'Jak wygląda rezerwacja?', acceptedAnswer: { '@type': 'Answer', text: 'Wyślij zapytanie przez formularz lub zadzwoń pod 722 765 101. Potwierdzimy dostępność i przedstawimy szczegółową ofertę. Rezerwacja bezpośrednia, bez prowizji pośrednika.' } },
+    {
+      '@type': 'Question',
+      name: 'Gdzie znajduje się In The Woods?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Dom znajduje się w miejscowości Konne koło Supraśla, w Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Czy są noclegi z jacuzzi w Supraślu?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'In The Woods oferuje prywatną ruską banię z balią z gorącą wodą — idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu za 250 zł.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Czy dom jest prywatny?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Tak — dom i cały ogród wynajmujecie na wyłączność. Żadnych innych gości.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Czy można przyjechać z psem?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Tak, zwierzęta są mile widziane. Pobyt z psem jest bezpłatny. Ogrodzony ogród i las za progiem to raj dla czworonogów.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Dla ilu osób jest dom?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Dom jest komfortowy dla 6–8 osób. Dwie sypialnie z dużymi łóżkami na piętrze oraz dodatkowa przestrzeń w salonie.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Jak wygląda rezerwacja?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Wyślij zapytanie przez formularz lub zadzwoń pod 722 765 101. Potwierdzimy dostępność i przedstawimy szczegółową ofertę. Rezerwacja bezpośrednia, bez prowizji pośrednika.',
+      },
+    },
   ],
 };
 

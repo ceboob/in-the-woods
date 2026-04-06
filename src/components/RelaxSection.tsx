@@ -4,10 +4,26 @@ import tarasImg from '@/assets/gallery-taras-relaks-thumb.webp';
 import { Snowflake, Sun, Leaf, Flower2 } from 'lucide-react';
 
 const rituals = [
-  { icon: Snowflake, season: 'Zimą', text: 'po spacerach w śnieżnej puszczy — rozgrzej się w gorącej bani i posłuchaj trzasku drewna' },
-  { icon: Sun, season: 'Latem', text: 'po rowerach i kajakach — ochłódź się w wieczornym powietrzu, patrząc na gwiazdy' },
-  { icon: Leaf, season: 'Jesienią', text: 'po grzybobraniu — zanurz się w ciepłej wodzie wśród kolorowych liści' },
-  { icon: Flower2, season: 'Wiosną', text: 'po odkrywaniu budzącej się natury — wypij herbatę na tarasie przy śpiewie ptaków' },
+  {
+    icon: Snowflake,
+    season: 'Zimą',
+    text: 'po spacerach w śnieżnej puszczy — rozgrzej się w gorącej bani i posłuchaj trzasku drewna',
+  },
+  {
+    icon: Sun,
+    season: 'Latem',
+    text: 'po rowerach i kajakach — ochłódź się w wieczornym powietrzu, patrząc na gwiazdy',
+  },
+  {
+    icon: Leaf,
+    season: 'Jesienią',
+    text: 'po grzybobraniu — zanurz się w ciepłej wodzie wśród kolorowych liści',
+  },
+  {
+    icon: Flower2,
+    season: 'Wiosną',
+    text: 'po odkrywaniu budzącej się natury — wypij herbatę na tarasie przy śpiewie ptaków',
+  },
 ];
 
 const RelaxSection = () => {
@@ -15,27 +31,46 @@ const RelaxSection = () => {
 
   return (
     <section id="relaks" className="section-padding bg-secondary">
-      <div ref={ref} className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div
+        ref={ref}
+        className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+      >
         <div className="text-center mb-16 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">Strefa relaksu</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+            Strefa relaksu
+          </p>
           <h2 className="section-title">Zwolnij. Oddychaj. Odpoczywaj.</h2>
           <p className="section-subtitle mx-auto">
-            Po dniu spędzonym na leśnych szlakach Puszczy Knyszyńskiej możesz zanurzyć się w gorącej 
-            ruskiej bani i poczuć prawdziwy slow life. Bania stoi w ogrodzie — otoczona zielenią, z dala 
-            od cywilizacji. Wieczorem zapalamy świece, podgrzewamy wodę drewnem i oddajemy się rytuałowi 
-            odpoczynku, który goście wspominają jeszcze długo po powrocie.
+            Po dniu spędzonym na leśnych szlakach Puszczy Knyszyńskiej możesz zanurzyć się w gorącej
+            ruskiej bani i poczuć prawdziwy slow life. Bania stoi w ogrodzie — otoczona zielenią, z
+            dala od cywilizacji. Wieczorem zapalamy świece, podgrzewamy wodę drewnem i oddajemy się
+            rytuałowi odpoczynku, który goście wspominają jeszcze długo po powrocie.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-16">
           <div className="overflow-hidden relative group">
-            <img src={baniaImg} alt="Prywatna ruska bania — drewniana beczka z gorącą wodą w ogrodzie In The Woods Supraśl" className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" width="600" height="450" />
+            <img
+              src={baniaImg}
+              alt="Prywatna ruska bania — drewniana beczka z gorącą wodą w ogrodzie In The Woods Supraśl"
+              className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+              width="600"
+              height="450"
+            />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
               <p className="font-serif text-lg text-cream italic">Prywatna ruska bania</p>
             </div>
           </div>
           <div className="overflow-hidden relative group">
-            <img src={tarasImg} alt="Relaks na tarasie z kawą i świecami — letni wieczór w In The Woods Supraśl" className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" width="600" height="450" />
+            <img
+              src={tarasImg}
+              alt="Relaks na tarasie z kawą i świecami — letni wieczór w In The Woods Supraśl"
+              className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+              width="600"
+              height="450"
+            />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
               <p className="font-serif text-lg text-cream italic">Relaks w sercu natury</p>
             </div>

@@ -4,8 +4,21 @@ import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { LogOut, CreditCard, RefreshCw, Filter } from 'lucide-react';
@@ -149,16 +162,16 @@ const AdminDashboard = () => {
               <SelectContent>
                 <SelectItem value="all">Wszystkie</SelectItem>
                 {STATUS_OPTIONS.map((s) => (
-                  <SelectItem key={s.value} value={s.value}>{s.label}</SelectItem>
+                  <SelectItem key={s.value} value={s.value}>
+                    {s.label}
+                  </SelectItem>
                 ))}
               </SelectContent>
             </Select>
             <Button variant="outline" size="sm" onClick={fetchBookings}>
               <RefreshCw className="w-4 h-4 mr-1" /> Odśwież
             </Button>
-            <span className="text-sm text-muted-foreground ml-auto">
-              {bookings.length} zapytań
-            </span>
+            <span className="text-sm text-muted-foreground ml-auto">{bookings.length} zapytań</span>
           </CardContent>
         </Card>
 
@@ -215,7 +228,9 @@ const AdminDashboard = () => {
                             </SelectTrigger>
                             <SelectContent>
                               {STATUS_OPTIONS.map((s) => (
-                                <SelectItem key={s.value} value={s.value}>{s.label}</SelectItem>
+                                <SelectItem key={s.value} value={s.value}>
+                                  {s.label}
+                                </SelectItem>
                               ))}
                             </SelectContent>
                           </Select>

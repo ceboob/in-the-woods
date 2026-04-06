@@ -18,15 +18,22 @@ const PlatnoscSukces = () => {
           </div>
           <h1 className="font-serif text-3xl font-semibold">Dziękujemy za wpłatę!</h1>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            Zaliczka została zaksięgowana. Potwierdzimy rezerwację i wyślemy szczegóły pobytu na podany adres e-mail.
+            Zaliczka została zaksięgowana. Potwierdzimy rezerwację i wyślemy szczegóły pobytu na
+            podany adres e-mail.
           </p>
           <div className="bg-secondary p-4 rounded-lg text-sm text-muted-foreground">
             <p>Masz pytania? Zadzwoń do nas:</p>
-            <a href="tel:+48722765101" className="text-forest font-medium flex items-center justify-center gap-2 mt-2">
+            <a
+              href="tel:+48722765101"
+              className="text-forest font-medium flex items-center justify-center gap-2 mt-2"
+            >
               <Phone className="w-4 h-4" /> +48 722 765 101
             </a>
           </div>
-          <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
             <ArrowLeft className="w-4 h-4" /> Wróć na stronę główną
           </Link>
         </div>

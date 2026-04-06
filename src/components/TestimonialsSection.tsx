@@ -45,12 +45,18 @@ const TestimonialsSection = () => {
 
   return (
     <section className="section-padding bg-secondary">
-
-      <div ref={ref} className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div
+        ref={ref}
+        className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+      >
         <div className="text-center mb-16 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">Opinie gości</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+            Opinie gości
+          </p>
           <h2 className="section-title">Co mówią ci, którzy tu byli</h2>
-          <p className="section-subtitle mx-auto">Ponad 100 gości oceniło nas na 5★ — oto kilka ich historii.</p>
+          <p className="section-subtitle mx-auto">
+            Ponad 100 gości oceniło nas na 5★ — oto kilka ich historii.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -61,7 +67,9 @@ const TestimonialsSection = () => {
                   <Star key={j} className="w-4 h-4 fill-wood text-wood" />
                 ))}
               </div>
-              <p className="text-foreground/80 leading-relaxed italic font-serif text-lg">„{t.text}"</p>
+              <p className="text-foreground/80 leading-relaxed italic font-serif text-lg">
+                „{t.text}"
+              </p>
               <div>
                 <p className="text-sm font-medium">{t.author}</p>
                 <p className="text-xs text-muted-foreground">{t.context}</p>
