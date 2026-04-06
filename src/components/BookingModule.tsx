@@ -24,10 +24,33 @@ const BookingModule = () => {
     checkIn: '', checkOut: '', guests: '2', name: '', email: '', phone: '', message: ''
   });
 
+  const validateForm = () => {
+    const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+    const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
+    if (!emailRegex.test(data.email)) {
+      toast({ title: 'Błąd', description: 'Podaj poprawny adres e-mail.', variant: 'destructive' });
+      return false;
+    }
+    if (!phoneRegex.test(data.phone)) {
+      toast({ title: 'Błąd', description: 'Podaj poprawny numer telefonu (7-20 cyfr).', variant: 'destructive' });
+      return false;
+    }
+    if (data.message && data.message.length > 2000) {
+      toast({ title: 'Błąd', description: 'Wiadomość może mieć maksymalnie 2000 znaków.', variant: 'destructive' });
+      return false;
+    }
+    if (new Date(data.checkOut) <= new Date(data.checkIn)) {
+      toast({ title: 'Błąd', description: 'Data wyjazdu musi być późniejsza niż data przyjazdu.', variant: 'destructive' });
+      return false;
+    }
+    return true;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (step === 'form') {
       if (!data.checkIn || !data.checkOut || !data.phone || !data.email) return;
+      if (!validateForm()) return;
       setStep('summary');
     } else if (step === 'summary') {
       setSending(true);

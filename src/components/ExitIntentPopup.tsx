@@ -27,7 +27,8 @@ const ExitIntentPopup = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!phone) return;
+    const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
+    if (!phone || !phoneRegex.test(phone)) return;
 
     try {
       await supabase.from('callback_requests').insert({
