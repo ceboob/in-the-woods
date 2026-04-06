@@ -34,11 +34,11 @@ const ExitIntentPopup = () => {
       const { data: result, error } = await supabase.functions.invoke('rate-limit-submit', {
         body: { type: 'callback', phone, source: 'exit_intent' },
       });
-      if (error) throw error;
-      if (result?.error?.includes('Too many')) {
-        setSubmitted(false);
+      const body = result ?? (error as any)?.context ? await (error as any)?.context?.json?.().catch(() => null) : null;
+      if (body?.error?.includes?.('Too many')) {
         return;
       }
+      if (error) throw error;
     } catch (err) {
       console.error('Callback save error:', err);
     }

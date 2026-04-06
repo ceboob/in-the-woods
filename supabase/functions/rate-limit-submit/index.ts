@@ -36,6 +36,12 @@ Deno.serve(async (req) => {
       Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!
     );
 
+    // Auto-cleanup: delete entries older than 24h
+    await supabase
+      .from("rate_limits")
+      .delete()
+      .lt("created_at", new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString());
+
     // Check rate limit
     const cutoff = new Date(Date.now() - RATE_LIMIT_SECONDS * 1000).toISOString();
     const { data: recent } = await supabase
