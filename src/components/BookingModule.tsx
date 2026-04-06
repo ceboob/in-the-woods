@@ -67,14 +67,13 @@ const BookingModule = () => {
             message: data.message,
           },
         });
-        if (error) throw error;
-        if (result?.error) {
-          if (result.error.includes('Too many')) {
-            toast({ title: 'Zbyt wiele prób', description: 'Spróbuj ponownie za minutę.', variant: 'destructive' });
-            return;
-          }
-          throw new Error(result.error);
+        const body = result ?? (error as any)?.context ? await (error as any)?.context?.json?.().catch(() => null) : null;
+        if (body?.error?.includes?.('Too many')) {
+          toast({ title: 'Zbyt wiele prób', description: 'Spróbuj ponownie za minutę.', variant: 'destructive' });
+          return;
         }
+        if (error) throw error;
+        if (body?.error) throw new Error(body.error);
         setStep('sent');
       } catch (err) {
         console.error('Booking error:', err);
