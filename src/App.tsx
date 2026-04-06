@@ -34,6 +34,8 @@ const NajlepszeMiejscaPuszcza = lazy(() => import("./pages/blog/NajlepszeMiejsca
 const PuszczaKnyszynskaHistorie = lazy(() => import("./pages/blog/PuszczaKnyszynskaHistorie.tsx"));
 const WydarzeniaSupra2026 = lazy(() => import("./pages/blog/WydarzeniaSupra2026.tsx"));
 const PlatnoscSukces = lazy(() => import("./pages/PlatnoscSukces.tsx"));
+const AdminLogin = lazy(() => import("./pages/AdminLogin.tsx"));
+const AdminDashboard = lazy(() => import("./pages/AdminDashboard.tsx"));
 
 const queryClient = new QueryClient();
 
