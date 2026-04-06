@@ -84,11 +84,12 @@ const PricingSection = () => {
 
           {/* Stripe payment info */}
           <div className="flex items-center justify-center gap-3 pt-2 pb-1">
-            <div className="flex items-center gap-2 text-xs text-muted-foreground bg-background/80 border border-border rounded-full px-4 py-2">
-              <svg viewBox="0 0 60 25" className="w-10 h-auto" aria-label="Stripe" role="img">
-                <path fill="#635BFF" d="M59.64 14.28h-8.06c.19 1.93 1.6 2.55 3.2 2.55 1.64 0 2.96-.37 4.05-.95v3.32a10.7 10.7 0 0 1-4.56.95c-4.01 0-6.83-2.5-6.83-7.14 0-4.07 2.47-7.27 6.2-7.27 3.43 0 6.12 2.56 6.12 7.3l-.12 1.24zm-4.25-5.47c-1.18 0-2.14 1.06-2.25 2.68h4.5c-.07-1.62-.97-2.68-2.25-2.68zM42.86 20.16h-4.3V10.1c0-1.75-.64-2.67-2.02-2.67-1.12 0-2.14.82-2.14 2.35v10.38h-4.3V10.1c0-1.75-.63-2.67-2.02-2.67-1.12 0-2.13.82-2.13 2.35v10.38h-4.3V3.68h4.3v1.67c.87-1.18 2.14-2.04 3.87-2.04 1.81 0 3.14.82 3.85 2.23.87-1.28 2.25-2.23 4.06-2.23 2.76 0 4.62 1.87 4.62 5.44v11.41h.01zM13.95 0c1.48 0 2.69 1.21 2.69 2.69 0 1.48-1.21 2.69-2.69 2.69S11.26 4.17 11.26 2.69C11.26 1.21 12.47 0 13.95 0zm-2.15 20.16V6.04h4.3v14.12h-4.3zM6.84 6.04h.15v3.73H5.16c-1.51 0-2.63 1.12-2.63 2.95v7.44H-1.78V6.04h4.3v1.67c.75-1.12 1.93-2.04 3.56-2.04.28 0 .54.02.76.06V6.04z"/>
+            <div className="flex items-center gap-2.5 text-xs text-muted-foreground bg-background/80 border border-border rounded-full px-5 py-2.5">
+              <svg viewBox="0 0 60 25" className="w-12 h-5 shrink-0" aria-label="Stripe" role="img">
+                <rect width="60" height="25" rx="4" fill="#635BFF"/>
+                <text x="30" y="17" textAnchor="middle" fill="white" fontFamily="Arial, sans-serif" fontSize="13" fontWeight="700">stripe</text>
               </svg>
-              <span>Zaliczka 30% · Reszta na miejscu</span>
+              <span className="font-medium">Zaliczka 30% · Reszta na miejscu</span>
             </div>
           </div>
           <p className="text-[11px] text-muted-foreground/70">
