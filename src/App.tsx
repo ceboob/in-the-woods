@@ -33,6 +33,7 @@ const WeekendSupraslPlan = lazy(() => import("./pages/blog/WeekendSupraslPlan.ts
 const NajlepszeMiejscaPuszcza = lazy(() => import("./pages/blog/NajlepszeMiejscaPuszcza.tsx"));
 const PuszczaKnyszynskaHistorie = lazy(() => import("./pages/blog/PuszczaKnyszynskaHistorie.tsx"));
 const WydarzeniaSupra2026 = lazy(() => import("./pages/blog/WydarzeniaSupra2026.tsx"));
+const PlatnoscSukces = lazy(() => import("./pages/PlatnoscSukces.tsx"));
 
 const queryClient = new QueryClient();
 
