@@ -55,16 +55,26 @@ const BookingModule = () => {
     } else if (step === 'summary') {
       setSending(true);
       try {
-        const { error } = await supabase.from('booking_inquiries').insert({
-          check_in: data.checkIn,
-          check_out: data.checkOut,
-          guests: parseInt(data.guests),
-          name: data.name || null,
-          email: data.email,
-          phone: data.phone,
-          message: data.message || null
+        const { data: result, error } = await supabase.functions.invoke('rate-limit-submit', {
+          body: {
+            type: 'booking',
+            check_in: data.checkIn,
+            check_out: data.checkOut,
+            guests: data.guests,
+            name: data.name,
+            email: data.email,
+            phone: data.phone,
+            message: data.message,
+          },
         });
         if (error) throw error;
+        if (result?.error) {
+          if (result.error.includes('Too many')) {
+            toast({ title: 'Zbyt wiele prób', description: 'Spróbuj ponownie za minutę.', variant: 'destructive' });
+            return;
+          }
+          throw new Error(result.error);
+        }
         setStep('sent');
       } catch (err) {
         console.error('Booking error:', err);

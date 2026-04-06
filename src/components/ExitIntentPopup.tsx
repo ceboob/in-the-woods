@@ -31,10 +31,14 @@ const ExitIntentPopup = () => {
     if (!phone || !phoneRegex.test(phone)) return;
 
     try {
-      await supabase.from('callback_requests').insert({
-        phone,
-        source: 'exit_intent',
+      const { data: result, error } = await supabase.functions.invoke('rate-limit-submit', {
+        body: { type: 'callback', phone, source: 'exit_intent' },
       });
+      if (error) throw error;
+      if (result?.error?.includes('Too many')) {
+        setSubmitted(false);
+        return;
+      }
     } catch (err) {
       console.error('Callback save error:', err);
     }
