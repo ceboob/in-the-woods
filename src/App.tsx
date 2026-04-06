@@ -77,6 +77,7 @@ const App = () => (
               <Route path="/blog/najlepsze-miejsca-puszcza-knyszynska" element={<NajlepszeMiejscaPuszcza />} />
               <Route path="/blog/puszcza-knyszynska-historie" element={<PuszczaKnyszynskaHistorie />} />
               <Route path="/blog/wydarzenia-suprasl-2026" element={<WydarzeniaSupra2026 />} />
+              <Route path="/platnosc-sukces" element={<PlatnoscSukces />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
