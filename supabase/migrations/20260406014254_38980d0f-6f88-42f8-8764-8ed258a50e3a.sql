@@ -1,0 +1,1 @@
+ALTER TABLE public.callback_requests ADD CONSTRAINT valid_phone CHECK (phone ~* '^\+?[0-9\s\-]{7,20}$');
