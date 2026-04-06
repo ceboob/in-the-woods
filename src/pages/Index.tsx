@@ -38,12 +38,17 @@ const SectionFallback = () => (
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'VacationRental',
+  '@id': 'https://www.suprasl.online/#vacation-rental',
   name: 'In The Woods – noclegi Supraśl',
   description:
     'Prywatny dom w lesie z jacuzzi w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania – idealny nocleg w Supraślu.',
   url: 'https://www.suprasl.online/',
-  telephone: '+48722765101',
+  telephone: '+48 722 765 101',
   email: 'tutinthewood@gmail.com',
+  sameAs: [
+    'https://www.instagram.com/inthewoods_suprasl/',
+    'https://www.facebook.com/InTheWoodsSuprasl',
+  ],
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Konne 109/1',
@@ -54,14 +59,15 @@ const jsonLd = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 53.2167,
-    longitude: 23.3667,
+    latitude: 53.20586,
+    longitude: 23.34725,
   },
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
     reviewCount: '100',
     bestRating: '5',
+    worstRating: '1',
   },
   amenityFeature: [
     { '@type': 'LocationFeatureSpecification', name: 'Jacuzzi / Ruska bania', value: true },
@@ -74,15 +80,26 @@ const jsonLd = {
   occupancy: {
     '@type': 'QuantitativeValue',
     maxValue: 8,
+    unitText: 'guests',
   },
   petsAllowed: true,
   checkinTime: '15:00',
   checkoutTime: '11:00',
-  image: 'https://www.suprasl.online/og-image.jpg',
-  priceRange: 'od 399 zł / noc',
+  image: [
+    'https://www.suprasl.online/og-image.jpg',
+  ],
+  priceRange: 'PLN 399-899',
+  currenciesAccepted: 'PLN',
+  paymentAccepted: 'Cash, Credit Card, Bank Transfer, Stripe',
   containedInPlace: {
     '@type': 'Place',
+    '@id': 'https://www.suprasl.online/#puszcza',
     name: 'Puszcza Knyszyńska',
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 53.2,
+      longitude: 23.35,
+    },
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Supraśl',
