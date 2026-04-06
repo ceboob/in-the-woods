@@ -106,8 +106,9 @@ const AdminDashboard = () => {
         await navigator.clipboard.writeText(data.url);
         toast({ title: 'Link skopiowany do schowka!', description: data.url });
       }
-    } catch (err: any) {
-      toast({ title: 'Błąd Stripe', description: err.message, variant: 'destructive' });
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Nieznany błąd';
+      toast({ title: 'Błąd Stripe', description: message, variant: 'destructive' });
     } finally {
       setGeneratingLink(null);
     }
