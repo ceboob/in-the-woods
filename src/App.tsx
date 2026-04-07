@@ -39,6 +39,7 @@ const WydarzeniaSupra2026 = lazy(() => import('./pages/blog/WydarzeniaSupra2026.
 const PlatnoscSukces = lazy(() => import('./pages/PlatnoscSukces.tsx'));
 const AdminLogin = lazy(() => import('./pages/AdminLogin.tsx'));
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard.tsx'));
+const PolitykaPrywatnosci = lazy(() => import('./pages/PolitykaPrywatnosci.tsx'));
 
 const queryClient = new QueryClient();
 
