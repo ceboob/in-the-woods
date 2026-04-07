@@ -5,7 +5,6 @@ import HeroSection from '@/components/HeroSection';
 import HeroWelcome from '@/components/HeroWelcome';
 import BadgesBar from '@/components/BadgesBar';
 import TrustSection from '@/components/TrustSection';
-import ErrorBoundary from '@/components/ErrorBoundary';
 
 // Lazy-loaded sections below the fold
 const AmenitiesSection = lazy(() => import('@/components/AmenitiesSection'));
@@ -47,13 +46,8 @@ const jsonLd = {
   telephone: '+48 722 765 101',
   email: 'tutinthewood@gmail.com',
   sameAs: [
-<<<<<<< HEAD
-    'https://www.instagram.com/krzemienna_chata/',
-    'https://www.facebook.com/krzemienna.chata',
-=======
     'https://www.facebook.com/krzemienna.chata',
     'https://www.instagram.com/krzemienna_chata/',
->>>>>>> 7f44b2787f3352b478b6ef7d41527c36773df938
   ],
   address: {
     '@type': 'PostalAddress',
@@ -92,18 +86,11 @@ const jsonLd = {
   checkinTime: '15:00',
   checkoutTime: '11:00',
   image: [
-<<<<<<< HEAD
     'https://www.suprasl.online/og-image.jpg',
-    'https://www.suprasl.online/images/exterior-main.jpg',
-    'https://www.suprasl.online/images/jacuzzi-night.jpg',
-    'https://www.suprasl.online/images/interior-living.webp',
-=======
-    'https://www.suprasl.online/images/exterior-main.jpg',
-    'https://www.suprasl.online/images/living-fireplace.jpg',
-    'https://www.suprasl.online/images/jacuzzi-night.jpg',
-    'https://www.suprasl.online/images/bedroom.jpg',
-    'https://www.suprasl.online/images/kitchen-dining.jpg',
->>>>>>> 7f44b2787f3352b478b6ef7d41527c36773df938
+    'https://www.suprasl.online/gallery/dom-z-zewnatrz.jpg',
+    'https://www.suprasl.online/gallery/salon-kominek.jpg',
+    'https://www.suprasl.online/gallery/jacuzzi-ogrod.jpg',
+    'https://www.suprasl.online/gallery/sypialnia.jpg',
   ],
   priceRange: 'PLN 399-899',
   currenciesAccepted: 'PLN',
@@ -200,37 +187,48 @@ const Index = () => {
         <BadgesBar />
         <TrustSection />
 
-        <ErrorBoundary>
-          <Suspense fallback={<SectionFallback />}>
-            <AmenitiesSection />
-            <JacuzziSection />
-            <RelaxSection />
-            <ForWhoSection />
-            <GallerySection />
-            <WinterSection />
-            <PricingSection />
-            <AvailabilityCalendar />
-            <BookingModule />
-            <TestimonialsSection />
-            <SupraslSection />
-            <LocationSection />
-            <EventsSection />
-            <FAQSection />
-            <GuestGuideSection />
-            <SEOTextSection />
-            <CTASection />
-            <ContactSection />
-          </Suspense>
-        </ErrorBoundary>
+        <Suspense fallback={<SectionFallback />}>
+          {/* Oferta — co dostaje gość */}
+          <AmenitiesSection />
+          <JacuzziSection />
+          <RelaxSection />
+          <ForWhoSection />
+
+          {/* Dowód wizualny */}
+          <GallerySection />
+
+          {/* Sezonowość + okolica */}
+          <WinterSection />
+
+          {/* Cena + dostępność + rezerwacja — konwersja */}
+          <PricingSection />
+          <AvailabilityCalendar />
+          <BookingModule />
+
+          {/* Social proof */}
+          <TestimonialsSection />
+
+          {/* Okolica i lokalne SEO */}
+          <SupraslSection />
+          <LocationSection />
+          <EventsSection />
+
+          {/* FAQ (dane strukturalne) + informator */}
+          <FAQSection />
+          <GuestGuideSection />
+
+          {/* Treść SEO + końcowe CTA */}
+          <SEOTextSection />
+          <CTASection />
+          <ContactSection />
+        </Suspense>
       </main>
 
-      <ErrorBoundary>
-        <Suspense fallback={null}>
-          <Footer />
-          <ExitIntentPopup />
-          <StickyMobileCTA />
-        </Suspense>
-      </ErrorBoundary>
+      <Suspense fallback={null}>
+        <Footer />
+        <ExitIntentPopup />
+        <StickyMobileCTA />
+      </Suspense>
     </div>
   );
 };
