@@ -138,6 +138,15 @@ const BookingModule = () => {
       : 0;
 
   return (
+    <>
+      <GDPRConsentModal
+        open={showGDPR}
+        onAccept={() => {
+          setShowGDPR(false);
+          setStep('summary');
+        }}
+        onReject={() => setShowGDPR(false)}
+      />
     <section id="rezerwacja" className="section-padding bg-background">
       <div
         ref={ref}
