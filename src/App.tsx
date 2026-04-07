@@ -113,6 +113,7 @@ const App = () => (
             </Routes>
           </Suspense>
         </BrowserRouter>
+        <CookieConsent />
       </TooltipProvider>
     </HelmetProvider>
   </QueryClientProvider>
