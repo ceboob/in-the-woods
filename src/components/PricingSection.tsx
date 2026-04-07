@@ -106,7 +106,8 @@ const PricingSection = () => {
 
           {/* Stripe payment info */}
           <div className="flex items-center justify-center gap-3 pt-2 pb-1">
-            <div className="flex items-center gap-2.5 text-xs text-muted-foreground bg-background/80 border border-border rounded-full px-5 py-2.5">
+          <StripeSecurityTooltip>
+            <div className="flex items-center gap-2.5 text-xs text-muted-foreground bg-background/80 border border-border rounded-full px-5 py-2.5 cursor-help">
               <svg viewBox="0 0 60 25" className="w-12 h-5 shrink-0" aria-label="Stripe" role="img">
                 <rect width="60" height="25" rx="4" fill="#635BFF" />
                 <text
@@ -123,6 +124,7 @@ const PricingSection = () => {
               </svg>
               <span className="font-medium">Zaliczka 30% · Reszta na miejscu</span>
             </div>
+          </StripeSecurityTooltip>
           </div>
           <p className="text-[11px] text-muted-foreground/70">
             Akceptujemy BLIK, karty płatnicze i przelewy online

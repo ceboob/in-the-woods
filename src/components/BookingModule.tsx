@@ -392,6 +392,7 @@ const BookingModule = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
