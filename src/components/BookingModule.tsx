@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import {
+import GDPRConsentModal from '@/components/GDPRConsentModal';
   Calendar,
   Users,
   Phone,
