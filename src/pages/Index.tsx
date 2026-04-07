@@ -188,41 +188,28 @@ const Index = () => {
         <BadgesBar />
         <TrustSection />
 
-        <Suspense fallback={<SectionFallback />}>
-          {/* Oferta — co dostaje gość */}
-          <AmenitiesSection />
-          <JacuzziSection />
-          <RelaxSection />
-          <ForWhoSection />
-
-          {/* Dowód wizualny */}
-          <GallerySection />
-
-          {/* Sezonowość + okolica */}
-          <WinterSection />
-
-          {/* Cena + dostępność + rezerwacja — konwersja */}
-          <PricingSection />
-          <AvailabilityCalendar />
-          <BookingModule />
-
-          {/* Social proof */}
-          <TestimonialsSection />
-
-          {/* Okolica i lokalne SEO */}
-          <SupraslSection />
-          <LocationSection />
-          <EventsSection />
-
-          {/* FAQ (dane strukturalne) + informator */}
-          <FAQSection />
-          <GuestGuideSection />
-
-          {/* Treść SEO + końcowe CTA */}
-          <SEOTextSection />
-          <CTASection />
-          <ContactSection />
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<SectionFallback />}>
+            <AmenitiesSection />
+            <JacuzziSection />
+            <RelaxSection />
+            <ForWhoSection />
+            <GallerySection />
+            <WinterSection />
+            <PricingSection />
+            <AvailabilityCalendar />
+            <BookingModule />
+            <TestimonialsSection />
+            <SupraslSection />
+            <LocationSection />
+            <EventsSection />
+            <FAQSection />
+            <GuestGuideSection />
+            <SEOTextSection />
+            <CTASection />
+            <ContactSection />
+          </Suspense>
+        </ErrorBoundary>
       </main>
 
       <Suspense fallback={null}>
