@@ -81,7 +81,8 @@ const BookingModule = () => {
     if (step === 'form') {
       if (!data.checkIn || !data.checkOut || !data.phone || !data.email) return;
       if (!validateForm()) return;
-      setStep('summary');
+      // Show GDPR consent before proceeding
+      setShowGDPR(true);
     } else if (step === 'summary') {
       setSending(true);
       try {
