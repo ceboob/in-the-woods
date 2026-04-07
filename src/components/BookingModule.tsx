@@ -30,6 +30,7 @@ const BookingModule = () => {
   const { ref, isVisible } = useScrollAnimation();
   const [step, setStep] = useState<'form' | 'summary' | 'sent'>('form');
   const [sending, setSending] = useState(false);
+  const [showGDPR, setShowGDPR] = useState(false);
   const { toast } = useToast();
   const [data, setData] = useState<BookingData>({
     checkIn: '',
