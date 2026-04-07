@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import HeroWelcome from '@/components/HeroWelcome';
 import BadgesBar from '@/components/BadgesBar';
 import TrustSection from '@/components/TrustSection';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 // Lazy-loaded sections below the fold
 const AmenitiesSection = lazy(() => import('@/components/AmenitiesSection'));
@@ -187,48 +188,37 @@ const Index = () => {
         <BadgesBar />
         <TrustSection />
 
-        <Suspense fallback={<SectionFallback />}>
-          {/* Oferta — co dostaje gość */}
-          <AmenitiesSection />
-          <JacuzziSection />
-          <RelaxSection />
-          <ForWhoSection />
-
-          {/* Dowód wizualny */}
-          <GallerySection />
-
-          {/* Sezonowość + okolica */}
-          <WinterSection />
-
-          {/* Cena + dostępność + rezerwacja — konwersja */}
-          <PricingSection />
-          <AvailabilityCalendar />
-          <BookingModule />
-
-          {/* Social proof */}
-          <TestimonialsSection />
-
-          {/* Okolica i lokalne SEO */}
-          <SupraslSection />
-          <LocationSection />
-          <EventsSection />
-
-          {/* FAQ (dane strukturalne) + informator */}
-          <FAQSection />
-          <GuestGuideSection />
-
-          {/* Treść SEO + końcowe CTA */}
-          <SEOTextSection />
-          <CTASection />
-          <ContactSection />
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<SectionFallback />}>
+            <AmenitiesSection />
+            <JacuzziSection />
+            <RelaxSection />
+            <ForWhoSection />
+            <GallerySection />
+            <WinterSection />
+            <PricingSection />
+            <AvailabilityCalendar />
+            <BookingModule />
+            <TestimonialsSection />
+            <SupraslSection />
+            <LocationSection />
+            <EventsSection />
+            <FAQSection />
+            <GuestGuideSection />
+            <SEOTextSection />
+            <CTASection />
+            <ContactSection />
+          </Suspense>
+        </ErrorBoundary>
       </main>
 
-      <Suspense fallback={null}>
-        <Footer />
-        <ExitIntentPopup />
-        <StickyMobileCTA />
-      </Suspense>
+      <ErrorBoundary>
+        <Suspense fallback={null}>
+          <Footer />
+          <ExitIntentPopup />
+          <StickyMobileCTA />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 };
