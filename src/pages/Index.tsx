@@ -212,11 +212,13 @@ const Index = () => {
         </ErrorBoundary>
       </main>
 
-      <Suspense fallback={null}>
-        <Footer />
-        <ExitIntentPopup />
-        <StickyMobileCTA />
-      </Suspense>
+      <ErrorBoundary>
+        <Suspense fallback={null}>
+          <Footer />
+          <ExitIntentPopup />
+          <StickyMobileCTA />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 };
