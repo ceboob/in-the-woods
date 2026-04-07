@@ -6,6 +6,7 @@ import { Toaster as Sonner } from '@/components/ui/sonner';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import Index from './pages/Index.tsx';
+import CookieConsent from './components/CookieConsent';
 
 // Lazy-loaded routes for code splitting
 const NotFound = lazy(() => import('./pages/NotFound.tsx'));
@@ -38,6 +39,7 @@ const WydarzeniaSupra2026 = lazy(() => import('./pages/blog/WydarzeniaSupra2026.
 const PlatnoscSukces = lazy(() => import('./pages/PlatnoscSukces.tsx'));
 const AdminLogin = lazy(() => import('./pages/AdminLogin.tsx'));
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard.tsx'));
+const PolitykaPrywatnosci = lazy(() => import('./pages/PolitykaPrywatnosci.tsx'));
 
 const queryClient = new QueryClient();
 
@@ -105,11 +107,13 @@ const App = () => (
               <Route path="/platnosc-sukces" element={<PlatnoscSukces />} />
               <Route path="/admin/login" element={<AdminLogin />} />
               <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/polityka-prywatnosci" element={<PolitykaPrywatnosci />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </BrowserRouter>
+        <CookieConsent />
       </TooltipProvider>
     </HelmetProvider>
   </QueryClientProvider>

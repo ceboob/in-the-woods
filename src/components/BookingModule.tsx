@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import GDPRConsentModal from '@/components/GDPRConsentModal';
 import {
   Calendar,
   Users,
@@ -30,6 +31,7 @@ const BookingModule = () => {
   const { ref, isVisible } = useScrollAnimation();
   const [step, setStep] = useState<'form' | 'summary' | 'sent'>('form');
   const [sending, setSending] = useState(false);
+  const [showGDPR, setShowGDPR] = useState(false);
   const { toast } = useToast();
   const [data, setData] = useState<BookingData>({
     checkIn: '',
@@ -80,7 +82,8 @@ const BookingModule = () => {
     if (step === 'form') {
       if (!data.checkIn || !data.checkOut || !data.phone || !data.email) return;
       if (!validateForm()) return;
-      setStep('summary');
+      // Show GDPR consent before proceeding
+      setShowGDPR(true);
     } else if (step === 'summary') {
       setSending(true);
       try {
@@ -135,6 +138,15 @@ const BookingModule = () => {
       : 0;
 
   return (
+    <>
+      <GDPRConsentModal
+        open={showGDPR}
+        onAccept={() => {
+          setShowGDPR(false);
+          setStep('summary');
+        }}
+        onReject={() => setShowGDPR(false)}
+      />
     <section id="rezerwacja" className="section-padding bg-background">
       <div
         ref={ref}
@@ -380,6 +392,7 @@ const BookingModule = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
