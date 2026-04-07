@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Check, Star, Bath, Dog, Flame } from 'lucide-react';
+import StripeSecurityTooltip from '@/components/StripeSecurityTooltip';
 
 const packages = [
   {
