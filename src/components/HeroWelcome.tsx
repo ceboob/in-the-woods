@@ -1,4 +1,28 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { TreePine, Home, Volume2, Heart } from 'lucide-react';
+
+const benefits = [
+  {
+    icon: TreePine,
+    title: 'Bliskość natury',
+    text: 'Puszcza Knyszyńska tuż za progiem, Supraśl i\u00a0jego atrakcje — zaledwie 10\u00a0minut drogi.',
+  },
+  {
+    icon: Home,
+    title: 'Dom z duszą',
+    text: 'Rustykalny urok, drewniane belki i\u00a0wszystko, czego potrzebujecie: pościel, ręczniki, wyposażona kuchnia, ekspres do kawy, książki i\u00a0zabawki dla dzieci.',
+  },
+  {
+    icon: Volume2,
+    title: 'Przestrzeń tylko dla Was',
+    text: 'Nie dzielicie domu z\u00a0nikim. To Wasze miejsce na odpoczynek, gotowanie i\u00a0wspólne chwile.',
+  },
+  {
+    icon: Heart,
+    title: 'Cisza i spokój',
+    text: 'Żadnych hałaśliwych sąsiadów — tylko las, świeże powietrze i\u00a0czas, który płynie wolniej.',
+  },
+];
 
 const HeroWelcome = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -7,36 +31,59 @@ const HeroWelcome = () => {
     <section className="section-padding bg-background" aria-label="O naszym domu">
       <div
         ref={ref}
-        className={`max-w-3xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-3xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
       >
-        <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-4">
+        <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-4 text-center">
           Od gospodarza
         </p>
-        <h2 className="font-script text-3xl md:text-4xl text-foreground mb-6">
-          Witajcie w In&nbsp;The&nbsp;Woods
+        <h2 className="font-script text-3xl md:text-4xl text-foreground mb-6 text-center">
+          Witajcie w&nbsp;In&nbsp;The&nbsp;Woods
         </h2>
-        <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed">
+
+        <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
           <p className="font-script text-2xl md:text-3xl text-foreground/90 leading-snug">
-            Oddajemy w Wasze ręce nasz dom — miejsce, w&nbsp;które włożyliśmy mnóstwo serca, potu,
-            pracy i&nbsp;litry kawy.
-          </p>
-          <p>
-            Chcemy, żebyście czuli się tu swobodnie, ciepło i&nbsp;komfortowo. Mamy tylko jedną
-            prośbę: traktujcie ten dom jak swój własny (a&nbsp;nawet odrobinę lepiej)
-            i&nbsp;zostawcie go po sobie w&nbsp;takim stanie, w&nbsp;jakim go zastaliście.
-          </p>
-          <p>
-            „In The Woods” to żywy organizm. Jesteśmy w&nbsp;ciągłym procesie metamorfoz, adaptacji
-            i&nbsp;remontów, dlatego dom ma swój unikalny,
-            <strong> rustykalny charakter</strong>. Znajdziecie tu wszystko, czego potrzeba do
-            wygodnego pobytu: czystą pościel i&nbsp;ręczniki, książki, zabawki dla dzieci, dobrze
-            wyposażoną kuchnię oraz spokojną przestrzeń do wypoczynku blisko natury.
-          </p>
-          <p className="font-script text-2xl md:text-3xl text-foreground/80 leading-snug">
-            Pamiętajcie: dom jest dla ludzi, a&nbsp;nie ludzie dla domu. Bawcie się dobrze!
+            Oddajemy w&nbsp;Wasze ręce nasz dom — miejsce, w&nbsp;które włożyliśmy mnóstwo serca,
+            potu, pracy i&nbsp;litry kawy.
           </p>
         </div>
-        <p className="mt-6 text-sm text-muted-foreground">— Maciej, gospodarz</p>
+
+        {/* Benefits grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+          {benefits.map((b, i) => (
+            <div
+              key={b.title}
+              className={`group flex gap-4 p-5 bg-secondary/60 rounded-xl transition-all duration-500 hover:bg-secondary hover:shadow-md hover:-translate-y-0.5 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+              }`}
+              style={{ transitionDelay: isVisible ? `${200 + i * 100}ms` : '0ms' }}
+            >
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-forest/10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                <b.icon className="w-5 h-5 text-forest" />
+              </div>
+              <div>
+                <h3 className="font-serif text-sm font-semibold text-foreground !mb-1">
+                  {b.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed !mb-0">{b.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Host note */}
+        <div
+          className={`mt-10 text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+          style={{ transitionDelay: isVisible ? '700ms' : '0ms' }}
+        >
+          <p className="text-muted-foreground font-sans text-base leading-relaxed max-w-xl mx-auto">
+            Traktujcie ten dom jak swój — z&nbsp;szacunkiem i&nbsp;uśmiechem. Zostawcie go tak,
+            jakbyście chcieli go zastać za rok, kiedy <em>wrócicie</em>.
+          </p>
+          <p className="font-script text-2xl md:text-3xl text-foreground/80 leading-snug mt-4">
+            Pamiętajcie: dom jest dla ludzi, a&nbsp;nie ludzie dla domu. Bawcie się dobrze!
+          </p>
+          <p className="mt-4 text-sm text-muted-foreground">— Maciej, gospodarz</p>
+        </div>
       </div>
     </section>
   );

@@ -1,10 +1,46 @@
 import heroImg from '@/assets/exterior-main.webp';
-import { Phone, Star, Users, TreePine, Sparkles } from 'lucide-react';
+import { Phone, Star, Users, TreePine, Sparkles, CalendarCheck } from 'lucide-react';
+import { useMemo } from 'react';
+import { BLOCKED_DATES, formatDateKey } from '@/lib/pricing';
 
 const HeroSection = () => {
   const scrollTo = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  // Dynamic availability counter for current + next month
+  const availabilityText = useMemo(() => {
+    const now = new Date();
+    const currentMonth = now.getMonth();
+    const currentYear = now.getFullYear();
+
+    // Count free days in the next 60 days
+    let freeDays = 0;
+    let freeWeekends = 0;
+    const check = new Date(now);
+    check.setHours(0, 0, 0, 0);
+
+    for (let i = 0; i < 60; i++) {
+      const d = new Date(check);
+      d.setDate(d.getDate() + i);
+      if (!BLOCKED_DATES.has(formatDateKey(d))) {
+        freeDays++;
+        const dow = d.getDay();
+        if (dow === 5 || dow === 6) freeWeekends++;
+      }
+    }
+
+    const weekends = Math.floor(freeWeekends / 2);
+    if (freeDays === 0) return null;
+
+    const monthNames = ['styczniu', 'lutym', 'marcu', 'kwietniu', 'maju', 'czerwcu', 'lipcu', 'sierpniu', 'wrześniu', 'październiku', 'listopadzie', 'grudniu'];
+    const nextMonth = (currentMonth + 1) % 12;
+
+    if (weekends <= 3) {
+      return `Tylko ${weekends} woln${weekends === 1 ? 'y' : 'e'} weekend${weekends === 1 ? '' : 'y'} w ${monthNames[currentMonth]} i ${monthNames[nextMonth]}!`;
+    }
+    return `${freeDays} wolnych dni w najbliższych 2 miesiącach`;
+  }, []);
 
   return (
     <section
@@ -57,7 +93,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-up delay-300">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6 animate-fade-up delay-300">
           <button
             onClick={() => scrollTo('#rezerwacja')}
             className="btn-primary bg-cream text-graphite hover:bg-cream/90"
@@ -72,7 +108,17 @@ const HeroSection = () => {
           </a>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6 animate-fade-in delay-400">
+        {/* Dynamic availability counter */}
+        {availabilityText && (
+          <div className="flex items-center justify-center gap-2 mb-8 animate-fade-in delay-400">
+            <CalendarCheck className="w-4 h-4 text-cream/70" />
+            <span className="text-sm text-cream/80 font-medium tracking-wide">
+              {availabilityText}
+            </span>
+          </div>
+        )}
+
+        <div className="flex flex-wrap justify-center gap-6 animate-fade-in delay-500">
           <div className="flex items-center gap-1.5 text-cream/60 text-xs">
             <Star className="w-3.5 h-3.5 fill-cream/60 text-cream/60" />
             <span>5★ opinie</span>
