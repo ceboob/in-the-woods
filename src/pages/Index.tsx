@@ -46,8 +46,8 @@ const jsonLd = {
   telephone: '+48 722 765 101',
   email: 'tutinthewood@gmail.com',
   sameAs: [
-    'https://www.instagram.com/inthewoods_suprasl/',
-    'https://www.facebook.com/InTheWoodsSuprasl',
+    'https://www.facebook.com/krzemienna.chata',
+    'https://www.instagram.com/krzemienna_chata/',
   ],
   address: {
     '@type': 'PostalAddress',
