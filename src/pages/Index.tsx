@@ -46,8 +46,8 @@ const jsonLd = {
   telephone: '+48 722 765 101',
   email: 'tutinthewood@gmail.com',
   sameAs: [
-    'https://www.instagram.com/inthewoods_suprasl/',
-    'https://www.facebook.com/InTheWoodsSuprasl',
+    'https://www.facebook.com/krzemienna.chata',
+    'https://www.instagram.com/krzemienna_chata/',
   ],
   address: {
     '@type': 'PostalAddress',
@@ -87,6 +87,10 @@ const jsonLd = {
   checkoutTime: '11:00',
   image: [
     'https://www.suprasl.online/og-image.jpg',
+    'https://www.suprasl.online/gallery/dom-z-zewnatrz.jpg',
+    'https://www.suprasl.online/gallery/salon-kominek.jpg',
+    'https://www.suprasl.online/gallery/jacuzzi-ogrod.jpg',
+    'https://www.suprasl.online/gallery/sypialnia.jpg',
   ],
   priceRange: 'PLN 399-899',
   currenciesAccepted: 'PLN',
