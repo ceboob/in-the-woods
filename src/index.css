@@ -83,7 +83,8 @@
   }
 
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
+    @apply text-3xl md:text-4xl lg:text-5xl;
+    font-weight: 400;
     letter-spacing: -0.015em;
     line-height: 1.15;
     margin-bottom: 1rem;
@@ -98,6 +99,11 @@
 
   p {
     margin-bottom: 1em;
+    letter-spacing: 0.03em;
+  }
+
+  small, .text-xs, .text-sm {
+    letter-spacing: 0.04em;
   }
 
   p:last-child {
