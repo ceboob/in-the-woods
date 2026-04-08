@@ -116,30 +116,28 @@ export function isWeekendDay(date: Date): boolean {
   return dow === 5 || dow === 6 || dow === 0;
 }
 
-// Blocked dates (hardcoded for 2026)
+// Blocked dates (hardcoded for 2026) — last update: 2025-04-08
+export const BLOCKED_DATES_LAST_UPDATED = '2025-04-08';
+
 export const BLOCKED_DATES: Set<string> = new Set([
-  ...[14, 15, 16, 20, 21, 27, 28].map((d) => `2026-03-${String(d).padStart(2, '0')}`),
-  ...[4, 5, 17, 18].map((d) => `2026-04-${String(d).padStart(2, '0')}`),
-  ...[8, 9, 10, 15, 16].map((d) => `2026-05-${String(d).padStart(2, '0')}`),
-  ...[1, 2, 3, 4, 5, 6, 7, 14, 15, 16, 17].map((d) => `2026-06-${String(d).padStart(2, '0')}`),
-  ...Array.from({ length: 31 }, (_, i) => i + 1)
-    .filter((d) => ![5, 6, 7, 8, 12, 18].includes(d))
-    .map((d) => `2026-07-${String(d).padStart(2, '0')}`),
+  // April
+  ...[10, 11, 17, 18, 24, 25].map((d) => `2026-04-${String(d).padStart(2, '0')}`),
+  // May
+  ...[1, 2, 8, 9, 10, 15, 16, 22, 23, 31].map((d) => `2026-05-${String(d).padStart(2, '0')}`),
+  // June: 1-7, 14-17, 20-26
+  ...[1, 2, 3, 4, 5, 6, 7, 14, 15, 16, 17, 20, 21, 22, 23, 24, 25, 26].map(
+    (d) => `2026-06-${String(d).padStart(2, '0')}`,
+  ),
+  // July: 1-4, 9-11, 14-17, 19-31
+  ...[1, 2, 3, 4, 9, 10, 11, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31].map(
+    (d) => `2026-07-${String(d).padStart(2, '0')}`,
+  ),
+  // August: 2-6, 10-12, 16-28
   ...[2, 3, 4, 5, 6, 10, 11, 12, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28].map(
     (d) => `2026-08-${String(d).padStart(2, '0')}`,
   ),
-  ...Array.from({ length: 30 }, (_, i) => i + 1).map(
-    (d) => `2026-09-${String(d).padStart(2, '0')}`,
-  ),
-  ...Array.from({ length: 31 }, (_, i) => i + 1).map(
-    (d) => `2026-10-${String(d).padStart(2, '0')}`,
-  ),
-  ...Array.from({ length: 30 }, (_, i) => i + 1).map(
-    (d) => `2026-11-${String(d).padStart(2, '0')}`,
-  ),
-  ...Array.from({ length: 31 }, (_, i) => i + 1).map(
-    (d) => `2026-12-${String(d).padStart(2, '0')}`,
-  ),
+  // September: 25-27
+  ...[25, 26, 27].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
 ]);
 
 export function formatDateKey(date: Date): string {

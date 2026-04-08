@@ -13,6 +13,7 @@ import {
   BASE_GUESTS,
   MAX_GUESTS,
   MIN_NIGHTS,
+  BLOCKED_DATES_LAST_UPDATED,
 } from '@/lib/pricing';
 
 const MONTH_NAMES = [
