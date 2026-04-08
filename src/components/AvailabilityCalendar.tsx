@@ -384,6 +384,9 @@ const AvailabilityCalendar = () => {
             <strong>+{EXTRA_GUEST_PRICE} zł/noc</strong>. Weekendy (pt–so):{' '}
             <strong>+100 zł/noc</strong>.
           </p>
+          <p className="text-[11px] text-muted-foreground/60">
+            Ostatnia aktualizacja dostępności: {new Date(BLOCKED_DATES_LAST_UPDATED).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
+          </p>
         </div>
       </div>
     </section>
