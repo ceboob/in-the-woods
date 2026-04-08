@@ -1,6 +1,9 @@
 export default {
-  async fetch(request) {
+  async fetch(request, env, ctx) {
+    // Fetch the original response from the origin
     const response = await fetch(request);
+
+    // Clone headers and add security headers
     const newHeaders = new Headers(response.headers);
 
     // Content-Security-Policy
