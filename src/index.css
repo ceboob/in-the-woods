@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Monoton&family=Open+Sans:wght@300;400;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -69,21 +69,27 @@
   }
 
   h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     @apply text-5xl md:text-6xl lg:text-7xl;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.15;
     letter-spacing: 0.01em;
     margin-bottom: 1.2rem;
   }
 
-  h2, h3, h4, h5, h6 {
+  h2 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+  }
+
+  h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
   }
 
   h2 {
+    font-family: 'Jost', sans-serif;
     @apply text-3xl md:text-4xl lg:text-5xl;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 1.15;
     margin-bottom: 1rem;
@@ -118,9 +124,9 @@
 
   .section-title {
     @apply text-3xl md:text-4xl lg:text-5xl tracking-tight text-foreground;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-weight: 400;
-    letter-spacing: -0.015em;
+    letter-spacing: 0.02em;
     line-height: 1.15;
   }
 
