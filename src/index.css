@@ -99,6 +99,11 @@
 
   p {
     margin-bottom: 1em;
+    letter-spacing: 0.03em;
+  }
+
+  small, .text-xs, .text-sm {
+    letter-spacing: 0.04em;
   }
 
   p:last-child {
