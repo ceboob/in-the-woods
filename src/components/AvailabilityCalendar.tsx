@@ -13,6 +13,7 @@ import {
   BASE_GUESTS,
   MAX_GUESTS,
   MIN_NIGHTS,
+  BLOCKED_DATES_LAST_UPDATED,
 } from '@/lib/pricing';
 
 const MONTH_NAMES = [
@@ -382,6 +383,9 @@ const AvailabilityCalendar = () => {
             Ceny od <strong>399 zł/noc</strong> (do {BASE_GUESTS} osób). Każda dodatkowa osoba:{' '}
             <strong>+{EXTRA_GUEST_PRICE} zł/noc</strong>. Weekendy (pt–so):{' '}
             <strong>+100 zł/noc</strong>.
+          </p>
+          <p className="text-[11px] text-muted-foreground/60">
+            Ostatnia aktualizacja dostępności: {new Date(BLOCKED_DATES_LAST_UPDATED).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
           </p>
         </div>
       </div>
