@@ -125,8 +125,9 @@
   }
 
   .nav-link {
-    @apply text-xs tracking-[0.15em] uppercase font-medium transition-all duration-300;
-    font-family: 'Mulish', system-ui, sans-serif;
+    @apply text-xs tracking-[0.15em] uppercase transition-all duration-300;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
   }
 
   .btn-primary {
