@@ -79,7 +79,7 @@ const HeroWelcome = () => {
             Traktujcie ten dom jak swój — z&nbsp;szacunkiem i&nbsp;uśmiechem. Zostawcie go tak,
             jakbyście chcieli go zastać za rok, kiedy <em>wrócicie</em>.
           </p>
-          <p className="text-[22px] md:text-[26px] text-foreground/80 leading-snug mt-4" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
+          <p className="text-base sm:text-lg md:text-xl text-foreground/80 leading-relaxed mt-4" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
             Pamiętajcie: dom jest dla ludzi, a&nbsp;nie ludzie dla domu. Bawcie się dobrze!
           </p>
           <p className="mt-4 text-sm text-muted-foreground">— Maciej, gospodarz</p>
