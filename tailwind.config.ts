@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ['"Monoton"', 'cursive'],
+        heading: ['"Montserrat"', 'sans-serif'],
         script: ['"Open Sans"', 'sans-serif'],
         serif: ['"Open Sans"', 'sans-serif'],
         sans: ['"Open Sans"', 'sans-serif'],
