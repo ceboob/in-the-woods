@@ -8,7 +8,7 @@ const PlatnoscSukces = () => {
       <SEOHead
         title="Płatność zakończona – In The Woods"
         description="Dziękujemy za wpłatę zaliczki. Potwierdzimy rezerwację w ciągu kilku godzin."
-        canonical="https://chata-w-puszczy-azyl.lovable.app/platnosc-sukces"
+        canonical="https://www.suprasl.online/platnosc-sukces"
         noindex
       />
       <div className="min-h-screen flex items-center justify-center bg-background px-4">
