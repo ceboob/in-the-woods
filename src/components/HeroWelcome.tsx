@@ -36,12 +36,12 @@ const HeroWelcome = () => {
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-4 text-center">
           Od gospodarza
         </p>
-        <h2 className="font-script text-3xl md:text-4xl text-foreground mb-6 text-center">
+        <h2 className="text-[22px] md:text-[26px] text-foreground mb-6 text-center" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
           Witajcie w&nbsp;In&nbsp;The&nbsp;Woods
         </h2>
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
-          <p className="font-script text-2xl md:text-3xl text-foreground/90 leading-snug">
+          <p className="text-[22px] md:text-[26px] text-foreground/90 leading-snug" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
             Oddajemy w&nbsp;Wasze ręce nasz dom — miejsce, w&nbsp;które włożyliśmy mnóstwo serca,
             potu, pracy i&nbsp;litry kawy.
           </p>
@@ -79,7 +79,7 @@ const HeroWelcome = () => {
             Traktujcie ten dom jak swój — z&nbsp;szacunkiem i&nbsp;uśmiechem. Zostawcie go tak,
             jakbyście chcieli go zastać za rok, kiedy <em>wrócicie</em>.
           </p>
-          <p className="font-script text-2xl md:text-3xl text-foreground/80 leading-snug mt-4">
+          <p className="text-[22px] md:text-[26px] text-foreground/80 leading-snug mt-4" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
             Pamiętajcie: dom jest dla ludzi, a&nbsp;nie ludzie dla domu. Bawcie się dobrze!
           </p>
           <p className="mt-4 text-sm text-muted-foreground">— Maciej, gospodarz</p>

@@ -60,8 +60,8 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1
-          className="text-5xl md:text-7xl lg:text-8xl font-normal text-cream leading-tight mb-4 animate-fade-up"
-          style={{ fontFamily: "'Jost', sans-serif", letterSpacing: '0.01em' }}
+          className="text-[32px] md:text-5xl lg:text-6xl font-normal text-cream leading-tight mb-4 animate-fade-up"
+          style={{ fontFamily: "'Luckiest Guy', cursive", letterSpacing: '0.02em' }}
         >
           In The Woods – noclegi Supraśl
         </h1>
