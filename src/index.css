@@ -118,9 +118,10 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl tracking-tight text-foreground;
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
+    @apply tracking-tight text-foreground;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.15;
   }
