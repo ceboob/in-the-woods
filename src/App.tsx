@@ -1,4 +1,5 @@
 import { lazy, Suspense } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -112,6 +113,7 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           <CookieConsent />
+          <SpeedInsights />
           </Suspense>
         </BrowserRouter>
       </TooltipProvider>
