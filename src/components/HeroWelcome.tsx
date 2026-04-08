@@ -41,7 +41,7 @@ const HeroWelcome = () => {
         </h2>
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
-          <p className="text-[22px] md:text-[26px] text-foreground/90 leading-snug" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
+          <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
             Oddajemy w&nbsp;Wasze ręce nasz dom — miejsce, w&nbsp;które włożyliśmy mnóstwo serca,
             potu, pracy i&nbsp;litry kawy.
           </p>
