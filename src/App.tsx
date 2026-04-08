@@ -113,6 +113,7 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           <CookieConsent />
+          <SpeedInsights />
           </Suspense>
         </BrowserRouter>
       </TooltipProvider>
