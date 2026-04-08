@@ -36,7 +36,7 @@ const HeroWelcome = () => {
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-4 text-center">
           Od gospodarza
         </p>
-        <h2 className="font-script text-3xl md:text-4xl text-foreground mb-6 text-center">
+        <h2 className="text-[22px] md:text-[26px] text-foreground mb-6 text-center" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
           Witajcie w&nbsp;In&nbsp;The&nbsp;Woods
         </h2>
 
