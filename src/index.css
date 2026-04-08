@@ -69,9 +69,9 @@
   }
 
   h1 {
-    font-family: 'Jost', sans-serif;
-    @apply text-5xl md:text-6xl lg:text-7xl;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
     line-height: 1.15;
     letter-spacing: 0.01em;
     margin-bottom: 1.2rem;
