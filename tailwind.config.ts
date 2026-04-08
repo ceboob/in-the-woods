@@ -14,10 +14,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Grand Hotel"', 'cursive'],
-        script: ['"Sacramento"', 'cursive'],
-        serif: ['"Mulish"', 'system-ui', 'sans-serif'],
-        sans: ['"Mulish"', 'system-ui', 'sans-serif'],
+        display: ['"Monoton"', 'cursive'],
+        script: ['"Open Sans"', 'sans-serif'],
+        serif: ['"Open Sans"', 'sans-serif'],
+        sans: ['"Open Sans"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

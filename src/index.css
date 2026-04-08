@@ -170,19 +170,21 @@
 
 @layer utilities {
   .font-serif {
-    font-family: 'Mulish', system-ui, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
   .font-sans {
-    font-family: 'Mulish', system-ui, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
   .font-display {
-    font-family: 'Grand Hotel', cursive;
+    font-family: 'Monoton', cursive;
   }
 
   .font-script {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
   }
 
   .animate-fade-up {
