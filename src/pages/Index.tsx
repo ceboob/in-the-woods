@@ -17,7 +17,6 @@ const PricingSection = lazy(() => import('@/components/PricingSection'));
 const AvailabilityCalendar = lazy(() => import('@/components/AvailabilityCalendar'));
 const BookingModule = lazy(() => import('@/components/BookingModule'));
 const TestimonialsSection = lazy(() => import('@/components/TestimonialsSection'));
-const SupraslSection = lazy(() => import('@/components/SupraslSection'));
 const LocationSection = lazy(() => import('@/components/LocationSection'));
 const EventsSection = lazy(() => import('@/components/EventsSection'));
 const FAQSection = lazy(() => import('@/components/FAQSection'));
@@ -191,6 +190,10 @@ const Index = () => {
         <Suspense fallback={<SectionFallback />}>
           {/* Oferta — co dostaje gość */}
           <AmenitiesSection />
+
+          {/* Przewodnik turystyczny — przed Jacuzzi */}
+          <GuideSection />
+
           <JacuzziSection />
           <RelaxSection />
           <ForWhoSection />
@@ -210,16 +213,12 @@ const Index = () => {
           <TestimonialsSection />
 
           {/* Okolica i lokalne SEO */}
-          <SupraslSection />
           <LocationSection />
           <EventsSection />
 
           {/* FAQ (dane strukturalne) + informator */}
           <FAQSection />
           <GuestGuideSection />
-
-          {/* Przewodnik turystyczny */}
-          <GuideSection />
 
           {/* Treść SEO + końcowe CTA */}
           <SEOTextSection />
