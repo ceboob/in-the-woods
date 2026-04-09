@@ -55,7 +55,7 @@ const HeroSection = () => {
           loading="eager"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-graphite/60 via-graphite/30 to-graphite/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#333333]/65 via-[#8c6239]/20 to-[#333333]/75" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
@@ -96,13 +96,13 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6 animate-fade-up delay-300">
           <button
             onClick={() => scrollTo('#rezerwacja')}
-            className="btn-primary bg-cream text-graphite hover:bg-cream/90"
+            className="btn-primary bg-primary text-primary-foreground hover:bg-primary/90"
           >
             Sprawdź dostępność
           </button>
           <a
             href="tel:+48722765101"
-            className="btn-outline border-cream text-cream hover:bg-cream hover:text-graphite inline-flex items-center justify-center gap-2"
+            className="btn-outline border-cream text-cream hover:bg-primary hover:text-primary-foreground hover:border-primary inline-flex items-center justify-center gap-2"
           >
             <Phone className="w-4 h-4" /> Zadzwoń
           </a>
@@ -111,22 +111,22 @@ const HeroSection = () => {
         {/* Dynamic availability counter */}
         {availabilityText && (
           <div className="flex items-center justify-center gap-2 mb-8 animate-fade-in delay-400">
-            <CalendarCheck className="w-4 h-4 text-cream/70" />
-            <span className="text-sm text-cream/80 font-medium tracking-wide">
+            <CalendarCheck className="w-4 h-4 text-primary/80" />
+            <span className="text-sm text-primary/90 font-medium tracking-wide">
               {availabilityText}
             </span>
           </div>
         )}
 
         <div className="flex flex-wrap justify-center gap-6 animate-fade-in delay-500">
-          <div className="flex items-center gap-1.5 text-cream/60 text-xs">
-            <Star className="w-3.5 h-3.5 fill-cream/60 text-cream/60" />
+          <div className="flex items-center gap-1.5 text-primary/70 text-xs">
+            <Star className="w-3.5 h-3.5 fill-primary/70 text-primary/70" />
             <span>5★ opinie</span>
           </div>
-          <span className="text-cream/30">·</span>
-          <span className="text-cream/60 text-xs">Ponad 100 zadowolonych gości</span>
-          <span className="text-cream/30">·</span>
-          <span className="text-cream/60 text-xs">Rezerwacje bezpośrednie</span>
+          <span className="text-primary/30">·</span>
+          <span className="text-primary/70 text-xs">Ponad 100 zadowolonych gości</span>
+          <span className="text-primary/30">·</span>
+          <span className="text-primary/70 text-xs">Rezerwacje bezpośrednie</span>
         </div>
       </div>
 
