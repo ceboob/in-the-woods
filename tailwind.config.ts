@@ -15,10 +15,10 @@ export default {
     extend: {
       fontFamily: {
         display: ['"Monoton"', 'cursive'],
-        heading: ['"Montserrat"', 'sans-serif'],
-        script: ['"Open Sans"', 'sans-serif'],
-        serif: ['"Open Sans"', 'sans-serif'],
-        sans: ['"Open Sans"', 'sans-serif'],
+        heading: ['"Poppins"', 'sans-serif'],
+        script: ['"Poppins"', 'sans-serif'],
+        serif: ['"Poppins"', 'sans-serif'],
+        sans: ['"Poppins"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -65,6 +65,7 @@ export default {
         cream: "hsl(var(--cream))",
         graphite: "hsl(var(--graphite))",
         "warm-white": "hsl(var(--warm-white))",
+        teal: "hsl(var(--teal))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
