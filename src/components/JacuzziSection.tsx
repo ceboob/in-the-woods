@@ -23,13 +23,13 @@ const JacuzziSection = () => {
           width="1920"
           height="1440"
         />
-        <div className="absolute inset-0 bg-graphite/40" />
+        <div className="absolute inset-0 bg-foreground/40" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
-            <p className="text-xs tracking-[0.3em] uppercase text-cream/80 font-sans mb-4">
+            <p className="text-xs tracking-[0.3em] uppercase text-white/80 font-sans mb-4">
               WYJĄTKOWE CHWILE
             </p>
-            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-cream">
+            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-white">
               Prywatna ruska bania pod gwiazdami
             </h2>
           </div>

@@ -517,21 +517,21 @@ const Informator = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-graphite text-cream/70 px-6 md:px-12 py-8">
+      <footer className="bg-foreground text-white/70 px-6 md:px-12 py-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <p className="font-serif text-lg text-cream">In The Woods</p>
+          <p className="font-serif text-lg text-white">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <Link to="/" className="hover:text-cream transition-colors">
+            <Link to="/" className="hover:text-white transition-colors">
               Strona główna
             </Link>
-            <Link to="/noclegi-suprasl" className="hover:text-cream transition-colors">
+            <Link to="/noclegi-suprasl" className="hover:text-white transition-colors">
               Noclegi Supraśl
             </Link>
-            <Link to="/informator" className="hover:text-cream transition-colors">
+            <Link to="/informator" className="hover:text-white transition-colors">
               Informator gościa
             </Link>
           </div>
-          <p className="text-xs text-cream/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
+          <p className="text-xs text-white/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
         </div>
       </footer>
     </div>
