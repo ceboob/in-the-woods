@@ -12,7 +12,7 @@ const ContactSection = () => {
       >
         <div className="space-y-4 mb-8">
           <div className="flex items-center justify-center gap-2">
-            <User className="w-5 h-5 text-forest" strokeWidth={1.5} />
+            <User className="w-5 h-5 text-teal" strokeWidth={1.5} />
             <p className="font-serif text-lg font-medium">Gospodarz: Maciej</p>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
