@@ -61,7 +61,7 @@ const HeroWelcome = () => {
                 <b.icon className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-serif text-sm font-semibold text-foreground !mb-1">
+                <h3 className="font-heading text-sm font-semibold text-foreground !mb-1">
                   {b.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed !mb-0">{b.text}</p>

@@ -15,12 +15,12 @@ const PolitykaPrywatnosci = () => {
       <Navbar />
       <main className="min-h-screen bg-background pt-24 pb-16">
         <div className="max-w-3xl mx-auto px-4 space-y-10">
-          <h1 className="font-serif text-3xl md:text-4xl text-foreground">
+          <h1 className="font-heading text-3xl md:text-4xl text-foreground">
             Polityka prywatności i cookies
           </h1>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl text-foreground">1. Administrator danych</h2>
+            <h2 className="font-heading text-xl text-foreground">1. Administrator danych</h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Administratorem Twoich danych osobowych jest Krzemienna Chata z siedzibą w Supraślu
               (ul. Krzemienna, 16-030 Supraśl). Kontakt: tutinthewood@gmail.com, tel. +48 722 765
@@ -29,7 +29,7 @@ const PolitykaPrywatnosci = () => {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl text-foreground">
+            <h2 className="font-heading text-xl text-foreground">
               2. Jakie dane zbieramy i w jakim celu
             </h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
@@ -50,7 +50,7 @@ const PolitykaPrywatnosci = () => {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl text-foreground">3. Okres przechowywania</h2>
+            <h2 className="font-heading text-xl text-foreground">3. Okres przechowywania</h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Dane rezerwacyjne przechowywane są przez okres niezbędny do realizacji pobytu, a
               następnie przez okres wynikający z przepisów podatkowych i księgowych (do 5 lat).
@@ -60,7 +60,7 @@ const PolitykaPrywatnosci = () => {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl text-foreground">4. Twoje prawa</h2>
+            <h2 className="font-heading text-xl text-foreground">4. Twoje prawa</h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Masz prawo do: dostępu do swoich danych, ich sprostowania, usunięcia („prawo do bycia
               zapomnianym"), ograniczenia przetwarzania, przenoszenia danych oraz wniesienia
@@ -71,7 +71,7 @@ const PolitykaPrywatnosci = () => {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl text-foreground">5. Odbiorcy danych</h2>
+            <h2 className="font-heading text-xl text-foreground">5. Odbiorcy danych</h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Twoje dane mogą być udostępniane wyłącznie podmiotom realizującym usługi na naszą
               rzecz:
@@ -92,7 +92,7 @@ const PolitykaPrywatnosci = () => {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl text-foreground">6. Płatności</h2>
+            <h2 className="font-heading text-xl text-foreground">6. Płatności</h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Płatności online obsługuje Stripe, Inc. (certyfikat PCI DSS Level 1). Dane karty
               płatniczej są przetwarzane wyłącznie przez Stripe i nie są zapisywane ani dostępne
@@ -110,7 +110,7 @@ const PolitykaPrywatnosci = () => {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl text-foreground">7. Cookies</h2>
+            <h2 className="font-heading text-xl text-foreground">7. Cookies</h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Strona korzysta z plików cookies w celu:
             </p>
@@ -132,7 +132,7 @@ const PolitykaPrywatnosci = () => {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl text-foreground">8. Prawo do skargi</h2>
+            <h2 className="font-heading text-xl text-foreground">8. Prawo do skargi</h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Jeśli uważasz, że przetwarzanie Twoich danych narusza przepisy RODO, masz prawo
               wnieść skargę do Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193
@@ -150,7 +150,7 @@ const PolitykaPrywatnosci = () => {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl text-foreground">9. Zmiany w polityce</h2>
+            <h2 className="font-heading text-xl text-foreground">9. Zmiany w polityce</h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Zastrzegamy sobie prawo do aktualizacji niniejszej polityki prywatności. O istotnych
               zmianach poinformujemy na stronie. Data ostatniej aktualizacji: kwiecień 2026.

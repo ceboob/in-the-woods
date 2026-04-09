@@ -30,7 +30,7 @@ const SEOTextSection = () => {
             banią w ogrodzie.
           </p>
 
-          <h3 className="font-serif text-xl text-foreground">Noclegi Supraśl – dom na wynajem</h3>
+          <h3 className="font-heading text-xl text-foreground">Noclegi Supraśl – dom na wynajem</h3>
           <p>
             Nasz <strong>dom Supraśl</strong> oferuje kominek z prawdziwym ogniem, w pełni
             wyposażoną kuchnię z ceglanym piecem, dwie sypialnie na poddaszu z drewnianymi belkami,
@@ -49,7 +49,7 @@ const SEOTextSection = () => {
             Styczniowego i rezerwatu Krzemienne Góry.
           </p>
 
-          <h3 className="font-serif text-xl text-foreground">Domek z jacuzzi Podlasie</h3>
+          <h3 className="font-heading text-xl text-foreground">Domek z jacuzzi Podlasie</h3>
           <p>
             Szukasz{' '}
             <Link
@@ -65,7 +65,7 @@ const SEOTextSection = () => {
             starych drzew i leśnych ścieżek.
           </p>
 
-          <h3 className="font-serif text-xl text-foreground">Dom w lesie Puszcza Knyszyńska</h3>
+          <h3 className="font-heading text-xl text-foreground">Dom w lesie Puszcza Knyszyńska</h3>
           <p>
             In The Woods to autentyczny{' '}
             <Link
@@ -88,7 +88,7 @@ const SEOTextSection = () => {
             z dala od zgiełku.
           </p>
 
-          <h3 className="font-serif text-xl text-foreground">Weekend w Supraślu</h3>
+          <h3 className="font-heading text-xl text-foreground">Weekend w Supraślu</h3>
           <p>
             In The Woods to doskonały wybór na{' '}
             <Link
@@ -140,7 +140,7 @@ const SEOTextSection = () => {
             .
           </p>
 
-          <h3 className="font-serif text-xl text-foreground">Sprawdź noclegi w Supraślu</h3>
+          <h3 className="font-heading text-xl text-foreground">Sprawdź noclegi w Supraślu</h3>
           <p>
             Szukasz sprawdzonego{' '}
             <Link

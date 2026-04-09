@@ -164,7 +164,7 @@ const NoclegiSuprasl = () => (
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-serif text-2xl font-light">Zarezerwuj nocleg w Supraślu</h3>
+        <h3 className="font-heading text-2xl font-light">Zarezerwuj nocleg w Supraślu</h3>
         <p className="text-muted-foreground">
           Odpowiadamy zwykle w kilka godzin. Bez prowizji pośrednika.
         </p>

@@ -32,7 +32,7 @@ const NatureSection = () => {
             <p className="text-xs tracking-[0.3em] uppercase text-white/80 font-sans mb-4">
               Blisko natury
             </p>
-            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-white">
+            <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-light text-white">
               Puszcza Knyszyńska
               <br />
               za progiem

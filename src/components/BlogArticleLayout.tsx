@@ -193,7 +193,7 @@ const BlogArticleLayout = ({
       {/* FAQ Section */}
       {faqs.length > 0 && (
         <section className="max-w-4xl mx-auto px-6 md:px-12 pb-16">
-          <h2 className="font-serif text-2xl md:text-3xl font-light text-foreground mb-8">
+          <h2 className="font-heading text-2xl md:text-3xl font-light text-foreground mb-8">
             Najczęściej zadawane pytania
           </h2>
           <div className="space-y-6">
@@ -213,7 +213,7 @@ const BlogArticleLayout = ({
       {/* Related Articles */}
       {relatedArticles.length > 0 && (
         <section className="max-w-4xl mx-auto px-6 md:px-12 pb-16">
-          <h2 className="font-serif text-2xl font-light text-foreground mb-6">Czytaj również</h2>
+          <h2 className="font-heading text-2xl font-light text-foreground mb-6">Czytaj również</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {relatedArticles.map((a, i) => (
               <Link
@@ -234,7 +234,7 @@ const BlogArticleLayout = ({
       {/* Booking CTA */}
       <section className="px-6 md:px-12 py-16 bg-secondary">
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="font-serif text-3xl font-light text-foreground">
+          <h2 className="font-heading text-3xl font-light text-foreground">
             Gdzie nocować w Supraślu?
           </h2>
           <p className="text-foreground/70 max-w-xl mx-auto">

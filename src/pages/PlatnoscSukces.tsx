@@ -16,7 +16,7 @@ const PlatnoscSukces = () => {
           <div className="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
             <CheckCircle className="w-10 h-10 text-primary" />
           </div>
-          <h1 className="font-serif text-3xl font-semibold">Dziękujemy za wpłatę!</h1>
+          <h1 className="font-heading text-3xl font-semibold">Dziękujemy za wpłatę!</h1>
           <p className="text-muted-foreground text-sm leading-relaxed">
             Zaliczka została zaksięgowana. Potwierdzimy rezerwację i wyślemy szczegóły pobytu na
             podany adres e-mail.

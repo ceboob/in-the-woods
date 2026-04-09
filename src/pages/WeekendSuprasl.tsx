@@ -130,7 +130,7 @@ const WeekendSuprasl = () => (
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-serif text-2xl font-light">Zaplanuj swój weekend w Supraślu</h3>
+        <h3 className="font-heading text-2xl font-light">Zaplanuj swój weekend w Supraślu</h3>
         <p className="text-muted-foreground">Najlepsze terminy rezerwowane z wyprzedzeniem.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">

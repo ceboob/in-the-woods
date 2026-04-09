@@ -167,7 +167,7 @@ const BookingModule = () => {
               <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
                 <Send className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-serif text-2xl">Dziękujemy za zapytanie</h3>
+              <h3 className="font-heading text-2xl">Dziękujemy za zapytanie</h3>
               <p className="text-muted-foreground text-sm max-w-md mx-auto">
                 Potwierdzimy dostępność i cenę w ciągu kilku godzin. Sprawdź telefon lub skrzynkę
                 mailową.
@@ -322,7 +322,7 @@ const BookingModule = () => {
 
               {step === 'summary' && (
                 <div className="space-y-4">
-                  <h3 className="font-serif text-xl font-medium">Podsumowanie zapytania</h3>
+                  <h3 className="font-heading text-xl font-medium">Podsumowanie zapytania</h3>
                   <div className="bg-secondary p-5 space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Przyjazd</span>

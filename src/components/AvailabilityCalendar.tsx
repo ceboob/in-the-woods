@@ -200,7 +200,7 @@ const AvailabilityCalendar = () => {
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
-            <h3 className="font-serif text-lg font-semibold !mb-0">
+            <h3 className="font-heading text-lg font-semibold !mb-0">
               {MONTH_NAMES[currentMonth.getMonth()]} {currentMonth.getFullYear()}
             </h3>
             <button
@@ -301,7 +301,7 @@ const AvailabilityCalendar = () => {
           <div className="card-premium bg-background mt-4 space-y-4">
             <div className="flex items-center gap-2">
               <Calculator className="w-4 h-4 text-primary" />
-              <h4 className="font-serif text-base font-semibold">Kalkulator ceny</h4>
+              <h4 className="font-heading text-base font-semibold">Kalkulator ceny</h4>
             </div>
 
             <div className="flex items-center gap-3">

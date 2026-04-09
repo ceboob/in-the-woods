@@ -114,7 +114,7 @@ const DomekZJacuzziPodlasie = () => (
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-serif text-2xl font-light">Sprawdź dostępność domku z jacuzzi</h3>
+        <h3 className="font-heading text-2xl font-light">Sprawdź dostępność domku z jacuzzi</h3>
         <p className="text-muted-foreground">
           Rezerwacja bezpośrednia — bez prowizji. Odpowiadamy w kilka godzin.
         </p>

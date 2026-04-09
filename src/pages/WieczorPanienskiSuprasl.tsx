@@ -119,7 +119,7 @@ const WieczorPanienskiSuprasl = () => (
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-serif text-2xl font-light">Zaplanuj imprezę w In The Woods</h3>
+        <h3 className="font-heading text-2xl font-light">Zaplanuj imprezę w In The Woods</h3>
         <p className="text-muted-foreground">
           Zadzwoń i opowiedz nam o swoich planach. Pomożemy zorganizować niezapomniany wieczór.
         </p>

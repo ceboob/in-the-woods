@@ -157,7 +157,7 @@ const SupraslSection = () => {
                   />
                 </div>
                 <div className="p-5 space-y-3">
-                  <h3 className="font-serif text-lg font-medium text-foreground group-hover:text-primary transition-colors leading-snug">
+                  <h3 className="font-heading text-lg font-medium text-foreground group-hover:text-primary transition-colors leading-snug">
                     {guide.title}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{guide.excerpt}</p>

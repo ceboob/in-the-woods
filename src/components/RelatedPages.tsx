@@ -43,7 +43,7 @@ const RelatedPages = () => {
 
   return (
     <nav aria-label="Powiązane strony" className="mt-16 pt-12 border-t border-border">
-      <h2 className="font-serif text-2xl font-light text-foreground mb-6 text-center">
+      <h2 className="font-heading text-2xl font-light text-foreground mb-6 text-center">
         Zobacz również
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

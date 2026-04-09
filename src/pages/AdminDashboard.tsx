@@ -144,7 +144,7 @@ const AdminDashboard = () => {
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b bg-card px-4 py-3 flex items-center justify-between">
-        <h1 className="font-serif text-lg font-semibold">Panel rezerwacji — In The Woods</h1>
+        <h1 className="font-heading text-lg font-semibold">Panel rezerwacji — In The Woods</h1>
         <Button variant="ghost" size="sm" onClick={handleLogout}>
           <LogOut className="w-4 h-4 mr-1" /> Wyloguj
         </Button>
