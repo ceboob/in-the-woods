@@ -79,17 +79,17 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
-          <div className="flex items-center gap-2 text-cream/80">
+          <div className="flex items-center gap-2 text-white/90">
             <Users className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide">Dom na wyłączność</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">Dom na wyłączność</span>
           </div>
-          <div className="flex items-center gap-2 text-cream/80">
+          <div className="flex items-center gap-2 text-white/90">
             <TreePine className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide">10 min od Supraśla</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">10 min od Supraśla</span>
           </div>
-          <div className="flex items-center gap-2 text-cream/80">
+          <div className="flex items-center gap-2 text-white/90">
             <Sparkles className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide">Jacuzzi pod gwiazdami</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">Jacuzzi pod gwiazdami</span>
           </div>
         </div>
 
