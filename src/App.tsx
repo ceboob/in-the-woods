@@ -114,6 +114,9 @@ const App = () => (
               <Route path="/blog/aktywny-wypoczynek-suprasl" element={<AktywnyWypoczynek />} />
               <Route path="/blog/uzdrowisko-spa-suprasl" element={<UzdrowiSkoSPA />} />
               <Route path="/blog/przewodnik-kulinarny-suprasl" element={<PrzewodnikKulinarny />} />
+              <Route path="/blog/szlaki-puszcza-knyszynska" element={<SzlakiPuszczaKnyszynska />} />
+              <Route path="/blog/suprasl-na-weekend" element={<SupraslNaWeekend />} />
+              <Route path="/blog/suprasl-z-dziecmi" element={<SupraslZDziecmi />} />
               <Route path="/platnosc-sukces" element={<PlatnoscSukces />} />
               <Route path="/admin/login" element={<AdminLogin />} />
               <Route path="/admin" element={<AdminDashboard />} />
