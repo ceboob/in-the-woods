@@ -22,6 +22,7 @@ const LocationSection = lazy(() => import('@/components/LocationSection'));
 const EventsSection = lazy(() => import('@/components/EventsSection'));
 const FAQSection = lazy(() => import('@/components/FAQSection'));
 const GuestGuideSection = lazy(() => import('@/components/GuestGuideSection'));
+const GuideSection = lazy(() => import('@/components/GuideSection'));
 const SEOTextSection = lazy(() => import('@/components/SEOTextSection'));
 const CTASection = lazy(() => import('@/components/CTASection'));
 const ContactSection = lazy(() => import('@/components/ContactSection'));
@@ -216,6 +217,9 @@ const Index = () => {
           {/* FAQ (dane strukturalne) + informator */}
           <FAQSection />
           <GuestGuideSection />
+
+          {/* Przewodnik turystyczny */}
+          <GuideSection />
 
           {/* Treść SEO + końcowe CTA */}
           <SEOTextSection />
