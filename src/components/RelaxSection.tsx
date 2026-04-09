@@ -84,9 +84,11 @@ const RelaxSection = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {rituals.map((r, i) => (
-              <div key={i} className="text-center py-6 border border-border bg-card space-y-3">
-                <r.icon className="w-6 h-6 mx-auto text-teal" strokeWidth={1.5} />
-                <p className="font-serif text-lg font-medium">{r.season}</p>
+              <div key={i} className="card-premium p-6 text-center space-y-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                  <r.icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
+                </div>
+                <p className="font-heading text-lg font-semibold text-foreground">{r.season}</p>
                 <p className="text-xs text-muted-foreground px-3 leading-relaxed">{r.text}</p>
               </div>
             ))}

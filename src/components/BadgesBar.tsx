@@ -14,7 +14,7 @@ const BadgesBar = () => (
     <div className="flex items-center justify-center gap-4 md:gap-8 min-w-max mx-auto">
       {badges.map((b, i) => (
         <div key={i} className="flex items-center gap-2 text-muted-foreground">
-          <b.icon className="w-4 h-4 text-teal" strokeWidth={1.5} />
+          <b.icon className="w-4 h-4 text-primary" strokeWidth={1.5} />
           <span className="text-xs tracking-wider uppercase whitespace-nowrap">{b.label}</span>
         </div>
       ))}
