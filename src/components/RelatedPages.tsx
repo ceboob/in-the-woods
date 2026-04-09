@@ -35,6 +35,9 @@ const allPages = [
   },
   { path: '/blog', label: 'Blog', desc: 'Przewodnik po Supraślu i Podlasiu' },
   { path: '/informator', label: 'Informator gościa', desc: 'Praktyczne informacje dla gości' },
+  { path: '/dom', label: 'Dom In The Woods', desc: 'Szczegółowy opis domu' },
+  { path: '/galeria', label: 'Galeria zdjęć', desc: 'Pełna galeria wnętrz i okolicy' },
+  { path: '/dokumenty', label: 'Dokumenty', desc: 'Przewodnik, umowa, instrukcja' },
 ];
 
 const RelatedPages = () => {

@@ -17,14 +17,15 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   {
-    label: 'Noclegi',
+    label: 'Dom',
     href: '#dom',
     dropdown: [
+      { label: 'Opis domu', href: '/dom', isRoute: true },
+      { label: 'Galeria zdjęć', href: '/galeria', isRoute: true },
+      { label: 'Dokumenty i instrukcje', href: '/dokumenty', isRoute: true },
       { label: 'Dom w lesie', href: '/dom-w-lesie-suprasl', isRoute: true },
       { label: 'Domek z jacuzzi', href: '/domek-z-jacuzzi-podlasie', isRoute: true },
       { label: 'Noclegi Supraśl', href: '/noclegi-suprasl', isRoute: true },
-      { label: 'Domek Supraśl', href: '/domek-suprasl', isRoute: true },
-      { label: 'Puszcza Knyszyńska', href: '/puszcza-knyszynska-nocleg', isRoute: true },
     ],
   },
   {
@@ -33,6 +34,7 @@ const navItems: NavItem[] = [
     dropdown: [
       { label: 'Co zobaczyć', href: '/atrakcje-suprasl', isRoute: true },
       { label: 'Szlaki i natura', href: '/blog/szlaki-puszcza-knyszynska', isRoute: true },
+      { label: 'Puszcza Knyszyńska', href: '/blog/puszcza-knyszynska-przewodnik', isRoute: true },
       { label: 'Restauracje', href: '/blog/przewodnik-kulinarny-suprasl', isRoute: true },
     ],
   },
