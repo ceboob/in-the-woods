@@ -2,30 +2,30 @@ import { Instagram, Facebook, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => (
-  <footer className="bg-foreground text-white/70 px-6 md:px-12 py-12">
+  <footer className="bg-foreground text-white/80 px-6 md:px-12 py-12">
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
         <div className="text-center md:text-left">
-          <p className="font-display text-xl text-white mb-1">In The Woods</p>
-          <p className="text-xs tracking-wider mb-3">Dom w Puszczy · Supraśl · Podlasie</p>
+          <p className="font-display text-2xl text-white mb-2">In The Woods</p>
+          <p className="text-sm tracking-wider mb-3 text-white/60">Dom w Puszczy · Supraśl · Podlasie</p>
           <p className="text-xs text-white/50">Konne 109/1, 16-030 Supraśl</p>
           <p className="text-xs text-white/50">Gospodarz: Maciej</p>
         </div>
-        <div className="text-center space-y-2">
+        <div className="text-center space-y-3">
           <div className="flex items-center justify-center gap-2">
-            <Phone className="w-4 h-4 text-white/50" />
+            <Phone className="w-4 h-4 text-primary" />
             <a
               href="tel:+48722765101"
-              className="text-sm text-white/70 hover:text-primary transition-colors"
+              className="text-sm text-white/80 hover:text-primary transition-colors"
             >
               722 765 101
             </a>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <Mail className="w-4 h-4 text-white/50" />
+            <Mail className="w-4 h-4 text-primary" />
             <a
               href="mailto:tutinthewood@gmail.com"
-              className="text-sm text-white/70 hover:text-primary transition-colors"
+              className="text-sm text-white/80 hover:text-primary transition-colors"
             >
               tutinthewood@gmail.com
             </a>
@@ -35,14 +35,14 @@ const Footer = () => (
           <a
             href="#"
             aria-label="Instagram"
-            className="text-white/50 hover:text-primary transition-colors"
+            className="text-white/60 hover:text-primary transition-colors"
           >
             <Instagram className="w-5 h-5" />
           </a>
           <a
             href="#"
             aria-label="Facebook"
-            className="text-white/50 hover:text-primary transition-colors"
+            className="text-white/60 hover:text-primary transition-colors"
           >
             <Facebook className="w-5 h-5" />
           </a>
@@ -50,8 +50,8 @@ const Footer = () => (
       </div>
 
       {/* SEO Internal Links */}
-      <div className="mt-8 pt-6 border-t border-white/10">
-        <div className="flex flex-wrap justify-center gap-4 text-xs text-white/40">
+      <div className="mt-8 pt-6 border-t border-white/15">
+        <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/60">
           <Link to="/noclegi-suprasl" className="hover:text-primary transition-colors">
             Noclegi Supraśl
           </Link>

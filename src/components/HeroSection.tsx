@@ -118,15 +118,15 @@ const HeroSection = () => {
           </div>
         )}
 
-        <div className="flex flex-wrap justify-center gap-6 animate-fade-in delay-500">
-          <div className="flex items-center gap-1.5 text-primary/70 text-xs">
-            <Star className="w-3.5 h-3.5 fill-primary/70 text-primary/70" />
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 animate-fade-in delay-500">
+          <div className="flex items-center gap-1.5 text-primary text-sm font-medium">
+            <Star className="w-4 h-4 fill-primary text-primary" />
             <span>5★ opinie</span>
           </div>
-          <span className="text-primary/30">·</span>
-          <span className="text-primary/70 text-xs">Ponad 100 zadowolonych gości</span>
-          <span className="text-primary/30">·</span>
-          <span className="text-primary/70 text-xs">Rezerwacje bezpośrednie</span>
+          <span className="text-white/50 text-sm">·</span>
+          <span className="text-white font-medium text-sm">Ponad 100 zadowolonych gości</span>
+          <span className="text-white/50 text-sm">·</span>
+          <span className="text-white font-medium text-sm">Rezerwacje bezpośrednie</span>
         </div>
       </div>
 
