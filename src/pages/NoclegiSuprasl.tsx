@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const NoclegiSuprasl = () => (
   <SEOPageLayout
-    title="Noclegi Supraśl – gdzie nocować w Supraślu | In The Woods"
-    description="Noclegi Supraśl – prywatny dom na wynajem w Puszczy Knyszyńskiej. Jacuzzi, kominek, ogród. Sprawdź ofertę noclegów blisko Supraśla i Białegostoku."
+    title="Noclegi Supraśl – Hotele, Pensjonaty, Apartamenty | Sprawdzone Oferty"
+    description="Szukasz noclegu w Supraślu? Zobacz polecane hotele SPA, tanie pokoje, apartamenty i domki blisko natury. Zarezerwuj swój pobyt w uzdrowisku."
     breadcrumbName="Noclegi Supraśl"
     ogImage="https://www.suprasl.online/images/exterior-main.jpg"
   >

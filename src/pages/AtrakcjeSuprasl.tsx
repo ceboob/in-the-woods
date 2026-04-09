@@ -1,156 +1,185 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
 import { Link } from 'react-router-dom';
+import { Church, Building2, Waves, TreePine, Landmark, MapPin } from 'lucide-react';
 
 const AtrakcjeSuprasl = () => (
   <SEOPageLayout
-    title="Atrakcje Supraśla – co zobaczyć, co robić | In The Woods"
-    description="Co zobaczyć w Supraślu? Monaster, Muzeum Ikon, bulwary, szlaki rowerowe, spływy kajakowe. Odkryj atrakcje Supraśla i Puszczy Knyszyńskiej."
+    title="Atrakcje w Supraślu – Co warto zobaczyć? [TOP 10 miejsc]"
+    description="Odkryj największe atrakcje Supraśla: Monaster, Muzeum Ikon, Pałac Buchholtzów, Teatr Wierszalin i inne. Zobacz mapę i zaplanuj zwiedzanie perły Podlasia."
     breadcrumbName="Atrakcje Supraśla"
     ogImage="https://www.suprasl.online/images/terrace-porch.jpg"
   >
-    <article className="prose prose-lg max-w-none space-y-8">
+    <article className="prose prose-lg max-w-none space-y-10">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Atrakcje Supraśla – co zobaczyć, co robić w okolicy
+        Atrakcje w Supraślu – Co warto zobaczyć?
       </h1>
 
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Supraśl i okolice to skarbnica <strong>atrakcji turystycznych</strong>, które łączą kulturę,
-        historię i przyrodę w unikalne doświadczenie. Miasteczko uzdrowiskowe w sercu Puszczy
-        Knyszyńskiej przyciąga turystów z całej Polski — i nie bez powodu. Oto przewodnik po
-        najważniejszych atrakcjach, które warto odwiedzić podczas pobytu w In The Woods.
+        Supraśl to miejsce, gdzie <strong>historia spotyka się z naturą</strong>, a duchowość
+        przenika codzienne życie. To urokliwe uzdrowisko w sercu Puszczy Knyszyńskiej przyciąga
+        turystów z całej Polski. Poznaj jego największe skarby, które zachwycają odwiedzających
+        od wieków.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Monaster Zwiastowania NMP</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Prawosławny Monaster Zwiastowania Najświętszej Maryi Panny to najważniejszy zabytek Supraśla
-        i jedno z najstarszych miejsc kultu prawosławnego w Polsce. Założony na początku XVI wieku,
-        monaster przeszedł burzliwą historię — zniszczony podczas II wojny światowej, został
-        odbudowany i dziś zachwyca swoją architekturą.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Warto odwiedzić Monaster zarówno w dzień — podziwiając architekturę i ogrody — jak i
-        wieczorem, gdy budynki pięknie się oświetlają. Regularne nabożeństwa z tradycyjnym śpiewem
-        cerkiewnym to wyjątkowe doświadczenie duchowe.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Monaster znajduje się zaledwie 10 minut samochodem od In The Woods, w centrum Supraśla.
-      </p>
+      {/* Monaster */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+            <Church className="w-5 h-5 text-primary" />
+          </div>
+          <h2 className="section-title !text-2xl md:!text-3xl !mb-0">
+            Monaster Zwiastowania NMP i Muzeum Ikon
+          </h2>
+        </div>
+        <p className="text-muted-foreground leading-relaxed">
+          Poczuj <strong>duchowe serce Supraśla</strong>, zwiedzając monumentalny, XVI-wieczny
+          kompleks klasztorny. Prawosławny Monaster Zwiastowania Najświętszej Maryi Panny to
+          najważniejszy zabytek miasta i jedno z najstarszych miejsc kultu prawosławnego w Polsce.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Zachwyć się obronną architekturą, a następnie zanurz się w świecie sztuki sakralnej w
+          jednym z <strong>najnowocześniejszych muzeów ikon</strong> w Polsce. Kolekcja obejmuje
+          ikony, freski i rękopisy z XVI–XIX wieku — to absolutny obowiązek na mapie każdego turysty.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          <strong>Praktyczne informacje:</strong> Muzeum otwarte codziennie, wizyta zajmuje 1–2
+          godziny. Warto skorzystać z audioprzewodnika. Wstęp: ok. 15 zł (dorośli), 8 zł (ulgowy).
+        </p>
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Muzeum Ikon</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Muzeum Ikon przy Monasterze posiada jedną z najcenniejszych i największych kolekcji ikon w
-        Europie Środkowej. Eksponaty pochodzą z XVI–XIX wieku i obejmują ikony, freski i rękopisy.
-        Muzeum jest nowoczesne i interaktywne — nawet osoby niezaznajomione z kulturą prawosławną
-        znajdą tu wiele fascynujących eksponatów.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Wizyta w Muzeum Ikon zajmuje zazwyczaj 1–2 godziny. Warto skorzystać z audioprzewodnika,
-        który wzbogaca doświadczenie o kontekst historyczny i religijny.
-      </p>
+      {/* Pałac Buchholtzów */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+            <Building2 className="w-5 h-5 text-primary" />
+          </div>
+          <h2 className="section-title !text-2xl md:!text-3xl !mb-0">
+            Pałac Buchholtzów i Domy Tkaczy
+          </h2>
+        </div>
+        <p className="text-muted-foreground leading-relaxed">
+          Przenieś się w czasie, spacerując <strong>ulicą 3 Maja</strong> i podziwiając XIX-wieczne
+          Domy Tkaczy — świadectwo przemysłowej przeszłości Supraśla. Odkryj historię fabrykanckich
+          rodów, zwieńczoną wizytą w secesyjnej perle architektury — <strong>Pałacu
+          Buchholtzów</strong>, w którym dziś mieści się Liceum Plastyczne.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Architektura pałacu łączy style secesyjny i neoklasyczny. Warto podziwiać ozdobną fasadę,
+          a następnie wybrać się na obiad do jednej z{' '}
+          <Link to="/blog/przewodnik-kulinarny-suprasl" className="text-primary underline hover:text-primary/70">
+            pobliskich restauracji
+          </Link>.
+        </p>
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Bulwary nad rzeką Supraśl</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Bulwary nad rzeką Supraśl to idealne miejsce na wieczorny spacer. Drewniane pomosty, ławki z
-        widokiem na rzekę i otaczający las tworzą atmosferę spokoju. W sezonie letnim bulwary tętnią
-        życiem — organizowane są koncerty, targi rękodzieła i wydarzenia kulturalne.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Spacer bulwarami to doskonałe uzupełnienie wizyty w Monasterze i Muzeum Ikon. Wzdłuż rzeki
-        znajdują się też lokale gastronomiczne, gdzie można skosztować kuchni podlaskiej.
-      </p>
+      {/* Bulwary */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+            <Waves className="w-5 h-5 text-primary" />
+          </div>
+          <h2 className="section-title !text-2xl md:!text-3xl !mb-0">
+            Bulwary nad rzeką Supraśl i Plaża Miejska
+          </h2>
+        </div>
+        <p className="text-muted-foreground leading-relaxed">
+          Szukasz chwili relaksu? <strong>Malownicze bulwary</strong> wzdłuż rzeki Supraśl to idealne
+          miejsce na niespieszny spacer, piknik czy podziwianie zachodów słońca nad klasztorem.
+          Drewniane pomosty, ławki z widokiem na rzekę i otaczający las tworzą atmosferę spokoju.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Latem skorzystaj z uroków <strong>plaży miejskiej</strong> i kąpieliska. W sezonie
+          organizowane są koncerty, targi rękodzieła i wydarzenia kulturalne. Wzdłuż rzeki
+          znajdziesz też lokale gastronomiczne z kuchnią podlaską.
+        </p>
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Restauracje i kawiarnie Supraśla</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Supraśl zaskakuje różnorodnością gastronomiczną jak na niewielkie miasteczko. Klimatyczne
-        kawiarnie serwujące rzemieślniczą kawę, restauracje z kuchnią podlaską opartą na lokalnych
-        produktach, a nawet lodziarnie z domowymi smakami — to obowiązkowy element każdego pobytu.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Warto spróbować lokalnych specjałów: kartacze (podlaskie kluski z nadzieniem mięsnym),
-        sękacz (tradycyjne ciasto piecone na rożnie), pierogi z nadzieniem z darów Puszczy
-        Knyszyńskiej. Wielu gości In The Woods łączy wizytę w Supraślu z obiadem w jednej z
-        lokalnych restauracji.
-      </p>
+      {/* Puszcza Knyszyńska */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+            <TreePine className="w-5 h-5 text-primary" />
+          </div>
+          <h2 className="section-title !text-2xl md:!text-3xl !mb-0">
+            Puszcza Knyszyńska – szlaki i aktywności
+          </h2>
+        </div>
+        <p className="text-muted-foreground leading-relaxed">
+          <Link to="/puszcza-knyszynska-nocleg" className="text-primary underline hover:text-primary/70">
+            Puszcza Knyszyńska
+          </Link>{' '}
+          to jeden z największych kompleksów leśnych w Polsce — 132 tysiące hektarów nieskażonej
+          przyrody. Szlaki piesze i rowerowe prowadzą przez stare drzewostany, wzdłuż rzek i
+          przez rezerwaty przyrody.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Spływy kajakowe, nordic walking, grzybobranie jesienią, narciarstwo biegowe zimą — w
+          Puszczy każda pora roku ma swój urok. Więcej o aktywnym wypoczynku znajdziesz w naszym{' '}
+          <Link to="/blog/aktywny-wypoczynek-suprasl" className="text-primary underline hover:text-primary/70">
+            przewodniku po aktywnym wypoczynku
+          </Link>.
+        </p>
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">
-        Puszcza Knyszyńska — szlaki i aktywności
-      </h2>
-      <p className="text-muted-foreground leading-relaxed">
-        <Link
-          to="/puszcza-knyszynska-nocleg"
-          className="text-teal underline hover:text-teal/70"
-        >
-          Puszcza Knyszyńska
-        </Link>{' '}
-        to jeden z największych kompleksów leśnych w Polsce, rozciągający się na ponad 132 tysiącach
-        hektarów. To raj dla miłośników pieszych wędrówek, jazdy na rowerze i kontaktu z nieskażoną
-        przyrodą.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Szlaki piesze i rowerowe prowadzą przez stare drzewostany, wzdłuż rzek i strumieni, przez
-        rezerwaty przyrody i malownicze polany. Łączna długość szlaków to setki kilometrów — od
-        krótkich spacerów po wielodniowe wyprawy.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Spływy kajakowe rzeką Supraśl to jedna z najpopularniejszych atrakcji regionu. Trasy różnej
-        długości, od kilkugodzinnych po całodzienne, prowadzą przez dziewiczy krajobraz Puszczy.
-        Wypożyczalnie kajaków działają w sezonie letnim i oferują transport zwrotny.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Jesienią Puszcza Knyszyńska słynie z obfitości grzybów — borowiki, podgrzybki, kurki i
-        maślaki to łup, na który polują grzybiarz z całego regionu. Zimą las zamienia się w białą
-        krainę idealną na narty biegowe, rakiety śnieżne i romantyczne spacery.
-      </p>
+      {/* Arboretum */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+            <Landmark className="w-5 h-5 text-primary" />
+          </div>
+          <h2 className="section-title !text-2xl md:!text-3xl !mb-0">
+            Arboretum Kopna Góra
+          </h2>
+        </div>
+        <p className="text-muted-foreground leading-relaxed">
+          Arboretum Kopna Góra, oddalone 20 minut od Supraśla, to unikatowy <strong>ogród
+          botaniczny w sercu puszczy</strong>. Na 10 hektarach rosną drzewa i krzewy z całego
+          świata. Idealne miejsce na spokojne popołudnie z rodziną.
+        </p>
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Arboretum Kopna Góra</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Arboretum Kopna Góra, oddalone 20 minut od In The Woods, to unikatowy ogród botaniczny w
-        sercu puszczy. Na 10 hektarach rosną drzewa i krzewy z całego świata. Spacer po arboretum to
-        lekcja botaniki w pięknych przyrodniczych wnętrzach.
-      </p>
+      {/* Kruszyniany */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+            <MapPin className="w-5 h-5 text-primary" />
+          </div>
+          <h2 className="section-title !text-2xl md:!text-3xl !mb-0">
+            Kruszyniany – tatarski ślad Podlasia
+          </h2>
+        </div>
+        <p className="text-muted-foreground leading-relaxed">
+          <Link to="/blog/kruszyniany-tatarska-wies" className="text-primary underline hover:text-primary/70">
+            Kruszyniany
+          </Link>{' '}
+          to jedna z najstarszych osad tatarskich w Polsce. Zabytkowy drewniany meczet, mizar i
+          autentyczna kuchnia tatarska — pierekaczewnik to obowiązkowy punkt programu. Odległość
+          od Supraśla: 45 minut samochodem.
+        </p>
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Kruszyniany — tatarski ślad</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Kruszyniany to jedna z najstarszych osad tatarskich w Polsce, oddalona 45 minut od In The
-        Woods. Zabytkowy drewniany meczet i mizar (cmentarz tatarski) to unikalne zabytki. Lokalne
-        jadłodajnie serwują autentyczną kuchnię tatarską — pierekaczewnik (tatarski placek z mięsem)
-        to obowiązkowy punkt programu.
-      </p>
+      {/* Białystok */}
+      <section className="space-y-4">
+        <h2 className="section-title !text-2xl md:!text-3xl">Białystok — 25 minut stąd</h2>
+        <p className="text-muted-foreground leading-relaxed">
+          Białystok, stolica Podlasia, to nowoczesne miasto z bogatą ofertą kulturalną. Pałac
+          Branickich (polski Wersal), teatr dramatyczny, galerie sztuki i doskonałe restauracje —
+          idealne uzupełnienie pobytu w regionie.
+        </p>
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Białystok — 25 minut stąd</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Białystok, stolica Podlasia, to nowoczesne miasto z bogatą ofertą kulturalną i
-        gastronomiczną. Pałac Branickich (polski Wersal), teatr dramatyczny, galerie sztuki,
-        restauracje i kawiarnie — to doskonałe uzupełnienie pobytu w In The Woods dla tych, którzy
-        szukają miejskich atrakcji.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">In The Woods — Twoja baza wypadowa</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        In The Woods to idealna baza do odkrywania atrakcji Supraśla i Puszczy Knyszyńskiej.
-        Prywatny{' '}
-        <Link to="/dom-w-lesie-suprasl" className="text-teal underline hover:text-teal/70">
-          dom w lesie
-        </Link>{' '}
-        z kominkiem, ruską banią i ogrodem — po dniu pełnym wrażeń wracasz do swojego azylu ciszy i
-        natury.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Sprawdź naszą ofertę{' '}
-        <Link to="/noclegi-suprasl" className="text-teal underline hover:text-teal/70">
-          noclegów w Supraślu
-        </Link>
-        i zaplanuj idealny{' '}
-        <Link to="/weekend-suprasl" className="text-teal underline hover:text-teal/70">
-          weekend w Supraślu
-        </Link>
-        .
-      </p>
-
-      <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-serif text-2xl font-light">Zarezerwuj pobyt i odkryj Supraśl</h3>
-        <p className="text-muted-foreground">
-          10 minut od Supraśla. Prywatny dom w Puszczy Knyszyńskiej.
+      {/* CTA */}
+      <div className="card-premium bg-secondary p-8 text-center space-y-4 mt-12">
+        <h3 className="font-heading text-2xl font-semibold text-foreground">
+          In The Woods — Twoja baza wypadowa
+        </h3>
+        <p className="text-muted-foreground max-w-xl mx-auto">
+          Prywatny{' '}
+          <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/70">
+            dom w lesie
+          </Link>{' '}
+          z kominkiem, ruską banią i ogrodem — 10 minut od Supraśla. Po dniu pełnym wrażeń
+          wracasz do swojego azylu ciszy i natury.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">

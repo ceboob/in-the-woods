@@ -19,6 +19,36 @@ import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.jpg';
 
 const articles = [
   {
+    slug: 'aktywny-wypoczynek-suprasl',
+    title: 'Supraśl Aktywnie: 5 Pomysłów na Weekend w Puszczy Knyszyńskiej',
+    excerpt:
+      'Szlaki rowerowe, spływy kajakowe, nordic walking, narciarstwo biegowe i Arboretum Kopna Góra. Jak aktywnie spędzić czas w Supraślu.',
+    image: blogCoRobic,
+    date: '2026-04-09',
+    readTime: '11 min',
+    keywords: ['aktywny wypoczynek Supraśl', 'szlaki rowerowe Supraśl'],
+  },
+  {
+    slug: 'uzdrowisko-spa-suprasl',
+    title: 'Uzdrowisko Supraśl: Borowina, SPA i regeneracja sił',
+    excerpt:
+      'Jedyne uzdrowisko na Podlasiu. Borowina z Podsokołdy, grota solna, strefy wellness i sanatoria. Przewodnik po leczeniu i relaksie.',
+    image: blogSupraslUzdrowisko,
+    date: '2026-04-09',
+    readTime: '10 min',
+    keywords: ['uzdrowisko Supraśl', 'SPA Supraśl', 'borowina'],
+  },
+  {
+    slug: 'przewodnik-kulinarny-suprasl',
+    title: 'Smaki Supraśla: Gdzie zjeść kartacze i babkę ziemniaczaną?',
+    excerpt:
+      'Kulinarny przewodnik po Supraślu — restauracje, kuchnia tatarska, kawiarnie i lokalne produkty, które warto kupić jako pamiątkę.',
+    image: blogRestauracje,
+    date: '2026-04-09',
+    readTime: '12 min',
+    keywords: ['restauracje Supraśl', 'kuchnia podlaska', 'kartacze'],
+  },
+  {
     slug: 'wydarzenia-suprasl-2026',
     title: 'Największe imprezy i wydarzenia w Supraślu 2026 – kalendarz + daty',
     excerpt:
