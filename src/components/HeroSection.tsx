@@ -60,7 +60,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-cream leading-tight mb-4 animate-fade-up"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white leading-tight mb-4 animate-fade-up drop-shadow-lg"
           style={{ fontFamily: "'Luckiest Guy', cursive", letterSpacing: '0.02em' }}
         >
           In The Woods – noclegi Supraśl
@@ -102,7 +102,7 @@ const HeroSection = () => {
           </button>
           <a
             href="tel:+48722765101"
-            className="btn-outline border-cream text-cream hover:bg-primary hover:text-primary-foreground hover:border-primary inline-flex items-center justify-center gap-2"
+            className="btn-outline border-white text-white hover:bg-primary hover:text-primary-foreground hover:border-primary inline-flex items-center justify-center gap-2"
           >
             <Phone className="w-4 h-4" /> Zadzwoń
           </a>
@@ -131,7 +131,7 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-px h-12 bg-cream/40" />
+        <div className="w-px h-12 bg-white/40" />
       </div>
     </section>
   );
