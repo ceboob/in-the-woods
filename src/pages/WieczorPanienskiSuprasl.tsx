@@ -41,7 +41,7 @@ const WieczorPanienskiSuprasl = () => (
         wyposażonej kuchni lub zamówienie cateringu z lokalnych{' '}
         <Link
           to="/blog/restauracje-suprasl"
-          className="text-forest underline hover:text-forest-light"
+          className="text-teal underline hover:text-teal/70"
         >
           restauracji Supraśla
         </Link>
@@ -100,11 +100,11 @@ const WieczorPanienskiSuprasl = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w okolicy</h2>
       <p className="text-muted-foreground leading-relaxed">
         Między imprezowymi aktywnościami warto zwiedzić{' '}
-        <Link to="/atrakcje-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/atrakcje-suprasl" className="text-teal underline hover:text-teal/70">
           atrakcje Supraśla
         </Link>
         : Monaster, bulwary nad rzeką, lokalne kawiarnie. Można też wybrać się na{' '}
-        <Link to="/blog/kajaki-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/blog/kajaki-suprasl" className="text-teal underline hover:text-teal/70">
           spływ kajakowy rzeką Supraśl
         </Link>{' '}
         — świetna aktywność grupowa na dzień przed lub po imprezie.
@@ -112,7 +112,7 @@ const WieczorPanienskiSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Supraśl to zaledwie 25 minut od Białegostoku, więc dojazd jest wygodny zarówno samochodem,
         jak i taksówką. Sprawdź też{' '}
-        <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/weekend-suprasl" className="text-teal underline hover:text-teal/70">
           weekend w Supraślu
         </Link>{' '}
         — może impreza przerodzi się w dłuższy wypad?

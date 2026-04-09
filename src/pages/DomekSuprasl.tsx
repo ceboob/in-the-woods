@@ -72,7 +72,7 @@ const DomekSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         <strong>Domek w Supraślu</strong> In The Woods łączy dwa światy: absolutną ciszę natury z
         bliskością{' '}
-        <Link to="/atrakcje-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/atrakcje-suprasl" className="text-teal underline hover:text-teal/70">
           atrakcji Supraśla
         </Link>
         . Monaster Zwiastowania NMP, Muzeum Ikon, bulwary nad rzeką — to wszystko 10 minut
@@ -82,7 +82,7 @@ const DomekSuprasl = () => (
         Z domu wychodzisz prosto na leśne ścieżki rezerwatu Krzemienne Góry.
         <Link
           to="/blog/szlaki-piesze-rowerowe-suprasl"
-          className="text-forest underline hover:text-forest-light"
+          className="text-teal underline hover:text-teal/70"
         >
           {' '}
           Szlaki piesze i rowerowe
@@ -95,7 +95,7 @@ const DomekSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         In The Woods wybierają pary szukające romantycznego azylu, rodziny z dziećmi (ogrodzony
         ogród, plac zabaw), grupy przyjaciół planujące{' '}
-        <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/weekend-suprasl" className="text-teal underline hover:text-teal/70">
           weekend w Supraślu
         </Link>
         , a także osoby pracujące zdalnie, które chcą połączyć pracę z relaksem w naturze.
@@ -113,18 +113,18 @@ const DomekSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Odkryj też nasze inne przewodniki:{' '}
-        <Link to="/noclegi-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/noclegi-suprasl" className="text-teal underline hover:text-teal/70">
           noclegi Supraśl
         </Link>
         ,
-        <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/dom-w-lesie-suprasl" className="text-teal underline hover:text-teal/70">
           {' '}
           dom w lesie Supraśl
         </Link>{' '}
         oraz
         <Link
           to="/puszcza-knyszynska-nocleg"
-          className="text-forest underline hover:text-forest-light"
+          className="text-teal underline hover:text-teal/70"
         >
           {' '}
           nocleg w Puszczy Knyszyńskiej

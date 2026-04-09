@@ -53,7 +53,7 @@ const ForWhoSection = () => {
           {audiences.map((a, i) => (
             <div key={i} className="card-premium text-center group">
               <a.icon
-                className="w-8 h-8 mx-auto mb-4 text-forest group-hover:text-forest-light transition-colors duration-300"
+                className="w-8 h-8 mx-auto mb-4 text-teal group-hover:text-teal/70 transition-colors duration-300"
                 strokeWidth={1.5}
               />
               <h3 className="font-serif text-lg font-medium mb-2">{a.title}</h3>

@@ -164,8 +164,8 @@ const BookingModule = () => {
         <div className="card-premium bg-warm-white">
           {step === 'sent' ? (
             <div className="text-center py-12 space-y-4">
-              <div className="w-16 h-16 mx-auto rounded-full bg-forest/10 flex items-center justify-center">
-                <Send className="w-7 h-7 text-forest" />
+              <div className="w-16 h-16 mx-auto rounded-full bg-teal/10 flex items-center justify-center">
+                <Send className="w-7 h-7 text-teal" />
               </div>
               <h3 className="font-serif text-2xl">Dziękujemy za zapytanie</h3>
               <p className="text-muted-foreground text-sm max-w-md mx-auto">
@@ -217,7 +217,7 @@ const BookingModule = () => {
                         type="date"
                         value={data.checkIn}
                         onChange={(e) => setData({ ...data, checkIn: e.target.value })}
-                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest"
+                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-teal"
                         required
                       />
                     </div>
@@ -234,7 +234,7 @@ const BookingModule = () => {
                         value={data.checkOut}
                         onChange={(e) => setData({ ...data, checkOut: e.target.value })}
                         min={data.checkIn}
-                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest"
+                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-teal"
                         required
                       />
                     </div>
@@ -252,7 +252,7 @@ const BookingModule = () => {
                         id="booking-guests"
                         value={data.guests}
                         onChange={(e) => setData({ ...data, guests: e.target.value })}
-                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest"
+                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-teal"
                       >
                         {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
                           <option key={n} value={n}>
@@ -274,7 +274,7 @@ const BookingModule = () => {
                         placeholder="Numer telefonu"
                         value={data.phone}
                         onChange={(e) => setData({ ...data, phone: e.target.value })}
-                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest"
+                        className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-teal"
                         required
                         maxLength={20}
                       />
@@ -294,7 +294,7 @@ const BookingModule = () => {
                       placeholder="Adres e-mail"
                       value={data.email}
                       onChange={(e) => setData({ ...data, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest"
+                      className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-teal"
                       required
                       maxLength={255}
                     />
@@ -312,7 +312,7 @@ const BookingModule = () => {
                       placeholder="Dodatkowe informacje..."
                       value={data.message}
                       onChange={(e) => setData({ ...data, message: e.target.value })}
-                      className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-forest resize-none"
+                      className="w-full px-4 py-3 bg-background border border-border text-sm focus:outline-none focus:ring-1 focus:ring-teal resize-none"
                       rows={3}
                       maxLength={1000}
                     />

@@ -65,7 +65,7 @@ const JacuzziSection = () => {
                 key={i}
                 className="flex flex-col items-center gap-2 py-4 border border-border bg-card"
               >
-                <b.icon className="w-5 h-5 text-forest" strokeWidth={1.5} />
+                <b.icon className="w-5 h-5 text-teal" strokeWidth={1.5} />
                 <span className="text-xs text-muted-foreground tracking-wide">{b.text}</span>
               </div>
             ))}

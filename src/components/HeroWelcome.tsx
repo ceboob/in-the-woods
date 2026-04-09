@@ -57,8 +57,8 @@ const HeroWelcome = () => {
               }`}
               style={{ transitionDelay: isVisible ? `${200 + i * 100}ms` : '0ms' }}
             >
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-forest/10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                <b.icon className="w-5 h-5 text-forest" />
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                <b.icon className="w-5 h-5 text-teal" />
               </div>
               <div>
                 <h3 className="font-serif text-sm font-semibold text-foreground !mb-1">

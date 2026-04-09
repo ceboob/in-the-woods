@@ -180,7 +180,7 @@ const AvailabilityCalendar = () => {
               onClick={() => setFilter(f.value)}
               className={`text-xs px-3 py-1.5 border transition-colors ${
                 filter === f.value
-                  ? 'bg-forest text-primary-foreground border-forest'
+                  ? 'bg-teal text-primary-foreground border-teal'
                   : 'bg-background border-border text-muted-foreground hover:bg-secondary'
               }`}
             >
@@ -259,11 +259,11 @@ const AvailabilityCalendar = () => {
                       : blocked
                         ? 'bg-destructive/10 text-destructive line-through'
                         : rangeStart || rangeEnd
-                          ? 'bg-forest text-primary-foreground font-semibold'
+                          ? 'bg-teal text-primary-foreground font-semibold'
                           : inRange
-                            ? 'bg-forest/20 text-forest font-medium'
-                            : `${season.color} font-medium hover:ring-2 hover:ring-forest/40`
-                  } ${isToday ? 'ring-2 ring-forest/30' : ''}`}
+                            ? 'bg-teal/20 text-teal font-medium'
+                            : `${season.color} font-medium hover:ring-2 hover:ring-teal/40`
+                  } ${isToday ? 'ring-2 ring-teal/30' : ''}`}
                   title={price ? `${price} zł/noc — ${season.label}` : undefined}
                 >
                   <span>{date.getDate()}</span>
@@ -278,7 +278,7 @@ const AvailabilityCalendar = () => {
           {/* Legend */}
           <div className="flex flex-wrap items-center justify-center gap-4 mt-6 pt-4 border-t border-border">
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded bg-forest/10 border border-forest/20" />
+              <div className="w-3 h-3 rounded bg-teal/10 border border-teal/20" />
               <span className="text-xs text-muted-foreground">Poza sezonem</span>
             </div>
             <div className="flex items-center gap-2">
@@ -300,7 +300,7 @@ const AvailabilityCalendar = () => {
         {selectedRange.start && (
           <div className="card-premium bg-background mt-4 space-y-4">
             <div className="flex items-center gap-2">
-              <Calculator className="w-4 h-4 text-forest" />
+              <Calculator className="w-4 h-4 text-teal" />
               <h4 className="font-serif text-base font-semibold">Kalkulator ceny</h4>
             </div>
 
@@ -355,7 +355,7 @@ const AvailabilityCalendar = () => {
                   {priceCalc && (
                     <div className="flex justify-between font-semibold text-base pt-2 border-t border-border">
                       <span>Szacunkowy koszt</span>
-                      <span className="text-forest">{priceCalc.total} zł</span>
+                      <span className="text-teal">{priceCalc.total} zł</span>
                     </div>
                   )}
                 </div>

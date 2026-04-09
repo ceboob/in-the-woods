@@ -22,7 +22,7 @@ const SEOTextSection = () => {
             dla hotelu —{' '}
             <Link
               to="/domek-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               domek Supraśl
             </Link>{' '}
@@ -39,7 +39,7 @@ const SEOTextSection = () => {
             idealnej po dniu spędzonym na szlakach
             <Link
               to="/puszcza-knyszynska-nocleg"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               {' '}
               Puszczy Knyszyńskiej
@@ -54,7 +54,7 @@ const SEOTextSection = () => {
             Szukasz{' '}
             <Link
               to="/domek-z-jacuzzi-podlasie"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               domku z jacuzzi na Podlasiu
             </Link>
@@ -70,7 +70,7 @@ const SEOTextSection = () => {
             In The Woods to autentyczny{' '}
             <Link
               to="/dom-w-lesie-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               dom w lesie
             </Link>{' '}
@@ -81,7 +81,7 @@ const SEOTextSection = () => {
             prawdziwe miejsce z duszą, idealne na{' '}
             <Link
               to="/noclegi-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               nocleg w Supraślu
             </Link>{' '}
@@ -93,7 +93,7 @@ const SEOTextSection = () => {
             In The Woods to doskonały wybór na{' '}
             <Link
               to="/weekend-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               weekend w Supraślu
             </Link>{' '}
@@ -101,14 +101,14 @@ const SEOTextSection = () => {
             Organizujemy również{' '}
             <Link
               to="/wieczor-panienski-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               wieczory panieńskie
             </Link>{' '}
             i imprezy okolicznościowe. Odkryj
             <Link
               to="/atrakcje-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               {' '}
               atrakcje Supraśla
@@ -116,7 +116,7 @@ const SEOTextSection = () => {
             ,
             <Link
               to="/blog/szlaki-piesze-rowerowe-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               {' '}
               szlaki piesze i rowerowe
@@ -124,7 +124,7 @@ const SEOTextSection = () => {
             ,
             <Link
               to="/blog/kajaki-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               {' '}
               spływ kajakowy rzeką Supraśl
@@ -132,7 +132,7 @@ const SEOTextSection = () => {
             oraz
             <Link
               to="/blog/restauracje-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               {' '}
               najlepsze restauracje w Supraślu
@@ -145,35 +145,35 @@ const SEOTextSection = () => {
             Szukasz sprawdzonego{' '}
             <Link
               to="/noclegi-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               noclegu w Supraślu
             </Link>
             ? Sprawdź nasz{' '}
             <Link
               to="/blog/weekend-suprasl-plan"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               plan na weekend w Supraślu
             </Link>
             , dowiedz się{' '}
             <Link
               to="/blog/co-robic-suprasl"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               co robić w Supraślu
             </Link>
             , odkryj{' '}
             <Link
               to="/blog/suprasl-atrakcje-uzdrowisko"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               Supraśl jako uzdrowisko
             </Link>{' '}
             i poznaj{' '}
             <Link
               to="/blog/kruszyniany-tatarska-wies"
-              className="text-forest underline hover:text-forest-light transition-colors"
+              className="text-teal underline hover:text-teal/70 transition-colors"
             >
               tatarską wieś Kruszyniany
             </Link>{' '}

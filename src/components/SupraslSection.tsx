@@ -108,7 +108,7 @@ const SupraslSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
           {attractions.map((a, i) => (
             <div key={i} className="flex items-center gap-3 py-4 px-5 bg-card border border-border">
-              <a.icon className="w-5 h-5 text-forest flex-shrink-0" strokeWidth={1.5} />
+              <a.icon className="w-5 h-5 text-teal flex-shrink-0" strokeWidth={1.5} />
               <span className="text-sm text-foreground">{a.name}</span>
             </div>
           ))}
@@ -126,7 +126,7 @@ const SupraslSection = () => {
                 className="flex items-center justify-between py-3 px-5 bg-card border border-border"
               >
                 <span className="text-sm text-foreground flex items-center gap-2">
-                  <MapPin className="w-3.5 h-3.5 text-forest" /> {n.name}
+                  <MapPin className="w-3.5 h-3.5 text-teal" /> {n.name}
                 </span>
                 <span className="text-xs text-muted-foreground flex items-center gap-1">
                   <Clock className="w-3 h-3" /> {n.time}

@@ -48,7 +48,7 @@ const EventsSection = () => {
               key={i}
               className="bg-card border border-border rounded-xl p-6 text-center space-y-3 hover:shadow-md transition-shadow"
             >
-              <event.icon className="w-8 h-8 text-forest mx-auto" strokeWidth={1.5} />
+              <event.icon className="w-8 h-8 text-teal mx-auto" strokeWidth={1.5} />
               <h3 className="font-serif text-lg font-medium text-foreground">{event.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{event.desc}</p>
             </div>

@@ -83,8 +83,8 @@ const ExitIntentPopup = () => {
 
         {submitted ? (
           <div className="text-center py-4 space-y-3">
-            <div className="w-14 h-14 mx-auto rounded-full bg-forest/10 flex items-center justify-center">
-              <Phone className="w-6 h-6 text-forest" />
+            <div className="w-14 h-14 mx-auto rounded-full bg-teal/10 flex items-center justify-center">
+              <Phone className="w-6 h-6 text-teal" />
             </div>
             <h3 className="font-serif text-xl font-semibold">Dziękujemy!</h3>
             <p className="text-sm text-muted-foreground">
@@ -94,7 +94,7 @@ const ExitIntentPopup = () => {
         ) : (
           <>
             <div className="text-center space-y-3 mb-6">
-              <p className="text-xs tracking-[0.2em] uppercase text-forest font-medium">
+              <p className="text-xs tracking-[0.2em] uppercase text-teal font-medium">
                 Zanim wyjdziesz
               </p>
               <h3 className="font-serif text-2xl font-semibold leading-tight">
@@ -119,7 +119,7 @@ const ExitIntentPopup = () => {
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder="Twój numer telefonu"
                     aria-label="Numer telefonu"
-                    className="w-full pl-10 pr-4 py-3 bg-secondary border border-border text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-forest/30"
+                    className="w-full pl-10 pr-4 py-3 bg-secondary border border-border text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-teal/30"
                     required
                     maxLength={15}
                   />
