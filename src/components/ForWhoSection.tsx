@@ -51,12 +51,11 @@ const ForWhoSection = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {audiences.map((a, i) => (
-            <div key={i} className="card-premium text-center group">
-              <a.icon
-                className="w-8 h-8 mx-auto mb-4 text-teal group-hover:text-teal/70 transition-colors duration-300"
-                strokeWidth={1.5}
-              />
-              <h3 className="font-serif text-lg font-medium mb-2">{a.title}</h3>
+            <div key={i} className="card-premium p-6 text-center group space-y-4">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                <a.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              </div>
+              <h3 className="font-heading text-lg font-semibold text-foreground">{a.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
             </div>
           ))}
