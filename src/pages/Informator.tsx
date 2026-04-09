@@ -31,18 +31,21 @@ import {
 
 const Informator = () => {
   useEffect(() => {
-    document.title = 'Informator gościa – In The Woods Supraśl';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc)
-      metaDesc.setAttribute(
-        'content',
-        'Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl.',
-      );
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Informator gościa – In The Woods Supraśl</title>
+        <meta name="description" content="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl." />
+        <link rel="canonical" href="https://www.suprasl.online/informator" />
+        <meta property="og:title" content="Informator gościa – In The Woods Supraśl" />
+        <meta property="og:description" content="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi." />
+        <meta property="og:url" content="https://www.suprasl.online/informator" />
+        <meta property="og:image" content="https://www.suprasl.online/images/hero-cabin.jpg" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
