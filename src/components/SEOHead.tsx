@@ -46,7 +46,7 @@ const SEOHead = ({
       <meta property="og:image:height" content="630" />
       <meta property="og:type" content={type} />
       <meta property="og:locale" content="pl_PL" />
-      <meta property="og:site_name" content="In The Woods – noclegi Supraśl" />
+      <meta property="og:site_name" content="In The Woods — Dom w Puszczy Knyszyńskiej" />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
