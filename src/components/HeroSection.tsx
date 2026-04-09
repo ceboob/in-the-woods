@@ -55,41 +55,41 @@ const HeroSection = () => {
           loading="eager"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#333333]/65 via-[#8c6239]/20 to-[#333333]/75" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#333333]/75 via-[#333333]/50 to-[#333333]/80" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-cream leading-tight mb-4 animate-fade-up"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white leading-tight mb-4 animate-fade-up drop-shadow-lg"
           style={{ fontFamily: "'Luckiest Guy', cursive", letterSpacing: '0.02em' }}
         >
           In The Woods – noclegi Supraśl
         </h1>
-        <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-cream/70 mb-3 animate-fade-in">
+        <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-white/90 mb-3 animate-fade-in">
           Dom w lesie z jacuzzi blisko Supraśla
         </p>
 
         <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
-          <p className="font-serif text-lg md:text-xl text-cream/90 italic">
+          <p className="font-serif text-lg md:text-xl text-white italic">
             Prywatny dom w lesie.
           </p>
-          <p className="font-serif text-lg md:text-xl text-cream/90 italic">
+          <p className="font-serif text-lg md:text-xl text-white italic">
             Kominek. Ruska bania. Cisza natury.
           </p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
-          <div className="flex items-center gap-2 text-cream/80">
+          <div className="flex items-center gap-2 text-white/90">
             <Users className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide">Dom na wyłączność</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">Dom na wyłączność</span>
           </div>
-          <div className="flex items-center gap-2 text-cream/80">
+          <div className="flex items-center gap-2 text-white/90">
             <TreePine className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide">10 min od Supraśla</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">10 min od Supraśla</span>
           </div>
-          <div className="flex items-center gap-2 text-cream/80">
+          <div className="flex items-center gap-2 text-white/90">
             <Sparkles className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide">Jacuzzi pod gwiazdami</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">Jacuzzi pod gwiazdami</span>
           </div>
         </div>
 
@@ -102,7 +102,7 @@ const HeroSection = () => {
           </button>
           <a
             href="tel:+48722765101"
-            className="btn-outline border-cream text-cream hover:bg-primary hover:text-primary-foreground hover:border-primary inline-flex items-center justify-center gap-2"
+            className="btn-outline border-white text-white hover:bg-primary hover:text-primary-foreground hover:border-primary inline-flex items-center justify-center gap-2"
           >
             <Phone className="w-4 h-4" /> Zadzwoń
           </a>
@@ -131,7 +131,7 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-px h-12 bg-cream/40" />
+        <div className="w-px h-12 bg-white/40" />
       </div>
     </section>
   );
