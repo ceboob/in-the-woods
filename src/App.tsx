@@ -40,6 +40,9 @@ const WydarzeniaSupra2026 = lazy(() => import('./pages/blog/WydarzeniaSupra2026.
 const AktywnyWypoczynek = lazy(() => import('./pages/blog/AktywnyWypoczynek.tsx'));
 const UzdrowiSkoSPA = lazy(() => import('./pages/blog/UzdrowiSkoSPA.tsx'));
 const PrzewodnikKulinarny = lazy(() => import('./pages/blog/PrzewodnikKulinarny.tsx'));
+const SzlakiPuszczaKnyszynska = lazy(() => import('./pages/blog/SzlakiPuszczaKnyszynska.tsx'));
+const SupraslNaWeekend = lazy(() => import('./pages/blog/SupraslNaWeekend.tsx'));
+const SupraslZDziecmi = lazy(() => import('./pages/blog/SupraslZDziecmi.tsx'));
 const PlatnoscSukces = lazy(() => import('./pages/PlatnoscSukces.tsx'));
 const AdminLogin = lazy(() => import('./pages/AdminLogin.tsx'));
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard.tsx'));
