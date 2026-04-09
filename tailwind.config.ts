@@ -18,7 +18,7 @@ export default {
         heading: ['"Poppins"', 'sans-serif'],
         script: ['"Poppins"', 'sans-serif'],
         serif: ['"Poppins"', 'sans-serif'],
-        sans: ['"Poppins"', 'sans-serif'],
+        sans: ['"Lato"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
