@@ -49,6 +49,10 @@ const WorkationPodlasie = lazy(() => import('./pages/blog/WorkationPodlasie.tsx'
 const PodlasieZPsem = lazy(() => import('./pages/blog/PodlasieZPsem.tsx'));
 const KrainaOtwartychOkiennic = lazy(() => import('./pages/blog/KrainaOtwartychOkiennic.tsx'));
 const SupraslZDziecmi = lazy(() => import('./pages/blog/SupraslZDziecmi.tsx'));
+const PuszczaKnyszynskaPrzewodnik = lazy(() => import('./pages/blog/PuszczaKnyszynskaPrzewodnik.tsx'));
+const Dom = lazy(() => import('./pages/Dom.tsx'));
+const Galeria = lazy(() => import('./pages/Galeria.tsx'));
+const Dokumenty = lazy(() => import('./pages/Dokumenty.tsx'));
 const PlatnoscSukces = lazy(() => import('./pages/PlatnoscSukces.tsx'));
 const AdminLogin = lazy(() => import('./pages/AdminLogin.tsx'));
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard.tsx'));
@@ -129,6 +133,10 @@ const App = () => (
               <Route path="/blog/workation-podlasie" element={<WorkationPodlasie />} />
               <Route path="/blog/podlasie-z-psem" element={<PodlasieZPsem />} />
               <Route path="/blog/kraina-otwartych-okiennic" element={<KrainaOtwartychOkiennic />} />
+              <Route path="/blog/puszcza-knyszynska-przewodnik" element={<PuszczaKnyszynskaPrzewodnik />} />
+              <Route path="/dom" element={<Dom />} />
+              <Route path="/galeria" element={<Galeria />} />
+              <Route path="/dokumenty" element={<Dokumenty />} />
               <Route path="/platnosc-sukces" element={<PlatnoscSukces />} />
               <Route path="/admin/login" element={<AdminLogin />} />
               <Route path="/admin" element={<AdminDashboard />} />
