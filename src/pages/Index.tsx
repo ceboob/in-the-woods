@@ -191,6 +191,10 @@ const Index = () => {
         <Suspense fallback={<SectionFallback />}>
           {/* Oferta — co dostaje gość */}
           <AmenitiesSection />
+
+          {/* Przewodnik turystyczny — przed Jacuzzi */}
+          <GuideSection />
+
           <JacuzziSection />
           <RelaxSection />
           <ForWhoSection />
@@ -210,16 +214,12 @@ const Index = () => {
           <TestimonialsSection />
 
           {/* Okolica i lokalne SEO */}
-          <SupraslSection />
           <LocationSection />
           <EventsSection />
 
           {/* FAQ (dane strukturalne) + informator */}
           <FAQSection />
           <GuestGuideSection />
-
-          {/* Przewodnik turystyczny */}
-          <GuideSection />
 
           {/* Treść SEO + końcowe CTA */}
           <SEOTextSection />
