@@ -519,7 +519,7 @@ const Informator = () => {
       {/* Footer */}
       <footer className="bg-foreground text-white/70 px-6 md:px-12 py-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <p className="font-serif text-lg text-white">In The Woods</p>
+          <p className="font-display text-lg text-white">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <Link to="/" className="hover:text-white transition-colors">
               Strona główna
