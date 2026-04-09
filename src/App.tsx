@@ -40,6 +40,9 @@ const WydarzeniaSupra2026 = lazy(() => import('./pages/blog/WydarzeniaSupra2026.
 const AktywnyWypoczynek = lazy(() => import('./pages/blog/AktywnyWypoczynek.tsx'));
 const UzdrowiSkoSPA = lazy(() => import('./pages/blog/UzdrowiSkoSPA.tsx'));
 const PrzewodnikKulinarny = lazy(() => import('./pages/blog/PrzewodnikKulinarny.tsx'));
+const SzlakiPuszczaKnyszynska = lazy(() => import('./pages/blog/SzlakiPuszczaKnyszynska.tsx'));
+const SupraslNaWeekend = lazy(() => import('./pages/blog/SupraslNaWeekend.tsx'));
+const SupraslZDziecmi = lazy(() => import('./pages/blog/SupraslZDziecmi.tsx'));
 const PlatnoscSukces = lazy(() => import('./pages/PlatnoscSukces.tsx'));
 const AdminLogin = lazy(() => import('./pages/AdminLogin.tsx'));
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard.tsx'));
@@ -111,6 +114,9 @@ const App = () => (
               <Route path="/blog/aktywny-wypoczynek-suprasl" element={<AktywnyWypoczynek />} />
               <Route path="/blog/uzdrowisko-spa-suprasl" element={<UzdrowiSkoSPA />} />
               <Route path="/blog/przewodnik-kulinarny-suprasl" element={<PrzewodnikKulinarny />} />
+              <Route path="/blog/szlaki-puszcza-knyszynska" element={<SzlakiPuszczaKnyszynska />} />
+              <Route path="/blog/suprasl-na-weekend" element={<SupraslNaWeekend />} />
+              <Route path="/blog/suprasl-z-dziecmi" element={<SupraslZDziecmi />} />
               <Route path="/platnosc-sukces" element={<PlatnoscSukces />} />
               <Route path="/admin/login" element={<AdminLogin />} />
               <Route path="/admin" element={<AdminDashboard />} />
