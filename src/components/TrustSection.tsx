@@ -17,9 +17,11 @@ const TrustSection = () => {
         className={`max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
       >
         {items.map((item, i) => (
-          <div key={i} className="text-center py-8 px-6 border border-border bg-card">
-            <item.icon className="w-8 h-8 mx-auto mb-4 text-teal" strokeWidth={1.5} />
-            <h3 className="font-serif text-xl font-medium mb-2">{item.title}</h3>
+          <div key={i} className="card-premium p-6 text-center space-y-4">
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+              <item.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
+            </div>
+            <h3 className="font-heading text-xl font-semibold text-foreground">{item.title}</h3>
             <p className="text-sm text-muted-foreground">{item.desc}</p>
           </div>
         ))}
