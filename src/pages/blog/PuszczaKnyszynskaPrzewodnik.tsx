@@ -60,13 +60,28 @@ const TrailList = ({ trails, title, icon: Icon }: { trails: { name: string; url:
   </div>
 );
 
+const faqs = [
+  { question: 'Jakie szlaki piesze są w Puszczy Knyszyńskiej?', answer: 'W Puszczy Knyszyńskiej wyznaczonych jest ponad 15 szlaków pieszych o różnym stopniu trudności, w tym Puszczański szlak pieszy, Szlak Tatarski, Szlak Świętej Wody i wiele innych. Pliki GPX dostępne do pobrania w artykule.' },
+  { question: 'Gdzie pobrać mapy GPX szlaków Puszczy Knyszyńskiej?', answer: 'Mapy GPX szlaków pieszych, rowerowych i narciarskich Puszczy Knyszyńskiej można pobrać bezpłatnie z naszego artykułu lub z portalu wielkilas.pl.' },
+  { question: 'Jakie atrakcje turystyczne są w Puszczy Knyszyńskiej?', answer: 'Puszcza Knyszyńska oferuje wieże widokowe, kładki nad wodą, rezerwaty przyrody, Kruszyniany, Monaster w Supraślu, Muzeum Ikon, Podlaskie Muzeum Kultury Ludowej i wiele szlaków pieszych i rowerowych.' },
+];
+
 const PuszczaKnyszynskaPrzewodnik = () => (
   <BlogArticleLayout
     title="Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX"
-    description="Odkryj Puszczę Knyszyńską: najpiękniejsze szlaki piesze, rowerowe i narciarskie z mapami GPX do pobrania. Kajaki, rykowisko, wieże widokowe, Kruszyniany i Supraśl."
-    date="2026-04-09"
+    metaTitle="Puszcza Knyszyńska — przewodnik: szlaki GPX, atrakcje, mapy"
+    metaDescription="Odkryj Puszczę Knyszyńską: najpiękniejsze szlaki piesze, rowerowe i narciarskie z mapami GPX do pobrania. Kajaki, rykowisko, wieże widokowe, Kruszyniany i Supraśl."
+    slug="puszcza-knyszynska-przewodnik"
+    publishDate="2026-04-09"
     readTime="15 min"
-    heroImage="https://www.suprasl.online/images/hero-cabin.jpg"
+    keywords={['Puszcza Knyszyńska', 'szlaki GPX', 'atrakcje', 'szlaki piesze', 'szlaki rowerowe', 'Supraśl', 'Kruszyniany']}
+    faqs={faqs}
+    ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
+    relatedArticles={[
+      { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
+      { title: 'Kajaki na Supraśli', slug: 'kajaki-suprasl' },
+      { title: 'Atrakcje Supraśla', slug: 'suprasl-atrakcje-national-geographic' },
+    ]}
   >
     <p className="text-lg leading-relaxed mb-8">
       Puszcza Knyszyńska to jeden z największych i najlepiej zachowanych kompleksów leśnych w Polsce.
@@ -80,48 +95,36 @@ const PuszczaKnyszynskaPrzewodnik = () => (
       <h2 className="section-title !text-2xl md:!text-3xl flex items-center gap-3">
         <Heart className="w-6 h-6 text-primary" /> Romantyczne chwile w Puszczy
       </h2>
-
       <div className="space-y-6">
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Spacer we dwoje</h3>
           <p className="text-muted-foreground leading-relaxed">
             Niby tylko spacer, niby tylko w lesie. Ale jakże romantyczna może być zwykła przechadzka.
             Weź za rękę najbliższą sobie osobę i udajcie się na ścieżki Puszczy Knyszyńskiej.
-            To miejsce oferuje wiele fantastycznych zakątków, w których możecie odetchnąć.
-            Wystarczy wejść do lasu — reszta zadzieje się sama. Mając u boku ukochaną osobę,
-            Puszcza Knyszyńska będzie baśniowa.
+            Wystarczy wejść do lasu — reszta zadzieje się sama.
           </p>
         </div>
-
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Rykowisko jeleni</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Spektakularne widowiska przedstawiające miłość wśród zwierząt. Wybierzcie się do lasu
-            we wrześniu, najlepiej przed zmrokiem lub z samego rana, kiedy Słońce zaczyna wschodzić.
-            Wtedy jest największa szansa na wsłuchanie się w potęgę głosu zakochanego byka.
-            Miłość potrafi być wycieńczająca — podczas rykowiska byk jelenia może stracić
-            nawet 30% masy swojego ciała. Pamiętajcie tylko, żeby im nie przeszkadzać!
+            Spektakularne widowiska we wrześniu. Wybierzcie się do lasu przed zmrokiem lub o świcie —
+            wtedy jest największa szansa na wsłuchanie się w potęgę głosu zakochanego byka.
+            Podczas rykowiska byk jelenia może stracić nawet 30% masy swojego ciała.
           </p>
         </div>
-
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Wieże widokowe</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Piękne panoramy, możliwość podejrzenia dzikiej zwierzyny, romantyczne spacery.
-            Wybierz się na jedną z wież widokowych w Puszczy i odpocznij u boku ukochanej osoby.
-            Jednym z najatrakcyjniejszych miejsc jest wieża na Wzgórzach Świętojańskich,
-            położona na wysokości wsi Kołodno.
+            Piękne panoramy, możliwość podejrzenia dzikiej zwierzyny. Jednym z najatrakcyjniejszych
+            miejsc jest wieża na Wzgórzach Świętojańskich, położona na wysokości wsi Kołodno.
           </p>
         </div>
-
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kładki nad wodą</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Są takie miejsca, czasem trudno dostępne, ale jakże magiczne. Niepowtarzalne chwile
-            we dwójkę wśród otaczającej przyrody spotkają Was na drewnianych kładkach — na Sianożątce
-            znajdziesz zaskakujące rozlewisko na maleńkim strumieniu, piękne o wschodzie lub zachodzie
-            Słońca. Są też kręte, zaskakujące ścieżki tuż nad taflą wody — udaj się do
-            Rezerwatu Krzemianka.
+            Magiczne, czasem trudno dostępne miejsca. Na Sianożątce znajdziesz zaskakujące rozlewisko,
+            piękne o wschodzie lub zachodzie Słońca. W Rezerwacie Krzemianka — kręte ścieżki tuż nad
+            taflą wody.
           </p>
         </div>
       </div>
@@ -132,36 +135,26 @@ const PuszczaKnyszynskaPrzewodnik = () => (
       <h2 className="section-title !text-2xl md:!text-3xl flex items-center gap-3">
         <Bike className="w-6 h-6 text-primary" /> Aktywnie w Puszczy
       </h2>
-
       <div className="space-y-6">
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Spływ kajakowy rzeką Supraśl</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Lubisz wodę? Chcesz się zmęczyć? Fascynuje Cię otaczający świat przyrody? Kajak połączy
-            wszystkie te potrzeby. Proponujemy spływ kajakowy rzeką Supraśl. W dużej części będziesz
-            płynąć szeroką, otwartą doliną. Możesz liczyć na urozmaicenia w postaci spiętrzeń wody,
-            niskich drewnianych mostków lub powalonych drzew. Z poziomu tafli wody zobaczysz zarówno
-            bogactwo roślin i zwierząt, jak i przepiękne dziedzictwo kulturowe.
+            Płyń szeroką, otwartą doliną. Spiętrzenia wody, niskie drewniane mostki, powalone drzewa —
+            z poziomu tafli wody zobaczysz bogactwo roślin, zwierząt i dziedzictwo kulturowe regionu.
           </p>
         </div>
-
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Rower wyczynowy i MTB</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Puszcza Knyszyńska to ogromne bogactwo ukształtowania powierzchni. Ten leśny obszar kryje
-            w sobie mnogość form rzeźby terenu — od rozległych dolin rzecznych, aż po okazałe
-            wzniesienia. Deniwelacje w niektórych miejscach sięgają 80 metrów! To wręcz idealne
-            miejsce dla chcących podnieść sobie adrenalinę, szczególnie że jest wyznaczona trasa MTB.
+            Deniwelacje sięgające 80 metrów! Rozległe doliny rzeczne i okazałe wzniesienia. Wyznaczona
+            trasa MTB czeka na chcących podnieść sobie adrenalinę.
           </p>
         </div>
-
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Biegi przełajowe</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Biegi w Puszczy Knyszyńskiej to nie tylko poprawa kondycji fizycznej. Powietrze wzbogacone
-            o naturalne substancje eteryczne korzystnie wpłynie na Twój organizm. Nacieszysz ciało,
-            a otaczająca przyroda pozwoli uspokoić myśli. Hitem numer jeden są biegi przełajowe
-            ULTRAśledź — musisz tu być!
+            Powietrze wzbogacone o substancje eteryczne, uspokajająca przyroda. Hitem numer jeden są
+            biegi przełajowe ULTRAśledź.
           </p>
         </div>
       </div>
@@ -172,28 +165,20 @@ const PuszczaKnyszynskaPrzewodnik = () => (
       <h2 className="section-title !text-2xl md:!text-3xl flex items-center gap-3">
         <TreePine className="w-6 h-6 text-primary" /> Slow life — leczenie lasem
       </h2>
-
       <div className="space-y-6">
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kąpiele leśne (shinrin-yoku)</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Pobyt w lesie ukoi Cię na wielu płaszczyznach. Spokojny spacer między drzewami bardzo
-            dobrze wpłynie na sprawność fizyczną, zwolni puls. Zaczniesz produkować więcej hormonów
-            szczęścia i wyciszysz umysł. Zgodnie z sylwoterapią dąb zwiększy poziom energii, lipa
-            rozweseli, a brzoza zrelaksuje ciało. W Puszczy Knyszyńskiej zdecydowanie możesz liczyć
-            na sosnę — powietrze wzbogacone o naturalne substancje eteryczne drzew iglastych korzystnie
-            wpłynie na układ oddechowy. Przyjedź i wyzdrowiej.
+            Spokojny spacer między drzewami zwolni puls i wyciszysz umysł. Dąb zwiększy energię,
+            lipa rozweseli, brzoza zrelaksuje. Sosna — powietrze wzbogacone o substancje eteryczne
+            korzystnie wpłynie na układ oddechowy. Przyjedź i wyzdrowiej.
           </p>
         </div>
-
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Obcowanie z naturą</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Wyjedź z miasta i zaszyj się w Puszczy Knyszyńskiej. Niech pochłonie Cię świat roślin
-            i zwierząt. Zachwyć się urozmaiconą rzeźbą terenu. Na Wzgórzach Świętojańskich
-            doświadczysz wspinaczki po najwyższych formach polodowcowych, w Rezerwacie Krzemianka
-            będziesz chodził tuż nad rozległymi źródliskami, a w okolicach Krynek z odrobiną szczęścia
-            zaobserwujesz stado żubrów.
+            Na Wzgórzach Świętojańskich doświadczysz wspinaczki po formach polodowcowych. W Rezerwacie
+            Krzemianka chodzisz tuż nad źródliskami. W okolicach Krynek — stado żubrów.
           </p>
         </div>
       </div>
@@ -204,45 +189,26 @@ const PuszczaKnyszynskaPrzewodnik = () => (
       <h2 className="section-title !text-2xl md:!text-3xl flex items-center gap-3">
         <Eye className="w-6 h-6 text-primary" /> Atrakcje krótkiego pobytu
       </h2>
-
       <div className="space-y-6">
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kruszyniany — tatarska wieś</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Niewielka wieś na obrzeżach Puszczy Knyszyńskiej, do granicy z Białorusią zaledwie 4 km.
-            To kolebka polskich Tatarów. Sercem wsi jest drewniany meczet — wejdź i z zaciekawieniem
-            wysłuchaj Dżemila, rodowitego Tatara i fascynującego przewodnika. Tuż obok, na niewielkim
-            wzniesieniu, zabytkowy cmentarz tatarski — mizar. Koniecznie spróbuj słynnego
-            pierekaczewnika, kołdunów lub trybuszoki!
+            Kolebka polskich Tatarów z drewnianym meczetem i zabytkowym cmentarzem — mizarem.
+            Spróbuj słynnego pierekaczewnika, kołdunów lub trybuszoki!
           </p>
         </div>
-
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Podlaskie Muzeum Kultury Ludowej</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Spacerując po blisko 30 ha, mijać będziemy stare chałupy, spichlerze, stodoły, kapliczki
-            i przydrożne krzyże. Drewniane domy otoczone ogrodami bogatymi w tradycyjne kwiaty.
-            Zajrzyjcie do wnętrz — zobaczycie dawne wyposażenie chałup oraz wystawy poświęcone
-            tradycyjnemu zdobnictwu architektury drewnianej. Dla dorosłych — ekspozycja leśnej
-            bimbrowni. Dla dzieci — plac zabaw z drewnianymi zabawkami. Na terenie Muzeum istnieje
-            również Sokolarnia z hodowlą ptaków drapieżnych.
+            Blisko 30 ha ze starymi chałupami, spichlerzami, stodołami. Dla dorosłych — ekspozycja
+            leśnej bimbrowni. Dla dzieci — plac zabaw. Na terenie Muzeum jest też Sokolarnia.
           </p>
         </div>
-
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Supraśl — serce Puszczy</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Niewielkie, urocze miasteczko. Najważniejszy zabytek to <strong>Monaster Zwiastowania
-            Przenajświętszej Bogurodzicy</strong> — prawosławny klasztor z przełomu XV i XVI wieku,
-            z bogatą historią obejmującą epokę Bazylianów, bibliotekę i działalność wydawniczą.
-            Bezwzględnie trzeba doświadczyć <strong>Muzeum Ikon</strong> — około 300 ikon, unikalne
-            freski i oprawa świetlno-dźwiękowa.
-          </p>
-          <p className="text-muted-foreground leading-relaxed mt-3">
-            Supraśl to także historia włókiennictwa z XIX w. — słynne <strong>domy tkaczy</strong>
-            {' '}przy ulicy 3 Maja oraz <strong>Pałac Buchholtzów</strong>, dawna siedziba łódzkiego
-            potentata przemysłowego, dziś PLSP im. Artura Grottgera. Supraśl jest również uzdrowiskiem
-            z jednymi z najlepszych złóż borowin w Polsce.
+            Monaster z XV/XVI w. z <strong>Muzeum Ikon</strong> (ok. 300 ikon, unikalne freski),
+            domy tkaczy, Pałac Buchholtzów, uzdrowisko z jednymi z najlepszych złóż borowin w Polsce.
           </p>
         </div>
       </div>
@@ -254,10 +220,9 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <MapPin className="w-6 h-6 text-primary" /> Mapy szlaków GPX do pobrania
       </h2>
       <p className="text-muted-foreground leading-relaxed mb-6">
-        Pobierz pliki GPX na swój telefon lub zegarek GPS i ruszaj na szlak. Pliki otworzysz w
-        aplikacjach takich jak Mapy.cz, Komoot, Locus Map czy Garmin Connect.
+        Pobierz pliki GPX na telefon lub zegarek GPS. Otworzysz je w Mapy.cz, Komoot, Locus Map
+        lub Garmin Connect.
       </p>
-
       <TrailList trails={gpxTrails} title="Szlaki piesze" icon={Footprints} />
       <TrailList trails={gpxBike} title="Szlaki rowerowe" icon={Bike} />
       <TrailList trails={gpxSki} title="Szlaki narciarskie" icon={TreePine} />
@@ -268,10 +233,9 @@ const PuszczaKnyszynskaPrzewodnik = () => (
     <section className="mb-12">
       <h2 className="section-title !text-2xl md:!text-3xl">Gdzie nocować w Puszczy Knyszyńskiej?</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Szukasz bazy wypadowej do zwiedzania Puszczy? <strong>In The Woods</strong> to drewniany dom
-        na wyłączność w miejscowości Konne, zaledwie 10 minut od Supraśla. Kominek, ruska bania,
-        jacuzzi, ogrodzony ogród i las za płotem. Sprawdź naszą{' '}
-        <Link to="/dom" className="text-primary underline hover:text-primary/80">ofertę domu</Link>
+        <strong>In The Woods</strong> to drewniany dom na wyłączność w Konnych, 10 min od Supraśla.
+        Kominek, ruska bania, jacuzzi, ogrodzony ogród i las za płotem.{' '}
+        <Link to="/dom" className="text-primary underline hover:text-primary/80">Zobacz dom</Link>
         {' '}lub{' '}
         <Link to="/#rezerwacja" className="text-primary underline hover:text-primary/80">zarezerwuj pobyt</Link>.
       </p>
@@ -286,18 +250,9 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <a href="https://wielkilas.pl" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
           wielkilas.pl
         </a>.
-        Dane GPX udostępnione bezpłatnie do użytku prywatnego, niezwiązanego z działalnością komercyjną.
+        Dane GPX udostępnione bezpłatnie do użytku prywatnego.
       </p>
     </div>
-
-    <RelatedPages
-      pages={[
-        { title: 'Szlaki Puszczy Knyszyńskiej', href: '/blog/szlaki-puszcza-knyszynska' },
-        { title: 'Atrakcje Supraśla', href: '/atrakcje-suprasl' },
-        { title: 'Kajaki na Supraśli', href: '/blog/kajaki-suprasl' },
-        { title: 'Dom In The Woods', href: '/dom' },
-      ]}
-    />
   </BlogArticleLayout>
 );
 
