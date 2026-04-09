@@ -121,7 +121,7 @@ const SEOPageLayout = ({
       {/* CTA */}
       <section className="px-6 md:px-12 py-16 bg-secondary">
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="font-serif text-3xl font-light">Sprawdź dostępność terminu</h2>
+          <h2 className="font-heading text-3xl font-light">Sprawdź dostępność terminu</h2>
           <p className="text-muted-foreground">
             Odpowiadamy zwykle w kilka godzin. Rezerwacja bezpośrednia — bez prowizji.
           </p>

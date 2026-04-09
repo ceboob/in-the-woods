@@ -41,7 +41,7 @@ const WieczorPanienskiSuprasl = () => (
         wyposażonej kuchni lub zamówienie cateringu z lokalnych{' '}
         <Link
           to="/blog/restauracje-suprasl"
-          className="text-teal underline hover:text-teal/70"
+          className="text-primary underline hover:text-primary/80"
         >
           restauracji Supraśla
         </Link>
@@ -100,11 +100,11 @@ const WieczorPanienskiSuprasl = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w okolicy</h2>
       <p className="text-muted-foreground leading-relaxed">
         Między imprezowymi aktywnościami warto zwiedzić{' '}
-        <Link to="/atrakcje-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
           atrakcje Supraśla
         </Link>
         : Monaster, bulwary nad rzeką, lokalne kawiarnie. Można też wybrać się na{' '}
-        <Link to="/blog/kajaki-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/blog/kajaki-suprasl" className="text-primary underline hover:text-primary/80">
           spływ kajakowy rzeką Supraśl
         </Link>{' '}
         — świetna aktywność grupowa na dzień przed lub po imprezie.
@@ -112,14 +112,14 @@ const WieczorPanienskiSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Supraśl to zaledwie 25 minut od Białegostoku, więc dojazd jest wygodny zarówno samochodem,
         jak i taksówką. Sprawdź też{' '}
-        <Link to="/weekend-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
           weekend w Supraślu
         </Link>{' '}
         — może impreza przerodzi się w dłuższy wypad?
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-serif text-2xl font-light">Zaplanuj imprezę w In The Woods</h3>
+        <h3 className="font-heading text-2xl font-light">Zaplanuj imprezę w In The Woods</h3>
         <p className="text-muted-foreground">
           Zadzwoń i opowiedz nam o swoich planach. Pomożemy zorganizować niezapomniany wieczór.
         </p>

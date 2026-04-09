@@ -73,7 +73,7 @@ const NoclegiSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje Supraśla</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <Link to="/atrakcje-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
           Atrakcje Supraśla
         </Link>{' '}
         to przede wszystkim bogactwo kultury i natury. Prawosławny Monaster Zwiastowania NMP,
@@ -96,7 +96,7 @@ const NoclegiSuprasl = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Noclegi blisko natury</h2>
       <p className="text-muted-foreground leading-relaxed">
         In The Woods to{' '}
-        <Link to="/dom-w-lesie-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/80">
           dom w lesie blisko Supraśla
         </Link>
         , położony przy rezerwacie przyrody Krzemienne Góry. To jeden z nielicznych{' '}
@@ -113,7 +113,7 @@ const NoclegiSuprasl = () => (
         spędzonym na szlakach
         <Link
           to="/puszcza-knyszynska-nocleg"
-          className="text-teal underline hover:text-teal/70"
+          className="text-primary underline hover:text-primary/80"
         >
           {' '}
           Puszczy Knyszyńskiej
@@ -144,19 +144,19 @@ const NoclegiSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Planując{' '}
-        <Link to="/weekend-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
           weekend w Supraślu
         </Link>
         , dłuższy urlop czy workation — In The Woods to Twoja baza wypadowa na poznawanie Podlasia.
         Dom w lesie z jacuzzi, kominkiem i ogrodem — nocleg, jakiego szukasz. Odkryj również
-        <Link to="/atrakcje-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
           {' '}
           atrakcje Supraśla
         </Link>{' '}
         i zaplanuj{' '}
         <Link
           to="/puszcza-knyszynska-nocleg"
-          className="text-teal underline hover:text-teal/70"
+          className="text-primary underline hover:text-primary/80"
         >
           nocleg w Puszczy Knyszyńskiej
         </Link>
@@ -164,7 +164,7 @@ const NoclegiSuprasl = () => (
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-serif text-2xl font-light">Zarezerwuj nocleg w Supraślu</h3>
+        <h3 className="font-heading text-2xl font-light">Zarezerwuj nocleg w Supraślu</h3>
         <p className="text-muted-foreground">
           Odpowiadamy zwykle w kilka godzin. Bez prowizji pośrednika.
         </p>

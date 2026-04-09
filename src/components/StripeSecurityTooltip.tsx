@@ -11,7 +11,7 @@ const StripeSecurityTooltip = ({ children }: { children: React.ReactNode }) => {
       <TooltipTrigger asChild>{children}</TooltipTrigger>
       <TooltipContent side="top" className="max-w-xs p-4 space-y-2">
         <div className="flex items-center gap-2">
-          <ShieldCheck className="w-4 h-4 text-teal shrink-0" />
+          <ShieldCheck className="w-4 h-4 text-primary shrink-0" />
           <span className="font-medium text-sm">Bezpieczna płatność</span>
         </div>
         <p className="text-xs text-muted-foreground leading-relaxed">

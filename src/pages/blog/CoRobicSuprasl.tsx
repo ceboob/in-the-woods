@@ -138,7 +138,7 @@ const CoRobicSuprasl = () => (
     </p>
 
     <div className="bg-secondary p-8 rounded-lg text-center space-y-4 not-prose mt-12">
-      <p className="font-serif text-xl text-foreground">Sprawdź dostępność noclegu w Supraślu</p>
+      <p className="font-heading text-xl text-foreground">Sprawdź dostępność noclegu w Supraślu</p>
       <p className="text-muted-foreground text-sm">
         Dom w lesie z jacuzzi — idealna baza na zwiedzanie okolicy.
       </p>

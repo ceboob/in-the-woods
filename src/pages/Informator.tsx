@@ -45,7 +45,7 @@ const Informator = () => {
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
-          <Link to="/" className="font-serif text-xl font-light tracking-wide text-foreground">
+          <Link to="/" className="font-heading text-xl font-light tracking-wide text-foreground">
             In The Woods
           </Link>
           <div className="hidden md:flex items-center gap-6">
@@ -86,10 +86,10 @@ const Informator = () => {
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-4">
           Informator gościa
         </p>
-        <h1 className="font-serif text-3xl md:text-5xl font-light text-foreground mb-6">
+        <h1 className="font-heading text-3xl md:text-5xl font-light text-foreground mb-6">
           Witamy w In The Woods
         </h1>
-        <div className="w-16 h-px bg-teal mx-auto mb-8" />
+        <div className="w-16 h-px bg-primary mx-auto mb-8" />
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
           Oddajemy do Państwa dyspozycji dom, w który włożyliśmy dużo pracy i serca, aby zapewnić
           komfortowy wypoczynek blisko natury.
@@ -140,10 +140,10 @@ const Informator = () => {
           >
             <AccordionTrigger className="hover:no-underline py-6 gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                  <Home className="w-5 h-5 text-teal" strokeWidth={1.5} />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <Home className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-serif text-lg md:text-xl font-medium text-left">
+                <span className="font-heading text-lg md:text-xl font-medium text-left">
                   Zasady pobytu
                 </span>
               </div>
@@ -154,19 +154,19 @@ const Informator = () => {
               </p>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Dbanie o wyposażenie domu i jego otoczenia</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Utrzymanie porządku w trakcie i po pobycie</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Szanowanie otaczającej nas natury i przyrody</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Zachowanie ciszy nocnej (22:00–7:00)</span>
                 </li>
               </ul>
@@ -180,10 +180,10 @@ const Informator = () => {
           >
             <AccordionTrigger className="hover:no-underline py-6 gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                  <Flame className="w-5 h-5 text-teal" strokeWidth={1.5} />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <Flame className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-serif text-lg md:text-xl font-medium text-left">
+                <span className="font-heading text-lg md:text-xl font-medium text-left">
                   Instrukcja korzystania z kominka
                 </span>
               </div>
@@ -194,23 +194,23 @@ const Informator = () => {
               </p>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Nie przeładowywać paleniska — max 2–3 polana naraz</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Używać wyłącznie przygotowanego drewna (drewutnia przy domu)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Nie używać drewna z ogrodu ani lasu</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Wyznaczyć jedną osobę odpowiedzialną za obsługę kominka</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Nie pozostawiać ognia bez nadzoru</span>
                 </li>
               </ul>
@@ -235,10 +235,10 @@ const Informator = () => {
           >
             <AccordionTrigger className="hover:no-underline py-6 gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                  <Droplets className="w-5 h-5 text-teal" strokeWidth={1.5} />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <Droplets className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-serif text-lg md:text-xl font-medium text-left">
+                <span className="font-heading text-lg md:text-xl font-medium text-left">
                   Ekologia – oczyszczalnia ścieków
                 </span>
               </div>
@@ -279,10 +279,10 @@ const Informator = () => {
           >
             <AccordionTrigger className="hover:no-underline py-6 gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                  <TreePine className="w-5 h-5 text-teal" strokeWidth={1.5} />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <TreePine className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-serif text-lg md:text-xl font-medium text-left">
+                <span className="font-heading text-lg md:text-xl font-medium text-left">
                   Dom w lesie – natura
                 </span>
               </div>
@@ -305,15 +305,15 @@ const Informator = () => {
               <p className="text-muted-foreground font-medium mt-2">Zalecamy:</p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Zabranie środków przeciwko owadom</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Zamykanie okien wieczorem i w nocy</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Chowanie jedzenia i zamykanie szafek kuchennych</span>
                 </li>
               </ul>
@@ -327,10 +327,10 @@ const Informator = () => {
           >
             <AccordionTrigger className="hover:no-underline py-6 gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                  <Cross className="w-5 h-5 text-teal" strokeWidth={1.5} />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <Cross className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-serif text-lg md:text-xl font-medium text-left">
+                <span className="font-heading text-lg md:text-xl font-medium text-left">
                   Apteczka
                 </span>
               </div>
@@ -350,10 +350,10 @@ const Informator = () => {
           >
             <AccordionTrigger className="hover:no-underline py-6 gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                  <Bath className="w-5 h-5 text-teal" strokeWidth={1.5} />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <Bath className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-serif text-lg md:text-xl font-medium text-left">
+                <span className="font-heading text-lg md:text-xl font-medium text-left">
                   Regulamin ruskiej bani i balii
                 </span>
               </div>
@@ -365,31 +365,31 @@ const Informator = () => {
               <p className="text-muted-foreground font-medium">Zasady korzystania:</p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Korzystanie na własną odpowiedzialność</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Zakaz korzystania przy problemach zdrowotnych (serce, ciśnienie)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Nie korzystać pod wpływem alkoholu</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Dzieci wyłącznie pod opieką dorosłych</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Zakaz używania olejków, pianek i kosmetyków</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Zakaz szkła w pobliżu balii</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Zakaz palenia przy balii</span>
                 </li>
               </ul>
@@ -404,19 +404,19 @@ const Informator = () => {
               <p className="text-muted-foreground font-medium mt-2">Instrukcja obsługi balii:</p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Nigdy nie rozpalać pieca bez wody w balii</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Utrzymywać odpowiedni poziom wody (powyżej kratki pieca)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Regularnie kontrolować temperaturę wody</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span>Zamykać dopływ powietrza do pieca przy zbyt wysokiej temperaturze</span>
                 </li>
               </ul>
@@ -430,10 +430,10 @@ const Informator = () => {
           >
             <AccordionTrigger className="hover:no-underline py-6 gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                  <ShieldCheck className="w-5 h-5 text-teal" strokeWidth={1.5} />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <ShieldCheck className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-serif text-lg md:text-xl font-medium text-left">
+                <span className="font-heading text-lg md:text-xl font-medium text-left">
                   Bezpieczeństwo
                 </span>
               </div>
@@ -456,10 +456,10 @@ const Informator = () => {
           >
             <AccordionTrigger className="hover:no-underline py-6 gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5 text-teal" strokeWidth={1.5} />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <Phone className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-serif text-lg md:text-xl font-medium text-left">
+                <span className="font-heading text-lg md:text-xl font-medium text-left">
                   Dane kontaktowe
                 </span>
               </div>
@@ -468,7 +468,7 @@ const Informator = () => {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-3">
                   <p className="font-medium text-foreground flex items-center gap-2">
-                    <Users className="w-4 h-4 text-teal" /> Gospodarz: Maciej
+                    <Users className="w-4 h-4 text-primary" /> Gospodarz: Maciej
                   </p>
                   <div className="space-y-2 text-muted-foreground">
                     <a
@@ -507,12 +507,12 @@ const Informator = () => {
 
         {/* Bottom note */}
         <div className="mt-12 text-center space-y-4">
-          <div className="w-16 h-px bg-teal mx-auto" />
+          <div className="w-16 h-px bg-primary mx-auto" />
           <p className="text-muted-foreground text-sm leading-relaxed max-w-lg mx-auto">
             Dziękujemy za zapoznanie się z informatorem. Życzymy spokojnego i regenerującego pobytu
             w In The Woods.
           </p>
-          <p className="font-serif text-lg text-foreground">— Maciej, gospodarz</p>
+          <p className="font-heading text-lg text-foreground">— Maciej, gospodarz</p>
         </div>
       </main>
 

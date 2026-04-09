@@ -109,22 +109,22 @@ const DomWLesieSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Cena zależy od terminu i sezonu. Pobyt w tygodniu od 399 zł/noc, weekendy od 549 zł/noc.
         Ruska bania dostępna jako dodatek za 250 zł za cały pobyt. Sprawdź również naszą ofertę
-        <Link to="/noclegi-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
           {' '}
           noclegów w Supraślu
         </Link>
         , zaplanuj idealny{' '}
-        <Link to="/weekend-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
           weekend w Supraślu
         </Link>
         , odkryj{' '}
-        <Link to="/atrakcje-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
           atrakcje Supraśla
         </Link>{' '}
         lub wybierz{' '}
         <Link
           to="/puszcza-knyszynska-nocleg"
-          className="text-teal underline hover:text-teal/70"
+          className="text-primary underline hover:text-primary/80"
         >
           nocleg w Puszczy Knyszyńskiej
         </Link>
@@ -132,7 +132,7 @@ const DomWLesieSuprasl = () => (
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-serif text-2xl font-light">Zarezerwuj swój dom w lesie</h3>
+        <h3 className="font-heading text-2xl font-light">Zarezerwuj swój dom w lesie</h3>
         <p className="text-muted-foreground">Ucieknij od codzienności. Odpoczywaj w naturze.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">

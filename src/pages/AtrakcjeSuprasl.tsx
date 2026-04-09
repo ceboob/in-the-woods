@@ -65,7 +65,7 @@ const AtrakcjeSuprasl = () => (
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Po zwiedzaniu warto wybrać się na obiad do jednej z{' '}
-          <Link to="/blog/przewodnik-kulinarny-suprasl" className="text-primary underline hover:text-primary/70">
+          <Link to="/blog/przewodnik-kulinarny-suprasl" className="text-primary underline hover:text-primary/80">
             pobliskich restauracji z kuchnią podlaską
           </Link>.
         </p>
@@ -99,7 +99,7 @@ const AtrakcjeSuprasl = () => (
           </h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          <Link to="/puszcza-knyszynska-nocleg" className="text-primary underline hover:text-primary/70">
+          <Link to="/puszcza-knyszynska-nocleg" className="text-primary underline hover:text-primary/80">
             Puszcza Knyszyńska
           </Link>{' '}
           to jeden z największych kompleksów leśnych w Polsce — 132 tysiące hektarów nieskażonej
@@ -109,7 +109,7 @@ const AtrakcjeSuprasl = () => (
         <p className="text-muted-foreground leading-relaxed">
           Spływy kajakowe, nordic walking, grzybobranie jesienią, narciarstwo biegowe zimą — w
           Puszczy każda pora roku ma swój urok. Szczegółowy przewodnik po trasach znajdziesz w{' '}
-          <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary underline hover:text-primary/70">
+          <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary underline hover:text-primary/80">
             artykule o szlakach Puszczy Knyszyńskiej
           </Link>.
         </p>
@@ -143,7 +143,7 @@ const AtrakcjeSuprasl = () => (
           </h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          <Link to="/blog/kruszyniany-tatarska-wies" className="text-primary underline hover:text-primary/70">
+          <Link to="/blog/kruszyniany-tatarska-wies" className="text-primary underline hover:text-primary/80">
             Kruszyniany
           </Link>{' '}
           to jedna z najstarszych osad tatarskich w Polsce. Zabytkowy drewniany meczet, mizar i
@@ -180,7 +180,7 @@ const AtrakcjeSuprasl = () => (
         </h3>
         <p className="text-muted-foreground max-w-xl mx-auto">
           Prywatny{' '}
-          <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/70">
+          <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/80">
             dom w lesie
           </Link>{' '}
           z kominkiem, ruską banią i ogrodem — 10 minut od Supraśla.

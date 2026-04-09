@@ -31,7 +31,7 @@ const StickyMobileCTA = lazy(() => import('@/components/StickyMobileCTA'));
 
 const SectionFallback = () => (
   <div className="py-20 flex items-center justify-center">
-    <div className="w-6 h-6 border-2 border-teal/30 border-t-teal rounded-full animate-spin" />
+    <div className="w-6 h-6 border-2 border-primary/30 border-t-teal rounded-full animate-spin" />
   </div>
 );
 

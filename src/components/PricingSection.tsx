@@ -59,16 +59,16 @@ const PricingSection = () => {
           {packages.map((pkg, i) => (
             <div
               key={i}
-              className={`${pkg.featured ? 'border-2 border-teal' : 'border border-border'} bg-card p-8 text-center space-y-4 relative`}
+              className={`${pkg.featured ? 'border-2 border-primary' : 'border border-border'} bg-card p-8 text-center space-y-4 relative`}
             >
               {pkg.featured && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal text-primary-foreground text-xs tracking-wider uppercase px-4 py-1 flex items-center gap-1">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs tracking-wider uppercase px-4 py-1 flex items-center gap-1">
                   <Star className="w-3 h-3" /> Najczęściej wybierany
                 </div>
               )}
               <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">{pkg.name}</p>
               <div>
-                <span className="font-serif text-4xl md:text-5xl font-light text-foreground">
+                <span className="font-heading text-4xl md:text-5xl font-light text-foreground">
                   {pkg.price}
                 </span>
                 <span className="text-muted-foreground ml-1">zł / noc</span>
@@ -77,7 +77,7 @@ const PricingSection = () => {
               <ul className="text-sm text-muted-foreground space-y-2 text-left pt-4">
                 {pkg.features.map((f, j) => (
                   <li key={j} className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-teal" /> {f}
+                    <Check className="w-4 h-4 text-primary" /> {f}
                   </li>
                 ))}
               </ul>
@@ -89,7 +89,7 @@ const PricingSection = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           {extras.map((e, i) => (
             <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-              <e.icon className="w-4 h-4 text-teal" strokeWidth={1.5} />
+              <e.icon className="w-4 h-4 text-primary" strokeWidth={1.5} />
               <span>{e.text}</span>
             </div>
           ))}

@@ -83,10 +83,10 @@ const ExitIntentPopup = () => {
 
         {submitted ? (
           <div className="text-center py-4 space-y-3">
-            <div className="w-14 h-14 mx-auto rounded-full bg-teal/10 flex items-center justify-center">
-              <Phone className="w-6 h-6 text-teal" />
+            <div className="w-14 h-14 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+              <Phone className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="font-serif text-xl font-semibold">Dziękujemy!</h3>
+            <h3 className="font-heading text-xl font-semibold">Dziękujemy!</h3>
             <p className="text-sm text-muted-foreground">
               Oddzwonimy w ciągu 15 minut w godzinach pracy.
             </p>
@@ -94,10 +94,10 @@ const ExitIntentPopup = () => {
         ) : (
           <>
             <div className="text-center space-y-3 mb-6">
-              <p className="text-xs tracking-[0.2em] uppercase text-teal font-medium">
+              <p className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
                 Zanim wyjdziesz
               </p>
-              <h3 className="font-serif text-2xl font-semibold leading-tight">
+              <h3 className="font-heading text-2xl font-semibold leading-tight">
                 Zostaw numer —<br />
                 oddzwonimy w 15 minut
               </h3>

@@ -358,7 +358,7 @@ const WydarzeniaSupra2026 = () => (
     </p>
 
     <div className="bg-accent/40 border border-primary/30 rounded-xl p-6 my-8 not-prose text-center space-y-4">
-      <p className="text-lg font-serif text-foreground">
+      <p className="text-lg font-heading text-foreground">
         🏡 Szukasz noclegu na wydarzenia w Supraślu?
       </p>
       <p className="text-foreground/70">
@@ -437,7 +437,7 @@ const WydarzeniaSupra2026 = () => (
     </p>
 
     <div className="bg-accent/40 border border-primary/30 rounded-xl p-6 my-8 not-prose text-center space-y-3">
-      <p className="text-lg font-serif text-foreground">
+      <p className="text-lg font-heading text-foreground">
         📅 Zaplanuj wizytę na wydarzenia w Supraślu 2026
       </p>
       <a href="https://suprasl.online" className="btn-primary inline-flex items-center gap-2">
