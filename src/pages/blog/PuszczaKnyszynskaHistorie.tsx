@@ -282,7 +282,7 @@ const PuszczaKnyszynskaHistorie = () => (
     </p>
 
     <div className="bg-secondary p-8 rounded-lg text-center space-y-4 not-prose mt-12">
-      <p className="font-serif text-xl text-foreground">
+      <p className="font-heading text-xl text-foreground">
         Zarezerwuj nocleg 300 m od Galerii Leśnej
       </p>
       <p className="text-muted-foreground text-sm">

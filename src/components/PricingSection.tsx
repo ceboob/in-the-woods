@@ -68,7 +68,7 @@ const PricingSection = () => {
               )}
               <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">{pkg.name}</p>
               <div>
-                <span className="font-serif text-4xl md:text-5xl font-light text-foreground">
+                <span className="font-heading text-4xl md:text-5xl font-light text-foreground">
                   {pkg.price}
                 </span>
                 <span className="text-muted-foreground ml-1">zł / noc</span>

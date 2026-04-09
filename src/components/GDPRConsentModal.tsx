@@ -22,7 +22,7 @@ const GDPRConsentModal = ({ open, onAccept, onReject }: GDPRConsentModalProps) =
         <DialogHeader>
           <div className="flex items-center gap-2 mb-1">
             <ShieldCheck className="w-5 h-5 text-primary" />
-            <DialogTitle className="font-serif text-lg">Zgoda na przetwarzanie danych</DialogTitle>
+            <DialogTitle className="font-heading text-lg">Zgoda na przetwarzanie danych</DialogTitle>
           </div>
           <DialogDescription className="text-left">
             Przed dokonaniem rezerwacji prosimy o wyrażenie zgody na przetwarzanie Twoich danych

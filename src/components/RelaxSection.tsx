@@ -79,7 +79,7 @@ const RelaxSection = () => {
 
         {/* Seasonal rituals */}
         <div className="max-w-3xl mx-auto mb-16">
-          <p className="text-center font-serif text-xl md:text-2xl font-light text-foreground mb-8">
+          <p className="text-center font-heading text-xl md:text-2xl font-light text-foreground mb-8">
             To idealny rytuał na każdą porę roku:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -97,7 +97,7 @@ const RelaxSection = () => {
 
         {/* Evening atmosphere */}
         <div className="text-center max-w-2xl mx-auto space-y-4">
-          <p className="font-serif text-2xl md:text-3xl font-light text-foreground">Wieczorem:</p>
+          <p className="font-heading text-2xl md:text-3xl font-light text-foreground">Wieczorem:</p>
           <div className="space-y-1 text-muted-foreground font-serif text-lg italic">
             <p>Ogień trzaska w kominku. Na niebie pojawiają się gwiazdy.</p>
             <p>Ciepła woda w bani. Zapach drewna. Cisza Puszczy.</p>
