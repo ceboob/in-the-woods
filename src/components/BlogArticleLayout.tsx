@@ -185,7 +185,7 @@ const BlogArticleLayout = ({
 
       {/* Content */}
       <article className="max-w-4xl mx-auto px-6 md:px-12 pb-12">
-        <div className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:font-light prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg prose-img:shadow-md">
+        <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:font-light prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg prose-img:shadow-md">
           {children}
         </div>
       </article>
