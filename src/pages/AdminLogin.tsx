@@ -52,8 +52,8 @@ const AdminLogin = () => {
     <div className="min-h-screen flex items-center justify-center bg-background px-4">
       <Card className="w-full max-w-sm">
         <CardHeader className="text-center">
-          <div className="w-12 h-12 mx-auto rounded-full bg-teal/10 flex items-center justify-center mb-2">
-            <Lock className="w-6 h-6 text-teal" />
+          <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-2">
+            <Lock className="w-6 h-6 text-primary" />
           </div>
           <CardTitle className="font-serif text-xl">Panel administracyjny</CardTitle>
         </CardHeader>

@@ -62,7 +62,7 @@ const NatureSection = () => {
             <div className="grid grid-cols-2 gap-4">
               {activities.map((a, i) => (
                 <div key={i} className="flex items-center gap-3 py-2">
-                  <a.icon className="w-5 h-5 text-teal flex-shrink-0" strokeWidth={1.5} />
+                  <a.icon className="w-5 h-5 text-primary flex-shrink-0" strokeWidth={1.5} />
                   <span className="text-sm text-foreground">{a.label}</span>
                 </div>
               ))}

@@ -58,7 +58,7 @@ const WeekendSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Popołudnie to czas na aktywności. Latem —{' '}
-        <Link to="/atrakcje-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
           spływy kajakowe rzeką Supraśl
         </Link>
         , trasy rowerowe po puszczy. Jesienią — grzybobranie (Puszcza Knyszyńska słynie z
@@ -112,17 +112,17 @@ const WeekendSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Najlepsze terminy weekendowe rezerwowane są z wyprzedzeniem — szczególnie w sezonie letnim i
         podczas długich weekendów. Sprawdź również pełną ofertę{' '}
-        <Link to="/noclegi-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
           noclegów w Supraślu
         </Link>
         , zaplanuj{' '}
-        <Link to="/dom-w-lesie-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/80">
           pobyt w domu w lesie
         </Link>{' '}
         lub odkryj{' '}
         <Link
           to="/puszcza-knyszynska-nocleg"
-          className="text-teal underline hover:text-teal/70"
+          className="text-primary underline hover:text-primary/80"
         >
           noclegi w Puszczy Knyszyńskiej
         </Link>

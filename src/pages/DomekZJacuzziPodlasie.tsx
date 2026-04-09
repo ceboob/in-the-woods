@@ -74,7 +74,7 @@ const DomekZJacuzziPodlasie = () => (
         Wiosną i jesienią to czas grzybów, ptaków i kolorów puszczy. Latem — spływy kajakowe,
         <Link
           to="/blog/szlaki-piesze-rowerowe-suprasl"
-          className="text-teal underline hover:text-teal/70"
+          className="text-primary underline hover:text-primary/80"
         >
           {' '}
           szlaki rowerowe
@@ -85,11 +85,11 @@ const DomekZJacuzziPodlasie = () => (
         Niezależnie od pory roku, <strong>domek z jacuzzi Podlasie</strong> In The Woods oferuje
         doświadczenie, którego nie znajdziesz w żadnym hotelu — połączenie luksusu z autentyczną
         bliskością natury. Sprawdź również{' '}
-        <Link to="/noclegi-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
           noclegi Supraśl
         </Link>{' '}
         i
-        <Link to="/atrakcje-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
           {' '}
           atrakcje Supraśla
         </Link>
@@ -102,12 +102,12 @@ const DomekZJacuzziPodlasie = () => (
         i klimatycznymi kawiarniami. W okolicy warto odwiedzić{' '}
         <Link
           to="/blog/kruszyniany-tatarska-wies"
-          className="text-teal underline hover:text-teal/70"
+          className="text-primary underline hover:text-primary/80"
         >
           tatarskie Kruszyniany
         </Link>
         , Arboretum Kopna Góra czy popłynąć{' '}
-        <Link to="/blog/kajaki-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/blog/kajaki-suprasl" className="text-primary underline hover:text-primary/80">
           kajakami rzeką Supraśl
         </Link>
         . Białystok z bogatą ofertą gastronomiczną jest 25 minut jazdy.

@@ -109,22 +109,22 @@ const DomWLesieSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Cena zależy od terminu i sezonu. Pobyt w tygodniu od 399 zł/noc, weekendy od 549 zł/noc.
         Ruska bania dostępna jako dodatek za 250 zł za cały pobyt. Sprawdź również naszą ofertę
-        <Link to="/noclegi-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
           {' '}
           noclegów w Supraślu
         </Link>
         , zaplanuj idealny{' '}
-        <Link to="/weekend-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
           weekend w Supraślu
         </Link>
         , odkryj{' '}
-        <Link to="/atrakcje-suprasl" className="text-teal underline hover:text-teal/70">
+        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
           atrakcje Supraśla
         </Link>{' '}
         lub wybierz{' '}
         <Link
           to="/puszcza-knyszynska-nocleg"
-          className="text-teal underline hover:text-teal/70"
+          className="text-primary underline hover:text-primary/80"
         >
           nocleg w Puszczy Knyszyńskiej
         </Link>

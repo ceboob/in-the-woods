@@ -13,8 +13,8 @@ const PlatnoscSukces = () => {
       />
       <div className="min-h-screen flex items-center justify-center bg-background px-4">
         <div className="max-w-md w-full text-center space-y-6">
-          <div className="w-20 h-20 mx-auto rounded-full bg-teal/10 flex items-center justify-center">
-            <CheckCircle className="w-10 h-10 text-teal" />
+          <div className="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+            <CheckCircle className="w-10 h-10 text-primary" />
           </div>
           <h1 className="font-serif text-3xl font-semibold">Dziękujemy za wpłatę!</h1>
           <p className="text-muted-foreground text-sm leading-relaxed">
@@ -25,7 +25,7 @@ const PlatnoscSukces = () => {
             <p>Masz pytania? Zadzwoń do nas:</p>
             <a
               href="tel:+48722765101"
-              className="text-teal font-medium flex items-center justify-center gap-2 mt-2"
+              className="text-primary font-medium flex items-center justify-center gap-2 mt-2"
             >
               <Phone className="w-4 h-4" /> +48 722 765 101
             </a>

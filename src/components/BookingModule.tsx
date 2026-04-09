@@ -164,8 +164,8 @@ const BookingModule = () => {
         <div className="card-premium bg-warm-white">
           {step === 'sent' ? (
             <div className="text-center py-12 space-y-4">
-              <div className="w-16 h-16 mx-auto rounded-full bg-teal/10 flex items-center justify-center">
-                <Send className="w-7 h-7 text-teal" />
+              <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                <Send className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-serif text-2xl">Dziękujemy za zapytanie</h3>
               <p className="text-muted-foreground text-sm max-w-md mx-auto">
