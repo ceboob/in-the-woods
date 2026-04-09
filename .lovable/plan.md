@@ -1,46 +1,47 @@
 
 
-## Plan: Rate limiting przez Edge Function
+## Plan: Transformacja typografii i palety kolorów na styl doginclusive.com
 
-### Cel
-Ochrona tabel `booking_inquiries` i `callback_requests` przed spamem — max 1 zapytanie na minutę z tego samego IP.
+### Zakres zmian
 
-### Architektura
+Logo (Monoton) i Hero (Luckiest Guy) pozostają bez zmian. Cała reszta strony przechodzi na Poppins z nową paletą kolorów.
 
-```text
-Browser → Edge Function (rate-limit-submit) → sprawdza IP w tabeli rate_limits → INSERT do booking_inquiries / callback_requests
-```
+### Zmiany w plikach
 
-### 1. Nowa tabela `rate_limits`
-- Kolumny: `id`, `ip_address` (text), `endpoint` (text), `created_at` (timestamptz, default now())
-- Index na `(ip_address, endpoint, created_at)` dla szybkich zapytań
-- RLS: brak dostępu dla anon/authenticated (tylko service_role)
-- Automatyczne czyszczenie starych wpisów (opcjonalnie trigger lub cron)
+**1. `src/index.css` — Google Fonts + CSS variables + base styles**
+- Zamiana importu: dodanie `Poppins:wght@400;500;600;700` (zachowanie Monoton, Luckiest Guy)
+- Nowa paleta CSS custom properties:
+  - `--background`: biały `#FFFFFF` / złamana biel `#F9F9F9`
+  - `--foreground` / nagłówki: `#333333`
+  - `--primary`: `#e5cd6c` (złoty akcent)
+  - `--primary-foreground`: `#333333`
+  - `--accent`: `#8c6239` (ciepły brąz)
+  - `--muted-foreground`: `#4A4A4A`
+  - `--card`: `#FFFFFF`
+  - `--border`: jasnoszary
+  - Nowa zmienna `--teal: #20646c` (turkus dla linków)
+- Base styles: `body` → Poppins 400, 16px, line-height 1.6, kolor `#4A4A4A`
+- `h1` → Poppins 700, uppercase
+- `h2`, `h3` → Poppins 700, kolor `#333333`
+- `.btn-primary` → Poppins 600, bg `#e5cd6c`, border-radius 8px, shadow, hover translateY(-2px)
+- `.btn-outline` → zaktualizowane kolory
+- `.card-premium` → bg white, border-radius 16px, shadow 0 10px 15px, hover scale(1.03)
+- `.nav-link` → Poppins 400
+- Linki: kolor `#20646c`, podkreślenie on hover
 
-### 2. Edge Function `rate-limit-submit`
-- Endpoint przyjmuje JSON z `type` (`booking` lub `callback`) + dane formularza
-- Pobiera IP z nagłówków (`x-forwarded-for` / `x-real-ip`)
-- Sprawdza w `rate_limits` czy istnieje wpis z tego IP + endpoint w ostatniej minucie
-- Jeśli tak → zwraca 429 Too Many Requests
-- Jeśli nie → zapisuje wpis do `rate_limits`, a następnie INSERT do odpowiedniej tabeli (`booking_inquiries` lub `callback_requests`)
-- Używa `SUPABASE_SERVICE_ROLE_KEY` do operacji na bazach (omija RLS)
-- CORS headers + walidacja danych wejściowych (Zod nie jest wymagany — prosta walidacja)
+**2. `tailwind.config.ts` — fontFamily**
+- `sans` i `heading` → `Poppins`
+- `script` / `serif` → `Poppins`
+- Dodanie koloru `teal` dla `#20646c`
 
-### 3. Zmiany w komponentach klienta
-- **BookingModule.tsx**: zamiana bezpośredniego `supabase.from(...).insert()` na wywołanie `supabase.functions.invoke('rate-limit-submit', { body: { type: 'booking', ...data } })`
-- **ExitIntentPopup.tsx**: analogiczna zamiana na `supabase.functions.invoke('rate-limit-submit', { body: { type: 'callback', phone, source } })`
-- Obsługa błędu 429 — wyświetlenie komunikatu "Zbyt wiele prób. Spróbuj ponownie za minutę."
+**3. Komponenty z inline `fontFamily` (bez Hero/Logo)**
+- `src/components/Navbar.tsx` — `nav-link` i btn już dziedziczą z CSS, logo Monoton bez zmian
+- Komponenty używające `font-serif`, `font-heading` → automatycznie przejmą Poppins z tailwind config
 
-### Pliki do utworzenia/edycji
-| Plik | Akcja |
-|------|-------|
-| `supabase/migrations/...rate_limits.sql` | Nowa tabela + indeks + RLS |
-| `supabase/functions/rate-limit-submit/index.ts` | Nowa Edge Function |
-| `src/components/BookingModule.tsx` | Wywołanie Edge Function zamiast direct insert |
-| `src/components/ExitIntentPopup.tsx` | Wywołanie Edge Function zamiast direct insert |
+### Elementy nietknięte
+- Logo `font-display` (Monoton) w Navbar
+- `Luckiest Guy` w HeroSection i HeroWelcome
 
-### Bezpieczeństwo
-- Dane nie są już wstawiane bezpośrednio z klienta — Edge Function z service_role key kontroluje dostęp
-- Walidacja formatu telefonu i emaila duplikowana w Edge Function (defense in depth)
-- IP nie jest PII w kontekście rate limitingu (przechowywane tymczasowo)
+### Podsumowanie efektu
+Strona przejdzie z leśno-zielonej kolorystyki na ciepłą złoto-brązowo-turkusową paletę z czcionką Poppins, zachowując charakter logo i sekcji Hero.
 
