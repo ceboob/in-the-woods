@@ -55,7 +55,7 @@ const HeroSection = () => {
           loading="eager"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#333333]/65 via-[#8c6239]/20 to-[#333333]/75" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#333333]/75 via-[#333333]/50 to-[#333333]/80" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
@@ -65,15 +65,15 @@ const HeroSection = () => {
         >
           In The Woods – noclegi Supraśl
         </h1>
-        <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-cream/70 mb-3 animate-fade-in">
+        <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-white/90 mb-3 animate-fade-in">
           Dom w lesie z jacuzzi blisko Supraśla
         </p>
 
         <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
-          <p className="font-serif text-lg md:text-xl text-cream/90 italic">
+          <p className="font-serif text-lg md:text-xl text-white italic">
             Prywatny dom w lesie.
           </p>
-          <p className="font-serif text-lg md:text-xl text-cream/90 italic">
+          <p className="font-serif text-lg md:text-xl text-white italic">
             Kominek. Ruska bania. Cisza natury.
           </p>
         </div>
