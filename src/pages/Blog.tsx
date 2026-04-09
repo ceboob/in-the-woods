@@ -19,10 +19,40 @@ import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.jpg';
 
 const articles = [
   {
+    slug: 'szlaki-puszcza-knyszynska',
+    title: 'Puszcza Knyszyńska na piechotę i rowerem – najlepsze szlaki z Supraśla',
+    excerpt:
+      'Szlaki piesze i rowerowe dla rodzin i zaawansowanych. Green Velo, Arboretum Kopna Góra, Wzgórza Świętojańskie. Mapy i praktyczne porady.',
+    image: blogSzlak,
+    date: '2026-04-09',
+    readTime: '14 min',
+    keywords: ['szlaki Puszcza Knyszyńska', 'szlaki rowerowe Supraśl'],
+  },
+  {
+    slug: 'suprasl-na-weekend',
+    title: 'Supraśl na weekend – gotowy plan zwiedzania na 2 dni',
+    excerpt:
+      'Gotowy plan na idealny weekend w Supraślu: Monaster, Muzeum Ikon, kuchnia podlaska, Puszcza Knyszyńska i relaks. Dzień po dniu!',
+    image: blogWeekendPlan,
+    date: '2026-04-09',
+    readTime: '12 min',
+    keywords: ['Supraśl na weekend', 'plan Supraśl 2 dni'],
+  },
+  {
+    slug: 'suprasl-z-dziecmi',
+    title: 'Supraśl z dziećmi – atrakcje dla rodzin',
+    excerpt:
+      'Plaża miejska, muzea interaktywne, Park Linowy, łatwe szlaki w Puszczy Knyszyńskiej i restauracje przyjazne dzieciom. Rodzinny wyjazd na Podlasie!',
+    image: blogCoRobic,
+    date: '2026-04-09',
+    readTime: '11 min',
+    keywords: ['Supraśl z dziećmi', 'atrakcje dla dzieci Supraśl'],
+  },
+  {
     slug: 'aktywny-wypoczynek-suprasl',
     title: 'Supraśl Aktywnie: 5 Pomysłów na Weekend w Puszczy Knyszyńskiej',
     excerpt:
-      'Szlaki rowerowe, spływy kajakowe, nordic walking, narciarstwo biegowe i Arboretum Kopna Góra. Jak aktywnie spędzić czas w Supraślu.',
+      'Szlaki rowerowe, spływy kajakowe, nordic walking, narciarstwo biegowe i Arboretum Kopna Góra.',
     image: blogCoRobic,
     date: '2026-04-09',
     readTime: '11 min',
@@ -32,7 +62,7 @@ const articles = [
     slug: 'uzdrowisko-spa-suprasl',
     title: 'Uzdrowisko Supraśl: Borowina, SPA i regeneracja sił',
     excerpt:
-      'Jedyne uzdrowisko na Podlasiu. Borowina z Podsokołdy, grota solna, strefy wellness i sanatoria. Przewodnik po leczeniu i relaksie.',
+      'Jedyne uzdrowisko na Podlasiu. Borowina z Podsokołdy, grota solna, strefy wellness i sanatoria.',
     image: blogSupraslUzdrowisko,
     date: '2026-04-09',
     readTime: '10 min',
@@ -42,7 +72,7 @@ const articles = [
     slug: 'przewodnik-kulinarny-suprasl',
     title: 'Smaki Supraśla: Gdzie zjeść kartacze i babkę ziemniaczaną?',
     excerpt:
-      'Kulinarny przewodnik po Supraślu — restauracje, kuchnia tatarska, kawiarnie i lokalne produkty, które warto kupić jako pamiątkę.',
+      'Kulinarny przewodnik po Supraślu — restauracje, kuchnia tatarska, kawiarnie i lokalne produkty.',
     image: blogRestauracje,
     date: '2026-04-09',
     readTime: '12 min',
