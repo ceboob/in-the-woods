@@ -111,8 +111,8 @@ const HeroSection = () => {
         {/* Dynamic availability counter */}
         {availabilityText && (
           <div className="flex items-center justify-center gap-2 mb-8 animate-fade-in delay-400">
-            <CalendarCheck className="w-4 h-4 text-cream/70" />
-            <span className="text-sm text-cream/80 font-medium tracking-wide">
+            <CalendarCheck className="w-4 h-4 text-primary/80" />
+            <span className="text-sm text-primary/90 font-medium tracking-wide">
               {availabilityText}
             </span>
           </div>
