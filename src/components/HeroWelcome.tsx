@@ -4,23 +4,23 @@ import { TreePine, Home, Volume2, Heart } from 'lucide-react';
 const benefits = [
   {
     icon: TreePine,
-    title: 'Bliskość natury',
-    text: 'Puszcza Knyszyńska tuż za progiem, Supraśl i\u00a0jego atrakcje — zaledwie 10\u00a0minut drogi.',
+    title: 'Zanurz się w naturze',
+    text: 'Puszcza Knyszyńska tuż za progiem — szepty puszczy, śpiew ptaków i\u00a0poranne mgły. Supraśl z\u00a0jego atrakcjami zaledwie 10\u00a0minut drogi.',
   },
   {
     icon: Home,
-    title: 'Dom z duszą',
-    text: 'Rustykalny urok, drewniane belki i\u00a0wszystko, czego potrzebujecie: pościel, ręczniki, wyposażona kuchnia, ekspres do kawy, książki i\u00a0zabawki dla dzieci.',
+    title: 'Luksus w sercu lasu',
+    text: 'Rustykalny urok, drewniane belki, prawdziwy kominek i\u00a0wszystko, czego potrzebujecie: pościel, wyposażona kuchnia, ekspres do kawy, książki.',
   },
   {
     icon: Volume2,
-    title: 'Przestrzeń tylko dla Was',
-    text: 'Nie dzielicie domu z\u00a0nikim. To Wasze miejsce na odpoczynek, gotowanie i\u00a0wspólne chwile.',
+    title: 'Ostoja spokoju — tylko dla Was',
+    text: 'Cały dom i\u00a0ogród na wyłączność. Żadnych obcych — to Wasze miejsce na odpoczynek, gotowanie i\u00a0wspólne chwile w\u00a0absolutnej prywatności.',
   },
   {
     icon: Heart,
-    title: 'Cisza i spokój',
-    text: 'Żadnych hałaśliwych sąsiadów — tylko las, świeże powietrze i\u00a0czas, który płynie wolniej.',
+    title: 'Cisza, która leczy',
+    text: 'Żadnych hałaśliwych sąsiadów — tylko las, świeże powietrze i\u00a0czas, który wreszcie płynie wolniej. Poczuj, jak oddech sam zwalnia.',
   },
 ];
 
@@ -37,13 +37,13 @@ const HeroWelcome = () => {
           Od gospodarza
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl text-foreground mb-6 text-center" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
-          Witajcie w&nbsp;In&nbsp;The&nbsp;Woods
+          Unikalne noclegi, które pokochasz
         </h2>
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
           <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
             Oddajemy w&nbsp;Wasze ręce nasz dom — miejsce, w&nbsp;które włożyliśmy mnóstwo serca,
-            potu, pracy i&nbsp;litry kawy.
+            potu, pracy i&nbsp;litry kawy. Zanurz się w&nbsp;naturze i&nbsp;poczuj, jak czas się zatrzymuje.
           </p>
         </div>
 

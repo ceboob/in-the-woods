@@ -42,6 +42,12 @@ const UzdrowiSkoSPA = lazy(() => import('./pages/blog/UzdrowiSkoSPA.tsx'));
 const PrzewodnikKulinarny = lazy(() => import('./pages/blog/PrzewodnikKulinarny.tsx'));
 const SzlakiPuszczaKnyszynska = lazy(() => import('./pages/blog/SzlakiPuszczaKnyszynska.tsx'));
 const SupraslNaWeekend = lazy(() => import('./pages/blog/SupraslNaWeekend.tsx'));
+const RomantycznyWeekendPodlasie = lazy(() => import('./pages/blog/RomantycznyWeekendPodlasie.tsx'));
+const CyfrowyDetoksLas = lazy(() => import('./pages/blog/CyfrowyDetoksLas.tsx'));
+const GrzybobraniePuszczaKnyszynska = lazy(() => import('./pages/blog/GrzybobraniePuszczaKnyszynska.tsx'));
+const WorkationPodlasie = lazy(() => import('./pages/blog/WorkationPodlasie.tsx'));
+const PodlasieZPsem = lazy(() => import('./pages/blog/PodlasieZPsem.tsx'));
+const KrainaOtwartychOkiennic = lazy(() => import('./pages/blog/KrainaOtwartychOkiennic.tsx'));
 const SupraslZDziecmi = lazy(() => import('./pages/blog/SupraslZDziecmi.tsx'));
 const PlatnoscSukces = lazy(() => import('./pages/PlatnoscSukces.tsx'));
 const AdminLogin = lazy(() => import('./pages/AdminLogin.tsx'));
@@ -117,6 +123,12 @@ const App = () => (
               <Route path="/blog/szlaki-puszcza-knyszynska" element={<SzlakiPuszczaKnyszynska />} />
               <Route path="/blog/suprasl-na-weekend" element={<SupraslNaWeekend />} />
               <Route path="/blog/suprasl-z-dziecmi" element={<SupraslZDziecmi />} />
+              <Route path="/blog/romantyczny-weekend-podlasie" element={<RomantycznyWeekendPodlasie />} />
+              <Route path="/blog/cyfrowy-detoks-las" element={<CyfrowyDetoksLas />} />
+              <Route path="/blog/grzybobranie-puszcza-knyszynska" element={<GrzybobraniePuszczaKnyszynska />} />
+              <Route path="/blog/workation-podlasie" element={<WorkationPodlasie />} />
+              <Route path="/blog/podlasie-z-psem" element={<PodlasieZPsem />} />
+              <Route path="/blog/kraina-otwartych-okiennic" element={<KrainaOtwartychOkiennic />} />
               <Route path="/platnosc-sukces" element={<PlatnoscSukces />} />
               <Route path="/admin/login" element={<AdminLogin />} />
               <Route path="/admin" element={<AdminDashboard />} />
