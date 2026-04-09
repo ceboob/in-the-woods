@@ -19,6 +19,15 @@ import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.jpg';
 
 const articles = [
   {
+    slug: 'puszcza-knyszynska-przewodnik',
+    title: 'Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX',
+    excerpt: 'Odkryj Puszczę Knyszyńską: najpiękniejsze szlaki piesze, rowerowe i narciarskie z mapami GPX do pobrania. Kajaki, rykowisko, Kruszyniany i Supraśl.',
+    image: blogNajlepszeMiejsca,
+    date: '2026-04-09',
+    readTime: '15 min',
+    keywords: ['Puszcza Knyszyńska', 'szlaki GPX', 'atrakcje', 'przewodnik'],
+  },
+  {
     slug: 'romantyczny-weekend-podlasie',
     title: 'Pomysł na romantyczny weekend we dwoje na Podlasiu',
     excerpt: 'Domek z kominkiem, gorąca balia pod gwiazdami, kolacja przy świecach w sercu Puszczy Knyszyńskiej. Zaplanuj idealny wypad we dwoje.',
