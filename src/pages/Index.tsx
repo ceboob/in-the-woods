@@ -173,8 +173,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Noclegi Supraśl – In The Woods | dom w lesie z jacuzzi"
-        description="Szukasz noclegu w Supraślu? In The Woods to prywatny dom w lesie z jacuzzi w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania – idealny wypoczynek blisko natury."
+        title="Supraśl Atrakcje, Noclegi, Puszcza Knyszyńska | Przewodnik Turystyczny 2026"
+        description="Odkryj Supraśl – uzdrowisko w sercu Puszczy Knyszyńskiej. Znajdź najlepsze atrakcje, noclegi, restauracje i szlaki turystyczne. Zaplanuj idealny weekend!"
         canonical="https://www.suprasl.online/"
         jsonLd={[jsonLd, faqJsonLd]}
       />

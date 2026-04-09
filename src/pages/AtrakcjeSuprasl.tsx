@@ -4,14 +4,14 @@ import { Church, Building2, Waves, TreePine, Landmark, MapPin } from 'lucide-rea
 
 const AtrakcjeSuprasl = () => (
   <SEOPageLayout
-    title="Atrakcje w Supraślu – Co warto zobaczyć? [TOP 10 miejsc]"
-    description="Odkryj największe atrakcje Supraśla: Monaster, Muzeum Ikon, Pałac Buchholtzów, Teatr Wierszalin i inne. Zobacz mapę i zaplanuj zwiedzanie perły Podlasia."
+    title="Co zobaczyć w Supraślu? TOP 10 Atrakcji i Zabytków | Supraśl Online"
+    description="Lista największych atrakcji Supraśla: Monaster, Muzeum Ikon, Pałac Buchholtzów, Puszcza Knyszyńska. Poznaj ciekawe miejsca, które musisz odwiedzić."
     breadcrumbName="Atrakcje Supraśla"
     ogImage="https://www.suprasl.online/images/terrace-porch.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-10">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Atrakcje w Supraślu – Co warto zobaczyć?
+        Co zobaczyć w Supraślu? TOP 10 Atrakcji i Zabytków
       </h1>
 
       <p className="text-muted-foreground leading-relaxed text-lg">
@@ -39,7 +39,7 @@ const AtrakcjeSuprasl = () => (
         <p className="text-muted-foreground leading-relaxed">
           Zachwyć się obronną architekturą, a następnie zanurz się w świecie sztuki sakralnej w
           jednym z <strong>najnowocześniejszych muzeów ikon</strong> w Polsce. Kolekcja obejmuje
-          ikony, freski i rękopisy z XVI–XIX wieku — to absolutny obowiązek na mapie każdego turysty.
+          setki bezcennych ikon, fresków i rękopisów z XVI–XIX wieku.
         </p>
         <p className="text-muted-foreground leading-relaxed">
           <strong>Praktyczne informacje:</strong> Muzeum otwarte codziennie, wizyta zajmuje 1–2
@@ -64,10 +64,9 @@ const AtrakcjeSuprasl = () => (
           Buchholtzów</strong>, w którym dziś mieści się Liceum Plastyczne.
         </p>
         <p className="text-muted-foreground leading-relaxed">
-          Architektura pałacu łączy style secesyjny i neoklasyczny. Warto podziwiać ozdobną fasadę,
-          a następnie wybrać się na obiad do jednej z{' '}
+          Po zwiedzaniu warto wybrać się na obiad do jednej z{' '}
           <Link to="/blog/przewodnik-kulinarny-suprasl" className="text-primary underline hover:text-primary/70">
-            pobliskich restauracji
+            pobliskich restauracji z kuchnią podlaską
           </Link>.
         </p>
       </section>
@@ -85,16 +84,11 @@ const AtrakcjeSuprasl = () => (
         <p className="text-muted-foreground leading-relaxed">
           Szukasz chwili relaksu? <strong>Malownicze bulwary</strong> wzdłuż rzeki Supraśl to idealne
           miejsce na niespieszny spacer, piknik czy podziwianie zachodów słońca nad klasztorem.
-          Drewniane pomosty, ławki z widokiem na rzekę i otaczający las tworzą atmosferę spokoju.
-        </p>
-        <p className="text-muted-foreground leading-relaxed">
-          Latem skorzystaj z uroków <strong>plaży miejskiej</strong> i kąpieliska. W sezonie
-          organizowane są koncerty, targi rękodzieła i wydarzenia kulturalne. Wzdłuż rzeki
-          znajdziesz też lokale gastronomiczne z kuchnią podlaską.
+          Latem skorzystaj z uroków <strong>plaży miejskiej</strong> i kąpieliska.
         </p>
       </section>
 
-      {/* Puszcza Knyszyńska */}
+      {/* Puszcza */}
       <section className="space-y-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -114,9 +108,9 @@ const AtrakcjeSuprasl = () => (
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Spływy kajakowe, nordic walking, grzybobranie jesienią, narciarstwo biegowe zimą — w
-          Puszczy każda pora roku ma swój urok. Więcej o aktywnym wypoczynku znajdziesz w naszym{' '}
-          <Link to="/blog/aktywny-wypoczynek-suprasl" className="text-primary underline hover:text-primary/70">
-            przewodniku po aktywnym wypoczynku
+          Puszczy każda pora roku ma swój urok. Szczegółowy przewodnik po trasach znajdziesz w{' '}
+          <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary underline hover:text-primary/70">
+            artykule o szlakach Puszczy Knyszyńskiej
           </Link>.
         </p>
       </section>
@@ -132,9 +126,9 @@ const AtrakcjeSuprasl = () => (
           </h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          Arboretum Kopna Góra, oddalone 20 minut od Supraśla, to unikatowy <strong>ogród
-          botaniczny w sercu puszczy</strong>. Na 10 hektarach rosną drzewa i krzewy z całego
-          świata. Idealne miejsce na spokojne popołudnie z rodziną.
+          Unikatowy <strong>ogród botaniczny w sercu puszczy</strong>. Na 10 hektarach rosną drzewa
+          i krzewy z całego świata. Idealne miejsce na spokojne popołudnie z rodziną, 20 minut od
+          Supraśla.
         </p>
       </section>
 
@@ -153,8 +147,7 @@ const AtrakcjeSuprasl = () => (
             Kruszyniany
           </Link>{' '}
           to jedna z najstarszych osad tatarskich w Polsce. Zabytkowy drewniany meczet, mizar i
-          autentyczna kuchnia tatarska — pierekaczewnik to obowiązkowy punkt programu. Odległość
-          od Supraśla: 45 minut samochodem.
+          autentyczna kuchnia tatarska — pierekaczewnik to obowiązkowy punkt programu.
         </p>
       </section>
 
@@ -163,13 +156,25 @@ const AtrakcjeSuprasl = () => (
         <h2 className="section-title !text-2xl md:!text-3xl">Białystok — 25 minut stąd</h2>
         <p className="text-muted-foreground leading-relaxed">
           Białystok, stolica Podlasia, to nowoczesne miasto z bogatą ofertą kulturalną. Pałac
-          Branickich (polski Wersal), teatr dramatyczny, galerie sztuki i doskonałe restauracje —
-          idealne uzupełnienie pobytu w regionie.
+          Branickich (polski Wersal), teatr dramatyczny, galerie sztuki i doskonałe restauracje.
         </p>
       </section>
 
+      {/* Planujesz zwiedzanie? */}
+      <section className="card-premium bg-secondary p-8 space-y-4 mt-12">
+        <h3 className="font-heading text-xl font-semibold text-foreground text-center">
+          Planujesz zwiedzanie? Sprawdź też:
+        </h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link to="/noclegi-suprasl" className="btn-outline text-sm">Noclegi w Supraślu</Link>
+          <Link to="/blog/przewodnik-kulinarny-suprasl" className="btn-outline text-sm">Gdzie zjeść?</Link>
+          <Link to="/blog/suprasl-na-weekend" className="btn-outline text-sm">Plan na weekend</Link>
+          <Link to="/blog/suprasl-z-dziecmi" className="btn-outline text-sm">Supraśl z dziećmi</Link>
+        </div>
+      </section>
+
       {/* CTA */}
-      <div className="card-premium bg-secondary p-8 text-center space-y-4 mt-12">
+      <div className="card-premium bg-secondary p-8 text-center space-y-4 mt-8">
         <h3 className="font-heading text-2xl font-semibold text-foreground">
           In The Woods — Twoja baza wypadowa
         </h3>
@@ -178,8 +183,7 @@ const AtrakcjeSuprasl = () => (
           <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/70">
             dom w lesie
           </Link>{' '}
-          z kominkiem, ruską banią i ogrodem — 10 minut od Supraśla. Po dniu pełnym wrażeń
-          wracasz do swojego azylu ciszy i natury.
+          z kominkiem, ruską banią i ogrodem — 10 minut od Supraśla.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">
