@@ -1,19 +1,63 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
-const links = [
-  { label: 'Dom', href: '#dom' },
-  { label: 'Jacuzzi', href: '#jacuzzi' },
-  { label: 'Okolica', href: '#lokalizacja' },
+interface DropdownItem {
+  label: string;
+  href: string;
+  isRoute?: boolean;
+}
+
+interface NavItem {
+  label: string;
+  href: string;
+  isRoute?: boolean;
+  dropdown?: DropdownItem[];
+}
+
+const navItems: NavItem[] = [
+  {
+    label: 'Noclegi',
+    href: '#dom',
+    dropdown: [
+      { label: 'Dom w lesie', href: '/dom-w-lesie-suprasl', isRoute: true },
+      { label: 'Domek z jacuzzi', href: '/domek-z-jacuzzi-podlasie', isRoute: true },
+      { label: 'Noclegi Supraśl', href: '/noclegi-suprasl', isRoute: true },
+      { label: 'Domek Supraśl', href: '/domek-suprasl', isRoute: true },
+      { label: 'Puszcza Knyszyńska', href: '/puszcza-knyszynska-nocleg', isRoute: true },
+    ],
+  },
+  {
+    label: 'Atrakcje',
+    href: '#lokalizacja',
+    dropdown: [
+      { label: 'Co zobaczyć', href: '/atrakcje-suprasl', isRoute: true },
+      { label: 'Szlaki i natura', href: '/blog/szlaki-puszcza-knyszynska', isRoute: true },
+      { label: 'Restauracje', href: '/blog/przewodnik-kulinarny-suprasl', isRoute: true },
+    ],
+  },
+  {
+    label: 'Pomysły na pobyt',
+    href: '#',
+    dropdown: [
+      { label: 'Romantyczny weekend', href: '/blog/romantyczny-weekend-podlasie', isRoute: true },
+      { label: 'Z psem', href: '/blog/podlasie-z-psem', isRoute: true },
+      { label: 'Dla rodzin', href: '/blog/suprasl-z-dziecmi', isRoute: true },
+      { label: 'Wieczór panieński', href: '/wieczor-panienski-suprasl', isRoute: true },
+      { label: 'Workation', href: '/blog/workation-podlasie', isRoute: true },
+    ],
+  },
   { label: 'Cennik', href: '#cennik' },
-  { label: 'Imprezy', href: '/wieczor-panienski-suprasl', isRoute: true },
+  { label: 'Przewodnik', href: '/blog', isRoute: true },
   { label: 'Kontakt', href: '#kontakt' },
 ];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
+  const dropdownTimeout = useRef<ReturnType<typeof setTimeout>>();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -23,8 +67,21 @@ const Navbar = () => {
 
   const handleClick = (href: string) => {
     setMenuOpen(false);
+    setMobileExpanded(null);
     document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const handleDropdownEnter = (label: string) => {
+    clearTimeout(dropdownTimeout.current);
+    setOpenDropdown(label);
+  };
+
+  const handleDropdownLeave = () => {
+    dropdownTimeout.current = setTimeout(() => setOpenDropdown(null), 150);
+  };
+
+  const textClass = scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-white/70 hover:text-white';
+  const activeTextClass = scrolled ? 'text-foreground' : 'text-white';
 
   return (
     <nav
@@ -40,32 +97,57 @@ const Navbar = () => {
           In The Woods
         </button>
 
-        <div className="hidden md:flex items-center gap-8">
-          {links.map((l) =>
-            l.isRoute ? (
-              <Link
-                key={l.href}
-                to={l.href}
-                className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-white/70 hover:text-white'}`}
+        {/* Desktop nav */}
+        <div className="hidden md:flex items-center gap-6">
+          {navItems.map((item) =>
+            item.dropdown ? (
+              <div
+                key={item.label}
+                className="relative"
+                onMouseEnter={() => handleDropdownEnter(item.label)}
+                onMouseLeave={handleDropdownLeave}
               >
-                {l.label}
+                <button
+                  className={`nav-link transition-colors duration-500 inline-flex items-center gap-1 ${textClass}`}
+                >
+                  {item.label}
+                  <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === item.label ? 'rotate-180' : ''}`} />
+                </button>
+                {openDropdown === item.label && (
+                  <div className="absolute top-full left-0 pt-2 min-w-[200px]">
+                    <div className="bg-background border border-border rounded-lg shadow-lg py-2">
+                      {item.dropdown.map((sub) => (
+                        <Link
+                          key={sub.href}
+                          to={sub.href}
+                          className="block px-4 py-2.5 text-sm text-foreground/70 hover:text-foreground hover:bg-secondary transition-colors"
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          {sub.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : item.isRoute ? (
+              <Link
+                key={item.href}
+                to={item.href}
+                className={`nav-link transition-colors duration-500 ${textClass}`}
+              >
+                {item.label}
               </Link>
             ) : (
               <button
-                key={l.href}
-                onClick={() => handleClick(l.href)}
-                className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-white/70 hover:text-white'}`}
+                key={item.href}
+                onClick={() => handleClick(item.href)}
+                className={`nav-link transition-colors duration-500 ${textClass}`}
               >
-                {l.label}
+                {item.label}
               </button>
             ),
           )}
-          <Link
-            to="/blog"
-            className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-white/70 hover:text-white'}`}
-          >
-            Blog
-          </Link>
           <button
             onClick={() => handleClick('#rezerwacja')}
             className="btn-primary text-xs py-2.5 px-6"
@@ -74,6 +156,7 @@ const Navbar = () => {
           </button>
         </div>
 
+        {/* Mobile hamburger */}
         <button
           className={`md:hidden transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-white'}`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -84,38 +167,56 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-background border-t border-border px-6 py-6 space-y-4">
-          {links.map((l) =>
-            l.isRoute ? (
+        <div className="md:hidden bg-background border-t border-border px-6 py-6 space-y-1 max-h-[80vh] overflow-y-auto">
+          {navItems.map((item) =>
+            item.dropdown ? (
+              <div key={item.label}>
+                <button
+                  onClick={() => setMobileExpanded(mobileExpanded === item.label ? null : item.label)}
+                  className="flex items-center justify-between w-full py-3 nav-link text-foreground/70 hover:text-foreground text-left"
+                >
+                  {item.label}
+                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpanded === item.label ? 'rotate-180' : ''}`} />
+                </button>
+                {mobileExpanded === item.label && (
+                  <div className="pl-4 pb-2 space-y-1">
+                    {item.dropdown.map((sub) => (
+                      <Link
+                        key={sub.href}
+                        to={sub.href}
+                        className="block py-2 text-sm text-foreground/60 hover:text-foreground"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {sub.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : item.isRoute ? (
               <Link
-                key={l.href}
-                to={l.href}
-                className="block nav-link text-foreground/70 hover:text-foreground w-full text-left"
+                key={item.href}
+                to={item.href}
+                className="block py-3 nav-link text-foreground/70 hover:text-foreground w-full text-left"
                 onClick={() => setMenuOpen(false)}
               >
-                {l.label}
+                {item.label}
               </Link>
             ) : (
               <button
-                key={l.href}
-                onClick={() => handleClick(l.href)}
-                className="block nav-link text-foreground/70 hover:text-foreground w-full text-left"
+                key={item.href}
+                onClick={() => handleClick(item.href)}
+                className="block py-3 nav-link text-foreground/70 hover:text-foreground w-full text-left"
               >
-                {l.label}
+                {item.label}
               </button>
             ),
           )}
-          <Link
-            to="/blog"
-            className="block nav-link text-foreground/70 hover:text-foreground w-full text-left"
-            onClick={() => setMenuOpen(false)}
-          >
-            Blog
-          </Link>
           <button
             onClick={() => handleClick('#rezerwacja')}
-            className="btn-primary text-xs py-2.5 px-6 w-full"
+            className="btn-primary text-xs py-2.5 px-6 w-full mt-4"
           >
             Rezerwuj
           </button>

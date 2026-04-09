@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const NoclegiSuprasl = () => (
   <SEOPageLayout
-    title="Noclegi Supraśl – Hotele, Apartamenty, Pensjonaty | Rezerwuj Online"
-    description="Szukasz noclegu w Supraślu? Porównaj oferty hoteli, pensjonatów, agroturystyki i apartamentów. Znajdź idealne miejsce na pobyt w sercu Puszczy Knyszyńskiej."
+    title="Noclegi Supraśl – Domki, Agroturystyka, Pensjonaty | Puszcza Knyszyńska"
+    description="Unikalne noclegi w Supraślu i Puszczy Knyszyńskiej — od domków w lesie z balią po klimatyczne agroturystyki. Znajdź swoje idealne miejsce na Podlasiu!"
     breadcrumbName="Noclegi Supraśl"
     ogImage="https://www.suprasl.online/images/exterior-main.jpg"
   >

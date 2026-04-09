@@ -7,17 +7,17 @@ const rituals = [
   {
     icon: Snowflake,
     season: 'Zimą',
-    text: 'po spacerach w śnieżnej puszczy — rozgrzej się w gorącej bani i posłuchaj trzasku drewna',
+    text: 'po spacerach w śnieżnej puszczy — zanurz się w gorącej bani i posłuchaj szeptów lasu',
   },
   {
     icon: Sun,
     season: 'Latem',
-    text: 'po rowerach i kajakach — ochłódź się w wieczornym powietrzu, patrząc na gwiazdy',
+    text: 'po kajakach i rowerach — ochłódź się w wieczornym powietrzu, patrząc na gwiazdy',
   },
   {
     icon: Leaf,
     season: 'Jesienią',
-    text: 'po grzybobraniu — zanurz się w ciepłej wodzie wśród kolorowych liści',
+    text: 'po grzybobraniu w Puszczy — zanurz się w ciepłej wodzie wśród kolorowych liści',
   },
   {
     icon: Flower2,
@@ -39,12 +39,12 @@ const RelaxSection = () => {
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
             Strefa relaksu
           </p>
-          <h2 className="section-title">Zwolnij. Oddychaj. Odpoczywaj.</h2>
+          <h2 className="section-title">Zaplanuj swój pobyt: Relaks w sercu natury</h2>
           <p className="section-subtitle mx-auto">
-            Po dniu spędzonym na leśnych szlakach Puszczy Knyszyńskiej możesz zanurzyć się w gorącej
-            ruskiej bani i poczuć prawdziwy slow life. Bania stoi w ogrodzie — otoczona zielenią, z
-            dala od cywilizacji. Wieczorem zapalamy świece, podgrzewamy wodę drewnem i oddajemy się
-            rytuałowi odpoczynku, który goście wspominają jeszcze długo po powrocie.
+            Wyobraź sobie wieczór, w którym jedynym dźwiękiem jest trzask drewna. Szepty puszczy otulają Cię
+            ciepłem, a gorąca ruska bania czeka w ogrodzie — otoczona zielenią, z dala od cywilizacji.
+            Zapalamy świece, podgrzewamy wodę drewnem i oddajemy się rytuałowi odpoczynku,
+            który goście wspominają jeszcze długo po powrocie do miasta.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ const RelaxSection = () => {
               height="450"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="font-serif text-lg text-white italic">Prywatna ruska bania</p>
+              <p className="font-serif text-lg text-white italic">Ostoja spokoju — prywatna ruska bania</p>
             </div>
           </div>
           <div className="overflow-hidden relative group">
@@ -72,7 +72,7 @@ const RelaxSection = () => {
               height="450"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="font-serif text-lg text-white italic">Relaks w sercu natury</p>
+              <p className="font-serif text-lg text-white italic">Luksus w sercu lasu</p>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ const RelaxSection = () => {
         {/* Seasonal rituals */}
         <div className="max-w-3xl mx-auto mb-16">
           <p className="text-center font-heading text-xl md:text-2xl font-light text-foreground mb-8">
-            To idealny rytuał na każdą porę roku:
+            Pomysły na weekend: rytuał na każdą porę roku
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {rituals.map((r, i) => (
@@ -100,10 +100,10 @@ const RelaxSection = () => {
           <p className="font-heading text-2xl md:text-3xl font-light text-foreground">Wieczorem:</p>
           <div className="space-y-1 text-muted-foreground font-serif text-lg italic">
             <p>Ogień trzaska w kominku. Na niebie pojawiają się gwiazdy.</p>
-            <p>Ciepła woda w bani. Zapach drewna. Cisza Puszczy.</p>
+            <p>Ciepła woda w bani. Zapach drewna. Szepty Puszczy.</p>
           </div>
           <p className="font-serif text-lg text-foreground/80 italic pt-4">
-            To właśnie esencja odpoczynku w In The Woods — miejsce, gdzie czas płynie inaczej.
+            To właśnie esencja odpoczynku w In The Woods — ostoja spokoju, gdzie czas płynie inaczej.
           </p>
         </div>
       </div>
