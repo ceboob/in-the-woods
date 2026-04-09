@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const DomWLesieSuprasl = () => (
   <SEOPageLayout
-    title="Dom w lesie Supraśl – domek w Puszczy Knyszyńskiej | In The Woods"
-    description="Dom w lesie blisko Supraśla — prywatny domek w Puszczy Knyszyńskiej na wyłączność. Slow travel, natura, kominek i ruska bania. Nocleg Podlasie."
+    title="Domki w lesie Podlasie i Puszcza Knyszyńska | Wynajem na odludziu"
+    description="Szukasz domu w lesie na Podlasiu? Zobacz naszą ofertę klimatycznych domków na wyłączność w Puszczy Knyszyńskiej. Cisza, spokój i natura na wyciągnięcie ręki."
     breadcrumbName="Dom w lesie Supraśl"
     ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
   >

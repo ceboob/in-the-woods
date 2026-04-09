@@ -41,13 +41,13 @@ const jsonLd = {
   '@id': 'https://www.suprasl.online/#vacation-rental',
   name: 'In The Woods – noclegi Supraśl',
   description:
-    'Prywatny dom w lesie z jacuzzi w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania – idealny nocleg w Supraślu.',
+    'Odkryj magiczne Podlasie! Znajdź idealny nocleg w sercu Puszczy Knyszyńskiej – od luksusowych domków z balią i sauną po klimatyczne agroturystyki.',
   url: 'https://www.suprasl.online/',
   telephone: '+48 722 765 101',
   email: 'tutinthewood@gmail.com',
   sameAs: [
-    'https://www.facebook.com/krzemienna.chata',
-    'https://www.instagram.com/krzemienna_chata/',
+    'https://www.facebook.com/inthewoods.suprasl',
+    'https://www.instagram.com/inthewoods.suprasl/',
   ],
   address: {
     '@type': 'PostalAddress',
@@ -172,8 +172,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Supraśl Atrakcje, Noclegi, Puszcza Knyszyńska | Przewodnik Turystyczny 2026"
-        description="Odkryj Supraśl – uzdrowisko w sercu Puszczy Knyszyńskiej. Znajdź najlepsze atrakcje, noclegi, restauracje i szlaki turystyczne. Zaplanuj idealny weekend!"
+        title="Supraśl i Puszcza Knyszyńska: Noclegi, Atrakcje | Domki, Agroturystyka"
+        description="Odkryj magiczne Podlasie! Znajdź idealny nocleg w sercu Puszczy Knyszyńskiej – od luksusowych domków z balią i sauną po klimatyczne agroturystyki. Zaplanuj swój urlop w Supraślu!"
         canonical="https://www.suprasl.online/"
         jsonLd={[jsonLd, faqJsonLd]}
       />

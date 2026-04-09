@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const DomekZJacuzziPodlasie = () => (
   <SEOPageLayout
-    title="Domek z jacuzzi Podlasie – prywatny dom z balią w Puszczy Knyszyńskiej | In The Woods"
-    description="Domek z jacuzzi na Podlasiu – ruska bania z balią z gorącą wodą, kominek i las za oknem. In The Woods to prywatny dom w Puszczy Knyszyńskiej blisko Supraśla."
+    title="Noclegi z Balią i Sauną Podlasie | Luksusowy wypoczynek"
+    description="Marzy Ci się domek z gorącą balią i sauną na Podlasiu? Znajdź najlepsze obiekty SPA w Puszczy Knyszyńskiej i okolicach Supraśla. Relaks gwarantowany."
     breadcrumbName="Domek z jacuzzi Podlasie"
     ogImage="https://www.suprasl.online/images/jacuzzi-night.jpg"
   >

@@ -63,7 +63,7 @@ const HeroSection = () => {
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white leading-tight mb-4 animate-fade-up drop-shadow-lg"
           style={{ fontFamily: "'Luckiest Guy', cursive", letterSpacing: '0.02em' }}
         >
-          In The Woods – noclegi Supraśl
+          Odkryj serce Podlasia: Supraśl i Puszcza Knyszyńska
         </h1>
         <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-white/90 mb-3 animate-fade-in">
           Dom w lesie z jacuzzi blisko Supraśla
