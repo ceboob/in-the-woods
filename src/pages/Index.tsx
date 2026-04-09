@@ -39,9 +39,9 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'VacationRental',
   '@id': 'https://www.suprasl.online/#vacation-rental',
-  name: 'In The Woods – noclegi Supraśl',
+  name: 'In The Woods | Dom w Puszczy Knyszyńskiej z balią i sauną',
   description:
-    'Odkryj magiczne Podlasie! Znajdź idealny nocleg w sercu Puszczy Knyszyńskiej – od luksusowych domków z balią i sauną po klimatyczne agroturystyki.',
+    'Zarezerwuj In The Woods — luksusowy dom na wyłączność w sercu Puszczy Knyszyńskiej koło Supraśla. Gorąca balia (jacuzzi), sauna, kominek i absolutna cisza. Idealny na romantyczny weekend i cyfrowy detoks.',
   url: 'https://www.suprasl.online/',
   telephone: '+48 722 765 101',
   email: 'tutinthewood@gmail.com',
@@ -70,46 +70,36 @@ const jsonLd = {
     worstRating: '1',
   },
   amenityFeature: [
-    { '@type': 'LocationFeatureSpecification', name: 'Jacuzzi / Ruska bania', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Gorąca balia / Jacuzzi', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Sauna', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Kominek', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Prywatny ogród', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Akceptacja zwierząt', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Wi-Fi', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Ogród', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Pet-friendly', value: true },
   ],
   numberOfRooms: 3,
   occupancy: {
     '@type': 'QuantitativeValue',
     maxValue: 8,
-    unitText: 'guests',
+    unitText: 'osób',
   },
   petsAllowed: true,
   checkinTime: '15:00',
   checkoutTime: '11:00',
   image: [
     'https://www.suprasl.online/og-image.jpg',
-    'https://www.suprasl.online/gallery/dom-z-zewnatrz.jpg',
-    'https://www.suprasl.online/gallery/salon-kominek.jpg',
-    'https://www.suprasl.online/gallery/jacuzzi-ogrod.jpg',
-    'https://www.suprasl.online/gallery/sypialnia.jpg',
+    'https://www.suprasl.online/gallery/dom-z-zewnatrz-zima.jpg',
+    'https://www.suprasl.online/gallery/jacuzzi-w-nocy.jpg',
+    'https://www.suprasl.online/gallery/salon-z-kominkiem.jpg',
+    'https://www.suprasl.online/gallery/sypialnia-na-pietrze.jpg',
   ],
-  priceRange: 'PLN 399-899',
+  priceRange: 'od 399 PLN',
   currenciesAccepted: 'PLN',
-  paymentAccepted: 'Cash, Credit Card, Bank Transfer, Stripe',
+  paymentAccepted: 'Przelew bankowy, Karta kredytowa, Gotówka',
   containedInPlace: {
     '@type': 'Place',
-    '@id': 'https://www.suprasl.online/#puszcza',
     name: 'Puszcza Knyszyńska',
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 53.2,
-      longitude: 23.35,
-    },
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Supraśl',
-      addressRegion: 'podlaskie',
-      addressCountry: 'PL',
-    },
+    url: 'https://pl.wikipedia.org/wiki/Puszcza_Knyszy%C5%84ska',
   },
 };
 
@@ -172,8 +162,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Supraśl i Puszcza Knyszyńska: Noclegi, Atrakcje | Domki, Agroturystyka"
-        description="Odkryj magiczne Podlasie! Znajdź idealny nocleg w sercu Puszczy Knyszyńskiej – od luksusowych domków z balią i sauną po klimatyczne agroturystyki. Zaplanuj swój urlop w Supraślu!"
+        title="In The Woods — Dom w Puszczy Knyszyńskiej z balią i sauną | Supraśl"
+        description="Zarezerwuj In The Woods — luksusowy dom na wyłączność w Puszczy Knyszyńskiej koło Supraśla. Gorąca balia, sauna, kominek i cisza natury. Idealny na romantyczny weekend!"
         canonical="https://www.suprasl.online/"
         jsonLd={[jsonLd, faqJsonLd]}
       />
