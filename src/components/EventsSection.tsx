@@ -46,10 +46,12 @@ const EventsSection = () => {
           {events.map((event, i) => (
             <div
               key={i}
-              className="bg-card border border-border rounded-xl p-6 text-center space-y-3 hover:shadow-md transition-shadow"
+              className="card-premium p-6 text-center space-y-4"
             >
-              <event.icon className="w-8 h-8 text-teal mx-auto" strokeWidth={1.5} />
-              <h3 className="font-serif text-lg font-medium text-foreground">{event.title}</h3>
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                <event.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              </div>
+              <h3 className="font-heading text-lg font-semibold text-foreground">{event.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{event.desc}</p>
             </div>
           ))}
