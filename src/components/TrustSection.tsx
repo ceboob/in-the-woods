@@ -18,7 +18,7 @@ const TrustSection = () => {
       >
         {items.map((item, i) => (
           <div key={i} className="text-center py-8 px-6 border border-border bg-card">
-            <item.icon className="w-8 h-8 mx-auto mb-4 text-forest" strokeWidth={1.5} />
+            <item.icon className="w-8 h-8 mx-auto mb-4 text-teal" strokeWidth={1.5} />
             <h3 className="font-serif text-xl font-medium mb-2">{item.title}</h3>
             <p className="text-sm text-muted-foreground">{item.desc}</p>
           </div>

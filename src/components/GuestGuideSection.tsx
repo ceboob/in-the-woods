@@ -35,8 +35,8 @@ const GuestGuideSection = () => {
               key={label}
               className="bg-card border border-border rounded-lg p-5 flex flex-col items-center gap-3"
             >
-              <div className="w-10 h-10 rounded-full bg-forest/10 flex items-center justify-center">
-                <Icon className="w-5 h-5 text-forest" strokeWidth={1.5} />
+              <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center">
+                <Icon className="w-5 h-5 text-teal" strokeWidth={1.5} />
               </div>
               <span className="text-sm font-medium text-foreground">{label}</span>
             </div>
@@ -51,7 +51,7 @@ const GuestGuideSection = () => {
             href="https://drive.google.com/file/d/1Kz6hA2My9p3MZuNTocCglt3-yow5LrE4/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-forest text-forest hover:bg-forest hover:text-white px-6 py-3 rounded-lg text-sm font-medium transition-colors"
+            className="inline-flex items-center gap-2 border border-teal text-teal hover:bg-teal hover:text-white px-6 py-3 rounded-lg text-sm font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" /> Pobierz PDF
           </a>

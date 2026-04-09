@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
         <button
           onClick={() => handleClick('#hero')}
-          className={`font-display text-2xl md:text-3xl transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-cream'}`}
+          className={`font-display text-2xl md:text-3xl transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-white'}`}
         >
           In The Woods
         </button>
@@ -46,7 +46,7 @@ const Navbar = () => {
               <Link
                 key={l.href}
                 to={l.href}
-                className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}
+                className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-white/70 hover:text-white'}`}
               >
                 {l.label}
               </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
               <button
                 key={l.href}
                 onClick={() => handleClick(l.href)}
-                className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}
+                className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-white/70 hover:text-white'}`}
               >
                 {l.label}
               </button>
@@ -62,7 +62,7 @@ const Navbar = () => {
           )}
           <Link
             to="/blog"
-            className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-cream/70 hover:text-cream'}`}
+            className={`nav-link transition-colors duration-500 ${scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-white/70 hover:text-white'}`}
           >
             Blog
           </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
         </div>
 
         <button
-          className={`md:hidden transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-cream'}`}
+          className={`md:hidden transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-white'}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label={menuOpen ? 'Zamknij menu' : 'Otwórz menu'}
           aria-expanded={menuOpen}

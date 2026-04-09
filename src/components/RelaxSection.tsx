@@ -59,7 +59,7 @@ const RelaxSection = () => {
               height="450"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="font-serif text-lg text-cream italic">Prywatna ruska bania</p>
+              <p className="font-serif text-lg text-white italic">Prywatna ruska bania</p>
             </div>
           </div>
           <div className="overflow-hidden relative group">
@@ -72,7 +72,7 @@ const RelaxSection = () => {
               height="450"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="font-serif text-lg text-cream italic">Relaks w sercu natury</p>
+              <p className="font-serif text-lg text-white italic">Relaks w sercu natury</p>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ const RelaxSection = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {rituals.map((r, i) => (
               <div key={i} className="text-center py-6 border border-border bg-card space-y-3">
-                <r.icon className="w-6 h-6 mx-auto text-forest" strokeWidth={1.5} />
+                <r.icon className="w-6 h-6 mx-auto text-teal" strokeWidth={1.5} />
                 <p className="font-serif text-lg font-medium">{r.season}</p>
                 <p className="text-xs text-muted-foreground px-3 leading-relaxed">{r.text}</p>
               </div>

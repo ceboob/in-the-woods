@@ -26,7 +26,7 @@ const SocialProof = () => {
 
   return (
     <div className="space-y-3 mb-6">
-      <div className="flex items-center gap-2 text-xs text-forest bg-forest/5 px-3 py-2 rounded-lg">
+      <div className="flex items-center gap-2 text-xs text-teal bg-teal/5 px-3 py-2 rounded-lg">
         <Eye className="w-3.5 h-3.5 flex-shrink-0" />
         <span>
           <strong>{viewerCount} osób</strong> ogląda teraz ten obiekt

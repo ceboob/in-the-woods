@@ -26,13 +26,13 @@ const NatureSection = () => {
           width="1920"
           height="1281"
         />
-        <div className="absolute inset-0 bg-graphite/30" />
+        <div className="absolute inset-0 bg-foreground/30" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
-            <p className="text-xs tracking-[0.3em] uppercase text-cream/80 font-sans mb-4">
+            <p className="text-xs tracking-[0.3em] uppercase text-white/80 font-sans mb-4">
               Blisko natury
             </p>
-            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-cream">
+            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-white">
               Puszcza Knyszyńska
               <br />
               za progiem
@@ -62,7 +62,7 @@ const NatureSection = () => {
             <div className="grid grid-cols-2 gap-4">
               {activities.map((a, i) => (
                 <div key={i} className="flex items-center gap-3 py-2">
-                  <a.icon className="w-5 h-5 text-forest flex-shrink-0" strokeWidth={1.5} />
+                  <a.icon className="w-5 h-5 text-teal flex-shrink-0" strokeWidth={1.5} />
                   <span className="text-sm text-foreground">{a.label}</span>
                 </div>
               ))}

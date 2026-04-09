@@ -78,7 +78,7 @@ const AtrakcjeSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         <Link
           to="/puszcza-knyszynska-nocleg"
-          className="text-forest underline hover:text-forest-light"
+          className="text-teal underline hover:text-teal/70"
         >
           Puszcza Knyszyńska
         </Link>{' '}
@@ -129,7 +129,7 @@ const AtrakcjeSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         In The Woods to idealna baza do odkrywania atrakcji Supraśla i Puszczy Knyszyńskiej.
         Prywatny{' '}
-        <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/dom-w-lesie-suprasl" className="text-teal underline hover:text-teal/70">
           dom w lesie
         </Link>{' '}
         z kominkiem, ruską banią i ogrodem — po dniu pełnym wrażeń wracasz do swojego azylu ciszy i
@@ -137,11 +137,11 @@ const AtrakcjeSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Sprawdź naszą ofertę{' '}
-        <Link to="/noclegi-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/noclegi-suprasl" className="text-teal underline hover:text-teal/70">
           noclegów w Supraślu
         </Link>
         i zaplanuj idealny{' '}
-        <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/weekend-suprasl" className="text-teal underline hover:text-teal/70">
           weekend w Supraślu
         </Link>
         .

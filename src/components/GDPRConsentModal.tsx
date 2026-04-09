@@ -21,7 +21,7 @@ const GDPRConsentModal = ({ open, onAccept, onReject }: GDPRConsentModalProps) =
       <DialogContent className="max-w-md">
         <DialogHeader>
           <div className="flex items-center gap-2 mb-1">
-            <ShieldCheck className="w-5 h-5 text-forest" />
+            <ShieldCheck className="w-5 h-5 text-teal" />
             <DialogTitle className="font-serif text-lg">Zgoda na przetwarzanie danych</DialogTitle>
           </div>
           <DialogDescription className="text-left">
@@ -32,15 +32,15 @@ const GDPRConsentModal = ({ open, onAccept, onReject }: GDPRConsentModalProps) =
 
         <ul className="space-y-2 text-sm text-muted-foreground pl-1">
           <li className="flex items-start gap-2">
-            <span className="text-forest mt-0.5">•</span>
+            <span className="text-teal mt-0.5">•</span>
             Obsługi rezerwacji i kontaktu w sprawie pobytu
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-forest mt-0.5">•</span>
+            <span className="text-teal mt-0.5">•</span>
             Wysyłania potwierdzeń i informacji organizacyjnych
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-forest mt-0.5">•</span>
+            <span className="text-teal mt-0.5">•</span>
             Analizy statystyk (zanonimizowanych)
           </li>
         </ul>

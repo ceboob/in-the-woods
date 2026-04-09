@@ -84,7 +84,7 @@ const AmenitiesSection = () => {
           {amenities.map((a, i) => (
             <div key={i} className="card-premium text-center group">
               <a.icon
-                className="w-7 h-7 mx-auto mb-4 text-forest transition-colors duration-300 group-hover:text-forest-light"
+                className="w-7 h-7 mx-auto mb-4 text-teal transition-colors duration-300 group-hover:text-teal/70"
                 strokeWidth={1.5}
               />
               <h3 className="font-serif text-lg font-medium mb-2">{a.title}</h3>

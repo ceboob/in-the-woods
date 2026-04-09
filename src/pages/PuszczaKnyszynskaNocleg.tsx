@@ -40,7 +40,7 @@ const PuszczaKnyszynskaNocleg = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">In The Woods — Twój dom w Puszczy</h2>
       <p className="text-muted-foreground leading-relaxed">
         In The Woods to prywatny{' '}
-        <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/dom-w-lesie-suprasl" className="text-teal underline hover:text-teal/70">
           dom w lesie
         </Link>{' '}
         położony przy rezerwacie przyrody Krzemienne Góry, w samym sercu Puszczy Knyszyńskiej. To
@@ -129,15 +129,15 @@ const PuszczaKnyszynskaNocleg = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Sprawdź również pełną ofertę{' '}
-        <Link to="/noclegi-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/noclegi-suprasl" className="text-teal underline hover:text-teal/70">
           noclegów w Supraślu
         </Link>
         , zaplanuj{' '}
-        <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/weekend-suprasl" className="text-teal underline hover:text-teal/70">
           weekend w Supraślu
         </Link>
         lub odkryj{' '}
-        <Link to="/atrakcje-suprasl" className="text-forest underline hover:text-forest-light">
+        <Link to="/atrakcje-suprasl" className="text-teal underline hover:text-teal/70">
           atrakcje Supraśla
         </Link>
         .

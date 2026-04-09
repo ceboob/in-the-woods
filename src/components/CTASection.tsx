@@ -17,13 +17,13 @@ const CTASection = () => {
 
         <div className="flex flex-wrap justify-center gap-6 mb-10">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Clock className="w-4 h-4 text-forest" /> Szybka odpowiedź
+            <Clock className="w-4 h-4 text-teal" /> Szybka odpowiedź
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <CreditCard className="w-4 h-4 text-forest" /> Bez prowizji pośrednika
+            <CreditCard className="w-4 h-4 text-teal" /> Bez prowizji pośrednika
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <ShieldCheck className="w-4 h-4 text-forest" /> Bezpośrednia rezerwacja
+            <ShieldCheck className="w-4 h-4 text-teal" /> Bezpośrednia rezerwacja
           </div>
         </div>
 

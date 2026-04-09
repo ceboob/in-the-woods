@@ -16,7 +16,7 @@ const LocationSection = () => {
           </p>
           <h2 className="section-title">Jak do nas trafić</h2>
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
-            <MapPin className="w-4 h-4 text-forest" />
+            <MapPin className="w-4 h-4 text-teal" />
             <p className="text-sm">Konne 109/1, 16-030 Supraśl</p>
           </div>
         </div>
