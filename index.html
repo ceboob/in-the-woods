@@ -187,44 +187,79 @@
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <noscript>
-      <div style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:serif;">
+    <div id="root">
+      <!-- Static HTML for crawlers — replaced by React on hydration -->
+      <header style="background:#fafaf8;border-bottom:1px solid #e5e5e0;padding:12px 24px;">
+        <nav style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <a href="/" style="font-size:1.25rem;font-weight:600;text-decoration:none;color:#1a1a1a;">In The Woods</a>
+          <div style="display:flex;flex-wrap:wrap;gap:16px;font-size:0.875rem;">
+            <a href="/noclegi-suprasl">Noclegi</a>
+            <a href="/domek-suprasl">Domek</a>
+            <a href="/domek-z-jacuzzi-podlasie">Jacuzzi</a>
+            <a href="/atrakcje-suprasl">Atrakcje</a>
+            <a href="/weekend-suprasl">Weekend</a>
+            <a href="/wieczor-panienski-suprasl">Imprezy</a>
+            <a href="/puszcza-knyszynska-nocleg">Puszcza</a>
+            <a href="/blog">Blog</a>
+            <a href="/galeria">Galeria</a>
+            <a href="/informator">Informator</a>
+          </div>
+        </nav>
+      </header>
+      <main style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:serif;">
         <h1>In The Woods – Noclegi Supraśl | Dom w lesie z jacuzzi</h1>
         <p>Prywatny dom na wynajem w Puszczy Knyszyńskiej, 10 minut od Supraśla. Kominek, ogród, ruska bania z balią i pełna prywatność. Idealny nocleg dla par, rodzin i grup.</p>
-        <h2>Nasze strony:</h2>
-        <nav>
-          <ul>
-            <li><a href="https://www.suprasl.online/">Strona główna</a></li>
-            <li><a href="https://www.suprasl.online/noclegi-suprasl">Noclegi Supraśl</a></li>
-            <li><a href="https://www.suprasl.online/domek-suprasl">Domek Supraśl</a></li>
-            <li><a href="https://www.suprasl.online/domek-z-jacuzzi-podlasie">Domek z jacuzzi Podlasie</a></li>
-            <li><a href="https://www.suprasl.online/dom-w-lesie-suprasl">Dom w lesie Supraśl</a></li>
-            <li><a href="https://www.suprasl.online/weekend-suprasl">Weekend w Supraślu</a></li>
-            <li><a href="https://www.suprasl.online/wieczor-panienski-suprasl">Wieczór panieński Supraśl</a></li>
-            <li><a href="https://www.suprasl.online/atrakcje-suprasl">Atrakcje Supraśl</a></li>
-            <li><a href="https://www.suprasl.online/puszcza-knyszynska-nocleg">Puszcza Knyszyńska nocleg</a></li>
-            <li><a href="https://www.suprasl.online/informator">Informator gościa</a></li>
-            <li><a href="https://www.suprasl.online/blog">Blog</a></li>
-            <li><a href="https://www.suprasl.online/blog/co-robic-suprasl">Co robić w Supraślu</a></li>
-            <li><a href="https://www.suprasl.online/blog/weekend-suprasl-plan">Plan na weekend w Supraślu</a></li>
-            <li><a href="https://www.suprasl.online/blog/najlepsze-miejsca-puszcza-knyszynska">Najlepsze miejsca Puszczy Knyszyńskiej</a></li>
-            <li><a href="https://www.suprasl.online/blog/kajaki-suprasl">Kajaki Supraśl</a></li>
-            <li><a href="https://www.suprasl.online/blog/restauracje-suprasl">Restauracje Supraśl</a></li>
-            <li><a href="https://www.suprasl.online/blog/supraski-system-wodny">Supraski system wodny</a></li>
-            <li><a href="https://www.suprasl.online/blog/szlak-powstania-styczniowego-suprasl">Szlak Powstania Styczniowego</a></li>
-            <li><a href="https://www.suprasl.online/blog/suprasl-atrakcje-national-geographic">Supraśl – atrakcje National Geographic</a></li>
-            <li><a href="https://www.suprasl.online/blog/szlaki-piesze-rowerowe-suprasl">Szlaki piesze i rowerowe</a></li>
-            <li><a href="https://www.suprasl.online/blog/szlak-bioroznorodnosci-suprasl">Szlak bioróżnorodności</a></li>
-            <li><a href="https://www.suprasl.online/blog/kruszyniany-tatarska-wies">Kruszyniany – tatarska wieś</a></li>
-            <li><a href="https://www.suprasl.online/blog/suprasl-atrakcje-uzdrowisko">Supraśl – atrakcje uzdrowiska</a></li>
-            <li><a href="https://www.suprasl.online/blog/puszcza-knyszynska-historie">Puszcza Knyszyńska – historie</a></li>
-            <li><a href="https://www.suprasl.online/blog/wydarzenia-suprasl-2026">Wydarzenia Supraśl 2026</a></li>
-          </ul>
-        </nav>
+        <p>Sprawdź nasze strony:</p>
+        <ul>
+          <li><a href="/dom">Dom</a></li>
+          <li><a href="/noclegi-suprasl">Noclegi Supraśl</a></li>
+          <li><a href="/domek-suprasl">Domek Supraśl</a></li>
+          <li><a href="/domek-z-jacuzzi-podlasie">Domek z jacuzzi Podlasie</a></li>
+          <li><a href="/dom-w-lesie-suprasl">Dom w lesie Supraśl</a></li>
+          <li><a href="/weekend-suprasl">Weekend w Supraślu</a></li>
+          <li><a href="/wieczor-panienski-suprasl">Wieczór panieński Supraśl</a></li>
+          <li><a href="/atrakcje-suprasl">Atrakcje Supraśl</a></li>
+          <li><a href="/puszcza-knyszynska-nocleg">Puszcza Knyszyńska nocleg</a></li>
+          <li><a href="/informator">Informator gościa</a></li>
+          <li><a href="/galeria">Galeria</a></li>
+          <li><a href="/dokumenty">Dokumenty</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/blog/co-robic-suprasl">Co robić w Supraślu</a></li>
+          <li><a href="/blog/weekend-suprasl-plan">Plan na weekend w Supraślu</a></li>
+          <li><a href="/blog/najlepsze-miejsca-puszcza-knyszynska">Najlepsze miejsca Puszczy Knyszyńskiej</a></li>
+          <li><a href="/blog/kajaki-suprasl">Kajaki Supraśl</a></li>
+          <li><a href="/blog/restauracje-suprasl">Restauracje Supraśl</a></li>
+          <li><a href="/blog/supraski-system-wodny">Supraski system wodny</a></li>
+          <li><a href="/blog/szlak-powstania-styczniowego-suprasl">Szlak Powstania Styczniowego</a></li>
+          <li><a href="/blog/suprasl-atrakcje-national-geographic">Supraśl – atrakcje National Geographic</a></li>
+          <li><a href="/blog/szlaki-piesze-rowerowe-suprasl">Szlaki piesze i rowerowe</a></li>
+          <li><a href="/blog/szlak-bioroznorodnosci-suprasl">Szlak bioróżnorodności</a></li>
+          <li><a href="/blog/kruszyniany-tatarska-wies">Kruszyniany – tatarska wieś</a></li>
+          <li><a href="/blog/suprasl-atrakcje-uzdrowisko">Supraśl – atrakcje uzdrowiska</a></li>
+          <li><a href="/blog/puszcza-knyszynska-historie">Puszcza Knyszyńska – historie</a></li>
+          <li><a href="/blog/wydarzenia-suprasl-2026">Wydarzenia Supraśl 2026</a></li>
+          <li><a href="/blog/aktywny-wypoczynek-suprasl">Aktywny wypoczynek Supraśl</a></li>
+          <li><a href="/blog/uzdrowisko-spa-suprasl">Uzdrowisko SPA Supraśl</a></li>
+          <li><a href="/blog/przewodnik-kulinarny-suprasl">Przewodnik kulinarny Supraśl</a></li>
+          <li><a href="/blog/szlaki-puszcza-knyszynska">Szlaki Puszcza Knyszyńska</a></li>
+          <li><a href="/blog/suprasl-na-weekend">Supraśl na weekend</a></li>
+          <li><a href="/blog/suprasl-z-dziecmi">Supraśl z dziećmi</a></li>
+          <li><a href="/blog/romantyczny-weekend-podlasie">Romantyczny weekend Podlasie</a></li>
+          <li><a href="/blog/cyfrowy-detoks-las">Cyfrowy detoks w lesie</a></li>
+          <li><a href="/blog/grzybobranie-puszcza-knyszynska">Grzybobranie Puszcza Knyszyńska</a></li>
+          <li><a href="/blog/workation-podlasie">Workation Podlasie</a></li>
+          <li><a href="/blog/podlasie-z-psem">Podlasie z psem</a></li>
+          <li><a href="/blog/kraina-otwartych-okiennic">Kraina Otwartych Okiennic</a></li>
+          <li><a href="/blog/puszcza-knyszynska-przewodnik">Puszcza Knyszyńska przewodnik</a></li>
+          <li><a href="/polityka-prywatnosci">Polityka prywatności</a></li>
+        </ul>
         <p>Kontakt: <a href="tel:+48722765101">+48 722 765 101</a> | <a href="mailto:tutinthewood@gmail.com">tutinthewood@gmail.com</a></p>
-      </div>
-    </noscript>
+        <p>Adres: Konne 109/1, 16-030 Supraśl</p>
+      </main>
+      <footer style="background:#1a1a1a;color:#ccc;text-align:center;padding:24px;">
+        <p>© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
