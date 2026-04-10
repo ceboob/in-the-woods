@@ -22,12 +22,12 @@
     --secondary-foreground: 38 30% 90%;
 
     --muted: 140 12% 18%;
-    --muted-foreground: 38 20% 78%;
+    --muted-foreground: 40 14% 71%;
 
     --accent: 144 24% 59%;
     --accent-foreground: 140 16% 14%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 4 63% 78%;
     --destructive-foreground: 38 30% 90%;
 
     --border: 144 15% 27%;
@@ -36,10 +36,10 @@
 
     --radius: 0.5rem;
 
-    --teal: 34 41% 64%;
+    --teal: 166 26% 68%;
 
-    --wood: 34 41% 64%;
-    --wood-light: 34 41% 70%;
+    --wood: 34 23% 71%;
+    --wood-light: 34 23% 76%;
     --forest: 144 24% 59%;
     --forest-light: 144 24% 65%;
     --cream: 140 16% 14%;
