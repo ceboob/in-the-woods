@@ -11,7 +11,7 @@ const KrainaOtwartychOkiennic = () => (
     readTime="11 min"
     keywords={['Kraina Otwartych Okiennic', 'szlak Podlasie', 'drewniana architektura', 'malowane chałupy']}
     faqs={[
-      { question: 'Gdzie znajduje się Kraina Otwartych Okiennic?', answer: 'Szlak obejmuje wsie na wschód i południe od Białegostoku: Trześcianka, Narew, Soce, Puchły i inne. Większość wsi leży 40-60 minut jazdy od Supraśla.' },
+      { question: 'Gdzie jest Kraina Otwartych Okiennic?', answer: 'Szlak obejmuje wsie na wschód i południe od Białegostoku: Trześcianka, Narew, Soce, Puchły i inne. Większość wsi leży 40-60 minut jazdy od Supraśla.' },
       { question: 'Ile czasu potrzeba na zwiedzanie?', answer: 'Na objazd głównych wsi (Trześcianka, Soce, Puchły) potrzeba minimum pół dnia. Na pełny szlak — cały dzień.' },
       { question: 'Czy wstęp jest płatny?', answer: 'Nie — zwiedzanie wsi i podziwianie chałup jest bezpłatne. W niektórych wsiach działają małe muzea i punkty informacyjne z drobnymi opłatami.' },
     ]}

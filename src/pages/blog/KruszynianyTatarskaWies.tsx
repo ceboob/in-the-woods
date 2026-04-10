@@ -104,7 +104,7 @@ const KruszynianyTatarskaWies = () => {
 
       <p>
         Sercem Kruszynian jest <strong>drewniany meczet</strong> z XVIII wieku — jeden z zaledwie
-        dwóch zachowanych drewnianych meczetów w Polsce (drugi znajduje się w sąsiednich
+        dwóch zachowanych drewnianych meczetów w Polsce (drugi jest w sąsiednich
         Bohonikach). Budynek zachwyca prostotą formy i harmonijnym wpisaniem w krajobraz podlaskiej
         wsi.
       </p>
@@ -118,7 +118,7 @@ const KruszynianyTatarskaWies = () => {
       <h3>Cmentarz muzułmański (mizar)</h3>
 
       <p>
-        Obok meczetu znajduje się <strong>mizar</strong> — tatarski cmentarz z kamiennymi
+        Obok meczetu jest <strong>mizar</strong> — tatarski cmentarz z kamiennymi
         nagrobkami, na których inskrypcje wyryto w języku arabskim. Spacer po cmentarzu to
         poruszające doświadczenie, które przenosi w czasie i pozwala poczuć ciągłość tatarskiej
         tradycji na tych ziemiach.
