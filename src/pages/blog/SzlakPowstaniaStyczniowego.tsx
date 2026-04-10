@@ -40,7 +40,7 @@ const SzlakPowstaniaStyczniowego = () => {
   return (
     <BlogArticleLayout
       title="Szlak Powstania Styczniowego Supraśl"
-      metaTitle="Szlak Powstania Styczniowego w Puszczy Knyszyńskiej – historia wśród lasów | In The Woods"
+      metaTitle="Szlak Powstania Styczniowego | Puszcza"
       metaDescription="Szlak Powstania Styczniowego w Puszczy Knyszyńskiej – historia, miejsca pamięci i szlaki spacerowe. Odkryj historyczne dziedzictwo Supraśla."
       slug="szlak-powstania-styczniowego-suprasl"
       publishDate="2026-03-08"

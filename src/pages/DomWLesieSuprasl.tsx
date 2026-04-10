@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const DomWLesieSuprasl = () => (
   <SEOPageLayout
-    title="Domki w lesie Podlasie i Puszcza Knyszyńska | Wynajem na odludziu"
+    title="Dom w lesie Podlasie | Wynajem na odludziu"
     description="Szukasz domu w lesie na Podlasiu? Zobacz naszą ofertę klimatycznych domków na wyłączność w Puszczy Knyszyńskiej. Cisza, spokój i natura na wyciągnięcie ręki."
     breadcrumbName="Dom w lesie Supraśl"
     ogImage="https://www.suprasl.online/images/hero-cabin.jpg"

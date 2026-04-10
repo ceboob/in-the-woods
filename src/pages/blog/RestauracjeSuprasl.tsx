@@ -51,7 +51,7 @@ const RestauracjeSuprasl = () => {
   return (
     <BlogArticleLayout
       title="Gdzie zjeść w Supraślu – najlepsze restauracje i kuchnia Podlasia"
-      metaTitle="Restauracje Supraśl – gdzie zjeść | przewodnik turystyczny"
+      metaTitle="Restauracje Supraśl – gdzie zjeść | 2026"
       metaDescription="Restauracje Supraśl – najlepsze miejsca na obiad, kolację i kawę. Kuchnia podlaska, kartacze, babka ziemniaczana. Przewodnik kulinarny po Supraślu."
       slug="restauracje-suprasl"
       publishDate="2026-03-15"

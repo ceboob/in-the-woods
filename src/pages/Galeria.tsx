@@ -166,7 +166,7 @@ const Galeria = () => {
 
   return (
     <SEOPageLayout
-      title="Galeria zdjęć | In The Woods — Dom w Puszczy Knyszyńskiej"
+      title="Galeria zdjęć | In The Woods Supraśl"
       description="Pełna galeria zdjęć domu In The Woods — salon z kominkiem, sypialnie, kuchnia, łazienki, taras, ogród, ruska bania i okolica w Puszczy Knyszyńskiej."
       breadcrumbName="Galeria"
       ogImage="https://www.suprasl.online/images/hero-cabin.jpg"

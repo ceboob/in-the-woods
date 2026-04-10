@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const GrzybobraniePuszczaKnyszynska = () => (
   <BlogArticleLayout
     title="Jesienne grzybobranie w Puszczy Knyszyńskiej – przewodnik"
-    metaTitle="Grzybobranie Puszcza Knyszyńska | Przewodnik po grzybach Podlasia"
+    metaTitle="Grzybobranie Puszcza Knyszyńska | Przewodnik"
     metaDescription="Gdzie zbierać grzyby w Puszczy Knyszyńskiej? Najlepsze miejsca, gatunki, sezon i praktyczne porady. Przewodnik po grzybobraniu na Podlasiu."
     slug="grzybobranie-puszcza-knyszynska"
     publishDate="2026-04-09"

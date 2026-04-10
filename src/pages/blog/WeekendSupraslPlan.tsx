@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const WeekendSupraslPlan = () => (
   <BlogArticleLayout
     title="Weekend w Supraślu – plan pobytu na 2-3 dni"
-    metaTitle="Weekend w Supraślu – plan pobytu na 2-3 dni | In The Woods"
+    metaTitle="Weekend w Supraślu – plan na 2-3 dni"
     metaDescription="Weekend w Supraślu krok po kroku. Plan na 2-3 dni: Monaster, Puszcza Knyszyńska, kajaki, kuchnia regionalna i relaks w jacuzzi pod gwiazdami."
     slug="weekend-suprasl-plan"
     publishDate="2026-03-25"

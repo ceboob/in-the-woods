@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const KrainaOtwartychOkiennic = () => (
   <BlogArticleLayout
     title="Kraina Otwartych Okiennic: Magiczna podróż w czasie na Podlasiu"
-    metaTitle="Kraina Otwartych Okiennic | Szlak drewnianej architektury Podlasia"
+    metaTitle="Kraina Otwartych Okiennic | Szlak Podlasia"
     metaDescription="Odkryj Krainę Otwartych Okiennic — szlak malowanych chałup na Podlasiu. Kolorowe okiennice, drewniana architektura i tradycje, które trwają od pokoleń."
     slug="kraina-otwartych-okiennic"
     publishDate="2026-04-09"

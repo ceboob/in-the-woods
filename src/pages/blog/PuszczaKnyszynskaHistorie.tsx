@@ -11,7 +11,7 @@ import galeriaPostacImg from '@/assets/blog-galeria-lesna-rzezba-postac.jpg';
 const PuszczaKnyszynskaHistorie = () => (
   <BlogArticleLayout
     title="Puszcza Knyszyńska historie – 7 niezwykłych opowieści"
-    metaTitle="Puszcza Knyszyńska historie – 7 niezwykłych opowieści + dom w lesie z jacuzzi | In The Woods"
+    metaTitle="Puszcza Knyszyńska – 7 niezwykłych historii"
     metaDescription="Puszcza Knyszyńska historie i noclegi Supraśl – odkryj Galerię Leśną Powstania Styczniowego oraz wyjątkowy dom w lesie z jacuzzi (In The Woods) tylko 300 m od atrakcji."
     slug="puszcza-knyszynska-historie"
     publishDate="2026-03-28"

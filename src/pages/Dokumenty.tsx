@@ -27,7 +27,7 @@ const documents = [
 
 const Dokumenty = () => (
   <SEOPageLayout
-    title="Dokumenty i instrukcje | In The Woods — Dom w Puszczy Knyszyńskiej"
+    title="Dokumenty i instrukcje | In The Woods"
     description="Pobierz przewodnik po domu, umowę najmu i instrukcję obsługi In The Woods. Wszystkie dokumenty dostępne online w formacie PDF."
     breadcrumbName="Dokumenty"
     ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
