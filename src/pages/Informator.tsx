@@ -149,7 +149,7 @@ const Informator = () => {
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Zasady pobytu
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6">
@@ -189,7 +189,7 @@ const Informator = () => {
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Instrukcja korzystania z kominka
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
@@ -244,7 +244,7 @@ const Informator = () => {
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Ekologia – oczyszczalnia ścieków
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
@@ -288,7 +288,7 @@ const Informator = () => {
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Dom w lesie – natura
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
@@ -336,7 +336,7 @@ const Informator = () => {
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Apteczka
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6">
@@ -359,7 +359,7 @@ const Informator = () => {
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Regulamin ruskiej bani i balii
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
@@ -439,7 +439,7 @@ const Informator = () => {
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Bezpieczeństwo
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-3">
@@ -465,7 +465,7 @@ const Informator = () => {
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Dane kontaktowe
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6">
