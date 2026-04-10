@@ -46,7 +46,7 @@ const SupraslAtrakcjeUzdrowisko = () => {
   return (
     <BlogArticleLayout
       title="Supraśl – atrakcje uzdrowiska Podlasia"
-      metaTitle="Supraśl atrakcje – co zobaczyć w uzdrowiskowym miasteczku | In The Woods"
+      metaTitle="Supraśl atrakcje – uzdrowiskowe miasteczko"
       metaDescription="Supraśl to perła Podlasia. Monaster, Muzeum Ikon, bulwary, Teatr Wierszalin i uzdrowiskowy klimat. Kompletny przewodnik po atrakcjach Supraśla."
       slug="suprasl-atrakcje-uzdrowisko"
       publishDate="2026-03-14"
@@ -64,7 +64,7 @@ const SupraslAtrakcjeUzdrowisko = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Supraśl – atrakcje uzdrowiska Podlasia</h1>
+      <h2>Supraśl – atrakcje uzdrowiska Podlasia</h2>
 
       <p>
         <strong>Supraśl</strong> to jedno z najbardziej wyjątkowych miasteczek w Polsce — uzdrowisko

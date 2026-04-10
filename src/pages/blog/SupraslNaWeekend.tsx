@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const SupraslNaWeekend = () => (
   <BlogArticleLayout
     title="Supraśl na weekend – gotowy plan zwiedzania na 2 dni"
-    metaTitle="Supraśl na weekend – plan zwiedzania na 2 dni (atrakcje, jedzenie, relaks)"
+    metaTitle="Supraśl na weekend – plan na 2 dni | Atrakcje"
     metaDescription="Gotowy plan na weekend w Supraślu: zwiedzanie Monasteru i Muzeum Ikon, spacer po Puszczy, kuchnia podlaska i relaks. Dzień po dniu!"
     slug="suprasl-na-weekend"
     publishDate="2026-04-09"
@@ -23,7 +23,7 @@ const SupraslNaWeekend = () => (
       { title: 'Supraśl z dziećmi', slug: 'suprasl-z-dziecmi' },
     ]}
   >
-    <h1>Supraśl na weekend – gotowy plan zwiedzania na 2 dni (atrakcje, jedzenie, relaks)</h1>
+    <h2>Supraśl na weekend – gotowy plan zwiedzania na 2 dni (atrakcje, jedzenie, relaks)</h2>
 
     <p>
       Zastanawiasz się, jak spędzić idealny <strong>weekend w Supraślu</strong>? Przygotowaliśmy

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CoRobicSuprasl = () => (
   <BlogArticleLayout
     title="Co robić w Supraślu? Kompletny przewodnik po atrakcjach"
-    metaTitle="Co robić w Supraślu – przewodnik po atrakcjach 2026 | In The Woods"
+    metaTitle="Co robić w Supraślu | Przewodnik atrakcji"
     metaDescription="Co robić w Supraślu? Monaster, Muzeum Ikon, spływy kajakowe, szlaki w Puszczy Knyszyńskiej i kuchnia regionalna. Kompletny przewodnik po atrakcjach Supraśla."
     slug="co-robic-suprasl"
     publishDate="2026-03-25"
@@ -38,7 +38,7 @@ const CoRobicSuprasl = () => (
       { title: 'Restauracje Supraśl – gdzie zjeść', slug: 'restauracje-suprasl' },
     ]}
   >
-    <h1>Co robić w Supraślu? Kompletny przewodnik po atrakcjach</h1>
+    <h2>Co robić w Supraślu? Kompletny przewodnik po atrakcjach</h2>
 
     <p>
       Supraśl to jedno z najpiękniejszych miasteczek Podlasia — uzdrowisko w sercu Puszczy

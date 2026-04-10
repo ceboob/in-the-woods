@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const WeekendSuprasl = () => (
   <SEOPageLayout
-    title="Pomysły na weekend w Supraślu | Relaks, Przygoda, Smaki Podlasia"
+    title="Weekend w Supraślu | Relaks i przygoda"
     description="Zaplanuj idealny weekend w Supraślu — Monaster, Puszcza Knyszyńska, spływy kajakowe, kuchnia podlaska i relaks w ruskiej bani. Gotowy plan na 2-3 dni!"
     breadcrumbName="Weekend w Supraślu"
     ogImage="https://www.suprasl.online/images/terrace-breakfast.jpg"

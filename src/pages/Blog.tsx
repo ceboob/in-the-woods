@@ -290,7 +290,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Blog – Supraśl atrakcje, szlaki i turystyka | In The Woods"
+        title="Blog Supraśl – atrakcje i szlaki | In The Woods"
         description="Blog o Supraślu – atrakcje, szlaki, historia i turystyka w Puszczy Knyszyńskiej. Przewodnik turystyczny."
         canonical="https://www.suprasl.online/blog"
         jsonLd={{

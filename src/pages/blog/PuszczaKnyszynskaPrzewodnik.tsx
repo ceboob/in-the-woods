@@ -69,7 +69,7 @@ const faqs = [
 const PuszczaKnyszynskaPrzewodnik = () => (
   <BlogArticleLayout
     title="Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX"
-    metaTitle="Puszcza Knyszyńska — przewodnik: szlaki GPX, atrakcje, mapy"
+    metaTitle="Puszcza Knyszyńska – przewodnik i szlaki GPX"
     metaDescription="Odkryj Puszczę Knyszyńską: najpiękniejsze szlaki piesze, rowerowe i narciarskie z mapami GPX do pobrania. Kajaki, rykowisko, wieże widokowe, Kruszyniany i Supraśl."
     slug="puszcza-knyszynska-przewodnik"
     publishDate="2026-04-09"

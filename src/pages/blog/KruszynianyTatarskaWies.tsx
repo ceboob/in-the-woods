@@ -36,7 +36,7 @@ const KruszynianyTatarskaWies = () => {
   return (
     <BlogArticleLayout
       title="Kruszyniany – tatarska wieś Podlasia"
-      metaTitle="Kruszyniany – tatarska wieś, meczet, kuchnia tatarska | In The Woods"
+      metaTitle="Kruszyniany – tatarska wieś i meczet"
       metaDescription="Kruszyniany to unikalna tatarska wieś na Podlasiu. Drewniany meczet, kuchnia tatarska i wielowiekowa tradycja — odkryj jedno z najciekawszych miejsc w Polsce."
       slug="kruszyniany-tatarska-wies"
       publishDate="2026-03-14"
@@ -53,7 +53,7 @@ const KruszynianyTatarskaWies = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Kruszyniany – tatarska wieś Podlasia</h1>
+      <h2>Kruszyniany – tatarska wieś Podlasia</h2>
 
       <p>
         Na wschodnim krańcu Podlasia, wśród falistych wzgórz i zielonych łąk, leży{' '}

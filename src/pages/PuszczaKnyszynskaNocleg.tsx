@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PuszczaKnyszynskaNocleg = () => (
   <SEOPageLayout
-    title="Nocleg w Puszczy Knyszyńskiej – dom w lesie | In The Woods"
+    title="Nocleg w Puszczy Knyszyńskiej | In The Woods"
     description="Nocleg w Puszczy Knyszyńskiej — prywatny dom w lesie blisko Supraśla. Kominek, ruska bania, ogród. Rezerwat przyrody za progiem."
     breadcrumbName="Puszcza Knyszyńska"
     ogImage="https://www.suprasl.online/images/winter-cabin-golden.jpg"

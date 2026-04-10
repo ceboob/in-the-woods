@@ -43,7 +43,7 @@ const SupraskiSystemWodny = () => {
   return (
     <BlogArticleLayout
       title="Supraski System Wodny – historia i atrakcje Supraśla"
-      metaTitle="Supraski System Wodny – zapomniany cud inżynierii Podlasia | In The Woods"
+      metaTitle="Supraski System Wodny | Cud inżynierii"
       metaDescription="Poznaj historię Supraskiego Systemu Wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia. Kanał Kopanica, monaster, szlaki turystyczne w Supraślu."
       slug="supraski-system-wodny"
       publishDate="2026-03-10"
@@ -60,7 +60,7 @@ const SupraskiSystemWodny = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Supraski System Wodny – historia i atrakcje Supraśla</h1>
+      <h2>Supraski System Wodny – historia i atrakcje Supraśla</h2>
 
       <p>
         Supraśl to miasteczko, które kryje w sobie znacznie więcej, niż widać na pierwszy rzut oka.

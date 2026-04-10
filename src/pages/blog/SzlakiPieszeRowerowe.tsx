@@ -43,7 +43,7 @@ const SzlakiPieszeRowerowe = () => {
   return (
     <BlogArticleLayout
       title="Szlaki Supraśl – przewodnik turystyczny"
-      metaTitle="Szlaki piesze i rowerowe Supraśl i Puszcza Knyszyńska – przewodnik | In The Woods"
+      metaTitle="Szlaki piesze i rowerowe Supraśl | Przewodnik"
       metaDescription="Najlepsze szlaki piesze i rowerowe w Supraślu i Puszczy Knyszyńskiej. Trasy rodzinne, przyrodnicze, rowerowe. Kompletny przewodnik turystyczny."
       slug="szlaki-piesze-rowerowe-suprasl"
       publishDate="2026-03-01"
@@ -59,7 +59,7 @@ const SzlakiPieszeRowerowe = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Szlaki Supraśl – przewodnik turystyczny</h1>
+      <h2>Szlaki Supraśl – przewodnik turystyczny</h2>
 
       <p>
         Supraśl i Puszcza Knyszyńska to raj dla miłośników aktywnego wypoczynku na łonie natury.

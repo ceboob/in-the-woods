@@ -4,7 +4,7 @@ import { Church, Building2, Waves, TreePine, Landmark, MapPin } from 'lucide-rea
 
 const AtrakcjeSuprasl = () => (
   <SEOPageLayout
-    title="Atrakcje Supraśla i Puszczy Knyszyńskiej | Co zobaczyć, Szlaki, Zabytki"
+    title="Atrakcje Supraśla | Co zobaczyć i szlaki"
     description="Zaplanuj swój pobyt: TOP atrakcje Supraśla — Monaster, Muzeum Ikon, Pałac Buchholtzów, szlaki Puszczy Knyszyńskiej. Kompletny przewodnik turystyczny."
     breadcrumbName="Atrakcje Supraśla"
     ogImage="https://www.suprasl.online/images/terrace-porch.jpg"

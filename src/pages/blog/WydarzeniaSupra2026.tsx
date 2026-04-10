@@ -5,7 +5,7 @@ import { Phone } from 'lucide-react';
 const WydarzeniaSupra2026 = () => (
   <BlogArticleLayout
     title="Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku"
-    metaTitle="Największe imprezy i wydarzenia w Supraślu 2026 – kalendarz + daty | In The Woods"
+    metaTitle="Wydarzenia Supraśl 2026 – kalendarz i daty"
     metaDescription="Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku – daty festiwali, kalendarz i noclegi Supraśl."
     slug="wydarzenia-suprasl-2026"
     publishDate="2026-03-30"
@@ -60,10 +60,10 @@ const WydarzeniaSupra2026 = () => (
       { title: 'Restauracje Supraśl – gdzie zjeść', slug: 'restauracje-suprasl' },
     ]}
   >
-    <h1>
+    <h2>
       Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku – kalendarz + daty + gdzie
       nocować
-    </h1>
+    </h2>
 
     {/* ===== SEKCJA 1: FEATURED SNIPPET ===== */}
     <div className="bg-accent/40 border border-border rounded-xl p-6 my-8 not-prose">
