@@ -275,7 +275,7 @@ const KajakiSuprasl = () => {
 
       <h3>Dojazd</h3>
       <p>
-        Większość wypożyczalni kajaków znajduje się w okolicach Supraśla i jest łatwo dostępna
+        Większość wypożyczalni kajaków jest w okolicach Supraśla i jest łatwo dostępna
         samochodem. Wiele z nich oferuje transport z centrum Supraśla lub z{' '}
         <Link to="/noclegi-suprasl">noclegu w okolicy</Link>. Parking jest zazwyczaj bezpłatny.
       </p>

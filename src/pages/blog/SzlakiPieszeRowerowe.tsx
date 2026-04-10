@@ -150,7 +150,7 @@ const SzlakiPieszeRowerowe = () => {
 
       <p>
         Szlak prowadzi przez zróżnicowany teren — od płaskich partii leśnych po łagodne wzniesienia
-        morenowe. Na szczycie Kopnej Góry znajduje się wieża widokowa, z której widać panoramę
+        morenowe. Na szczycie Kopnej Góry jest wieża widokowa, z której widać panoramę
         puszczy.
       </p>
 

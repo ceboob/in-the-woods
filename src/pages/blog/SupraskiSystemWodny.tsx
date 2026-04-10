@@ -64,7 +64,7 @@ const SupraskiSystemWodny = () => {
 
       <p>
         Supraśl to miasteczko, które kryje w sobie znacznie więcej, niż widać na pierwszy rzut oka.
-        Poza słynnym monasterem, Muzeum Ikon i malowniczymi uliczkami, w okolicy znajduje się jeden
+        Poza słynnym monasterem, Muzeum Ikon i malowniczymi uliczkami, w okolicy jest jeden
         z najbardziej fascynujących, a zarazem najmniej znanych zabytków inżynierii wodnej w Polsce
         — <strong>Supraski System Wodny</strong>.
       </p>

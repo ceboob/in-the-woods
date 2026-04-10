@@ -37,7 +37,7 @@ const DomekSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Co oferuje nasz domek</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Dom mieści komfortowo do 8 osób. Na parterze znajduje się przestronny salon z kominkiem, w
+        Dom mieści komfortowo do 8 osób. Na parterze jest przestronny salon z kominkiem, w
         pełni wyposażona kuchnia z ceglanym akcentem oraz łazienka. Na piętrze — dwie sypialnie z
         dużymi łóżkami i widokiem na las. Całość utrzymana jest w stylu leśnej chaty z nowoczesnym
         komfortem.

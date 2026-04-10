@@ -25,7 +25,7 @@ const PuszczaKnyszynskaHistorie = () => (
     ]}
     faqs={[
       {
-        question: 'Gdzie znajduje się Puszcza Knyszyńska?',
+        question: 'Gdzie jest Puszcza Knyszyńska?',
         answer:
           'W województwie podlaskim, niedaleko Białegostoku. Obejmuje ponad 128 tysięcy hektarów lasów, rezerwatów i obszarów chronionych.',
       },
