@@ -93,7 +93,7 @@ const RestauracjeSuprasl = () => {
         src={blogRestauracje}
         alt="restauracje Supraśl – kuchnia podlaska, kartacze i regionalne dania"
         className="w-full rounded-lg my-8"
-      />
+      width="800" height="450" loading="lazy" />
 
       <h2>Kuchnia Podlasia – czego spróbować</h2>
 
@@ -145,7 +145,7 @@ const RestauracjeSuprasl = () => {
         src={blogMonaster}
         alt="Supraśl centrum – klimatyczne miasteczko uzdrowiskowe na Podlasiu"
         className="w-full rounded-lg my-8"
-      />
+      width="800" height="450" loading="lazy" />
 
       <h2>Polecane przez nas lokale w Supraślu</h2>
 
@@ -163,7 +163,7 @@ const RestauracjeSuprasl = () => {
         src={blogBarJarzebinka}
         alt="Bar Jarząbinka Supraśl – kultowy bar z kuchnią podlaską, babka ziemniaczana i kartacze"
         className="w-full rounded-lg my-4"
-      />
+      width="800" height="450" loading="lazy" />
       <p>
         Kultowy <strong>Bar Jarząbinka</strong> to obowiązkowy przystanek na kulinarnej mapie
         Supraśla. Ten niewielki, klimatyczny lokal przy ulicy 3-go Maja serwuje jedne z najlepszych
@@ -186,7 +186,7 @@ const RestauracjeSuprasl = () => {
         src={blogBohema}
         alt="Bohema Supraśl – elegancka restauracja z kuchnią polską i regionalną na Placu Kościuszki"
         className="w-full rounded-lg my-4"
-      />
+      width="800" height="450" loading="lazy" />
       <p>
         <strong>Bohema</strong> to restauracja z charakterem, usytuowana w samym sercu Supraśla, na
         Placu Tadeusza Kościuszki. To miejsce łączy elegancję z podlaską gościnnością, oferując
@@ -208,7 +208,7 @@ const RestauracjeSuprasl = () => {
         src={blogLukaszowka}
         alt="Łukaszówka Supraśl – domowe pierogi, kartacze i kuchnia regionalna Podlasia"
         className="w-full rounded-lg my-4"
-      />
+      width="800" height="450" loading="lazy" />
       <p>
         <strong>Łukaszówka</strong> to miejsce, które przywołuje wspomnienia babcinych obiadów. Ta
         rodzinna restauracja przy ulicy Nowy Świat specjalizuje się w{' '}
@@ -319,7 +319,7 @@ const RestauracjeSuprasl = () => {
         src={kitchenTraditional}
         alt="jedzenie Supraśl – tradycyjna kuchnia podlaska"
         className="w-full rounded-lg my-8"
-      />
+      width="800" height="450" loading="lazy" />
 
       <h2>Kuchnia tatarska</h2>
 

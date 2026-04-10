@@ -81,7 +81,7 @@ const SupraskiSystemWodny = () => {
         src={blogRzeka}
         alt="Rzeka Supraśl – Supraski System Wodny, atrakcje Supraśl"
         className="w-full rounded-lg my-8"
-      />
+      width="800" height="450" loading="lazy" />
 
       <h2>Historia Supraskiego Systemu Wodnego</h2>
 
@@ -127,7 +127,7 @@ const SupraskiSystemWodny = () => {
         src={blogKanal}
         alt="Kanał Kopanica – Supraski System Wodny, noclegi Supraśl"
         className="w-full rounded-lg my-8"
-      />
+      width="800" height="450" loading="lazy" />
 
       <h2>Jak powstał system – inżynieria i natura</h2>
 
@@ -231,7 +231,7 @@ const SupraskiSystemWodny = () => {
         src={cabinDay}
         alt="In The Woods – noclegi Supraśl, dom w lesie"
         className="w-full rounded-lg my-8"
-      />
+      width="800" height="450" loading="lazy" />
 
       <h2>Dlaczego warto zobaczyć Supraski System Wodny?</h2>
 
