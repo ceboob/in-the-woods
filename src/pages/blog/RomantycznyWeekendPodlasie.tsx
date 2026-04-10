@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const RomantycznyWeekendPodlasie = () => (
   <BlogArticleLayout
     title="Pomysł na romantyczny weekend we dwoje na Podlasiu"
-    metaTitle="Romantyczny weekend na Podlasiu | Domek z kominkiem i balią"
+    metaTitle="Romantyczny weekend Podlasie | Domek z balią"
     metaDescription="Zaplanuj romantyczny weekend we dwoje na Podlasiu — domek z kominkiem, gorąca balia pod gwiazdami, kolacja przy świecach w sercu Puszczy Knyszyńskiej."
     slug="romantyczny-weekend-podlasie"
     publishDate="2026-04-09"
