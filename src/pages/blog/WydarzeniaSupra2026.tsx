@@ -125,7 +125,7 @@ const WydarzeniaSupra2026 = () => (
       <strong>Lokalizacja:</strong> Monaster Zwiastowania NMP, Supraśl.
       <br />
       <strong>Więcej:</strong>{' '}
-      <a href="https://www.festiwalcerkiewny.pl" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.festiwalcerkiewny.pl" target="_blank" rel="noopener noreferrer nofollow">
         festiwalcerkiewny.pl
       </a>
     </p>
@@ -200,7 +200,7 @@ const WydarzeniaSupra2026 = () => (
       <strong>Lokalizacja:</strong> różne przestrzenie w Supraślu i okolicach.
       <br />
       <strong>Więcej:</strong>{' '}
-      <a href="https://wertep.pl" target="_blank" rel="noopener noreferrer">
+      <a href="https://wertep.pl" target="_blank" rel="noopener noreferrer nofollow">
         wertep.pl
       </a>
     </p>

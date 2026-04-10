@@ -247,7 +247,7 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <strong>Źródło treści i danych GPX:</strong> Stowarzyszenie Przyjaciół Puszczy Knyszyńskiej
         „Wielki Las" i Park Krajobrazowy Puszczy Knyszyńskiej im. prof. Witolda Sławińskiego.
         Dane udostępnione za pośrednictwem portalu{' '}
-        <a href="https://wielkilas.pl" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+        <a href="https://wielkilas.pl" target="_blank" rel="noopener noreferrer nofollow" className="text-primary underline hover:text-primary/80">
           wielkilas.pl
         </a>.
         Dane GPX udostępnione bezpłatnie do użytku prywatnego.
