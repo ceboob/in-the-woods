@@ -56,7 +56,7 @@ const SupraslAtrakcje = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Supraśl – co zobaczyć w jednym z najpiękniejszych miasteczek Podlasia</h2>
+      <h2>Supraśl – co zobaczyć w jednym z najpiękniejszych miasteczek Podlasia</h2>
 
       <p>
         Supraśl to jedno z tych miejsc, które zaskakują. Małe, ciche, niepozorne na mapie — a

@@ -64,7 +64,7 @@ const SupraslAtrakcjeUzdrowisko = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Supraśl – atrakcje uzdrowiska Podlasia</h2>
+      <h2>Supraśl – atrakcje uzdrowiska Podlasia</h2>
 
       <p>
         <strong>Supraśl</strong> to jedno z najbardziej wyjątkowych miasteczek w Polsce — uzdrowisko

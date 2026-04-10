@@ -55,7 +55,7 @@ const SzlakPowstaniaStyczniowego = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Szlak Powstania Styczniowego Supraśl</h2>
+      <h2>Szlak Powstania Styczniowego Supraśl</h2>
 
       <p>
         Puszcza Knyszyńska to nie tylko jeden z najcenniejszych kompleksów leśnych w Polsce, ale też

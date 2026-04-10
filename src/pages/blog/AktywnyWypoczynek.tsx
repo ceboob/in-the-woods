@@ -23,7 +23,7 @@ const AktywnyWypoczynek = () => (
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
-    <h1>Supraśl Aktywnie: 5 Pomysłów na Weekend w Puszczy Knyszyńskiej (Rower, Kajak i Więcej!)</h2>
+    <h2>Supraśl Aktywnie: 5 Pomysłów na Weekend w Puszczy Knyszyńskiej (Rower, Kajak i Więcej!)</h2>
 
     <p>
       Myślisz, że Supraśl to tylko spokojne uzdrowisko? Nic bardziej mylnego! Pokażemy Ci, jak

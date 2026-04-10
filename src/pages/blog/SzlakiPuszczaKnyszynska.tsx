@@ -23,7 +23,7 @@ const SzlakiPuszczaKnyszynska = () => (
       { title: 'Najlepsze miejsca w Puszczy Knyszyńskiej', slug: 'najlepsze-miejsca-puszcza-knyszynska' },
     ]}
   >
-    <h1>Puszcza Knyszyńska na piechotę i rowerem – najlepsze szlaki z Supraśla [MAPY + OPISY]</h2>
+    <h2>Puszcza Knyszyńska na piechotę i rowerem – najlepsze szlaki z Supraśla [MAPY + OPISY]</h2>
 
     <p>
       <Link to="/">Supraśl</Link> to idealna <strong>baza wypadowa</strong> do odkrywania Puszczy

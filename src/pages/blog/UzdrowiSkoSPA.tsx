@@ -23,7 +23,7 @@ const UzdrowiSkoSPA = () => (
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
-    <h1>Uzdrowisko Supraśl: Jak skorzystać z leczenia borowiną i zregenerować siły?</h2>
+    <h2>Uzdrowisko Supraśl: Jak skorzystać z leczenia borowiną i zregenerować siły?</h2>
 
     <p>
       Supraśl to <strong>jedyne uzdrowisko w województwie podlaskim</strong>, słynące z borowiny i

@@ -23,7 +23,7 @@ const SupraslNaWeekend = () => (
       { title: 'Supraśl z dziećmi', slug: 'suprasl-z-dziecmi' },
     ]}
   >
-    <h1>Supraśl na weekend – gotowy plan zwiedzania na 2 dni (atrakcje, jedzenie, relaks)</h2>
+    <h2>Supraśl na weekend – gotowy plan zwiedzania na 2 dni (atrakcje, jedzenie, relaks)</h2>
 
     <p>
       Zastanawiasz się, jak spędzić idealny <strong>weekend w Supraślu</strong>? Przygotowaliśmy

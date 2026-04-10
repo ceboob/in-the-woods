@@ -53,7 +53,7 @@ const KruszynianyTatarskaWies = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Kruszyniany – tatarska wieś Podlasia</h2>
+      <h2>Kruszyniany – tatarska wieś Podlasia</h2>
 
       <p>
         Na wschodnim krańcu Podlasia, wśród falistych wzgórz i zielonych łąk, leży{' '}

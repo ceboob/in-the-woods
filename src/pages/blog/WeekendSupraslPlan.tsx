@@ -38,7 +38,7 @@ const WeekendSupraslPlan = () => (
       { title: 'Szlaki piesze i rowerowe', slug: 'szlaki-piesze-rowerowe-suprasl' },
     ]}
   >
-    <h1>Weekend w Supraślu – plan pobytu na 2-3 dni</h2>
+    <h2>Weekend w Supraślu – plan pobytu na 2-3 dni</h2>
 
     <p>
       Planujesz <strong>weekend w Supraślu</strong> i zastanawiasz się, jak najlepiej wykorzystać

@@ -60,7 +60,7 @@ const WydarzeniaSupra2026 = () => (
       { title: 'Restauracje Supraśl – gdzie zjeść', slug: 'restauracje-suprasl' },
     ]}
   >
-    <h1>
+    <h2>
       Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku – kalendarz + daty + gdzie
       nocować
     </h2>
