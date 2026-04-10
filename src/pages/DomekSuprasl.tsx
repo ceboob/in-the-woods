@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const DomekSuprasl = () => (
   <SEOPageLayout
     title="Domek Supraśl na wynajem | In The Woods"
-    description="Domek Supraśl na wyłączność – kominek, jacuzzi, ogród i cisza Puszczy Knyszyńskiej. Idealny na weekend, urlop lub workation. Sprawdź ofertę In The Woods."
+    description="Domek Supraśl na wyłączność — kominek, jacuzzi, ogród i cisza Puszczy Knyszyńskiej. Idealny na weekend!"
     breadcrumbName="Domek Supraśl"
     ogImage="https://www.suprasl.online/images/living-fireplace.jpg"
   >

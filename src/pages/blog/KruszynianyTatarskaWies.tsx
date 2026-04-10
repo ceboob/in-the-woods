@@ -37,7 +37,7 @@ const KruszynianyTatarskaWies = () => {
     <BlogArticleLayout
       title="Kruszyniany – tatarska wieś Podlasia"
       metaTitle="Kruszyniany – tatarska wieś i meczet"
-      metaDescription="Kruszyniany to unikalna tatarska wieś na Podlasiu. Drewniany meczet, kuchnia tatarska i wielowiekowa tradycja — odkryj jedno z najciekawszych miejsc w Polsce."
+      metaDescription="Kruszyniany — tatarska wieś na Podlasiu. Drewniany meczet, kuchnia tatarska i tradycja. Odkryj to miejsce!"
       slug="kruszyniany-tatarska-wies"
       publishDate="2026-03-14"
       readTime="9 min"

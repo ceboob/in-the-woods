@@ -5,7 +5,7 @@ const KrainaOtwartychOkiennic = () => (
   <BlogArticleLayout
     title="Kraina Otwartych Okiennic: Magiczna podróż w czasie na Podlasiu"
     metaTitle="Kraina Otwartych Okiennic | Szlak Podlasia"
-    metaDescription="Odkryj Krainę Otwartych Okiennic — szlak malowanych chałup na Podlasiu. Kolorowe okiennice, drewniana architektura i tradycje, które trwają od pokoleń."
+    metaDescription="Kraina Otwartych Okiennic — szlak malowanych chałup na Podlasiu. Kolorowe okiennice i tradycje regionu."
     slug="kraina-otwartych-okiennic"
     publishDate="2026-04-09"
     readTime="11 min"
