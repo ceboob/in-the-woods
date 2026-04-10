@@ -68,7 +68,7 @@ const KajakiSuprasl = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Kajaki Supraśl – przewodnik po spływach rzeką Supraśl</h1>
+      <h1>Kajaki Supraśl – przewodnik po spływach rzeką Supraśl</h2>
 
       <p>
         <strong>Kajaki w Supraślu</strong> to jedna z najpopularniejszych atrakcji turystycznych

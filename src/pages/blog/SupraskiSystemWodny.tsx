@@ -60,7 +60,7 @@ const SupraskiSystemWodny = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Supraski System Wodny – historia i atrakcje Supraśla</h1>
+      <h1>Supraski System Wodny – historia i atrakcje Supraśla</h2>
 
       <p>
         Supraśl to miasteczko, które kryje w sobie znacznie więcej, niż widać na pierwszy rzut oka.

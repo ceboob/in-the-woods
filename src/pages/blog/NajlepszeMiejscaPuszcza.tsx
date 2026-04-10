@@ -38,7 +38,7 @@ const NajlepszeMiejscaPuszcza = () => (
       { title: 'Kajaki Supraśl', slug: 'kajaki-suprasl' },
     ]}
   >
-    <h1>Najlepsze miejsca w Puszczy Knyszyńskiej – co warto zobaczyć</h1>
+    <h1>Najlepsze miejsca w Puszczy Knyszyńskiej – co warto zobaczyć</h2>
 
     <p>
       Puszcza Knyszyńska to jeden z największych i najlepiej zachowanych kompleksów leśnych w

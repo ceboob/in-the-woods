@@ -38,7 +38,7 @@ const CoRobicSuprasl = () => (
       { title: 'Restauracje Supraśl – gdzie zjeść', slug: 'restauracje-suprasl' },
     ]}
   >
-    <h1>Co robić w Supraślu? Kompletny przewodnik po atrakcjach</h1>
+    <h1>Co robić w Supraślu? Kompletny przewodnik po atrakcjach</h2>
 
     <p>
       Supraśl to jedno z najpiękniejszych miasteczek Podlasia — uzdrowisko w sercu Puszczy

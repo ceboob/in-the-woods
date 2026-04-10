@@ -59,7 +59,7 @@ const SzlakiPieszeRowerowe = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Szlaki Supraśl – przewodnik turystyczny</h1>
+      <h1>Szlaki Supraśl – przewodnik turystyczny</h2>
 
       <p>
         Supraśl i Puszcza Knyszyńska to raj dla miłośników aktywnego wypoczynku na łonie natury.

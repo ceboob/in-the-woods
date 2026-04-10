@@ -23,7 +23,7 @@ const PrzewodnikKulinarny = () => (
       { title: 'Uzdrowisko Supraśl – SPA i wellness', slug: 'uzdrowisko-spa-suprasl' },
     ]}
   >
-    <h1>Smaki Supraśla: Gdzie zjeść najlepsze kartacze i babkę ziemniaczaną? [MAPA KULINARNA]</h1>
+    <h1>Smaki Supraśla: Gdzie zjeść najlepsze kartacze i babkę ziemniaczaną? [MAPA KULINARNA]</h2>
 
     <p>
       Podróż nie jest kompletna bez poznania lokalnych smaków. Zabierzemy Cię w <strong>kulinarną

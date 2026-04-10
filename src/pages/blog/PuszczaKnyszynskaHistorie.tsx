@@ -67,7 +67,7 @@ const PuszczaKnyszynskaHistorie = () => (
       { title: 'Szlaki piesze i rowerowe Supraśl', slug: 'szlaki-piesze-rowerowe-suprasl' },
     ]}
   >
-    <h1>Puszcza Knyszyńska historie – 7 niezwykłych opowieści, które musisz poznać</h1>
+    <h1>Puszcza Knyszyńska historie – 7 niezwykłych opowieści, które musisz poznać</h2>
 
     <img
       src={heroImg}

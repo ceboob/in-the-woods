@@ -72,7 +72,7 @@ const RestauracjeSuprasl = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Restauracje Supraśl – gdzie warto zjeść podczas pobytu</h1>
+      <h1>Restauracje Supraśl – gdzie warto zjeść podczas pobytu</h2>
 
       <p>
         <strong>Restauracje w Supraślu</strong> to ważna część doświadczenia turystycznego tego

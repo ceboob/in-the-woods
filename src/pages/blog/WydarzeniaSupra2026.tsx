@@ -63,7 +63,7 @@ const WydarzeniaSupra2026 = () => (
     <h1>
       Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku – kalendarz + daty + gdzie
       nocować
-    </h1>
+    </h2>
 
     {/* ===== SEKCJA 1: FEATURED SNIPPET ===== */}
     <div className="bg-accent/40 border border-border rounded-xl p-6 my-8 not-prose">

@@ -23,7 +23,7 @@ const SupraslZDziecmi = () => (
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
-    <h1>Supraśl dla rodzin – co robić i co zobaczyć? Atrakcje dla dzieci w Supraślu i okolicy</h1>
+    <h1>Supraśl dla rodzin – co robić i co zobaczyć? Atrakcje dla dzieci w Supraślu i okolicy</h2>
 
     <p>
       <strong>Supraśl to świetne miejsce na rodzinny wyjazd!</strong> Sprawdź, jakie atrakcje
