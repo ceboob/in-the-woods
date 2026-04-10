@@ -22,10 +22,10 @@ const WinterSection = () => {
         <div className="absolute inset-0 bg-foreground/30" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6 max-w-2xl">
-            <h2 className="font-heading text-3xl md:text-5xl font-light text-white mb-4">
+            <h2 className="font-heading text-3xl md:text-5xl font-light text-foreground mb-4">
               Zimą jak z bajki
             </h2>
-            <p className="font-serif text-lg text-white/80 italic">
+            <p className="font-serif text-lg text-foreground/80 italic">
               Śnieg na dachu. Kominek w środku. Gorąca bania na zewnątrz.
             </p>
           </div>

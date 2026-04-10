@@ -51,7 +51,7 @@ const GuestGuideSection = () => {
             href="https://drive.google.com/file/d/1Kz6hA2My9p3MZuNTocCglt3-yow5LrE4/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg text-sm font-medium transition-colors"
+            className="inline-flex items-center gap-2 border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-lg text-sm font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" /> Pobierz PDF
           </a>

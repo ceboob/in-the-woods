@@ -125,10 +125,10 @@ const HeroSection = () => {
             <Star className="w-4 h-4 fill-primary text-primary" />
             <span>5★ opinie</span>
           </div>
-          <span className="text-white/50 text-sm">·</span>
-          <span className="text-white font-medium text-sm">Ponad 100 zadowolonych gości</span>
-          <span className="text-white/50 text-sm">·</span>
-          <span className="text-white font-medium text-sm">Rezerwacje bezpośrednie</span>
+          <span className="text-foreground/50 text-sm">·</span>
+          <span className="text-foreground font-medium text-sm">Ponad 100 zadowolonych gości</span>
+          <span className="text-foreground/50 text-sm">·</span>
+          <span className="text-foreground font-medium text-sm">Rezerwacje bezpośrednie</span>
         </div>
       </div>
 
