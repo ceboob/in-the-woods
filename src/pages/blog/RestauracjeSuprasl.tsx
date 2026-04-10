@@ -1,11 +1,11 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
-import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
+import blogRestauracje from '@/assets/blog-restauracje-suprasl.webp';
+import blogMonaster from '@/assets/blog-monaster-suprasl.webp';
 import kitchenTraditional from '@/assets/kitchen-traditional.webp';
-import blogBarJarzebinka from '@/assets/blog-bar-jarzebinka.jpg';
-import blogBohema from '@/assets/blog-bohema-suprasl.jpg';
-import blogLukaszowka from '@/assets/blog-lukaszowka-suprasl.jpg';
+import blogBarJarzebinka from '@/assets/blog-bar-jarzebinka.webp';
+import blogBohema from '@/assets/blog-bohema-suprasl.webp';
+import blogLukaszowka from '@/assets/blog-lukaszowka-suprasl.webp';
 
 const RestauracjeSuprasl = () => {
   const faqs = [

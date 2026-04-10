@@ -1,8 +1,8 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
-import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
-import blogRzeka from '@/assets/blog-rzeka-suprasl.jpg';
+import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.webp';
+import blogMonaster from '@/assets/blog-monaster-suprasl.webp';
+import blogRzeka from '@/assets/blog-rzeka-suprasl.webp';
 
 const SupraslAtrakcjeUzdrowisko = () => {
   const faqs = [

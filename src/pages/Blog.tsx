@@ -2,20 +2,20 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import { Phone, ArrowRight, Calendar, Clock } from 'lucide-react';
-import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
-import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
-import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
-import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
-import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
-import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
-import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
-import blogCoRobic from '@/assets/blog-co-robic-suprasl.jpg';
-import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.jpg';
-import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.jpg';
-import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
-import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.jpg';
+import blogKanal from '@/assets/blog-kanal-kopanica.webp';
+import blogPomnik from '@/assets/blog-pomnik-powstanie.webp';
+import blogMonaster from '@/assets/blog-monaster-suprasl.webp';
+import blogSzlak from '@/assets/blog-szlak-lesny.webp';
+import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.webp';
+import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.webp';
+import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.webp';
+import blogKajaki from '@/assets/blog-kajaki-suprasl.webp';
+import blogRestauracje from '@/assets/blog-restauracje-suprasl.webp';
+import blogCoRobic from '@/assets/blog-co-robic-suprasl.webp';
+import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.webp';
+import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.webp';
+import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.webp';
+import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.webp';
 
 const articles = [
   {

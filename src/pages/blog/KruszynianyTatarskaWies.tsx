@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
-import blogRzeka from '@/assets/blog-rzeka-suprasl.jpg';
+import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.webp';
+import blogRzeka from '@/assets/blog-rzeka-suprasl.webp';
 
 const KruszynianyTatarskaWies = () => {
   const faqs = [

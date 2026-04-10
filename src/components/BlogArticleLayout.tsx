@@ -34,7 +34,7 @@ const BlogArticleLayout = ({
   keywords,
   faqs,
   relatedArticles = [],
-  ogImage = 'https://www.suprasl.online/og-image.jpg',
+  ogImage = 'https://www.suprasl.online/og-image.webp',
   dateModified,
 }: BlogArticleLayoutProps) => {
   useEffect(() => {
