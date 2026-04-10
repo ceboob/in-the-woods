@@ -35,9 +35,22 @@ const Dokumenty = () => (
     <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
       Dokumenty i instrukcje
     </h1>
-    <p className="text-muted-foreground text-lg mb-12 max-w-2xl">
+    <p className="text-muted-foreground text-lg mb-8 max-w-2xl">
       Wszystkie niezbędne dokumenty do Twojego pobytu w In The Woods — przewodnik, umowa najmu i instrukcja obsługi domu. Kliknij, aby otworzyć w nowej karcie.
     </p>
+
+    <section className="mb-12 max-w-2xl space-y-4">
+      <h2 className="font-heading text-xl text-foreground">Jak przygotować się do pobytu?</h2>
+      <p className="text-muted-foreground leading-relaxed">
+        Przed przyjazdem do In The Woods zalecamy zapoznanie się z interaktywnym przewodnikiem po domu. Znajdziesz w nim praktyczne informacje o obsłudze kominka, ruskiej bani z balią, kuchni oraz zasadach korzystania z ogrodu i terenu wokół domu.
+      </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Umowa najmu zawiera szczegółowe warunki rezerwacji, w tym zasady wpłaty kaucji, regulamin pobytu oraz informacje o odpowiedzialności gości za wyposażenie domu. Dokument jest dostępny do wglądu przed dokonaniem rezerwacji.
+      </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Instrukcja obsługi domu to kompletny przewodnik techniczny — od ogrzewania i klimatyzacji, przez sprzęt kuchenny, po połączenie z Wi-Fi. Szczególnie przydatna w sezonie jesienno-zimowym, kiedy korzystanie z kominka wymaga znajomości kilku prostych zasad bezpieczeństwa.
+      </p>
+    </section>
 
     <div className="grid gap-6 md:grid-cols-3">
       {documents.map(({ icon: Icon, title, description, href, label }) => (
