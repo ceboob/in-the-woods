@@ -303,7 +303,7 @@ const Informator = () => {
                     className="flex items-center gap-2 bg-secondary/60 rounded-full px-4 py-2 text-sm text-muted-foreground"
                   >
                     <Bug className="w-3.5 h-3.5" /> {item}
-                  </h2>
+                   </span>
                 ))}
               </div>
               <p className="text-muted-foreground font-medium mt-2">Zalecamy:</p>
