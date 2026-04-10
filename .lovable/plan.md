@@ -1,60 +1,50 @@
 
 
-## Plan: Dodanie width i height do wszystkich obrazów
+## Assessment
 
-### Problem
-Około 90+ obrazów `<img>` w projekcie nie ma atrybutów `width` i `height`, co powoduje Layout Shift (CLS) — przeglądarka nie zna wymiarów obrazu przed załadowaniem i "przeskakuje" zawartość.
+This project is a **React + Vite SPA** deployed on **Vercel**. It has no server-side rendering — all HTML content (including H1 tags) is injected by client-side JavaScript after the initial page load. The raw HTML source sent by the server contains only the empty `<div id="root"></div>`.
 
-### Zakres zmian
+**The request asks for SSR or static generation (Next.js, Nuxt, Astro).** This is fundamentally incompatible with the current Lovable platform, which supports only React + Vite client-side applications. Migrating to Next.js, Astro, or any SSR framework would require a complete project rewrite and is not possible within Lovable.
 
-**Komponenty główne (8 plików):**
-- `HeroSection.tsx` — 1 obraz (hero, pełnoekranowy → 1920×1080)
-- `AboutSection.tsx` — 1 obraz
-- `NatureSection.tsx` — 2 obrazy
-- `WinterSection.tsx` — 3 obrazy
-- `JacuzziSection.tsx` — 1 obraz
-- `RelaxSection.tsx` — 2 obrazy
-- `SupraslSection.tsx` — obrazy w pętli (guide cards)
-- `GallerySection.tsx` — już ma width/height na thumbnailach ✅, brak na lightboxie (ale lightbox nie wpływa na CLS)
+## What CAN be done instead
 
-**Strona Dom.tsx** — ~25 obrazów w gridach (głównie 400×300)
+**Prerendering at build time** using `vite-plugin-prerender` (formerly `prerender-spa-plugin`). This renders each route during `vite build` using a headless browser, producing static `.html` files with full content — including H1 tags — baked into the raw HTML. Googlebot and Screaming Frog will see H1 in the initial response without needing JS execution.
 
-**Strona Informator.tsx** — 4 obrazy
+### How it works
 
-**Artykuły blogowe (10+ plików):**
-- `SupraslAtrakcjeUzdrowisko.tsx` — 3 obrazy
-- `SzlakPowstaniaStyczniowego.tsx` — 3 obrazy
-- `KajakiSuprasl.tsx` — 3 obrazy
-- `KruszynianyTatarskaWies.tsx` — 2 obrazy
-- `RestauracjeSuprasl.tsx` — 6 obrazów
-- Pozostałe artykuły z obrazami
+1. Install `vite-plugin-prerender`
+2. Configure it in `vite.config.ts` with the list of all 43 routes
+3. At build time, Vite renders each route and saves the full HTML output as static files
+4. Vercel serves these prerendered HTML files — H1, meta tags, and content are in the raw source
+5. React hydrates on top, preserving full interactivity
 
-### Podejście
-- Obrazy pełnoekranowe (hero, full-width banery): `width="1920" height="1080"`
-- Obrazy w gridach/kartach: `width="400" height="300"` (proporcja 4:3)
-- Obrazy blogowe (prose): `width="800" height="450"` (proporcja 16:9)
-- Obrazy w lightboxie: pomijamy (nie wpływają na CLS, pojawiają się w overlayach)
-- Rzeczywiste renderowanie nadal kontrolowane przez CSS (`object-cover`, `w-full h-full`), ale przeglądarka zna aspect ratio z góry
+### Changes required
 
-### Pliki do edycji (~20 plików)
-1. `src/components/HeroSection.tsx`
-2. `src/components/AboutSection.tsx`
-3. `src/components/NatureSection.tsx`
-4. `src/components/WinterSection.tsx`
-5. `src/components/JacuzziSection.tsx`
-6. `src/components/RelaxSection.tsx`
-7. `src/components/SupraslSection.tsx`
-8. `src/pages/Dom.tsx`
-9. `src/pages/Informator.tsx`
-10. `src/pages/blog/SupraslAtrakcjeUzdrowisko.tsx`
-11. `src/pages/blog/SzlakPowstaniaStyczniowego.tsx`
-12. `src/pages/blog/KajakiSuprasl.tsx`
-13. `src/pages/blog/KruszynianyTatarskaWies.tsx`
-14. `src/pages/blog/RestauracjeSuprasl.tsx`
-15. Pozostałe pliki blogowe z `<img>` bez wymiarów
+**1 file modified:** `vite.config.ts`
+- Add `vite-plugin-prerender` plugin
+- List all ~43 routes to prerender (home, SEO pages, blog articles)
 
-### Efekt
-- Eliminacja ostrzeżeń "Missing Image Dimensions" z Screaming Frog
-- Poprawa wskaźnika CLS (Core Web Vitals)
-- Lepsza ocena w Lighthouse i Google PageSpeed Insights
+**1 package installed:** `vite-plugin-prerender`
+
+### Route list (all 43 pages)
+```text
+/, /dom, /galeria, /blog, /informator, /dokumenty,
+/noclegi-suprasl, /domek-suprasl, /domek-z-jacuzzi-podlasie,
+/dom-w-lesie-suprasl, /weekend-suprasl, /wieczor-panienski-suprasl,
+/atrakcje-suprasl, /puszcza-knyszynska-nocleg,
+/blog/co-robic-suprasl, /blog/weekend-suprasl-plan,
+/blog/najlepsze-miejsca-puszcza-knyszynska, /blog/kajaki-suprasl,
+/blog/restauracje-suprasl, /blog/supraski-system-wodny,
+... (all remaining blog routes)
+```
+
+### Result
+- Every page will have exactly **one H1** in the raw HTML source
+- All meta tags (title, description, canonical) will also be in static HTML
+- Screaming Frog will detect H1 without JS rendering
+- No framework migration needed — stays 100% React + Vite
+
+### Risk / limitation
+- Build time increases (~1-2 min for 43 pages)
+- `vite-plugin-prerender` uses Puppeteer internally — must verify it works in Vercel's build environment (if not, we'd use a CI prebuild step or `react-snap` as alternative)
 
