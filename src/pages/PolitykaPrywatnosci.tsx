@@ -27,8 +27,8 @@ const PolitykaPrywatnosci = () => {
           <section className="space-y-3">
             <h2 className="font-heading text-xl text-foreground">1. Administrator danych</h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Administratorem Twoich danych osobowych jest Krzemienna Chata z siedzibą w Supraślu
-              (ul. Krzemienna, 16-030 Supraśl). Kontakt: tutinthewood@gmail.com, tel. +48 722 765
+              Administratorem Twoich danych osobowych jest In The Woods, Maciej Cybulko, z siedzibą
+              w Supraślu (Konne 109/1, 16-030 Supraśl). Kontakt: tutinthewood@gmail.com, tel. +48 722 765
               101.
             </p>
           </section>
