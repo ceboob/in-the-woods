@@ -20,7 +20,7 @@ import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.webp';
 const articles = [
   {
     slug: 'puszcza-knyszynska-przewodnik',
-    title: 'Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX',
+    title: 'Puszcza Knyszyńska – przewodnik, szlaki i mapy GPX',
     excerpt: 'Odkryj Puszczę Knyszyńską: najpiękniejsze szlaki piesze, rowerowe i narciarskie z mapami GPX do pobrania. Kajaki, rykowisko, Kruszyniany i Supraśl.',
     image: blogNajlepszeMiejsca,
     date: '2026-04-09',
@@ -38,7 +38,7 @@ const articles = [
   },
   {
     slug: 'cyfrowy-detoks-las',
-    title: 'Cyfrowy detoks w praktyce: Domek w środku lasu to najlepsze miejsce na reset',
+    title: 'Cyfrowy detoks w lesie – domek na reset od technologii',
     excerpt: 'Potrzebujesz resetu od ekranów? Odkryj, dlaczego domek w lesie na Podlasiu to idealne miejsce na cyfrowy detoks.',
     image: blogNajlepszeMiejsca,
     date: '2026-04-09',
@@ -83,7 +83,7 @@ const articles = [
   },
   {
     slug: 'szlaki-puszcza-knyszynska',
-    title: 'Puszcza Knyszyńska na piechotę i rowerem – najlepsze szlaki z Supraśla',
+    title: 'Szlaki piesze i rowerowe w Puszczy Knyszyńskiej',
     excerpt:
       'Szlaki piesze i rowerowe dla rodzin i zaawansowanych. Green Velo, Arboretum Kopna Góra, Wzgórza Świętojańskie. Mapy i praktyczne porady.',
     image: blogSzlak,
@@ -213,7 +213,7 @@ const articles = [
   },
   {
     slug: 'szlak-bioroznorodnosci-suprasl',
-    title: 'Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej',
+    title: 'Szlak Bioróżnorodności Supraśl – spacer w Puszczy',
     excerpt:
       'Edukacyjna ścieżka o długości 7 km przez zróżnicowane ekosystemy Puszczy Knyszyńskiej. Flora, fauna i tablice edukacyjne.',
     image: blogSzlakBio,

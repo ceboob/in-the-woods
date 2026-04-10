@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const UzdrowiSkoSPA = () => (
   <BlogArticleLayout
-    title="Uzdrowisko Supraśl: Jak skorzystać z leczenia borowiną i zregenerować siły?"
+    title="Uzdrowisko Supraśl – borowina, SPA i regeneracja"
     metaTitle="Uzdrowisko Supraśl: Borowina, SPA, Sanatoria | Przewodnik"
     metaDescription="Supraśl to jedyne uzdrowisko na Podlasiu. Borowina, grota solna, zabiegi SPA i wellness. Dowiedz się, jak zaplanować pobyt zdrowotny w Supraślu."
     slug="uzdrowisko-spa-suprasl"
@@ -23,7 +23,7 @@ const UzdrowiSkoSPA = () => (
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
-    <h2>Uzdrowisko Supraśl: Jak skorzystać z leczenia borowiną i zregenerować siły?</h2>
+    <h2>Uzdrowisko Supraśl – borowina, SPA i regeneracja</h2>
 
     <p>
       Supraśl to <strong>jedyne uzdrowisko w województwie podlaskim</strong>, słynące z borowiny i
