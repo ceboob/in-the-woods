@@ -420,45 +420,45 @@ const Blog = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-white/70 px-6 md:px-12 py-8">
+      <footer className="bg-card text-foreground/70 px-6 md:px-12 py-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <p className="font-display text-lg text-white">In The Woods</p>
+          <p className="font-display text-lg text-foreground">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <Link to="/" className="hover:text-white transition-colors">
+            <Link to="/" className="hover:text-primary transition-colors">
               Strona główna
             </Link>
-            <Link to="/blog" className="hover:text-white transition-colors">
+            <Link to="/blog" className="hover:text-primary transition-colors">
               Blog
             </Link>
-            <Link to="/noclegi-suprasl" className="hover:text-white transition-colors">
+            <Link to="/noclegi-suprasl" className="hover:text-primary transition-colors">
               Noclegi Supraśl
             </Link>
-            <Link to="/domek-suprasl" className="hover:text-white transition-colors">
+            <Link to="/domek-suprasl" className="hover:text-primary transition-colors">
               Domek Supraśl
             </Link>
-            <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-white transition-colors">
+            <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-primary transition-colors">
               Domek z jacuzzi
             </Link>
-            <Link to="/dom-w-lesie-suprasl" className="hover:text-white transition-colors">
+            <Link to="/dom-w-lesie-suprasl" className="hover:text-primary transition-colors">
               Dom w lesie
             </Link>
-            <Link to="/weekend-suprasl" className="hover:text-white transition-colors">
+            <Link to="/weekend-suprasl" className="hover:text-primary transition-colors">
               Weekend Supraśl
             </Link>
-            <Link to="/wieczor-panienski-suprasl" className="hover:text-white transition-colors">
+            <Link to="/wieczor-panienski-suprasl" className="hover:text-primary transition-colors">
               Wieczór panieński
             </Link>
-            <Link to="/atrakcje-suprasl" className="hover:text-white transition-colors">
+            <Link to="/atrakcje-suprasl" className="hover:text-primary transition-colors">
               Atrakcje Supraśla
             </Link>
-            <Link to="/puszcza-knyszynska-nocleg" className="hover:text-white transition-colors">
+            <Link to="/puszcza-knyszynska-nocleg" className="hover:text-primary transition-colors">
               Puszcza Knyszyńska
             </Link>
-            <Link to="/informator" className="hover:text-white transition-colors">
+            <Link to="/informator" className="hover:text-primary transition-colors">
               Informator gościa
             </Link>
           </div>
-          <p className="text-xs text-white/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
+          <p className="text-xs text-foreground/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
         </div>
       </footer>
     </div>
