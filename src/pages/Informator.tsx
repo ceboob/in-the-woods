@@ -147,9 +147,9 @@ const Informator = () => {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <Home className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-heading text-lg md:text-xl font-medium text-left">
+                <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Zasady pobytu
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6">
@@ -187,9 +187,9 @@ const Informator = () => {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <Flame className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-heading text-lg md:text-xl font-medium text-left">
+                <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Instrukcja korzystania z kominka
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
@@ -242,9 +242,9 @@ const Informator = () => {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <Droplets className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-heading text-lg md:text-xl font-medium text-left">
+                <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Ekologia – oczyszczalnia ścieków
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
@@ -286,9 +286,9 @@ const Informator = () => {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <TreePine className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-heading text-lg md:text-xl font-medium text-left">
+                <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Dom w lesie – natura
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
@@ -303,7 +303,7 @@ const Informator = () => {
                     className="flex items-center gap-2 bg-secondary/60 rounded-full px-4 py-2 text-sm text-muted-foreground"
                   >
                     <Bug className="w-3.5 h-3.5" /> {item}
-                  </span>
+                   </span>
                 ))}
               </div>
               <p className="text-muted-foreground font-medium mt-2">Zalecamy:</p>
@@ -334,9 +334,9 @@ const Informator = () => {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <Cross className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-heading text-lg md:text-xl font-medium text-left">
+                <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Apteczka
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6">
@@ -357,9 +357,9 @@ const Informator = () => {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <Bath className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-heading text-lg md:text-xl font-medium text-left">
+                <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Regulamin ruskiej bani i balii
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
@@ -437,9 +437,9 @@ const Informator = () => {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <ShieldCheck className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-heading text-lg md:text-xl font-medium text-left">
+                <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Bezpieczeństwo
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-3">
@@ -463,9 +463,9 @@ const Informator = () => {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <Phone className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <span className="font-heading text-lg md:text-xl font-medium text-left">
+                <h2 className="font-heading text-lg md:text-xl font-medium text-left">
                   Dane kontaktowe
-                </span>
+                </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6">
