@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
-import riverKayak from '@/assets/river-kayak.jpg';
+import blogKajaki from '@/assets/blog-kajaki-suprasl.webp';
+import riverKayak from '@/assets/river-kayak.webp';
 import forestPanorama from '@/assets/forest-panorama.webp';
 
 const KajakiSuprasl = () => {

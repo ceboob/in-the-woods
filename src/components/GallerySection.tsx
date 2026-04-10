@@ -69,7 +69,7 @@ interface GalleryImage {
 const heroImages: GalleryImage[] = [
   {
     thumb: jacuzziNight,
-    full: '/images/jacuzzi-night.jpg',
+    full: '/images/jacuzzi-night.webp',
     alt: 'Ruska bania z jacuzzi pod gwiazdami — noclegi Supraśl, In The Woods',
     className: 'col-span-2 row-span-2',
   },
@@ -85,7 +85,7 @@ const heroImages: GalleryImage[] = [
   },
   {
     thumb: sypialniaBalkon,
-    full: '/images/gallery-sypialnia-balkon.avif',
+    full: '/images/gallery-sypialnia-balkon.webp',
     alt: 'Drewniana sypialnia z wyjściem na balkon i widokiem na las — nocleg Supraśl',
   },
   {
@@ -101,7 +101,7 @@ const heroImages: GalleryImage[] = [
   },
   {
     thumb: tarasObiad,
-    full: '/images/gallery-taras-obiad.avif',
+    full: '/images/gallery-taras-obiad.webp',
     alt: 'Obiad na tarasie wśród zieleni — wypoczynek na świeżym powietrzu blisko Supraśla',
   },
   {
@@ -111,12 +111,12 @@ const heroImages: GalleryImage[] = [
   },
   {
     thumb: lazienkaPrysznic,
-    full: '/images/gallery-lazienka-prysznic.avif',
+    full: '/images/gallery-lazienka-prysznic.webp',
     alt: 'Nowoczesna łazienka z prysznicem — komfortowy pobyt w In The Woods',
   },
   {
     thumb: konneDroga,
-    full: '/images/gallery-konne-droga.avif',
+    full: '/images/gallery-konne-droga.webp',
     alt: 'Leśna droga w stronę Konnych — spokojna okolica domu w Puszczy Knyszyńskiej',
   },
   {
@@ -189,162 +189,162 @@ const moreImages: GalleryImage[] = [
   },
   {
     thumb: toaletaJasna,
-    full: '/images/gallery-toaleta-jasna.avif',
+    full: '/images/gallery-toaleta-jasna.webp',
     alt: 'Jasna łazienka z drewnianym wykończeniem — rustykalne wnętrze domu w lesie',
   },
   {
     thumb: kominekZblizenie,
-    full: '/images/gallery-kominek-zblizenie.avif',
+    full: '/images/gallery-kominek-zblizenie.webp',
     alt: 'Zbliżenie na rozpalony kominek — wieczorny klimat In The Woods',
   },
   {
     thumb: domSchody,
-    full: '/images/gallery-dom-schody.avif',
+    full: '/images/gallery-dom-schody.webp',
     alt: 'Widok na drewniany dom i schody wejściowe — autentyczny charakter obiektu',
   },
   {
     thumb: ogniskoNocne,
-    full: '/images/gallery-ognisko-nocne.avif',
+    full: '/images/gallery-ognisko-nocne.webp',
     alt: 'Nocne ognisko przy altanie — wieczór w ogrodzie In The Woods',
   },
   {
     thumb: drogaLesnaPlot,
-    full: '/images/gallery-droga-lesna-plot.avif',
+    full: '/images/gallery-droga-lesna-plot.webp',
     alt: 'Leśna droga przy ogrodzeniu — spokojna okolica domu w Puszczy Knyszyńskiej',
   },
   {
     thumb: kuchniaCegla,
-    full: '/images/gallery-kuchnia-cegla.avif',
+    full: '/images/gallery-kuchnia-cegla.webp',
     alt: 'Kuchnia z piecem kaflowym i ceglaną ścianą — rustykalne wnętrze domu',
   },
   {
     thumb: jadalniaOwoce,
-    full: '/images/gallery-jadalnia-owoce.avif',
+    full: '/images/gallery-jadalnia-owoce.webp',
     alt: 'Jadalnia z owocami i nakrytym stołem — rodzinne śniadanie w domu w lesie',
   },
   {
     thumb: jacuzziNoc,
-    full: '/images/gallery-jacuzzi-noc.avif',
+    full: '/images/gallery-jacuzzi-noc.webp',
     alt: 'Jacuzzi z niebieskim podświetleniem nocą — prywatne SPA w ogrodzie In The Woods',
   },
   {
     thumb: kuchniaZlew,
-    full: '/images/gallery-kuchnia-zlew.avif',
+    full: '/images/gallery-kuchnia-zlew.webp',
     alt: 'Kuchnia z ceglaną ścianą, niebieskimi talerzami i owocami — dom w Puszczy Knyszyńskiej',
   },
   {
     thumb: salonKominekSzerokie,
-    full: '/images/gallery-salon-kominek-szerokie.avif',
+    full: '/images/gallery-salon-kominek-szerokie.webp',
     alt: 'Panorama salonu z kominkiem i fotelami — przytulne wnętrze domu Supraśl',
   },
   {
     thumb: polkaCeramika,
-    full: '/images/gallery-polka-ceramika.avif',
+    full: '/images/gallery-polka-ceramika.webp',
     alt: 'Drewniana półka z ceramiką i szufladkami — detale wnętrza In The Woods',
   },
   {
     thumb: balkonLezak,
-    full: '/images/gallery-balkon-lezak.avif',
+    full: '/images/gallery-balkon-lezak.webp',
     alt: 'Balkon z leżakiem i widokiem na las — wypoczynek na świeżym powietrzu',
   },
   {
     thumb: lazienkaUmywalka,
-    full: '/images/gallery-lazienka-umywalka.avif',
+    full: '/images/gallery-lazienka-umywalka.webp',
     alt: 'Nowoczesna łazienka z podświetlanym lustrem — komfort w domu w lesie',
   },
   {
     thumb: prysznicCiemny,
-    full: '/images/gallery-prysznic-ciemny.avif',
+    full: '/images/gallery-prysznic-ciemny.webp',
     alt: 'Prysznic z deszczownicą w ciemnych kaflach — elegancka łazienka In The Woods',
   },
   {
     thumb: sniadanieKrata,
-    full: '/images/gallery-sniadanie-krata.avif',
+    full: '/images/gallery-sniadanie-krata.webp',
     alt: 'Śniadanie na stole w kratę z tulipanami — poranek w chacie Supraśl',
   },
   {
     thumb: informatorGosci,
-    full: '/images/gallery-informator-gosci.avif',
+    full: '/images/gallery-informator-gosci.webp',
     alt: 'Informator dla gości na drewnianym stoliku — In The Woods branding',
   },
   {
     thumb: salonSchodyKwiaty,
-    full: '/images/gallery-salon-schody-kwiaty.avif',
+    full: '/images/gallery-salon-schody-kwiaty.webp',
     alt: 'Salon z kominkiem, schodami i kwiatami — klimatyczne wnętrze domu w Puszczy',
   },
   {
     thumb: rustykalnaToaletaPolki,
-    full: '/images/gallery-rustykalna-toaleta-polki.avif',
+    full: '/images/gallery-rustykalna-toaleta-polki.webp',
     alt: 'Rustykalna toaleta z drewnianymi półkami — charakterystyczne wnętrze domu w lesie',
   },
   {
     thumb: kuchniaNiebieskieTalerze,
-    full: '/images/gallery-kuchnia-niebieskie-talerze.avif',
+    full: '/images/gallery-kuchnia-niebieskie-talerze.webp',
     alt: 'Kuchnia z niebieskimi talerzami i drewnianą zabudową — autentyczne wnętrze obiektu',
   },
   {
     thumb: wiataLesna,
-    full: '/images/gallery-wiata-lesna.avif',
+    full: '/images/gallery-wiata-lesna.webp',
     alt: 'Leśne wiaty i okolica obiektu — spokojny zakątek blisko Supraśla',
   },
   {
     thumb: tablicaSzurakowo,
-    full: '/images/gallery-tablica-szurakowo.avif',
+    full: '/images/gallery-tablica-szurakowo.webp',
     alt: 'Tablica rezerwatu Szurakowo w zimowym lesie — atrakcje w okolicy Supraśla',
   },
   {
     thumb: ramkiWnetrze,
-    full: '/images/gallery-ramki-wnetrze.avif',
+    full: '/images/gallery-ramki-wnetrze.webp',
     alt: 'Galeria ramek i drewniana komoda — detale wystroju In The Woods',
   },
   {
     thumb: salonFoteleSchody,
-    full: '/images/gallery-salon-fotele-schody.avif',
+    full: '/images/gallery-salon-fotele-schody.webp',
     alt: 'Salon z fotelami, schodami i kominkiem — przytulna strefa wypoczynku',
   },
   {
     thumb: jadalniaKacik,
-    full: '/images/gallery-jadalnia-kacik.avif',
+    full: '/images/gallery-jadalnia-kacik.webp',
     alt: 'Kącik jadalniany przy kominku i oknie — ciepłe wnętrze domu w lesie',
   },
   {
     thumb: poddaszeFotel,
-    full: '/images/gallery-poddasze-fotel.avif',
+    full: '/images/gallery-poddasze-fotel.webp',
     alt: 'Poddasze z biblioteką, fotelem i telewizorem — dodatkowa strefa relaksu',
   },
   {
     thumb: wejscieTaras,
-    full: '/images/gallery-wejscie-taras.avif',
+    full: '/images/gallery-wejscie-taras.webp',
     alt: 'Wejście na taras i schody do domu — zewnętrzny widok obiektu In The Woods',
   },
   {
     thumb: domOgrodPanorama,
-    full: '/images/gallery-dom-ogrod-panorama.avif',
+    full: '/images/gallery-dom-ogrod-panorama.webp',
     alt: 'Panorama domu i ogrodu z czerwonym dachem — pełny widok obiektu wśród drzew',
   },
   {
     thumb: piecKaflowyZblizenie,
-    full: '/images/gallery-piec-kaflowy-zblizenie.avif',
+    full: '/images/gallery-piec-kaflowy-zblizenie.webp',
     alt: 'Zbliżenie na kaflowy piec i ceglaną ścianę — rustykalne detale kuchni',
   },
   {
     thumb: sypialniaZieloneZaslony,
-    full: '/images/gallery-sypialnia-zielone-zaslony.avif',
+    full: '/images/gallery-sypialnia-zielone-zaslony.webp',
     alt: 'Sypialnia z zielonymi zasłonami i widokiem na ogród — nocleg w Puszczy Knyszyńskiej',
   },
   {
     thumb: konneZnak,
-    full: '/images/gallery-konne-znak.avif',
+    full: '/images/gallery-konne-znak.webp',
     alt: 'Znak kierunkowy na leśnej drodze w okolicy Konnych — okolica In The Woods Supraśl',
   },
   {
     thumb: jadalniaTulipanyZblizenie,
-    full: '/images/gallery-jadalnia-tulipany-zblizenie.avif',
+    full: '/images/gallery-jadalnia-tulipany-zblizenie.webp',
     alt: 'Zbliżenie na tulipany w jadalni — detale wystroju domu w lesie Supraśl',
   },
   {
     thumb: tarasSofaWejscie,
-    full: '/images/gallery-taras-sofa-wejscie.avif',
+    full: '/images/gallery-taras-sofa-wejscie.webp',
     alt: 'Sofa na tarasie przy wejściu do domu — relaks na świeżym powietrzu In The Woods',
   },
 ];

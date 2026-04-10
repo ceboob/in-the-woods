@@ -14,7 +14,7 @@ const SEOHead = ({
   title,
   description,
   canonical,
-  ogImage = 'https://www.suprasl.online/og-image.jpg',
+  ogImage = 'https://www.suprasl.online/og-image.webp',
   type = 'website',
   jsonLd,
   noindex = false,

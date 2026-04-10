@@ -1,12 +1,12 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import heroImg from '@/assets/blog-puszcza-historie-hero.jpg';
+import heroImg from '@/assets/blog-puszcza-historie-hero.webp';
 import panoramaImg from '@/assets/blog-puszcza-panorama.webp';
-import kladkiImg from '@/assets/blog-puszcza-kladki.jpg';
-import powstanieLasImg from '@/assets/blog-powstanie-styczniowe-las.jpg';
-import rekonstrukcjaImg from '@/assets/blog-rekonstrukcja-powstanie.jpg';
-import galeriaRzezbyImg from '@/assets/blog-galeria-lesna-rzezby.jpg';
-import galeriaPostacImg from '@/assets/blog-galeria-lesna-rzezba-postac.jpg';
+import kladkiImg from '@/assets/blog-puszcza-kladki.webp';
+import powstanieLasImg from '@/assets/blog-powstanie-styczniowe-las.webp';
+import rekonstrukcjaImg from '@/assets/blog-rekonstrukcja-powstanie.webp';
+import galeriaRzezbyImg from '@/assets/blog-galeria-lesna-rzezby.webp';
+import galeriaPostacImg from '@/assets/blog-galeria-lesna-rzezba-postac.webp';
 
 const PuszczaKnyszynskaHistorie = () => (
   <BlogArticleLayout

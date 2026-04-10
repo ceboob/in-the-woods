@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
-import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
+import blogSzlak from '@/assets/blog-szlak-lesny.webp';
+import blogPomnik from '@/assets/blog-pomnik-powstanie.webp';
 import winterForest from '@/assets/winter-forest.webp';
 
 const SzlakPowstaniaStyczniowego = () => {
