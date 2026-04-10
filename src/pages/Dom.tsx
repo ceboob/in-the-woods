@@ -98,10 +98,10 @@ const Dom = () => (
           </div>
 
           <div className="grid grid-cols-2 gap-3">
-            <img src={salonKominek} alt="Salon z kominkiem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" />
-            <img src={kuchniaCeramika} alt="Kuchnia z ceramiką" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" />
-            <img src={lazienkaPrysznic} alt="Łazienka z prysznicem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" />
-            <img src={domLato} alt="Dom z zewnątrz latem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" />
+            <img src={salonKominek} alt="Salon z kominkiem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="400" height="300" />
+            <img src={kuchniaCeramika} alt="Kuchnia z ceramiką" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="400" height="300" />
+            <img src={lazienkaPrysznic} alt="Łazienka z prysznicem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="400" height="300" />
+            <img src={domLato} alt="Dom z zewnątrz latem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="400" height="300" />
           </div>
         </div>
       </section>
@@ -139,8 +139,8 @@ const Dom = () => (
           </div>
 
           <div className="grid grid-cols-2 gap-3">
-            <img src={sypialniaGorna} alt="Sypialnia na piętrze" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" />
-            <img src={sypialniaBalkon} alt="Sypialnia z balkonem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" />
+            <img src={sypialniaGorna} alt="Sypialnia na piętrze" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="400" height="300" />
+            <img src={sypialniaBalkon} alt="Sypialnia z balkonem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="400" height="300" />
           </div>
         </div>
       </section>
@@ -160,7 +160,7 @@ const Dom = () => (
             widok na drzewa. Idealne miejsce na ciche czytanie, pracę zdalną lub poranną jogę.
             Dodatkowe miejsce do spania na rozkładanej kanapie.
           </p>
-          <img src={poddaszeFotel} alt="Poddasze z fotelem i biblioteką" className="rounded-lg object-cover w-full h-48" loading="lazy" />
+          <img src={poddaszeFotel} alt="Poddasze z fotelem i biblioteką" className="rounded-lg object-cover w-full h-48" loading="lazy" width="400" height="300" />
         </div>
       </section>
 
@@ -185,8 +185,8 @@ const Dom = () => (
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3">
-            <img src={tarasGrill} alt="Taras z grillem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" />
-            <img src={baniaFront} alt="Ruska bania w ogrodzie" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" />
+            <img src={tarasGrill} alt="Taras z grillem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="400" height="300" />
+            <img src={baniaFront} alt="Ruska bania w ogrodzie" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="400" height="300" />
           </div>
         </div>
       </section>
