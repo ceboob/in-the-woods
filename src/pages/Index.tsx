@@ -163,7 +163,7 @@ const Index = () => {
     <div className="min-h-screen">
       <SEOHead
         title="In The Woods — Dom w lesie z balią | Supraśl"
-        description="Zarezerwuj In The Woods — luksusowy dom na wyłączność w Puszczy Knyszyńskiej koło Supraśla. Gorąca balia, sauna, kominek i cisza natury. Idealny na romantyczny weekend!"
+        description="In The Woods — dom na wyłączność w Puszczy Knyszyńskiej. Balia, sauna, kominek i cisza natury. Rezerwuj weekend!"
         canonical="https://www.suprasl.online/"
         jsonLd={[jsonLd, faqJsonLd]}
       />

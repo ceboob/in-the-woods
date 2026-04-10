@@ -24,7 +24,7 @@ const amenities = [
 const Dom = () => (
   <SEOPageLayout
     title="Dom In The Woods — opis | Parter i ogród"
-    description="Poznaj dom In The Woods od środka — salon z kominkiem, kuchnia z jadalnią, dwie sypialnie na piętrze, poddasze z biblioteką, łazienki i ogród z banią."
+    description="Dom In The Woods — salon z kominkiem, kuchnia, sypialnie, poddasze z biblioteką i ogród z banią. Zobacz!"
     breadcrumbName="Dom"
     ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
   >
