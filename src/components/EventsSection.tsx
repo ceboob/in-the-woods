@@ -48,9 +48,7 @@ const EventsSection = () => {
               key={i}
               className="card-premium p-6 text-center space-y-4"
             >
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <event.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
-              </div>
+              <event.icon className="w-6 h-6 text-primary mx-auto" strokeWidth={1.5} />
               <h3 className="font-heading text-lg font-semibold text-foreground">{event.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{event.desc}</p>
             </div>

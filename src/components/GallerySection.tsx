@@ -109,6 +109,9 @@ const heroImages: GalleryImage[] = [
     full: '/images/gallery-kuchnia-ceramika.webp',
     alt: 'Kuchnia z ceglanym piecem i owocami — In The Woods kuchnia',
   },
+];
+
+const moreImages: GalleryImage[] = [
   {
     thumb: lazienkaPrysznic,
     full: '/images/gallery-lazienka-prysznic.webp',
@@ -129,9 +132,6 @@ const heroImages: GalleryImage[] = [
     full: '/images/gallery-ognisko-dzieci.webp',
     alt: 'Dzieci przy ognisku z widokiem na chatę — rodzinne noclegi Supraśl',
   },
-];
-
-const moreImages: GalleryImage[] = [
   {
     thumb: salonFotele,
     full: '/images/gallery-salon-fotele.webp',
