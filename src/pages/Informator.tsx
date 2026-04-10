@@ -115,24 +115,32 @@ const Informator = () => {
             alt="Informator gościa — książka powitalna In The Woods Supraśl"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
+            width="400"
+            height="220"
           />
           <img
             src={livingWide}
             alt="Salon z kominkiem i fotele — wnętrze domu na wynajem Supraśl"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
+            width="400"
+            height="220"
           />
           <img
             src={stoveDetail}
             alt="Kaflowy piec kuchenny — tradycyjne ogrzewanie chaty w Puszczy Knyszyńskiej"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
+            width="400"
+            height="220"
           />
           <img
             src={kitchenBrick}
             alt="Kuchnia z ceglanym piecem i porcelaną — dom Supraśl kuchnia"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
+            width="400"
+            height="220"
           />
         </div>
       </div>
