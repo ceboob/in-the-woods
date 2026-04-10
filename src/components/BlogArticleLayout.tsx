@@ -38,13 +38,8 @@ const BlogArticleLayout = ({
   dateModified,
 }: BlogArticleLayoutProps) => {
   useEffect(() => {
-    document.title = metaTitle;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', metaDescription);
-    const metaKw = document.querySelector('meta[name="keywords"]');
-    if (metaKw) metaKw.setAttribute('content', keywords.join(', '));
     window.scrollTo(0, 0);
-  }, [metaTitle, metaDescription, keywords]);
+  }, []);
 
   const articleSchema = {
     '@context': 'https://schema.org',
