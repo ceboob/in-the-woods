@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import {
   Flame,
@@ -59,6 +60,8 @@ const amenities = [
 
 const AmenitiesSection = () => {
   const { ref, isVisible } = useScrollAnimation();
+  const [showAll, setShowAll] = useState(false);
+  const visible = showAll ? amenities : amenities.slice(0, 6);
 
   return (
     <section id="dom" className="section-padding bg-secondary">
@@ -81,16 +84,21 @@ const AmenitiesSection = () => {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-          {amenities.map((a, i) => (
+          {visible.map((a, i) => (
             <div key={i} className="card-premium p-6 text-center group space-y-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <a.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
-              </div>
+              <a.icon className="w-6 h-6 text-primary mx-auto" strokeWidth={1.5} />
               <h3 className="font-heading text-lg font-semibold text-foreground">{a.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
             </div>
           ))}
         </div>
+        {!showAll && (
+          <div className="text-center mt-8">
+            <button onClick={() => setShowAll(true)} className="btn-outline text-sm">
+              Pokaż więcej udogodnień ({amenities.length - 6})
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

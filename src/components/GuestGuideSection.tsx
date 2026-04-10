@@ -35,9 +35,7 @@ const GuestGuideSection = () => {
               key={label}
               className="bg-card border border-border rounded-lg p-5 flex flex-col items-center gap-3"
             >
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <Icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
-              </div>
+              <Icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
               <span className="text-sm font-medium text-foreground">{label}</span>
             </div>
           ))}
