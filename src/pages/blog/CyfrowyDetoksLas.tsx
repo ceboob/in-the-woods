@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CyfrowyDetoksLas = () => (
   <BlogArticleLayout
-    title="Cyfrowy detoks w praktyce: Domek w środku lasu to najlepsze miejsce na reset"
+    title="Cyfrowy detoks w lesie – domek na reset od technologii"
     metaTitle="Cyfrowy detoks w lesie | Domek bez internetu na Podlasiu"
     metaDescription="Potrzebujesz resetu od ekranów? Odkryj, dlaczego domek w lesie na Podlasiu to idealne miejsce na cyfrowy detoks. Puszcza Knyszyńska czeka."
     slug="cyfrowy-detoks-las"

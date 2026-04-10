@@ -39,7 +39,7 @@ const SupraslAtrakcje = () => {
 
   return (
     <BlogArticleLayout
-      title="Supraśl – co zobaczyć w jednym z najpiękniejszych miasteczek Podlasia"
+      title="Supraśl – co zobaczyć? Przewodnik po atrakcjach"
       metaTitle="Supraśl atrakcje – co zobaczyć | Przewodnik"
       metaDescription="Supraśl – najpiękniejsze atrakcje, monaster, Muzeum Ikon, szlaki i slow tourism. Kompletny przewodnik po perle Podlasia."
       slug="suprasl-atrakcje-national-geographic"
@@ -56,7 +56,7 @@ const SupraslAtrakcje = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h2>Supraśl – co zobaczyć w jednym z najpiękniejszych miasteczek Podlasia</h2>
+      <h2>Supraśl – co zobaczyć? Przewodnik po atrakcjach</h2>
 
       <p>
         Supraśl to jedno z tych miejsc, które zaskakują. Małe, ciche, niepozorne na mapie — a

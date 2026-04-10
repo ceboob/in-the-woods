@@ -68,7 +68,7 @@ const faqs = [
 
 const PuszczaKnyszynskaPrzewodnik = () => (
   <BlogArticleLayout
-    title="Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX"
+    title="Puszcza Knyszyńska – przewodnik, szlaki i mapy GPX"
     metaTitle="Puszcza Knyszyńska – przewodnik i szlaki GPX"
     metaDescription="Puszcza Knyszyńska — szlaki piesze, rowerowe, mapy GPX. Kajaki, wieże widokowe, Kruszyniany. Kompletny przewodnik."
     slug="puszcza-knyszynska-przewodnik"
