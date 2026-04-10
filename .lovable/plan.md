@@ -1,50 +1,84 @@
 
 
-## Assessment
+## Deep Canopy Theme — Color Palette Migration
 
-This project is a **React + Vite SPA** deployed on **Vercel**. It has no server-side rendering — all HTML content (including H1 tags) is injected by client-side JavaScript after the initial page load. The raw HTML source sent by the server contains only the empty `<div id="root"></div>`.
+### Overview
+Replace the current light theme with a dark "Deep Canopy" forest palette across CSS variables, hardcoded colors in components, and Tailwind config. No typography changes.
 
-**The request asks for SSR or static generation (Next.js, Nuxt, Astro).** This is fundamentally incompatible with the current Lovable platform, which supports only React + Vite client-side applications. Migrating to Next.js, Astro, or any SSR framework would require a complete project rewrite and is not possible within Lovable.
+### HSL Conversions
+| Hex | HSL | Role |
+|-----|-----|------|
+| #1E2820 | 140 16% 14% | Background primary |
+| #3A4E3D | 144 15% 27% | Background secondary (cards, inputs) |
+| #EEE9DF | 38 30% 90% | Foreground text |
+| #C9AA7C | 34 41% 64% | Accent primary (CTAs, links) |
+| #7DAF90 | 144 24% 59% | Accent secondary (badges, icons) |
 
-## What CAN be done instead
+### Step 1 — Update CSS Variables in `src/index.css`
+Replace all `:root` CSS custom properties:
+- `--background` → 140 16% 14%
+- `--foreground` → 38 30% 90%
+- `--card` / `--popover` → 144 15% 27%
+- `--card-foreground` / `--popover-foreground` → 38 30% 90%
+- `--primary` → 34 41% 64% (gold)
+- `--primary-foreground` → 140 16% 14% (dark bg for contrast on gold buttons)
+- `--secondary` → 144 15% 27%
+- `--secondary-foreground` → 38 30% 90%
+- `--muted` → 140 12% 18% (slightly lighter than bg)
+- `--muted-foreground` → 38 20% 78% (parchment at ~60%)
+- `--accent` → 144 24% 59% (sage green)
+- `--accent-foreground` → 140 16% 14%
+- `--destructive` stays similar, `--destructive-foreground` → 38 30% 90%
+- `--border` / `--input` → 144 15% 27%
+- `--ring` → 34 41% 64%
+- `--teal` → 34 41% 64% (remap to gold for links)
+- `--wood` → 34 41% 64%, `--wood-light` → 34 41% 70%
+- `--forest` → 144 24% 59%, `--forest-light` → 144 24% 65%
+- `--cream` → 140 16% 14%
+- `--graphite` → 38 30% 90%
+- `--warm-white` → 140 12% 18%
+- Sidebar vars follow same mapping
 
-**Prerendering at build time** using `vite-plugin-prerender` (formerly `prerender-spa-plugin`). This renders each route during `vite build` using a headless browser, producing static `.html` files with full content — including H1 tags — baked into the raw HTML. Googlebot and Screaming Frog will see H1 in the initial response without needing JS execution.
+Update hardcoded `hsl()` values in body/heading/link styles (lines 71, 82, 93, etc.) to use the new palette.
 
-### How it works
+### Step 2 — Update `tailwind.config.ts`
+No structural changes needed — colors reference CSS vars. Confirm no hardcoded hex values exist (there are none).
 
-1. Install `vite-plugin-prerender`
-2. Configure it in `vite.config.ts` with the list of all 43 routes
-3. At build time, Vite renders each route and saves the full HTML output as static files
-4. Vercel serves these prerendered HTML files — H1, meta tags, and content are in the raw source
-5. React hydrates on top, preserving full interactivity
+### Step 3 — Fix Hardcoded Colors in Components (~18 files)
 
-### Changes required
+**HeroSection.tsx**: Change `from-[#333333]/75 via-[#333333]/50 to-[#333333]/80` overlay to `from-[#1E2820]/75 via-[#1E2820]/50 to-[#1E2820]/80`.
 
-**1 file modified:** `vite.config.ts`
-- Add `vite-plugin-prerender` plugin
-- List all ~43 routes to prerender (home, SEO pages, blog articles)
+**Components using `text-white`** (~15 files): Replace `text-white` with `text-foreground`, `text-white/90` with `text-foreground/90`, `text-white/70` with `text-foreground/70`, `text-white/40` with `text-foreground/40` across:
+- HeroSection.tsx
+- BlogArticleLayout.tsx (footer)
+- Blog.tsx (footer)
+- Navbar.tsx (if applicable)
+- Footer.tsx
+- StickyMobileCTA.tsx
+- CTASection.tsx
+- And others found via search
 
-**1 package installed:** `vite-plugin-prerender`
+**`bg-white` references**: Replace with `bg-card` or `bg-background` as contextually appropriate.
 
-### Route list (all 43 pages)
-```text
-/, /dom, /galeria, /blog, /informator, /dokumenty,
-/noclegi-suprasl, /domek-suprasl, /domek-z-jacuzzi-podlasie,
-/dom-w-lesie-suprasl, /weekend-suprasl, /wieczor-panienski-suprasl,
-/atrakcje-suprasl, /puszcza-knyszynska-nocleg,
-/blog/co-robic-suprasl, /blog/weekend-suprasl-plan,
-/blog/najlepsze-miejsca-puszcza-knyszynska, /blog/kajaki-suprasl,
-/blog/restauracje-suprasl, /blog/supraski-system-wodny,
-... (all remaining blog routes)
-```
+**StripeSecurityTooltip.tsx / PricingSection.tsx**: Keep `#635BFF` (Stripe brand — external brand color, do not change).
 
-### Result
-- Every page will have exactly **one H1** in the raw HTML source
-- All meta tags (title, description, canonical) will also be in static HTML
-- Screaming Frog will detect H1 without JS rendering
-- No framework migration needed — stays 100% React + Vite
+**chart.tsx**: Leave `#ccc`/`#fff` selectors as-is (they target recharts internal elements).
 
-### Risk / limitation
-- Build time increases (~1-2 min for 43 pages)
-- `vite-plugin-prerender` uses Puppeteer internally — must verify it works in Vercel's build environment (if not, we'd use a CI prebuild step or `react-snap` as alternative)
+### Step 4 — Update `src/index.css` Component Classes
+- `.btn-primary`: background → `hsl(var(--primary))`, text → `hsl(var(--primary-foreground))`  (already uses vars, will auto-update)
+- `.btn-outline`: border/text colors use `--foreground` (will auto-update)
+- `.card-premium`: uses `--card`/`--border` (will auto-update)
+- Box-shadow `rgba(0,0,0,...)` values: change to slightly more visible shadows for dark theme or keep as-is (subtle on dark).
+
+### Step 5 — Verify `index.html`
+Check for any hardcoded `background-color` or `theme-color` meta tags and update to `#1E2820`.
+
+### Files Changed
+1. `src/index.css` — CSS variables + hardcoded HSL values in base styles
+2. `src/components/HeroSection.tsx` — gradient overlay hex
+3. `src/components/BlogArticleLayout.tsx` — footer text-white classes
+4. `src/pages/Blog.tsx` — footer text-white classes
+5. `src/components/Footer.tsx` — text-white classes
+6. ~10-13 additional component files with `text-white` or `bg-white` references
+7. `index.html` — theme-color meta if present
 
