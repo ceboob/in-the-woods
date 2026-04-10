@@ -86,7 +86,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-6 text-center">
-        <p className="text-xs text-white/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
+        <p className="text-xs text-white/40">© 2026 In The Woods, Maciej Cybulko. Wszelkie prawa zastrzeżone.</p>
       </div>
     </div>
   </footer>
