@@ -57,39 +57,39 @@ const HeroSection = () => {
           width="1920"
           height="1080"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#333333]/75 via-[#333333]/50 to-[#333333]/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/60 to-background/90" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white leading-tight mb-4 animate-fade-up drop-shadow-lg"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-foreground leading-tight mb-4 animate-fade-up drop-shadow-lg"
           style={{ fontFamily: "'Luckiest Guy', cursive", letterSpacing: '0.02em' }}
         >
           In The Woods — Dom w Puszczy Knyszyńskiej z balią i sauną
         </h1>
-        <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-white/90 mb-3 animate-fade-in">
+        <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-foreground/90 mb-3 animate-fade-in">
           Dom w lesie z jacuzzi blisko Supraśla
         </p>
 
         <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
-          <p className="font-serif text-lg md:text-xl text-white italic">
+          <p className="font-serif text-lg md:text-xl text-foreground italic">
             Prywatny dom w lesie.
           </p>
-          <p className="font-serif text-lg md:text-xl text-white italic">
+          <p className="font-serif text-lg md:text-xl text-foreground italic">
             Kominek. Ruska bania. Cisza natury.
           </p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
-          <div className="flex items-center gap-2 text-white/90">
+          <div className="flex items-center gap-2 text-foreground/90">
             <Users className="w-4 h-4" />
             <span className="text-xs md:text-sm tracking-wide font-medium">Dom na wyłączność</span>
           </div>
-          <div className="flex items-center gap-2 text-white/90">
+          <div className="flex items-center gap-2 text-foreground/90">
             <TreePine className="w-4 h-4" />
             <span className="text-xs md:text-sm tracking-wide font-medium">10 min od Supraśla</span>
           </div>
-          <div className="flex items-center gap-2 text-white/90">
+          <div className="flex items-center gap-2 text-foreground/90">
             <Sparkles className="w-4 h-4" />
             <span className="text-xs md:text-sm tracking-wide font-medium">Jacuzzi pod gwiazdami</span>
           </div>
@@ -104,7 +104,7 @@ const HeroSection = () => {
           </button>
           <a
             href="tel:+48722765101"
-            className="btn-outline border-white text-white hover:bg-primary hover:text-primary-foreground hover:border-primary inline-flex items-center justify-center gap-2"
+            className="btn-outline border-foreground text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary inline-flex items-center justify-center gap-2"
           >
             <Phone className="w-4 h-4" /> Zadzwoń
           </a>
@@ -125,15 +125,15 @@ const HeroSection = () => {
             <Star className="w-4 h-4 fill-primary text-primary" />
             <span>5★ opinie</span>
           </div>
-          <span className="text-white/50 text-sm">·</span>
-          <span className="text-white font-medium text-sm">Ponad 100 zadowolonych gości</span>
-          <span className="text-white/50 text-sm">·</span>
-          <span className="text-white font-medium text-sm">Rezerwacje bezpośrednie</span>
+          <span className="text-foreground/50 text-sm">·</span>
+          <span className="text-foreground font-medium text-sm">Ponad 100 zadowolonych gości</span>
+          <span className="text-foreground/50 text-sm">·</span>
+          <span className="text-foreground font-medium text-sm">Rezerwacje bezpośrednie</span>
         </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-px h-12 bg-white/40" />
+        <div className="w-px h-12 bg-foreground/40" />
       </div>
     </section>
   );

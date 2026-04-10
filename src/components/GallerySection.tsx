@@ -436,7 +436,7 @@ const GallerySection = () => {
         >
           <button
             onClick={closeLightbox}
-            className="absolute top-4 right-4 text-white/80 hover:text-white z-10 p-2"
+            className="absolute top-4 right-4 text-foreground/80 hover:text-foreground z-10 p-2"
             aria-label="Zamknij galerię"
           >
             <X className="w-7 h-7" />
@@ -446,7 +446,7 @@ const GallerySection = () => {
               e.stopPropagation();
               navigate(-1);
             }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white z-10 p-2"
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-foreground/80 hover:text-foreground z-10 p-2"
             aria-label="Poprzednie zdjęcie"
           >
             <ChevronLeft className="w-8 h-8" />
@@ -456,7 +456,7 @@ const GallerySection = () => {
               e.stopPropagation();
               navigate(1);
             }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white z-10 p-2"
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-foreground/80 hover:text-foreground z-10 p-2"
             aria-label="Następne zdjęcie"
           >
             <ChevronRight className="w-8 h-8" />
@@ -469,9 +469,9 @@ const GallerySection = () => {
               className="max-w-full max-h-[80vh] object-contain mx-auto"
               decoding="async"
             />
-            <p className="text-white/70 text-sm text-center mt-4 font-sans">
+            <p className="text-foreground/70 text-sm text-center mt-4 font-sans">
               {allImages[lightboxIndex].alt}
-              <span className="ml-3 text-white/40">
+              <span className="ml-3 text-foreground/40">
                 {lightboxIndex + 1} / {allImages.length}
               </span>
             </p>

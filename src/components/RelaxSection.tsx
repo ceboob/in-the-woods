@@ -59,7 +59,7 @@ const RelaxSection = () => {
               height="450"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="font-serif text-lg text-white italic">Ostoja spokoju — prywatna ruska bania</p>
+              <p className="font-serif text-lg text-foreground italic">Ostoja spokoju — prywatna ruska bania</p>
             </div>
           </div>
           <div className="overflow-hidden relative group">
@@ -72,7 +72,7 @@ const RelaxSection = () => {
               height="450"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="font-serif text-lg text-white italic">Luksus w sercu lasu</p>
+              <p className="font-serif text-lg text-foreground italic">Luksus w sercu lasu</p>
             </div>
           </div>
         </div>
