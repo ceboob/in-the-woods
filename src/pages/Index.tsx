@@ -5,9 +5,10 @@ import HeroSection from '@/components/HeroSection';
 import HeroWelcome from '@/components/HeroWelcome';
 import BadgesBar from '@/components/BadgesBar';
 import TrustSection from '@/components/TrustSection';
+import AmenitiesSection from '@/components/AmenitiesSection';
+import GuideSection from '@/components/GuideSection';
 
 // Lazy-loaded sections below the fold
-const AmenitiesSection = lazy(() => import('@/components/AmenitiesSection'));
 const JacuzziSection = lazy(() => import('@/components/JacuzziSection'));
 const RelaxSection = lazy(() => import('@/components/RelaxSection'));
 const ForWhoSection = lazy(() => import('@/components/ForWhoSection'));
@@ -21,7 +22,6 @@ const LocationSection = lazy(() => import('@/components/LocationSection'));
 const EventsSection = lazy(() => import('@/components/EventsSection'));
 const FAQSection = lazy(() => import('@/components/FAQSection'));
 const GuestGuideSection = lazy(() => import('@/components/GuestGuideSection'));
-const GuideSection = lazy(() => import('@/components/GuideSection'));
 const SEOTextSection = lazy(() => import('@/components/SEOTextSection'));
 const CTASection = lazy(() => import('@/components/CTASection'));
 const ContactSection = lazy(() => import('@/components/ContactSection'));
@@ -30,7 +30,7 @@ const ExitIntentPopup = lazy(() => import('@/components/ExitIntentPopup'));
 const StickyMobileCTA = lazy(() => import('@/components/StickyMobileCTA'));
 
 const SectionFallback = () => (
-  <div className="py-20 flex items-center justify-center">
+  <div className="min-h-[400px] py-20 flex items-center justify-center">
     <div className="w-6 h-6 border-2 border-primary/30 border-t-teal rounded-full animate-spin" />
   </div>
 );
