@@ -5,22 +5,22 @@ const benefits = [
   {
     icon: TreePine,
     title: 'Zanurz się w naturze',
-    text: 'Puszcza Knyszyńska tuż za progiem — szepty puszczy, śpiew ptaków i\u00a0poranne mgły. Supraśl z\u00a0jego atrakcjami zaledwie 10\u00a0minut drogi.',
+    text: 'Puszcza Knyszyńska tuż za progiem — szepty puszczy, śpiew ptaków i\u00a0poranne mgły. Supraśl z\u00a0jego atrakcjami zaledwie 10\u00a0minut drogi. To domek w\u00a0lesie na Podlasiu, jakiego szukasz.',
   },
   {
     icon: Home,
-    title: 'Luksus w sercu lasu',
-    text: 'Rustykalny urok, drewniane belki, prawdziwy kominek i\u00a0wszystko, czego potrzebujecie: pościel, wyposażona kuchnia, ekspres do kawy, książki.',
+    title: 'Dom z bali — komfort w sercu lasu',
+    text: 'Drewniane belki, klimatyczny kominek, płyta kaflowa i\u00a0eleganckie wnętrza. Ogrodzony teren z\u00a0altaną i\u00a0miejscem na ognisko. Dom z\u00a0bali na wyłączność — Twoja prywatna przestrzeń.',
   },
   {
     icon: Volume2,
-    title: 'Ostoja spokoju — tylko dla Was',
-    text: 'Cały dom i\u00a0ogród na wyłączność. Żadnych obcych — to Wasze miejsce na odpoczynek, gotowanie i\u00a0wspólne chwile w\u00a0absolutnej prywatności.',
+    title: 'Dom na wyłączność — tylko dla Was',
+    text: 'Cały dom i\u00a0ogród na wyłączność. Żadnych obcych gości — to Wasze miejsce na oderwanie od cywilizacji, gotowanie i\u00a0wspólne chwile w\u00a0absolutnej prywatności.',
   },
   {
     icon: Heart,
     title: 'Cisza, która leczy',
-    text: 'Żadnych hałaśliwych sąsiadów — tylko las, świeże powietrze i\u00a0czas, który wreszcie płynie wolniej. Poczuj, jak oddech sam zwalnia.',
+    text: 'Domek na odludziu — bez hałaśliwych sąsiadów, tylko las i\u00a0świeże powietrze. Poczuj, jak oddech sam zwalnia. Psy za darmo — Twój czworonóg pokocha to miejsce.',
   },
 ];
 
@@ -37,7 +37,7 @@ const HeroWelcome = () => {
           Od gospodarza
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl text-foreground mb-6 text-center" style={{ fontFamily: "'Luckiest Guy', cursive" }}>
-          Unikalne noclegi, które pokochasz
+          Leśny domek do wynajęcia — dom z bali na wyłączność
         </h2>
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
@@ -47,7 +47,6 @@ const HeroWelcome = () => {
           </p>
         </div>
 
-        {/* Benefits grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
           {benefits.map((b, i) => (
             <div
@@ -70,7 +69,6 @@ const HeroWelcome = () => {
           ))}
         </div>
 
-        {/* Host note */}
         <div
           className={`mt-10 text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
           style={{ transitionDelay: isVisible ? '700ms' : '0ms' }}

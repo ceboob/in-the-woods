@@ -10,51 +10,66 @@ import {
   Monitor,
   Wind,
   Baby,
+  CookingPot,
+  FlameKindling,
 } from 'lucide-react';
 
 const amenities = [
   {
     icon: Flame,
-    title: 'Salon z kominkiem',
-    desc: 'Przestronny salon z prawdziwym kominkiem — serce domu',
+    title: 'Klimatyczny kominek',
+    desc: 'Prawdziwy ogień trzaska wieczorem w salonie. Rozpal kominek, nalej wino i poczuj ciepło drewna — domek z kominkiem w lesie, o jakim marzysz.',
   },
   {
     icon: UtensilsCrossed,
-    title: 'Kuchnia i jadalnia',
-    desc: 'W pełni wyposażona kuchnia z jadalnią dla wspólnych posiłków',
+    title: 'Kuchnia z płytą kaflową',
+    desc: 'W pełni wyposażona kuchnia z elegancką płytą kaflową, ekspresem do kawy i jadalnią. Gotuj wspólne posiłki z widokiem na ogród.',
   },
   {
     icon: Bed,
     title: 'Komfortowe sypialnie',
-    desc: 'Dwie sypialnie na piętrze z dużymi łóżkami i widokiem',
+    desc: 'Dwie sypialnie na piętrze z dużymi łóżkami, drewnianymi belkami i widokiem na las. Budzisz się do śpiewu ptaków, nie budzika.',
   },
   {
     icon: Bath,
     title: 'Łazienka i toaleta',
-    desc: 'Łazienka oraz dodatkowa toaleta dla wygody gości',
+    desc: 'Nowoczesna łazienka oraz dodatkowa toaleta na parterze. Ciepła woda, wygoda i prywatność dla każdego gościa.',
   },
   {
     icon: TreePine,
-    title: 'Taras i ogród',
-    desc: 'Ogrodzony teren z tarasem, altaną i widokiem na zieleń',
+    title: 'Ogrodzony teren z altaną',
+    desc: 'Prywatny ogród z tarasem, altaną i miejscem na ognisko. Ogrodzony teren daje bezpieczeństwo dzieciom i psom — Twoja przestrzeń w lesie.',
   },
   {
     icon: Wifi,
-    title: 'Wi-Fi i biurko',
-    desc: 'Szybki internet i miejsce do pracy — idealne na workation',
+    title: 'Wi-Fi i biurko do pracy',
+    desc: 'Szybki internet i wygodne miejsce do pracy zdalnej przy oknie z widokiem na las. Praca zdalna w lesie — wynajem domku idealnego na workation.',
   },
-  { icon: Wind, title: 'Klimatyzacja', desc: 'Komfort termiczny niezależnie od pory roku' },
+  {
+    icon: Wind,
+    title: 'Klimatyzacja',
+    desc: 'Komfort termiczny niezależnie od pory roku. Latem chłód, zimą ciepło — dom gotowy na każdą pogodę.',
+  },
   {
     icon: Monitor,
-    title: 'Telewizory',
-    desc: 'Smart TV w pokojach do wieczornych seansów filmowych',
+    title: 'Smart TV w pokojach',
+    desc: 'Telewizory w sypialniach i salonie do wieczornych seansów filmowych. Albo wyłącz ekrany i posłuchaj ciszy lasu.',
   },
   {
     icon: Dog,
-    title: 'Zwierzęta mile widziane',
-    desc: 'Twój pies też zasługuje na las i świeże powietrze',
+    title: 'Psy za darmo',
+    desc: 'Twój pies jest pełnoprawnym gościem — bez dopłat. Ogrodzony teren w lesie i kilometry leśnych ścieżek to raj dla czworonogów.',
   },
-  { icon: Baby, title: 'Plac zabaw', desc: 'Bezpieczna przestrzeń zabawy dla najmłodszych gości' },
+  {
+    icon: Baby,
+    title: 'Plac zabaw dla dzieci',
+    desc: 'Bezpieczna przestrzeń zabawy na ogrodzonym terenie. Dzieci biegają po ogrodzie, rodzice odpoczywają na tarasie.',
+  },
+  {
+    icon: FlameKindling,
+    title: 'Kominkiem ogrodowy i ognisko',
+    desc: 'Wieczorne ognisko w altanie lub kominek ogrodowy pod gwiazdami. Grill, kiełbaski i rozmowy, które trwają do rana.',
+  },
 ];
 
 const AmenitiesSection = () => {
@@ -71,16 +86,14 @@ const AmenitiesSection = () => {
             Dom i udogodnienia
           </p>
           <h2 className="section-title">
-            Wszystko, czego potrzebujesz.
-            <br />
-            Nic, czego nie chcesz.
+            Domek z sauną, jacuzzi i kominkiem w sercu lasu
           </h2>
           <p className="section-subtitle mx-auto">
-            Komfortowo dla par, rodzin i kameralnych grup. Dom na wyłączność z pełnym wyposażeniem i
-            prywatnym ogrodem.
+            Komfortowy dom z bali na wyłączność — do 8 osób. Ogrodzony teren, psy za darmo,
+            pełne wyposażenie i prywatny ogród w Puszczy Knyszyńskiej.
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {amenities.map((a, i) => (
             <div key={i} className="card-premium p-6 text-center group space-y-4">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
