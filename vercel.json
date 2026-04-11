@@ -13,6 +13,24 @@
     }
   ],
   "rewrites": [
+    { "source": "/dom", "destination": "/index.html" },
+    { "source": "/blog", "destination": "/index.html" },
+    { "source": "/blog/:path*", "destination": "/index.html" },
+    { "source": "/galeria", "destination": "/index.html" },
+    { "source": "/noclegi-suprasl", "destination": "/index.html" },
+    { "source": "/dom-w-lesie-suprasl", "destination": "/index.html" },
+    { "source": "/weekend-suprasl", "destination": "/index.html" },
+    { "source": "/atrakcje-suprasl", "destination": "/index.html" },
+    { "source": "/puszcza-knyszynska-nocleg", "destination": "/index.html" },
+    { "source": "/informator", "destination": "/index.html" },
+    { "source": "/domek-suprasl", "destination": "/index.html" },
+    { "source": "/domek-z-jacuzzi-podlasie", "destination": "/index.html" },
+    { "source": "/wieczor-panienski-suprasl", "destination": "/index.html" },
+    { "source": "/polityka-prywatnosci", "destination": "/index.html" },
+    { "source": "/dokumenty", "destination": "/index.html" },
+    { "source": "/platnosc-sukces", "destination": "/index.html" },
+    { "source": "/admin", "destination": "/index.html" },
+    { "source": "/admin/login", "destination": "/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
