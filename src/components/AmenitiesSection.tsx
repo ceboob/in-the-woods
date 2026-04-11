@@ -67,7 +67,7 @@ const amenities = [
   },
   {
     icon: FlameKindling,
-    title: 'Kominkiem ogrodowy i ognisko',
+    title: 'Kominek ogrodowy i ognisko',
     desc: 'Wieczorne ognisko w altanie lub kominek ogrodowy pod gwiazdami. Grill, kiełbaski i rozmowy, które trwają do rana.',
   },
 ];
