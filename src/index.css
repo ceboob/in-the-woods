@@ -129,6 +129,11 @@
     margin-bottom: 0;
   }
 
+  strong {
+    color: hsl(38 30% 90%);
+    font-weight: 700;
+  }
+
   a {
     color: hsl(var(--teal));
     transition: all 0.3s ease;
