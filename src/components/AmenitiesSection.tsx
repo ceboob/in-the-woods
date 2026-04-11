@@ -66,7 +66,7 @@ const amenities = [
     desc: 'Bezpieczna przestrzeń zabawy na ogrodzonym terenie. Dzieci biegają po ogrodzie, rodzice odpoczywają na tarasie.',
   },
   {
-    icon: Campfire,
+    icon: FlameKindling,
     title: 'Kominkiem ogrodowy i ognisko',
     desc: 'Wieczorne ognisko w altanie lub kominek ogrodowy pod gwiazdami. Grill, kiełbaski i rozmowy, które trwają do rana.',
   },
