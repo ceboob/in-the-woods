@@ -11,7 +11,7 @@ import {
   Wind,
   Baby,
   CookingPot,
-  Campfire,
+  FlameKindling,
 } from 'lucide-react';
 
 const amenities = [
