@@ -4,21 +4,25 @@ import { Church, Building2, Waves, TreePine, Landmark, MapPin } from 'lucide-rea
 
 const AtrakcjeSuprasl = () => (
   <SEOPageLayout
-    title="Atrakcje Supraśla | Co zobaczyć i szlaki"
-    description="Zaplanuj swój pobyt: TOP atrakcje Supraśla — Monaster, Muzeum Ikon, Pałac Buchholtzów, szlaki Puszczy Knyszyńskiej. Kompletny przewodnik turystyczny."
+    title="Atrakcje Supraśla | Co zobaczyć i szlaki w Puszczy"
+    description="TOP atrakcje Supraśla — Monaster, Muzeum Ikon, szlaki Puszczy Knyszyńskiej, spływy kajakowe. Zaplanuj pobyt w domku w lesie i odkryj Podlasie!"
     breadcrumbName="Atrakcje Supraśla"
     ogImage="https://www.suprasl.online/images/terrace-porch.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-10">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Co zobaczyć w Supraślu? TOP 10 Atrakcji i Zabytków
+        Atrakcje Supraśla — co zobaczyć podczas pobytu w domku w lesie
       </h1>
 
       <p className="text-muted-foreground leading-relaxed text-lg">
         Supraśl to miejsce, gdzie <strong>historia spotyka się z naturą</strong>, a duchowość
-        przenika codzienne życie. To urokliwe uzdrowisko w sercu Puszczy Knyszyńskiej przyciąga
-        turystów z całej Polski. Poznaj jego największe skarby, które zachwycają odwiedzających
-        od wieków.
+        przenika codzienne życie. Urokliwe uzdrowisko w sercu Puszczy Knyszyńskiej przyciąga
+        turystów z całej Polski. Poznaj największe skarby okolicy — idealne na{' '}
+        <strong>odpoczynek w lesie weekend</strong> w{' '}
+        <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/80">
+          domku w lesie na wyłączność
+        </Link>
+        .
       </p>
 
       {/* Monaster */}
@@ -33,17 +37,13 @@ const AtrakcjeSuprasl = () => (
         </div>
         <p className="text-muted-foreground leading-relaxed">
           Poczuj <strong>duchowe serce Supraśla</strong>, zwiedzając monumentalny, XVI-wieczny
-          kompleks klasztorny. Prawosławny Monaster Zwiastowania Najświętszej Maryi Panny to
-          najważniejszy zabytek miasta i jedno z najstarszych miejsc kultu prawosławnego w Polsce.
+          kompleks klasztorny. Prawosławny Monaster to najważniejszy zabytek miasta — zaledwie
+          10 minut od naszego <strong>domku w lesie Supraśl</strong>.
         </p>
         <p className="text-muted-foreground leading-relaxed">
-          Zachwyć się obronną architekturą, a następnie zanurz się w świecie sztuki sakralnej w
-          jednym z <strong>najnowocześniejszych muzeów ikon</strong> w Polsce. Kolekcja obejmuje
-          setki bezcennych ikon, fresków i rękopisów z XVI–XIX wieku.
-        </p>
-        <p className="text-muted-foreground leading-relaxed">
-          <strong>Praktyczne informacje:</strong> Muzeum otwarte codziennie, wizyta zajmuje 1–2
-          godziny. Warto skorzystać z audioprzewodnika. Wstęp: ok. 15 zł (dorośli), 8 zł (ulgowy).
+          Muzeum Ikon — jedna z najcenniejszych kolekcji w Europie Środkowej. Wizyta zajmuje 1–2
+          godziny. Wstęp: ok. 15 zł (dorośli). Idealny punkt programu na{' '}
+          <strong>weekend w Supraślu</strong>.
         </p>
       </section>
 
@@ -58,16 +58,12 @@ const AtrakcjeSuprasl = () => (
           </h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          Przenieś się w czasie, spacerując <strong>ulicą 3 Maja</strong> i podziwiając XIX-wieczne
-          Domy Tkaczy — świadectwo przemysłowej przeszłości Supraśla. Odkryj historię fabrykanckich
-          rodów, zwieńczoną wizytą w secesyjnej perle architektury — <strong>Pałacu
-          Buchholtzów</strong>, w którym dziś mieści się Liceum Plastyczne.
-        </p>
-        <p className="text-muted-foreground leading-relaxed">
-          Po zwiedzaniu warto wybrać się na obiad do jednej z{' '}
+          Przenieś się w czasie ulicą 3 Maja — XIX-wieczne Domy Tkaczy i secesyjny Pałac
+          Buchholtzów. Po zwiedzaniu warto zjeść w jednej z{' '}
           <Link to="/blog/przewodnik-kulinarny-suprasl" className="text-primary underline hover:text-primary/80">
-            pobliskich restauracji z kuchnią podlaską
-          </Link>.
+            restauracji z kuchnią podlaską
+          </Link>
+          . <strong>Slow travel Polska</strong> — odkrywanie historii w swoim tempie.
         </p>
       </section>
 
@@ -82,9 +78,9 @@ const AtrakcjeSuprasl = () => (
           </h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          Szukasz chwili relaksu? <strong>Malownicze bulwary</strong> wzdłuż rzeki Supraśl to idealne
-          miejsce na niespieszny spacer, piknik czy podziwianie zachodów słońca nad klasztorem.
-          Latem skorzystaj z uroków <strong>plaży miejskiej</strong> i kąpieliska.
+          Malownicze bulwary wzdłuż rzeki Supraśl — idealne na niespieszny spacer i podziwianie
+          zachodów słońca. Latem plaża miejska i kąpielisko. <strong>Spokojny wypoczynek w naturze</strong>{' '}
+          — chill w lesie i nad rzeką.
         </p>
       </section>
 
@@ -95,23 +91,25 @@ const AtrakcjeSuprasl = () => (
             <TreePine className="w-5 h-5 text-primary" />
           </div>
           <h2 className="section-title !text-2xl md:!text-3xl !mb-0">
-            Puszcza Knyszyńska – szlaki i aktywności
+            Puszcza Knyszyńska — domek w lesie przy szlakach
           </h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
           <Link to="/puszcza-knyszynska-nocleg" className="text-primary underline hover:text-primary/80">
             Puszcza Knyszyńska
           </Link>{' '}
-          to jeden z największych kompleksów leśnych w Polsce — 132 tysiące hektarów nieskażonej
-          przyrody. Szlaki piesze i rowerowe prowadzą przez stare drzewostany, wzdłuż rzek i
-          przez rezerwaty przyrody.
+          — 132 tysiące hektarów nieskażonej przyrody. Szlaki piesze i rowerowe prowadzą przez stare
+          drzewostany, wzdłuż rzek i przez rezerwaty. Z naszego <strong>domku w lesie</strong>{' '}
+          szlaki zaczynają się za progiem. <strong>Domek w lesie Supraśl</strong> — idealna baza
+          wypadowa na <strong>odpoczynek w lesie weekend</strong>.
         </p>
         <p className="text-muted-foreground leading-relaxed">
-          Spływy kajakowe, nordic walking, grzybobranie jesienią, narciarstwo biegowe zimą — w
-          Puszczy każda pora roku ma swój urok. Szczegółowy przewodnik po trasach znajdziesz w{' '}
+          Spływy kajakowe, grzybobranie jesienią, narty biegowe zimą — szczegóły w{' '}
           <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary underline hover:text-primary/80">
-            artykule o szlakach Puszczy Knyszyńskiej
-          </Link>.
+            przewodniku po szlakach Puszczy Knyszyńskiej
+          </Link>
+          . Po aktywnym dniu — powrót do <strong>domku z kominkiem</strong> i gorącej{' '}
+          <strong>bali w lesie</strong>.
         </p>
       </section>
 
@@ -126,9 +124,9 @@ const AtrakcjeSuprasl = () => (
           </h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          Unikatowy <strong>ogród botaniczny w sercu puszczy</strong>. Na 10 hektarach rosną drzewa
-          i krzewy z całego świata. Idealne miejsce na spokojne popołudnie z rodziną, 20 minut od
-          Supraśla.
+          Unikatowy ogród botaniczny w sercu puszczy. 10 hektarów drzew i krzewów z całego świata —
+          idealne na spokojne popołudnie z rodziną, 20 minut od naszego{' '}
+          <strong>leśnego domku do wynajęcia</strong>.
         </p>
       </section>
 
@@ -146,21 +144,22 @@ const AtrakcjeSuprasl = () => (
           <Link to="/blog/kruszyniany-tatarska-wies" className="text-primary underline hover:text-primary/80">
             Kruszyniany
           </Link>{' '}
-          to jedna z najstarszych osad tatarskich w Polsce. Zabytkowy drewniany meczet, mizar i
-          autentyczna kuchnia tatarska — pierekaczewnik to obowiązkowy punkt programu.
+          — zabytkowy drewniany meczet, mizar i kuchnia tatarska. Pierekaczewnik to obowiązkowy
+          punkt programu podczas pobytu w <strong>domku na odludziu podlaskie</strong>.
         </p>
       </section>
 
       {/* Białystok */}
       <section className="space-y-4">
-        <h2 className="section-title !text-2xl md:!text-3xl">Białystok — 25 minut stąd</h2>
+        <h2 className="section-title !text-2xl md:!text-3xl">Białystok — 25 minut od domku w lesie</h2>
         <p className="text-muted-foreground leading-relaxed">
-          Białystok, stolica Podlasia, to nowoczesne miasto z bogatą ofertą kulturalną. Pałac
-          Branickich (polski Wersal), teatr dramatyczny, galerie sztuki i doskonałe restauracje.
+          Białystok, stolica Podlasia — Pałac Branickich, teatr dramatyczny, galerie sztuki i
+          doskonałe restauracje. Blisko naszego <strong>domku w lesie podlaskie</strong>, ale daleko
+          od zgiełku — idealna proporcja.
         </p>
       </section>
 
-      {/* Planujesz zwiedzanie? */}
+      {/* Planujesz */}
       <section className="card-premium bg-secondary p-8 space-y-4 mt-12">
         <h3 className="font-heading text-xl font-semibold text-foreground text-center">
           Planujesz zwiedzanie? Sprawdź też:
@@ -176,14 +175,12 @@ const AtrakcjeSuprasl = () => (
       {/* CTA */}
       <div className="card-premium bg-secondary p-8 text-center space-y-4 mt-8">
         <h3 className="font-heading text-2xl font-semibold text-foreground">
-          In The Woods — Twoja baza wypadowa
+          In The Woods — Twoja baza wypadowa na odkrywanie Podlasia
         </h3>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Prywatny{' '}
-          <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/80">
-            dom w lesie
-          </Link>{' '}
-          z kominkiem, ruską banią i ogrodem — 10 minut od Supraśla.
+          Prywatny <strong>dom w lesie na wyłączność</strong>{' '}
+          z kominkiem, ruską banią i ogrodzonym ogrodem — 10 minut od Supraśla.{' '}
+          <strong>Leśny domek do wynajęcia</strong> w Puszczy Knyszyńskiej.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">
