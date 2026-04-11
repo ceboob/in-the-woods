@@ -3,42 +3,43 @@ import { Link } from 'react-router-dom';
 
 const WieczorPanienskiSuprasl = () => (
   <SEOPageLayout
-    title="Wieczór panieński Supraśl | Impreza w lesie"
-    description="Wieczór panieński w Supraślu — prywatny dom w lesie z jacuzzi, kominkiem i ogrodem. Organizuj niezapomniane imprezy okolicznościowe w Puszczy Knyszyńskiej."
+    title="Wieczór panieński Supraśl | Domek w lesie na wyłączność"
+    description="Wieczór panieński w domku w lesie na wyłączność — jacuzzi, kominek, ognisko i ogrodzony teren w Puszczy Knyszyńskiej. Niezapomniane imprezy w naturze."
     breadcrumbName="Wieczór panieński Supraśl"
     ogImage="https://www.suprasl.online/images/kitchen-dining.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Wieczór panieński Supraśl – niezapomniana impreza w lesie
+        Wieczór panieński w domku w lesie na wyłączność — Supraśl, Puszcza Knyszyńska
       </h1>
 
       <p className="text-muted-foreground leading-relaxed text-lg">
         Szukasz wyjątkowego miejsca na <strong>wieczór panieński w Supraślu</strong>? Zapomnij o
-        zatłoczonych klubach i hotelowych salach. In The Woods to prywatny dom w Puszczy
-        Knyszyńskiej z jacuzzi, kominkiem i ogrodem — idealne miejsce na niezapomniane świętowanie w
-        gronie najbliższych przyjaciółek.
+        zatłoczonych klubach i hotelowych salach. In The Woods to <strong>dom na wyłączność</strong>{' '}
+        w Puszczy Knyszyńskiej z <strong>domkiem z jacuzzi w lesie</strong>, klimatycznym kominkiem
+        i ogrodzonym ogrodem — idealne miejsce na niezapomniane świętowanie w gronie najbliższych.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego wieczór panieński w lesie</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego wieczór panieński w domku w lesie</h2>
       <p className="text-muted-foreground leading-relaxed">
         Trend na <strong>wieczory panieńskie w naturze</strong> rośnie z roku na rok. Coraz więcej
-        pań przyszłych wybiera intymną atmosferę leśnego domu zamiast głośnych imprez w mieście. I
-        trudno się dziwić — połączenie prywatności, natury i komfortu tworzy doświadczenie, które
-        pamięta się na lata.
+        pań wybiera intymną atmosferę <strong>leśnego domku do wynajęcia</strong> zamiast głośnych
+        imprez w mieście. Ucieczka od zgiełku miasta — połączenie prywatności, natury i komfortu
+        tworzy doświadczenie, które pamięta się na lata.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        In The Woods oferuje to, czego nie znajdziesz w żadnym innym miejscu w okolicach Supraśla:
-        cały dom na wyłączność, gorącą balię pod gwiazdami, kominek w salonie, ognisko w ogrodzie i
-        absolutną prywatność otoczoną Puszczą Knyszyńską.
+        In The Woods oferuje to, czego nie znajdziesz w żadnym innym miejscu — cały{' '}
+        <strong>dom z bali na wyłączność</strong>, gorącą balię pod gwiazdami, kominek w salonie,
+        ognisko w ogrodzie i absolutną prywatność. <strong>Domek na odludziu</strong> otoczony
+        Puszczą Knyszyńską — <strong>domek z balią w lesie</strong>, SPA na odludziu.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Scenariusz idealnego wieczoru panieńskiego
+        Scenariusz idealnego wieczoru w leśnym domku
       </h2>
       <p className="text-muted-foreground leading-relaxed">
         <strong>Popołudnie:</strong> Przyjazd i rozlokowanie się w domu. Wspólne gotowanie w pełni
-        wyposażonej kuchni lub zamówienie cateringu z lokalnych{' '}
+        wyposażonej kuchni z płytą kaflową lub zamówienie cateringu z{' '}
         <Link
           to="/blog/restauracje-suprasl"
           className="text-primary underline hover:text-primary/80"
@@ -48,52 +49,46 @@ const WieczorPanienskiSuprasl = () => (
         . Degustacja prosecco na tarasie z widokiem na las.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Wieczór:</strong> Rozpalenie ruskiej bani — tradycyjnej łaźni parowej z Podlasia.
-        Relaks w gorącej balii pod gwiazdami przy muzyce i rozmowach. Potem ognisko w ogrodzie z
-        piankami marshmallow i wspomnieniami.
+        <strong>Wieczór:</strong> Rozpalenie ruskiej bani — <strong>domek z jacuzzi w lesie</strong>.
+        Relaks w gorącej balii pod gwiazdami przy muzyce i rozmowach. Potem ognisko w altanie
+        z piankami marshmallow i wspomnieniami. <strong>Chill w lesie</strong> na najwyższym poziomie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Noc:</strong> Kominek w salonie, gry planszowe, filmy na projektorze lub po prostu
-        rozmowy do białego rana w ciszy Puszczy Knyszyńskiej.
+        <strong>Noc:</strong> <strong>Domek z kominkiem</strong> — gry planszowe, filmy lub rozmowy
+        do białego rana w ciszy Puszczy Knyszyńskiej. Detoks cyfrowy w lesie — brak zasięgu
+        telefonii komórkowej tutaj to zaleta.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Rano:</strong> Poranna kawa na tarasie, spacer leśnymi ścieżkami rezerwatu
-        Krzemienne Góry i wspólne śniadanie w kuchni pełnej słońca.
+        <strong>Rano:</strong> Slow travel Polska — poranna kawa na tarasie, spacer leśnymi ścieżkami
+        rezerwatu Krzemienne Góry i wspólne śniadanie w kuchni pełnej słońca.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Wieczory kawalerskie i imprezy okolicznościowe
+        Wieczory kawalerskie i imprezy okolicznościowe w domku w lesie
       </h2>
       <p className="text-muted-foreground leading-relaxed">
         In The Woods to doskonałe miejsce nie tylko na wieczory panieńskie. Organizujemy również:
       </p>
       <ul className="text-muted-foreground space-y-2">
-        <li>
-          🎉 <strong>Wieczory kawalerskie</strong> — balia, ognisko, grill i las na wyłączność
-        </li>
-        <li>
-          🎂 <strong>Urodziny i rocznice</strong> — kameralna atmosfera w otoczeniu natury
-        </li>
-        <li>
-          👫 <strong>Spotkania grupowe</strong> — do 8 osób w komfortowych warunkach
-        </li>
-        <li>
-          💼 <strong>Integracje firmowe</strong> — team building w lesie z kominkiem i balią
-        </li>
+        <li>🎉 <strong>Wieczory kawalerskie</strong> — balia, ognisko, grill i <strong>dom na wyłączność</strong></li>
+        <li>🎂 <strong>Urodziny i rocznice</strong> — kameralna atmosfera w otoczeniu natury</li>
+        <li>👫 <strong>Spotkania grupowe</strong> — do 8 osób w komfortowych warunkach</li>
+        <li>💼 <strong>Integracje firmowe</strong> — team building w <strong>domku z kominkiem</strong> i balią</li>
       </ul>
       <p className="text-muted-foreground leading-relaxed">
-        Każda impreza w In The Woods to wydarzenie na wyłączność — żadnych innych gości, żadnych
-        ograniczeń ciszy nocnej jak w hotelu. Tylko Wy, las i wolność.
+        Każda impreza to wydarzenie na wyłączność — żadnych innych gości, żadnych ograniczeń
+        jak w hotelu. <strong>Domek w lesie wynajem</strong> — Twoja przestrzeń, Twoje zasady.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Co oferujemy</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi i kominkiem — co oferujemy</h2>
       <ul className="text-muted-foreground space-y-2">
-        <li>🏡 Cały dom na wyłączność (do 8 osób, 3 sypialnie)</li>
-        <li>🛁 Prywatna ruska bania z balią z gorącą wodą</li>
-        <li>🔥 Kominek w salonie</li>
-        <li>🌲 Ogrodzony ogród z miejscem na ognisko i grill</li>
-        <li>🍽️ W pełni wyposażona kuchnia</li>
+        <li>🏡 Cały <strong>dom na wyłączność</strong> (do 8 osób)</li>
+        <li>🛁 Prywatna ruska bania z balią — <strong>domek z balią w lesie</strong></li>
+        <li>🔥 Klimatyczny <strong>kominek</strong> w salonie</li>
+        <li>🌲 <strong>Ogrodzony teren</strong> z miejscem na ognisko i grill</li>
+        <li>🍽️ W pełni wyposażona kuchnia z płytą kaflową</li>
         <li>📶 Szybkie Wi-Fi i klimatyzacja</li>
+        <li>🐕 <strong>Psy za darmo</strong></li>
         <li>🅿️ Bezpłatny parking</li>
       </ul>
 
@@ -107,19 +102,16 @@ const WieczorPanienskiSuprasl = () => (
         <Link to="/blog/kajaki-suprasl" className="text-primary underline hover:text-primary/80">
           spływ kajakowy rzeką Supraśl
         </Link>{' '}
-        — świetna aktywność grupowa na dzień przed lub po imprezie.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Supraśl to zaledwie 25 minut od Białegostoku, więc dojazd jest wygodny zarówno samochodem,
-        jak i taksówką. Sprawdź też{' '}
+        — świetna aktywność grupowa. Sprawdź też{' '}
         <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
           weekend w Supraślu
         </Link>{' '}
-        — może impreza przerodzi się w dłuższy wypad?
+        — może impreza przerodzi się w dłuższy wypad w{' '}
+        <strong>leśny domek do wynajęcia</strong>?
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-heading text-2xl font-light">Zaplanuj imprezę w In The Woods</h3>
+        <h3 className="font-heading text-2xl font-light">Zaplanuj imprezę w domku w lesie na wyłączność</h3>
         <p className="text-muted-foreground">
           Zadzwoń i opowiedz nam o swoich planach. Pomożemy zorganizować niezapomniany wieczór.
         </p>

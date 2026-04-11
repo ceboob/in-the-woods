@@ -72,77 +72,77 @@ const categories = ['Wszystkie', 'Salon', 'Kuchnia i jadalnia', 'Sypialnie', 'Ł
 
 const images: GalleryImage[] = [
   // Salon
-  { thumb: salonKominek, alt: 'Salon z kominkiem i drewnianymi schodami', category: 'Salon' },
-  { thumb: salonPanorama, alt: 'Panorama salonu z fotelem i kominkiem', category: 'Salon' },
-  { thumb: salonFotele, alt: 'Wygodne fotele przy kominku', category: 'Salon' },
-  { thumb: salonKominekSzerokie, alt: 'Panorama salonu z kominkiem i fotelami', category: 'Salon' },
-  { thumb: salonFoteleSchody, alt: 'Salon z fotelami, schodami i kominkiem', category: 'Salon' },
-  { thumb: salonSchodyKwiaty, alt: 'Salon z kominkiem, schodami i kwiatami', category: 'Salon' },
-  { thumb: kominekZblizenie, alt: 'Zbliżenie na rozpalony kominek', category: 'Salon' },
-  { thumb: polkaCeramika, alt: 'Drewniana półka z ceramiką i szufladkami', category: 'Salon' },
-  { thumb: ramkiWnetrze, alt: 'Galeria ramek i drewniana komoda', category: 'Salon' },
-  { thumb: poddaszeFotel, alt: 'Poddasze z biblioteką, fotelem i telewizorem', category: 'Salon' },
-  { thumb: piecKaflowyZblizenie, alt: 'Zbliżenie na kaflowy piec i ceglaną ścianę', category: 'Salon' },
-  { thumb: informatorGosci, alt: 'Informator dla gości na drewnianym stoliku', category: 'Salon' },
+  { thumb: salonKominek, alt: 'Salon z kominkiem — domek z kominkiem w lesie na wyłączność', category: 'Salon' },
+  { thumb: salonPanorama, alt: 'Panorama salonu z fotelem — dom z bali wynajem Supraśl', category: 'Salon' },
+  { thumb: salonFotele, alt: 'Wygodne fotele przy kominku w leśnym domku do wynajęcia', category: 'Salon' },
+  { thumb: salonKominekSzerokie, alt: 'Panorama salonu z kominkiem — dom na wyłączność w lesie', category: 'Salon' },
+  { thumb: salonFoteleSchody, alt: 'Salon z fotelami i schodami — domek w lesie Supraśl', category: 'Salon' },
+  { thumb: salonSchodyKwiaty, alt: 'Salon z kominkiem i kwiatami — domek z kominkiem las', category: 'Salon' },
+  { thumb: kominekZblizenie, alt: 'Rozpalony kominek — klimatyczny domek w lesie na weekend', category: 'Salon' },
+  { thumb: polkaCeramika, alt: 'Drewniana półka z ceramiką — dom z bali na wyłączność', category: 'Salon' },
+  { thumb: ramkiWnetrze, alt: 'Galeria ramek — wnętrze leśnego domku do wynajęcia', category: 'Salon' },
+  { thumb: poddaszeFotel, alt: 'Poddasze z biblioteką — praca zdalna w lesie wynajem domku', category: 'Salon' },
+  { thumb: piecKaflowyZblizenie, alt: 'Kaflowy piec i ceglana ściana — dom z bali wynajem', category: 'Salon' },
+  { thumb: informatorGosci, alt: 'Informator gości — domek w lesie wynajem In The Woods', category: 'Salon' },
 
   // Kuchnia i jadalnia
-  { thumb: kuchniaCeramika, alt: 'Kuchnia z ceglanym piecem i owocami', category: 'Kuchnia i jadalnia' },
-  { thumb: kuchniaCegla, alt: 'Kuchnia z piecem kaflowym i ceglaną ścianą', category: 'Kuchnia i jadalnia' },
-  { thumb: kuchniaZlew, alt: 'Kuchnia z ceglaną ścianą i niebieskimi talerzami', category: 'Kuchnia i jadalnia' },
-  { thumb: kuchniaNiebieskieTalerze, alt: 'Kuchnia z niebieskimi talerzami i drewnianą zabudową', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaSniadanie, alt: 'Jadalnia ze śniadaniem — poranek w chacie', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaSerwis, alt: 'Nakryty stół z domowym jedzeniem', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaKwiaty, alt: 'Jadalnia z tulipanami i drewnianymi meblami', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaOwoce, alt: 'Jadalnia z owocami i nakrytym stołem', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaKacik, alt: 'Kącik jadalniany przy kominku i oknie', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaTulipanyZblizenie, alt: 'Zbliżenie na tulipany w jadalni', category: 'Kuchnia i jadalnia' },
-  { thumb: sniadanieKrata, alt: 'Śniadanie na stole w kratę z tulipanami', category: 'Kuchnia i jadalnia' },
+  { thumb: kuchniaCeramika, alt: 'Kuchnia z płytą kaflową — dom z bali na wyłączność', category: 'Kuchnia i jadalnia' },
+  { thumb: kuchniaCegla, alt: 'Kuchnia z piecem kaflowym i ceglaną ścianą — leśny domek do wynajęcia', category: 'Kuchnia i jadalnia' },
+  { thumb: kuchniaZlew, alt: 'Kuchnia z ceglaną ścianą — domek w lesie wynajem', category: 'Kuchnia i jadalnia' },
+  { thumb: kuchniaNiebieskieTalerze, alt: 'Kuchnia z drewnianą zabudową — dom z bali wynajem Podlasie', category: 'Kuchnia i jadalnia' },
+  { thumb: jadalniaSniadanie, alt: 'Jadalnia ze śniadaniem — poranek w domku w lesie na wyłączność', category: 'Kuchnia i jadalnia' },
+  { thumb: jadalniaSerwis, alt: 'Nakryty stół z domowym jedzeniem — dom na wyłączność las', category: 'Kuchnia i jadalnia' },
+  { thumb: jadalniaKwiaty, alt: 'Jadalnia z tulipanami — leśny domek do wynajęcia Supraśl', category: 'Kuchnia i jadalnia' },
+  { thumb: jadalniaOwoce, alt: 'Jadalnia z owocami — domek w lesie wynajem Puszcza Knyszyńska', category: 'Kuchnia i jadalnia' },
+  { thumb: jadalniaKacik, alt: 'Kącik jadalniany przy kominku — domek z kominkiem w lesie', category: 'Kuchnia i jadalnia' },
+  { thumb: jadalniaTulipanyZblizenie, alt: 'Tulipany w jadalni — dom z bali na wyłączność', category: 'Kuchnia i jadalnia' },
+  { thumb: sniadanieKrata, alt: 'Śniadanie w domku w lesie — slow travel Polska', category: 'Kuchnia i jadalnia' },
 
   // Sypialnie
-  { thumb: sypialniaGorna, alt: 'Sypialnia na piętrze z dużym łóżkiem', category: 'Sypialnie' },
-  { thumb: sypialniaBalkon, alt: 'Sypialnia z wyjściem na balkon i widokiem na las', category: 'Sypialnie' },
-  { thumb: sypialniaZieloneZaslony, alt: 'Sypialnia z zielonymi zasłonami i widokiem na ogród', category: 'Sypialnie' },
-  { thumb: balkonLezak, alt: 'Balkon z leżakiem i widokiem na las', category: 'Sypialnie' },
+  { thumb: sypialniaGorna, alt: 'Sypialnia na piętrze — domek w lesie dla 2 osób z jacuzzi', category: 'Sypialnie' },
+  { thumb: sypialniaBalkon, alt: 'Sypialnia z balkonem — romantyczny pobyt w lesie wynajem', category: 'Sypialnie' },
+  { thumb: sypialniaZieloneZaslony, alt: 'Sypialnia z widokiem na ogród — dom na wyłączność las', category: 'Sypialnie' },
+  { thumb: balkonLezak, alt: 'Balkon z leżakiem i widokiem na Puszczę Knyszyńską', category: 'Sypialnie' },
 
   // Łazienki
-  { thumb: lazienkaPrysznic, alt: 'Nowoczesna łazienka z prysznicem', category: 'Łazienki' },
-  { thumb: lazienkaNowa, alt: 'Nowoczesna łazienka z kabiną', category: 'Łazienki' },
-  { thumb: lazienkaUmywalka, alt: 'Łazienka z podświetlanym lustrem', category: 'Łazienki' },
-  { thumb: prysznicCiemny, alt: 'Prysznic z deszczownicą w ciemnych kaflach', category: 'Łazienki' },
-  { thumb: toaletaDrewniana, alt: 'Drewniana toaleta w stylu rustykalnym', category: 'Łazienki' },
-  { thumb: toaletaJasna, alt: 'Jasna łazienka z drewnianym wykończeniem', category: 'Łazienki' },
-  { thumb: rustykalnaToaletaPolki, alt: 'Rustykalna toaleta z drewnianymi półkami', category: 'Łazienki' },
+  { thumb: lazienkaPrysznic, alt: 'Nowoczesna łazienka z prysznicem — leśny domek do wynajęcia', category: 'Łazienki' },
+  { thumb: lazienkaNowa, alt: 'Nowoczesna łazienka z kabiną w domku w lesie', category: 'Łazienki' },
+  { thumb: lazienkaUmywalka, alt: 'Łazienka z podświetlanym lustrem — dom z bali wynajem', category: 'Łazienki' },
+  { thumb: prysznicCiemny, alt: 'Prysznic z deszczownicą — domek na wyłączność Supraśl', category: 'Łazienki' },
+  { thumb: toaletaDrewniana, alt: 'Toaleta w stylu rustykalnym — dom z bali na wyłączność', category: 'Łazienki' },
+  { thumb: toaletaJasna, alt: 'Jasna łazienka — leśny domek do wynajęcia Podlasie', category: 'Łazienki' },
+  { thumb: rustykalnaToaletaPolki, alt: 'Rustykalna toaleta z drewnianymi półkami — domek w lesie', category: 'Łazienki' },
 
   // Taras i ogród
-  { thumb: tarasGrill, alt: 'Taras z grillem i widokiem na ogród', category: 'Taras i ogród' },
-  { thumb: tarasSofa, alt: 'Sofa na tarasie w otoczeniu zieleni', category: 'Taras i ogród' },
-  { thumb: tarasObiad, alt: 'Obiad na tarasie wśród zieleni', category: 'Taras i ogród' },
-  { thumb: tarasPies, alt: 'Pies na tarasie przy świecach', category: 'Taras i ogród' },
-  { thumb: tarasRelaks, alt: 'Relaks na tarasie z kawą', category: 'Taras i ogród' },
-  { thumb: tarasSofaWejscie, alt: 'Sofa na tarasie przy wejściu do domu', category: 'Taras i ogród' },
-  { thumb: wejscieTaras, alt: 'Wejście na taras i schody do domu', category: 'Taras i ogród' },
-  { thumb: domLato, alt: 'Dom z czerwonym dachem latem', category: 'Taras i ogród' },
-  { thumb: domSchody, alt: 'Widok na drewniany dom i schody wejściowe', category: 'Taras i ogród' },
-  { thumb: domOgrodPanorama, alt: 'Panorama domu i ogrodu z czerwonym dachem', category: 'Taras i ogród' },
-  { thumb: ogrodZielen, alt: 'Ogród z bujną zielenią', category: 'Taras i ogród' },
-  { thumb: ogniskoDzieci, alt: 'Dzieci przy ognisku z widokiem na chatę', category: 'Taras i ogród' },
-  { thumb: ogniskoNocne, alt: 'Nocne ognisko przy altanie', category: 'Taras i ogród' },
+  { thumb: tarasGrill, alt: 'Taras z grillem — ogrodzony teren domku w lesie z miejscem na ognisko', category: 'Taras i ogród' },
+  { thumb: tarasSofa, alt: 'Sofa na tarasie — odpoczynek w lesie weekend w domku na wyłączność', category: 'Taras i ogród' },
+  { thumb: tarasObiad, alt: 'Obiad na tarasie — domek w lesie wynajem z ogrodzonym terenem', category: 'Taras i ogród' },
+  { thumb: tarasPies, alt: 'Pies na tarasie — psy za darmo w domku w lesie Supraśl', category: 'Taras i ogród' },
+  { thumb: tarasRelaks, alt: 'Relaks na tarasie z kawą — chill w lesie, slow travel Polska', category: 'Taras i ogród' },
+  { thumb: tarasSofaWejscie, alt: 'Sofa na tarasie przy wejściu — leśny domek do wynajęcia', category: 'Taras i ogród' },
+  { thumb: wejscieTaras, alt: 'Wejście na taras — dom z bali na wyłączność Puszcza Knyszyńska', category: 'Taras i ogród' },
+  { thumb: domLato, alt: 'Dom z bali latem — domek w lesie Supraśl z ogrodzonym terenem', category: 'Taras i ogród' },
+  { thumb: domSchody, alt: 'Drewniany dom i schody — leśny domek do wynajęcia na Podlasiu', category: 'Taras i ogród' },
+  { thumb: domOgrodPanorama, alt: 'Panorama domu i ogrodu — dom na wyłączność w lesie', category: 'Taras i ogród' },
+  { thumb: ogrodZielen, alt: 'Ogrodzony ogród z bujną zielenią — domek w lesie psy za darmo', category: 'Taras i ogród' },
+  { thumb: ogniskoDzieci, alt: 'Dzieci przy ognisku — dom w lesie wynajem dla rodziny z dziećmi', category: 'Taras i ogród' },
+  { thumb: ogniskoNocne, alt: 'Nocne ognisko przy altanie — domek w lesie z miejscem na ognisko', category: 'Taras i ogród' },
 
   // Bania i jacuzzi
-  { thumb: jacuzziNight, alt: 'Ruska bania z jacuzzi pod gwiazdami', category: 'Bania i jacuzzi' },
-  { thumb: baniaFront, alt: 'Ruska bania z drewnianą obudową', category: 'Bania i jacuzzi' },
-  { thumb: baniaDom, alt: 'Bania na tle chaty z czerwonym dachem', category: 'Bania i jacuzzi' },
-  { thumb: baniaOgrod, alt: 'Bania w ogrodzie z widokiem na las', category: 'Bania i jacuzzi' },
-  { thumb: jacuzziNoc, alt: 'Jacuzzi z niebieskim podświetleniem nocą', category: 'Bania i jacuzzi' },
+  { thumb: jacuzziNight, alt: 'Ruska bania z jacuzzi pod gwiazdami — domek z balią w lesie', category: 'Bania i jacuzzi' },
+  { thumb: baniaFront, alt: 'Ruska bania — domek z jacuzzi w lesie na wyłączność', category: 'Bania i jacuzzi' },
+  { thumb: baniaDom, alt: 'Bania na tle domku z bali — domek z balią w lesie Puszcza Knyszyńska', category: 'Bania i jacuzzi' },
+  { thumb: baniaOgrod, alt: 'Bania w ogrodzie — SPA na odludziu, domek z jacuzzi Podlasie', category: 'Bania i jacuzzi' },
+  { thumb: jacuzziNoc, alt: 'Jacuzzi z podświetleniem nocą — domek z jacuzzi w lesie pod gwiazdami', category: 'Bania i jacuzzi' },
 
   // Okolica
-  { thumb: drogaLesna, alt: 'Leśna droga w Puszczy Knyszyńskiej', category: 'Okolica' },
-  { thumb: drogaLesnaPlot, alt: 'Leśna droga przy ogrodzeniu', category: 'Okolica' },
-  { thumb: konneDroga, alt: 'Droga w stronę Konnych', category: 'Okolica' },
-  { thumb: konneZnak, alt: 'Znak kierunkowy na leśnej drodze w okolicy Konnych', category: 'Okolica' },
-  { thumb: dabPuszcza, alt: 'Stary dąb w Puszczy Knyszyńskiej', category: 'Okolica' },
-  { thumb: wiataLesna, alt: 'Leśne wiaty i okolica obiektu', category: 'Okolica' },
-  { thumb: tablicaSzurakowo, alt: 'Tablica rezerwatu Szurakowo w zimowym lesie', category: 'Okolica' },
+  { thumb: drogaLesna, alt: 'Leśna droga w Puszczy Knyszyńskiej — domek na odludziu podlaskie', category: 'Okolica' },
+  { thumb: drogaLesnaPlot, alt: 'Leśna droga przy ogrodzeniu — domek podlaskie odludzie', category: 'Okolica' },
+  { thumb: konneDroga, alt: 'Droga do Konnych — domek w lesie Supraśl lokalizacja', category: 'Okolica' },
+  { thumb: konneZnak, alt: 'Znak kierunkowy — domek w lesie na odludziu Puszcza Knyszyńska', category: 'Okolica' },
+  { thumb: dabPuszcza, alt: 'Stary dąb w Puszczy Knyszyńskiej — rezerwat Krzemienne Góry', category: 'Okolica' },
+  { thumb: wiataLesna, alt: 'Leśna wiata — okolica domku w lesie na Podlasiu', category: 'Okolica' },
+  { thumb: tablicaSzurakowo, alt: 'Tablica rezerwatu — domek w lesie przy rezerwacie przyrody', category: 'Okolica' },
 ];
 
 const Galeria = () => {
@@ -166,16 +166,18 @@ const Galeria = () => {
 
   return (
     <SEOPageLayout
-      title="Galeria zdjęć | In The Woods Supraśl"
-      description="Pełna galeria zdjęć domu In The Woods — salon z kominkiem, sypialnie, kuchnia, łazienki, taras, ogród, ruska bania i okolica w Puszczy Knyszyńskiej."
+      title="Galeria zdjęć domku w lesie | In The Woods Supraśl"
+      description="Galeria zdjęć leśnego domku do wynajęcia In The Woods — salon z kominkiem, kuchnia z płytą kaflową, sypialnie, ogrodzony ogród, ruska bania z balią w Puszczy Knyszyńskiej."
       breadcrumbName="Galeria"
       ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
     >
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Galeria zdjęć In The Woods
+        Galeria zdjęć — leśny domek do wynajęcia In The Woods
       </h1>
       <p className="text-muted-foreground text-lg mb-10 max-w-2xl">
-        Przeglądaj autentyczne zdjęcia naszego domu, wnętrz, ogrodu i okolicy. Kliknij w kategorię, aby filtrować.
+        Przeglądaj autentyczne zdjęcia naszego <strong>domu z bali na wyłączność</strong> — salon z kominkiem,
+        kuchnia z płytą kaflową, sypialnie, ogrodzony ogród i ruska bania z balią w Puszczy Knyszyńskiej.
+        Kliknij w kategorię, aby filtrować.
       </p>
 
       {/* Category filters */}
