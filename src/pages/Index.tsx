@@ -39,9 +39,9 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'VacationRental',
   '@id': 'https://www.suprasl.online/#vacation-rental',
-  name: 'In The Woods | Dom w Puszczy Knyszyńskiej z balią i sauną',
+  name: 'In The Woods — leśny dom na wyłączność z jacuzzi i sauną',
   description:
-    'Zarezerwuj In The Woods — luksusowy dom na wyłączność w sercu Puszczy Knyszyńskiej koło Supraśla. Gorąca balia (jacuzzi), sauna, kominek i absolutna cisza. Idealny na romantyczny weekend i cyfrowy detoks.',
+    'Zarezerwuj leśny domek do wynajęcia w Puszczy Knyszyńskiej na wyłączność. Dom z bali z jacuzzi, sauną, kominkiem i ogrodzonym terenem. Domek w lesie wynajem dla par, rodzin i przyjaciół — psy za darmo, slow travel Podlasie.',
   url: 'https://www.suprasl.online/',
   telephone: '+48 722 765 101',
   email: 'tutinthewood@gmail.com',
@@ -64,18 +64,27 @@ const jsonLd = {
   },
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    reviewCount: '100',
+    ratingValue: '4.82',
+    reviewCount: '110',
     bestRating: '5',
     worstRating: '1',
   },
+  starRating: {
+    '@type': 'Rating',
+    ratingValue: '4.82',
+  },
   amenityFeature: [
     { '@type': 'LocationFeatureSpecification', name: 'Gorąca balia / Jacuzzi', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Sauna', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Sauna / Ruska bania', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Kominek', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Prywatny ogród', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Akceptacja zwierząt', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Klimatyzacja', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Prywatny ogrodzony ogród', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Altana z grillem i ognisko', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Plac zabaw', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Płyta kuchenna kaflowa', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Akceptacja zwierząt (psy za darmo)', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Wi-Fi', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Smart TV', value: true },
   ],
   numberOfRooms: 3,
   occupancy: {
@@ -112,7 +121,23 @@ const faqJsonLd = {
       name: 'Gdzie znajduje się In The Woods?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dom znajduje się w miejscowości Konne koło Supraśla, w Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku.',
+        text: 'Dom znajduje się w miejscowości Konne koło Supraśla, w Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku. To domek w lesie na Podlasiu, przy Rezerwacie Przyrody Krzemienne Góry.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Ile kosztuje wynajem domku w lesie na weekend?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ceny zaczynają się od 399 zł za noc. Koszt zależy od sezonu, dnia tygodnia i długości pobytu. Sprawdź kalendarz dostępności — wynajem domku na odludziu na weekend bez pośredników.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Czy domek jest dostępny na sylwestra, walentynki lub majówkę?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Domek na sylwestra w lesie, walentynki i majówkę to nasze najpopularniejsze terminy — rezerwowane z dużym wyprzedzeniem. Sprawdź dostępność w kalendarzu lub zadzwoń.',
       },
     },
     {
@@ -120,7 +145,7 @@ const faqJsonLd = {
       name: 'Czy są noclegi z jacuzzi w Supraślu?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'In The Woods oferuje prywatną ruską banię z balią z gorącą wodą — idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu za 250 zł.',
+        text: 'In The Woods oferuje prywatną ruską banię z balią z gorącą wodą — domek z jacuzzi w lesie. Idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu za 250 zł.',
       },
     },
     {
@@ -128,7 +153,7 @@ const faqJsonLd = {
       name: 'Czy dom jest prywatny?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Tak — dom i cały ogród wynajmujecie na wyłączność. Żadnych innych gości.',
+        text: 'Tak — dom i cały ogród wynajmujecie na wyłączność. Żadnych innych gości. Dom na wyłączność w lesie — Twoja prywatna przestrzeń.',
       },
     },
     {
@@ -136,7 +161,7 @@ const faqJsonLd = {
       name: 'Czy można przyjechać z psem?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Tak, zwierzęta są mile widziane. Pobyt z psem jest bezpłatny. Ogrodzony ogród i las za progiem to raj dla czworonogów.',
+        text: 'Tak, zwierzęta są mile widziane. Psy za darmo — bez dopłat. Ogrodzony ogród i las za progiem to raj dla czworonogów.',
       },
     },
     {
@@ -145,6 +170,14 @@ const faqJsonLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Dom jest komfortowy dla 6–8 osób. Dwie sypialnie z dużymi łóżkami na piętrze oraz dodatkowa przestrzeń w salonie.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Czy mogę pracować zdalnie w In The Woods?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Tak — szybkie Wi-Fi, biurko przy oknie z widokiem na las. Praca zdalna w lesie — wynajem domku idealnego na workation.',
       },
     },
     {
@@ -162,8 +195,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="In The Woods — Dom w lesie z balią | Supraśl"
-        description="Zarezerwuj In The Woods — luksusowy dom na wyłączność w Puszczy Knyszyńskiej koło Supraśla. Gorąca balia, sauna, kominek i cisza natury. Idealny na romantyczny weekend!"
+        title="Domek w lesie z jacuzzi | In The Woods — Podlasie"
+        description="Zarezerwuj leśny dom z sauną i balią w Puszczy Knyszyńskiej na wyłączność. Cisza, kominek, ogrodzony teren. Sprawdź wolne terminy!"
         canonical="https://www.suprasl.online/"
         jsonLd={[jsonLd, faqJsonLd]}
       />
