@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const WieczorPanienskiSuprasl = () => (
   <SEOPageLayout
     title="Wieczór panieński Supraśl | Impreza w lesie"
-    description="Wieczór panieński Supraśl — dom w lesie z jacuzzi, kominkiem i ogrodem. Imprezy w Puszczy Knyszyńskiej."
+    description="Wieczór panieński w Supraślu — prywatny dom w lesie z jacuzzi, kominkiem i ogrodem. Organizuj niezapomniane imprezy okolicznościowe w Puszczy Knyszyńskiej."
     breadcrumbName="Wieczór panieński Supraśl"
     ogImage="https://www.suprasl.online/images/kitchen-dining.jpg"
   >

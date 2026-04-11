@@ -44,7 +44,7 @@ const CookieConsent = () => {
           <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={accept}
-              className="bg-primary text-primary-foreground text-sm px-5 py-2 hover:opacity-90 transition-opacity"
+              className="bg-forest text-primary-foreground text-sm px-5 py-2 hover:opacity-90 transition-opacity"
             >
               Akceptuję
             </button>

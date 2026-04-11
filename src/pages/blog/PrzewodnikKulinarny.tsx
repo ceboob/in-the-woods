@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PrzewodnikKulinarny = () => (
   <BlogArticleLayout
-    title="Smaki Supraśla – gdzie zjeść kartacze i babkę?"
+    title="Smaki Supraśla: Gdzie zjeść najlepsze kartacze i babkę ziemniaczaną?"
     metaTitle="Gdzie zjeść w Supraślu? Restauracje i kuchnia"
     metaDescription="Sprawdź, gdzie dobrze zjeść w Supraślu. Odkryj restauracje serwujące podlaskie specjały: kartacze, babkę ziemniaczaną i dania kuchni tatarskiej."
     slug="przewodnik-kulinarny-suprasl"
@@ -23,7 +23,7 @@ const PrzewodnikKulinarny = () => (
       { title: 'Uzdrowisko Supraśl – SPA i wellness', slug: 'uzdrowisko-spa-suprasl' },
     ]}
   >
-    <h2>Smaki Supraśla – gdzie zjeść kartacze i babkę? [MAPA KULINARNA]</h2>
+    <h2>Smaki Supraśla: Gdzie zjeść najlepsze kartacze i babkę ziemniaczaną? [MAPA KULINARNA]</h2>
 
     <p>
       Podróż nie jest kompletna bez poznania lokalnych smaków. Zabierzemy Cię w <strong>kulinarną

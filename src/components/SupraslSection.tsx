@@ -11,12 +11,12 @@ import {
   Clock,
   ArrowRight,
 } from 'lucide-react';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.webp';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.webp';
-import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.webp';
-import blogKajaki from '@/assets/blog-kajaki-suprasl.webp';
-import blogRestauracje from '@/assets/blog-restauracje-suprasl.webp';
-import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.webp';
+import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
+import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
+import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
+import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
+import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
+import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
 
 const attractions = [
   { icon: Church, name: 'Monaster Zwiastowania NMP' },
@@ -154,8 +154,6 @@ const SupraslSection = () => {
                     alt={guide.alt}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
-                    width="400"
-                    height="250"
                   />
                 </div>
                 <div className="p-5 space-y-3">

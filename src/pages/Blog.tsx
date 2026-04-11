@@ -2,25 +2,25 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import { Phone, ArrowRight, Calendar, Clock } from 'lucide-react';
-import blogKanal from '@/assets/blog-kanal-kopanica.webp';
-import blogPomnik from '@/assets/blog-pomnik-powstanie.webp';
-import blogMonaster from '@/assets/blog-monaster-suprasl.webp';
-import blogSzlak from '@/assets/blog-szlak-lesny.webp';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.webp';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.webp';
-import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.webp';
-import blogKajaki from '@/assets/blog-kajaki-suprasl.webp';
-import blogRestauracje from '@/assets/blog-restauracje-suprasl.webp';
-import blogCoRobic from '@/assets/blog-co-robic-suprasl.webp';
-import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.webp';
-import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.webp';
-import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.webp';
-import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.webp';
+import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
+import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
+import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
+import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
+import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
+import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
+import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
+import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
+import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
+import blogCoRobic from '@/assets/blog-co-robic-suprasl.jpg';
+import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.jpg';
+import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.jpg';
+import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
+import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.jpg';
 
 const articles = [
   {
     slug: 'puszcza-knyszynska-przewodnik',
-    title: 'Puszcza Knyszyńska – przewodnik, szlaki i mapy GPX',
+    title: 'Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX',
     excerpt: 'Odkryj Puszczę Knyszyńską: najpiękniejsze szlaki piesze, rowerowe i narciarskie z mapami GPX do pobrania. Kajaki, rykowisko, Kruszyniany i Supraśl.',
     image: blogNajlepszeMiejsca,
     date: '2026-04-09',
@@ -38,7 +38,7 @@ const articles = [
   },
   {
     slug: 'cyfrowy-detoks-las',
-    title: 'Cyfrowy detoks w lesie – domek na reset od technologii',
+    title: 'Cyfrowy detoks w praktyce: Domek w środku lasu to najlepsze miejsce na reset',
     excerpt: 'Potrzebujesz resetu od ekranów? Odkryj, dlaczego domek w lesie na Podlasiu to idealne miejsce na cyfrowy detoks.',
     image: blogNajlepszeMiejsca,
     date: '2026-04-09',
@@ -83,7 +83,7 @@ const articles = [
   },
   {
     slug: 'szlaki-puszcza-knyszynska',
-    title: 'Szlaki piesze i rowerowe w Puszczy Knyszyńskiej',
+    title: 'Puszcza Knyszyńska na piechotę i rowerem – najlepsze szlaki z Supraśla',
     excerpt:
       'Szlaki piesze i rowerowe dla rodzin i zaawansowanych. Green Velo, Arboretum Kopna Góra, Wzgórza Świętojańskie. Mapy i praktyczne porady.',
     image: blogSzlak,
@@ -213,7 +213,7 @@ const articles = [
   },
   {
     slug: 'szlak-bioroznorodnosci-suprasl',
-    title: 'Szlak Bioróżnorodności Supraśl – spacer w Puszczy',
+    title: 'Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej',
     excerpt:
       'Edukacyjna ścieżka o długości 7 km przez zróżnicowane ekosystemy Puszczy Knyszyńskiej. Flora, fauna i tablice edukacyjne.',
     image: blogSzlakBio,
@@ -375,8 +375,6 @@ const Blog = () => {
                   alt={article.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
-                  width="400"
-                  height="225"
                 />
               </div>
               <div className="p-6 space-y-3">
@@ -420,45 +418,45 @@ const Blog = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-card text-foreground/70 px-6 md:px-12 py-8">
+      <footer className="bg-foreground text-white/70 px-6 md:px-12 py-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <p className="font-display text-lg text-foreground">In The Woods</p>
+          <p className="font-display text-lg text-white">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <Link to="/" className="hover:text-primary transition-colors">
+            <Link to="/" className="hover:text-white transition-colors">
               Strona główna
             </Link>
-            <Link to="/blog" className="hover:text-primary transition-colors">
+            <Link to="/blog" className="hover:text-white transition-colors">
               Blog
             </Link>
-            <Link to="/noclegi-suprasl" className="hover:text-primary transition-colors">
+            <Link to="/noclegi-suprasl" className="hover:text-white transition-colors">
               Noclegi Supraśl
             </Link>
-            <Link to="/domek-suprasl" className="hover:text-primary transition-colors">
+            <Link to="/domek-suprasl" className="hover:text-white transition-colors">
               Domek Supraśl
             </Link>
-            <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-primary transition-colors">
+            <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-white transition-colors">
               Domek z jacuzzi
             </Link>
-            <Link to="/dom-w-lesie-suprasl" className="hover:text-primary transition-colors">
+            <Link to="/dom-w-lesie-suprasl" className="hover:text-white transition-colors">
               Dom w lesie
             </Link>
-            <Link to="/weekend-suprasl" className="hover:text-primary transition-colors">
+            <Link to="/weekend-suprasl" className="hover:text-white transition-colors">
               Weekend Supraśl
             </Link>
-            <Link to="/wieczor-panienski-suprasl" className="hover:text-primary transition-colors">
+            <Link to="/wieczor-panienski-suprasl" className="hover:text-white transition-colors">
               Wieczór panieński
             </Link>
-            <Link to="/atrakcje-suprasl" className="hover:text-primary transition-colors">
+            <Link to="/atrakcje-suprasl" className="hover:text-white transition-colors">
               Atrakcje Supraśla
             </Link>
-            <Link to="/puszcza-knyszynska-nocleg" className="hover:text-primary transition-colors">
+            <Link to="/puszcza-knyszynska-nocleg" className="hover:text-white transition-colors">
               Puszcza Knyszyńska
             </Link>
-            <Link to="/informator" className="hover:text-primary transition-colors">
+            <Link to="/informator" className="hover:text-white transition-colors">
               Informator gościa
             </Link>
           </div>
-          <p className="text-xs text-foreground/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
+          <p className="text-xs text-white/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
         </div>
       </footer>
     </div>

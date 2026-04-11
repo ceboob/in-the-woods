@@ -167,7 +167,7 @@ const Galeria = () => {
   return (
     <SEOPageLayout
       title="Galeria zdjęć | In The Woods Supraśl"
-      description="Galeria In The Woods — zdjęcia salonu, sypialni, kuchni, tarasu, ogrodu i ruskiej bani w Puszczy."
+      description="Pełna galeria zdjęć domu In The Woods — salon z kominkiem, sypialnie, kuchnia, łazienki, taras, ogród, ruska bania i okolica w Puszczy Knyszyńskiej."
       breadcrumbName="Galeria"
       ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
     >
@@ -210,11 +210,9 @@ const Galeria = () => {
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
               decoding="async"
-              width="400"
-              height="300"
             />
             <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors" />
-            <span className="absolute bottom-2 left-2 right-2 text-xs text-foreground bg-background/60 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity line-clamp-1">
+            <span className="absolute bottom-2 left-2 right-2 text-xs text-white bg-foreground/60 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity line-clamp-1">
               {img.alt}
             </span>
           </button>
@@ -228,10 +226,10 @@ const Galeria = () => {
       {/* Lightbox */}
       {lightboxIndex !== null && (
         <div className="fixed inset-0 z-50 bg-foreground/95 flex items-center justify-center" onClick={closeLightbox}>
-          <button onClick={closeLightbox} className="absolute top-4 right-4 text-foreground/80 hover:text-foreground p-2" aria-label="Zamknij">
+          <button onClick={closeLightbox} className="absolute top-4 right-4 text-white/80 hover:text-white p-2" aria-label="Zamknij">
             <X className="w-7 h-7" />
           </button>
-          <button onClick={e => { e.stopPropagation(); navigate(-1); }} className="absolute left-4 text-foreground/80 hover:text-foreground p-2" aria-label="Poprzednie">
+          <button onClick={e => { e.stopPropagation(); navigate(-1); }} className="absolute left-4 text-white/80 hover:text-white p-2" aria-label="Poprzednie">
             <ChevronLeft className="w-8 h-8" />
           </button>
           <img
@@ -240,10 +238,10 @@ const Galeria = () => {
             className="max-h-[85vh] max-w-[90vw] object-contain rounded"
             onClick={e => e.stopPropagation()}
           />
-          <button onClick={e => { e.stopPropagation(); navigate(1); }} className="absolute right-4 text-foreground/80 hover:text-foreground p-2" aria-label="Następne">
+          <button onClick={e => { e.stopPropagation(); navigate(1); }} className="absolute right-4 text-white/80 hover:text-white p-2" aria-label="Następne">
             <ChevronRight className="w-8 h-8" />
           </button>
-          <p className="absolute bottom-4 text-foreground/70 text-sm text-center px-8">{filtered[lightboxIndex].alt}</p>
+          <p className="absolute bottom-4 text-white/70 text-sm text-center px-8">{filtered[lightboxIndex].alt}</p>
         </div>
       )}
     </SEOPageLayout>

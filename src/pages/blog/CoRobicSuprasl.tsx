@@ -5,7 +5,7 @@ const CoRobicSuprasl = () => (
   <BlogArticleLayout
     title="Co robić w Supraślu? Kompletny przewodnik po atrakcjach"
     metaTitle="Co robić w Supraślu | Przewodnik atrakcji"
-    metaDescription="Co robić w Supraślu? Monaster, Muzeum Ikon, kajaki, szlaki Puszczy Knyszyńskiej. Przewodnik po atrakcjach."
+    metaDescription="Co robić w Supraślu? Monaster, Muzeum Ikon, spływy kajakowe, szlaki w Puszczy Knyszyńskiej i kuchnia regionalna. Kompletny przewodnik po atrakcjach Supraśla."
     slug="co-robic-suprasl"
     publishDate="2026-03-25"
     readTime="10 min"

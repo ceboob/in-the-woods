@@ -34,7 +34,7 @@ const BlogArticleLayout = ({
   keywords,
   faqs,
   relatedArticles = [],
-  ogImage = 'https://www.suprasl.online/og-image.webp',
+  ogImage = 'https://www.suprasl.online/og-image.jpg',
   dateModified,
 }: BlogArticleLayoutProps) => {
   useEffect(() => {
@@ -252,9 +252,9 @@ const BlogArticleLayout = ({
       </section>
 
       {/* Footer */}
-      <footer className="bg-card text-foreground/70 px-6 md:px-12 py-8">
+      <footer className="bg-foreground text-white/70 px-6 md:px-12 py-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <p className="font-display text-lg text-foreground">In The Woods</p>
+          <p className="font-display text-lg text-white">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <Link to="/" className="hover:text-primary transition-colors">
               Strona główna
@@ -284,7 +284,7 @@ const BlogArticleLayout = ({
               Puszcza Knyszyńska
             </Link>
           </div>
-          <p className="text-xs text-foreground/40">© 2026 In The Woods, Maciej Cybulko. Wszelkie prawa zastrzeżone.</p>
+          <p className="text-xs text-white/40">© 2026 In The Woods, Maciej Cybulko. Wszelkie prawa zastrzeżone.</p>
         </div>
       </footer>
     </div>

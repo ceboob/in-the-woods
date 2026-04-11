@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogRzeka from '@/assets/blog-rzeka-suprasl.webp';
-import blogKanal from '@/assets/blog-kanal-kopanica.webp';
+import blogRzeka from '@/assets/blog-rzeka-suprasl.jpg';
+import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
 import cabinDay from '@/assets/cabin-day-garden.webp';
 
 const SupraskiSystemWodny = () => {
@@ -44,7 +44,7 @@ const SupraskiSystemWodny = () => {
     <BlogArticleLayout
       title="Supraski System Wodny – historia i atrakcje Supraśla"
       metaTitle="Supraski System Wodny | Cud inżynierii"
-      metaDescription="Supraski System Wodny — Kanał Kopanica, monaster i szlaki turystyczne w Supraślu. Historia i przewodnik."
+      metaDescription="Poznaj historię Supraskiego Systemu Wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia. Kanał Kopanica, monaster, szlaki turystyczne w Supraślu."
       slug="supraski-system-wodny"
       publishDate="2026-03-10"
       readTime="12 min"
@@ -64,7 +64,7 @@ const SupraskiSystemWodny = () => {
 
       <p>
         Supraśl to miasteczko, które kryje w sobie znacznie więcej, niż widać na pierwszy rzut oka.
-        Poza słynnym monasterem, Muzeum Ikon i malowniczymi uliczkami, w okolicy jest jeden
+        Poza słynnym monasterem, Muzeum Ikon i malowniczymi uliczkami, w okolicy znajduje się jeden
         z najbardziej fascynujących, a zarazem najmniej znanych zabytków inżynierii wodnej w Polsce
         — <strong>Supraski System Wodny</strong>.
       </p>
@@ -81,7 +81,7 @@ const SupraskiSystemWodny = () => {
         src={blogRzeka}
         alt="Rzeka Supraśl – Supraski System Wodny, atrakcje Supraśl"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Historia Supraskiego Systemu Wodnego</h2>
 
@@ -127,7 +127,7 @@ const SupraskiSystemWodny = () => {
         src={blogKanal}
         alt="Kanał Kopanica – Supraski System Wodny, noclegi Supraśl"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Jak powstał system – inżynieria i natura</h2>
 
@@ -231,7 +231,7 @@ const SupraskiSystemWodny = () => {
         src={cabinDay}
         alt="In The Woods – noclegi Supraśl, dom w lesie"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Dlaczego warto zobaczyć Supraski System Wodny?</h2>
 

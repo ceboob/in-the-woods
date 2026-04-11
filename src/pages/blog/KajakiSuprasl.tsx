@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogKajaki from '@/assets/blog-kajaki-suprasl.webp';
-import riverKayak from '@/assets/river-kayak.webp';
+import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
+import riverKayak from '@/assets/river-kayak.jpg';
 import forestPanorama from '@/assets/forest-panorama.webp';
 
 const KajakiSuprasl = () => {
@@ -50,7 +50,7 @@ const KajakiSuprasl = () => {
 
   return (
     <BlogArticleLayout
-      title="Kajaki Supraśl – spływ kajakowy w Puszczy Knyszyńskiej"
+      title="Spływ kajakowy rzeką Supraśl – jedna z najlepszych atrakcji Puszczy Knyszyńskiej"
       metaTitle="Kajaki Supraśl – spływy kajakowe | Atrakcje"
       metaDescription="Kajaki Supraśl – odkryj najlepsze trasy spływów kajakowych rzeką Supraśl w Puszczy Knyszyńskiej. Przewodnik po trasach, porady i noclegi."
       slug="kajaki-suprasl"
@@ -89,7 +89,7 @@ const KajakiSuprasl = () => {
         src={blogKajaki}
         alt="kajaki Supraśl – spływ kajakowy rzeką Supraśl w Puszczy Knyszyńskiej"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Dlaczego warto wybrać kajaki w Supraślu?</h2>
 
@@ -128,7 +128,7 @@ const KajakiSuprasl = () => {
         src={riverKayak}
         alt="rzeka Supraśl – spokojna rzeka w Puszczy Knyszyńskiej idealna na kajaki"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Jak wygląda spływ rzeką Supraśl?</h2>
 
@@ -224,7 +224,7 @@ const KajakiSuprasl = () => {
         src={forestPanorama}
         alt="Puszcza Knyszyńska – panorama leśna nad rzeką Supraśl"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Kiedy najlepiej płynąć?</h2>
 
@@ -275,7 +275,7 @@ const KajakiSuprasl = () => {
 
       <h3>Dojazd</h3>
       <p>
-        Większość wypożyczalni kajaków jest w okolicach Supraśla i jest łatwo dostępna
+        Większość wypożyczalni kajaków znajduje się w okolicach Supraśla i jest łatwo dostępna
         samochodem. Wiele z nich oferuje transport z centrum Supraśla lub z{' '}
         <Link to="/noclegi-suprasl">noclegu w okolicy</Link>. Parking jest zazwyczaj bezpłatny.
       </p>

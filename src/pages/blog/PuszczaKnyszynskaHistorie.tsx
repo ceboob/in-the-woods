@@ -1,18 +1,18 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import heroImg from '@/assets/blog-puszcza-historie-hero.webp';
+import heroImg from '@/assets/blog-puszcza-historie-hero.jpg';
 import panoramaImg from '@/assets/blog-puszcza-panorama.webp';
-import kladkiImg from '@/assets/blog-puszcza-kladki.webp';
-import powstanieLasImg from '@/assets/blog-powstanie-styczniowe-las.webp';
-import rekonstrukcjaImg from '@/assets/blog-rekonstrukcja-powstanie.webp';
-import galeriaRzezbyImg from '@/assets/blog-galeria-lesna-rzezby.webp';
-import galeriaPostacImg from '@/assets/blog-galeria-lesna-rzezba-postac.webp';
+import kladkiImg from '@/assets/blog-puszcza-kladki.jpg';
+import powstanieLasImg from '@/assets/blog-powstanie-styczniowe-las.jpg';
+import rekonstrukcjaImg from '@/assets/blog-rekonstrukcja-powstanie.jpg';
+import galeriaRzezbyImg from '@/assets/blog-galeria-lesna-rzezby.jpg';
+import galeriaPostacImg from '@/assets/blog-galeria-lesna-rzezba-postac.jpg';
 
 const PuszczaKnyszynskaHistorie = () => (
   <BlogArticleLayout
     title="Puszcza Knyszyńska historie – 7 niezwykłych opowieści"
     metaTitle="Puszcza Knyszyńska – 7 niezwykłych historii"
-    metaDescription="Puszcza Knyszyńska — historie i legendy. Galeria Leśna, Powstanie Styczniowe i nocleg w lesie blisko Supraśla."
+    metaDescription="Puszcza Knyszyńska historie i noclegi Supraśl – odkryj Galerię Leśną Powstania Styczniowego oraz wyjątkowy dom w lesie z jacuzzi (In The Woods) tylko 300 m od atrakcji."
     slug="puszcza-knyszynska-historie"
     publishDate="2026-03-28"
     readTime="14 min"
@@ -25,7 +25,7 @@ const PuszczaKnyszynskaHistorie = () => (
     ]}
     faqs={[
       {
-        question: 'Gdzie jest Puszcza Knyszyńska?',
+        question: 'Gdzie znajduje się Puszcza Knyszyńska?',
         answer:
           'W województwie podlaskim, niedaleko Białegostoku. Obejmuje ponad 128 tysięcy hektarów lasów, rezerwatów i obszarów chronionych.',
       },
@@ -73,7 +73,7 @@ const PuszczaKnyszynskaHistorie = () => (
       src={heroImg}
       alt="Leśna droga w Puszczy Knyszyńskiej w porannej mgle"
       className="rounded-lg shadow-md w-full"
-    width="800" height="450" loading="lazy" />
+    />
 
     <h2>Czym jest Puszcza Knyszyńska i dlaczego kryje tyle tajemnic</h2>
 
@@ -93,7 +93,7 @@ const PuszczaKnyszynskaHistorie = () => (
       src={panoramaImg}
       alt="Panorama Puszczy Knyszyńskiej o zachodzie słońca"
       className="rounded-lg shadow-md w-full"
-    width="800" height="450" loading="lazy" />
+    />
 
     <h3>Znaczenie historyczne i kulturowe</h3>
     <p>
@@ -116,7 +116,7 @@ const PuszczaKnyszynskaHistorie = () => (
       src={powstanieLasImg}
       alt="Kolorowa rycina XIX-wieczna — powstańcy styczniowi w lesie"
       className="rounded-lg shadow-md w-full"
-    width="800" height="450" loading="lazy" />
+    />
 
     <h3>Leśne oddziały i partyzantka</h3>
     <p>
@@ -141,12 +141,12 @@ const PuszczaKnyszynskaHistorie = () => (
         src={galeriaRzezbyImg}
         alt="Rzeźby z drewna w Galerii Leśnej Powstania Styczniowego"
         className="rounded-lg shadow-md w-full h-64 object-cover"
-      width="800" height="450" loading="lazy" />
+      />
       <img
         src={galeriaPostacImg}
         alt="Drewniana rzeźba postaci w Galerii Leśnej"
         className="rounded-lg shadow-md w-full h-64 object-cover"
-      width="800" height="450" loading="lazy" />
+      />
     </div>
 
     <h3>Najważniejsze wydarzenia w Surażkowie</h3>
@@ -177,7 +177,7 @@ const PuszczaKnyszynskaHistorie = () => (
       src={kladkiImg}
       alt="Drewniane kładki na szlaku przez Puszczę Knyszyńską"
       className="rounded-lg shadow-md w-full"
-    width="800" height="450" loading="lazy" />
+    />
 
     <h2>Znane postacie związane z puszczą</h2>
 
@@ -215,7 +215,7 @@ const PuszczaKnyszynskaHistorie = () => (
       src={rekonstrukcjaImg}
       alt="Rekonstrukcja historyczna Powstania Styczniowego w Puszczy Knyszyńskiej"
       className="rounded-lg shadow-md w-full"
-    width="800" height="450" loading="lazy" />
+    />
 
     <h2>Współczesne znaczenie historyczne puszczy</h2>
 

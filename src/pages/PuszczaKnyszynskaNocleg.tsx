@@ -106,7 +106,7 @@ const PuszczaKnyszynskaNocleg = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Lokalizacja i dojazd</h2>
       <p className="text-muted-foreground leading-relaxed">
-        In The Woods jest w miejscowości Konne (Konne 109/1, 16-030 Supraśl), przy
+        In The Woods znajduje się w miejscowości Konne (Konne 109/1, 16-030 Supraśl), przy
         rezerwacie Krzemienne Góry. 10 minut samochodem od Supraśla, 25 minut od Białegostoku, 2,5
         godziny od Warszawy.
       </p>

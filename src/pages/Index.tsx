@@ -5,10 +5,9 @@ import HeroSection from '@/components/HeroSection';
 import HeroWelcome from '@/components/HeroWelcome';
 import BadgesBar from '@/components/BadgesBar';
 import TrustSection from '@/components/TrustSection';
-import AmenitiesSection from '@/components/AmenitiesSection';
-import GuideSection from '@/components/GuideSection';
 
 // Lazy-loaded sections below the fold
+const AmenitiesSection = lazy(() => import('@/components/AmenitiesSection'));
 const JacuzziSection = lazy(() => import('@/components/JacuzziSection'));
 const RelaxSection = lazy(() => import('@/components/RelaxSection'));
 const ForWhoSection = lazy(() => import('@/components/ForWhoSection'));
@@ -22,6 +21,7 @@ const LocationSection = lazy(() => import('@/components/LocationSection'));
 const EventsSection = lazy(() => import('@/components/EventsSection'));
 const FAQSection = lazy(() => import('@/components/FAQSection'));
 const GuestGuideSection = lazy(() => import('@/components/GuestGuideSection'));
+const GuideSection = lazy(() => import('@/components/GuideSection'));
 const SEOTextSection = lazy(() => import('@/components/SEOTextSection'));
 const CTASection = lazy(() => import('@/components/CTASection'));
 const ContactSection = lazy(() => import('@/components/ContactSection'));
@@ -30,7 +30,7 @@ const ExitIntentPopup = lazy(() => import('@/components/ExitIntentPopup'));
 const StickyMobileCTA = lazy(() => import('@/components/StickyMobileCTA'));
 
 const SectionFallback = () => (
-  <div className="min-h-[400px] py-20 flex items-center justify-center">
+  <div className="py-20 flex items-center justify-center">
     <div className="w-6 h-6 border-2 border-primary/30 border-t-teal rounded-full animate-spin" />
   </div>
 );
@@ -87,11 +87,11 @@ const jsonLd = {
   checkinTime: '15:00',
   checkoutTime: '11:00',
   image: [
-    'https://www.suprasl.online/og-image.webp',
-    'https://www.suprasl.online/gallery/dom-z-zewnatrz-zima.webp',
-    'https://www.suprasl.online/gallery/jacuzzi-w-nocy.webp',
-    'https://www.suprasl.online/gallery/salon-z-kominkiem.webp',
-    'https://www.suprasl.online/gallery/sypialnia-na-pietrze.webp',
+    'https://www.suprasl.online/og-image.jpg',
+    'https://www.suprasl.online/gallery/dom-z-zewnatrz-zima.jpg',
+    'https://www.suprasl.online/gallery/jacuzzi-w-nocy.jpg',
+    'https://www.suprasl.online/gallery/salon-z-kominkiem.jpg',
+    'https://www.suprasl.online/gallery/sypialnia-na-pietrze.jpg',
   ],
   priceRange: 'od 399 PLN',
   currenciesAccepted: 'PLN',
@@ -163,7 +163,7 @@ const Index = () => {
     <div className="min-h-screen">
       <SEOHead
         title="In The Woods — Dom w lesie z balią | Supraśl"
-        description="In The Woods — dom na wyłączność w Puszczy Knyszyńskiej. Balia, sauna, kominek i cisza natury. Rezerwuj weekend!"
+        description="Zarezerwuj In The Woods — luksusowy dom na wyłączność w Puszczy Knyszyńskiej koło Supraśla. Gorąca balia, sauna, kominek i cisza natury. Idealny na romantyczny weekend!"
         canonical="https://www.suprasl.online/"
         jsonLd={[jsonLd, faqJsonLd]}
       />
@@ -177,36 +177,40 @@ const Index = () => {
         <BadgesBar />
         <TrustSection />
 
-        {/* Oferta — eagerly loaded (just below fold) */}
-        <AmenitiesSection />
-        <GuideSection />
-
         <Suspense fallback={<SectionFallback />}>
+          {/* Oferta — co dostaje gość */}
+          <AmenitiesSection />
+
+          {/* Przewodnik turystyczny — przed Jacuzzi */}
+          <GuideSection />
+
           <JacuzziSection />
           <RelaxSection />
           <ForWhoSection />
-        </Suspense>
 
-        <Suspense fallback={<SectionFallback />}>
+          {/* Dowód wizualny */}
           <GallerySection />
-          <WinterSection />
-        </Suspense>
 
-        <Suspense fallback={<SectionFallback />}>
+          {/* Sezonowość + okolica */}
+          <WinterSection />
+
+          {/* Cena + dostępność + rezerwacja — konwersja */}
           <PricingSection />
           <AvailabilityCalendar />
           <BookingModule />
-        </Suspense>
 
-        <Suspense fallback={<SectionFallback />}>
+          {/* Social proof */}
           <TestimonialsSection />
+
+          {/* Okolica i lokalne SEO */}
           <LocationSection />
           <EventsSection />
-        </Suspense>
 
-        <Suspense fallback={<SectionFallback />}>
+          {/* FAQ (dane strukturalne) + informator */}
           <FAQSection />
           <GuestGuideSection />
+
+          {/* Treść SEO + końcowe CTA */}
           <SEOTextSection />
           <CTASection />
           <ContactSection />

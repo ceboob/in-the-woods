@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Luckiest+Guy&family=Monoton&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,54 +6,54 @@
 
 @layer base {
   :root {
-    --background: 30 14% 98%;
-    --foreground: 0 0% 20%;
+    --background: 0 0% 97.6%;
+    --foreground: 0 0% 26.7%;
 
-    --card: 30 20% 97%;
+    --card: 0 0% 100%;
     --card-foreground: 0 0% 20%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    --primary: 181 38% 49%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 48 71% 66%;
+    --primary-foreground: 0 0% 20%;
 
-    --secondary: 30 20% 97%;
+    --secondary: 0 0% 95%;
     --secondary-foreground: 0 0% 20%;
 
-    --muted: 30 14% 96%;
-    --muted-foreground: 0 0% 33%;
+    --muted: 0 0% 93%;
+    --muted-foreground: 0 0% 33.3%;
 
-    --accent: 181 38% 49%;
+    --accent: 27 42% 39%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 63% 50%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 181 38% 49%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 48 71% 66%;
 
     --radius: 0.5rem;
 
-    --teal: 181 38% 49%;
+    --teal: 186 54% 27%;
 
-    --wood: 30 14% 96%;
-    --wood-light: 30 20% 97%;
-    --forest: 181 38% 49%;
-    --forest-light: 181 38% 55%;
-    --cream: 0 0% 100%;
+    --wood: 27 42% 39%;
+    --wood-light: 30 35% 50%;
+    --forest: 186 54% 27%;
+    --forest-light: 186 40% 38%;
+    --cream: 0 0% 97.6%;
     --graphite: 0 0% 20%;
-    --warm-white: 30 14% 96%;
+    --warm-white: 0 0% 96%;
 
-    --sidebar-background: 0 0% 100%;
+    --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 0 0% 20%;
-    --sidebar-primary: 181 38% 49%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 30 20% 97%;
+    --sidebar-primary: 48 71% 66%;
+    --sidebar-primary-foreground: 0 0% 20%;
+    --sidebar-accent: 0 0% 95%;
     --sidebar-accent-foreground: 0 0% 20%;
-    --sidebar-border: 0 0% 90%;
-    --sidebar-ring: 181 38% 49%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 48 71% 66%;
   }
 }
 
@@ -64,48 +64,47 @@
 
   body {
     @apply bg-background text-muted-foreground antialiased;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.6;
-    color: hsl(0 0% 33%);
+    line-height: 1.7;
+    color: hsl(0 0% 33.3%);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 1px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
     color: hsl(0 0% 20%);
-    text-transform: uppercase;
     margin-bottom: 1.2rem;
   }
 
   h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 28px;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.01em;
     line-height: 1.3;
     color: hsl(0 0% 20%);
     margin-bottom: 1rem;
   }
 
   h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: -0.01em;
     line-height: 1.3;
     color: hsl(0 0% 20%);
     margin-bottom: 0.75rem;
   }
 
   h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: hsl(0 0% 20%);
   }
@@ -118,27 +117,21 @@
 
   p {
     margin-bottom: 1.2em;
-    letter-spacing: 0;
-    line-height: 1.6;
+    letter-spacing: 0.01em;
+    line-height: 1.7;
   }
 
   small, .text-xs, .text-sm {
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
   }
 
   p:last-child {
     margin-bottom: 0;
   }
 
-  strong {
-    color: hsl(0 0% 20%);
-    font-weight: 700;
-  }
-
   a {
     color: hsl(var(--teal));
     transition: all 0.3s ease;
-    text-decoration: none;
   }
 
   a:hover {
@@ -153,39 +146,39 @@
 
   .section-title {
     @apply tracking-tight text-foreground;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 28px;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.01em;
     line-height: 1.3;
   }
 
   .section-subtitle {
     @apply text-base md:text-lg text-muted-foreground font-normal max-w-2xl;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
     margin-top: 0.5rem;
   }
 
   .nav-link {
     @apply text-xs tracking-[0.15em] uppercase transition-all duration-300;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 text-sm tracking-[0.05em] uppercase transition-all duration-300;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm tracking-[0.08em] uppercase transition-all duration-300;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(78, 173, 175, 0.25);
+    color: hsl(0 0% 20%);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(78, 173, 175, 0.35);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
   }
 
   .btn-primary:focus {
@@ -194,52 +187,49 @@
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center px-6 py-3 border text-sm tracking-[0.05em] uppercase transition-all duration-300;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    @apply inline-flex items-center justify-center px-6 py-3 border text-sm tracking-[0.08em] uppercase transition-all duration-300;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     border-color: hsl(var(--foreground));
     color: hsl(var(--foreground));
-    border-radius: 5px;
+    border-radius: 8px;
   }
 
   .btn-outline:hover {
     background-color: hsl(var(--foreground));
     color: hsl(var(--background));
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
     transform: translateY(-2px);
   }
 
   .card-premium {
     @apply bg-card border border-border transition-all duration-500;
     padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
 
   .card-premium:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
+    box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
   }
 }
 
 @layer utilities {
   .font-serif {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   .font-sans {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
   }
 
   .font-display {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-family: 'Monoton', cursive;
   }
 
   .font-script {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: italic;
   }

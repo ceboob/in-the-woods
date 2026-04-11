@@ -68,9 +68,9 @@ const faqs = [
 
 const PuszczaKnyszynskaPrzewodnik = () => (
   <BlogArticleLayout
-    title="Puszcza Knyszyńska – przewodnik, szlaki i mapy GPX"
+    title="Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX"
     metaTitle="Puszcza Knyszyńska – przewodnik i szlaki GPX"
-    metaDescription="Puszcza Knyszyńska — szlaki piesze, rowerowe, mapy GPX. Kajaki, wieże widokowe, Kruszyniany. Kompletny przewodnik."
+    metaDescription="Odkryj Puszczę Knyszyńską: najpiękniejsze szlaki piesze, rowerowe i narciarskie z mapami GPX do pobrania. Kajaki, rykowisko, wieże widokowe, Kruszyniany i Supraśl."
     slug="puszcza-knyszynska-przewodnik"
     publishDate="2026-04-09"
     readTime="15 min"
@@ -247,7 +247,7 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <strong>Źródło treści i danych GPX:</strong> Stowarzyszenie Przyjaciół Puszczy Knyszyńskiej
         „Wielki Las" i Park Krajobrazowy Puszczy Knyszyńskiej im. prof. Witolda Sławińskiego.
         Dane udostępnione za pośrednictwem portalu{' '}
-        <a href="https://wielkilas.pl" target="_blank" rel="noopener noreferrer nofollow" className="text-primary underline hover:text-primary/80">
+        <a href="https://wielkilas.pl" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
           wielkilas.pl
         </a>.
         Dane GPX udostępnione bezpłatnie do użytku prywatnego.

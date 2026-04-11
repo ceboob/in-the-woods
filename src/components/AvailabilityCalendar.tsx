@@ -224,7 +224,7 @@ const AvailabilityCalendar = () => {
           {/* Calendar grid */}
           <div className="grid grid-cols-7 gap-1">
             {calendarDays.map((date, i) => {
-              if (!date) return <span key={`empty-${i}`} />;
+              if (!date) return <div key={`empty-${i}`} />;
               const blocked = isDateBlocked(date);
               const past = isPast(date);
               const show = shouldShowDate(date);

@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Church, Building2, Waves, TreePine, Bed, UtensilsCrossed, Sailboat, Bike, Sparkles, CalendarDays } from 'lucide-react';
 
@@ -26,21 +25,7 @@ const Card = ({ icon: Icon, title, desc, cta, link }: CardData) => (
   </div>
 );
 
-const GuideSection = () => {
-  const [showMore, setShowMore] = useState(false);
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (showMore || !sectionRef.current) return;
-    const obs = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setShowMore(true); obs.disconnect(); } },
-      { rootMargin: '200px' }
-    );
-    obs.observe(sectionRef.current);
-    return () => obs.disconnect();
-  }, [showMore]);
-
-  return (
+const GuideSection = () => (
   <section className="py-16 md:py-24 bg-background">
     <div className="max-w-6xl mx-auto px-6 md:px-12 space-y-20">
       {/* Intro pod H1 */}
@@ -98,9 +83,7 @@ const GuideSection = () => {
         </div>
       </div>
 
-      {/* Lazy-rendered lower subsections */}
-      <div ref={sectionRef} />
-      {showMore && (<>
+      {/* Zaplanuj pobyt */}
       <div className="space-y-8">
         <div className="text-center space-y-3">
           <p className="text-sm font-semibold tracking-widest uppercase text-primary">
@@ -184,10 +167,8 @@ const GuideSection = () => {
           Odkryj atrakcje Supraśla
         </Link>
       </div>
-      </>)}
     </div>
   </section>
 );
-};
 
 export default GuideSection;

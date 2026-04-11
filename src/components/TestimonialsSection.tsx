@@ -1,4 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { Star } from 'lucide-react';
 
 const testimonials = [
   {
@@ -61,7 +62,11 @@ const TestimonialsSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.slice(0, 6).map((t, i) => (
             <div key={i} className="card-premium space-y-4">
-              <span className="text-wood text-base tracking-wide" aria-label="Ocena 5 na 5 gwiazdek">★★★★★</span>
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, j) => (
+                  <Star key={j} className="w-4 h-4 fill-wood text-wood" />
+                ))}
+              </div>
               <p className="text-foreground/80 leading-relaxed italic font-serif text-lg">
                 „{t.text}"
               </p>

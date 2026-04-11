@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogMonaster from '@/assets/blog-monaster-suprasl.webp';
-import blogRzeka from '@/assets/blog-rzeka-suprasl.webp';
+import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
+import blogRzeka from '@/assets/blog-rzeka-suprasl.jpg';
 import exteriorMain from '@/assets/exterior-main.webp';
 
 const SupraslAtrakcje = () => {
@@ -39,7 +39,7 @@ const SupraslAtrakcje = () => {
 
   return (
     <BlogArticleLayout
-      title="Supraśl – co zobaczyć? Przewodnik po atrakcjach"
+      title="Supraśl – co zobaczyć w jednym z najpiękniejszych miasteczek Podlasia"
       metaTitle="Supraśl atrakcje – co zobaczyć | Przewodnik"
       metaDescription="Supraśl – najpiękniejsze atrakcje, monaster, Muzeum Ikon, szlaki i slow tourism. Kompletny przewodnik po perle Podlasia."
       slug="suprasl-atrakcje-national-geographic"
@@ -56,7 +56,7 @@ const SupraslAtrakcje = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h2>Supraśl – co zobaczyć? Przewodnik po atrakcjach</h2>
+      <h2>Supraśl – co zobaczyć w jednym z najpiękniejszych miasteczek Podlasia</h2>
 
       <p>
         Supraśl to jedno z tych miejsc, które zaskakują. Małe, ciche, niepozorne na mapie — a
@@ -76,7 +76,7 @@ const SupraslAtrakcje = () => {
         src={blogMonaster}
         alt="Monaster Supraśl – atrakcje, co zobaczyć"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Dlaczego Supraśl jest wyjątkowy?</h2>
 
@@ -122,7 +122,7 @@ const SupraslAtrakcje = () => {
         src={blogRzeka}
         alt="Rzeka Supraśl – kajaki, atrakcje Supraśl"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Największe atrakcje Supraśla</h2>
 
@@ -203,7 +203,7 @@ const SupraslAtrakcje = () => {
         src={exteriorMain}
         alt="In The Woods – noclegi Supraśl, dom w lesie z jacuzzi"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Dlaczego warto nocować blisko natury?</h2>
 

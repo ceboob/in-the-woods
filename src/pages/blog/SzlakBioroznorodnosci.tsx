@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.webp';
-import forestNature from '@/assets/forest-nature.webp';
+import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
+import forestNature from '@/assets/forest-nature.jpg';
 import forestPanorama from '@/assets/forest-panorama.webp';
 
 const SzlakBioroznorodnosci = () => {
@@ -39,7 +39,7 @@ const SzlakBioroznorodnosci = () => {
 
   return (
     <BlogArticleLayout
-      title="Szlak Bioróżnorodności Supraśl – spacer w Puszczy"
+      title="Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej"
       metaTitle="Szlak Bioróżnorodności Supraśl | Spacer"
       metaDescription="Szlak Bioróżnorodności w Supraślu to 7 km edukacyjnej trasy przez Puszczę Knyszyńską. Poznaj florę, faunę i ekosystemy leśne Podlasia."
       slug="szlak-bioroznorodnosci-suprasl"
@@ -56,7 +56,7 @@ const SzlakBioroznorodnosci = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h2>Szlak Bioróżnorodności Supraśl – spacer w Puszczy</h2>
+      <h2>Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej</h2>
 
       <p>
         Puszcza Knyszyńska to jeden z najcenniejszych kompleksów leśnych w Polsce, a{' '}
@@ -77,7 +77,7 @@ const SzlakBioroznorodnosci = () => {
         src={blogSzlakBio}
         alt="Szlak Bioróżnorodności Supraśl – ścieżka edukacyjna w Puszczy Knyszyńskiej"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Czym jest Szlak Bioróżnorodności?</h2>
 
@@ -128,7 +128,7 @@ const SzlakBioroznorodnosci = () => {
         src={forestNature}
         alt="Puszcza Knyszyńska – las mieszany na Szlaku Bioróżnorodności"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Co można zobaczyć?</h2>
 
@@ -162,7 +162,7 @@ const SzlakBioroznorodnosci = () => {
         src={forestPanorama}
         alt="Panorama Puszczy Knyszyńskiej – szlaki przyrodnicze Supraśl"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Dlaczego warto odwiedzić?</h2>
 

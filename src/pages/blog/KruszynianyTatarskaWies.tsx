@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.webp';
-import blogRzeka from '@/assets/blog-rzeka-suprasl.webp';
+import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
+import blogRzeka from '@/assets/blog-rzeka-suprasl.jpg';
 
 const KruszynianyTatarskaWies = () => {
   const faqs = [
@@ -37,7 +37,7 @@ const KruszynianyTatarskaWies = () => {
     <BlogArticleLayout
       title="Kruszyniany – tatarska wieś Podlasia"
       metaTitle="Kruszyniany – tatarska wieś i meczet"
-      metaDescription="Kruszyniany — tatarska wieś na Podlasiu. Drewniany meczet, kuchnia tatarska i tradycja. Odkryj to miejsce!"
+      metaDescription="Kruszyniany to unikalna tatarska wieś na Podlasiu. Drewniany meczet, kuchnia tatarska i wielowiekowa tradycja — odkryj jedno z najciekawszych miejsc w Polsce."
       slug="kruszyniany-tatarska-wies"
       publishDate="2026-03-14"
       readTime="9 min"
@@ -73,7 +73,7 @@ const KruszynianyTatarskaWies = () => {
         src={blogKruszyniany}
         alt="Meczet w Kruszynianach – tatarska wieś Podlasie"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Historia Tatarów na Podlasiu</h2>
 
@@ -104,7 +104,7 @@ const KruszynianyTatarskaWies = () => {
 
       <p>
         Sercem Kruszynian jest <strong>drewniany meczet</strong> z XVIII wieku — jeden z zaledwie
-        dwóch zachowanych drewnianych meczetów w Polsce (drugi jest w sąsiednich
+        dwóch zachowanych drewnianych meczetów w Polsce (drugi znajduje się w sąsiednich
         Bohonikach). Budynek zachwyca prostotą formy i harmonijnym wpisaniem w krajobraz podlaskiej
         wsi.
       </p>
@@ -118,7 +118,7 @@ const KruszynianyTatarskaWies = () => {
       <h3>Cmentarz muzułmański (mizar)</h3>
 
       <p>
-        Obok meczetu jest <strong>mizar</strong> — tatarski cmentarz z kamiennymi
+        Obok meczetu znajduje się <strong>mizar</strong> — tatarski cmentarz z kamiennymi
         nagrobkami, na których inskrypcje wyryto w języku arabskim. Spacer po cmentarzu to
         poruszające doświadczenie, które przenosi w czasie i pozwala poczuć ciągłość tatarskiej
         tradycji na tych ziemiach.
@@ -163,7 +163,7 @@ const KruszynianyTatarskaWies = () => {
         src={blogRzeka}
         alt="Krajobraz Podlasia – okolice Kruszynian i Supraśla"
         className="w-full rounded-lg my-8"
-      width="800" height="450" loading="lazy" />
+      />
 
       <h2>Dlaczego warto odwiedzić Kruszyniany?</h2>
 

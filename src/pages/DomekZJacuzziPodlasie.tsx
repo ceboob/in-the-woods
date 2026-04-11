@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const DomekZJacuzziPodlasie = () => (
   <SEOPageLayout
     title="Noclegi z Balią i Sauną Podlasie | Luksusowy wypoczynek"
-    description="Domek z balią i sauną na Podlasiu — obiekty SPA w Puszczy Knyszyńskiej koło Supraśla. Zarezerwuj relaks!"
+    description="Marzy Ci się domek z gorącą balią i sauną na Podlasiu? Znajdź najlepsze obiekty SPA w Puszczy Knyszyńskiej i okolicach Supraśla. Relaks gwarantowany."
     breadcrumbName="Domek z jacuzzi Podlasie"
     ogImage="https://www.suprasl.online/images/jacuzzi-night.jpg"
   >

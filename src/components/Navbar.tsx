@@ -82,8 +82,8 @@ const Navbar = () => {
     dropdownTimeout.current = setTimeout(() => setOpenDropdown(null), 150);
   };
 
-  const textClass = scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-foreground/70 hover:text-foreground';
-  const activeTextClass = scrolled ? 'text-foreground' : 'text-foreground';
+  const textClass = scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-white/70 hover:text-white';
+  const activeTextClass = scrolled ? 'text-foreground' : 'text-white';
 
   return (
     <nav
@@ -94,7 +94,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
         <button
           onClick={() => handleClick('#hero')}
-          className={`font-display text-2xl md:text-3xl transition-colors duration-500 text-foreground`}
+          className={`font-display text-2xl md:text-3xl transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-white'}`}
         >
           In The Woods
         </button>
@@ -160,7 +160,7 @@ const Navbar = () => {
 
         {/* Mobile hamburger */}
         <button
-          className={`md:hidden transition-colors duration-500 text-foreground`}
+          className={`md:hidden transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-white'}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label={menuOpen ? 'Zamknij menu' : 'Otwórz menu'}
           aria-expanded={menuOpen}
