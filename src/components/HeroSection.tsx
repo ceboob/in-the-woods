@@ -1,5 +1,5 @@
 import heroImg from '@/assets/exterior-main.webp';
-import { Phone, Star, Users, TreePine, Sparkles, CalendarCheck } from 'lucide-react';
+import { Phone, Star, Users, TreePine, Sparkles, CalendarCheck, Flame, Dog } from 'lucide-react';
 import { useMemo } from 'react';
 import { BLOCKED_DATES, formatDateKey } from '@/lib/pricing';
 
@@ -8,13 +8,10 @@ const HeroSection = () => {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Dynamic availability counter for current + next month
   const availabilityText = useMemo(() => {
     const now = new Date();
     const currentMonth = now.getMonth();
-    const currentYear = now.getFullYear();
 
-    // Count free days in the next 60 days
     let freeDays = 0;
     let freeWeekends = 0;
     const check = new Date(now);
@@ -50,7 +47,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Noclegi Supraśl — dom w lesie z jacuzzi, In The Woods, Puszcza Knyszyńska"
+          alt="Leśny dom na wyłączność z jacuzzi i sauną w Puszczy Knyszyńskiej — In The Woods noclegi Supraśl"
           className="w-full h-full object-cover"
           loading="eager"
           fetchPriority="high"
@@ -63,29 +60,33 @@ const HeroSection = () => {
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white leading-tight mb-4 animate-fade-up drop-shadow-lg"
           style={{ fontFamily: "'Luckiest Guy', cursive", letterSpacing: '0.02em' }}
         >
-          In The Woods — Dom w Puszczy Knyszyńskiej z balią i sauną
+          Leśny dom na wyłączność — domek w lesie z jacuzzi i sauną
         </h1>
         <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-white/90 mb-3 animate-fade-in">
-          Dom w lesie z jacuzzi blisko Supraśla
+          Puszcza Knyszyńska · Supraśl · Podlasie
         </p>
 
         <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
           <p className="font-serif text-lg md:text-xl text-white italic">
-            Prywatny dom w lesie.
+            Ucieczka od zgiełku miasta. Detoks cyfrowy w lesie.
           </p>
           <p className="font-serif text-lg md:text-xl text-white italic">
-            Kominek. Ruska bania. Cisza natury.
+            Spokojny wypoczynek w naturze — kominek, balia, cisza.
           </p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
           <div className="flex items-center gap-2 text-white/90">
             <Users className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide font-medium">Dom na wyłączność</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">Dom z bali na wyłączność</span>
           </div>
           <div className="flex items-center gap-2 text-white/90">
-            <TreePine className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide font-medium">10 min od Supraśla</span>
+            <Dog className="w-4 h-4" />
+            <span className="text-xs md:text-sm tracking-wide font-medium">Ogrodzony teren · psy za darmo</span>
+          </div>
+          <div className="flex items-center gap-2 text-white/90">
+            <Flame className="w-4 h-4" />
+            <span className="text-xs md:text-sm tracking-wide font-medium">Domek z kominkiem w lesie</span>
           </div>
           <div className="flex items-center gap-2 text-white/90">
             <Sparkles className="w-4 h-4" />
@@ -108,7 +109,6 @@ const HeroSection = () => {
           </a>
         </div>
 
-        {/* Dynamic availability counter */}
         {availabilityText && (
           <div className="flex items-center justify-center gap-2 mb-8 animate-fade-in delay-400">
             <CalendarCheck className="w-4 h-4 text-primary/80" />
@@ -121,10 +121,10 @@ const HeroSection = () => {
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 animate-fade-in delay-500">
           <div className="flex items-center gap-1.5 text-primary text-sm font-medium">
             <Star className="w-4 h-4 fill-primary text-primary" />
-            <span>5★ opinie</span>
+            <span>4,82★ opinie</span>
           </div>
           <span className="text-white/50 text-sm">·</span>
-          <span className="text-white font-medium text-sm">Ponad 100 zadowolonych gości</span>
+          <span className="text-white font-medium text-sm">Ponad 110 zadowolonych gości</span>
           <span className="text-white/50 text-sm">·</span>
           <span className="text-white font-medium text-sm">Rezerwacje bezpośrednie</span>
         </div>

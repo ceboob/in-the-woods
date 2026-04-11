@@ -39,11 +39,11 @@ const RelaxSection = () => {
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
             Strefa relaksu
           </p>
-          <h2 className="section-title">Zaplanuj swój pobyt: Relaks w sercu natury</h2>
+          <h2 className="section-title">Odpoczynek w lesie na weekend — slow travel w Puszczy Knyszyńskiej</h2>
           <p className="section-subtitle mx-auto">
-            Wyobraź sobie wieczór, w którym jedynym dźwiękiem jest trzask drewna. Szepty puszczy otulają Cię
-            ciepłem, a gorąca ruska bania czeka w ogrodzie — otoczona zielenią, z dala od cywilizacji.
-            Zapalamy świece, podgrzewamy wodę drewnem i oddajemy się rytuałowi odpoczynku,
+            Wyobraź sobie wieczór, w którym jedynym dźwiękiem jest trzask drewna. Spokojny wypoczynek w naturze,
+            gdzie szepty puszczy otulają Cię ciepłem, a gorąca ruska bania czeka w ogrodzie — chill w lesie,
+            z dala od cywilizacji. Zapalamy świece, podgrzewamy wodę drewnem i oddajemy się rytuałowi odpoczynku,
             który goście wspominają jeszcze długo po powrocie do miasta.
           </p>
         </div>
@@ -52,7 +52,7 @@ const RelaxSection = () => {
           <div className="overflow-hidden relative group">
             <img
               src={baniaImg}
-              alt="Prywatna ruska bania — drewniana beczka z gorącą wodą w ogrodzie In The Woods Supraśl"
+              alt="Prywatna ruska bania — domek z balią w lesie, SPA na odludziu w Puszczy Knyszyńskiej"
               className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
               loading="lazy"
               width="600"
@@ -65,7 +65,7 @@ const RelaxSection = () => {
           <div className="overflow-hidden relative group">
             <img
               src={tarasImg}
-              alt="Relaks na tarasie z kawą i świecami — letni wieczór w In The Woods Supraśl"
+              alt="Odpoczynek w lesie weekend — relaks na tarasie leśnego domku w Supraślu"
               className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
               loading="lazy"
               width="600"
@@ -77,7 +77,6 @@ const RelaxSection = () => {
           </div>
         </div>
 
-        {/* Seasonal rituals */}
         <div className="max-w-3xl mx-auto mb-16">
           <p className="text-center font-heading text-xl md:text-2xl font-light text-foreground mb-8">
             Pomysły na weekend: rytuał na każdą porę roku
@@ -95,7 +94,6 @@ const RelaxSection = () => {
           </div>
         </div>
 
-        {/* Evening atmosphere */}
         <div className="text-center max-w-2xl mx-auto space-y-4">
           <p className="font-heading text-2xl md:text-3xl font-light text-foreground">Wieczorem:</p>
           <div className="space-y-1 text-muted-foreground font-serif text-lg italic">
@@ -103,7 +101,7 @@ const RelaxSection = () => {
             <p>Ciepła woda w bani. Zapach drewna. Szepty Puszczy.</p>
           </div>
           <p className="font-serif text-lg text-foreground/80 italic pt-4">
-            To właśnie esencja odpoczynku w In The Woods — ostoja spokoju, gdzie czas płynie inaczej.
+            To esencja odpoczynku w lesie na weekend — ostoja spokoju, gdzie czas płynie inaczej.
           </p>
         </div>
       </div>

@@ -11,7 +11,7 @@ const SEOTextSection = () => {
         className={`max-w-4xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
       >
         <div className="text-center mb-12 space-y-4">
-          <h2 className="section-title">Noclegi Supraśl – wyjątkowy dom w lesie</h2>
+          <h2 className="section-title">Noclegi Supraśl – leśny domek do wynajęcia na Podlasiu</h2>
         </div>
 
         <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground leading-relaxed">
@@ -30,13 +30,14 @@ const SEOTextSection = () => {
             banią w ogrodzie.
           </p>
 
-          <h3 className="font-heading text-xl text-foreground">Noclegi Supraśl – dom na wynajem</h3>
+          <h3 className="font-heading text-xl text-foreground">Leśny domek do wynajęcia — dom z bali na wyłączność</h3>
           <p>
-            Nasz <strong>dom Supraśl</strong> oferuje kominek z prawdziwym ogniem, w pełni
-            wyposażoną kuchnię z ceglanym piecem, dwie sypialnie na poddaszu z drewnianymi belkami,
-            nowoczesną łazienkę, ogród z altaną i taras z widokiem na las. Goście mogą skorzystać z
-            prywatnej ruskiej bani z balią — drewnianej beczki z gorącą wodą podgrzewaną na drewno,
-            idealnej po dniu spędzonym na szlakach
+            Nasz <strong>dom z bali wynajem</strong> oferuje klimatyczny kominek z prawdziwym ogniem, w pełni
+            wyposażoną kuchnię z elegancką płytą kaflową, dwie sypialnie na poddaszu z drewnianymi belkami,
+            nowoczesną łazienkę, ogród z altaną i taras z widokiem na las. To leśny domek do wynajęcia
+            z duszą — domek z kominkiem w lesie, w którym poczujesz prawdziwe oderwanie od cywilizacji.
+            Goście mogą skorzystać z prywatnej ruskiej bani z balią —{' '}
+            <strong>domek z jacuzzi w lesie</strong>, idealny po dniu na szlakach
             <Link
               to="/puszcza-knyszynska-nocleg"
               className="text-primary underline hover:text-primary/80 transition-colors"
@@ -45,11 +46,19 @@ const SEOTextSection = () => {
               Puszczy Knyszyńskiej
             </Link>
             . To jeden z nielicznych <strong>noclegów w Puszczy Knyszyńskiej</strong> łączących
-            komfort z prawdziwą bliskością natury — 300 metrów od Galerii Leśnej Powstania
-            Styczniowego i rezerwatu Krzemienne Góry.
+            komfort z prawdziwą bliskością natury — 300 metrów od rezerwatu Krzemienne Góry.
           </p>
 
-          <h3 className="font-heading text-xl text-foreground">Domek z jacuzzi Podlasie</h3>
+          <h3 className="font-heading text-xl text-foreground">Domek na odludziu — oderwanie od cywilizacji</h3>
+          <p>
+            In The Woods to <strong>domek na odludziu podlaskie</strong> w najczystszej formie.
+            Gruntowa droga przez las, brak zasięgu telefonii komórkowej i ogrodzony teren w sercu
+            puszczy. Jeśli szukasz <strong>domku w lesie wynajem</strong> z dala od zgiełku miasta,
+            to Twoje miejsce. Slow travel Polska, detoks cyfrowy w lesie i spokojny
+            wypoczynek w naturze — to nie hasła reklamowe, to codzienna rzeczywistość w Konne.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground">Domek z jacuzzi i balią w lesie</h3>
           <p>
             Szukasz{' '}
             <Link
@@ -58,11 +67,19 @@ const SEOTextSection = () => {
             >
               domku z jacuzzi na Podlasiu
             </Link>
-            ? Nasza ruska bania z balią z gorącą wodą to wyjątkowy element oferty. Gorąca woda pod
-            gwiazdami, w otoczeniu Puszczy Knyszyńskiej — to rytuał relaksu, który goście wspominają
-            najczęściej. Bania mieści 4–6 osób, podgrzewana jest naturalnie drewnem i działa przez
-            cały rok. Obiekt znajduje się przy rezerwacie przyrody Krzemienne Góry — w otoczeniu
-            starych drzew i leśnych ścieżek.
+            ? Nasza ruska bania z balią z gorącą wodą to wyjątkowy element oferty. <strong>Domek z balią
+            w lesie</strong>, gdzie gorąca woda pod gwiazdami w otoczeniu Puszczy Knyszyńskiej —
+            to rytuał relaksu, który goście wspominają najczęściej. Bania mieści 4–6 osób,
+            podgrzewana jest naturalnie drewnem i działa przez cały rok.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground">Domek na sylwestra, walentynki i majówkę w lesie</h3>
+          <p>
+            Szukasz <strong>domku na sylwestra w lesie</strong>? A może klimatyczny{' '}
+            <strong>domek na walentynki</strong> lub <strong>majówkę w lesie</strong>?
+            In The Woods to domek z kominkiem idealny na każdą okazję. Romantyczny pobyt w lesie
+            wynajem — kominek, balia pod gwiazdami i cisza puszczy. Najlepsze terminy rezerwowane
+            z wyprzedzeniem — sprawdź dostępność.
           </p>
 
           <h3 className="font-heading text-xl text-foreground">Dom w lesie Puszcza Knyszyńska</h3>
@@ -77,8 +94,8 @@ const SEOTextSection = () => {
             — drewniany dom z bala w leśnej osadzie Konne, otoczony stuletnią puszczą. Do domu
             prowadzi gruntowa droga przez las, a ogrodzony teren zapewnia prywatność i
             bezpieczeństwo. Wnętrze zachwyca autentycznością: rzeźbione drewniane szafki, ceglany
-            kominek, sossnowe belki i ceramika z Podlasia. To nie jest stylizowany "domek" — to
-            prawdziwe miejsce z duszą, idealne na{' '}
+            kominek, sosnowe belki i ceramika z Podlasia. To <strong>domek w lesie Supraśl</strong>{' '}
+            z duszą — <strong>dom na wyłączność las</strong>, idealny na{' '}
             <Link
               to="/noclegi-suprasl"
               className="text-primary underline hover:text-primary/80 transition-colors"
@@ -140,7 +157,7 @@ const SEOTextSection = () => {
             .
           </p>
 
-          <h3 className="font-heading text-xl text-foreground">Sprawdź noclegi w Supraślu</h3>
+          <h3 className="font-heading text-xl text-foreground">Domki letniskowe wynajem — Puszcza Knyszyńska</h3>
           <p>
             Szukasz sprawdzonego{' '}
             <Link
@@ -149,7 +166,8 @@ const SEOTextSection = () => {
             >
               noclegu w Supraślu
             </Link>
-            ? Sprawdź nasz{' '}
+            ? In The Woods to nie typowe domki letniskowe wynajem — to dom z bali z charakterem,
+            w którym każdy detal ma znaczenie. Sprawdź nasz{' '}
             <Link
               to="/blog/weekend-suprasl-plan"
               className="text-primary underline hover:text-primary/80 transition-colors"
