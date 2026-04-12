@@ -2,8 +2,8 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "suprasl.online" }],
-      "destination": "https://www.suprasl.online/$1",
+      "has": [{ "type": "host", "value": "www.suprasl.online" }],
+      "destination": "https://suprasl.online/$1",
       "permanent": true
     }
   ],
