@@ -17,7 +17,7 @@ const PodlasieZPsem = () => (
     ]}
     relatedArticles={[
       { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
-      { title: 'Dom w lesie Supraśl', slug: '' },
+      { title: 'Cyfrowy detoks w lesie', slug: 'cyfrowy-detoks-las' },
       { title: 'Weekend w Supraślu', slug: 'suprasl-na-weekend' },
     ]}
   >
