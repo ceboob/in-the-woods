@@ -1,4 +1,5 @@
-import heroImg from '@/assets/exterior-main.webp';
+import heroImgSm from '@/assets/exterior-main-sm.webp';
+import heroImgLg from '@/assets/exterior-main-lg.webp';
 import { Phone, Star, Users, TreePine, Sparkles, CalendarCheck, Flame, Dog } from 'lucide-react';
 import { useMemo } from 'react';
 import { BLOCKED_DATES, formatDateKey } from '@/lib/pricing';
@@ -46,7 +47,9 @@ const HeroSection = () => {
     >
       <div className="absolute inset-0">
         <img
-          src={heroImg}
+          src={heroImgLg}
+          srcSet={`${heroImgSm} 640w, ${heroImgLg} 1028w`}
+          sizes="100vw"
           alt="Leśny dom na wyłączność z jacuzzi i sauną w Puszczy Knyszyńskiej — In The Woods noclegi Supraśl"
           className="w-full h-full object-cover"
           loading="eager"

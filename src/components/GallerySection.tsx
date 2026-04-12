@@ -2,7 +2,9 @@ import { useState, useEffect, useCallback } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
 
-import jacuzziNight from '@/assets/jacuzzi-night.webp';
+import jacuzziNight from '@/assets/jacuzzi-night-lg.webp';
+import jacuzziNightSm from '@/assets/jacuzzi-night-sm.webp';
+import jacuzziNightMd from '@/assets/jacuzzi-night-md.webp';
 
 import salonKominek from '@/assets/gallery-salon-kominek-thumb.webp';
 import salonPanorama from '@/assets/gallery-salon-panorama-thumb.webp';
