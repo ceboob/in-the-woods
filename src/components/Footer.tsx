@@ -35,14 +35,14 @@ const Footer = () => (
           <a
             href="#"
             aria-label="Instagram"
-            className="text-white/60 hover:text-primary transition-colors"
+            className="text-white/70 hover:text-primary transition-colors"
           >
             <Instagram className="w-5 h-5" />
           </a>
           <a
             href="#"
             aria-label="Facebook"
-            className="text-white/60 hover:text-primary transition-colors"
+            className="text-white/70 hover:text-primary transition-colors"
           >
             <Facebook className="w-5 h-5" />
           </a>

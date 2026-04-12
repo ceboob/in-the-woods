@@ -18,7 +18,7 @@ const Card = ({ icon: Icon, title, desc, cta, link }: CardData) => (
     <p className="text-muted-foreground leading-relaxed">{desc}</p>
     <Link
       to={link}
-      className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+      className="inline-flex items-center gap-2 text-accent font-medium hover:underline"
     >
       {cta} →
     </Link>
