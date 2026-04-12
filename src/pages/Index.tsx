@@ -87,11 +87,6 @@ const jsonLd = {
     { '@type': 'LocationFeatureSpecification', name: 'Smart TV', value: true },
   ],
   numberOfRooms: 3,
-  occupancy: {
-    '@type': 'QuantitativeValue',
-    maxValue: 8,
-    unitText: 'osób',
-  },
   petsAllowed: true,
   checkinTime: '15:00',
   checkoutTime: '11:00',
