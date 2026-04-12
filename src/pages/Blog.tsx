@@ -292,7 +292,7 @@ const Blog = () => {
       <SEOHead
         title="Blog Supraśl – atrakcje i szlaki | In The Woods"
         description="Blog o Supraślu – atrakcje, szlaki, historia i turystyka w Puszczy Knyszyńskiej. Przewodnik turystyczny."
-        canonical="https://www.suprasl.online/blog"
+        canonical="https://suprasl.online/blog"
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
@@ -301,13 +301,13 @@ const Blog = () => {
               '@type': 'ListItem',
               position: 1,
               name: 'Strona główna',
-              item: 'https://www.suprasl.online/',
+              item: 'https://suprasl.online/',
             },
             {
               '@type': 'ListItem',
               position: 2,
               name: 'Blog',
-              item: 'https://www.suprasl.online/blog',
+              item: 'https://suprasl.online/blog',
             },
           ],
         }}

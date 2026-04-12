@@ -6,7 +6,7 @@ const PuszczaKnyszynskaNocleg = () => (
     title="Nocleg w Puszczy Knyszyńskiej | Domek w lesie wynajem"
     description="Domek w lesie na wyłączność w Puszczy Knyszyńskiej. Kominek, ruska bania z balią, ogrodzony teren, psy za darmo. Leśny dom z bali — sprawdź wolne terminy!"
     breadcrumbName="Puszcza Knyszyńska"
-    ogImage="https://www.suprasl.online/images/winter-cabin-golden.jpg"
+    ogImage="https://suprasl.online/images/winter-cabin-golden.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">

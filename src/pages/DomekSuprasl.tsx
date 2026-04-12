@@ -6,7 +6,7 @@ const DomekSuprasl = () => (
     title="Domek Supraśl — leśny domek do wynajęcia | In The Woods"
     description="Domek Supraśl na wyłączność — kominek, jacuzzi, ogrodzony teren, psy za darmo. Dom z bali w Puszczy Knyszyńskiej. Sprawdź wolne terminy!"
     breadcrumbName="Domek Supraśl"
-    ogImage="https://www.suprasl.online/images/living-fireplace.jpg"
+    ogImage="https://suprasl.online/images/living-fireplace.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">

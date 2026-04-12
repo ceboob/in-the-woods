@@ -7,7 +7,7 @@ const AtrakcjeSuprasl = () => (
     title="Atrakcje Supraśla | Co zobaczyć i szlaki w Puszczy"
     description="TOP atrakcje Supraśla — Monaster, Muzeum Ikon, szlaki Puszczy Knyszyńskiej, spływy kajakowe. Zaplanuj pobyt w domku w lesie i odkryj Podlasie!"
     breadcrumbName="Atrakcje Supraśla"
-    ogImage="https://www.suprasl.online/images/terrace-porch.jpg"
+    ogImage="https://suprasl.online/images/terrace-porch.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-10">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
