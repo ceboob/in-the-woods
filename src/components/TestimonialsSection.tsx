@@ -131,7 +131,7 @@ const TestimonialsSection = () => {
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
           {testimonials.map((t, i) => {
             const src = sourceConfig[t.source];
-            const SourceIcon = src.icon;
+            const Logo = src.logo;
             return (
               <div key={i} className="card-premium space-y-3">
                 <div className="flex items-center justify-between">
@@ -143,9 +143,9 @@ const TestimonialsSection = () => {
                       />
                     ))}
                   </div>
-                  <div className={`flex items-center gap-1 ${src.color}`}>
-                    <SourceIcon className="w-3.5 h-3.5" />
-                    <span className="text-[10px] font-medium tracking-wide uppercase">{src.label}</span>
+                  <div className="flex items-center gap-1.5">
+                    <Logo className="h-4 w-auto" />
+                    <span className="text-[10px] font-medium tracking-wide uppercase text-muted-foreground">{src.label}</span>
                   </div>
                 </div>
                 <p className="text-foreground/80 leading-relaxed italic font-serif text-sm">
