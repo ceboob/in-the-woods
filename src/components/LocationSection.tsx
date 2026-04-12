@@ -36,9 +36,9 @@ const LocationSection = () => {
           </p>
         </div>
 
-        <div className="overflow-hidden border border-border mb-6">
+        <div className="overflow-hidden border border-border mb-6 rounded-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4731!2d23.4366!3d53.2086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ff9e5c8b1c5e7%3A0x0!2zNTPCsDEyJzMwLjkiTiAyM8KwMjYnMTIuMCJF!5e0!3m2!1spl!2spl!4v1710000000000"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Konne+109%2F1,+16-030+Supraśl,+Poland&zoom=13"
             width="100%"
             height="400"
             style={{ border: 0 }}
