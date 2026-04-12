@@ -18,7 +18,7 @@ const SupraslZDziecmi = () => (
     ]}
     relatedArticles={[
       { title: 'Supraśl na weekend — plan na 2 dni', slug: 'suprasl-na-weekend' },
-      { title: 'Co zobaczyć w Supraślu? TOP 10 atrakcji', slug: '' },
+      { title: 'Co robić w Supraślu?', slug: 'co-robic-suprasl' },
       { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}

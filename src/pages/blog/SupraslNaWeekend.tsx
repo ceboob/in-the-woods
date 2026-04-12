@@ -17,7 +17,7 @@ const SupraslNaWeekend = () => (
       { question: 'Czy Supraśl jest dobry na weekend z dziećmi?', answer: 'Zdecydowanie! Plaża miejska, Arboretum Kopna Góra, warsztaty w Muzeum Drukarstwa i łatwe szlaki piesze to świetne atrakcje dla rodzin. Sprawdź nasz artykuł o Supraślu z dziećmi.' },
     ]}
     relatedArticles={[
-      { title: 'Co zobaczyć w Supraślu? TOP 10 atrakcji', slug: '' },
+      { title: 'Co robić w Supraślu?', slug: 'co-robic-suprasl' },
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
       { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
       { title: 'Supraśl z dziećmi', slug: 'suprasl-z-dziecmi' },

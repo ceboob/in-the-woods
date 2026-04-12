@@ -18,7 +18,7 @@ const RomantycznyWeekendPodlasie = () => (
     relatedArticles={[
       { title: 'Cyfrowy detoks w lesie', slug: 'cyfrowy-detoks-las' },
       { title: 'Weekend w Supraślu — plan na 2 dni', slug: 'suprasl-na-weekend' },
-      { title: 'Domek z jacuzzi na Podlasiu', slug: '' },
+      { title: 'Workation na Podlasiu', slug: 'workation-podlasie' },
     ]}
   >
     <article className="prose prose-lg max-w-none space-y-8">
