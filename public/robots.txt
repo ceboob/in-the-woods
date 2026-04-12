@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://suprasl.online/sitemap.xml
+Sitemap: https://www.suprasl.online/sitemap.xml

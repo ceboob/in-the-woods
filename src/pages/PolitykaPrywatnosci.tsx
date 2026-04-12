@@ -11,11 +11,11 @@ const PolitykaPrywatnosci = () => {
           name="description"
           content="Polityka prywatności, cookies i RODO obiektu In The Woods w Supraślu. Dowiedz się jak przetwarzamy Twoje dane."
         />
-        <link rel="canonical" href="https://suprasl.online/polityka-prywatnosci" />
+        <link rel="canonical" href="https://www.suprasl.online/polityka-prywatnosci" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Polityka prywatności | In The Woods Supraśl" />
         <meta property="og:description" content="Polityka prywatności, cookies i RODO obiektu In The Woods w Supraślu." />
-        <meta property="og:url" content="https://suprasl.online/polityka-prywatnosci" />
+        <meta property="og:url" content="https://www.suprasl.online/polityka-prywatnosci" />
       </Helmet>
       <Navbar />
       <main className="min-h-screen bg-background pt-24 pb-16">

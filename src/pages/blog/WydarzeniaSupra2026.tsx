@@ -366,7 +366,7 @@ const WydarzeniaSupra2026 = () => (
         w lesie z jacuzzi — bez prowizji, bezpośrednio od gospodarza.
       </p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-        <a href="https://suprasl.online" className="btn-primary inline-flex items-center gap-2">
+        <a href="https://www.suprasl.online" className="btn-primary inline-flex items-center gap-2">
           <Phone className="w-4 h-4" /> Sprawdź dostępne noclegi w Supraślu
         </a>
       </div>
@@ -440,7 +440,7 @@ const WydarzeniaSupra2026 = () => (
       <p className="text-lg font-heading text-foreground">
         📅 Zaplanuj wizytę na wydarzenia w Supraślu 2026
       </p>
-      <a href="https://suprasl.online" className="btn-primary inline-flex items-center gap-2">
+      <a href="https://www.suprasl.online" className="btn-primary inline-flex items-center gap-2">
         <Phone className="w-4 h-4" /> Sprawdź dostępność noclegu
       </a>
     </div>
