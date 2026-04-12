@@ -34,7 +34,7 @@ const BlogArticleLayout = ({
   keywords,
   faqs,
   relatedArticles = [],
-  ogImage = 'https://www.suprasl.online/og-image.jpg',
+  ogImage = 'https://suprasl.online/og-image.jpg',
   dateModified,
 }: BlogArticleLayoutProps) => {
   useEffect(() => {
@@ -46,16 +46,16 @@ const BlogArticleLayout = ({
     '@type': 'Article',
     headline: title,
     description: metaDescription,
-    url: `https://www.suprasl.online/blog/${slug}`,
+    url: `https://suprasl.online/blog/${slug}`,
     datePublished: publishDate,
     dateModified: dateModified || publishDate,
     author: { '@type': 'Organization', name: 'In The Woods' },
     publisher: {
       '@type': 'Organization',
       name: 'In The Woods',
-      url: 'https://www.suprasl.online',
+      url: 'https://suprasl.online',
     },
-    mainEntityOfPage: `https://www.suprasl.online/blog/${slug}`,
+    mainEntityOfPage: `https://suprasl.online/blog/${slug}`,
     keywords: keywords.join(', '),
     image: {
       '@type': 'ImageObject',
@@ -84,14 +84,14 @@ const BlogArticleLayout = ({
         '@type': 'ListItem',
         position: 1,
         name: 'Strona główna',
-        item: 'https://www.suprasl.online/',
+        item: 'https://suprasl.online/',
       },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.suprasl.online/blog' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://suprasl.online/blog' },
       {
         '@type': 'ListItem',
         position: 3,
         name: title,
-        item: `https://www.suprasl.online/blog/${slug}`,
+        item: `https://suprasl.online/blog/${slug}`,
       },
     ],
   };
@@ -101,10 +101,10 @@ const BlogArticleLayout = ({
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://www.suprasl.online/blog/${slug}`} />
+        <link rel="canonical" href={`https://suprasl.online/blog/${slug}`} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={`https://www.suprasl.online/blog/${slug}`} />
+        <meta property="og:url" content={`https://suprasl.online/blog/${slug}`} />
         <meta property="og:image" content={ogImage} />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="pl_PL" />

@@ -6,7 +6,7 @@ const DomWLesieSuprasl = () => (
     title="Dom w lesie Podlasie | Domek na odludziu wynajem"
     description="Domek w lesie na wyłączność na Podlasiu — kominek, jacuzzi, ogrodzony teren, psy za darmo. Leśny dom z bali w Puszczy Knyszyńskiej. Sprawdź wolne terminy!"
     breadcrumbName="Dom w lesie Supraśl"
-    ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
+    ogImage="https://suprasl.online/images/hero-cabin.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">

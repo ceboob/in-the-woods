@@ -39,11 +39,11 @@ const Informator = () => {
       <Helmet>
         <title>Informator gościa – In The Woods Supraśl</title>
         <meta name="description" content="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl." />
-        <link rel="canonical" href="https://www.suprasl.online/informator" />
+        <link rel="canonical" href="https://suprasl.online/informator" />
         <meta property="og:title" content="Informator gościa – In The Woods Supraśl" />
         <meta property="og:description" content="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi." />
-        <meta property="og:url" content="https://www.suprasl.online/informator" />
-        <meta property="og:image" content="https://www.suprasl.online/images/hero-cabin.jpg" />
+        <meta property="og:url" content="https://suprasl.online/informator" />
+        <meta property="og:image" content="https://suprasl.online/images/hero-cabin.jpg" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       {/* Navbar */}

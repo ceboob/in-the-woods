@@ -6,7 +6,7 @@ const WieczorPanienskiSuprasl = () => (
     title="Wieczór panieński Supraśl | Domek w lesie na wyłączność"
     description="Wieczór panieński w domku w lesie na wyłączność — jacuzzi, kominek, ognisko i ogrodzony teren w Puszczy Knyszyńskiej. Niezapomniane imprezy w naturze."
     breadcrumbName="Wieczór panieński Supraśl"
-    ogImage="https://www.suprasl.online/images/kitchen-dining.jpg"
+    ogImage="https://suprasl.online/images/kitchen-dining.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">

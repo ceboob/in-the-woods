@@ -26,7 +26,7 @@ const Dom = () => (
     title="Dom z bali na wyłączność | In The Woods Supraśl"
     description="Dom z bali na wyłączność w Puszczy Knyszyńskiej — kominek, kuchnia z płytą kaflową, sypialnie z widokiem na las, ogrodzony ogród z ruską banią. Leśny domek do wynajęcia."
     breadcrumbName="Dom"
-    ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
+    ogImage="https://suprasl.online/images/hero-cabin.jpg"
   >
     <article className="space-y-12">
       <div>

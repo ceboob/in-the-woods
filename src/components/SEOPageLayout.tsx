@@ -23,7 +23,7 @@ const SEOPageLayout = ({
     window.scrollTo(0, 0);
   }, []);
 
-  const canonical = `https://www.suprasl.online${window.location.pathname}`;
+  const canonical = `https://suprasl.online${window.location.pathname}`;
   const breadcrumbSchema = breadcrumbName
     ? {
         '@context': 'https://schema.org',
@@ -33,7 +33,7 @@ const SEOPageLayout = ({
             '@type': 'ListItem',
             position: 1,
             name: 'Strona główna',
-            item: 'https://www.suprasl.online/',
+            item: 'https://suprasl.online/',
           },
           { '@type': 'ListItem', position: 2, name: breadcrumbName, item: canonical },
         ],
