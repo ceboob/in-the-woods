@@ -121,7 +121,7 @@ const BlogArticleLayout = ({
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
-          <Link to="/" className="font-display text-xl tracking-wide text-foreground">
+          <Link to="/" className="font-display text-xl tracking-wide text-foreground logo-glow">
             In The Woods
           </Link>
           <div className="hidden md:flex items-center gap-6">
@@ -261,7 +261,7 @@ const BlogArticleLayout = ({
       {/* Footer */}
       <footer className="bg-foreground text-white/70 px-6 md:px-12 py-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <p className="font-display text-lg text-white">In The Woods</p>
+          <p className="font-display text-lg text-white logo-glow">In The Woods</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <Link to="/" className="hover:text-primary transition-colors">
               Strona główna
