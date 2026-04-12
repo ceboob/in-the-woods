@@ -13,9 +13,10 @@ const GoogleLogo = ({ className }: { className?: string }) => (
 );
 
 const BookingLogo = ({ className }: { className?: string }) => (
-  <svg className={className} viewBox="0 0 300 48" xmlns="http://www.w3.org/2000/svg">
-    <rect width="300" height="48" rx="4" fill="#003580"/>
-    <text x="150" y="34" textAnchor="middle" fill="white" fontSize="28" fontWeight="bold" fontFamily="Arial,sans-serif">Booking.com</text>
+  <svg className={className} viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="6" fill="#003580"/>
+    <text x="8" y="29" fill="white" fontSize="24" fontWeight="bold" fontFamily="Arial,Helvetica,sans-serif">B</text>
+    <circle cx="30" cy="28" r="3" fill="#003580" stroke="white" strokeWidth="2"/>
   </svg>
 );
 
