@@ -159,7 +159,7 @@
 
   .section-subtitle {
     @apply text-base md:text-lg text-muted-foreground font-normal max-w-2xl;
-    font-family: "Poppins", sans-serif;
+    font-family: "Lato", sans-serif;
     line-height: 1.7;
     margin-top: 0.5rem;
   }
