@@ -571,6 +571,8 @@ const GallerySection = () => {
             >
               <img
                 src={img.thumb}
+                srcSet={img.srcSet}
+                sizes={img.srcSet ? '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw' : undefined}
                 alt={img.alt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 loading={i < 3 ? 'eager' : 'lazy'}
