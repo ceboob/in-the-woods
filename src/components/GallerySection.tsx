@@ -70,6 +70,7 @@ interface GalleryImage {
   caption: string;
   category: Category[];
   className?: string;
+  srcSet?: string;
 }
 
 const categories: { id: Category; label: string }[] = [
@@ -89,6 +90,7 @@ const allImages: GalleryImage[] = [
     caption: 'Ruska bania z balią — prywatne SPA pod gwiazdami',
     category: ['bania'],
     className: 'col-span-2 row-span-2',
+    srcSet: `${jacuzziNightSm} 640w, ${jacuzziNightMd} 1024w, ${jacuzziNight} 1442w`,
   },
   {
     thumb: salonKominek,
