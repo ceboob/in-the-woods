@@ -214,15 +214,15 @@ const Index = () => {
           {/* Oferta — co dostaje gość */}
           <AmenitiesSection />
 
-          {/* Przewodnik turystyczny — przed Jacuzzi */}
+          {/* Dowód wizualny — 3. sekcja po hero */}
+          <GallerySection />
+
+          {/* Przewodnik turystyczny */}
           <GuideSection />
 
           <JacuzziSection />
           <RelaxSection />
           <ForWhoSection />
-
-          {/* Dowód wizualny */}
-          <GallerySection />
 
           {/* Sezonowość + okolica */}
           <WinterSection />
