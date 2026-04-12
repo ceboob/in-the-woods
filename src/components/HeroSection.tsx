@@ -60,8 +60,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white leading-tight mb-4 animate-fade-up drop-shadow-lg"
-          style={{ fontFamily: "'Luckiest Guy', cursive", letterSpacing: '0.02em' }}
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white leading-tight mb-4 animate-fade-up drop-shadow-lg font-display"
         >
           Leśny dom na wyłączność — domek w lesie z jacuzzi i sauną
         </h1>
