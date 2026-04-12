@@ -1,5 +1,14 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Star } from 'lucide-react';
+import { Star, Globe, Home, Dog, Plane } from 'lucide-react';
+
+type Source = 'google' | 'booking' | 'airbnb' | 'doginclusive';
+
+const sourceConfig: Record<Source, { label: string; icon: typeof Globe; color: string }> = {
+  google: { label: 'Google', icon: Globe, color: 'text-[#4285F4]' },
+  booking: { label: 'Booking', icon: Home, color: 'text-[#003580]' },
+  airbnb: { label: 'Airbnb', icon: Plane, color: 'text-[#FF5A5F]' },
+  doginclusive: { label: 'DogInclusive', icon: Dog, color: 'text-[#8B6914]' },
+};
 
 const testimonials = [
   {
@@ -8,6 +17,7 @@ const testimonials = [
     context: 'Weekend we dwoje',
     date: '2025-11-15',
     stars: 5,
+    source: 'google' as Source,
   },
   {
     text: 'Dzieci nie chciały wyjeżdżać. Ogród, plac zabaw, las za płotem i ognisko każdego wieczoru. Idealne miejsce na rodzinny odpoczynek.',
@@ -15,6 +25,7 @@ const testimonials = [
     context: 'Pobyt z dziećmi',
     date: '2025-08-22',
     stars: 5,
+    source: 'booking' as Source,
   },
   {
     text: 'Pracowałem z laptopem przy oknie z widokiem na las, a po pracy szedłem na spacer do rezerwatu. Najlepsza forma workation.',
@@ -22,6 +33,7 @@ const testimonials = [
     context: 'Workation, 5 dni',
     date: '2025-10-03',
     stars: 5,
+    source: 'airbnb' as Source,
   },
   {
     text: 'Ruska bania pod gwiazdami to coś, co trzeba przeżyć. Do tego kominek, las i cisza — pełna regeneracja po tygodniu pracy.',
@@ -29,6 +41,7 @@ const testimonials = [
     context: 'Romantyczny weekend',
     date: '2026-01-10',
     stars: 5,
+    source: 'google' as Source,
   },
   {
     text: 'Dojazd drogą gruntową bywa wymagający po deszczu, ale to część uroku tego miejsca. Sam dom i ogród — absolutnie cudowne. Wrócimy zimą!',
@@ -36,6 +49,7 @@ const testimonials = [
     context: 'Majówka we dwoje',
     date: '2025-05-03',
     stars: 4,
+    source: 'booking' as Source,
   },
   {
     text: 'Brak pełnego zasięgu telefonii komórkowej — dla nas na początku minus, ale po dwóch dniach doceniliśmy ciszę i detoks cyfrowy. Dom piękny, bania rewelacyjna.',
@@ -43,6 +57,7 @@ const testimonials = [
     context: 'Urlop, 4 dni',
     date: '2025-09-12',
     stars: 4,
+    source: 'doginclusive' as Source,
   },
   {
     text: 'Już trzeci raz u Macieja i za każdym razem jest lepiej. Dom pięknie utrzymany, ogród zadbany, a puszcza za płotem to skarb.',
@@ -50,6 +65,7 @@ const testimonials = [
     context: 'Stały gość',
     date: '2026-02-14',
     stars: 5,
+    source: 'airbnb' as Source,
   },
   {
     text: 'Szukaliśmy ciszy i natury — znaleźliśmy raj. Poranki z kawą na tarasie, wieczory przy ognisku. In The Woods to definicja slow life.',
@@ -57,6 +73,7 @@ const testimonials = [
     context: 'Urlop, 7 dni',
     date: '2025-07-18',
     stars: 5,
+    source: 'google' as Source,
   },
 ];
 
@@ -80,25 +97,35 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {testimonials.map((t, i) => (
-            <div key={i} className="card-premium space-y-4">
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, j) => (
-                  <Star
-                    key={j}
-                    className={`w-4 h-4 ${j < t.stars ? 'fill-wood text-wood' : 'fill-none text-border'}`}
-                  />
-                ))}
+          {testimonials.map((t, i) => {
+            const src = sourceConfig[t.source];
+            const SourceIcon = src.icon;
+            return (
+              <div key={i} className="card-premium space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, j) => (
+                      <Star
+                        key={j}
+                        className={`w-3.5 h-3.5 ${j < t.stars ? 'fill-wood text-wood' : 'fill-none text-border'}`}
+                      />
+                    ))}
+                  </div>
+                  <div className={`flex items-center gap-1 ${src.color}`}>
+                    <SourceIcon className="w-3.5 h-3.5" />
+                    <span className="text-[10px] font-medium tracking-wide uppercase">{src.label}</span>
+                  </div>
+                </div>
+                <p className="text-foreground/80 leading-relaxed italic font-serif text-sm">
+                  „{t.text}"
+                </p>
+                <div>
+                  <p className="text-xs font-medium">{t.author}</p>
+                  <p className="text-[11px] text-muted-foreground">{t.context}</p>
+                </div>
               </div>
-              <p className="text-foreground/80 leading-relaxed italic font-serif text-lg">
-                „{t.text}"
-              </p>
-              <div>
-                <p className="text-sm font-medium">{t.author}</p>
-                <p className="text-xs text-muted-foreground">{t.context}</p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
