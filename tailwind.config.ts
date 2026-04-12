@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ['"Monoton"', 'cursive'],
+        accent: ['"Marcellus SC"', 'serif'],
         heading: ['"Poppins"', 'sans-serif'],
         script: ['"Poppins"', 'sans-serif'],
         serif: ['"Poppins"', 'sans-serif'],
