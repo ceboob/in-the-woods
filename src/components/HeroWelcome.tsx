@@ -36,12 +36,12 @@ const HeroWelcome = () => {
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-4 text-center">
           Od gospodarza
         </p>
-        <h2 className="text-lg sm:text-xl md:text-2xl text-foreground mb-6 text-center font-display">
+        <h2 className="text-lg sm:text-xl md:text-2xl text-foreground mb-6 text-center font-accent">
           Leśny domek do wynajęcia — dom z bali na wyłączność
         </h2>
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
-          <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed font-display">
+          <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed font-accent">
             Oddajemy w&nbsp;Wasze ręce nasz dom — miejsce, w&nbsp;które włożyliśmy mnóstwo serca,
             potu, pracy i&nbsp;litry kawy. Zanurz się w&nbsp;naturze i&nbsp;poczuj, jak czas się zatrzymuje.
           </p>
@@ -77,7 +77,7 @@ const HeroWelcome = () => {
             Traktujcie ten dom jak swój — z&nbsp;szacunkiem i&nbsp;uśmiechem. Zostawcie go tak,
             jakbyście chcieli go zastać za rok, kiedy <em>wrócicie</em>.
           </p>
-          <p className="text-base sm:text-lg md:text-xl text-foreground/80 leading-relaxed mt-4 font-display">
+          <p className="text-base sm:text-lg md:text-xl text-foreground/80 leading-relaxed mt-4 font-accent">
             Pamiętajcie: dom jest dla ludzi, a&nbsp;nie ludzie dla domu. Bawcie się dobrze!
           </p>
           <p className="mt-4 text-sm text-muted-foreground">— Maciej, gospodarz</p>
