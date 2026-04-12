@@ -2,7 +2,9 @@ import { useState, useEffect, useCallback } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
 
-import jacuzziNight from '@/assets/jacuzzi-night.webp';
+import jacuzziNight from '@/assets/jacuzzi-night-lg.webp';
+import jacuzziNightSm from '@/assets/jacuzzi-night-sm.webp';
+import jacuzziNightMd from '@/assets/jacuzzi-night-md.webp';
 
 import salonKominek from '@/assets/gallery-salon-kominek-thumb.webp';
 import salonPanorama from '@/assets/gallery-salon-panorama-thumb.webp';
@@ -68,6 +70,7 @@ interface GalleryImage {
   caption: string;
   category: Category[];
   className?: string;
+  srcSet?: string;
 }
 
 const categories: { id: Category; label: string }[] = [
@@ -87,6 +90,7 @@ const allImages: GalleryImage[] = [
     caption: 'Ruska bania z balią — prywatne SPA pod gwiazdami',
     category: ['bania'],
     className: 'col-span-2 row-span-2',
+    srcSet: `${jacuzziNightSm} 640w, ${jacuzziNightMd} 1024w, ${jacuzziNight} 1442w`,
   },
   {
     thumb: salonKominek,
@@ -569,6 +573,8 @@ const GallerySection = () => {
             >
               <img
                 src={img.thumb}
+                srcSet={img.srcSet}
+                sizes={img.srcSet ? '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw' : undefined}
                 alt={img.alt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 loading={i < 3 ? 'eager' : 'lazy'}
