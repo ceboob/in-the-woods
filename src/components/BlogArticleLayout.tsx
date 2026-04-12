@@ -57,6 +57,13 @@ const BlogArticleLayout = ({
     },
     mainEntityOfPage: `https://www.suprasl.online/blog/${slug}`,
     keywords: keywords.join(', '),
+    image: {
+      '@type': 'ImageObject',
+      url: ogImage,
+      width: 1200,
+      height: 630,
+      caption: `In The Woods Supraśl — ${title}`,
+    },
   };
 
   const faqSchema = {
