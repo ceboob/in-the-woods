@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Luckiest+Guy&family=Monoton&family=Poppins:wght@400;500;600;700;800&display=swap');
+/* Fonts loaded via preload in index.html to avoid render-blocking */
 
 @tailwind base;
 @tailwind components;

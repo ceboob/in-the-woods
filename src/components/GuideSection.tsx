@@ -18,7 +18,7 @@ const Card = ({ icon: Icon, title, desc, cta, link }: CardData) => (
     <p className="text-muted-foreground leading-relaxed">{desc}</p>
     <Link
       to={link}
-      className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+      className="inline-flex items-center gap-2 text-accent font-medium hover:underline"
     >
       {cta} →
     </Link>
@@ -42,7 +42,7 @@ const GuideSection = () => (
       {/* Co warto zobaczyć */}
       <div className="space-y-8">
         <div className="text-center space-y-3">
-          <p className="text-sm font-semibold tracking-widest uppercase text-primary">
+          <p className="text-sm font-semibold tracking-widest uppercase text-accent">
             Co warto zobaczyć w Supraślu?
           </p>
           <h2 className="section-title">Największe atrakcje w pigułce</h2>
@@ -86,7 +86,7 @@ const GuideSection = () => (
       {/* Zaplanuj pobyt */}
       <div className="space-y-8">
         <div className="text-center space-y-3">
-          <p className="text-sm font-semibold tracking-widest uppercase text-primary">
+          <p className="text-sm font-semibold tracking-widest uppercase text-accent">
             Zaplanuj swój pobyt
           </p>
           <h2 className="section-title">Noclegi i smaki Supraśla</h2>
@@ -116,7 +116,7 @@ const GuideSection = () => (
       {/* Supraśl dla aktywnych */}
       <div className="space-y-8">
         <div className="text-center space-y-3">
-          <p className="text-sm font-semibold tracking-widest uppercase text-primary">
+          <p className="text-sm font-semibold tracking-widest uppercase text-accent">
             Supraśl dla aktywnych i nie tylko
           </p>
           <h2 className="section-title">Nuda w Supraślu? Niemożliwe!</h2>
