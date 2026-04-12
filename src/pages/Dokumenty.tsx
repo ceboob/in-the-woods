@@ -30,7 +30,7 @@ const Dokumenty = () => (
     title="Dokumenty i instrukcje | In The Woods"
     description="Pobierz przewodnik po domu, umowę najmu i instrukcję obsługi In The Woods. Wszystkie dokumenty dostępne online w formacie PDF."
     breadcrumbName="Dokumenty"
-    ogImage="https://suprasl.online/images/hero-cabin.jpg"
+    ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
   >
     <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
       Dokumenty i instrukcje
