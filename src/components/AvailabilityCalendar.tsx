@@ -9,8 +9,6 @@ import {
   isWeekendDay,
   formatDateKey,
   calculateTotalPrice,
-  EXTRA_GUEST_PRICE,
-  BASE_GUESTS,
   MAX_GUESTS,
   MIN_NIGHTS,
   BLOCKED_DATES_LAST_UPDATED,
