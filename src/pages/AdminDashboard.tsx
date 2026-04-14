@@ -142,8 +142,14 @@ const AdminDashboard = () => {
     );
   };
 
-  return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEOHead
+        title="Panel administracyjny | In The Woods"
+        description="Panel administracyjny In The Woods"
+        noindex
+        canonical="https://www.suprasl.online/admin"
+      />
+      <div className="min-h-screen bg-background">
       <header className="border-b bg-card px-4 py-3 flex items-center justify-between">
         <h1 className="font-heading text-lg font-semibold">Panel rezerwacji — In The Woods</h1>
         <Button variant="ghost" size="sm" onClick={handleLogout}>
@@ -269,7 +275,8 @@ const AdminDashboard = () => {
           </CardContent>
         </Card>
       </main>
-    </div>
+      </div>
+    </>
   );
 };
 
