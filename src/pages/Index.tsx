@@ -51,6 +51,7 @@ const Index = () => {
         <HeroSection />
         <HeroWelcome />
         <BookingModule />
+        <AvailabilityCalendar />
         <BadgesBar />
         <TrustSection />
 
@@ -73,7 +74,6 @@ const Index = () => {
 
           {/* Cena + dostępność — konwersja */}
           <PricingSection />
-          <AvailabilityCalendar />
 
           {/* Social proof */}
           <TestimonialsSection />
