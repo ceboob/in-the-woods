@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import HeroWelcome from '@/components/HeroWelcome';
 import BadgesBar from '@/components/BadgesBar';
 import TrustSection from '@/components/TrustSection';
+import BookingModule from '@/components/BookingModule';
 
 // Lazy-loaded sections below the fold
 const AmenitiesSection = lazy(() => import('@/components/AmenitiesSection'));
@@ -15,7 +16,6 @@ const GallerySection = lazy(() => import('@/components/GallerySection'));
 const WinterSection = lazy(() => import('@/components/WinterSection'));
 const PricingSection = lazy(() => import('@/components/PricingSection'));
 const AvailabilityCalendar = lazy(() => import('@/components/AvailabilityCalendar'));
-const BookingModule = lazy(() => import('@/components/BookingModule'));
 const TestimonialsSection = lazy(() => import('@/components/TestimonialsSection'));
 const LocationSection = lazy(() => import('@/components/LocationSection'));
 const EventsSection = lazy(() => import('@/components/EventsSection'));
@@ -50,6 +50,7 @@ const Index = () => {
         {/* ATF: Hero + zaufanie — natychmiastowe zrozumienie oferty */}
         <HeroSection />
         <HeroWelcome />
+        <BookingModule />
         <BadgesBar />
         <TrustSection />
 
@@ -70,10 +71,9 @@ const Index = () => {
           {/* Sezonowość + okolica */}
           <WinterSection />
 
-          {/* Cena + dostępność + rezerwacja — konwersja */}
+          {/* Cena + dostępność — konwersja */}
           <PricingSection />
           <AvailabilityCalendar />
-          <BookingModule />
 
           {/* Social proof */}
           <TestimonialsSection />

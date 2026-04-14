@@ -42,8 +42,8 @@ const amenities = [
   },
   {
     icon: Wifi,
-    title: 'Wi-Fi i biurko do pracy',
-    desc: 'Szybki internet i wygodne miejsce do pracy zdalnej przy oknie z widokiem na las. Praca zdalna w lesie — wynajem domku idealnego na workation.',
+    title: 'Starlink — szybki internet',
+    desc: 'Szerokopasmowy i stabilny internet Starlink od SpaceX — nawet w sercu Puszczy Knyszyńskiej. Wygodne biurko z widokiem na las. Idealny na workation i pracę zdalną.',
   },
   {
     icon: Wind,
@@ -101,6 +101,13 @@ const AmenitiesSection = () => {
               </div>
               <h3 className="font-heading text-lg font-semibold text-foreground">{a.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
+              {a.title.includes('Starlink') && (
+                <div className="flex items-center justify-center gap-2 pt-1">
+                  <svg viewBox="0 0 120 20" className="h-4 w-auto text-muted-foreground" fill="currentColor">
+                    <text x="0" y="15" fontSize="14" fontWeight="700" fontFamily="Arial, sans-serif" letterSpacing="2">STARLINK</text>
+                  </svg>
+                </div>
+              )}
             </div>
           ))}
         </div>
