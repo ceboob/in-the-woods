@@ -6,6 +6,7 @@ import HeroWelcome from '@/components/HeroWelcome';
 import BadgesBar from '@/components/BadgesBar';
 import TrustSection from '@/components/TrustSection';
 import BookingModule from '@/components/BookingModule';
+import AvailabilityCalendar from '@/components/AvailabilityCalendar';
 
 // Lazy-loaded sections below the fold
 const AmenitiesSection = lazy(() => import('@/components/AmenitiesSection'));
@@ -15,7 +16,6 @@ const ForWhoSection = lazy(() => import('@/components/ForWhoSection'));
 const GallerySection = lazy(() => import('@/components/GallerySection'));
 const WinterSection = lazy(() => import('@/components/WinterSection'));
 const PricingSection = lazy(() => import('@/components/PricingSection'));
-const AvailabilityCalendar = lazy(() => import('@/components/AvailabilityCalendar'));
 const TestimonialsSection = lazy(() => import('@/components/TestimonialsSection'));
 const LocationSection = lazy(() => import('@/components/LocationSection'));
 const EventsSection = lazy(() => import('@/components/EventsSection'));
@@ -51,6 +51,7 @@ const Index = () => {
         <HeroSection />
         <HeroWelcome />
         <BookingModule />
+        <AvailabilityCalendar />
         <BadgesBar />
         <TrustSection />
 
@@ -73,7 +74,6 @@ const Index = () => {
 
           {/* Cena + dostępność — konwersja */}
           <PricingSection />
-          <AvailabilityCalendar />
 
           {/* Social proof */}
           <TestimonialsSection />
