@@ -9,7 +9,7 @@ const badges = [
   { icon: Bath, label: 'Balia / Jacuzzi', href: '/domek-z-jacuzzi-podlasie' },
   { icon: Flame, label: 'Kominek', href: '#dom' },
   { icon: Sparkles, label: 'Ruska bania', href: '#jacuzzi' },
-  { icon: Wifi, label: 'Workation ready', href: '/blog/workation-podlasie' },
+  { icon: Wifi, label: 'Starlink Internet', href: '/blog/workation-podlasie' },
 ];
 
 const BadgesBar = () => (

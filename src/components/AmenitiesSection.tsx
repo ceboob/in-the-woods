@@ -42,8 +42,8 @@ const amenities = [
   },
   {
     icon: Wifi,
-    title: 'Wi-Fi i biurko do pracy',
-    desc: 'Szybki internet i wygodne miejsce do pracy zdalnej przy oknie z widokiem na las. Praca zdalna w lesie — wynajem domku idealnego na workation.',
+    title: 'Starlink — szybki internet',
+    desc: 'Szerokopasmowy i stabilny internet Starlink od SpaceX — nawet w sercu Puszczy Knyszyńskiej. Wygodne biurko z widokiem na las. Idealny na workation i pracę zdalną.',
   },
   {
     icon: Wind,
