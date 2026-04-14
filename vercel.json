@@ -222,10 +222,6 @@
           "key": "Permissions-Policy",
           "value": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(self), usb=()"
         },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        }
       ]
     }
   ]
