@@ -241,6 +241,12 @@
     filter: drop-shadow(0 0 3px hsl(var(--primary) / 0.35));
   }
 
+  .text-smallcaps {
+    font-variant: small-caps;
+    font-weight: 350;
+    letter-spacing: 0.04em;
+  }
+
 
   .animate-fade-up {
     animation: fadeUp 0.8s ease-out forwards;

@@ -34,7 +34,7 @@ const CTASection = () => {
           </div>
         </div>
 
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-muted-foreground text-smallcaps">
           Najlepsze terminy są rezerwowane z wyprzedzeniem — domek na sylwestra, walentynki czy majówkę w lesie znika pierwszy.
         </p>
       </div>

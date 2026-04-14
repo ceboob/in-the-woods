@@ -49,7 +49,7 @@ const JacuzziSection = () => {
               wygodnie 4–6 osób i działa przez cały rok — latem pod wieczornym niebem, zimą wśród śniegu
               i mroźnego powietrza.
             </p>
-            <div className="space-y-1 text-base text-foreground/80">
+            <div className="space-y-1 text-base text-foreground/80 text-smallcaps">
               <p>Ciepła woda. Chłodne powietrze. Gwiazdy nad Puszczą Knyszyńską.</p>
             </div>
             <p className="text-muted-foreground text-sm">
