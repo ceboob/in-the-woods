@@ -343,13 +343,10 @@ const AvailabilityCalendar = () => {
                     <span className="text-muted-foreground">Goście</span>
                     <span>{guests}</span>
                   </div>
-                  {priceCalc && guests > BASE_GUESTS && (
-                    <div className="flex justify-between text-xs">
-                      <span className="text-muted-foreground">
-                        Dopłata za {guests - BASE_GUESTS} dodatkow.{' '}
-                        {guests - BASE_GUESTS === 1 ? 'osobę' : 'osoby'}
-                      </span>
-                      <span>+{priceCalc.extraGuestTotal} zł</span>
+                  {priceCalc && priceCalc.discount > 0 && (
+                    <div className="flex justify-between text-xs text-green-700">
+                      <span>Zniżka za długi pobyt (−10%)</span>
+                      <span>−{priceCalc.discount} zł</span>
                     </div>
                   )}
                   {priceCalc && (
