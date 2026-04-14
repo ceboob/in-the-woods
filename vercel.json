@@ -2,13 +2,197 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "suprasl.online" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "suprasl.online"
+        }
+      ],
       "destination": "https://www.suprasl.online/$1",
       "permanent": true
     }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/noclegi-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/dom-w-lesie-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/weekend-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/atrakcje-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/puszcza-knyszynska-nocleg",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/informator",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/domek-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/domek-z-jacuzzi-podlasie",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/wieczor-panienski-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/supraski-system-wodny",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/szlak-powstania-styczniowego-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/suprasl-atrakcje-national-geographic",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/szlaki-piesze-rowerowe-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/szlak-bioroznorodnosci-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/kruszyniany-tatarska-wies",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/suprasl-atrakcje-uzdrowisko",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/kajaki-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/restauracje-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/co-robic-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/weekend-suprasl-plan",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/najlepsze-miejsca-puszcza-knyszynska",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/puszcza-knyszynska-historie",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/wydarzenia-suprasl-2026",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/aktywny-wypoczynek-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/uzdrowisko-spa-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/przewodnik-kulinarny-suprasl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/szlaki-puszcza-knyszynska",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/suprasl-na-weekend",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/suprasl-z-dziecmi",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/romantyczny-weekend-podlasie",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/cyfrowy-detoks-las",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/grzybobranie-puszcza-knyszynska",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/workation-podlasie",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/podlasie-z-psem",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/kraina-otwartych-okiennic",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/puszcza-knyszynska-przewodnik",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/dom",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/galeria",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/dokumenty",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/platnosc-sukces",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/admin/login",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/admin",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/polityka-prywatnosci",
+      "destination": "/index.html"
+    }
   ],
   "headers": [
     {
@@ -18,15 +202,30 @@
           "key": "Content-Security-Policy",
           "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https: http:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://api.stripe.com https://static.cloudflareinsights.com; frame-src https://js.stripe.com https://hooks.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
         },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
         {
           "key": "Permissions-Policy",
           "value": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(self), usb=()"
         },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
       ]
     }
   ]
