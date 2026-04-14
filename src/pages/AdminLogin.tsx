@@ -53,6 +53,7 @@ const AdminLogin = () => {
     <>
       <SEOHead
         title="Admin Login | In The Woods"
+        description="Panel administracyjny In The Woods"
         noindex
         canonical="https://www.suprasl.online/admin/login"
       />

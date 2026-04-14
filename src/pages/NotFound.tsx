@@ -13,6 +13,7 @@ const NotFound = () => {
     <>
       <SEOHead
         title="404 – Strona nie istnieje"
+        description="Strona nie została znaleziona"
         noindex
         canonical={`https://www.suprasl.online${location.pathname}`}
       />
