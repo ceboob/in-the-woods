@@ -69,10 +69,10 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
-          <p className="font-serif text-lg md:text-xl text-white italic">
+          <p className="text-base md:text-lg text-white font-normal">
             Ucieczka od zgiełku miasta. Detoks cyfrowy w lesie.
           </p>
-          <p className="font-serif text-lg md:text-xl text-white italic">
+          <p className="text-base md:text-lg text-white font-normal">
             Spokojny wypoczynek w naturze — kominek, balia, cisza.
           </p>
         </div>

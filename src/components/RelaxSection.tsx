@@ -59,7 +59,7 @@ const RelaxSection = () => {
               height="450"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="font-serif text-lg text-white italic">Ostoja spokoju — prywatna ruska bania</p>
+              <p className="text-base text-white font-normal">Ostoja spokoju — prywatna ruska bania</p>
             </div>
           </div>
           <div className="overflow-hidden relative group">
@@ -72,7 +72,7 @@ const RelaxSection = () => {
               height="450"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="font-serif text-lg text-white italic">Luksus w sercu lasu</p>
+              <p className="text-base text-white font-normal">Luksus w sercu lasu</p>
             </div>
           </div>
         </div>
@@ -96,11 +96,11 @@ const RelaxSection = () => {
 
         <div className="text-center max-w-2xl mx-auto space-y-4">
           <p className="font-heading text-2xl md:text-3xl font-light text-foreground">Wieczorem:</p>
-          <div className="space-y-1 text-muted-foreground font-serif text-lg italic">
+          <div className="space-y-1 text-muted-foreground text-base">
             <p>Ogień trzaska w kominku. Na niebie pojawiają się gwiazdy.</p>
             <p>Ciepła woda w bani. Zapach drewna. Szepty Puszczy.</p>
           </div>
-          <p className="font-serif text-lg text-foreground/80 italic pt-4">
+          <p className="text-base text-foreground/80 pt-4">
             To esencja odpoczynku w lesie na weekend — ostoja spokoju, gdzie czas płynie inaczej.
           </p>
         </div>
