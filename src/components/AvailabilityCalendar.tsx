@@ -377,9 +377,8 @@ const AvailabilityCalendar = () => {
         {/* Season info */}
         <div className="mt-4 text-center space-y-1">
           <p className="text-xs text-muted-foreground">
-            Ceny od <strong>399 zł/noc</strong> (do {BASE_GUESTS} osób). Każda dodatkowa osoba:{' '}
-            <strong>+{EXTRA_GUEST_PRICE} zł/noc</strong>. Weekendy (pt–so):{' '}
-            <strong>+100 zł/noc</strong>.
+            Ceny od <strong>399 zł/noc</strong> za cały dom. Weekendy (pt–so):{' '}
+            <strong>+100 zł/noc</strong>. Przy 7+ nocach: <strong>−10% zniżki</strong>.
           </p>
           <p className="text-[11px] text-muted-foreground/60">
             Ostatnia aktualizacja dostępności: {new Date(BLOCKED_DATES_LAST_UPDATED).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
