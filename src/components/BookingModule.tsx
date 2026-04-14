@@ -150,7 +150,7 @@ const BookingModule = () => {
     <section id="rezerwacja" className="section-padding bg-background">
       <div
         ref={ref}
-        className={`max-w-2xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-2xl mx-auto transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-[0.97]'}`}
       >
         <div className="text-center mb-10 space-y-3">
           <h2 className="section-title">Sprawdź termin</h2>
