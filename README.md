@@ -60,6 +60,16 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## SEO maintenance commands
+
+```sh
+# Regenerate sitemap.xml from current React routes
+npm run sitemap:generate
+
+# Validate SEO integrity (routes vs sitemap + noindex for technical pages)
+npm run seo:check
+```
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.

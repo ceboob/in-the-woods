@@ -22,6 +22,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { LogOut, CreditCard, RefreshCw, Filter } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
 
 type BookingStatus = 'new' | 'confirmed' | 'cancelled';
 
