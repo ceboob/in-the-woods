@@ -176,7 +176,7 @@ const SupraslSection = () => {
             Puszcza Knyszyńska to jeden z największych kompleksów leśnych w Polsce, oferujący setki
             kilometrów szlaków pieszych i rowerowych.
           </p>
-          <p className="font-serif text-xl md:text-2xl italic text-foreground/80">
+          <p className="text-base md:text-lg text-foreground/80">
             10 minut od chaty.
           </p>
         </div>

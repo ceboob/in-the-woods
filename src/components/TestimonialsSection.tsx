@@ -149,7 +149,7 @@ const TestimonialsSection = () => {
                     <span className="text-[10px] font-medium tracking-wide uppercase text-muted-foreground">{src.label}</span>
                   </div>
                 </div>
-                <p className="text-foreground/80 leading-relaxed italic font-serif text-sm">
+                <p className="text-foreground/80 leading-relaxed text-sm">
                   „{t.text}"
                 </p>
                 <div>
