@@ -9,8 +9,6 @@ import {
   isWeekendDay,
   formatDateKey,
   calculateTotalPrice,
-  EXTRA_GUEST_PRICE,
-  BASE_GUESTS,
   MAX_GUESTS,
   MIN_NIGHTS,
   BLOCKED_DATES_LAST_UPDATED,
@@ -343,13 +341,10 @@ const AvailabilityCalendar = () => {
                     <span className="text-muted-foreground">Goście</span>
                     <span>{guests}</span>
                   </div>
-                  {priceCalc && guests > BASE_GUESTS && (
-                    <div className="flex justify-between text-xs">
-                      <span className="text-muted-foreground">
-                        Dopłata za {guests - BASE_GUESTS} dodatkow.{' '}
-                        {guests - BASE_GUESTS === 1 ? 'osobę' : 'osoby'}
-                      </span>
-                      <span>+{priceCalc.extraGuestTotal} zł</span>
+                  {priceCalc && priceCalc.discount > 0 && (
+                    <div className="flex justify-between text-xs text-green-700">
+                      <span>Zniżka za długi pobyt (−10%)</span>
+                      <span>−{priceCalc.discount} zł</span>
                     </div>
                   )}
                   {priceCalc && (
@@ -380,9 +375,8 @@ const AvailabilityCalendar = () => {
         {/* Season info */}
         <div className="mt-4 text-center space-y-1">
           <p className="text-xs text-muted-foreground">
-            Ceny od <strong>399 zł/noc</strong> (do {BASE_GUESTS} osób). Każda dodatkowa osoba:{' '}
-            <strong>+{EXTRA_GUEST_PRICE} zł/noc</strong>. Weekendy (pt–so):{' '}
-            <strong>+100 zł/noc</strong>.
+            Ceny od <strong>399 zł/noc</strong> za cały dom. Weekendy (pt–so):{' '}
+            <strong>+100 zł/noc</strong>. Przy 7+ nocach: <strong>−10% zniżki</strong>.
           </p>
           <p className="text-[11px] text-muted-foreground/60">
             Ostatnia aktualizacja dostępności: {new Date(BLOCKED_DATES_LAST_UPDATED).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
