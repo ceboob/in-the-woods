@@ -52,6 +52,8 @@ const HeroSection = () => {
           sizes="100vw"
           alt="Leśny dom na wyłączność z jacuzzi i sauną w Puszczy Knyszyńskiej — In The Woods noclegi Supraśl"
           className="w-full h-full object-cover"
+          width="1028"
+          height="771"
           loading="eager"
           fetchPriority="high"
         />
