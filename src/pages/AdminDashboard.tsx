@@ -142,6 +142,7 @@ const AdminDashboard = () => {
     );
   };
 
+  return (
     <>
       <SEOHead
         title="Panel administracyjny | In The Woods"
