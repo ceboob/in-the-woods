@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PrzewodnikKulinarny = () => (
   <BlogArticleLayout
-    title="Smaki Supraśla: Gdzie zjeść najlepsze kartacze i babkę ziemniaczaną?"
+    title="Smaki Supraśla: Kartacze i lokalna kuchnia"
     metaTitle="Gdzie zjeść w Supraślu? Restauracje i kuchnia"
     metaDescription="Sprawdź, gdzie dobrze zjeść w Supraślu. Odkryj restauracje serwujące podlaskie specjały: kartacze, babkę ziemniaczaną i dania kuchni tatarskiej."
     slug="przewodnik-kulinarny-suprasl"

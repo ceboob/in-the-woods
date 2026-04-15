@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PodlasieZPsem = () => (
   <BlogArticleLayout
-    title="Podlasie z psem – gdzie szukać noclegu i na co zwrócić uwagę?"
+    title="Podlasie z psem – noclegi i porady"
     metaTitle="Podlasie z psem | Nocleg z psem w Puszczy Knyszyńskiej"
     metaDescription="Planujesz wakacje z psem na Podlasiu? Sprawdź, gdzie znaleźć pet-friendly nocleg w Puszczy Knyszyńskiej. Ogrodzony ogród, szlaki leśne i porady."
     slug="podlasie-z-psem"
