@@ -150,11 +150,13 @@ const SupraslSection = () => {
               >
                 <div className="aspect-[16/10] overflow-hidden">
                   <img
-                    src={guide.image}
-                    alt={guide.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
+                     src={guide.image}
+                     alt={guide.alt}
+                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                     loading="lazy"
+                     width="500"
+                     height="313"
+                   />
                 </div>
                 <div className="p-5 space-y-3">
                   <h3 className="font-heading text-lg font-medium text-foreground group-hover:text-primary transition-colors leading-snug">

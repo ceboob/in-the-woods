@@ -73,7 +73,9 @@ const PuszczaKnyszynskaHistorie = () => (
       src={heroImg}
       alt="Leśna droga w Puszczy Knyszyńskiej w porannej mgle"
       className="rounded-lg shadow-md w-full"
-    />
+    width="800"
+               height="600"
+             />
 
     <h2>Czym jest Puszcza Knyszyńska i dlaczego kryje tyle tajemnic</h2>
 
@@ -93,7 +95,9 @@ const PuszczaKnyszynskaHistorie = () => (
       src={panoramaImg}
       alt="Panorama Puszczy Knyszyńskiej o zachodzie słońca"
       className="rounded-lg shadow-md w-full"
-    />
+    width="800"
+               height="600"
+             />
 
     <h3>Znaczenie historyczne i kulturowe</h3>
     <p>
@@ -116,7 +120,9 @@ const PuszczaKnyszynskaHistorie = () => (
       src={powstanieLasImg}
       alt="Kolorowa rycina XIX-wieczna — powstańcy styczniowi w lesie"
       className="rounded-lg shadow-md w-full"
-    />
+    width="800"
+               height="600"
+             />
 
     <h3>Leśne oddziały i partyzantka</h3>
     <p>
@@ -141,12 +147,16 @@ const PuszczaKnyszynskaHistorie = () => (
         src={galeriaRzezbyImg}
         alt="Rzeźby z drewna w Galerii Leśnej Powstania Styczniowego"
         className="rounded-lg shadow-md w-full h-64 object-cover"
-      />
+      width="800"
+               height="600"
+             />
       <img
         src={galeriaPostacImg}
         alt="Drewniana rzeźba postaci w Galerii Leśnej"
         className="rounded-lg shadow-md w-full h-64 object-cover"
-      />
+      width="800"
+               height="600"
+             />
     </div>
 
     <h3>Najważniejsze wydarzenia w Surażkowie</h3>
@@ -177,7 +187,9 @@ const PuszczaKnyszynskaHistorie = () => (
       src={kladkiImg}
       alt="Drewniane kładki na szlaku przez Puszczę Knyszyńską"
       className="rounded-lg shadow-md w-full"
-    />
+    width="800"
+               height="600"
+             />
 
     <h2>Znane postacie związane z puszczą</h2>
 
@@ -215,7 +227,9 @@ const PuszczaKnyszynskaHistorie = () => (
       src={rekonstrukcjaImg}
       alt="Rekonstrukcja historyczna Powstania Styczniowego w Puszczy Knyszyńskiej"
       className="rounded-lg shadow-md w-full"
-    />
+    width="800"
+               height="600"
+             />
 
     <h2>Współczesne znaczenie historyczne puszczy</h2>
 

@@ -207,12 +207,14 @@ const Galeria = () => {
             aria-label={`Otwórz: ${img.alt}`}
           >
             <img
-              src={img.thumb}
-              alt={img.alt}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-              decoding="async"
-            />
+               src={img.thumb}
+               alt={img.alt}
+               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+               loading="lazy"
+               decoding="async"
+               width="400"
+               height="300"
+             />
             <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors" />
             <span className="absolute bottom-2 left-2 right-2 text-xs text-white bg-foreground/60 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity line-clamp-1">
               {img.alt}
@@ -235,10 +237,12 @@ const Galeria = () => {
             <ChevronLeft className="w-8 h-8" />
           </button>
           <img
-            src={filtered[lightboxIndex].thumb}
-            alt={filtered[lightboxIndex].alt}
-            className="max-h-[85vh] max-w-[90vw] object-contain rounded"
-            onClick={e => e.stopPropagation()}
+             src={filtered[lightboxIndex].thumb}
+             alt={filtered[lightboxIndex].alt}
+             className="max-h-[85vh] max-w-[90vw] object-contain rounded"
+             onClick={e => e.stopPropagation()}
+             width="800"
+             height="600"
           />
           <button onClick={e => { e.stopPropagation(); navigate(1); }} className="absolute right-4 text-white/80 hover:text-white p-2" aria-label="Następne">
             <ChevronRight className="w-8 h-8" />

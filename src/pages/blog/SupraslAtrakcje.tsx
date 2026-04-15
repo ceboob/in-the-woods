@@ -76,7 +76,9 @@ const SupraslAtrakcje = () => {
         src={blogMonaster}
         alt="Monaster Supraśl – atrakcje, co zobaczyć"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Dlaczego Supraśl jest wyjątkowy?</h2>
 
@@ -122,7 +124,9 @@ const SupraslAtrakcje = () => {
         src={blogRzeka}
         alt="Rzeka Supraśl – kajaki, atrakcje Supraśl"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Największe atrakcje Supraśla</h2>
 
@@ -203,7 +207,9 @@ const SupraslAtrakcje = () => {
         src={exteriorMain}
         alt="In The Woods – noclegi Supraśl, dom w lesie z jacuzzi"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Dlaczego warto nocować blisko natury?</h2>
 

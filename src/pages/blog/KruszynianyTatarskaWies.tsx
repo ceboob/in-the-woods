@@ -73,7 +73,9 @@ const KruszynianyTatarskaWies = () => {
         src={blogKruszyniany}
         alt="Meczet w Kruszynianach – tatarska wieś Podlasie"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Historia Tatarów na Podlasiu</h2>
 
@@ -163,7 +165,9 @@ const KruszynianyTatarskaWies = () => {
         src={blogRzeka}
         alt="Krajobraz Podlasia – okolice Kruszynian i Supraśla"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Dlaczego warto odwiedzić Kruszyniany?</h2>
 
