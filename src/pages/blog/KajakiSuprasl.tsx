@@ -50,7 +50,7 @@ const KajakiSuprasl = () => {
 
   return (
     <BlogArticleLayout
-      title="Spływ kajakowy rzeką Supraśl – jedna z najlepszych atrakcji Puszczy Knyszyńskiej"
+      title="Spływ kajakowy rzeką Supraśl – atrakcje Puszczy"
       metaTitle="Kajaki Supraśl – spływy kajakowe | Atrakcje"
       metaDescription="Kajaki Supraśl – odkryj najlepsze trasy spływów kajakowych rzeką Supraśl w Puszczy Knyszyńskiej. Przewodnik po trasach, porady i noclegi."
       slug="kajaki-suprasl"

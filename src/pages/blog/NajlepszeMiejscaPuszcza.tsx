@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NajlepszeMiejscaPuszcza = () => (
   <BlogArticleLayout
-    title="Najlepsze miejsca w Puszczy Knyszyńskiej – co warto zobaczyć"
+    title="Puszcza Knyszyńska – najlepsze miejsca"
     metaTitle="Najlepsze miejsca Puszcza Knyszyńska | 2026"
     metaDescription="Najlepsze miejsca w Puszczy Knyszyńskiej: rezerwaty, szlaki, arboretum, rzeki i dzikie ostępy. Kompletny przewodnik po największym lesie Podlasia."
     slug="najlepsze-miejsca-puszcza-knyszynska"

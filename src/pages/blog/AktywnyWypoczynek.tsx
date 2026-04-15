@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AktywnyWypoczynek = () => (
   <BlogArticleLayout
-    title="Supraśl Aktywnie: 5 Pomysłów na Weekend w Puszczy Knyszyńskiej"
+    title="Supraśl aktywnie: 5 pomysłów na weekend"
     metaTitle="Supraśl aktywnie: rower, kajak, szlaki"
     metaDescription="Jak aktywnie spędzić weekend w Supraślu? Szlaki rowerowe, spływy kajakowe, nordic walking, narciarstwo biegowe i Arboretum Kopna Góra. Praktyczny przewodnik."
     slug="aktywny-wypoczynek-suprasl"

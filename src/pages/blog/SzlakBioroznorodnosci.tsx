@@ -39,7 +39,7 @@ const SzlakBioroznorodnosci = () => {
 
   return (
     <BlogArticleLayout
-      title="Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej"
+      title="Szlak Bioróżnorodności Supraśl – spacer w Puszczy"
       metaTitle="Szlak Bioróżnorodności Supraśl | Spacer"
       metaDescription="Szlak Bioróżnorodności w Supraślu to 7 km edukacyjnej trasy przez Puszczę Knyszyńską. Poznaj florę, faunę i ekosystemy leśne Podlasia."
       slug="szlak-bioroznorodnosci-suprasl"

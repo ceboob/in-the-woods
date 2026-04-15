@@ -39,7 +39,7 @@ const SupraslAtrakcje = () => {
 
   return (
     <BlogArticleLayout
-      title="Supraśl – co zobaczyć w jednym z najpiękniejszych miasteczek Podlasia"
+      title="Supraśl – co zobaczyć? Atrakcje miasteczka"
       metaTitle="Supraśl atrakcje – co zobaczyć | Przewodnik"
       metaDescription="Supraśl – najpiękniejsze atrakcje, monaster, Muzeum Ikon, szlaki i slow tourism. Kompletny przewodnik po perle Podlasia."
       slug="suprasl-atrakcje-national-geographic"

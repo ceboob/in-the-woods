@@ -4,7 +4,7 @@ import { Phone } from 'lucide-react';
 
 const WydarzeniaSupra2026 = () => (
   <BlogArticleLayout
-    title="Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku"
+    title="Wydarzenia w Supraślu 2026 – kalendarz"
     metaTitle="Wydarzenia Supraśl 2026 – kalendarz i daty"
     metaDescription="Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku – daty festiwali, kalendarz i noclegi Supraśl."
     slug="wydarzenia-suprasl-2026"

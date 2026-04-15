@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const UzdrowiSkoSPA = () => (
   <BlogArticleLayout
-    title="Uzdrowisko Supraśl: Jak skorzystać z leczenia borowiną i zregenerować siły?"
+    title="Uzdrowisko Supraśl: Leczenie borowiną i SPA"
     metaTitle="Uzdrowisko Supraśl: Borowina, SPA, Sanatoria | Przewodnik"
     metaDescription="Supraśl to jedyne uzdrowisko na Podlasiu. Borowina, grota solna, zabiegi SPA i wellness. Dowiedz się, jak zaplanować pobyt zdrowotny w Supraślu."
     slug="uzdrowisko-spa-suprasl"
