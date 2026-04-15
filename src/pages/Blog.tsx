@@ -371,11 +371,13 @@ const Blog = () => {
             >
               <div className="aspect-[16/9] overflow-hidden">
                 <img
-                  src={article.image}
-                  alt={article.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
+                   src={article.image}
+                   alt={article.title}
+                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                   loading="lazy"
+                   width="600"
+                   height="338"
+                 />
               </div>
               <div className="p-6 space-y-3">
                 <div className="flex items-center gap-4 text-xs text-muted-foreground">
