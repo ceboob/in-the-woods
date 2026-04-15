@@ -643,11 +643,13 @@ const GallerySection = () => {
 
           <div className="max-w-5xl max-h-[85vh] px-12 relative" onClick={(e) => e.stopPropagation()}>
             <img
-              src={filteredImages[lightboxIndex].full}
-              alt={filteredImages[lightboxIndex].alt}
-              className="max-w-full max-h-[75vh] object-contain mx-auto rounded"
-              decoding="async"
-            />
+               src={filteredImages[lightboxIndex].full}
+               alt={filteredImages[lightboxIndex].alt}
+               className="max-w-full max-h-[75vh] object-contain mx-auto rounded"
+               decoding="async"
+               width="1200"
+               height="800"
+             />
             {/* Caption overlay at the bottom of the image */}
             <div className="absolute bottom-0 left-12 right-12 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b">
               <p className="text-white text-base font-sans">
