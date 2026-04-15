@@ -85,7 +85,7 @@ const allImages: GalleryImage[] = [
   // HERO row
   {
     thumb: jacuzziNight,
-    full: '/images/jacuzzi-night.jpg',
+    full: '/images/jacuzzi-night.webp',
     alt: 'In The Woods Supraśl — ruska bania z jacuzzi pod gwiazdami',
     caption: 'Ruska bania z balią — prywatne SPA pod gwiazdami',
     category: ['bania'],
