@@ -64,10 +64,10 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="https://logo.clearbit.com/airbnb.com"
+              src="/logos/airbnb-wordmark.svg"
               alt="Airbnb"
               loading="lazy"
-              className="h-5 w-auto"
+              className="h-7 w-auto"
             />
           </a>
           <a
@@ -78,10 +78,10 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="https://logo.clearbit.com/alohacamp.com"
+              src="/logos/alohacamp-wordmark.svg"
               alt="Alohacamp"
               loading="lazy"
-              className="h-5 w-auto"
+              className="h-7 w-auto"
             />
           </a>
           <a
@@ -92,10 +92,10 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="https://logo.clearbit.com/booking.com"
+              src="/logos/booking-wordmark.svg"
               alt="Booking.com"
               loading="lazy"
-              className="h-5 w-auto"
+              className="h-7 w-auto"
             />
           </a>
           <a
@@ -106,10 +106,10 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="https://logo.clearbit.com/doginclusive.com"
+              src="/logos/doginclusive-wordmark.svg"
               alt="Doginclusive.pl"
               loading="lazy"
-              className="h-5 w-auto"
+              className="h-7 w-auto"
             />
           </a>
         </div>
