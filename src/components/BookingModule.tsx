@@ -16,6 +16,7 @@ import {
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 import SocialProof from '@/components/SocialProof';
+import { pushToDataLayer } from '@/lib/gtm';
 
 interface BookingData {
   checkIn: string;
@@ -113,6 +114,14 @@ const BookingModule = () => {
         }
         if (error) throw error;
         if (body?.error) throw new Error(body.error);
+
+        pushToDataLayer({
+          event: 'booking_form_submitted',
+          check_in: data.checkIn,
+          check_out: data.checkOut,
+          guests: Number(data.guests),
+        });
+
         setStep('sent');
       } catch (err) {
         console.error('Booking error:', err);

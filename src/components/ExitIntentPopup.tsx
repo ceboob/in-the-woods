@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { X, Phone, ArrowRight } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
+import { pushToDataLayer } from '@/lib/gtm';
 
 const ExitIntentPopup = () => {
   const [show, setShow] = useState(false);
@@ -33,6 +34,13 @@ const ExitIntentPopup = () => {
     const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
     if (!phone || !phoneRegex.test(phone)) return;
 
+    pushToDataLayer({
+      event: 'callback_click',
+      source: 'exit_intent',
+    });
+
+    let isSaved = false;
+
     try {
       const { data: result, error } = await supabase.functions.invoke('rate-limit-submit', {
         body: { type: 'callback', phone, source: 'exit_intent' },
@@ -45,9 +53,19 @@ const ExitIntentPopup = () => {
         return;
       }
       if (error) throw error;
+
+      isSaved = true;
     } catch (err) {
       console.error('Callback save error:', err);
+      return;
     }
+
+    if (!isSaved) return;
+
+    pushToDataLayer({
+      event: 'callback_submitted',
+      source: 'exit_intent',
+    });
 
     setSubmitted(true);
     setTimeout(() => {

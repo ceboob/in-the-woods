@@ -8,6 +8,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import Index from './pages/Index.tsx';
 import CookieConsent from './components/CookieConsent';
+import GTMTracker from './components/GTMTracker';
 
 // Lazy-loaded routes for code splitting
 const NotFound = lazy(() => import('./pages/NotFound.tsx'));
@@ -73,6 +74,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <GTMTracker />
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Index />} />
