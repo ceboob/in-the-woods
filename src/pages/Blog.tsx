@@ -16,10 +16,10 @@ import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.jpg';
 import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.jpg';
 import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
 import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.jpg';
-import blogMushrooms from '@/assets/blog-mushrooms.svg';
-import blogNoService from '@/assets/blog-no-service.svg';
-import blogMeadow from '@/assets/blog-meadow.svg';
-import blogBike from '@/assets/blog-bike.svg';
+import blogMushrooms from '@/assets/article.jpg';
+import blogNoService from '@/assets/brak-internetu-w-telefonie-co-robic-1536x878.webp';
+import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1.jpg';
+import blogBike from '@/assets/puszcza_knyszynska-.jpg';
 
 const articles = [
   {
@@ -375,13 +375,13 @@ const Blog = () => {
             >
               <div className="aspect-[16/9] overflow-hidden">
                 <img
-                   src={article.image}
-                   alt={article.title}
-                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                   loading="lazy"
-                   width="600"
-                   height="338"
-                 />
+                  src={article.image}
+                  alt={article.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  width="600"
+                  height="338"
+                />
               </div>
               <div className="p-6 space-y-3">
                 <div className="flex items-center gap-4 text-xs text-muted-foreground">
