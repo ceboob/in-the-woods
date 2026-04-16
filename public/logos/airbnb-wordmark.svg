@@ -1,0 +1,5 @@
+<svg width="220" height="64" viewBox="0 0 220 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Airbnb">
+  <rect width="220" height="64" fill="transparent"/>
+  <path d="M32 10c6 0 10 5 13 11l9 19c2 5 1 11-3 15-3 4-8 6-13 6-4 0-8-2-11-5-3 3-7 5-11 5-5 0-10-2-13-6-4-4-5-10-3-15l9-19c3-6 7-11 13-11 6 0 10 5 13 11 3-6 7-11 13-11zm0 10c-2 0-4 2-6 6L17 45c-1 2 0 5 1 7 2 2 4 3 7 3 3 0 5-1 7-3l3-3 3 3c2 2 4 3 7 3 3 0 5-1 7-3 1-2 2-5 1-7L45 26c-2-4-4-6-6-6-3 0-5 4-7 8-2-4-4-8-6-8z" fill="#FF5A5F"/>
+  <text x="70" y="45" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#FF5A5F">airbnb</text>
+</svg>
