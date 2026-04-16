@@ -7,7 +7,6 @@ import BadgesBar from '@/components/BadgesBar';
 import TrustSection from '@/components/TrustSection';
 import BookingModule from '@/components/BookingModule';
 import AvailabilityCalendar from '@/components/AvailabilityCalendar';
-import BookingEcosystemSection from '@/components/BookingEcosystemSection';
 
 // Lazy-loaded sections below the fold
 const AmenitiesSection = lazy(() => import('@/components/AmenitiesSection'));
@@ -37,54 +36,12 @@ const SectionFallback = () => (
 );
 
 const Index = () => {
-  const listingUrls = [
-    'https://www.airbnb.pl/rooms/1165170256851279014?guests=1&adults=1&s=67&unique_share_id=cd1458aa-ed37-425b-8252-1fcae5ea10b2',
-    'https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875',
-    'https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875',
-    'https://doginclusive.com/oferty/in-the-woods-',
-  ];
-  const socialUrls = [
-    'https://www.facebook.com/krzemienna.chata/',
-    'https://www.instagram.com/krzemienna_chata/',
-  ];
-
   return (
     <div className="min-h-screen">
       <SEOHead
         title="Domek w lesie z jacuzzi | In The Woods — Podlasie"
         description="Zarezerwuj leśny dom z sauną i balią w Puszczy Knyszyńskiej na wyłączność. Cisza, kominek, ogrodzony teren. Sprawdź wolne terminy!"
         canonical="https://www.suprasl.online/"
-        jsonLd={[
-          {
-            '@context': 'https://schema.org',
-            '@type': ['LodgingBusiness', 'VacationRental'],
-            name: 'In The Woods — Dom w Puszczy Knyszyńskiej',
-            url: 'https://www.suprasl.online/',
-            telephone: '+48722765101',
-            email: 'tutinthewood@gmail.com',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: 'Konne 109/1',
-              postalCode: '16-030',
-              addressLocality: 'Supraśl',
-              addressCountry: 'PL',
-            },
-            sameAs: Array.from(new Set([...listingUrls, ...socialUrls])),
-            checkinTime: '15:00',
-            checkoutTime: '11:00',
-            petsAllowed: true,
-          },
-          {
-            '@context': 'https://schema.org',
-            '@type': 'WebSite',
-            name: 'In The Woods',
-            url: 'https://www.suprasl.online/',
-            potentialAction: {
-              '@type': 'ReserveAction',
-              target: listingUrls,
-            },
-          },
-        ]}
       />
 
       <Navbar />
@@ -94,7 +51,6 @@ const Index = () => {
         <HeroSection />
         <HeroWelcome />
         <BookingModule />
-        <BookingEcosystemSection />
         <AvailabilityCalendar />
         <BadgesBar />
         <TrustSection />

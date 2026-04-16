@@ -53,41 +53,68 @@ const Footer = () => (
         </div>
       </div>
 
-      {/* SEO Internal Links */}
+      {/* Partner profiles */}
       <div className="mt-8 pt-6 border-t border-white/15">
-        <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/70">
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
           <a
             href="https://www.airbnb.pl/rooms/1165170256851279014?guests=1&adults=1&s=67&unique_share_id=cd1458aa-ed37-425b-8252-1fcae5ea10b2"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-primary transition-colors"
+            aria-label="Airbnb"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
-            Airbnb
+            <img
+              src="https://logo.clearbit.com/airbnb.com"
+              alt="Airbnb"
+              loading="lazy"
+              className="h-5 w-auto"
+            />
           </a>
           <a
             href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-primary transition-colors"
+            aria-label="Alohacamp"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
-            Alohacamp
+            <img
+              src="https://logo.clearbit.com/alohacamp.com"
+              alt="Alohacamp"
+              loading="lazy"
+              className="h-5 w-auto"
+            />
           </a>
           <a
             href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-primary transition-colors"
+            aria-label="Booking.com"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
-            Booking.com
+            <img
+              src="https://logo.clearbit.com/booking.com"
+              alt="Booking.com"
+              loading="lazy"
+              className="h-5 w-auto"
+            />
           </a>
           <a
             href="https://doginclusive.com/oferty/in-the-woods-"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-primary transition-colors"
+            aria-label="Doginclusive.pl"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
-            Doginclusive.pl
+            <img
+              src="https://logo.clearbit.com/doginclusive.com"
+              alt="Doginclusive.pl"
+              loading="lazy"
+              className="h-5 w-auto"
+            />
           </a>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/70">
           <Link to="/noclegi-suprasl" className="hover:text-primary transition-colors">
             Noclegi Supraśl
           </Link>

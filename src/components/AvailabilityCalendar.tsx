@@ -29,11 +29,8 @@ const MONTH_NAMES = [
   'Grudzień',
 ];
 const DAY_NAMES = ['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So', 'Nd'];
-const EXTERNAL_ICAL_FEEDS = [
-  'https://ical.booking.com/v1/export?t=dc06b7fe-f118-4bb1-ae19-aec276a22c25',
-  'https://api.alohacamp.com/icals/export/1250b51685e4ba241b42b3006ed70ff2.c0ee7a60-5489-43cb-8c85-f5b0cdc09d74.ics',
-  'https://www.airbnb.com/calendar/ical/1165170256851279014.ics?s=998eabbad764218a950536df0faee9d5&locale=pl',
-];
+const AIRBNB_ICAL_FEED =
+  'https://www.airbnb.com/calendar/ical/1165170256851279014.ics?s=998eabbad764218a950536df0faee9d5&locale=pl';
 
 type FilterType = 'all' | 'free' | 'weekends' | 'weekly' | 'high_season';
 
@@ -87,19 +84,10 @@ const AvailabilityCalendar = () => {
 
     const syncExternalCalendars = async () => {
       try {
-        const responses = await Promise.allSettled(EXTERNAL_ICAL_FEEDS.map((url) => fetch(url)));
-        const texts = await Promise.all(
-          responses.map(async (result) => {
-            if (result.status === 'fulfilled' && result.value.ok) {
-              return result.value.text();
-            }
-            return '';
-          }),
-        );
-
         const mergedDates = new Set<string>();
-        for (const icalText of texts) {
-          if (!icalText) continue;
+        const response = await fetch(AIRBNB_ICAL_FEED);
+        if (response.ok) {
+          const icalText = await response.text();
           parseIcalToDateKeys(icalText).forEach((dateKey) => mergedDates.add(dateKey));
         }
         setSyncedBlockedDates(mergedDates);
