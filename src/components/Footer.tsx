@@ -32,10 +32,22 @@ const Footer = () => (
         <div className="flex flex-col items-center gap-3">
           <span className="text-xs uppercase tracking-[0.24em] text-white/50">Social media</span>
           <div className="flex items-center gap-3">
-            <a href="#" aria-label="Instagram" className={socialLinkClass}>
+            <a
+              href="https://www.instagram.com/krzemienna_chata/"
+              aria-label="Instagram"
+              className={socialLinkClass}
+              target="_blank"
+              rel="noreferrer"
+            >
               <Instagram className="h-5 w-5 transition-transform duration-200 group-hover:scale-110" />
             </a>
-            <a href="#" aria-label="Facebook" className={socialLinkClass}>
+            <a
+              href="https://www.facebook.com/krzemienna.chata/"
+              aria-label="Facebook"
+              className={socialLinkClass}
+              target="_blank"
+              rel="noreferrer"
+            >
               <Facebook className="h-5 w-5 transition-transform duration-200 group-hover:scale-110" />
             </a>
           </div>
