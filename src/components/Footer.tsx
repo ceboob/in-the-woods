@@ -33,15 +33,19 @@ const Footer = () => (
         </div>
         <div className="flex items-center gap-6">
           <a
-            href="#"
+            href="https://www.instagram.com/krzemienna_chata/"
             aria-label="Instagram"
+            target="_blank"
+            rel="me noopener noreferrer"
             className="text-white/70 hover:text-primary transition-colors"
           >
             <Instagram className="w-5 h-5" />
           </a>
           <a
-            href="#"
+            href="https://www.facebook.com/krzemienna.chata/"
             aria-label="Facebook"
+            target="_blank"
+            rel="me noopener noreferrer"
             className="text-white/70 hover:text-primary transition-colors"
           >
             <Facebook className="w-5 h-5" />
@@ -52,6 +56,38 @@ const Footer = () => (
       {/* SEO Internal Links */}
       <div className="mt-8 pt-6 border-t border-white/15">
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/70">
+          <a
+            href="https://www.airbnb.pl/rooms/1165170256851279014?guests=1&adults=1&s=67&unique_share_id=cd1458aa-ed37-425b-8252-1fcae5ea10b2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors"
+          >
+            Airbnb
+          </a>
+          <a
+            href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors"
+          >
+            Alohacamp
+          </a>
+          <a
+            href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors"
+          >
+            Booking.com
+          </a>
+          <a
+            href="https://doginclusive.com/oferty/in-the-woods-"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors"
+          >
+            Doginclusive.pl
+          </a>
           <Link to="/noclegi-suprasl" className="hover:text-primary transition-colors">
             Noclegi Supraśl
           </Link>

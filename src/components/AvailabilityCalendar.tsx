@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { ChevronLeft, ChevronRight, Filter, Users, Calculator } from 'lucide-react';
 import {
@@ -29,6 +29,11 @@ const MONTH_NAMES = [
   'Grudzień',
 ];
 const DAY_NAMES = ['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So', 'Nd'];
+const EXTERNAL_ICAL_FEEDS = [
+  'https://ical.booking.com/v1/export?t=dc06b7fe-f118-4bb1-ae19-aec276a22c25',
+  'https://api.alohacamp.com/icals/export/1250b51685e4ba241b42b3006ed70ff2.c0ee7a60-5489-43cb-8c85-f5b0cdc09d74.ics',
+  'https://www.airbnb.com/calendar/ical/1165170256851279014.ics?s=998eabbad764218a950536df0faee9d5&locale=pl',
+];
 
 type FilterType = 'all' | 'free' | 'weekends' | 'weekly' | 'high_season';
 
@@ -52,6 +57,59 @@ const AvailabilityCalendar = () => {
   });
   const [hoverDate, setHoverDate] = useState<Date | null>(null);
   const [guests, setGuests] = useState(4);
+  const [syncedBlockedDates, setSyncedBlockedDates] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    const parseIcalToDateKeys = (icalText: string): string[] => {
+      const dates: string[] = [];
+      const eventBlocks = icalText.split('BEGIN:VEVENT').slice(1);
+
+      for (const eventBlock of eventBlocks) {
+        const block = eventBlock.split('END:VEVENT')[0];
+        const startMatch = block.match(/DTSTART[^:]*:(\d{8})/);
+        const endMatch = block.match(/DTEND[^:]*:(\d{8})/);
+        if (!startMatch || !endMatch) continue;
+
+        const formatIcalDate = (value: string) =>
+          `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}`;
+
+        const startDate = new Date(formatIcalDate(startMatch[1]));
+        const endDate = new Date(formatIcalDate(endMatch[1]));
+        const cursor = new Date(startDate);
+
+        while (cursor < endDate) {
+          dates.push(formatDateKey(cursor));
+          cursor.setDate(cursor.getDate() + 1);
+        }
+      }
+      return dates;
+    };
+
+    const syncExternalCalendars = async () => {
+      try {
+        const responses = await Promise.allSettled(EXTERNAL_ICAL_FEEDS.map((url) => fetch(url)));
+        const texts = await Promise.all(
+          responses.map(async (result) => {
+            if (result.status === 'fulfilled' && result.value.ok) {
+              return result.value.text();
+            }
+            return '';
+          }),
+        );
+
+        const mergedDates = new Set<string>();
+        for (const icalText of texts) {
+          if (!icalText) continue;
+          parseIcalToDateKeys(icalText).forEach((dateKey) => mergedDates.add(dateKey));
+        }
+        setSyncedBlockedDates(mergedDates);
+      } catch (error) {
+        console.error('Nie udało się zsynchronizować kalendarza iCal', error);
+      }
+    };
+
+    void syncExternalCalendars();
+  }, []);
 
   const isPast = (date: Date) => {
     const today = new Date();
@@ -62,7 +120,7 @@ const AvailabilityCalendar = () => {
   const shouldShowDate = useCallback(
     (date: Date): boolean => {
       if (isPast(date)) return true;
-      const blocked = isDateBlocked(date);
+      const blocked = isDateBlocked(date) || syncedBlockedDates.has(formatDateKey(date));
       switch (filter) {
         case 'free':
           return !blocked;
@@ -76,7 +134,7 @@ const AvailabilityCalendar = () => {
           return true;
       }
     },
-    [filter],
+    [filter, syncedBlockedDates],
   );
 
   const calendarDays = useMemo(() => {
@@ -97,7 +155,8 @@ const AvailabilityCalendar = () => {
   }, [currentMonth]);
 
   const handleDateClick = (date: Date) => {
-    if (isPast(date) || isDateBlocked(date)) return;
+    const dateKey = formatDateKey(date);
+    if (isPast(date) || isDateBlocked(date) || syncedBlockedDates.has(dateKey)) return;
 
     if (!selectedRange.start || selectedRange.end) {
       setSelectedRange({ start: date, end: null });
@@ -108,7 +167,7 @@ const AvailabilityCalendar = () => {
         // Check if any blocked dates in range
         const current = new Date(selectedRange.start);
         while (current <= date) {
-          if (isDateBlocked(current)) {
+          if (isDateBlocked(current) || syncedBlockedDates.has(formatDateKey(current))) {
             setSelectedRange({ start: date, end: null });
             return;
           }
@@ -223,7 +282,7 @@ const AvailabilityCalendar = () => {
           <div className="grid grid-cols-7 gap-1">
             {calendarDays.map((date, i) => {
               if (!date) return <div key={`empty-${i}`} />;
-              const blocked = isDateBlocked(date);
+              const blocked = isDateBlocked(date) || syncedBlockedDates.has(formatDateKey(date));
               const past = isPast(date);
               const show = shouldShowDate(date);
               const isToday = date.toDateString() === new Date().toDateString();
