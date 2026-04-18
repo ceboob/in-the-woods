@@ -1,4 +1,5 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
+import { pushToDataLayer } from '@/lib/gtm';
 import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -154,6 +155,13 @@ const Galeria = () => {
   const openLightbox = (i: number) => {
     setLightboxIndex(i);
     document.body.style.overflow = 'hidden';
+
+    pushToDataLayer({
+      event: 'gallery_open',
+      gallery_category: activeCategory,
+      image_alt: filtered[i]?.alt,
+      image_index: i,
+    });
   };
   const closeLightbox = () => {
     setLightboxIndex(null);
