@@ -1,8 +1,10 @@
+import { PassThrough } from 'node:stream';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { renderToString } from 'react-dom/server';
+import { renderToPipeableStream } from 'react-dom/server';
 import { HelmetProvider } from 'react-helmet-async';
 import { Route, Routes } from 'react-router-dom';
 import { StaticRouter } from 'react-router-dom/server';
+import type { ReactElement } from 'react';
 import type { FilledContext } from 'react-helmet-async';
 import { Toaster as Sonner } from '@/components/ui/sonner';
 import CookieConsent from '@/components/CookieConsent';
@@ -16,6 +18,54 @@ type HelmetContext = {
 
 export { prerenderRoutes };
 
+function renderApp(app: ReactElement) {
+  return new Promise<string>((resolve, reject) => {
+    let html = '';
+    let settled = false;
+    let firstError: unknown;
+    const stream = new PassThrough();
+
+    stream.setEncoding('utf8');
+    stream.on('data', (chunk) => {
+      html += chunk;
+    });
+    stream.on('end', () => {
+      if (settled) return;
+      settled = true;
+
+      if (firstError) {
+        reject(firstError);
+        return;
+      }
+
+      resolve(html);
+    });
+    stream.on('error', (error) => {
+      if (settled) return;
+      settled = true;
+      reject(error);
+    });
+
+    const { pipe, abort } = renderToPipeableStream(app, {
+      onAllReady() {
+        pipe(stream);
+      },
+      onShellError(error) {
+        if (settled) return;
+        settled = true;
+        reject(error);
+      },
+      onError(error) {
+        firstError ??= error;
+      },
+    });
+
+    setTimeout(() => {
+      abort();
+    }, 10000);
+  });
+}
+
 export async function render(url: string) {
   const queryClient = new QueryClient();
   const helmetContext: HelmetContext = {};
@@ -26,7 +76,7 @@ export async function render(url: string) {
     })),
   );
 
-  const appHtml = renderToString(
+  const appHtml = await renderApp(
     <QueryClientProvider client={queryClient}>
       <HelmetProvider context={helmetContext}>
         <TooltipProvider>
