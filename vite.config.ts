@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig(({ mode, isSsrBuild }) => ({
   server: {
     host: "::",
     port: 8080,
@@ -18,17 +18,33 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
-          'vendor-ui': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-popover', '@radix-ui/react-tooltip', '@radix-ui/react-tabs', '@radix-ui/react-select', '@radix-ui/react-dropdown-menu'],
-          'vendor-utils': ['@tanstack/react-query', 'react-helmet-async', 'date-fns', 'clsx', 'tailwind-merge'],
-          'vendor-icons': ['lucide-react'],
-          'vendor-supabase': ['@supabase/supabase-js'],
+  build: isSsrBuild
+    ? undefined
+    : {
+        rollupOptions: {
+          output: {
+            manualChunks: {
+              'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+              'vendor-ui': [
+                '@radix-ui/react-accordion',
+                '@radix-ui/react-dialog',
+                '@radix-ui/react-popover',
+                '@radix-ui/react-tooltip',
+                '@radix-ui/react-tabs',
+                '@radix-ui/react-select',
+                '@radix-ui/react-dropdown-menu',
+              ],
+              'vendor-utils': [
+                '@tanstack/react-query',
+                'react-helmet-async',
+                'date-fns',
+                'clsx',
+                'tailwind-merge',
+              ],
+              'vendor-icons': ['lucide-react'],
+              'vendor-supabase': ['@supabase/supabase-js'],
+            },
+          },
         },
       },
-    },
-  },
 }));

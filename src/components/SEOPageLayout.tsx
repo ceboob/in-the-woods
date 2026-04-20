@@ -1,5 +1,5 @@
 import { ReactNode, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import RelatedPages from '@/components/RelatedPages';
@@ -23,7 +23,8 @@ const SEOPageLayout = ({
     window.scrollTo(0, 0);
   }, []);
 
-  const canonical = `https://www.suprasl.online${window.location.pathname}`;
+  const { pathname } = useLocation();
+  const canonical = `https://www.suprasl.online${pathname}`;
   const breadcrumbSchema = breadcrumbName
     ? {
         '@context': 'https://schema.org',

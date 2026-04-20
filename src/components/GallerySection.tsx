@@ -578,7 +578,7 @@ const GallerySection = () => {
                 alt={img.alt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 loading={i < 3 ? 'eager' : 'lazy'}
-                fetchPriority={i < 3 ? 'high' : undefined}
+                fetchpriority={i < 3 ? 'high' : undefined}
                 decoding="async"
                 width="600"
                 height="400"
