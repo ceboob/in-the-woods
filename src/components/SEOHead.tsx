@@ -5,9 +5,12 @@ interface SEOHeadProps {
   description: string;
   canonical: string;
   ogImage?: string;
+  keywords?: string[] | string;
   type?: string;
   jsonLd?: object | object[];
   noindex?: boolean;
+  publishedTime?: string;
+  modifiedTime?: string;
 }
 
 const SEOHead = ({
@@ -15,16 +18,21 @@ const SEOHead = ({
   description,
   canonical,
   ogImage = 'https://www.suprasl.online/og-image.jpg',
+  keywords,
   type = 'website',
   jsonLd,
   noindex = false,
+  publishedTime,
+  modifiedTime,
 }: SEOHeadProps) => {
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const keywordContent = Array.isArray(keywords) ? keywords.join(', ') : keywords;
 
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
+      {keywordContent ? <meta name="keywords" content={keywordContent} /> : null}
       <meta
         name="robots"
         content={
@@ -47,6 +55,12 @@ const SEOHead = ({
       <meta property="og:type" content={type} />
       <meta property="og:locale" content="pl_PL" />
       <meta property="og:site_name" content="In The Woods — Dom w Puszczy Knyszyńskiej" />
+      {type === 'article' && publishedTime ? (
+        <meta property="article:published_time" content={publishedTime} />
+      ) : null}
+      {type === 'article' && (modifiedTime || publishedTime) ? (
+        <meta property="article:modified_time" content={modifiedTime || publishedTime} />
+      ) : null}
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
