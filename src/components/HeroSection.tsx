@@ -55,7 +55,7 @@ const HeroSection = () => {
           width="1028"
           height="771"
           loading="eager"
-          fetchPriority="high"
+          fetchpriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#333333]/75 via-[#333333]/50 to-[#333333]/80" />
       </div>
