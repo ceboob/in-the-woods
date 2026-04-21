@@ -10,6 +10,8 @@
     "build:ssr": "vite build --ssr src/ssr/entry-server.tsx --outDir .ssr",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
+    "seo:check": "node scripts/seo-check.mjs",
+    "sitemap:generate": "node scripts/generate-sitemap.mjs",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"

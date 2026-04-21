@@ -4,7 +4,7 @@ import { Phone } from 'lucide-react';
 
 const WydarzeniaSupra2026 = () => (
   <BlogArticleLayout
-    title="Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku"
+    title="Wydarzenia w Supraślu 2026 – kalendarz"
     metaTitle="Wydarzenia Supraśl 2026 – kalendarz i daty"
     metaDescription="Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku – daty festiwali, kalendarz i noclegi Supraśl."
     slug="wydarzenia-suprasl-2026"
@@ -124,10 +124,7 @@ const WydarzeniaSupra2026 = () => (
       <br />
       <strong>Lokalizacja:</strong> Monaster Zwiastowania NMP, Supraśl.
       <br />
-      <strong>Więcej:</strong>{' '}
-      <a href="https://www.festiwalcerkiewny.pl" target="_blank" rel="noopener noreferrer">
-        festiwalcerkiewny.pl
-      </a>
+      <strong>Więcej:</strong> festiwalcerkiewny.pl (strona festiwalu)
     </p>
 
     <h3>PKO Białystok Half Marathon – 9–10 maja 2026</h3>
@@ -199,10 +196,7 @@ const WydarzeniaSupra2026 = () => (
       <br />
       <strong>Lokalizacja:</strong> różne przestrzenie w Supraślu i okolicach.
       <br />
-      <strong>Więcej:</strong>{' '}
-      <a href="https://wertep.pl" target="_blank" rel="noopener noreferrer">
-        wertep.pl
-      </a>
+      <strong>Więcej:</strong> wertep.pl (strona festiwalu)
     </p>
 
     <h3>Podlaskie Święto Chleba – 9 sierpnia 2026</h3>

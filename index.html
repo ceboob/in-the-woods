@@ -3,23 +3,203 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https: http:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://api.stripe.com https://static.cloudflareinsights.com; frame-src https://js.stripe.com https://hooks.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self';"
-    />
+    <!-- CSP enforced via vercel.json HTTP header (single source of truth) -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W5GVLN7L');</script>
+    <!-- End Google Tag Manager -->
+
     <link rel="dns-prefetch" href="https://xqtffcnrepvmzizfsprv.supabase.co" />
     <link rel="preconnect" href="https://xqtffcnrepvmzizfsprv.supabase.co" crossorigin />
-    <link rel="preload" as="image" href="/src/assets/exterior-main.webp" type="image/webp" />
-    <title>In The Woods</title>
+    <link rel="preload" as="image" href="/images/hero-cabin.jpg" type="image/jpeg" />
+    <title>Noclegi Supraśl – In The Woods | dom w lesie z jacuzzi</title>
+    <!-- title set dynamically by react-helmet-async per route -->
+    <!-- meta description set dynamically by react-helmet-async per route -->
+    <!-- canonical set dynamically by react-helmet-async per route -->
     <meta name="theme-color" content="#e8f5e4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <!-- hreflang set dynamically by react-helmet-async per route -->
+
+    <meta
+      name="keywords"
+      content="noclegi Supraśl, nocleg Supraśl, wynajem Supraśl, dom Supraśl, domek Supraśl, noclegi Puszcza Knyszyńska, nocleg Podlasie, dom w lesie Supraśl, weekend Supraśl, noclegi okolice Białystok, gdzie nocować Supraśl, Supraśl gdzie spać, dom Supraśl wynajem, nocleg blisko Supraśla, noclegi blisko Białystok"
+    />
+
+    <!-- OG/Twitter set dynamically by react-helmet-async per route -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VacationRental",
+        "@id": "https://www.suprasl.online/#vacation-rental",
+        "identifier": "suprasl-online-in-the-woods",
+        "name": "In The Woods — leśny dom na wyłączność z jacuzzi i sauną",
+        "description": "Zarezerwuj leśny domek do wynajęcia w Puszczy Knyszyńskiej na wyłączność. Dom z bali z jacuzzi, sauną, kominkiem i ogrodzonym terenem. Domek w lesie wynajem dla par, rodzin i przyjaciół — psy za darmo, slow travel Podlasie.",
+        "url": "https://www.suprasl.online",
+        "telephone": "+48722765101",
+        "email": "tutinthewood@gmail.com",
+        "checkinTime": "15:00",
+        "checkoutTime": "11:00",
+        "image": [
+          "https://www.suprasl.online/og-image.jpg",
+          "https://www.suprasl.online/images/jacuzzi-night.jpg",
+          "https://www.suprasl.online/images/exterior-main.jpg",
+          "https://www.suprasl.online/images/living-fireplace.jpg",
+          "https://www.suprasl.online/images/terrace-porch.jpg",
+          "https://www.suprasl.online/images/bedroom.jpg",
+          "https://www.suprasl.online/images/kitchen-brick.jpg",
+          "https://www.suprasl.online/images/winter-cabin-golden.jpg",
+          "https://www.suprasl.online/images/bathroom.webp",
+          "https://www.suprasl.online/images/terrace-breakfast.jpg",
+          "https://www.suprasl.online/images/interior-living.webp",
+          "https://www.suprasl.online/images/hero-cabin.jpg"
+        ],
+        "sameAs": [
+          "https://www.facebook.com/inthewoods.suprasl",
+          "https://www.instagram.com/inthewoods.suprasl/",
+          "https://chatpuszczy.pl"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Konne 109/1",
+          "addressLocality": "Supraśl",
+          "addressRegion": "podlaskie",
+          "postalCode": "16-030",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 53.208577,
+          "longitude": 23.436622
+        },
+        "containsPlace": {
+          "@type": "Accommodation",
+          "additionalType": "https://schema.org/House",
+          "name": "In The Woods – main cabin",
+          "description": "3-bedroom wooden cabin in Puszcza Knyszyńska forest with full kitchen, living room with fireplace, and private garden.",
+          "numberOfRooms": 3,
+          "numberOfBedrooms": 3,
+          "numberOfBathroomsTotal": 1,
+          "bed": [
+            { "@type": "BedDetails", "numberOfBeds": 2, "typeOfBed": "Double" },
+            { "@type": "BedDetails", "numberOfBeds": 2, "typeOfBed": "Single" }
+          ],
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Hot tub / Ruska bania", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Fireplace", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Garden", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Pet-friendly", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Free parking", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "BBQ / Fire pit", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Fully equipped kitchen", "value": true }
+          ],
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "value": 120,
+            "unitCode": "MTK"
+          },
+          "occupancy": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 8,
+            "unitText": "guests"
+          },
+          "petsAllowed": true
+        },
+        "numberOfRooms": 3,
+        "petsAllowed": true,
+        "priceRange": "od 399 PLN",
+        "currenciesAccepted": "PLN",
+        "paymentAccepted": "Przelew bankowy, Karta kredytowa, Gotówka",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.82",
+          "bestRating": "5",
+          "worstRating": "1",
+          "reviewCount": "110",
+          "ratingCount": "110"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Marta i Tomek" },
+            "datePublished": "2025-11-15",
+            "reviewBody": "Miejsce, do którego chce się wracać. Cisza, zapach drewna, kominek wieczorem i balia pod gwiazdami — to był najlepszy weekend od lat."
+          },
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Rodzina Kowalskich" },
+            "datePublished": "2025-08-22",
+            "reviewBody": "Dzieci nie chciały wyjeżdżać. Ogród, plac zabaw, las za płotem i ognisko każdego wieczoru. Idealne miejsce na rodzinny odpoczynek."
+          },
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Anna i Piotr" },
+            "datePublished": "2026-01-10",
+            "reviewBody": "Ruska bania pod gwiazdami to coś, co trzeba przeżyć. Do tego kominek, las i cisza — pełna regeneracja po tygodniu pracy."
+          },
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Michał" },
+            "datePublished": "2026-02-14",
+            "reviewBody": "Już trzeci raz u Macieja i za każdym razem jest lepiej. Dom pięknie utrzymany, ogród zadbany, a puszcza za płotem to skarb."
+          },
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Ewa i Marek" },
+            "datePublished": "2025-07-18",
+            "reviewBody": "Szukaliśmy ciszy i natury — znaleźliśmy raj. Poranki z kawą na tarasie, wieczory przy ognisku. In The Woods to definicja slow life."
+          }
+        ],
+        "containedInPlace": {
+          "@type": "Place",
+          "name": "Puszcza Knyszyńska",
+          "url": "https://pl.wikipedia.org/wiki/Puszcza_Knyszy%C5%84ska"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Gdzie nocować w Supraślu?", "acceptedAnswer": {"@type": "Answer", "text": "In The Woods to prywatny dom na wynajem w Puszczy Knyszyńskiej, zaledwie 10 minut od centrum Supraśla. Idealny nocleg w Supraślu dla par, rodzin i grup przyjaciół szukających ciszy i natury."}},
+          {"@type": "Question", "name": "Czy są domy na wynajem w Supraślu?", "acceptedAnswer": {"@type": "Answer", "text": "Tak — In The Woods to dom na wyłączność blisko Supraśla, w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania i pełna prywatność."}},
+          {"@type": "Question", "name": "Czy można wynająć dom w Puszczy Knyszyńskiej?", "acceptedAnswer": {"@type": "Answer", "text": "Tak, In The Woods znajduje się w sercu Puszczy Knyszyńskiej przy rezerwacie Krzemienne Góry. To jeden z nielicznych domów na wynajem otoczonych prawdziwą puszczą."}},
+          {"@type": "Question", "name": "Czy Supraśl jest dobry na weekend?", "acceptedAnswer": {"@type": "Answer", "text": "Supraśl to idealne miejsce na weekend — uzdrowiskowe miasteczko z Monasterem, Muzeum Ikon, kawiarniami i szlakami w Puszczy Knyszyńskiej. In The Woods to najlepsza baza wypadowa."}},
+          {"@type": "Question", "name": "Czy są noclegi z jacuzzi w Supraślu?", "acceptedAnswer": {"@type": "Answer", "text": "In The Woods oferuje prywatną ruską banię z balią z gorącą wodą — domek z jacuzzi w lesie. Idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu za 250 zł."}},
+          {"@type": "Question", "name": "Gdzie znajduje się In The Woods?", "acceptedAnswer": {"@type": "Answer", "text": "Dom znajduje się w miejscowości Konne koło Supraśla, w Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku. To domek w lesie na Podlasiu, przy Rezerwacie Przyrody Krzemienne Góry."}},
+          {"@type": "Question", "name": "Ile kosztuje wynajem domku w lesie na weekend?", "acceptedAnswer": {"@type": "Answer", "text": "Ceny zaczynają się od 399 zł za noc. Koszt zależy od sezonu, dnia tygodnia i długości pobytu. Sprawdź kalendarz dostępności — wynajem domku na odludziu na weekend bez pośredników."}},
+          {"@type": "Question", "name": "Czy domek jest dostępny na sylwestra, walentynki lub majówkę?", "acceptedAnswer": {"@type": "Answer", "text": "Domek na sylwestra w lesie, walentynki i majówkę to nasze najpopularniejsze terminy — rezerwowane z dużym wyprzedzeniem. Sprawdź dostępność w kalendarzu lub zadzwoń."}},
+          {"@type": "Question", "name": "Czy dom jest prywatny?", "acceptedAnswer": {"@type": "Answer", "text": "Tak — dom i cały ogród wynajmujecie na wyłączność. Żadnych innych gości. Dom na wyłączność w lesie — Twoja prywatna przestrzeń."}},
+          {"@type": "Question", "name": "Czy można przyjechać z psem?", "acceptedAnswer": {"@type": "Answer", "text": "Tak, zwierzęta są mile widziane. Psy za darmo — bez dopłat. Ogrodzony ogród i las za progiem to raj dla czworonogów."}},
+          {"@type": "Question", "name": "Dla ilu osób jest dom?", "acceptedAnswer": {"@type": "Answer", "text": "Dom jest komfortowy dla 6–8 osób. Dwie sypialnie z dużymi łóżkami na piętrze oraz dodatkowa przestrzeń w salonie."}},
+          {"@type": "Question", "name": "Czy mogę pracować zdalnie w In The Woods?", "acceptedAnswer": {"@type": "Answer", "text": "Tak — szybkie Wi-Fi, biurko przy oknie z widokiem na las. Praca zdalna w lesie — wynajem domku idealnego na workation."}},
+          {"@type": "Question", "name": "Jak wygląda rezerwacja?", "acceptedAnswer": {"@type": "Answer", "text": "Wyślij zapytanie przez formularz lub zadzwoń pod 722 765 101. Potwierdzimy dostępność i przedstawimy szczegółową ofertę. Rezerwacja bezpośrednia, bez prowizji pośrednika."}}
+        ]
+      }
+    </script>
     <!--app-head-->
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5GVLN7L"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <noscript>

@@ -84,7 +84,9 @@ const SupraslAtrakcjeUzdrowisko = () => {
         src={blogSupraslUzdrowisko}
         alt="Supraśl atrakcje – Monaster Zwiastowania NMP, uzdrowisko Podlasia"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Monaster Zwiastowania Najświętszej Maryi Panny</h2>
 
@@ -124,7 +126,9 @@ const SupraslAtrakcjeUzdrowisko = () => {
         src={blogMonaster}
         alt="Monaster Supraśl – cerkiew i ogrody klasztorne"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Muzeum Ikon</h2>
 
@@ -159,7 +163,9 @@ const SupraslAtrakcjeUzdrowisko = () => {
         src={blogRzeka}
         alt="Bulwary nad rzeką Supraśl – spacery i kajaki"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Charakter uzdrowiskowy</h2>
 

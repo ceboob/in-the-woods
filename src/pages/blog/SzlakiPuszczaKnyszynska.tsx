@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const SzlakiPuszczaKnyszynska = () => (
   <BlogArticleLayout
-    title="Puszcza Knyszyńska na piechotę i rowerem – najlepsze szlaki z Supraśla"
+    title="Puszcza Knyszyńska – szlaki piesze i rowerowe"
     metaTitle="Puszcza Knyszyńska szlaki z Supraśla | Mapy"
     metaDescription="Najlepsze szlaki piesze i rowerowe w Puszczy Knyszyńskiej z Supraśla. Trasy dla rodzin, zaawansowanych, mapy i praktyczne porady. Zaplanuj wycieczkę!"
     slug="szlaki-puszcza-knyszynska"

@@ -39,7 +39,7 @@ const SzlakBioroznorodnosci = () => {
 
   return (
     <BlogArticleLayout
-      title="Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej"
+      title="Szlak Bioróżnorodności Supraśl – spacer w Puszczy"
       metaTitle="Szlak Bioróżnorodności Supraśl | Spacer"
       metaDescription="Szlak Bioróżnorodności w Supraślu to 7 km edukacyjnej trasy przez Puszczę Knyszyńską. Poznaj florę, faunę i ekosystemy leśne Podlasia."
       slug="szlak-bioroznorodnosci-suprasl"
@@ -77,7 +77,9 @@ const SzlakBioroznorodnosci = () => {
         src={blogSzlakBio}
         alt="Szlak Bioróżnorodności Supraśl – ścieżka edukacyjna w Puszczy Knyszyńskiej"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Czym jest Szlak Bioróżnorodności?</h2>
 
@@ -128,7 +130,9 @@ const SzlakBioroznorodnosci = () => {
         src={forestNature}
         alt="Puszcza Knyszyńska – las mieszany na Szlaku Bioróżnorodności"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Co można zobaczyć?</h2>
 
@@ -162,7 +166,9 @@ const SzlakBioroznorodnosci = () => {
         src={forestPanorama}
         alt="Panorama Puszczy Knyszyńskiej – szlaki przyrodnicze Supraśl"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Dlaczego warto odwiedzić?</h2>
 

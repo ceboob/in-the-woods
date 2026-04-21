@@ -50,7 +50,7 @@ const KajakiSuprasl = () => {
 
   return (
     <BlogArticleLayout
-      title="Spływ kajakowy rzeką Supraśl – jedna z najlepszych atrakcji Puszczy Knyszyńskiej"
+      title="Spływ kajakowy rzeką Supraśl – atrakcje Puszczy"
       metaTitle="Kajaki Supraśl – spływy kajakowe | Atrakcje"
       metaDescription="Kajaki Supraśl – odkryj najlepsze trasy spływów kajakowych rzeką Supraśl w Puszczy Knyszyńskiej. Przewodnik po trasach, porady i noclegi."
       slug="kajaki-suprasl"
@@ -89,7 +89,9 @@ const KajakiSuprasl = () => {
         src={blogKajaki}
         alt="kajaki Supraśl – spływ kajakowy rzeką Supraśl w Puszczy Knyszyńskiej"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Dlaczego warto wybrać kajaki w Supraślu?</h2>
 
@@ -128,7 +130,9 @@ const KajakiSuprasl = () => {
         src={riverKayak}
         alt="rzeka Supraśl – spokojna rzeka w Puszczy Knyszyńskiej idealna na kajaki"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Jak wygląda spływ rzeką Supraśl?</h2>
 
@@ -224,7 +228,9 @@ const KajakiSuprasl = () => {
         src={forestPanorama}
         alt="Puszcza Knyszyńska – panorama leśna nad rzeką Supraśl"
         className="w-full rounded-lg my-8"
-      />
+      width="800"
+               height="600"
+             />
 
       <h2>Kiedy najlepiej płynąć?</h2>
 

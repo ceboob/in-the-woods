@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const WorkationPodlasie = () => (
   <BlogArticleLayout
-    title="Workation na Podlasiu: Połącz pracę zdalną z odpoczynkiem"
+    title="Workation Podlasie: Praca zdalna w lesie"
     metaTitle="Workation Podlasie | Praca zdalna w lesie z Wi-Fi"
     metaDescription="Workation na Podlasiu — domek w lesie z szybkim Wi-Fi, ciszą i naturą. Połącz produktywną pracę zdalną z regeneracją w Puszczy Knyszyńskiej."
     slug="workation-podlasie"

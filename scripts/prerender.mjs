@@ -25,7 +25,7 @@ for (const route of prerenderRoutes) {
   const normalizedHeadTags = titleMatch ? headTags.replace(titleMatch[0], '') : headTags;
 
   let pageHtml = template
-    .replace(/<title>In The Woods<\/title>/, titleMatch?.[0] ?? '<title>In The Woods</title>')
+    .replace(/<title[^>]*>[\s\S]*?<\/title>/, titleMatch?.[0] ?? '<title>In The Woods</title>')
     .replace('<!--app-head-->', normalizedHeadTags)
     .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
 

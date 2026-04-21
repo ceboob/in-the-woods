@@ -112,27 +112,35 @@ const Informator = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
           <img
             src={guestGuideBook}
-            alt="Informator gościa — książka powitalna In The Woods Supraśl"
+            alt="Informator gościa — In The Woods Supraśl"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
+            width="400"
+            height="220"
           />
           <img
             src={livingWide}
-            alt="Salon z kominkiem i fotele — wnętrze domu na wynajem Supraśl"
+            alt="Salon z kominkiem — dom na wynajem Supraśl"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
+            width="400"
+            height="220"
           />
           <img
             src={stoveDetail}
-            alt="Kaflowy piec kuchenny — tradycyjne ogrzewanie chaty w Puszczy Knyszyńskiej"
+            alt="Kaflowy piec kuchenny — chata w Puszczy"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
+            width="400"
+            height="220"
           />
           <img
             src={kitchenBrick}
-            alt="Kuchnia z ceglanym piecem i porcelaną — dom Supraśl kuchnia"
+            alt="Kuchnia z ceglanym piecem — dom Supraśl"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
+            width="400"
+            height="220"
           />
         </div>
       </div>
