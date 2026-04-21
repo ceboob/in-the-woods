@@ -2,6 +2,7 @@ import { ReactNode, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft, Calendar, Clock, ChevronRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import SEOHead from '@/components/SEOHead';
 
 interface FAQ {
   question: string;
@@ -98,24 +99,20 @@ const BlogArticleLayout = ({
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={metaTitle}
+        description={metaDescription}
+        canonical={`https://www.suprasl.online/blog/${slug}`}
+        ogImage={ogImage}
+        keywords={keywords}
+        type="article"
+        jsonLd={[articleSchema, faqSchema, breadcrumbSchema]}
+        publishedTime={publishDate}
+        modifiedTime={dateModified || publishDate}
+      />
       <Helmet>
-        <title>{metaTitle}</title>
-        <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://www.suprasl.online/blog/${slug}`} />
-        <meta property="og:title" content={metaTitle} />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={`https://www.suprasl.online/blog/${slug}`} />
-        <meta property="og:image" content={ogImage} />
-        <meta property="og:type" content="article" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={metaTitle} />
-        <meta name="twitter:description" content={metaDescription} />
-        <meta name="twitter:image" content={ogImage} />
-        <meta name="keywords" content={keywords.join(', ')} />
-        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <meta property="article:author" content="In The Woods" />
+        <meta property="article:section" content="Blog" />
       </Helmet>
 
       {/* Navbar */}
