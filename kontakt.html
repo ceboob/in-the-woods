@@ -27,39 +27,9 @@
     >
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
-  <body>
+  <body data-page="kontakt">
     <div class="page-shell">
-      <header class="site-header">
-        <div class="container header-row">
-          <a class="brand" href="/" aria-label="Krzemienna Chata - strona główna">
-            <span class="brand-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 2 4 7.4V22h16V7.4L12 2Zm0 2.3 5.7 3.8v11.7H6.3V8.1L12 4.3Zm-3.2 6.2h6.4v1.9h-2.2v5.2h-2v-5.2H8.8v-1.9Z"/></svg>
-            </span>
-            <span class="brand-copy">
-              <span class="brand-title">Krzemienna Chata</span>
-              <span class="brand-subtitle">Kontakt i rezerwacje</span>
-            </span>
-          </a>
-
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Otwórz menu">
-            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-              <path fill="currentColor" d="M4 7h16v2H4zm0 6h16v2H4zm0-12h16v2H4z"/>
-            </svg>
-          </button>
-
-          <nav class="site-nav" aria-label="Główna nawigacja">
-            <a href="/">Start</a>
-            <a href="/noclegi-suprasl">Noclegi Supraśl</a>
-            <a href="/dom-w-lesie-suprasl">Dom w Lesie</a>
-            <a href="/atrakcje-suprasl">Atrakcje</a>
-            <a href="/galeria">Galeria</a>
-            <a href="/kontakt" aria-current="page">Kontakt</a>
-            <a class="header-cta" href="tel:+48722765101">Zadzwoń: 722 765 101</a>
-          </nav>
-
-          <a class="header-cta desktop-only" href="tel:+48722765101">Zadzwoń teraz</a>
-        </div>
-      </header>
+      <div data-site-header></div>
 
       <main>
         <div class="container breadcrumb">
@@ -128,31 +98,10 @@
         </section>
       </main>
 
-      <footer class="site-footer">
-        <div class="container footer-grid">
-          <div>
-            <strong>Krzemienna Chata</strong>
-            <p>Leśny dom pod Supraślem dla gości, którzy chcą spędzić czas bliżej natury i dalej od codziennego hałasu.</p>
-            <p class="footer-note">© <span data-year></span> Krzemienna Chata.</p>
-          </div>
-          <div>
-            <strong>Przejdź dalej</strong>
-            <ul class="footer-links">
-              <li><a href="/galeria">Galeria</a></li>
-              <li><a href="/atrakcje-suprasl">Atrakcje Supraśl</a></li>
-            </ul>
-          </div>
-          <div>
-            <strong>Kontakt</strong>
-            <ul class="footer-links">
-              <li><a href="tel:+48722765101">+48 722 765 101</a></li>
-              <li><a href="/noclegi-suprasl">Oferta noclegów</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <div data-site-footer></div>
     </div>
 
+    <script src="assets/js/layout.js" defer></script>
     <script src="assets/js/site.js" defer></script>
   </body>
 </html>

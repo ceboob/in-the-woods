@@ -35,16 +35,34 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'unsafe-inline'; connect-src 'self'; upgrade-insecure-requests"
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; img-src 'self' data: https:; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'sha256-5R59za9s8eJPANXgkStm4MgLt3bZ00r5n8cYBDVc/0I=' 'sha256-dFM8ZP+fgECQC5e1aPzKGp51AaUoTGlCEks3Rslgi1Y=' 'sha256-e0/YgYf5TdFh4q6H1DwzgaVGzBCWQ3HcwP67Zk3pcf0=' 'sha256-G6T6CMgh+su4XL4l75gEpeS6qFkH/ftcGEzW1C5SnjM=' 'sha256-GDSh8Xjw9IG8uZka6I0Tj5iT8FTYALTLj6UGXvC1ugk=' 'sha256-t3a64pJqVbWG+psjo9rRxQeo1jMw1+r/kDBnCqza9DM='; connect-src 'self'; upgrade-insecure-requests"
         }
       ]
     },
     {
-      "source": "/assets/(.*)",
+      "source": "/assets/css/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "value": "public, max-age=300, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/assets/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/assets/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
         }
       ]
     }
