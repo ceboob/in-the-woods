@@ -8,7 +8,7 @@ export interface SeasonConfig {
   endMonth: number;
   endDay: number;
   minNights: number;
-  prices: Record<number, number>; // guests → price per night (weekday)
+  prices: Record<number, number>; // guests â†’ price per night (weekday)
   color: string;
 }
 
@@ -26,7 +26,7 @@ export const SEASONS: SeasonConfig[] = [
   },
   {
     name: 'mid',
-    label: 'Sezon średni',
+    label: 'Sezon Ĺ›redni',
     startMonth: 4,
     startDay: 1,
     endMonth: 5,
@@ -48,7 +48,7 @@ export const SEASONS: SeasonConfig[] = [
   },
   {
     name: 'mid2',
-    label: 'Sezon średni',
+    label: 'Sezon Ĺ›redni',
     startMonth: 9,
     startDay: 1,
     endMonth: 10,
@@ -80,7 +80,7 @@ export function getSeasonForDate(date: Date): SeasonConfig {
       beforeEnd = month < season.endMonth || (month === season.endMonth && day <= season.endDay);
       if (afterStart && beforeEnd) return season;
     } else {
-      // Wrapping season (Nov–Mar)
+      // Wrapping season (Novâ€“Mar)
       afterStart = month > season.startMonth || (month === season.startMonth && day >= season.startDay);
       beforeEnd = month < season.endMonth || (month === season.endMonth && day <= season.endDay);
       if (afterStart || beforeEnd) return season;
@@ -126,8 +126,8 @@ export function isWeekendDay(date: Date): boolean {
   return dow === 5 || dow === 6 || dow === 0;
 }
 
-// Blocked dates (hardcoded for 2026) — last update: 2025-04-08
-export const BLOCKED_DATES_LAST_UPDATED = '2025-04-10';
+// Blocked dates (hardcoded for 2026) â€” last update: 2026-04-22
+export const BLOCKED_DATES_LAST_UPDATED = '2026-04-22';
 
 export const BLOCKED_DATES: Set<string> = new Set([
   ...[10, 11, 17, 18, 24, 25].map((d) => `2026-04-${String(d).padStart(2, '0')}`),
@@ -141,7 +141,10 @@ export const BLOCKED_DATES: Set<string> = new Set([
   ...[2, 3, 4, 5, 6, 10, 11, 12, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28].map(
     (d) => `2026-08-${String(d).padStart(2, '0')}`,
   ),
-  ...[25, 26, 27, 28, 29, 30].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
+  ...[13, 14, 15, 16].map((d) => `2026-08-${String(d).padStart(2, '0')}`),
+  ...[8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 26, 27, 28, 29, 30].map(
+    (d) => `2026-09-${String(d).padStart(2, '0')}`,
+  ),
   ...[1, 2, 3, 4, 5, 6, 7, 8].map((d) => `2026-10-${String(d).padStart(2, '0')}`),
 ]);
 
@@ -155,3 +158,4 @@ export function formatDateKey(date: Date): string {
 export function isDateBlocked(date: Date): boolean {
   return BLOCKED_DATES.has(formatDateKey(date));
 }
+
