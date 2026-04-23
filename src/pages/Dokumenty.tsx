@@ -6,7 +6,7 @@ const documents = [
     icon: BookOpen,
     title: 'Interaktywny przewodnik po domu',
     description: 'Wszystko, co musisz wiedzieć o domu In The Woods — jak obsługiwać kominek, banię, jacuzzi, co znajdziesz w kuchni i jak korzystać z ogrodu.',
-    href: 'https://utn.pl/i-tw',
+    href: 'https://drive.google.com/file/d/1Kz6hA2My9p3MZuNTocCglt3-yow5LrE4/view?usp=drive_link',
     label: 'Otwórz przewodnik (PDF)',
   },
   {

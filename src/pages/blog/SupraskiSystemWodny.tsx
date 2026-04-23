@@ -44,7 +44,7 @@ const SupraskiSystemWodny = () => {
     <BlogArticleLayout
       title="Supraski System Wodny – historia i atrakcje Supraśla"
       metaTitle="Supraski System Wodny | Cud inżynierii"
-      metaDescription="Poznaj historię Supraskiego Systemu Wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia. Kanał Kopanica, monaster, szlaki turystyczne w Supraślu."
+      metaDescription="Supraski System Wodny: historia kanału Kopanica, monasteru i hydrotechniki Podlasia. Poznaj atrakcje Supraśla."
       slug="supraski-system-wodny"
       publishDate="2026-03-10"
       readTime="12 min"

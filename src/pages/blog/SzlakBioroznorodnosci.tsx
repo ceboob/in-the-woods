@@ -56,7 +56,7 @@ const SzlakBioroznorodnosci = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h2>Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej</h2>
+      <h2>Szlak Bioróżnorodności Supraśl — spacer po puszczy</h2>
 
       <p>
         Puszcza Knyszyńska to jeden z najcenniejszych kompleksów leśnych w Polsce, a{' '}

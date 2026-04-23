@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const PuszczaKnyszynskaNocleg = () => (
   <SEOPageLayout
     title="Nocleg w Puszczy Knyszyńskiej | Domek w lesie wynajem"
-    description="Domek w lesie na wyłączność w Puszczy Knyszyńskiej. Kominek, ruska bania z balią, ogrodzony teren, psy za darmo. Leśny dom z bali — sprawdź wolne terminy!"
+    description="Nocleg w Puszczy Knyszyńskiej: domek na wyłączność z kominkiem, banią i ogrodzonym terenem. Sprawdź wolne terminy."
     breadcrumbName="Puszcza Knyszyńska"
     ogImage="https://www.suprasl.online/images/winter-cabin-golden.jpg"
   >

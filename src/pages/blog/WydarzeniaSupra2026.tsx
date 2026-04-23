@@ -61,8 +61,7 @@ const WydarzeniaSupra2026 = () => (
     ]}
   >
     <h2>
-      Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku – kalendarz + daty + gdzie
-      nocować
+      Wydarzenia w Supraślu 2026: kalendarz i noclegi
     </h2>
 
     {/* ===== SEKCJA 1: FEATURED SNIPPET ===== */}

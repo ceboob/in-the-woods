@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const DomWLesieSuprasl = () => (
   <SEOPageLayout
     title="Dom w lesie Podlasie | Domek na odludziu wynajem"
-    description="Domek w lesie na wyłączność na Podlasiu — kominek, jacuzzi, ogrodzony teren, psy za darmo. Leśny dom z bali w Puszczy Knyszyńskiej. Sprawdź wolne terminy!"
+    description="Dom w lesie na Podlasiu na wyłączność: kominek, balia, ogrodzony teren i cisza Puszczy Knyszyńskiej. Sprawdź terminy."
     breadcrumbName="Dom w lesie Supraśl"
     ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
   >
