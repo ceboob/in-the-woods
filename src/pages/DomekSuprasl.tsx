@@ -10,7 +10,7 @@ const DomekSuprasl = () => (
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Domek Supraśl — leśny domek do wynajęcia na wyłączność w Puszczy Knyszyńskiej
+        Domek Supraśl — leśny domek na wyłączność
       </h1>
 
       <p className="text-muted-foreground leading-relaxed text-lg">

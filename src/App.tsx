@@ -1,5 +1,4 @@
 import { Suspense } from 'react';
-import { SpeedInsights } from '@vercel/speed-insights/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -27,7 +26,6 @@ const App = () => (
           <Suspense fallback={<PageLoader />}>
             <ClientRoutes />
             <CookieConsent />
-            <SpeedInsights />
           </Suspense>
         </BrowserRouter>
       </TooltipProvider>

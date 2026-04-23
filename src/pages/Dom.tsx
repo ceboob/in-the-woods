@@ -24,7 +24,7 @@ const amenities = [
 const Dom = () => (
   <SEOPageLayout
     title="Dom z bali na wyłączność | In The Woods Supraśl"
-    description="Dom z bali na wyłączność w Puszczy Knyszyńskiej — kominek, kuchnia z płytą kaflową, sypialnie z widokiem na las, ogrodzony ogród z ruską banią. Leśny domek do wynajęcia."
+    description="Dom z bali na wyłączność w Puszczy Knyszyńskiej: kominek, wyposażona kuchnia, sypialnie i ogrodzony ogród z banią."
     breadcrumbName="Dom"
     ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
   >

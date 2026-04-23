@@ -17,7 +17,7 @@ const JacuzziSection = () => {
       <div className="relative h-[50vh] min-h-[400px]">
         <img
           src={baniaImg}
-          alt="Domek z balią w lesie — ruska bania z jacuzzi na tle drewnianej chaty In The Woods, Puszcza Knyszyńska"
+          alt="Ruska bania z jacuzzi przy domku In The Woods w Puszczy Knyszyńskiej"
           className="w-full h-full object-cover"
           loading="lazy"
           width="1920"
