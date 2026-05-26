@@ -10,6 +10,8 @@ interface SEOPageLayoutProps {
   description: string;
   breadcrumbName?: string;
   ogImage?: string;
+  keywords?: string[];
+  jsonLd?: object | object[];
 }
 
 const SEOPageLayout = ({
@@ -18,6 +20,8 @@ const SEOPageLayout = ({
   description,
   breadcrumbName,
   ogImage,
+  keywords,
+  jsonLd,
 }: SEOPageLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -40,6 +44,10 @@ const SEOPageLayout = ({
         ],
       }
     : null;
+  const pageJsonLd = [
+    ...(breadcrumbSchema ? [breadcrumbSchema] : []),
+    ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []),
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -48,7 +56,8 @@ const SEOPageLayout = ({
         description={description}
         canonical={canonical}
         ogImage={ogImage}
-        jsonLd={breadcrumbSchema || undefined}
+        keywords={keywords}
+        jsonLd={pageJsonLd.length ? pageJsonLd : undefined}
       />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
