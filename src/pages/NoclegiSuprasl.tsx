@@ -1,140 +1,250 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
 import { Link } from 'react-router-dom';
 
+const lodgingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LodgingBusiness',
+  '@id': 'https://www.suprasl.online/noclegi-suprasl#lodging',
+  name: 'In The Woods - noclegi Supraśl',
+  url: 'https://www.suprasl.online/noclegi-suprasl',
+  image: [
+    'https://www.suprasl.online/images/exterior-main.jpg',
+    'https://www.suprasl.online/images/living-fireplace.jpg',
+    'https://www.suprasl.online/images/jacuzzi-night.jpg',
+  ],
+  description:
+    'Prywatny dom w lesie na wyłączność koło Supraśla: kominek, ruska bania, ogrodzony ogród, szybkie Wi-Fi i pobyty z psem bez dopłat.',
+  telephone: '+48722765101',
+  email: 'tutinthewood@gmail.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Konne 109/1',
+    postalCode: '16-030',
+    addressLocality: 'Supraśl',
+    addressRegion: 'podlaskie',
+    addressCountry: 'PL',
+  },
+  amenityFeature: [
+    { '@type': 'LocationFeatureSpecification', name: 'Dom na wyłączność', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Ruska bania z gorącą wodą', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Kominek', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Ogrodzony teren', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Pobyt z psem bez dopłat', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Szybkie Wi-Fi', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Bezpłatny parking', value: true },
+  ],
+  priceRange: '$$',
+  petsAllowed: true,
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Gdzie zarezerwować noclegi w Supraślu blisko Puszczy Knyszyńskiej?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'In The Woods to prywatny dom na wyłączność w miejscowości Konne koło Supraśla, przy Rezerwacie Przyrody Krzemienne Góry. Do centrum Supraśla dojedziesz w około 10 minut.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Czy In The Woods to hotel, apartament czy domek?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'To cały dom z bali wynajmowany na wyłączność. Goście mają prywatny salon z kominkiem, kuchnię, sypialnie, ogród, taras, parking i ruską banię.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Czy można przyjechać z psem?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Tak, psy są mile widziane bez dodatkowych opłat. Ogrodzony teren i las za progiem sprawiają, że to wygodny nocleg pod Supraślem dla gości podróżujących z psem.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Jakie atrakcje są blisko noclegu?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'W okolicy są szlaki Puszczy Knyszyńskiej, Rezerwat Krzemienne Góry, Monaster w Supraślu, Muzeum Ikon, bulwary nad rzeką Supraśl, kajaki oraz Arboretum w Kopnej Górze.',
+      },
+    },
+  ],
+};
+
+const highlights = [
+  'cały dom i ogród tylko dla Was',
+  '10 minut samochodem do centrum Supraśla',
+  'kominek, ruska bania i taras w lesie',
+  'psy bez dopłat i ogrodzony teren',
+  'kuchnia, Wi-Fi, parking i praca zdalna',
+  'baza wypadowa do Puszczy Knyszyńskiej',
+];
+
+const nearbyAttractions = [
+  ['Rezerwat Krzemienne Góry', 'za progiem domu'],
+  ['Centrum Supraśla', 'ok. 10 min samochodem'],
+  ['Monaster Zwiastowania NMP', 'ok. 10 min samochodem'],
+  ['Muzeum Ikon', 'ok. 10 min samochodem'],
+  ['Bulwary nad rzeką Supraśl', 'ok. 10 min samochodem'],
+  ['Arboretum Kopna Góra', 'ok. 20 min samochodem'],
+];
+
 const NoclegiSuprasl = () => (
   <SEOPageLayout
-    title="Noclegi Supraśl — domek w lesie na wyłączność | 2026"
-    description="Zarezerwuj domek w lesie na wyłączność w Supraślu. Kominek, jacuzzi, ogrodzony teren, psy za darmo. Leśny domek do wynajęcia w Puszczy Knyszyńskiej."
+    title="Noclegi Supraśl - dom w lesie z jacuzzi | In The Woods"
+    description="Noclegi Supraśl: prywatny dom w lesie na wyłączność, 10 min od centrum. Kominek, ruska bania, ogrodzony teren, psy bez dopłat, Wi-Fi i parking."
     breadcrumbName="Noclegi Supraśl"
     ogImage="https://www.suprasl.online/images/exterior-main.jpg"
+    keywords={[
+      'noclegi Supraśl',
+      'nocleg Supraśl',
+      'domek Supraśl',
+      'dom na wynajem Supraśl',
+      'apartamenty Supraśl alternatywa',
+      'noclegi Puszcza Knyszyńska',
+      'domek z jacuzzi Podlasie',
+      'noclegi z psem Supraśl',
+      'noclegi blisko Białegostoku',
+    ]}
+    jsonLd={[lodgingSchema, faqSchema]}
   >
     <article className="prose prose-lg max-w-none space-y-8">
-      <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Noclegi Supraśl — domek w lesie na wyłączność z jacuzzi i kominkiem
-      </h1>
+      <header className="space-y-5">
+        <p className="text-sm uppercase tracking-[0.2em] text-primary">Noclegi w Supraślu i okolicy</p>
+        <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
+          Noclegi Supraśl - prywatny dom w lesie na wyłączność z jacuzzi i kominkiem
+        </h1>
+        <p className="text-muted-foreground leading-relaxed text-lg">
+          Szukasz <strong>noclegu w Supraślu</strong>, ale zamiast pokoju w hotelu wolisz ciszę,
+          przestrzeń i prawdziwy kontakt z Puszczą Knyszyńską? In The Woods to drewniany dom z bali
+          na wyłączność w Konnych koło Supraśla: z kominkiem, ruską banią, ogrodzonym ogrodem,
+          tarasem, kuchnią i miejscem do pracy zdalnej.
+        </p>
+      </header>
 
-      <p className="text-muted-foreground leading-relaxed text-lg">
-        Supraśl to jedno z najbardziej wyjątkowych miejsc na Podlasiu — uzdrowiskowe miasteczko
-        położone w sercu Puszczy Knyszyńskiej, zaledwie 25 minut od Białegostoku. Jeśli szukasz{' '}
-        <strong>noclegu w Supraślu</strong>, który oferuje coś więcej niż standardowy hotel — leśny
-        domek do wynajęcia na wyłączność z kominkiem, ruską banią i ogrodzonym terenem — In The
-        Woods jest miejscem stworzonym właśnie dla Ciebie.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Nasz <strong>dom na wynajem w Supraślu</strong> to prywatna posiadłość otoczona lasem,
-        położona przy rezerwacie przyrody Krzemienne Góry w miejscowości Konne. To{' '}
-        <strong>domek na odludziu podlaskie</strong> — alternatywa dla typowych noclegów, gdzie
-        nie dzielisz przestrzeni z innymi gośćmi. Cały dom, ogród, taras i ruska bania są do
-        Twojej wyłącznej dyspozycji. Psy za darmo — ogrodzony teren i las za progiem to raj dla czworonogów.
-      </p>
+      <section className="grid gap-3 sm:grid-cols-2 not-prose">
+        {highlights.map((item) => (
+          <div key={item} className="border border-border bg-secondary/40 px-4 py-3 text-sm text-foreground">
+            {item}
+          </div>
+        ))}
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego domek w lesie zamiast hotelu w Supraślu</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Supraśl to miejsce, które łączy historię, naturę i slow life w unikalny sposób. Miasteczko
-        uzdrowiskowe znane z prawosławnego Monasteru Zwiastowania NMP, Muzeum Ikon i pięknych
-        bulwarów nad rzeką Supraśl przyciąga turystów szukających spokojnego wypoczynku w naturze.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Coraz więcej podróżników rezygnuje z hoteli na rzecz <strong>wynajmu domku na odludziu na weekend</strong>.
-        I słusznie — pobyt w <strong>domu w lesie na wyłączność</strong> oferuje zupełnie inne doświadczenie.
-        Zamiast ciasnego pokoju hotelowego masz do dyspozycji cały dom z klimatycznym kominkiem, w pełni
-        wyposażoną kuchnią z płytą kaflową, przestronnym ogrodem i tarasem z widokiem na Puszczę Knyszyńską.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Wybierając <strong>noclegi w Supraślu</strong> w In The Woods, wybierasz ucieczka od zgiełku miasta
-        — detoks cyfrowy w lesie, gdzie brak pełnego zasięgu telefonii komórkowej staje się zaletą,
-        a jedynym dźwiękiem jest śpiew ptaków i szum drzew.
+        Nasz <strong>dom na wynajem w Supraślu</strong> jest położony przy Rezerwacie Przyrody
+        Krzemienne Góry, około 10 minut samochodem od Monasteru, Muzeum Ikon i bulwarów nad rzeką
+        Supraśl. To dobra alternatywa dla zapytań typu <strong>apartamenty Supraśl</strong>,{' '}
+        <strong>pokoje Supraśl</strong> czy <strong>hotel Supraśl</strong>, jeśli ważniejsze od
+        recepcji i korytarzy są prywatność, las za oknem i własny rytm pobytu.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Dom z bali na wyłączność — co oferujemy</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Dlaczego nasze noclegi pod Supraślem wygrywają z typowym hotelem
+      </h2>
       <p className="text-muted-foreground leading-relaxed">
-        In The Woods to <strong>domek w Supraślu</strong> idealny zarówno dla par szukających
-        romantycznego pobytu w lesie, jak i dla rodzin z dziećmi. <strong>Dom w lesie wynajem dla rodziny z dziećmi</strong> — ogrodzony
-        ogród z placem zabaw, bezpieczna przestrzeń do zabawy i las na wyciągnięcie ręki.
+        Konkurencyjne obiekty w Supraślu mocno komunikują lokalizację w centrum, pokoje,
+        apartamenty, wyżywienie albo bliskość rzeki. In The Woods odpowiada na inną intencję:
+        <strong> domek w lesie blisko Supraśla</strong>, gdzie cały dom, ogród, taras i bania są
+        tylko dla jednej rezerwacji. Nie mijasz innych gości na korytarzu, nie rezerwujesz godziny
+        w strefie SPA i nie dopłacasz za psa.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Dom mieści komfortowo do 6–8 osób. Dwie sypialnie na piętrze z dużymi łóżkami, przestronny
-        salon z kominkiem na parterze, łazienka z prysznicem oraz dodatkowa toaleta. Kuchnia jest w
-        pełni wyposażona — od ekspresu do kawy po naczynia do pieczenia. <strong>Domek z kominkiem</strong> w lesie,
-        w którym poczujesz się jak w domu.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Do dyspozycji gości jest szybkie Wi-Fi i wygodne biurko — idealne warunki na
-        workation, czyli <strong>pracę zdalną w lesie</strong>. Wyobraź sobie poranną
-        kawę na tarasie z widokiem na las, kilka godzin produktywnej pracy, a po południu spacer po
-        Puszczy Knyszyńskiej. <strong>Praca zdalna w lesie wynajem domku</strong> — po pracy kajaki zamiast korków.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi i balią — ruska bania w Supraślu</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Prywatna ruska bania z balią z gorącą wodą to wyjątkowy element naszej oferty. Po dniu
-        spędzonym na szlakach{' '}
-        <Link
-          to="/puszcza-knyszynska-nocleg"
-          className="text-primary underline hover:text-primary/80"
-        >
-          Puszczy Knyszyńskiej
-        </Link>{' '}
-        możesz zanurzyć się w ciepłej wodzie i odpoczywać pod gwiazdami. <strong>Domek z balią w lesie</strong> —
-        to rytuał relaksu, który goście wspominają najczęściej. SPA na odludziu, bez chemii, bez kolejek.
+        To szczególnie dobry wybór dla par, rodzin z dziećmi, grup przyjaciół i osób planujących
+        workation na Podlasiu. Masz salon z kominkiem, dwie sypialnie, łazienkę, dodatkową toaletę,
+        wyposażoną kuchnię, szybkie Wi-Fi, biurko, bezpłatny parking i ogrodzony teren. Jeśli
+        wpisujesz w Google <strong>noclegi Supraśl z psem</strong>, to właśnie taki układ daje
+        najwięcej swobody.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w okolicy Supraśla</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi, banią i kominkiem w Puszczy Knyszyńskiej</h2>
       <p className="text-muted-foreground leading-relaxed">
+        Prywatna ruska bania z gorącą wodą działa jak leśne jacuzzi pod gwiazdami. Po spacerze,
+        kajakach albo dniu na rowerze możesz rozpalić kominek, przygotować kolację w kuchni i
+        odpocząć bez pośpiechu. Właśnie dlatego strona odpowiada też na frazy poboczne:
+        <strong> domek z jacuzzi Podlasie</strong>, <strong>domek z bali Supraśl</strong>,{' '}
+        <strong>nocleg w Puszczy Knyszyńskiej</strong> i <strong>weekend w Supraślu</strong>.
+      </p>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">Lokalizacja - co jest blisko In The Woods</h2>
+      <p className="text-muted-foreground leading-relaxed">
+        Supraśl jest uzdrowiskowym miasteczkiem łączącym naturę, architekturę i spokojny wypoczynek.
+        Goście często planują pobyt wokół Monasteru, Muzeum Ikon, bulwarów nad rzeką Supraśl,
+        szlaków Puszczy Knyszyńskiej, spływów kajakowych i lokalnych restauracji. Z In The Woods
+        możesz mieć jedno i drugie: ciszę lasu na noc oraz szybki dojazd do atrakcji.
+      </p>
+      <div className="not-prose overflow-hidden border border-border">
+        <dl className="divide-y divide-border">
+          {nearbyAttractions.map(([name, distance]) => (
+            <div key={name} className="grid gap-1 px-4 py-3 sm:grid-cols-[1fr_auto]">
+              <dt className="font-medium text-foreground">{name}</dt>
+              <dd className="text-sm text-muted-foreground">{distance}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">Noclegi Supraśl - dla kogo będzie najlepszy taki dom</h2>
+      <p className="text-muted-foreground leading-relaxed">
+        Jeśli chcesz być w samym centrum miasteczka, najlepszy będzie pokój lub apartament przy
+        rynku. Jeśli jednak szukasz fraz takich jak <strong>noclegi Supraśl cisza</strong>,{' '}
+        <strong>domek na wyłączność Podlasie</strong>, <strong>dom w lesie z kominkiem</strong> czy{' '}
+        <strong>noclegi blisko Białegostoku</strong>, In The Woods jest lepiej dopasowany do tej
+        intencji. To nocleg dla osób, które chcą odpocząć od miasta, ale nie chcą rezygnować z
+        wygody, ciepłego wnętrza i dobrego dojazdu.
+      </p>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">Najczęstsze pytania o nocleg w Supraślu</h2>
+      <div className="space-y-5">
+        <section>
+          <h3 className="font-heading text-xl text-foreground">Czy In The Woods leży w Supraślu?</h3>
+          <p className="text-muted-foreground leading-relaxed">
+            Adres to Konne 109/1, 16-030 Supraśl. Dom znajduje się w leśnej okolicy koło Supraśla,
+            około 10 minut samochodem od centrum miasta.
+          </p>
+        </section>
+        <section>
+          <h3 className="font-heading text-xl text-foreground">Czy rezerwuję cały dom?</h3>
+          <p className="text-muted-foreground leading-relaxed">
+            Tak. Rezerwacja obejmuje cały dom, ogród, taras i prywatną przestrzeń wypoczynku.
+            Nie wynajmujemy pojedynczych pokoi różnym gościom w tym samym czasie.
+          </p>
+        </section>
+        <section>
+          <h3 className="font-heading text-xl text-foreground">Czy to dobry nocleg na weekend w Supraślu?</h3>
+          <p className="text-muted-foreground leading-relaxed">
+            Tak. W dwa lub trzy dni zdążysz zobaczyć Monaster, Muzeum Ikon, bulwary, przejść leśny
+            szlak, zjeść regionalny obiad i wrócić wieczorem do kominka albo bani.
+          </p>
+        </section>
+      </div>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">Jak zaplanować pobyt</h2>
+      <p className="text-muted-foreground leading-relaxed">
+        Do planowania trasy wykorzystaj nasze przewodniki po{' '}
         <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
-          Atrakcje Supraśla
-        </Link>{' '}
-        to przede wszystkim bogactwo kultury i natury. Prawosławny Monaster Zwiastowania NMP,
-        Muzeum Ikon, bulwary nad rzeką — Supraśl tętni spokojnym, ale bogatym życiem.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Okolice Supraśla to raj dla miłośników aktywnego wypoczynku. Szlaki rowerowe prowadzące
-        przez Puszczę Knyszyńską, spływy kajakowe rzeką Supraśl, grzybobranie jesienią, narty biegowe zimą.
-        Arboretum Kopna Góra i tatarskie Kruszyniany — chill w lesie i odkrywanie Podlasia.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Noclegi Supraśl — dlaczego In The Woods</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        In The Woods to rodzinny obiekt prowadzony przez gospodarza Macieja, który osobiście dba o
-        komfort każdego gościa. 4,82★ na podstawie 110 opinii potwierdzają, że to miejsce,
-        do którego chce się wracać.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Co wyróżnia nasze <strong>noclegi w Supraślu</strong>? Przede wszystkim prywatność — cały
-        dom i ogród wynajmujecie na wyłączność. <strong>Dom na wyłączność las</strong> — żadnych innych gości,
-        żadnego hałasu. Tylko Wy, natura i cisza Puszczy Knyszyńskiej. Oderwanie od cywilizacji wynajem
-        w formie, o jakiej marzysz.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Rezerwacja jest bezpośrednia, bez prowizji pośredników. Wystarczy zadzwonić pod numer 722
-        765 101 lub wysłać zapytanie przez formularz na stronie. Odpowiadamy zwykle w kilka godzin.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Planując{' '}
+          atrakcjach Supraśla
+        </Link>
+        ,{' '}
         <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
-          weekend w Supraślu
-        </Link>
-        , dłuższy urlop czy workation — In The Woods to Twoja baza wypadowa na poznawanie Podlasia.
-        <strong> Domek w lesie wynajem</strong> z jacuzzi, kominkiem i ogrodem — nocleg, jakiego szukasz.
-        Idealne miejsce na <strong>domek na sylwestra w lesie</strong>, klimatyczny{' '}
-        <strong>domek na walentynki</strong> czy majówkę w puszczy. Odkryj również{' '}
-        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
-          atrakcje Supraśla
+          weekendzie w Supraślu
         </Link>{' '}
-        i zaplanuj{' '}
-        <Link
-          to="/puszcza-knyszynska-nocleg"
-          className="text-primary underline hover:text-primary/80"
-        >
-          nocleg w Puszczy Knyszyńskiej
+        i{' '}
+        <Link to="/puszcza-knyszynska-nocleg" className="text-primary underline hover:text-primary/80">
+          noclegach w Puszczy Knyszyńskiej
         </Link>
-        .
+        . Dzięki temu strona nie kończy się na samej ofercie, tylko prowadzi gościa przez pełną
+        decyzję: gdzie spać, co robić i dlaczego wybrać bazę w lesie.
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-heading text-2xl font-light">Zarezerwuj leśny domek do wynajęcia w Supraślu</h3>
+        <h3 className="font-heading text-2xl font-light">Zarezerwuj nocleg w Supraślu bez prowizji</h3>
         <p className="text-muted-foreground">
-          Odpowiadamy zwykle w kilka godzin. Bez prowizji pośrednika.
+          Odpowiadamy zwykle w kilka godzin. Najszybciej potwierdzimy termin telefonicznie.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">
