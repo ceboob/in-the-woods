@@ -6,15 +6,17 @@ const WydarzeniaSupra2026 = () => (
   <BlogArticleLayout
     title="Wydarzenia w Supraślu – kalendarz"
     metaTitle="Wydarzenia Supraśl – kalendarz"
-    metaDescription="Kalendarz wydarzeń w Supraślu i okolicach — trwa aktualizacja. Sprawdź stronę wkrótce lub zapytaj nas o rekomendacje na dany weekend."
+    metaDescription="LATO 2026 w Supraślu — pełny rozkład wydarzeń: koncerty, warsztaty, spacery przyrodnicze i atrakcje rodzinne. Sprawdź terminy i zaplanuj wakacje w Supraślu."
     slug="wydarzenia-suprasl-2026"
     publishDate="2026-03-30"
     readTime="1 min"
     keywords={[
-      'wydarzenia Supraśl',
-      'imprezy Supraśl',
+      'Lato 2026 Supraśl',
+      'wydarzenia Supraśl 2026',
       'kalendarz wydarzeń Supraśl',
-      'co robić Supraśl',
+      'co robić w Supraślu',
+      'koncerty Supraśl',
+      'warsztaty Supraśl',
     ]}
     faqs={[
       {
@@ -45,6 +47,14 @@ const WydarzeniaSupra2026 = () => (
       { title: 'Restauracje Supraśl – gdzie zjeść', slug: 'restauracje-suprasl' },
     ]}
   >
+    <div className="prose mx-auto my-8 not-prose">
+      <img src="/images/lato-2026-suprasl.png" alt="Kulturalny rozkład jazdy LATO 2026 w Supraślu" className="w-full max-w-3xl mx-auto rounded-lg shadow-md" />
+      <p className="mt-4 text-lg font-semibold">LATO 2026 — Kulturalny rozkład jazdy w Supraślu</p>
+      <p className="text-foreground/80 max-w-3xl mx-auto">
+        Plakat przedstawia letni program wydarzeń organizowanych przez Centrum Kultury i Rekreacji w Supraślu: koncerty, festiwale, warsztaty artystyczne, spacery przyrodnicze oraz atrakcje rodzinne. Zawiera daty, godziny i miejsca najważniejszych imprez — idealne, by zaplanować wakacyjny pobyt w Supraślu. Sprawdź szczegóły i zaplanuj udział w ulubionych wydarzeniach.
+      </p>
+    </div>
+
     <div className="bg-accent/40 border border-primary/30 rounded-xl p-6 my-8 not-prose text-center space-y-4">
       <p className="text-lg font-heading text-foreground">
         📅 Kalendarz wydarzeń w trakcie aktualizacji
