@@ -48,10 +48,12 @@ const WydarzeniaSupra2026 = () => (
     ]}
   >
     <div className="prose mx-auto my-8 not-prose">
-      <img src="/images/lato-2026-suprasl.png" alt="Kulturalny rozkład jazdy LATO 2026 w Supraślu" className="w-full max-w-3xl mx-auto rounded-lg shadow-md" />
+      <img src="/images/lato-2026-suprasl.jpg" alt="Kulturalny rozkład jazdy LATO 2026 w Supraślu" className="w-full max-w-3xl mx-auto rounded-lg shadow-md" />
       <p className="mt-4 text-lg font-semibold">LATO 2026 — Kulturalny rozkład jazdy w Supraślu</p>
       <p className="text-foreground/80 max-w-3xl mx-auto">
-        Plakat przedstawia letni program wydarzeń organizowanych przez Centrum Kultury i Rekreacji w Supraślu: koncerty, festiwale, warsztaty artystyczne, spacery przyrodnicze oraz atrakcje rodzinne. Zawiera daty, godziny i miejsca najważniejszych imprez — idealne, by zaplanować wakacyjny pobyt w Supraślu. Sprawdź szczegóły i zaplanuj udział w ulubionych wydarzeniach.
+        LATO 2026 w Supraślu to starannie przygotowany program letnich wydarzeń, który łączy muzyczne koncerty, lokalne festiwale, warsztaty artystyczne, rodzinne pikniki oraz spacery przyrodnicze po malowniczej Puszczy Knyszyńskiej. Na plakacie znajdziesz szczegółowy rozkład dat, godzin i miejsc — od kameralnych koncertów na rynku po warsztaty dla dzieci i spotkania z lokalnymi twórcami. To idealne źródło informacji dla planujących wakacyjny wyjazd: szybko sprawdzisz, co dzieje się w danym tygodniu i wybierzesz wydarzenia dopasowane do swoich zainteresowań.
+
+        Dlaczego warto zwrócić uwagę? Supraśl oferuje wyjątkowe połączenie kultury i natury — po wydarzeniu polecamy spacer nad rzekę lub wizytę w lokalnych kawiarniach. Zarezerwuj czas wcześniej na najpopularniejsze atrakcje i skorzystaj z rekomendacji organizatorów. Jeśli szukasz konkretnych terminów lub chcesz zarezerwować nocleg, napisz do nas — pomożemy zaplanować idealne lato w Supraślu.
       </p>
     </div>
 
