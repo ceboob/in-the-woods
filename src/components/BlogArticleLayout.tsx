@@ -22,8 +22,6 @@ interface BlogArticleLayoutProps {
   relatedArticles?: { title: string; slug: string }[];
   ogImage?: string;
   dateModified?: string;
-  /** Optional array of Event JSON-LD objects to improve event indexing */
-  events?: object[];
 }
 
 const BlogArticleLayout = ({
@@ -99,14 +97,6 @@ const BlogArticleLayout = ({
     ],
   };
 
-  // Merge article, FAQ and breadcrumb JSON-LD with any provided event JSON-LD
-  const jsonLdArray = [articleSchema, faqSchema, breadcrumbSchema];
-  // @ts-ignore
-  if (Array.isArray(events) && events.length > 0) {
-    // prepend events so search engines see structured events first
-    jsonLdArray.unshift(...events);
-  }
-
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
@@ -116,7 +106,7 @@ const BlogArticleLayout = ({
         ogImage={ogImage}
         keywords={keywords}
         type="article"
-        jsonLd={jsonLdArray}
+        jsonLd={[articleSchema, faqSchema, breadcrumbSchema]}
         publishedTime={publishDate}
         modifiedTime={dateModified || publishDate}
       />
