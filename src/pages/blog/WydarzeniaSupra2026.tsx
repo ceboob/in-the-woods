@@ -10,6 +10,8 @@ const WydarzeniaSupra2026 = () => (
     slug="wydarzenia-suprasl-2026"
     publishDate="2026-03-30"
     readTime="1 min"
+    ogImage="https://www.suprasl.online/images/lato-2026-suprasl.jpg"
+    dateModified="2026-07-19"
     keywords={[
       'Lato 2026 Supraśl',
       'wydarzenia Supraśl 2026',
@@ -48,7 +50,7 @@ const WydarzeniaSupra2026 = () => (
     ]}
   >
     <div className="prose mx-auto my-8 not-prose">
-      <img src="/images/lato-2026-suprasl.jpg" alt="Kulturalny rozkład jazdy LATO 2026 w Supraślu" className="w-full max-w-3xl mx-auto rounded-lg shadow-md" />
+      <img src="/images/lato-2026-suprasl.jpg" alt="Plakat: LATO 2026 – kulturalny rozkład jazdy w Supraślu; daty i miejsca wydarzeń" className="w-full max-w-3xl mx-auto rounded-lg shadow-md" />
       <p className="mt-4 text-lg font-semibold">LATO 2026 — Kulturalny rozkład jazdy w Supraślu</p>
       <p className="text-foreground/80 max-w-3xl mx-auto">
         LATO 2026 w Supraślu to starannie przygotowany program letnich wydarzeń, który łączy muzyczne koncerty, lokalne festiwale, warsztaty artystyczne, rodzinne pikniki oraz spacery przyrodnicze po malowniczej Puszczy Knyszyńskiej. Na plakacie znajdziesz szczegółowy rozkład dat, godzin i miejsc — od kameralnych koncertów na rynku po warsztaty dla dzieci i spotkania z lokalnymi twórcami. To idealne źródło informacji dla planujących wakacyjny wyjazd: szybko sprawdzisz, co dzieje się w danym tygodniu i wybierzesz wydarzenia dopasowane do swoich zainteresowań.
