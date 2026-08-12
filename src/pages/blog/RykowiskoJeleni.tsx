@@ -16,7 +16,7 @@ const RykowiskoJeleni = () => {
     {
       question: 'Czy można przywieźć psa?',
       answer:
-        'W "In The Woods" psy są mile widziane i przebywają na ogrodzonym terenie bez dodatkowych opłat, jednak podczas samego nasłuchiwania w lesie lepiej zostawić psa w domu lub pod opieką — może spłoszyć zwierzęta.',
+        'W "In The Woods" psy są mile widziane i przebywają na ogrodzonym terenie bez dodatkowych opłat, jednak podczas samego nasłuchiwania w lesie lepiej zostawić psa w domu lub pod opieką[...]',
     },
   ];
 
@@ -30,7 +30,7 @@ const RykowiskoJeleni = () => {
     <BlogArticleLayout
       title="Rykowisko jeleni na Podlasiu: Niezwykły spektakl w Puszczy Knyszyńskiej"
       metaTitle="Rykowisko jeleni na Podlasiu. Magia Puszczy Knyszyńskiej i relaks w lesie"
-      metaDescription="Poczuj magię rykowiska jeleni w Puszczy Knyszyńskiej. Poznaj nasz przewodnik po jesiennych godach i zarezerwuj dom z bali \"In The Woods\" w Supraślu z ruską banią."
+      metaDescription={'Poczuj magię rykowiska jeleni w Puszczy Knyszyńskiej. Poznaj nasz przewodnik po jesiennych godach i zarezerwuj dom z bali "In The Woods" w Supraślu z ruską banią.'}
       slug="rykowisko-jeleni-puszcza-knyszynska"
       publishDate="2026-08-12"
       readTime="6 min"
