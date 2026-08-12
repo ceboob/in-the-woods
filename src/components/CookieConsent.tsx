@@ -8,7 +8,8 @@ const CookieConsent = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem(COOKIE_KEY);
+    if (typeof window === 'undefined') return;
+    const consent = window.localStorage.getItem(COOKIE_KEY);
     if (!consent) {
       const timer = setTimeout(() => setVisible(true), 1500);
       return () => clearTimeout(timer);
@@ -16,12 +17,12 @@ const CookieConsent = () => {
   }, []);
 
   const accept = () => {
-    localStorage.setItem(COOKIE_KEY, 'accepted');
+    if (typeof window !== 'undefined') window.localStorage.setItem(COOKIE_KEY, 'accepted');
     setVisible(false);
   };
 
   const reject = () => {
-    localStorage.setItem(COOKIE_KEY, 'rejected');
+    if (typeof window !== 'undefined') window.localStorage.setItem(COOKIE_KEY, 'rejected');
     setVisible(false);
   };
 
@@ -33,7 +34,7 @@ const CookieConsent = () => {
         <div className="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
           <p className="text-sm text-muted-foreground flex-1">
             Ta strona używa cookies, aby zapewnić najlepszą jakość usług.
-            Klikając „Akceptuję", wyrażasz zgodę na ich użycie.{' '}
+            Klikając „Akceptuję\", wyrażasz zgodę na ich użycie.{' '}
             <Link
               to="/polityka-prywatnosci"
               className="underline hover:text-foreground transition-colors"
