@@ -20,25 +20,31 @@ function injectAttributes(html, tagName, attributes) {
 }
 
 for (const route of prerenderRoutes) {
-  const { appHtml, headTags, htmlAttributes, bodyAttributes } = await render(route);
-  const titleMatch = headTags.match(/<title[^>]*>[\s\S]*?<\/title>/);
-  const normalizedHeadTags = titleMatch ? headTags.replace(titleMatch[0], '') : headTags;
+  try {
+    console.log(`Prerendering route: ${route}`);
+    const { appHtml, headTags, htmlAttributes, bodyAttributes } = await render(route);
+    const titleMatch = headTags.match(/<title[^>]*>[\s\S]*?<\/title>/);
+    const normalizedHeadTags = titleMatch ? headTags.replace(titleMatch[0], '') : headTags;
 
-  let pageHtml = template
-    .replace(/<title[^>]*>[\s\S]*?<\/title>/, titleMatch?.[0] ?? '<title>In The Woods</title>')
-    .replace('<!--app-head-->', normalizedHeadTags)
-    .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
+    let pageHtml = template
+      .replace(/<title[^>]*>[\s\S]*?<\/title>/, titleMatch?.[0] ?? '<title>In The Woods</title>')
+      .replace('<!--app-head-->', normalizedHeadTags)
+      .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
 
-  pageHtml = injectAttributes(pageHtml, 'html', htmlAttributes);
-  pageHtml = injectAttributes(pageHtml, 'body', bodyAttributes);
+    pageHtml = injectAttributes(pageHtml, 'html', htmlAttributes);
+    pageHtml = injectAttributes(pageHtml, 'body', bodyAttributes);
 
-  const outputPath =
-    route === '/'
-      ? path.join(distDir, 'index.html')
-      : path.join(distDir, route.replace(/^\/+/, ''), 'index.html');
+    const outputPath =
+      route === '/'
+        ? path.join(distDir, 'index.html')
+        : path.join(distDir, route.replace(/^\/+/,'') , 'index.html');
 
-  await mkdir(path.dirname(outputPath), { recursive: true });
-  await writeFile(outputPath, pageHtml);
+    await mkdir(path.dirname(outputPath), { recursive: true });
+    await writeFile(outputPath, pageHtml);
+  } catch (error) {
+    // Log and continue with other routes so prerender does not fail the whole build
+    console.error(`Error prerendering ${route}:`, error && (error.stack || error.message || error));
+  }
 }
 
 await rm(path.join(projectRoot, '.ssr'), { recursive: true, force: true });
