@@ -62,7 +62,7 @@ const Index = () => {
           {/* Dowód wizualny — 3. sekcja po hero */}
           <GallerySection />
 
-          {/* Przewodnik turystyczny */}
+          {/* Blog */}
           <GuideSection />
 
           <JacuzziSection />

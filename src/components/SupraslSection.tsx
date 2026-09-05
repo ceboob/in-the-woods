@@ -139,7 +139,7 @@ const SupraslSection = () => {
         {/* Tourism guide cards */}
         <div className="mb-12">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans text-center mb-8">
-            Przewodnik turystyczny
+            Blog
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {guides.map((guide) => (
