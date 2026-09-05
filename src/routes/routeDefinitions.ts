@@ -37,7 +37,7 @@ export const routeDefinitions: RouteDefinition[] = [
   },
   {
     path: '/blog/szlak-bioroznorodnosci-suprasl',
-    load: () => import('@/pages/blog/SzlakiPuszczaKnyszynska.tsx'),
+    load: () => import('@/pages/blog/SzlakBioroznorodnosci.tsx'),
   },
   {
     path: '/blog/kruszyniany-tatarska-wies',

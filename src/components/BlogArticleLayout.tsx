@@ -39,6 +39,7 @@ const BlogArticleLayout = ({
   relatedArticles = [],
   ogImage = 'https://www.suprasl.online/og-image.jpg',
   dateModified,
+  events,
 }: BlogArticleLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -101,7 +102,6 @@ const BlogArticleLayout = ({
 
   // Merge article, FAQ and breadcrumb JSON-LD with any provided event JSON-LD
   const jsonLdArray = [articleSchema, faqSchema, breadcrumbSchema];
-  // @ts-ignore
   if (Array.isArray(events) && events.length > 0) {
     // prepend events so search engines see structured events first
     jsonLdArray.unshift(...events);
@@ -184,7 +184,7 @@ const BlogArticleLayout = ({
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
           <span className="inline-flex items-center gap-1.5">
             <Calendar className="w-3.5 h-3.5" />
-            {publishDate}
+            <time dateTime={publishDate}>{publishDate}</time>
           </span>
           <span className="inline-flex items-center gap-1.5">
             <Clock className="w-3.5 h-3.5" />

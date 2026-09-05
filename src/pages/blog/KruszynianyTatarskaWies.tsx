@@ -69,7 +69,7 @@ const KruszynianyTatarskaWies = () => {
         czyni ją idealną destynacją na półdniową wycieczkę.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogKruszyniany}
         alt="Meczet w Kruszynianach – tatarska wieś Podlasie"
         className="w-full rounded-lg my-8"
@@ -161,7 +161,7 @@ const KruszynianyTatarskaWies = () => {
         zarezerwować stolik z wyprzedzeniem, szczególnie w sezonie turystycznym.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogRzeka}
         alt="Krajobraz Podlasia – okolice Kruszynian i Supraśla"
         className="w-full rounded-lg my-8"

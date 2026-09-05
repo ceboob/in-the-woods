@@ -77,7 +77,7 @@ const SupraskiSystemWodny = () => {
         <Link to="/atrakcje-suprasl">atrakcji Supraśla</Link>.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogRzeka}
         alt="Rzeka Supraśl – Supraski System Wodny, atrakcje Supraśl"
         className="w-full rounded-lg my-8"
@@ -125,7 +125,7 @@ const SupraskiSystemWodny = () => {
         miał sobie równych w tej części Europy.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogKanal}
         alt="Kanał Kopanica – Supraski System Wodny, noclegi Supraśl"
         className="w-full rounded-lg my-8"
@@ -231,7 +231,7 @@ const SupraskiSystemWodny = () => {
         rowerem.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={cabinDay}
         alt="In The Woods – noclegi Supraśl, dom w lesie"
         className="w-full rounded-lg my-8"
