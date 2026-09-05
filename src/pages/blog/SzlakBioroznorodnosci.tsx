@@ -73,7 +73,7 @@ const SzlakBioroznorodnosci = () => {
         natury.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogSzlakBio}
         alt="Szlak Bioróżnorodności Supraśl – ścieżka edukacyjna w Puszczy Knyszyńskiej"
         className="w-full rounded-lg my-8"
@@ -126,7 +126,7 @@ const SzlakBioroznorodnosci = () => {
         </li>
       </ul>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={forestNature}
         alt="Puszcza Knyszyńska – las mieszany na Szlaku Bioróżnorodności"
         className="w-full rounded-lg my-8"
@@ -162,7 +162,7 @@ const SzlakBioroznorodnosci = () => {
         porastające pnie drzew świadczą o doskonałej jakości powietrza w Puszczy Knyszyńskiej.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={forestPanorama}
         alt="Panorama Puszczy Knyszyńskiej – szlaki przyrodnicze Supraśl"
         className="w-full rounded-lg my-8"

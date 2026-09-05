@@ -80,7 +80,7 @@ const SupraslAtrakcjeUzdrowisko = () => {
         znają tylko lokalni mieszkańcy.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogSupraslUzdrowisko}
         alt="Supraśl atrakcje – Monaster Zwiastowania NMP, uzdrowisko Podlasia"
         className="w-full rounded-lg my-8"
@@ -122,7 +122,7 @@ const SupraslAtrakcjeUzdrowisko = () => {
         </li>
       </ul>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogMonaster}
         alt="Monaster Supraśl – cerkiew i ogrody klasztorne"
         className="w-full rounded-lg my-8"
@@ -159,7 +159,7 @@ const SupraslAtrakcjeUzdrowisko = () => {
         odbijających się w spokojnej tafli wody.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogRzeka}
         alt="Bulwary nad rzeką Supraśl – spacery i kajaki"
         className="w-full rounded-lg my-8"

@@ -41,6 +41,15 @@ const articles = [
     keywords: ['romantyczny weekend Podlasie', 'domek z kominkiem'],
   },
   {
+    slug: 'rykowisko-jeleni-puszcza-knyszynska',
+    title: 'Rykowisko jeleni na Podlasiu – niezwykły spektakl w Puszczy Knyszyńskiej',
+    excerpt: 'Poznaj najlepszy czas i zasady bezpiecznego obserwowania rykowiska jeleni w Puszczy Knyszyńskiej.',
+    image: blogMeadow,
+    date: '2026-08-12',
+    readTime: '6 min',
+    keywords: ['rykowisko jeleni', 'Puszcza Knyszyńska', 'atrakcje Supraśl'],
+  },
+  {
     slug: 'cyfrowy-detoks-las',
     title: 'Cyfrowy detoks w praktyce: Domek w środku lasu to najlepsze miejsce na reset',
     excerpt: 'Potrzebujesz resetu od ekranów? Odkryj, dlaczego domek w lesie na Podlasiu to idealne miejsce na cyfrowy detoks.',
@@ -297,24 +306,27 @@ const Blog = () => {
         title="Blog Supraśl – atrakcje i szlaki | In The Woods"
         description="Blog o Supraślu – atrakcje, szlaki, historia i turystyka w Puszczy Knyszyńskiej. Przewodnik turystyczny."
         canonical="https://www.suprasl.online/blog"
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            {
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.suprasl.online/' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.suprasl.online/blog' },
+            ],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'Artykuły bloga In The Woods',
+            itemListElement: articles.map((article, index) => ({
               '@type': 'ListItem',
-              position: 1,
-              name: 'Strona główna',
-              item: 'https://www.suprasl.online/',
-            },
-            {
-              '@type': 'ListItem',
-              position: 2,
-              name: 'Blog',
-              item: 'https://www.suprasl.online/blog',
-            },
-          ],
-        }}
+              position: index + 1,
+              name: article.title,
+              url: `https://www.suprasl.online/blog/${article.slug}`,
+            })),
+          },
+        ]}
       />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
@@ -376,9 +388,12 @@ const Blog = () => {
               <div className="aspect-[16/9] overflow-hidden">
                 <img
                   src={article.image}
+                  srcSet={`${article.image} 600w`}
+                  sizes="(min-width: 768px) 50vw, 100vw"
                   alt={article.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
+                  loading={article.slug === articles[0].slug ? 'eager' : 'lazy'}
+                  decoding="async"
                   width="600"
                   height="338"
                 />
@@ -387,7 +402,7 @@ const Blog = () => {
                 <div className="flex items-center gap-4 text-xs text-muted-foreground">
                   <span className="inline-flex items-center gap-1">
                     <Calendar className="w-3 h-3" />
-                    {article.date}
+                    <time dateTime={article.date}>{article.date}</time>
                   </span>
                   <span className="inline-flex items-center gap-1">
                     <Clock className="w-3 h-3" />
