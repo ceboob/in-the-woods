@@ -72,10 +72,10 @@ const HeroSection = () => {
 
         <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
           <p className="text-base md:text-lg text-white text-smallcaps">
-            Szukasz ucieczki od zgiełku miasta? Odkryj przestronny dom na wynajem zaledwie 15 minut od Białegostoku
+            Szukasz ucieczki od zgiełku miasta? Odkryj przestronny dom na wynajem zaledwie 15 minut od Białegostoku i 10 minut od uzdrowiska Supraśl.
           </p>
           <p className="text-base md:text-lg text-white text-smallcaps">
-            i 10 minut od uzdrowiska Supraśl. Czekają na Ciebie prywatna balia pod gwiazdami, tradycyjna ruska bania, trzaskający ogień w kominku i kojąca cisza leśnego zacisza.
+            Czekają na Ciebie prywatna balia pod gwiazdami, tradycyjna ruska bania, trzaskający ogień w kominku i kojąca cisza leśnego zacisza.
           </p>
         </div>
 
