@@ -45,7 +45,7 @@ const BookingModule = () => {
 
   const validateForm = () => {
     const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-    const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
+    const phoneRegex = /^\+?[0-9\s-]{7,20}$/;
     if (!emailRegex.test(data.email)) {
       toast({ title: 'Błąd', description: 'Podaj poprawny adres e-mail.', variant: 'destructive' });
       return false;
@@ -100,8 +100,8 @@ const BookingModule = () => {
           },
         });
         const body =
-          (result ?? (error as any)?.context)
-            ? await (error as any)?.context?.json?.().catch(() => null)
+          !result && error?.context instanceof Response
+            ? await error.context.json().catch(() => null)
             : null;
         if (body?.error?.includes?.('Too many')) {
           toast({

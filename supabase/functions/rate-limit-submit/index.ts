@@ -78,7 +78,7 @@ Deno.serve(async (req) => {
       }
 
       const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-      const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
+      const phoneRegex = /^\+?[0-9\s-]{7,20}$/;
 
       if (!emailRegex.test(email)) {
         return new Response(
@@ -160,7 +160,7 @@ Deno.serve(async (req) => {
         );
       }
 
-      const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
+      const phoneRegex = /^\+?[0-9\s-]{7,20}$/;
       if (!phoneRegex.test(phone)) {
         return new Response(
           JSON.stringify({ error: "Invalid phone format" }),

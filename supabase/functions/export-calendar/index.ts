@@ -25,7 +25,7 @@ Deno.serve(async (req) => {
     const formatDate = (dateStr: string) => dateStr.replace(/-/g, '');
     const now = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
 
-    let ical = [
+    const ical = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
       'PRODID:-//In The Woods//Booking Calendar//PL',

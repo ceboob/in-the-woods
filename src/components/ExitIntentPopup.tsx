@@ -30,7 +30,7 @@ const ExitIntentPopup = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
+    const phoneRegex = /^\+?[0-9\s-]{7,20}$/;
     if (!phone || !phoneRegex.test(phone)) return;
 
     try {
@@ -38,8 +38,8 @@ const ExitIntentPopup = () => {
         body: { type: 'callback', phone, source: 'exit_intent' },
       });
       const body =
-        (result ?? (error as any)?.context)
-          ? await (error as any)?.context?.json?.().catch(() => null)
+        !result && error?.context instanceof Response
+          ? await error.context.json().catch(() => null)
           : null;
       if (body?.error?.includes?.('Too many')) {
         return;

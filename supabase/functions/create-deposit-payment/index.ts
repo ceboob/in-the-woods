@@ -35,7 +35,7 @@ Deno.serve(async (req) => {
 
     const origin = req.headers.get("origin") || "https://chata-w-puszczy-azyl.lovable.app";
 
-    const sessionParams: any = {
+    const sessionParams: Stripe.Checkout.SessionCreateParams = {
       line_items: [
         {
           price_data: {
