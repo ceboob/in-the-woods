@@ -7,6 +7,7 @@ const SupraslZima = () => (
     metaTitle="Supraśl zimą – noclegi i atrakcje Podlasia"
     metaDescription="Supraśl zimą: zaśnieżone szlaki Puszczy Knyszyńskiej, żubry, kulig i domek w lesie na wyłączność w In The Woods Konne."
     slug="suprasl-zima"
+    ogImage="https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-2.jpg"
     publishDate="2026-09-30"
     readTime="8 min"
     keywords={[
@@ -89,6 +90,11 @@ const SupraslZima = () => (
       </a>
       .
     </p>
+    <img
+      src="https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-3.jpg"
+      alt="Zimowy krajobraz Podlasia"
+      loading="lazy"
+    />
     <p>
       Na spacer warto wybrać leśne drogi wokół Supraśla oraz malownicze odcinki wzdłuż rzeki Supraśl.
       Zimą woda, śnieg i ciche nadrzeczne zarośla układają się w spokojną scenerię, którą najlepiej
@@ -96,6 +102,11 @@ const SupraslZima = () => (
       osadza na lesie delikatną warstwę szadzi. Przed wyjściem proszę sprawdzić pogodę i stan tras, a
       na spacer zabrać ciepłe, nieprzemakalne obuwie.
     </p>
+    <img
+      src="https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-4.jpg"
+      alt="Zimowa Puszcza Knyszyńska na Podlasiu"
+      loading="lazy"
+    />
     <p>
       Warto też zaplanować wycieczkę w okolice Rezerwatu Krzemianka. Leśne ścieżki i przyrodniczy
       charakter tego miejsca pozwalają zwolnić i wsłuchać się w zimowy las. Aktualne inspiracje do
@@ -116,6 +127,11 @@ const SupraslZima = () => (
       zachować ciszę, trzymać się wyznaczonych dróg i obserwować zwierzęta z dystansu — las jest ich
       domem, a spotkanie z nimi zawsze pozostaje niespodzianką.
     </p>
+    <img
+      src="https://cdn.kucharz.net/jedrzejwojnar.com/kolonia-ponure/ponure-007.jpg"
+      alt="Leśny krajobraz w Kolonii Ponure"
+      loading="lazy"
+    />
     <p>
       Jeśli chcą Państwo zobaczyć te potężne zwierzęta z bliska, polecamy Zagrodę Pokazową Żubrów w
       Kopnej Górze. To dobra okazja, by spokojnie poznać symbol regionu i dowiedzieć się więcej o
@@ -152,6 +168,11 @@ const SupraslZima = () => (
       Poczopeku zajrzeć do Silvarium. Edukacyjne ekspozycje i leśne alejki Silvarium są dobrym
       wyborem także wtedy, gdy zimowa pogoda zachęca do krótszego spaceru.
     </p>
+    <img
+      src="https://cdn.kucharz.net/jedrzejwojnar.com/rezerwat-bartoszycha/bartoszycha-009.jpg"
+      alt="Leśny krajobraz rezerwatu Bartoszycha"
+      loading="lazy"
+    />
     <p>
       Więcej pomysłów na spokojne odkrywanie regionu i opowieści o tym, jak wygląda{' '}
       <strong>Podlasie zimą</strong>, można znaleźć w artykule{' '}
