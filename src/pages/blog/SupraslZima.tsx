@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const SupraslZima = () => (
   <BlogArticleLayout
     title="Supraśl zimą"
-    metaTitle="Supraśl zimą – magia Podlasia i Puszczy Knyszyńskiej"
-    metaDescription="Odkryj Supraśl zimą: zaśnieżone szlaki Puszczy Knyszyńskiej, ślady żubrów, ciszę Poczopek i kulig z ogniskiem w In The Woods Konne."
+    metaTitle="Supraśl zimą – noclegi i atrakcje Podlasia"
+    metaDescription="Supraśl zimą: zaśnieżone szlaki Puszczy Knyszyńskiej, żubry, kulig i domek w lesie na wyłączność w In The Woods Konne."
     slug="suprasl-zima"
     publishDate="2026-09-30"
     readTime="8 min"
@@ -19,6 +19,14 @@ const SupraslZima = () => (
       'In The Woods Konne',
       'ferie na Podlasiu',
       'magia Podlasia',
+      'domki Supraśl',
+      'domek w lesie Supraśl',
+      'domek na wyłączność Podlasie',
+      'noclegi Puszcza Knyszyńska',
+      'noclegi z psem Supraśl',
+      'domek z jacuzzi Podlasie',
+      'noclegi blisko Białegostoku',
+      'weekend Supraśl',
     ]}
     faqs={[
       {
@@ -35,6 +43,11 @@ const SupraslZima = () => (
         question: 'Czy goście In The Woods mogą wybrać się na kulig?',
         answer:
           'Dla gości zatrzymujących się w In The Woods możemy zorganizować tradycyjny kulig z ciepłym ogniskiem. Szczegóły, dostępność i warunki zależą od terminu oraz pogody, dlatego warto zapytać o tę atrakcję podczas rezerwacji.',
+      },
+      {
+        question: 'Gdzie znaleźć domek w lesie na zimowy weekend w Supraślu?',
+        answer:
+          'In The Woods Konne to całoroczny dom na wyłączność w lesie, niedaleko Supraśla i Puszczy Knyszyńskiej. Obiekt sprawdzi się na rodzinny pobyt, ferie na Podlasiu i spokojny weekend blisko Białegostoku.',
       },
     ]}
     relatedArticles={[
@@ -53,6 +66,16 @@ const SupraslZima = () => (
       Zamiast kolejek do wyciągów czekają tu leśne ścieżki, ciche przystanki edukacyjne i czas, który
       można wreszcie spędzić bez pośpiechu. Oto kilka pomysłów na <strong>ferie na Podlasiu</strong>{' '}
       i zimowy pobyt w okolicach Supraśla.
+    </p>
+    <p>
+      Jeżeli szukają Państwo miejsca na <strong>weekend Supraśl</strong> lub ferie, warto wybrać
+      domek w lesie zamiast zatłoczonego hotelu.{' '}
+      <Link to="/noclegi-suprasl" className="font-medium">
+        Noclegi w Supraślu w In The Woods
+      </Link>{' '}
+      oznaczają prywatność całego domu, bliskość Puszczy Knyszyńskiej i wygodną bazę na zimowe
+      spacery. To propozycja także dla osób zainteresowanych noclegiem z psem oraz pobytem blisko
+      Białegostoku.
     </p>
 
     <h2>Magia Puszczy Knyszyńskiej</h2>
@@ -167,8 +190,9 @@ const SupraslZima = () => (
       </Link>{' '}
       to całoroczny dom na wynajem w cichej miejscowości Konne, niedaleko Supraśla i Puszczy
       Knyszyńskiej. To wygodna baza dla osób szukających prywatności, leśnych spacerów i kameralnego
-      wypoczynku. Jeśli interesują Państwa <strong>noclegi Supraśl</strong> i okolice, tutaj można
-      połączyć odkrywanie regionu z wieczornym odpoczynkiem we własnym tempie.
+      wypoczynku. Jeśli interesują Państwa <strong>noclegi Supraśl</strong>, noclegi w Puszczy
+      Knyszyńskiej albo <strong>domek z jacuzzi na Podlasiu</strong>, tutaj można połączyć
+      odkrywanie regionu z wieczornym odpoczynkiem we własnym tempie.
     </p>
     <p>
       Dla gości zatrzymujących się w In The Woods możemy zorganizować tradycyjny, niezapomniany

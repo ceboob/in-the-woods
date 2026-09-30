@@ -1,6 +1,6 @@
 # SEO: fraza "noclegi Supraśl" - analiza konkurencji i plan działań
 
-Data analizy: 2026-05-26
+Data analizy: 2026-09-30
 
 ## Cel
 
@@ -70,3 +70,28 @@ To pozwala walczyć o `noclegi Supraśl`, ale z jasnym wyróżnikiem, którego k
 5. Monitoring
    - W Google Search Console śledzić zapytania: `noclegi suprasl`, `noclegi supraśl`, `domek suprasl`, `domek supraśl`, `noclegi z psem supraśl`, `domek z jacuzzi podlasie`.
    - Po 4-6 tygodniach od wdrożenia sprawdzić CTR i pozycje landing page, a następnie skorygować title/description.
+
+## Benchmark artykułu „Supraśl zimą”
+
+Przegląd aktualnych wyników i ofert konkurencyjnych (30.09.2026) potwierdził, że
+serwisy rezerwacyjne i lokalne obiekty eksponują przede wszystkim frazy `domki
+Supraśl`, `domek w lesie`, `dom na wyłączność`, `noclegi z psem`, `domek z
+jacuzzi` oraz lokalizację względem Puszczy Knyszyńskiej i Białegostoku. Przykładowe
+punkty odniesienia to kategoria domków na e-nocleg.pl i Meteor, oferta Podlaskiego
+Domku na Nocowanie.pl oraz obiekt Domki Letniskowe Na Wzgórzu w Booking.com:
+
+- https://e-nocleg.pl/suprasl-domki,letniskowe.html
+- https://meteor-turystyka.pl/noclegi,domki-letniskowe,suprasl,60.html
+- https://www.nocowanie.pl/noclegi/suprasl/agroturystyka/109898/
+- https://www.booking.com/hotel/pl/domki-letniskowe-na-wzgorzu-suprasl.pl.html
+
+Artykuł miał już przewagę w obszarze atrakcji zimowych, lecz brakowało mu części
+frazy rezerwacyjnej. Wdrożono więc: dodatkowe long-taile w metadanych, naturalny
+akapit z linkiem do `/noclegi-suprasl`, wzmiankę o domku na wyłączność, pobycie z
+psem, jacuzzi, Puszczy Knyszyńskiej i bliskości Białegostoku oraz FAQ o zimowym
+domku w lesie. Frazy są użyte jako opis rzeczywistej oferty, a nie jako lista
+powtórzeń.
+
+Benchmark nie zastępuje danych z Google Search Console ani testu pozycji po
+wdrożeniu. Po 4–6 tygodniach należy porównać wyświetlenia, CTR i zapytania dla
+artykułu oraz strony `/noclegi-suprasl`.
