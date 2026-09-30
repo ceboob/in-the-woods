@@ -50,7 +50,7 @@ const HeroSection = () => {
           src={heroImgLg}
           srcSet={`${heroImgSm} 640w, ${heroImgLg} 1028w`}
           sizes="100vw"
-          alt="Leśny dom na wyłączność z jacuzzi i sauną w Puszczy Knyszyńskiej — In The Woods noclegi Supraśl"
+          alt="Całoroczny dom na Podlasiu z balią ogrodową i sauną — In The Woods koło Supraśla"
           className="w-full h-full object-cover"
           width="1028"
           height="771"
@@ -64,18 +64,18 @@ const HeroSection = () => {
         <h1
           className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4 animate-fade-up drop-shadow-lg font-accent mt-8 sm:mt-0"
         >
-          Leśny dom na wyłączność — domek w lesie z jacuzzi i sauną
+          In The Woods | Całoroczny dom do wynajęcia na Podlasiu — Supraśl i okolice Białegostoku
         </h1>
         <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-white/90 mb-3 animate-fade-in">
-          Puszcza Knyszyńska · Supraśl · Podlasie
+          Klimatyczny dom z bali na wyłączność w sercu Puszczy Knyszyńskiej: balia ogrodowa, sauna i kominek
         </p>
 
         <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
           <p className="text-base md:text-lg text-white text-smallcaps">
-            Ucieczka od zgiełku miasta. Detoks cyfrowy w lesie.
+            Szukasz ucieczki od zgiełku miasta? Odkryj przestronny dom na wynajem zaledwie 15 minut od Białegostoku i 10 minut od uzdrowiska Supraśl.
           </p>
           <p className="text-base md:text-lg text-white text-smallcaps">
-            Spokojny wypoczynek w naturze — kominek, balia, cisza.
+            Czekają na Ciebie prywatna balia pod gwiazdami, tradycyjna ruska bania, trzaskający ogień w kominku i kojąca cisza leśnego zacisza.
           </p>
         </div>
 

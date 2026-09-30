@@ -5,27 +5,27 @@ const audiences = [
   {
     icon: Heart,
     title: 'Pary',
-    desc: 'Romantyczny pobyt w lesie z balią pod gwiazdami i kominkiem. Klimatyczny domek na walentynki — domek w lesie dla 2 osób z jacuzzi, śniadanie we dwoje na tarasie i niebo pełne gwiazd.',
+    desc: 'Kameralna atmosfera, rozpalony kominek, gorąca balia pod gwiazdami i poranna kawa na tarasie. Idealne miejsce na zaręczyny, rocznicę lub romantyczny weekend we dwoje na Podlasiu.',
   },
   {
     icon: Users,
     title: 'Rodziny z dziećmi',
-    desc: 'Dom w lesie wynajem dla rodziny z dziećmi — bezpieczny ogrodzony teren z placem zabaw, ogniskiem i przestrzenią do wspólnego gotowania. Psy za darmo, las za progiem.',
+    desc: 'Bezpieczny, ogrodzony teren z placem zabaw, altaną i miejscem na ognisko. Dzieci bawią się blisko natury, czworonogi biegają bez smyczy, a dorośli odpoczywają na tarasie. Przestronny dom do wynajęcia w okolicach Supraśla dla całej rodziny.',
   },
   {
     icon: Users,
     title: 'Przyjaciele',
-    desc: 'Wynajem domku na odludziu na weekend z grillem w altanie, gorącą balią i rozmowami przy ognisku do rana. Dom na wyłączność — bez obcych gości.',
+    desc: 'Dom z bali na wyłączność — bez obcych gości i bez skrępowania. Wieczorne grillowanie w altanie, seanse w ruskiej bani, gorąca balia i rozmowy przy ognisku do białego rana. Świetna baza na spływy kajakowe rzeką Supraśl i wycieczki po okolicach Białegostoku.',
   },
   {
     icon: Dog,
     title: 'Z psem',
-    desc: 'Twój pies pokocha las za progiem. Ogrodzony teren, kilometry leśnych ścieżek i psy za darmo — u nas czworonogi są pełnoprawnymi gośćmi leśnego domku.',
+    desc: 'Twój pupil jest u nas pełnoprawnym gościem bez żadnych dopłat. Szczelnie ogrodzona działka i nieskończone kilometry leśnych ścieżek tuż za furtką — prawdziwy raj dla psów i ich właścicieli.',
   },
   {
     icon: Laptop,
     title: 'Workation',
-    desc: 'Praca zdalna w lesie — wynajem domku z szybkim Wi-Fi i biurkiem przy oknie z widokiem na las. Po pracy kajaki, rower lub detoks cyfrowy w lesie.',
+    desc: 'Szybki i stabilny internet Starlink, wygodne biurko z widokiem na sosnowy las i absolutny spokój sprzyjający skupieniu. Efektywna praca zdalna, po której od razu ruszasz na leśne szlaki.',
   },
   {
     icon: Snail,
