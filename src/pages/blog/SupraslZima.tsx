@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const SupraslZima = () => (
   <BlogArticleLayout
     title="Supraśl zimą"
-    metaTitle="Supraśl zimą – magia Podlasia i Puszczy Knyszyńskiej"
-    metaDescription="Odkryj Supraśl zimą: zaśnieżone szlaki Puszczy Knyszyńskiej, ślady żubrów, ciszę Poczopek i kulig z ogniskiem w In The Woods Konne."
+    metaTitle="Supraśl zimą – noclegi i atrakcje Podlasia"
+    metaDescription="Supraśl zimą: zaśnieżone szlaki Puszczy Knyszyńskiej, żubry, kulig i domek w lesie na wyłączność w In The Woods Konne."
     slug="suprasl-zima"
     publishDate="2026-09-30"
     readTime="8 min"
@@ -19,6 +19,14 @@ const SupraslZima = () => (
       'In The Woods Konne',
       'ferie na Podlasiu',
       'magia Podlasia',
+      'domki Supraśl',
+      'domek w lesie Supraśl',
+      'domek na wyłączność Podlasie',
+      'noclegi Puszcza Knyszyńska',
+      'noclegi z psem Supraśl',
+      'domek z jacuzzi Podlasie',
+      'noclegi blisko Białegostoku',
+      'weekend Supraśl',
     ]}
     faqs={[
       {
@@ -35,6 +43,11 @@ const SupraslZima = () => (
         question: 'Czy goście In The Woods mogą wybrać się na kulig?',
         answer:
           'Dla gości zatrzymujących się w In The Woods możemy zorganizować tradycyjny kulig z ciepłym ogniskiem. Szczegóły, dostępność i warunki zależą od terminu oraz pogody, dlatego warto zapytać o tę atrakcję podczas rezerwacji.',
+      },
+      {
+        question: 'Gdzie znaleźć domek w lesie na zimowy weekend w Supraślu?',
+        answer:
+          'In The Woods Konne to całoroczny dom na wyłączność w lesie, niedaleko Supraśla i Puszczy Knyszyńskiej. Obiekt sprawdzi się na rodzinny pobyt, ferie na Podlasiu i spokojny weekend blisko Białegostoku.',
       },
     ]}
     relatedArticles={[
@@ -54,8 +67,18 @@ const SupraslZima = () => (
       można wreszcie spędzić bez pośpiechu. Oto kilka pomysłów na <strong>ferie na Podlasiu</strong>{' '}
       i zimowy pobyt w okolicach Supraśla.
     </p>
+    <p>
+      Jeżeli szukają Państwo miejsca na <strong>weekend Supraśl</strong> lub ferie, warto wybrać
+      domek w lesie zamiast zatłoczonego hotelu.{' '}
+      <Link to="/noclegi-suprasl" className="font-medium">
+        Noclegi w Supraślu w In The Woods
+      </Link>{' '}
+      oznaczają prywatność całego domu, bliskość Puszczy Knyszyńskiej i wygodną bazę na zimowe
+      spacery. To propozycja także dla osób zainteresowanych noclegiem z psem oraz pobytem blisko
+      Białegostoku.
+    </p>
 
-    <h2>Zaśnieżona Puszcza Knyszyńska – leśna opowieść w „light mode”</h2>
+    <h2>Magia Puszczy Knyszyńskiej</h2>
     <p>
       Kiedy puszcza przykrywa się świeżym śniegiem, dobrze znane ścieżki zmieniają się nie do
       poznania. Białe pnie, miękkie światło i oszronione gałęzie tworzą zachwycający zimowy pejzaż.
@@ -73,6 +96,11 @@ const SupraslZima = () => (
       osadza na lesie delikatną warstwę szadzi. Przed wyjściem proszę sprawdzić pogodę i stan tras, a
       na spacer zabrać ciepłe, nieprzemakalne obuwie.
     </p>
+    <img
+      src="/images/winter/monaster-suprasl-zima.jpg"
+      alt="Monaster w Supraślu zimą"
+      loading="lazy"
+    />
     <p>
       Warto też zaplanować wycieczkę w okolice Rezerwatu Krzemianka. Leśne ścieżki i przyrodniczy
       charakter tego miejsca pozwalają zwolnić i wsłuchać się w zimowy las. Aktualne inspiracje do
@@ -86,19 +114,18 @@ const SupraslZima = () => (
       </a>
       .
     </p>
-    <p>
-      [Miejsce na zdjęcie: Panoramiczny widok na zaśnieżone korony drzew w Puszczy Knyszyńskiej, w stylu "light mode"]
-    </p>
+    <img
+      src="/images/winter/puszcza-knyszynska-zima.jpg"
+      alt="Puszcza Knyszyńska zimą"
+      loading="lazy"
+    />
 
-    <h2>Leśne tropy i żubry – spotkania z dziką przyrodą</h2>
+    <h2>Spotkanie z dziką naturą</h2>
     <p>
       Zimowy spacer to także okazja, by dostrzec ślady obecności mieszkańców puszczy. Na śniegu
       można wypatrzyć tropy jeleni i łosi, a przy odrobinie szczęścia również ślady żubrów. Warto
       zachować ciszę, trzymać się wyznaczonych dróg i obserwować zwierzęta z dystansu — las jest ich
       domem, a spotkanie z nimi zawsze pozostaje niespodzianką.
-    </p>
-    <p>
-      [Miejsce na zdjęcie: Ślady dzikich zwierząt na śniegu przy rzece Supraśl]
     </p>
     <p>
       Jeśli chcą Państwo zobaczyć te potężne zwierzęta z bliska, polecamy Zagrodę Pokazową Żubrów w
@@ -118,9 +145,11 @@ const SupraslZima = () => (
       że żubry żyjące na wolności nie pojawiają się na zamówienie — obserwacji nie da się
       zagwarantować. Zachowajmy dystans i nie dokarmiajmy zwierząt.
     </p>
-    <p>
-      [Miejsce na zdjęcie: Zimowe ujęcie wieży widokowej i żubrów w Zagrodzie Pokazowej w Kopnej Górze]
-    </p>
+    <img
+      src="/images/winter/zubry-kopna-gora.jpeg"
+      alt="Żubry w Kopnej Górze"
+      loading="lazy"
+    />
 
     <h2>Poczopek i Kopna Góra – cisza, która pozwala odetchnąć</h2>
     <p>
@@ -136,6 +165,11 @@ const SupraslZima = () => (
       <strong>magia Podlasia</strong> — prosto, cicho i blisko natury.
     </p>
     <p>
+      Polecamy połączyć oba miejsca: w Kopnej Górze odwiedzić Zagrodę Pokazową Żubrów, a w
+      Poczopeku zajrzeć do Silvarium. Edukacyjne ekspozycje i leśne alejki Silvarium są dobrym
+      wyborem także wtedy, gdy zimowa pogoda zachęca do krótszego spaceru.
+    </p>
+    <p>
       Więcej pomysłów na spokojne odkrywanie regionu i opowieści o tym, jak wygląda{' '}
       <strong>Podlasie zimą</strong>, można znaleźć w artykule{' '}
       <a
@@ -148,7 +182,7 @@ const SupraslZima = () => (
       .
     </p>
 
-    <h2>In The Woods Konne – zimowy odpoczynek blisko Supraśla</h2>
+    <h2>Zimowy relaks w In The Woods</h2>
     <p>
       Po dniu spędzonym na mroźnym powietrzu dobrze wrócić do ciepłego, spokojnego miejsca.{' '}
       <Link to="/" className="font-medium">
@@ -156,8 +190,9 @@ const SupraslZima = () => (
       </Link>{' '}
       to całoroczny dom na wynajem w cichej miejscowości Konne, niedaleko Supraśla i Puszczy
       Knyszyńskiej. To wygodna baza dla osób szukających prywatności, leśnych spacerów i kameralnego
-      wypoczynku. Jeśli interesują Państwa <strong>noclegi Supraśl</strong> i okolice, tutaj można
-      połączyć odkrywanie regionu z wieczornym odpoczynkiem we własnym tempie.
+      wypoczynku. Jeśli interesują Państwa <strong>noclegi Supraśl</strong>, noclegi w Puszczy
+      Knyszyńskiej albo <strong>domek z jacuzzi na Podlasiu</strong>, tutaj można połączyć
+      odkrywanie regionu z wieczornym odpoczynkiem we własnym tempie.
     </p>
     <p>
       Dla gości zatrzymujących się w In The Woods możemy zorganizować tradycyjny, niezapomniany
@@ -166,12 +201,11 @@ const SupraslZima = () => (
       kuligu zależy od warunków pogodowych i śniegowych. Prosimy zapytać o tę atrakcję przy
       rezerwacji pobytu.
     </p>
-    <p>
-      [Miejsce na zdjęcie: Radosna atmosfera podczas tradycyjnego kuligu z końmi, jadącego przez zaśnieżony las wokół Supraśla]
-    </p>
-    <p>
-      [Miejsce na zdjęcie: Nasi goście grzejący się przy płonącym ognisku po kuligu, w pobliżu obiektu In The Woods w Konnem]
-    </p>
+    <img
+      src="/images/winter/kulig-podlasie.webp"
+      alt="Tradycyjny kulig na Podlasiu"
+      loading="lazy"
+    />
 
     <h2>Zaplanujcie Państwo zimowy wyjazd na Podlasie</h2>
     <p>
