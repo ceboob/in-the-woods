@@ -28,28 +28,27 @@ const RykowiskoJeleni = () => {
 
   return (
     <BlogArticleLayout
-      title="Rykowisko jeleni na Podlasiu: Niezwykły spektakl w Puszczy Knyszyńskiej"
-      metaTitle="Rykowisko jeleni na Podlasiu. Magia Puszczy Knyszyńskiej i relaks w lesie"
-      metaDescription={'Poczuj magię rykowiska jeleni w Puszczy Knyszyńskiej. Poznaj nasz przewodnik po jesiennych godach i zarezerwuj dom z bali "In The Woods" w Supraślu z ruską banią.'}
+      title="Rykowisko jeleni na Podlasiu – gdzie i kiedy je usłyszeć?"
+      metaTitle="Rykowisko jeleni na Podlasiu – kiedy i gdzie je usłyszeć?"
+      metaDescription="Sprawdź, kiedy trwa rykowisko jeleni i gdzie usłyszeć je w Puszczy Knyszyńskiej koło Supraśla. Poznaj zasady bezpiecznej obserwacji."
       slug="rykowisko-jeleni-puszcza-knyszynska"
       publishDate="2026-08-12"
       readTime="6 min"
       keywords={[
         'rykowisko jeleni',
-        'rykowisko na Podlasiu',
+        'rykowisko jeleni na Podlasiu',
+        'rykowisko w Puszczy Knyszyńskiej',
+        'kiedy jest rykowisko jeleni',
+        'gdzie usłyszeć rykowisko jeleni',
+        'obserwacja jeleni Supraśl',
+        'jelenie Puszcza Knyszyńska',
         'Puszcza Knyszyńska',
         'Supraśl',
-        'domek w lesie z jacuzzi',
-        'dom z bali na wyłączność',
-        'In The Woods noclegi',
-        'atrakcje Supraśl',
-        'mikrowyprawy',
+        'jesienne atrakcje Podlasie',
       ]}
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h1>Rykowisko jeleni na Podlasiu: Niezwykły spektakl w Puszczy Knyszyńskiej</h1>
-
       <p>
         Na styku lata i jesieni, gdy dni stają się krótsze, a noce chłodniejsze, w podlaskich lasach
         rozpoczyna się jedno z najbardziej fascynujących zjawisk przyrodniczych – rykowisko jeleni. Dla

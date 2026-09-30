@@ -24,12 +24,19 @@ import blogBike from '@/assets/puszcza_knyszynska-.jpg';
 const articles = [
   {
     slug: 'rykowisko-jeleni-puszcza-knyszynska',
-    title: 'Rykowisko jeleni na Podlasiu – niezwykły spektakl w Puszczy Knyszyńskiej',
-    excerpt: 'Poznaj najlepszy czas i zasady bezpiecznego obserwowania rykowiska jeleni w Puszczy Knyszyńskiej.',
+    title: 'Rykowisko jeleni na Podlasiu – gdzie i kiedy je usłyszeć?',
+    excerpt: 'Sprawdź, kiedy trwa rykowisko jeleni i gdzie bezpiecznie usłyszeć je w Puszczy Knyszyńskiej koło Supraśla.',
     image: blogMeadow,
     date: '2026-08-12',
     readTime: '6 min',
-    keywords: ['rykowisko jeleni', 'Puszcza Knyszyńska', 'atrakcje Supraśl'],
+    keywords: [
+      'rykowisko jeleni',
+      'rykowisko jeleni na Podlasiu',
+      'rykowisko w Puszczy Knyszyńskiej',
+      'kiedy jest rykowisko jeleni',
+      'gdzie usłyszeć rykowisko jeleni',
+      'obserwacja jeleni Supraśl',
+    ],
   },
   {
     slug: 'suprasl-zima',
