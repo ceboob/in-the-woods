@@ -64,7 +64,7 @@ const HeroSection = () => {
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center leading-tight animate-fade-up drop-shadow-lg font-accent mt-8 sm:mt-0">
           Klimatyczny dom z bali w Puszczy Knyszyńskiej
         </h1>
-        <p className="mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white/90 animate-fade-up delay-100">
+        <p className="font-protest mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white/90 animate-fade-up delay-100">
           Dom na wyłączność z balią ogrodową, ruską banią i kominkiem. Odpocznij w leśnym zaciszu zaledwie 10 minut od Supraśla.
         </p>
 
