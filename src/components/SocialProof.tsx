@@ -8,10 +8,21 @@ const MESSAGES = [
   '12 osób przeglądało ten obiekt w ostatnim tygodniu',
 ];
 
+const getViewingText = (count: number) => {
+  if (count === 1) return { noun: 'osoba', verb: 'przegląda' };
+  const mod10 = count % 10;
+  const mod100 = count % 100;
+  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 10 || mod100 >= 20)) {
+    return { noun: 'osoby', verb: 'przeglądają' };
+  }
+  return { noun: 'osób', verb: 'przegląda' };
+};
+
 const SocialProof = () => {
   const [currentMsg, setCurrentMsg] = useState(0);
   const [visible, setVisible] = useState(true);
   const [viewerCount] = useState(() => Math.floor(Math.random() * 4) + 2);
+  const viewingText = getViewingText(viewerCount);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -29,7 +40,7 @@ const SocialProof = () => {
       <div className="flex items-center gap-2 text-xs text-primary bg-primary/5 px-3 py-2 rounded-lg">
         <Eye className="w-3.5 h-3.5 flex-shrink-0" />
         <span>
-          <strong>{viewerCount} osób</strong> ogląda teraz ten obiekt
+          <strong>{viewerCount} {viewingText.noun}</strong> {viewingText.verb} teraz ten obiekt
         </span>
       </div>
       <div
