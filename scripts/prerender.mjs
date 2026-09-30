@@ -19,7 +19,7 @@ function injectAttributes(html, tagName, attributes) {
   });
 }
 
-for (const route of prerenderRoutes) {
+async function prerenderRoute(route, outputPath, failOnError = false) {
   try {
     console.log(`Prerendering route: ${route}`);
     const { appHtml, headTags, htmlAttributes, bodyAttributes } = await render(route);
@@ -34,17 +34,24 @@ for (const route of prerenderRoutes) {
     pageHtml = injectAttributes(pageHtml, 'html', htmlAttributes);
     pageHtml = injectAttributes(pageHtml, 'body', bodyAttributes);
 
-    const outputPath =
-      route === '/'
-        ? path.join(distDir, 'index.html')
-        : path.join(distDir, route.replace(/^\/+/,'') , 'index.html');
-
     await mkdir(path.dirname(outputPath), { recursive: true });
     await writeFile(outputPath, pageHtml);
   } catch (error) {
+    if (failOnError) throw error;
     // Log and continue with other routes so prerender does not fail the whole build
     console.error(`Error prerendering ${route}:`, error && (error.stack || error.message || error));
   }
 }
+
+for (const route of prerenderRoutes) {
+  const outputPath =
+    route === '/'
+      ? path.join(distDir, 'index.html')
+      : path.join(distDir, route.replace(/^\/+/, ''), 'index.html');
+
+  await prerenderRoute(route, outputPath);
+}
+
+await prerenderRoute('/404', path.join(distDir, '404.html'), true);
 
 await rm(path.join(projectRoot, '.ssr'), { recursive: true, force: true });
