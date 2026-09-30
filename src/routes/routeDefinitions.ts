@@ -22,6 +22,7 @@ export const routeDefinitions: RouteDefinition[] = [
   { path: '/domek-z-jacuzzi-podlasie', load: () => import('@/pages/DomekZJacuzziPodlasie.tsx') },
   { path: '/wieczor-panienski-suprasl', load: () => import('@/pages/WieczorPanienskiSuprasl.tsx') },
   { path: '/blog', load: () => import('@/pages/Blog.tsx') },
+  { path: '/blog/suprasl-zima', load: () => import('@/pages/blog/SupraslZima.tsx') },
   { path: '/blog/supraski-system-wodny', load: () => import('@/pages/blog/SupraskiSystemWodny.tsx') },
   {
     path: '/blog/szlak-powstania-styczniowego-suprasl',

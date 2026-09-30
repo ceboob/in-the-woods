@@ -20,8 +20,19 @@ import blogMushrooms from '@/assets/article.jpg';
 import blogNoService from '@/assets/brak-internetu-w-telefonie-co-robic-1536x878.webp';
 import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1.jpg';
 import blogBike from '@/assets/puszcza_knyszynska-.jpg';
+import blogWinter from '@/assets/blog-puszcza-panorama.webp';
 
 const articles = [
+  {
+    slug: 'suprasl-zima',
+    title: 'Supraśl zimą – magia Podlasia i Puszczy Knyszyńskiej',
+    excerpt:
+      'Odkryj zaśnieżone szlaki, ślady dzikich zwierząt, ciszę Poczopek i kulig z ogniskiem w In The Woods Konne.',
+    image: blogWinter,
+    date: '2026-09-30',
+    readTime: '8 min',
+    keywords: ['Supraśl zimą', 'Podlasie zimą', 'Puszcza Knyszyńska', 'kulig Supraśl'],
+  },
   {
     slug: 'puszcza-knyszynska-przewodnik',
     title: 'Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX',
