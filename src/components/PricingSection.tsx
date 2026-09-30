@@ -197,7 +197,7 @@ const PricingSection = () => {
             Podlasiu</strong> lub workation w&nbsp;ciszy natury.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Opcjonalnie możesz zarezerwować <strong>ruską banię</strong> — tradycyjną saunę opalaną drewnem,
+            Opcjonalnie możesz zarezerwować <strong>ruską banię</strong> — tradycyjną łaźnię opalaną drewnem,
             dostępną przez cały pobyt za jednorazową opłatą 250&nbsp;zł. Przy rezerwacji na 7 lub
             więcej nocy naliczamy <strong>10% zniżki</strong> od łącznej kwoty — dłuższy pobyt
             w&nbsp;leśnym domu naprawdę się opłaca.

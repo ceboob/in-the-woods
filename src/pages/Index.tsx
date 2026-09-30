@@ -40,7 +40,7 @@ const Index = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Domek w lesie z jacuzzi | In The Woods — Podlasie"
-        description="Zarezerwuj leśny dom z sauną i balią w Puszczy Knyszyńskiej na wyłączność. Cisza, kominek, ogrodzony teren. Sprawdź wolne terminy!"
+        description="Zarezerwuj leśny dom z balią i ruską banią w Puszczy Knyszyńskiej na wyłączność. Cisza, kominek, ogrodzony teren. Sprawdź wolne terminy!"
         canonical="https://www.suprasl.online/"
       />
 
