@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const DomekZJacuzziPodlasie = () => (
   <SEOPageLayout
-    title="Domek z jacuzzi w lesie | Balia i sauna Podlasie"
+    title="Domek z jacuzzi w lesie | Balia i bania Podlasie"
     description="Domek z jacuzzi w lesie na Podlasiu — prywatna ruska bania z balią, kominek, dom na wyłączność w Puszczy Knyszyńskiej. Sprawdź wolne terminy!"
     breadcrumbName="Domek z jacuzzi Podlasie"
     ogImage="https://www.suprasl.online/images/jacuzzi-night.jpg"

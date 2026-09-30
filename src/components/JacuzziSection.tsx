@@ -43,7 +43,7 @@ const JacuzziSection = () => {
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <p className="section-subtitle mx-auto">
-              Naszą dumą jest prywatna strefa leśnego wellness: drewniana balia kąpielowa z hydromasażem podgrzewana drewnem oraz tradycyjna ruska bania (sauna parowa). Każdego wieczora ogród zamienia się w Twoją prywatną oazę relaksu na odludziu. Balia i bania mieszczą wygodnie 4–6 osób i działają przez cały rok — latem pod rozgwieżdżonym niebem Puszczy Knyszyńskiej, zimą w scenerii białego puchu i rześkiego powietrza.
+              Naszą dumą jest prywatna strefa leśnego wellness: drewniana balia kąpielowa z hydromasażem podgrzewana drewnem oraz tradycyjna ruska bania. Każdego wieczora ogród zamienia się w Twoją prywatną oazę relaksu na odludziu. Balia i bania mieszczą wygodnie 4–6 osób i działają przez cały rok — latem pod rozgwieżdżonym niebem Puszczy Knyszyńskiej, zimą w scenerii białego puchu i rześkiego powietrza.
             </p>
             <div className="space-y-1 text-base text-foreground/80 text-smallcaps">
               <p>Ciepła woda. Chłodne powietrze. Gwiazdy nad Puszczą Knyszyńską.</p>

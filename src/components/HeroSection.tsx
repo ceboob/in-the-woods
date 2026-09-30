@@ -50,7 +50,7 @@ const HeroSection = () => {
           src={heroImgLg}
           srcSet={`${heroImgSm} 640w, ${heroImgLg} 1028w`}
           sizes="100vw"
-          alt="Całoroczny dom na Podlasiu z balią ogrodową i sauną — In The Woods koło Supraśla"
+          alt="Całoroczny dom na Podlasiu z balią ogrodową — In The Woods koło Supraśla"
           className="w-full h-full object-cover"
           width="1028"
           height="771"
@@ -61,23 +61,12 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h1
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4 animate-fade-up drop-shadow-lg font-accent mt-8 sm:mt-0"
-        >
-          In The Woods | Całoroczny dom do wynajęcia na Podlasiu — Supraśl i okolice Białegostoku
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center leading-tight animate-fade-up drop-shadow-lg font-accent mt-8 sm:mt-0">
+          Klimatyczny dom z bali w Puszczy Knyszyńskiej
         </h1>
-        <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-white/90 mb-3 animate-fade-in">
-          Klimatyczny dom z bali na wyłączność w sercu Puszczy Knyszyńskiej: balia ogrodowa, sauna i kominek
+        <p className="mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white/90 animate-fade-up delay-100">
+          Dom na wyłączność z balią ogrodową, ruską banią i kominkiem. Odpocznij w leśnym zaciszu zaledwie 10 minut od Supraśla.
         </p>
-
-        <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
-          <p className="text-base md:text-lg text-white text-smallcaps">
-            Szukasz ucieczki od zgiełku miasta? Odkryj przestronny dom na wynajem zaledwie 15 minut od Białegostoku i 10 minut od uzdrowiska Supraśl.
-          </p>
-          <p className="text-base md:text-lg text-white text-smallcaps">
-            Czekają na Ciebie prywatna balia pod gwiazdami, tradycyjna ruska bania, trzaskający ogień w kominku i kojąca cisza leśnego zacisza.
-          </p>
-        </div>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
           <div className="flex items-center gap-2 text-white/90">
