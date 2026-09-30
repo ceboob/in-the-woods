@@ -20,7 +20,6 @@ import blogMushrooms from '@/assets/article.jpg';
 import blogNoService from '@/assets/brak-internetu-w-telefonie-co-robic-1536x878.webp';
 import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1.jpg';
 import blogBike from '@/assets/puszcza_knyszynska-.jpg';
-import blogWinter from '@/assets/blog-puszcza-panorama.webp';
 
 const articles = [
   {
@@ -28,7 +27,6 @@ const articles = [
     title: 'Supraśl zimą – magia Podlasia i Puszczy Knyszyńskiej',
     excerpt:
       'Odkryj zaśnieżone szlaki, ślady dzikich zwierząt, ciszę Poczopek i kulig z ogniskiem w In The Woods Konne.',
-    image: blogWinter,
     date: '2026-09-30',
     readTime: '8 min',
     keywords: ['Supraśl zimą', 'Podlasie zimą', 'Puszcza Knyszyńska', 'kulig Supraśl'],
@@ -396,19 +394,21 @@ const Blog = () => {
               to={`/blog/${article.slug}`}
               className="group border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 bg-card"
             >
-              <div className="aspect-[16/9] overflow-hidden">
-                <img
-                  src={article.image}
-                  srcSet={`${article.image} 600w`}
-                  sizes="(min-width: 768px) 50vw, 100vw"
-                  alt={article.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading={article.slug === articles[0].slug ? 'eager' : 'lazy'}
-                  decoding="async"
-                  width="600"
-                  height="338"
-                />
-              </div>
+              {article.image && (
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src={article.image}
+                    srcSet={`${article.image} 600w`}
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    alt={article.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading={article.slug === articles[0].slug ? 'eager' : 'lazy'}
+                    decoding="async"
+                    width="600"
+                    height="338"
+                  />
+                </div>
+              )}
               <div className="p-6 space-y-3">
                 <div className="flex items-center gap-4 text-xs text-muted-foreground">
                   <span className="inline-flex items-center gap-1">

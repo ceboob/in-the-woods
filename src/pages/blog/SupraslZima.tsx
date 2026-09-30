@@ -96,11 +96,6 @@ const SupraslZima = () => (
       osadza na lesie delikatną warstwę szadzi. Przed wyjściem proszę sprawdzić pogodę i stan tras, a
       na spacer zabrać ciepłe, nieprzemakalne obuwie.
     </p>
-    <img
-      src="/images/winter/monaster-suprasl-zima.jpg"
-      alt="Monaster w Supraślu zimą"
-      loading="lazy"
-    />
     <p>
       Warto też zaplanować wycieczkę w okolice Rezerwatu Krzemianka. Leśne ścieżki i przyrodniczy
       charakter tego miejsca pozwalają zwolnić i wsłuchać się w zimowy las. Aktualne inspiracje do
@@ -114,12 +109,6 @@ const SupraslZima = () => (
       </a>
       .
     </p>
-    <img
-      src="/images/winter/puszcza-knyszynska-zima.jpg"
-      alt="Puszcza Knyszyńska zimą"
-      loading="lazy"
-    />
-
     <h2>Spotkanie z dziką naturą</h2>
     <p>
       Zimowy spacer to także okazja, by dostrzec ślady obecności mieszkańców puszczy. Na śniegu
@@ -145,12 +134,6 @@ const SupraslZima = () => (
       że żubry żyjące na wolności nie pojawiają się na zamówienie — obserwacji nie da się
       zagwarantować. Zachowajmy dystans i nie dokarmiajmy zwierząt.
     </p>
-    <img
-      src="/images/winter/zubry-kopna-gora.jpeg"
-      alt="Żubry w Kopnej Górze"
-      loading="lazy"
-    />
-
     <h2>Poczopek i Kopna Góra – cisza, która pozwala odetchnąć</h2>
     <p>
       Zimowa wycieczka do Poczopek i Silvarium to propozycja dla osób, które lubią przyrodę podaną
@@ -201,12 +184,6 @@ const SupraslZima = () => (
       kuligu zależy od warunków pogodowych i śniegowych. Prosimy zapytać o tę atrakcję przy
       rezerwacji pobytu.
     </p>
-    <img
-      src="/images/winter/kulig-podlasie.webp"
-      alt="Tradycyjny kulig na Podlasiu"
-      loading="lazy"
-    />
-
     <h2>Zaplanujcie Państwo zimowy wyjazd na Podlasie</h2>
     <p>
       Poranny spacer nad rzeką, popołudnie wśród świerków i wieczór przy ogniu — tak może wyglądać
