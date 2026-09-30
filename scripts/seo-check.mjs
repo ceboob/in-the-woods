@@ -28,6 +28,9 @@ const missingInSitemap = indexableRoutes.filter((route) => !sitemapRoutes.has(ro
 const unexpectedInSitemap = [...sitemapRoutes].filter(
   (route) => !allRoutes.includes(route) && route !== '/',
 );
+const nonIndexableInSitemap = [...sitemapRoutes].filter((route) =>
+  NON_INDEXABLE_ROUTES.has(route),
+);
 
 const noindexIssues = [];
 for (const expectation of NOINDEX_EXPECTATIONS) {
@@ -40,11 +43,22 @@ for (const expectation of NOINDEX_EXPECTATIONS) {
 }
 
 const robotsContent = fs.readFileSync(ROBOTS_FILE, 'utf8');
-const robotsIssues = [...NON_INDEXABLE_ROUTES].filter(
-  (route) => !robotsContent.includes(`Disallow: ${route}`),
+const disallowedRoutes = new Set(
+  [...robotsContent.matchAll(/^Disallow: (\S+)$/gm)].map((match) => match[1]),
 );
+const missingRobotsRules = [...NON_INDEXABLE_ROUTES].filter(
+  (route) => !disallowedRoutes.has(route),
+);
+const blockedIndexableRoutes = indexableRoutes.filter((route) => disallowedRoutes.has(route));
 
-if (missingInSitemap.length || unexpectedInSitemap.length || noindexIssues.length || robotsIssues.length) {
+if (
+  missingInSitemap.length ||
+  unexpectedInSitemap.length ||
+  nonIndexableInSitemap.length ||
+  noindexIssues.length ||
+  missingRobotsRules.length ||
+  blockedIndexableRoutes.length
+) {
   console.error('SEO check failed.');
   if (missingInSitemap.length) {
     console.error('Missing routes in sitemap:', missingInSitemap);
@@ -52,11 +66,17 @@ if (missingInSitemap.length || unexpectedInSitemap.length || noindexIssues.lengt
   if (unexpectedInSitemap.length) {
     console.error('Unexpected routes in sitemap:', unexpectedInSitemap);
   }
+  if (nonIndexableInSitemap.length) {
+    console.error('Non-indexable routes in sitemap:', nonIndexableInSitemap);
+  }
   if (noindexIssues.length) {
     console.error('Missing noindex markers:', noindexIssues);
   }
-  if (robotsIssues.length) {
-    console.error('Missing robots.txt disallow rules:', robotsIssues);
+  if (missingRobotsRules.length) {
+    console.error('Missing robots.txt disallow rules:', missingRobotsRules);
+  }
+  if (blockedIndexableRoutes.length) {
+    console.error('Indexable routes blocked by robots.txt:', blockedIndexableRoutes);
   }
   process.exit(1);
 }

@@ -56,8 +56,10 @@ Date: 2026-04-14
 
 ## Low-risk / operational findings
 
-### 6) Rewrite catch-all is acceptable for SPA but requires asset/file awareness
-- Keep as-is, but regression-test direct hits to known files (`/robots.txt`, `/sitemap.xml`, `/site.webmanifest`) after config changes.
+### 6) Unknown routes must return a real 404
+- The catch-all SPA rewrite has been removed so unknown paths can use the generated `dist/404.html` and return HTTP 404.
+- `/admin` and `/admin/login` retain exact SPA rewrites because they are not prerendered.
+- Regression-test direct hits to known files (`/robots.txt`, `/sitemap.xml`, `/site.webmanifest`) after config changes.
 
 ### 7) Supabase Edge Functions in repo are not deployed by Vercel
 - These are deployed/executed in Supabase, not Vercel. Document deployment boundaries clearly.
