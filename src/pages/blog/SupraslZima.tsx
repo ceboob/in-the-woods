@@ -7,6 +7,7 @@ const SupraslZima = () => (
     metaTitle="Supraśl zimą – noclegi i atrakcje Podlasia"
     metaDescription="Supraśl zimą: zaśnieżone szlaki Puszczy Knyszyńskiej, żubry, kulig i domek w lesie na wyłączność w In The Woods Konne."
     slug="suprasl-zima"
+    ogImage="https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-2.jpg"
     publishDate="2026-09-30"
     readTime="8 min"
     keywords={[
@@ -89,6 +90,11 @@ const SupraslZima = () => (
       </a>
       .
     </p>
+    <img
+      src="https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-3.jpg"
+      alt="Zimowy krajobraz Podlasia"
+      loading="lazy"
+    />
     <p>
       Na spacer warto wybrać leśne drogi wokół Supraśla oraz malownicze odcinki wzdłuż rzeki Supraśl.
       Zimą woda, śnieg i ciche nadrzeczne zarośla układają się w spokojną scenerię, którą najlepiej
@@ -97,8 +103,8 @@ const SupraslZima = () => (
       na spacer zabrać ciepłe, nieprzemakalne obuwie.
     </p>
     <img
-      src="/images/winter/monaster-suprasl-zima.jpg"
-      alt="Monaster w Supraślu zimą"
+      src="https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-4.jpg"
+      alt="Zimowa Puszcza Knyszyńska na Podlasiu"
       loading="lazy"
     />
     <p>
@@ -114,12 +120,6 @@ const SupraslZima = () => (
       </a>
       .
     </p>
-    <img
-      src="/images/winter/puszcza-knyszynska-zima.jpg"
-      alt="Puszcza Knyszyńska zimą"
-      loading="lazy"
-    />
-
     <h2>Spotkanie z dziką naturą</h2>
     <p>
       Zimowy spacer to także okazja, by dostrzec ślady obecności mieszkańców puszczy. Na śniegu
@@ -127,6 +127,11 @@ const SupraslZima = () => (
       zachować ciszę, trzymać się wyznaczonych dróg i obserwować zwierzęta z dystansu — las jest ich
       domem, a spotkanie z nimi zawsze pozostaje niespodzianką.
     </p>
+    <img
+      src="https://cdn.kucharz.net/jedrzejwojnar.com/kolonia-ponure/ponure-007.jpg"
+      alt="Leśny krajobraz w Kolonii Ponure"
+      loading="lazy"
+    />
     <p>
       Jeśli chcą Państwo zobaczyć te potężne zwierzęta z bliska, polecamy Zagrodę Pokazową Żubrów w
       Kopnej Górze. To dobra okazja, by spokojnie poznać symbol regionu i dowiedzieć się więcej o
@@ -145,12 +150,6 @@ const SupraslZima = () => (
       że żubry żyjące na wolności nie pojawiają się na zamówienie — obserwacji nie da się
       zagwarantować. Zachowajmy dystans i nie dokarmiajmy zwierząt.
     </p>
-    <img
-      src="/images/winter/zubry-kopna-gora.jpeg"
-      alt="Żubry w Kopnej Górze"
-      loading="lazy"
-    />
-
     <h2>Poczopek i Kopna Góra – cisza, która pozwala odetchnąć</h2>
     <p>
       Zimowa wycieczka do Poczopek i Silvarium to propozycja dla osób, które lubią przyrodę podaną
@@ -169,6 +168,11 @@ const SupraslZima = () => (
       Poczopeku zajrzeć do Silvarium. Edukacyjne ekspozycje i leśne alejki Silvarium są dobrym
       wyborem także wtedy, gdy zimowa pogoda zachęca do krótszego spaceru.
     </p>
+    <img
+      src="https://cdn.kucharz.net/jedrzejwojnar.com/rezerwat-bartoszycha/bartoszycha-009.jpg"
+      alt="Leśny krajobraz rezerwatu Bartoszycha"
+      loading="lazy"
+    />
     <p>
       Więcej pomysłów na spokojne odkrywanie regionu i opowieści o tym, jak wygląda{' '}
       <strong>Podlasie zimą</strong>, można znaleźć w artykule{' '}
@@ -201,12 +205,6 @@ const SupraslZima = () => (
       kuligu zależy od warunków pogodowych i śniegowych. Prosimy zapytać o tę atrakcję przy
       rezerwacji pobytu.
     </p>
-    <img
-      src="/images/winter/kulig-podlasie.webp"
-      alt="Tradycyjny kulig na Podlasiu"
-      loading="lazy"
-    />
-
     <h2>Zaplanujcie Państwo zimowy wyjazd na Podlasie</h2>
     <p>
       Poranny spacer nad rzeką, popołudnie wśród świerków i wieczór przy ogniu — tak może wyglądać
