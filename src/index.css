@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Luckiest+Guy&family=Marcellus+SC&family=Monoton&family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Luckiest+Guy&family=Marcellus+SC&family=Monoton&family=Poppins:wght@400;500;600;700;800&family=Protest+Strike&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -232,7 +232,11 @@
     font-family: "Monoton", cursive;
   }
 
-  .font-accent {
+  .font-protest {
+  font-family: "Protest Strike", sans-serif;
+}
+
+.font-accent {
     font-family: "Marcellus SC", serif;
   }
 
