@@ -23,6 +23,15 @@ import blogBike from '@/assets/puszcza_knyszynska-.jpg';
 
 const articles = [
   {
+    slug: 'rykowisko-jeleni-puszcza-knyszynska',
+    title: 'Rykowisko jeleni na Podlasiu – niezwykły spektakl w Puszczy Knyszyńskiej',
+    excerpt: 'Poznaj najlepszy czas i zasady bezpiecznego obserwowania rykowiska jeleni w Puszczy Knyszyńskiej.',
+    image: blogMeadow,
+    date: '2026-08-12',
+    readTime: '6 min',
+    keywords: ['rykowisko jeleni', 'Puszcza Knyszyńska', 'atrakcje Supraśl'],
+  },
+  {
     slug: 'suprasl-zima',
     title: 'Supraśl zimą – magia Podlasia i Puszczy Knyszyńskiej',
     excerpt:
@@ -50,15 +59,6 @@ const articles = [
     date: '2026-04-09',
     readTime: '10 min',
     keywords: ['romantyczny weekend Podlasie', 'domek z kominkiem'],
-  },
-  {
-    slug: 'rykowisko-jeleni-puszcza-knyszynska',
-    title: 'Rykowisko jeleni na Podlasiu – niezwykły spektakl w Puszczy Knyszyńskiej',
-    excerpt: 'Poznaj najlepszy czas i zasady bezpiecznego obserwowania rykowiska jeleni w Puszczy Knyszyńskiej.',
-    image: blogMeadow,
-    date: '2026-08-12',
-    readTime: '6 min',
-    keywords: ['rykowisko jeleni', 'Puszcza Knyszyńska', 'atrakcje Supraśl'],
   },
   {
     slug: 'cyfrowy-detoks-las',
