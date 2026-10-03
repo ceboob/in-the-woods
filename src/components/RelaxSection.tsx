@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import baniaImg from '@/assets/gallery-bania-front-thumb.webp';
+import gardenTubImg from '@/assets/gallery-bania-front-thumb.webp';
 import tarasImg from '@/assets/gallery-taras-relaks-thumb.webp';
 import { Snowflake, Sun, Leaf, Flower2 } from 'lucide-react';
 
@@ -7,7 +7,7 @@ const rituals = [
   {
     icon: Snowflake,
     season: 'Zimą',
-    text: 'po spacerach w śnieżnej puszczy — zanurz się w gorącej bani i posłuchaj szeptów lasu',
+    text: 'po spacerach w śnieżnej puszczy — odpocznij w balii ogrodowej z funkcją jacuzzi i posłuchaj szeptów lasu',
   },
   {
     icon: Sun,
@@ -50,7 +50,7 @@ const RelaxSection = () => {
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-16">
           <div className="overflow-hidden relative group">
             <img
-              src={baniaImg}
+              src={gardenTubImg}
               alt="Balia ogrodowa z funkcją jacuzzi — domek z balią w lesie, w Puszczy Knyszyńskiej"
               className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
               loading="lazy"
@@ -97,7 +97,7 @@ const RelaxSection = () => {
           <p className="font-heading text-2xl md:text-3xl font-light text-foreground">Wieczorem:</p>
           <div className="space-y-1 text-muted-foreground text-base text-smallcaps">
             <p>Ogień trzaska w kominku. Na niebie pojawiają się gwiazdy.</p>
-            <p>Ciepła woda w bani. Zapach drewna. Szepty Puszczy.</p>
+            <p>Balia ogrodowa z funkcją jacuzzi. Szepty Puszczy.</p>
           </div>
           <p className="text-base text-foreground/80 text-smallcaps pt-4">
             To esencja odpoczynku w lesie na weekend — ostoja spokoju, gdzie czas płynie inaczej.

@@ -17,9 +17,9 @@ import jadalniaSerwis from '@/assets/gallery-jadalnia-serwis-thumb.webp';
 import jadalniaKwiaty from '@/assets/gallery-jadalnia-kwiaty-thumb.webp';
 import drogaLesna from '@/assets/gallery-droga-lesna-thumb.webp';
 import domLato from '@/assets/gallery-dom-lato-thumb.webp';
-import baniaFront from '@/assets/gallery-bania-front-thumb.webp';
-import baniaDom from '@/assets/gallery-bania-dom-thumb.webp';
-import baniaOgrod from '@/assets/gallery-bania-ogrod-thumb.webp';
+import gardenTubFront from '@/assets/gallery-bania-front-thumb.webp';
+import gardenTubHouse from '@/assets/gallery-bania-dom-thumb.webp';
+import gardenTubGarden from '@/assets/gallery-bania-ogrod-thumb.webp';
 import dabPuszcza from '@/assets/gallery-dab-puszcza-thumb.webp';
 import tarasPies from '@/assets/gallery-taras-pies-wieczor-thumb.webp';
 import tarasRelaks from '@/assets/gallery-taras-relaks-thumb.webp';
@@ -121,7 +121,7 @@ const allImages: GalleryImage[] = [
     category: ['wnetrze'],
   },
   {
-    thumb: baniaFront,
+    thumb: gardenTubFront,
     full: '/images/gallery-bania-front.webp',
     alt: 'In The Woods Supraśl — balia ogrodowa z funkcją jacuzzi',
     caption: 'Balia ogrodowa z funkcją jacuzzi',
@@ -207,14 +207,14 @@ const allImages: GalleryImage[] = [
     category: ['wnetrze'],
   },
   {
-    thumb: baniaDom,
+    thumb: gardenTubHouse,
     full: '/images/gallery-bania-dom.webp',
     alt: 'In The Woods Supraśl — balia ogrodowa na tle domu z czerwonym dachem',
     caption: 'Balia ogrodowa z funkcją jacuzzi — widok na dom',
     category: ['jacuzzi', 'ogrod'],
   },
   {
-    thumb: baniaOgrod,
+    thumb: gardenTubGarden,
     full: '/images/gallery-bania-ogrod.webp',
     alt: 'In The Woods Supraśl — balia ogrodowa z funkcją jacuzzi w ogrodzie z widokiem na las',
     caption: 'Balia ogrodowa z funkcją jacuzzi z widokiem na Puszczę',

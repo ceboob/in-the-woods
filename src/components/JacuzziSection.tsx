@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import baniaImg from '@/assets/gallery-bania-dom-thumb.webp';
+import gardenTubImg from '@/assets/gallery-bania-dom-thumb.webp';
 import { Snowflake, Leaf, Bike, Heart } from 'lucide-react';
 
 const bullets = [
@@ -16,7 +16,7 @@ const JacuzziSection = () => {
     <section id="jacuzzi" className="relative">
       <div className="relative h-[50vh] min-h-[400px]">
         <img
-          src={baniaImg}
+          src={gardenTubImg}
           alt="Balia ogrodowa z funkcją jacuzzi przy domu In The Woods w Puszczy Knyszyńskiej"
           className="w-full h-full object-cover"
           loading="lazy"

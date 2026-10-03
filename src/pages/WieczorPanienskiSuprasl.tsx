@@ -49,7 +49,7 @@ const WieczorPanienskiSuprasl = () => (
         . Degustacja prosecco na tarasie z widokiem na las.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Wieczór:</strong> Rozpalenie ruskiej bani — <strong>domek z jacuzzi w lesie</strong>.
+        <strong>Wieczór:</strong> Odpoczynek w balii ogrodowej z funkcją jacuzzi — <strong>domek z jacuzzi w lesie</strong>.
         Relaks w gorącej balii pod gwiazdami przy muzyce i rozmowach. Potem ognisko w altanie
         z piankami marshmallow i wspomnieniami. <strong>Chill w lesie</strong> na najwyższym poziomie.
       </p>

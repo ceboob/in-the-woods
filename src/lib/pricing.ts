@@ -61,7 +61,7 @@ export const SEASONS: SeasonConfig[] = [
 
 export const WEEKEND_SURCHARGE = 100; // PLN per night on Fri/Sat
 export const LONG_STAY_DISCOUNT = 0.10; // 10% discount for 7+ nights
-export const BANIA_PRICE = 250; // PLN per stay
+export const GARDEN_TUB_PRICE = 250; // PLN per stay
 export const MIN_NIGHTS = 2;
 export const BASE_GUESTS = 4;
 export const MAX_GUESTS = 8;

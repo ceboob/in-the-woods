@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: 'Czy są noclegi z jacuzzi w Supraślu?',
-    a: 'In The Woods oferuje prywatną ruską banię z balią z gorącą wodą — domek z jacuzzi w lesie. Idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu za 250 zł.',
+    a: 'In The Woods oferuje prywatną balię ogrodową z funkcją jacuzzi — domek z jacuzzi w lesie. Dostępna jako dodatek do pobytu za 250 zł.',
   },
   {
     q: 'Czy jest jacuzzi?',

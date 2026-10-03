@@ -45,7 +45,7 @@ const RomantycznyWeekendPodlasie = () => (
       <h3 className="font-heading text-xl font-semibold text-foreground">Piątek wieczór — przywitanie z puszczą</h3>
       <p className="text-muted-foreground leading-relaxed">
         Przyjedź przed zmrokiem. Rozpakuj się, rozpal kominek i otwórz butelkę wina. Pierwszy wieczór poświęć na <strong>zwolnienie tempa</strong>.
-        Jeśli zarezerwowałeś ruską banię — to idealny moment. Gorąca woda w drewnianej balii, zapach brzozowego drewna, gwiazdy nad głową.
+        Jeśli zarezerwowałeś balię ogrodową z funkcją jacuzzi — to idealny moment na odpoczynek pod gwiazdami.
       </p>
 
       <h3 className="font-heading text-xl font-semibold text-foreground">Sobota — dzień odkrywania</h3>

@@ -15,7 +15,7 @@ const audiences = [
   {
     icon: Users,
     title: 'Przyjaciele',
-    desc: 'Dom z bali na wyłączność — bez obcych gości i bez skrępowania. Wieczorne grillowanie w altanie, seanse w ruskiej bani, gorąca balia i rozmowy przy ognisku do białego rana. Świetna baza na spływy kajakowe rzeką Supraśl i wycieczki po okolicach Białegostoku.',
+    desc: 'Dom z bali na wyłączność — bez obcych gości i bez skrępowania. Wieczorne grillowanie w altanie, odpoczynek w balii ogrodowej z funkcją jacuzzi i rozmowy przy ognisku do białego rana. Świetna baza na spływy kajakowe rzeką Supraśl i wycieczki po okolicach Białegostoku.',
   },
   {
     icon: Dog,

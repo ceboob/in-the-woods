@@ -17,9 +17,9 @@ import drogaLesna from '@/assets/gallery-droga-lesna-thumb.webp';
 import sypialniaGorna from '@/assets/gallery-sypialnia-gorna-thumb.webp';
 import domLato from '@/assets/gallery-dom-lato-thumb.webp';
 import ogrodZielen from '@/assets/gallery-ogrod-zielen-thumb.webp';
-import baniaFront from '@/assets/gallery-bania-front-thumb.webp';
-import baniaDom from '@/assets/gallery-bania-dom-thumb.webp';
-import baniaOgrod from '@/assets/gallery-bania-ogrod-thumb.webp';
+import gardenTubFront from '@/assets/gallery-bania-front-thumb.webp';
+import gardenTubHouse from '@/assets/gallery-bania-dom-thumb.webp';
+import gardenTubGarden from '@/assets/gallery-bania-ogrod-thumb.webp';
 import dabPuszcza from '@/assets/gallery-dab-puszcza-thumb.webp';
 import tarasPies from '@/assets/gallery-taras-pies-wieczor-thumb.webp';
 import tarasRelaks from '@/assets/gallery-taras-relaks-thumb.webp';
@@ -130,9 +130,9 @@ const images: GalleryImage[] = [
 
   // Balia ogrodowa z funkcją jacuzzi
   { thumb: jacuzziNight, alt: 'Balia ogrodowa z funkcją jacuzzi pod gwiazdami — domek w lesie', category: 'Balia ogrodowa z funkcją jacuzzi' },
-  { thumb: baniaFront, alt: 'Balia ogrodowa z funkcją jacuzzi — domek w lesie na wyłączność', category: 'Balia ogrodowa z funkcją jacuzzi' },
-  { thumb: baniaDom, alt: 'Balia ogrodowa z funkcją jacuzzi na tle domku w lesie Puszcza Knyszyńska', category: 'Balia ogrodowa z funkcją jacuzzi' },
-  { thumb: baniaOgrod, alt: 'Balia ogrodowa z funkcją jacuzzi — domek na Podlasiu', category: 'Balia ogrodowa z funkcją jacuzzi' },
+  { thumb: gardenTubFront, alt: 'Balia ogrodowa z funkcją jacuzzi — domek w lesie na wyłączność', category: 'Balia ogrodowa z funkcją jacuzzi' },
+  { thumb: gardenTubHouse, alt: 'Balia ogrodowa z funkcją jacuzzi na tle domku w lesie Puszcza Knyszyńska', category: 'Balia ogrodowa z funkcją jacuzzi' },
+  { thumb: gardenTubGarden, alt: 'Balia ogrodowa z funkcją jacuzzi — domek na Podlasiu', category: 'Balia ogrodowa z funkcją jacuzzi' },
   { thumb: jacuzziNoc, alt: 'Jacuzzi z podświetleniem nocą — domek z jacuzzi w lesie pod gwiazdami', category: 'Balia ogrodowa z funkcją jacuzzi' },
 
   // Okolica

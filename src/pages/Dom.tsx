@@ -10,7 +10,7 @@ import lazienkaPrysznic from '@/assets/gallery-lazienka-prysznic-thumb.webp';
 import tarasGrill from '@/assets/gallery-taras-grill-thumb.webp';
 import poddaszeFotel from '@/assets/gallery-poddasze-fotel-thumb.webp';
 import domLato from '@/assets/gallery-dom-lato-thumb.webp';
-import baniaFront from '@/assets/gallery-bania-front-thumb.webp';
+import gardenTubFront from '@/assets/gallery-bania-front-thumb.webp';
 
 const amenities = [
   { icon: Flame, label: 'Kominek' },
@@ -36,7 +36,7 @@ const Dom = () => (
         <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
           Drewniany <strong>dom na wyłączność</strong> w sercu Puszczy Knyszyńskiej. Klimatyczny kominek,
           w pełni wyposażona kuchnia z płytą kaflową, dwie sypialnie na piętrze i{' '}
-          <strong>ogrodzony teren</strong> z ruską banią. <strong>Leśny domek do wynajęcia</strong>{' '}
+          <strong>ogrodzony teren</strong> z balią ogrodową z funkcją jacuzzi. <strong>Leśny domek do wynajęcia</strong>{' '}
           dla par, rodzin i grup przyjaciół do 8 osób. <strong>Psy za darmo</strong> — Twój czworonóg
           pokocha las za progiem.
         </p>
@@ -194,7 +194,7 @@ const Dom = () => (
           </div>
           <div className="grid grid-cols-2 gap-3">
             <img src={tarasGrill} alt="Taras z grillem i miejscem na ognisko — ogrodzony teren domku w lesie" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
-            <img src={baniaFront} alt="Balia ogrodowa z funkcją jacuzzi — domek z jacuzzi w lesie na wyłączność" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
+            <img src={gardenTubFront} alt="Balia ogrodowa z funkcją jacuzzi — domek z jacuzzi w lesie na wyłączność" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
           </div>
         </div>
       </section>

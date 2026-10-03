@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const PuszczaKnyszynskaNocleg = () => (
   <SEOPageLayout
     title="Nocleg w Puszczy Knyszyńskiej | Domek w lesie wynajem"
-    description="Nocleg w Puszczy Knyszyńskiej: domek na wyłączność z kominkiem, banią i ogrodzonym terenem. Sprawdź wolne terminy."
+    description="Nocleg w Puszczy Knyszyńskiej: domek na wyłączność z kominkiem, balią ogrodową z funkcją jacuzzi i ogrodzonym terenem. Sprawdź wolne terminy."
     breadcrumbName="Puszcza Knyszyńska"
     ogImage="https://www.suprasl.online/images/winter-cabin-golden.jpg"
   >
@@ -30,7 +30,7 @@ const PuszczaKnyszynskaNocleg = () => (
         Puszcza oferuje wyjątkowe warunki do <strong>spokojnego wypoczynku w naturze</strong>. Czyste powietrze,
         cisza przerywana jedynie śpiewem ptaków, stare drzewostany tworzące naturalne katedry.
         Nocne niebo nad Puszczą to jedno z najciemniejszych w Polsce — idealne do obserwacji gwiazd
-        z gorącej ruskiej bani. <strong>Detoks cyfrowy w lesie</strong> — brak pełnego zasięgu
+        z balii ogrodowej z funkcją jacuzzi. <strong>Detoks cyfrowy w lesie</strong> — brak pełnego zasięgu
         telefonii komórkowej staje się tu zaletą.
       </p>
 

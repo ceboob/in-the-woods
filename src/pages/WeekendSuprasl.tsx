@@ -30,7 +30,7 @@ const WeekendSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Jeśli pogoda sprzyja, rozpal ognisko w ogrodzie. To moment, kiedy zaczynasz zwalniać —
-        cisza Puszczy Knyszyńskiej robi swoje. Zarezerwuj ruską banię na wieczór —{' '}
+        cisza Puszczy Knyszyńskiej robi swoje. Zarezerwuj balię ogrodową z funkcją jacuzzi na wieczór —{' '}
         <strong>domek z balią w lesie</strong>, gorąca woda pod gwiazdami to idealny start
         weekendu. Detoks cyfrowy w lesie zaczyna się sam — brak pełnego zasięgu telefonii
         komórkowej staje się tu zaletą.
@@ -54,8 +54,8 @@ const WeekendSuprasl = () => (
         , jesienią grzybobranie, zimą narty biegowe.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Wieczór spędź w ruskiej bani. Po całym dniu aktywności na świeżym powietrzu, sesja w gorącej
-        bali pod gwiazdami to <strong>odpoczynek w lesie weekend</strong> w najlepszej formie.
+        Wieczór spędź w balii ogrodowej z funkcją jacuzzi. Po całym dniu aktywności na świeżym powietrzu,
+        odpoczynek pod gwiazdami to <strong>odpoczynek w lesie weekend</strong> w najlepszej formie.
         Potem kominek, herbata i cisza — to esencja <strong>chill w lesie</strong>.
       </p>
 

@@ -132,7 +132,7 @@ const SzlakiPuszczaKnyszynska = () => (
     <h2>Gdzie nocować blisko szlaków?</h2>
     <p>
       Po dniu spędzonym na szlakach wracasz do swojego azylu ciszy i natury.{' '}
-      <Link to="/">In The Woods</Link> — prywatny dom w lesie z kominkiem i ruską banią — to
+      <Link to="/">In The Woods</Link> — prywatny dom w lesie z kominkiem i balią ogrodową z funkcją jacuzzi — to
       baza wypadowa, o której marzysz. Szlaki zaczynają się dosłownie za progiem.{' '}
       <Link to="/noclegi-suprasl">Znajdź nocleg blisko szlaków</Link>.
     </p>

@@ -16,9 +16,8 @@ const DomekZJacuzziPodlasie = () => (
       <p className="text-muted-foreground leading-relaxed text-lg">
         Marzysz o wieczorze w gorącej wodzie pod gwiazdami, otoczony ciszą prawdziwego lasu?
         <strong> Domek z jacuzzi w lesie</strong> In The Woods to jedno z niewielu takich miejsc
-        w regionie — prywatny <strong>dom na wyłączność</strong> z ruską banią i{' '}
-        <strong>balią z gorącą wodą</strong>, położony przy rezerwacie
-        przyrody w Puszczy Knyszyńskiej. <strong>Domek z balią w lesie</strong> — SPA na odludziu,
+        w regionie — prywatny <strong>dom na wyłączność</strong> z balią ogrodową z funkcją jacuzzi,
+        położony przy rezerwacie przyrody w Puszczy Knyszyńskiej. <strong>Domek z balią w lesie</strong> —
         o jakim marzysz.
       </p>
 

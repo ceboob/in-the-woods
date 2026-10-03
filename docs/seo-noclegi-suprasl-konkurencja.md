@@ -4,7 +4,7 @@ Data analizy: 2026-09-30
 
 ## Cel
 
-Wzmocnić widoczność `https://www.suprasl.online/noclegi-suprasl` na frazę główną `noclegi Supraśl` oraz frazy poboczne związane z domkiem na wyłączność, Puszczą Knyszyńską, jacuzzi/banią, pobytem z psem i weekendem blisko Białegostoku.
+Wzmocnić widoczność `https://www.suprasl.online/noclegi-suprasl` na frazę główną `noclegi Supraśl` oraz frazy poboczne związane z domkiem na wyłączność, Puszczą Knyszyńską, balią ogrodową z funkcją jacuzzi, pobytem z psem i weekendem blisko Białegostoku.
 
 ## Wnioski z konkurencji
 
