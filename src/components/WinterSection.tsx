@@ -26,7 +26,7 @@ const WinterSection = () => {
               Domek na sylwestra i zimowy weekend w lesie
             </h2>
             <p className="text-base text-white/80 text-smallcaps">
-              Śnieg na dachu. Kominek w środku. Gorąca bania na zewnątrz.
+              Śnieg na dachu. Kominek w środku. Balia ogrodowa z funkcją jacuzzi na zewnątrz.
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ const WinterSection = () => {
               Zima w Puszczy Knyszyńskiej ma swój niepowtarzalny urok. Kiedy śnieg przykrywa las i
               ciszę przerywają tylko odgłosy dzięcioła, nasz domek w lesie zamienia się w przytulny azyl.
               Rano rozpalasz kominek, parzysz kawę i obserwujesz las za oknem. Po południu spacer po
-              zaśnieżonych szlakach albo narty biegowe wśród sosen. A wieczorem — gorąca bania pod
+              zaśnieżonych szlakach albo narty biegowe wśród sosen. A wieczorem — balia ogrodowa z funkcją jacuzzi pod
               rozgwieżdżonym zimowym niebem i powrót do ciepłego domu z bali na wyłączność.
             </p>
           </div>

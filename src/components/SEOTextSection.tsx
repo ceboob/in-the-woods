@@ -67,10 +67,8 @@ const SEOTextSection = () => {
             >
               domku z jacuzzi na Podlasiu
             </Link>
-            ? Nasza ruska bania z balią z gorącą wodą to wyjątkowy element oferty. <strong>Domek z balią
-            w lesie</strong>, gdzie gorąca woda pod gwiazdami w otoczeniu Puszczy Knyszyńskiej —
-            to rytuał relaksu, który goście wspominają najczęściej. Bania mieści 4–6 osób,
-            podgrzewana jest naturalnie drewnem i działa przez cały rok.
+            ? Nasza balia ogrodowa z funkcją jacuzzi to wyjątkowy element oferty. <strong>Domek z balią
+            w lesie</strong>, gdzie możesz odpocząć pod gwiazdami w otoczeniu Puszczy Knyszyńskiej.
           </p>
 
           <h3 className="font-heading text-xl text-foreground">Domek na sylwestra, walentynki i majówkę w lesie</h3>

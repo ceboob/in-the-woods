@@ -4,7 +4,7 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 const items = [
   { icon: TreePine, title: 'Lokalizacja', desc: 'Serce Puszczy Knyszyńskiej' },
   { icon: Shield, title: 'Prywatność', desc: 'Dom i ogród tylko dla gości' },
-  { icon: Flame, title: 'Relaks', desc: 'Ruska bania i kominek' },
+  { icon: Flame, title: 'Relaks', desc: 'Balia ogrodowa z funkcją jacuzzi i kominek' },
 ];
 
 const TrustSection = () => {

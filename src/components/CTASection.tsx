@@ -13,7 +13,7 @@ const CTASection = () => {
         <h2 className="section-title mb-4">Zarezerwuj leśny domek do wynajęcia — Twój dom na wyłączność</h2>
         <p className="text-muted-foreground mb-4 text-lg">
           Domek w lesie wynajem na Podlasiu — szepty Puszczy Knyszyńskiej, klimatyczny kominek,
-          ruska bania pod gwiazdami i absolutna prywatność. Wszystko czeka na Ciebie.
+          balia ogrodowa z funkcją jacuzzi pod gwiazdami i absolutna prywatność. Wszystko czeka na Ciebie.
         </p>
         <p className="text-muted-foreground mb-8">
           Odpowiadamy zwykle w kilka godzin. Rezerwacja bezpośrednia — bez prowizji pośrednika.

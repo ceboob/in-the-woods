@@ -60,7 +60,7 @@ const seasonData = [
 const extras = [
   {
     icon: Bath,
-    title: 'Ruska bania',
+    title: 'Balia ogrodowa z funkcją jacuzzi',
     desc: '250 zł za cały pobyt',
     note: 'niezależnie od liczby nocy',
   },

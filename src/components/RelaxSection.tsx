@@ -42,9 +42,8 @@ const RelaxSection = () => {
           <h2 className="section-title">Odpoczynek w lesie na weekend — slow travel w Puszczy Knyszyńskiej</h2>
           <p className="section-subtitle mx-auto">
             Wyobraź sobie wieczór, w którym jedynym dźwiękiem jest trzask drewna. Spokojny wypoczynek w naturze,
-            gdzie szepty puszczy otulają Cię ciepłem, a gorąca ruska bania czeka w ogrodzie — chill w lesie,
-            z dala od cywilizacji. Zapalamy świece, podgrzewamy wodę drewnem i oddajemy się rytuałowi odpoczynku,
-            który goście wspominają jeszcze długo po powrocie do miasta.
+            gdzie szepty puszczy otulają Cię ciepłem, a balia ogrodowa z funkcją jacuzzi czeka w ogrodzie — chill w lesie,
+            z dala od cywilizacji. To chwila odpoczynku, którą można zapamiętać na długo po powrocie do miasta.
           </p>
         </div>
 
@@ -52,14 +51,14 @@ const RelaxSection = () => {
           <div className="overflow-hidden relative group">
             <img
               src={baniaImg}
-              alt="Prywatna ruska bania — domek z balią w lesie, SPA na odludziu w Puszczy Knyszyńskiej"
+              alt="Balia ogrodowa z funkcją jacuzzi — domek z balią w lesie, w Puszczy Knyszyńskiej"
               className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
               loading="lazy"
               width="600"
               height="450"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="text-base text-white text-smallcaps">Ostoja spokoju — prywatna ruska bania</p>
+              <p className="text-base text-white text-smallcaps">Ostoja spokoju — balia ogrodowa z funkcją jacuzzi</p>
             </div>
           </div>
           <div className="overflow-hidden relative group">

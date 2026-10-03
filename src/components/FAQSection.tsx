@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'Czy są domy na wynajem w Supraślu?',
-    a: 'Tak — In The Woods to dom na wyłączność blisko Supraśla, w Puszczy Knyszyńskiej. Kominek, ogród, ruska bania i pełna prywatność. Idealny dom na wynajem w okolicach Supraśla.',
+    a: 'Tak — In The Woods to dom na wyłączność blisko Supraśla, w Puszczy Knyszyńskiej. Kominek, ogród, balia ogrodowa z funkcją jacuzzi i pełna prywatność. Idealny dom na wynajem w okolicach Supraśla.',
   },
   {
     q: 'Czy można wynająć dom w Puszczy Knyszyńskiej?',
@@ -48,8 +48,8 @@ const faqs = [
     a: 'In The Woods oferuje prywatną ruską banię z balią z gorącą wodą — domek z jacuzzi w lesie. Idealne wieczorne SPA pod gwiazdami, dostępne jako dodatek do pobytu za 250 zł.',
   },
   {
-    q: 'Czy jest jacuzzi / ruska bania?',
-    a: 'Tak — do dyspozycji gości jest prywatna ruska bania z balią z gorącą wodą, dostępna jako opcjonalny dodatek do pobytu za 250 zł. Domek z balią w lesie na wyłączność.',
+    q: 'Czy jest jacuzzi?',
+    a: 'Tak — do dyspozycji gości jest balia ogrodowa z funkcją jacuzzi, dostępna jako opcjonalny dodatek do pobytu za 250 zł. Domek z balią w lesie na wyłączność.',
   },
   {
     q: 'Czy dom jest prywatny?',
