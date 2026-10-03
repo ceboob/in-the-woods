@@ -326,92 +326,96 @@ const TooltipContent = React.forwardRef(({ className, sideOffset = 4, ...props }
 ));
 TooltipContent.displayName = TooltipPrimitive.Content.displayName;
 const routeDefinitions = [
-  { path: "/", load: () => import("./assets/Index-P5RrnN8F.js").then((n) => n.I) },
-  { path: "/noclegi-suprasl", load: () => import("./assets/NoclegiSuprasl-DDNvWP5k.js") },
-  { path: "/dom-w-lesie-suprasl", load: () => import("./assets/DomWLesieSuprasl-DU7phpBn.js") },
-  { path: "/weekend-suprasl", load: () => import("./assets/WeekendSuprasl-SY17CvoN.js") },
-  { path: "/atrakcje-suprasl", load: () => import("./assets/AtrakcjeSuprasl-DfkCz0qv.js") },
-  { path: "/puszcza-knyszynska-nocleg", load: () => import("./assets/PuszczaKnyszynskaNocleg-DWwxvZYp.js") },
-  { path: "/informator", load: () => import("./assets/Informator-DvnDJ68H.js") },
-  { path: "/domek-suprasl", load: () => import("./assets/DomekSuprasl-CSVcbsot.js") },
-  { path: "/domek-z-jacuzzi-podlasie", load: () => import("./assets/DomekZJacuzziPodlasie-v51CN1fQ.js") },
-  { path: "/wieczor-panienski-suprasl", load: () => import("./assets/WieczorPanienskiSuprasl-pwv316yh.js") },
-  { path: "/blog", load: () => import("./assets/Blog-DBa2cImx.js") },
-  { path: "/blog/supraski-system-wodny", load: () => import("./assets/SupraskiSystemWodny-BDBGBymv.js") },
+  { path: "/", load: () => import("./assets/Index-BymNgByc.js").then((n) => n.I) },
+  { path: "/noclegi-suprasl", load: () => import("./assets/NoclegiSuprasl-B66z3pI8.js") },
+  { path: "/dom-w-lesie-suprasl", load: () => import("./assets/DomWLesieSuprasl-XlkW_02E.js") },
+  { path: "/weekend-suprasl", load: () => import("./assets/WeekendSuprasl-C6hNQj2-.js") },
+  { path: "/atrakcje-suprasl", load: () => import("./assets/AtrakcjeSuprasl-B216_R2U.js") },
+  { path: "/puszcza-knyszynska-nocleg", load: () => import("./assets/PuszczaKnyszynskaNocleg-hDsFW_W6.js") },
+  { path: "/informator", load: () => import("./assets/Informator-Dx7kzJgq.js") },
+  { path: "/domek-suprasl", load: () => import("./assets/DomekSuprasl-C8tMiI8p.js") },
+  { path: "/domek-z-jacuzzi-podlasie", load: () => import("./assets/DomekZJacuzziPodlasie-gWoX-0dA.js") },
+  { path: "/wieczor-panienski-suprasl", load: () => import("./assets/WieczorPanienskiSuprasl-DnfHe9dA.js") },
+  { path: "/blog", load: () => import("./assets/Blog-CD1L3BhH.js") },
+  { path: "/blog/suprasl-zima", load: () => import("./assets/SupraslZima-DjMJyx9y.js") },
+  { path: "/blog/supraski-system-wodny", load: () => import("./assets/SupraskiSystemWodny-BB891Zdj.js") },
   {
     path: "/blog/szlak-powstania-styczniowego-suprasl",
-    load: () => import("./assets/SzlakPowstaniaStyczniowego-D2wv6-tQ.js")
+    load: () => import("./assets/SzlakPowstaniaStyczniowego-B2VfypVU.js")
   },
   {
     path: "/blog/suprasl-atrakcje-national-geographic",
-    load: () => import("./assets/SupraslAtrakcje-aEfSEGUg.js")
+    load: () => import("./assets/SupraslAtrakcje-DSKK1Rje.js")
   },
   {
     path: "/blog/szlaki-piesze-rowerowe-suprasl",
-    load: () => import("./assets/SzlakiPieszeRowerowe-BuhnADjt.js")
+    load: () => import("./assets/SzlakiPieszeRowerowe-CP9ATfkf.js")
   },
   {
     path: "/blog/szlak-bioroznorodnosci-suprasl",
-    load: () => import("./assets/SzlakBioroznorodnosci-C4P0wPHe.js")
+    load: () => import("./assets/SzlakBioroznorodnosci-AeHacAT6.js")
   },
   {
     path: "/blog/kruszyniany-tatarska-wies",
-    load: () => import("./assets/KruszynianyTatarskaWies-C9VGttXT.js")
+    load: () => import("./assets/KruszynianyTatarskaWies-B_TFFvPh.js")
   },
   {
     path: "/blog/suprasl-atrakcje-uzdrowisko",
-    load: () => import("./assets/SupraslAtrakcjeUzdrowisko-BHpKaXwT.js")
+    load: () => import("./assets/SupraslAtrakcjeUzdrowisko-D9kUHfXg.js")
   },
-  { path: "/blog/kajaki-suprasl", load: () => import("./assets/KajakiSuprasl-BbRLeai1.js") },
-  { path: "/blog/rykowisko-jeleni-puszcza-knyszynska", load: () => import("./assets/RykowiskoJeleni-fyP_7XRN.js") },
-  { path: "/blog/restauracje-suprasl", load: () => import("./assets/RestauracjeSuprasl-DUVQWqjk.js") },
-  { path: "/blog/co-robic-suprasl", load: () => import("./assets/CoRobicSuprasl-D_nuTbBm.js") },
-  { path: "/blog/weekend-suprasl-plan", load: () => import("./assets/WeekendSupraslPlan-CKOeavUy.js") },
+  { path: "/blog/kajaki-suprasl", load: () => import("./assets/KajakiSuprasl-CbJ0BOCL.js") },
+  { path: "/blog/rykowisko-jeleni-puszcza-knyszynska", load: () => import("./assets/RykowiskoJeleni-CsY23sBT.js") },
+  { path: "/blog/restauracje-suprasl", load: () => import("./assets/RestauracjeSuprasl-Cw-udZk_.js") },
+  { path: "/blog/co-robic-suprasl", load: () => import("./assets/CoRobicSuprasl-BAoJn2nR.js") },
+  { path: "/blog/weekend-suprasl-plan", load: () => import("./assets/WeekendSupraslPlan-BvclHL8q.js") },
   {
     path: "/blog/najlepsze-miejsca-puszcza-knyszynska",
-    load: () => import("./assets/NajlepszeMiejscaPuszcza-BQhLkO9S.js")
+    load: () => import("./assets/NajlepszeMiejscaPuszcza-BhIyz_kR.js")
   },
   {
     path: "/blog/puszcza-knyszynska-historie",
-    load: () => import("./assets/PuszczaKnyszynskaHistorie-CGSxZupC.js")
+    load: () => import("./assets/PuszczaKnyszynskaHistorie-C77f6jM2.js")
   },
-  { path: "/blog/wydarzenia-suprasl-2026", load: () => import("./assets/WydarzeniaSupra2026-DjawvbEX.js") },
-  { path: "/blog/aktywny-wypoczynek-suprasl", load: () => import("./assets/AktywnyWypoczynek-DrhEtu2E.js") },
-  { path: "/blog/uzdrowisko-spa-suprasl", load: () => import("./assets/UzdrowiSkoSPA-Dsn7cChO.js") },
+  {
+    path: "/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne",
+    load: () => import("./assets/JesienWSupraslu2026-CtRq3lLt.js")
+  },
+  { path: "/blog/aktywny-wypoczynek-suprasl", load: () => import("./assets/AktywnyWypoczynek-Bw5LCuPW.js") },
+  { path: "/blog/uzdrowisko-spa-suprasl", load: () => import("./assets/UzdrowiSkoSPA-BQqcE5cC.js") },
   {
     path: "/blog/przewodnik-kulinarny-suprasl",
-    load: () => import("./assets/PrzewodnikKulinarny-BzoHNgd5.js")
+    load: () => import("./assets/PrzewodnikKulinarny-CXdqVu3m.js")
   },
-  { path: "/blog/szlaki-puszcza-knyszynska", load: () => import("./assets/SzlakiPuszczaKnyszynska-Brx8VVKW.js") },
-  { path: "/blog/suprasl-na-weekend", load: () => import("./assets/SupraslNaWeekend-DVqxuMzm.js") },
-  { path: "/blog/suprasl-z-dziecmi", load: () => import("./assets/SupraslZDziecmi-kPx_mh3T.js") },
+  { path: "/blog/szlaki-puszcza-knyszynska", load: () => import("./assets/SzlakiPuszczaKnyszynska-BIGuoXQm.js") },
+  { path: "/blog/suprasl-na-weekend", load: () => import("./assets/SupraslNaWeekend-D8SwlX79.js") },
+  { path: "/blog/suprasl-z-dziecmi", load: () => import("./assets/SupraslZDziecmi-Nly74dZS.js") },
   {
     path: "/blog/romantyczny-weekend-podlasie",
-    load: () => import("./assets/RomantycznyWeekendPodlasie-BmwumH1l.js")
+    load: () => import("./assets/RomantycznyWeekendPodlasie-B1dkMqvt.js")
   },
-  { path: "/blog/cyfrowy-detoks-las", load: () => import("./assets/CyfrowyDetoksLas-BCi6u_XU.js") },
+  { path: "/blog/cyfrowy-detoks-las", load: () => import("./assets/CyfrowyDetoksLas-R5mx9elT.js") },
   {
     path: "/blog/grzybobranie-puszcza-knyszynska",
-    load: () => import("./assets/GrzybobraniePuszczaKnyszynska-RXlqOLPT.js")
+    load: () => import("./assets/GrzybobraniePuszczaKnyszynska-rhj8Z1QN.js")
   },
-  { path: "/blog/workation-podlasie", load: () => import("./assets/WorkationPodlasie-dJ_3uRD-.js") },
-  { path: "/blog/podlasie-z-psem", load: () => import("./assets/PodlasieZPsem-ChRIxi85.js") },
+  { path: "/blog/workation-podlasie", load: () => import("./assets/WorkationPodlasie-BLkpekog.js") },
+  { path: "/blog/podlasie-z-psem", load: () => import("./assets/PodlasieZPsem-B5Y82TwJ.js") },
   {
     path: "/blog/kraina-otwartych-okiennic",
-    load: () => import("./assets/KrainaOtwartychOkiennic-Bwo7Ea4x.js")
+    load: () => import("./assets/KrainaOtwartychOkiennic-u-yd6edQ.js")
   },
   {
     path: "/blog/puszcza-knyszynska-przewodnik",
-    load: () => import("./assets/PuszczaKnyszynskaPrzewodnik-DevBa7CM.js")
+    load: () => import("./assets/PuszczaKnyszynskaPrzewodnik-GgImLqHH.js")
   },
-  { path: "/dom", load: () => import("./assets/Dom-BDi6aeXv.js") },
-  { path: "/galeria", load: () => import("./assets/Galeria-z0Si9IUL.js") },
-  { path: "/dokumenty", load: () => import("./assets/Dokumenty-CD-lGmMq.js") },
-  { path: "/platnosc-sukces", load: () => import("./assets/PlatnoscSukces-BeF9whOB.js") },
-  { path: "/polityka-prywatnosci", load: () => import("./assets/PolitykaPrywatnosci-CsnyCF9W.js") },
-  { path: "/admin/login", load: () => import("./assets/AdminLogin-BYaNeJAY.js"), prerender: false },
-  { path: "/admin", load: () => import("./assets/AdminDashboard-CmfNQU73.js"), prerender: false },
-  { path: "*", load: () => import("./assets/NotFound-DAMKqDh1.js"), prerender: false }
+  { path: "/dom", load: () => import("./assets/Dom-DRfm59WR.js") },
+  { path: "/galeria", load: () => import("./assets/Galeria-BmxbtpuE.js") },
+  { path: "/dokumenty", load: () => import("./assets/Dokumenty-TjooPNzn.js") },
+  { path: "/platnosc-sukces", load: () => import("./assets/PlatnoscSukces-BDD1iKqs.js") },
+  { path: "/polityka-prywatnosci", load: () => import("./assets/PolitykaPrywatnosci-DtePEqgL.js") },
+  { path: "/admin/login", load: () => import("./assets/AdminLogin-BH464vHq.js"), prerender: false },
+  { path: "/admin", load: () => import("./assets/AdminDashboard--_7DSFjy.js"), prerender: false },
+  { path: "*", load: () => import("./assets/NotFound-BIHz3Xfa.js"), prerender: false }
 ];
 const prerenderRoutes = routeDefinitions.filter((route) => route.prerender !== false && route.path !== "*").map((route) => route.path);
 function renderApp(app) {

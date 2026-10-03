@@ -25,7 +25,7 @@ const WorkationPodlasie = () => (
       <p className="text-muted-foreground leading-relaxed text-lg">
         Praca zdalna nie musi oznaczać siedzenia w domu przed ekranem. <strong>Workation na Podlasiu</strong>
         to sposób na połączenie produktywności z regeneracją — pracujesz w otoczeniu Puszczy Knyszyńskiej,
-        a po zamknięciu laptopa czeka Cię las, kominek i ruska bania.
+        a po zamknięciu laptopa czeka Cię las, kominek i balia ogrodowa z funkcją jacuzzi.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Czym jest workation?</h2>
@@ -41,7 +41,7 @@ const WorkationPodlasie = () => (
         <li>💻 <strong>Stabilne Wi-Fi</strong> — wystarczające do videokonferencji i pracy w chmurze</li>
         <li>🏡 <strong>Cały dom na wyłączność</strong> — żadnych współlokatorów, współpracowników ani obcych ludzi</li>
         <li>🌿 <strong>Natura za progiem</strong> — przerwy spędzasz na spacerach po lesie, nie przy automacie z kawą</li>
-        <li>🔥 <strong>Wieczorny relaks</strong> — kominek, bania, ognisko — reward po produktywnym dniu</li>
+        <li>🔥 <strong>Wieczorny relaks</strong> — kominek, jacuzzi, ognisko — reward po produktywnym dniu</li>
       </ul>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Jak wygląda dzień workation w In The Woods?</h2>
@@ -51,7 +51,7 @@ const WorkationPodlasie = () => (
         <strong>12:00–13:00</strong> — Spacer po Rezerwacie Krzemienne Góry. Reset mentalny.<br />
         <strong>13:00–14:00</strong> — Obiad z lokalnych produktów. Gotowanie jako medytacja.<br />
         <strong>14:00–17:00</strong> — Spotkania online, e-maile, lżejsze zadania.<br />
-        <strong>17:00+</strong> — Wolne! Supraśl, kajaki, rower, bania. Twój czas.
+        <strong>17:00+</strong> — Wolne! Supraśl, kajaki, rower, jacuzzi. Twój czas.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Co zwiedzić po pracy?</h2>
@@ -59,7 +59,7 @@ const WorkationPodlasie = () => (
         Supraśl jest 10 minut drogi — Monaster, Muzeum Ikon, kawiarnie i restauracje.
         <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary hover:underline"> Szlaki piesze i rowerowe</Link> zaczynają
         się za progiem. W sezonie dostępne są <Link to="/blog/kajaki-suprasl" className="text-primary hover:underline">spływy kajakowe</Link>.
-        A wieczorem — ruska bania z balią pod gwiazdami.
+        A wieczorem — balia ogrodowa z funkcją jacuzzi pod gwiazdami.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Zarezerwuj swoje workation</h2>

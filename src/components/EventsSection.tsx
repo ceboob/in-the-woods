@@ -11,7 +11,7 @@ const events = [
   {
     icon: PartyPopper,
     title: 'Wieczory kawalerskie',
-    desc: 'Ognisko, grill, ruska bania i absolutna wolność. Impreza w sercu Puszczy Knyszyńskiej.',
+    desc: 'Ognisko, grill, balia ogrodowa z funkcją jacuzzi i absolutna wolność. Impreza w sercu Puszczy Knyszyńskiej.',
   },
   {
     icon: Users,

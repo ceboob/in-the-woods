@@ -111,7 +111,7 @@ const RykowiskoJeleni = () => {
       <p>
         Wyobraź to sobie: wracasz z wczesnoporannego spaceru. Rozpalasz ogień w klimatycznym kominku, a zapach drewna powoli
         wypełnia salon. Zaparzasz poranną kawę w kuchni wyposażonej w stylową płytę kaflową. A wieczorem? Czeka na Ciebie
-        ruska bania w ogrodzie. Zanurzasz się w gorącej wodzie pod rozgwieżdżonym niebem, nasłuchując, czy gdzieś w oddali znów nie
+        balia ogrodowa z funkcją jacuzzi w ogrodzie. Zanurzasz się w gorącej wodzie pod rozgwieżdżonym niebem, nasłuchując, czy gdzieś w oddali znów nie
         odezwie się potężny jeleń.
       </p>
       <p>

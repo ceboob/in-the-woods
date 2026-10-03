@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const DomekZJacuzziPodlasie = () => (
   <SEOPageLayout
-    title="Domek z jacuzzi w lesie | Balia i bania Podlasie"
-    description="Domek z jacuzzi w lesie na Podlasiu — prywatna ruska bania z balią, kominek, dom na wyłączność w Puszczy Knyszyńskiej. Sprawdź wolne terminy!"
+    title="Domek z jacuzzi w lesie | Balia ogrodowa Podlasie"
+    description="Domek z jacuzzi w lesie na Podlasiu — balia ogrodowa z funkcją jacuzzi, kominek, dom na wyłączność w Puszczy Knyszyńskiej. Sprawdź wolne terminy!"
     breadcrumbName="Domek z jacuzzi Podlasie"
     ogImage="https://www.suprasl.online/images/jacuzzi-night.jpg"
   >
@@ -16,26 +16,23 @@ const DomekZJacuzziPodlasie = () => (
       <p className="text-muted-foreground leading-relaxed text-lg">
         Marzysz o wieczorze w gorącej wodzie pod gwiazdami, otoczony ciszą prawdziwego lasu?
         <strong> Domek z jacuzzi w lesie</strong> In The Woods to jedno z niewielu takich miejsc
-        w regionie — prywatny <strong>dom na wyłączność</strong> z ruską banią i{' '}
-        <strong>balią z gorącą wodą</strong>, położony przy rezerwacie
-        przyrody w Puszczy Knyszyńskiej. <strong>Domek z balią w lesie</strong> — SPA na odludziu,
+        w regionie — prywatny <strong>dom na wyłączność</strong> z balią ogrodową z funkcją jacuzzi,
+        położony przy rezerwacie przyrody w Puszczy Knyszyńskiej. <strong>Domek z balią w lesie</strong> —
         o jakim marzysz.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Ruska bania — domek z balią w lesie pod gwiazdami
+        Balia ogrodowa z funkcją jacuzzi — domek w lesie pod gwiazdami
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Ruska bania to tradycyjna łaźnia parowa, która od wieków stanowi element kultury Podlasia. W
-        In The Woods bania jest prywatna i dostępna wyłącznie dla gości domu. Rytuał zaczyna się od
-        rozgrzewania kamieni, potem następuje relaks w parze, a na koniec — zanurzenie w{' '}
-        <strong>balii z gorącą wodą</strong> pod otwartym niebem.
+        Balia ogrodowa z funkcją jacuzzi jest dostępna wyłącznie dla gości domu. To miejsce, w którym
+        można odpocząć na świeżym powietrzu i cieszyć się widokiem na las.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Balia mieści do 6 osób i jest umieszczona na drewnianym tarasie z widokiem na las.
+        Balia ogrodowa z funkcją jacuzzi znajduje się na drewnianym tarasie z widokiem na las.
         Wieczorem, gdy temperatura powietrza spada, a niebo rozświetlają gwiazdy, gorąca woda staje
         się miejscem głębokiego odprężenia. <strong>Domek z jacuzzi w lesie</strong> — doświadczenie,
-        które goście opisują jako „najlepszy moment całego pobytu". SPA na odludziu, bez chemii, bez kolejek.
+        które goście opisują jako „najlepszy moment całego pobytu". Odpoczynek na odludziu, bez pośpiechu.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
@@ -63,7 +60,7 @@ const DomekZJacuzziPodlasie = () => (
         do 8 osób — idealny na każdą okazję. <strong>Dom z bali wynajem</strong> z duszą i charakterem.
       </p>
       <ul className="text-muted-foreground space-y-2">
-        <li>🛁 Prywatna ruska bania z <strong>balią</strong> z gorącą wodą (do 6 osób)</li>
+        <li>🛁 Prywatna balia ogrodowa z funkcją jacuzzi</li>
         <li>🔥 Klimatyczny <strong>kominek</strong> w przestronnym salonie</li>
         <li>🏡 Cały dom <strong>na wyłączność</strong> — pełna prywatność</li>
         <li>🌲 Lokalizacja przy rezerwacie przyrody — <strong>domek w lesie Supraśl</strong></li>

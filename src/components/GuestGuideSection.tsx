@@ -4,7 +4,7 @@ import { BookOpen, Flame, Bath, TreePine, ShieldCheck } from 'lucide-react';
 
 const items = [
   { icon: Flame, label: 'Kominek' },
-  { icon: Bath, label: 'Ruska bania' },
+  { icon: Bath, label: 'Balia ogrodowa z funkcją jacuzzi' },
   { icon: TreePine, label: 'Natura' },
   { icon: ShieldCheck, label: 'Bezpieczeństwo' },
 ];

@@ -4,7 +4,7 @@ Data analizy: 2026-09-30
 
 ## Cel
 
-Wzmocnić widoczność `https://www.suprasl.online/noclegi-suprasl` na frazę główną `noclegi Supraśl` oraz frazy poboczne związane z domkiem na wyłączność, Puszczą Knyszyńską, jacuzzi/banią, pobytem z psem i weekendem blisko Białegostoku.
+Wzmocnić widoczność `https://www.suprasl.online/noclegi-suprasl` na frazę główną `noclegi Supraśl` oraz frazy poboczne związane z domkiem na wyłączność, Puszczą Knyszyńską, balią ogrodową z funkcją jacuzzi, pobytem z psem i weekendem blisko Białegostoku.
 
 ## Wnioski z konkurencji
 
@@ -33,7 +33,7 @@ Nie próbować udawać hotelu w centrum. Najmocniejsza pozycja marki to:
 - cały dom na wyłączność,
 - las i Rezerwat Krzemienne Góry,
 - 10 minut do centrum Supraśla,
-- kominek i ruska bania,
+- kominek i balia ogrodowa z funkcją jacuzzi,
 - pobyt z psem bez dopłat,
 - wygodna baza na weekend, workation i wypoczynek rodzinny.
 
@@ -50,7 +50,7 @@ To pozwala walczyć o `noclegi Supraśl`, ale z jasnym wyróżnikiem, którego k
 ## Rekomendacje poza kodem
 
 1. Google Business Profile
-   - Uzupełnić opis obiektu frazami: `noclegi Supraśl`, `dom w lesie koło Supraśla`, `domek z bali`, `ruska bania`, `pobyt z psem`.
+   - Uzupełnić opis obiektu frazami: `noclegi Supraśl`, `dom w lesie koło Supraśla`, `domek z bali`, `balia ogrodowa z funkcją jacuzzi`, `pobyt z psem`.
    - Dodać usługi/atrybuty: nocleg, dom wakacyjny, pobyt z psem, parking, Wi-Fi.
    - Publikować 1 wpis miesięcznie: weekend w Supraślu, ferie, majówka, wakacje, jesień w Puszczy.
 

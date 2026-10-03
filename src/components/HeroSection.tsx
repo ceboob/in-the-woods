@@ -65,7 +65,7 @@ const HeroSection = () => {
           Klimatyczny dom z bali w Puszczy Knyszyńskiej
         </h1>
         <p className="font-alegreya font-medium mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white/90 animate-fade-up delay-100">
-          Dom na wyłączność z balią ogrodową, ruską banią i kominkiem. Odpocznij w leśnym zaciszu zaledwie 10 minut od Supraśla.
+          Dom na wyłączność z balią ogrodową z funkcją jacuzzi i kominkiem. Odpocznij w leśnym zaciszu zaledwie 10 minut od Supraśla.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">

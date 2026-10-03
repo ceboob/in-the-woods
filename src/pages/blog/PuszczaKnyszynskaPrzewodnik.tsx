@@ -234,7 +234,7 @@ const PuszczaKnyszynskaPrzewodnik = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Gdzie nocować w Puszczy Knyszyńskiej?</h2>
       <p className="text-muted-foreground leading-relaxed">
         <strong>In The Woods</strong> to drewniany dom na wyłączność w Konnych, 10 min od Supraśla.
-        Kominek, ruska bania, jacuzzi, ogrodzony ogród i las za płotem.{' '}
+        Kominek, balia ogrodowa z funkcją jacuzzi, ogrodzony ogród i las za płotem.{' '}
         <Link to="/dom" className="text-primary underline hover:text-primary/80">Zobacz dom</Link>
         {' '}lub{' '}
         <Link to="/#rezerwacja" className="text-primary underline hover:text-primary/80">zarezerwuj pobyt</Link>.

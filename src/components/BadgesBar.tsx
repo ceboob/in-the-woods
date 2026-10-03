@@ -8,7 +8,7 @@ const badges = [
   { icon: Home, label: 'Dom na wyłączność', href: '/noclegi-suprasl' },
   { icon: Bath, label: 'Balia / Jacuzzi', href: '/domek-z-jacuzzi-podlasie' },
   { icon: Flame, label: 'Kominek', href: '#dom' },
-  { icon: Sparkles, label: 'Ruska bania', href: '#jacuzzi' },
+  { icon: Sparkles, label: 'Balia ogrodowa z funkcją jacuzzi', href: '#jacuzzi' },
   { icon: Wifi, label: 'Starlink Internet', href: '/blog/workation-podlasie' },
 ];
 

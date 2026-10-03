@@ -111,7 +111,7 @@ const AktywnyWypoczynek = () => (
     <h2>Gdzie nocować po aktywnym dniu?</h2>
     <p>
       Po dniu pełnym wrażeń wracasz do swojego azylu ciszy i natury.{' '}
-      <Link to="/">In The Woods</Link> — prywatny dom w lesie z kominkiem i ruską banią — to
+      <Link to="/">In The Woods</Link> — prywatny dom w lesie z kominkiem i balią ogrodową z funkcją jacuzzi — to
       idealna baza wypadowa na aktywny weekend w Puszczy Knyszyńskiej.{' '}
       <Link to="/noclegi-suprasl">Sprawdź dostępne terminy</Link>.
     </p>

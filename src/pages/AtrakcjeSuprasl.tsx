@@ -179,7 +179,7 @@ const AtrakcjeSuprasl = () => (
         </h3>
         <p className="text-muted-foreground max-w-xl mx-auto">
           Prywatny <strong>dom w lesie na wyłączność</strong>{' '}
-          z kominkiem, ruską banią i ogrodzonym ogrodem — 10 minut od Supraśla.{' '}
+          z kominkiem, balią ogrodową z funkcją jacuzzi i ogrodzonym ogrodem — 10 minut od Supraśla.{' '}
           <strong>Leśny domek do wynajęcia</strong> w Puszczy Knyszyńskiej.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">

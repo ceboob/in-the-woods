@@ -17,9 +17,9 @@ import jadalniaSerwis from '@/assets/gallery-jadalnia-serwis-thumb.webp';
 import jadalniaKwiaty from '@/assets/gallery-jadalnia-kwiaty-thumb.webp';
 import drogaLesna from '@/assets/gallery-droga-lesna-thumb.webp';
 import domLato from '@/assets/gallery-dom-lato-thumb.webp';
-import baniaFront from '@/assets/gallery-bania-front-thumb.webp';
-import baniaDom from '@/assets/gallery-bania-dom-thumb.webp';
-import baniaOgrod from '@/assets/gallery-bania-ogrod-thumb.webp';
+import gardenTubFront from '@/assets/gallery-bania-front-thumb.webp';
+import gardenTubHouse from '@/assets/gallery-bania-dom-thumb.webp';
+import gardenTubGarden from '@/assets/gallery-bania-ogrod-thumb.webp';
 import dabPuszcza from '@/assets/gallery-dab-puszcza-thumb.webp';
 import tarasPies from '@/assets/gallery-taras-pies-wieczor-thumb.webp';
 import tarasRelaks from '@/assets/gallery-taras-relaks-thumb.webp';
@@ -61,7 +61,7 @@ import konneZnak from '@/assets/gallery-konne-znak-thumb.webp';
 import jadalniaTulipanyZblizenie from '@/assets/gallery-jadalnia-tulipany-zblizenie-thumb.webp';
 import tarasSofaWejscie from '@/assets/gallery-taras-sofa-wejscie-thumb.webp';
 
-type Category = 'all' | 'wnetrze' | 'bania' | 'ogrod' | 'okolica';
+type Category = 'all' | 'wnetrze' | 'jacuzzi' | 'ogrod' | 'okolica';
 
 interface GalleryImage {
   thumb: string;
@@ -76,7 +76,7 @@ interface GalleryImage {
 const categories: { id: Category; label: string }[] = [
   { id: 'all', label: 'Wszystkie' },
   { id: 'wnetrze', label: 'Wnętrze' },
-  { id: 'bania', label: 'Ruska bania' },
+  { id: 'jacuzzi', label: 'Balia ogrodowa z funkcją jacuzzi' },
   { id: 'ogrod', label: 'Ogród i taras' },
   { id: 'okolica', label: 'Okolica i las' },
 ];
@@ -86,9 +86,9 @@ const allImages: GalleryImage[] = [
   {
     thumb: jacuzziNight,
     full: '/images/jacuzzi-night.webp',
-    alt: 'In The Woods Supraśl — ruska bania z jacuzzi pod gwiazdami',
-    caption: 'Ruska bania z balią — prywatne SPA pod gwiazdami',
-    category: ['bania'],
+    alt: 'In The Woods Supraśl — balia ogrodowa z funkcją jacuzzi pod gwiazdami',
+    caption: 'Balia ogrodowa z funkcją jacuzzi pod gwiazdami',
+    category: ['jacuzzi'],
     className: 'col-span-2 row-span-2',
     srcSet: `${jacuzziNightSm} 640w, ${jacuzziNightMd} 1024w, ${jacuzziNight} 1442w`,
   },
@@ -121,11 +121,11 @@ const allImages: GalleryImage[] = [
     category: ['wnetrze'],
   },
   {
-    thumb: baniaFront,
+    thumb: gardenTubFront,
     full: '/images/gallery-bania-front.webp',
-    alt: 'In The Woods Supraśl — ruska bania z drewnianą obudową',
-    caption: 'Ruska bania — tradycyjna łaźnia parowa',
-    category: ['bania'],
+    alt: 'In The Woods Supraśl — balia ogrodowa z funkcją jacuzzi',
+    caption: 'Balia ogrodowa z funkcją jacuzzi',
+    category: ['jacuzzi'],
     className: 'col-span-2',
   },
   {
@@ -207,18 +207,18 @@ const allImages: GalleryImage[] = [
     category: ['wnetrze'],
   },
   {
-    thumb: baniaDom,
+    thumb: gardenTubHouse,
     full: '/images/gallery-bania-dom.webp',
-    alt: 'In The Woods Supraśl — bania na tle domu z czerwonym dachem',
-    caption: 'Bania w ogrodzie — widok na dom',
-    category: ['bania', 'ogrod'],
+    alt: 'In The Woods Supraśl — balia ogrodowa na tle domu z czerwonym dachem',
+    caption: 'Balia ogrodowa z funkcją jacuzzi — widok na dom',
+    category: ['jacuzzi', 'ogrod'],
   },
   {
-    thumb: baniaOgrod,
+    thumb: gardenTubGarden,
     full: '/images/gallery-bania-ogrod.webp',
-    alt: 'In The Woods Supraśl — bania w ogrodzie z widokiem na las',
-    caption: 'Bania w ogrodzie z widokiem na Puszczę',
-    category: ['bania', 'ogrod'],
+    alt: 'In The Woods Supraśl — balia ogrodowa z funkcją jacuzzi w ogrodzie z widokiem na las',
+    caption: 'Balia ogrodowa z funkcją jacuzzi z widokiem na Puszczę',
+    category: ['jacuzzi', 'ogrod'],
   },
   {
     thumb: dabPuszcza,
@@ -302,7 +302,7 @@ const allImages: GalleryImage[] = [
     full: '/images/gallery-jacuzzi-noc.avif',
     alt: 'In The Woods Supraśl — jacuzzi z podświetleniem nocą',
     caption: 'Jacuzzi z podświetleniem pod gwiazdami',
-    category: ['bania'],
+    category: ['jacuzzi'],
   },
   {
     thumb: kuchniaZlew,
@@ -541,7 +541,7 @@ const GallerySection = () => {
           <h2 className="section-title">Zobacz In The Woods</h2>
           <p className="section-subtitle mx-auto">
             Autentyczne zdjęcia naszego <strong>domu z bali na wyłączność</strong> — wnętrza,
-            ruska bania, ogrodzony ogród i okolica w Puszczy Knyszyńskiej.
+            balia ogrodowa z funkcją jacuzzi, ogrodzony ogród i okolica w Puszczy Knyszyńskiej.
           </p>
         </div>
 
