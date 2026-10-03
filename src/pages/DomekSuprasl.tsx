@@ -46,7 +46,7 @@ const DomekSuprasl = () => (
       <ul className="text-muted-foreground space-y-2">
         <li>🏠 Cały <strong>dom na wyłączność</strong> (do 8 osób)</li>
         <li>🔥 Klimatyczny kominek w salonie</li>
-        <li>🛁 Prywatna ruska bania z balią — <strong>domek z balią w lesie</strong></li>
+        <li>🛁 Prywatna balia ogrodowa z funkcją jacuzzi — <strong>domek z balią w lesie</strong></li>
         <li>🌳 Ogrodzony teren z tarasem i miejscem na ognisko</li>
         <li>🐕 <strong>Psy za darmo</strong> — ogrodzony ogród i las</li>
         <li>📶 Szybkie Wi-Fi (idealne na workation)</li>
@@ -56,7 +56,7 @@ const DomekSuprasl = () => (
 
       <p className="text-muted-foreground leading-relaxed">
         Wieczory w In The Woods mają swój rytm: rozpalony kominek, trzaskające drewno i ciepły blask
-        ognia w salonie. A gdy temperatura na zewnątrz spada, ruska bania z balią czeka pod
+        ognia w salonie. A gdy temperatura na zewnątrz spada, balia ogrodowa z funkcją jacuzzi czeka pod
         gwiazdami. <strong>Domek z jacuzzi w lesie</strong> — gorąca woda, zimne powietrze
         Puszczy Knyszyńskiej i niebo pełne gwiazd. To rytuał, który goście wspominają najczęściej.
       </p>
@@ -86,7 +86,7 @@ const DomekSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         In The Woods to <strong>domek na sylwestra w lesie</strong>, klimatyczny{' '}
         <strong>domek na walentynki</strong> i idealne miejsce na majówkę w puszczy. Każda pora roku
-        ma tu swój urok — zimą śnieg na dachu i gorąca bania, wiosną budząca się natura,
+        ma tu swój urok — zimą śnieg na dachu i balia ogrodowa z funkcją jacuzzi, wiosną budząca się natura,
         latem chłód lasu, jesienią grzyby i kolory puszczy.
       </p>
 

@@ -13,7 +13,7 @@ const CyfrowyDetoksLas = () => (
     faqs={[
       { question: 'Czy w domku w lesie jest internet?', answer: 'Tak, In The Woods oferuje Wi-Fi, ale cyfrowy detoks polega na świadomym odłączeniu — to Twoja decyzja, nie brak infrastruktury.' },
       { question: 'Na ile dni warto zaplanować cyfrowy detoks?', answer: 'Minimum 2-3 dni, aby naprawdę poczuć efekty odłączenia. Weekend to idealna długość na początek.' },
-      { question: 'Co robić bez telefonu w lesie?', answer: 'Spacery, grzybobranie, kominek, bania, czytanie, gotowanie, obserwacja ptaków, gwiazd — lista jest nieskończona.' },
+      { question: 'Co robić bez telefonu w lesie?', answer: 'Spacery, grzybobranie, kominek, jacuzzi, czytanie, gotowanie, obserwacja ptaków, gwiazd — lista jest nieskończona.' },
     ]}
     relatedArticles={[
       { title: 'Romantyczny weekend na Podlasiu', slug: 'romantyczny-weekend-podlasie' },
@@ -58,7 +58,7 @@ const CyfrowyDetoksLas = () => (
         <li>🌲 <strong>Przedpołudnie:</strong> Spacer po Rezerwacie Krzemienne Góry — szlak zaczyna się za progiem.</li>
         <li>🍳 <strong>Obiad:</strong> Gotowanie z lokalnych produktów. Bez przepisu z internetu — improwizacja.</li>
         <li>📖 <strong>Popołudnie:</strong> Książka przy kominku, hamak w ogrodzie, drzemka.</li>
-        <li>🔥 <strong>Wieczór:</strong> Ognisko, ruska bania, gwiazdy. Zero ekranów, sto procent obecności.</li>
+        <li>🔥 <strong>Wieczór:</strong> Ognisko, balia ogrodowa z funkcją jacuzzi, gwiazdy. Zero ekranów, sto procent obecności.</li>
       </ul>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Praktyczne wskazówki na cyfrowy detoks</h2>
@@ -66,7 +66,7 @@ const CyfrowyDetoksLas = () => (
         <li><strong>Uprzedź bliskich</strong> — powiedz, że będziesz niedostępny. Ustal awaryjny numer kontaktowy.</li>
         <li><strong>Zostaw telefon w szufladzie</strong> — nie wystarczy wyłączyć notyfikacje. Schowaj urządzenie.</li>
         <li><strong>Zabierz analogowe rozrywki</strong> — książki, gry planszowe, dziennik, szkicownik.</li>
-        <li><strong>Planuj aktywności</strong> — spacery, gotowanie, bania. Pustka zachęca do sięgnięcia po telefon.</li>
+        <li><strong>Planuj aktywności</strong> — spacery, gotowanie, jacuzzi. Pustka zachęca do sięgnięcia po telefon.</li>
         <li><strong>Daj sobie czas</strong> — pierwsze godziny mogą być trudne. Dyskomfort mija drugiego dnia.</li>
       </ol>
 
@@ -74,7 +74,7 @@ const CyfrowyDetoksLas = () => (
       <p className="text-muted-foreground leading-relaxed">
         <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to prywatny dom
         w sercu Puszczy Knyszyńskiej — miejsce stworzone do zwalniania tempa. Kominek, ogrodzony ogród,
-        ruska bania z balią i las za progiem. Wi-Fi jest dostępne, ale wybór należy do Ciebie.
+        balia ogrodowa z funkcją jacuzzi i las za progiem. Wi-Fi jest dostępne, ale wybór należy do Ciebie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Zarezerwuj swój <strong>cyfrowy detoks</strong> — zadzwoń pod{' '}

@@ -18,13 +18,13 @@ const amenities = [
   { icon: Car, label: 'Parking' },
   { icon: Dog, label: 'Psy za darmo' },
   { icon: Baby, label: 'Plac zabaw' },
-  { icon: Bath, label: 'Ruska bania' },
+  { icon: Bath, label: 'Balia ogrodowa z funkcją jacuzzi' },
 ];
 
 const Dom = () => (
   <SEOPageLayout
     title="Dom z bali na wyłączność | In The Woods Supraśl"
-    description="Dom z bali na wyłączność w Puszczy Knyszyńskiej: kominek, wyposażona kuchnia, sypialnie i ogrodzony ogród z banią."
+    description="Dom z bali na wyłączność w Puszczy Knyszyńskiej: kominek, wyposażona kuchnia, sypialnie i ogrodzony ogród z balią ogrodową z funkcją jacuzzi."
     breadcrumbName="Dom"
     ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
   >
@@ -194,7 +194,7 @@ const Dom = () => (
           </div>
           <div className="grid grid-cols-2 gap-3">
             <img src={tarasGrill} alt="Taras z grillem i miejscem na ognisko — ogrodzony teren domku w lesie" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
-            <img src={baniaFront} alt="Ruska bania z balią — domek z jacuzzi w lesie na wyłączność" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
+            <img src={baniaFront} alt="Balia ogrodowa z funkcją jacuzzi — domek z jacuzzi w lesie na wyłączność" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
           </div>
         </div>
       </section>

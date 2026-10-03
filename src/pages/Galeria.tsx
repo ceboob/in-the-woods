@@ -68,7 +68,7 @@ interface GalleryImage {
   category: string;
 }
 
-const categories = ['Wszystkie', 'Salon', 'Kuchnia i jadalnia', 'Sypialnie', 'Łazienki', 'Taras i ogród', 'Bania i jacuzzi', 'Okolica'];
+const categories = ['Wszystkie', 'Salon', 'Kuchnia i jadalnia', 'Sypialnie', 'Łazienki', 'Taras i ogród', 'Balia ogrodowa z funkcją jacuzzi', 'Okolica'];
 
 const images: GalleryImage[] = [
   // Salon
@@ -128,12 +128,12 @@ const images: GalleryImage[] = [
   { thumb: ogniskoDzieci, alt: 'Dzieci przy ognisku — dom w lesie wynajem dla rodziny z dziećmi', category: 'Taras i ogród' },
   { thumb: ogniskoNocne, alt: 'Nocne ognisko przy altanie — domek w lesie z miejscem na ognisko', category: 'Taras i ogród' },
 
-  // Bania i jacuzzi
-  { thumb: jacuzziNight, alt: 'Ruska bania z jacuzzi pod gwiazdami — domek z balią w lesie', category: 'Bania i jacuzzi' },
-  { thumb: baniaFront, alt: 'Ruska bania — domek z jacuzzi w lesie na wyłączność', category: 'Bania i jacuzzi' },
-  { thumb: baniaDom, alt: 'Bania na tle domku z bali — domek z balią w lesie Puszcza Knyszyńska', category: 'Bania i jacuzzi' },
-  { thumb: baniaOgrod, alt: 'Bania w ogrodzie — SPA na odludziu, domek z jacuzzi Podlasie', category: 'Bania i jacuzzi' },
-  { thumb: jacuzziNoc, alt: 'Jacuzzi z podświetleniem nocą — domek z jacuzzi w lesie pod gwiazdami', category: 'Bania i jacuzzi' },
+  // Balia ogrodowa z funkcją jacuzzi
+  { thumb: jacuzziNight, alt: 'Balia ogrodowa z funkcją jacuzzi pod gwiazdami — domek w lesie', category: 'Balia ogrodowa z funkcją jacuzzi' },
+  { thumb: baniaFront, alt: 'Balia ogrodowa z funkcją jacuzzi — domek w lesie na wyłączność', category: 'Balia ogrodowa z funkcją jacuzzi' },
+  { thumb: baniaDom, alt: 'Balia ogrodowa z funkcją jacuzzi na tle domku w lesie Puszcza Knyszyńska', category: 'Balia ogrodowa z funkcją jacuzzi' },
+  { thumb: baniaOgrod, alt: 'Balia ogrodowa z funkcją jacuzzi — domek na Podlasiu', category: 'Balia ogrodowa z funkcją jacuzzi' },
+  { thumb: jacuzziNoc, alt: 'Jacuzzi z podświetleniem nocą — domek z jacuzzi w lesie pod gwiazdami', category: 'Balia ogrodowa z funkcją jacuzzi' },
 
   // Okolica
   { thumb: drogaLesna, alt: 'Leśna droga w Puszczy Knyszyńskiej — domek na odludziu podlaskie', category: 'Okolica' },
@@ -167,7 +167,7 @@ const Galeria = () => {
   return (
     <SEOPageLayout
       title="Galeria zdjęć domku w lesie | In The Woods Supraśl"
-      description="Galeria In The Woods: salon z kominkiem, kuchnia, sypialnie, ogród i ruska bania. Zobacz domek w Puszczy Knyszyńskiej."
+      description="Galeria In The Woods: salon z kominkiem, kuchnia, sypialnie, ogród i balia ogrodowa z funkcją jacuzzi. Zobacz domek w Puszczy Knyszyńskiej."
       breadcrumbName="Galeria"
       ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
     >
@@ -176,7 +176,7 @@ const Galeria = () => {
       </h1>
       <p className="text-muted-foreground text-lg mb-10 max-w-2xl">
         Przeglądaj autentyczne zdjęcia naszego <strong>domu z bali na wyłączność</strong> — salon z kominkiem,
-        kuchnia z płytą kaflową, sypialnie, ogrodzony ogród i ruska bania z balią w Puszczy Knyszyńskiej.
+        kuchnia z płytą kaflową, sypialnie, ogrodzony ogród i balia ogrodowa z funkcją jacuzzi w Puszczy Knyszyńskiej.
         Kliknij w kategorię, aby filtrować.
       </p>
 

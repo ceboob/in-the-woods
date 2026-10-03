@@ -11,8 +11,8 @@ const RomantycznyWeekendPodlasie = () => (
     readTime="10 min"
     keywords={['romantyczny weekend Podlasie', 'domek z kominkiem', 'weekend we dwoje', 'domek z balią']}
     faqs={[
-      { question: 'Ile kosztuje romantyczny weekend na Podlasiu?', answer: 'Pobyt w prywatnym domku w lesie z kominkiem i ruską banią to koszt od 399 zł/noc. Bania z balią — dodatkowe 250 zł za sesję.' },
-      { question: 'Czy trzeba rezerwować banię z wyprzedzeniem?', answer: 'Tak — ruska bania wymaga wcześniejszej rezerwacji, najlepiej w momencie rezerwacji pobytu.' },
+      { question: 'Ile kosztuje romantyczny weekend na Podlasiu?', answer: 'Pobyt w prywatnym domku w lesie z kominkiem i balią ogrodową z funkcją jacuzzi to koszt od 399 zł/noc. Jacuzzi — dodatkowe 250 zł za sesję.' },
+      { question: 'Czy trzeba rezerwować jacuzzi z wyprzedzeniem?', answer: 'Tak — balia ogrodowa z funkcją jacuzzi wymaga wcześniejszej rezerwacji, najlepiej w momencie rezerwacji pobytu.' },
       { question: 'Gdzie najlepiej na romantyczny wypad na Podlasiu?', answer: 'Okolice Supraśla i Puszcza Knyszyńska oferują najpiękniejsze odosobnione domki w lesie, idealne na weekend we dwoje.' },
     ]}
     relatedArticles={[
@@ -67,7 +67,7 @@ const RomantycznyWeekendPodlasie = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Co sprawia, że to wyjątkowe?</h2>
       <ul className="space-y-3 text-muted-foreground">
         <li>🔥 <strong>Prywatny kominek</strong> — prawdziwy ogień, prawdziwa atmosfera</li>
-        <li>🛁 <strong>Ruska bania z balią</strong> — gorąca woda pod gwiazdami, dostępna na wyłączność</li>
+        <li>🛁 <strong>Balia ogrodowa z funkcją jacuzzi</strong> — chwila odpoczynku pod gwiazdami</li>
         <li>🌲 <strong>Absolutna prywatność</strong> — cały dom i ogród tylko dla Was</li>
         <li>🌙 <strong>Ciemne niebo</strong> — daleko od miejskiego zanieczyszczenia świetlnego</li>
         <li>🍳 <strong>W pełni wyposażona kuchnia</strong> — gotujcie razem, w swoim tempie</li>
@@ -76,7 +76,7 @@ const RomantycznyWeekendPodlasie = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Gdzie zarezerwować?</h2>
       <p className="text-muted-foreground leading-relaxed">
         <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to prywatny dom w lesie,
-        położony przy Puszczy Knyszyńskiej, 10 minut od Supraśla. Kominek, ruska bania, ogrodzony ogród, taras
+        położony przy Puszczy Knyszyńskiej, 10 minut od Supraśla. Kominek, balia ogrodowa z funkcją jacuzzi, ogrodzony ogród, taras
         i cisza — wszystko, czego potrzebujecie na romantyczny weekend we dwoje na Podlasiu.
       </p>
       <p className="text-muted-foreground leading-relaxed">

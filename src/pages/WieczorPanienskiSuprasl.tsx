@@ -31,7 +31,7 @@ const WieczorPanienskiSuprasl = () => (
         In The Woods oferuje to, czego nie znajdziesz w żadnym innym miejscu — cały{' '}
         <strong>dom z bali na wyłączność</strong>, gorącą balię pod gwiazdami, kominek w salonie,
         ognisko w ogrodzie i absolutną prywatność. <strong>Domek na odludziu</strong> otoczony
-        Puszczą Knyszyńską — <strong>domek z balią w lesie</strong>, SPA na odludziu.
+        Puszczą Knyszyńską — <strong>domek z balią w lesie</strong>, odpoczynek na odludziu.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
@@ -83,7 +83,7 @@ const WieczorPanienskiSuprasl = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi i kominkiem — co oferujemy</h2>
       <ul className="text-muted-foreground space-y-2">
         <li>🏡 Cały <strong>dom na wyłączność</strong> (do 8 osób)</li>
-        <li>🛁 Prywatna ruska bania z balią — <strong>domek z balią w lesie</strong></li>
+        <li>🛁 Prywatna balia ogrodowa z funkcją jacuzzi — <strong>domek z balią w lesie</strong></li>
         <li>🔥 Klimatyczny <strong>kominek</strong> w salonie</li>
         <li>🌲 <strong>Ogrodzony teren</strong> z miejscem na ognisko i grill</li>
         <li>🍽️ W pełni wyposażona kuchnia z płytą kaflową</li>

@@ -19,7 +19,7 @@ const documents = [
   {
     icon: FileText,
     title: 'Instrukcja obsługi domu',
-    description: 'Szczegółowa instrukcja obsługi urządzeń w domu — ogrzewanie, sprzęt kuchenny, kominek, bania, WiFi i inne udogodnienia.',
+    description: 'Szczegółowa instrukcja obsługi urządzeń w domu — ogrzewanie, sprzęt kuchenny, kominek, jacuzzi, WiFi i inne udogodnienia.',
     href: 'https://drive.google.com/file/d/1Kz6hA2My9p3MZuNTocCglt3-yow5LrE4/view?usp=drive_link',
     label: 'Otwórz instrukcję (PDF)',
   },

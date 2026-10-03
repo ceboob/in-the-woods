@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const WeekendSuprasl = () => (
   <SEOPageLayout
     title="Weekend w Supraślu | Domek w lesie na weekend"
-    description="Zaplanuj weekend w domku w lesie z jacuzzi i kominkiem w Supraślu. Puszcza Knyszyńska, ruska bania, ognisko i slow travel. Plan na 2-3 dni!"
+    description="Zaplanuj weekend w domku w lesie z jacuzzi i kominkiem w Supraślu. Puszcza Knyszyńska, balia ogrodowa z funkcją jacuzzi, ognisko i slow travel. Plan na 2-3 dni!"
     breadcrumbName="Weekend w Supraślu"
     ogImage="https://www.suprasl.online/images/terrace-breakfast.jpg"
   >
@@ -95,7 +95,7 @@ const WeekendSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Praktyczne informacje</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Ceny:</strong> Weekendy od 549 zł/noc, minimalny pobyt 2 noce. Ruska bania: 250 zł
+        <strong>Ceny:</strong> Weekendy od 549 zł/noc, minimalny pobyt 2 noce. Balia ogrodowa z funkcją jacuzzi: 250 zł
         za cały pobyt. Psy za darmo.
       </p>
       <p className="text-muted-foreground leading-relaxed">

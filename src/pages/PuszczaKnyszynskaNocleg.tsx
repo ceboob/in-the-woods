@@ -47,7 +47,7 @@ const PuszczaKnyszynskaNocleg = () => (
       <p className="text-muted-foreground leading-relaxed">
         <strong>Dom z bali wynajem</strong> — drewniany, przytulny i w pełni wyposażony. Salon z klimatycznym
         kominkiem, dwie sypialnie na piętrze, kuchnia z płytą kaflową i jadalnią, ogrodzony ogród z
-        tarasem, altaną i miejscem na ognisko. Prywatna ruska bania z balią z gorącą wodą —{' '}
+        tarasem, altaną i miejscem na ognisko. Prywatna balia ogrodowa z funkcją jacuzzi —{' '}
         <strong>domek z balią w lesie</strong>.
       </p>
       <p className="text-muted-foreground leading-relaxed">
@@ -68,7 +68,7 @@ const PuszczaKnyszynskaNocleg = () => (
         Rzeka Supraśl oferuje spływy kajakowe, trasy rowerowe prowadzą przez lasy i malownicze wsie.
         Grzybobranie jesienią to tradycja, a zimą puszcza zamienia się w magiczną krainę śniegu.{' '}
         <strong>Odpoczynek w lesie weekend</strong> — narty biegowe, rakiety śnieżne, spacery po
-        zaśnieżonych szlakach, a po powrocie kominek i gorąca ruska bania. <strong>Chill w lesie</strong> na każdą porę roku.
+        zaśnieżonych szlakach, a po powrocie kominek i balia ogrodowa z funkcją jacuzzi. <strong>Chill w lesie</strong> na każdą porę roku.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi w lesie — dla kogo</h2>
@@ -87,7 +87,7 @@ const PuszczaKnyszynskaNocleg = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Domek na sylwestra i zimowy weekend w lesie</h2>
       <p className="text-muted-foreground leading-relaxed">
         Szukasz <strong>domku na sylwestra w lesie</strong>? Zimowy nocleg w Puszczy Knyszyńskiej
-        to doświadczenie jak z bajki — śnieg na dachu, kominek w środku, gorąca bania na zewnątrz.
+        to doświadczenie jak z bajki — śnieg na dachu, kominek w środku, balia ogrodowa z funkcją jacuzzi na zewnątrz.
         Idealne też na <strong>klimatyczny domek na walentynki</strong>, ferie zimowe czy majówkę w puszczy.
       </p>
 
@@ -102,7 +102,7 @@ const PuszczaKnyszynskaNocleg = () => (
         Rezerwacja domku w lesie w Puszczy Knyszyńskiej
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Rezerwacja jest bezpośrednia — bez prowizji pośredników. Ceny od 399 zł/noc. Ruska bania: 250 zł
+        Rezerwacja jest bezpośrednia — bez prowizji pośredników. Ceny od 399 zł/noc. Balia ogrodowa z funkcją jacuzzi: 250 zł
         za cały pobyt. <strong>Psy za darmo</strong>. Minimalny pobyt to 2 noce.
       </p>
       <p className="text-muted-foreground leading-relaxed">
@@ -130,7 +130,7 @@ const PuszczaKnyszynskaNocleg = () => (
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
         <h3 className="font-heading text-2xl font-light">Zarezerwuj leśny domek do wynajęcia w Puszczy Knyszyńskiej</h3>
-        <p className="text-muted-foreground">Prywatny dom na wyłączność. Kominek. Ruska bania. Cisza.</p>
+        <p className="text-muted-foreground">Prywatny dom na wyłączność. Kominek. Balia ogrodowa z funkcją jacuzzi. Cisza.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">
             Zadzwoń: 722 765 101

@@ -13,7 +13,7 @@ const lodgingSchema = {
     'https://www.suprasl.online/images/jacuzzi-night.jpg',
   ],
   description:
-    'Prywatny dom w lesie na wyłączność koło Supraśla: kominek, ruska bania, ogrodzony ogród, szybkie Wi-Fi i pobyty z psem bez dopłat.',
+    'Prywatny dom w lesie na wyłączność koło Supraśla: kominek, balia ogrodowa z funkcją jacuzzi, ogrodzony ogród, szybkie Wi-Fi i pobyty z psem bez dopłat.',
   telephone: '+48722765101',
   email: 'tutinthewood@gmail.com',
   address: {
@@ -26,7 +26,7 @@ const lodgingSchema = {
   },
   amenityFeature: [
     { '@type': 'LocationFeatureSpecification', name: 'Dom na wyłączność', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Ruska bania z gorącą wodą', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Balia ogrodowa z funkcją jacuzzi', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Kominek', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Ogrodzony teren', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Pobyt z psem bez dopłat', value: true },
@@ -54,7 +54,7 @@ const faqSchema = {
       name: 'Czy In The Woods to hotel, apartament czy domek?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'To cały dom z bali wynajmowany na wyłączność. Goście mają prywatny salon z kominkiem, kuchnię, sypialnie, ogród, taras, parking i ruską banię.',
+        text: 'To cały dom z bali wynajmowany na wyłączność. Goście mają prywatny salon z kominkiem, kuchnię, sypialnie, ogród, taras, parking i balię ogrodową z funkcją jacuzzi.',
       },
     },
     {
@@ -79,7 +79,7 @@ const faqSchema = {
 const highlights = [
   'cały dom i ogród tylko dla Was',
   '10 minut samochodem do centrum Supraśla',
-  'kominek, ruska bania i taras w lesie',
+  'kominek, balia ogrodowa z funkcją jacuzzi i taras w lesie',
   'psy bez dopłat i ogrodzony teren',
   'kuchnia, Wi-Fi, parking i praca zdalna',
   'baza wypadowa do Puszczy Knyszyńskiej',
@@ -97,7 +97,7 @@ const nearbyAttractions = [
 const NoclegiSuprasl = () => (
   <SEOPageLayout
     title="Noclegi Supraśl - dom w lesie z jacuzzi | In The Woods"
-    description="Noclegi Supraśl: prywatny dom w lesie na wyłączność, 10 min od centrum. Kominek, ruska bania, ogrodzony teren, psy bez dopłat, Wi-Fi i parking."
+    description="Noclegi Supraśl: prywatny dom w lesie na wyłączność, 10 min od centrum. Kominek, balia ogrodowa z funkcją jacuzzi, ogrodzony teren, psy bez dopłat, Wi-Fi i parking."
     breadcrumbName="Noclegi Supraśl"
     ogImage="https://www.suprasl.online/images/exterior-main.jpg"
     keywords={[
@@ -122,7 +122,7 @@ const NoclegiSuprasl = () => (
         <p className="text-muted-foreground leading-relaxed text-lg">
           Szukasz <strong>noclegu w Supraślu</strong>, ale zamiast pokoju w hotelu wolisz ciszę,
           przestrzeń i prawdziwy kontakt z Puszczą Knyszyńską? In The Woods to drewniany dom z bali
-          na wyłączność w Konnych koło Supraśla: z kominkiem, ruską banią, ogrodzonym ogrodem,
+          na wyłączność w Konnych koło Supraśla: z kominkiem, balią ogrodową z funkcją jacuzzi, ogrodzonym ogrodem,
           tarasem, kuchnią i miejscem do pracy zdalnej.
         </p>
       </header>
@@ -149,7 +149,7 @@ const NoclegiSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Konkurencyjne obiekty w Supraślu mocno komunikują lokalizację w centrum, pokoje,
         apartamenty, wyżywienie albo bliskość rzeki. In The Woods odpowiada na inną intencję:
-        <strong> domek w lesie blisko Supraśla</strong>, gdzie cały dom, ogród, taras i bania są
+        <strong> domek w lesie blisko Supraśla</strong>, gdzie cały dom, ogród, taras i jacuzzi są
         tylko dla jednej rezerwacji. Nie mijasz innych gości na korytarzu, nie rezerwujesz godziny
         w strefie SPA i nie dopłacasz za psa.
       </p>
@@ -161,9 +161,9 @@ const NoclegiSuprasl = () => (
         najwięcej swobody.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi, banią i kominkiem w Puszczy Knyszyńskiej</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi i kominkiem w Puszczy Knyszyńskiej</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Prywatna ruska bania z gorącą wodą działa jak leśne jacuzzi pod gwiazdami. Po spacerze,
+        Balia ogrodowa z funkcją jacuzzi pozwala odpocząć pod gwiazdami. Po spacerze,
         kajakach albo dniu na rowerze możesz rozpalić kominek, przygotować kolację w kuchni i
         odpocząć bez pośpiechu. Właśnie dlatego strona odpowiada też na frazy poboczne:
         <strong> domek z jacuzzi Podlasie</strong>, <strong>domek z bali Supraśl</strong>,{' '}
@@ -218,7 +218,7 @@ const NoclegiSuprasl = () => (
           <h3 className="font-heading text-xl text-foreground">Czy to dobry nocleg na weekend w Supraślu?</h3>
           <p className="text-muted-foreground leading-relaxed">
             Tak. W dwa lub trzy dni zdążysz zobaczyć Monaster, Muzeum Ikon, bulwary, przejść leśny
-            szlak, zjeść regionalny obiad i wrócić wieczorem do kominka albo bani.
+            szlak, zjeść regionalny obiad i wrócić wieczorem do kominka albo balii ogrodowej z funkcją jacuzzi.
           </p>
         </section>
       </div>
