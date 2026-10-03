@@ -24,6 +24,7 @@ interface BlogArticleLayoutProps {
   dateModified?: string;
   /** Optional array of Event JSON-LD objects to improve event indexing */
   events?: object[];
+  showFaqSection?: boolean;
 }
 
 const BlogArticleLayout = ({
@@ -40,6 +41,7 @@ const BlogArticleLayout = ({
   ogImage = 'https://www.suprasl.online/og-image.jpg',
   dateModified,
   events,
+  showFaqSection = true,
 }: BlogArticleLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,7 +49,7 @@ const BlogArticleLayout = ({
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: title,
     description: metaDescription,
     url: `https://www.suprasl.online/blog/${slug}`,
@@ -201,7 +203,7 @@ const BlogArticleLayout = ({
       </article>
 
       {/* FAQ Section */}
-      {faqs.length > 0 && (
+      {showFaqSection && faqs.length > 0 && (
         <section className="max-w-4xl mx-auto px-6 md:px-12 pb-16">
           <h2 className="font-heading text-2xl md:text-3xl font-light text-foreground mb-8">
             Najczęściej zadawane pytania
