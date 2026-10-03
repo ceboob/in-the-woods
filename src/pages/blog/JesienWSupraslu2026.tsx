@@ -1,5 +1,6 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
+import type { ReactNode } from 'react';
 
 const autumnEvents = [
   {
@@ -79,7 +80,7 @@ const EventTable = ({
   children,
 }: {
   month: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) => (
   <div className="not-prose my-6 overflow-x-auto rounded-lg border border-border">
     <table className="w-full min-w-[640px] text-left text-sm">
@@ -104,8 +105,8 @@ const EventRow = ({
   place,
 }: {
   date: string;
-  time: React.ReactNode;
-  event: React.ReactNode;
+  time: ReactNode;
+  event: ReactNode;
   place: string;
 }) => (
   <tr className="bg-background">
