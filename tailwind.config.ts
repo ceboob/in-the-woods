@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ['"Monoton"', 'cursive'],
-        accent: ['"Love Ya Like A Sister"', 'cursive'],
+        accent: ['"Encode Sans SC"', 'sans-serif'],
         alegreya: ['"Alegreya Sans SC"', 'sans-serif'],
         heading: ['"Poppins"', 'sans-serif'],
         script: ['"Poppins"', 'sans-serif'],
