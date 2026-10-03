@@ -61,7 +61,10 @@ export const routeDefinitions: RouteDefinition[] = [
     path: '/blog/puszcza-knyszynska-historie',
     load: () => import('@/pages/blog/PuszczaKnyszynskaHistorie.tsx'),
   },
-  { path: '/blog/wydarzenia-suprasl-2026', load: () => import('@/pages/blog/WydarzeniaSupra2026.tsx') },
+  {
+    path: '/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne',
+    load: () => import('@/pages/blog/JesienWSupraslu2026.tsx'),
+  },
   { path: '/blog/aktywny-wypoczynek-suprasl', load: () => import('@/pages/blog/AktywnyWypoczynek.tsx') },
   { path: '/blog/uzdrowisko-spa-suprasl', load: () => import('@/pages/blog/UzdrowiSkoSPA.tsx') },
   {

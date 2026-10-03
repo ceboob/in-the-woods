@@ -148,10 +148,10 @@ const GuideSection = () => (
           />
           <Card
             icon={CalendarDays}
-            title="Wydarzenia kulturalne"
-            desc="Festiwale, spektakle Teatru Wierszalin i imprezy plenerowe."
+            title="Jesienne wydarzenia kulturalne"
+            desc="Koncerty, warsztaty, Bison Ultra i Jarmark Świąteczny w Supraślu jesienią 2026."
             cta="Kalendarz imprez"
-            link="/blog/wydarzenia-suprasl-2026"
+            link="/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne"
           />
         </div>
       </div>

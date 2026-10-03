@@ -15,13 +15,23 @@ import blogCoRobic from '@/assets/blog-co-robic-suprasl.jpg';
 import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.jpg';
 import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.jpg';
 import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
-import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.jpg';
+import blogPuszczaPanorama from '@/assets/blog-puszcza-panorama.webp';
 import blogMushrooms from '@/assets/article.jpg';
 import blogNoService from '@/assets/brak-internetu-w-telefonie-co-robic-1536x878.webp';
 import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1.jpg';
 import blogBike from '@/assets/puszcza_knyszynska-.jpg';
 
 const articles = [
+  {
+    slug: 'jesien-w-suprasliu-2026-wydarzenia-kulturalne',
+    title: 'Jesień w Supraślu 2026 – kalendarz wydarzeń kulturalnych',
+    excerpt:
+      'Koncerty fortepianowe, wernisaże, warsztaty kulinarne, bieg Bison Ultra i Jarmark Świąteczny. Sprawdź, co wydarzy się w Supraślu od października do grudnia 2026.',
+    image: blogPuszczaPanorama,
+    date: '2026-10-03',
+    readTime: '12 min',
+    keywords: ['wydarzenia w Supraślu jesienią 2026', 'jesień w Supraślu 2026', 'kalendarz wydarzeń'],
+  },
   {
     slug: 'rykowisko-jeleni-puszcza-knyszynska',
     title: 'Rykowisko jeleni na Podlasiu – gdzie i kiedy je usłyszeć?',
@@ -171,16 +181,6 @@ const articles = [
     date: '2026-04-09',
     readTime: '12 min',
     keywords: ['restauracje Supraśl', 'kuchnia podlaska', 'kartacze'],
-  },
-  {
-    slug: 'wydarzenia-suprasl-2026',
-    title: 'Największe imprezy i wydarzenia w Supraślu 2026 – kalendarz + daty',
-    excerpt:
-      'Pełny kalendarz wydarzeń w Supraślu na 2026: Dni Supraśla, Festiwal Wertep, Święto Chleba i więcej. Daty, opisy i gdzie nocować.',
-    image: blogWydarzenia,
-    date: '2026-03-30',
-    readTime: '12 min',
-    keywords: ['wydarzenia Supraśl 2026', 'imprezy Supraśl', 'festiwale Podlasie'],
   },
   {
     slug: 'puszcza-knyszynska-historie',
@@ -411,7 +411,7 @@ const Blog = () => {
                     sizes="(min-width: 768px) 50vw, 100vw"
                     alt={article.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading={article.slug === articles[0].slug ? 'eager' : 'lazy'}
+                    loading={article.slug === 'jesien-w-suprasliu-2026-wydarzenia-kulturalne' ? 'lazy' : article.slug === articles[0].slug ? 'eager' : 'lazy'}
                     decoding="async"
                     width="600"
                     height="338"
