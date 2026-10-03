@@ -103,7 +103,7 @@ const BlogArticleLayout = ({
   };
 
   // Merge article, FAQ and breadcrumb JSON-LD with any provided event JSON-LD
-  const jsonLdArray = [articleSchema, faqSchema, breadcrumbSchema];
+  const jsonLdArray: object[] = [articleSchema, faqSchema, breadcrumbSchema];
   if (Array.isArray(events) && events.length > 0) {
     // prepend events so search engines see structured events first
     jsonLdArray.unshift(...events);

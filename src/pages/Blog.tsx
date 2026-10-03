@@ -411,7 +411,7 @@ const Blog = () => {
                     sizes="(min-width: 768px) 50vw, 100vw"
                     alt={article.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading={article.slug === articles[0].slug ? 'eager' : 'lazy'}
+                    loading={article.slug === 'jesien-w-suprasliu-2026-wydarzenia-kulturalne' ? 'lazy' : article.slug === articles[0].slug ? 'eager' : 'lazy'}
                     decoding="async"
                     width="600"
                     height="338"
