@@ -1,30 +1,86 @@
-import { TreePine, Shield, Flame } from 'lucide-react';
+import { Flame, MapPin, Shield, Trees } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const items = [
-  { icon: TreePine, title: 'Lokalizacja', desc: 'Serce Puszczy Knyszyńskiej' },
-  { icon: Shield, title: 'Prywatność', desc: 'Dom i ogród tylko dla gości' },
-  { icon: Flame, title: 'Relaks', desc: 'Balia ogrodowa z funkcją jacuzzi i kominek' },
+  {
+    icon: MapPin,
+    title: 'Serce Puszczy Knyszyńskiej',
+    lead: 'Domek w lesie, około 5 km od Supraśla i blisko szlaków.',
+    description:
+      'Domek stoi w samym środku lasu, około 5 km od centrum Supraśla, a Białystok leży około 20–25 km dalej. W pobliżu są szlaki piesze i rowerowe oraz obszary Natura 2000: Puszcza Knyszyńska (PLB200003) i Ostoja Knyszyńska (PLH200006). Supraśl zaprasza do monasteru, Muzeum Ikon, nad rzekę i do Arboretum w Kopnej Górze.',
+  },
+  {
+    icon: Trees,
+    title: 'Rezerwat Krzemienne Góry',
+    lead: 'Spokojny kierunek na spacer i obserwowanie przyrody.',
+    description: (
+      <>
+        Rezerwat leśny o powierzchni 79,27 ha, objęty ochroną częściową, chroni stary las w
+        Puszczy Knyszyńskiej. To kierunek na spacer i obserwowanie przyrody: można wsłuchać się
+        w śpiew ptaków, a w sezonie przychodzi czas grzybów i jagód. Prosimy zostać na
+        oznakowanych szlakach, nie rozpalać ognisk ani nie zbierać gatunków chronionych;{' '}
+        <Link to="/atrakcje-suprasl" className="underline underline-offset-4">
+          sprawdź atrakcje w okolicy
+        </Link>{' '}
+        i oficjalne informacje w{' '}
+        <a
+          href="https://suprasl.bialystok.lasy.gov.pl/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-4"
+        >
+          Nadleśnictwie Supraśl
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    icon: Shield,
+    title: 'Dom i ogród dla gości',
+    lead: 'Cała przestrzeń jest tylko do Waszej dyspozycji.',
+    description:
+      'Cały dom i ogród są przeznaczone wyłącznie dla gości — nie ma tu współdzielonych przestrzeni. Wokół są las i kilku spokojnych sąsiadów, a na miejscu czekają taras z grillem oraz bezpłatny prywatny parking. Dzieci mają przestrzeń do zabawy i dostępne zabawki; informacje o pobycie ze zwierzęciem warto potwierdzić przed rezerwacją.',
+  },
+  {
+    icon: Flame,
+    title: 'Balia i kominek',
+    lead: 'Leśna cisza, ciepła kąpiel i wieczór przy ogniu.',
+    description:
+      'Po dniu w lesie można odpocząć w balii ogrodowej z funkcją jacuzzi, a wieczór spędzić przy kominku. Dwie niedawno odnowione łazienki, w pełni wyposażona kuchnia, ekspres do kawy i bezpłatne Wi-Fi ułatwiają codzienny pobyt. Przy sprzyjającej pogodzie można podziwiać gwiazdy i wsłuchać się w leśną ciszę.',
+  },
 ];
 
 const TrustSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="px-6 md:px-12 py-12 md:py-16 bg-background">
-      <div
-        ref={ref}
-        className={`max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-      >
-        {items.map((item, i) => (
-          <div key={i} className="card-premium p-6 text-center space-y-4">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-              <item.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
-            </div>
-            <h3 className="font-heading text-xl font-semibold text-foreground">{item.title}</h3>
-            <p className="text-sm text-muted-foreground">{item.desc}</p>
-          </div>
-        ))}
+    <section aria-labelledby="highlights-title" className="px-6 md:px-12 py-12 md:py-16 bg-background">
+      <div className="max-w-6xl mx-auto">
+        <h2 id="highlights-title" className="section-title text-center mb-8">
+          Dlaczego Krzemienna Chata? Las, prywatność i relaks
+        </h2>
+        <div
+          ref={ref}
+          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        >
+          {items.map((item) => (
+            <article key={item.title} className="card-premium p-6 text-center space-y-4">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                <item.icon aria-hidden="true" className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              </div>
+              <h3 className="font-heading text-xl font-semibold text-foreground">{item.title}</h3>
+              <p className="font-medium text-foreground">{item.lead}</p>
+              <p className="text-sm text-muted-foreground">{item.description}</p>
+            </article>
+          ))}
+        </div>
+        <p className="text-center mt-8">
+          <a href="#rezerwacja" className="btn-primary inline-flex">
+            Sprawdź dostępność
+          </a>
+        </p>
       </div>
     </section>
   );
