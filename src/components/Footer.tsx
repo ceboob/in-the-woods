@@ -55,6 +55,65 @@ const Footer = () => (
       </div>
 
       <div className="mt-8 border-t border-white/15 pt-6">
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
+          <a
+            href="https://www.airbnb.pl/rooms/1165170256851279014?guests=1&adults=1&s=67&unique_share_id=cd1458aa-ed37-425b-8252-1fcae5ea10b2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Airbnb"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/logos/airbnb-wordmark.svg"
+              alt="Airbnb"
+              loading="lazy"
+              className="h-7 w-auto"
+            />
+          </a>
+          <a
+            href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Alohacamp"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/logos/alohacamp-wordmark.svg"
+              alt="Alohacamp"
+              loading="lazy"
+              className="h-7 w-auto"
+            />
+          </a>
+          <a
+            href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Booking.com"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/logos/booking-wordmark.svg"
+              alt="Booking.com"
+              loading="lazy"
+              className="h-7 w-auto"
+            />
+          </a>
+          <a
+            href="https://doginclusive.com/oferty/in-the-woods-"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Doginclusive.pl"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/logos/doginclusive-wordmark.svg"
+              alt="Doginclusive.pl"
+              loading="lazy"
+              className="h-7 w-auto"
+            />
+          </a>
+        </div>
+
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/70">
           <Link to="/noclegi-suprasl" className="transition-colors hover:text-primary">
             Noclegi Supraśl

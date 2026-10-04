@@ -1,0 +1,6 @@
+<svg width="280" height="64" viewBox="0 0 280 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Booking.com">
+  <rect width="280" height="64" fill="#ffffff"/>
+  <text x="10" y="45" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700">
+    <tspan fill="#1f3c88">Booking</tspan><tspan fill="#28a3e0">.com</tspan>
+  </text>
+</svg>
