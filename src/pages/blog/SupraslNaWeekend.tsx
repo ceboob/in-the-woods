@@ -23,7 +23,7 @@ const SupraslNaWeekend = () => (
       { title: 'Supraśl z dziećmi', slug: 'suprasl-z-dziecmi' },
     ]}
   >
-    <h2>Supraśl na weekend – gotowy plan zwiedzania na 2 dni (atrakcje, jedzenie, relaks)</h2>
+    <h2>Supraśl na weekend: gotowy plan zwiedzania na 2 dni</h2>
 
     <p>
       Zastanawiasz się, jak spędzić idealny <strong>weekend w Supraślu</strong>? Przygotowaliśmy
@@ -63,7 +63,7 @@ const SupraslNaWeekend = () => (
     <h3>Wieczór: Relaks (17:30+)</h3>
     <p>
       Wieczór spędź na regeneracji. Jeśli nocujesz w{' '}
-      <Link to="/">In The Woods</Link>, rozpal kominek i wyjdź do ruskiej bani — gorąca woda pod
+      <Link to="/">In The Woods</Link>, rozpal kominek i odpocznij w balii ogrodowej z funkcją jacuzzi — gorąca woda pod
       gwiazdami to niezapomniane doświadczenie.
     </p>
 
@@ -104,7 +104,7 @@ const SupraslNaWeekend = () => (
 
     <h2>Gdzie przenocować?</h2>
     <p>
-      <Link to="/">In The Woods</Link> to prywatny dom w lesie z kominkiem, ruską banią i
+      <Link to="/">In The Woods</Link> to prywatny dom w lesie z kominkiem, balią ogrodową z funkcją jacuzzi i
       ogrodem — idealny na romantyczny weekend we dwoje lub wyprawę z przyjaciółmi (do 8 osób).
       10 minut od centrum Supraśla, w sercu Puszczy Knyszyńskiej.
     </p>

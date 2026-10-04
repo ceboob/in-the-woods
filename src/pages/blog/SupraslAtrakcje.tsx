@@ -72,7 +72,7 @@ const SupraslAtrakcje = () => {
         <Link to="/weekend-suprasl">weekend</Link>, romantyczny wyjazd lub rodzinne wakacje.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogMonaster}
         alt="Monaster Supraśl – atrakcje, co zobaczyć"
         className="w-full rounded-lg my-8"
@@ -120,7 +120,7 @@ const SupraslAtrakcje = () => {
         kontekst i symbolikę każdego dzieła.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogRzeka}
         alt="Rzeka Supraśl – kajaki, atrakcje Supraśl"
         className="w-full rounded-lg my-8"
@@ -203,7 +203,7 @@ const SupraslAtrakcje = () => {
         tydzień.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={exteriorMain}
         alt="In The Woods – noclegi Supraśl, dom w lesie z jacuzzi"
         className="w-full rounded-lg my-8"

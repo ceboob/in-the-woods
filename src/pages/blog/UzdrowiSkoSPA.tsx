@@ -23,7 +23,7 @@ const UzdrowiSkoSPA = () => (
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
-    <h2>Uzdrowisko Supraśl: Jak skorzystać z leczenia borowiną i zregenerować siły?</h2>
+    <h2>Uzdrowisko Supraśl: leczenie borowiną i regeneracja</h2>
 
     <p>
       Supraśl to <strong>jedyne uzdrowisko w województwie podlaskim</strong>, słynące z borowiny i
@@ -106,7 +106,7 @@ const UzdrowiSkoSPA = () => (
     <h2>Gdzie nocować podczas pobytu uzdrowiskowego?</h2>
     <p>
       Jeśli szukasz alternatywy dla hotelowego SPA — prywatności, ciszy i kontaktu z naturą —{' '}
-      <Link to="/">In The Woods</Link> to dom w lesie z ruską banią, kominkiem i ogrodem. Po
+      <Link to="/">In The Woods</Link> to dom w lesie z balią ogrodową z funkcją jacuzzi, kominkiem i ogrodem. Po
       zabiegach w uzdrowisku wracasz do swojego azylu w Puszczy Knyszyńskiej.{' '}
       <Link to="/noclegi-suprasl">Sprawdź noclegi</Link>.
     </p>

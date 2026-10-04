@@ -15,7 +15,8 @@ export default {
     extend: {
       fontFamily: {
         display: ['"Monoton"', 'cursive'],
-        accent: ['"Marcellus SC"', 'serif'],
+        accent: ['"Encode Sans SC"', 'sans-serif'],
+        alegreya: ['"Alegreya Sans SC"', 'sans-serif'],
         heading: ['"Poppins"', 'sans-serif'],
         script: ['"Poppins"', 'sans-serif'],
         serif: ['"Poppins"', 'sans-serif'],

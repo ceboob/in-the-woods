@@ -2,6 +2,7 @@ import { ReactNode, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft, Calendar, Clock, ChevronRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import SEOHead from '@/components/SEOHead';
 
 interface FAQ {
   question: string;
@@ -21,6 +22,9 @@ interface BlogArticleLayoutProps {
   relatedArticles?: { title: string; slug: string }[];
   ogImage?: string;
   dateModified?: string;
+  /** Optional array of Event JSON-LD objects to improve event indexing */
+  events?: object[];
+  showFaqSection?: boolean;
 }
 
 const BlogArticleLayout = ({
@@ -36,6 +40,8 @@ const BlogArticleLayout = ({
   relatedArticles = [],
   ogImage = 'https://www.suprasl.online/og-image.jpg',
   dateModified,
+  events,
+  showFaqSection = true,
 }: BlogArticleLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -43,7 +49,7 @@ const BlogArticleLayout = ({
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: title,
     description: metaDescription,
     url: `https://www.suprasl.online/blog/${slug}`,
@@ -96,26 +102,29 @@ const BlogArticleLayout = ({
     ],
   };
 
+  // Merge article, FAQ and breadcrumb JSON-LD with any provided event JSON-LD
+  const jsonLdArray: object[] = [articleSchema, faqSchema, breadcrumbSchema];
+  if (Array.isArray(events) && events.length > 0) {
+    // prepend events so search engines see structured events first
+    jsonLdArray.unshift(...events);
+  }
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={metaTitle}
+        description={metaDescription}
+        canonical={`https://www.suprasl.online/blog/${slug}`}
+        ogImage={ogImage}
+        keywords={keywords}
+        type="article"
+        jsonLd={jsonLdArray}
+        publishedTime={publishDate}
+        modifiedTime={dateModified || publishDate}
+      />
       <Helmet>
-        <title>{metaTitle}</title>
-        <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://www.suprasl.online/blog/${slug}`} />
-        <meta property="og:title" content={metaTitle} />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={`https://www.suprasl.online/blog/${slug}`} />
-        <meta property="og:image" content={ogImage} />
-        <meta property="og:type" content="article" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={metaTitle} />
-        <meta name="twitter:description" content={metaDescription} />
-        <meta name="twitter:image" content={ogImage} />
-        <meta name="keywords" content={keywords.join(', ')} />
-        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <meta property="article:author" content="In The Woods" />
+        <meta property="article:section" content="Blog" />
       </Helmet>
 
       {/* Navbar */}
@@ -177,7 +186,7 @@ const BlogArticleLayout = ({
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
           <span className="inline-flex items-center gap-1.5">
             <Calendar className="w-3.5 h-3.5" />
-            {publishDate}
+            <time dateTime={publishDate}>{publishDate}</time>
           </span>
           <span className="inline-flex items-center gap-1.5">
             <Clock className="w-3.5 h-3.5" />
@@ -194,7 +203,7 @@ const BlogArticleLayout = ({
       </article>
 
       {/* FAQ Section */}
-      {faqs.length > 0 && (
+      {showFaqSection && faqs.length > 0 && (
         <section className="max-w-4xl mx-auto px-6 md:px-12 pb-16">
           <h2 className="font-heading text-2xl md:text-3xl font-light text-foreground mb-8">
             Najczęściej zadawane pytania

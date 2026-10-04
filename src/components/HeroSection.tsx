@@ -50,34 +50,23 @@ const HeroSection = () => {
           src={heroImgLg}
           srcSet={`${heroImgSm} 640w, ${heroImgLg} 1028w`}
           sizes="100vw"
-          alt="Leśny dom na wyłączność z jacuzzi i sauną w Puszczy Knyszyńskiej — In The Woods noclegi Supraśl"
+          alt="Całoroczny dom na Podlasiu z balią ogrodową — In The Woods koło Supraśla"
           className="w-full h-full object-cover"
           width="1028"
           height="771"
           loading="eager"
-          fetchPriority="high"
+          fetchpriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#333333]/75 via-[#333333]/50 to-[#333333]/80" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h1
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4 animate-fade-up drop-shadow-lg font-accent mt-8 sm:mt-0"
-        >
-          Leśny dom na wyłączność — domek w lesie z jacuzzi i sauną
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium text-white text-center leading-tight animate-fade-up drop-shadow-lg font-accent mt-8 sm:mt-0">
+          Klimatyczny dom z bali w Puszczy Knyszyńskiej
         </h1>
-        <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-white/90 mb-3 animate-fade-in">
-          Puszcza Knyszyńska · Supraśl · Podlasie
+        <p className="font-alegreya font-medium mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white/90 animate-fade-up delay-100">
+          Dom na wyłączność z balią ogrodową z funkcją jacuzzi i kominkiem. Odpocznij w leśnym zaciszu zaledwie 10 minut od Supraśla.
         </p>
-
-        <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
-          <p className="text-base md:text-lg text-white text-smallcaps">
-            Ucieczka od zgiełku miasta. Detoks cyfrowy w lesie.
-          </p>
-          <p className="text-base md:text-lg text-white text-smallcaps">
-            Spokojny wypoczynek w naturze — kominek, balia, cisza.
-          </p>
-        </div>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
           <div className="flex items-center gap-2 text-white/90">

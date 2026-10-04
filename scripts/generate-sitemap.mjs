@@ -1,19 +1,31 @@
 import fs from 'node:fs';
+import { getRouteManifest } from './lib/route-manifest.mjs';
 
-const APP_FILE = 'src/App.tsx';
 const SITEMAP_FILE = 'public/sitemap.xml';
 const BASE_URL = 'https://www.suprasl.online';
 const TODAY = new Date().toISOString().slice(0, 10);
 
-const NON_INDEXABLE_ROUTES = new Set(['/admin', '/admin/login', '/platnosc-sukces']);
+function defaultMetaForRoute(route) {
+  if (route === '/') {
+    return { changefreq: 'weekly', priority: '1.0' };
+  }
 
-const appContent = fs.readFileSync(APP_FILE, 'utf8');
-const routeMatches = [...appContent.matchAll(/path="([^"]+)"/g)].map((m) => m[1]);
+  if (route === '/blog') {
+    return { changefreq: 'weekly', priority: '0.8' };
+  }
 
-const routes = [...new Set(routeMatches)]
-  .filter((route) => route !== '*')
-  .map((route) => (route.endsWith('/') && route !== '/' ? route.slice(0, -1) : route))
-  .filter((route) => !NON_INDEXABLE_ROUTES.has(route));
+  if (route.startsWith('/blog/')) {
+    return { changefreq: 'monthly', priority: '0.7' };
+  }
+
+  if (route === '/informator' || route === '/dokumenty' || route === '/polityka-prywatnosci') {
+    return { changefreq: 'monthly', priority: '0.6' };
+  }
+
+  return { changefreq: 'weekly', priority: '0.8' };
+}
+
+const { indexableRoutes: routes } = getRouteManifest();
 
 const oldSitemap = fs.readFileSync(SITEMAP_FILE, 'utf8');
 
@@ -32,7 +44,7 @@ for (const block of oldSitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
 const xmlEntries = routes
   .map((route) => {
     const loc = route === '/' ? `${BASE_URL}/` : `${BASE_URL}${route}`;
-    const meta = oldMeta.get(route) ?? { changefreq: 'monthly', priority: '0.7' };
+    const meta = oldMeta.get(route) ?? defaultMetaForRoute(route);
     return `  <url>
     <loc>${loc}</loc>
     <lastmod>${TODAY}</lastmod>

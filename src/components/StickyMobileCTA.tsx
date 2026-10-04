@@ -5,6 +5,8 @@ const StickyMobileCTA = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+
     const onScroll = () => {
       // Show after scrolling past hero (approx 600px)
       setVisible(window.scrollY > 600);
@@ -14,6 +16,7 @@ const StickyMobileCTA = () => {
   }, []);
 
   const scrollToBooking = () => {
+    if (typeof document === 'undefined') return;
     document.querySelector('#rezerwacja')?.scrollIntoView({ behavior: 'smooth' });
   };
 

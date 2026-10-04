@@ -15,14 +15,55 @@ import blogCoRobic from '@/assets/blog-co-robic-suprasl.jpg';
 import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.jpg';
 import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.jpg';
 import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
-import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.jpg';
+import blogPuszczaPanorama from '@/assets/blog-puszcza-panorama.webp';
+import blogMushrooms from '@/assets/article.jpg';
+import blogNoService from '@/assets/brak-internetu-w-telefonie-co-robic-1536x878.webp';
+import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1.jpg';
+import blogBike from '@/assets/puszcza_knyszynska-.jpg';
 
 const articles = [
+  {
+    slug: 'jesien-w-suprasliu-2026-wydarzenia-kulturalne',
+    title: 'Jesień w Supraślu 2026 – kalendarz wydarzeń kulturalnych',
+    excerpt:
+      'Koncerty fortepianowe, wernisaże, warsztaty kulinarne, bieg Bison Ultra i Jarmark Świąteczny. Sprawdź, co wydarzy się w Supraślu od października do grudnia 2026.',
+    image: blogPuszczaPanorama,
+    date: '2026-10-03',
+    readTime: '12 min',
+    keywords: ['wydarzenia w Supraślu jesienią 2026', 'jesień w Supraślu 2026', 'kalendarz wydarzeń'],
+  },
+  {
+    slug: 'rykowisko-jeleni-puszcza-knyszynska',
+    title: 'Rykowisko jeleni na Podlasiu – gdzie i kiedy je usłyszeć?',
+    excerpt: 'Sprawdź, kiedy trwa rykowisko jeleni i gdzie bezpiecznie usłyszeć je w Puszczy Knyszyńskiej koło Supraśla.',
+    image: blogMeadow,
+    date: '2026-08-12',
+    readTime: '6 min',
+    keywords: [
+      'rykowisko jeleni',
+      'rykowisko jeleni na Podlasiu',
+      'rykowisko w Puszczy Knyszyńskiej',
+      'kiedy jest rykowisko jeleni',
+      'gdzie usłyszeć rykowisko jeleni',
+      'obserwacja jeleni Supraśl',
+    ],
+  },
+  {
+    slug: 'suprasl-zima',
+    title: 'Supraśl zimą – magia Podlasia i Puszczy Knyszyńskiej',
+    excerpt:
+      'Odkryj zaśnieżone szlaki, ślady dzikich zwierząt, ciszę Poczopek i kulig z ogniskiem w In The Woods Konne.',
+    image:
+      'https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-2.jpg',
+    date: '2026-09-30',
+    readTime: '8 min',
+    keywords: ['Supraśl zimą', 'Podlasie zimą', 'Puszcza Knyszyńska', 'kulig Supraśl'],
+  },
   {
     slug: 'puszcza-knyszynska-przewodnik',
     title: 'Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX',
     excerpt: 'Odkryj Puszczę Knyszyńską: najpiękniejsze szlaki piesze, rowerowe i narciarskie z mapami GPX do pobrania. Kajaki, rykowisko, Kruszyniany i Supraśl.',
-    image: blogNajlepszeMiejsca,
+    image: blogMeadow,
     date: '2026-04-09',
     readTime: '15 min',
     keywords: ['Puszcza Knyszyńska', 'szlaki GPX', 'atrakcje', 'przewodnik'],
@@ -40,7 +81,7 @@ const articles = [
     slug: 'cyfrowy-detoks-las',
     title: 'Cyfrowy detoks w praktyce: Domek w środku lasu to najlepsze miejsce na reset',
     excerpt: 'Potrzebujesz resetu od ekranów? Odkryj, dlaczego domek w lesie na Podlasiu to idealne miejsce na cyfrowy detoks.',
-    image: blogNajlepszeMiejsca,
+    image: blogNoService,
     date: '2026-04-09',
     readTime: '9 min',
     keywords: ['cyfrowy detoks', 'domek w lesie'],
@@ -49,7 +90,7 @@ const articles = [
     slug: 'grzybobranie-puszcza-knyszynska',
     title: 'Jesienne grzybobranie w Puszczy Knyszyńskiej – przewodnik',
     excerpt: 'Gdzie zbierać grzyby w Puszczy Knyszyńskiej? Najlepsze miejsca, gatunki, sezon i praktyczne porady.',
-    image: blogSzlak,
+    image: blogMushrooms,
     date: '2026-04-09',
     readTime: '10 min',
     keywords: ['grzybobranie Puszcza Knyszyńska', 'grzyby Podlasie'],
@@ -67,7 +108,7 @@ const articles = [
     slug: 'podlasie-z-psem',
     title: 'Podlasie z psem – gdzie szukać noclegu i na co zwrócić uwagę?',
     excerpt: 'Planujesz wakacje z psem? Ogrodzony ogród, szlaki leśne i porady na wyjazd z czworonogiem na Podlasie.',
-    image: blogSzlak,
+    image: blogMeadow,
     date: '2026-04-09',
     readTime: '9 min',
     keywords: ['Podlasie z psem', 'nocleg z psem Supraśl'],
@@ -86,7 +127,7 @@ const articles = [
     title: 'Puszcza Knyszyńska na piechotę i rowerem – najlepsze szlaki z Supraśla',
     excerpt:
       'Szlaki piesze i rowerowe dla rodzin i zaawansowanych. Green Velo, Arboretum Kopna Góra, Wzgórza Świętojańskie. Mapy i praktyczne porady.',
-    image: blogSzlak,
+    image: blogBike,
     date: '2026-04-09',
     readTime: '14 min',
     keywords: ['szlaki Puszcza Knyszyńska', 'szlaki rowerowe Supraśl'],
@@ -116,7 +157,7 @@ const articles = [
     title: 'Supraśl Aktywnie: 5 Pomysłów na Weekend w Puszczy Knyszyńskiej',
     excerpt:
       'Szlaki rowerowe, spływy kajakowe, nordic walking, narciarstwo biegowe i Arboretum Kopna Góra.',
-    image: blogCoRobic,
+    image: blogBike,
     date: '2026-04-09',
     readTime: '11 min',
     keywords: ['aktywny wypoczynek Supraśl', 'szlaki rowerowe Supraśl'],
@@ -140,16 +181,6 @@ const articles = [
     date: '2026-04-09',
     readTime: '12 min',
     keywords: ['restauracje Supraśl', 'kuchnia podlaska', 'kartacze'],
-  },
-  {
-    slug: 'wydarzenia-suprasl-2026',
-    title: 'Największe imprezy i wydarzenia w Supraślu 2026 – kalendarz + daty',
-    excerpt:
-      'Pełny kalendarz wydarzeń w Supraślu na 2026: Dni Supraśla, Festiwal Wertep, Święto Chleba i więcej. Daty, opisy i gdzie nocować.',
-    image: blogWydarzenia,
-    date: '2026-03-30',
-    readTime: '12 min',
-    keywords: ['wydarzenia Supraśl 2026', 'imprezy Supraśl', 'festiwale Podlasie'],
   },
   {
     slug: 'puszcza-knyszynska-historie',
@@ -275,7 +306,7 @@ const articles = [
     slug: 'szlaki-piesze-rowerowe-suprasl',
     title: 'Najlepsze szlaki piesze i rowerowe – Supraśl i Puszcza Knyszyńska',
     excerpt: 'Kompletny przewodnik po szlakach pieszych i rowerowych w okolicach Supraśla.',
-    image: blogSzlak,
+    image: blogBike,
     date: '2026-03-01',
     readTime: '13 min',
     keywords: ['szlaki Supraśl', 'trasy rowerowe Supraśl'],
@@ -293,24 +324,27 @@ const Blog = () => {
         title="Blog Supraśl – atrakcje i szlaki | In The Woods"
         description="Blog o Supraślu – atrakcje, szlaki, historia i turystyka w Puszczy Knyszyńskiej. Przewodnik turystyczny."
         canonical="https://www.suprasl.online/blog"
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            {
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.suprasl.online/' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.suprasl.online/blog' },
+            ],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'Artykuły bloga In The Woods',
+            itemListElement: articles.map((article, index) => ({
               '@type': 'ListItem',
-              position: 1,
-              name: 'Strona główna',
-              item: 'https://www.suprasl.online/',
-            },
-            {
-              '@type': 'ListItem',
-              position: 2,
-              name: 'Blog',
-              item: 'https://www.suprasl.online/blog',
-            },
-          ],
-        }}
+              position: index + 1,
+              name: article.title,
+              url: `https://www.suprasl.online/blog/${article.slug}`,
+            })),
+          },
+        ]}
       />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
@@ -369,21 +403,26 @@ const Blog = () => {
               to={`/blog/${article.slug}`}
               className="group border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 bg-card"
             >
-              <div className="aspect-[16/9] overflow-hidden">
-                <img
-                   src={article.image}
-                   alt={article.title}
-                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                   loading="lazy"
-                   width="600"
-                   height="338"
-                 />
-              </div>
+              {article.image && (
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src={article.image}
+                    srcSet={`${article.image} 600w`}
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    alt={article.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading={article.slug === 'jesien-w-suprasliu-2026-wydarzenia-kulturalne' ? 'lazy' : article.slug === articles[0].slug ? 'eager' : 'lazy'}
+                    decoding="async"
+                    width="600"
+                    height="338"
+                  />
+                </div>
+              )}
               <div className="p-6 space-y-3">
                 <div className="flex items-center gap-4 text-xs text-muted-foreground">
                   <span className="inline-flex items-center gap-1">
                     <Calendar className="w-3 h-3" />
-                    {article.date}
+                    <time dateTime={article.date}>{article.date}</time>
                   </span>
                   <span className="inline-flex items-center gap-1">
                     <Clock className="w-3 h-3" />

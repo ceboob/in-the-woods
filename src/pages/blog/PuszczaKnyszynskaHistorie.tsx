@@ -12,7 +12,7 @@ const PuszczaKnyszynskaHistorie = () => (
   <BlogArticleLayout
     title="Puszcza Knyszyńska historie – 7 niezwykłych opowieści"
     metaTitle="Puszcza Knyszyńska – 7 niezwykłych historii"
-    metaDescription="Puszcza Knyszyńska historie i noclegi Supraśl – odkryj Galerię Leśną Powstania Styczniowego oraz wyjątkowy dom w lesie z jacuzzi (In The Woods) tylko 300 m od atrakcji."
+    metaDescription="Puszcza Knyszyńska historie: 7 opowieści o regionie, miejscach pamięci i przyrodzie. Przewodnik z inspiracjami na wycieczkę."
     slug="puszcza-knyszynska-historie"
     publishDate="2026-03-28"
     readTime="14 min"
@@ -67,9 +67,9 @@ const PuszczaKnyszynskaHistorie = () => (
       { title: 'Szlaki piesze i rowerowe Supraśl', slug: 'szlaki-piesze-rowerowe-suprasl' },
     ]}
   >
-    <h2>Puszcza Knyszyńska historie – 7 niezwykłych opowieści, które musisz poznać</h2>
+    <h2>Puszcza Knyszyńska historie — 7 niezwykłych opowieści</h2>
 
-    <img
+    <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
       src={heroImg}
       alt="Leśna droga w Puszczy Knyszyńskiej w porannej mgle"
       className="rounded-lg shadow-md w-full"
@@ -91,7 +91,7 @@ const PuszczaKnyszynskaHistorie = () => (
       i fascynujące ślady przeszłości.
     </p>
 
-    <img
+    <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
       src={panoramaImg}
       alt="Panorama Puszczy Knyszyńskiej o zachodzie słońca"
       className="rounded-lg shadow-md w-full"
@@ -116,7 +116,7 @@ const PuszczaKnyszynskaHistorie = () => (
       korzystali z naturalnych uwarunkowań terenu, tworząc mobilne oddziały.
     </p>
 
-    <img
+    <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
       src={powstanieLasImg}
       alt="Kolorowa rycina XIX-wieczna — powstańcy styczniowi w lesie"
       className="rounded-lg shadow-md w-full"
@@ -143,14 +143,14 @@ const PuszczaKnyszynskaHistorie = () => (
     </p>
 
     <div className="grid sm:grid-cols-2 gap-4 not-prose my-8">
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={galeriaRzezbyImg}
         alt="Rzeźby z drewna w Galerii Leśnej Powstania Styczniowego"
         className="rounded-lg shadow-md w-full h-64 object-cover"
       width="800"
                height="600"
              />
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={galeriaPostacImg}
         alt="Drewniana rzeźba postaci w Galerii Leśnej"
         className="rounded-lg shadow-md w-full h-64 object-cover"
@@ -183,7 +183,7 @@ const PuszczaKnyszynskaHistorie = () => (
       nadają puszczy dodatkowy rys tajemniczości.
     </p>
 
-    <img
+    <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
       src={kladkiImg}
       alt="Drewniane kładki na szlaku przez Puszczę Knyszyńską"
       className="rounded-lg shadow-md w-full"
@@ -223,7 +223,7 @@ const PuszczaKnyszynskaHistorie = () => (
       i powstania, jest metaforą polskiej historii — zniszczony, a jednak odrastający z nową siłą.
     </p>
 
-    <img
+    <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
       src={rekonstrukcjaImg}
       alt="Rekonstrukcja historyczna Powstania Styczniowego w Puszczy Knyszyńskiej"
       className="rounded-lg shadow-md w-full"

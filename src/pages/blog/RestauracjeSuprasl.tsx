@@ -89,7 +89,7 @@ const RestauracjeSuprasl = () => {
         staje się podróżą kulinarną po smakach Podlasia.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogRestauracje}
         alt="restauracje Supraśl – kuchnia podlaska, kartacze i regionalne dania"
         className="w-full rounded-lg my-8"
@@ -143,7 +143,7 @@ const RestauracjeSuprasl = () => {
         pamiątką z Podlasia.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogMonaster}
         alt="Supraśl centrum – klimatyczne miasteczko uzdrowiskowe na Podlasiu"
         className="w-full rounded-lg my-8"
@@ -163,7 +163,7 @@ const RestauracjeSuprasl = () => {
       <p className="text-sm text-muted-foreground mb-2">
         <strong>Adres:</strong> ul. 3-go Maja 22, 16-030 Supraśl
       </p>
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogBarJarzebinka}
         alt="Bar Jarząbinka Supraśl – kultowy bar z kuchnią podlaską, babka ziemniaczana i kartacze"
         className="w-full rounded-lg my-4"
@@ -188,7 +188,7 @@ const RestauracjeSuprasl = () => {
       <p className="text-sm text-muted-foreground mb-2">
         <strong>Adres:</strong> Plac Tadeusza Kościuszki 1, 16-030 Supraśl
       </p>
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogBohema}
         alt="Bohema Supraśl – elegancka restauracja z kuchnią polską i regionalną na Placu Kościuszki"
         className="w-full rounded-lg my-4"
@@ -212,7 +212,7 @@ const RestauracjeSuprasl = () => {
       <p className="text-sm text-muted-foreground mb-2">
         <strong>Adres:</strong> ul. Nowy Świat 2, 16-030 Supraśl
       </p>
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogLukaszowka}
         alt="Łukaszówka Supraśl – domowe pierogi, kartacze i kuchnia regionalna Podlasia"
         className="w-full rounded-lg my-4"
@@ -325,7 +325,7 @@ const RestauracjeSuprasl = () => {
         historii, ludziach i krajobrazie tego wyjątkowego zakątka Polski.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={kitchenTraditional}
         alt="jedzenie Supraśl – tradycyjna kuchnia podlaska"
         className="w-full rounded-lg my-8"

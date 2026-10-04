@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: TreePine,
     title: 'Zanurz się w naturze',
-    text: 'Puszcza Knyszyńska tuż za progiem — szepty puszczy, śpiew ptaków i\u00a0poranne mgły. Supraśl z\u00a0jego atrakcjami zaledwie 10\u00a0minut drogi. To domek w\u00a0lesie na Podlasiu, jakiego szukasz.',
+    text: 'Puszcza Knyszyńska szumi tuż za progiem, poranne mgły unoszą się nad polanami, a do zabytkowego Supraśla dotrzesz w niecałe 10 minut. Jeśli szukasz komfortowego domu do wynajęcia w okolicach Białegostoku, z dala od sąsiadów i miejskiego pośpiechu — właśnie go znalazłeś.',
   },
   {
     icon: Home,
@@ -37,13 +37,12 @@ const HeroWelcome = () => {
           Od gospodarza
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl text-foreground mb-6 text-center font-accent">
-          Leśny domek do wynajęcia — dom z bali na wyłączność
+          Twój prywatny azyl — leśny dom do wynajęcia na Podlasiu
         </h2>
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
           <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed font-accent">
-            Oddajemy w&nbsp;Wasze ręce nasz dom — miejsce, w&nbsp;które włożyliśmy mnóstwo serca,
-            potu, pracy i&nbsp;litry kawy. Zanurz się w&nbsp;naturze i&nbsp;poczuj, jak czas się zatrzymuje.
+            Oddajemy Wam nasz całoroczny dom z bali na wyłączność — prywatny azyl stworzony z sercem i pasją. Tutaj nie dzielicie przestrzeni z nikim. Tylko Wy, las i prawdziwa cisza. Zanurzcie się w naturze, zwolnijcie i poczujcie, jak wraca spokój. Zarezerwujcie termin już dziś — wolnych dat jest coraz mniej.
           </p>
         </div>
 

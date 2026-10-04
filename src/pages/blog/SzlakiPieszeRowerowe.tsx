@@ -74,7 +74,7 @@ const SzlakiPieszeRowerowe = () => {
         trasy na popołudniowy spacer — znajdziesz tu coś dla siebie.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogSzlak}
         alt="Puszcza Knyszyńska – szlaki piesze i rowerowe Supraśl"
         className="w-full rounded-lg my-8"
@@ -156,7 +156,7 @@ const SzlakiPieszeRowerowe = () => {
         puszczy.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogRowerowa}
         alt="Trasy rowerowe Supraśl – Puszcza Knyszyńska"
         className="w-full rounded-lg my-8"
@@ -294,7 +294,7 @@ const SzlakiPieszeRowerowe = () => {
         jest niezbędna, a cierpliwość — nagrodzona.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={jacuzziNight}
         alt="Jacuzzi po wędrówce – In The Woods, noclegi Supraśl"
         className="w-full rounded-lg my-8"

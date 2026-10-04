@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Luckiest+Guy&family=Marcellus+SC&family=Monoton&family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Encode+Sans+SC:wght@500&family=Lato:wght@400;700&family=Luckiest+Guy&family=Monoton&family=Poppins:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -232,8 +232,9 @@
     font-family: "Monoton", cursive;
   }
 
-  .font-accent {
-    font-family: "Marcellus SC", serif;
+.font-accent {
+    font-family: "Encode Sans SC", sans-serif;
+    font-weight: 500;
   }
 
   .logo-glow {

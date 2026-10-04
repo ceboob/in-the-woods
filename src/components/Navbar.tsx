@@ -50,7 +50,7 @@ const navItems: NavItem[] = [
     ],
   },
   { label: 'Cennik', href: '#cennik' },
-  { label: 'Przewodnik', href: '/blog', isRoute: true },
+  { label: 'Blog', href: '/blog', isRoute: true },
   { label: 'Kontakt', href: '#kontakt' },
 ];
 

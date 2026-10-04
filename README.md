@@ -70,6 +70,12 @@ npm run sitemap:generate
 npm run seo:check
 ```
 
+Public routes are prerendered during the build. Vercel serves the generated
+`dist/404.html` with an HTTP 404 for unknown paths; only the two admin routes
+rewrite to the SPA entry point. Other static hosts must likewise serve the
+generated 404 document with a 404 status rather than rewriting unknown URLs to
+`index.html`.
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.

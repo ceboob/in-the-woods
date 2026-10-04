@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const DomWLesieSuprasl = () => (
   <SEOPageLayout
     title="Dom w lesie Podlasie | Domek na odludziu wynajem"
-    description="Domek w lesie na wyłączność na Podlasiu — kominek, jacuzzi, ogrodzony teren, psy za darmo. Leśny dom z bali w Puszczy Knyszyńskiej. Sprawdź wolne terminy!"
+    description="Dom w lesie na Podlasiu na wyłączność: kominek, balia, ogrodzony teren i cisza Puszczy Knyszyńskiej. Sprawdź terminy."
     breadcrumbName="Dom w lesie Supraśl"
     ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
   >
@@ -55,8 +55,8 @@ const DomWLesieSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Popołudnia to czas na odkrywanie okolicy. Supraśl z Monasterem i kawiarniami jest 10 minut
         stąd. Arboretum Kopna Góra — 20 minut. Kruszyniany z tatarską kuchnią — 45 minut. A
-        wieczory? Wieczory należą do kominka, ogniska w ogrodzie lub sesji w prywatnej ruskiej bani
-        pod gwiazdami — <strong>domek z balią w lesie</strong>, SPA na odludziu.
+        wieczory?         wieczory należą do kominka, ogniska w ogrodzie lub odpoczynku w balii ogrodowej z funkcją jacuzzi
+        pod gwiazdami — <strong>domek z balią w lesie</strong>, chwila relaksu na odludziu.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi w lesie — nature retreat</h2>
@@ -64,7 +64,7 @@ const DomWLesieSuprasl = () => (
         Koncepcja nature retreat zyskuje na popularności nie bez powodu. Badania naukowe
         potwierdzają, że kontakt z naturą obniża poziom kortyzolu i poprawia jakość snu.
         <strong> Dom w lesie blisko Supraśla</strong> to naturalne uzdrowisko dla ciała i umysłu.
-        <strong> Domek z jacuzzi w lesie</strong> — gorąca ruska bania pod gwiazdami po całym dniu
+        <strong> Domek z jacuzzi w lesie</strong> — balia ogrodowa z funkcją jacuzzi pod gwiazdami po całym dniu
         na szlakach Puszczy Knyszyńskiej.
       </p>
       <p className="text-muted-foreground leading-relaxed">

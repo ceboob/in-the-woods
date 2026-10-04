@@ -5,8 +5,8 @@ const documents = [
   {
     icon: BookOpen,
     title: 'Interaktywny przewodnik po domu',
-    description: 'Wszystko, co musisz wiedzieć o domu In The Woods — jak obsługiwać kominek, banię, jacuzzi, co znajdziesz w kuchni i jak korzystać z ogrodu.',
-    href: 'https://utn.pl/i-tw',
+    description: 'Wszystko, co musisz wiedzieć o domu In The Woods — jak obsługiwać kominek i jacuzzi, co znajdziesz w kuchni i jak korzystać z ogrodu.',
+    href: 'https://drive.google.com/file/d/1Kz6hA2My9p3MZuNTocCglt3-yow5LrE4/view?usp=drive_link',
     label: 'Otwórz przewodnik (PDF)',
   },
   {
@@ -19,7 +19,7 @@ const documents = [
   {
     icon: FileText,
     title: 'Instrukcja obsługi domu',
-    description: 'Szczegółowa instrukcja obsługi urządzeń w domu — ogrzewanie, sprzęt kuchenny, kominek, bania, WiFi i inne udogodnienia.',
+    description: 'Szczegółowa instrukcja obsługi urządzeń w domu — ogrzewanie, sprzęt kuchenny, kominek, jacuzzi, WiFi i inne udogodnienia.',
     href: 'https://drive.google.com/file/d/1Kz6hA2My9p3MZuNTocCglt3-yow5LrE4/view?usp=drive_link',
     label: 'Otwórz instrukcję (PDF)',
   },
@@ -42,7 +42,7 @@ const Dokumenty = () => (
     <section className="mb-12 max-w-2xl space-y-4">
       <h2 className="font-heading text-xl text-foreground">Jak przygotować się do pobytu?</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Przed przyjazdem do In The Woods zalecamy zapoznanie się z interaktywnym przewodnikiem po domu. Znajdziesz w nim praktyczne informacje o obsłudze kominka, ruskiej bani z balią, kuchni oraz zasadach korzystania z ogrodu i terenu wokół domu.
+        Przed przyjazdem do In The Woods zalecamy zapoznanie się z interaktywnym przewodnikiem po domu. Znajdziesz w nim praktyczne informacje o obsłudze kominka i jacuzzi, kuchni oraz zasadach korzystania z ogrodu i terenu wokół domu.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Umowa najmu zawiera szczegółowe warunki rezerwacji, w tym zasady wpłaty kaucji, regulamin pobytu oraz informacje o odpowiedzialności gości za wyposażenie domu. Dokument jest dostępny do wglądu przed dokonaniem rezerwacji.

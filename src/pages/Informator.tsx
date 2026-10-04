@@ -101,8 +101,8 @@ const Informator = () => {
         </p>
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-4 text-base md:text-lg">
           Prosimy o traktowanie domu jak własnego i pozostawienie go w takim stanie, w jakim został
-          przekazany. Poniżej znajdziesz wszystkie zasady pobytu, instrukcje obsługi kominka i ruskiej
-          bani, regulamin jacuzzi, informacje o ekologicznej oczyszczalni ścieków oraz praktyczne
+          przekazany. Poniżej znajdziesz wszystkie zasady pobytu, instrukcje obsługi kominka i jacuzzi,
+          informacje o ekologicznej oczyszczalni ścieków oraz praktyczne
           wskazówki dotyczące życia w lesie. Ten informator pomoże Ci w pełni cieszyć się pobytem.
         </p>
       </header>
@@ -358,7 +358,7 @@ const Informator = () => {
             </AccordionContent>
           </AccordionItem>
 
-          {/* JACUZZI / BANIA */}
+          {/* JACUZZI */}
           <AccordionItem
             value="jacuzzi"
             className="bg-card border border-border rounded-lg px-6 overflow-hidden"
@@ -369,13 +369,13 @@ const Informator = () => {
                   <Bath className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
-                  Regulamin ruskiej bani i balii
+                  Regulamin jacuzzi
                 </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Balia z gorącą wodą jest dostępna po wcześniejszej rezerwacji u gospodarza.
+                Balia ogrodowa z funkcją jacuzzi jest dostępna po wcześniejszej rezerwacji u gospodarza.
               </p>
               <p className="text-muted-foreground font-medium">Zasady korzystania:</p>
               <ul className="space-y-2 text-muted-foreground">
@@ -411,28 +411,15 @@ const Informator = () => {
               <div className="bg-secondary/60 rounded-lg p-4 space-y-2">
                 <p className="text-sm font-medium text-foreground">Ważne:</p>
                 <p className="text-sm text-muted-foreground">
-                  Maksymalna temperatura wody: 40°C. Należy regularnie uzupełniać płyny. Nie dotykać
-                  pieca — gorąca powierzchnia!
+                  Przed użyciem zapoznaj się z instrukcją obsługi funkcji jacuzzi.
                 </p>
               </div>
 
-              <p className="text-muted-foreground font-medium mt-2">Instrukcja obsługi balii:</p>
+              <p className="text-muted-foreground font-medium mt-2">Instrukcja korzystania z jacuzzi:</p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Nigdy nie rozpalać pieca bez wody w balii</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Utrzymywać odpowiedni poziom wody (powyżej kratki pieca)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Regularnie kontrolować temperaturę wody</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Zamykać dopływ powietrza do pieca przy zbyt wysokiej temperaturze</span>
+                  <span>Uruchamiać funkcję jacuzzi zgodnie z instrukcją gospodarza</span>
                 </li>
               </ul>
             </AccordionContent>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const WeekendSuprasl = () => (
   <SEOPageLayout
     title="Weekend w Supraślu | Domek w lesie na weekend"
-    description="Zaplanuj weekend w domku w lesie z jacuzzi i kominkiem w Supraślu. Puszcza Knyszyńska, ruska bania, ognisko i slow travel. Plan na 2-3 dni!"
+    description="Zaplanuj weekend w domku w lesie z jacuzzi i kominkiem w Supraślu. Puszcza Knyszyńska, balia ogrodowa z funkcją jacuzzi, ognisko i slow travel. Plan na 2-3 dni!"
     breadcrumbName="Weekend w Supraślu"
     ogImage="https://www.suprasl.online/images/terrace-breakfast.jpg"
   >
@@ -30,7 +30,7 @@ const WeekendSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Jeśli pogoda sprzyja, rozpal ognisko w ogrodzie. To moment, kiedy zaczynasz zwalniać —
-        cisza Puszczy Knyszyńskiej robi swoje. Zarezerwuj ruską banię na wieczór —{' '}
+        cisza Puszczy Knyszyńskiej robi swoje. Zarezerwuj balię ogrodową z funkcją jacuzzi na wieczór —{' '}
         <strong>domek z balią w lesie</strong>, gorąca woda pod gwiazdami to idealny start
         weekendu. Detoks cyfrowy w lesie zaczyna się sam — brak pełnego zasięgu telefonii
         komórkowej staje się tu zaletą.
@@ -54,8 +54,8 @@ const WeekendSuprasl = () => (
         , jesienią grzybobranie, zimą narty biegowe.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Wieczór spędź w ruskiej bani. Po całym dniu aktywności na świeżym powietrzu, sesja w gorącej
-        bali pod gwiazdami to <strong>odpoczynek w lesie weekend</strong> w najlepszej formie.
+        Wieczór spędź w balii ogrodowej z funkcją jacuzzi. Po całym dniu aktywności na świeżym powietrzu,
+        odpoczynek pod gwiazdami to <strong>odpoczynek w lesie weekend</strong> w najlepszej formie.
         Potem kominek, herbata i cisza — to esencja <strong>chill w lesie</strong>.
       </p>
 
@@ -95,7 +95,7 @@ const WeekendSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Praktyczne informacje</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Ceny:</strong> Weekendy od 549 zł/noc, minimalny pobyt 2 noce. Ruska bania: 250 zł
+        <strong>Ceny:</strong> Weekendy od 549 zł/noc, minimalny pobyt 2 noce. Balia ogrodowa z funkcją jacuzzi: 250 zł
         za cały pobyt. Psy za darmo.
       </p>
       <p className="text-muted-foreground leading-relaxed">

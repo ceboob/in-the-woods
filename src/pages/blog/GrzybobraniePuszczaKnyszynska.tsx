@@ -71,7 +71,7 @@ const GrzybobraniePuszczaKnyszynska = () => (
       <p className="text-muted-foreground leading-relaxed">
         <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to idealna baza
         na grzybobranie — dom stoi przy lesie, szlaki zaczynają się za progiem. Po całym dniu w puszczy
-        czeka Cię kominek, gorąca bania i kuchnia, w której przyrządzisz swoje zdobycze.
+        czeka Cię kominek, balia ogrodowa z funkcją jacuzzi i kuchnia, w której przyrządzisz swoje zdobycze.
       </p>
     </article>
   </BlogArticleLayout>

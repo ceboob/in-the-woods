@@ -69,7 +69,7 @@ const testimonials = [
     source: 'airbnb' as Source,
   },
   {
-    text: 'Ruska bania pod gwiazdami to coś, co trzeba przeżyć. Do tego kominek, las i cisza — pełna regeneracja po tygodniu pracy.',
+    text: 'Balia ogrodowa z funkcją jacuzzi pod gwiazdami to coś, co trzeba przeżyć. Do tego kominek, las i cisza — pełna regeneracja po tygodniu pracy.',
     author: 'Anna i Piotr',
     context: 'Romantyczny weekend',
     date: '2026-01-10',
@@ -85,7 +85,7 @@ const testimonials = [
     source: 'booking' as Source,
   },
   {
-    text: 'Brak pełnego zasięgu telefonii komórkowej — dla nas na początku minus, ale po dwóch dniach doceniliśmy ciszę i detoks cyfrowy. Dom piękny, bania rewelacyjna.',
+    text: 'Brak pełnego zasięgu telefonii komórkowej — dla nas na początku minus, ale po dwóch dniach doceniliśmy ciszę i detoks cyfrowy. Dom piękny, jacuzzi rewelacyjne.',
     author: 'Agnieszka',
     context: 'Urlop, 4 dni',
     date: '2025-09-12',

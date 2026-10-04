@@ -86,7 +86,7 @@ const AmenitiesSection = () => {
             Dom i udogodnienia
           </p>
           <h2 className="section-title">
-            Domek z sauną, jacuzzi i kominkiem w sercu lasu
+            Domek z jacuzzi i kominkiem w sercu lasu
           </h2>
           <p className="section-subtitle mx-auto">
             Komfortowy dom z bali na wyłączność — do 8 osób. Ogrodzony teren, psy za darmo,

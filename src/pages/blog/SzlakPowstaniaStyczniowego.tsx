@@ -71,7 +71,7 @@ const SzlakPowstaniaStyczniowego = () => {
         mogiły powstańcze i pomniki pamięci ukryte wśród drzew.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogSzlak}
         alt="Puszcza Knyszyńska – Szlak Powstania Styczniowego, atrakcje Supraśl"
         className="w-full rounded-lg my-8"
@@ -118,7 +118,7 @@ const SzlakPowstaniaStyczniowego = () => {
         podjazdową, która przez miesiące wiązała znaczne siły carskie.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogPomnik}
         alt="Pomnik Powstania Styczniowego – Puszcza Knyszyńska, historia Supraśl"
         className="w-full rounded-lg my-8"
@@ -194,7 +194,7 @@ const SzlakPowstaniaStyczniowego = () => {
         zarezerwować cały dzień. Wiosną i jesienią możliwe błotniste odcinki.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={winterForest}
         alt="Puszcza Knyszyńska zimą – szlaki zimowe, noclegi Supraśl"
         className="w-full rounded-lg my-8"

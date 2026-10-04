@@ -27,7 +27,7 @@ const SEOTextSection = () => {
               domek Supraśl
             </Link>{' '}
             na wyłączność, otoczony lasem i ciszą natury, z ogrodzonym terenem, kominkiem i ruską
-            banią w ogrodzie.
+            balią ogrodową z funkcją jacuzzi.
           </p>
 
           <h3 className="font-heading text-xl text-foreground">Leśny domek do wynajęcia — dom z bali na wyłączność</h3>
@@ -36,7 +36,7 @@ const SEOTextSection = () => {
             wyposażoną kuchnię z elegancką płytą kaflową, dwie sypialnie na poddaszu z drewnianymi belkami,
             nowoczesną łazienkę, ogród z altaną i taras z widokiem na las. To leśny domek do wynajęcia
             z duszą — domek z kominkiem w lesie, w którym poczujesz prawdziwe oderwanie od cywilizacji.
-            Goście mogą skorzystać z prywatnej ruskiej bani z balią —{' '}
+            Goście mogą skorzystać z prywatnej balii ogrodowej z funkcją jacuzzi —{' '}
             <strong>domek z jacuzzi w lesie</strong>, idealny po dniu na szlakach
             <Link
               to="/puszcza-knyszynska-nocleg"
@@ -67,10 +67,8 @@ const SEOTextSection = () => {
             >
               domku z jacuzzi na Podlasiu
             </Link>
-            ? Nasza ruska bania z balią z gorącą wodą to wyjątkowy element oferty. <strong>Domek z balią
-            w lesie</strong>, gdzie gorąca woda pod gwiazdami w otoczeniu Puszczy Knyszyńskiej —
-            to rytuał relaksu, który goście wspominają najczęściej. Bania mieści 4–6 osób,
-            podgrzewana jest naturalnie drewnem i działa przez cały rok.
+            ? Nasza balia ogrodowa z funkcją jacuzzi to wyjątkowy element oferty. <strong>Domek z balią
+            w lesie</strong>, gdzie możesz odpocząć pod gwiazdami w otoczeniu Puszczy Knyszyńskiej.
           </p>
 
           <h3 className="font-heading text-xl text-foreground">Domek na sylwestra, walentynki i majówkę w lesie</h3>

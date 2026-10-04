@@ -1,9 +1,8 @@
 import fs from 'node:fs';
+import { NON_INDEXABLE_ROUTES, getRouteManifest } from './lib/route-manifest.mjs';
 
-const APP_FILE = 'src/App.tsx';
 const SITEMAP_FILE = 'public/sitemap.xml';
-
-const NON_INDEXABLE_ROUTES = new Set(['/admin', '/admin/login', '/platnosc-sukces']);
+const ROBOTS_FILE = 'public/robots.txt';
 
 const NOINDEX_EXPECTATIONS = [
   { file: 'src/pages/AdminLogin.tsx', marker: 'canonical="https://www.suprasl.online/admin/login"' },
@@ -12,12 +11,8 @@ const NOINDEX_EXPECTATIONS = [
   { file: 'src/pages/NotFound.tsx', marker: 'title="404 – Strona nie istnieje"' },
 ];
 
-const appContent = fs.readFileSync(APP_FILE, 'utf8');
-const routeMatches = [...appContent.matchAll(/path="([^"]+)"/g)].map((m) => m[1]);
-
-const routes = [...new Set(routeMatches)]
-  .filter((route) => route !== '*')
-  .map((route) => (route.endsWith('/') && route !== '/' ? route.slice(0, -1) : route));
+const { routes, indexableRoutes } = getRouteManifest();
+const allRoutes = routes.filter((route) => route.path !== '*').map((route) => route.path);
 
 const sitemapContent = fs.readFileSync(SITEMAP_FILE, 'utf8');
 const sitemapLocs = [
@@ -28,11 +23,13 @@ const sitemapLocs = [
 });
 
 const sitemapRoutes = new Set(sitemapLocs);
-const indexableRoutes = routes.filter((route) => !NON_INDEXABLE_ROUTES.has(route));
 
 const missingInSitemap = indexableRoutes.filter((route) => !sitemapRoutes.has(route));
 const unexpectedInSitemap = [...sitemapRoutes].filter(
-  (route) => !routes.includes(route) && route !== '/',
+  (route) => !allRoutes.includes(route) && route !== '/',
+);
+const nonIndexableInSitemap = [...sitemapRoutes].filter((route) =>
+  NON_INDEXABLE_ROUTES.has(route),
 );
 
 const noindexIssues = [];
@@ -45,7 +42,23 @@ for (const expectation of NOINDEX_EXPECTATIONS) {
   }
 }
 
-if (missingInSitemap.length || unexpectedInSitemap.length || noindexIssues.length) {
+const robotsContent = fs.readFileSync(ROBOTS_FILE, 'utf8');
+const disallowedRoutes = new Set(
+  [...robotsContent.matchAll(/^Disallow: (\S+)$/gm)].map((match) => match[1]),
+);
+const missingRobotsRules = [...NON_INDEXABLE_ROUTES].filter(
+  (route) => !disallowedRoutes.has(route),
+);
+const blockedIndexableRoutes = indexableRoutes.filter((route) => disallowedRoutes.has(route));
+
+if (
+  missingInSitemap.length ||
+  unexpectedInSitemap.length ||
+  nonIndexableInSitemap.length ||
+  noindexIssues.length ||
+  missingRobotsRules.length ||
+  blockedIndexableRoutes.length
+) {
   console.error('SEO check failed.');
   if (missingInSitemap.length) {
     console.error('Missing routes in sitemap:', missingInSitemap);
@@ -53,8 +66,17 @@ if (missingInSitemap.length || unexpectedInSitemap.length || noindexIssues.lengt
   if (unexpectedInSitemap.length) {
     console.error('Unexpected routes in sitemap:', unexpectedInSitemap);
   }
+  if (nonIndexableInSitemap.length) {
+    console.error('Non-indexable routes in sitemap:', nonIndexableInSitemap);
+  }
   if (noindexIssues.length) {
     console.error('Missing noindex markers:', noindexIssues);
+  }
+  if (missingRobotsRules.length) {
+    console.error('Missing robots.txt disallow rules:', missingRobotsRules);
+  }
+  if (blockedIndexableRoutes.length) {
+    console.error('Indexable routes blocked by robots.txt:', blockedIndexableRoutes);
   }
   process.exit(1);
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const SupraslZDziecmi = () => (
   <BlogArticleLayout
     title="Supraśl z dziećmi – atrakcje dla rodzin"
-    metaTitle="Supraśl z dziećmi – atrakcje dla rodzin"
+    metaTitle="Supraśl z dziećmi – rodzinny przewodnik"
     metaDescription="Supraśl z dziećmi — plaża miejska, muzea interaktywne, Park Linowy, łatwe szlaki w Puszczy i restauracje z menu dla maluchów. Zaplanuj rodzinny wyjazd!"
     slug="suprasl-z-dziecmi"
     publishDate="2026-04-09"
@@ -23,7 +23,7 @@ const SupraslZDziecmi = () => (
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
-    <h2>Supraśl dla rodzin – co robić i co zobaczyć? Atrakcje dla dzieci w Supraślu i okolicy</h2>
+    <h2>Supraśl dla rodzin: co robić z dziećmi w okolicy</h2>
 
     <p>
       <strong>Supraśl to świetne miejsce na rodzinny wyjazd!</strong> Sprawdź, jakie atrakcje

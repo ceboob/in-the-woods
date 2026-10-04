@@ -61,7 +61,7 @@ export const SEASONS: SeasonConfig[] = [
 
 export const WEEKEND_SURCHARGE = 100; // PLN per night on Fri/Sat
 export const LONG_STAY_DISCOUNT = 0.10; // 10% discount for 7+ nights
-export const BANIA_PRICE = 250; // PLN per stay
+export const GARDEN_TUB_PRICE = 250; // PLN per stay
 export const MIN_NIGHTS = 2;
 export const BASE_GUESTS = 4;
 export const MAX_GUESTS = 8;
@@ -126,23 +126,27 @@ export function isWeekendDay(date: Date): boolean {
   return dow === 5 || dow === 6 || dow === 0;
 }
 
-// Blocked dates (hardcoded for 2026) — last update: 2025-04-08
-export const BLOCKED_DATES_LAST_UPDATED = '2025-04-10';
+// Blocked dates (generated from Booking screenshot ranges) — last update: 2026-08-12
+export const BLOCKED_DATES_LAST_UPDATED = '2026-08-12';
 
 export const BLOCKED_DATES: Set<string> = new Set([
-  ...[10, 11, 17, 18, 24, 25].map((d) => `2026-04-${String(d).padStart(2, '0')}`),
-  ...[1, 2, 8, 9, 10, 15, 16, 22, 23, 31].map((d) => `2026-05-${String(d).padStart(2, '0')}`),
-  ...[1, 2, 3, 4, 5, 6, 7, 14, 15, 16, 17, 20, 21, 22, 23, 24, 25, 26].map(
-    (d) => `2026-06-${String(d).padStart(2, '0')}`,
-  ),
-  ...[1, 2, 3, 4, 9, 10, 11, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31].map(
-    (d) => `2026-07-${String(d).padStart(2, '0')}`,
-  ),
-  ...[2, 3, 4, 5, 6, 10, 11, 12, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28].map(
-    (d) => `2026-08-${String(d).padStart(2, '0')}`,
-  ),
-  ...[25, 26, 27, 28, 29, 30].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
-  ...[1, 2, 3, 4, 5, 6, 7, 8].map((d) => `2026-10-${String(d).padStart(2, '0')}`),
+  // 13.08.2026 - 03.09.2026
+  ...[13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31].map((d) => `2026-08-${String(d).padStart(2, '0')}`),
+  ...[1,2,3].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
+
+  // 08.09.2026 - 27.09.2026
+  ...[8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
+
+  // 29.09.2026 - 08.10.2026
+  ...[29,30].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
+  ...[1,2,3,4,5,6,7,8].map((d) => `2026-10-${String(d).padStart(2, '0')}`),
+
+  // 15.10.2026 - 18.10.2026
+  ...[15,16,17,18].map((d) => `2026-10-${String(d).padStart(2, '0')}`),
+
+  // 23.12.2026 - 01.01.2027
+  ...[23,24,25,26,27,28,29,30,31].map((d) => `2026-12-${String(d).padStart(2, '0')}`),
+  ...[1].map((d) => `2027-01-${String(d).padStart(2, '0')}`),
 ]);
 
 export function formatDateKey(date: Date): string {

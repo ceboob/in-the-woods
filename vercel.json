@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/blog/wydarzenia-suprasl-2026",
+      "destination": "/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
@@ -14,7 +19,11 @@
   ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/admin",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/admin/login",
       "destination": "/index.html"
     }
   ],

@@ -85,7 +85,7 @@ const KajakiSuprasl = () => {
         idealnie wpisując się w filozofię slow tourism, z której słynie ten region.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogKajaki}
         alt="kajaki Supraśl – spływ kajakowy rzeką Supraśl w Puszczy Knyszyńskiej"
         className="w-full rounded-lg my-8"
@@ -126,7 +126,7 @@ const KajakiSuprasl = () => {
         olchami, wierzbami i trawami tworzą naturalny tunel zieleni.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={riverKayak}
         alt="rzeka Supraśl – spokojna rzeka w Puszczy Knyszyńskiej idealna na kajaki"
         className="w-full rounded-lg my-8"
@@ -224,7 +224,7 @@ const KajakiSuprasl = () => {
         osób.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={forestPanorama}
         alt="Puszcza Knyszyńska – panorama leśna nad rzeką Supraśl"
         className="w-full rounded-lg my-8"

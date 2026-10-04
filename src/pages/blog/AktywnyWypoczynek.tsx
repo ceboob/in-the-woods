@@ -5,7 +5,7 @@ const AktywnyWypoczynek = () => (
   <BlogArticleLayout
     title="Supraśl aktywnie: 5 pomysłów na weekend"
     metaTitle="Supraśl aktywnie: rower, kajak, szlaki"
-    metaDescription="Jak aktywnie spędzić weekend w Supraślu? Szlaki rowerowe, spływy kajakowe, nordic walking, narciarstwo biegowe i Arboretum Kopna Góra. Praktyczny przewodnik."
+    metaDescription="Aktywny weekend w Supraślu: trasy rowerowe, kajaki, nordic walking, narty biegowe i Arboretum Kopna Góra."
     slug="aktywny-wypoczynek-suprasl"
     publishDate="2026-04-09"
     readTime="11 min"
@@ -23,7 +23,7 @@ const AktywnyWypoczynek = () => (
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
-    <h2>Supraśl Aktywnie: 5 Pomysłów na Weekend w Puszczy Knyszyńskiej (Rower, Kajak i Więcej!)</h2>
+    <h2>Supraśl aktywnie: 5 pomysłów na weekend w puszczy</h2>
 
     <p>
       Myślisz, że Supraśl to tylko spokojne uzdrowisko? Nic bardziej mylnego! Pokażemy Ci, jak
@@ -111,7 +111,7 @@ const AktywnyWypoczynek = () => (
     <h2>Gdzie nocować po aktywnym dniu?</h2>
     <p>
       Po dniu pełnym wrażeń wracasz do swojego azylu ciszy i natury.{' '}
-      <Link to="/">In The Woods</Link> — prywatny dom w lesie z kominkiem i ruską banią — to
+      <Link to="/">In The Woods</Link> — prywatny dom w lesie z kominkiem i balią ogrodową z funkcją jacuzzi — to
       idealna baza wypadowa na aktywny weekend w Puszczy Knyszyńskiej.{' '}
       <Link to="/noclegi-suprasl">Sprawdź dostępne terminy</Link>.
     </p>
