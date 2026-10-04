@@ -115,34 +115,34 @@ const Footer = () => (
         </div>
 
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/70">
-          <Link to="/noclegi-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/noclegi-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Noclegi Supraśl
           </Link>
-          <Link to="/domek-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/domek-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Domek Supraśl
           </Link>
-          <Link to="/domek-z-jacuzzi-podlasie" className="transition-colors hover:text-primary">
+          <Link to="/domek-z-jacuzzi-podlasie" className="text-white/90 transition-colors hover:text-primary">
             Domek z jacuzzi
           </Link>
-          <Link to="/dom-w-lesie-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/dom-w-lesie-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Dom w lesie Supraśl
           </Link>
-          <Link to="/weekend-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/weekend-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Weekend Supraśl
           </Link>
-          <Link to="/wieczor-panienski-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/wieczor-panienski-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Wieczór panieński
           </Link>
-          <Link to="/atrakcje-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/atrakcje-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Atrakcje Supraśla
           </Link>
-          <Link to="/puszcza-knyszynska-nocleg" className="transition-colors hover:text-primary">
+          <Link to="/puszcza-knyszynska-nocleg" className="text-white/90 transition-colors hover:text-primary">
             Nocleg Puszcza Knyszyńska
           </Link>
-          <Link to="/informator" className="transition-colors hover:text-primary">
+          <Link to="/informator" className="text-white/90 transition-colors hover:text-primary">
             Informator gościa
           </Link>
-          <Link to="/blog" className="transition-colors hover:text-primary">
+          <Link to="/blog" className="text-white/90 transition-colors hover:text-primary">
             Blog
           </Link>
         </div>
