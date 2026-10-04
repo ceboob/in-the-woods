@@ -6,9 +6,9 @@ const items = [
   {
     icon: MapPin,
     title: 'Serce Puszczy Knyszyńskiej',
-    lead: 'Leśny dom blisko Supraśla i szlaków Puszczy Knyszyńskiej.',
+    lead: 'Domek w lesie, około 5 km od Supraśla i blisko szlaków.',
     description:
-      'Domek w lesie Supraśl znajduje się około 5 km od centrum miasteczka, a Białystok leży około 20–25 km dalej. W pobliżu są szlaki piesze i rowerowe oraz obszary Natura 2000: Puszcza Knyszyńska (PLB200003) i Ostoja Knyszyńska (PLH200006). Supraśl zaprasza do monasteru, Muzeum Ikon, nad rzekę i do Arboretum w Kopnej Górze.',
+      'Domek stoi w samym środku lasu, około 5 km od centrum Supraśla, a Białystok leży około 20–25 km dalej. W pobliżu są szlaki piesze i rowerowe oraz obszary Natura 2000: Puszcza Knyszyńska (PLB200003) i Ostoja Knyszyńska (PLH200006). Supraśl zaprasza do monasteru, Muzeum Ikon, nad rzekę i do Arboretum w Kopnej Górze.',
   },
   {
     icon: Trees,
