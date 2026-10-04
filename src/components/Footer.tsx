@@ -64,7 +64,7 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Logo_airbnb.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+              src="/logos/ai.png"
               alt="Airbnb"
               loading="lazy"
               className="h-7 w-auto max-w-32 object-contain"
@@ -78,7 +78,7 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="https://s3-eu-west-1.amazonaws.com/tpd/logos/628f809990af00fbffd988cd/0x0.png"
+              src="/logos/a.png"
               alt="Alohacamp"
               loading="lazy"
               className="h-7 w-auto max-w-32 object-contain"
@@ -92,7 +92,7 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="https://banner2.cleanpng.com/20181122/eex/kisspng-booking-com-logo-booking-holdings-accommodation-ho-1713919349496.webp"
+              src="/logos/b.png"
               alt="Booking.com"
               loading="lazy"
               className="h-7 w-auto max-w-32 object-contain"
@@ -106,7 +106,7 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmqZr_jbjqPvmPclxXSLUj9F4eIzBg7Tf8c0_uKoFpFYP1APdWTe7Ykg&s=10"
+              src="/logos/d.png"
               alt="Doginclusive.pl"
               loading="lazy"
               className="h-7 w-auto max-w-32 object-contain"
