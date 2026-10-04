@@ -64,10 +64,10 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="/logos/airbnb-wordmark.svg"
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Logo_airbnb.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
               alt="Airbnb"
               loading="lazy"
-              className="h-7 w-auto"
+              className="h-7 w-auto max-w-32 object-contain"
             />
           </a>
           <a
@@ -78,10 +78,10 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="/logos/alohacamp-wordmark.svg"
+              src="https://s3-eu-west-1.amazonaws.com/tpd/logos/628f809990af00fbffd988cd/0x0.png"
               alt="Alohacamp"
               loading="lazy"
-              className="h-7 w-auto"
+              className="h-7 w-auto max-w-32 object-contain"
             />
           </a>
           <a
@@ -92,10 +92,10 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="/logos/booking-wordmark.svg"
+              src="https://banner2.cleanpng.com/20181122/eex/kisspng-booking-com-logo-booking-holdings-accommodation-ho-1713919349496.webp"
               alt="Booking.com"
               loading="lazy"
-              className="h-7 w-auto"
+              className="h-7 w-auto max-w-32 object-contain"
             />
           </a>
           <a
@@ -106,10 +106,10 @@ const Footer = () => (
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
-              src="/logos/doginclusive-wordmark.svg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmqZr_jbjqPvmPclxXSLUj9F4eIzBg7Tf8c0_uKoFpFYP1APdWTe7Ykg&s=10"
               alt="Doginclusive.pl"
               loading="lazy"
-              className="h-7 w-auto"
+              className="h-7 w-auto max-w-32 object-contain"
             />
           </a>
         </div>
