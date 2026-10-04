@@ -37,11 +37,11 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "VacationRental",
+        "@type": ["LodgingBusiness", "VacationRental"],
         "@id": "https://www.suprasl.online/#vacation-rental",
         "identifier": "suprasl-online-in-the-woods",
-        "name": "In The Woods — leśny dom na wyłączność z jacuzzi",
-        "description": "Zarezerwuj leśny domek do wynajęcia w Puszczy Knyszyńskiej na wyłączność. Dom z bali z balią ogrodową z funkcją jacuzzi, kominkiem i ogrodzonym terenem. Domek w lesie wynajem dla par, rodzin i przyjaciół — psy za darmo, slow travel Podlasie.",
+        "name": "Krzemienna Chata – In the Woods Supraśl",
+        "description": "Dom na wyłączność w Puszczy Knyszyńskiej, około 5 km od Supraśla, z balią ogrodową z funkcją jacuzzi, kominkiem i ogrodem.",
         "url": "https://www.suprasl.online",
         "telephone": "+48722765101",
         "email": "tutinthewood@gmail.com",
@@ -86,7 +86,7 @@
           "description": "3-bedroom wooden cabin in Puszcza Knyszyńska forest with full kitchen, living room with fireplace, and private garden.",
           "numberOfRooms": 3,
           "numberOfBedrooms": 3,
-          "numberOfBathroomsTotal": 1,
+          "numberOfBathroomsTotal": 2,
           "bed": [
             { "@type": "BedDetails", "numberOfBeds": 2, "typeOfBed": "Double" },
             { "@type": "BedDetails", "numberOfBeds": 2, "typeOfBed": "Single" }
@@ -96,8 +96,6 @@
             { "@type": "LocationFeatureSpecification", "name": "Fireplace", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "Garden", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "Pet-friendly", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "Free parking", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "BBQ / Fire pit", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "Fully equipped kitchen", "value": true }
@@ -113,10 +111,8 @@
             "maxValue": 8,
             "unitText": "guests"
           },
-          "petsAllowed": true
         },
         "numberOfRooms": 3,
-        "petsAllowed": true,
         "priceRange": "od 399 PLN",
         "currenciesAccepted": "PLN",
         "paymentAccepted": "Przelew bankowy, Karta kredytowa, Gotówka",

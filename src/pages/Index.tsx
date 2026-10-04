@@ -39,8 +39,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Domek w lesie z jacuzzi | In The Woods — Podlasie"
-        description="Zarezerwuj leśny dom z balią ogrodową z funkcją jacuzzi w Puszczy Knyszyńskiej na wyłączność. Cisza, kominek, ogrodzony teren. Sprawdź wolne terminy!"
+        title="Domek z jacuzzi i kominkiem | Krzemienna Chata Supraśl"
+        description="Dom na wyłączność w Puszczy Knyszyńskiej, 5 km od Supraśla. Balia z jacuzzi, kominek, ogród i leśna cisza. Sprawdź wolne terminy."
         canonical="https://www.suprasl.online/"
       />
 
