@@ -16,22 +16,21 @@ const items = [
     lead: 'Spokojny kierunek na spacer i obserwowanie przyrody.',
     description: (
       <>
-        Rezerwat leśny o powierzchni 79,27 ha, objęty ochroną częściową, chroni fragment
-        starego lasu w Puszczy Knyszyńskiej. To spokojny kierunek na spacer i obserwowanie
-        przyrody: można wsłuchać się w śpiew ptaków, a w sezonie w okolicy przychodzi czas
-        grzybów i jagód. Prosimy zostać na oznakowanych szlakach, nie rozpalać ognisk i nie
-        zbierać gatunków chronionych.{' '}
+        Rezerwat leśny o powierzchni 79,27 ha, objęty ochroną częściową, chroni stary las w
+        Puszczy Knyszyńskiej. To kierunek na spacer i obserwowanie przyrody: można wsłuchać się
+        w śpiew ptaków, a w sezonie przychodzi czas grzybów i jagód. Prosimy zostać na
+        oznakowanych szlakach, nie rozpalać ognisk ani nie zbierać gatunków chronionych;{' '}
         <Link to="/atrakcje-suprasl" className="underline underline-offset-4">
-          Poznaj okolicę
-        </Link>
-        .{' '}
+          sprawdź atrakcje w okolicy
+        </Link>{' '}
+        i oficjalne informacje w{' '}
         <a
           href="https://suprasl.bialystok.lasy.gov.pl/"
           target="_blank"
           rel="noopener noreferrer"
           className="underline underline-offset-4"
         >
-          Nadleśnictwo Supraśl
+          Nadleśnictwie Supraśl
         </a>
         .
       </>
@@ -42,7 +41,7 @@ const items = [
     title: 'Dom i ogród dla gości',
     lead: 'Cała przestrzeń jest tylko do Waszej dyspozycji.',
     description:
-      'Cały dom i ogród są przeznaczone wyłącznie dla gości — nie ma tu współdzielonych przestrzeni. Wokół są las i kilku spokojnych sąsiadów, a na miejscu czekają taras z grillem oraz bezpłatny prywatny parking. Dzieci mają przestrzeń do zabawy i dostępne zabawki. Informacje o pobycie ze zwierzęciem warto potwierdzić przed rezerwacją.',
+      'Cały dom i ogród są przeznaczone wyłącznie dla gości — nie ma tu współdzielonych przestrzeni. Wokół są las i kilku spokojnych sąsiadów, a na miejscu czekają taras z grillem oraz bezpłatny prywatny parking. Dzieci mają przestrzeń do zabawy i dostępne zabawki; informacje o pobycie ze zwierzęciem warto potwierdzić przed rezerwacją.',
   },
   {
     icon: Flame,
