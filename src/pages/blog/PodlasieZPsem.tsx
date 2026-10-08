@@ -69,9 +69,17 @@ const PodlasieZPsem = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">In The Woods — dom pet-friendly</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to <strong>dom pet-friendly</strong>
-        w sercu Puszczy Knyszyńskiej. Ogrodzony ogród, las za progiem, brak opłat za psa i cały dom na wyłączność.
-        Twój pies będzie tu najszczęśliwszym psem na świecie.
+        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to dom
+        na wyłączność w Puszczy Knyszyńskiej, z ogrodzonym ogrodem i bez dodatkowej opłaty za psa.
+        Przed przyjazdem zapoznaj się z{' '}
+        <Link to="/informator" className="text-primary hover:underline font-medium">
+          informatorem gościa i zasadami pobytu
+        </Link>
+        . Szczegóły oferty oraz dostępność znajdziesz na stronie{' '}
+        <Link to="/noclegi-suprasl" className="text-primary hover:underline font-medium">
+          noclegów w Supraślu
+        </Link>
+        .
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Rezerwuj bezpośrednio: <a href="tel:+48722765101" className="text-primary hover:underline">722 765 101</a>.

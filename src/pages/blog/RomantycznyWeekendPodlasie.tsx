@@ -76,8 +76,13 @@ const RomantycznyWeekendPodlasie = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Gdzie zarezerwować?</h2>
       <p className="text-muted-foreground leading-relaxed">
         <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to prywatny dom w lesie,
-        położony przy Puszczy Knyszyńskiej, 10 minut od Supraśla. Kominek, balia ogrodowa z funkcją jacuzzi, ogrodzony ogród, taras
-        i cisza — wszystko, czego potrzebujecie na romantyczny weekend we dwoje na Podlasiu.
+        położony przy Puszczy Knyszyńskiej, 10 minut od Supraśla. Kominek, ogród i taras tworzą
+        spokojne miejsce na wspólny wyjazd. Jeśli balia ogrodowa z funkcją jacuzzi jest ważną
+        częścią planu, sprawdź szczegóły oferty{' '}
+        <Link to="/domek-z-jacuzzi-podlasie" className="text-primary hover:underline font-medium">
+          domku z balią na Podlasiu
+        </Link>
+        .
       </p>
       <p className="text-muted-foreground leading-relaxed">
         <strong>Rezerwacja bezpośrednia</strong> — bez prowizji pośrednika. Zadzwoń pod{' '}

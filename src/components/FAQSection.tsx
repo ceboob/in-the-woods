@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: 'Ile kosztuje wynajem domku w lesie na weekend?',
-    a: 'Ceny zaczynają się od 399 zł za noc. Koszt zależy od sezonu, dnia tygodnia i długości pobytu. Weekendy i święta to terminy premium. Sprawdź kalendarz dostępności, aby zobaczyć aktualne ceny — wynajem domku na odludziu na weekend bez pośredników i prowizji.',
+    a: 'Cena zależy od sezonu, liczby gości i dnia tygodnia. Aktualną stawkę dla wybranego terminu sprawdzisz w cenniku i kalendarzu dostępności.',
   },
   {
     q: 'Czy domek jest dostępny na sylwestra, walentynki lub majówkę?',
@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     q: 'Czy mogę pracować zdalnie w In The Woods?',
-    a: 'Tak — szybkie Wi-Fi, wygodne biurko przy oknie z widokiem na las i cisza idealna do skupienia. Praca zdalna w lesie — wynajem domku na workation, po którym idziesz na spacer do rezerwatu zamiast stać w korku.',
+    a: 'Tak. W domu jest Wi-Fi i miejsce do pracy przy oknie z widokiem na las. Po pracy można odpocząć na leśnych ścieżkach w okolicy.',
   },
   {
     q: 'Co zabrać na pobyt w leśnym domku?',
-    a: 'Dom jest w pełni wyposażony — pościel, ręczniki, kuchnia z ekspresem do kawy, grill i drewno na kominek. Zabierz tylko ubrania, dobre buty na leśne szlaki i otwartą głowę na odpoczynek. Resztę znajdziesz na miejscu.',
+    a: 'Na miejscu czekają pościel, ręczniki, kuchnia z ekspresem do kawy, grill i drewno do kominka. Warto zabrać ubrania odpowiednie do pogody i wygodne buty na spacer.',
   },
   {
     q: 'Gdzie nocować w Supraślu?',
@@ -33,51 +33,51 @@ const faqs = [
   },
   {
     q: 'Czy są domy na wynajem w Supraślu?',
-    a: 'Tak — In The Woods to dom na wyłączność blisko Supraśla, w Puszczy Knyszyńskiej. Kominek, ogród, balia ogrodowa z funkcją jacuzzi i pełna prywatność. Idealny dom na wynajem w okolicach Supraśla.',
+    a: 'Tak. In The Woods to cały dom wynajmowany na wyłączność, położony w leśnej okolicy niedaleko Supraśla. Do dyspozycji gości są m.in. kominek, ogród i balia ogrodowa z funkcją jacuzzi.',
   },
   {
     q: 'Czy można wynająć dom w Puszczy Knyszyńskiej?',
-    a: 'Tak, In The Woods znajduje się w sercu Puszczy Knyszyńskiej przy rezerwacie Krzemienne Góry. To jeden z nielicznych domów na wynajem otoczonych prawdziwą puszczą — domek w lesie wynajem na Podlasiu.',
+    a: 'Tak. In The Woods znajduje się w miejscowości Konne, w otoczeniu Puszczy Knyszyńskiej, w pobliżu Rezerwatu Przyrody Krzemienne Góry.',
   },
   {
     q: 'Czy Supraśl jest dobry na weekend?',
-    a: 'Supraśl to idealne miejsce na weekend — uzdrowiskowe miasteczko z Monasterem, Muzeum Ikon, kawiarniami i szlakami w Puszczy Knyszyńskiej. In The Woods to najlepsza baza wypadowa na weekend w Supraślu.',
+    a: 'Supraśl i okolica łączą zabytki, takie jak Monaster i Muzeum Ikon, z trasami spacerowymi w Puszczy Knyszyńskiej. In The Woods znajduje się około 10 minut jazdy samochodem od centrum.',
   },
   {
     q: 'Czy są noclegi z jacuzzi w Supraślu?',
-    a: 'In The Woods oferuje prywatną balię ogrodową z funkcją jacuzzi — domek z jacuzzi w lesie. Dostępna jako dodatek do pobytu za 250 zł.',
+    a: 'Do dyspozycji gości jest balia ogrodowa z funkcją jacuzzi. Jest dostępna jako opcjonalny dodatek do pobytu; szczegóły i aktualną cenę znajdziesz w cenniku.',
   },
   {
     q: 'Czy jest jacuzzi?',
-    a: 'Tak — do dyspozycji gości jest balia ogrodowa z funkcją jacuzzi, dostępna jako opcjonalny dodatek do pobytu za 250 zł. Domek z balią w lesie na wyłączność.',
+    a: 'Tak. Goście mogą skorzystać z balii ogrodowej z funkcją jacuzzi, dostępnej jako opcjonalny dodatek do pobytu.',
   },
   {
     q: 'Czy dom jest prywatny?',
-    a: 'Tak — dom i cały ogród wynajmujecie na wyłączność. Żadnych innych gości. To dom na wyłączność w lesie — Twoja prywatna przestrzeń.',
+    a: 'Tak. Rezerwacja obejmuje cały dom i ogród; obiekt nie jest w tym samym czasie udostępniany innym gościom.',
   },
   {
     q: 'Czy można przyjechać z psem?',
-    a: 'Tak, zwierzęta są mile widziane. Psy za darmo — bez dopłat. Ogrodzony ogród i las za progiem to raj dla czworonogów.',
+    a: 'Tak, można przyjechać z psem. Pobyt zwierząt jest bezpłatny, a dom ma ogrodzony ogród.',
   },
   {
     q: 'Dla ilu osób jest dom?',
-    a: 'Dom jest komfortowy dla 6–8 osób. Dwie sypialnie z dużymi łóżkami na piętrze oraz dodatkowa przestrzeń w salonie.',
+    a: 'Dom może przyjąć do 8 osób. Są w nim dwie sypialnie na piętrze oraz dodatkowe miejsce do spania w salonie.',
   },
   {
     q: 'Czy jest internet?',
-    a: 'Tak — szybkie Wi-Fi, wygodne miejsce do pracy. Idealne warunki na workation i pracę zdalną w lesie.',
+    a: 'Tak, w domu jest Wi-Fi. Dostępne jest również miejsce do pracy.',
   },
   {
     q: 'Jak daleko jest do Supraśla?',
-    a: 'Około 10 minut samochodem. Monaster, kawiarnie, sklepy — wszystko na wyciągnięcie ręki.',
+    a: 'Do centrum Supraśla jest około 10 minut jazdy samochodem.',
   },
   {
     q: 'Jaki jest minimalny czas pobytu?',
-    a: 'Minimalny pobyt to 2 noce. W sezonie mogą obowiązywać inne warunki — zapytaj o szczegóły.',
+    a: 'Minimalny pobyt zależy od terminu. Aktualne wymagania sprawdzisz w kalendarzu dostępności lub podczas rezerwacji.',
   },
   {
     q: 'Jak wygląda rezerwacja?',
-    a: 'Wyślij zapytanie przez formularz lub zadzwoń pod 722 765 101. Potwierdzimy dostępność i przedstawimy szczegółową ofertę. Rezerwacja bezpośrednia, bez prowizji pośrednika.',
+    a: 'Wyślij zapytanie przez formularz na stronie lub zadzwoń pod 722 765 101. Gospodarz potwierdzi dostępność i cenę dla wybranego terminu.',
   },
 ];
 
