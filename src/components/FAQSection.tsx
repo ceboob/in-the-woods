@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     q: 'Czy można przyjechać z psem?',
-    a: 'Tak, można przyjechać z psem. Pobyt zwierząt jest bezpłatny, a dom ma ogrodzony ogród.',
+    a: 'Tak. Pobyt z psem jest bezpłatny i nie wymaga wcześniejszego uzgodnienia. Dom ma ogrodzony ogród.',
   },
   {
     q: 'Dla ilu osób jest dom?',

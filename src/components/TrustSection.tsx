@@ -41,14 +41,14 @@ const items = [
     title: 'Dom i ogród dla gości',
     lead: 'Cała przestrzeń jest tylko do Waszej dyspozycji.',
     description:
-      'Cały dom i ogród są przeznaczone wyłącznie dla gości — nie ma tu współdzielonych przestrzeni. Wokół są las i kilku spokojnych sąsiadów, a na miejscu czekają taras z grillem oraz bezpłatny prywatny parking. Dzieci mają przestrzeń do zabawy i dostępne zabawki; informacje o pobycie ze zwierzęciem warto potwierdzić przed rezerwacją.',
+      'Cały dom i ogród są przeznaczone wyłącznie dla gości — nie ma tu współdzielonych przestrzeni. Wokół są las i kilku spokojnych sąsiadów, a na miejscu czekają taras z grillem oraz bezpłatny prywatny parking. Dzieci mają przestrzeń do zabawy i dostępne zabawki; pobyt z psem jest bezpłatny i nie wymaga wcześniejszego uzgodnienia.',
   },
   {
     icon: Flame,
     title: 'Balia i kominek',
     lead: 'Leśna cisza, ciepła kąpiel i wieczór przy ogniu.',
     description:
-      'Po dniu w lesie można odpocząć w balii ogrodowej z funkcją jacuzzi, a wieczór spędzić przy kominku. Dwie niedawno odnowione łazienki, w pełni wyposażona kuchnia, ekspres do kawy i bezpłatne Wi-Fi ułatwiają codzienny pobyt. Przy sprzyjającej pogodzie można podziwiać gwiazdy i wsłuchać się w leśną ciszę.',
+      'Po dniu w lesie można odpocząć w balii ogrodowej z funkcją jacuzzi, a wieczór spędzić przy kominku. Goście mają do dyspozycji jedną łazienkę, osobną toaletę, w pełni wyposażoną kuchnię, ekspres do kawy i bezpłatne Wi-Fi. Przy sprzyjającej pogodzie można podziwiać gwiazdy i wsłuchać się w leśną ciszę.',
   },
 ];
 
