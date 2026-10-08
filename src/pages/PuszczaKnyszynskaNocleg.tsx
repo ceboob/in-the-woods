@@ -103,7 +103,7 @@ const PuszczaKnyszynskaNocleg = () => (
       </h2>
       <p className="text-muted-foreground leading-relaxed">
         Rezerwacja jest bezpośrednia — bez prowizji pośredników. Ceny od 399 zł/noc. Balia ogrodowa z funkcją jacuzzi: 250 zł
-        za cały pobyt. <strong>Psy za darmo</strong>. Minimalny pobyt to 2 noce.
+        za cały pobyt. <strong>Psy za darmo</strong>. Minimalny pobyt wynosi 2 noce, a w sezonie wysokim 3 noce.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Sprawdź również{' '}

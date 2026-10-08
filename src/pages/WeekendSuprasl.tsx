@@ -95,7 +95,7 @@ const WeekendSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Praktyczne informacje</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Ceny:</strong> Weekendy od 549 zł/noc, minimalny pobyt 2 noce. Balia ogrodowa z funkcją jacuzzi: 250 zł
+        <strong>Ceny:</strong> Weekendowy pobyt od 549 zł za noc. Minimalny pobyt: 2 noce, a w sezonie wysokim 3 noce. Balia ogrodowa z funkcją jacuzzi: 250 zł
         za cały pobyt. Psy za darmo.
       </p>
       <p className="text-muted-foreground leading-relaxed">

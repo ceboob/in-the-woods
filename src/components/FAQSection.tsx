@@ -32,7 +32,7 @@ const faqs = [
     a: 'In The Woods to prywatny dom na wynajem w Puszczy Knyszyńskiej, zaledwie 10 minut od centrum Supraśla. Idealny nocleg w Supraślu dla par, rodzin i grup przyjaciół szukających ciszy i natury.',
   },
   {
-    q: 'Czy są domy na wynajem w Supraślu?',
+    q: 'Czy rezerwacja obejmuje cały dom?',
     a: 'Tak. In The Woods to cały dom wynajmowany na wyłączność, położony w leśnej okolicy niedaleko Supraśla. Do dyspozycji gości są m.in. kominek, ogród i balia ogrodowa z funkcją jacuzzi.',
   },
   {
@@ -45,19 +45,19 @@ const faqs = [
   },
   {
     q: 'Czy są noclegi z jacuzzi w Supraślu?',
-    a: 'Do dyspozycji gości jest balia ogrodowa z funkcją jacuzzi. Jest dostępna jako opcjonalny dodatek do pobytu; szczegóły i aktualną cenę znajdziesz w cenniku.',
+    a: 'Tak. In The Woods oferuje balię ogrodową z funkcją jacuzzi jako opcjonalny dodatek do pobytu. Korzystanie z niej kosztuje 250 zł za cały pobyt.',
   },
   {
-    q: 'Czy jest jacuzzi?',
-    a: 'Tak. Goście mogą skorzystać z balii ogrodowej z funkcją jacuzzi, dostępnej jako opcjonalny dodatek do pobytu.',
+    q: 'Czy trzeba wcześniej zarezerwować balię?',
+    a: 'Tak. Balia ogrodowa z funkcją jacuzzi jest dostępna po wcześniejszej rezerwacji u gospodarza.',
   },
   {
-    q: 'Czy dom jest prywatny?',
-    a: 'Tak. Rezerwacja obejmuje cały dom i ogród; obiekt nie jest w tym samym czasie udostępniany innym gościom.',
+    q: 'Czy przy domu jest bezpłatny parking?',
+    a: 'Tak. Goście mogą korzystać z bezpłatnego parkingu przy domu.',
   },
   {
     q: 'Czy można przyjechać z psem?',
-    a: 'Tak, można przyjechać z psem. Pobyt zwierząt jest bezpłatny, a dom ma ogrodzony ogród.',
+    a: 'Tak. Pobyt z psem jest bezpłatny i nie wymaga wcześniejszego uzgodnienia. Dom ma ogrodzony ogród.',
   },
   {
     q: 'Dla ilu osób jest dom?',

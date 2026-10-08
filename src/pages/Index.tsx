@@ -82,7 +82,7 @@ const Index = () => {
           <LocationSection />
           <EventsSection />
 
-          {/* FAQ (dane strukturalne) + informator */}
+          {/* FAQ + informator */}
           <FAQSection />
           <GuestGuideSection />
 
