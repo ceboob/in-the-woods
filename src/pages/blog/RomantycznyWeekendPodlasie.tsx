@@ -11,7 +11,7 @@ const RomantycznyWeekendPodlasie = () => (
     readTime="10 min"
     keywords={['romantyczny weekend Podlasie', 'domek z kominkiem', 'weekend we dwoje', 'domek z balią']}
     faqs={[
-      { question: 'Ile kosztuje romantyczny weekend na Podlasiu?', answer: 'Pobyt w prywatnym domku w lesie z kominkiem i balią ogrodową z funkcją jacuzzi to koszt od 399 zł/noc. Jacuzzi — dodatkowe 250 zł za sesję.' },
+      { question: 'Ile kosztuje romantyczny weekend na Podlasiu?', answer: 'Cena noclegu zaczyna się od 399 zł za noc i zależy od terminu oraz liczby gości. Korzystanie z balii ogrodowej z funkcją jacuzzi kosztuje 250 zł za cały pobyt.' },
       { question: 'Czy trzeba rezerwować jacuzzi z wyprzedzeniem?', answer: 'Tak — balia ogrodowa z funkcją jacuzzi wymaga wcześniejszej rezerwacji, najlepiej w momencie rezerwacji pobytu.' },
       { question: 'Gdzie najlepiej na romantyczny wypad na Podlasiu?', answer: 'Okolice Supraśla i Puszcza Knyszyńska oferują najpiękniejsze odosobnione domki w lesie, idealne na weekend we dwoje.' },
     ]}

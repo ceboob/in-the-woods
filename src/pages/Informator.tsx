@@ -64,7 +64,7 @@ const Informator = () => {
             >
               Atrakcje
             </Link>
-            <a href="tel:+48790625990" className="btn-primary text-xs py-2.5 px-6">
+            <a href="tel:+48722765101" className="btn-primary text-xs py-2.5 px-6">
               Zadzwoń
             </a>
           </div>
@@ -470,10 +470,10 @@ const Informator = () => {
                   </p>
                   <div className="space-y-2 text-muted-foreground">
                     <a
-                      href="tel:+48790625990"
+                      href="tel:+48722765101"
                       className="flex items-center gap-2 hover:text-foreground transition-colors"
                     >
-                      <Phone className="w-4 h-4" /> 790 625 990
+                      <Phone className="w-4 h-4" /> 722 765 101
                     </a>
                     <a
                       href="tel:+48722765101"

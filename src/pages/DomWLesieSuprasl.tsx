@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const DomWLesieSuprasl = () => (
   <SEOPageLayout
-    title="Dom w lesie Podlasie | Domek na odludziu wynajem"
+    title="Dom w lesie na Podlasiu | Wynajem domu blisko Supraśla"
     description="Dom w lesie na Podlasiu na wyłączność: kominek, balia, ogrodzony teren i cisza Puszczy Knyszyńskiej. Sprawdź terminy."
     breadcrumbName="Dom w lesie Supraśl"
     ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
@@ -16,11 +16,11 @@ const DomWLesieSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed text-lg">
         Marzysz o pobycie w <strong>domu w lesie blisko Supraśla</strong>? In The Woods to drewniany
         dom z bali na wyłączność, otoczony Puszczą Knyszyńską — jednym z największych i najpiękniejszych
-        kompleksów leśnych w Polsce. <strong>Leśny domek do wynajęcia</strong> dla osób, które
+        lasami Puszczy Knyszyńskiej. <strong>Leśny domek do wynajęcia</strong> dla osób, które
         szukają kontaktu z naturą, ciszy i odpoczynku z dala od miejskiego zgiełku.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Domek w lesie wynajem — czym jest dom w lesie?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Wynajem domu w lesie — czym jest pobyt w leśnym domu?</h2>
       <p className="text-muted-foreground leading-relaxed">
         <strong>Domek w lesie koło Supraśla</strong> pozwala spędzić pobyt w spokojnym otoczeniu
         Puszczy Knyszyńskiej. Poranna kawa na tarasie, spacer leśną drogą i odpoczynek we własnym
@@ -28,17 +28,17 @@ const DomWLesieSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         In The Woods leży przy rezerwacie przyrody Krzemienne Góry, w miejscowości Konne, zaledwie
-        10 minut samochodem od Supraśla i 25 minut od Białegostoku. <strong>Domek podlaskie odludzie</strong> —
-        idealna proporcja bliskości natury z łatwym dostępem do atrakcji i infrastruktury.
+        10 minut samochodem od Supraśla i 25 minut od Białegostoku. To wypoczynek na Podlasiu z dala
+        od miejskiego zgiełku, a zarazem z dogodnym dojazdem do okolicznych atrakcji.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Dom jest drewniany, ciepły i przytulny. Salon z klimatycznym kominkiem, dwie sypialnie na
         piętrze z dużymi łóżkami, w pełni wyposażona kuchnia z kaflową płytą i jadalnią.
         Ogrodzony teren z tarasem, altaną, miejscem na ognisko i placem zabaw dla dzieci.
-        <strong> Dom z bali wynajem</strong> na wyłączność — Twoja prywatna przestrzeń w sercu lasu.
+        <strong> Dom z bali do wynajęcia</strong> na wyłączność — Twoja prywatna przestrzeń w lesie.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Slow travel Polska — spokojny wypoczynek w naturze</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Slow travel na Podlasiu — spokojny wypoczynek w naturze</h2>
       <p className="text-muted-foreground leading-relaxed">
         Slow travel to sposób podróżowania, który pozwala lepiej poznać miejsce i odpoczywać bez
         pośpiechu. Leśne położenie domu sprzyja spacerom i spokojnemu pobytowi.
@@ -56,17 +56,15 @@ const DomWLesieSuprasl = () => (
         ogrodowej z funkcją jacuzzi.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi w lesie — nature retreat</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Leśny dom z balią ogrodową z funkcją jacuzzi</h2>
       <p className="text-muted-foreground leading-relaxed">
         <strong>Dom w lesie blisko Supraśla</strong> łączy spokojne otoczenie z wygodnym dojazdem
-        do miasta. Po dniu na szlakach Puszczy Knyszyńskiej można odpocząć przy kominku lub
+        do miasta. Po dniu spędzonym na szlakach Puszczy Knyszyńskiej można odpocząć przy kominku lub
         zarezerwować balię ogrodową z funkcją jacuzzi.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        In The Woods jest przyjazny zwierzętom. <strong>Psy za darmo</strong> — bez dopłat. Ogrodzony ogród
-        zapewnia bezpieczeństwo, a kilometry leśnych ścieżek tuż za płotem to marzenie każdego
-        czworonoga. <strong>Dom w lesie wynajem dla rodziny z dziećmi</strong> — plac zabaw, ognisko
-        i bezpieczna przestrzeń w otoczeniu natury.
+        In The Woods jest przyjazny zwierzętom: pobyt z psem jest bezpłatny, a ogrodzony ogród daje mu
+        przestrzeń na zewnątrz. Dla rodzin z dziećmi dostępne są plac zabaw, ogród i miejsce na ognisko.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
@@ -74,15 +72,14 @@ const DomWLesieSuprasl = () => (
       </h2>
       <p className="text-muted-foreground leading-relaxed">
         Podlasie to najrzadziej zaludniony region Polski, co czyni go idealnym kierunkiem dla osób
-        szukających ciszy i przestrzeni. <strong>Domek w lesie podlaskie</strong> to inwestycja w
-        odpoczynek, którego nie zapewni żaden hotel czy resort. <strong>Ucieczka od zgiełku miasta</strong>,
-        romantyczny pobyt w lesie wynajem lub wynajem domku na odludziu na weekend — tutaj każdy
-        znajdzie swój rytm.
+        szukających ciszy i przestrzeni. Wynajem domu w lesie na Podlasiu pozwala odpocząć
+        w spokojnym otoczeniu. Można tu zaplanować romantyczny pobyt albo weekend z dala od miejskiego
+        zgiełku — we własnym tempie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Dojazd z Warszawy zajmuje około 2,5 godziny trasą S8. Z Białegostoku — zaledwie 25 minut.
-        Minimalny czas pobytu to 2 noce — i szczerze rekomendujemy dłuższe pobyty. Dopiero po dwóch
-        dniach zaczynasz naprawdę zwalniać i odczuwać dobrodziejstwa <strong>oderwania od cywilizacji</strong>.
+        Minimalny czas pobytu zależy od sezonu: wynosi 2 noce, a w sezonie wysokim 3 noce.
+        Dłuższy pobyt pozwala spokojniej poznać okolicę i odpocząć od miejskiego zgiełku.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Domek na sylwestra, walentynki i majówkę w lesie</h2>
@@ -90,7 +87,7 @@ const DomWLesieSuprasl = () => (
         Szukasz <strong>domku na sylwestra w lesie</strong>? A może klimatyczny{' '}
         <strong>domek na walentynki</strong> lub majówkę w puszczy? In The Woods to{' '}
         <strong>domek z kominkiem</strong> idealny na każdą okazję i porę roku.{' '}
-        <strong>Romantyczny pobyt w lesie wynajem</strong> — kominek, balia pod gwiazdami i cisza puszczy.
+        <strong>Romantyczny pobyt w leśnym domu</strong> — kominek, balia pod gwiazdami i cisza puszczy.
         Najlepsze terminy rezerwowane z wyprzedzeniem.
       </p>
 
