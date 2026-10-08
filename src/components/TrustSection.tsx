@@ -1,6 +1,6 @@
 import { Flame, MapPin, Shield, Trees } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 
 const items = [
   {
@@ -53,7 +53,7 @@ const items = [
 ];
 
 const TrustSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section aria-labelledby="highlights-title" className="px-6 md:px-12 py-12 md:py-16 bg-background">
@@ -63,7 +63,7 @@ const TrustSection = () => {
         </h2>
         <div
           ref={ref}
-          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal-section ${isVisible ? 'is-revealed' : ''}`}
         >
           {items.map((item) => (
             <article key={item.title} className="card-premium p-6 text-center space-y-4">

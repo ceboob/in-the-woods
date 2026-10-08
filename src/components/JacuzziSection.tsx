@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import gardenTubImg from '@/assets/gallery-bania-dom-thumb.webp';
 import { Snowflake, Leaf, Bike, Heart } from 'lucide-react';
 
@@ -10,7 +10,7 @@ const bullets = [
 ];
 
 const JacuzziSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section id="jacuzzi" className="relative">
@@ -38,7 +38,7 @@ const JacuzziSection = () => {
 
       <div
         ref={ref}
-        className={`section-padding bg-background transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`section-padding bg-background reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <div className="space-y-4">

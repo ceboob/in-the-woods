@@ -1,14 +1,14 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import salonImg from '@/assets/gallery-salon-panorama-thumb.webp';
 
 const AboutSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section id="o-miejscu" className="section-padding bg-warm-white">
       <div
         ref={ref}
-        className={`max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="space-y-6">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">

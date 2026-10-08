@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import forestPath from '@/assets/forest-panorama-real.webp';
 import drogaImg from '@/assets/droga-lesna-konne.webp';
 import { TreePine, Waves, Bike, Fish, Eye, Compass } from 'lucide-react';
@@ -13,7 +13,7 @@ const activities = [
 ];
 
 const NatureSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="relative">
@@ -43,7 +43,7 @@ const NatureSection = () => {
 
       <div
         ref={ref}
-        className={`section-padding bg-background transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`section-padding bg-background reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-6">
