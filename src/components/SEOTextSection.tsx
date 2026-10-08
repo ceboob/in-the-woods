@@ -1,14 +1,14 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
 
 const SEOTextSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="section-padding bg-secondary">
       <div
         ref={ref}
-        className={`max-w-4xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-4xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-12 space-y-4">
           <h2 className="section-title">Noclegi Supraśl – leśny domek do wynajęcia na Podlasiu</h2>

@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Bath, Percent, Clock, Users, TreePine, Sun, Snowflake, Leaf } from 'lucide-react';
 import StripeSecurityTooltip from '@/components/StripeSecurityTooltip';
 import {
@@ -79,7 +79,7 @@ const extras = [
 ];
 
 const PricingSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   const scrollTo = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -89,7 +89,7 @@ const PricingSection = () => {
     <section id="cennik" className="section-padding bg-secondary">
       <div
         ref={ref}
-        className={`max-w-5xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-5xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         {/* Header */}
         <div className="text-center mb-12 space-y-4">

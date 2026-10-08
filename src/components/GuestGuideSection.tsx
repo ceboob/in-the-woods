@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
 import { BookOpen, Flame, Bath, TreePine, ShieldCheck } from 'lucide-react';
 
@@ -10,13 +10,13 @@ const items = [
 ];
 
 const GuestGuideSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="section-padding bg-secondary">
       <div
         ref={ref}
-        className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-4xl mx-auto text-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="space-y-4 mb-10">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">

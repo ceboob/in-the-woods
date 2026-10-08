@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
 
 import jacuzziNight from '@/assets/jacuzzi-night-lg.webp';
@@ -477,7 +477,7 @@ const allImages: GalleryImage[] = [
 const INITIAL_COUNT = 12;
 
 const GallerySection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
   const [activeCategory, setActiveCategory] = useState<Category>('all');
   const [showAll, setShowAll] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -532,7 +532,7 @@ const GallerySection = () => {
     <section id="galeria" className="section-padding bg-background">
       <div
         ref={ref}
-        className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-7xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-10 space-y-4">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">

@@ -1,14 +1,14 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Clock, ShieldCheck, CreditCard, TreePine } from 'lucide-react';
 
 const CTASection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="px-6 md:px-12 py-20 md:py-28 bg-background">
       <div
         ref={ref}
-        className={`max-w-3xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-3xl mx-auto text-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <h2 className="section-title mb-4">Zarezerwuj leśny domek do wynajęcia — Twój dom na wyłączność</h2>
         <p className="text-muted-foreground mb-4 text-lg">

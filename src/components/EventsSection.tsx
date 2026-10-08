@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
 import { PartyPopper, Heart, Users, Briefcase } from 'lucide-react';
 
@@ -26,13 +26,13 @@ const events = [
 ];
 
 const EventsSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="section-padding bg-background">
       <div
         ref={ref}
-        className={`max-w-6xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-6xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-12 space-y-4">
           <h2 className="section-title">Organizacja imprez i wydarzeń</h2>

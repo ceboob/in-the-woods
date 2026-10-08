@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import winterCabin from '@/assets/winter-cabin-real.webp';
 import winterGolden from '@/assets/winter-cabin-golden.webp';
 import winterForest from '@/assets/winter-forest.webp';
@@ -6,7 +6,7 @@ import winterForest from '@/assets/winter-forest.webp';
 const ideas = ['Domek na sylwestra w lesie', 'Ferie zimowe w puszczy', 'Walentynki w leśnym domku', 'Majówka w lesie'];
 
 const WinterSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="relative">
@@ -34,7 +34,7 @@ const WinterSection = () => {
 
       <div
         ref={ref}
-        className={`section-padding bg-background transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`section-padding bg-background reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="max-w-5xl mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-12 space-y-4">
