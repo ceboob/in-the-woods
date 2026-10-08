@@ -16,16 +16,15 @@ const DomWLesieSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed text-lg">
         Marzysz o pobycie w <strong>domu w lesie blisko Supraśla</strong>? In The Woods to drewniany
         dom z bali na wyłączność, otoczony Puszczą Knyszyńską — jednym z największych i najpiękniejszych
-        kompleksów leśnych w Polsce. <strong>Leśny domek do wynajęcia</strong> stworzony dla tych,
-        którzy szukają prawdziwego kontaktu z naturą, ciszy i oderwania od cywilizacji.
+        kompleksów leśnych w Polsce. <strong>Leśny domek do wynajęcia</strong> dla osób, które
+        szukają kontaktu z naturą, ciszy i odpoczynku z dala od miejskiego zgiełku.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Domek w lesie wynajem — czym jest dom w lesie?</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Domek w lesie Supraśl</strong> to nie standardowy nocleg. To doświadczenie. Budzisz
-        się z widokiem na las, słyszysz śpiew ptaków zamiast budzika, a poranna kawa na tarasie
-        smakuje zupełnie inaczej, gdy za ogrodzeniem zaczyna się puszcza. <strong>Domek na odludziu</strong> —
-        gdzie brak zasięgu telefonii komórkowej staje się zaletą, a detoks cyfrowy w lesie dzieje się naturalnie.
+        <strong>Domek w lesie koło Supraśla</strong> pozwala spędzić pobyt w spokojnym otoczeniu
+        Puszczy Knyszyńskiej. Poranna kawa na tarasie, spacer leśną drogą i odpoczynek we własnym
+        tempie — bez konieczności planowania każdej chwili.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         In The Woods leży przy rezerwacie przyrody Krzemienne Góry, w miejscowości Konne, zaledwie
@@ -41,10 +40,8 @@ const DomWLesieSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Slow travel Polska — spokojny wypoczynek w naturze</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Slow travel to filozofia podróżowania, która stawia na głębokie doświadczanie miejsca
-        zamiast pośpiesznego zwiedzania. <strong>Domek w lesie na Podlasiu</strong> to idealna baza
-        do praktykowania tego podejścia — odpoczynek w lesie weekend za weekendem, chill w lesie
-        bez pośpiechu i bez planu.
+        Slow travel to sposób podróżowania, który pozwala lepiej poznać miejsce i odpoczywać bez
+        pośpiechu. Leśne położenie domu sprzyja spacerom i spokojnemu pobytowi.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         W In The Woods czas płynie wolniej. Poranki zaczynasz od kawy na tarasie, obserwując las
@@ -53,19 +50,17 @@ const DomWLesieSuprasl = () => (
         gdzie sam decydujesz o rytmie dnia.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Popołudnia to czas na odkrywanie okolicy. Supraśl z Monasterem i kawiarniami jest 10 minut
-        stąd. Arboretum Kopna Góra — 20 minut. Kruszyniany z tatarską kuchnią — 45 minut. A
-        wieczory?         wieczory należą do kominka, ogniska w ogrodzie lub odpoczynku w balii ogrodowej z funkcją jacuzzi
-        pod gwiazdami — <strong>domek z balią w lesie</strong>, chwila relaksu na odludziu.
+        Popołudnia można przeznaczyć na odkrywanie okolicy. Supraśl z Monasterem i kawiarniami
+        znajduje się około 10 minut jazdy samochodem od domu, a Arboretum Kopna Góra — około 20 minut.
+        Wieczorem można odpocząć przy kominku, rozpalić ognisko w ogrodzie lub skorzystać z balii
+        ogrodowej z funkcją jacuzzi.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi w lesie — nature retreat</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Koncepcja nature retreat zyskuje na popularności nie bez powodu. Badania naukowe
-        potwierdzają, że kontakt z naturą obniża poziom kortyzolu i poprawia jakość snu.
-        <strong> Dom w lesie blisko Supraśla</strong> to naturalne uzdrowisko dla ciała i umysłu.
-        <strong> Domek z jacuzzi w lesie</strong> — balia ogrodowa z funkcją jacuzzi pod gwiazdami po całym dniu
-        na szlakach Puszczy Knyszyńskiej.
+        <strong>Dom w lesie blisko Supraśla</strong> łączy spokojne otoczenie z wygodnym dojazdem
+        do miasta. Po dniu na szlakach Puszczy Knyszyńskiej można odpocząć przy kominku lub
+        zarezerwować balię ogrodową z funkcją jacuzzi.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         In The Woods jest przyjazny zwierzętom. <strong>Psy za darmo</strong> — bez dopłat. Ogrodzony ogród
