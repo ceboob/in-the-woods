@@ -1,22 +1,15 @@
-import { Helmet } from 'react-helmet-async';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
 
 const PolitykaPrywatnosci = () => {
   return (
     <>
-      <Helmet>
-        <title>Polityka prywatności i cookies | In The Woods Supraśl</title>
-        <meta
-          name="description"
-          content="Polityka prywatności, cookies i RODO obiektu In The Woods w Supraślu. Dowiedz się jak przetwarzamy Twoje dane."
-        />
-        <link rel="canonical" href="https://www.suprasl.online/polityka-prywatnosci" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Polityka prywatności | In The Woods Supraśl" />
-        <meta property="og:description" content="Polityka prywatności, cookies i RODO obiektu In The Woods w Supraślu." />
-        <meta property="og:url" content="https://www.suprasl.online/polityka-prywatnosci" />
-      </Helmet>
+      <SEOHead
+        title="Polityka prywatności i cookies | In The Woods Supraśl"
+        description="Polityka prywatności, cookies i RODO obiektu In The Woods w Supraślu. Dowiedz się jak przetwarzamy Twoje dane."
+        canonical="https://www.suprasl.online/polityka-prywatnosci"
+      />
       <Navbar />
       <main className="min-h-screen bg-background pt-24 pb-16">
         <div className="max-w-3xl mx-auto px-4 space-y-10">

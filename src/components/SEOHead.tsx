@@ -18,7 +18,6 @@ const SEOHead = ({
   description,
   canonical,
   ogImage = 'https://www.suprasl.online/og-image.jpg',
-  keywords,
   type = 'website',
   jsonLd,
   noindex = false,
@@ -26,13 +25,11 @@ const SEOHead = ({
   modifiedTime,
 }: SEOHeadProps) => {
   const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
-  const keywordContent = Array.isArray(keywords) ? keywords.join(', ') : keywords;
 
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      {keywordContent ? <meta name="keywords" content={keywordContent} /> : null}
       <meta
         name="robots"
         content={

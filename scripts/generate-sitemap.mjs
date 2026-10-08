@@ -3,7 +3,6 @@ import { getRouteManifest } from './lib/route-manifest.mjs';
 
 const SITEMAP_FILE = 'public/sitemap.xml';
 const BASE_URL = 'https://www.suprasl.online';
-const TODAY = new Date().toISOString().slice(0, 10);
 
 function defaultMetaForRoute(route) {
   if (route === '/') {
@@ -47,7 +46,6 @@ const xmlEntries = routes
     const meta = oldMeta.get(route) ?? defaultMetaForRoute(route);
     return `  <url>
     <loc>${loc}</loc>
-    <lastmod>${TODAY}</lastmod>
     <changefreq>${meta.changefreq}</changefreq>
     <priority>${meta.priority}</priority>
   </url>`;
@@ -61,4 +59,4 @@ ${xmlEntries}
 `;
 
 fs.writeFileSync(SITEMAP_FILE, xml);
-console.log(`Generated sitemap for ${routes.length} routes (${TODAY}).`);
+console.log(`Generated sitemap for ${routes.length} routes.`);

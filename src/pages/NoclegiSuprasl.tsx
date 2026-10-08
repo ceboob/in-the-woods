@@ -33,7 +33,6 @@ const lodgingSchema = {
     { '@type': 'LocationFeatureSpecification', name: 'Szybkie Wi-Fi', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Bezpłatny parking', value: true },
   ],
-  priceRange: '$$',
   petsAllowed: true,
 };
 
