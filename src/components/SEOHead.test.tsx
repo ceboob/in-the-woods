@@ -37,4 +37,20 @@ describe('SEOHead', () => {
     expect(document.head.querySelector('link[rel="canonical"]')).toHaveAttribute('href', canonical);
     expect(document.head.querySelectorAll('link[rel="alternate"][href]')).toHaveLength(2);
   });
+
+  it('does not emit the obsolete meta keywords tag', async () => {
+    render(
+      <HelmetProvider>
+        <SEOHead
+          title="Test"
+          description="Test page"
+          canonical={canonical}
+          keywords={['noclegi Supraśl']}
+        />
+      </HelmetProvider>,
+    );
+
+    await waitFor(() => expect(document.head.querySelector('title')).toHaveTextContent('Test'));
+    expect(document.head.querySelector('meta[name="keywords"]')).toBeNull();
+  });
 });

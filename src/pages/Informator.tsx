@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
   ArrowLeft,
@@ -28,6 +27,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import SEOHead from '@/components/SEOHead';
 
 const Informator = () => {
   useEffect(() => {
@@ -36,16 +36,12 @@ const Informator = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Informator gościa – In The Woods Supraśl</title>
-        <meta name="description" content="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl." />
-        <link rel="canonical" href="https://www.suprasl.online/informator" />
-        <meta property="og:title" content="Informator gościa – In The Woods Supraśl" />
-        <meta property="og:description" content="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi." />
-        <meta property="og:url" content="https://www.suprasl.online/informator" />
-        <meta property="og:image" content="https://www.suprasl.online/images/hero-cabin.jpg" />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+      <SEOHead
+        title="Informator gościa – In The Woods Supraśl"
+        description="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl."
+        canonical="https://www.suprasl.online/informator"
+        ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
+      />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
