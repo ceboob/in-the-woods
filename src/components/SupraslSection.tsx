@@ -143,7 +143,7 @@ const SupraslSection = () => {
             Blog
           </p>
           <div className="grid md:grid-cols-3 gap-6">
-            {guides.map((guide) => (
+            {guides.map((guide, i) => (
               <Link
                 key={guide.slug}
                 to={`/blog/${guide.slug}`}
