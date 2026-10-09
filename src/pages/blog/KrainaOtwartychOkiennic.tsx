@@ -79,7 +79,7 @@ const KrainaOtwartychOkiennic = () => (
         baza wypadowa — prywatny dom w lesie, 10 minut od Supraśla.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Zarezerwuj pobyt: <a href="tel:+48722765101" className="text-primary hover:underline">722 765 101</a>.
+        Zapytaj o pobyt: <a href="tel:+48722765101" className="text-primary hover:underline">722 765 101</a>.
       </p>
     </article>
   </BlogArticleLayout>

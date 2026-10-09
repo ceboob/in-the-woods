@@ -30,10 +30,10 @@ const WeekendSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Jeśli pogoda sprzyja, rozpal ognisko w ogrodzie. To moment, kiedy zaczynasz zwalniać —
-        cisza Puszczy Knyszyńskiej robi swoje. Zarezerwuj balię ogrodową z funkcją jacuzzi na wieczór —{' '}
+        cisza Puszczy Knyszyńskiej sprzyja odpoczynkowi. Jeśli chcesz skorzystać z balii ogrodowej z funkcją jacuzzi,{' '}
         <strong>domek z balią w lesie</strong>, gorąca woda pod gwiazdami to idealny start
-        weekendu. Detoks cyfrowy w lesie zaczyna się sam — brak pełnego zasięgu telefonii
-        komórkowej staje się tu zaletą.
+        sprawdź szczegóły i dostępność przed pobytem. Możesz samodzielnie zdecydować, ile czasu
+        spędzisz bez ekranów; Wi-Fi jest dostępne.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
@@ -41,8 +41,8 @@ const WeekendSuprasl = () => (
       </h2>
       <p className="text-muted-foreground leading-relaxed">
         Poranny spacer po lesie to najlepszy sposób na rozpoczęcie sobotniego dnia. Szlaki piesze
-        Puszczy Knyszyńskiej zaczynają się tuż za progiem In The Woods — <strong>domek w lesie Supraśl</strong>,
-        gdzie rezerwat Krzemienne Góry jest na wyciągnięcie ręki.
+        Puszczy Knyszyńskiej są w okolicy In The Woods — <strong>domek w lesie Supraśl</strong>.
+        Przed spacerem w pobliżu rezerwatu Krzemienne Góry sprawdź zasady jego udostępniania.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Po śniadaniu wybierz się do Supraśla — 10 minut samochodem. Obowiązkowe punkty to
@@ -95,7 +95,7 @@ const WeekendSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Praktyczne informacje</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Ceny:</strong> Weekendowy pobyt od 549 zł za noc. Minimalny pobyt: 2 noce, a w sezonie wysokim 3 noce. Balia ogrodowa z funkcją jacuzzi: 250 zł
+        <strong>Cena:</strong> Zależy od terminu, liczby gości i nocy objętych dopłatą weekendową. Sprawdź wycenę w kalkulatorze; pobyt może podlegać sezonowemu minimum nocy.
         za cały pobyt. Psy za darmo.
       </p>
       <p className="text-muted-foreground leading-relaxed">

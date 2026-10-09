@@ -42,7 +42,7 @@ const HeroWelcome = () => {
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
           <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed font-accent">
-            Oddajemy Wam nasz całoroczny dom z bali na wyłączność — prywatny azyl stworzony z sercem i pasją. Tutaj nie dzielicie przestrzeni z nikim. Tylko Wy, las i prawdziwa cisza. Zanurzcie się w naturze, zwolnijcie i poczujcie, jak wraca spokój. Zarezerwujcie termin już dziś — wolnych dat jest coraz mniej.
+            Oddajemy Wam nasz całoroczny dom z bali na wyłączność — prywatny azyl stworzony z sercem i pasją. Tutaj nie dzielicie przestrzeni z nikim. Tylko Wy, las i chwila wytchnienia. Zanurzcie się w naturze i zwolnijcie tempo. Wyślijcie zapytanie o pobyt, aby poznać dostępność i cenę.
           </p>
         </div>
 

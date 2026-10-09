@@ -120,7 +120,7 @@ const RykowiskoJeleni = () => {
       </p>
 
       <p>
-        <Link to="/noclegi-suprasl" className="btn-primary">Zarezerwuj swój pobyt w In The Woods</Link> — połącz dziką, podlaską przyrodę z prywatną strefą relaksu i ciesz się
+        <Link to="/noclegi-suprasl" className="btn-primary">Wyślij zapytanie o pobyt w In The Woods</Link> — połącz dziką, podlaską przyrodę z prywatną strefą relaksu i ciesz się
         jesienią, o jakiej marzysz.
       </p>
     </BlogArticleLayout>

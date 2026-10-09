@@ -202,10 +202,8 @@ const RestauracjeSuprasl = () => {
         <strong>tradycyjny tatar wołowy</strong>, <strong>śledzia podlaskiego</strong> z cebulą,{' '}
         <strong>półmisek rozmaitości</strong> z wędlinami własnego wyrobu i regionalnymi serami, a
         także dania mięsne i sezonowe propozycje szefa kuchni. Bohema to doskonały wybór na{' '}
-        <strong>romantyczną kolację</strong> lub elegancki obiad po zwiedzaniu Monasteru i Muzeum
-        Ikon. Restauracja posiada również ogródek letni, z którego można podziwiać zabytkową
-        architekturę placu. Wysoko oceniana przez gości (9.7/10 za lokalizację), stanowi jedno z
-        najlepszych miejsc gastronomicznych w Supraślu.
+        <strong>romantyczną kolację</strong> lub obiad po zwiedzaniu Monasteru i Muzeum Ikon.
+        Sprawdź aktualne menu, godziny otwarcia i dostępność ogródka bezpośrednio w restauracji.
       </p>
 
       <h3>🍽️ Łukaszówka</h3>

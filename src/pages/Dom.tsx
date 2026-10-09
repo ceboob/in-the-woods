@@ -202,7 +202,7 @@ const Dom = () => (
 
       {/* CTA */}
       <div className="bg-secondary p-8 text-center space-y-4 rounded-xl">
-        <h3 className="font-heading text-2xl font-light">Chcesz zobaczyć więcej? Zarezerwuj domek w lesie</h3>
+        <h3 className="font-heading text-2xl font-light">Chcesz zobaczyć więcej? Zapytaj o pobyt</h3>
         <p className="text-muted-foreground">Przeglądaj galerię lub sprawdź dostępne terminy.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link to="/galeria" className="btn-primary">

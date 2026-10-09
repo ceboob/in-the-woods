@@ -133,15 +133,19 @@ const SupraslAtrakcjeUzdrowisko = () => {
       <h2>Muzeum Ikon</h2>
 
       <p>
-        <strong>Muzeum Ikon w Supraślu</strong> to jedyne w Polsce muzeum w całości poświęcone
-        sztuce ikonopisania. Mieści się w budynkach przyklasztornych i gromadzi ponad 1200 ikon z
-        XVI–XX wieku — od drobnych ikon podróżnych po monumentalne ikonostasy.
+        <strong>Muzeum Ikon w Supraślu</strong> mieści się w budynkach przyklasztornych i prezentuje
+        sztukę ikon. Aktualne informacje o wystawie, biletach i godzinach otwarcia znajdziesz na{' '}
+        <a href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/" target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Informacje dla zwiedzających Muzeum Ikon (otworzy się w nowej karcie)">
+          stronie Muzeum Podlaskiego
+        </a>
+        .
       </p>
 
       <p>
-        Ekspozycja przedstawia historię ikony od jej bizantyjskich korzeni, przez tradycję ruską i
-        grecką, po współczesne ikonopisarstwo. To unikalne miejsce, które pozwala zrozumieć duchową
-        i artystyczną głębię sztuki sakralnej Wschodu.
+        Szczegóły ekspozycji i dostępne formy zwiedzania mogą zależeć od aktualnego programu
+        muzeum; przed wizytą potwierdź je u organizatora.
       </p>
 
       <h2>Bulwary nad rzeką Supraśl</h2>

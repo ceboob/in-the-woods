@@ -10,8 +10,11 @@ import {
   formatDateKey,
   calculateTotalPrice,
   getMinimumNightsForStay,
+  GARDEN_TUB_PRICE,
+  LONG_STAY_DISCOUNT,
   MAX_GUESTS,
   MIN_NIGHTS,
+  WEEKEND_SURCHARGE,
   BLOCKED_DATES_LAST_UPDATED,
 } from '@/lib/pricing';
 
@@ -430,9 +433,10 @@ const AvailabilityCalendar = () => {
         {/* Season info */}
         <div className="mt-4 text-center space-y-1">
           <p className="text-xs text-muted-foreground">
-            Ceny od <strong>399 zł/noc</strong> za cały dom. Dopłata <strong>+100 zł</strong>{' '}
+            Ceny od <strong>{Math.min(...SEASONS.flatMap((season) => Object.values(season.prices)))} zł/noc</strong> za cały dom. Dopłata <strong>+{WEEKEND_SURCHARGE} zł</strong>{' '}
             dotyczy nocy rozpoczynających się w piątek lub sobotę; niedziela korzysta ze stawki
-            Nd–Czw. Przy pobycie 7+ nocy rabat 10% obejmuje nocleg, nie opcjonalną balię.
+            Nd–Czw. Przy pobycie 7+ nocy rabat {LONG_STAY_DISCOUNT * 100}% obejmuje nocleg, nie opcjonalną
+            balię ({GARDEN_TUB_PRICE} zł za pobyt).
           </p>
           <p className="text-[11px] text-muted-foreground/60">
             Ostatnia aktualizacja dostępności: {new Date(BLOCKED_DATES_LAST_UPDATED).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}

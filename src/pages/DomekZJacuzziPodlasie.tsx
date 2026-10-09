@@ -124,7 +124,7 @@ const DomekZJacuzziPodlasie = () => (
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
         <h3 className="font-heading text-2xl font-light">Sprawdź dostępność domku z jacuzzi w lesie</h3>
         <p className="text-muted-foreground">
-          Rezerwacja bezpośrednia — bez prowizji. Odpowiadamy w kilka godzin.
+          Wyślij zapytanie o pobyt. Odpowiemy z informacją o dostępności i cenie; formularz nie potwierdza rezerwacji ani nie oznacza płatności.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">

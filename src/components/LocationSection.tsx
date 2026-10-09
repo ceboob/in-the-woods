@@ -58,6 +58,7 @@ const LocationSection = () => {
             href="https://www.google.com/maps/dir/?api=1&destination=53.208577,23.436622"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Wyznacz trasę w Mapach Google (otworzy się w nowej karcie)"
             className="btn-outline inline-flex items-center gap-2"
           >
             <Navigation className="w-4 h-4" /> Wyznacz trasę

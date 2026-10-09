@@ -238,7 +238,7 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         Kominek, balia ogrodowa z funkcją jacuzzi, ogrodzony ogród i las za płotem.{' '}
         <Link to="/dom" className="text-primary underline hover:text-primary/80">Zobacz dom</Link>
         {' '}lub{' '}
-        <Link to="/#rezerwacja" className="text-primary underline hover:text-primary/80">zarezerwuj pobyt</Link>.
+        <Link to="/#rezerwacja" className="text-primary underline hover:text-primary/80">wyślij zapytanie o pobyt</Link>.
       </p>
     </section>
 

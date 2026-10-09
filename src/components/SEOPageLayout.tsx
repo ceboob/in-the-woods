@@ -133,7 +133,7 @@ const SEOPageLayout = ({
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="font-heading text-3xl font-light">Sprawdź dostępność terminu</h2>
           <p className="text-muted-foreground">
-            Odpowiadamy zwykle w kilka godzin. Rezerwacja bezpośrednia — bez prowizji.
+            Wyślij zapytanie o pobyt. Formularz nie potwierdza rezerwacji ani nie oznacza płatności.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">

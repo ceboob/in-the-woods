@@ -237,7 +237,7 @@ const NoclegiSuprasl = () => (
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-heading text-2xl font-light">Zarezerwuj nocleg w Supraślu bez prowizji</h3>
+        <h3 className="font-heading text-2xl font-light">Zapytaj o pobyt w Supraślu</h3>
         <p className="text-muted-foreground">
           Odpowiadamy zwykle w kilka godzin. Najszybciej potwierdzimy termin telefonicznie.
         </p>

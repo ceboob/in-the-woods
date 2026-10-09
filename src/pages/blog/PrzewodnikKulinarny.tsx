@@ -89,8 +89,13 @@ const PrzewodnikKulinarny = () => (
       podczas wizyty w regionie.
     </p>
     <p>
-      <strong>Pierekaczewnik</strong> to tradycyjny produkt kuchni tatarskiej. Przed wyjazdem
-      sprawdź w lokalnych jadłodajniach, czy jest w menu. Lokale w{' '}
+      <strong>Pierekaczewnik</strong> to warstwowe ciasto z nadzieniem, zwijane w spiralę i pieczone.
+      Szczegóły produktu opisuje{' '}
+      <a href="https://www.gov.pl/web/rolnictwo/pierekaczewnik" target="_blank" rel="noopener noreferrer"
+        aria-label="Opis pierekaczewnika na stronie Ministerstwa Rolnictwa (otworzy się w nowej karcie)">
+        Ministerstwo Rolnictwa
+      </a>
+      . Przed wyjazdem sprawdź w lokalnych jadłodajniach, czy jest w menu. Lokale w{' '}
       <Link to="/blog/kruszyniany-tatarska-wies">Kruszynianach</Link> (45 min od Supraśla)
       oferują dania kuchni tatarskiej; dostępność potraw może się zmieniać.
     </p>

@@ -129,7 +129,7 @@ const PuszczaKnyszynskaNocleg = () => (
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-heading text-2xl font-light">Zarezerwuj leśny domek do wynajęcia w Puszczy Knyszyńskiej</h3>
+        <h3 className="font-heading text-2xl font-light">Zapytaj o pobyt w leśnym domu</h3>
         <p className="text-muted-foreground">Prywatny dom na wyłączność. Kominek. Balia ogrodowa z funkcją jacuzzi. Cisza.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">

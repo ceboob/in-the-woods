@@ -99,6 +99,7 @@ const PolitykaPrywatnosci = () => {
                 href="https://stripe.com/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Polityka prywatności Stripe (otworzy się w nowej karcie)"
                 className="underline hover:text-foreground"
               >
                 stripe.com/privacy
@@ -139,6 +140,7 @@ const PolitykaPrywatnosci = () => {
                 href="https://uodo.gov.pl"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Urząd Ochrony Danych Osobowych (otworzy się w nowej karcie)"
                 className="underline hover:text-foreground"
               >
                 uodo.gov.pl

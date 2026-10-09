@@ -127,7 +127,7 @@ const DomWLesieSuprasl = () => (
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-heading text-2xl font-light">Zarezerwuj swój leśny domek do wynajęcia</h3>
+        <h3 className="font-heading text-2xl font-light">Wyślij zapytanie o pobyt</h3>
         <p className="text-muted-foreground">Ucieknij od zgiełku. Odpocznij w lesie na wyłączność.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">

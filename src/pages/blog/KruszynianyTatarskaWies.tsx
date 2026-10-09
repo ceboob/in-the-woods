@@ -137,7 +137,19 @@ const KruszynianyTatarskaWies = () => {
       <h3>Co warto spróbować?</h3>
 
       <ul>
-        <li><strong>Pierekaczewnik</strong> — tradycyjny produkt kuchni tatarskiej; sprawdź jego dostępność w lokalnym menu.</li>
+        <li>
+          <strong>Pierekaczewnik</strong> — warstwowe ciasto z nadzieniem, zwijane w spiralę i
+          pieczone. To produkt tradycyjny związany z kuchnią tatarską.{' '}
+          <a
+            href="https://www.gov.pl/web/rolnictwo/pierekaczewnik"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Opis pierekaczewnika na stronie Ministerstwa Rolnictwa (otworzy się w nowej karcie)"
+          >
+            Opis produktu na stronie Ministerstwa Rolnictwa
+          </a>
+          . Dostępność w lokalnym menu sprawdź przed wyjazdem.
+        </li>
         <li>
           <strong>Czebureki</strong> — smażone pierogi z mięsem, chrupiące i aromatyczne
         </li>

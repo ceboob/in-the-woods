@@ -42,10 +42,9 @@ const AtrakcjeSuprasl = () => (
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Muzeum Ikon w Supraślu prezentuje sztukę ikon i mieści się w zabudowaniach
-          poklasztornych. Bilet normalny kosztuje 20 zł; muzeum przyjmuje zwiedzających od wtorku
-          do niedzieli w godz. 10:00–17:00, a ostatnie wejście jest możliwe godzinę przed
-          zamknięciem. Przed wizytą sprawdź{' '}
-          <a href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/" target="_blank" rel="noopener" aria-label="Aktualne informacje dla zwiedzających Muzeum Ikon (otworzy się w nowej karcie)" className="underline">
+          poklasztornych. Ceny biletów, godziny otwarcia i zasady zwiedzania mogą się zmieniać.
+          Przed wizytą sprawdź{' '}
+          <a href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/" target="_blank" rel="noopener noreferrer" aria-label="Aktualne informacje dla zwiedzających Muzeum Ikon (otworzy się w nowej karcie)" className="underline">
             aktualne informacje dla zwiedzających
           </a>
           .
@@ -131,7 +130,7 @@ const AtrakcjeSuprasl = () => (
         <p className="text-muted-foreground leading-relaxed">
           Arboretum im. Powstańców 1863 w Kopnej Górze zajmuje 26 hektarów i zostało założone
           w 1988 roku. Przed wyjazdem sprawdź informacje o dostępności i zasadach zwiedzania u{' '}
-          <a href="https://suprasl.bialystok.lasy.gov.pl/" target="_blank" rel="noopener" aria-label="Informacje Nadleśnictwa Supraśl o arboretum (otworzy się w nowej karcie)" className="underline">
+          <a href="https://suprasl.bialystok.lasy.gov.pl/" target="_blank" rel="noopener noreferrer" aria-label="Informacje Nadleśnictwa Supraśl o arboretum (otworzy się w nowej karcie)" className="underline">
             Nadleśnictwa Supraśl
           </a>
           . To miejsce na spokojny spacer, około 20 minut jazdy od naszego{' '}

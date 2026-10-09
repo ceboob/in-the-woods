@@ -10,13 +10,13 @@ const CTASection = () => {
         ref={ref}
         className={`max-w-3xl mx-auto text-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
-        <h2 className="section-title mb-4">Zarezerwuj leśny domek do wynajęcia — Twój dom na wyłączność</h2>
+        <h2 className="section-title mb-4">Zapytaj o pobyt w leśnym domu na wyłączność</h2>
         <p className="text-muted-foreground mb-4 text-lg">
           Domek w lesie wynajem na Podlasiu — szepty Puszczy Knyszyńskiej, klimatyczny kominek,
           balia ogrodowa z funkcją jacuzzi pod gwiazdami i absolutna prywatność. Wszystko czeka na Ciebie.
         </p>
         <p className="text-muted-foreground mb-8">
-          Odpowiadamy zwykle w kilka godzin. Rezerwacja bezpośrednia — bez prowizji pośrednika.
+          Wysłanie zapytania nie potwierdza rezerwacji ani nie oznacza płatności. Odpowiemy z informacją o dostępności i cenie.
         </p>
 
         <div className="flex flex-wrap justify-center gap-6 mb-10">
@@ -35,7 +35,7 @@ const CTASection = () => {
         </div>
 
         <p className="text-xs text-muted-foreground font-accent">
-          Najlepsze terminy są rezerwowane z wyprzedzeniem — domek na sylwestra, walentynki czy majówkę w lesie znika pierwszy.
+          Jeśli masz wybrany termin, możesz podać go w formularzu zapytania.
         </p>
       </div>
     </section>

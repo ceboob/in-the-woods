@@ -48,7 +48,7 @@ const WorkationPodlasie = () => (
       <p className="text-muted-foreground leading-relaxed">
         <strong>7:00</strong> — Budzisz się z ptakami. Kawa z ekspresu, śniadanie z widokiem na las.<br />
         <strong>8:00–12:00</strong> — Deep work. Stół przy oknie, naturalne światło, cisza. Brak rozpraszaczy.<br />
-        <strong>12:00–13:00</strong> — Spacer po Rezerwacie Krzemienne Góry. Reset mentalny.<br />
+        <strong>12:00–13:00</strong> — Spacer po okolicy, z uwzględnieniem dostępnych tras i zasad ochrony przyrody.<br />
         <strong>13:00–14:00</strong> — Obiad z lokalnych produktów. Gotowanie jako medytacja.<br />
         <strong>14:00–17:00</strong> — Spotkania online, e-maile, lżejsze zadania.<br />
         <strong>17:00+</strong> — Wolne! Supraśl, kajaki, rower, jacuzzi. Twój czas.
@@ -56,13 +56,14 @@ const WorkationPodlasie = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Co zwiedzić po pracy?</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Supraśl jest 10 minut drogi — Monaster, Muzeum Ikon, kawiarnie i restauracje.
-        <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary hover:underline"> Szlaki piesze i rowerowe</Link> zaczynają
-        się za progiem. W sezonie dostępne są <Link to="/blog/kajaki-suprasl" className="text-primary hover:underline">spływy kajakowe</Link>.
+        W Supraślu znajdziesz m.in. Monaster i Muzeum Ikon; przed wizytą sprawdź godziny otwarcia.
+        <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary hover:underline"> Informacje o trasach</Link>{' '}
+        pomagają zaplanować wyjście. Dostępność <Link to="/blog/kajaki-suprasl" className="text-primary hover:underline">spływów kajakowych</Link>{' '}
+        potwierdź u organizatora.
         A wieczorem — balia ogrodowa z funkcją jacuzzi pod gwiazdami.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Zarezerwuj swoje workation</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Zapytaj o pobyt na workation</h2>
       <p className="text-muted-foreground leading-relaxed">
         <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> — prywatny dom w Puszczy Knyszyńskiej
         z Wi-Fi, kominkiem i ciszą. Idealne miejsce na <strong>workation na Podlasiu</strong>.

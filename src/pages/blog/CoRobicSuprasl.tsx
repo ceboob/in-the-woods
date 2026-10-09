@@ -57,12 +57,16 @@ const CoRobicSuprasl = () => (
       liturgicznym.
     </p>
 
-    <h2>Muzeum Ikon — jedyne takie w Polsce</h2>
+    <h2>Muzeum Ikon</h2>
     <p>
-      Przy Monasterze działa Muzeum Ikon, posiadające jedną z najcenniejszych kolekcji ikon w
-      Europie Środkowej. Ekspozycja prezentuje ikony od XVI do XX wieku, pochodzące z cerkwi
-      Podlasia i Lubelszczyzny. To obowiązkowy punkt programu dla miłośników sztuki sakralnej i
-      historii regionu.
+      Przy Monasterze działa Muzeum Ikon, które prezentuje sztukę ikon. Informacje o ekspozycji,
+      biletach, godzinach otwarcia i zasadach zwiedzania sprawdź na{' '}
+      <a href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/" target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Aktualne informacje dla zwiedzających Muzeum Ikon (otworzy się w nowej karcie)">
+        stronie Muzeum Podlaskiego
+      </a>
+      .
     </p>
 
     <h2>Bulwary nad rzeką Supraśl</h2>
@@ -114,18 +118,24 @@ const CoRobicSuprasl = () => (
 
     <h2>Arboretum Kopna Góra</h2>
     <p>
-      Arboretum Kopna Góra, oddalone o 20 minut od Supraśla, to ogród dendrologiczny z ponad 300
-      gatunkami drzew i krzewów z całego świata. Spacerowe ścieżki prowadzą przez różne strefy
-      roślinności — od azjatyckich klonów po amerykańskie sekwoje. Idealne na spokojny spacer w
-      każdą porę roku.
+      Arboretum im. Powstańców 1863 w Kopnej Górze zajmuje 26 hektarów i zostało założone w 1988
+      roku. Aktualne informacje o dojeździe, dostępności i zasadach zwiedzania publikuje{' '}
+      <a href="https://suprasl.bialystok.lasy.gov.pl/" target="_blank" rel="noopener noreferrer"
+        aria-label="Informacje Nadleśnictwa Supraśl (otworzy się w nowej karcie)">
+        Nadleśnictwo Supraśl
+      </a>
+      .
     </p>
 
     <h2>Teatr Wierszalin</h2>
     <p>
-      Supraśl jest siedzibą legendarnego Teatru Wierszalin — jednego z najważniejszych teatrów
-      plenerowych w Polsce. Spektakle odbywają się w naturalnej scenerii lasu i nawiązują do
-      mitologii Podlasia. Warto sprawdzić repertuar przed wizytą — to doświadczenie teatralne,
-      jakiego nie znajdziesz nigdzie indziej.
+      W Supraślu działa Teatr Wierszalin. Przed wizytą sprawdź aktualny repertuar, miejsce
+      przedstawienia i zasady zakupu biletów na{' '}
+      <a href="https://wierszalin.pl/" target="_blank" rel="noopener noreferrer"
+        aria-label="Oficjalna strona Teatru Wierszalin (otworzy się w nowej karcie)">
+        oficjalnej stronie teatru
+      </a>
+      .
     </p>
 
     <h2>Gdzie nocować w Supraślu</h2>

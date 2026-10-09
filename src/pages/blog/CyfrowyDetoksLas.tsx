@@ -75,7 +75,7 @@ const CyfrowyDetoksLas = () => (
         balia ogrodowa z funkcją jacuzzi i las za progiem. Wi-Fi jest dostępne, ale wybór należy do Ciebie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Zarezerwuj swój <strong>cyfrowy detoks</strong> — zadzwoń pod{' '}
+        Zapytaj o pobyt sprzyjający odpoczynkowi od ekranów — zadzwoń pod{' '}
         <a href="tel:+48722765101" className="text-primary hover:underline">722 765 101</a> lub wyślij zapytanie
         przez <Link to="/#rezerwacja" className="text-primary hover:underline">formularz</Link>.
       </p>

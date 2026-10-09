@@ -24,13 +24,13 @@ import blogBike from '@/assets/puszcza_knyszynska-.jpg';
 const articles = [
   {
     slug: 'jesien-w-suprasliu-2026-wydarzenia-kulturalne',
-    title: 'Jesień w Supraślu 2026 – kalendarz wydarzeń kulturalnych',
+    title: 'Jesień w Supraślu 2026 – jak zaplanować pobyt',
     excerpt:
-      'Koncerty fortepianowe, wernisaże, warsztaty kulinarne, bieg Bison Ultra i Jarmark Świąteczny. Sprawdź, co wydarzy się w Supraślu od października do grudnia 2026.',
+      'Pomysły na jesienny pobyt w Supraślu: spacery, kultura i wskazówki, gdzie sprawdzić aktualne wydarzenia oraz godziny otwarcia.',
     image: blogPuszczaPanorama,
     date: '2026-10-03',
-    readTime: '12 min',
-    keywords: ['wydarzenia w Supraślu jesienią 2026', 'jesień w Supraślu 2026', 'kalendarz wydarzeń'],
+    readTime: '4 min',
+    keywords: ['jesień w Supraślu', 'Supraśl jesienią', 'wydarzenia w Supraślu'],
   },
   {
     slug: 'rykowisko-jeleni-puszcza-knyszynska',

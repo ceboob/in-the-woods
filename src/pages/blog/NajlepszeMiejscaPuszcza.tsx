@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const NajlepszeMiejscaPuszcza = () => (
   <BlogArticleLayout
     title="Puszcza Knyszyńska – najlepsze miejsca"
-    metaTitle="Najlepsze miejsca Puszcza Knyszyńska | 2026"
-    metaDescription="Najlepsze miejsca w Puszczy Knyszyńskiej: rezerwaty, szlaki, arboretum, rzeki i dzikie ostępy. Kompletny przewodnik po największym lesie Podlasia."
+    metaTitle="Co zobaczyć w Puszczy Knyszyńskiej? | Przewodnik"
+    metaDescription="Poznaj propozycje wycieczek w Puszczy Knyszyńskiej i sprawdź, jak zaplanować wizytę z uwzględnieniem zasad ochrony przyrody."
     slug="najlepsze-miejsca-puszcza-knyszynska"
     publishDate="2026-03-25"
     readTime="11 min"
@@ -17,19 +17,14 @@ const NajlepszeMiejscaPuszcza = () => (
     ]}
     faqs={[
       {
-        question: 'Jak duża jest Puszcza Knyszyńska?',
-        answer:
-          'Puszcza Knyszyńska zajmuje ponad 128 tysięcy hektarów, co czyni ją jednym z największych kompleksów leśnych w Polsce.',
-      },
-      {
         question: 'Czy w Puszczy Knyszyńskiej można nocować?',
         answer:
-          'Tak — In The Woods oferuje prywatny dom na wynajem przy rezerwacie Krzemienne Góry, w samym sercu puszczy.',
+          'Tak — In The Woods oferuje prywatny dom na wyłączność w miejscowości Konne, w otoczeniu Puszczy Knyszyńskiej.',
       },
       {
         question: 'Jakie zwierzęta żyją w Puszczy Knyszyńskiej?',
         answer:
-          'W puszczy żyją m.in. łosie, wilki, rysie, żubry, bobry, orliki krzykliwe i bocian czarny.',
+          'Puszcza jest siedliskiem dzikich zwierząt. Obserwuj je z dystansu, nie dokarmiaj i nie wchodź poza udostępnione trasy.',
       },
     ]}
     relatedArticles={[
@@ -41,23 +36,20 @@ const NajlepszeMiejscaPuszcza = () => (
     <h2>Najlepsze miejsca w Puszczy Knyszyńskiej – co warto zobaczyć</h2>
 
     <p>
-      Puszcza Knyszyńska to jeden z największych i najlepiej zachowanych kompleksów leśnych w
-      Polsce. Ponad 128 tysięcy hektarów borów, torfowisk, dolin rzecznych i rezerwatów przyrody
-      tworzy krajobraz, który zachwyca o każdej porze roku. Oto nasze ulubione miejsca, które warto
+      Puszcza Knyszyńska to rozległy kompleks leśny z dolinami rzecznymi i obszarami chronionymi.
+      Przed odwiedzeniem wybranego miejsca sprawdź zasady dostępu. Oto kilka propozycji wartych
       odwiedzić podczas pobytu w <Link to="/noclegi-suprasl">okolicach Supraśla</Link>.
     </p>
 
     <h2>1. Rezerwat Krzemienne Góry</h2>
     <p>
-      Rezerwat Krzemienne Góry to jeden z najcenniejszych fragmentów Puszczy Knyszyńskiej. Chroni
-      ponad 200-letnie drzewostany sosnowe i świerkowe, rosnące na malowniczych wzgórzach
-      morenowych. Szlaki spacerowe prowadzą przez stary las, w którym panuje tajemnicza cisza
-      przerywaną jedynie śpiewem ptaków.
+      Rezerwat Krzemienne Góry jest obszarem chronionym. Nie zakładaj, że można swobodnie poruszać
+      się po jego całej powierzchni ani że przebiega przez niego otwarty szlak turystyczny.
+      Sprawdź oficjalne zasady udostępniania przed wizytą.
     </p>
     <p>
-      To właśnie przy tym rezerwacie stoi <Link to="/dom-w-lesie-suprasl">dom In The Woods</Link> —
-      dosłownie za płotem zaczyna się prawdziwa puszcza. Poranne spacery po rezerwacie to jedno z
-      najcenniejszych doświadczeń, jakie oferuje to miejsce.
+      W okolicy znajduje się <Link to="/dom-w-lesie-suprasl">dom In The Woods</Link>. Przy
+      planowaniu spaceru uwzględnij granice i ograniczenia dotyczące terenów chronionych.
     </p>
 
     <h2>2. Arboretum Kopna Góra</h2>
@@ -67,9 +59,7 @@ const NajlepszeMiejscaPuszcza = () => (
       o dojeździe, dostępności i zasadach zwiedzania.
     </p>
     <p>
-      Spacerowe alejki prowadzą przez różne strefy roślinności, a tablice informacyjne pomagają
-      rozpoznać poszczególne gatunki. Szczególnie pięknie jest tu jesienią, gdy liście przybierają
-      spektakularne kolory.
+      Przed wizytą sprawdź aktualną dostępność, dojazd i zasady zwiedzania u Nadleśnictwa Supraśl.
     </p>
 
     <h2>3. Dolina rzeki Supraśl</h2>

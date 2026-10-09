@@ -89,10 +89,13 @@ const SzlakiPieszeRowerowe = () => {
       <p>
         Rezerwat chroni cenne przyrodniczo tereny. Nie zakładaj, że można swobodnie poruszać się po
         jego całym obszarze ani że przebiega przez niego ogólnodostępna pętla turystyczna. Przed
-        wizytą sprawdź informacje właściwego organu ochrony przyrody i stosuj się do oznakowania.
-      </p>
-
-      <p>
+        wizytą sprawdź{' '}
+        <a href="https://www.gov.pl/web/rdos-bialystok/podlaskierezerwaty--rezerwat-przyrody-krzemienne-gory"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Informacje RDOŚ o rezerwacie Krzemienne Góry (otworzy się w nowej karcie)">
+          informacje RDOŚ o rezerwacie
+        </a>{' '}
+        i stosuj się do oznakowania.
       </p>
 
       <h3>2. Szlak wzdłuż rzeki Supraśl</h3>
@@ -209,8 +212,8 @@ const SzlakiPieszeRowerowe = () => {
       </p>
 
       <p>
-        Najlepsze odcinki MTB znajdują się w okolicach rezerwatu Krzemienne Góry i wzdłuż doliny
-        rzeki Supraśl. Jesienią trasy mogą być błotniste — co dla wielu jest dodatkową atrakcją.
+        Wybierz trasę udostępnioną dla rowerów, sprawdź jej przebieg i warunki przed wyjazdem.
+        Nie wjeżdżaj na drogi ani ścieżki objęte ograniczeniami.
       </p>
 
       <h2>Szlaki rodzinne</h2>
@@ -220,12 +223,11 @@ const SzlakiPieszeRowerowe = () => {
         rodzin z dziećmi, osób starszych i tych, którzy po prostu chcą spokojnie pospacerować.
       </p>
 
-      <h3>Ścieżka edukacyjna w rezerwacie</h3>
+      <h3>Ścieżki przyrodnicze w okolicy</h3>
 
       <p>
-        Krótka (ok. 2 km), dobrze utrzymana ścieżka z tablicami edukacyjnymi o florze i faunie
-        Puszczy Knyszyńskiej. Idealna dla dzieci od 4 lat. Prowadzi przez las z mostkami nad
-        strumykami i punktami obserwacyjnymi.
+        Przed wyjściem sprawdź dostępność trasy, jej długość, nawierzchnię i ograniczenia. Dobierz
+        spacer do możliwości uczestników i nie wchodź poza miejsca udostępnione do ruchu.
       </p>
 
       <h3>Spacer monasterski</h3>
@@ -243,34 +245,12 @@ const SzlakiPieszeRowerowe = () => {
         rowerze.
       </p>
 
-      <h2>Szlaki przyrodnicze</h2>
-
+      <h2>Odpowiedzialnie na szlaku</h2>
       <p>
-        Puszcza Knyszyńska to Obszar Chronionego Krajobrazu i jednocześnie Obszar Natura 2000.
-        Oznacza to, że szlaki prowadzą przez ekosystemy o wyjątkowej wartości przyrodniczej.
+        Puszcza Knyszyńska obejmuje tereny o różnych zasadach ochrony i udostępniania. Poruszaj się
+        wyłącznie po dozwolonych trasach, nie zbieraj roślin ani grzybów w rezerwatach i nie
+        niepokój zwierząt. Aktualne informacje sprawdzaj u właściwego zarządcy terenu.
       </p>
-
-      <h3>Co można zobaczyć?</h3>
-
-      <ul>
-        <li>
-          <strong>Flora:</strong> wielowiekowe dęby i buki, kobierce zawilców wiosną, rzadkie
-          storczyki leśne, mchy i porosty wskazujące na czystość powietrza
-        </li>
-        <li>
-          <strong>Fauna:</strong> łosie, sarny, dziki, bobry (ich tamy widoczne na wielu
-          strumieniach), bociany czarne, orliki krzykliwe, dzięcioły
-        </li>
-        <li>
-          <strong>Geologia:</strong> formacje morenowe, głazy narzutowe, odsłonięcia krzemieni w
-          rezerwacie Krzemienne Góry
-        </li>
-        <li>
-          <strong>Hydrologia:</strong>{' '}
-          <Link to="/blog/supraski-system-wodny">Supraski System Wodny</Link>, źródła leśne,
-          torfowiska
-        </li>
-      </ul>
 
       <h3>Obserwacja ptaków (birdwatching)</h3>
 

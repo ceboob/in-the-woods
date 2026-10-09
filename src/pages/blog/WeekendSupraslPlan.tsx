@@ -19,7 +19,7 @@ const WeekendSupraslPlan = () => (
       {
         question: 'Ile kosztuje weekend w Supraślu?',
         answer:
-          'Nocleg w In The Woods zaczyna się od 399 PLN/noc. Weekend (2 noce) to koszt od 798 PLN za cały dom dla do 8 osób.',
+          'Koszt pobytu zależy od terminu, liczby gości i zasad naliczania opłat za poszczególne noce. Sprawdź wycenę w formularzu zapytania.',
       },
       {
         question: 'Jak dojechać do Supraśla?',
@@ -129,7 +129,7 @@ const WeekendSupraslPlan = () => (
       </li>
       <li>
         <strong>Nocleg:</strong> <Link to="/noclegi-suprasl">In The Woods</Link> — dom w lesie na
-        wyłączność od 399 PLN/noc
+        wyłączność; cena zależy od terminu i liczby gości.
       </li>
       <li>
         <strong>Check-in:</strong> od 15:00, check-out do 11:00
@@ -138,14 +138,14 @@ const WeekendSupraslPlan = () => (
         <strong>Zwierzęta:</strong> mile widziane (gratis)
       </li>
       <li>
-        <strong>Rezerwacja:</strong> bezpośrednia, tel. 722 765 101
+        <strong>Zapytanie o pobyt:</strong> tel. 722 765 101
       </li>
     </ul>
 
     <div className="bg-secondary p-8 rounded-lg text-center space-y-4 not-prose mt-12">
       <p className="font-heading text-xl text-foreground">Zaplanuj swój weekend w Supraślu</p>
       <p className="text-muted-foreground text-sm">
-        Sprawdź dostępne terminy — rezerwacja bezpośrednia, bez prowizji.
+        Wyślij zapytanie, aby potwierdzić dostępność i otrzymać wycenę. Formularz nie potwierdza rezerwacji.
       </p>
       <a href="tel:+48722765101" className="btn-primary inline-block">
         Sprawdź termin

@@ -173,22 +173,22 @@ const SupraslAtrakcje = () => {
         produktów, co wpisuje się w filozofię slow food.
       </p>
 
-      <h2>Co robić w weekend w Supraślu?</h2>
+      <h2>Pomysł na weekend w Supraślu</h2>
 
       <h3>Dzień 1: Kultura i historia</h3>
 
       <p>
-        Poranek zacznij od wizyty w monasterze — najlepiej wejść do cerkwi rano, gdy światło wpada
-        przez witraże i oświetla freski. Po monasterze — Muzeum Ikon (zarezerwuj min. 1,5 godziny).
-        Obiad w jednej z restauracji w centrum. Popołudnie na spacerze ulicą Cieliczańską i w parku.
-        Wieczorem — kolacja i relaks.
+        Zacznij od zwiedzania monasteru, a następnie odwiedź Muzeum Ikon, jeśli jest otwarte.
+        Aktualne godziny i zasady wstępu sprawdź przed wyjazdem. Później możesz wybrać spacer po
+        mieście lub posiłek w lokalu, którego menu i godziny warto potwierdzić.
       </p>
 
       <h3>Dzień 2: Natura i aktywność</h3>
 
       <p>
         Rano — <Link to="/blog/szlaki-piesze-rowerowe-suprasl">szlak pieszy lub rowerowy</Link> w
-        Puszczy Knyszyńskiej. Polecamy rezerwat Krzemienne Góry lub{' '}
+        okolicy, sprawdzając wcześniej jego dostępność i zasady ochrony przyrody. Wybierając
+        rezerwat Krzemienne Góry, zapoznaj się z{' '}
         <Link to="/blog/szlak-powstania-styczniowego-suprasl">Szlak Powstania Styczniowego</Link>.
         Po południu — spływ kajakowy rzeką Supraśl lub spacer wzdłuż{' '}
         <Link to="/blog/supraski-system-wodny">Supraskiego Systemu Wodnego</Link>. Wieczorem —

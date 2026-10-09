@@ -11,8 +11,8 @@ const PodlasieZPsem = () => (
     readTime="9 min"
     keywords={['Podlasie z psem', 'nocleg z psem Supraśl', 'pet friendly Puszcza Knyszyńska', 'domek z psem']}
     faqs={[
-      { question: 'Czy mogę przyjechać z psem do In The Woods?', answer: 'Tak! Psy są mile widziane i pobyt z psem jest bezpłatny. Dom ma ogrodzony ogród, a las zaczyna się za progiem.' },
-      { question: 'Czy ogród jest ogrodzony?', answer: 'Tak — ogród jest w pełni ogrodzony, co pozwala psu swobodnie biegać bez smyczy.' },
+      { question: 'Czy mogę przyjechać z psem do In The Woods?', answer: 'Pobyt ze zwierzęciem jest możliwy; sprawdź aktualne zasady i szczegóły oferty przed wysłaniem zapytania.' },
+      { question: 'Czy ogród jest ogrodzony?', answer: 'Informację o ogrodzeniu i warunkach dla zwierząt potwierdź przed pobytem, szczególnie jeśli planujesz wypuszczać psa bez smyczy.' },
       { question: 'Czy są dodatkowe opłaty za psa?', answer: 'Nie — pobyt ze zwierzętami jest bezpłatny. Prosimy jedynie o sprzątanie po pupilu.' },
     ]}
     relatedArticles={[
@@ -46,17 +46,17 @@ const PodlasieZPsem = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Szlaki przyjazne psom w okolicy Supraśla</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Rezerwat Krzemienne Góry ma ograniczony dostęp. Nie zakładaj, że cała jego powierzchnia
-        jest dostępna na spacer z psem; sprawdź aktualne zasady i poruszaj się wyłącznie po
-        udostępnionej drodze. Poza rezerwatem wybieraj trasy dopuszczone dla psów.
+        Zasady wprowadzania psów mogą zależeć od rodzaju terenu i jego ochrony. Nie planuj wejścia
+        z psem do rezerwatu bez potwierdzenia, że jest to dozwolone; sprawdź oznakowanie i informacje
+        właściwego organu. Na innych trasach stosuj się do lokalnych regulaminów.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Bulwary nad Supraślą</strong> — spacerowa trasa wzdłuż rzeki w centrum Supraśla. Psy mile widziane
-        (na smyczy). Ławki, cień, dostęp do wody — Twój pies będzie zachwycony.
+        <strong>Trasy spacerowe w Supraślu</strong> — przed wyjściem sprawdź lokalne zasady dotyczące
+        psów i prowadź zwierzę zgodnie z oznakowaniem.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Green Velo</strong> — odcinki szlaku rowerowego są świetne również do spacerów z psem.
-        Szerokie, utwardzone ścieżki prowadzące przez las i łąki.
+        <strong>Odcinki szlaków w regionie</strong> — wybierz trasę dopuszczoną dla psów i oceń, czy
+        jej nawierzchnia oraz długość będą odpowiednie dla zwierzęcia.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Zasady pobytu z psem w lesie</h2>
@@ -83,7 +83,7 @@ const PodlasieZPsem = () => (
         .
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Rezerwuj bezpośrednio: <a href="tel:+48722765101" className="text-primary hover:underline">722 765 101</a>.
+        Zapytaj o pobyt: <a href="tel:+48722765101" className="text-primary hover:underline">722 765 101</a>.
       </p>
     </article>
   </BlogArticleLayout>
