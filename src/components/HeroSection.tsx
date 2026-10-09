@@ -114,7 +114,6 @@ const HeroSection = () => {
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 animate-fade-in delay-500">
           <div className="flex items-center gap-1.5 text-primary text-sm font-medium">
             <Star className="w-4 h-4 fill-primary text-primary" />
-            <span>4,82★ opinie</span>
           </div>
           <span className="text-white/50 text-sm">·</span>
           <span className="text-white font-medium text-sm">Ponad 110 zadowolonych gości</span>

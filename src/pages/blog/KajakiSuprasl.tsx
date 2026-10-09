@@ -19,12 +19,12 @@ const KajakiSuprasl = () => {
     {
       question: 'Czy kajaki Supraśl są odpowiednie dla dzieci?',
       answer:
-        'Tak, spokojna rzeka Supraśl jest doskonała dla rodzin z dziećmi. Wiele wypożyczalni oferuje kajaki dwu- i trzyosobowe, idealne na rodzinne wyprawy.',
+        'Możliwość udziału dzieci zależy od warunków, sprzętu i zasad organizatora. Przed rezerwacją zapytaj o minimalny wiek, wymagany nadzór i dostępne wyposażenie.',
     },
     {
       question: 'Kiedy najlepszy sezon na kajaki w Supraślu?',
       answer:
-        'Sezon kajakowy trwa od maja do września. Najlepsze warunki panują od czerwca do sierpnia, gdy poziom wody jest optymalny, a pogoda sprzyja aktywnościom wodnym.',
+        'Terminy spływów i warunki na rzece zmieniają się. Sprawdź aktualne informacje u organizatora i nie wypływaj przy niesprzyjającej pogodzie lub nieodpowiednim stanie wody.',
     },
     {
       question: 'Gdzie nocować po spływie kajakowym w Supraślu?',
@@ -73,9 +73,10 @@ const KajakiSuprasl = () => {
       <p>
         <strong>Kajaki w Supraślu</strong> to jedna z najpopularniejszych atrakcji turystycznych
         Puszczy Knyszyńskiej. Rzeka Supraśl, płynąca przez malownicze tereny leśne i łąkowe, oferuje
-        wyjątkowe doświadczenie dla miłośników natury i aktywnego wypoczynku. Spokojna, meandrująca
-        rzeka w otoczeniu dzikiej przyrody sprawia, że <strong>spływ kajakowy rzeką Supraśl</strong>{' '}
-        to doskonała propozycja zarówno dla początkujących, jak i doświadczonych kajakarzy.
+        możliwość spływu zależy od warunków na rzece, pogody i oferty lokalnych organizatorów.
+        Przed wyprawą sprawdź trasę, czas spływu i dostępne wyposażenie.{' '}
+        <strong>Spływ kajakowy rzeką Supraśl</strong> zaplanuj zgodnie ze swoimi umiejętnościami
+        i zaleceniami organizatora.
       </p>
 
       <p>

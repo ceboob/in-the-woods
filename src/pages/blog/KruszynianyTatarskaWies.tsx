@@ -80,10 +80,10 @@ const KruszynianyTatarskaWies = () => {
       <h2>Historia Tatarów na Podlasiu</h2>
 
       <p>
-        Tatarzy pojawili się na ziemiach polskich w XIV i XV wieku, sprowadzeni przez wielkich
-        książąt litewskich jako wojownicy i osadnicy. Król Jan III Sobieski, doceniając ich
-        waleczność w bitwach — w tym pod Wiedniem w 1683 roku — nadał im ziemie na Podlasiu, w tym
-        właśnie Kruszyniany i pobliskie Bohoniki.
+        Tatarzy osiedlali się na ziemiach Wielkiego Księstwa Litewskiego od XIV wieku. Jan III
+        Sobieski nadał ziemię Tatarom w Kruszynianach w 1679 roku — cztery lata przed odsieczą
+        wiedeńską z 1683 roku. Kruszyniany i pobliskie Bohoniki są ważnymi ośrodkami polskich
+        Tatarów.
       </p>
 
       <p>
@@ -137,10 +137,7 @@ const KruszynianyTatarskaWies = () => {
       <h3>Co warto spróbować?</h3>
 
       <ul>
-        <li>
-          <strong>Pierekaczewnik</strong> — ciasto drożdżowe z farszem mięsnym zawijane w kształt
-          ślimaka, pieczone w piecu
-        </li>
+        <li><strong>Pierekaczewnik</strong> — tradycyjny produkt kuchni tatarskiej; sprawdź jego dostępność w lokalnym menu.</li>
         <li>
           <strong>Czebureki</strong> — smażone pierogi z mięsem, chrupiące i aromatyczne
         </li>

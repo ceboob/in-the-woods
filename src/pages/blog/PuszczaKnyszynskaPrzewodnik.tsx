@@ -169,16 +169,16 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kąpiele leśne (shinrin-yoku)</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Spokojny spacer między drzewami zwolni puls i wyciszysz umysł. Dąb zwiększy energię,
-            lipa rozweseli, brzoza zrelaksuje. Sosna — powietrze wzbogacone o substancje eteryczne
-            korzystnie wpłynie na układ oddechowy. Przyjedź i wyzdrowiej.
+            Spokojny spacer wśród drzew może być okazją do odpoczynku i wyciszenia. Warto zwolnić
+            tempo, zwrócić uwagę na otoczenie i wybrać trasę dopasowaną do swoich możliwości.
           </p>
         </div>
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Obcowanie z naturą</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Na Wzgórzach Świętojańskich doświadczysz wspinaczki po formach polodowcowych. W Rezerwacie
-            Krzemianka chodzisz tuż nad źródliskami. W okolicach Krynek — stado żubrów.
+            Wzgórza Świętojańskie i rezerwat Krzemianka to przykłady przyrodniczych miejsc w regionie.
+            Przed wycieczką sprawdź wyznaczone trasy i zasady udostępniania; dzikich zwierząt nie
+            należy zbliżać ani dokarmiać.
           </p>
         </div>
       </div>
@@ -193,22 +193,23 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kruszyniany — tatarska wieś</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Kolebka polskich Tatarów z drewnianym meczetem i zabytkowym cmentarzem — mizarem.
-            Spróbuj słynnego pierekaczewnika, kołdunów lub trybuszoki!
+            Kruszyniany są związane z historią polskich Tatarów. We wsi znajdują się meczet i mizar.
+            W lokalnych jadłodajniach można szukać dań kuchni tatarskiej, w tym pierekaczewnika.
           </p>
         </div>
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Podlaskie Muzeum Kultury Ludowej</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Blisko 30 ha ze starymi chałupami, spichlerzami, stodołami. Dla dorosłych — ekspozycja
-            leśnej bimbrowni. Dla dzieci — plac zabaw. Na terenie Muzeum jest też Sokolarnia.
+            Skansen prezentuje tradycyjną architekturę i kulturę regionu. Sprawdź oficjalne informacje
+            placówki, by potwierdzić dostępność ekspozycji, atrakcji i godziny zwiedzania.
           </p>
         </div>
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Supraśl — serce Puszczy</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Monaster z XV/XVI w. z <strong>Muzeum Ikon</strong> (ok. 300 ikon, unikalne freski),
-            domy tkaczy, Pałac Buchholtzów, uzdrowisko z jednymi z najlepszych złóż borowin w Polsce.
+            Monaster, <strong>Muzeum Ikon</strong>, domy tkaczy i Pałac Buchholtzów to wybrane
+            miejsca związane z historią Supraśla. Godziny otwarcia i zasady zwiedzania muzeum
+            sprawdź przed wizytą.
           </p>
         </div>
       </div>

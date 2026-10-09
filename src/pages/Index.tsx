@@ -16,7 +16,6 @@ const ForWhoSection = lazy(() => import('@/components/ForWhoSection'));
 const GallerySection = lazy(() => import('@/components/GallerySection'));
 const WinterSection = lazy(() => import('@/components/WinterSection'));
 const PricingSection = lazy(() => import('@/components/PricingSection'));
-const TestimonialsSection = lazy(() => import('@/components/TestimonialsSection'));
 const LocationSection = lazy(() => import('@/components/LocationSection'));
 const EventsSection = lazy(() => import('@/components/EventsSection'));
 const FAQSection = lazy(() => import('@/components/FAQSection'));
@@ -76,8 +75,6 @@ const Index = () => {
           <PricingSection />
 
           {/* Social proof */}
-          <TestimonialsSection />
-
           {/* Okolica i lokalne SEO */}
           <LocationSection />
           <EventsSection />

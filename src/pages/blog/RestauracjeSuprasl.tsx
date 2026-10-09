@@ -338,9 +338,9 @@ const RestauracjeSuprasl = () => {
       <p>
         W pobliżu Supraśla znajdują się{' '}
         <Link to="/blog/kruszyniany-tatarska-wies">Kruszyniany</Link> — tatarska wieś, gdzie można
-        spróbować autentycznych dań kuchni tatarskiej. Pierekaczewnik (spiralny placek z mięsem),
-        kibiny (pierożki tatarskie) i herbata z miodem to smaki, które trudno znaleźć gdzie indziej
-        w Polsce. Wycieczka kulinarna do Kruszynian to doskonałe uzupełnienie pobytu w Supraślu.
+        spróbować dań kuchni tatarskiej. Pierekaczewnik i inne regionalne potrawy mogą być
+        dostępne w lokalnych jadłodajniach; sprawdź aktualne menu i godziny otwarcia przed
+        wyjazdem. Wycieczka do Kruszynian może uzupełnić pobyt w Supraślu.
       </p>
 
       <h2>Porady gastronomiczne dla turystów</h2>

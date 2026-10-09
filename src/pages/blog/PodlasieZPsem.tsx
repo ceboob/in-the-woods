@@ -46,8 +46,9 @@ const PodlasieZPsem = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Szlaki przyjazne psom w okolicy Supraśla</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Rezerwat Krzemienne Góry</strong> — piękny szlak leśny, rozpoczynający się tuż obok In The Woods.
-        Szeroka droga, łagodne wzniesienia, brak ruchu samochodowego. Idealny na poranne spacery.
+        Rezerwat Krzemienne Góry ma ograniczony dostęp. Nie zakładaj, że cała jego powierzchnia
+        jest dostępna na spacer z psem; sprawdź aktualne zasady i poruszaj się wyłącznie po
+        udostępnionej drodze. Poza rezerwatem wybieraj trasy dopuszczone dla psów.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         <strong>Bulwary nad Supraślą</strong> — spacerowa trasa wzdłuż rzeki w centrum Supraśla. Psy mile widziane
@@ -60,11 +61,11 @@ const PodlasieZPsem = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Zasady pobytu z psem w lesie</h2>
       <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
-        <li><strong>Smycz w rezerwacie</strong> — w rezerwatach przyrody pies musi być na smyczy. To obowiązek prawny.</li>
+        <li><strong>Sprawdź zasady dostępu</strong> — ograniczenia dotyczące wprowadzania psów zależą od terenu; respektuj oznakowanie i regulaminy.</li>
         <li><strong>Sprzątaj po psie</strong> — nawet w lesie. Woreczki to standard odpowiedzialnego opiekuna.</li>
         <li><strong>Sprawdź kleszcze</strong> — po każdym spacerze w lesie dokładnie sprawdź sierść pupila.</li>
         <li><strong>Zabierz wodę</strong> — na dłuższe wyprawy zabierz miskę i butelkę z wodą.</li>
-        <li><strong>Unikaj dzikiej zwierzyny</strong> — trzymaj psa blisko w sezonie lęgowym (kwiecień–lipiec).</li>
+        <li><strong>Chroń dziką zwierzynę</strong> — prowadź psa na smyczy w lesie i nie pozwalaj mu płoszyć zwierząt.</li>
       </ol>
 
       <h2 className="section-title !text-2xl md:!text-3xl">In The Woods — dom pet-friendly</h2>

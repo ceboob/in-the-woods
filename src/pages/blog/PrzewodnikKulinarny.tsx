@@ -89,10 +89,10 @@ const PrzewodnikKulinarny = () => (
       podczas wizyty w regionie.
     </p>
     <p>
-      <strong>Pierekaczewnik</strong> — tatarski placek z mięsem, pieczony na blasze — to danie,
-      którego nie znajdziesz nigdzie indziej. Jadłodajnie w{' '}
+      <strong>Pierekaczewnik</strong> to tradycyjny produkt kuchni tatarskiej. Przed wyjazdem
+      sprawdź w lokalnych jadłodajniach, czy jest w menu. Lokale w{' '}
       <Link to="/blog/kruszyniany-tatarska-wies">Kruszynianach</Link> (45 min od Supraśla)
-      serwują autentyczne dania tatarskie przygotowywane według wielowiekowych receptur.
+      oferują dania kuchni tatarskiej; dostępność potraw może się zmieniać.
     </p>
     <p>
       Warto zaplanować jednodniową wycieczkę z Supraśla do Kruszynian — połączysz zwiedzanie

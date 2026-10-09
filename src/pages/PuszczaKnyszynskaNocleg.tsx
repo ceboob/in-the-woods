@@ -61,7 +61,7 @@ const PuszczaKnyszynskaNocleg = () => (
       </h2>
       <p className="text-muted-foreground leading-relaxed">
         Puszcza Knyszyńska oferuje setki kilometrów szlaków pieszych i rowerowych. Z In The Woods
-        możesz ruszyć na spacer do rezerwatu Krzemienne Góry bez użycia samochodu —{' '}
+        możesz wybrać się na spacer w okolicy bez użycia samochodu —{' '}
         <strong>domek w lesie Supraśl</strong>, gdzie szlaki zaczynają się za progiem.
       </p>
       <p className="text-muted-foreground leading-relaxed">

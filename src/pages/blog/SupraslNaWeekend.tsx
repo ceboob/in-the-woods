@@ -14,7 +14,7 @@ const SupraslNaWeekend = () => (
       { question: 'Czy 2 dni wystarczą na zwiedzanie Supraśla?', answer: 'Tak — 2 dni to idealny czas, żeby zobaczyć najważniejsze atrakcje, spacerować po Puszczy i spróbować kuchni regionalnej. Jeśli planujesz spływ kajakowy lub wycieczkę do Kruszynian, rozważ 3 dni.' },
       { question: 'Kiedy najlepiej przyjechać do Supraśla na weekend?', answer: 'Każda pora roku ma swój urok. Wiosna i jesień to idealne pory na wędrówki. Lato oferuje plaże i kajaki. Zima — narciarstwo biegowe i klimat przy kominku. Unikaj długich weekendów, jeśli szukasz spokoju.' },
       { question: 'Jak dojechać do Supraśla?', answer: 'Z Białegostoku: 25 min samochodem lub autobusem linii PKS. Z Warszawy: ok. 2,5h samochodem (A8/S8). Najbliższe lotnisko: Białystok-Krywlany lub Warszawa Chopin.' },
-      { question: 'Czy Supraśl jest dobry na weekend z dziećmi?', answer: 'Zdecydowanie! Plaża miejska, Arboretum Kopna Góra, warsztaty w Muzeum Drukarstwa i łatwe szlaki piesze to świetne atrakcje dla rodzin. Sprawdź nasz artykuł o Supraślu z dziećmi.' },
+      { question: 'Czy Supraśl jest dobry na weekend z dziećmi?', answer: 'W Supraślu i okolicy są propozycje dla rodzin, m.in. spacery i obiekty kulturalne. Przed wyjazdem sprawdź ich aktualną dostępność, zasady wstępu i warunki tras. Więcej podpowiedzi znajdziesz w naszym artykule o Supraślu z dziećmi.' },
     ]}
     relatedArticles={[
       { title: 'Co robić w Supraślu?', slug: 'co-robic-suprasl' },
@@ -33,12 +33,16 @@ const SupraslNaWeekend = () => (
 
     <h2>Dzień 1 (sobota): Historia, duchowość i podlaskie smaki</h2>
 
-    <h3>Rano: Monaster i Muzeum Ikon (9:00–12:00)</h3>
+    <h3>Rano: Monaster i Muzeum Ikon</h3>
     <p>
       Rozpocznij dzień od wizyty w <Link to="/atrakcje-suprasl">Monasterze Zwiastowania NMP</Link> —
       duchowym sercu Supraśla. XVI-wieczny klasztor zachwyca architekturą, a <strong>Muzeum
-      Ikon</strong> posiada jedną z najcenniejszych kolekcji w Europie Środkowej. Zaplanuj 2-3
-      godziny na spokojne zwiedzanie.
+      Ikon</strong> prezentuje sztukę ikon. Godziny otwarcia i zasady wstępu sprawdź przed wizytą
+      na{' '}
+      <a href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/" target="_blank" rel="noopener" aria-label="Aktualne informacje dla zwiedzających Muzeum Ikon (otworzy się w nowej karcie)">
+        stronie Muzeum Podlaskiego
+      </a>
+      .
     </p>
     <p>
       <strong>Wskazówka:</strong> Skorzystaj z audioprzewodnika — wzbogaci wizytę o fascynujący

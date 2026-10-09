@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: 'Gdzie znajduje się In The Woods?',
-    a: 'Dom znajduje się w miejscowości Konne koło Supraśla, w Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku. To domek w lesie na Podlasiu, przy Rezerwacie Przyrody Krzemienne Góry.',
+    a: 'Dom znajduje się w miejscowości Konne koło Supraśla, w otoczeniu Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku. W pobliżu znajduje się rezerwat Krzemienne Góry; przed wizytą sprawdź obowiązujące zasady udostępniania.',
   },
   {
     q: 'Ile kosztuje wynajem domku w lesie na weekend?',
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: 'Czy domek jest dostępny na sylwestra, walentynki lub majówkę?',
-    a: 'Domek na sylwestra w lesie, walentynki i majówkę to nasze najpopularniejsze terminy — rezerwowane z dużym wyprzedzeniem. Sprawdź dostępność w kalendarzu lub zadzwoń, aby zapytać o konkretne daty.',
+    a: 'Dostępność zależy od wybranego terminu. Wybierz daty w kalendarzu i wyślij zapytanie; gospodarz potwierdzi, czy pobyt jest możliwy.',
   },
   {
     q: 'Czy mogę pracować zdalnie w In The Woods?',
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'Czy można wynająć dom w Puszczy Knyszyńskiej?',
-    a: 'Tak. In The Woods znajduje się w miejscowości Konne, w otoczeniu Puszczy Knyszyńskiej, w pobliżu Rezerwatu Przyrody Krzemienne Góry.',
+    a: 'Tak. In The Woods znajduje się w miejscowości Konne, w otoczeniu Puszczy Knyszyńskiej. Wybierając trasy w okolicy, stosuj się do lokalnych oznaczeń i zasad ochrony przyrody.',
   },
   {
     q: 'Czy Supraśl jest dobry na weekend?',
@@ -73,11 +73,11 @@ const faqs = [
   },
   {
     q: 'Jaki jest minimalny czas pobytu?',
-    a: 'Minimalny pobyt zależy od terminu. Aktualne wymagania sprawdzisz w kalendarzu dostępności lub podczas rezerwacji.',
+    a: 'Minimalny pobyt zależy od sezonu. Kalendarz pokazuje wymóg dla wybranego zakresu dat; w razie wątpliwości potwierdź go z gospodarzem.',
   },
   {
     q: 'Jak wygląda rezerwacja?',
-    a: 'Wyślij zapytanie przez formularz na stronie lub zadzwoń pod 722 765 101. Gospodarz potwierdzi dostępność i cenę dla wybranego terminu.',
+    a: 'Wyślij zapytanie o pobyt przez formularz lub zadzwoń pod 722 765 101. Gospodarz odpowie z informacją o dostępności i cenie. Wysłanie formularza nie potwierdza rezerwacji ani nie oznacza płatności.',
   },
 ];
 

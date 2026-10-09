@@ -9,7 +9,7 @@ const SzlakiPieszeRowerowe = () => {
     {
       question: 'Jakie szlaki piesze są w Supraślu?',
       answer:
-        'W okolicach Supraśla znajdziesz szlaki przez rezerwat Krzemienne Góry, szlak wzdłuż rzeki Supraśl, Szlak Powstania Styczniowego i wiele tras w Puszczy Knyszyńskiej o różnym stopniu trudności.',
+        'W okolicach Supraśla znajdziesz trasy spacerowe i rowerowe oraz szlaki Puszczy Knyszyńskiej. Przed wyruszeniem sprawdź aktualny przebieg tras i zasady udostępniania terenów chronionych.',
     },
     {
       question: 'Czy w Supraślu są trasy rowerowe?',
@@ -19,7 +19,7 @@ const SzlakiPieszeRowerowe = () => {
     {
       question: 'Czy szlaki są odpowiednie dla rodzin z dziećmi?',
       answer:
-        'Tak, wiele szlaków jest łatwych i dobrze oznakowanych. Polecamy trasy wzdłuż rzeki i krótkie pętle po rezerwacie.',
+        'Część tras może być odpowiednia dla rodzin, ale trudność, nawierzchnia i dostępność zależą od konkretnego odcinka. Sprawdź aktualne oznaczenia i warunki przed wyjściem.',
     },
     {
       question: 'Gdzie nocować po wędrówce?',
@@ -84,23 +84,15 @@ const SzlakiPieszeRowerowe = () => {
 
       <h2>Najlepsze szlaki piesze</h2>
 
-      <h3>1. Rezerwat Krzemienne Góry</h3>
+      <h3>1. Rezerwat Krzemienne Góry — zasady odwiedzania</h3>
 
       <p>
-        To jeden z najbardziej malowniczych rezerwatów w Puszczy Knyszyńskiej — i jednocześnie jeden
-        z najbliższych Supraślowi. Nazwa „Krzemienne Góry" nawiązuje do występujących tu skał
-        krzemiennych, które tworzą unikatowe formacje geologiczne w środku lasu.
+        Rezerwat chroni cenne przyrodniczo tereny. Nie zakładaj, że można swobodnie poruszać się po
+        jego całym obszarze ani że przebiega przez niego ogólnodostępna pętla turystyczna. Przed
+        wizytą sprawdź informacje właściwego organu ochrony przyrody i stosuj się do oznakowania.
       </p>
 
       <p>
-        <strong>Długość:</strong> pętla ok. 5 km · <strong>Trudność:</strong> łatwy ·{' '}
-        <strong>Czas:</strong> 1,5–2 godziny
-      </p>
-
-      <p>
-        Szlak prowadzi przez las mieszany z dominacją starych buków i dębów. Wiosną dno lasu
-        pokrywają kobierce zawilców i przylaszczek. Latem — gęsty baldachim liści daje przyjemny
-        cień. Jesienią — eksplozja kolorów. Zimą — cisza zaśnieżonego lasu.
       </p>
 
       <h3>2. Szlak wzdłuż rzeki Supraśl</h3>

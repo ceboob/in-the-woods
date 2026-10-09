@@ -121,6 +121,18 @@ export function calculateTotalPrice(
   return { nightPrices, total: baseTotal - discount, extraGuestTotal: 0, discount };
 }
 
+export function getMinimumNightsForStay(checkIn: Date, checkOut: Date): number {
+  if (checkOut <= checkIn) return getSeasonForDate(checkIn).minNights;
+
+  let minimum = MIN_NIGHTS;
+  const current = new Date(checkIn);
+  while (current < checkOut) {
+    minimum = Math.max(minimum, getSeasonForDate(current).minNights);
+    current.setDate(current.getDate() + 1);
+  }
+  return minimum;
+}
+
 export function isWeekendDay(date: Date): boolean {
   const dow = date.getDay();
   return dow === 5 || dow === 6 || dow === 0;

@@ -41,9 +41,14 @@ const AtrakcjeSuprasl = () => (
           10 minut od naszego <strong>domku w lesie Supraśl</strong>.
         </p>
         <p className="text-muted-foreground leading-relaxed">
-          Muzeum Ikon — jedna z najcenniejszych kolekcji w Europie Środkowej. Wizyta zajmuje 1–2
-          godziny. Wstęp: ok. 15 zł (dorośli). Idealny punkt programu na{' '}
-          <strong>weekend w Supraślu</strong>.
+          Muzeum Ikon w Supraślu prezentuje sztukę ikon i mieści się w zabudowaniach
+          poklasztornych. Bilet normalny kosztuje 20 zł; muzeum przyjmuje zwiedzających od wtorku
+          do niedzieli w godz. 10:00–17:00, a ostatnie wejście jest możliwe godzinę przed
+          zamknięciem. Przed wizytą sprawdź{' '}
+          <a href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/" target="_blank" rel="noopener" aria-label="Aktualne informacje dla zwiedzających Muzeum Ikon (otworzy się w nowej karcie)" className="underline">
+            aktualne informacje dla zwiedzających
+          </a>
+          .
         </p>
       </section>
 
@@ -124,8 +129,12 @@ const AtrakcjeSuprasl = () => (
           </h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          Unikatowy ogród botaniczny w sercu puszczy. 10 hektarów drzew i krzewów z całego świata —
-          idealne na spokojne popołudnie z rodziną, 20 minut od naszego{' '}
+          Arboretum im. Powstańców 1863 w Kopnej Górze zajmuje 26 hektarów i zostało założone
+          w 1988 roku. Przed wyjazdem sprawdź informacje o dostępności i zasadach zwiedzania u{' '}
+          <a href="https://suprasl.bialystok.lasy.gov.pl/" target="_blank" rel="noopener" aria-label="Informacje Nadleśnictwa Supraśl o arboretum (otworzy się w nowej karcie)" className="underline">
+            Nadleśnictwa Supraśl
+          </a>
+          . To miejsce na spokojny spacer, około 20 minut jazdy od naszego{' '}
           <strong>leśnego domku do wynajęcia</strong>.
         </p>
       </section>
@@ -144,8 +153,8 @@ const AtrakcjeSuprasl = () => (
           <Link to="/blog/kruszyniany-tatarska-wies" className="text-primary underline hover:text-primary/80">
             Kruszyniany
           </Link>{' '}
-          — zabytkowy drewniany meczet, mizar i kuchnia tatarska. Pierekaczewnik to obowiązkowy
-          punkt programu podczas pobytu w <strong>domku na odludziu podlaskie</strong>.
+          — zabytkowy drewniany meczet, mizar i kuchnia tatarska. Jeśli chcesz spróbować lokalnych
+          potraw, sprawdź przed wyjazdem dostępność lokali i aktualne menu.
         </p>
       </section>
 

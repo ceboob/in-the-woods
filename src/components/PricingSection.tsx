@@ -1,6 +1,7 @@
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Bath, Percent, Clock, Users, TreePine, Sun, Snowflake, Leaf } from 'lucide-react';
 import StripeSecurityTooltip from '@/components/StripeSecurityTooltip';
+import { GARDEN_TUB_PRICE, LONG_STAY_DISCOUNT, SEASONS, WEEKEND_SURCHARGE } from '@/lib/pricing';
 import {
   Table,
   TableBody,
@@ -10,71 +11,66 @@ import {
   TableRow,
 } from '@/components/ui/table';
 
-const seasonData = [
-  {
-    name: 'Sezon niski',
+const seasonPresentation = {
+  low: {
     period: '1 listopada – 31 marca',
     icon: Snowflake,
-    minNights: 2,
     accent: 'border-l-4 border-l-sky-400',
     iconColor: 'text-sky-500',
     bgAccent: 'bg-sky-50',
-    rows: [
-      { guests: 'do 4 osób', weekday: 399, weekend: 499 },
-      { guests: 'do 6 osób', weekday: 499, weekend: 599 },
-      { guests: 'do 8 osób', weekday: 599, weekend: 699 },
-    ],
   },
-  {
-    name: 'Sezon średni',
-    period: '1 kwi – 31 maj / 1 wrz – 31 paź',
+  mid: {
+    period: '1 kwietnia – 31 maja',
     icon: Leaf,
-    minNights: 2,
     accent: 'border-l-4 border-l-amber-400',
     iconColor: 'text-amber-600',
     bgAccent: 'bg-amber-50',
-    rows: [
-      { guests: 'do 2 osób', weekday: 399, weekend: 499 },
-      { guests: 'do 4 osób', weekday: 499, weekend: 599 },
-      { guests: 'do 6 osób', weekday: 599, weekend: 699 },
-      { guests: 'do 8 osób', weekday: 649, weekend: 749 },
-    ],
   },
-  {
-    name: 'Sezon wysoki',
+  mid2: {
+    period: '1 września – 31 października',
+    icon: Leaf,
+    accent: 'border-l-4 border-l-amber-400',
+    iconColor: 'text-amber-600',
+    bgAccent: 'bg-amber-50',
+  },
+  high: {
     period: '1 czerwca – 31 sierpnia',
     icon: Sun,
-    minNights: 3,
     accent: 'border-l-4 border-l-orange-500',
     iconColor: 'text-orange-600',
     bgAccent: 'bg-orange-50',
-    rows: [
-      { guests: 'do 2 osób', weekday: 499, weekend: 599 },
-      { guests: 'do 4 osób', weekday: 599, weekend: 699 },
-      { guests: 'do 6 osób', weekday: 699, weekend: 799 },
-      { guests: 'do 8 osób', weekday: 799, weekend: 899 },
-    ],
   },
-];
+} as const;
+
+const seasonData = SEASONS.map((season) => ({
+  name: season.label,
+  ...seasonPresentation[season.name as keyof typeof seasonPresentation],
+  minNights: season.minNights,
+  rows: Object.entries(season.prices).map(([guestCount, weekday]) => ({
+    guests: `do ${guestCount} osób`,
+    weekday,
+    weekend: weekday + WEEKEND_SURCHARGE,
+  })),
+}));
 
 const extras = [
   {
     icon: Bath,
     title: 'Balia ogrodowa z funkcją jacuzzi',
-    desc: '250 zł za cały pobyt',
+    desc: `${GARDEN_TUB_PRICE} zł za cały pobyt`,
     note: 'niezależnie od liczby nocy',
   },
   {
     icon: Percent,
     title: 'Zniżka za długi pobyt',
-    desc: '−10% przy 7+ nocach',
-    note: 'naliczana automatycznie',
+    desc: `−${LONG_STAY_DISCOUNT * 100}% przy 7+ nocach`,
+    note: 'od ceny noclegu; bez opłaty za balię',
   },
   {
     icon: Clock,
     title: 'Minimalna rezerwacja',
-    desc: '2 noce (3 w sezonie wysokim)',
-    note: 'weekendy i długie weekendy',
+    desc: `${Math.min(...SEASONS.map((season) => season.minNights))} noce (w sezonie wysokim: ${Math.max(...SEASONS.map((season) => season.minNights))})`,
+    note: 'wymóg zależy od sezonu',
   },
 ];
 
@@ -137,7 +133,7 @@ const PricingSection = () => {
                           <span>Goście</span>
                         </div>
                       </TableHead>
-                      <TableHead className="text-center">Pn–Czw</TableHead>
+                      <TableHead className="text-center">Nd–Czw</TableHead>
                       <TableHead className="text-center">Pt–Sb</TableHead>
                     </TableRow>
                   </TableHeader>
@@ -197,10 +193,10 @@ const PricingSection = () => {
             Podlasiu</strong> lub workation w&nbsp;ciszy natury.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Opcjonalnie możesz zarezerwować <strong>balię ogrodową z funkcją jacuzzi</strong>,
-            dostępną przez cały pobyt za jednorazową opłatą 250&nbsp;zł. Przy rezerwacji na 7 lub
-            więcej nocy naliczamy <strong>10% zniżki</strong> od łącznej kwoty — dłuższy pobyt
-            w&nbsp;leśnym domu naprawdę się opłaca.
+            Opcjonalnie możesz zamówić <strong>balię ogrodową z funkcją jacuzzi</strong> za
+            jednorazową opłatą 250&nbsp;zł za pobyt. Przy pobycie na co najmniej 7 nocy
+            <strong> 10% zniżki obejmuje cenę noclegu</strong>; opłata za balię nie jest wliczana
+            do podstawy rabatu.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Rezerwując bezpośrednio przez naszą stronę, unikasz prowizji pośredników. Zaliczkę
@@ -230,7 +226,7 @@ const PricingSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">
             <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary">
-              Sprawdź dostępność
+              Zapytaj o termin
             </button>
             <a href="tel:+48722765101" className="btn-outline">
               Zapytaj o pobyt

@@ -9,6 +9,7 @@ import {
   isWeekendDay,
   formatDateKey,
   calculateTotalPrice,
+  getMinimumNightsForStay,
   MAX_GUESTS,
   MIN_NIGHTS,
   BLOCKED_DATES_LAST_UPDATED,
@@ -185,6 +186,12 @@ const AvailabilityCalendar = () => {
   }, [selectedRange.start, selectedRange.end, guests]);
 
   const nights = priceCalc?.nightPrices.length || 0;
+  const requiredMinNights =
+    selectedRange.start && selectedRange.end
+      ? getMinimumNightsForStay(selectedRange.start, selectedRange.end)
+      : selectedRange.start
+        ? getSeasonForDate(selectedRange.start).minNights
+        : MIN_NIGHTS;
 
   const prevMonth = () =>
     setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1));
@@ -367,9 +374,10 @@ const AvailabilityCalendar = () => {
 
             {selectedRange.end ? (
               <div className="space-y-2">
-                {nights < MIN_NIGHTS && (
+                {nights < requiredMinNights && (
                   <p className="text-xs text-destructive">
-                    Minimalny pobyt to {MIN_NIGHTS} noce. Wybierz dłuższy termin.
+                    Minimalny pobyt dla wybranego terminu to {requiredMinNights} noce. Wybierz
+                    dłuższy termin.
                   </p>
                 )}
                 <div className="bg-secondary p-4 space-y-2 text-sm">
@@ -403,11 +411,11 @@ const AvailabilityCalendar = () => {
                 </div>
                 <p className="text-[11px] text-muted-foreground">
                   Cena orientacyjna. Dokładną ofertę potwierdzimy po wysłaniu zapytania. Przy
-                  pobytach 5+ nocy możliwy rabat.
+                  pobytach co najmniej 7 nocy rabat dotyczy ceny noclegu, bez opłaty za balię.
                 </p>
-                {nights >= MIN_NIGHTS && (
+                {nights >= requiredMinNights && (
                   <button onClick={scrollToBooking} className="btn-primary w-full mt-2">
-                    Zarezerwuj ten termin
+                    Przejdź do zapytania o pobyt
                   </button>
                 )}
               </div>
@@ -422,8 +430,9 @@ const AvailabilityCalendar = () => {
         {/* Season info */}
         <div className="mt-4 text-center space-y-1">
           <p className="text-xs text-muted-foreground">
-            Ceny od <strong>399 zł/noc</strong> za cały dom. Weekendy (pt–so):{' '}
-            <strong>+100 zł/noc</strong>. Przy 7+ nocach: <strong>−10% zniżki</strong>.
+            Ceny od <strong>399 zł/noc</strong> za cały dom. Dopłata <strong>+100 zł</strong>{' '}
+            dotyczy nocy rozpoczynających się w piątek lub sobotę; niedziela korzysta ze stawki
+            Nd–Czw. Przy pobycie 7+ nocy rabat 10% obejmuje nocleg, nie opcjonalną balię.
           </p>
           <p className="text-[11px] text-muted-foreground/60">
             Ostatnia aktualizacja dostępności: {new Date(BLOCKED_DATES_LAST_UPDATED).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}

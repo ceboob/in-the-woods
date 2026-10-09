@@ -109,15 +109,19 @@ const SzlakiPuszczaKnyszynska = () => (
       i MTB. Ceny: ok. 40-60 zł/dzień. W sezonie warto rezerwować z wyprzedzeniem.
     </p>
 
-    <h2>Arboretum w Kopnej Górze – cel obowiązkowy</h2>
+    <h2>Arboretum w Kopnej Górze</h2>
     <p>
-      <strong>Arboretum Kopna Góra</strong> to unikatowy ogród botaniczny na 10 hektarach, gdzie
-      rosną drzewa i krzewy z całego świata — od sekwoi po japońskie klony. Oddalone 20 minut
-      od Supraśla, to doskonały cel pieszej lub rowerowej wycieczki.
+      <strong>Arboretum im. Powstańców 1863 w Kopnej Górze</strong> zajmuje 26 hektarów i zostało
+      założone w 1988 roku przez Nadleśnictwo Supraśl. To miejsce na spacer wśród kolekcji drzew
+      i krzewów. Dojazd i warunki zwiedzania sprawdź przed wyjazdem na stronie{' '}
+      <a href="https://suprasl.bialystok.lasy.gov.pl/" target="_blank" rel="noopener" aria-label="Informacje Nadleśnictwa Supraśl (otworzy się w nowej karcie)">
+        Nadleśnictwa Supraśl
+      </a>
+      .
     </p>
     <p>
-      <strong>Godziny otwarcia:</strong> kwiecień–październik, codziennie 9:00–18:00. Wstęp:
-      10 zł (dorośli), 5 zł (dzieci).
+      Godziny otwarcia, ewentualne opłaty i zasady wstępu mogą się zmieniać; sprawdź je u
+      Nadleśnictwa Supraśl przed planowaną wizytą.
     </p>
 
     <h2>Praktyczne porady: co zabrać na szlak?</h2>

@@ -13,7 +13,7 @@ const SupraslZDziecmi = () => (
     faqs={[
       { question: 'Od jakiego wieku dzieci mogą uczestniczyć w spływie kajakowym?', answer: 'Spokojny nurt rzeki Supraśl jest bezpieczny dla dzieci od ok. 5-6 lat (w kajaku z rodzicem). Wypożyczalnie zapewniają kamizelki ratunkowe dla dzieci. Najkrótsze trasy trwają ok. 2 godziny.' },
       { question: 'Czy w Supraślu jest plac zabaw?', answer: 'Tak — place zabaw znajdują się przy plaży miejskiej i w Parku Zdrojowym. Są wyposażone w huśtawki, zjeżdżalnie i elementy do wspinaczki. Przy plaży działa też lodziarnia.' },
-      { question: 'Czy Arboretum Kopna Góra jest odpowiednie dla małych dzieci?', answer: 'Tak — ścieżki są szerokie i wyrównane, idealne nawet dla wózków. Dzieci uwielbiają szukać „najgrubszego drzewa" i obserwować wiewiórki. Spacer zajmuje ok. 1-2 godziny.' },
+      { question: 'Czy Arboretum Kopna Góra jest odpowiednie dla małych dzieci?', answer: 'Arboretum może być celem rodzinnego spaceru. Przed wyjazdem sprawdź u Nadleśnictwa Supraśl aktualne informacje o dostępności tras i warunkach zwiedzania.' },
       { question: 'Jakie restauracje w Supraślu polecacie dla rodzin z dziećmi?', answer: 'Większość restauracji w Supraślu jest przyjazna rodzinom. Jarzębinka i Spiżarnia Smaków mają krzesełka dla dzieci i proste dania (naleśniki, frytki). Kawiarnie w centrum serwują domowe lody i ciasta.' },
     ]}
     relatedArticles={[
@@ -53,26 +53,24 @@ const SupraslZDziecmi = () => (
       harmonogram na stronie muzeum. Wizyta zajmuje ok. 1-1,5 godziny.
     </p>
 
-    <h2>Atrakcje w okolicy: Wioska Indiańska, Park Linowy, Bajkowa Kolejka</h2>
+    <h2>Aktywności dla rodzin</h2>
 
     <h3>Wioska Indiańska</h3>
     <p>
-      W okolicach Supraśla działa <strong>Wioska Indiańska</strong> — plenerowa atrakcja, gdzie
-      dzieci mogą strzelać z łuku, malować się jak indianie i spać w tipi. Organizowane są
-      animacje i ogniska z pieczeniem kiełbasek. Idealne na pół dnia.
+      W okolicy można znaleźć sezonowe atrakcje dla rodzin. Ich dostępność, program i ograniczenia
+      wiekowe warto sprawdzić bezpośrednio u organizatorów przed wyjazdem.
     </p>
 
     <h3>Park Linowy</h3>
     <p>
-      Trasy wspinaczkowe na różnych poziomach trudności — od łatwych (od 4 lat z rodzicem) po
-      wymagające dla starszych dzieci i dorosłych. Bezpieczeństwo zapewniają certyfikowani
-      instruktorzy i system asekuracji.
+      Jeśli planujesz wizytę w parku linowym, sprawdź u organizatora dostępne trasy, ograniczenia
+      wiekowe i wzrostowe oraz obowiązujące zasady bezpieczeństwa.
     </p>
 
     <h3>Bajkowa Kolejka</h3>
     <p>
-      Miniaturowa kolejka prowadząca przez las — magiczny przejazd z postaciami z bajek.
-      Idealna dla maluchów w wieku 2-7 lat.
+      Przed zaplanowaniem przejazdu kolejką lub innej sezonowej atrakcji sprawdź aktualny
+      harmonogram i warunki uczestnictwa u organizatora.
     </p>
 
     <h2>Gdzie zjeść z dziećmi? Restauracje z menu dla najmłodszych</h2>
@@ -104,8 +102,8 @@ const SupraslZDziecmi = () => (
     </p>
     <ul>
       <li>
-        <strong>Arboretum Kopna Góra</strong> — ogród botaniczny na 10 hektarach. Ścieżki
-        dostępne nawet dla wózków. Dzieci uwielbiają szukać „najgrubszego drzewa". 20 minut od Supraśla.
+        <strong>Arboretum im. Powstańców 1863 w Kopnej Górze</strong> — założone w 1988 roku,
+        zajmuje 26 hektarów. Sprawdź u Nadleśnictwa Supraśl dostępność tras i zasady zwiedzania.
       </li>
       <li>
         <strong>Szlak Bioróżnorodności</strong> (7 km) — tablice edukacyjne o zwierzętach i
@@ -113,13 +111,12 @@ const SupraslZDziecmi = () => (
         <Link to="/blog/szlaki-puszcza-knyszynska">przewodniku po szlakach</Link>.
       </li>
       <li>
-        <strong>Rower z dziećmi</strong> — pętla wokół Supraśla (ok. 10 km, płaska) to łatwa
-        i bezpieczna trasa. Fotelik lub przyczepka rowerowa dostępne w wypożyczalniach.
+        <strong>Rower z dziećmi</strong> — dobierz trasę do wieku i możliwości uczestników,
+        sprawdź nawierzchnię i warunki na drodze oraz używaj kasków.
       </li>
       <li>
-        <strong>Spływ kajakowy</strong> — rzeka Supraśl jest spokojna i bezpieczna. Dzieci od
-        5-6 lat mogą pływać z rodzicem w kajaku dwuosobowym. Trasa 2-godzinna to idealna
-        przygoda! Szczegóły w{' '}
+        <strong>Spływ kajakowy</strong> — przed rezerwacją zapytaj organizatora o warunki na rzece,
+        wyposażenie, minimalny wiek dzieci i wymagany nadzór osoby dorosłej. Szczegóły w{' '}
         <Link to="/blog/kajaki-suprasl">przewodniku po spływach</Link>.
       </li>
     </ul>

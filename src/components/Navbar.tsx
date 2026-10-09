@@ -154,7 +154,7 @@ const Navbar = () => {
             onClick={() => handleClick('#rezerwacja')}
             className="btn-primary text-xs py-2.5 px-6"
           >
-            Rezerwuj
+            Wyślij zapytanie
           </button>
         </div>
 
@@ -220,7 +220,7 @@ const Navbar = () => {
             onClick={() => handleClick('#rezerwacja')}
             className="btn-primary text-xs py-2.5 px-6 w-full mt-4"
           >
-            Rezerwuj
+            Wyślij zapytanie
           </button>
         </div>
       )}

@@ -62,9 +62,9 @@ const NajlepszeMiejscaPuszcza = () => (
 
     <h2>2. Arboretum Kopna Góra</h2>
     <p>
-      Arboretum Kopna Góra, oddalone 20 minut od Supraśla, to ogród dendrologiczny założony w 1972
-      roku na terenie dawnego szkółki leśnej. Na powierzchni 8,5 hektara rośnie ponad 300 gatunków
-      drzew i krzewów z całego świata — od japońskich klonów po amerykańskie tulipanowce.
+      Arboretum im. Powstańców 1863 w Kopnej Górze zostało założone w 1988 roku przez
+      Nadleśnictwo Supraśl i zajmuje 26 hektarów. Przed wizytą sprawdź u nadleśnictwa informacje
+      o dojeździe, dostępności i zasadach zwiedzania.
     </p>
     <p>
       Spacerowe alejki prowadzą przez różne strefy roślinności, a tablice informacyjne pomagają

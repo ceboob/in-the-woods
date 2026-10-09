@@ -163,8 +163,11 @@ const JesienWSupraslu2026 = () => (
     </p>
     <p>
       <em>
-        Kalendarz może ulec zmianie – aktualne informacje znajdziesz na stronie Centrum Kultury i
-        Rekreacji w Supraślu. Ostatnia
+        Kalendarz może ulec zmianie – aktualne informacje znajdziesz w{' '}
+        <a href="https://ckirsuprasl.com/kalendarz/" target="_blank" rel="noopener" aria-label="Kalendarz wydarzeń CKiR w Supraślu (otworzy się w nowej karcie)">
+          kalendarzu Centrum Kultury i Rekreacji w Supraślu
+        </a>
+        . Ostatnia
         aktualizacja: 3 października 2026.
       </em>
     </p>
@@ -215,7 +218,7 @@ const JesienWSupraslu2026 = () => (
       <EventRow date="11 listopada" time="15:00" event="Ognisko niepodległościowe" place="Świetlica w Karakulach" />
       <EventRow date="13 listopada" time="16:30" event="XV Turniej Szachowy z okazji odzyskania niepodległości" place="Biblioteka Publiczna w Supraślu" />
       <EventRow date="14 listopada" time="17:00" event="Supraska Jesień Chopinowska 2026 – koncert Marka Drewnowskiego" place="Dom Ludowy" />
-      <EventRow date="17 listopada" time={<>11:00{/* <!-- TODO: verify time – Facebook says 11:00, poster says 10:00 --> */}</>} event="Razem możemy więcej – konferencja Otwartej Instytucji Kultury" place="Biblioteka Publiczna w Supraślu" />
+      <EventRow date="17 listopada" time="–" event="Razem możemy więcej – konferencja Otwartej Instytucji Kultury" place="Biblioteka Publiczna w Supraślu" />
       <EventRow date="18–19 listopada" time="16:00" event="Woda ma głos – nowoczesna gospodarka wodna w samorządach" place="Biblioteka Publiczna w Supraślu" />
       <EventRow date="20 listopada" time="16:00" event={'„Wierszalin 2.0" – spotkanie autorskie z Jerzym Chmielewskim'} place="Biblioteka Publiczna w Supraślu" />
       <EventRow date="22 listopada" time="–" event="Dzień Seniora w Karakulach" place="Świetlica w Karakulach" />
@@ -314,7 +317,9 @@ const JesienWSupraslu2026 = () => (
     ))}
     <hr />
     <p>
-      <em>Źródło programu: Centrum Kultury i Rekreacji w Supraślu. Ostatnia aktualizacja: 3 października 2026.</em>
+      <em>Program sprawdzono 3 października 2026 r.; potwierdź szczegóły w{' '}
+        <a href="https://ckirsuprasl.com/kalendarz/" target="_blank" rel="noopener" aria-label="Kalendarz wydarzeń CKiR w Supraślu (otworzy się w nowej karcie)">kalendarzu CKiR</a>.
+      </em>
     </p>
   </BlogArticleLayout>
 );

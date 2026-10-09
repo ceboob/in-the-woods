@@ -16,21 +16,30 @@ const items = [
     lead: 'Spokojny kierunek na spacer i obserwowanie przyrody.',
     description: (
       <>
-        Rezerwat leśny o powierzchni 79,27 ha, objęty ochroną częściową, chroni stary las w
-        Puszczy Knyszyńskiej. To kierunek na spacer i obserwowanie przyrody: można wsłuchać się
-        w śpiew ptaków, a w sezonie przychodzi czas grzybów i jagód. Prosimy zostać na
-        oznakowanych szlakach, nie rozpalać ognisk ani nie zbierać gatunków chronionych;{' '}
+        Rezerwat przyrody Krzemienne Góry chroni leśne siedliska i krajobraz. Dostęp jest
+        ograniczony do drogi leśnej przy zachodniej granicy rezerwatu; nie wolno zbierać tam
+        grzybów ani roślin. Przed wizytą sprawdź{' '}
         <Link to="/atrakcje-suprasl" className="underline underline-offset-4">
-          sprawdź atrakcje w okolicy
+          atrakcje w okolicy
         </Link>{' '}
-        i oficjalne informacje w{' '}
+        oraz oficjalne informacje w{' '}
         <a
           href="https://suprasl.bialystok.lasy.gov.pl/"
           target="_blank"
           rel="noopener noreferrer"
           className="underline underline-offset-4"
         >
-          Nadleśnictwie Supraśl
+          informacjami Nadleśnictwa Supraśl
+        </a>
+        {' '}oraz z{' '}
+        <a
+          href="https://www.gov.pl/web/rdos-bialystok/podlaskierezerwaty--rezerwat-przyrody-krzemienne-gory"
+          target="_blank"
+          rel="noopener"
+          aria-label="Oficjalne informacje RDOŚ o rezerwacie Krzemienne Góry (otworzy się w nowej karcie)"
+          className="underline underline-offset-4"
+        >
+          informacją RDOŚ o rezerwacie
         </a>
         .
       </>

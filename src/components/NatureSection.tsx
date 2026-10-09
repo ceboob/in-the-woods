@@ -5,7 +5,7 @@ import drogaImg from '@/assets/droga-lesna-konne.webp';
 import { TreePine, Waves, Bike, Fish, Eye, Compass } from 'lucide-react';
 
 const activities = [
-  { icon: TreePine, label: 'Spacery i grzybobranie' },
+  { icon: TreePine, label: 'Spacery po okolicy' },
   { icon: Bike, label: 'Trasy rowerowe' },
   { icon: Waves, label: 'Spływy kajakowe' },
   { icon: Fish, label: 'Wędkarstwo' },
@@ -51,16 +51,16 @@ const NatureSection = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-6">
             <p className="section-subtitle">
-              In The Woods leży przy rezerwacie przyrody Krzemienne Góry, w otoczeniu jednego z
-              najcenniejszych kompleksów leśnych w Polsce. Rezerwat chroni ponad 100-letnie
-              drzewostany sosnowe i mieszane, a tuż obok przebiega Szlak Bioróżnorodności Puszczy
-              Knyszyńskiej.
+              In The Woods znajduje się w sąsiedztwie rezerwatu przyrody Krzemienne Góry, w
+              otoczeniu Puszczy Knyszyńskiej. Wybierając się na spacer, sprawdź oznakowanie i
+              obowiązujące zasady ochrony przyrody; poruszaj się wyłącznie po udostępnionych trasach.
             </p>
             <p className="section-subtitle">
-              Rzeka Supraśl płynie nieopodal — latem idealna na spływy kajakowe, a urokliwy Supraśl
+              Rzeka Supraśl płynie nieopodal — możliwość spływu kajakowego zależy od warunków i
+              oferty lokalnych organizatorów. Supraśl
               z prawosławnym Monasterem, Galerią Leśną Powstania Styczniowego i klimatycznymi
               kawiarniami jest na wyciągnięcie ręki. Do wsi Konne — naszej leśnej osady — prowadzi
-              droga gruntowa przez las, co gwarantuje ciszę i prywatność.
+              droga gruntowa przez las.
             </p>
             <div className="grid grid-cols-2 gap-4">
               {activities.map((a, i) => (
