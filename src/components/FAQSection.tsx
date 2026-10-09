@@ -1,4 +1,5 @@
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import { GARDEN_TUB_PRICE } from '@/lib/pricing';
 import {
   Accordion,
   AccordionContent,
@@ -9,7 +10,7 @@ import {
 const faqs = [
   {
     q: 'Gdzie znajduje się In The Woods?',
-    a: 'Dom znajduje się w miejscowości Konne koło Supraśla, w otoczeniu Puszczy Knyszyńskiej — około 10 minut samochodem od centrum Supraśla i 25 minut od Białegostoku. W pobliżu znajduje się rezerwat Krzemienne Góry; przed wizytą sprawdź obowiązujące zasady udostępniania.',
+    a: 'Dom znajduje się w miejscowości Konne koło Supraśla, w otoczeniu Puszczy Knyszyńskiej. Przed wyjazdem sprawdź aktualną trasę i zasady udostępniania pobliskich terenów chronionych.',
   },
   {
     q: 'Ile kosztuje wynajem domku w lesie na weekend?',
@@ -29,7 +30,7 @@ const faqs = [
   },
   {
     q: 'Gdzie nocować w Supraślu?',
-    a: 'In The Woods to prywatny dom na wynajem w Puszczy Knyszyńskiej, zaledwie 10 minut od centrum Supraśla. Idealny nocleg w Supraślu dla par, rodzin i grup przyjaciół szukających ciszy i natury.',
+    a: 'In The Woods to prywatny dom na wynajem w miejscowości Konne koło Supraśla. Sprawdź aktualną trasę do centrum i dopasuj plan pobytu do swoich potrzeb.',
   },
   {
     q: 'Czy rezerwacja obejmuje cały dom?',
@@ -41,11 +42,11 @@ const faqs = [
   },
   {
     q: 'Czy Supraśl jest dobry na weekend?',
-    a: 'Supraśl i okolica łączą zabytki, takie jak Monaster i Muzeum Ikon, z trasami spacerowymi w Puszczy Knyszyńskiej. In The Woods znajduje się około 10 minut jazdy samochodem od centrum.',
+    a: 'Supraśl i okolica łączą zabytki, takie jak Monaster i Muzeum Ikon, z trasami spacerowymi. Przed wyjściem sprawdź godziny otwarcia atrakcji i zasady dostępu do tras.',
   },
   {
     q: 'Czy są noclegi z jacuzzi w Supraślu?',
-    a: 'Tak. In The Woods oferuje balię ogrodową z funkcją jacuzzi jako opcjonalny dodatek do pobytu. Korzystanie z niej kosztuje 250 zł za cały pobyt.',
+    a: `Tak. In The Woods oferuje balię ogrodową z funkcją jacuzzi jako opcjonalny dodatek do pobytu. Korzystanie z niej kosztuje ${GARDEN_TUB_PRICE} zł za cały pobyt.`,
   },
   {
     q: 'Czy trzeba wcześniej zarezerwować balię?',
@@ -57,7 +58,7 @@ const faqs = [
   },
   {
     q: 'Czy można przyjechać z psem?',
-    a: 'Tak. Pobyt z psem jest bezpłatny i nie wymaga wcześniejszego uzgodnienia. Dom ma ogrodzony ogród.',
+    a: 'Możliwość pobytu z psem, ewentualne opłaty i informację o ogrodzeniu potwierdź z gospodarzem przed wysłaniem zapytania.',
   },
   {
     q: 'Dla ilu osób jest dom?',
@@ -69,7 +70,7 @@ const faqs = [
   },
   {
     q: 'Jak daleko jest do Supraśla?',
-    a: 'Do centrum Supraśla jest około 10 minut jazdy samochodem.',
+    a: 'Dom znajduje się w miejscowości Konne koło Supraśla. Sprawdź aktualną trasę i warunki dojazdu przed podróżą.',
   },
   {
     q: 'Jaki jest minimalny czas pobytu?',

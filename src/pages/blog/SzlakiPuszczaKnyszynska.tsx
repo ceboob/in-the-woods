@@ -11,10 +11,10 @@ const SzlakiPuszczaKnyszynska = () => (
     readTime="14 min"
     keywords={['szlaki Puszcza Knyszyńska', 'szlaki piesze Supraśl', 'szlaki rowerowe Supraśl', 'Green Velo Podlasie', 'Arboretum Kopna Góra']}
     faqs={[
-      { question: 'Jakie szlaki w Puszczy Knyszyńskiej polecacie dla rodzin z dziećmi?', answer: 'Najlepsze dla rodzin to Szlak Supraski (ok. 8 km, łatwy), ścieżka do Arboretum Kopna Góra oraz Szlak Bioróżnorodności (7 km z tablicami edukacyjnymi). Trasy są dobrze oznakowane, bez dużych przewyższeń.' },
-      { question: 'Gdzie wypożyczyć rower w Supraślu?', answer: 'Rowery można wypożyczyć w centrum Supraśla — kilka punktów oferuje rowery trekkingowe i miejskie. Ceny to ok. 40-60 zł/dzień. Warto zarezerwować z wyprzedzeniem w sezonie letnim.' },
-      { question: 'Czy w Puszczy Knyszyńskiej są szlaki dla zaawansowanych?', answer: 'Tak — Szlak Skrajem Puszczy Knyszyńskiej (fragment ok. 25 km) oferuje wymagający teren z naturalnymi przeszkodami. Dla rowerzystów dostępne są leśne single tracki w rejonie Wzgórz Świętojańskich.' },
-      { question: 'Kiedy jest najlepsza pora na wędrówki po Puszczy?', answer: 'Wiosna (kwiecień-czerwiec) i jesień (wrzesień-październik) to idealne pory — umiarkowane temperatury, mniej turystów, piękne kolory. Latem warto wybierać poranne godziny. Zimą szlaki nadają się na narty biegowe i rakiety śnieżne.' },
+      { question: 'Jak wybrać trasę dla rodziny?', answer: 'Dobierz dystans i nawierzchnię do możliwości uczestników. Przed wyjściem sprawdź aktualną mapę, oznakowanie i ograniczenia na terenach chronionych.' },
+      { question: 'Gdzie wypożyczyć rower w Supraślu?', answer: 'Dostępność wypożyczalni, sprzętu, cennik i sezon działania potwierdź bezpośrednio u lokalnych organizatorów.' },
+      { question: 'Czy w Puszczy Knyszyńskiej są trasy dla zaawansowanych?', answer: 'Trudność tras zależy od przebiegu, nawierzchni i warunków. Sprawdź aktualny opis trasy i dobierz ją do swoich umiejętności.' },
+      { question: 'Kiedy wybrać się na wędrówkę?', answer: 'Termin zaplanuj z uwzględnieniem pogody, długości dnia i warunków na wybranej trasie. Przed wyjściem sprawdź prognozę i komunikaty lokalne.' },
     ]}
     relatedArticles={[
       { title: 'Aktywny wypoczynek w Supraślu', slug: 'aktywny-wypoczynek-suprasl' },
@@ -33,13 +33,12 @@ const SzlakiPuszczaKnyszynska = () => (
 
     <h2>Dlaczego warto wyruszyć na szlak z Supraśla?</h2>
     <p>
-      Supraśl leży w samym sercu <strong>Puszczy Knyszyńskiej</strong> — jednego z największych
-      i najlepiej zachowanych kompleksów leśnych w Polsce. To ponad 132 tysiące hektarów lasów,
-      rezerwatów, rzek i wzgórz, do których masz dostęp dosłownie od progu.
+      Supraśl znajduje się w sąsiedztwie <strong>Puszczy Knyszyńskiej</strong>, rozległego kompleksu
+      leśnego z terenami chronionymi. Dostępność tras zależy od ich przebiegu i obowiązujących zasad.
     </p>
     <p>
-      Sieć szlaków jest doskonale rozwinięta — od krótkich spacerów po wielodniowe wyprawy. Szlaki
-      są oznakowane, a infrastruktura (parkingi, tablice, wiaty) stale się rozwija.
+      Przed wyjściem sprawdź aktualną mapę, oznakowanie, długość trasy i ograniczenia. Na terenach
+      chronionych przestrzegaj lokalnych zasad udostępniania.
     </p>
 
     <h2>Najlepsze szlaki piesze dla rodzin i początkujących</h2>
@@ -49,17 +48,15 @@ const SzlakiPuszczaKnyszynska = () => (
     </p>
     <ul>
       <li>
-        <strong>Szlak Supraski (niebieski)</strong> — ok. 8 km, łatwy. Prowadzi z centrum Supraśla
-        przez las do Arboretum Kopna Góra. Piękne widoki, tablice edukacyjne, idealne na 2-3 godziny.
+        Wybierając spacer w okolicy Supraśla lub Kopnej Góry, sprawdź aktualny przebieg, długość,
+        nawierzchnię i dostępność trasy.
       </li>
       <li>
-        <strong>Szlak Bioróżnorodności</strong> — 7 km edukacyjnej ścieżki przez różne ekosystemy
-        Puszczy. Tablice informacyjne o faunie i florze. Więcej w{' '}
-        <Link to="/blog/szlak-bioroznorodnosci-suprasl">naszym artykule o szlaku</Link>.
+        Informacje o trasach przyrodniczych i ich dostępności potwierdź u właściwego zarządcy terenu.
       </li>
       <li>
-        <strong>Spacer bulwarami</strong> — 3 km wzdłuż rzeki Supraśl, idealny na wieczorny
-        relaks. Po drodze ławki, pomosty i lokale gastronomiczne.
+        <strong>Spacer po Supraślu</strong> — wybierz trasę miejską stosownie do pogody i sprawdź
+        nawierzchnię, jeśli poruszasz się z wózkiem.
       </li>
     </ul>
 
@@ -69,9 +66,8 @@ const SzlakiPuszczaKnyszynska = () => (
     </p>
     <ul>
       <li>
-        <strong>Szlak Skrajem Puszczy Knyszyńskiej (czerwony)</strong> — wieloetapowy szlak o
-        łącznej długości ponad 80 km. Fragment z Supraśla (ok. 25 km) prowadzi przez
-        Wzgórza Świętojańskie i dzikie rezerwaty.
+        <strong>Dłuższe trasy piesze</strong> — sprawdź aktualny przebieg, długość, oznakowanie i
+        zasady dostępu przed wyruszeniem.
       </li>
       <li>
         <strong>Szlak Powstania Styczniowego</strong> — historyczna trasa śladami bitew i
@@ -79,34 +75,33 @@ const SzlakiPuszczaKnyszynska = () => (
         <Link to="/blog/szlak-powstania-styczniowego-suprasl">naszym artykule</Link>.
       </li>
       <li>
-        <strong>Wzgórza Świętojańskie</strong> — najwyższy punkt okolicy z panoramicznym widokiem
-        na Puszczę. Szlak pieszy ok. 8 km przez stary drzewostan bukowy.
+        <strong>Wzgórza Świętojańskie</strong> — przed wycieczką sprawdź dostępność dróg i warunki
+        w terenie.
       </li>
     </ul>
 
     <h2>Szlaki rowerowe – od rekreacji po sport</h2>
     <p>
-      Okolice Supraśla to raj dla rowerzystów. Trasa <strong>Green Velo</strong> — najdłuższy
-      szlak rowerowy w Polsce — przebiega przez Puszczę Knyszyńską.
+      Wybierając trasę rowerową, sprawdź jej aktualny przebieg, nawierzchnię i oznakowanie.
     </p>
     <ul>
       <li>
-        <strong>Pętla wokół Supraśla</strong> (ok. 15 km, łatwa) — cieniste aleje, malownicze
-        polany, przystanki przy leśnych źródłach. Idealna na rodzinny wypad.
+        <strong>Lokalne trasy rowerowe</strong> — dobierz dystans do swoich możliwości i sprawdź,
+        czy wybrany przebieg jest dostępny dla rowerów.
       </li>
       <li>
-        <strong>Trasa do Kruszynian</strong> (ok. 45 km w jedną stronę) — łączy walory
-        przyrodnicze z{' '}
+        <strong>Wycieczka do Kruszynian</strong> — zaplanuj dojazd i czas podróży, sprawdzając
+        aktualne mapy. Poznaj{' '}
         <Link to="/blog/kruszyniany-tatarska-wies">kulturą tatarską</Link>. Dla średniozaawansowanych.
       </li>
       <li>
-        <strong>Leśne single tracki</strong> — naturalne ścieżki w rejonie Wzgórz Świętojańskich
-        dla miłośników MTB. Korzenie, piaski i strome podjazdy.
+        <strong>Trasy MTB</strong> — wybieraj odcinki dozwolone dla rowerów i odpowiednie do
+        własnych umiejętności.
       </li>
     </ul>
     <p>
-      <strong>Wypożyczalnie:</strong> Rowery dostępne w centrum Supraśla — trekkingowe, miejskie
-      i MTB. Ceny: ok. 40-60 zł/dzień. W sezonie warto rezerwować z wyprzedzeniem.
+      <strong>Wypożyczalnie:</strong> Dostępność rowerów, cennik i warunki wynajmu potwierdź
+      bezpośrednio u wypożyczalni.
     </p>
 
     <h2>Arboretum w Kopnej Górze</h2>
@@ -114,7 +109,7 @@ const SzlakiPuszczaKnyszynska = () => (
       <strong>Arboretum im. Powstańców 1863 w Kopnej Górze</strong> zajmuje 26 hektarów i zostało
       założone w 1988 roku przez Nadleśnictwo Supraśl. To miejsce na spacer wśród kolekcji drzew
       i krzewów. Dojazd i warunki zwiedzania sprawdź przed wyjazdem na stronie{' '}
-      <a href="https://suprasl.bialystok.lasy.gov.pl/" target="_blank" rel="noopener" aria-label="Informacje Nadleśnictwa Supraśl (otworzy się w nowej karcie)">
+      <a href="https://suprasl.bialystok.lasy.gov.pl/" target="_blank" rel="noopener noreferrer" aria-label="Informacje Nadleśnictwa Supraśl (otworzy się w nowej karcie)">
         Nadleśnictwa Supraśl
       </a>
       .

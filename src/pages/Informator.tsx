@@ -93,7 +93,7 @@ const Informator = () => {
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
           Oddajemy do Państwa dyspozycji dom, w który włożyliśmy dużo pracy i serca, aby zapewnić
           komfortowy wypoczynek blisko natury. In The Woods to drewniany dom na wyłączność w sercu
-          Puszczy Knyszyńskiej, zaledwie 10 minut od centrum Supraśla.
+          Puszczy Knyszyńskiej, niedaleko Supraśla.
         </p>
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-4 text-base md:text-lg">
           Prosimy o traktowanie domu jak własnego i pozostawienie go w takim stanie, w jakim został

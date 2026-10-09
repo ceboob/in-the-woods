@@ -1,44 +1,11 @@
 import heroImgSm from '@/assets/exterior-main-sm.webp';
 import heroImgLg from '@/assets/exterior-main-lg.webp';
-import { Phone, Star, Users, TreePine, Sparkles, CalendarCheck, Flame, Dog } from 'lucide-react';
-import { useMemo } from 'react';
-import { BLOCKED_DATES, formatDateKey } from '@/lib/pricing';
+import { Phone, Users, Flame, Sparkles } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollTo = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
   };
-
-  const availabilityText = useMemo(() => {
-    const now = new Date();
-    const currentMonth = now.getMonth();
-
-    let freeDays = 0;
-    let freeWeekends = 0;
-    const check = new Date(now);
-    check.setHours(0, 0, 0, 0);
-
-    for (let i = 0; i < 60; i++) {
-      const d = new Date(check);
-      d.setDate(d.getDate() + i);
-      if (!BLOCKED_DATES.has(formatDateKey(d))) {
-        freeDays++;
-        const dow = d.getDay();
-        if (dow === 5 || dow === 6) freeWeekends++;
-      }
-    }
-
-    const weekends = Math.floor(freeWeekends / 2);
-    if (freeDays === 0) return null;
-
-    const monthNames = ['styczniu', 'lutym', 'marcu', 'kwietniu', 'maju', 'czerwcu', 'lipcu', 'sierpniu', 'wrześniu', 'październiku', 'listopadzie', 'grudniu'];
-    const nextMonth = (currentMonth + 1) % 12;
-
-    if (weekends <= 3) {
-      return `Tylko ${weekends} woln${weekends === 1 ? 'y' : 'e'} weekend${weekends === 1 ? '' : 'y'} w ${monthNames[currentMonth]} i ${monthNames[nextMonth]}!`;
-    }
-    return `${freeDays} wolnych dni w najbliższych 2 miesiącach`;
-  }, []);
 
   return (
     <section
@@ -50,7 +17,7 @@ const HeroSection = () => {
           src={heroImgLg}
           srcSet={`${heroImgSm} 640w, ${heroImgLg} 1028w`}
           sizes="100vw"
-          alt="Całoroczny dom na Podlasiu z balią ogrodową — In The Woods koło Supraśla"
+          alt="Drewniany dom z balią ogrodową w otoczeniu drzew"
           className="w-full h-full object-cover"
           width="1028"
           height="771"
@@ -65,17 +32,13 @@ const HeroSection = () => {
           Klimatyczny dom z bali w Puszczy Knyszyńskiej
         </h1>
         <p className="font-accent font-semibold mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white/90 animate-fade-up delay-100">
-          Dom na wyłączność z balią ogrodową z funkcją jacuzzi i kominkiem. Odpocznij w leśnym zaciszu zaledwie 10 minut od Supraśla.
+          Dom na wyłączność z kominkiem. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem; jej dostępność potwierdź przed pobytem.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
           <div className="flex items-center gap-2 text-white/90">
             <Users className="w-4 h-4" />
             <span className="text-xs md:text-sm tracking-wide font-medium">Dom z bali na wyłączność</span>
-          </div>
-          <div className="flex items-center gap-2 text-white/90">
-            <Dog className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide font-medium">Ogrodzony teren · psy za darmo</span>
           </div>
           <div className="flex items-center gap-2 text-white/90">
             <Flame className="w-4 h-4" />
@@ -92,7 +55,7 @@ const HeroSection = () => {
             onClick={() => scrollTo('#rezerwacja')}
             className="btn-primary bg-primary text-primary-foreground hover:bg-primary/90"
           >
-            Sprawdź dostępność
+            Przejdź do formularza zapytania
           </button>
           <a
             href="tel:+48722765101"
@@ -102,24 +65,6 @@ const HeroSection = () => {
           </a>
         </div>
 
-        {availabilityText && (
-          <div className="flex items-center justify-center gap-2 mb-8 animate-fade-in delay-400">
-            <CalendarCheck className="w-4 h-4 text-primary/80" />
-            <span className="text-sm text-primary/90 font-medium tracking-wide">
-              {availabilityText}
-            </span>
-          </div>
-        )}
-
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 animate-fade-in delay-500">
-          <div className="flex items-center gap-1.5 text-primary text-sm font-medium">
-            <Star className="w-4 h-4 fill-primary text-primary" />
-          </div>
-          <span className="text-white/50 text-sm">·</span>
-          <span className="text-white font-medium text-sm">Ponad 110 zadowolonych gości</span>
-          <span className="text-white/50 text-sm">·</span>
-          <span className="text-white font-medium text-sm">Rezerwacje bezpośrednie</span>
-        </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">

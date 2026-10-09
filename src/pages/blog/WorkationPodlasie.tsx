@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 const WorkationPodlasie = () => (
   <BlogArticleLayout
-    title="Workation Podlasie: Praca zdalna w lesie"
-    metaTitle="Workation Podlasie | Praca zdalna w lesie z Wi-Fi"
-    metaDescription="Workation na Podlasiu — domek w lesie z szybkim Wi-Fi, ciszą i naturą. Połącz produktywną pracę zdalną z regeneracją w Puszczy Knyszyńskiej."
+    title="Praca zdalna podczas pobytu na Podlasiu"
+    metaTitle="Praca zdalna na Podlasiu – informacje przed pobytem"
+    metaDescription="Planujesz pracować zdalnie podczas pobytu na Podlasiu? Sprawdź dostępność Wi-Fi, warunki pracy i zasady pobytu przed wysłaniem zapytania."
     slug="workation-podlasie"
     publishDate="2026-04-09"
     readTime="9 min"
     keywords={['workation Podlasie', 'praca zdalna w lesie', 'workation Puszcza Knyszyńska', 'remote work natura']}
     faqs={[
-      { question: 'Czy w domku jest szybkie Wi-Fi?', answer: 'Tak — In The Woods oferuje stabilne łącze internetowe wystarczające do wideokonferencji i pracy w chmurze.' },
-      { question: 'Czy jest biurko / miejsce do pracy?', answer: 'Dom posiada wygodny stół jadalniany, który doskonale sprawdza się jako przestrzeń do pracy, z naturalnym światłem i widokiem na las.' },
-      { question: 'Na ile dni warto zaplanować workation?', answer: 'Rekomendujemy minimum 4–5 dni — wystarczająco, aby złapać rytm pracy i jednocześnie skorzystać z atrakcji regionu.' },
+      { question: 'Czy w domu jest Wi-Fi?', answer: 'Tak, Wi-Fi jest dostępne. Jeśli do pracy potrzebujesz określonej prędkości lub stabilności połączenia, potwierdź parametry przed pobytem.' },
+      { question: 'Czy jest miejsce do pracy?', answer: 'Przed wysłaniem zapytania potwierdź z gospodarzem, czy dostępne miejsce do pracy odpowiada Twoim potrzebom.' },
+      { question: 'Na ile dni zaplanować pobyt?', answer: 'Minimalna długość pobytu zależy od sezonu. Sprawdź cennik i kalendarz dla wybranego terminu.' },
     ]}
     relatedArticles={[
       { title: 'Cyfrowy detoks w lesie', slug: 'cyfrowy-detoks-las' },
@@ -23,51 +23,49 @@ const WorkationPodlasie = () => (
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Praca zdalna nie musi oznaczać siedzenia w domu przed ekranem. <strong>Workation na Podlasiu</strong>
-        to sposób na połączenie produktywności z regeneracją — pracujesz w otoczeniu Puszczy Knyszyńskiej,
-        a po zamknięciu laptopa czeka Cię las, kominek i balia ogrodowa z funkcją jacuzzi.
+        Pracując zdalnie podczas wyjazdu, warto wcześniej sprawdzić warunki połączenia internetowego,
+        miejsce do pracy i zasady pobytu. Wi-Fi jest dostępne; jego parametry potwierdź, jeśli są
+        istotne dla Twoich obowiązków.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Czym jest workation?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Praca zdalna podczas wyjazdu</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Workation (work + vacation) to trend pracy zdalnej, w którym zmieniasz otoczenie biurowe na inspirujące miejsce
-        — góry, morze lub, jak w naszym przypadku, <strong>las</strong>. Pracujesz w godzinach, które Ci odpowiadają,
-        a resztę czasu poświęcasz na odpoczynek i odkrywanie regionu.
+        Poza domem możesz zachować zwykły rytm pracy lub zaplanować dzień inaczej. Ustal z
+        gospodarzem, jakie miejsce do pracy jest dostępne, i zaplanuj przerwy zgodnie z własnymi
+        potrzebami.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego Podlasie na workation?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Co sprawdzić przed przyjazdem?</h2>
       <ul className="space-y-3 text-muted-foreground">
-        <li>🌲 <strong>Cisza i skupienie</strong> — brak miejskiego hałasu sprzyja głębokiej pracy (deep work)</li>
-        <li>💻 <strong>Stabilne Wi-Fi</strong> — wystarczające do wideokonferencji i pracy w chmurze</li>
-        <li>🏡 <strong>Cały dom na wyłączność</strong> — żadnych współlokatorów, współpracowników ani obcych ludzi</li>
-        <li>🌿 <strong>Natura za progiem</strong> — przerwy spędzasz na spacerach po lesie, nie przy automacie z kawą</li>
-        <li>🔥 <strong>Wieczorny relaks</strong> — kominek, jacuzzi, ognisko — reward po produktywnym dniu</li>
+        <li>💻 <strong>Połączenie internetowe</strong> — potwierdź parametry odpowiednie do swoich zadań</li>
+        <li>🪑 <strong>Miejsce do pracy</strong> — zapytaj o dostępne wyposażenie i układ</li>
+        <li>🏡 <strong>Zasady pobytu</strong> — sprawdź liczbę gości, godziny i warunki korzystania z domu</li>
+        <li>🌲 <strong>Przerwy poza domem</strong> — wybieraj trasy po sprawdzeniu ich dostępności i zasad</li>
+        <li>🛁 <strong>Dodatki</strong> — potwierdź dostępność i warunki korzystania z balii</li>
       </ul>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Jak wygląda dzień workation w In The Woods?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Przykładowy plan dnia</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>7:00</strong> — Budzisz się z ptakami. Kawa z ekspresu, śniadanie z widokiem na las.<br />
-        <strong>8:00–12:00</strong> — Deep work. Stół przy oknie, naturalne światło, cisza. Brak rozpraszaczy.<br />
-        <strong>12:00–13:00</strong> — Spacer po okolicy, z uwzględnieniem dostępnych tras i zasad ochrony przyrody.<br />
-        <strong>13:00–14:00</strong> — Obiad z lokalnych produktów. Gotowanie jako medytacja.<br />
-        <strong>14:00–17:00</strong> — Spotkania online, e-maile, lżejsze zadania.<br />
-        <strong>17:00+</strong> — Wolne! Supraśl, kajaki, rower, jacuzzi. Twój czas.
+        Zaplanuj bloki pracy i przerwy zgodnie z własnym grafikiem. Przed spacerem sprawdź pogodę,
+        dostępność tras i zasady na terenach chronionych. Atrakcje oraz balia wymagają osobnego
+        sprawdzenia godzin i dostępności.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Co zwiedzić po pracy?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w okolicy</h2>
       <p className="text-muted-foreground leading-relaxed">
         W Supraślu znajdziesz m.in. Monaster i Muzeum Ikon; przed wizytą sprawdź godziny otwarcia.
-        <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary hover:underline"> Informacje o trasach</Link>{' '}
+        <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary hover:underline">Informacje o trasach</Link>{' '}
         pomagają zaplanować wyjście. Dostępność <Link to="/blog/kajaki-suprasl" className="text-primary hover:underline">spływów kajakowych</Link>{' '}
-        potwierdź u organizatora.
-        A wieczorem — balia ogrodowa z funkcją jacuzzi pod gwiazdami.
+        potwierdź u organizatora. Dostępność balii ogrodowej z funkcją jacuzzi potwierdź z
+        gospodarzem.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Zapytaj o pobyt na workation</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Zapytaj o pobyt i warunki pracy</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> — prywatny dom w Puszczy Knyszyńskiej
-        z Wi-Fi, kominkiem i ciszą. Idealne miejsce na <strong>workation na Podlasiu</strong>.
-        Zadzwoń: <a href="tel:+48722765101" className="text-primary hover:underline">722 765 101</a>.
+        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to dom
+        na wyłączność w okolicach Supraśla. Potwierdź dostępność miejsca do pracy i parametry Wi-Fi
+        przed wysłaniem zapytania. Zadzwoń:{' '}
+        <a href="tel:+48722765101" className="text-primary hover:underline">722 765 101</a>.
       </p>
     </article>
   </BlogArticleLayout>

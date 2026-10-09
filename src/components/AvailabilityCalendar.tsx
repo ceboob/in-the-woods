@@ -12,6 +12,7 @@ import {
   getMinimumNightsForStay,
   GARDEN_TUB_PRICE,
   LONG_STAY_DISCOUNT,
+  MIN_NIGHTLY_RATE,
   MAX_GUESTS,
   MIN_NIGHTS,
   WEEKEND_SURCHARGE,
@@ -401,7 +402,7 @@ const AvailabilityCalendar = () => {
                   </div>
                   {priceCalc && priceCalc.discount > 0 && (
                     <div className="flex justify-between text-xs text-green-700">
-                      <span>Zniżka za długi pobyt (−10%)</span>
+                      <span>Zniżka za długi pobyt (−{LONG_STAY_DISCOUNT * 100}%)</span>
                       <span>−{priceCalc.discount} zł</span>
                     </div>
                   )}
@@ -433,7 +434,7 @@ const AvailabilityCalendar = () => {
         {/* Season info */}
         <div className="mt-4 text-center space-y-1">
           <p className="text-xs text-muted-foreground">
-            Ceny od <strong>{Math.min(...SEASONS.flatMap((season) => Object.values(season.prices)))} zł/noc</strong> za cały dom. Dopłata <strong>+{WEEKEND_SURCHARGE} zł</strong>{' '}
+            Ceny od <strong>{MIN_NIGHTLY_RATE} zł/noc</strong> za cały dom. Dopłata <strong>+{WEEKEND_SURCHARGE} zł</strong>{' '}
             dotyczy nocy rozpoczynających się w piątek lub sobotę; niedziela korzysta ze stawki
             Nd–Czw. Przy pobycie 7+ nocy rabat {LONG_STAY_DISCOUNT * 100}% obejmuje nocleg, nie opcjonalną
             balię ({GARDEN_TUB_PRICE} zł za pobyt).

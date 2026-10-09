@@ -9,22 +9,22 @@ const SzlakBioroznorodnosci = () => {
     {
       question: 'Jak długi jest Szlak Bioróżnorodności w Supraślu?',
       answer:
-        'Szlak ma około 7 km długości i prowadzi przez różnorodne ekosystemy Puszczy Knyszyńskiej. Przejście całej trasy zajmuje ok. 2–3 godziny.',
+        'Przed wyjściem sprawdź aktualny przebieg i długość trasy na miejscu lub w informacji zarządcy. Czas przejścia zależy od warunków i tempa spaceru.',
     },
     {
       question: 'Czy Szlak Bioróżnorodności jest odpowiedni dla dzieci?',
       answer:
-        'Tak, trasa jest łatwa i doskonale nadaje się dla rodzin z dziećmi. Tablice edukacyjne przy szlaku sprawiają, że spacer jest jednocześnie lekcją przyrody.',
+        'Oceń stan trasy, jej długość i warunki terenowe przed wyjściem. Dostosuj spacer do wieku i możliwości dzieci.',
     },
     {
       question: 'Kiedy najlepiej odwiedzić Szlak Bioróżnorodności?',
       answer:
-        'Szlak jest atrakcyjny o każdej porze roku — wiosną kwitną rośliny runa leśnego, latem las zapewnia przyjemny cień, jesienią zachwyca kolorami, a zimą śnieżnym krajobrazem.',
+        'Warunki zmieniają się w ciągu roku. Przed wyjściem sprawdź pogodę, stan trasy i ewentualne ograniczenia w dostępie.',
     },
     {
       question: 'Gdzie nocować blisko Szlaku Bioróżnorodności?',
       answer:
-        'In The Woods to dom w lesie z jacuzzi, położony w Puszczy Knyszyńskiej blisko Supraśla — idealny na odpoczynek po spacerze szlakiem.',
+        'In The Woods to dom w okolicach Supraśla. Przed wyjazdem sprawdź trasę do wybranego odcinka szlaku i warunki pobytu.',
     },
   ];
 
@@ -40,8 +40,8 @@ const SzlakBioroznorodnosci = () => {
   return (
     <BlogArticleLayout
       title="Szlak Bioróżnorodności Supraśl – spacer w Puszczy"
-      metaTitle="Szlak Bioróżnorodności Supraśl | Spacer"
-      metaDescription="Szlak Bioróżnorodności w Supraślu to 7 km edukacyjnej trasy przez Puszczę Knyszyńską. Poznaj florę, faunę i ekosystemy leśne Podlasia."
+      metaTitle="Szlak Bioróżnorodności w Supraślu – informacje przed spacerem"
+      metaDescription="Planujesz spacer Szlakiem Bioróżnorodności w Supraślu? Sprawdź aktualny przebieg trasy, warunki terenowe i zasady dostępu przed wyjściem."
       slug="szlak-bioroznorodnosci-suprasl"
       publishDate="2026-03-14"
       readTime="10 min"
@@ -59,18 +59,15 @@ const SzlakBioroznorodnosci = () => {
       <h2>Szlak Bioróżnorodności Supraśl — spacer po puszczy</h2>
 
       <p>
-        Puszcza Knyszyńska to jeden z najcenniejszych kompleksów leśnych w Polsce, a{' '}
-        <strong>Szlak Bioróżnorodności w Supraślu</strong> pozwala odkryć jej bogactwo przyrodnicze
-        w sposób przystępny i fascynujący. Ta edukacyjna ścieżka o długości około 7 kilometrów
-        prowadzi przez zróżnicowane ekosystemy leśne, oferując niezapomniane spotkanie z naturą
-        Podlasia.
+        <strong>Szlak Bioróżnorodności w Supraślu</strong> może być celem spaceru w okolicach
+        Puszczy Knyszyńskiej. Przed wyjściem sprawdź aktualny przebieg, długość i dostępność trasy
+        w lokalnej informacji lub u jej zarządcy.
       </p>
 
       <p>
         Jeśli szukasz <Link to="/atrakcje-suprasl">atrakcji w Supraślu</Link>, które łączą aktywny
-        wypoczynek z edukacją przyrodniczą, Szlak Bioróżnorodności jest obowiązkowym punktem
-        programu. To idealna propozycja zarówno dla rodzin z dziećmi, jak i dorosłych miłośników
-        natury.
+        wypoczynek z poznawaniem przyrody, sprawdź informacje o szlaku i zdecyduj, czy jego aktualne
+        warunki odpowiadają Twoim planom.
       </p>
 
       <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
@@ -84,45 +81,36 @@ const SzlakBioroznorodnosci = () => {
       <h2>Czym jest Szlak Bioróżnorodności?</h2>
 
       <p>
-        Szlak Bioróżnorodności to <strong>edukacyjna ścieżka przyrodnicza</strong> zlokalizowana w
-        okolicach Supraśla, na terenie Puszczy Knyszyńskiej. Trasa została zaprojektowana tak, aby
-        przybliżyć turystom bogactwo biologiczne tego regionu — od różnorodności gatunkowej drzew i
-        roślin runa leśnego, przez grzyby i porosty, po świat owadów, ptaków i ssaków
-        zamieszkujących puszczę.
+        Szlak jest trasą w okolicach Supraśla. Przebieg, oznakowanie i elementy edukacyjne mogą się
+        zmieniać, dlatego przed spacerem warto sprawdzić aktualne informacje u zarządcy.
       </p>
 
       <p>
-        Wzdłuż szlaku rozmieszczone są <strong>tablice edukacyjne</strong> opisujące poszczególne
-        ekosystemy, gatunki roślin i zwierząt oraz procesy ekologiczne zachodzące w lesie. To nie
-        tylko spacer — to prawdziwa lekcja przyrody pod otwartym niebem.
+        Jeśli na trasie znajdują się tablice informacyjne, korzystaj z nich, nie ingerując w otoczenie
+        ani nie zrywając roślin. Przestrzegaj oznakowania i lokalnych zasad.
       </p>
 
       <h2>Jak wygląda trasa?</h2>
 
       <p>
-        Szlak ma łączną długość <strong>około 7 kilometrów</strong> i prowadzi przez różnorodne
-        siedliska leśne. Trasa jest w większości płaska i łatwa do pokonania — nie wymaga
-        specjalnego przygotowania fizycznego ani sprzętu turystycznego.
+        Długość, nawierzchnia i trudność mogą zależeć od wybranego odcinka oraz aktualnego stanu
+        trasy. Przed wyjściem sprawdź mapę i przygotuj się do warunków terenowych.
       </p>
 
       <h3>Etapy trasy</h3>
 
       <ul>
         <li>
-          <strong>Bór sosnowy</strong> — suche, jasne partie lasu z charakterystycznym zapachem
-          żywicy i mchami pokrywającymi dno lasu
+          <strong>Przebieg trasy</strong> — kieruj się aktualnym oznakowaniem i informacjami zarządcy
         </li>
         <li>
-          <strong>Las mieszany</strong> — strefy przejściowe z dębami, grabami i lipami, gdzie
-          bioróżnorodność osiąga najwyższe wartości
+          <strong>Warunki terenowe</strong> — uwzględnij pogodę, nawierzchnię i własne możliwości
         </li>
         <li>
-          <strong>Ols i łęg</strong> — podmokłe fragmenty z olchami i jesionami, pełne ptasich
-          głosów i żab
+          <strong>Ochrona przyrody</strong> — pozostaw rośliny, grzyby i inne elementy środowiska na miejscu
         </li>
         <li>
-          <strong>Polany śródleśne</strong> — otwarte przestrzenie z dzikimi kwiatami i owadami
-          zapylającymi
+          <strong>Odpowiedzialny spacer</strong> — nie schodź z wyznaczonej trasy i zabierz ze sobą odpady
         </li>
       </ul>
 
@@ -139,27 +127,22 @@ const SzlakBioroznorodnosci = () => {
       <h3>Flora Puszczy Knyszyńskiej</h3>
 
       <p>
-        Na szlaku rosną <strong>ponad 200 gatunków roślin naczyniowych</strong>. Wiosną las pokrywa
-        się dywanem zawilców, przylaszczek i fiołków. Latem dominują paprocie, borówki i wrzos.
-        Szczególnie cenne są stanowiska storczyków leśnych i widłaków — reliktów dawnych epok
-        geologicznych.
+        Skład roślinności zależy od konkretnego miejsca i pory roku. Nie zrywaj roślin; szczególną
+        ostrożność zachowaj na obszarach objętych ochroną.
       </p>
 
       <h3>Fauna</h3>
 
       <p>
-        Puszcza Knyszyńska jest domem dla wielu gatunków chronionych. Podczas spaceru szlakiem można
-        spotkać <strong>dzięcioły</strong> (w tym rzadkiego dzięcioła trójpalczastego),{' '}
-        <strong>sikory, kowaliki i pełzacze</strong>. W lesie żyją też sarny, dziki, lisy, a nawet
-        łosie i rysie — choć te ostatnie są niezwykle trudne do zaobserwowania.
+        W lesie mogą występować dzikie zwierzęta, ale ich spotkanie nie jest gwarantowane. Obserwuj
+        przyrodę z dystansu, nie karm zwierząt i nie zakłócaj ich spokoju.
       </p>
 
       <h3>Grzyby i porosty</h3>
 
       <p>
-        Jesienią las staje się rajem dla grzybiarzy. Na szlaku spotkasz borowiki, kurki, maślaki i
-        podgrzybki. Tablice edukacyjne pomagają rozpoznawać gatunki jadalne od trujących. Porosty
-        porastające pnie drzew świadczą o doskonałej jakości powietrza w Puszczy Knyszyńskiej.
+        Zbieranie grzybów może być ograniczone na niektórych terenach. Przed wyjściem sprawdź
+        właściwe przepisy i oznakowanie; nie zbieraj grzybów, których nie rozpoznajesz.
       </p>
 
       <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
@@ -173,7 +156,7 @@ const SzlakBioroznorodnosci = () => {
       <h2>Dlaczego warto odwiedzić?</h2>
 
       <p>
-        Szlak Bioróżnorodności to jedno z najlepszych miejsc na{' '}
+        Szlak Bioróżnorodności to jedna z propozycji spaceru w okolicy. Zobacz także{' '}
         <Link to="/atrakcje-suprasl">mapie atrakcji Supraśla</Link>. Oto kilka powodów, dla których
         warto go odwiedzić:
       </p>
@@ -184,19 +167,17 @@ const SzlakBioroznorodnosci = () => {
           tylko relaks, ale też nauka
         </li>
         <li>
-          <strong>Cisza i spokój</strong> — szlak jest mało uczęszczany, co gwarantuje intymny
-          kontakt z przyrodą
+          <strong>Kontakt z przyrodą</strong> — zachowaj ciszę i uszanuj zasady obowiązujące na trasie
         </li>
         <li>
           <strong>Fotografia przyrodnicza</strong> — las oferuje niezliczone okazje do robienia
           pięknych zdjęć
         </li>
         <li>
-          <strong>Zdrowie</strong> — badania potwierdzają, że spacery w lesie obniżają ciśnienie,
-          redukują stres i wzmacniają odporność
+          <strong>Odpoczynek</strong> — spacer może być formą rekreacji; nie zastępuje opieki medycznej
         </li>
         <li>
-          <strong>Dostępność</strong> — trasa jest łatwa i odpowiednia dla wszystkich grup wiekowych
+          <strong>Przygotowanie</strong> — dobierz trasę i tempo do swoich możliwości
         </li>
       </ul>
 
@@ -205,9 +186,8 @@ const SzlakBioroznorodnosci = () => {
       <h3>Jak dojechać?</h3>
 
       <p>
-        Szlak Bioróżnorodności zaczyna się w okolicach Supraśla, do którego z Białegostoku
-        dojedziemy w około 20 minut samochodem. Z <Link to="/">In The Woods</Link> dojazd na
-        początek szlaku zajmuje zaledwie 10 minut.
+        Przed wyjazdem sprawdź mapę, punkt rozpoczęcia trasy i aktualny dojazd. Nie zakładaj, że
+        początek szlaku jest dostępny z miejsca noclegu.
       </p>
 
       <h3>Co zabrać ze sobą?</h3>
@@ -223,29 +203,27 @@ const SzlakBioroznorodnosci = () => {
       <h3>Czas przejścia</h3>
 
       <p>
-        Spokojne przejście całego szlaku z czytaniem tablic edukacyjnych i obserwacją przyrody
-        zajmuje <strong>2–3 godziny</strong>. Warto nie spieszyć się i poświęcić czas na
-        nasłuchiwanie ptaków i podziwianie detali leśnego ekosystemu.
+        Czas przejścia zależy od długości wybranego odcinka, pogody i tempa spaceru. Sprawdź
+        informacje o trasie przed wyjściem i zaplanuj powrót przed zmrokiem.
       </p>
 
       <h2>Gdzie nocować w Supraślu?</h2>
 
       <p>
-        Po spacerze idealnym miejscem na odpoczynek jest <Link to="/">In The Woods</Link> —{' '}
+        Po spacerze możesz odpocząć w <Link to="/">In The Woods</Link> —{' '}
         <strong>
           <Link to="/noclegi-suprasl">dom w lesie z jacuzzi</Link>
         </strong>{' '}
-        blisko Supraśla. Po dniu spędzonym na szlaku nie ma nic lepszego niż wieczorna kąpiel w
-        jacuzzi pod gwiazdami, otoczonym dźwiękami puszczy.
+        w okolicach Supraśla. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem; jej
+        dostępność potwierdź przed pobytem.
       </p>
 
       <p>
         Jeśli szukasz{' '}
         <strong>
-          <Link to="/noclegi-suprasl">noclegu w Supraślu</Link>
-        </strong>
-        , In The Woods oferuje komfortowy pobyt w sercu Puszczy Knyszyńskiej — z kominkiem,
-        prywatnym ogrodem i pełnym spokojem natury.
+          <Link to="/noclegi-suprasl">noclegu w okolicy Supraśla</Link>
+          </strong>
+          , sprawdź warunki pobytu, wyposażenie i dojazd do planowanych tras.
       </p>
     </BlogArticleLayout>
   );

@@ -199,7 +199,7 @@ const KruszynianyTatarskaWies = () => {
         </li>
         <li>
           <strong>Spokój</strong> — wieś leży z dala od głównych szlaków turystycznych, co
-          gwarantuje kameralną atmosferę
+          sprzyja spokojnemu zwiedzaniu, choć natężenie ruchu zależy od terminu
         </li>
       </ul>
 

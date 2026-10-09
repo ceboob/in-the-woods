@@ -11,12 +11,12 @@ const RykowiskoJeleni = () => {
     {
       question: 'Czy rykowisko jest bezpieczne do obserwacji?',
       answer:
-        'Tak — o ile zachowasz bezpieczną odległość i spokój. Byki mogą być agresywne w okresie godowym, dlatego zawsze obserwuj je z dystansu i stosuj się do wskazówek przewodnika.',
+        'Nie można zagwarantować bezpiecznej obserwacji dzikich zwierząt. Nie zbliżaj się do jeleni; pozostań na dozwolonej trasie i stosuj się do oznakowania oraz zaleceń zarządcy terenu.',
     },
     {
       question: 'Czy można przywieźć psa?',
       answer:
-        'W "In The Woods" psy są mile widziane i przebywają na ogrodzonym terenie bez dodatkowych opłat, jednak podczas samego nasłuchiwania w lesie lepiej zostawić psa w domu lub pod opieką[...]',
+        'Przed wysłaniem zapytania potwierdź z gospodarzem, czy pobyt z psem jest możliwy i jakie zasady obowiązują. W terenie stosuj lokalne przepisy i nie pozwalaj psu płoszyć zwierząt.',
     },
   ];
 
@@ -30,7 +30,7 @@ const RykowiskoJeleni = () => {
     <BlogArticleLayout
       title="Rykowisko jeleni na Podlasiu – gdzie i kiedy je usłyszeć?"
       metaTitle="Rykowisko jeleni na Podlasiu – kiedy i gdzie je usłyszeć?"
-      metaDescription="Sprawdź, kiedy trwa rykowisko jeleni i gdzie usłyszeć je w Puszczy Knyszyńskiej koło Supraśla. Poznaj zasady bezpiecznej obserwacji."
+      metaDescription="Sprawdź, kiedy zwykle przypada rykowisko jeleni i jak odpowiedzialnie nasłuchiwać odgłosów przyrody w okolicach Supraśla."
       slug="rykowisko-jeleni-puszcza-knyszynska"
       publishDate="2026-08-12"
       readTime="6 min"
@@ -52,10 +52,8 @@ const RykowiskoJeleni = () => {
       <p>
         Na styku lata i jesieni, gdy dni stają się krótsze, a noce chłodniejsze, w podlaskich lasach
         rozpoczyna się jedno z najbardziej fascynujących zjawisk przyrodniczych – rykowisko jeleni. Dla
-        miłośników dzikiej natury to prawdziwe święto, a Puszcza Knyszyńska otaczająca Supraśl jest jednym
-        z najlepszych miejsc w Polsce, by stać się jego świadkiem. Jeśli szukasz pomysłu na jesienny
-        weekend pełen wrażeń w duchu mikrowypraw, a po wszystkim chcesz ogrzać się w prywatnym jacuzzi
-        pod gwiazdami, przygotowaliśmy dla Ciebie idealny plan.
+        miłośników dzikiej przyrody może być okazją do poznawania jej z odpowiedniego dystansu. Jeśli
+        planujesz jesienny weekend, sprawdź lokalne warunki i wybierz dozwolone trasy.
       </p>
 
       <h2>Czym jest rykowisko jeleni i kiedy się odbywa?</h2>
@@ -66,27 +64,23 @@ const RykowiskoJeleni = () => {
         na pojedynek.
       </p>
       <p>
-        Dźwięk ten, niosący się echem na wiele kilometrów w głuchej, nocnej ciszy, wywołuje ciarki i przypomina
-        o dzikiej, nieokiełznanej naturze. Gdy dwa samce uznają się za równorzędnych przeciwników, może dojść
-        do widowiskowej walki polegającej na zderzaniu się i mocowaniu porożami. Najintensywniejsze koncerty
-        rozbrzmiewają nocą oraz o świcie.
+        Rykowisko można usłyszeć w terenie, ale jego przebieg i możliwość nasłuchiwania zależą od miejsca,
+        pogody oraz zachowania zwierząt. Nie podchodź do jeleni ani nie próbuj ich nawoływać.
       </p>
 
-      <h2>Puszcza Knyszyńska – leśna arena w okolicach Supraśla</h2>
+      <h2>Nasłuchiwanie w okolicach Supraśla</h2>
       <p>
-        Jelenie z Puszczy Knyszyńskiej słyną ze swojej wielkości i wspaniałego poroża, a same lasy wokół Supraśla
-        tworzą doskonałe, tajemnicze tło dla tego zjawiska. W samym uzdrowisku organizowane są nierzadko
-        zorganizowane wyprawy (startujące m.in. spod pomnika Światowida przed Pałacem Buchholtzów). Doświadczeni
-        traperzy i lokalni przewodnicy potrafią umiejętnie naśladować odgłosy byków, nierzadko prowokując ukryte
-        w kniei zwierzęta do "odpowiedzi". Być świadkiem takiej wymiany na żywo to przeżycie, którego się nie zapomina.
+        Jeśli interesuje Cię nasłuchiwanie w okolicach Supraśla, sprawdź aktualne informacje u lokalnego
+        organizatora lub zarządcy terenu. Nie zakładaj, że zorganizowana wyprawa jest dostępna ani że
+        zwierzęta pojawią się w wybranym miejscu.
       </p>
 
       <h2>Jak przygotować się na jesienne nasłuchiwanie?</h2>
       <ul>
-        <li><strong>Cisza i spokój:</strong> Ludzki hałas błyskawicznie spłoszy zwierzęta.</li>
-        <li><strong>Odpowiedni ubiór:</strong> Jesienne noce i poranki na Podlasiu potrafią być bardzo chłodne. Ciepła odzież i wodoodporne buty to podstawa.</li>
-        <li><strong>Bezpieczeństwo:</strong> Byki w okresie godowym mają podwyższony poziom hormonów. Zawsze obserwuj je z bezpiecznej odległości.</li>
-        <li><strong>Sprzęt:</strong> Zabierz lornetkę oraz aparat z długim obiektywem, aby podziwiać dzikie zwierzęta z dystansu.</li>
+        <li><strong>Sprawdź zasady:</strong> przed wyjściem poznaj regulamin i ograniczenia dotyczące wybranej trasy.</li>
+        <li><strong>Ubierz się odpowiednio:</strong> dobierz odzież i obuwie do prognozy pogody oraz długości spaceru.</li>
+        <li><strong>Zachowaj dystans:</strong> nie podchodź do zwierząt, nie karm ich i nie próbuj ich nawoływać.</li>
+        <li><strong>Uszanuj teren:</strong> pozostań na dozwolonej trasie i nie zakłócaj spokoju dzikiej przyrody.</li>
       </ul>
 
       <p>Zanim wyruszysz do lasu, zobacz i posłuchaj, jak wygląda ten zjawiskowy spektakl na nagraniu z okolicznych lasów:</p>
@@ -102,26 +96,19 @@ const RykowiskoJeleni = () => {
         />
       </div>
 
-      <h2>Odpocznij w "In The Woods" – Twój domek w lesie z jacuzzi</h2>
+      <h2>Odpoczynek po spacerze</h2>
       <p>
-        Po kilku godzinach spędzonych na rześkim, jesiennym powietrzu i nasłuchiwaniu odgłosów natury, nie ma nic lepszego
-        niż powrót do ciepłego, komfortowego azylu. "In The Woods" w Supraślu to dom z bali na wyłączność, stworzony z
-        myślą o odcięciu od zgiełku i pełnym detoksie.
+        Po spacerze można odpocząć w domu i samodzielnie zdecydować, ile czasu spędzić bez ekranów.
+        Wi-Fi jest dostępne; balię ogrodową z funkcją jacuzzi można zamówić jako opcjonalny dodatek.
       </p>
       <p>
-        Wyobraź to sobie: wracasz z wczesnoporannego spaceru. Rozpalasz ogień w klimatycznym kominku, a zapach drewna powoli
-        wypełnia salon. Zaparzasz poranną kawę w kuchni wyposażonej w stylową płytę kaflową. A wieczorem? Czeka na Ciebie
-        balia ogrodowa z funkcją jacuzzi w ogrodzie. Zanurzasz się w gorącej wodzie pod rozgwieżdżonym niebem, nasłuchując, czy gdzieś w oddali znów nie
-        odezwie się potężny jeleń.
-      </p>
-      <p>
-        Nasz dom to także ogrodzony teren, na którym psy przebywają całkowicie za darmo. Na tych, którzy chcą połączyć jesienny relaks z
-        pracą zdalną (workation), czeka na miejscu szybki internet od Starlink.
+        Szczegóły wyposażenia, warunki pobytu z psem i dostępność dodatków potwierdź przed wysłaniem
+        zapytania o termin.
       </p>
 
       <p>
-        <Link to="/noclegi-suprasl" className="btn-primary">Wyślij zapytanie o pobyt w In The Woods</Link> — połącz dziką, podlaską przyrodę z prywatną strefą relaksu i ciesz się
-        jesienią, o jakiej marzysz.
+        <Link to="/noclegi-suprasl" className="btn-primary">Sprawdź informacje o noclegu</Link> — przed
+        wysłaniem zapytania potwierdź dostępność i warunki pobytu.
       </p>
     </BlogArticleLayout>
   );

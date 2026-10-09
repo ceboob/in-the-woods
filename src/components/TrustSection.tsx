@@ -6,9 +6,9 @@ const items = [
   {
     icon: MapPin,
     title: 'Serce Puszczy Knyszyńskiej',
-    lead: 'Domek w lesie, około 5 km od Supraśla i blisko szlaków.',
+    lead: 'Dom w miejscowości Konne, niedaleko Supraśla.',
     description:
-      'Domek stoi w samym środku lasu, około 5 km od centrum Supraśla, a Białystok leży około 20–25 km dalej. W pobliżu są szlaki piesze i rowerowe oraz obszary Natura 2000: Puszcza Knyszyńska (PLB200003) i Ostoja Knyszyńska (PLH200006). Supraśl zaprasza do monasteru, Muzeum Ikon, nad rzekę i do Arboretum w Kopnej Górze.',
+      'Przed podróżą sprawdź trasę dojazdu. W Supraślu możesz odwiedzić Monaster i Muzeum Ikon; przed wyjściem potwierdź godziny otwarcia i zasady zwiedzania.',
   },
   {
     icon: Trees,
@@ -16,9 +16,8 @@ const items = [
     lead: 'Spokojny kierunek na spacer i obserwowanie przyrody.',
     description: (
       <>
-        Rezerwat przyrody Krzemienne Góry chroni leśne siedliska i krajobraz. Dostęp jest
-        ograniczony do drogi leśnej przy zachodniej granicy rezerwatu; nie wolno zbierać tam
-        grzybów ani roślin. Przed wizytą sprawdź{' '}
+        Przed wizytą sprawdź oficjalne zasady udostępniania rezerwatu i stosuj się do oznakowania.
+        Nie schodź z dozwolonych tras ani nie zbieraj roślin. Zobacz{' '}
         <Link to="/atrakcje-suprasl" className="underline underline-offset-4">
           atrakcje w okolicy
         </Link>{' '}
@@ -47,10 +46,10 @@ const items = [
   },
   {
     icon: Shield,
-    title: 'Dom i ogród dla gości',
+    title: 'Dom na wyłączność',
     lead: 'Cała przestrzeń jest tylko do Waszej dyspozycji.',
     description:
-      'Cały dom i ogród są przeznaczone wyłącznie dla gości — nie ma tu współdzielonych przestrzeni. Wokół są las i kilku spokojnych sąsiadów, a na miejscu czekają taras z grillem oraz bezpłatny prywatny parking. Dzieci mają przestrzeń do zabawy i dostępne zabawki; pobyt z psem jest bezpłatny i nie wymaga wcześniejszego uzgodnienia.',
+      'Cały dom jest wynajmowany jednej grupie. Szczegóły wyposażenia, zasady korzystania z ogrodu i możliwość pobytu z psem potwierdź z gospodarzem przed wyjazdem.',
   },
   {
     icon: Flame,
@@ -68,7 +67,7 @@ const TrustSection = () => {
     <section aria-labelledby="highlights-title" className="px-6 md:px-12 py-12 md:py-16 bg-background">
       <div className="max-w-6xl mx-auto">
         <h2 id="highlights-title" className="section-title text-center mb-8">
-          Dlaczego Krzemienna Chata? Las, prywatność i relaks
+          Odpoczynek w okolicy Supraśla
         </h2>
         <div
           ref={ref}
@@ -87,7 +86,7 @@ const TrustSection = () => {
         </div>
         <p className="text-center mt-8">
           <a href="#rezerwacja" className="btn-primary inline-flex">
-            Sprawdź dostępność
+            Przejdź do formularza zapytania
           </a>
         </p>
       </div>

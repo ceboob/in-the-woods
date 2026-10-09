@@ -55,7 +55,7 @@ const GuideSection = () => (
           <Card
             icon={Church}
             title="Monaster Zwiastowania NMP i Muzeum Ikon"
-            desc="Duchowe serce Supraśla i jeden z najważniejszych zabytków w Polsce. Poczuj niezwykłą atmosferę prawosławnego klasztoru, a następnie zanurz się w świecie sztuki sakralnej w jedynym takim muzeum w kraju."
+            desc="Jeden z ważnych zabytków Supraśla. Poznaj historię prawosławnego klasztoru, a następnie odwiedź Muzeum Ikon."
             cta="Dowiedz się więcej o godzinach i biletach"
             link="/atrakcje-suprasl"
           />

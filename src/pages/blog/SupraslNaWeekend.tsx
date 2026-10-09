@@ -39,7 +39,7 @@ const SupraslNaWeekend = () => (
       duchowym sercu Supraśla. XVI-wieczny klasztor zachwyca architekturą, a <strong>Muzeum
       Ikon</strong> prezentuje sztukę ikon. Godziny otwarcia i zasady wstępu sprawdź przed wizytą
       na{' '}
-      <a href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/" target="_blank" rel="noopener" aria-label="Aktualne informacje dla zwiedzających Muzeum Ikon (otworzy się w nowej karcie)">
+      <a href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/" target="_blank" rel="noopener noreferrer" aria-label="Aktualne informacje dla zwiedzających Muzeum Ikon (otworzy się w nowej karcie)">
         stronie Muzeum Podlaskiego
       </a>
       .
@@ -76,7 +76,7 @@ const SupraslNaWeekend = () => (
     <h3>Rano: Wycieczka do Puszczy Knyszyńskiej (8:30–12:00)</h3>
     <p>
       Ruszaj na szlak! Dla spokojnego tempa polecamy <strong>Szlak Supraski</strong> (8 km) do
-      Arboretum Kopna Góra. Ambitniejsi mogą wybrać{' '}
+      Arboretum Kopna Góra, po sprawdzeniu godzin otwarcia i zasad zwiedzania. Ambitniejsi mogą wybrać{' '}
       <Link to="/blog/szlaki-puszcza-knyszynska">trasę przez Wzgórza Świętojańskie</Link>.
       Alternatywnie — jeśli to lato — zaplanuj{' '}
       <Link to="/blog/kajaki-suprasl">spływ kajakowy</Link> (2-4 godziny).
@@ -110,7 +110,7 @@ const SupraslNaWeekend = () => (
     <p>
       <Link to="/">In The Woods</Link> to prywatny dom w lesie z kominkiem, balią ogrodową z funkcją jacuzzi i
       ogrodem — idealny na romantyczny weekend we dwoje lub wyprawę z przyjaciółmi (do 8 osób).
-      10 minut od centrum Supraśla, w sercu Puszczy Knyszyńskiej.
+      w miejscowości Konne, niedaleko Supraśla i Puszczy Knyszyńskiej.
     </p>
     <p>
       <Link to="/noclegi-suprasl">Sprawdź wszystkie opcje noclegowe w Supraślu →</Link>

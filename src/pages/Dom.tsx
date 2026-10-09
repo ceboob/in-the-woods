@@ -164,7 +164,8 @@ const Dom = () => (
             Kameralna strefa wypoczynku — fotel, biblioteczka, telewizor i widok na drzewa. Idealne
             miejsce na <strong>pracę zdalną w lesie</strong>, poranną jogę lub ciche czytanie.
             Dodatkowe miejsce do spania na rozkładanej kanapie.{' '}
-            <strong>Praca zdalna w lesie wynajem domku</strong> — po pracy spacer do rezerwatu zamiast korki.
+            Po pracy możesz odpocząć w ogrodzie lub wybrać spacer po okolicy, przestrzegając zasad
+            obowiązujących na terenach chronionych.
           </p>
           <ImageReveal><img src={poddaszeFotel} alt="Poddasze z fotelem — praca zdalna w lesie, workation w domku na wyłączność" className="rounded-lg object-cover w-full h-48" loading="lazy" width="1200" height="900" /></ImageReveal>
         </div>

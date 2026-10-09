@@ -35,7 +35,7 @@ const articles = [
   {
     slug: 'rykowisko-jeleni-puszcza-knyszynska',
     title: 'Rykowisko jeleni na Podlasiu – gdzie i kiedy je usłyszeć?',
-    excerpt: 'Sprawdź, kiedy trwa rykowisko jeleni i gdzie bezpiecznie usłyszeć je w Puszczy Knyszyńskiej koło Supraśla.',
+    excerpt: 'Dowiedz się, kiedy zwykle przypada rykowisko jeleni i jak odpowiedzialnie nasłuchiwać odgłosów przyrody w okolicach Supraśla.',
     image: blogMeadow,
     date: '2026-08-12',
     readTime: '6 min',
@@ -97,8 +97,8 @@ const articles = [
   },
   {
     slug: 'workation-podlasie',
-    title: 'Workation na Podlasiu: Połącz pracę zdalną z odpoczynkiem',
-    excerpt: 'Domek w lesie z Wi-Fi, ciszą i naturą. Połącz produktywną pracę zdalną z regeneracją w Puszczy Knyszyńskiej.',
+    title: 'Praca zdalna podczas pobytu na Podlasiu',
+    excerpt: 'Co sprawdzić przed pracą zdalną poza domem: dostępność Wi-Fi, miejsce do pracy i zasady pobytu.',
     image: blogCoRobic,
     date: '2026-04-09',
     readTime: '9 min',
@@ -164,13 +164,13 @@ const articles = [
   },
   {
     slug: 'uzdrowisko-spa-suprasl',
-    title: 'Uzdrowisko Supraśl: Borowina, SPA i regeneracja sił',
+    title: 'Uzdrowisko Supraśl – wellness i wypoczynek',
     excerpt:
-      'Jedyne uzdrowisko na Podlasiu. Borowina z Podsokołdy, grota solna, strefy wellness i sanatoria.',
+      'Jak sprawdzić aktualną ofertę wellness, warunki pobytu i zasady rejestracji? Szczegóły potwierdź bezpośrednio u usługodawcy.',
     image: blogSupraslUzdrowisko,
     date: '2026-04-09',
     readTime: '10 min',
-    keywords: ['uzdrowisko Supraśl', 'SPA Supraśl', 'borowina'],
+    keywords: ['uzdrowisko Supraśl', 'wellness Supraśl', 'SPA Supraśl'],
   },
   {
     slug: 'przewodnik-kulinarny-suprasl',
@@ -186,7 +186,7 @@ const articles = [
     slug: 'puszcza-knyszynska-historie',
     title: 'Puszcza Knyszyńska historie – 7 niezwykłych opowieści',
     excerpt:
-      'Galeria Leśna Powstania Styczniowego, legendy, duchy powstańców i dom w lesie z jacuzzi 300 m od atrakcji.',
+      'Galeria Leśna Powstania Styczniowego i inne miejsca związane z historią regionu.',
     image: blogPuszczaHistorie,
     date: '2026-03-28',
     readTime: '14 min',
@@ -244,9 +244,9 @@ const articles = [
   },
   {
     slug: 'szlak-bioroznorodnosci-suprasl',
-    title: 'Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej',
+    title: 'Szlak Bioróżnorodności w Supraślu – informacje przed spacerem',
     excerpt:
-      'Edukacyjna ścieżka o długości 7 km przez zróżnicowane ekosystemy Puszczy Knyszyńskiej. Flora, fauna i tablice edukacyjne.',
+      'Przed spacerem sprawdź aktualny przebieg, długość, warunki terenowe i zasady dostępu do trasy.',
     image: blogSzlakBio,
     date: '2026-03-14',
     readTime: '10 min',

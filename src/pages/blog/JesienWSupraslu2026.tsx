@@ -35,7 +35,6 @@ const JesienWSupraslu2026 = () => (
     ogImage="https://www.suprasl.online/images/gallery-dab-puszcza.webp"
     keywords={['jesień w Supraślu', 'Supraśl jesienią', 'wydarzenia w Supraślu']}
     faqs={faqs}
-    showFaqSection={false}
     relatedArticles={[
       { title: 'Co robić w Supraślu – kompletny przewodnik', slug: 'co-robic-suprasl' },
       { title: 'Weekend w Supraślu – plan pobytu na 2-3 dni', slug: 'weekend-suprasl-plan' },

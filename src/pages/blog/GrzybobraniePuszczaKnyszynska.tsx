@@ -35,8 +35,13 @@ const GrzybobraniePuszczaKnyszynska = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Nie zbieraj grzybów w rezerwatach przyrody. W rezerwacie Krzemienne Góry dostęp jest
-        ograniczony do wyznaczonej drogi przy zachodniej granicy; obowiązują tam zasady ochrony
-        przyrody.
+        ograniczony; przed wizytą sprawdź{' '}
+        <a href="https://www.gov.pl/web/rdos-bialystok/podlaskierezerwaty--rezerwat-przyrody-krzemienne-gory"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Informacje RDOŚ o rezerwacie Krzemienne Góry (otworzy się w nowej karcie)">
+          aktualne informacje RDOŚ
+        </a>{' '}
+        i stosuj się do zasad ochrony przyrody.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Kalendarz grzybowy</h2>

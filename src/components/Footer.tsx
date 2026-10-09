@@ -37,7 +37,7 @@ const Footer = () => (
               aria-label="Instagram (otworzy się w nowej karcie)"
               className={socialLinkClass}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <Instagram className="h-5 w-5 transition-transform duration-200 group-hover:scale-110" />
             </a>
@@ -46,7 +46,7 @@ const Footer = () => (
               aria-label="Facebook (otworzy się w nowej karcie)"
               className={socialLinkClass}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <Facebook className="h-5 w-5 transition-transform duration-200 group-hover:scale-110" />
             </a>

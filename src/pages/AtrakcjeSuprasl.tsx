@@ -4,20 +4,19 @@ import { Church, Building2, Waves, TreePine, Landmark, MapPin } from 'lucide-rea
 
 const AtrakcjeSuprasl = () => (
   <SEOPageLayout
-    title="Atrakcje Supraśla | Co zobaczyć i szlaki w Puszczy"
-    description="TOP atrakcje Supraśla — Monaster, Muzeum Ikon, szlaki Puszczy Knyszyńskiej, spływy kajakowe. Zaplanuj pobyt w domku w lesie i odkryj Podlasie!"
+    title="Atrakcje Supraśla – miejsca i informacje dla odwiedzających"
+    description="Poznaj atrakcje Supraśla i okolicy. Przed wizytą sprawdź aktualne godziny otwarcia, dostępność tras i zasady korzystania z atrakcji."
     breadcrumbName="Atrakcje Supraśla"
     ogImage="https://www.suprasl.online/images/terrace-porch.jpg"
   >
     <article className="prose prose-lg max-w-none space-y-10">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Atrakcje Supraśla — co zobaczyć podczas pobytu w domku w lesie
+        Atrakcje Supraśla — co sprawdzić przed wizytą
       </h1>
 
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Supraśl to miejsce, gdzie <strong>historia spotyka się z naturą</strong>, a duchowość
-        przenika codzienne życie. Urokliwe uzdrowisko w sercu Puszczy Knyszyńskiej przyciąga
-        turystów z całej Polski. Poznaj największe skarby okolicy — idealne na{' '}
+        Supraśl łączy zabytki z dostępem do terenów przyrodniczych. Planując pobyt, sprawdź aktualne
+        informacje o atrakcjach i zasadach korzystania z tras — także podczas pobytu w{' '}
         <strong>odpoczynek w lesie weekend</strong> w{' '}
         <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/80">
           domku w lesie na wyłączność
@@ -36,9 +35,8 @@ const AtrakcjeSuprasl = () => (
           </h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          Poczuj <strong>duchowe serce Supraśla</strong>, zwiedzając monumentalny, XVI-wieczny
-          kompleks klasztorny. Prawosławny Monaster to najważniejszy zabytek miasta — zaledwie
-          10 minut od naszego <strong>domku w lesie Supraśl</strong>.
+          Poczuj           kompleks klasztorny w Supraślu. Przed wizytą sprawdź zasady zwiedzania i godziny otwarcia
+          w oficjalnych informacjach Monasteru.
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Muzeum Ikon w Supraślu prezentuje sztukę ikon i mieści się w zabudowaniach
@@ -67,7 +65,7 @@ const AtrakcjeSuprasl = () => (
           <Link to="/blog/przewodnik-kulinarny-suprasl" className="text-primary underline hover:text-primary/80">
             restauracji z kuchnią podlaską
           </Link>
-          . <strong>Slow travel Polska</strong> — odkrywanie historii w swoim tempie.
+          . Spacer i dostęp do obiektów zaplanuj zgodnie z aktualnymi zasadami.
         </p>
       </section>
 
@@ -82,9 +80,8 @@ const AtrakcjeSuprasl = () => (
           </h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          Malownicze bulwary wzdłuż rzeki Supraśl — idealne na niespieszny spacer i podziwianie
-          zachodów słońca. Latem plaża miejska i kąpielisko. <strong>Spokojny wypoczynek w naturze</strong>{' '}
-          — chill w lesie i nad rzeką.
+          Bulwary nad rzeką Supraśl mogą być celem spaceru. Jeśli planujesz skorzystać z plaży lub
+          kąpieliska, sprawdź, czy są czynne i jakie zasady obowiązują.
         </p>
       </section>
 
@@ -102,18 +99,17 @@ const AtrakcjeSuprasl = () => (
           <Link to="/puszcza-knyszynska-nocleg" className="text-primary underline hover:text-primary/80">
             Puszcza Knyszyńska
           </Link>{' '}
-          — 132 tysiące hektarów nieskażonej przyrody. Szlaki piesze i rowerowe prowadzą przez stare
-          drzewostany, wzdłuż rzek i przez rezerwaty. Z naszego <strong>domku w lesie</strong>{' '}
-          szlaki zaczynają się za progiem. <strong>Domek w lesie Supraśl</strong> — idealna baza
-          wypadowa na <strong>odpoczynek w lesie weekend</strong>.
+          — rozległy obszar leśny z terenami chronionymi. Przed wyjściem sprawdź przebieg i
+          dostępność wybranej trasy oraz zasady poruszania się po obszarach chronionych. Z naszego{' '}
+          <strong>domku w lesie</strong> możesz dojechać do atrakcji regionu.
         </p>
         <p className="text-muted-foreground leading-relaxed">
-          Spływy kajakowe, grzybobranie jesienią, narty biegowe zimą — szczegóły w{' '}
+          Aktywności sezonowe, takie jak kajaki, grzybobranie lub narciarstwo, wymagają sprawdzenia
+          warunków i zasad. Więcej informacji znajdziesz w{' '}
           <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary underline hover:text-primary/80">
             przewodniku po szlakach Puszczy Knyszyńskiej
           </Link>
-          . Po aktywnym dniu — powrót do <strong>domku z kominkiem</strong> i gorącej{' '}
-          <strong>bali w lesie</strong>.
+          . Przed wyjściem sprawdź dostępność tras i ewentualne ograniczenia na terenach chronionych.
         </p>
       </section>
 
@@ -133,8 +129,7 @@ const AtrakcjeSuprasl = () => (
           <a href="https://suprasl.bialystok.lasy.gov.pl/" target="_blank" rel="noopener noreferrer" aria-label="Informacje Nadleśnictwa Supraśl o arboretum (otworzy się w nowej karcie)" className="underline">
             Nadleśnictwa Supraśl
           </a>
-          . To miejsce na spokojny spacer, około 20 minut jazdy od naszego{' '}
-          <strong>leśnego domku do wynajęcia</strong>.
+          . Przed wyjazdem sprawdź dojazd, godziny otwarcia i aktualne zasady zwiedzania.
         </p>
       </section>
 
@@ -159,11 +154,10 @@ const AtrakcjeSuprasl = () => (
 
       {/* Białystok */}
       <section className="space-y-4">
-        <h2 className="section-title !text-2xl md:!text-3xl">Białystok — 25 minut od domku w lesie</h2>
+        <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje Białegostoku</h2>
         <p className="text-muted-foreground leading-relaxed">
-          Białystok, stolica Podlasia — Pałac Branickich, teatr dramatyczny, galerie sztuki i
-          doskonałe restauracje. Blisko naszego <strong>domku w lesie podlaskie</strong>, ale daleko
-          od zgiełku — idealna proporcja.
+          W Białymstoku możesz odwiedzić Pałac Branickich, teatry i galerie. Sprawdź aktualne
+          informacje o godzinach otwarcia i wydarzeniach przed wyjazdem.
         </p>
       </section>
 
@@ -187,7 +181,7 @@ const AtrakcjeSuprasl = () => (
         </h3>
         <p className="text-muted-foreground max-w-xl mx-auto">
           Prywatny <strong>dom w lesie na wyłączność</strong>{' '}
-          z kominkiem, balią ogrodową z funkcją jacuzzi i ogrodzonym ogrodem — 10 minut od Supraśla.{' '}
+          z kominkiem i opcjonalną balią ogrodową z funkcją jacuzzi w miejscowości Konne koło Supraśla.{' '}
           <strong>Leśny domek do wynajęcia</strong> w Puszczy Knyszyńskiej.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">

@@ -79,8 +79,7 @@ const CoRobicSuprasl = () => (
 
     <h2>Szlaki Puszczy Knyszyńskiej</h2>
     <p>
-      Puszcza Knyszyńska to ponad 128 tysięcy hektarów lasów, torfowisk i dolin rzecznych. Z
-      Supraśla wyruszają dziesiątki{' '}
+      Puszcza Knyszyńska obejmuje rozległe tereny leśne i doliny rzeczne. Z Supraśla można wybrać{' '}
       <Link to="/blog/szlaki-piesze-rowerowe-suprasl">szlaków pieszych i rowerowych</Link>{' '}
       prowadzących przez najpiękniejsze zakątki puszczy. Warto wybrać się na Szlak Bioróżnorodności
       (7 km), Szlak Powstania Styczniowego lub trasę do Arboretum Kopna Góra.

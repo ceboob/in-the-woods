@@ -27,7 +27,7 @@ const PuszczaKnyszynskaHistorie = () => (
       {
         question: 'Gdzie znajduje się Puszcza Knyszyńska?',
         answer:
-          'W województwie podlaskim, niedaleko Białegostoku. Obejmuje ponad 128 tysięcy hektarów lasów, rezerwatów i obszarów chronionych.',
+          'W województwie podlaskim, niedaleko Białegostoku. To rozległy obszar leśny z rezerwatami i innymi formami ochrony przyrody.',
       },
       {
         question: 'Czym jest Galeria Leśna Powstania Styczniowego?',
@@ -52,7 +52,7 @@ const PuszczaKnyszynskaHistorie = () => (
       {
         question: 'Gdzie nocować w Puszczy Knyszyńskiej?',
         answer:
-          'In The Woods to prywatny dom w lesie z jacuzzi, położony zaledwie 300 m od Galerii Leśnej Powstania Styczniowego.',
+          'In The Woods to prywatny dom w miejscowości Konne, w otoczeniu Puszczy Knyszyńskiej.',
       },
     ]}
     relatedArticles={[
@@ -266,7 +266,7 @@ const PuszczaKnyszynskaHistorie = () => (
       pamięci w sercu puszczy.
     </p>
 
-    <h2>Dom w lesie z jacuzzi – wyjątkowy nocleg tylko 300 m od Galerii Leśnej</h2>
+    <h2>Dom w lesie w okolicy Supraśla</h2>
     <p>
       Jeśli szukasz czegoś więcej niż standardowe <Link to="/noclegi-suprasl">noclegi Supraśl</Link>
       , koncept <Link to="/dom-w-lesie-suprasl">In The Woods</Link> spełni Twoje oczekiwania. Ten
@@ -275,16 +275,15 @@ const PuszczaKnyszynskaHistorie = () => (
     </p>
     <p>Co wyróżnia to miejsce:</p>
     <ul>
-      <li>✔ Tylko 300 m od Galerii Leśnej Powstania Styczniowego</li>
+      <li>✔ Lokalizacja w miejscowości Konne, w okolicy Puszczy Knyszyńskiej</li>
       <li>✔ Prywatne jacuzzi w otoczeniu lasu</li>
       <li>✔ Cisza, brak tłumów, autentyczna lokalizacja w puszczy</li>
       <li>✔ Kominek, ogród i taras z widokiem na las</li>
       <li>✔ Idealny dla par, rodzin i miłośników historii</li>
     </ul>
     <p>
-      Wyobraź sobie wieczór: cisza, zapach lasu, ciepła woda w jacuzzi i gwiazdy nad głową. A rano —
-      spacer do Galerii Leśnej na poranny obcowanie z historią. To doświadczenie, którego nie da się
-      porównać z klasycznymi noclegami.
+      Przed zaplanowaniem wycieczki sprawdź lokalizację, godziny otwarcia i dostępność Galerii
+      Leśnej Powstania Styczniowego.
     </p>
 
     <h2>Dlaczego warto poznać Puszcza Knyszyńska historie</h2>
@@ -297,7 +296,7 @@ const PuszczaKnyszynskaHistorie = () => (
 
     <div className="bg-secondary p-8 rounded-lg text-center space-y-4 not-prose mt-12">
       <p className="font-heading text-xl text-foreground">
-        Zarezerwuj nocleg 300 m od Galerii Leśnej
+        Zapytaj o pobyt w okolicy Supraśla
       </p>
       <p className="text-muted-foreground text-sm">
         Dom w lesie z jacuzzi — Twoja baza na odkrywanie historii i przyrody puszczy.

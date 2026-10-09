@@ -186,22 +186,20 @@ const PricingSection = () => {
             </h3>
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Wynajmujemy cały <strong>domek w lesie w Puszczy Knyszyńskiej</strong> na wyłączność — bez
-            współdzielenia z innymi gośćmi. Cena obejmuje dom, ogród z ogrodzeniem, kominek, parking
-            i&nbsp;dostęp do lasu wprost z&nbsp;posesji. To idealna propozycja na <strong>weekend
+            Wynajmujemy cały <strong>dom na wyłączność</strong> — bez współdzielenia z innymi
+            gośćmi. To propozycja na <strong>weekend
             w&nbsp;lesie</strong>, romantyczny wypad we dwoje, <strong>wieczór panieński na
             Podlasiu</strong> lub workation w&nbsp;ciszy natury.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Opcjonalnie możesz zamówić <strong>balię ogrodową z funkcją jacuzzi</strong> za
-            jednorazową opłatą 250&nbsp;zł za pobyt. Przy pobycie na co najmniej 7 nocy
-            <strong> 10% zniżki obejmuje cenę noclegu</strong>; opłata za balię nie jest wliczana
+            jednorazową opłatą {GARDEN_TUB_PRICE}&nbsp;zł za pobyt. Przy pobycie na co najmniej 7 nocy
+            <strong> {LONG_STAY_DISCOUNT * 100}% zniżki obejmuje cenę noclegu</strong>; opłata za balię nie jest wliczana
             do podstawy rabatu.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Rezerwując bezpośrednio przez naszą stronę, unikasz prowizji pośredników. Zaliczkę
-            (30%) opłacasz bezpiecznie online, resztę regulujesz na miejscu. Akceptujemy BLIK,
-            karty płatnicze i&nbsp;przelewy.
+            Szczegóły ewentualnej zaliczki i pozostałej płatności ustalisz z gospodarzem po
+            uzgodnieniu pobytu. Wysłanie zapytania nie potwierdza rezerwacji ani nie pobiera płatności.
           </p>
         </div>
 
@@ -216,12 +214,12 @@ const PricingSection = () => {
                     stripe
                   </text>
                 </svg>
-                <span className="font-medium">Zaliczka 30% · Reszta na miejscu</span>
+                <span className="font-medium">Płatność online po uzgodnieniu pobytu</span>
               </div>
             </StripeSecurityTooltip>
           </div>
           <p className="text-[11px] text-muted-foreground/70">
-            Akceptujemy BLIK, karty płatnicze i przelewy online
+            Formularz służy do wysłania zapytania, nie do dokonania płatności
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">

@@ -38,8 +38,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Domek z jacuzzi i kominkiem | Krzemienna Chata Supraśl"
-        description="Dom na wyłączność w Puszczy Knyszyńskiej, 5 km od Supraśla. Balia z jacuzzi, kominek, ogród i leśna cisza. Sprawdź wolne terminy."
+        title="Dom na wyłączność koło Supraśla | Kominek i balia ogrodowa"
+        description="Prywatny dom w miejscowości Konne koło Supraśla. Poznaj udogodnienia, cennik i zasady pobytu; balię ogrodową z funkcją jacuzzi można zamówić jako dodatek."
         canonical="https://www.suprasl.online/"
       />
 

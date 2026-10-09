@@ -5,15 +5,15 @@ const PodlasieZPsem = () => (
   <BlogArticleLayout
     title="Podlasie z psem – noclegi i porady"
     metaTitle="Podlasie z psem | Nocleg z psem w Puszczy Knyszyńskiej"
-    metaDescription="Planujesz wakacje z psem na Podlasiu? Sprawdź, gdzie znaleźć pet-friendly nocleg w Puszczy Knyszyńskiej. Ogrodzony ogród, szlaki leśne i porady."
+    metaDescription="Planujesz wyjazd z psem na Podlasie? Sprawdź, o co zapytać przed wyborem noclegu i jak przygotować się do spacerów w okolicy Supraśla."
     slug="podlasie-z-psem"
     publishDate="2026-04-09"
     readTime="9 min"
     keywords={['Podlasie z psem', 'nocleg z psem Supraśl', 'pet friendly Puszcza Knyszyńska', 'domek z psem']}
     faqs={[
-      { question: 'Czy mogę przyjechać z psem do In The Woods?', answer: 'Pobyt ze zwierzęciem jest możliwy; sprawdź aktualne zasady i szczegóły oferty przed wysłaniem zapytania.' },
+      { question: 'Czy mogę przyjechać z psem do In The Woods?', answer: 'Przed wysłaniem zapytania potwierdź z gospodarzem, czy pobyt z psem jest możliwy i jakie zasady obowiązują.' },
       { question: 'Czy ogród jest ogrodzony?', answer: 'Informację o ogrodzeniu i warunkach dla zwierząt potwierdź przed pobytem, szczególnie jeśli planujesz wypuszczać psa bez smyczy.' },
-      { question: 'Czy są dodatkowe opłaty za psa?', answer: 'Nie — pobyt ze zwierzętami jest bezpłatny. Prosimy jedynie o sprzątanie po pupilu.' },
+      { question: 'Czy są dodatkowe opłaty za psa?', answer: 'Zapytaj gospodarza o ewentualne opłaty i zasady pobytu ze zwierzęciem.' },
     ]}
     relatedArticles={[
       { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
@@ -23,25 +23,23 @@ const PodlasieZPsem = () => (
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Planujesz wakacje z czworonogiem? <strong>Podlasie z psem</strong> to jedno z najlepszych doświadczeń,
-        jakie możesz dać sobie i swojemu pupilowi. Rozległe lasy, dzikie łąki, czyste rzeki i minimum turystów
-        — to raj dla psów i ich opiekunów.
+        Planujesz wyjazd z czworonogiem? Przed wyborem noclegu sprawdź zasady pobytu ze zwierzętami,
+        a trasę spaceru dopasuj do możliwości psa oraz lokalnych ograniczeń.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego Podlasie jest idealne na wyjazd z psem?</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Podlasie to najrzadziej zaludniony region Polski. Szerokie leśne drogi, brak tłumów i ogromne
-        przestrzenie sprawiają, że Twój pies może naprawdę się wybiegać. Puszcza Knyszyńska oferuje
-        setki kilometrów szlaków pieszych, na których spotkasz więcej saren niż ludzi.
+        W okolicach Supraśla znajdują się tereny leśne i trasy spacerowe, ale zasady dostępu mogą się
+        różnić w zależności od miejsca. Przed wyjściem sprawdź oznakowanie, regulamin i długość trasy.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Na co zwrócić uwagę przy wyborze noclegu?</h2>
       <ul className="space-y-3 text-muted-foreground">
-        <li>🐕 <strong>Ogrodzony ogród</strong> — absolutna podstawa. Pies musi mieć bezpieczną przestrzeń do zabawy.</li>
-        <li>🌲 <strong>Bliskość lasu</strong> — szlaki piesze za progiem to wygoda i oszczędność czasu.</li>
-        <li>🏡 <strong>Dom na wyłączność</strong> — brak innych gości oznacza brak stresu dla psa (i dla Ciebie).</li>
-        <li>💰 <strong>Brak opłat za psa</strong> — wiele miejsc dolicza 30–80 zł/noc. Szukaj tych bez dopłat.</li>
-        <li>🚗 <strong>Łatwy dojazd</strong> — dobra droga dojazdowa to ważne, gdy podróżujesz z dużym psem.</li>
+        <li>🐕 <strong>Zasady dla zwierząt</strong> — potwierdź, czy pies może przebywać w obiekcie i czy obowiązują dodatkowe opłaty.</li>
+        <li>🌲 <strong>Dostęp do tras</strong> — zapytaj o pobliskie spacery i sprawdź ograniczenia dla psów na wybranym terenie.</li>
+        <li>🏡 <strong>Warunki pobytu</strong> — ustal, czy pies może zostać sam w obiekcie i z których przestrzeni może korzystać.</li>
+        <li>💧 <strong>Potrzeby psa</strong> — uwzględnij wodę, smycz, odpoczynek i trasę odpowiednią dla zwierzęcia.</li>
+        <li>📍 <strong>Dojazd</strong> — sprawdź trasę do obiektu i możliwości spacerów w jego okolicy.</li>
       </ul>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Szlaki przyjazne psom w okolicy Supraśla</h2>
@@ -71,8 +69,8 @@ const PodlasieZPsem = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">In The Woods — dom pet-friendly</h2>
       <p className="text-muted-foreground leading-relaxed">
         <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to dom
-        na wyłączność w Puszczy Knyszyńskiej, z ogrodzonym ogrodem i bez dodatkowej opłaty za psa.
-        Przed przyjazdem zapoznaj się z{' '}
+        w okolicach Supraśla. Możliwość pobytu z psem, ewentualne opłaty i informację o ogrodzeniu
+        potwierdź z gospodarzem. Przed przyjazdem zapoznaj się z{' '}
         <Link to="/informator" className="text-primary hover:underline font-medium">
           informatorem gościa i zasadami pobytu
         </Link>

@@ -122,9 +122,8 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kładki nad wodą</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Magiczne, czasem trudno dostępne miejsca. Na Sianożątce znajdziesz zaskakujące rozlewisko,
-            piękne o wschodzie lub zachodzie Słońca. W Rezerwacie Krzemianka — kręte ścieżki tuż nad
-            taflą wody.
+            Przed wyruszeniem do rezerwatu Krzemianka sprawdź aktualne zasady udostępniania i
+            korzystaj wyłącznie z dozwolonych tras.
           </p>
         </div>
       </div>
@@ -248,7 +247,9 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <strong>Źródło treści i danych GPX:</strong> Stowarzyszenie Przyjaciół Puszczy Knyszyńskiej
         „Wielki Las" i Park Krajobrazowy Puszczy Knyszyńskiej im. prof. Witolda Sławińskiego.
         Dane udostępnione za pośrednictwem portalu{' '}
-        <a href="https://wielkilas.pl" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+        <a href="https://wielkilas.pl" target="_blank" rel="noopener noreferrer"
+          aria-label="Wielkilas.pl (otworzy się w nowej karcie)"
+          className="text-primary underline hover:text-primary/80">
           wielkilas.pl
         </a>.
         Dane GPX udostępnione bezpłatnie do użytku prywatnego.
