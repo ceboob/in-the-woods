@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import ImageReveal from '@/components/ImageReveal';
 import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
 
 import jacuzziNight from '@/assets/jacuzzi-night-lg.webp';
@@ -571,18 +572,19 @@ const GallerySection = () => {
               className="overflow-hidden group rounded-lg cursor-pointer relative aspect-[3/2]"
               aria-label={`Otwórz zdjęcie: ${img.alt}`}
             >
-              <img
-                src={img.thumb}
-                srcSet={img.srcSet}
-                sizes={img.srcSet ? '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw' : undefined}
-                alt={img.alt}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                loading={i < 3 ? 'eager' : 'lazy'}
-                fetchpriority={i < 3 ? 'high' : undefined}
-                decoding="async"
-                width="600"
-                height="400"
-              />
+              <ImageReveal delay={Math.min(i * 45, 315)}>
+                <img
+                  src={img.thumb}
+                  srcSet={img.srcSet}
+                  sizes={img.srcSet ? '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw' : undefined}
+                  alt={img.alt}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
+                />
+              </ImageReveal>
               <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors duration-300" />
               {/* Caption overlay on hover */}
               <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">

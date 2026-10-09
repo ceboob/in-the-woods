@@ -1,4 +1,5 @@
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import ImageReveal from '@/components/ImageReveal';
 import forestPath from '@/assets/forest-panorama-real.webp';
 import drogaImg from '@/assets/droga-lesna-konne.webp';
 import { TreePine, Waves, Bike, Fish, Eye, Compass } from 'lucide-react';
@@ -17,15 +18,17 @@ const NatureSection = () => {
 
   return (
     <section className="relative">
-      <div className="relative h-[50vh] min-h-[350px]">
-        <img
-          src={forestPath}
-          alt="Leśna droga w Puszczy Knyszyńskiej blisko Supraśla — noclegi In The Woods"
-          className="w-full h-full object-cover"
-          loading="lazy"
-          width="1920"
-          height="1281"
-        />
+      <div className="relative h-[50vh] min-h-[350px] overflow-hidden">
+        <ImageReveal>
+          <img
+            src={forestPath}
+            alt="Leśna droga w Puszczy Knyszyńskiej blisko Supraśla — noclegi In The Woods"
+            className="w-full h-full object-cover"
+            loading="lazy"
+            width="1920"
+            height="1281"
+          />
+        </ImageReveal>
         <div className="absolute inset-0 bg-foreground/30" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
@@ -69,14 +72,16 @@ const NatureSection = () => {
             </div>
           </div>
           <div className="overflow-hidden">
-            <img
-              src={drogaImg}
-              alt="Drogowskaz do wsi Konne — leśna droga prowadząca do In The Woods Supraśl"
-              className="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
-              loading="lazy"
-              width="800"
-              height="450"
-            />
+            <ImageReveal>
+              <img
+                src={drogaImg}
+                alt="Drogowskaz do wsi Konne — leśna droga prowadząca do In The Woods Supraśl"
+                className="w-full h-[350px] md:h-[450px] object-cover"
+                loading="lazy"
+                width="800"
+                height="450"
+              />
+            </ImageReveal>
           </div>
         </div>
       </div>

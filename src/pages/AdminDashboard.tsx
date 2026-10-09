@@ -118,7 +118,10 @@ const AdminDashboard = () => {
       if (error) throw error;
       if (data?.url) {
         await navigator.clipboard.writeText(data.url);
-        toast({ title: 'Link skopiowany do schowka!', description: data.url });
+        toast({
+          title: 'Link skopiowany do schowka!',
+          description: <span data-preserve-case>{data.url}</span>,
+        });
       }
     } catch (err: unknown) {
       const message = err instanceof Error ? err.message : 'Nieznany błąd';
@@ -216,9 +219,9 @@ const AdminDashboard = () => {
                         <TableCell className="text-xs text-muted-foreground whitespace-nowrap">
                           {new Date(b.created_at).toLocaleDateString('pl-PL')}
                         </TableCell>
-                        <TableCell className="font-medium">{b.name || '—'}</TableCell>
+                        <TableCell className="font-medium" data-preserve-case>{b.name || '—'}</TableCell>
                         <TableCell className="text-xs">
-                          <div>{b.email}</div>
+                          <div data-preserve-case>{b.email}</div>
                           <div className="text-muted-foreground">{b.phone}</div>
                         </TableCell>
                         <TableCell className="whitespace-nowrap text-sm">

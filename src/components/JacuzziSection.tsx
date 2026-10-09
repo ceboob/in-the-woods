@@ -1,4 +1,5 @@
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import ImageReveal from '@/components/ImageReveal';
 import gardenTubImg from '@/assets/gallery-bania-dom-thumb.webp';
 import { Snowflake, Leaf, Bike, Heart } from 'lucide-react';
 
@@ -15,14 +16,16 @@ const JacuzziSection = () => {
   return (
     <section id="jacuzzi" className="relative">
       <div className="relative h-[50vh] min-h-[400px]">
-        <img
-          src={gardenTubImg}
-          alt="Balia ogrodowa z funkcją jacuzzi przy domu In The Woods w Puszczy Knyszyńskiej"
-          className="w-full h-full object-cover"
-          loading="lazy"
-          width="1920"
-          height="1440"
-        />
+        <ImageReveal>
+          <img
+            src={gardenTubImg}
+            alt="Balia ogrodowa z funkcją jacuzzi przy domu In The Woods w Puszczy Knyszyńskiej"
+            className="w-full h-full object-cover"
+            loading="lazy"
+            width="1920"
+            height="1440"
+          />
+        </ImageReveal>
         <div className="absolute inset-0 bg-foreground/40" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
@@ -45,7 +48,7 @@ const JacuzziSection = () => {
             <p className="section-subtitle mx-auto">
               Naszą dumą jest balia ogrodowa z funkcją jacuzzi. Każdego wieczora ogród staje się miejscem odpoczynku na świeżym powietrzu — latem pod rozgwieżdżonym niebem Puszczy Knyszyńskiej, zimą w scenerii białego puchu i rześkiego powietrza.
             </p>
-            <div className="space-y-1 text-base text-foreground/80 text-smallcaps">
+            <div className="space-y-1 text-base text-foreground/80 font-accent">
               <p>Ciepła woda. Chłodne powietrze. Gwiazdy nad Puszczą Knyszyńską.</p>
             </div>
             <p className="text-muted-foreground text-sm">
