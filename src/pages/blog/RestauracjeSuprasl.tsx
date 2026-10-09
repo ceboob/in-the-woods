@@ -139,7 +139,7 @@ const RestauracjeSuprasl = () => {
       <h3>Sękacz podlaski</h3>
       <p>
         Na deser — legendarny sękacz, wyrabiany tradycyjnie nad otwartym ogniem. To ciasto o
-        wyjątkowej, warstwowej strukturze i maślanym smaku, które jest dumą regionu i popularnym
+        wyjątkowej, warstwowej strukturze i maślanym smaku, które jest dumą regionu i popularną
         pamiątką z Podlasia.
       </p>
 

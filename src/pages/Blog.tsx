@@ -79,12 +79,12 @@ const articles = [
   },
   {
     slug: 'cyfrowy-detoks-las',
-    title: 'Cyfrowy detoks w praktyce: Domek w środku lasu to najlepsze miejsce na reset',
-    excerpt: 'Potrzebujesz resetu od ekranów? Odkryj, dlaczego domek w lesie na Podlasiu to idealne miejsce na cyfrowy detoks.',
-    image: blogNoService,
+    title: 'Cyfrowy detoks w lesie: przerwa od ekranów',
+    excerpt: 'Pomysł na dobrowolną przerwę od powiadomień i ekranów podczas pobytu w leśnym otoczeniu.',
+    image: blogMeadow,
     date: '2026-04-09',
     readTime: '9 min',
-    keywords: ['cyfrowy detoks', 'domek w lesie'],
+    keywords: ['cyfrowy detoks', 'przerwa od ekranów', 'odpoczynek w lesie'],
   },
   {
     slug: 'grzybobranie-puszcza-knyszynska',

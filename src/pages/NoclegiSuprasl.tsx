@@ -137,36 +137,32 @@ const NoclegiSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Nasz <strong>dom na wynajem w Supraślu</strong> jest położony przy Rezerwacie Przyrody
         Krzemienne Góry, około 10 minut samochodem od Monasteru, Muzeum Ikon i bulwarów nad rzeką
-        Supraśl. To dobra alternatywa dla zapytań typu <strong>apartamenty Supraśl</strong>,{' '}
-        <strong>pokoje Supraśl</strong> czy <strong>hotel Supraśl</strong>, jeśli ważniejsze od
-        recepcji i korytarzy są prywatność, las za oknem i własny rytm pobytu.
+        Supraśl. Dom jest wynajmowany w całości, więc goście mają do dyspozycji prywatny salon,
+        kuchnię, sypialnie, taras i ogród. Do centrum Supraśla można dojechać samochodem w około
+        10 minut.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Dlaczego nasze noclegi pod Supraślem wygrywają z typowym hotelem
+        Prywatny dom blisko Supraśla
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Konkurencyjne obiekty w Supraślu mocno komunikują lokalizację w centrum, pokoje,
-        apartamenty, wyżywienie albo bliskość rzeki. In The Woods odpowiada na inną intencję:
-        <strong> domek w lesie blisko Supraśla</strong>, gdzie cały dom, ogród, taras i jacuzzi są
-        tylko dla jednej rezerwacji. Nie mijasz innych gości na korytarzu, nie rezerwujesz godziny
-        w strefie SPA i nie dopłacasz za psa.
+        In The Woods to dom wynajmowany jednej grupie na wyłączność. Na miejscu są kominek,
+        wyposażona kuchnia, ogród i taras; balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem.
+        Pobyt z psem jest możliwy bez dodatkowej opłaty.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        To szczególnie dobry wybór dla par, rodzin z dziećmi, grup przyjaciół i osób planujących
+        Dom może sprawdzić się dla par, rodzin z dziećmi, grup przyjaciół i osób planujących
         workation na Podlasiu. Masz salon z kominkiem, dwie sypialnie, łazienkę, dodatkową toaletę,
-        wyposażoną kuchnię, szybkie Wi-Fi, biurko, bezpłatny parking i ogrodzony teren. Jeśli
-        wpisujesz w Google <strong>noclegi Supraśl z psem</strong>, to właśnie taki układ daje
-        najwięcej swobody.
+        wyposażoną kuchnię, Wi-Fi, biurko, bezpłatny parking i ogrodzony teren. Przed przyjazdem
+        warto zaplanować dojazd i aktywności w okolicy zgodnie z własnymi potrzebami.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Domek z jacuzzi i kominkiem w Puszczy Knyszyńskiej</h2>
       <p className="text-muted-foreground leading-relaxed">
         Balia ogrodowa z funkcją jacuzzi pozwala odpocząć pod gwiazdami. Po spacerze,
         kajakach albo dniu na rowerze możesz rozpalić kominek, przygotować kolację w kuchni i
-        odpocząć bez pośpiechu. Właśnie dlatego strona odpowiada też na frazy poboczne:
-        <strong> domek z jacuzzi Podlasie</strong>, <strong>domek z bali Supraśl</strong>,{' '}
-        <strong>nocleg w Puszczy Knyszyńskiej</strong> i <strong>weekend w Supraślu</strong>.
+        odpocząć bez pośpiechu. Balia ogrodowa z funkcją jacuzzi jest dodatkowo płatna; jej
+        dostępność i warunki korzystania warto potwierdzić podczas składania zapytania.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Lokalizacja - co jest blisko In The Woods</h2>

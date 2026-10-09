@@ -38,7 +38,7 @@ const WorkationPodlasie = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego Podlasie na workation?</h2>
       <ul className="space-y-3 text-muted-foreground">
         <li>🌲 <strong>Cisza i skupienie</strong> — brak miejskiego hałasu sprzyja głębokiej pracy (deep work)</li>
-        <li>💻 <strong>Stabilne Wi-Fi</strong> — wystarczające do videokonferencji i pracy w chmurze</li>
+        <li>💻 <strong>Stabilne Wi-Fi</strong> — wystarczające do wideokonferencji i pracy w chmurze</li>
         <li>🏡 <strong>Cały dom na wyłączność</strong> — żadnych współlokatorów, współpracowników ani obcych ludzi</li>
         <li>🌿 <strong>Natura za progiem</strong> — przerwy spędzasz na spacerach po lesie, nie przy automacie z kawą</li>
         <li>🔥 <strong>Wieczorny relaks</strong> — kominek, jacuzzi, ognisko — reward po produktywnym dniu</li>

@@ -50,7 +50,7 @@ const PrzewodnikKulinarny = () => (
         jagód lub szpinaku. Sezonowe warianty z kurkami to prawdziwy przysmak.
       </li>
       <li>
-        <strong>Kiszka ziemniaczana</strong> — nadziewana jelita z masą ziemniaczaną, podawana
+        <strong>Kiszka ziemniaczana</strong> — jelita wieprzowe nadziewane masą ziemniaczaną, podawane
         na gorąco z okrasą. Trudno znaleźć poza Podlasiem.
       </li>
     </ol>

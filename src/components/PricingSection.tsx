@@ -13,7 +13,7 @@ import {
 const seasonData = [
   {
     name: 'Sezon niski',
-    period: '1 listopad – 31 marzec',
+    period: '1 listopada – 31 marca',
     icon: Snowflake,
     minNights: 2,
     accent: 'border-l-4 border-l-sky-400',
@@ -42,7 +42,7 @@ const seasonData = [
   },
   {
     name: 'Sezon wysoki',
-    period: '1 czerwiec – 31 sierpień',
+    period: '1 czerwca – 31 sierpnia',
     icon: Sun,
     minNights: 3,
     accent: 'border-l-4 border-l-orange-500',

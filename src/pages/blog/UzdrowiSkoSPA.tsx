@@ -23,39 +23,36 @@ const UzdrowiSkoSPA = () => (
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
-    <h2>Uzdrowisko Supraśl: leczenie borowiną i regeneracja</h2>
+    <h2>Uzdrowisko Supraśl: zabiegi i wypoczynek</h2>
 
     <p>
-      Supraśl to <strong>jedyne uzdrowisko w województwie podlaskim</strong>, słynące z borowiny i
-      wyjątkowego mikroklimatu Puszczy Knyszyńskiej. Dowiedz się, jakie zabiegi oferują tutejsze
-      sanatoria i jak zaplanować pobyt zdrowotny, który zregeneruje Twoje ciało i umysł.
+      Supraśl jest uzdrowiskiem położonym w sąsiedztwie Puszczy Knyszyńskiej. Przed wizytą sprawdź
+      bezpośrednio w wybranym obiekcie, jakie zabiegi są dostępne i czy wymagają skierowania.
     </p>
 
-    <h2>Borowina z Podsokołdy – naturalny skarb Supraśla</h2>
+    <h2>Zabiegi uzdrowiskowe w Supraślu</h2>
     <p>
-      Borowina wydobywana z złóż w <strong>Podsokołdzie</strong>, niewielkiej miejscowości koło
-      Supraśla, jest uważana za jedną z najcenniejszych w Polsce. Bogata w kwasy huminowe, minerały
-      i substancje biologicznie czynne, stosowana jest w zabiegach leczniczych od dziesięcioleci.
+      W okolicy Supraśla można znaleźć ofertę zabiegów uzdrowiskowych i wellness. Szczegóły dotyczące
+      pochodzenia surowców, wskazań i dostępności warto potwierdzić u usługodawcy.
     </p>
     <p>
-      Kąpiele borowinowe, okłady i kompresy pomagają w leczeniu bólów stawów, chorób
-      reumatycznych i schorzeń skórnych. Ciepłe okłady z borowiny rozluźniają mięśnie, poprawiają
-      krążenie i przyspieszają regenerację po wysiłku fizycznym.
+      Zabiegi mogą być elementem oferty konkretnego ośrodka, ale nie zastępują konsultacji
+      medycznej. Przed skorzystaniem z nich zapoznaj się z przeciwwskazaniami i zaleceniami personelu.
     </p>
 
-    <h2>Profil leczenia: dla kogo jest Uzdrowisko Supraśl?</h2>
+    <h2>Jak sprawdzić ofertę zabiegów?</h2>
     <p>
-      Uzdrowisko Supraśl specjalizuje się w leczeniu:
+      Zakres usług i wskazania zależą od placówki. Informacji o dostępnych świadczeniach udzielają
+      bezpośrednio sanatoria i gabinety:
     </p>
     <ul>
-      <li><strong>Chorób narządu ruchu</strong> — bóle kręgosłupa, zwyrodnienia stawów, reumatyzm</li>
-      <li><strong>Schorzeń kardiologicznych</strong> — nadciśnienie, rehabilitacja po zawałach</li>
-      <li><strong>Chorób układu oddechowego</strong> — astma, przewlekłe zapalenie oskrzeli</li>
-      <li><strong>Schorzeń dermatologicznych</strong> — łuszczyca, egzema</li>
+      <li>Rodzaje zabiegów i ich dostępność</li>
+      <li>Wymagane skierowania oraz zasady rejestracji</li>
+      <li>Przeciwwskazania i zalecenia przed zabiegiem</li>
     </ul>
     <p>
-      Mikroklimat Puszczy Knyszyńskiej — z wyjątkowo czystym, jonizowanym powietrzem — wspiera
-      leczenie chorób oddechowych i działa kojąco na układ nerwowy.
+      Puszcza Knyszyńska i okolice Supraśla sprzyjają spacerom i spokojnemu wypoczynkowi. Nie należy
+      jednak traktować samego pobytu ani lokalnego klimatu jako metody leczenia.
     </p>
 
     <h2>Przegląd sanatoriów i hoteli SPA w Supraślu</h2>
@@ -64,12 +61,10 @@ const UzdrowiSkoSPA = () => (
     </p>
     <ul>
       <li>
-        <strong>Hotel Knieja</strong> — jeden z najstarszych obiektów uzdrowiskowych w Supraślu.
-        Oferuje pełen zakres zabiegów borowinowych, fizykoterapię i rehabilitację.
+        <strong>Hotel Knieja</strong> — przed wizytą sprawdź aktualną ofertę bezpośrednio u usługodawcy.
       </li>
       <li>
-        <strong>Holmed</strong> — nowoczesny ośrodek zdrowotny z bazą zabiegową, grotem solną
-        i strefą wellness.
+        <strong>Holmed</strong> — przed wizytą sprawdź aktualną ofertę bezpośrednio u usługodawcy.
       </li>
       <li>
         <strong>Mniejsze pensjonaty SPA</strong> — oferujące masaże, saunę i zabiegi relaksacyjne
@@ -77,8 +72,8 @@ const UzdrowiSkoSPA = () => (
       </li>
     </ul>
     <p>
-      Pobyt leczniczy trwa zwykle 2-3 tygodnie (refundowany przez NFZ ze skierowaniem). Pobyty
-      komercyjne i weekendowe pakiety SPA są dostępne dla każdego — bez skierowania.
+      Warunki pobytów leczniczych, ewentualne skierowanie, dostępność i ceny należy potwierdzić w
+      wybranym ośrodku lub u właściwego świadczeniodawcy.
     </p>
 
     <h2>Nie tylko leczenie – relaks w strefie wellness</h2>

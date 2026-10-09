@@ -71,7 +71,7 @@ const faqs = [
   {
     question: 'Czy kalendarz wydarzeń może się zmienić?',
     answer:
-      'Tak. Kalendarz obejmuje najbliższe trzy miesiące i może być aktualizowany. Sprawdzaj oficjalny post Centrum Kultury i Rekreacji w Supraślu: [TODO: dodaj link].',
+      'Program może ulec zmianie. Przed wyjazdem sprawdź aktualne informacje na stronie Centrum Kultury i Rekreacji w Supraślu.',
   },
 ];
 
@@ -164,7 +164,7 @@ const JesienWSupraslu2026 = () => (
     <p>
       <em>
         Kalendarz może ulec zmianie – aktualne informacje znajdziesz na stronie Centrum Kultury i
-        Rekreacji w Supraślu (<span className="font-medium">[TODO: dodaj link]</span>). Ostatnia
+        Rekreacji w Supraślu. Ostatnia
         aktualizacja: 3 października 2026.
       </em>
     </p>

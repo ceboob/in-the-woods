@@ -14,10 +14,10 @@ const DomWLesieSuprasl = () => (
       </h1>
 
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Marzysz o pobycie w <strong>domu w lesie blisko Supraśla</strong>? In The Woods to drewniany
-        dom z bali na wyłączność, otoczony Puszczą Knyszyńską — jednym z największych i najpiękniejszych
-        lasami Puszczy Knyszyńskiej. <strong>Leśny domek do wynajęcia</strong> dla osób, które
-        szukają kontaktu z naturą, ciszy i odpoczynku z dala od miejskiego zgiełku.
+        In The Woods to drewniany dom z bali wynajmowany na wyłączność, położony w miejscowości
+        Konne, w otoczeniu Puszczy Knyszyńskiej i około 10 minut jazdy od Supraśla. Goście mają do
+        dyspozycji salon z kominkiem, kuchnię, sypialnie, taras i ogrodzony ogród. To miejsce na
+        spokojny pobyt blisko lasu, z możliwością samodzielnego zaplanowania czasu.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Wynajem domu w lesie — czym jest pobyt w leśnym domu?</h2>
