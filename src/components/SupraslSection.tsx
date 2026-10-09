@@ -1,4 +1,5 @@
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import ImageReveal from '@/components/ImageReveal';
 import { Link } from 'react-router-dom';
 import {
   Church,
@@ -149,14 +150,16 @@ const SupraslSection = () => {
                 className="group border border-border rounded-lg overflow-hidden bg-card hover:shadow-lg transition-all duration-300"
               >
                 <div className="aspect-[16/10] overflow-hidden">
-                  <img
-                     src={guide.image}
-                     alt={guide.alt}
-                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                     loading="lazy"
-                     width="500"
-                     height="313"
-                   />
+                  <ImageReveal delay={Math.min(i * 70, 280)}>
+                    <img
+                      src={guide.image}
+                      alt={guide.alt}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      width="500"
+                      height="313"
+                    />
+                  </ImageReveal>
                 </div>
                 <div className="p-5 space-y-3">
                   <h3 className="font-heading text-lg font-medium text-foreground group-hover:text-primary transition-colors leading-snug">
@@ -178,7 +181,7 @@ const SupraslSection = () => {
             Puszcza Knyszyńska to jeden z największych kompleksów leśnych w Polsce, oferujący setki
             kilometrów szlaków pieszych i rowerowych.
           </p>
-          <p className="text-base md:text-lg text-foreground/80 text-smallcaps">
+          <p className="text-base md:text-lg text-foreground/80 font-accent">
             10 minut od chaty.
           </p>
         </div>

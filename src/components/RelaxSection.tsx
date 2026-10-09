@@ -1,4 +1,5 @@
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import ImageReveal from '@/components/ImageReveal';
 import gardenTubImg from '@/assets/gallery-bania-front-thumb.webp';
 import tarasImg from '@/assets/gallery-taras-relaks-thumb.webp';
 import { Snowflake, Sun, Leaf, Flower2 } from 'lucide-react';
@@ -49,29 +50,33 @@ const RelaxSection = () => {
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-16">
           <div className="overflow-hidden relative group">
-            <img
-              src={gardenTubImg}
-              alt="Balia ogrodowa z funkcją jacuzzi — domek z balią w lesie, w Puszczy Knyszyńskiej"
-              className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
-              loading="lazy"
-              width="600"
-              height="450"
-            />
+            <ImageReveal>
+              <img
+                src={gardenTubImg}
+                alt="Balia ogrodowa z funkcją jacuzzi — domek z balią w lesie, w Puszczy Knyszyńskiej"
+                className="w-full h-[350px] md:h-[450px] object-cover"
+                loading="lazy"
+                width="600"
+                height="450"
+              />
+            </ImageReveal>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="text-base text-white text-smallcaps">Ostoja spokoju — balia ogrodowa z funkcją jacuzzi</p>
+              <p className="text-base text-white font-accent">Ostoja spokoju — balia ogrodowa z funkcją jacuzzi</p>
             </div>
           </div>
           <div className="overflow-hidden relative group">
-            <img
-              src={tarasImg}
-              alt="Odpoczynek w lesie weekend — relaks na tarasie leśnego domku w Supraślu"
-              className="w-full h-[350px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
-              loading="lazy"
-              width="600"
-              height="450"
-            />
+            <ImageReveal delay={90}>
+              <img
+                src={tarasImg}
+                alt="Odpoczynek w lesie weekend — relaks na tarasie leśnego domku w Supraślu"
+                className="w-full h-[350px] md:h-[450px] object-cover"
+                loading="lazy"
+                width="600"
+                height="450"
+              />
+            </ImageReveal>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="text-base text-white text-smallcaps">Luksus w sercu lasu</p>
+              <p className="text-base text-white font-accent">Luksus w sercu lasu</p>
             </div>
           </div>
         </div>
@@ -95,11 +100,11 @@ const RelaxSection = () => {
 
         <div className="text-center max-w-2xl mx-auto space-y-4">
           <p className="font-heading text-2xl md:text-3xl font-light text-foreground">Wieczorem:</p>
-          <div className="space-y-1 text-muted-foreground text-base text-smallcaps">
+          <div className="space-y-1 text-muted-foreground text-base font-accent">
             <p>Ogień trzaska w kominku. Na niebie pojawiają się gwiazdy.</p>
             <p>Balia ogrodowa z funkcją jacuzzi. Szepty Puszczy.</p>
           </div>
-          <p className="text-base text-foreground/80 text-smallcaps pt-4">
+          <p className="text-base text-foreground/80 font-accent pt-4">
             To esencja odpoczynku w lesie na weekend — ostoja spokoju, gdzie czas płynie inaczej.
           </p>
         </div>

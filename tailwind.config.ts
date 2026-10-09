@@ -16,11 +16,11 @@ export default {
       fontFamily: {
         display: ['"Monoton"', 'cursive'],
         accent: ['"Encode Sans SC"', 'sans-serif'],
-        alegreya: ['"Alegreya Sans SC"', 'sans-serif'],
+        alegreya: ['"Encode Sans SC"', 'sans-serif'],
         heading: ['"Poppins"', 'sans-serif'],
         script: ['"Poppins"', 'sans-serif'],
         serif: ['"Poppins"', 'sans-serif'],
-        sans: ['"Lato"', 'sans-serif'],
+        sans: ['"Noto Sans"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

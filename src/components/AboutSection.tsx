@@ -1,4 +1,5 @@
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import ImageReveal from '@/components/ImageReveal';
 import salonImg from '@/assets/gallery-salon-panorama-thumb.webp';
 
 const AboutSection = () => {
@@ -43,14 +44,16 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            src={salonImg}
-            alt="Salon z kominkiem w drewnianym domu In The Woods — noclegi Supraśl"
-            className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700"
-            loading="lazy"
-            width="600"
-            height="550"
-          />
+          <ImageReveal>
+            <img
+              src={salonImg}
+              alt="Salon z kominkiem w drewnianym domu In The Woods — noclegi Supraśl"
+              className="w-full h-[400px] md:h-[550px] object-cover"
+              loading="lazy"
+              width="600"
+              height="550"
+            />
+          </ImageReveal>
         </div>
       </div>
     </section>

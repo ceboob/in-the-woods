@@ -216,9 +216,9 @@ const AdminDashboard = () => {
                         <TableCell className="text-xs text-muted-foreground whitespace-nowrap">
                           {new Date(b.created_at).toLocaleDateString('pl-PL')}
                         </TableCell>
-                        <TableCell className="font-medium">{b.name || '—'}</TableCell>
+                        <TableCell className="font-medium" data-preserve-case>{b.name || '—'}</TableCell>
                         <TableCell className="text-xs">
-                          <div>{b.email}</div>
+                          <div data-preserve-case>{b.email}</div>
                           <div className="text-muted-foreground">{b.phone}</div>
                         </TableCell>
                         <TableCell className="whitespace-nowrap text-sm">
