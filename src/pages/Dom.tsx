@@ -1,4 +1,5 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
+import ImageReveal from '@/components/ImageReveal';
 import { Link } from 'react-router-dom';
 import { Home, ChefHat, Bed, Bath, TreePine, Flame, Wifi, Car, Dog, Baby } from 'lucide-react';
 
@@ -100,10 +101,10 @@ const Dom = () => (
           </div>
 
           <div className="grid grid-cols-2 gap-3">
-            <img src={salonKominek} alt="Salon z kominkiem w domu z bali — domek z kominkiem w lesie Supraśl" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
-            <img src={kuchniaCeramika} alt="Kuchnia z płytą kaflową — dom z bali na wyłączność w Puszczy Knyszyńskiej" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
-            <img src={lazienkaPrysznic} alt="Nowoczesna łazienka z prysznicem — leśny domek do wynajęcia" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
-            <img src={domLato} alt="Dom z bali z zewnątrz latem — domek w lesie Supraśl z ogrodzonym terenem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
+            <ImageReveal><img src={salonKominek} alt="Salon z kominkiem w domu z bali — domek z kominkiem w lesie Supraśl" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal delay={60}><img src={kuchniaCeramika} alt="Kuchnia z płytą kaflową — dom z bali na wyłączność w Puszczy Knyszyńskiej" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal delay={120}><img src={lazienkaPrysznic} alt="Nowoczesna łazienka z prysznicem — leśny domek do wynajęcia" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal delay={180}><img src={domLato} alt="Dom z bali z zewnątrz latem — domek w lesie Supraśl z ogrodzonym terenem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
           </div>
         </div>
       </section>
@@ -143,8 +144,8 @@ const Dom = () => (
           </div>
 
           <div className="grid grid-cols-2 gap-3">
-            <img src={sypialniaGorna} alt="Sypialnia na piętrze — domek w lesie dla 2 osób z jacuzzi" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
-            <img src={sypialniaBalkon} alt="Sypialnia z balkonem i widokiem na Puszczę Knyszyńską" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
+            <ImageReveal><img src={sypialniaGorna} alt="Sypialnia na piętrze — domek w lesie dla 2 osób z jacuzzi" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal delay={60}><img src={sypialniaBalkon} alt="Sypialnia z balkonem i widokiem na Puszczę Knyszyńską" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
           </div>
         </div>
       </section>
@@ -165,7 +166,7 @@ const Dom = () => (
             Dodatkowe miejsce do spania na rozkładanej kanapie.{' '}
             <strong>Praca zdalna w lesie wynajem domku</strong> — po pracy spacer do rezerwatu zamiast korki.
           </p>
-          <img src={poddaszeFotel} alt="Poddasze z fotelem — praca zdalna w lesie, workation w domku na wyłączność" className="rounded-lg object-cover w-full h-48" loading="lazy" width="1200" height="900" />
+          <ImageReveal><img src={poddaszeFotel} alt="Poddasze z fotelem — praca zdalna w lesie, workation w domku na wyłączność" className="rounded-lg object-cover w-full h-48" loading="lazy" width="1200" height="900" /></ImageReveal>
         </div>
       </section>
 
@@ -193,8 +194,8 @@ const Dom = () => (
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3">
-            <img src={tarasGrill} alt="Taras z grillem i miejscem na ognisko — ogrodzony teren domku w lesie" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
-            <img src={gardenTubFront} alt="Balia ogrodowa z funkcją jacuzzi — domek z jacuzzi w lesie na wyłączność" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" />
+            <ImageReveal><img src={tarasGrill} alt="Taras z grillem i miejscem na ognisko — ogrodzony teren domku w lesie" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal delay={60}><img src={gardenTubFront} alt="Balia ogrodowa z funkcją jacuzzi — domek z jacuzzi w lesie na wyłączność" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
           </div>
         </div>
       </section>

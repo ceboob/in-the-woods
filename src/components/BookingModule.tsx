@@ -344,16 +344,16 @@ const BookingModule = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Telefon</span>
-                      <span>{data.phone}</span>
+                      <span data-preserve-case>{data.phone}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">E-mail</span>
-                      <span>{data.email}</span>
+                      <span data-preserve-case>{data.email}</span>
                     </div>
                     {data.message && (
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">Wiadomość</span>
-                        <span className="text-right max-w-[60%]">{data.message}</span>
+                        <span className="text-right max-w-[60%]" data-preserve-case>{data.message}</span>
                       </div>
                     )}
                   </div>

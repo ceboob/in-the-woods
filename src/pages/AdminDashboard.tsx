@@ -118,7 +118,10 @@ const AdminDashboard = () => {
       if (error) throw error;
       if (data?.url) {
         await navigator.clipboard.writeText(data.url);
-        toast({ title: 'Link skopiowany do schowka!', description: data.url });
+        toast({
+          title: 'Link skopiowany do schowka!',
+          description: <span data-preserve-case>{data.url}</span>,
+        });
       }
     } catch (err: unknown) {
       const message = err instanceof Error ? err.message : 'Nieznany błąd';

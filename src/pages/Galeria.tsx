@@ -1,4 +1,5 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
+import ImageReveal from '@/components/ImageReveal';
 import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -206,15 +207,17 @@ const Galeria = () => {
             className="overflow-hidden rounded-lg group aspect-[4/3] relative"
             aria-label={`Otwórz: ${img.alt}`}
           >
-            <img
-               src={img.thumb}
-               alt={img.alt}
-               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-               loading="lazy"
-               decoding="async"
-               width="400"
-               height="300"
-             />
+            <ImageReveal delay={Math.min(i * 45, 315)}>
+              <img
+                src={img.thumb}
+                alt={img.alt}
+                className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="300"
+              />
+            </ImageReveal>
             <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors" />
             <span className="absolute bottom-2 left-2 right-2 text-xs text-white bg-foreground/60 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity line-clamp-1">
               {img.alt}
