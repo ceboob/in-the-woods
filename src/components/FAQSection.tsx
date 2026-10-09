@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'Czy mogę pracować zdalnie w In The Woods?',
-    a: 'Tak. W domu jest Wi-Fi i miejsce do pracy przy oknie z widokiem na las. Po pracy można odpocząć na leśnych ścieżkach w okolicy.',
+    a: 'W domu jest Wi-Fi. Jeśli potrzebujesz określonych parametrów łącza lub miejsca do pracy, potwierdź je z gospodarzem przed pobytem.',
   },
   {
     q: 'Co zabrać na pobyt w leśnym domku?',
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: 'Czy rezerwacja obejmuje cały dom?',
-    a: 'Tak. In The Woods to cały dom wynajmowany na wyłączność, położony w leśnej okolicy niedaleko Supraśla. Do dyspozycji gości są m.in. kominek, ogród i balia ogrodowa z funkcją jacuzzi.',
+    a: 'Tak. In The Woods to cały dom wynajmowany jednej grupie, położony w okolicy Supraśla. Do dyspozycji gości są m.in. kominek i ogród; balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem.',
   },
   {
     q: 'Czy można wynająć dom w Puszczy Knyszyńskiej?',
@@ -53,8 +53,8 @@ const faqs = [
     a: 'Tak. Balia ogrodowa z funkcją jacuzzi jest dostępna po wcześniejszej rezerwacji u gospodarza.',
   },
   {
-    q: 'Czy przy domu jest bezpłatny parking?',
-    a: 'Tak. Goście mogą korzystać z bezpłatnego parkingu przy domu.',
+    q: 'Czy przy domu jest parking?',
+    a: 'Przy domu jest parking. Warunki korzystania i ewentualne opłaty potwierdź przed pobytem.',
   },
   {
     q: 'Czy można przyjechać z psem?',

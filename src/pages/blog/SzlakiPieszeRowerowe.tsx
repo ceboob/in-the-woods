@@ -29,7 +29,7 @@ const SzlakiPieszeRowerowe = () => {
   ];
 
   const relatedArticles = [
-    { title: 'Supraski System Wodny – zapomniany cud inżynierii', slug: 'supraski-system-wodny' },
+    { title: 'Rzeka Supraśl i okolica', slug: 'supraski-system-wodny' },
     {
       title: 'Szlak Powstania Styczniowego w Puszczy Knyszyńskiej',
       slug: 'szlak-powstania-styczniowego-suprasl',
@@ -107,7 +107,7 @@ const SzlakiPieszeRowerowe = () => {
 
       <p>
         W Supraślu można też poznać{' '}
-        <Link to="/blog/supraski-system-wodny">Supraski System Wodny</Link>. Sprawdź na mapie
+        <Link to="/blog/supraski-system-wodny">informacje o rzece Supraśl i okolicy</Link>. Sprawdź na mapie
         położenie obiektów i wybierz sposób zwiedzania odpowiedni do warunków.
       </p>
 

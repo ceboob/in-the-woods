@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 const SupraslNaWeekend = () => (
   <BlogArticleLayout
-    title="Supraśl na weekend – gotowy plan zwiedzania na 2 dni"
+    title="Supraśl na weekend – przykładowy plan zwiedzania"
     metaTitle="Supraśl na weekend – plan na 2 dni | Atrakcje"
-    metaDescription="Gotowy plan na weekend w Supraślu: zwiedzanie Monasteru i Muzeum Ikon, spacer po Puszczy, kuchnia podlaska i relaks. Dzień po dniu!"
+    metaDescription="Pomysły na weekend w Supraślu: zwiedzanie, spacer i odpoczynek. Dopasuj plan do aktualnych godzin otwarcia, pogody i dostępności atrakcji."
     slug="suprasl-na-weekend"
     publishDate="2026-04-09"
     readTime="12 min"
     keywords={['Supraśl na weekend', 'plan weekend Supraśl', 'co robić Supraśl 2 dni', 'zwiedzanie Supraśl']}
     faqs={[
-      { question: 'Czy 2 dni wystarczą na zwiedzanie Supraśla?', answer: 'Tak — 2 dni to idealny czas, żeby zobaczyć najważniejsze atrakcje, spacerować po Puszczy i spróbować kuchni regionalnej. Jeśli planujesz spływ kajakowy lub wycieczkę do Kruszynian, rozważ 3 dni.' },
-      { question: 'Kiedy najlepiej przyjechać do Supraśla na weekend?', answer: 'Każda pora roku ma swój urok. Wiosna i jesień to idealne pory na wędrówki. Lato oferuje plaże i kajaki. Zima — narciarstwo biegowe i klimat przy kominku. Unikaj długich weekendów, jeśli szukasz spokoju.' },
-      { question: 'Jak dojechać do Supraśla?', answer: 'Z Białegostoku: 25 min samochodem lub autobusem linii PKS. Z Warszawy: ok. 2,5h samochodem (A8/S8). Najbliższe lotnisko: Białystok-Krywlany lub Warszawa Chopin.' },
+      { question: 'Ile czasu przeznaczyć na zwiedzanie Supraśla?', answer: 'Długość pobytu zależy od wybranych atrakcji, godzin ich otwarcia i planu podróży. Ułóż plan po sprawdzeniu aktualnych informacji.' },
+      { question: 'Kiedy zaplanować weekend w Supraślu?', answer: 'Termin wybierz według swoich planów i dostępności atrakcji. Przed wyjazdem sprawdź prognozę pogody oraz aktualne godziny otwarcia.' },
+      { question: 'Jak dojechać do Supraśla?', answer: 'Przed podróżą sprawdź aktualną trasę i rozkład transportu publicznego. Czas przejazdu zależy od miejsca wyjazdu i warunków na drodze.' },
       { question: 'Czy Supraśl jest dobry na weekend z dziećmi?', answer: 'W Supraślu i okolicy są propozycje dla rodzin, m.in. spacery i obiekty kulturalne. Przed wyjazdem sprawdź ich aktualną dostępność, zasady wstępu i warunki tras. Więcej podpowiedzi znajdziesz w naszym artykule o Supraślu z dziećmi.' },
     ]}
     relatedArticles={[
@@ -23,12 +23,11 @@ const SupraslNaWeekend = () => (
       { title: 'Supraśl z dziećmi', slug: 'suprasl-z-dziecmi' },
     ]}
   >
-    <h2>Supraśl na weekend: gotowy plan zwiedzania na 2 dni</h2>
+    <h2>Supraśl na weekend: przykładowy plan zwiedzania</h2>
 
     <p>
-      Zastanawiasz się, jak spędzić idealny <strong>weekend w Supraślu</strong>? Przygotowaliśmy
-      gotowy plan, który pozwoli Ci zobaczyć najważniejsze miejsca, zjeść regionalne przysmaki
-      i znaleźć czas na odpoczynek. Dzień po dniu!
+      Zastanawiasz się, jak spędzić idealny       <strong>weekend w Supraślu</strong>? Poniższy przykładowy plan dopasuj do godzin otwarcia,
+      pogody, warunków na trasach i własnych potrzeb.
     </p>
 
     <h2>Dzień 1 (sobota): Historia, duchowość i podlaskie smaki</h2>
@@ -45,8 +44,7 @@ const SupraslNaWeekend = () => (
       .
     </p>
     <p>
-      <strong>Wskazówka:</strong> Skorzystaj z audioprzewodnika — wzbogaci wizytę o fascynujący
-      kontekst historyczny.
+      Przed zakupem biletu sprawdź dostępne formy zwiedzania i aktualne zasady wstępu.
     </p>
 
     <h3>Obiad: Kuchnia podlaska (12:30–14:00)</h3>
@@ -59,58 +57,53 @@ const SupraslNaWeekend = () => (
 
     <h3>Popołudnie: Spacer po centrum i bulwary (14:30–17:00)</h3>
     <p>
-      Po obiedzie przejdź się <strong>ulicą 3 Maja</strong>, podziwiając Domy Tkaczy i Pałac
-      Buchholtzów. Następnie zejdź nad rzekę — <strong>bulwary nad Supraślą</strong> to idealne
-      miejsce na spokojny spacer. Drewniane pomosty, ławki z widokiem i szum wody.
+      Możesz zaplanować spacer po mieście i w pobliżu rzeki. Sprawdź publiczny dostęp do wybranych
+      miejsc i nie wchodź na prywatne posesje.
     </p>
 
     <h3>Wieczór: Relaks (17:30+)</h3>
     <p>
-      Wieczór spędź na regeneracji. Jeśli nocujesz w{' '}
-      <Link to="/">In The Woods</Link>, rozpal kominek i odpocznij w balii ogrodowej z funkcją jacuzzi — gorąca woda pod
-      gwiazdami to niezapomniane doświadczenie.
+      Wieczór spędź na regeneracji.       Jeśli nocujesz w <Link to="/">In The Woods</Link>, sprawdź wyposażenie obiektu i zasady
+      korzystania z kominka. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem; jej
+      dostępność potwierdź przed pobytem.
     </p>
 
     <h2>Dzień 2 (niedziela): Natura i aktywny wypoczynek</h2>
 
     <h3>Rano: Wycieczka do Puszczy Knyszyńskiej (8:30–12:00)</h3>
     <p>
-      Ruszaj na szlak! Dla spokojnego tempa polecamy <strong>Szlak Supraski</strong> (8 km) do
-      Arboretum Kopna Góra, po sprawdzeniu godzin otwarcia i zasad zwiedzania. Ambitniejsi mogą wybrać{' '}
-      <Link to="/blog/szlaki-puszcza-knyszynska">trasę przez Wzgórza Świętojańskie</Link>.
-      Alternatywnie — jeśli to lato — zaplanuj{' '}
-      <Link to="/blog/kajaki-suprasl">spływ kajakowy</Link> (2-4 godziny).
+      Wybierz trasę odpowiednią do swoich możliwości, po sprawdzeniu jej przebiegu i dostępności.
+      Jeśli planujesz wizytę w Arboretum Kopna Góra, sprawdź aktualne godziny i zasady zwiedzania u
+      zarządcy. Spływ kajakowy zaplanuj po potwierdzeniu trasy i warunków u organizatora; więcej
+      informacji znajdziesz w przewodniku o{' '}
+      <Link to="/blog/kajaki-suprasl">spływach kajakowych</Link>.
     </p>
 
-    <h3>Obiad: Druga dawka smaków (12:30–14:00)</h3>
+    <h3>Posiłek i przerwa</h3>
     <p>
-      Spróbuj czegoś nowego — <strong>sękacza</strong> na deser albo zupę grzybową z leśnych darów.
-      Jeśli masz czas, odwiedź kawiarnię w centrum na rzemieślniczą kawę i domowe ciasto.
+      Sprawdź menu i godziny pracy lokali, które chcesz odwiedzić. Nie zakładaj, że wybrana
+      restauracja będzie otwarta bez wcześniejszego potwierdzenia.
     </p>
 
     <h3>Popołudnie: Wracając — Kruszyniany (opcjonalnie)</h3>
     <p>
-      Jeśli wyjeżdżasz w kierunku Białegostoku lub Warszawy, rozważ objazd przez{' '}
-      <Link to="/blog/kruszyniany-tatarska-wies">Kruszyniany</Link> (45 min) — zabytkowy meczet
-      i pierekaczewnik w tatarskiej jadłodajni to doskonałe zwieńczenie weekendu.
+      Jeśli planujesz odwiedzić{' '}
+      <Link to="/blog/kruszyniany-tatarska-wies">Kruszyniany</Link>, sprawdź trasę, godziny
+      zwiedzania meczetu i cmentarza oraz dostępność lokalnych potraw przed wyjazdem.
     </p>
 
-    <h2>Gdzie zjeść w weekend? Polecane restauracje</h2>
-    <ul>
-      <li><strong>Jarzębinka</strong> — kuchnia podlaska w domowej atmosferze, kartacze i babka</li>
-      <li><strong>Spiżarnia Smaków</strong> — sezonowe menu z lokalnych produktów</li>
-      <li><strong>Łukaszówka</strong> — taras z widokiem na las, kuchnia polska z akcentami regionalnymi</li>
-    </ul>
+    <h2>Gdzie sprawdzić lokale gastronomiczne?</h2>
     <p>
-      Pełne recenzje i więcej opcji w{' '}
+      Aktualne menu, godziny i dostępność miejsc sprawdź bezpośrednio w lokalu. Więcej wskazówek
+      znajdziesz w{' '}
       <Link to="/blog/restauracje-suprasl">przewodniku po restauracjach</Link>.
     </p>
 
     <h2>Gdzie przenocować?</h2>
     <p>
-      <Link to="/">In The Woods</Link> to prywatny dom w lesie z kominkiem, balią ogrodową z funkcją jacuzzi i
-      ogrodem — idealny na romantyczny weekend we dwoje lub wyprawę z przyjaciółmi (do 8 osób).
-      w miejscowości Konne, niedaleko Supraśla i Puszczy Knyszyńskiej.
+      <Link to="/">In The Woods</Link> to dom na wyłączność dla maksymalnie 8 osób w miejscowości
+      Konne koło Supraśla. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem; dostępność
+      potwierdź przed pobytem.
     </p>
     <p>
       <Link to="/noclegi-suprasl">Sprawdź wszystkie opcje noclegowe w Supraślu →</Link>
@@ -118,8 +111,8 @@ const SupraslNaWeekend = () => (
 
     <h2>Mapa atrakcji na weekend</h2>
     <p>
-      Wszystkie miejsca wymienione w planie znajdziesz w promieniu 15 minut samochodem od
-      centrum Supraśla. <Link to="/atrakcje-suprasl">Zobacz pełną listę atrakcji</Link> z
+      Sprawdź na mapie odległości między miejscami wymienionymi w planie i uwzględnij aktualne
+      warunki dojazdu. <Link to="/atrakcje-suprasl">Zobacz wybrane atrakcje</Link> z
       opisami i praktycznymi informacjami.
     </p>
   </BlogArticleLayout>

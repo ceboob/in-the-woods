@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 const GrzybobraniePuszczaKnyszynska = () => (
   <BlogArticleLayout
-    title="Jesienne grzybobranie w Puszczy Knyszyńskiej – przewodnik"
-    metaTitle="Grzybobranie Puszcza Knyszyńska | Przewodnik"
-    metaDescription="Gdzie zbierać grzyby w Puszczy Knyszyńskiej? Najlepsze miejsca, gatunki, sezon i praktyczne porady. Przewodnik po grzybobraniu na Podlasiu."
+    title="Grzybobranie w Puszczy Knyszyńskiej — zasady przed spacerem"
+    metaTitle="Grzybobranie w Puszczy Knyszyńskiej — zasady i bezpieczeństwo"
+    metaDescription="Zaplanuj grzybobranie z uwzględnieniem pogody, rozpoznawania gatunków i lokalnych ograniczeń. Sprawdź zasady dostępu przed wyjściem."
     slug="grzybobranie-puszcza-knyszynska"
     publishDate="2026-04-09"
     readTime="10 min"
     keywords={['grzybobranie Puszcza Knyszyńska', 'grzyby Podlasie', 'grzyby Supraśl', 'grzybobranie las']}
     faqs={[
-      { question: 'Kiedy jest najlepszy sezon na grzyby w Puszczy Knyszyńskiej?', answer: 'Główny sezon trwa od połowy sierpnia do końca października, z kulminacją we wrześniu. Wiosenne grzyby (smardze) pojawiają się w kwietniu-maju.' },
-      { question: 'Jakie grzyby można znaleźć w Puszczy Knyszyńskiej?', answer: 'Borowiki szlachetne, podgrzybki, maślaki, kurki, rydze, koźlarze i opieńki. Puszcza jest jednym z najbogatszych grzybowo regionów Polski.' },
-      { question: 'Czy potrzebuję pozwolenia na zbieranie grzybów?', answer: 'Nie — grzybobranie w lasach publicznych jest dozwolone. Pamiętaj jednak o zasadach: nie niszcz grzybni, zbieraj tylko te, które znasz, korzystaj z koszyka (nie reklamówki).' },
+      { question: 'Kiedy zaplanować grzybobranie?', answer: 'Występowanie grzybów zależy od gatunku, pogody i lokalnych warunków. Przed wyjściem sprawdź prognozę oraz aktualne informacje zarządcy terenu.' },
+      { question: 'Jakie grzyby można znaleźć w okolicy?', answer: 'Gatunki i ich występowanie zależą od miejsca oraz warunków. Nie zbieraj ani nie spożywaj grzybów, których nie rozpoznajesz.' },
+      { question: 'Czy wszędzie można zbierać grzyby?', answer: 'Nie. Zasady zależą od miejsca; zbieranie jest zabronione w rezerwatach przyrody i może być ograniczone na innych terenach. Sprawdź lokalne przepisy i oznakowanie.' },
     ]}
     relatedArticles={[
       { title: 'Najlepsze miejsca w Puszczy Knyszyńskiej', slug: 'najlepsze-miejsca-puszcza-knyszynska' },
@@ -44,7 +44,7 @@ const GrzybobraniePuszczaKnyszynska = () => (
         i stosuj się do zasad ochrony przyrody.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Kalendarz grzybowy</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Przed wyjściem do lasu</h2>
       <ul className="space-y-3 text-muted-foreground">
         <li>Występowanie poszczególnych gatunków zależy od pory roku i pogody.</li>
         <li>Nie spożywaj grzybów, których rozpoznania nie jesteś pewien.</li>
@@ -52,8 +52,8 @@ const GrzybobraniePuszczaKnyszynska = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Najlepsze miejsca w okolicy Supraśla</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Rezerwat Krzemienne Góry nie jest miejscem do grzybobrania. Jeśli planujesz zbiory,
-        wybieraj wyłącznie miejsca, w których są dozwolone, i sprawdzaj lokalne oznakowanie.
+        Rezerwat Krzemienne Góry nie jest miejscem do grzybobrania. Jeśli planujesz zbiory, wybieraj
+        wyłącznie miejsca, w których są dozwolone, i sprawdzaj lokalne oznakowanie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Nie zakładaj, że zbiór jest dozwolony w każdym lesie lub obszarze chronionym. W razie
@@ -71,9 +71,10 @@ const GrzybobraniePuszczaKnyszynska = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Nocleg na grzybobranie</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to idealna baza
-        na grzybobranie — dom stoi przy lesie, szlaki zaczynają się za progiem. Po całym dniu w puszczy
-        czeka Cię kominek, balia ogrodowa z funkcją jacuzzi i kuchnia, w której przyrządzisz swoje zdobycze.
+        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to dom
+        na wyłączność w miejscowości Konne koło Supraśla. Przed pobytem sprawdź lokalizację, warunki
+        dojazdu i zasady korzystania z opcjonalnej balii ogrodowej z funkcją jacuzzi. Grzybów nie
+        przyrządzaj, jeśli nie masz pewności co do ich identyfikacji.
       </p>
     </article>
   </BlogArticleLayout>

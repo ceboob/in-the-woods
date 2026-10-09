@@ -1,310 +1,82 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import heroImg from '@/assets/blog-puszcza-historie-hero.jpg';
-import panoramaImg from '@/assets/blog-puszcza-panorama.webp';
-import kladkiImg from '@/assets/blog-puszcza-kladki.jpg';
-import powstanieLasImg from '@/assets/blog-powstanie-styczniowe-las.jpg';
-import rekonstrukcjaImg from '@/assets/blog-rekonstrukcja-powstanie.jpg';
-import galeriaRzezbyImg from '@/assets/blog-galeria-lesna-rzezby.jpg';
-import galeriaPostacImg from '@/assets/blog-galeria-lesna-rzezba-postac.jpg';
 
 const PuszczaKnyszynskaHistorie = () => (
   <BlogArticleLayout
-    title="Puszcza Knyszyńska historie – 7 niezwykłych opowieści"
-    metaTitle="Puszcza Knyszyńska – 7 niezwykłych historii"
-    metaDescription="Puszcza Knyszyńska historie: 7 opowieści o regionie, miejscach pamięci i przyrodzie. Przewodnik z inspiracjami na wycieczkę."
+    title="Puszcza Knyszyńska — historia i miejsca pamięci"
+    metaTitle="Puszcza Knyszyńska — historia i informacje dla odwiedzających"
+    metaDescription="Poznaj ogólne informacje o historii regionu i sprawdź, gdzie szukać aktualnych danych o trasach oraz miejscach pamięci."
     slug="puszcza-knyszynska-historie"
     publishDate="2026-03-28"
-    readTime="14 min"
-    keywords={[
-      'Puszcza Knyszyńska historie',
-      'Galeria Leśna Powstania Styczniowego',
-      'noclegi Supraśl',
-      'dom w lesie z jacuzzi',
-      'powstanie styczniowe Podlasie',
-    ]}
+    readTime="4 min"
+    keywords={['Puszcza Knyszyńska historia', 'miejsca pamięci Podlasie', 'historia Supraśla']}
     faqs={[
       {
         question: 'Gdzie znajduje się Puszcza Knyszyńska?',
         answer:
-          'W województwie podlaskim, niedaleko Białegostoku. To rozległy obszar leśny z rezerwatami i innymi formami ochrony przyrody.',
+          'To rozległy obszar leśny w województwie podlaskim. Przed wyjazdem sprawdź mapę i zasady dostępu do wybranego miejsca.',
       },
       {
-        question: 'Czym jest Galeria Leśna Powstania Styczniowego?',
+        question: 'Gdzie sprawdzić informacje o trasach?',
         answer:
-          'To plenerowe miejsce pamięci w okolicach Surażkowa, upamiętniające powstańców styczniowych — z rzeźbami, tablicami i miejscami bitew.',
+          'Aktualnych informacji o terenach leśnych i trasach szukaj u Nadleśnictwa Supraśl. Zawsze stosuj się do oznakowania i ograniczeń.',
       },
       {
-        question: 'Czy można zwiedzać puszczę samodzielnie?',
+        question: 'Czy można odwiedzać miejsca pamięci samodzielnie?',
         answer:
-          'Tak, istnieje wiele szlaków turystycznych i edukacyjnych. Lokalne organizacje oferują również wycieczki z przewodnikiem.',
+          'Możliwość dojścia i zasady dostępu zależą od lokalizacji. Przed wizytą sprawdź aktualne informacje zarządcy terenu.',
       },
       {
-        question: 'Jakie wydarzenia miały miejsce w puszczy?',
+        question: 'Gdzie nocować w okolicy?',
         answer:
-          'Głównie działania partyzanckie podczas Powstania Styczniowego 1863 r. — zasadzki, potyczki i obozy powstańcze w gęstych lasach.',
-      },
-      {
-        question: 'Czy puszcza jest chroniona?',
-        answer:
-          'Tak, duża część objęta jest ochroną jako Park Krajobrazowy Puszczy Knyszyńskiej z licznymi rezerwatami przyrody.',
-      },
-      {
-        question: 'Gdzie nocować w Puszczy Knyszyńskiej?',
-        answer:
-          'In The Woods to prywatny dom w miejscowości Konne, w otoczeniu Puszczy Knyszyńskiej.',
+          'In The Woods to dom na wyłączność w miejscowości Konne koło Supraśla. Sprawdź lokalizację i warunki pobytu przed wysłaniem zapytania.',
       },
     ]}
     relatedArticles={[
-      {
-        title: 'Szlak Powstania Styczniowego w Puszczy Knyszyńskiej',
-        slug: 'szlak-powstania-styczniowego-suprasl',
-      },
-      {
-        title: 'Najlepsze miejsca w Puszczy Knyszyńskiej',
-        slug: 'najlepsze-miejsca-puszcza-knyszynska',
-      },
-      { title: 'Szlaki piesze i rowerowe Supraśl', slug: 'szlaki-piesze-rowerowe-suprasl' },
+      { title: 'Powstanie Styczniowe — kontekst historyczny', slug: 'szlak-powstania-styczniowego-suprasl' },
+      { title: 'Puszcza Knyszyńska — miejsca i zasady wizyty', slug: 'najlepsze-miejsca-puszcza-knyszynska' },
+      { title: 'Szlaki piesze i rowerowe', slug: 'szlaki-piesze-rowerowe-suprasl' },
     ]}
   >
-    <h2>Puszcza Knyszyńska historie — 7 niezwykłych opowieści</h2>
-
-    <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
-      src={heroImg}
-      alt="Leśna droga w Puszczy Knyszyńskiej w porannej mgle"
-      className="rounded-lg shadow-md w-full"
-    width="800"
-               height="600"
-             />
-
-    <h2>Czym jest Puszcza Knyszyńska i dlaczego kryje tyle tajemnic</h2>
-
-    <h3>Położenie i charakterystyka regionu</h3>
-    <p>
-      Puszcza Knyszyńska to jeden z największych kompleksów leśnych w północno-wschodniej Polsce.
-      Rozciąga się na setki kilometrów kwadratowych, obejmując liczne rezerwaty przyrody, wsie i
-      historyczne miejsca. To nie tylko teren przyrodniczy — to żywe muzeum historii.
-    </p>
-    <p>
-      Gęste lasy, bagna i trudno dostępne obszary sprawiały, że przez wieki stanowiła naturalne
-      schronienie dla ludzi szukających wolności. Dziś można tu odkrywać zarówno dziką przyrodę, jak
-      i fascynujące ślady przeszłości.
-    </p>
-
-    <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
-      src={panoramaImg}
-      alt="Panorama Puszczy Knyszyńskiej o zachodzie słońca"
-      className="rounded-lg shadow-md w-full"
-    width="800"
-               height="600"
-             />
-
-    <h3>Znaczenie historyczne i kulturowe</h3>
-    <p>
-      Puszcza od wieków była świadkiem ważnych wydarzeń — od średniowiecznych osad po walki
-      narodowowyzwoleńcze. Jej znaczenie wzrosło szczególnie w XIX wieku, kiedy stała się areną
-      działań powstańczych. Do dziś w gęstwinie leśnej kryją się mogiły, pomniki i miejsca pamięci.
-    </p>
-
-    <h2>Puszcza Knyszyńska historie z czasów powstań narodowych</h2>
-
-    <h3>Powstanie styczniowe na Podlasiu</h3>
-    <p>
-      Podczas <Link to="/blog/szlak-powstania-styczniowego-suprasl">Powstania Styczniowego</Link>{' '}
-      Puszcza Knyszyńska odegrała kluczową rolę jako baza operacyjna dla oddziałów partyzanckich.
-      Gęste lasy pozwalały ukrywać się przed wojskami rosyjskimi i organizować zasadzki. Powstańcy
-      korzystali z naturalnych uwarunkowań terenu, tworząc mobilne oddziały.
-    </p>
-
-    <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
-      src={powstanieLasImg}
-      alt="Kolorowa rycina XIX-wieczna — powstańcy styczniowi w lesie"
-      className="rounded-lg shadow-md w-full"
-    width="800"
-               height="600"
-             />
-
-    <h3>Leśne oddziały i partyzantka</h3>
-    <p>
-      Oddziały poruszały się szybko i były trudne do wykrycia. Miejscowa ludność często wspierała
-      powstańców, dostarczając żywność i informacje. Puszcza dawała przewagę taktyczną — znający
-      teren partyzanci mogli prowadzić działania guerillowe, unikając otwartej walki z
-      przeważającymi siłami rosyjskimi.
-    </p>
-
-    <h2>Galeria Leśna Powstania Styczniowego – miejsce pamięci</h2>
-
-    <h3>Historia powstania galerii</h3>
-    <p>
-      Galeria Leśna Powstania Styczniowego to wyjątkowe miejsce upamiętniające wydarzenia z 1863
-      roku. Znajduje się w pobliżu wsi Surażkowo i stanowi plenerową przestrzeń pamięci. Powstała z
-      inicjatywy lokalnych pasjonatów historii oraz leśników, którzy chcieli zachować pamięć o
-      bohaterach.
-    </p>
-
-    <div className="grid sm:grid-cols-2 gap-4 not-prose my-8">
-      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
-        src={galeriaRzezbyImg}
-        alt="Rzeźby z drewna w Galerii Leśnej Powstania Styczniowego"
-        className="rounded-lg shadow-md w-full h-64 object-cover"
-      width="800"
-               height="600"
-             />
-      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
-        src={galeriaPostacImg}
-        alt="Drewniana rzeźba postaci w Galerii Leśnej"
-        className="rounded-lg shadow-md w-full h-64 object-cover"
-      width="800"
-               height="600"
-             />
-    </div>
-
-    <h3>Najważniejsze wydarzenia w Surażkowie</h3>
-    <p>
-      W okolicach Surażkowa dochodziło do potyczek powstańców z wojskami rosyjskimi. Wielu z nich
-      poległo właśnie w tych lasach. Galeria przedstawia miejsca bitew, nazwiska poległych oraz
-      symboliczne rzeźby z drewna. To przestrzeń refleksji i edukacji — wyjątkowa w skali kraju.
-    </p>
-
-    <h2>Legendy i opowieści przekazywane przez mieszkańców</h2>
-
-    <h3>Duchy powstańców</h3>
-    <p>
-      Wielu mieszkańców twierdzi, że w puszczy można spotkać duchy poległych powstańców. Opowieści
-      mówią o tajemniczych światłach i dźwiękach dochodzących z głębi lasu — szczególnie w okolicach
-      mogił i miejsc potyczek. To elementy żywej tradycji ustnej, przekazywanej z pokolenia na
-      pokolenie.
-    </p>
-
-    <h3>Ukryte skarby w puszczy</h3>
-    <p>
-      Legenda głosi, że powstańcy ukryli broń i kosztowności, które nigdy nie zostały odnalezione.
-      Do dziś poszukiwacze próbują odnaleźć te skarby. Choć prawdopodobnie są to jedynie legendy,
-      nadają puszczy dodatkowy rys tajemniczości.
-    </p>
-
-    <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
-      src={kladkiImg}
-      alt="Drewniane kładki na szlaku przez Puszczę Knyszyńską"
-      className="rounded-lg shadow-md w-full"
-    width="800"
-               height="600"
-             />
-
-    <h2>Znane postacie związane z puszczą</h2>
-
-    <h3>Bohaterowie narodowi</h3>
-    <p>
-      W puszczy działało wielu dowódców powstańczych, którzy zapisali się w historii Polski jako
-      symbole odwagi i poświęcenia. Ich losy splecione z krajobrazem Puszczy Knyszyńskiej tworzą
-      niezapomnianą narrację o walce o wolność.
-    </p>
-
-    <h3>Leśnicy i strażnicy pamięci</h3>
-    <p>
-      To dzięki leśnikom i lokalnym społecznościom pamięć o wydarzeniach przetrwała do dziś. Dbają
-      oni o miejsca pamięci, tablice informacyjne i szlaki historyczne, zapewniając, że kolejne
-      pokolenia poznają tę historię.
-    </p>
-
-    <h2>Przyroda jako świadek historii</h2>
-
-    <h3>Stare drzewa pamiętające powstanie</h3>
-    <p>
-      Niektóre drzewa w puszczy mają ponad 150 lat — były świadkami wydarzeń powstańczych. Potężne
-      sosny i świerki, rosnące w{' '}
-      <Link to="/blog/najlepsze-miejsca-puszcza-knyszynska">rezerwatach Puszczy Knyszyńskiej</Link>,
-      stanowią żywy most łączący teraźniejszość z burzliwą przeszłością.
-    </p>
-
-    <h3>Symbolika natury</h3>
-    <p>
-      Przyroda w tym regionie symbolizuje trwałość, pamięć i odrodzenie. Las, który przetrwał wojny
-      i powstania, jest metaforą polskiej historii — zniszczony, a jednak odrastający z nową siłą.
-    </p>
-
-    <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
-      src={rekonstrukcjaImg}
-      alt="Rekonstrukcja historyczna Powstania Styczniowego w Puszczy Knyszyńskiej"
-      className="rounded-lg shadow-md w-full"
-    width="800"
-               height="600"
-             />
-
-    <h2>Współczesne znaczenie historyczne puszczy</h2>
-
-    <h3>Edukacja i turystyka</h3>
-    <p>
-      Puszcza Knyszyńska jest dziś popularnym miejscem turystyki historycznej i przyrodniczej.
-      Organizowane są wycieczki edukacyjne, rekonstrukcje historyczne i lekcje terenowe.
-      <Link to="/blog/szlaki-piesze-rowerowe-suprasl">Szlaki piesze</Link> prowadzą przez
-      najważniejsze miejsca pamięci.
-    </p>
-
-    <h3>Ochrona dziedzictwa</h3>
-    <p>
-      Dzięki działaniom lokalnych organizacji i Parku Krajobrazowego Puszczy Knyszyńskiej, historia
-      regionu jest chroniona i promowana. Galeria Leśna, szlaki edukacyjne i tablice informacyjne
-      pozwalają każdemu odkryć tę fascynującą przeszłość.
-    </p>
-
-    <h2>Najciekawsze miejsca do odwiedzenia</h2>
-
-    <h3>Szlaki historyczne</h3>
-    <p>
-      W puszczy znajdują się liczne szlaki prowadzące przez miejsca bitew i obozowisk powstańczych.
-      Szczególnie polecamy{' '}
-      <Link to="/blog/szlak-powstania-styczniowego-suprasl">Szlak Powstania Styczniowego</Link> oraz
-      <Link to="/blog/szlak-bioroznorodnosci-suprasl"> Szlak Bioróżnorodności</Link>, który łączy
-      walory przyrodnicze z edukacją historyczną.
-    </p>
-
-    <h3>Pomniki i tablice</h3>
-    <p>
-      Wiele punktów oznaczono tablicami informacyjnymi, które pomagają zrozumieć historię regionu.
-      Pomniki powstańcze, leśne mogiły i krzyże upamiętniające poległych tworzą unikalny krajobraz
-      pamięci w sercu puszczy.
-    </p>
-
-    <h2>Dom w lesie w okolicy Supraśla</h2>
-    <p>
-      Jeśli szukasz czegoś więcej niż standardowe <Link to="/noclegi-suprasl">noclegi Supraśl</Link>
-      , koncept <Link to="/dom-w-lesie-suprasl">In The Woods</Link> spełni Twoje oczekiwania. Ten
-      wyjątkowy <Link to="/domek-z-jacuzzi-podlasie">dom w lesie z jacuzzi</Link> oferuje pełną
-      prywatność, bliskość natury i wysoki standard wykończenia.
-    </p>
-    <p>Co wyróżnia to miejsce:</p>
-    <ul>
-      <li>✔ Lokalizacja w miejscowości Konne, w okolicy Puszczy Knyszyńskiej</li>
-      <li>✔ Prywatne jacuzzi w otoczeniu lasu</li>
-      <li>✔ Cisza, brak tłumów, autentyczna lokalizacja w puszczy</li>
-      <li>✔ Kominek, ogród i taras z widokiem na las</li>
-      <li>✔ Idealny dla par, rodzin i miłośników historii</li>
-    </ul>
-    <p>
-      Przed zaplanowaniem wycieczki sprawdź lokalizację, godziny otwarcia i dostępność Galerii
-      Leśnej Powstania Styczniowego.
-    </p>
-
-    <h2>Dlaczego warto poznać Puszcza Knyszyńska historie</h2>
-    <p>
-      Poznanie historii puszczy to nie tylko lekcja przeszłości, ale też sposób na zrozumienie
-      tożsamości regionu. To miejsce, gdzie natura i historia tworzą nierozerwalną całość. Każdy
-      spacer po leśnych szlakach to podróż w czasie — od XIX-wiecznych potyczek po współczesne
-      działania na rzecz ochrony dziedzictwa.
-    </p>
-
-    <div className="bg-secondary p-8 rounded-lg text-center space-y-4 not-prose mt-12">
-      <p className="font-heading text-xl text-foreground">
-        Zapytaj o pobyt w okolicy Supraśla
+    <article className="prose prose-lg max-w-none space-y-8">
+      <h2>Historia regionu</h2>
+      <p>
+        Puszcza Knyszyńska i okolice Supraśla mają bogate dziedzictwo przyrodnicze i kulturowe.
+        Konkretne opowieści o wydarzeniach, osobach i miejscach pamięci warto weryfikować w
+        publikacjach instytucji zajmujących się historią regionu.
       </p>
-      <p className="text-muted-foreground text-sm">
-        Dom w lesie z jacuzzi — Twoja baza na odkrywanie historii i przyrody puszczy.
+      <p>
+        Powstanie Styczniowe rozpoczęło się w 1863 roku. Informacje o wydarzeniach i upamiętniających
+        je obiektach w okolicy sprawdź w lokalnych instytucjach i u zarządcy terenu; nie zakładaj,
+        że opisywane miejsce jest udostępnione do zwiedzania.
       </p>
-      <a href="tel:+48722765101" className="btn-primary inline-block">
-        Sprawdź termin
-      </a>
-    </div>
+
+      <h2>Przed odwiedzeniem miejsca pamięci</h2>
+      <ul>
+        <li>Sprawdź lokalizację, przebieg dojścia i aktualne zasady dostępu.</li>
+        <li>Przestrzegaj oznakowania oraz ograniczeń na terenach chronionych.</li>
+        <li>Szanuj miejsca pamięci i nie pozostawiaj w nich odpadów.</li>
+      </ul>
+      <p>
+        Informacji o terenach leśnych szukaj na stronie{' '}
+        <a
+          href="https://suprasl.bialystok.lasy.gov.pl/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Nadleśnictwo Supraśl — informacje o terenach leśnych (otworzy się w nowej karcie)"
+        >
+          Nadleśnictwa Supraśl
+        </a>
+        .
+      </p>
+
+      <h2>Nocleg w okolicy Supraśla</h2>
+      <p>
+        <Link to="/">In The Woods</Link> to dom na wyłączność w miejscowości Konne koło Supraśla.
+        Przed wysłaniem <Link to="/#rezerwacja">zapytania o pobyt</Link> sprawdź lokalizację,
+        wyposażenie i dostępność opcjonalnych dodatków.
+      </p>
+    </article>
   </BlogArticleLayout>
 );
 

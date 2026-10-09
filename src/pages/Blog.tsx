@@ -88,8 +88,8 @@ const articles = [
   },
   {
     slug: 'grzybobranie-puszcza-knyszynska',
-    title: 'Jesienne grzybobranie w Puszczy Knyszyńskiej – przewodnik',
-    excerpt: 'Gdzie zbierać grzyby w Puszczy Knyszyńskiej? Najlepsze miejsca, gatunki, sezon i praktyczne porady.',
+    title: 'Grzybobranie w Puszczy Knyszyńskiej — zasady przed spacerem',
+    excerpt: 'Zaplanuj grzybobranie z uwzględnieniem pogody, rozpoznawania gatunków i lokalnych ograniczeń. Sprawdź zasady dostępu przed wyjściem.',
     image: blogMushrooms,
     date: '2026-04-09',
     readTime: '10 min',
@@ -134,9 +134,9 @@ const articles = [
   },
   {
     slug: 'suprasl-na-weekend',
-    title: 'Supraśl na weekend – gotowy plan zwiedzania na 2 dni',
+    title: 'Supraśl na weekend – przykładowy plan zwiedzania',
     excerpt:
-      'Gotowy plan na idealny weekend w Supraślu: Monaster, Muzeum Ikon, kuchnia podlaska, Puszcza Knyszyńska i relaks. Dzień po dniu!',
+      'Pomysły na weekend w Supraślu: zwiedzanie, spacer i odpoczynek. Dopasuj plan do aktualnych godzin otwarcia, pogody i dostępności atrakcji.',
     image: blogWeekendPlan,
     date: '2026-04-09',
     readTime: '12 min',
@@ -174,9 +174,9 @@ const articles = [
   },
   {
     slug: 'przewodnik-kulinarny-suprasl',
-    title: 'Smaki Supraśla: Gdzie zjeść kartacze i babkę ziemniaczaną?',
+    title: 'Kuchnia regionalna — gdzie szukać aktualnych informacji?',
     excerpt:
-      'Kulinarny przewodnik po Supraślu — restauracje, kuchnia tatarska, kawiarnie i lokalne produkty.',
+      'Sprawdź aktualne menu, godziny otwarcia i dostępność lokali w Supraślu oraz okolicy. Informacje o tradycyjnych produktach znajdziesz u ich oficjalnych źródeł.',
     image: blogRestauracje,
     date: '2026-04-09',
     readTime: '12 min',
@@ -184,19 +184,19 @@ const articles = [
   },
   {
     slug: 'puszcza-knyszynska-historie',
-    title: 'Puszcza Knyszyńska historie – 7 niezwykłych opowieści',
+    title: 'Puszcza Knyszyńska — historia i miejsca pamięci',
     excerpt:
-      'Galeria Leśna Powstania Styczniowego i inne miejsca związane z historią regionu.',
+      'Ogólne informacje o historii regionu oraz wskazówki, gdzie sprawdzić aktualne dane o trasach i miejscach pamięci.',
     image: blogPuszczaHistorie,
     date: '2026-03-28',
-    readTime: '14 min',
-    keywords: ['Puszcza Knyszyńska historie', 'Galeria Leśna'],
+    readTime: '4 min',
+    keywords: ['Puszcza Knyszyńska historia', 'miejsca pamięci Podlasie', 'historia Supraśla'],
   },
   {
     slug: 'co-robic-suprasl',
-    title: 'Co robić w Supraślu? Kompletny przewodnik po atrakcjach',
+    title: 'Co robić w Supraślu? Wybrane atrakcje i wskazówki',
     excerpt:
-      'Monaster, Muzeum Ikon, kajaki, szlaki w Puszczy Knyszyńskiej i kuchnia regionalna. Wszystko, co warto zobaczyć w Supraślu.',
+      'Poznaj wybrane atrakcje Supraśla i zaplanuj wizytę. Sprawdź aktualne godziny otwarcia, zasady zwiedzania, trasy i warunki spływów.',
     image: blogCoRobic,
     date: '2026-03-25',
     readTime: '10 min',
@@ -234,9 +234,9 @@ const articles = [
   },
   {
     slug: 'restauracje-suprasl',
-    title: 'Restauracje Supraśl – gdzie zjeść podczas pobytu',
+    title: 'Restauracje w Supraślu — jak sprawdzić aktualną ofertę',
     excerpt:
-      'Kartacze, babka ziemniaczana, sękacz i kuchnia tatarska. Przewodnik kulinarny po Supraślu i Podlasiu.',
+      'Sprawdź aktualne menu, godziny otwarcia, ceny i zasady rezerwacji bezpośrednio w wybranym lokalu.',
     image: blogRestauracje,
     date: '2026-03-15',
     readTime: '12 min',
@@ -274,13 +274,13 @@ const articles = [
   },
   {
     slug: 'supraski-system-wodny',
-    title: 'Supraski System Wodny – zapomniany cud inżynierii Podlasia',
+    title: 'Rzeka Supraśl i okolica — informacje dla odwiedzających',
     excerpt:
-      'Odkryj fascynującą historię supraskiego systemu wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia.',
+      'Zaplanuj spacer lub spływ w okolicy Supraśla. Sprawdź aktualny dostęp do tras, warunki na rzece i informacje u lokalnych organizatorów.',
     image: blogKanal,
     date: '2026-03-10',
-    readTime: '12 min',
-    keywords: ['Supraski System Wodny', 'atrakcje Supraśl'],
+    readTime: '4 min',
+    keywords: ['rzeka Supraśl', 'spacery Supraśl', 'kajaki Supraśl'],
   },
   {
     slug: 'szlak-powstania-styczniowego-suprasl',
@@ -294,9 +294,9 @@ const articles = [
   },
   {
     slug: 'suprasl-atrakcje-national-geographic',
-    title: 'Supraśl – perła Podlasia według podróżników',
+    title: 'Supraśl – co zobaczyć? Przewodnik dla odwiedzających',
     excerpt:
-      'Co sprawia, że Supraśl jest jednym z najpiękniejszych miasteczek Podlasia? Architektura, Monaster i slow tourism.',
+      'Poznaj wybrane atrakcje Supraśla i zaplanuj wizytę. Sprawdź aktualne godziny otwarcia, zasady zwiedzania i dostępność tras.',
     image: blogMonaster,
     date: '2026-03-05',
     readTime: '11 min',

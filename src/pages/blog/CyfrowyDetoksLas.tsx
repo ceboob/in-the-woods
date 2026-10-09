@@ -28,35 +28,34 @@ const CyfrowyDetoksLas = () => (
         warto wybrać zasady, które pasują do własnych potrzeb.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego potrzebujesz cyfrowego detoksu?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego zaplanować przerwę od ekranów?</h2>
       <p className="text-muted-foreground leading-relaxed">
         Jeśli chcesz odpocząć od ekranów, możesz zaplanować w ciągu dnia czas bez telefonu i
         powiadomień. To indywidualny wybór, a nie metoda leczenia ani gwarancja określonych efektów.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Cyfrowy detoks to świadoma przerwa od ekranów — smartfona, laptopa, tabletu. Nie chodzi o całkowite
-        odcięcie się od technologii na zawsze, ale o <strong>reset systemu</strong>. Kilka dni bez notyfikacji,
-        scrollowania i sztucznego światła ekranu zmienia perspektywę.
+        Przerwę możesz zaplanować na wybrany czas i ograniczyć korzystanie z wybranych urządzeń lub
+        aplikacji. Nie ma jednej właściwej formy ani długości — wybierz rozwiązanie odpowiednie do
+        swoich potrzeb.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Puszcza Knyszyńska — idealne miejsce na odłączenie</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Przerwa od ekranów podczas pobytu</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Puszcza Knyszyńska to jeden z największych i najdzikszych kompleksów leśnych w Polsce.
-        Tutaj natura nie jest tłem — jest głównym bohaterem. Odosobnienie, cisza i brak miejskiego hałasu
-        tworzą warunki, w których <strong>odłączenie następuje naturalnie</strong>.
+        Pobyt poza domem może być okazją do zaplanowania czasu bez powiadomień. Nie trzeba wyłączać
+        telefonu ani rezygnować z internetu; decyzja należy do Ciebie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Leśne otoczenie daje okazję do spacerów i odpoczynku na świeżym powietrzu. Możesz spędzić
         czas w swoim tempie, nie zakładając z góry konkretnych efektów zdrowotnych.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Jak wygląda dzień bez ekranów w lesie?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Przykładowy dzień z mniejszą liczbą ekranów</h2>
       <ul className="space-y-3 text-muted-foreground">
-        <li>🌅 <strong>Poranek:</strong> Budzisz się z ptakami, nie z budzikiem. Kawa na tarasie, obserwacja lasu.</li>
+        <li>🌅 <strong>Poranek:</strong> Spokojne śniadanie lub kawa na tarasie, jeśli pozwala na to pogoda.</li>
         <li>🌲 <strong>Przedpołudnie:</strong> Spacer w okolicy, z uwzględnieniem oznakowania i zasad obowiązujących na wybranej trasie.</li>
-        <li>🍳 <strong>Obiad:</strong> Gotowanie z lokalnych produktów. Bez przepisu z internetu — improwizacja.</li>
+        <li>🍳 <strong>Posiłek:</strong> Gotowanie w domu lub wybór lokalu po sprawdzeniu aktualnej oferty.</li>
         <li>📖 <strong>Popołudnie:</strong> Książka przy kominku, hamak w ogrodzie, drzemka.</li>
-        <li>🔥 <strong>Wieczór:</strong> Ognisko, balia ogrodowa z funkcją jacuzzi, gwiazdy. Zero ekranów, sto procent obecności.</li>
+        <li>🔥 <strong>Wieczór:</strong> Odpoczynek w domu lub ogrodzie. Zasady ogniska i dostępność balii potwierdź przed pobytem.</li>
       </ul>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Praktyczne wskazówki na cyfrowy detoks</h2>
@@ -64,15 +63,15 @@ const CyfrowyDetoksLas = () => (
         <li><strong>Uprzedź bliskich</strong> — powiedz, że będziesz niedostępny. Ustal awaryjny numer kontaktowy.</li>
         <li><strong>Zostaw telefon w szufladzie</strong> — nie wystarczy wyłączyć notyfikacje. Schowaj urządzenie.</li>
         <li><strong>Zabierz analogowe rozrywki</strong> — książki, gry planszowe, dziennik, szkicownik.</li>
-        <li><strong>Planuj aktywności</strong> — spacery, gotowanie, jacuzzi. Pustka zachęca do sięgnięcia po telefon.</li>
+        <li><strong>Planuj aktywności</strong> — wybierz spacer, czytanie lub gotowanie, jeśli odpowiadają Twoim planom.</li>
         <li><strong>Dostosuj plan do siebie</strong> — jeśli potrzebujesz telefonu, korzystaj z niego; przerwa od ekranów nie musi być całkowita.</li>
       </ol>
 
       <h2 className="section-title !text-2xl md:!text-3xl">In The Woods — Twoja baza na reset</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to prywatny dom
-        w sercu Puszczy Knyszyńskiej — miejsce stworzone do zwalniania tempa. Kominek, ogrodzony ogród,
-        balia ogrodowa z funkcją jacuzzi i las za progiem. Wi-Fi jest dostępne, ale wybór należy do Ciebie.
+        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to dom
+        na wyłączność w miejscowości Konne koło Supraśla. Wi-Fi jest dostępne. Balia ogrodowa z
+        funkcją jacuzzi jest opcjonalnym dodatkiem; jej dostępność potwierdź przed pobytem.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Zapytaj o pobyt sprzyjający odpoczynkowi od ekranów — zadzwoń pod{' '}

@@ -5,7 +5,7 @@ const WeekendSupraslPlan = () => (
   <BlogArticleLayout
     title="Weekend w Supraślu – plan pobytu na 2-3 dni"
     metaTitle="Weekend w Supraślu – plan na 2-3 dni"
-    metaDescription="Weekend w Supraślu krok po kroku. Plan na 2-3 dni: Monaster, Puszcza Knyszyńska, kajaki, kuchnia regionalna i relaks w jacuzzi pod gwiazdami."
+    metaDescription="Przykładowy plan weekendu w Supraślu. Dopasuj zwiedzanie, spacery i aktywności do aktualnej dostępności atrakcji, pogody i warunków."
     slug="weekend-suprasl-plan"
     publishDate="2026-03-25"
     readTime="9 min"
@@ -62,7 +62,7 @@ const WeekendSupraslPlan = () => (
 
     <h3>Wieczór — Kolacja i jacuzzi</h3>
     <p>
-      Wróć do <Link to="/domek-suprasl">domku In The Woods</Link> i rozpal kominek. Przygotuj
+      Wróć do <Link to="/domek-suprasl">domu In The Woods</Link> i rozpal kominek. Przygotuj
       kolację w kuchni lub wybierz lokal zgodnie z aktualnym menu{' '}
       <Link to="/blog/restauracje-suprasl">restauracji Supraśla</Link>. Możesz skorzystać także z
       balii ogrodowej z funkcją jacuzzi, jeśli wcześniej ustalisz jej dostępność.
@@ -72,9 +72,8 @@ const WeekendSupraslPlan = () => (
 
     <h3>Rano — Poranna kawa w lesie</h3>
     <p>
-      Obudź się w ciszy Puszczy Knyszyńskiej. Poranna kawa na tarasie z widokiem na las to rytuał,
-      od którego warto zacząć dzień. Posłuchaj ptaków, pooddychaj świeżym powietrzem i poczuj, jak
-      zwalnia tempo życia.
+      Jeśli pogoda pozwala, możesz zacząć dzień od kawy na tarasie. Przed spacerem sprawdź pogodę,
+      lokalne zasady i dostępność wybranej trasy.
     </p>
 
     <h3>Przedpołudnie — Szlak przez Puszczę</h3>
@@ -90,25 +89,22 @@ const WeekendSupraslPlan = () => (
       warunki na rzece, trasę i czas spływu potwierdź u organizatora.
     </p>
     <p>
-      Opcja B: Wycieczka do <Link to="/blog/kruszyniany-tatarska-wies">Kruszynian</Link> —
-      Kruszynian — przed wyjazdem sprawdź dojazd, godziny zwiedzania i dostępność dań w lokalnych
-      jadłodajniach.
+      Opcja B: Wycieczka do <Link to="/blog/kruszyniany-tatarska-wies">Kruszynian</Link> — przed
+      wyjazdem sprawdź trasę, godziny zwiedzania i dostępność dań w lokalnych jadłodajniach.
     </p>
 
     <h3>Wieczór — Ognisko i gwiazdy</h3>
     <p>
-      Wieczór w ogrodzie In The Woods: rozpalenie ogniska, grill, pianki marshmallow i obserwacja
-      gwiazd.       Widoczność gwiazd zależy od pogody, pory roku i oświetlenia. Jeśli planujesz obserwację nieba,
-      sprawdź prognozę i wybierz miejsce, w którym możesz przebywać zgodnie z lokalnymi zasadami.
+      Jeśli regulamin obiektu i warunki na to pozwalają, możesz skorzystać z ogniska. Widoczność
+      gwiazd zależy od pogody, pory roku i oświetlenia.
     </p>
 
     <h2>Dzień 3 (opcjonalny): Slow morning i wyjazd</h2>
 
     <h3>Rano — Wspólne śniadanie</h3>
     <p>
-      Nie spiesz się. Przygotuj obfite śniadanie w kuchni domku — jajecznicę na maśle, świeży chleb,
-      lokalne sery i dżemy.       Jeśli chcesz kupić lokalne produkty, przed wyjazdem sprawdź aktualne miejsca i godziny sprzedaży
-      w Supraślu.
+      Nie spiesz się. Śniadanie możesz przygotować w kuchni domu. Jeśli chcesz kupić lokalne
+      produkty, przed wyjazdem sprawdź aktualne miejsca i godziny sprzedaży w Supraślu.
     </p>
 
     <h3>Przed wyjazdem — Arboretum Kopna Góra</h3>
@@ -123,8 +119,8 @@ const WeekendSupraslPlan = () => (
         <strong>Dojazd:</strong> przed podróżą sprawdź aktualną trasę i warunki dojazdu.
       </li>
       <li>
-        <strong>Nocleg:</strong> <Link to="/noclegi-suprasl">In The Woods</Link> — dom w lesie na
-        wyłączność; cena zależy od terminu i liczby gości.
+        <strong>Nocleg:</strong> <Link to="/noclegi-suprasl">In The Woods</Link> — dom na
+        wyłączność w miejscowości Konne koło Supraśla; cena zależy od terminu i liczby gości.
       </li>
       <li>
         <strong>Check-in:</strong> od 15:00, check-out do 11:00
@@ -143,7 +139,7 @@ const WeekendSupraslPlan = () => (
         Wyślij zapytanie, aby potwierdzić dostępność i otrzymać wycenę. Formularz nie potwierdza rezerwacji.
       </p>
       <a href="tel:+48722765101" className="btn-primary inline-block">
-        Sprawdź termin
+        Zadzwoń z pytaniem
       </a>
     </div>
   </BlogArticleLayout>

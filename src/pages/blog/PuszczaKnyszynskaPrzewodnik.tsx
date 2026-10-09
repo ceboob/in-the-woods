@@ -84,10 +84,9 @@ const PuszczaKnyszynskaPrzewodnik = () => (
     ]}
   >
     <p className="text-lg leading-relaxed mb-8">
-      Puszcza Knyszyńska to jeden z największych i najlepiej zachowanych kompleksów leśnych w Polsce.
-      Rozciąga się na ponad 130 tysięcy hektarów w województwie podlaskim, obejmując Park Krajobrazowy
-      Puszczy Knyszyńskiej. To raj dla miłośników natury, aktywnego wypoczynku i slow life — miejsce,
-      gdzie czas płynie wolniej, a las leczy ciało i umysł.
+      Puszcza Knyszyńska to rozległy kompleks leśny w województwie podlaskim, obejmujący m.in. obszar
+      Parku Krajobrazowego Puszczy Knyszyńskiej. Przed wyjściem zaplanuj trasę i sprawdź aktualne
+      zasady dostępu oraz ochrony przyrody.
     </p>
 
     {/* ROMANTYCZNIE */}
@@ -162,7 +161,7 @@ const PuszczaKnyszynskaPrzewodnik = () => (
     {/* SLOW */}
     <section className="mb-12">
       <h2 className="section-title !text-2xl md:!text-3xl flex items-center gap-3">
-        <TreePine className="w-6 h-6 text-primary" /> Slow life — leczenie lasem
+        <TreePine className="w-6 h-6 text-primary" /> Spacery i odpoczynek w lesie
       </h2>
       <div className="space-y-6">
         <div>

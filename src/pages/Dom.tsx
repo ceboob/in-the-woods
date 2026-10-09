@@ -17,7 +17,7 @@ const amenities = [
   { icon: Flame, label: 'Kominek' },
   { icon: Wifi, label: 'WiFi' },
   { icon: Car, label: 'Parking' },
-  { icon: Dog, label: 'Psy za darmo' },
+  { icon: Dog, label: 'Pobyt z psem — zapytaj' },
   { icon: Baby, label: 'Plac zabaw' },
   { icon: Bath, label: 'Balia ogrodowa z funkcją jacuzzi' },
 ];
@@ -25,21 +25,20 @@ const amenities = [
 const Dom = () => (
   <SEOPageLayout
     title="Dom z bali na wyłączność | In The Woods Supraśl"
-    description="Dom z bali na wyłączność w Puszczy Knyszyńskiej: kominek, wyposażona kuchnia, sypialnie i ogrodzony ogród z balią ogrodową z funkcją jacuzzi."
+    description="Dom z bali na wyłączność w miejscowości Konne koło Supraśla. Sprawdź wyposażenie, zasady pobytu i dostępność opcjonalnej balii ogrodowej."
     breadcrumbName="Dom"
     ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
   >
     <article className="space-y-12">
       <div>
         <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-          Dom z bali na wyłączność — leśny domek do wynajęcia w Puszczy Knyszyńskiej
+          Dom z bali na wyłączność w miejscowości Konne
         </h1>
         <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
-          Drewniany <strong>dom na wyłączność</strong> w sercu Puszczy Knyszyńskiej. Klimatyczny kominek,
-          w pełni wyposażona kuchnia z płytą kaflową, dwie sypialnie na piętrze i{' '}
-          <strong>ogrodzony teren</strong> z balią ogrodową z funkcją jacuzzi. <strong>Leśny domek do wynajęcia</strong>{' '}
-          dla par, rodzin i grup przyjaciół do 8 osób. <strong>Psy za darmo</strong> — Twój czworonóg
-          pokocha las za progiem.
+          Drewniany <strong>dom na wyłączność</strong> w miejscowości Konne koło Supraśla. Do
+          dyspozycji gości są kominek, wyposażona kuchnia i dwie sypialnie na piętrze. Balia ogrodowa
+          z funkcją jacuzzi jest opcjonalnym dodatkiem. Dom może pomieścić do 8 osób. Możliwość pobytu
+          z psem i ewentualne opłaty potwierdź z gospodarzem.
         </p>
       </div>
 
@@ -61,7 +60,7 @@ const Dom = () => (
           <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
             <Home className="w-5 h-5 text-primary" strokeWidth={1.5} />
           </div>
-          <h2 className="section-title !text-2xl md:!text-3xl !mb-0">Parter — domek z kominkiem w lesie</h2>
+          <h2 className="section-title !text-2xl md:!text-3xl !mb-0">Parter — salon i kuchnia</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -101,10 +100,10 @@ const Dom = () => (
           </div>
 
           <div className="grid grid-cols-2 gap-3">
-            <ImageReveal><img src={salonKominek} alt="Salon z kominkiem w domu z bali — domek z kominkiem w lesie Supraśl" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
-            <ImageReveal delay={60}><img src={kuchniaCeramika} alt="Kuchnia z płytą kaflową — dom z bali na wyłączność w Puszczy Knyszyńskiej" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
-            <ImageReveal delay={120}><img src={lazienkaPrysznic} alt="Nowoczesna łazienka z prysznicem — leśny domek do wynajęcia" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
-            <ImageReveal delay={180}><img src={domLato} alt="Dom z bali z zewnątrz latem — domek w lesie Supraśl z ogrodzonym terenem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal><img src={salonKominek} alt="Salon z kominkiem i drewnianymi belkami" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal delay={60}><img src={kuchniaCeramika} alt="Kuchnia z płytą kaflową i drewnianymi meblami" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal delay={120}><img src={lazienkaPrysznic} alt="Łazienka z prysznicem" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal delay={180}><img src={domLato} alt="Drewniany dom w letnim ogrodzie" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
           </div>
         </div>
       </section>
@@ -144,8 +143,8 @@ const Dom = () => (
           </div>
 
           <div className="grid grid-cols-2 gap-3">
-            <ImageReveal><img src={sypialniaGorna} alt="Sypialnia na piętrze — domek w lesie dla 2 osób z jacuzzi" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
-            <ImageReveal delay={60}><img src={sypialniaBalkon} alt="Sypialnia z balkonem i widokiem na Puszczę Knyszyńską" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal><img src={sypialniaGorna} alt="Sypialnia na piętrze z łóżkiem dwuosobowym" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal delay={60}><img src={sypialniaBalkon} alt="Sypialnia z wyjściem na balkon" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
           </div>
         </div>
       </section>
@@ -167,7 +166,7 @@ const Dom = () => (
             Po pracy możesz odpocząć w ogrodzie lub wybrać spacer po okolicy, przestrzegając zasad
             obowiązujących na terenach chronionych.
           </p>
-          <ImageReveal><img src={poddaszeFotel} alt="Poddasze z fotelem — praca zdalna w lesie, workation w domku na wyłączność" className="rounded-lg object-cover w-full h-48" loading="lazy" width="1200" height="900" /></ImageReveal>
+          <ImageReveal><img src={poddaszeFotel} alt="Fotel i kącik wypoczynkowy na poddaszu" className="rounded-lg object-cover w-full h-48" loading="lazy" width="1200" height="900" /></ImageReveal>
         </div>
       </section>
 
@@ -183,20 +182,17 @@ const Dom = () => (
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <p className="text-muted-foreground leading-relaxed">
-              <strong>Ogrodzony teren</strong> z altaną, miejscem na ognisko, grillem i placem zabaw
-              dla dzieci. Taras z sofami i stołem — posiłki na świeżym powietrzu w{' '}
-              <strong>domku na odludziu</strong>. <strong>Psy za darmo</strong> — Twój czworonóg
-              będzie tu szczęśliwy.
+              Na ogrodzonym terenie znajdują się altana, grill, taras i plac zabaw. Zasady korzystania
+              z ogniska oraz możliwość pobytu z psem potwierdź z gospodarzem.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Za ogrodzeniem zaczyna się Puszcza Knyszyńska — szlaki piesze i rowerowe dosłownie za
-              progiem domu. Rezerwat przyrody Krzemienne Góry w odległości spaceru.{' '}
-              <strong>Domek w lesie podlaskie</strong> — oderwanie od cywilizacji w czystej formie.
+              Dom znajduje się w okolicy Puszczy Knyszyńskiej. Przed spacerem sprawdź aktualną mapę,
+              dostępność tras oraz zasady obowiązujące na terenach chronionych.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3">
-            <ImageReveal><img src={tarasGrill} alt="Taras z grillem i miejscem na ognisko — ogrodzony teren domku w lesie" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
-            <ImageReveal delay={60}><img src={gardenTubFront} alt="Balia ogrodowa z funkcją jacuzzi — domek z jacuzzi w lesie na wyłączność" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal><img src={tarasGrill} alt="Taras i grill w ogrodzie" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
+            <ImageReveal delay={60}><img src={gardenTubFront} alt="Balia ogrodowa" className="rounded-lg object-cover w-full h-40 md:h-48" loading="lazy" width="768" height="576" /></ImageReveal>
           </div>
         </div>
       </section>
@@ -204,13 +200,13 @@ const Dom = () => (
       {/* CTA */}
       <div className="bg-secondary p-8 text-center space-y-4 rounded-xl">
         <h3 className="font-heading text-2xl font-light">Chcesz zobaczyć więcej? Zapytaj o pobyt</h3>
-        <p className="text-muted-foreground">Przeglądaj galerię lub sprawdź dostępne terminy.</p>
+        <p className="text-muted-foreground">Przeglądaj galerię lub wyślij zapytanie o dostępność i cenę pobytu.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link to="/galeria" className="btn-primary">
             Galeria zdjęć
           </Link>
           <Link to="/#rezerwacja" className="btn-outline">
-            Sprawdź dostępność
+            Wyślij zapytanie o pobyt
           </Link>
         </div>
       </div>
