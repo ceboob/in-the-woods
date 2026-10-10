@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'Czy mogę pracować zdalnie w In The Woods?',
-    a: 'W domu jest Wi-Fi. Jeśli potrzebujesz określonych parametrów łącza lub miejsca do pracy, potwierdź je z gospodarzem przed pobytem.',
+    a: 'Tak. W domu działa internet Starlink o prędkości do 200 Mb/s, więc praca zdalna z widokiem na las jest możliwa.',
   },
   {
     q: 'Co zabrać na pobyt w leśnym domku?',
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: 'Czy można przyjechać z psem?',
-    a: 'Możliwość pobytu z psem, ewentualne opłaty i informację o ogrodzeniu potwierdź z gospodarzem przed wysłaniem zapytania.',
+    a: 'Tak. To dom przyjazny zwierzętom – nie pobieramy żadnych dodatkowych opłat za psa ani innego pupila.',
   },
   {
     q: 'Dla ilu osób jest dom?',
@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     q: 'Czy jest internet?',
-    a: 'Tak, w domu jest Wi-Fi. Dostępne jest również miejsce do pracy.',
+    a: 'Tak, w domu jest Wi-Fi Starlink o prędkości do 200 Mb/s. Dostępne jest również miejsce do pracy.',
   },
   {
     q: 'Jak daleko jest do Supraśla?',

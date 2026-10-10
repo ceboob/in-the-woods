@@ -71,7 +71,7 @@ const SEOHead = ({
       {/* JSON-LD */}
       {jsonLdArray.map((data, i) => (
         <script key={i} type="application/ld+json">
-          {JSON.stringify(data)}
+          {JSON.stringify(data).replace(/</g, '\\u003c')}
         </script>
       ))}
     </Helmet>
