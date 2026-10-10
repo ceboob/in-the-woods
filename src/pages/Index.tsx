@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import SEOHead from '@/components/SEOHead';
+import { homeJsonLd } from '@/data/amenityFaq';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import HeroWelcome from '@/components/HeroWelcome';
@@ -38,9 +39,10 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Dom na wyłączność koło Supraśla | Kominek i balia ogrodowa"
-        description="Prywatny dom w miejscowości Konne koło Supraśla. Poznaj udogodnienia, cennik i zasady pobytu; balię ogrodową z funkcją jacuzzi można zamówić jako dodatek."
+        title="Dom na wynajem Supraśl – dom w lesie z jacuzzi | In The Woods"
+        description="Noclegi Supraśl w domu w lesie: jacuzzi ogrodowe, kominek, ognisko. Dom przyjazny zwierzętom – pies gratis! Blisko Białegostoku. Sprawdź terminy!"
         canonical="https://www.suprasl.online/"
+        jsonLd={homeJsonLd}
       />
 
       <Navbar />

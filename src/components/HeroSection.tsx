@@ -17,7 +17,7 @@ const HeroSection = () => {
           src={heroImgLg}
           srcSet={`${heroImgSm} 640w, ${heroImgLg} 1028w`}
           sizes="100vw"
-          alt="Drewniany dom z balią ogrodową w otoczeniu drzew"
+          alt="Drewniany dom w lesie na wynajem w Supraślu z jacuzzi ogrodowym"
           className="w-full h-full object-cover"
           width="1028"
           height="771"
@@ -29,7 +29,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-white text-center leading-tight animate-fade-up logo-glow font-accent mt-8 sm:mt-0">
-          Klimatyczny dom z bali w Puszczy Knyszyńskiej
+          Dom na wynajem w Supraślu – dom w lesie z jacuzzi i kominkiem
         </h1>
         <p className="font-sans font-semibold mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white logo-glow animate-fade-up delay-100">
           Dom na wyłączność z kominkiem. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem; jej dostępność potwierdź przed pobytem.
