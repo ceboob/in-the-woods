@@ -44,7 +44,7 @@ const ForWhoSection = () => {
         className={`max-w-7xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-16 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Dla kogo
           </p>
           <h2 className="section-title">Dla kogo jest dom w lesie? Twój pobyt, Twoje zasady</h2>

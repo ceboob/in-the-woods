@@ -11,7 +11,7 @@ const LocationSection = () => {
         className={`max-w-5xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-12 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Lokalizacja
           </p>
           <h2 className="section-title">Lokalizacja domu w Konne koło Supraśla</h2>

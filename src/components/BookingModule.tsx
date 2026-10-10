@@ -205,7 +205,7 @@ const BookingModule = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="booking-checkin"
-                        className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2"
+                        className="text-sm tracking-normal text-muted-foreground flex items-center gap-2"
                       >
                         <Calendar className="w-4 h-4" /> Przyjazd
                       </label>
@@ -221,7 +221,7 @@ const BookingModule = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="booking-checkout"
-                        className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2"
+                        className="text-sm tracking-normal text-muted-foreground flex items-center gap-2"
                       >
                         <Calendar className="w-4 h-4" /> Wyjazd
                       </label>
@@ -241,7 +241,7 @@ const BookingModule = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="booking-guests"
-                        className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2"
+                        className="text-sm tracking-normal text-muted-foreground flex items-center gap-2"
                       >
                         <Users className="w-4 h-4" /> Goście
                       </label>
@@ -261,7 +261,7 @@ const BookingModule = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="booking-phone"
-                        className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2"
+                        className="text-sm tracking-normal text-muted-foreground flex items-center gap-2"
                       >
                         <Phone className="w-4 h-4" /> Telefon
                       </label>
@@ -281,7 +281,7 @@ const BookingModule = () => {
                   <div className="space-y-2">
                     <label
                       htmlFor="booking-email"
-                      className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2"
+                      className="text-sm tracking-normal text-muted-foreground flex items-center gap-2"
                     >
                       <Mail className="w-4 h-4" /> E-mail
                     </label>
@@ -300,7 +300,7 @@ const BookingModule = () => {
                   <div className="space-y-2">
                     <label
                       htmlFor="booking-message"
-                      className="text-xs tracking-wider uppercase text-muted-foreground"
+                      className="text-sm tracking-normal text-muted-foreground"
                     >
                       Wiadomość (opcjonalnie)
                     </label>

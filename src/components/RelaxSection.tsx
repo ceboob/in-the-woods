@@ -37,7 +37,7 @@ const RelaxSection = () => {
         className={`max-w-7xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-16 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Strefa relaksu
           </p>
           <h2 className="section-title">Odpoczynek w lesie na weekend — slow travel w Puszczy Knyszyńskiej</h2>
@@ -61,7 +61,7 @@ const RelaxSection = () => {
               />
             </ImageReveal>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="text-base text-white font-accent">Ostoja spokoju — balia ogrodowa z funkcją jacuzzi</p>
+              <p className="text-base text-white font-sans">Ostoja spokoju — balia ogrodowa z funkcją jacuzzi</p>
             </div>
           </div>
           <div className="overflow-hidden relative group">
@@ -76,7 +76,7 @@ const RelaxSection = () => {
               />
             </ImageReveal>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-graphite/70 to-transparent p-6">
-              <p className="text-base text-white font-accent">Luksus w sercu lasu</p>
+              <p className="text-base text-white font-sans">Luksus w sercu lasu</p>
             </div>
           </div>
         </div>
@@ -100,11 +100,11 @@ const RelaxSection = () => {
 
         <div className="text-center max-w-2xl mx-auto space-y-4">
           <p className="font-heading text-2xl md:text-3xl font-light text-foreground">Wieczorem:</p>
-          <div className="space-y-1 text-muted-foreground text-base font-accent">
+          <div className="space-y-1 text-muted-foreground text-base font-sans">
             <p>Ogień trzaska w kominku. Na niebie pojawiają się gwiazdy.</p>
             <p>Balia ogrodowa z funkcją jacuzzi. Szepty Puszczy.</p>
           </div>
-          <p className="text-base text-foreground/80 font-accent pt-4">
+          <p className="text-base text-foreground/80 font-sans pt-4">
             To esencja odpoczynku w lesie na weekend — ostoja spokoju, gdzie czas płynie inaczej.
           </p>
         </div>

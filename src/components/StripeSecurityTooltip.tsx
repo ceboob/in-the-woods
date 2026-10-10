@@ -33,7 +33,7 @@ const StripeSecurityTooltip = ({ children }: { children: React.ReactNode }) => {
               stripe
             </text>
           </svg>
-          <span className="text-[10px] text-muted-foreground tracking-wider uppercase">
+          <span className="text-xs text-muted-foreground tracking-wide">
             PCI DSS Level 1
           </span>
         </div>

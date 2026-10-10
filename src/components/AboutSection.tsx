@@ -12,7 +12,7 @@ const AboutSection = () => {
         className={`max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="space-y-6">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             O miejscu
           </p>
           <h2 className="section-title">

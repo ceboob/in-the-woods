@@ -92,7 +92,7 @@ const FAQSection = () => {
         className={`max-w-3xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-16 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">FAQ</p>
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">FAQ</p>
           <h2 className="section-title">Najczęściej pytacie</h2>
         </div>
 

@@ -28,7 +28,7 @@ const WinterSection = () => {
             <h2 className="font-heading text-3xl md:text-5xl font-light text-white mb-4">
               Domek na sylwestra i zimowy weekend w lesie
             </h2>
-            <p className="text-base text-white/80 font-accent">
+            <p className="text-base text-white/80 font-sans">
               Śnieg na dachu. Kominek w środku. Balia ogrodowa z funkcją jacuzzi na zewnątrz.
             </p>
           </div>
@@ -78,7 +78,7 @@ const WinterSection = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-6">
+            <p className="text-xs tracking-wide text-muted-foreground font-sans mb-6">
               Idealne miejsce na
             </p>
             <div className="flex flex-wrap justify-center gap-3">

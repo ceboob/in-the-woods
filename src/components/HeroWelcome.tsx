@@ -33,15 +33,15 @@ const HeroWelcome = () => {
         ref={ref}
         className={`max-w-3xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
       >
-        <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-4 text-center">
+        <p className="text-xs tracking-wide text-muted-foreground font-sans mb-4 text-center">
           Od gospodarza
         </p>
-        <h2 className="text-lg sm:text-xl md:text-2xl text-foreground mb-6 text-center font-accent">
+        <h2 className="text-lg sm:text-xl md:text-2xl text-foreground mb-6 text-center font-heading">
           Twój prywatny azyl — leśny dom do wynajęcia na Podlasiu
         </h2>
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
-          <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed font-accent">
+          <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed font-sans">
             Oddajemy Wam nasz całoroczny dom z bali na wyłączność — prywatny azyl stworzony z sercem i pasją. Tutaj nie dzielicie przestrzeni z nikim. Tylko Wy, las i chwila wytchnienia. Zanurzcie się w naturze i zwolnijcie tempo. Wyślijcie zapytanie o pobyt, aby poznać dostępność i cenę.
           </p>
         </div>
@@ -76,7 +76,7 @@ const HeroWelcome = () => {
             Traktujcie ten dom jak swój — z&nbsp;szacunkiem i&nbsp;uśmiechem. Zostawcie go tak,
             jakbyście chcieli go zastać za rok, kiedy <em>wrócicie</em>.
           </p>
-          <p className="text-base sm:text-lg md:text-xl text-foreground/80 leading-relaxed mt-4 font-accent">
+          <p className="text-base sm:text-lg md:text-xl text-foreground/80 leading-relaxed mt-4 font-sans">
             Pamiętajcie: dom jest dla ludzi, a&nbsp;nie ludzie dla domu. Bawcie się dobrze!
           </p>
           <p className="mt-4 text-sm text-muted-foreground">— Maciej, gospodarz</p>
