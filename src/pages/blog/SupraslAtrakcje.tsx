@@ -14,22 +14,22 @@ const SupraslAtrakcje = () => {
     {
       question: 'Czy Supraśl nadaje się na weekend?',
       answer:
-        'Tak, Supraśl to idealne miejsce na weekendowy wypad. W 2–3 dni można zwiedzić monaster, muzeum, spacerować po puszczy i zrelaksować się w kameralnej atmosferze uzdrowiskowego miasteczka.',
+        'Długość pobytu zależy od planu i aktualnej dostępności atrakcji. Przed wyjazdem sprawdź godziny otwarcia i warunki zwiedzania.',
     },
     {
       question: 'Jak daleko jest Supraśl od Białegostoku?',
       answer:
-        'Supraśl leży zaledwie 15 km od centrum Białegostoku – dojazd samochodem zajmuje ok. 20 minut.',
+        'Przed podróżą sprawdź aktualną trasę i rozkład transportu publicznego. Czas dojazdu zależy od miejsca wyjazdu i warunków na drodze.',
     },
     {
       question: 'Gdzie nocować w Supraślu?',
       answer:
-        'In The Woods to prywatny dom w lesie z jacuzzi, położony blisko Supraśla w Puszczy Knyszyńskiej – idealny nocleg dla par, rodzin i grup.',
+        'In The Woods to dom na wyłączność w miejscowości Konne koło Supraśla. Sprawdź lokalizację, wyposażenie i dostępność opcjonalnych dodatków przed pobytem.',
     },
   ];
 
   const relatedArticles = [
-    { title: 'Supraski System Wodny – zapomniany cud inżynierii', slug: 'supraski-system-wodny' },
+    { title: 'Rzeka Supraśl i okolica', slug: 'supraski-system-wodny' },
     {
       title: 'Szlak Powstania Styczniowego w Puszczy Knyszyńskiej',
       slug: 'szlak-powstania-styczniowego-suprasl',
@@ -39,9 +39,9 @@ const SupraslAtrakcje = () => {
 
   return (
     <BlogArticleLayout
-      title="Supraśl – co zobaczyć? Atrakcje miasteczka"
-      metaTitle="Supraśl atrakcje – co zobaczyć | Przewodnik"
-      metaDescription="Supraśl – najpiękniejsze atrakcje, monaster, Muzeum Ikon, szlaki i slow tourism. Kompletny przewodnik po perle Podlasia."
+      title="Supraśl – co zobaczyć? Przewodnik dla odwiedzających"
+      metaTitle="Co zobaczyć w Supraślu – atrakcje i praktyczne informacje"
+      metaDescription="Poznaj wybrane atrakcje Supraśla i zaplanuj wizytę. Przed wyjazdem sprawdź aktualne godziny otwarcia, zasady zwiedzania i dostępność tras."
       slug="suprasl-atrakcje-national-geographic"
       publishDate="2026-03-05"
       readTime="11 min"
@@ -56,19 +56,15 @@ const SupraslAtrakcje = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
-      <h2>Supraśl – co zobaczyć w jednym z najpiękniejszych miasteczek Podlasia</h2>
+      <h2>Supraśl — co zobaczyć i jak zaplanować wizytę</h2>
 
       <p>
-        Supraśl to jedno z tych miejsc, które zaskakują. Małe, ciche, niepozorne na mapie — a
-        jednocześnie pełne historii, kultury i naturalnego piękna, które sprawia, że podróżnicy
-        wracają tu raz za razem. To miasteczko, które docenili zarówno znawcy architektury, jak i
-        miłośnicy slow travel, szukający autentycznych doświadczeń z dala od turystycznego tłumu.
+        Supraśl łączy zabytki, instytucje kultury i sąsiedztwo terenów leśnych. Poniżej zebraliśmy
+        kilka pomysłów na zwiedzanie; aktualne godziny i zasady potwierdź przed wyjazdem.
       </p>
 
       <p>
-        Położone na skraju Puszczy Knyszyńskiej, zaledwie 15 kilometrów od Białegostoku, Supraśl
-        łączy uzdrowiskowy spokój z fascynującą wielokulturowością i bliskością jednych z
-        najcenniejszych lasów w Europie. To idealne miejsce na{' '}
+        Supraśl leży w sąsiedztwie Puszczy Knyszyńskiej. To propozycja na{' '}
         <Link to="/weekend-suprasl">weekend</Link>, romantyczny wyjazd lub rodzinne wakacje.
       </p>
 
@@ -80,44 +76,40 @@ const SupraslAtrakcje = () => {
                height="600"
              />
 
-      <h2>Dlaczego Supraśl jest wyjątkowy?</h2>
+      <h2>Wybrane miejsca w Supraślu</h2>
 
       <p>
-        Supraśl to miasteczko o ponad 500-letniej historii, które swoją tożsamość zawdzięcza trzem
-        elementom: monasterowi, naturze i wielokulturowości. Te trzy filary tworzą unikalną
-        atmosferę, której nie znajdziesz w żadnym innym miejscu w Polsce.
+        Wśród miejsc, które można uwzględnić w planie, są monaster, Muzeum Ikon i trasy w okolicy.
+        Szczegóły zwiedzania sprawdź u poszczególnych organizatorów.
       </p>
 
       <h3>Monaster – duchowe serce Supraśla</h3>
 
       <p>
-        Monaster Zwiastowania Najświętszej Maryi Panny to najstarsza i najważniejsza budowla w
-        Supraślu. Założony w 1500 roku przez mnichów prawosławnych, przez wieki był centrum
-        duchowym, kulturalnym i gospodarczym regionu. Dziś jest czynnym klasztorem prawosławnym i
-        jedną z najważniejszych atrakcji turystycznych Podlasia.
+        Monaster Zwiastowania Najświętszej Maryi Panny jest jednym z ważnych zabytków Supraśla.
+        Zasady wejścia, dostępność poszczególnych części kompleksu i godziny nabożeństw potwierdź u
+        jego opiekunów.
       </p>
 
       <p>
-        Kompleks monasterski obejmuje cerkiew Zwiastowania z XVI-wiecznymi freskami
-        (odrestaurowanymi po zniszczeniach wojennych), budynki klasztorne z muzeum i biblioteką,
-        oraz piękne ogrody. Architektura monasteru to unikatowe połączenie gotyku, renesansu i
-        tradycji bizantyjskiej — świadectwo wielokulturowości, która od zawsze definiowała ten
-        region.
+        Informacje o wystawach, zwiedzaniu i udostępnionych częściach kompleksu sprawdź przed
+        wizytą. Nie zakładaj, że wszystkie przestrzenie są dostępne w każdym terminie.
       </p>
 
       <h3>Muzeum Ikon</h3>
 
       <p>
-        W budynkach monasterskich mieści się jedno z najciekawszych muzeów w Polsce — Muzeum Ikon.
-        Kolekcja obejmuje ikony z XVI–XX wieku, pochodzące z cerkwi i klasztorów całego Podlasia. To
-        jedyna tak duża i systematyczna kolekcja sztuki ikonopisarskiej w kraju.
+        Muzeum Ikon działa w Supraślu. Aktualne informacje o ekspozycji, biletach, godzinach otwarcia
+        i zasadach zwiedzania znajdziesz na{' '}
+        <a href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/" target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Aktualne informacje dla zwiedzających Muzeum Ikon (otworzy się w nowej karcie)">
+          stronie Muzeum Podlaskiego
+        </a>.
       </p>
 
       <p>
-        Muzeum nie jest jednak tylko zbiorem obrazów — to opowieść o duchowości, tradycji i kunszcie
-        artystycznym, które przez wieki kształtowały kulturę regionu. Ekspozycja jest przemyślanie
-        zaaranżowana, z doskonałym oświetleniem i informacyjnymi opisami, które pozwalają zrozumieć
-        kontekst i symbolikę każdego dzieła.
+        Przed wizytą sprawdź, które wystawy i formy zwiedzania są dostępne w wybranym terminie.
       </p>
 
       <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
@@ -133,74 +125,62 @@ const SupraslAtrakcje = () => {
       <h3>Rzeka Supraśl</h3>
 
       <p>
-        Rzeka Supraśl to naturalny kręgosłup miasteczka i jeden z jego głównych atutów. Spokojna,
-        malownicza, otoczona łąkami i lasami — idealnie nadaje się do spływów kajakowych, spacerów
-        nadbrzeżnych i po prostu kontemplacji. Wiosną i latem wzdłuż rzeki kwitną dzikie kwiaty, a
-        jesienią — złociste liście odbijają się w wodzie tworząc bajkowe widoki.
+        Przed spacerem w pobliżu rzeki sprawdź dostępne wejścia, przebieg tras i lokalne zasady.
+        Warunki nad wodą mogą się zmieniać.
       </p>
 
       <p>
-        <Link to="/blog/supraski-system-wodny">Supraski System Wodny</Link>, historyczna sieć
-        kanałów i stawów zbudowana przez mnichów, dodaje rzece dodatkowy wymiar — spacerując wzdłuż
-        koryta, można odkrywać ślady wielowiekowej ludzkiej inżynierii harmonijnie wpisanej w
-        krajobraz.
+        Informacje o dostępie do rzeki, trasach i spływach kajakowych znajdziesz u lokalnych
+        organizatorów. Warunki na wodzie mogą się zmieniać; stosuj się do ich zaleceń. Zobacz{' '}
+        <Link to="/blog/kajaki-suprasl">informacje o spływach kajakowych</Link>.
       </p>
 
       <h3>Ulica Cieliczańska</h3>
 
       <p>
-        Drewniana zabudowa ulicy Cieliczańskiej to prawdziwa perełka architektoniczna. Kolorowe,
-        odrestaurowane domki z przełomu XIX i XX wieku tworzą jeden z najpiękniejszych ciągów
-        zabudowy drewnianej na Podlasiu. Spacer tą ulicą to podróż w czasie — do epoki, gdy Supraśl
-        był tętniącym życiem miasteczkiem włókienniczym.
+        Podczas spaceru po Supraślu można zwrócić uwagę na drewnianą zabudowę. Pamiętaj, że część
+        budynków i posesji jest prywatna; oglądaj je z miejsc dostępnych publicznie.
       </p>
 
       <h3>Park Konstytucji 3 Maja</h3>
 
       <p>
-        Niewielki, ale urokliwy park miejski z alejkami lipowymi, ławkami i małym amfiteatrem. Latem
-        odbywają się tu koncerty i wydarzenia kulturalne. To serce towarzyskiego życia Supraśla —
-        miejsce, gdzie lokalni mieszkańcy i turyści spotykają się na porannej kawie lub wieczornym
-        spacerze.
+        Jeśli planujesz odwiedzić park, sprawdź na miejscu dostępność i zasady korzystania z jego
+        infrastruktury. Aktualnych informacji o wydarzeniach szukaj u lokalnego organizatora.
       </p>
 
       <h3>Kawiarnie i restauracje</h3>
 
       <p>
-        Supraśl, mimo swoich niewielkich rozmiarów, ma zaskakująco bogatą scenę gastronomiczną. Od
-        tradycyjnych kuchni podlaskich, przez kawiarnie z domowymi ciastami, po restauracje
-        serwujące kuchnię fusion — każdy znajdzie coś dla siebie. Wiele lokali korzysta z lokalnych
-        produktów, co wpisuje się w filozofię slow food.
+        Lokale, menu i godziny pracy mogą się zmieniać. Przed wizytą sprawdź aktualną ofertę
+        wybranych restauracji w{' '}
+        <Link to="/blog/restauracje-suprasl">przewodniku po lokalach</Link>.
       </p>
 
-      <h2>Co robić w weekend w Supraślu?</h2>
+      <h2>Pomysł na weekend w Supraślu</h2>
 
       <h3>Dzień 1: Kultura i historia</h3>
 
       <p>
-        Poranek zacznij od wizyty w monasterze — najlepiej wejść do cerkwi rano, gdy światło wpada
-        przez witraże i oświetla freski. Po monasterze — Muzeum Ikon (zarezerwuj min. 1,5 godziny).
-        Obiad w jednej z restauracji w centrum. Popołudnie na spacerze ulicą Cieliczańską i w parku.
-        Wieczorem — kolacja i relaks.
+        Zacznij od zwiedzania monasteru, a następnie odwiedź Muzeum Ikon, jeśli jest otwarte.
+        Aktualne godziny i zasady wstępu sprawdź przed wyjazdem. Później możesz wybrać spacer po
+        mieście lub posiłek w lokalu, którego menu i godziny warto potwierdzić.
       </p>
 
       <h3>Dzień 2: Natura i aktywność</h3>
 
       <p>
-        Rano — <Link to="/blog/szlaki-piesze-rowerowe-suprasl">szlak pieszy lub rowerowy</Link> w
-        Puszczy Knyszyńskiej. Polecamy rezerwat Krzemienne Góry lub{' '}
-        <Link to="/blog/szlak-powstania-styczniowego-suprasl">Szlak Powstania Styczniowego</Link>.
-        Po południu — spływ kajakowy rzeką Supraśl lub spacer wzdłuż{' '}
-        <Link to="/blog/supraski-system-wodny">Supraskiego Systemu Wodnego</Link>. Wieczorem —
-        rozpalony kominek i jacuzzi w In The Woods.
+        Rano możesz wybrać trasę pieszą lub rowerową, jeśli jest dostępna i odpowiada Twoim
+        możliwościom. Przed wyjściem sprawdź zasady na terenach chronionych. Spływ kajakowy zaplanuj
+        po potwierdzeniu warunków u organizatora. Wieczorem możesz odpocząć w domu; balia ogrodowa z
+        funkcją jacuzzi jest opcjonalnym dodatkiem, którego dostępność trzeba potwierdzić.
       </p>
 
       <h3>Dzień 3: Slow morning i powrót</h3>
 
       <p>
-        Leniwy poranek z kawą na tarasie w lesie. Odwiedzenie lokalnego targu (w sezonie) lub
-        jeszcze jeden krótki spacer po okolicy. Powrót do domu z poczuciem, że weekend trwał
-        tydzień.
+        Zostaw czas na śniadanie i spacer, jeśli pozwalają na to pogoda oraz plan wyjazdu. Godziny
+        targów i lokalnych wydarzeń potwierdź przed wizytą.
       </p>
 
       <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
@@ -214,43 +194,36 @@ const SupraslAtrakcje = () => {
       <h2>Dlaczego warto nocować blisko natury?</h2>
 
       <p>
-        Supraśl to miasteczko, które najlepiej smakuje, gdy nie spieszy się do hotelu w centrum,
-        lecz zatrzymuje w miejscu, które samo w sobie jest doświadczeniem. Nocleg w lesie, z dala od
-        szumu miasta, pozwala w pełni poczuć magię tego regionu — ciszę puszczy, zapach żywicy,
-        śpiew ptaków o świcie.
+        Lokalizację noclegu dobierz do planu podróży i sprawdź dojazd do miejsc, które chcesz
+        odwiedzić. Przed rezerwacją porównaj wyposażenie, warunki i cenę.
       </p>
 
       <p>
-        Jeśli szukasz <Link to="/noclegi-suprasl">noclegu w Supraślu</Link>, sprawdź In The Woods —
-        <Link to="/dom-w-lesie-suprasl"> dom w lesie</Link> zapewniający spokojną bazę do zwiedzania
-        i spacerów po okolicy. Z domu można dojechać do centrum Supraśla, a po dniu spędzonym na
-        zwiedzaniu wrócić do własnej przestrzeni w otoczeniu Puszczy Knyszyńskiej.
+        Jeśli szukasz <Link to="/noclegi-suprasl">noclegu w okolicy Supraśla</Link>, sprawdź In The
+        Woods — <Link to="/dom-w-lesie-suprasl">dom na wyłączność</Link> w miejscowości Konne.
+        Sprawdź lokalizację, warunki dojazdu i dostępność dodatków przed wysłaniem zapytania.
       </p>
 
       <h2>Supraśl w różnych porach roku</h2>
 
       <h3>Wiosna</h3>
       <p>
-        Kwitnienie zawilców w puszczy, spływy kajakowe, koncerty plenerowe. Temperatury idealne na
-        piesze wędrówki.
+        Przed spacerem sprawdź pogodę, stan tras i aktualne zasady dostępu.
       </p>
 
       <h3>Lato</h3>
       <p>
-        Najdłuższe dni, kąpieliska nad rzeką, festiwale (m.in. Noc Kupały). Pełnia sezonu
-        turystycznego.
+        Sprawdź dostępność atrakcji, kąpielisk i wydarzeń u ich organizatorów.
       </p>
 
       <h3>Jesień</h3>
       <p>
-        Złota jesień w puszczy to widok, który zapiera dech. Grzybobranie, spokojne spacery,
-        kameralna atmosfera.
+        Przed spacerem lub grzybobraniem sprawdź lokalne zasady, pogodę i dostępność terenu.
       </p>
 
       <h3>Zima</h3>
       <p>
-        Śnieżne szlaki, cisza zaśnieżonego lasu, gorąca czekolada w kawiarni. Zimowy Supraśl ma swój
-        niepowtarzalny urok.
+        Zimą sprawdź warunki pogodowe i stan tras, zanim zaplanujesz aktywność na zewnątrz.
       </p>
 
       <p>

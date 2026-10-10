@@ -9,17 +9,17 @@ const SzlakiPieszeRowerowe = () => {
     {
       question: 'Jakie szlaki piesze są w Supraślu?',
       answer:
-        'W okolicach Supraśla znajdziesz szlaki przez rezerwat Krzemienne Góry, szlak wzdłuż rzeki Supraśl, Szlak Powstania Styczniowego i wiele tras w Puszczy Knyszyńskiej o różnym stopniu trudności.',
+        'W okolicy są trasy spacerowe i rowerowe. Przed wyjściem sprawdź ich aktualny przebieg, długość, warunki i zasady udostępniania terenów chronionych.',
     },
     {
       question: 'Czy w Supraślu są trasy rowerowe?',
       answer:
-        'Tak – Green Velo przebiega w pobliżu, jest też wiele lokalnych tras leśnych i ścieżek gravelowych w Puszczy Knyszyńskiej.',
+        'Przed wyprawą sprawdź aktualne mapy tras rowerowych, ich nawierzchnię i ograniczenia w terenie.',
     },
     {
       question: 'Czy szlaki są odpowiednie dla rodzin z dziećmi?',
       answer:
-        'Tak, wiele szlaków jest łatwych i dobrze oznakowanych. Polecamy trasy wzdłuż rzeki i krótkie pętle po rezerwacie.',
+        'Część tras może być odpowiednia dla rodzin, ale trudność, nawierzchnia i dostępność zależą od konkretnego odcinka. Sprawdź aktualne oznaczenia i warunki przed wyjściem.',
     },
     {
       question: 'Gdzie nocować po wędrówce?',
@@ -29,7 +29,7 @@ const SzlakiPieszeRowerowe = () => {
   ];
 
   const relatedArticles = [
-    { title: 'Supraski System Wodny – zapomniany cud inżynierii', slug: 'supraski-system-wodny' },
+    { title: 'Rzeka Supraśl i okolica', slug: 'supraski-system-wodny' },
     {
       title: 'Szlak Powstania Styczniowego w Puszczy Knyszyńskiej',
       slug: 'szlak-powstania-styczniowego-suprasl',
@@ -84,43 +84,31 @@ const SzlakiPieszeRowerowe = () => {
 
       <h2>Najlepsze szlaki piesze</h2>
 
-      <h3>1. Rezerwat Krzemienne Góry</h3>
+      <h3>1. Rezerwat Krzemienne Góry — zasady odwiedzania</h3>
 
       <p>
-        To jeden z najbardziej malowniczych rezerwatów w Puszczy Knyszyńskiej — i jednocześnie jeden
-        z najbliższych Supraślowi. Nazwa „Krzemienne Góry" nawiązuje do występujących tu skał
-        krzemiennych, które tworzą unikatowe formacje geologiczne w środku lasu.
-      </p>
-
-      <p>
-        <strong>Długość:</strong> pętla ok. 5 km · <strong>Trudność:</strong> łatwy ·{' '}
-        <strong>Czas:</strong> 1,5–2 godziny
-      </p>
-
-      <p>
-        Szlak prowadzi przez las mieszany z dominacją starych buków i dębów. Wiosną dno lasu
-        pokrywają kobierce zawilców i przylaszczek. Latem — gęsty baldachim liści daje przyjemny
-        cień. Jesienią — eksplozja kolorów. Zimą — cisza zaśnieżonego lasu.
+        Rezerwat chroni cenne przyrodniczo tereny. Nie zakładaj, że można swobodnie poruszać się po
+        jego całym obszarze ani że przebiega przez niego ogólnodostępna pętla turystyczna. Przed
+        wizytą sprawdź{' '}
+        <a href="https://www.gov.pl/web/rdos-bialystok/podlaskierezerwaty--rezerwat-przyrody-krzemienne-gory"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Informacje RDOŚ o rezerwacie Krzemienne Góry (otworzy się w nowej karcie)">
+          informacje RDOŚ o rezerwacie
+        </a>{' '}
+        i stosuj się do oznakowania.
       </p>
 
       <h3>2. Szlak wzdłuż rzeki Supraśl</h3>
 
       <p>
-        Malownicza trasa biegnąca wzdłuż meandrów rzeki Supraśl, od monasteru w kierunku Czarnej
-        Białostockiej. Rzeka w tym odcinku płynie przez tereny leśne i łąkowe, tworząc piękne widoki
-        w każdej porze roku.
+        Jeśli planujesz spacer nad rzeką Supraśl, wybierz publicznie dostępną drogę i sprawdź jej
+        przebieg, nawierzchnię oraz długość przed wyruszeniem.
       </p>
 
       <p>
-        <strong>Długość:</strong> 8–12 km (w jedną stronę) · <strong>Trudność:</strong> łatwy/średni
-        · <strong>Czas:</strong> 3–4 godziny
-      </p>
-
-      <p>
-        Po drodze mijamy pozostałości{' '}
-        <Link to="/blog/supraski-system-wodny">Supraskiego Systemu Wodnego</Link>, stare młyny i
-        malownicze zakola rzeki. Szlak doskonale nadaje się na rowerową wycieczkę — ścieżka jest w
-        większości utwardzona.
+        W Supraślu można też poznać{' '}
+        <Link to="/blog/supraski-system-wodny">informacje o rzece Supraśl i okolicy</Link>. Sprawdź na mapie
+        położenie obiektów i wybierz sposób zwiedzania odpowiedni do warunków.
       </p>
 
       <h3>3. Szlak Powstania Styczniowego</h3>
@@ -133,27 +121,14 @@ const SzlakiPieszeRowerowe = () => {
       </p>
 
       <p>
-        <strong>Długość:</strong> 3–20 km (kilka wariantów) · <strong>Trudność:</strong> łatwy do
-        wymagającego · <strong>Czas:</strong> 1–6 godzin
+        Długość i trudność wariantów sprawdź na aktualnej mapie przed wycieczką.
       </p>
 
-      <h3>4. Szlak do Kopnej Góry</h3>
+      <h3>4. Arboretum w Kopnej Górze</h3>
 
       <p>
-        Trasa prowadząca do jednego z najwyższych wzniesień Puszczy Knyszyńskiej (196 m n.p.m.).
-        Choć to niewiele jak na góry, w kontekście podlaskiego krajobrazu — to „szczyt", z którego
-        roztacza się widok na bezkresne morze zieleni.
-      </p>
-
-      <p>
-        <strong>Długość:</strong> ok. 10 km (pętla) · <strong>Trudność:</strong> średni ·{' '}
-        <strong>Czas:</strong> 3–4 godziny
-      </p>
-
-      <p>
-        Szlak prowadzi przez zróżnicowany teren — od płaskich partii leśnych po łagodne wzniesienia
-        morenowe. Na szczycie Kopnej Góry znajduje się wieża widokowa, z której widać panoramę
-        puszczy.
+        Arboretum im. Powstańców 1863 w Kopnej Górze zajmuje 26 hektarów i zostało założone w 1988
+        roku. Przed wizytą sprawdź dojazd, dostępność i zasady zwiedzania u Nadleśnictwa Supraśl.
       </p>
 
       <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
@@ -166,59 +141,30 @@ const SzlakiPieszeRowerowe = () => {
 
       <h2>Najlepsze trasy rowerowe</h2>
 
-      <h3>1. Green Velo — odcinek podlaski</h3>
+      <h3>1. Green Velo i inne trasy rowerowe</h3>
 
       <p>
-        Green Velo to najdłuższa trasa rowerowa w Polsce (ponad 2000 km), a jej podlaski odcinek
-        przebiega w pobliżu Supraśla. Trasa wiedzie przez malownicze krajobrazy Podlasia — łąki,
-        rzeki, wsie i lasy.
-      </p>
-
-      <p>
-        <strong>Odcinek lokalny:</strong> ok. 40 km · <strong>Nawierzchnia:</strong>{' '}
-        asfalt/utwardzona · <strong>Trudność:</strong> łatwy
-      </p>
-
-      <p>
-        Z Supraśla można dojechać do Green Velo w ok. 30 minut jazdy. Trasa jest doskonale
-        oznakowana, z miejscami odpoczynku co kilka kilometrów. Idealna dla rodzin i turystów
-        rowerowych z bagażem.
+        Green Velo to długodystansowy szlak rowerowy. Przed zaplanowaniem wycieczki sprawdź jego
+        aktualny przebieg, połączenia z lokalnymi trasami i rodzaj nawierzchni.
       </p>
 
       <h3>2. Pętla przez Puszczę Knyszyńską</h3>
 
       <p>
-        Lokalna trasa rowerowa prowadząca z Supraśla przez Puszczę Knyszyńską — przez wsie Konne,
-        Grabówkę, Łaźnie i z powrotem. Trasa przebiega głównie drogami leśnymi i asfaltowymi
-        dróżkami o minimalnym ruchu.
-      </p>
-
-      <p>
-        <strong>Długość:</strong> ok. 25 km · <strong>Nawierzchnia:</strong> mieszana (asfalt +
-        gravel) · <strong>Trudność:</strong> średni
-      </p>
-
-      <p>
-        Po drodze mijamy piękne polany leśne, stare cmentarze i samotne zagrody. To trasa, na której
-        czas płynie wolniej — idealna na letnie popołudnie.
+        Planując lokalną pętlę, zweryfikuj jej przebieg, nawierzchnię i długość na aktualnej mapie.
+        W terenie stosuj się do znaków oraz ograniczeń wstępu.
       </p>
 
       <h3>3. MTB — trasy w Puszczy Knyszyńskiej</h3>
 
       <p>
-        Dla miłośników mountain bike Puszcza Knyszyńska to prawdziwy skarb. Dziesiątki kilometrów
-        leśnych duktów, wąskich singletracków i piaszczystych ścieżek czekają na rowerzystów
-        szukających wyzwań.
+        Wybierając trasę MTB, sprawdź, czy dany odcinek jest dostępny dla rowerów i czy jego
+        nawierzchnia oraz poziom trudności odpowiadają Twoim umiejętnościom.
       </p>
 
       <p>
-        <strong>Poziom:</strong> od średniego do wymagającego · <strong>Nawierzchnia:</strong> dukt
-        leśny, singletrak, piasek
-      </p>
-
-      <p>
-        Najlepsze odcinki MTB znajdują się w okolicach rezerwatu Krzemienne Góry i wzdłuż doliny
-        rzeki Supraśl. Jesienią trasy mogą być błotniste — co dla wielu jest dodatkową atrakcją.
+        Wybierz trasę udostępnioną dla rowerów, sprawdź jej przebieg i warunki przed wyjazdem.
+        Nie wjeżdżaj na drogi ani ścieżki objęte ograniczeniami.
       </p>
 
       <h2>Szlaki rodzinne</h2>
@@ -228,70 +174,38 @@ const SzlakiPieszeRowerowe = () => {
         rodzin z dziećmi, osób starszych i tych, którzy po prostu chcą spokojnie pospacerować.
       </p>
 
-      <h3>Ścieżka edukacyjna w rezerwacie</h3>
+      <h3>Ścieżki przyrodnicze w okolicy</h3>
 
       <p>
-        Krótka (ok. 2 km), dobrze utrzymana ścieżka z tablicami edukacyjnymi o florze i faunie
-        Puszczy Knyszyńskiej. Idealna dla dzieci od 4 lat. Prowadzi przez las z mostkami nad
-        strumykami i punktami obserwacyjnymi.
+        Przed wyjściem sprawdź dostępność trasy, jej długość, nawierzchnię i ograniczenia. Dobierz
+        spacer do możliwości uczestników i nie wchodź poza miejsca udostępnione do ruchu.
       </p>
 
-      <h3>Spacer monasterski</h3>
+      <h3>Spacer po Supraślu</h3>
 
       <p>
-        Pętla ok. 3 km łącząca monaster z nadrzecznym bulwarem i parkiem miejskim. Całkowicie na
-        płaskim terenie, po utwardzonych ścieżkach. Doskonała na spacer z wózkiem.
+        Przed spacerem z wózkiem sprawdź przebieg trasy, nawierzchnię i dostępność przejść.
       </p>
 
-      <h3>Rowerowy szlak rodzinny</h3>
+      <h3>Trasa rowerowa dla rodziny</h3>
 
       <p>
-        Łatwa trasa ok. 10 km po asfaltowych ścieżkach wokół Supraśla. Minimalne przewyższenia,
-        ładne widoki, kilka miejsc na piknik nad rzeką. Odpowiednia dla dzieci od 6–7 lat na własnym
-        rowerze.
+        Dobierz dystans i nawierzchnię do umiejętności uczestników, a przed wyjazdem sprawdź
+        oznaczenia, warunki i dozwolony przebieg trasy.
       </p>
 
-      <h2>Szlaki przyrodnicze</h2>
-
+      <h2>Odpowiedzialnie na szlaku</h2>
       <p>
-        Puszcza Knyszyńska to Obszar Chronionego Krajobrazu i jednocześnie Obszar Natura 2000.
-        Oznacza to, że szlaki prowadzą przez ekosystemy o wyjątkowej wartości przyrodniczej.
+        Puszcza Knyszyńska obejmuje tereny o różnych zasadach ochrony i udostępniania. Poruszaj się
+        wyłącznie po dozwolonych trasach, nie zbieraj roślin ani grzybów w rezerwatach i nie
+        niepokój zwierząt. Aktualne informacje sprawdzaj u właściwego zarządcy terenu.
       </p>
 
-      <h3>Co można zobaczyć?</h3>
-
-      <ul>
-        <li>
-          <strong>Flora:</strong> wielowiekowe dęby i buki, kobierce zawilców wiosną, rzadkie
-          storczyki leśne, mchy i porosty wskazujące na czystość powietrza
-        </li>
-        <li>
-          <strong>Fauna:</strong> łosie, sarny, dziki, bobry (ich tamy widoczne na wielu
-          strumieniach), bociany czarne, orliki krzykliwe, dzięcioły
-        </li>
-        <li>
-          <strong>Geologia:</strong> formacje morenowe, głazy narzutowe, odsłonięcia krzemieni w
-          rezerwacie Krzemienne Góry
-        </li>
-        <li>
-          <strong>Hydrologia:</strong>{' '}
-          <Link to="/blog/supraski-system-wodny">Supraski System Wodny</Link>, źródła leśne,
-          torfowiska
-        </li>
-      </ul>
-
-      <h3>Obserwacja ptaków (birdwatching)</h3>
+      <h3>Obserwacja przyrody</h3>
 
       <p>
-        Puszcza Knyszyńska to jeden z najlepszych regionów w Polsce do obserwacji ptaków. Na
-        szlakach wzdłuż rzeki i w okolicach stawów można zobaczyć zimorodki, czaple siwe, łabędzie i
-        wiele gatunków kaczek. W głębi puszczy — dzięcioły (w tym rzadki dzięcioł trójpalczasty),
-        sowy i orły.
-      </p>
-
-      <p>
-        Najlepsza pora na birdwatching: wczesny ranek (maj–czerwiec) lub późne popołudnie. Lornetka
-        jest niezbędna, a cierpliwość — nagrodzona.
+        Obserwuj zwierzęta z dystansu, nie płosz ich ani nie dokarmiaj. Nie schodź z udostępnionych
+        tras i respektuj ograniczenia obowiązujące na obszarach chronionych.
       </p>
 
       <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
@@ -309,11 +223,10 @@ const SzlakiPieszeRowerowe = () => {
           <strong>Buty:</strong> wygodne trekkingowe na szlaki piesze, SPD lub platformy na rower
         </li>
         <li>
-          <strong>Woda:</strong> zabierz minimum 1,5 l na osobę — w puszczy nie ma sklepów
+          <strong>Woda:</strong> zabierz ilość odpowiednią do długości trasy i warunków; nie zakładaj, że po drodze będzie dostęp do sklepu lub wody pitnej
         </li>
         <li>
-          <strong>Mapa:</strong> pobierz offline mapę (np. mapy.cz lub Locus Map) — zasięg w puszczy
-          bywa słaby
+          <strong>Mapa:</strong> przed wyjściem przygotuj mapę i sprawdź, czy na wybranej trasie masz dostęp do potrzebnych informacji
         </li>
         <li>
           <strong>Kleszcze:</strong> w sezonie (kwiecień–październik) używaj repelentów i sprawdzaj
@@ -323,16 +236,15 @@ const SzlakiPieszeRowerowe = () => {
           <strong>Pogoda:</strong> nawet latem w lesie może być chłodno — zabierz dodatkową warstwę
         </li>
         <li>
-          <strong>Rower:</strong> wypożyczalnie rowerów działają w Supraślu w sezonie (maj–wrzesień)
+          <strong>Rower:</strong> dostępność wypożyczalni i sprzętu potwierdź przed przyjazdem
         </li>
       </ul>
 
       <h2>Po aktywnym dniu — regeneracja</h2>
 
       <p>
-        Po aktywnym dniu warto odpocząć w jacuzzi In The Woods. Gorąca woda, cisza lasu i niebo
-        pełne gwiazd — to najlepszy sposób na regenerację po całodziennej wędrówce lub rajdzie
-        rowerowym po Puszczy Knyszyńskiej.
+        Po aktywnym dniu możesz odpocząć w domu. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym
+        dodatkiem do pobytu; dostępność potwierdź przed przyjazdem.
       </p>
 
       <p>

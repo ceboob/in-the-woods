@@ -9,8 +9,13 @@ import {
   isWeekendDay,
   formatDateKey,
   calculateTotalPrice,
+  getMinimumNightsForStay,
+  GARDEN_TUB_PRICE,
+  LONG_STAY_DISCOUNT,
+  MIN_NIGHTLY_RATE,
   MAX_GUESTS,
   MIN_NIGHTS,
+  WEEKEND_SURCHARGE,
   BLOCKED_DATES_LAST_UPDATED,
 } from '@/lib/pricing';
 
@@ -185,6 +190,12 @@ const AvailabilityCalendar = () => {
   }, [selectedRange.start, selectedRange.end, guests]);
 
   const nights = priceCalc?.nightPrices.length || 0;
+  const requiredMinNights =
+    selectedRange.start && selectedRange.end
+      ? getMinimumNightsForStay(selectedRange.start, selectedRange.end)
+      : selectedRange.start
+        ? getSeasonForDate(selectedRange.start).minNights
+        : MIN_NIGHTS;
 
   const prevMonth = () =>
     setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1));
@@ -367,9 +378,10 @@ const AvailabilityCalendar = () => {
 
             {selectedRange.end ? (
               <div className="space-y-2">
-                {nights < MIN_NIGHTS && (
+                {nights < requiredMinNights && (
                   <p className="text-xs text-destructive">
-                    Minimalny pobyt to {MIN_NIGHTS} noce. Wybierz dłuższy termin.
+                    Minimalny pobyt dla wybranego terminu to {requiredMinNights} noce. Wybierz
+                    dłuższy termin.
                   </p>
                 )}
                 <div className="bg-secondary p-4 space-y-2 text-sm">
@@ -390,7 +402,7 @@ const AvailabilityCalendar = () => {
                   </div>
                   {priceCalc && priceCalc.discount > 0 && (
                     <div className="flex justify-between text-xs text-green-700">
-                      <span>Zniżka za długi pobyt (−10%)</span>
+                      <span>Zniżka za długi pobyt (−{LONG_STAY_DISCOUNT * 100}%)</span>
                       <span>−{priceCalc.discount} zł</span>
                     </div>
                   )}
@@ -403,11 +415,11 @@ const AvailabilityCalendar = () => {
                 </div>
                 <p className="text-[11px] text-muted-foreground">
                   Cena orientacyjna. Dokładną ofertę potwierdzimy po wysłaniu zapytania. Przy
-                  pobytach 5+ nocy możliwy rabat.
+                  pobytach co najmniej 7 nocy rabat dotyczy ceny noclegu, bez opłaty za balię.
                 </p>
-                {nights >= MIN_NIGHTS && (
+                {nights >= requiredMinNights && (
                   <button onClick={scrollToBooking} className="btn-primary w-full mt-2">
-                    Zarezerwuj ten termin
+                    Przejdź do zapytania o pobyt
                   </button>
                 )}
               </div>
@@ -422,8 +434,10 @@ const AvailabilityCalendar = () => {
         {/* Season info */}
         <div className="mt-4 text-center space-y-1">
           <p className="text-xs text-muted-foreground">
-            Ceny od <strong>399 zł/noc</strong> za cały dom. Weekendy (pt–so):{' '}
-            <strong>+100 zł/noc</strong>. Przy 7+ nocach: <strong>−10% zniżki</strong>.
+            Ceny od <strong>{MIN_NIGHTLY_RATE} zł/noc</strong> za cały dom. Dopłata <strong>+{WEEKEND_SURCHARGE} zł</strong>{' '}
+            dotyczy nocy rozpoczynających się w piątek lub sobotę; niedziela korzysta ze stawki
+            Nd–Czw. Przy pobycie 7+ nocy rabat {LONG_STAY_DISCOUNT * 100}% obejmuje nocleg, nie opcjonalną
+            balię ({GARDEN_TUB_PRICE} zł za pobyt).
           </p>
           <p className="text-[11px] text-muted-foreground/60">
             Ostatnia aktualizacja dostępności: {new Date(BLOCKED_DATES_LAST_UPDATED).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}

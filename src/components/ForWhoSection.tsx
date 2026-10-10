@@ -10,7 +10,7 @@ const audiences = [
   {
     icon: Users,
     title: 'Rodziny z dziećmi',
-    desc: 'Bezpieczny, ogrodzony teren z placem zabaw, altaną i miejscem na ognisko. Dzieci bawią się blisko natury, czworonogi biegają bez smyczy, a dorośli odpoczywają na tarasie. Przestronny dom do wynajęcia w okolicach Supraśla dla całej rodziny.',
+    desc: 'Przed przyjazdem sprawdź układ domu, dostępne wyposażenie i zasady pobytu, aby ocenić, czy odpowiadają potrzebom Twojej rodziny.',
   },
   {
     icon: Users,
@@ -20,17 +20,17 @@ const audiences = [
   {
     icon: Dog,
     title: 'Z psem',
-    desc: 'Twój pupil jest u nas pełnoprawnym gościem bez żadnych dopłat. Szczelnie ogrodzona działka i nieskończone kilometry leśnych ścieżek tuż za furtką — prawdziwy raj dla psów i ich właścicieli.',
+    desc: 'Możliwość pobytu z psem, ewentualne opłaty i informację o ogrodzeniu potwierdź z gospodarzem przed wysłaniem zapytania. Na spacerze stosuj lokalne zasady dostępu.',
   },
   {
     icon: Laptop,
-    title: 'Workation',
-    desc: 'Szybki i stabilny internet Starlink, wygodne biurko z widokiem na sosnowy las i absolutny spokój sprzyjający skupieniu. Efektywna praca zdalna, po której od razu ruszasz na leśne szlaki.',
+    title: 'Praca i wypoczynek',
+    desc: 'W domu dostępne jest Wi-Fi. Jeśli potrzebujesz określonej jakości połączenia lub miejsca do pracy, potwierdź szczegóły przed pobytem.',
   },
   {
     icon: Snail,
-    title: 'Slow travel',
-    desc: 'Slow travel Polska w najczystszej formie. Oderwanie od cywilizacji, spokojny wypoczynek w naturze i chill w lesie — bez pośpiechu, bez zasięgu, bez planu.',
+    title: 'Spokojny wypoczynek',
+    desc: 'Spokojny pobyt w naturze. Możesz odpoczywać bez pośpiechu i samodzielnie zdecydować, ile czasu spędzisz bez ekranów. Wi-Fi jest dostępne.',
   },
 ];
 

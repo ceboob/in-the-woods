@@ -1,5 +1,6 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
+import { GARDEN_TUB_PRICE, MIN_NIGHTLY_RATE } from '@/lib/pricing';
 
 const RomantycznyWeekendPodlasie = () => (
   <BlogArticleLayout
@@ -11,8 +12,8 @@ const RomantycznyWeekendPodlasie = () => (
     readTime="10 min"
     keywords={['romantyczny weekend Podlasie', 'domek z kominkiem', 'weekend we dwoje', 'domek z balią']}
     faqs={[
-      { question: 'Ile kosztuje romantyczny weekend na Podlasiu?', answer: 'Cena noclegu zaczyna się od 399 zł za noc i zależy od terminu oraz liczby gości. Korzystanie z balii ogrodowej z funkcją jacuzzi kosztuje 250 zł za cały pobyt.' },
-      { question: 'Czy trzeba rezerwować jacuzzi z wyprzedzeniem?', answer: 'Tak — balia ogrodowa z funkcją jacuzzi wymaga wcześniejszej rezerwacji, najlepiej w momencie rezerwacji pobytu.' },
+      { question: 'Ile kosztuje romantyczny weekend na Podlasiu?', answer: `Cena noclegu zaczyna się od ${MIN_NIGHTLY_RATE} zł za noc i zależy od terminu oraz liczby gości. Korzystanie z balii ogrodowej z funkcją jacuzzi kosztuje ${GARDEN_TUB_PRICE} zł za cały pobyt.` },
+      { question: 'Czy trzeba rezerwować jacuzzi z wyprzedzeniem?', answer: 'Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem. Jej dostępność i zasady skorzystania potwierdź z gospodarzem przed przyjazdem.' },
       { question: 'Gdzie najlepiej na romantyczny wypad na Podlasiu?', answer: 'Okolice Supraśla i Puszcza Knyszyńska oferują najpiękniejsze odosobnione domki w lesie, idealne na weekend we dwoje.' },
     ]}
     relatedArticles={[
@@ -50,8 +51,10 @@ const RomantycznyWeekendPodlasie = () => (
 
       <h3 className="font-heading text-xl font-semibold text-foreground">Sobota — dzień odkrywania</h3>
       <p className="text-muted-foreground leading-relaxed">
-        Poranek zacznij od kawy na tarasie z widokiem na las. Po śniadaniu wybierzcie się na spacer po <strong>Rezerwacie Krzemienne Góry</strong> —
-        szlak zaczyna się tuż za progiem. Na obiad jedźcie do Supraśla (10 min) — odwiedźcie Monaster, spacerujcie bulwarami nad rzeką.
+        Poranek zacznij od kawy na tarasie z widokiem na las. Po śniadaniu wybierzcie spacer po
+        okolicy. Przed wizytą w <strong>Rezerwacie Krzemienne Góry</strong> sprawdź zasady
+        udostępniania i wybierz wyłącznie dozwoloną trasę. W Supraślu możecie odwiedzić Monaster lub
+        przejść się bulwarami nad rzeką.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Wieczorem przygotujcie kolację we dwoje w pełni wyposażonej kuchni. Rozpalcie ognisko w ogrodzie.
@@ -76,7 +79,7 @@ const RomantycznyWeekendPodlasie = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Gdzie zarezerwować?</h2>
       <p className="text-muted-foreground leading-relaxed">
         <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to prywatny dom w lesie,
-        położony przy Puszczy Knyszyńskiej, 10 minut od Supraśla. Kominek, ogród i taras tworzą
+        położony w miejscowości Konne, niedaleko Supraśla i Puszczy Knyszyńskiej. Kominek, ogród i taras tworzą
         spokojne miejsce na wspólny wyjazd. Jeśli balia ogrodowa z funkcją jacuzzi jest ważną
         częścią planu, sprawdź szczegóły oferty{' '}
         <Link to="/domek-z-jacuzzi-podlasie" className="text-primary hover:underline font-medium">
@@ -85,7 +88,7 @@ const RomantycznyWeekendPodlasie = () => (
         .
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Rezerwacja bezpośrednia</strong> — bez prowizji pośrednika. Zadzwoń pod{' '}
+        <strong>Kontakt bezpośredni</strong> — zadzwoń pod{' '}
         <a href="tel:+48722765101" className="text-primary hover:underline">722 765 101</a> lub wyślij zapytanie
         przez <Link to="/#rezerwacja" className="text-primary hover:underline">formularz na stronie</Link>.
       </p>

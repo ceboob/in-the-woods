@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 const GrzybobraniePuszczaKnyszynska = () => (
   <BlogArticleLayout
-    title="Jesienne grzybobranie w Puszczy Knyszyńskiej – przewodnik"
-    metaTitle="Grzybobranie Puszcza Knyszyńska | Przewodnik"
-    metaDescription="Gdzie zbierać grzyby w Puszczy Knyszyńskiej? Najlepsze miejsca, gatunki, sezon i praktyczne porady. Przewodnik po grzybobraniu na Podlasiu."
+    title="Grzybobranie w Puszczy Knyszyńskiej — zasady przed spacerem"
+    metaTitle="Grzybobranie w Puszczy Knyszyńskiej — zasady i bezpieczeństwo"
+    metaDescription="Zaplanuj grzybobranie z uwzględnieniem pogody, rozpoznawania gatunków i lokalnych ograniczeń. Sprawdź zasady dostępu przed wyjściem."
     slug="grzybobranie-puszcza-knyszynska"
     publishDate="2026-04-09"
     readTime="10 min"
     keywords={['grzybobranie Puszcza Knyszyńska', 'grzyby Podlasie', 'grzyby Supraśl', 'grzybobranie las']}
     faqs={[
-      { question: 'Kiedy jest najlepszy sezon na grzyby w Puszczy Knyszyńskiej?', answer: 'Główny sezon trwa od połowy sierpnia do końca października, z kulminacją we wrześniu. Wiosenne grzyby (smardze) pojawiają się w kwietniu-maju.' },
-      { question: 'Jakie grzyby można znaleźć w Puszczy Knyszyńskiej?', answer: 'Borowiki szlachetne, podgrzybki, maślaki, kurki, rydze, koźlarze i opieńki. Puszcza jest jednym z najbogatszych grzybowo regionów Polski.' },
-      { question: 'Czy potrzebuję pozwolenia na zbieranie grzybów?', answer: 'Nie — grzybobranie w lasach publicznych jest dozwolone. Pamiętaj jednak o zasadach: nie niszcz grzybni, zbieraj tylko te, które znasz, korzystaj z koszyka (nie reklamówki).' },
+      { question: 'Kiedy zaplanować grzybobranie?', answer: 'Występowanie grzybów zależy od gatunku, pogody i lokalnych warunków. Przed wyjściem sprawdź prognozę oraz aktualne informacje zarządcy terenu.' },
+      { question: 'Jakie grzyby można znaleźć w okolicy?', answer: 'Gatunki i ich występowanie zależą od miejsca oraz warunków. Nie zbieraj ani nie spożywaj grzybów, których nie rozpoznajesz.' },
+      { question: 'Czy wszędzie można zbierać grzyby?', answer: 'Nie. Zasady zależą od miejsca; zbieranie jest zabronione w rezerwatach przyrody i może być ograniczone na innych terenach. Sprawdź lokalne przepisy i oznakowanie.' },
     ]}
     relatedArticles={[
       { title: 'Najlepsze miejsca w Puszczy Knyszyńskiej', slug: 'najlepsze-miejsca-puszcza-knyszynska' },
@@ -23,55 +23,58 @@ const GrzybobraniePuszczaKnyszynska = () => (
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Puszcza Knyszyńska to raj dla grzybiarzy. Rozległy kompleks leśny, różnorodność siedlisk
-        i stosunkowo niewielka liczba zbieraczy sprawiają, że <strong>grzybobranie w Puszczy Knyszyńskiej</strong>
-        to doświadczenie, które zachwyci nawet wytrawnych grzybomaniaków.
+        W lasach regionu można spotkać różne gatunki grzybów, ale ich występowanie zależy od
+        pogody i miejsca. Przed zbiorem sprawdź, czy jest on dozwolony w danym terenie i zbieraj
+        wyłącznie gatunki, które potrafisz pewnie rozpoznać.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego Puszcza Knyszyńska to eldorado grzybiarzy?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Kiedy planować grzybobranie?</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Puszcza Knyszyńska to jeden z największych kompleksów leśnych w Europie Środkowej — ponad 25 000 ha
-        borów, grądów i olsów. Różnorodność drzewostanu (sosna, świerk, dąb, brzoza, olcha) tworzy idealne
-        warunki dla dziesiątek gatunków grzybów jadalnych.
+        Sezon i dostępność grzybów zależą od warunków pogodowych. Przed wyjściem zapoznaj się z
+        komunikatami właściwego nadleśnictwa i oznakowaniem w terenie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        W przeciwieństwie do popularnych lasów pod Warszawą czy na Mazurach, tutaj <strong>grzybiarzy jest
-        znacznie mniej</strong>. Szansa na pełen koszyk jest realna nawet w szczycie sezonu.
+        Nie zbieraj grzybów w rezerwatach przyrody. W rezerwacie Krzemienne Góry dostęp jest
+        ograniczony; przed wizytą sprawdź{' '}
+        <a href="https://www.gov.pl/web/rdos-bialystok/podlaskierezerwaty--rezerwat-przyrody-krzemienne-gory"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Informacje RDOŚ o rezerwacie Krzemienne Góry (otworzy się w nowej karcie)">
+          aktualne informacje RDOŚ
+        </a>{' '}
+        i stosuj się do zasad ochrony przyrody.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Kalendarz grzybowy</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Przed wyjściem do lasu</h2>
       <ul className="space-y-3 text-muted-foreground">
-        <li>🌸 <strong>Kwiecień–Maj:</strong> Smardze, pieczarki leśne — rzadko spotykane, ale wyśmienite.</li>
-        <li>☀️ <strong>Czerwiec–Lipiec:</strong> Kurki (pieprzniki), maślaki, podgrzybki brunatne.</li>
-        <li>🍂 <strong>Sierpień–Wrzesień:</strong> GŁÓWNY SEZON — borowiki szlachetne, koźlarze, rydze, prawdziwki.</li>
-        <li>🍁 <strong>Październik:</strong> Opieńki miodowe, gąski — sezon zamyka się przy pierwszych przymrozkach.</li>
+        <li>Występowanie poszczególnych gatunków zależy od pory roku i pogody.</li>
+        <li>Nie spożywaj grzybów, których rozpoznania nie jesteś pewien.</li>
       </ul>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Najlepsze miejsca w okolicy Supraśla</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Okolice <strong>Rezerwatu Krzemienne Góry</strong> (tuż obok In The Woods) to doskonały punkt startowy.
-        Bory mieszane z dębami i sosnami obfitują w borowiki i podgrzybki. Nie trzeba jechać daleko —
-        las zaczyna się za progiem domu.
+        Rezerwat Krzemienne Góry nie jest miejscem do grzybobrania. Jeśli planujesz zbiory, wybieraj
+        wyłącznie miejsca, w których są dozwolone, i sprawdzaj lokalne oznakowanie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Okolice Kopnej Góry i Arboretum, dolina rzeki Supraśl oraz lasy w kierunku Nowego Sadu to kolejne
-        sprawdzone rewiry. Gospodarz In The Woods chętnie podpowie lokalne „miejscówki".
+        Nie zakładaj, że zbiór jest dozwolony w każdym lesie lub obszarze chronionym. W razie
+        wątpliwości zrezygnuj ze zbierania i skontaktuj się z właściwym nadleśnictwem.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Praktyczne porady</h2>
       <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
         <li><strong>Koszyk, nie reklamówka</strong> — grzyby w reklamówce się gniotą i psują. Koszyk wiklinowy to standard.</li>
         <li><strong>Zbieraj tylko znane gatunki</strong> — w razie wątpliwości — zostaw. Nie ryzykuj zdrowia.</li>
-        <li><strong>Wyruszaj wcześnie</strong> — najlepsze grzyby zbiera się rano, gdy rosa jeszcze paruje.</li>
+        <li><strong>Zaplanuj trasę</strong> — sprawdź mapę, oznakowanie i prognozę pogody przed wyjściem.</li>
         <li><strong>Zabierz nóż i GPS</strong> — nóż do ścinania grzybów, GPS (lub mapę) do orientacji w lesie.</li>
-        <li><strong>Sprawdź pogodę</strong> — najlepsze grzybobranie to 2–3 dni po deszczu, przy temperaturze 10–20°C.</li>
+        <li><strong>Zachowaj ostrożność</strong> — nie wchodź na tereny zamknięte ani poza udostępnione trasy w obszarach chronionych.</li>
       </ol>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Nocleg na grzybobranie</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to idealna baza
-        na grzybobranie — dom stoi przy lesie, szlaki zaczynają się za progiem. Po całym dniu w puszczy
-        czeka Cię kominek, balia ogrodowa z funkcją jacuzzi i kuchnia, w której przyrządzisz swoje zdobycze.
+        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to dom
+        na wyłączność w miejscowości Konne koło Supraśla. Przed pobytem sprawdź lokalizację, warunki
+        dojazdu i zasady korzystania z opcjonalnej balii ogrodowej z funkcją jacuzzi. Grzybów nie
+        przyrządzaj, jeśli nie masz pewności co do ich identyfikacji.
       </p>
     </article>
   </BlogArticleLayout>

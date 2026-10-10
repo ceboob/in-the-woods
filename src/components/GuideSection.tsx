@@ -32,10 +32,9 @@ const GuideSection = () => (
       <div className="max-w-3xl mx-auto text-center space-y-4">
         <h2 className="sr-only">Supraśl – Odkryj Perłę Podlasia</h2>
         <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-          Planujesz weekend na Podlasiu, rodzinny wyjazd lub chwilę wytchnienia blisko natury?{' '}
-          <strong>Supraśl</strong>, malownicze uzdrowisko otulone Puszczą Knyszyńską, zaprasza!
-          Odkryj z nami miejsce, gdzie historia spotyka się z nowoczesnością, duchowość z aktywnym
-          wypoczynkiem, a podlaska gościnność czeka na każdym kroku.
+        Planujesz weekend na Podlasiu lub wyjazd blisko natury? W Supraślu możesz połączyć
+        zwiedzanie z czasem na spacer i odpoczynek. Przed wizytą sprawdź godziny otwarcia atrakcji
+        oraz dostępność tras.
         </p>
       </div>
 
@@ -47,36 +46,35 @@ const GuideSection = () => (
           </p>
           <h2 className="section-title">Największe atrakcje w pigułce</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Supraśl to miasto, które zachwyca na każdym kroku. Od monumentalnych zabytków po
-            urokliwe zakątki — oto miejsca, których nie możesz przegapić.
+            Poniżej znajdziesz kilka propozycji. Sprawdź aktualne zasady zwiedzania przed wyjazdem.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           <Card
             icon={Church}
             title="Monaster Zwiastowania NMP i Muzeum Ikon"
-            desc="Duchowe serce Supraśla i jeden z najważniejszych zabytków w Polsce. Poczuj niezwykłą atmosferę prawosławnego klasztoru, a następnie zanurz się w świecie sztuki sakralnej w jedynym takim muzeum w kraju."
+            desc="Jeden z ważnych zabytków Supraśla. Poznaj historię prawosławnego klasztoru, a następnie odwiedź Muzeum Ikon."
             cta="Dowiedz się więcej o godzinach i biletach"
             link="/atrakcje-suprasl"
           />
           <Card
             icon={Waves}
             title="Bulwary nad rzeką Supraśl i plaża miejska"
-            desc="Idealne miejsce na spacer, piknik lub podziwianie zachodu słońca. Zielone tereny wzdłuż rzeki to strefa relaksu dla całej rodziny. Latem skorzystaj z uroków plaży i kąpieliska!"
+            desc="Przed spacerem nad rzeką sprawdź dostępne wejścia i lokalne zasady. Informacje o kąpieliskach weryfikuj na miejscu."
             cta="Sprawdź trasy spacerowe"
             link="/atrakcje-suprasl"
           />
           <Card
             icon={TreePine}
             title="Puszcza Knyszyńska – brama do dzikiej przyrody"
-            desc="Supraśl to doskonała baza wypadowa do jednego z największych kompleksów leśnych w Polsce. Czekają na Ciebie dziesiątki kilometrów szlaków pieszych i rowerowych oraz świeże powietrze nasycone olejkami eterycznymi."
+            desc="W okolicy Supraśla znajdują się tereny leśne i trasy turystyczne. Ich przebieg, dostępność i zasady sprawdź przed wyjściem."
             cta="Zaplanuj wycieczkę po puszczy"
             link="/blog/szlaki-puszcza-knyszynska"
           />
           <Card
             icon={Building2}
             title="Pałac Buchholtzów i Domy Tkaczy"
-            desc="Odkryj przemysłową historię miasta, podziwiając secesyjną perłę architektury — Pałac Buchholtzów, oraz klimatyczne Domy Tkaczy, które pamiętają czasy włókienniczej potęgi Supraśla."
+            desc="Pałac Buchholtzów i zabudowa związana z historią miasta to przykłady miejsc, które możesz uwzględnić w planie zwiedzania."
             cta="Poznaj historię Supraśla"
             link="/atrakcje-suprasl"
           />
@@ -91,15 +89,14 @@ const GuideSection = () => (
           </p>
           <h2 className="section-title">Noclegi i smaki Supraśla</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Komfortowy nocleg i pyszne jedzenie to podstawa udanego wyjazdu. Supraśl oferuje szeroki
-            wybór opcji na każdą kieszeń — od luksusowych hoteli SPA po klimatyczne pensjonaty.
+            Przed rezerwacją porównaj lokalizację, wyposażenie, dostępność i cenę wybranego noclegu.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <Card
             icon={Bed}
             title="Gdzie spać w Supraślu?"
-            desc="Niezależnie od tego, czy szukasz hotelu z basenem, przytulnego pokoju w centrum, czy domku w lesie — w naszej bazie znajdziesz idealne miejsce."
+            desc="Sprawdź opis obiektu, wyposażenie i warunki pobytu, a następnie wybierz ofertę odpowiednią do swoich potrzeb."
             cta="Znajdź idealny nocleg"
             link="/noclegi-suprasl"
           />
@@ -119,7 +116,7 @@ const GuideSection = () => (
           <p className="text-sm font-semibold tracking-widest uppercase text-accent">
             Supraśl dla aktywnych i nie tylko
           </p>
-          <h2 className="section-title">Nuda w Supraślu? Niemożliwe!</h2>
+          <h2 className="section-title">Pomysły na aktywności</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Sprawdź, jak aktywnie spędzić czas o każdej porze roku.
           </p>
@@ -142,14 +139,14 @@ const GuideSection = () => (
           <Card
             icon={Sparkles}
             title="Uzdrowisko i SPA"
-            desc="Skorzystaj z leczniczej borowiny i zrelaksuj się w nowoczesnych ośrodkach."
+            desc="Oferta zabiegów i pobytów zależy od placówki. Aktualne warunki, dostępność i przeciwwskazania potwierdź bezpośrednio u usługodawcy."
             cta="Sprawdź ofertę"
             link="/blog/uzdrowisko-spa-suprasl"
           />
           <Card
             icon={CalendarDays}
             title="Jesienne wydarzenia kulturalne"
-            desc="Koncerty, warsztaty, Bison Ultra i Jarmark Świąteczny w Supraślu jesienią 2026."
+            desc="Terminy i program wydarzeń mogą się zmieniać. Aktualne informacje sprawdź u lokalnego organizatora."
             cta="Kalendarz imprez"
             link="/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne"
           />
@@ -158,10 +155,9 @@ const GuideSection = () => (
 
       {/* Końcowe CTA */}
       <div className="text-center space-y-4 max-w-2xl mx-auto">
-        <h2 className="section-title">Supraśl czeka na Ciebie!</h2>
+        <h2 className="section-title">Zaplanuj wizytę w Supraślu</h2>
         <p className="text-muted-foreground text-lg">
-          Nie zwlekaj, zaplanuj swoją podróż do jednego z najpiękniejszych zakątków Podlasia.
-          Odkryj Supraśl i zakochaj się w jego niepowtarzalnym klimacie.
+          Sprawdź aktualną dostępność atrakcji i zaplanuj pobyt zgodnie z własnymi zainteresowaniami.
         </p>
         <Link to="/atrakcje-suprasl" className="btn-primary inline-block">
           Odkryj atrakcje Supraśla

@@ -85,7 +85,7 @@ const SupraslZima = () => (
       poznania. Białe pnie, miękkie światło i oszronione gałęzie tworzą zachwycający zimowy pejzaż.
       To właśnie ten fotograficzny, jasny nastrój bywa nazywany leśnym „light mode”. Zimowe kadry i
       inspiracje znajdą Państwo w relacji{' '}
-      <a href="https://jedrzejwojnar.com/en/blog/puszcza-knyszynska-w-light-mode/" target="_blank" rel="noreferrer">
+      <a href="https://jedrzejwojnar.com/en/blog/puszcza-knyszynska-w-light-mode/" target="_blank" rel="noopener noreferrer" aria-label="Relacja fotograficzna (otworzy się w nowej karcie)">
         Puszcza Knyszyńska w light mode
       </a>
       .
@@ -114,7 +114,8 @@ const SupraslZima = () => (
       <a
         href="https://podlaskie.tv/suprasl-zima-malownicze-sciezki-wsrod-lasow-puszczy-knyszynskiej/"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
+        aria-label="Artykuł o Supraślu zimą (otworzy się w nowej karcie)"
       >
         Supraśl zimą – malownicze ścieżki wśród lasów Puszczy Knyszyńskiej
       </a>
@@ -139,7 +140,8 @@ const SupraslZima = () => (
       <a
         href="https://bialystokwedlugani.com/2026/01/11/2-x-puszcza-knyszynska-kopna-gora-poczopek/"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
+        aria-label="Przewodnik o Kopnej Górze i Poczopku (otworzy się w nowej karcie)"
       >
         Kopna Góra i Poczopek – dwa sposoby na Puszczę Knyszyńską
       </a>
@@ -179,7 +181,8 @@ const SupraslZima = () => (
       <a
         href="https://bialystoksubiektywnie.com/blog/2019/01/26/zima-w-podlaskiem-magia-podlasia/"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
+        aria-label="Artykuł o zimie w Podlaskiem (otworzy się w nowej karcie)"
       >
         Zima w Podlaskiem – magia Podlasia
       </a>

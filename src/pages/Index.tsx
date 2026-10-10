@@ -16,7 +16,6 @@ const ForWhoSection = lazy(() => import('@/components/ForWhoSection'));
 const GallerySection = lazy(() => import('@/components/GallerySection'));
 const WinterSection = lazy(() => import('@/components/WinterSection'));
 const PricingSection = lazy(() => import('@/components/PricingSection'));
-const TestimonialsSection = lazy(() => import('@/components/TestimonialsSection'));
 const LocationSection = lazy(() => import('@/components/LocationSection'));
 const EventsSection = lazy(() => import('@/components/EventsSection'));
 const FAQSection = lazy(() => import('@/components/FAQSection'));
@@ -39,8 +38,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Domek z jacuzzi i kominkiem | Krzemienna Chata Supraśl"
-        description="Dom na wyłączność w Puszczy Knyszyńskiej, 5 km od Supraśla. Balia z jacuzzi, kominek, ogród i leśna cisza. Sprawdź wolne terminy."
+        title="Dom na wyłączność koło Supraśla | Kominek i balia ogrodowa"
+        description="Prywatny dom w miejscowości Konne koło Supraśla. Poznaj udogodnienia, cennik i zasady pobytu; balię ogrodową z funkcją jacuzzi można zamówić jako dodatek."
         canonical="https://www.suprasl.online/"
       />
 
@@ -76,8 +75,6 @@ const Index = () => {
           <PricingSection />
 
           {/* Social proof */}
-          <TestimonialsSection />
-
           {/* Okolica i lokalne SEO */}
           <LocationSection />
           <EventsSection />

@@ -37,13 +37,13 @@ const amenities = [
   },
   {
     icon: TreePine,
-    title: 'Ogrodzony teren z altaną',
-    desc: 'Prywatny ogród z tarasem, altaną i miejscem na ognisko. Ogrodzony teren daje bezpieczeństwo dzieciom i psom — Twoja przestrzeń w lesie.',
+    title: 'Ogród i przestrzeń na zewnątrz',
+    desc: 'Informacje o wyposażeniu ogrodu, ognisku i zasadach korzystania z terenu potwierdź przed pobytem.',
   },
   {
     icon: Wifi,
-    title: 'Starlink — szybki internet',
-    desc: 'Szerokopasmowy i stabilny internet Starlink od SpaceX — nawet w sercu Puszczy Knyszyńskiej. Wygodne biurko z widokiem na las. Idealny na workation i pracę zdalną.',
+    title: 'Wi-Fi',
+    desc: 'Wi-Fi jest dostępne. Jeśli potrzebujesz określonej jakości połączenia do pracy, potwierdź szczegóły przed pobytem.',
   },
   {
     icon: Wind,
@@ -57,13 +57,13 @@ const amenities = [
   },
   {
     icon: Dog,
-    title: 'Psy za darmo',
-    desc: 'Twój pies jest pełnoprawnym gościem — bez dopłat. Ogrodzony teren w lesie i kilometry leśnych ścieżek to raj dla czworonogów.',
+    title: 'Pobyt ze zwierzęciem',
+    desc: 'Możliwość pobytu z psem, ewentualne opłaty i informację o ogrodzeniu potwierdź z gospodarzem przed wysłaniem zapytania.',
   },
   {
     icon: Baby,
-    title: 'Plac zabaw dla dzieci',
-    desc: 'Bezpieczna przestrzeń zabawy na ogrodzonym terenie. Dzieci biegają po ogrodzie, rodzice odpoczywają na tarasie.',
+    title: 'Pobyt z dziećmi',
+    desc: 'Przed przyjazdem sprawdź dostępne wyposażenie i oceń, czy układ domu odpowiada potrzebom Twojej rodziny.',
   },
   {
     icon: FlameKindling,
@@ -89,8 +89,8 @@ const AmenitiesSection = () => {
             Domek z jacuzzi i kominkiem w sercu lasu
           </h2>
           <p className="section-subtitle mx-auto">
-            Komfortowy dom z bali na wyłączność — do 8 osób. Ogrodzony teren, psy za darmo,
-            pełne wyposażenie i prywatny ogród w Puszczy Knyszyńskiej.
+            Dom na wyłączność dla maksymalnie 8 osób. Szczegóły wyposażenia i zasady korzystania z
+            udogodnień sprawdź przed pobytem.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -101,13 +101,6 @@ const AmenitiesSection = () => {
               </div>
               <h3 className="font-heading text-lg font-semibold text-foreground">{a.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
-              {a.title.includes('Starlink') && (
-                <div className="flex items-center justify-center gap-2 pt-1">
-                  <svg viewBox="0 0 120 20" className="h-4 w-auto text-muted-foreground" fill="currentColor">
-                    <text x="0" y="15" fontSize="14" fontWeight="700" fontFamily="Arial, sans-serif" letterSpacing="2">STARLINK</text>
-                  </svg>
-                </div>
-              )}
             </div>
           ))}
         </div>

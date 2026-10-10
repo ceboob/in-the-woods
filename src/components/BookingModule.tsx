@@ -15,7 +15,6 @@ import {
 } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
-import SocialProof from '@/components/SocialProof';
 
 interface BookingData {
   checkIn: string;
@@ -159,8 +158,6 @@ const BookingModule = () => {
           </p>
         </div>
 
-        <SocialProof />
-
         <div className="card-premium bg-warm-white">
           {step === 'sent' ? (
             <div className="text-center py-12 space-y-4">
@@ -169,8 +166,8 @@ const BookingModule = () => {
               </div>
               <h3 className="font-heading text-2xl">Dziękujemy za zapytanie</h3>
               <p className="text-muted-foreground text-sm max-w-md mx-auto">
-                Potwierdzimy dostępność i cenę w ciągu kilku godzin. Sprawdź telefon lub skrzynkę
-                mailową.
+                Otrzymaliśmy zapytanie. Skontaktujemy się, aby potwierdzić dostępność i cenę.
+                Wysłanie formularza nie potwierdza rezerwacji ani nie oznacza płatności.
               </p>
               <button
                 onClick={() => {
@@ -367,9 +364,9 @@ const BookingModule = () => {
                 {sending ? (
                   <Loader2 className="w-4 h-4 animate-spin mx-auto" />
                 ) : step === 'form' ? (
-                  'Sprawdź dostępność'
+                  'Dalej do podsumowania'
                 ) : (
-                  'Wyślij zapytanie'
+                  'Wyślij zapytanie o pobyt'
                 )}
               </button>
 

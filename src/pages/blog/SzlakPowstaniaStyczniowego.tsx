@@ -29,7 +29,7 @@ const SzlakPowstaniaStyczniowego = () => {
   ];
 
   const relatedArticles = [
-    { title: 'Supraski System Wodny – zapomniany cud inżynierii', slug: 'supraski-system-wodny' },
+    { title: 'Rzeka Supraśl i okolica', slug: 'supraski-system-wodny' },
     {
       title: 'Supraśl – perła Podlasia według podróżników',
       slug: 'suprasl-atrakcje-national-geographic',
@@ -238,7 +238,7 @@ const SzlakPowstaniaStyczniowego = () => {
         <li>
           <strong>Połącz z:</strong> wizytą w{' '}
           <Link to="/atrakcje-suprasl">monasterze w Supraślu</Link> i{' '}
-          <Link to="/blog/supraski-system-wodny">Supraskim Systemem Wodnym</Link>
+          <Link to="/blog/supraski-system-wodny">informacjami o rzece Supraśl i okolicy</Link>
         </li>
       </ul>
 

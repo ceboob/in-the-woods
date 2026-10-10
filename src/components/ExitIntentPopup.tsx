@@ -88,7 +88,7 @@ const ExitIntentPopup = () => {
             </div>
             <h3 className="font-heading text-xl font-semibold">Dziękujemy!</h3>
             <p className="text-sm text-muted-foreground">
-              Oddzwonimy w ciągu 15 minut w godzinach pracy.
+              Skontaktujemy się z Tobą w sprawie zapytania.
             </p>
           </div>
         ) : (
@@ -98,8 +98,7 @@ const ExitIntentPopup = () => {
                 Zanim wyjdziesz
               </p>
               <h3 className="font-heading text-2xl font-semibold leading-tight">
-                Zostaw numer —<br />
-                oddzwonimy w 15 minut
+                Zostaw numer telefonu
               </h3>
               <p className="text-sm text-muted-foreground">
                 Chętnie odpowiemy na pytania o dostępność, cenę i pobyt w In The Woods.
@@ -133,7 +132,7 @@ const ExitIntentPopup = () => {
                 </button>
               </div>
               <p className="text-xs text-center text-muted-foreground">
-                Bez zobowiązań. Dzwonimy raz, nie spamujemy.
+                Podaj numer, jeśli chcesz, abyśmy skontaktowali się w sprawie pobytu.
               </p>
             </form>
           </>

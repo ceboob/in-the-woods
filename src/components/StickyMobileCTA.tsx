@@ -35,7 +35,7 @@ const StickyMobileCTA = () => {
           onClick={scrollToBooking}
           className="flex-1 btn-primary !py-3 !px-3 !text-xs inline-flex items-center justify-center gap-2"
         >
-          <Calendar className="w-4 h-4" /> Rezerwuj
+          <Calendar className="w-4 h-4" /> Zapytaj o pobyt
         </button>
       </div>
     </div>

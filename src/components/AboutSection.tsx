@@ -22,24 +22,21 @@ const AboutSection = () => {
           </h2>
           <div className="space-y-4 section-subtitle">
             <p>
-              In The Woods to drewniany dom z bala ukryty w sercu Puszczy Knyszyńskiej, tuż przy
-              rezerwacie przyrody Krzemienne Góry. Miejsce, które zabierasz na wyłączność — z dala
-              od zgiełku, blisko tego, co naprawdę ważne.
+              In The Woods to drewniany dom z bala w miejscowości Konne, w okolicy Supraśla i
+              Puszczy Knyszyńskiej. Cały dom wynajmowany jest jednej grupie.
             </p>
             <p>
               Dom powstał z pasji do natury i drewna. Każdy element wnętrza — od rzeźbionej
-              drewnianej szafki z serduszkami, przez ceglany kominek, po sossnowe belki sufitowe —
-              opowiada historię Podlasia. To nie jest sztuczna stylizacja, lecz autentyczne miejsce
-              z duszą.
+              drewnianej szafki z serduszkami, przez ceglany kominek, po sosnowe belki sufitowe —
+              tworzy charakter wnętrza.
             </p>
             <p>
-              Poranki pachną tu żywicą i kawą parzoną w ciszy. Wieczory płoną w kominku, a między
-              nimi — las, rzeka, niebo pełne gwiazd i czas, który wreszcie zwalnia. Ogrodzony teren
-              zapewnia prywatność i bezpieczeństwo — zarówno dzieciom, jak i czworonogom.
+              W domu można skorzystać z kominka, a na zewnątrz odpocząć w ogrodzie. Przed przyjazdem
+              z dziećmi lub psem sprawdź zasady pobytu i informacje o ogrodzeniu.
             </p>
             <p>
-              To nie jest kolejny nocleg. To rytuał odpoczynku w otoczeniu natury Podlasia, w
-              miejscu, gdzie rano budzi Cię śpiew ptaków, a wieczorem — trzask drewna w kominku.
+              Szczegóły wyposażenia i zasady pobytu znajdziesz na stronie obiektu. Jeśli masz pytania
+              dotyczące wybranego terminu, skontaktuj się z gospodarzem.
             </p>
           </div>
         </div>

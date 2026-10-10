@@ -34,19 +34,19 @@ const Footer = () => (
           <div className="flex items-center gap-3">
             <a
               href="https://www.instagram.com/krzemienna_chata/"
-              aria-label="Instagram"
+              aria-label="Instagram (otworzy się w nowej karcie)"
               className={socialLinkClass}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <Instagram className="h-5 w-5 transition-transform duration-200 group-hover:scale-110" />
             </a>
             <a
               href="https://www.facebook.com/krzemienna.chata/"
-              aria-label="Facebook"
+              aria-label="Facebook (otworzy się w nowej karcie)"
               className={socialLinkClass}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <Facebook className="h-5 w-5 transition-transform duration-200 group-hover:scale-110" />
             </a>
@@ -60,7 +60,7 @@ const Footer = () => (
             href="https://www.airbnb.pl/rooms/1165170256851279014?guests=1&adults=1&s=67&unique_share_id=cd1458aa-ed37-425b-8252-1fcae5ea10b2"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Airbnb"
+            aria-label="Airbnb (otworzy się w nowej karcie)"
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
@@ -74,7 +74,7 @@ const Footer = () => (
             href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Alohacamp"
+            aria-label="Alohacamp (otworzy się w nowej karcie)"
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
@@ -88,7 +88,7 @@ const Footer = () => (
             href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Booking.com"
+            aria-label="Booking.com (otworzy się w nowej karcie)"
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
@@ -102,7 +102,7 @@ const Footer = () => (
             href="https://doginclusive.com/oferty/in-the-woods-"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Doginclusive.pl"
+            aria-label="Doginclusive.pl (otworzy się w nowej karcie)"
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img

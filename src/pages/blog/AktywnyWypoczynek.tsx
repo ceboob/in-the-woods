@@ -11,10 +11,10 @@ const AktywnyWypoczynek = () => (
     readTime="11 min"
     keywords={['aktywny wypoczynek Supraśl', 'szlaki rowerowe Supraśl', 'kajaki Supraśl', 'Green Velo Podlasie', 'Puszcza Knyszyńska szlaki']}
     faqs={[
-      { question: 'Jakie szlaki rowerowe są najlepsze dla rodzin z dziećmi?', answer: 'Najlepsze dla rodzin są trasy wokół Supraśla o długości 10-15 km, np. szlak do Arboretum Kopna Góra. Nawierzchnia jest utwardzona, a trasa wiedzie przez malowniczy las bez dużych przewyższeń.' },
-      { question: 'Gdzie wypożyczyć kajak w Supraślu?', answer: 'Kajaki można wypożyczyć w kilku wypożyczalniach nad rzeką Supraśl. Większość oferuje transport zwrotny i obsługuje grupy zorganizowane. Sezon trwa od maja do września.' },
-      { question: 'Czy w Puszczy Knyszyńskiej można uprawiać nordic walking?', answer: 'Tak — leśne ścieżki wokół Supraśla są idealne do nordic walking. Popularne trasy to Wzgórza Świętojańskie i Szlak Bioróżnorodności o łącznej długości ok. 7 km.' },
-      { question: 'Czy zimą w Supraślu można jeździć na nartach biegowych?', answer: 'Tak, okolice Supraśla oferują wyznaczone trasy do narciarstwa biegowego, szczególnie w rejonie Wzgórz Świętojańskich i szlaków leśnych Puszczy Knyszyńskiej.' },
+      { question: 'Jak wybrać trasę rowerową dla rodziny?', answer: 'Dobierz dystans, nawierzchnię i przewyższenia do możliwości uczestników. Przed wyjazdem sprawdź aktualny przebieg trasy i warunki na drodze.' },
+      { question: 'Gdzie wypożyczyć kajak w Supraślu?', answer: 'Sprawdź aktualnych organizatorów spływów i potwierdź dostępność, trasę, transport oraz wymagane wyposażenie bezpośrednio przed rezerwacją.' },
+      { question: 'Czy w Puszczy Knyszyńskiej można uprawiać nordic walking?', answer: 'Wybierz trasę dopuszczoną do ruchu turystycznego i odpowiednią do swoich możliwości. Sprawdź oznakowanie i ograniczenia na terenach chronionych.' },
+      { question: 'Czy zimą w Supraślu można jeździć na nartach biegowych?', answer: 'Możliwość jazdy zależy od warunków śniegowych i dostępności tras. Przed wyjściem sprawdź aktualne warunki i komunikaty lokalnych służb.' },
     ]}
     relatedArticles={[
       { title: 'Kajaki Supraśl – przewodnik po spływach', slug: 'kajaki-suprasl' },
@@ -33,57 +33,40 @@ const AktywnyWypoczynek = () => (
 
     <h2>1. Najpiękniejsze szlaki rowerowe dla każdego</h2>
     <p>
-      Okolice Supraśla to prawdziwy raj dla rowerzystów. Trasa <strong>Green Velo</strong> —
-      najdłuższy szlak rowerowy w Polsce — przebiega przez Puszczę Knyszyńską, oferując kilkadziesiąt
-      kilometrów tras o różnym stopniu trudności.
-    </p>
-    <p>
-      Dla początkujących polecamy pętlę wokół Supraśla (ok. 15 km), prowadzącą przez cieniste aleje
-      i malownicze polany. Zaawansowani rowerzyści mogą wybrać trasę do{' '}
-      <Link to="/blog/kruszyniany-tatarska-wies">Kruszynian</Link> (ok. 45 km w jedną stronę),
-      łączącą walory przyrodnicze z kulturą tatarską.
-    </p>
-    <p>
-      <strong>Praktyczna wskazówka:</strong> Rowery można wypożyczyć w centrum Supraśla. Warto
-      zaplanować trasę z przystankiem w leśniczówce, gdzie często można kupić lokalne miody i
-      przetwory.
+      Przed wyjazdem wybierz trasę rowerową dostosowaną do umiejętności i sprawdź jej aktualny
+      przebieg, nawierzchnię oraz ograniczenia. Dostępność wypożyczalni, sprzętu i usług potwierdź
+      bezpośrednio u lokalnych organizatorów.
     </p>
 
     <h2>2. Spływ kajakowy rzeką Supraśl – trasy i praktyczne porady</h2>
     <p>
-      Rzeka Supraśl to jeden z najlepszych szlaków kajakowych na Podlasiu. Jej spokojny nurt jest
-      idealny nawet dla <strong>początkujących kajakarzy</strong>, a dzika przyroda wokół zapewnia
-      niezapomniane widoki.
+      Spływ rzeką Supraśl może być jedną z propozycji aktywnego wypoczynku. Dobierz odcinek do
+      doświadczenia i sprawdź warunki na wodzie u organizatora.
     </p>
     <p>
-      Popularne trasy obejmują odcinki od 2 do 6 godzin. Najczęściej wybierany jest szlak z
-      Fasty do Supraśla (ok. 12 km, 3-4 godziny) — prowadzi przez zielony tunel leśny z wieloma
-      miejscami do odpoczynku na brzegu. Więcej szczegółów znajdziesz w naszym{' '}
+      Długość, czas i warunki trasy mogą się różnić. Szczegóły potwierdź przed wyjazdem; więcej
+      praktycznych wskazówek znajdziesz w naszym{' '}
       <Link to="/blog/kajaki-suprasl">przewodniku po spływach kajakowych</Link>.
     </p>
     <p>
-      <strong>Sezon kajakowy:</strong> od maja do końca września. Wypożyczalnie oferują transport
-      zwrotny i podstawowy sprzęt (kamizelki, wiosła).
+      Zakres usług, dostępność sprzętu i terminy spływów potwierdź bezpośrednio u organizatora.
     </p>
 
     <h2>3. Szlaki piesze i nordic walking – odkryj Wzgórza Świętojańskie</h2>
     <p>
-      <strong>Wzgórza Świętojańskie</strong> to jedno z najwyżej położonych miejsc w okolicy, z
-      którego roztacza się panorama na Puszczę Knyszyńską. Szlak pieszy (ok. 8 km) prowadzi przez
-      stary drzewostan bukowy, obok źródeł i strumieni.
+      W okolicy Supraśla znajdziesz trasy spacerowe. Przed wyruszeniem sprawdź przebieg i długość
+      wybranej trasy oraz ograniczenia na terenach chronionych.
     </p>
     <p>
-      Dla miłośników <strong>nordic walking</strong> idealne są leśne ścieżki wokół Supraśla — miękkie
-      podłoże, cień drzew i czyste powietrze. Warto wypróbować także{' '}
-      <Link to="/blog/szlak-bioroznorodnosci-suprasl">Szlak Bioróżnorodności</Link> (7 km),
-      wyposażony w tablice edukacyjne o faunie i florze Puszczy.
+      Na spacer lub nordic walking wybierz publicznie dostępną trasę i stosuj się do lokalnego
+      oznakowania. Więcej informacji o trasach znajdziesz w{' '}
+      <Link to="/blog/szlak-bioroznorodnosci-suprasl">przewodniku po okolicy</Link>.
     </p>
 
     <h2>4. Narciarstwo biegowe zimą – gdzie znaleźć najlepsze trasy?</h2>
     <p>
-      Zimą Puszcza Knyszyńska zamienia się w białą krainę idealną do <strong>narciarstwa
-      biegowego</strong>. Wyznaczone trasy biegowe w rejonie Wzgórz Świętojańskich i leśnych
-      dróg wokół Supraśla oferują kilkadziesiąt kilometrów tras.
+      Zimowa aktywność na zewnątrz zależy od pogody i warunków na trasach. Przed wyjściem sprawdź
+      komunikaty i wybierz drogę udostępnioną dla planowanej formy ruchu.
     </p>
     <p>
       Po mroźnym dniu na trasie warto wrócić do ciepłego domu i rozgrzać się przy kominku. A
@@ -94,18 +77,12 @@ const AktywnyWypoczynek = () => (
 
     <h2>5. Arboretum w Kopnej Górze – leśny ogród botaniczny</h2>
     <p>
-      <strong>Arboretum Kopna Góra</strong>, oddalone 20 minut od Supraśla, to unikatowy ogród
-      botaniczny w sercu puszczy. Na 10 hektarach rosną drzewa i krzewy z całego świata —
-      od sekwoi po japońskie klony.
+      <strong>Arboretum im. Powstańców 1863 w Kopnej Górze</strong> zostało założone w 1988 roku i
+      zajmuje 26 hektarów. Sprawdź u Nadleśnictwa Supraśl aktualne informacje o dojeździe,
+      dostępności i zasadach zwiedzania.
     </p>
     <p>
-      Spacer po arboretum to doskonały pomysł na spokojne popołudnie. Wyznaczone ścieżki,
-      tablice informacyjne i piękne kompozycje roślinne sprawiają, że to idealne miejsce zarówno
-      dla miłośników botaniki, jak i rodzin z dziećmi.
-    </p>
-    <p>
-      <strong>Godziny otwarcia:</strong> od kwietnia do października, codziennie 9:00–18:00.
-      Wstęp: ok. 10 zł (dorośli), 5 zł (dzieci).
+      Szczegóły oferty i dostępność obiektu mogą się zmieniać; potwierdź je przed wizytą.
     </p>
 
     <h2>Gdzie nocować po aktywnym dniu?</h2>

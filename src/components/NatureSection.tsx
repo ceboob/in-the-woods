@@ -2,14 +2,12 @@ import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import ImageReveal from '@/components/ImageReveal';
 import forestPath from '@/assets/forest-panorama-real.webp';
 import drogaImg from '@/assets/droga-lesna-konne.webp';
-import { TreePine, Waves, Bike, Fish, Eye, Compass } from 'lucide-react';
+import { TreePine, Waves, Bike, Eye } from 'lucide-react';
 
 const activities = [
-  { icon: TreePine, label: 'Spacery i grzybobranie' },
+  { icon: TreePine, label: 'Spacery po okolicy' },
   { icon: Bike, label: 'Trasy rowerowe' },
   { icon: Waves, label: 'Spływy kajakowe' },
-  { icon: Fish, label: 'Wędkarstwo' },
-  { icon: Compass, label: 'Jazda konna' },
   { icon: Eye, label: 'Obserwacje nieba' },
 ];
 
@@ -22,7 +20,7 @@ const NatureSection = () => {
         <ImageReveal>
           <img
             src={forestPath}
-            alt="Leśna droga w Puszczy Knyszyńskiej blisko Supraśla — noclegi In The Woods"
+            alt="Leśna droga w okolicy miejscowości Konne"
             className="w-full h-full object-cover"
             loading="lazy"
             width="1920"
@@ -38,7 +36,7 @@ const NatureSection = () => {
             <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-light text-white">
               Puszcza Knyszyńska
               <br />
-              za progiem
+              w okolicy
             </h2>
           </div>
         </div>
@@ -51,16 +49,14 @@ const NatureSection = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-6">
             <p className="section-subtitle">
-              In The Woods leży przy rezerwacie przyrody Krzemienne Góry, w otoczeniu jednego z
-              najcenniejszych kompleksów leśnych w Polsce. Rezerwat chroni ponad 100-letnie
-              drzewostany sosnowe i mieszane, a tuż obok przebiega Szlak Bioróżnorodności Puszczy
-              Knyszyńskiej.
+              In The Woods znajduje się w miejscowości Konne koło Supraśla. Przed spacerem sprawdź
+              przebieg tras i aktualne zasady ochrony przyrody; nie zakładaj, że wszystkie tereny są
+              udostępnione.
             </p>
             <p className="section-subtitle">
-              Rzeka Supraśl płynie nieopodal — latem idealna na spływy kajakowe, a urokliwy Supraśl
-              z prawosławnym Monasterem, Galerią Leśną Powstania Styczniowego i klimatycznymi
-              kawiarniami jest na wyciągnięcie ręki. Do wsi Konne — naszej leśnej osady — prowadzi
-              droga gruntowa przez las, co gwarantuje ciszę i prywatność.
+              W Supraślu możesz odwiedzić Monaster i Muzeum Ikon; przed wyjazdem sprawdź aktualne
+              godziny i zasady zwiedzania. Spływ kajakowy, jeśli go planujesz, potwierdź u
+              organizatora. Informacje o dojeździe do domu otrzymasz przed pobytem.
             </p>
             <div className="grid grid-cols-2 gap-4">
               {activities.map((a, i) => (
@@ -75,7 +71,7 @@ const NatureSection = () => {
             <ImageReveal>
               <img
                 src={drogaImg}
-                alt="Drogowskaz do wsi Konne — leśna droga prowadząca do In The Woods Supraśl"
+                alt="Drogowskaz do miejscowości Konne przy leśnej drodze"
                 className="w-full h-[350px] md:h-[450px] object-cover"
                 loading="lazy"
                 width="800"

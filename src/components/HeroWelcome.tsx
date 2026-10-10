@@ -5,22 +5,22 @@ const benefits = [
   {
     icon: TreePine,
     title: 'Zanurz się w naturze',
-    text: 'Puszcza Knyszyńska szumi tuż za progiem, poranne mgły unoszą się nad polanami, a do zabytkowego Supraśla dotrzesz w niecałe 10 minut. Jeśli szukasz komfortowego domu do wynajęcia w okolicach Białegostoku, z dala od sąsiadów i miejskiego pośpiechu — właśnie go znalazłeś.',
+    text: 'Dom znajduje się w miejscowości Konne, niedaleko Supraśla i Puszczy Knyszyńskiej. Przed podróżą sprawdź aktualną trasę i warunki dojazdu.',
   },
   {
     icon: Home,
     title: 'Dom z bali — komfort w sercu lasu',
-    text: 'Drewniane belki, klimatyczny kominek, płyta kaflowa i\u00a0eleganckie wnętrza. Ogrodzony teren z\u00a0altaną i\u00a0miejscem na ognisko. Dom z\u00a0bali na wyłączność — Twoja prywatna przestrzeń.',
+    text: 'Drewniane belki, kominek i płyta kaflowa. Dom jest wynajmowany na wyłączność; szczegóły wyposażenia ogrodu i zasady korzystania z miejsca na ognisko potwierdź przed przyjazdem.',
   },
   {
     icon: Volume2,
     title: 'Dom na wyłączność — tylko dla Was',
-    text: 'Cały dom i\u00a0ogród na wyłączność. Żadnych obcych gości — to Wasze miejsce na oderwanie od cywilizacji, gotowanie i\u00a0wspólne chwile w\u00a0absolutnej prywatności.',
+    text: 'Cały dom jest wynajmowany jednej grupie. Szczegóły pobytu i dostępne udogodnienia znajdziesz w opisie obiektu.',
   },
   {
     icon: Heart,
-    title: 'Cisza, która leczy',
-    text: 'Domek na odludziu — bez hałaśliwych sąsiadów, tylko las i\u00a0świeże powietrze. Poczuj, jak oddech sam zwalnia. Psy za darmo — Twój czworonóg pokocha to miejsce.',
+    title: 'Spokojny pobyt wśród zieleni',
+    text: 'Możesz odpoczywać we własnym tempie. Możliwość pobytu z psem, ewentualne opłaty i informacje o ogrodzeniu potwierdź z gospodarzem.',
   },
 ];
 
@@ -42,7 +42,7 @@ const HeroWelcome = () => {
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
           <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed font-accent">
-            Oddajemy Wam nasz całoroczny dom z bali na wyłączność — prywatny azyl stworzony z sercem i pasją. Tutaj nie dzielicie przestrzeni z nikim. Tylko Wy, las i prawdziwa cisza. Zanurzcie się w naturze, zwolnijcie i poczujcie, jak wraca spokój. Zarezerwujcie termin już dziś — wolnych dat jest coraz mniej.
+            Oddajemy Wam nasz całoroczny dom z bali na wyłączność — prywatny azyl stworzony z sercem i pasją. Tutaj nie dzielicie przestrzeni z nikim. Tylko Wy, las i chwila wytchnienia. Zanurzcie się w naturze i zwolnijcie tempo. Wyślijcie zapytanie o pobyt, aby poznać dostępność i cenę.
           </p>
         </div>
 

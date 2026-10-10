@@ -84,10 +84,9 @@ const PuszczaKnyszynskaPrzewodnik = () => (
     ]}
   >
     <p className="text-lg leading-relaxed mb-8">
-      Puszcza Knyszyńska to jeden z największych i najlepiej zachowanych kompleksów leśnych w Polsce.
-      Rozciąga się na ponad 130 tysięcy hektarów w województwie podlaskim, obejmując Park Krajobrazowy
-      Puszczy Knyszyńskiej. To raj dla miłośników natury, aktywnego wypoczynku i slow life — miejsce,
-      gdzie czas płynie wolniej, a las leczy ciało i umysł.
+      Puszcza Knyszyńska to rozległy kompleks leśny w województwie podlaskim, obejmujący m.in. obszar
+      Parku Krajobrazowego Puszczy Knyszyńskiej. Przed wyjściem zaplanuj trasę i sprawdź aktualne
+      zasady dostępu oraz ochrony przyrody.
     </p>
 
     {/* ROMANTYCZNIE */}
@@ -122,9 +121,8 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kładki nad wodą</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Magiczne, czasem trudno dostępne miejsca. Na Sianożątce znajdziesz zaskakujące rozlewisko,
-            piękne o wschodzie lub zachodzie Słońca. W Rezerwacie Krzemianka — kręte ścieżki tuż nad
-            taflą wody.
+            Przed wyruszeniem do rezerwatu Krzemianka sprawdź aktualne zasady udostępniania i
+            korzystaj wyłącznie z dozwolonych tras.
           </p>
         </div>
       </div>
@@ -163,22 +161,22 @@ const PuszczaKnyszynskaPrzewodnik = () => (
     {/* SLOW */}
     <section className="mb-12">
       <h2 className="section-title !text-2xl md:!text-3xl flex items-center gap-3">
-        <TreePine className="w-6 h-6 text-primary" /> Slow life — leczenie lasem
+        <TreePine className="w-6 h-6 text-primary" /> Spacery i odpoczynek w lesie
       </h2>
       <div className="space-y-6">
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kąpiele leśne (shinrin-yoku)</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Spokojny spacer między drzewami zwolni puls i wyciszysz umysł. Dąb zwiększy energię,
-            lipa rozweseli, brzoza zrelaksuje. Sosna — powietrze wzbogacone o substancje eteryczne
-            korzystnie wpłynie na układ oddechowy. Przyjedź i wyzdrowiej.
+            Spokojny spacer wśród drzew może być okazją do odpoczynku i wyciszenia. Warto zwolnić
+            tempo, zwrócić uwagę na otoczenie i wybrać trasę dopasowaną do swoich możliwości.
           </p>
         </div>
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Obcowanie z naturą</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Na Wzgórzach Świętojańskich doświadczysz wspinaczki po formach polodowcowych. W Rezerwacie
-            Krzemianka chodzisz tuż nad źródliskami. W okolicach Krynek — stado żubrów.
+            Wzgórza Świętojańskie i rezerwat Krzemianka to przykłady przyrodniczych miejsc w regionie.
+            Przed wycieczką sprawdź wyznaczone trasy i zasady udostępniania; dzikich zwierząt nie
+            należy zbliżać ani dokarmiać.
           </p>
         </div>
       </div>
@@ -193,22 +191,23 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kruszyniany — tatarska wieś</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Kolebka polskich Tatarów z drewnianym meczetem i zabytkowym cmentarzem — mizarem.
-            Spróbuj słynnego pierekaczewnika, kołdunów lub trybuszoki!
+            Kruszyniany są związane z historią polskich Tatarów. We wsi znajdują się meczet i mizar.
+            W lokalnych jadłodajniach można szukać dań kuchni tatarskiej, w tym pierekaczewnika.
           </p>
         </div>
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Podlaskie Muzeum Kultury Ludowej</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Blisko 30 ha ze starymi chałupami, spichlerzami, stodołami. Dla dorosłych — ekspozycja
-            leśnej bimbrowni. Dla dzieci — plac zabaw. Na terenie Muzeum jest też Sokolarnia.
+            Skansen prezentuje tradycyjną architekturę i kulturę regionu. Sprawdź oficjalne informacje
+            placówki, by potwierdzić dostępność ekspozycji, atrakcji i godziny zwiedzania.
           </p>
         </div>
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Supraśl — serce Puszczy</h3>
           <p className="text-muted-foreground leading-relaxed">
-            Monaster z XV/XVI w. z <strong>Muzeum Ikon</strong> (ok. 300 ikon, unikalne freski),
-            domy tkaczy, Pałac Buchholtzów, uzdrowisko z jednymi z najlepszych złóż borowin w Polsce.
+            Monaster, <strong>Muzeum Ikon</strong>, domy tkaczy i Pałac Buchholtzów to wybrane
+            miejsca związane z historią Supraśla. Godziny otwarcia i zasady zwiedzania muzeum
+            sprawdź przed wizytą.
           </p>
         </div>
       </div>
@@ -237,7 +236,7 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         Kominek, balia ogrodowa z funkcją jacuzzi, ogrodzony ogród i las za płotem.{' '}
         <Link to="/dom" className="text-primary underline hover:text-primary/80">Zobacz dom</Link>
         {' '}lub{' '}
-        <Link to="/#rezerwacja" className="text-primary underline hover:text-primary/80">zarezerwuj pobyt</Link>.
+        <Link to="/#rezerwacja" className="text-primary underline hover:text-primary/80">wyślij zapytanie o pobyt</Link>.
       </p>
     </section>
 
@@ -247,7 +246,9 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <strong>Źródło treści i danych GPX:</strong> Stowarzyszenie Przyjaciół Puszczy Knyszyńskiej
         „Wielki Las" i Park Krajobrazowy Puszczy Knyszyńskiej im. prof. Witolda Sławińskiego.
         Dane udostępnione za pośrednictwem portalu{' '}
-        <a href="https://wielkilas.pl" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+        <a href="https://wielkilas.pl" target="_blank" rel="noopener noreferrer"
+          aria-label="Wielkilas.pl (otworzy się w nowej karcie)"
+          className="text-primary underline hover:text-primary/80">
           wielkilas.pl
         </a>.
         Dane GPX udostępnione bezpłatnie do użytku prywatnego.

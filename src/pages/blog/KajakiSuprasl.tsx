@@ -9,27 +9,27 @@ const KajakiSuprasl = () => {
     {
       question: 'Czy kajaki w Supraślu są trudne?',
       answer:
-        'Nie, rzeka Supraśl to spokojna i łagodna rzeka idealna dla początkujących. Brak progów i silnych nurtów sprawia, że spływ jest bezpieczny nawet dla osób bez doświadczenia kajakowego.',
+        'Trudność spływu zależy od odcinka, poziomu wody i pogody. Przed rezerwacją zapytaj organizatora o aktualne warunki oraz o to, czy trasa jest odpowiednia dla osób początkujących.',
     },
     {
       question: 'Ile trwa spływ kajakowy rzeką Supraśl?',
       answer:
-        'W zależności od wybranej trasy, spływ trwa od 2 do 5 godzin. Najpopularniejszy odcinek to około 10–15 km, co zajmuje średnio 3–4 godziny z przerwami na odpoczynek.',
+        'Czas zależy od wybranego odcinka, warunków na rzece i przerw. Potwierdź przewidywany czas oraz miejsce startu i zakończenia u organizatora.',
     },
     {
       question: 'Czy kajaki Supraśl są odpowiednie dla dzieci?',
       answer:
-        'Tak, spokojna rzeka Supraśl jest doskonała dla rodzin z dziećmi. Wiele wypożyczalni oferuje kajaki dwu- i trzyosobowe, idealne na rodzinne wyprawy.',
+        'Możliwość udziału dzieci zależy od warunków, sprzętu i zasad organizatora. Przed rezerwacją zapytaj o minimalny wiek, wymagany nadzór i dostępne wyposażenie.',
     },
     {
       question: 'Kiedy najlepszy sezon na kajaki w Supraślu?',
       answer:
-        'Sezon kajakowy trwa od maja do września. Najlepsze warunki panują od czerwca do sierpnia, gdy poziom wody jest optymalny, a pogoda sprzyja aktywnościom wodnym.',
+        'Terminy spływów i warunki na rzece zmieniają się. Sprawdź aktualne informacje u organizatora i nie wypływaj przy niesprzyjającej pogodzie lub nieodpowiednim stanie wody.',
     },
     {
       question: 'Gdzie nocować po spływie kajakowym w Supraślu?',
       answer:
-        'In The Woods to dom w lesie z jacuzzi, położony w Puszczy Knyszyńskiej blisko Supraśla — idealny na relaks po aktywnym dniu na kajakach.',
+        'Informacje o domu, udogodnieniach i pobycie w In The Woods znajdziesz na stronie noclegów.',
     },
     {
       question: 'Jakie są atrakcje Supraśla oprócz kajaków?',
@@ -73,9 +73,10 @@ const KajakiSuprasl = () => {
       <p>
         <strong>Kajaki w Supraślu</strong> to jedna z najpopularniejszych atrakcji turystycznych
         Puszczy Knyszyńskiej. Rzeka Supraśl, płynąca przez malownicze tereny leśne i łąkowe, oferuje
-        wyjątkowe doświadczenie dla miłośników natury i aktywnego wypoczynku. Spokojna, meandrująca
-        rzeka w otoczeniu dzikiej przyrody sprawia, że <strong>spływ kajakowy rzeką Supraśl</strong>{' '}
-        to doskonała propozycja zarówno dla początkujących, jak i doświadczonych kajakarzy.
+        możliwość spływu zależy od warunków na rzece, pogody i oferty lokalnych organizatorów.
+        Przed wyprawą sprawdź trasę, czas spływu i dostępne wyposażenie.{' '}
+        <strong>Spływ kajakowy rzeką Supraśl</strong> zaplanuj zgodnie ze swoimi umiejętnościami
+        i zaleceniami organizatora.
       </p>
 
       <p>
@@ -112,18 +113,13 @@ const KajakiSuprasl = () => {
       <h3>Wyjątkowe walory rzeki Supraśl</h3>
 
       <p>
-        Rzeka Supraśl wyróżnia się kilkoma cechami, które czynią ją idealnym miejscem na kajaki.
-        Przede wszystkim jest to rzeka <strong>spokojna i bezpieczna</strong> — brak progów wodnych,
-        kaskad czy niebezpiecznych nurtów sprawia, że spływ jest dostępny dla każdego, niezależnie
-        od poziomu doświadczenia. Nurt jest łagodny, co pozwala na swobodne podziwianie krajobrazu
-        bez stresu.
+        Warunki na rzece mogą zależeć od pogody, poziomu wody i wybranego odcinka. Przed wyprawą
+        sprawdź komunikaty i zapytaj organizatora, czy aktualna trasa odpowiada Twojemu doświadczeniu.
       </p>
 
       <p>
-        Otoczenie rzeki to mozaika ekosystemów: gęste lasy liściaste i iglaste, podmokłe łąki,
-        starorzecza i malownicze polany. Krajobraz zmienia się co kilkaset metrów, tworząc
-        niepowtarzalną scenografię naturalną. Woda jest czysta i przejrzysta, a brzegi porośnięte
-        olchami, wierzbami i trawami tworzą naturalny tunel zieleni.
+        Wyprawa kajakiem pozwala oglądać okolicę z perspektywy rzeki. Nie schodź na brzeg ani nie
+        zatrzymuj się w miejscach, w których jest to zabronione lub niebezpieczne.
       </p>
 
       <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
@@ -139,89 +135,57 @@ const KajakiSuprasl = () => {
       <p>
         Typowy spływ kajakowy rzeką Supraśl zaczyna się od odbioru kajaków w jednym z punktów
         wypożyczalni zlokalizowanych w okolicach Supraśla lub okolicznych miejscowości.
-        Organizatorzy zazwyczaj zapewniają transport kajaków na miejsce startu oraz odbiór z mety —
-        dzięki temu nie musisz martwić się o logistykę.
+        Zakres usług i transport sprzętu zależą od organizatora. Przed rezerwacją potwierdź miejsce
+        startu i zakończenia, transport oraz zasady odbioru kajaków.
       </p>
 
       <p>
         Po krótkim instruktażu (dla osób, które nie miały wcześniej do czynienia z kajakami)
-        wyruszasz na wodę. Rzeka prowadzi Cię przez ciche, leśne odcinki, gdzie jedynymi dźwiękami
-        są śpiew ptaków, plusk wody i szum liści. Co jakiś czas pojawiają się naturalne „przystanki"
-        — piaszczyste łachy, polany nad rzeką czy miejsca, gdzie można bezpiecznie wysiąść i
-        odpocząć.
+        wyruszasz na wodę. Zatrzymuj się tylko w miejscach do tego przeznaczonych i bezpiecznych;
+        respektuj oznaczenia oraz zasady ochrony przyrody.
       </p>
 
       <h3>Co zabrać na spływ?</h3>
 
       <p>
-        Na spływ kajakowy warto zabrać: wygodne ubranie, które może się zamoczyć, sandały lub buty
-        do wody, krem z filtrem UV, czapkę lub kapelusz, wodę do picia, przekąski, telefon w
-        wodoodpornym etui (do zdjęć!) oraz ewentualnie lornetkę do obserwacji ptaków. Wypożyczalnie
-        zazwyczaj zapewniają kamizelki ratunkowe i wiosła.
+        Przygotuj odzież odpowiednią do pogody i rzeczy chroniące przed zamoczeniem. Przed wyprawą
+        ustal z organizatorem, jaki sprzęt zapewnia, w tym kamizelki asekuracyjne lub ratunkowe, oraz
+        co należy zabrać samodzielnie.
       </p>
 
-      <h2>Najpopularniejsze trasy kajakowe</h2>
+      <h2>Jak wybrać trasę kajakową?</h2>
 
       <p>
-        W okolicach Supraśla dostępnych jest kilka szlaków kajakowych o różnej długości i stopniu
-        trudności. Wszystkie prowadzą przez malownicze tereny Puszczy Knyszyńskiej i oferują
-        niezapomniane widoki.
+        Organizatorzy mogą oferować różne odcinki. Przed wyborem trasy zapytaj o dystans, przewidywany
+        czas, trudność oraz warunki na rzece w planowanym terminie.
       </p>
 
-      <h3>Trasa krótka (2–3 godziny)</h3>
-
       <p>
-        Idealna na pierwszy raz lub krótki poranny spływ. Obejmuje około 8–10 km spokojnego odcinka
-        rzeki, prowadzącego przez lasy i łąki. To doskonały wybór dla rodzin z małymi dziećmi oraz
-        osób, które chcą spróbować kajaków bez dużego zaangażowania czasowego.
-      </p>
-
-      <h3>Trasa klasyczna (3–5 godzin)</h3>
-
-      <p>
-        Najpopularniejszy wariant, obejmujący 12–18 km rzeki. Trasa pozwala na pełne doświadczenie
-        spływu — od cichych, leśnych odcinków po bardziej otwarte, łąkowe tereny. Po drodze jest
-        wiele miejsc na przystanek, piknik lub kąpiel w ciepłe dni.
-      </p>
-
-      <h3>Trasa wielodniowa</h3>
-
-      <p>
-        Dla doświadczonych kajakarzy dostępne są dłuższe trasy obejmujące kilkadziesiąt kilometrów,
-        które można pokonać w 2–3 dni z noclegami na biwakowiskach lub w{' '}
-        <Link to="/noclegi-suprasl">noclegach w okolicy Supraśla</Link>. To opcja dla osób
-        szukających prawdziwej przygody w sercu Puszczy Knyszyńskiej.
+        Nie publikujemy stałych długości ani czasów tras, ponieważ mogą się zmieniać wraz z ofertą
+        organizatorów i warunkami na rzece. Szczegóły potwierdź przed wyjazdem.
       </p>
 
       <h2>Kajaki dla początkujących</h2>
 
       <p>
-        Jedną z największych zalet spływu rzeką Supraśl jest jego dostępność. Rzeka jest{' '}
-        <strong>spokojna, płytka i pozbawiona niebezpiecznych przeszkód</strong>, co czyni ją
-        idealnym miejscem na pierwszy kontakt z kajakiem. Nie musisz mieć żadnego doświadczenia —
-        wystarczy chęć do przygody i miłość do natury.
+        Osoby początkujące powinny wybrać trasę po konsultacji z organizatorem. Nie zakładaj, że
+        warunki na rzece są zawsze łatwe ani że każda trasa będzie odpowiednia dla każdego.
       </p>
 
       <p>
-        Lokalne wypożyczalnie oferują pełny instruktaż przed każdym spływem. Dowiesz się, jak
-        prawidłowo trzymać wiosło, jak kierować kajakiem i jak zachowywać się na wodzie. Całość trwa
-        kilkanaście minut i daje poczucie pewności nawet osobom, które nigdy wcześniej nie siedziały
-        w kajaku.
+        Zapytaj organizatora o instruktaż, wymagane wyposażenie oraz zasady zachowania na wodzie.
       </p>
 
       <h2>Kajaki rodzinne</h2>
 
       <p>
-        <strong>Kajaki w Supraślu</strong> to doskonała atrakcja dla rodzin z dziećmi. Spokojna
-        rzeka, brak niebezpieczeństw i piękna przyroda sprawiają, że spływ rodzinny to nie tylko
-        sport, ale też wspólna przygoda i nauka o naturze. Dzieci uwielbiają obserwować ptaki, ryby
-        i bobry widoczne z poziomu wody.
+        Udział dzieci wymaga dobrania trasy, sprzętu i opieki do ich wieku oraz umiejętności.
+        Potwierdź minimalny wiek, zasady nadzoru i wymagane wyposażenie u organizatora; opiekun
+        powinien ocenić warunki przed rozpoczęciem spływu.
       </p>
 
       <p>
-        Wypożyczalnie oferują kajaki dwu- i trzyosobowe, idealne dla rodziny z jednym lub dwojgiem
-        dzieci. Dla większych grup dostępne są również pontony i canoe, które pomieszczą nawet 4–5
-        osób.
+        Dostępne typy sprzętu i dopuszczalną liczbę osób w jednostce potwierdź w wypożyczalni.
       </p>
 
       <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
@@ -259,17 +223,15 @@ const KajakiSuprasl = () => {
 
       <p>
         Warto zabrać lornetkę i aparat fotograficzny — szczególnie o poranku i pod wieczór, gdy
-        zwierzęta są najbardziej aktywne. Cisza panująca na rzece pozwala na bliskie obserwacje bez
-        płoszenia mieszkańców puszczy.
+        zwierzęta są najbardziej aktywne.         Obserwuj zwierzęta z dystansu i nie płosz ich ani nie dokarmiaj.
       </p>
 
       <h2>Praktyczne wskazówki</h2>
 
       <h3>Rezerwacja</h3>
       <p>
-        W sezonie letnim (lipiec–sierpień) zalecamy wcześniejszą rezerwację kajaków, szczególnie na
-        weekendy. Kontaktuj się z wypożyczalniami z co najmniej kilkudniowym wyprzedzeniem, aby
-        zagwarantować sobie miejsce.
+        Sprawdź dostępność sprzętu i zasady rezerwacji bezpośrednio u organizatora. Potwierdzenie
+        terminu oraz warunków uzyskaj przed przyjazdem.
       </p>
 
       <h3>Bezpieczeństwo</h3>
@@ -281,9 +243,8 @@ const KajakiSuprasl = () => {
 
       <h3>Dojazd</h3>
       <p>
-        Większość wypożyczalni kajaków znajduje się w okolicach Supraśla i jest łatwo dostępna
-        samochodem. Wiele z nich oferuje transport z centrum Supraśla lub z{' '}
-        <Link to="/noclegi-suprasl">noclegu w okolicy</Link>. Parking jest zazwyczaj bezpłatny.
+        Przed wyjazdem sprawdź adres organizatora, miejsce startu i zakończenia oraz dostępne opcje
+        dojazdu i transportu. Informacje te mogą różnić się zależnie od wybranej trasy.
       </p>
 
       <h2>Slow tourism na wodzie</h2>

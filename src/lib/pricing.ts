@@ -59,6 +59,10 @@ export const SEASONS: SeasonConfig[] = [
   },
 ];
 
+export const MIN_NIGHTLY_RATE = Math.min(
+  ...SEASONS.flatMap((season) => Object.values(season.prices)),
+);
+
 export const WEEKEND_SURCHARGE = 100; // PLN per night on Fri/Sat
 export const LONG_STAY_DISCOUNT = 0.10; // 10% discount for 7+ nights
 export const GARDEN_TUB_PRICE = 250; // PLN per stay
@@ -119,6 +123,18 @@ export function calculateTotalPrice(
   const discount = nightPrices.length >= 7 ? Math.round(baseTotal * LONG_STAY_DISCOUNT) : 0;
 
   return { nightPrices, total: baseTotal - discount, extraGuestTotal: 0, discount };
+}
+
+export function getMinimumNightsForStay(checkIn: Date, checkOut: Date): number {
+  if (checkOut <= checkIn) return getSeasonForDate(checkIn).minNights;
+
+  let minimum = MIN_NIGHTS;
+  const current = new Date(checkIn);
+  while (current < checkOut) {
+    minimum = Math.max(minimum, getSeasonForDate(current).minNights);
+    current.setDate(current.getDate() + 1);
+  }
+  return minimum;
 }
 
 export function isWeekendDay(date: Date): boolean {

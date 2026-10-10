@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 
 const UzdrowiSkoSPA = () => (
   <BlogArticleLayout
-    title="Uzdrowisko Supraśl: Leczenie borowiną i SPA"
-    metaTitle="Uzdrowisko Supraśl: Borowina, SPA, Sanatoria | Przewodnik"
-    metaDescription="Supraśl to jedyne uzdrowisko na Podlasiu. Borowina, grota solna, zabiegi SPA i wellness. Dowiedz się, jak zaplanować pobyt zdrowotny w Supraślu."
+    title="Uzdrowisko Supraśl: wellness i wypoczynek"
+    metaTitle="Uzdrowisko Supraśl – informacje o wellness i pobycie"
+    metaDescription="Poznaj możliwości wypoczynku w Supraślu. Sprawdź aktualną ofertę zabiegów bezpośrednio u usługodawców i zaplanuj pobyt zgodnie ze swoimi potrzebami."
     slug="uzdrowisko-spa-suprasl"
     publishDate="2026-04-09"
     readTime="10 min"
-    keywords={['uzdrowisko Supraśl', 'borowina Supraśl', 'SPA Supraśl', 'sanatorium Supraśl', 'leczenie borowiną Podlasie']}
+    keywords={['uzdrowisko Supraśl', 'wellness Supraśl', 'SPA Supraśl', 'sanatorium Supraśl']}
     faqs={[
-      { question: 'Jakie choroby leczy Uzdrowisko Supraśl?', answer: 'Uzdrowisko Supraśl specjalizuje się w leczeniu chorób narządu ruchu, chorób reumatycznych, schorzeń kardiologicznych oraz chorób układu oddechowego. Borowina z Podsokołdy jest szczególnie skuteczna w leczeniu bólów stawów i kręgosłupa.' },
-      { question: 'Czy do sanatorium w Supraślu potrzebne jest skierowanie?', answer: 'Na pobyt leczniczy refundowany przez NFZ potrzebne jest skierowanie od lekarza. Pobyty komercyjne i pakiety SPA są dostępne bez skierowania — wystarczy rezerwacja w wybranym hotelu lub sanatorium.' },
-      { question: 'Jakie zabiegi SPA oferują hotele w Supraślu?', answer: 'Hotele SPA w Supraślu oferują m.in. kąpiele borowinowe, masaże relaksacyjne i lecznicze, zabiegi w grocie solnej, saunę, jacuzzi, a także zabiegi kosmetyczne. Oferta różni się w zależności od obiektu.' },
-      { question: 'Czy w Supraślu są tężnie solankowe?', answer: 'Tak, w okolicach Supraśla i Białegostoku znajdują się tężnie solankowe. Spacer w ich sąsiedztwie pozwala wdychać aerozol solankowy, korzystny dla dróg oddechowych.' },
+      { question: 'Czy pobyt w uzdrowisku zastępuje konsultację lekarską?', answer: 'Nie. W sprawie diagnozy, leczenia i przeciwwskazań skontaktuj się z lekarzem lub właściwym świadczeniodawcą.' },
+      { question: 'Czy do sanatorium w Supraślu potrzebne jest skierowanie?', answer: 'Wymagania zależą od rodzaju pobytu i świadczeniodawcy. Potwierdź zasady skierowania oraz rejestracji bezpośrednio w wybranej placówce.' },
+      { question: 'Jakie zabiegi SPA są dostępne w Supraślu?', answer: 'Oferta i dostępność usług zależą od konkretnego obiektu. Przed wizytą sprawdź aktualny zakres, ceny i ewentualne przeciwwskazania u usługodawcy.' },
+      { question: 'Gdzie sprawdzić informacje o tężniach i pijalniach?', answer: 'Aktualną lokalizację, dostępność i zasady korzystania potwierdź w lokalnej informacji turystycznej lub u operatora obiektu.' },
     ]}
     relatedArticles={[
       { title: 'Aktywny wypoczynek w Puszczy Knyszyńskiej', slug: 'aktywny-wypoczynek-suprasl' },
@@ -23,91 +23,78 @@ const UzdrowiSkoSPA = () => (
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
-    <h2>Uzdrowisko Supraśl: leczenie borowiną i regeneracja</h2>
+    <h2>Wypoczynek w Supraślu</h2>
 
     <p>
-      Supraśl to <strong>jedyne uzdrowisko w województwie podlaskim</strong>, słynące z borowiny i
-      wyjątkowego mikroklimatu Puszczy Knyszyńskiej. Dowiedz się, jakie zabiegi oferują tutejsze
-      sanatoria i jak zaplanować pobyt zdrowotny, który zregeneruje Twoje ciało i umysł.
+      Supraśl jest uzdrowiskiem położonym w sąsiedztwie Puszczy Knyszyńskiej. Zakres świadczeń i
+      warunki pobytu leczniczego potwierdź bezpośrednio w odpowiedniej placówce.
     </p>
 
-    <h2>Borowina z Podsokołdy – naturalny skarb Supraśla</h2>
+    <h2>Zabiegi uzdrowiskowe w Supraślu</h2>
     <p>
-      Borowina wydobywana z złóż w <strong>Podsokołdzie</strong>, niewielkiej miejscowości koło
-      Supraśla, jest uważana za jedną z najcenniejszych w Polsce. Bogata w kwasy huminowe, minerały
-      i substancje biologicznie czynne, stosowana jest w zabiegach leczniczych od dziesięcioleci.
+      W okolicy Supraśla można znaleźć ofertę zabiegów uzdrowiskowych i wellness. Szczegóły dotyczące
+      pochodzenia surowców, wskazań i dostępności warto potwierdzić u usługodawcy.
     </p>
     <p>
-      Kąpiele borowinowe, okłady i kompresy pomagają w leczeniu bólów stawów, chorób
-      reumatycznych i schorzeń skórnych. Ciepłe okłady z borowiny rozluźniają mięśnie, poprawiają
-      krążenie i przyspieszają regenerację po wysiłku fizycznym.
+      Zabiegi mogą być elementem oferty konkretnego ośrodka, ale nie zastępują konsultacji
+      medycznej. Przed skorzystaniem z nich zapoznaj się z przeciwwskazaniami i zaleceniami personelu.
     </p>
 
-    <h2>Profil leczenia: dla kogo jest Uzdrowisko Supraśl?</h2>
+    <h2>Jak sprawdzić ofertę zabiegów?</h2>
     <p>
-      Uzdrowisko Supraśl specjalizuje się w leczeniu:
+      Zakres usług i wskazania zależą od placówki. Informacji o dostępnych świadczeniach udzielają
+      bezpośrednio sanatoria i gabinety:
     </p>
     <ul>
-      <li><strong>Chorób narządu ruchu</strong> — bóle kręgosłupa, zwyrodnienia stawów, reumatyzm</li>
-      <li><strong>Schorzeń kardiologicznych</strong> — nadciśnienie, rehabilitacja po zawałach</li>
-      <li><strong>Chorób układu oddechowego</strong> — astma, przewlekłe zapalenie oskrzeli</li>
-      <li><strong>Schorzeń dermatologicznych</strong> — łuszczyca, egzema</li>
+      <li>Rodzaje zabiegów i ich dostępność</li>
+      <li>Wymagane skierowania oraz zasady rejestracji</li>
+      <li>Przeciwwskazania i zalecenia przed zabiegiem</li>
     </ul>
     <p>
-      Mikroklimat Puszczy Knyszyńskiej — z wyjątkowo czystym, jonizowanym powietrzem — wspiera
-      leczenie chorób oddechowych i działa kojąco na układ nerwowy.
+      Puszcza Knyszyńska i okolice Supraśla sprzyjają spacerom i spokojnemu wypoczynkowi. Nie należy
+      jednak traktować samego pobytu ani lokalnego klimatu jako metody leczenia.
     </p>
 
-    <h2>Przegląd sanatoriów i hoteli SPA w Supraślu</h2>
+    <h2>Jak wybrać ofertę?</h2>
     <p>
-      Supraśl oferuje kilka obiektów z zapleczem leczniczym i wellness:
+      Przed rezerwacją pobytu porównaj zakres usług i potwierdź szczegóły bezpośrednio u
+      usługodawcy:
     </p>
     <ul>
-      <li>
-        <strong>Hotel Knieja</strong> — jeden z najstarszych obiektów uzdrowiskowych w Supraślu.
-        Oferuje pełen zakres zabiegów borowinowych, fizykoterapię i rehabilitację.
-      </li>
-      <li>
-        <strong>Holmed</strong> — nowoczesny ośrodek zdrowotny z bazą zabiegową, grotem solną
-        i strefą wellness.
-      </li>
-      <li>
-        <strong>Mniejsze pensjonaty SPA</strong> — oferujące masaże, saunę i zabiegi relaksacyjne
-        w kameralnej atmosferze.
-      </li>
+      <li>Zakres usług, terminy i całkowity koszt</li>
+      <li>Wymagane skierowanie, rejestracja i dokumenty</li>
+      <li>Przeciwwskazania oraz zalecenia personelu</li>
     </ul>
     <p>
-      Pobyt leczniczy trwa zwykle 2-3 tygodnie (refundowany przez NFZ ze skierowaniem). Pobyty
-      komercyjne i weekendowe pakiety SPA są dostępne dla każdego — bez skierowania.
+      Warunki pobytów leczniczych, ewentualne skierowanie, dostępność i ceny należy potwierdzić w
+      wybranym ośrodku lub u właściwego świadczeniodawcy.
     </p>
 
     <h2>Nie tylko leczenie – relaks w strefie wellness</h2>
     <p>
-      Nawet jeśli nie planujesz pobytu leczniczego, <strong>strefy wellness</strong> w hotelach
-      Supraśla zapraszają na chwilę relaksu. Groty solne, sauny fińskie i infrared, baseny z
-      hydromasażem — to idealny sposób na regenerację po{' '}
-      <Link to="/blog/aktywny-wypoczynek-suprasl">aktywnym dniu na szlakach</Link>.
+      Jeśli interesują Cię usługi wellness, sprawdź ich dostępność bezpośrednio w wybranym obiekcie.
+      Oferta może się różnić i nie należy traktować jej jako metody leczenia. Zobacz propozycje{' '}
+      <Link to="/blog/aktywny-wypoczynek-suprasl">aktywności na świeżym powietrzu</Link>.
     </p>
     <p>
-      Wiele obiektów oferuje masaże klasyczne, relaksacyjne i lecznicze, a także zabiegi
-      kosmetyczne z wykorzystaniem naturalnych produktów z regionu.
+      Przed skorzystaniem z usługi zapoznaj się z jej zakresem, ceną, przeciwwskazaniami i zaleceniami
+      personelu.
     </p>
 
     <h2>Pijalnia wód i tężnie – gdzie ich szukać?</h2>
     <p>
-      W samym Supraślu i jego okolicach znajdziesz <strong>tężnie solankowe</strong>, przy których
-      warto zatrzymać się na spacerze. Aerozol solankowy jest szczególnie korzystny dla osób z
-      problemami oddechowymi i alergiami.
+      Przed planowaną wizytą w tężni lub pijalni sprawdź, czy obiekt działa i jakie zasady korzystania
+      obowiązują. Nie przypisujemy takim wizytom efektów zdrowotnych.
     </p>
     <p>
-      Warto także odwiedzić pijalnie wód mineralnych w sąsiednich uzdrowiskach regionu.
+      Informacje o pijalniach wód w regionie potwierdź u lokalnych operatorów.
     </p>
 
     <h2>Gdzie nocować podczas pobytu uzdrowiskowego?</h2>
     <p>
-      Jeśli szukasz alternatywy dla hotelowego SPA — prywatności, ciszy i kontaktu z naturą —{' '}
-      <Link to="/">In The Woods</Link> to dom w lesie z balią ogrodową z funkcją jacuzzi, kominkiem i ogrodem. Po
-      zabiegach w uzdrowisku wracasz do swojego azylu w Puszczy Knyszyńskiej.{' '}
+      Jeśli szukasz noclegu w okolicy, sprawdź ofertę{' '}
+      <Link to="/">In The Woods</Link>. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem;
+      dostępność i warunki korzystania potwierdź przed pobytem.{' '}
       <Link to="/noclegi-suprasl">Sprawdź noclegi</Link>.
     </p>
   </BlogArticleLayout>

@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 
 const PrzewodnikKulinarny = () => (
   <BlogArticleLayout
-    title="Smaki Supraśla: Kartacze i lokalna kuchnia"
-    metaTitle="Gdzie zjeść w Supraślu? Restauracje i kuchnia"
-    metaDescription="Sprawdź, gdzie dobrze zjeść w Supraślu. Odkryj restauracje serwujące podlaskie specjały: kartacze, babkę ziemniaczaną i dania kuchni tatarskiej."
+    title="Kuchnia regionalna — gdzie szukać aktualnych informacji?"
+    metaTitle="Kuchnia regionalna w okolicy Supraśla — praktyczne wskazówki"
+    metaDescription="Sprawdź aktualne menu, godziny otwarcia i dostępność lokali w Supraślu oraz okolicy. Informacje o tradycyjnych produktach znajdziesz u ich oficjalnych źródeł."
     slug="przewodnik-kulinarny-suprasl"
     publishDate="2026-04-09"
     readTime="12 min"
     keywords={['restauracje Supraśl', 'gdzie zjeść Supraśl', 'kartacze Supraśl', 'kuchnia podlaska', 'kuchnia tatarska Podlasie']}
     faqs={[
-      { question: 'Jakie danie jest wizytówką kuchni podlaskiej?', answer: 'Kartacze (inaczej cepeliny lub babka gotowana) — duże kluski z tartych ziemniaków nadziewane mięsem, to absolutna wizytówka Podlasia. W Supraślu serwuje je większość restauracji z kuchnią regionalną.' },
-      { question: 'Gdzie w Supraślu można spróbować kuchni tatarskiej?', answer: 'Kuchnia tatarska dostępna jest głównie w Kruszynianach (45 min od Supraśla), gdzie lokalne jadłodajnie serwują pierekaczewnik, kołduny tatarskie i inne specjały. Niektóre restauracje w Supraślu również oferują dania inspirowane kuchnią tatarską.' },
-      { question: 'Czy w Supraślu są dobre kawiarnie?', answer: 'Tak — w centrum Supraśla działa kilka klimatycznych kawiarni serwujących rzemieślniczą kawę, domowe ciasta i lokalne desery. To idealne miejsca na popołudniowy odpoczynek po zwiedzaniu.' },
-      { question: 'Jakie lokalne produkty warto kupić jako pamiątkę?', answer: 'Warto kupić miody z pasiek Puszczy Knyszyńskiej, sery i nabiał od lokalnych producentów, wędliny domowe, a także sękacz — tradycyjne podlaskie ciasto pieczone na rożnie.' },
+      { question: 'Jak sprawdzić, co można zjeść w Supraślu?', answer: 'Menu i godziny otwarcia zmieniają się. Sprawdź je bezpośrednio w wybranym lokalu przed wizytą.' },
+      { question: 'Gdzie szukać kuchni tatarskiej?', answer: 'Przed wyjazdem do Kruszynian sprawdź aktualną trasę oraz ofertę i godziny lokali. Dostępność potraw może się zmieniać.' },
+      { question: 'Czy w Supraślu są kawiarnie?', answer: 'Aktualną listę lokali, godziny i menu sprawdź w lokalnych informatorach lub bezpośrednio w wybranych kawiarniach.' },
+      { question: 'Gdzie sprawdzić opis pierekaczewnika?', answer: 'Oficjalny opis produktu znajduje się na stronie Ministerstwa Rolnictwa wskazanej w artykule.' },
     ]}
     relatedArticles={[
       { title: 'Restauracje Supraśl – gdzie zjeść', slug: 'restauracje-suprasl' },
@@ -23,58 +23,22 @@ const PrzewodnikKulinarny = () => (
       { title: 'Uzdrowisko Supraśl – SPA i wellness', slug: 'uzdrowisko-spa-suprasl' },
     ]}
   >
-    <h2>Smaki Supraśla: gdzie zjeść kartacze i babkę ziemniaczaną</h2>
+    <h2>Jak zaplanować posiłek w Supraślu?</h2>
 
     <p>
-      Podróż nie jest kompletna bez poznania lokalnych smaków. Zabierzemy Cię w <strong>kulinarną
-      podróż po Supraślu</strong>, odkrywając miejsca, gdzie tradycja spotyka się z pasją do
-      gotowania. Kuchnia podlaska to jedne z najbardziej autentycznych smaków w Polsce.
+      Menu, ceny, godziny otwarcia i dostępność lokali mogą się zmieniać. Przed wizytą sprawdź
+      informacje bezpośrednio w wybranym miejscu.
     </p>
 
-    <h2>TOP 5 dań kuchni podlaskiej, których musisz spróbować</h2>
-    <ol>
-      <li>
-        <strong>Kartacze (cepeliny)</strong> — duże kluski z tartych ziemniaków nadziewane mięsem
-        wieprzowym, podawane z okrasą z boczku i cebulą. To absolutna ikona kuchni podlaskiej.
-      </li>
-      <li>
-        <strong>Babka ziemniaczana</strong> — zapiekanka z tartych ziemniaków z boczkiem i cebulą,
-        pieczona do złotej skórki. Podawana z sosem grzybowym lub kwaśną śmietaną.
-      </li>
-      <li>
-        <strong>Sękacz</strong> — tradycyjne ciasto pieczone na rożnie, warstwa po warstwie.
-        Charakterystyczny kształt przypominający gałęzie drzewa. Idealny z kawą.
-      </li>
-      <li>
-        <strong>Pierogi z darów puszczy</strong> — pierogi z nadzieniem z grzybów leśnych,
-        jagód lub szpinaku. Sezonowe warianty z kurkami to prawdziwy przysmak.
-      </li>
-      <li>
-        <strong>Kiszka ziemniaczana</strong> — nadziewana jelita z masą ziemniaczaną, podawana
-        na gorąco z okrasą. Trudno znaleźć poza Podlasiem.
-      </li>
-    </ol>
-
-    <h2>Polecane restauracje w Supraślu</h2>
-
-    <h3>Jarzębinka</h3>
     <p>
-      Kameralny lokal w centrum Supraśla, specjalizujący się w <strong>kuchni podlaskiej</strong>.
-      Kartacze, babka ziemniaczana i zupy na domowym rosole to ich wizytówka. Ciepła, domowa
-      atmosfera i przystępne ceny.
+      Jeśli interesują Cię potrawy regionalne, zapytaj lokal o aktualne menu i sposób przygotowania
+      dań. Nie zakładaj, że konkretna potrawa jest dostępna w każdym miejscu.
     </p>
 
-    <h3>Spiżarnia Smaków</h3>
+    <h2>Restauracje i kawiarnie</h2>
     <p>
-      Restauracja łącząca tradycję z nowoczesnością. Menu oparte na lokalnych, sezonowych
-      produktach. Polecane: tatar z polędwicy, pierogi z grzybami leśnymi i domowe desery.
-    </p>
-
-    <h3>Łukaszówka</h3>
-    <p>
-      Urokliwy lokal przy drodze z Supraśla, z tarasem i widokiem na las. Serwuje dania kuchni
-      polskiej z akcentami regionalnymi. Idealny na obiad po{' '}
-      <Link to="/atrakcje-suprasl">zwiedzaniu atrakcji Supraśla</Link>.
+      Sprawdź aktualną listę lokali, menu i godziny pracy przed wyjazdem. Wskazówki znajdziesz w{' '}
+      <Link to="/blog/restauracje-suprasl">przewodniku po restauracjach Supraśla</Link>.
     </p>
 
     <p>
@@ -84,47 +48,40 @@ const PrzewodnikKulinarny = () => (
 
     <h2>Kuchnia regionalna vs. kuchnia tatarska – gdzie szukać unikalnych smaków?</h2>
     <p>
-      Podlasie to region, gdzie spotykają się kultury: polska, białoruska, litewska i{' '}
-      <strong>tatarska</strong>. Kuchnia tatarska to osobny świat smaków, który warto poznać
-      podczas wizyty w regionie.
+      Jeśli planujesz odwiedzić Kruszyniany, zaplanuj trasę i sprawdź godziny zwiedzania obiektów
+      oraz dostępność lokali przed wyjazdem.
     </p>
     <p>
-      <strong>Pierekaczewnik</strong> — tatarski placek z mięsem, pieczony na blasze — to danie,
-      którego nie znajdziesz nigdzie indziej. Jadłodajnie w{' '}
-      <Link to="/blog/kruszyniany-tatarska-wies">Kruszynianach</Link> (45 min od Supraśla)
-      serwują autentyczne dania tatarskie przygotowywane według wielowiekowych receptur.
+      Szczegółowy opis <strong>pierekaczewnika</strong> znajdziesz na stronie{' '}
+      <a href="https://www.gov.pl/web/rolnictwo/pierekaczewnik" target="_blank" rel="noopener noreferrer"
+        aria-label="Opis pierekaczewnika na stronie Ministerstwa Rolnictwa (otworzy się w nowej karcie)">
+        Ministerstwo Rolnictwa
+      </a>
+      . Przed wyjazdem zapytaj lokalne punkty o menu i dostępność potraw.
     </p>
     <p>
-      Warto zaplanować jednodniową wycieczkę z Supraśla do Kruszynian — połączysz zwiedzanie
-      zabytkowego meczetu z degustacją kuchni tatarskiej.
+      Informacje o miejscowości znajdziesz w przewodniku po{' '}
+      <Link to="/blog/kruszyniany-tatarska-wies">Kruszynianach</Link>. Sprawdź trasę i zasady
+      zwiedzania przed podróżą.
     </p>
 
-    <h2>Kawiarnie i cukiernie – gdzie na najlepszą kawę i deser?</h2>
+    <h2>Lokale w centrum</h2>
     <p>
-      Supraśl zaskakuje ofertą <strong>kawiarni</strong> jak na niewielkie uzdrowisko.
-      Rzemieślnicza kawa, domowe ciasta i sezonowe desery — to idealne miejsca na popołudniowy
-      relaks po spacerze po <Link to="/atrakcje-suprasl">zabytkach miasta</Link>.
+      Wybierając kawiarnię lub restaurację, sprawdź aktualne godziny, menu i lokalizację. Informacje
+      mogą się zmieniać.
     </p>
     <p>
-      Szukaj lokali przy ulicy 3 Maja i w okolicach Rynku — to tam skupia się życie
-      gastronomiczne Supraśla.
+      Planując dojazd, sprawdź adres lokalu oraz dostępne miejsca parkingowe i zasady postoju.
     </p>
 
-    <h2>Lokalne produkty, które warto kupić jako pamiątkę</h2>
-    <ul>
-      <li><strong>Miody z pasiek Puszczy Knyszyńskiej</strong> — lipowe, wielokwiatowe, spadziowe</li>
-      <li><strong>Sękacz</strong> — idealny prezent z Podlasia, pakowany w eleganckie opakowania</li>
-      <li><strong>Sery i nabiał</strong> od lokalnych producentów</li>
-      <li><strong>Wędliny domowe</strong> — tradycyjne wyroby z niewielkich masarni</li>
-      <li><strong>Zioła i herbaty</strong> z Puszczy Knyszyńskiej</li>
-    </ul>
+    <h2>Lokalne produkty</h2>
+    <p>Jeśli szukasz produktów regionalnych, sprawdź aktualne miejsca sprzedaży i informacje o wytwórcach.</p>
 
     <h2>Gdzie nocować, żeby smakować Podlasie?</h2>
     <p>
-      <Link to="/">In The Woods</Link> — prywatny dom w lesie z w pełni wyposażoną kuchnią.
-      Po dniu pełnym kulinarnych odkryć przygotuj własną kolację z lokalnych produktów kupionych
-      na targu, a wieczór spędź przy kominku.{' '}
-      <Link to="/noclegi-suprasl">Sprawdź dostępność</Link>.
+      <Link to="/">In The Woods</Link> to dom na wyłączność w miejscowości Konne koło Supraśla.
+      Przed pobytem sprawdź lokalizację, wyposażenie i dostępność opcjonalnych dodatków.{' '}
+      <Link to="/#rezerwacja">Wyślij zapytanie o pobyt</Link>.
     </p>
   </BlogArticleLayout>
 );

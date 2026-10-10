@@ -9,7 +9,6 @@ import {
   Bike,
   Waves,
   MapPin,
-  Clock,
   ArrowRight,
 } from 'lucide-react';
 import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
@@ -29,10 +28,10 @@ const attractions = [
 ];
 
 const nearby = [
-  { name: 'Supraśl', time: '10 min' },
-  { name: 'Białystok', time: '25 min' },
-  { name: 'Arboretum Kopna Góra', time: '20 min' },
-  { name: 'Kruszyniany — kuchnia tatarska', time: '45 min' },
+  { name: 'Supraśl' },
+  { name: 'Białystok' },
+  { name: 'Arboretum Kopna Góra' },
+  { name: 'Kruszyniany' },
 ];
 
 const guides = [
@@ -40,46 +39,46 @@ const guides = [
     slug: 'szlak-bioroznorodnosci-suprasl',
     title: 'Szlak Bioróżnorodności Supraśl',
     excerpt:
-      'Edukacyjna ścieżka przez serce Puszczy Knyszyńskiej — 7 km wśród unikalnej flory i fauny.',
+      'Przed spacerem sprawdź aktualny przebieg, długość i warunki trasy.',
     image: blogSzlakBio,
-    alt: 'Szlak Bioróżnorodności Supraśl – Puszcza Knyszyńska szlaki przyrodnicze',
+    alt: 'Leśna ścieżka w okolicy Supraśla',
   },
   {
     slug: 'kruszyniany-tatarska-wies',
     title: 'Kruszyniany – tatarska wieś Podlasia',
     excerpt:
-      'Meczet, kuchnia tatarska i wielowiekowa tradycja — odkryj jedno z najbardziej niezwykłych miejsc w Polsce.',
+      'Informacje o meczecie, dziedzictwie tatarskim i zasadach zwiedzania Kruszynian.',
     image: blogKruszyniany,
-    alt: 'Kruszyniany meczet – tatarska wieś Podlasie atrakcje',
+    alt: 'Drewniany meczet w Kruszynianach',
   },
   {
     slug: 'suprasl-atrakcje-uzdrowisko',
     title: 'Supraśl – atrakcje uzdrowiska Podlasia',
     excerpt:
-      'Monaster, Muzeum Ikon, bulwary i Teatr Wierszalin — kompletny przewodnik po perle Podlasia.',
+      'Monaster, Muzeum Ikon i spacer nad rzeką — sprawdź informacje przed wizytą.',
     image: blogSupraslUzdrowisko,
-    alt: 'Supraśl atrakcje uzdrowisko – Monaster, Muzeum Ikon, co zobaczyć',
+    alt: 'Monaster Zwiastowania NMP w Supraślu',
   },
   {
     slug: 'kajaki-suprasl',
     title: 'Kajaki Supraśl – spływy rzeką Supraśl',
     excerpt:
-      'Spokojna rzeka w sercu puszczy — idealna na rodzinny spływ kajakowy i obserwację przyrody.',
+      'Informacje, które warto sprawdzić przed zaplanowaniem spływu kajakowego rzeką Supraśl.',
     image: blogKajaki,
-    alt: 'kajaki Supraśl – spływ kajakowy rzeką Supraśl w Puszczy Knyszyńskiej',
+    alt: 'Kajaki na rzece Supraśl',
   },
   {
     slug: 'restauracje-suprasl',
     title: 'Restauracje Supraśl – gdzie zjeść',
     excerpt: 'Kartacze, babka ziemniaczana i kuchnia tatarska — przewodnik kulinarny po Supraślu.',
     image: blogRestauracje,
-    alt: 'restauracje Supraśl – kuchnia podlaska jedzenie Supraśl',
+    alt: 'Danie kuchni regionalnej w Supraślu',
   },
   {
     slug: 'puszcza-knyszynska-historie',
     title: 'Puszcza Knyszyńska – 7 niezwykłych historii',
     excerpt:
-      'Galeria Leśna Powstania Styczniowego, legendy, duchy powstańców i dom w lesie 300 m od atrakcji.',
+      'Galeria Leśna Powstania Styczniowego i inne miejsca związane z historią regionu.',
     image: blogPuszczaHistorie,
     alt: 'Puszcza Knyszyńska historie – leśna droga w porannej mgle',
   },
@@ -100,8 +99,8 @@ const SupraslSection = () => {
           </p>
           <h2 className="section-title">Puszcza Knyszyńska i Supraśl – co warto zobaczyć</h2>
           <p className="section-subtitle mx-auto">
-            Przewodnik po najciekawszych miejscach w okolicy In The Woods. Supraśl — klimatyczne
-            miasteczko uzdrowiskowe w sercu Puszczy Knyszyńskiej — leży zaledwie 10 minut od chaty.
+            Przewodnik po miejscach, które możesz uwzględnić podczas pobytu. Przed wyjazdem sprawdź
+            aktualną trasę, godziny otwarcia i zasady zwiedzania.
           </p>
         </div>
 
@@ -115,10 +114,10 @@ const SupraslSection = () => {
           ))}
         </div>
 
-        {/* Distances */}
+        {/* Nearby places */}
         <div className="max-w-2xl mx-auto mb-16">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans text-center mb-6">
-            Odległości
+            Miejsca w okolicy
           </p>
           <div className="grid grid-cols-2 gap-3">
             {nearby.map((n, i) => (
@@ -129,9 +128,7 @@ const SupraslSection = () => {
                 <span className="text-sm text-foreground flex items-center gap-2">
                   <MapPin className="w-3.5 h-3.5 text-primary" /> {n.name}
                 </span>
-                <span className="text-xs text-muted-foreground flex items-center gap-1">
-                  <Clock className="w-3 h-3" /> {n.time}
-                </span>
+                <span className="text-xs text-muted-foreground">Sprawdź trasę</span>
               </div>
             ))}
           </div>
@@ -178,11 +175,11 @@ const SupraslSection = () => {
 
         <div className="text-center space-y-4">
           <p className="text-muted-foreground text-sm max-w-xl mx-auto leading-relaxed">
-            Puszcza Knyszyńska to jeden z największych kompleksów leśnych w Polsce, oferujący setki
-            kilometrów szlaków pieszych i rowerowych.
+            Puszcza Knyszyńska obejmuje rozległe tereny leśne. Przed spacerem lub wycieczką
+            rowerową sprawdź przebieg trasy i obowiązujące ograniczenia.
           </p>
           <p className="text-base md:text-lg text-foreground/80 font-accent">
-            10 minut od chaty.
+            Dom znajduje się w miejscowości Konne koło Supraśla.
           </p>
         </div>
       </div>
