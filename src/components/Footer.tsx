@@ -13,7 +13,7 @@ const Footer = () => (
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
         <div className="text-center md:text-left">
           <p className="logo-glow mb-2 font-display text-2xl text-white">In The Woods</p>
-          <p className="mb-3 text-sm tracking-wider text-white/70">Dom w Puszczy · Supraśl · Podlasie</p>
+          <p className="mb-3 text-sm text-white/70">Dom w Puszczy · Supraśl · Podlasie</p>
           <p className="text-xs text-white/70">Konne 109/1, 16-030 Supraśl</p>
           <p className="text-xs text-white/70">Gospodarz: Maciej</p>
         </div>
@@ -30,7 +30,7 @@ const Footer = () => (
         </div>
 
         <div className="flex flex-col items-center gap-3">
-          <span className="text-xs uppercase tracking-[0.24em] text-white/50">Social media</span>
+          <span className="text-xs tracking-wide text-white/70">Social media</span>
           <div className="flex items-center gap-3">
             <a
               href="https://www.instagram.com/krzemienna_chata/"

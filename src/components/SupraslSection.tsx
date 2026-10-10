@@ -94,7 +94,7 @@ const SupraslSection = () => {
         className={`max-w-6xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-12 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Okolica
           </p>
           <h2 className="section-title">Puszcza Knyszyńska i Supraśl – co warto zobaczyć</h2>
@@ -116,7 +116,7 @@ const SupraslSection = () => {
 
         {/* Nearby places */}
         <div className="max-w-2xl mx-auto mb-16">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans text-center mb-6">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans text-center mb-6">
             Miejsca w okolicy
           </p>
           <div className="grid grid-cols-2 gap-3">
@@ -136,7 +136,7 @@ const SupraslSection = () => {
 
         {/* Tourism guide cards */}
         <div className="mb-12">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans text-center mb-8">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans text-center mb-8">
             Blog
           </p>
           <div className="grid md:grid-cols-3 gap-6">
@@ -178,7 +178,7 @@ const SupraslSection = () => {
             Puszcza Knyszyńska obejmuje rozległe tereny leśne. Przed spacerem lub wycieczką
             rowerową sprawdź przebieg trasy i obowiązujące ograniczenia.
           </p>
-          <p className="text-base md:text-lg text-foreground/80 font-accent">
+          <p className="text-base md:text-lg text-foreground/80 font-sans">
             Dom znajduje się w miejscowości Konne koło Supraśla.
           </p>
         </div>

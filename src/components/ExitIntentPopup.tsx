@@ -94,7 +94,7 @@ const ExitIntentPopup = () => {
         ) : (
           <>
             <div className="text-center space-y-3 mb-6">
-              <p className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
+              <p className="text-xs tracking-wide text-primary font-medium">
                 Zanim wyjdziesz
               </p>
               <h3 className="font-heading text-2xl font-semibold leading-tight">

@@ -536,7 +536,7 @@ const GallerySection = () => {
         className={`max-w-7xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-10 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Galeria
           </p>
           <h2 className="section-title">Zobacz In The Woods</h2>

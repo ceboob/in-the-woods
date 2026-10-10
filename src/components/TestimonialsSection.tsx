@@ -120,7 +120,7 @@ const TestimonialsSection = () => {
         className={`max-w-7xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-16 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Opinie gości
           </p>
           <h2 className="section-title">Co mówią ci, którzy tu byli</h2>
@@ -146,10 +146,10 @@ const TestimonialsSection = () => {
                   </div>
                   <div className="flex items-center gap-1.5">
                     <Logo className="h-4 w-auto" />
-                    <span className="text-[10px] font-medium tracking-wide uppercase text-muted-foreground">{src.label}</span>
+                    <span className="text-xs font-medium text-muted-foreground">{src.label}</span>
                   </div>
                 </div>
-                <p className="text-foreground/80 leading-relaxed text-sm font-accent" data-preserve-case>
+                <p className="text-foreground/80 leading-relaxed text-sm font-sans">
                   „{t.text}"
                 </p>
                 <div>

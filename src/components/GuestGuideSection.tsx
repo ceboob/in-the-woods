@@ -19,7 +19,7 @@ const GuestGuideSection = () => {
         className={`max-w-4xl mx-auto text-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="space-y-4 mb-10">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Dla gości
           </p>
           <h2 className="section-title">Informator gościa</h2>

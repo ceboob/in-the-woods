@@ -61,7 +61,7 @@ const NoclegiSuprasl = () => (
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <header className="space-y-5">
-        <p className="text-sm uppercase tracking-[0.2em] text-primary">Noclegi w Supraślu i okolicy</p>
+        <p className="text-sm tracking-wide text-primary">Noclegi w Supraślu i okolicy</p>
         <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
           Noclegi Supraśl - prywatny dom w lesie na wyłączność z jacuzzi i kominkiem
         </h1>

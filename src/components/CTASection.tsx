@@ -34,7 +34,7 @@ const CTASection = () => {
           </div>
         </div>
 
-        <p className="text-xs text-muted-foreground font-accent">
+        <p className="text-xs text-muted-foreground font-sans">
           Jeśli masz wybrany termin, możesz podać go w formularzu zapytania.
         </p>
       </div>

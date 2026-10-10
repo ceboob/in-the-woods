@@ -23,7 +23,7 @@ const BadgesBar = () => (
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
           >
             <b.icon className="w-4 h-4 text-primary" strokeWidth={1.5} />
-            <span className="text-xs tracking-wider uppercase whitespace-nowrap">{b.label}</span>
+            <span className="text-xs tracking-wide whitespace-nowrap">{b.label}</span>
           </button>
         ) : (
           <Link
@@ -32,7 +32,7 @@ const BadgesBar = () => (
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
           >
             <b.icon className="w-4 h-4 text-primary" strokeWidth={1.5} />
-            <span className="text-xs tracking-wider uppercase whitespace-nowrap">{b.label}</span>
+            <span className="text-xs tracking-wide whitespace-nowrap">{b.label}</span>
           </Link>
         ),
       )}

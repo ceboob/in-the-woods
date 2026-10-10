@@ -29,8 +29,8 @@ const JacuzziSection = () => {
         <div className="absolute inset-0 bg-foreground/40" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
-            <p className="text-xs tracking-[0.3em] uppercase text-white/80 font-sans mb-4">
-              BALIA OGRODOWA Z FUNKCJĄ JACUZZI
+            <p className="text-xs tracking-wide text-white/80 font-sans mb-4">
+              Balia ogrodowa z funkcją jacuzzi
             </p>
             <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-light text-white">
               Balia ogrodowa z funkcją jacuzzi pod gwiazdami
@@ -48,7 +48,7 @@ const JacuzziSection = () => {
             <p className="section-subtitle mx-auto">
               Naszą dumą jest balia ogrodowa z funkcją jacuzzi. Każdego wieczora ogród staje się miejscem odpoczynku na świeżym powietrzu — latem pod rozgwieżdżonym niebem Puszczy Knyszyńskiej, zimą w scenerii białego puchu i rześkiego powietrza.
             </p>
-            <div className="space-y-1 text-base text-foreground/80 font-accent">
+            <div className="space-y-1 text-base text-foreground/80 font-sans">
               <p>Ciepła woda. Chłodne powietrze. Gwiazdy nad Puszczą Knyszyńską.</p>
             </div>
             <p className="text-muted-foreground text-sm">
