@@ -184,13 +184,13 @@ const articles = [
   },
   {
     slug: 'puszcza-knyszynska-historie',
-    title: 'Puszcza Knyszyńska — historia i miejsca pamięci',
+    title: 'Puszcza Knyszyńska historie – 7 niezwykłych opowieści',
     excerpt:
-      'Ogólne informacje o historii regionu oraz wskazówki, gdzie sprawdzić aktualne dane o trasach i miejscach pamięci.',
+      'Galeria Leśna Powstania Styczniowego i inne miejsca związane z historią regionu.',
     image: blogPuszczaHistorie,
     date: '2026-03-28',
-    readTime: '4 min',
-    keywords: ['Puszcza Knyszyńska historia', 'miejsca pamięci Podlasie', 'historia Supraśla'],
+    readTime: '14 min',
+    keywords: ['Puszcza Knyszyńska historie', 'Galeria Leśna'],
   },
   {
     slug: 'co-robic-suprasl',

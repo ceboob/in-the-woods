@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const PuszczaKnyszynskaHistorie = () => (
   <BlogArticleLayout
-    title="Puszcza Knyszyńska — historia i miejsca pamięci"
-    metaTitle="Puszcza Knyszyńska — historia i informacje dla odwiedzających"
-    metaDescription="Poznaj ogólne informacje o historii regionu i sprawdź, gdzie szukać aktualnych danych o trasach oraz miejscach pamięci."
+    title="Puszcza Knyszyńska historie – 7 niezwykłych opowieści"
+    metaTitle="Puszcza Knyszyńska historie – 7 niezwykłych opowieści"
+    metaDescription="Puszcza Knyszyńska historie: 7 opowieści o regionie, miejscach pamięci i przyrodzie. Przewodnik z inspiracjami na wycieczkę."
     slug="puszcza-knyszynska-historie"
     publishDate="2026-03-28"
-    readTime="4 min"
-    keywords={['Puszcza Knyszyńska historia', 'miejsca pamięci Podlasie', 'historia Supraśla']}
+    readTime="14 min"
+    keywords={['Puszcza Knyszyńska historie', 'Galeria Leśna']}
     faqs={[
       {
         question: 'Gdzie znajduje się Puszcza Knyszyńska?',
