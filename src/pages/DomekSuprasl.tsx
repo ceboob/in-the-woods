@@ -31,7 +31,7 @@ const faqItems = [
   {
     question: 'Jak dojechać z Białegostoku?',
     answer:
-      'Domek znajduje się pod adresem Konne 109/1, 16-030 Supraśl, około 10 minut jazdy od centrum Supraśla. Z Białegostoku dojazd zajmuje zwykle około 30–40 minut, zależnie od ruchu i wybranej trasy. Przed podróżą sprawdź aktualną nawigację, by wybrać najlepszą drogę.',
+      'Domek znajduje się pod adresem Konne 109/1, 16-030 Supraśl, około 10 minut jazdy od centrum Supraśla. Z Białegostoku dojazd zajmuje zwykle około 30–40 minut, zależnie od ruchu i wybranej trasy. Przed podróżą sprawdź aktualną nawigację, by wybrać najlepszą drogę z wyprzedzeniem.',
   },
 ];
 
