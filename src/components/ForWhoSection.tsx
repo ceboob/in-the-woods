@@ -5,32 +5,32 @@ const audiences = [
   {
     icon: Heart,
     title: 'Pary',
-    desc: 'Kameralna atmosfera, rozpalony kominek, gorąca balia pod gwiazdami i poranna kawa na tarasie. Idealne miejsce na zaręczyny, rocznicę lub romantyczny weekend we dwoje na Podlasiu.',
+    desc: 'Zaplanuj romantyczny weekend w Supraślu: rozpal kominek, odpocznij w gorącej balii pod gwiazdami i wypij poranną kawę na tarasie. To kameralne noclegi w Supraślu na rocznicę, zaręczyny lub po prostu wspólny czas.',
   },
   {
     icon: Users,
     title: 'Rodziny z dziećmi',
-    desc: 'Przed przyjazdem sprawdź układ domu, dostępne wyposażenie i zasady pobytu, aby ocenić, czy odpowiadają potrzebom Twojej rodziny.',
+    desc: 'Dom w lesie na wynajem pomieści do 8 osób. Rodzinna przestrzeń, ogród i bliskość leśnych ścieżek ułatwiają wspólny wypoczynek. Zobacz wyposażenie i zaplanuj pobyt dopasowany do potrzeb Twojej rodziny.',
   },
   {
     icon: Users,
     title: 'Przyjaciele',
-    desc: 'Dom z bali na wyłączność — bez obcych gości i bez skrępowania. Wieczorne grillowanie w altanie, odpoczynek w balii ogrodowej z funkcją jacuzzi i rozmowy przy ognisku do białego rana. Świetna baza na spływy kajakowe rzeką Supraśl i wycieczki po okolicach Białegostoku.',
+    desc: 'Dom na wyłączność na Podlasiu to swoboda wspólnego wyjazdu bez obcych gości. Grillujcie w altanie, odpoczywajcie w balii ogrodowej i spędzajcie wieczory przy ognisku. Supraśl i okoliczne atrakcje są w zasięgu krótkiej wycieczki.',
   },
   {
     icon: Dog,
     title: 'Z psem',
-    desc: 'Możliwość pobytu z psem, ewentualne opłaty i informację o ogrodzeniu potwierdź z gospodarzem przed wysłaniem zapytania. Na spacerze stosuj lokalne zasady dostępu.',
+    desc: 'Przyjedźcie razem — pobyt psa jest bezpłatny. Leśne otoczenie zachęca do spacerów, a ogród daje przestrzeń do odpoczynku na świeżym powietrzu. Przed wyjazdem zapoznaj się z zasadami pobytu ze zwierzętami.',
   },
   {
     icon: Laptop,
     title: 'Praca i wypoczynek',
-    desc: 'W domu dostępne jest Wi-Fi. Jeśli potrzebujesz określonej jakości połączenia lub miejsca do pracy, potwierdź szczegóły przed pobytem.',
+    desc: 'Zmień otoczenie i połącz spokojny pobyt w lesie z pracą zdalną. W domu jest Wi-Fi, a po zamknięciu laptopa możesz odpocząć na tarasie lub wybrać się na spacer po Puszczy Knyszyńskiej.',
   },
   {
     icon: Snail,
     title: 'Spokojny wypoczynek',
-    desc: 'Spokojny pobyt w naturze. Możesz odpoczywać bez pośpiechu i samodzielnie zdecydować, ile czasu spędzisz bez ekranów. Wi-Fi jest dostępne.',
+    desc: 'Dom w puszczy czy chata w lesie na wynajem? Wybierz prywatną przestrzeń, śpiew ptaków i leśne ścieżki tuż obok. Odpoczywaj we własnym rytmie — bez pośpiechu i miejskiego zgiełku.',
   },
 ];
 
@@ -49,16 +49,17 @@ const ForWhoSection = () => {
           </p>
           <h2 className="section-title">Dla kogo jest dom w lesie? Twój pobyt, Twoje zasady</h2>
           <p className="section-subtitle mx-auto">
-            Leśny domek do wynajęcia na wyłączność — nie dzielisz domu z innymi gośćmi. To Twoja
-            prywatna przestrzeń w lesie, gdzie sam decydujesz o rytmie dnia.
+            Dom na wyłączność na Podlasiu, na skraju Puszczy Knyszyńskiej — bez dzielenia przestrzeni
+            z innymi gośćmi. Wybierz nocleg w Supraślu, który łączy bliskość natury z wygodnym
+            dojazdem do miasta, i wypoczywaj po swojemu.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {audiences.map((a, i) => (
-            <div key={i} className="card-premium p-6 text-center group space-y-4">
+            <div key={i} className="card-premium h-full p-6 text-center group space-y-4">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <a.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
+                <a.icon className="w-6 h-6 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
               <h3 className="font-heading text-lg font-semibold text-foreground">{a.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
