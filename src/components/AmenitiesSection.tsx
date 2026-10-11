@@ -11,7 +11,6 @@ import {
   PawPrint,
   Baby,
   Tv,
-  Snowflake,
 } from 'lucide-react';
 
 type Amenity = {
@@ -27,7 +26,7 @@ const amenities: Amenity[] = [
   {
     icon: TreePine,
     title: 'Dom w lesie, cisza na wyciągnięcie ręki',
-    desc: 'Dom stoi przy Puszczy Knyszyńskiej – budzą Cię ptaki zamiast sąsiadów, a centrum Supraśla i rzekę masz w kilka minut.',
+    desc: 'Nasz całoroczny dom do wynajęcia pomieści komfortowo do 8 osób. Stoi na skraju Puszczy Knyszyńskiej – rano budzą Cię ptaki zamiast sąsiadów, a do centrum Supraśla i rzeki dotrzesz w kilka minut. O idealne warunki do wypoczynku dbamy przez cały rok. Zimą ogrzejesz się przy klimatycznym kominku lub tradycyjnej płycie kaflowej, a latem przyjemny chłód zapewni klimatyzacja z pompą ciepła.',
     // TODO (właściciel): podaj dokładny czas dojścia/dojazdu do centrum i rzeki.
   },
   {
@@ -75,11 +74,6 @@ const amenities: Amenity[] = [
     icon: Tv,
     title: 'Rozrywka na najwyższym poziomie',
     desc: 'Dbając o maksymalny komfort gości, w każdym pomieszczeniu zapewniamy nowoczesny telewizor z płaskim ekranem oraz dostępem do pakietu Canal+. Do tego szybkie Wi-Fi Starlink (do 200 Mb/s) na wieczór filmowy lub pracę zdalną. Niezależnie od pogody na Podlasiu, u nas zawsze znajdziesz doskonałą formę rozrywki i relaksu.',
-  },
-  {
-    icon: Snowflake,
-    title: 'Klimatyzacja',
-    desc: 'Latem chłód po upalnym dniu, zimą przyjemne ciepło. Dom gotowy na każdą pogodę.',
   },
 ];
 
