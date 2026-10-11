@@ -55,17 +55,20 @@ const ForWhoSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {audiences.map((a, i) => (
-            <div key={i} className="card-premium h-full p-6 text-center group space-y-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <a.icon className="w-6 h-6 text-primary" strokeWidth={1.5} aria-hidden="true" />
+        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 list-none p-0 m-0">
+          {audiences.map((a) => (
+            <li
+              key={a.title}
+              className="flex h-full flex-col items-center text-center gap-4 rounded-2xl border border-border bg-card p-6"
+            >
+              <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                <a.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
-              <h3 className="font-heading text-lg font-semibold text-foreground">{a.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
-            </div>
+              <h3 className="font-heading text-lg font-bold text-foreground">{a.title}</h3>
+              <p className="flex-grow text-base leading-relaxed text-[#444]">{a.desc}</p>
+            </li>
           ))}
-        </div>
+        </ul>
 
         <div className="mt-12 text-center">
           <a href="#rezerwacja" className="btn-primary inline-flex items-center justify-center">

@@ -61,12 +61,12 @@ const JacuzziSection = () => {
             {bullets.map((b, i) => (
               <div
                 key={i}
-                className="card-premium p-4 flex flex-col items-center gap-3"
+                className="flex flex-col items-center gap-4 rounded-2xl border border-border bg-card p-5"
               >
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <b.icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
+                <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                  <b.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
                 </div>
-                <span className="text-xs text-muted-foreground tracking-wide">{b.text}</span>
+                <span className="text-sm font-medium text-foreground">{b.text}</span>
               </div>
             ))}
           </div>

@@ -42,17 +42,17 @@ const EventsSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
           {events.map((event, i) => (
             <div
               key={i}
-              className="card-premium p-6 text-center space-y-4"
+              className="flex h-full flex-col items-center text-center gap-4 rounded-2xl border border-border bg-card p-6"
             >
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <event.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                <event.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
-              <h3 className="font-heading text-lg font-semibold text-foreground">{event.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{event.desc}</p>
+              <h3 className="font-heading text-lg font-bold text-foreground">{event.title}</h3>
+              <p className="flex-grow text-base leading-relaxed text-[#444]">{event.desc}</p>
             </div>
           ))}
         </div>

@@ -50,20 +50,16 @@ const HeroWelcome = () => {
           {benefits.map((b, i) => (
             <div
               key={b.title}
-              className={`group flex gap-4 p-5 bg-secondary/60 rounded-xl transition-all duration-500 hover:bg-secondary hover:shadow-md hover:-translate-y-0.5 ${
+              className={`flex h-full flex-col items-center text-center gap-4 rounded-2xl border border-border bg-card p-6 transition-all duration-500 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
               style={{ transitionDelay: isVisible ? `${200 + i * 100}ms` : '0ms' }}
             >
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                <b.icon className="w-5 h-5 text-primary" />
+              <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                <b.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
-              <div>
-                <h3 className="font-heading text-sm font-semibold text-foreground !mb-1">
-                  {b.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed !mb-0">{b.text}</p>
-              </div>
+              <h3 className="font-heading text-lg font-bold text-foreground !mb-0">{b.title}</h3>
+              <p className="flex-grow text-base leading-relaxed text-[#444] !mb-0">{b.text}</p>
             </div>
           ))}
         </div>

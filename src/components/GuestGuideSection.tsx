@@ -33,10 +33,10 @@ const GuestGuideSection = () => {
           {items.map(({ icon: Icon, label }) => (
             <div
               key={label}
-              className="bg-card border border-border rounded-lg p-5 flex flex-col items-center gap-3"
+              className="bg-card border border-border rounded-2xl p-5 flex flex-col items-center gap-4"
             >
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <Icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
+              <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                <Icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
               <span className="text-sm font-medium text-foreground">{label}</span>
             </div>
