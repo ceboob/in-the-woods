@@ -12,7 +12,6 @@ import AvailabilityCalendar from '@/components/AvailabilityCalendar';
 // Lazy-loaded sections below the fold
 const AmenitiesSection = lazy(() => import('@/components/AmenitiesSection'));
 const JacuzziSection = lazy(() => import('@/components/JacuzziSection'));
-const RelaxSection = lazy(() => import('@/components/RelaxSection'));
 const ForWhoSection = lazy(() => import('@/components/ForWhoSection'));
 const GallerySection = lazy(() => import('@/components/GallerySection'));
 const WinterSection = lazy(() => import('@/components/WinterSection'));
@@ -67,7 +66,6 @@ const Index = () => {
           <GuideSection />
 
           <JacuzziSection />
-          <RelaxSection />
           <ForWhoSection />
 
           {/* Sezonowość + okolica */}
