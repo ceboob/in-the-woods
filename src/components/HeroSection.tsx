@@ -32,7 +32,7 @@ const HeroSection = () => {
           Dom na wynajem w Supraślu – dom w lesie z jacuzzi i kominkiem
         </h1>
         <p className="font-sans font-semibold mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white logo-glow animate-fade-up delay-100">
-          Dom na wyłączność z kominkiem. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem; jej dostępność potwierdź przed pobytem.
+          Dom na wyłączność w Supraślu, kominek, las za oknem i zero tłumów. A jak najdzie Was ochota na chill pod gwiazdami, dorzućcie ogrodową balię z jacuzzi (opcja za dopłatą, dostępność potwierdzimy przed pobytem).
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
