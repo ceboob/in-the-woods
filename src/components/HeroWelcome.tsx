@@ -4,23 +4,23 @@ import { TreePine, Home, Volume2, Heart } from 'lucide-react';
 const benefits = [
   {
     icon: TreePine,
-    title: 'Zanurz się w naturze',
-    text: 'Dom znajduje się w miejscowości Konne, niedaleko Supraśla i Puszczy Knyszyńskiej. Przed podróżą sprawdź aktualną trasę i warunki dojazdu.',
+    title: 'Slow w sercu natury',
+    text: 'Dom stoi w miejscowości Konne, niedaleko Supraśla i Puszczy Knyszyńskiej, czyli w dobrym miejscu na leśne spacery i weekend bez planu. Przed podróżą sprawdźcie aktualną trasę i warunki dojazdu.',
   },
   {
     icon: Home,
-    title: 'Dom z bali — komfort w sercu lasu',
-    text: 'Drewniane belki, kominek i płyta kaflowa. Dom jest wynajmowany na wyłączność; szczegóły wyposażenia ogrodu i zasady korzystania z miejsca na ognisko potwierdź przed przyjazdem.',
+    title: 'Kominek, kafle i balia pod gwiazdami',
+    text: 'Drewniane belki, kominek i płyta kaflowa sprawiają, że wieczory same robią się dłuższe. A kiedy najdzie Was ochota na chill pod gwiazdami, możecie dorzucić ogrodową balię z jacuzzi (opcja za dopłatą, dostępność potwierdzimy przed pobytem). Szczegóły wyposażenia ogrodu i zasady korzystania z miejsca na ognisko ustalimy przed Waszym przyjazdem.',
   },
   {
     icon: Volume2,
-    title: 'Dom na wyłączność — tylko dla Was',
-    text: 'Cały dom jest wynajmowany jednej grupie. Szczegóły pobytu i dostępne udogodnienia znajdziesz w opisie obiektu.',
+    title: 'Cały dom tylko dla Was',
+    text: 'Dom wynajmujemy jednej grupie naraz, więc macie tu pełną prywatność. Szczegóły pobytu i dostępne udogodnienia znajdziecie w opisie obiektu.',
   },
   {
     icon: Heart,
     title: 'Spokojny pobyt wśród zieleni',
-    text: 'Możesz odpoczywać we własnym tempie. Możliwość pobytu z psem, ewentualne opłaty i informacje o ogrodzeniu potwierdź z gospodarzem.',
+    text: 'Odpoczywajcie we własnym tempie, bez zegarka. Pobyt z psem jest możliwy, a ewentualne opłaty i informacje o ogrodzeniu potwierdźcie z gospodarzem.',
   },
 ];
 
@@ -37,12 +37,12 @@ const HeroWelcome = () => {
           Od gospodarza
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl text-foreground mb-6 text-center font-heading">
-          Twój prywatny azyl — leśny dom do wynajęcia na Podlasiu
+          Prywatny azyl w lesie koło Supraśla – dom z bali na wyłączność
         </h2>
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
           <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed font-sans">
-            Oddajemy Wam nasz całoroczny dom z bali na wyłączność — prywatny azyl stworzony z sercem i pasją. Tutaj nie dzielicie przestrzeni z nikim. Tylko Wy, las i chwila wytchnienia. Zanurzcie się w naturze i zwolnijcie tempo. Wyślijcie zapytanie o pobyt, aby poznać dostępność i cenę.
+            Wynajmujecie cały dom z bali tylko dla siebie i nikt nie będzie Wam tu przeszkadzał. Nasz całoroczny drewniany dom w lesie koło Supraśla stworzyliśmy z sercem i pasją, żebyście mogli zwolnić tempo, posłuchać szumu drzew i po prostu pobyć razem. Wyślijcie zapytanie o wolny termin, a odpowiemy z informacją o dostępności i cenie.
           </p>
         </div>
 
@@ -73,13 +73,19 @@ const HeroWelcome = () => {
           style={{ transitionDelay: isVisible ? '700ms' : '0ms' }}
         >
           <p className="text-muted-foreground font-sans text-base leading-relaxed max-w-xl mx-auto">
-            Traktujcie ten dom jak swój — z&nbsp;szacunkiem i&nbsp;uśmiechem. Zostawcie go tak,
-            jakbyście chcieli go zastać za rok, kiedy <em>wrócicie</em>.
+            Traktujcie ten dom jak własny – z szacunkiem i uśmiechem. Zostawcie go tak, jakbyście
+            chcieli go zastać za rok, kiedy tu wrócicie.
           </p>
           <p className="text-base sm:text-lg md:text-xl text-foreground/80 leading-relaxed mt-4 font-sans">
             Pamiętajcie: dom jest dla ludzi, a&nbsp;nie ludzie dla domu. Bawcie się dobrze!
           </p>
           <p className="mt-4 text-sm text-muted-foreground">— Maciej, gospodarz</p>
+          <a
+            href="#rezerwacja"
+            className="btn-primary inline-flex items-center justify-center mt-4"
+          >
+            Sprawdź wolne terminy
+          </a>
         </div>
       </div>
     </section>
