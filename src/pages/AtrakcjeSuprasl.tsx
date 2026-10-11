@@ -89,9 +89,9 @@ const AtrakcjeSuprasl = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w Supraślu</h2>
       <ul className="space-y-5 text-muted-foreground">
         <li>
-          <strong>Monaster Zwiastowania NMP — [X km | Y min autem/spacerem z Konne].</strong> Zespół
-          klasztorny jest ważnym punktem historii i architektury miasteczka. Warto tu zajrzeć, jeśli
-          interesuje Was duchowe dziedzictwo Podlasia.
+          <strong>Monaster w Supraślu, Zwiastowania NMP — [X km | Y min autem/spacerem z Konne].</strong>{' '}
+          Zespół klasztorny jest ważnym punktem historii i architektury miasteczka. Warto tu zajrzeć,
+          jeśli interesuje Was duchowe dziedzictwo Podlasia.
         </li>
         <li>
           <strong>Muzeum Ikon Supraśl — [X km | Y min autem/spacerem z Konne].</strong> Ekspozycja
