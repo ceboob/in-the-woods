@@ -1,74 +1,49 @@
-# Welcome to your Lovable project
+# In The Woods
 
-## Project info
+Source code of the website of **In The Woods**, a holiday house near Suprasl, Poland.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Live site: https://www.suprasl.online
 
-## How can I edit this code?
+## Stack
 
-There are several ways of editing your application.
+- Vite, React, TypeScript
+- Tailwind CSS and shadcn-ui
+- Supabase (backend)
+- Prerendering of public routes at build time (SSR entry in `src/ssr`, `scripts/prerender.mjs`)
+- Hosting: Vercel (`vercel.json`)
 
-**Use Lovable**
+## Requirements
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- Node.js 22 (see `.nvmrc`)
+- npm
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Getting started
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+git clone https://github.com/ceboob/in-the-woods.git
+cd in-the-woods
+npm install
+cp .env.example .env   # fill in the Supabase values
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+| Command | Purpose |
+|---|---|
+| `npm run dev` | Start the dev server |
+| `npm run build` | Generate sitemap, run SEO check, build client and SSR bundles, prerender |
+| `npm run build:client` | Client-only production build |
+| `npm test` | Run unit tests (Vitest) |
+| `npm run lint` | Run ESLint |
+| `npm run sitemap:generate` | Regenerate `sitemap.xml` from the React routes |
+| `npm run seo:check` | Validate routes vs sitemap and `noindex` on technical pages |
 
-**Use GitHub Codespaces**
+## Environment variables
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+See `.env.example`: `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`, `VITE_SUPABASE_PROJECT_ID`.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## SEO maintenance commands
-
-```sh
-# Regenerate sitemap.xml from current React routes
-npm run sitemap:generate
-
-# Validate SEO integrity (routes vs sitemap + noindex for technical pages)
-npm run seo:check
-```
+## Deployment
 
 Public routes are prerendered during the build. Vercel serves the generated
 `dist/404.html` with an HTTP 404 for unknown paths; only the two admin routes
@@ -76,14 +51,10 @@ rewrite to the SPA entry point. Other static hosts must likewise serve the
 generated 404 document with a 404 status rather than rewriting unknown URLs to
 `index.html`.
 
-## How can I deploy this project?
+## Documentation
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+SEO, CSP and deployment notes (mostly in Polish) are in [`docs/`](docs/).
 
-## Can I connect a custom domain to my Lovable project?
+## Security
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+See [SECURITY.md](SECURITY.md).
