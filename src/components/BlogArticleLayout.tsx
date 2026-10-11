@@ -251,7 +251,7 @@ const BlogArticleLayout = ({
           </h2>
           <p className="text-foreground/70 max-w-xl mx-auto">
             Jeśli szukasz komfortowego noclegu w Supraślu, In The Woods oferuje prywatny dom w lesie
-            z jacuzzi i kominkiem.
+            z kominkiem; balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">

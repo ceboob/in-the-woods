@@ -3,17 +3,39 @@ import { Link } from 'react-router-dom';
 
 const PodlasieZPsem = () => (
   <BlogArticleLayout
-    title="Podlasie z psem – noclegi i porady"
-    metaTitle="Podlasie z psem | Nocleg z psem w Puszczy Knyszyńskiej"
-    metaDescription="Planujesz wyjazd z psem na Podlasie? Sprawdź, o co zapytać przed wyborem noclegu i jak przygotować się do spacerów w okolicy Supraśla."
+    title="Noclegi Supraśl z psem – przewodnik po Puszczy"
+    metaTitle="Noclegi Supraśl z psem – przewodnik | In The Woods"
+    metaDescription="Planujesz wyjazd z psem na Podlasie? Sprawdź, jak wybrać noclegi w Supraślu, zaplanować spacery i przygotować się do pobytu blisko Puszczy Knyszyńskiej."
     slug="podlasie-z-psem"
     publishDate="2026-04-09"
     readTime="9 min"
-    keywords={['Podlasie z psem', 'nocleg z psem Supraśl', 'pet friendly Puszcza Knyszyńska', 'domek z psem']}
+    keywords={[
+      'noclegi Supraśl z psem',
+      'Podlasie z psem',
+      'dom Supraśl',
+      'dom w lesie',
+      'dom w puszczy',
+      'dom na wyłączność',
+      'dom z jacuzzi Podlasie',
+      'dom z jacuzzi Białystok',
+      'chata w lesie Podlasie',
+    ]}
     faqs={[
-      { question: 'Czy mogę przyjechać z psem do In The Woods?', answer: 'Przed wysłaniem zapytania potwierdź z gospodarzem, czy pobyt z psem jest możliwy i jakie zasady obowiązują.' },
-      { question: 'Czy ogród jest ogrodzony?', answer: 'Informację o ogrodzeniu i warunkach dla zwierząt potwierdź przed pobytem, szczególnie jeśli planujesz wypuszczać psa bez smyczy.' },
-      { question: 'Czy są dodatkowe opłaty za psa?', answer: 'Zapytaj gospodarza o ewentualne opłaty i zasady pobytu ze zwierzęciem.' },
+      {
+        question: 'Czy noclegi w Supraślu mogą przyjąć gości z psem?',
+        answer:
+          'Zasady zależą od obiektu. Przed rezerwacją zapytaj gospodarza, czy możesz przyjechać z psem i jakie warunki obowiązują.',
+      },
+      {
+        question: 'Czy ogród przy domu jest ogrodzony?',
+        answer:
+          'Potwierdź to z gospodarzem przed pobytem. Nie zakładaj, że pies może przebywać na posesji bez smyczy.',
+      },
+      {
+        question: 'Czy balia z funkcją jacuzzi jest dostępna podczas każdego pobytu?',
+        answer:
+          'Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem. Zapytaj gospodarza o jej dostępność, koszt i zasady korzystania.',
+      },
     ]}
     relatedArticles={[
       { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
@@ -23,65 +45,132 @@ const PodlasieZPsem = () => (
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Planujesz wyjazd z czworonogiem? Przed wyborem noclegu sprawdź zasady pobytu ze zwierzętami,
-        a trasę spaceru dopasuj do możliwości psa oraz lokalnych ograniczeń.
+        Wyjazd z psem na Podlasie nie musi mieć napiętego planu. Wystarczy spokojne miejsce, kilka
+        leśnych spacerów i czas na odpoczynek. Jeśli interesują Cię noclegi w Supraślu, ten przewodnik
+        pomoże Ci przygotować pobyt blisko Puszczy Knyszyńskiej i wybrać trasę odpowiednią dla Twojego
+        psa.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego Podlasie jest idealne na wyjazd z psem?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Dlaczego Podlasie sprzyja spokojnemu wyjazdowi z psem?
+      </h2>
       <p className="text-muted-foreground leading-relaxed">
-        W okolicach Supraśla znajdują się tereny leśne i trasy spacerowe, ale zasady dostępu mogą się
-        różnić w zależności od miejsca. Przed wyjściem sprawdź oznakowanie, regulamin i długość trasy.
+        Okolice Supraśla to dobry kierunek, jeśli lubisz bliskość przyrody i niespieszne spacery.
+        Puszcza Knyszyńska daje wiele możliwości kontaktu z lasem, ale dostępność tras dla psów zależy
+        od konkretnego miejsca. Przed wyjściem sprawdź oznakowanie i lokalne zasady.
+      </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Zaplanuj dzień w rytmie swojego pupila: krótszy spacer rano, przerwę na odpoczynek i dłuższą
+        przechadzkę, jeśli pies ma na nią siłę. Ty również możesz zwolnić — bez pośpiechu wrócić do
+        domu, napić się herbaty i nacieszyć spokojem.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Na co zwrócić uwagę przy wyborze noclegu?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Noclegi Supraśl z psem – co sprawdzić przed rezerwacją?
+      </h2>
+      <p className="text-muted-foreground leading-relaxed">
+        Przyjazny psom nocleg to nie tylko informacja w opisie. Przed rezerwacją napisz do gospodarza
+        i ustal szczegóły pobytu:
+      </p>
       <ul className="space-y-3 text-muted-foreground">
-        <li>🐕 <strong>Zasady dla zwierząt</strong> — potwierdź, czy pies może przebywać w obiekcie i czy obowiązują dodatkowe opłaty.</li>
-        <li>🌲 <strong>Dostęp do tras</strong> — zapytaj o pobliskie spacery i sprawdź ograniczenia dla psów na wybranym terenie.</li>
-        <li>🏡 <strong>Warunki pobytu</strong> — ustal, czy pies może zostać sam w obiekcie i z których przestrzeni może korzystać.</li>
-        <li>💧 <strong>Potrzeby psa</strong> — uwzględnij wodę, smycz, odpoczynek i trasę odpowiednią dla zwierzęcia.</li>
-        <li>📍 <strong>Dojazd</strong> — sprawdź trasę do obiektu i możliwości spacerów w jego okolicy.</li>
+        <li>
+          <strong>Pobyt ze zwierzęciem</strong> — zapytaj, czy możesz przyjechać z psem, czy obowiązują
+          opłaty i jakie zasady warto znać.
+        </li>
+        <li>
+          <strong>Ogród i przestrzeń</strong> — sprawdź, czy teren jest ogrodzony i czy pies może
+          przebywać na nim bez smyczy.
+        </li>
+        <li>
+          <strong>Codzienne warunki</strong> — ustal, z których pomieszczeń pies może korzystać i czy
+          może zostać sam w domu.
+        </li>
+        <li>
+          <strong>Spacery w okolicy</strong> — zapytaj o pobliskie trasy, a przed wyjściem sprawdź
+          zasady dostępu dla psów.
+        </li>
+        <li>
+          <strong>Potrzeby pupila</strong> — zabierz smycz, miskę i wodę, a długość spaceru dopasuj do
+          jego wieku oraz kondycji.
+        </li>
       </ul>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Szlaki przyjazne psom w okolicy Supraśla</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Spacery z psem w okolicy Supraśla</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Zasady wprowadzania psów mogą zależeć od rodzaju terenu i jego ochrony. Nie planuj wejścia
-        z psem do rezerwatu bez potwierdzenia, że jest to dozwolone; sprawdź oznakowanie i informacje
-        właściwego organu. Na innych trasach stosuj się do lokalnych regulaminów.
+        Wybieraj leśne dukty i ścieżki, na których można spacerować z psem. Długość i nawierzchnię
+        dostosuj do jego możliwości, a przed wyjściem sprawdź aktualne oznakowanie. Zasady mogą się
+        różnić zależnie od rodzaju terenu.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Trasy spacerowe w Supraślu</strong> — przed wyjściem sprawdź lokalne zasady dotyczące
-        psów i prowadź zwierzę zgodnie z oznakowaniem.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Odcinki szlaków w regionie</strong> — wybierz trasę dopuszczoną dla psów i oceń, czy
-        jej nawierzchnia oraz długość będą odpowiednie dla zwierzęcia.
+        Jeśli planujesz spacer w okolicy Supraśla, potraktuj mapę jako punkt wyjścia, a nie
+        potwierdzenie, że każda trasa jest dostępna dla psów. Do rezerwatu nie wchodź z pupilem bez
+        sprawdzenia obowiązujących zasad. Jeśli masz wątpliwości, wybierz trasę z potwierdzonym
+        dostępem dla psów.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Zasady pobytu z psem w lesie</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Pies w lesie – spokojnie i z troską o przyrodę
+      </h2>
+      <p className="text-muted-foreground leading-relaxed">
+        Las jest domem dzikich zwierząt, dlatego podczas spaceru miej psa pod kontrolą i stosuj się do
+        lokalnych regulaminów. Kilka prostych nawyków ułatwi Wam wspólne wyjście:
+      </p>
       <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
-        <li><strong>Sprawdź zasady dostępu</strong> — ograniczenia dotyczące wprowadzania psów zależą od terenu; respektuj oznakowanie i regulaminy.</li>
-        <li><strong>Sprzątaj po psie</strong> — nawet w lesie. Woreczki to standard odpowiedzialnego opiekuna.</li>
-        <li><strong>Sprawdź kleszcze</strong> — po każdym spacerze w lesie dokładnie sprawdź sierść pupila.</li>
-        <li><strong>Zabierz wodę</strong> — na dłuższe wyprawy zabierz miskę i butelkę z wodą.</li>
-        <li><strong>Chroń dziką zwierzynę</strong> — prowadź psa na smyczy w lesie i nie pozwalaj mu płoszyć zwierząt.</li>
+        <li>
+          <strong>Trzymaj psa blisko siebie</strong> — smycz pomaga nie płoszyć zwierząt i zachować
+          kontrolę nad pupilem.
+        </li>
+        <li>
+          <strong>Sprzątaj po swoim psie</strong> — zabierz woreczki i nie zostawiaj ich w lesie.
+        </li>
+        <li>
+          <strong>Sprawdź sierść po spacerze</strong> — zwróć uwagę na kleszcze, szczególnie w okolicy
+          uszu, łap i brzucha.
+        </li>
+        <li>
+          <strong>Pamiętaj o wodzie</strong> — na dłuższą trasę zabierz butelkę oraz miskę.
+        </li>
+        <li>
+          <strong>Uszanuj oznakowanie</strong> — sprawdź, czy wybrany teren jest dostępny dla psów.
+        </li>
       </ol>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">In The Woods — dom pet-friendly</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Dom w lesie koło Supraśla – poznaj In The Woods
+      </h2>
       <p className="text-muted-foreground leading-relaxed">
-        <Link to="/" className="text-primary hover:underline font-medium">In The Woods</Link> to dom
-        w okolicach Supraśla. Możliwość pobytu z psem, ewentualne opłaty i informację o ogrodzeniu
-        potwierdź z gospodarzem. Przed przyjazdem zapoznaj się z{' '}
+        In The Woods to dom wynajmowany na wyłączność w miejscowości Konne, w okolicy Supraśla i
+        Puszczy Knyszyńskiej. Jeśli szukasz domu w Supraślu, domu w lesie lub chaty w lesie na
+        Podlasiu, sprawdź, czy lokalizacja i warunki odpowiadają Twoim planom. Zasady pobytu z psem,
+        dostępność ogrodzenia i ewentualne opłaty potwierdź bezpośrednio z gospodarzem.
+      </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem. Jeśli szukasz domu z jacuzzi na
+        Podlasiu lub w okolicy Białegostoku, przed rezerwacją zapytaj o jej dostępność, koszt i
+        warunki korzystania.
+        Sprawdź także{' '}
         <Link to="/informator" className="text-primary hover:underline font-medium">
-          informatorem gościa i zasadami pobytu
-        </Link>
-        . Szczegóły oferty oraz dostępność znajdziesz na stronie{' '}
+          informator gościa
+        </Link>{' '}
+        oraz{' '}
         <Link to="/noclegi-suprasl" className="text-primary hover:underline font-medium">
-          noclegów w Supraślu
+          szczegóły noclegu w Supraślu
         </Link>
         .
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Zapytaj o pobyt: <a href="tel:+48722765101" className="text-primary hover:underline">722 765 101</a>.
+        Masz pytanie o przyjazd z psem albo chcesz spokojnie porównać warunki? Zajrzyj na{' '}
+        <Link to="/" className="text-primary hover:underline font-medium">
+          stronę główną In The Woods
+        </Link>{' '}
+        lub skontaktuj się z gospodarzem przed podjęciem decyzji.
+      </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Zapytaj o pobyt:{' '}
+        <a href="tel:+48722765101" className="text-primary hover:underline">
+          722 765 101
+        </a>
+        .
       </p>
     </article>
   </BlogArticleLayout>

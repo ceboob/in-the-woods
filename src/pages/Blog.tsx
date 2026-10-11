@@ -106,8 +106,9 @@ const articles = [
   },
   {
     slug: 'podlasie-z-psem',
-    title: 'Podlasie z psem – gdzie szukać noclegu i na co zwrócić uwagę?',
-    excerpt: 'Planujesz wakacje z psem? Ogrodzony ogród, szlaki leśne i porady na wyjazd z czworonogiem na Podlasie.',
+    title: 'Noclegi Supraśl z psem – przewodnik po Puszczy',
+    excerpt:
+      'Sprawdź, jak wybrać noclegi w Supraślu z psem, zaplanować spacery w okolicy i przygotować się do pobytu blisko Puszczy Knyszyńskiej.',
     image: blogMeadow,
     date: '2026-04-09',
     readTime: '9 min',
