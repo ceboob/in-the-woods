@@ -1,123 +1,134 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
+import { createLandingPageSchemas } from '@/lib/landingPageSchemas';
+import firepitNight from '@/assets/gallery-ognisko-nocne-thumb.webp';
 import { Link } from 'react-router-dom';
+
+const faqs = [
+  {
+    question: 'Czy można zorganizować wieczór panieński w domku?',
+    answer:
+      'Dom jest wynajmowany na wyłączność dla grup do 8 osób, a pobyt grupowy lub wydarzenie wymaga wcześniejszego uzgodnienia z gospodarzem. Napiszcie, jaki planujecie wieczór, ile osób przyjedzie i czy zaprosicie gości. Gospodarz ustali, jakie zasady będą dotyczyć Waszego terminu. Dzięki temu przygotujecie wspólny wyjazd bez niedomówień.',
+  },
+  {
+    question: 'Ile osób zmieści się w domku na wieczór panieński?',
+    answer:
+      'W domu może nocować maksymalnie 8 osób. Do dyspozycji grupy są dwie sypialnie, salon z kominkiem, kuchnia z płytą kaflową, łazienka oraz ogród. W sprawie osób odwiedzających napiszcie wcześniej do gospodarza, aby ustalić warunki dla Waszej grupy. Dom wynajmowany jest jednej ekipie na wyłączność.',
+  },
+  {
+    question: 'Ile kosztuje wieczór panieński w In The Woods?',
+    answer:
+      'Cena noclegu zaczyna się od 399 zł za noc i zależy od daty oraz liczby gości. Weekendowa dopłata i minimalna liczba nocy wpływają na końcową kwotę. Balia ogrodowa jest osobnym dodatkiem za 250 zł za pobyt, dostępnym po potwierdzeniu terminu.',
+  },
+  {
+    question: 'Jakie zasady obowiązują podczas wieczoru panieńskiego?',
+    answer:
+      'Zasady dla grupy, cisza nocna i ewentualni odwiedzający są ustalani przed rezerwacją z gospodarzem. Opiszcie, jak wyobrażacie sobie wspólny wieczór, a Maciej odpowie, jakie warunki będą obowiązywały. Dom jest na wyłączność jednej grupy, do maksymalnie 8 osób. Ustalenia pomagają dopasować pobyt do planu ekipy.',
+  },
+  {
+    question: 'Jak dojechać na panieński z Białegostoku?',
+    answer:
+      'Z Białegostoku do domu pod adresem Konne 109/1 jedzie się około 30–40 minut. Centrum Supraśla znajduje się około 10 minut jazdy od domu. Na miejscu grupa ma do dyspozycji dom, taras i ogród. Zaplanujcie dojazd wcześniej, aby przyjechać bez pośpiechu.',
+  },
+];
 
 const WieczorPanienskiSuprasl = () => (
   <SEOPageLayout
-    title="Wieczór panieński koło Supraśla – co ustalić przed wyjazdem"
-    description="Planujesz spotkanie w okolicy Supraśla? Przed rezerwacją ustal z gospodarzem zasady pobytu grupowego, liczbę gości i dostępność udogodnień."
+    title="Wieczór panieński w lesie koło Supraśla | In The Woods"
+    description="Wieczór panieński w Supraślu: cały domek dla Waszej ekipy do 8 osób, balia, ognisko i kominek. Zapytajcie o termin i zasady."
     breadcrumbName="Wieczór panieński Supraśl"
     ogImage="https://www.suprasl.online/images/kitchen-dining.jpg"
+    jsonLd={createLandingPageSchemas('/wieczor-panienski-suprasl', faqs)}
+    showRelatedPages={false}
+    ctaTitle="Zapytaj o termin panieńskiego"
+    ctaDescription="Napiszcie, jak wyobrażacie sobie ten wieczór. Gospodarz odpowie z dostępnością i wyceną."
+    ctaFormLabel="Zapytaj o termin"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Spotkanie w okolicy Supraśla — informacje przed planowaniem
+        Wieczór panieński w lesie koło Supraśla — domek na wyłączność dla Waszej ekipy
       </h1>
-
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Jeśli rozważasz spotkanie grupowe w In The Woods, przed wysłaniem zapytania ustal z
-        gospodarzem, czy taki pobyt jest możliwy. Potwierdź maksymalną liczbę gości, zasady dotyczące
-        odwiedzających i ciszy nocnej oraz dostępność dodatkowych udogodnień.
+        Wieczór panieński w Supraślu może oznaczać wspólny stół, ognisko w ogrodzie i rozmowy, które
+        przeciągają się do późna. W In The Woods cała przestrzeń należy do Waszej grupy, a las
+        zaczyna się za progiem. To pomysł na imprezę panieńską w naturze, niedaleko Białegostoku.
       </p>
+      <figure className="overflow-hidden rounded-xl">
+        <img
+          src={firepitNight}
+          alt="Ognisko w ogrodzie leśnego domku podczas wieczoru panieńskiego na Podlasiu"
+          className="w-full aspect-[16/9] object-cover"
+          loading="lazy"
+        />
+      </figure>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Co ustalić przed spotkaniem?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Cały domek tylko dla Was</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Zasady dla grup i wydarzeń mogą różnić się od standardowego pobytu. Nie zakładaj, że
-        organizacja imprezy, dodatkowi goście lub głośna muzyka są dozwolone.
+        Drewniany dom z bali jest wynajmowany na wyłączność jednej grupie i mieści do 8 osób. Znajdziecie
+        tu dwie sypialnie, salon z kominkiem, kuchnię, ogród, taras, altanę i miejsce na ognisko.
+        Nocleg na wieczór panieński blisko Białegostoku dzieli od miasta około 30–40 minut jazdy.
       </p>
-      <ul className="text-muted-foreground space-y-2">
-        <li>Potwierdź, czy obiekt przyjmuje grupy i jakie są zasady wydarzeń.</li>
-        <li>Ustal liczbę osób, godziny ciszy nocnej i zasady zapraszania gości.</li>
-        <li>Zapytaj o dostępność balii ogrodowej z funkcją jacuzzi oraz jej koszt.</li>
-        <li>Sprawdź zasady korzystania z kominka, ogniska i przestrzeni na zewnątrz.</li>
-      </ul>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Pomysły na spokojny pobyt
+        Pomysły na wieczór panieński w In The Woods
       </h2>
+      <ul className="text-muted-foreground space-y-3">
+        <li>
+          🛁 Zaplanujcie wieczór panieński z jacuzzi w balii ogrodowej — dostępność potwierdza
+          gospodarz, koszt to 250 zł za pobyt.
+        </li>
+        <li>🔥 Rozpalcie ognisko i przygotujcie kolację na świeżym powietrzu.</li>
+        <li>🎲 Zabierzcie planszówki i spędźcie wieczór przy kominku.</li>
+        <li>📷 Zróbcie wspólną sesję w lesie lub na tarasie.</li>
+        <li>🛶 W sezonie zapytajcie lokalnego organizatora o spływ kajakowy rzeką Supraśl.</li>
+        <li>🍲 Przygotujcie coś razem w kuchni z podlaską płytą kaflową.</li>
+      </ul>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">Przykładowy plan panieńskiego</h2>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>Przed przyjazdem:</strong> Uzgodnij szczegóły pobytu i sprawdź lokalne opcje
-        gastronomiczne. Informacje o restauracjach znajdziesz w przewodniku po{' '}
-        <Link
-          to="/blog/restauracje-suprasl"
-          className="text-primary underline hover:text-primary/80"
-        >
-          restauracjach Supraśla
+        To domek dla grupy przyjaciółek, a plan może wyglądać tak: popołudniowy przyjazd i wspólne
+        rozgościenie się, wieczorem balia lub ognisko, a później gry i rozmowy przy kominku. Rano
+        możecie przygotować śniadanie razem i wybrać się na krótki spacer wśród drzew. Potraktujcie
+        ten scenariusz jako sugestię.
+      </p>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">Dobre wiedzieć</h2>
+      <ul className="text-muted-foreground space-y-2">
+        <li>
+          Przed rezerwacją uzgodnijcie z gospodarzem liczbę osób, ciszę nocną i ewentualnych
+          odwiedzających.
+        </li>
+        <li>Balia kosztuje 250 zł za pobyt i jest dostępna na zapytanie.</li>
+        <li>Pobyt z psem oraz ewentualne opłaty ustala gospodarz.</li>
+        <li>Wysłanie formularza jest zapytaniem o termin; nie potwierdza rezerwacji.</li>
+      </ul>
+      <p className="text-muted-foreground leading-relaxed">
+        Napiszcie do nas o Waszym planie — ustalimy szczegóły, żeby wszystko się zgadzało. Zobaczcie
+        także{' '}
+        <Link to="/domek-z-jacuzzi-podlasie" className="text-primary underline hover:text-primary/80">
+          domek z jacuzzi na Podlasiu
         </Link>
-        .
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Podczas pobytu:</strong> Korzystaj wyłącznie z udogodnień, których dostępność i zasady
-        zostały potwierdzone przez gospodarza. Szanuj sąsiadów i przestrzegaj ustalonych godzin ciszy.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Przerwa od ekranów:</strong> Wi-Fi jest dostępne. Jeśli chcesz spędzić czas offline,
-        zaplanuj dobrowolną przerwę według własnych potrzeb.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Na zewnątrz:</strong> Przed spacerem sprawdź dostępność tras i zasady obowiązujące na
-        terenach chronionych.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">
-        Zasady pobytu grupowego
-      </h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Przed planowaniem innego spotkania skontaktuj się z gospodarzem, aby potwierdzić, czy jest
-        ono możliwe i jakie warunki obowiązują.
-      </p>
-      <ul className="text-muted-foreground space-y-2">
-        <li>Jaka liczba osób może przebywać w domu?</li>
-        <li>Czy wydarzenie i dodatkowi goście są dozwoleni?</li>
-        <li>Jakie zasady dotyczą hałasu, ogniska i udogodnień?</li>
-        <li>Jakie opłaty i warunki obowiązują w wybranym terminie?</li>
-      </ul>
-      <p className="text-muted-foreground leading-relaxed">
-        Dom jest wynajmowany na wyłączność, ale pobyt nadal podlega zasadom obiektu. Nie dokonuj
-        rezerwacji dla wydarzenia, dopóki gospodarz nie potwierdzi jego warunków.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Informacje o domu</h2>
-      <ul className="text-muted-foreground space-y-2">
-        <li>🏡 Cały <strong>dom na wyłączność</strong> (do 8 osób)</li>
-        <li>🛁 Balia ogrodowa z funkcją jacuzzi jako opcjonalny dodatek</li>
-        <li>🔥 Klimatyczny <strong>kominek</strong> w salonie</li>
-        <li>🌲 Informacje o ogrodzie i zasadach korzystania potwierdź przed przyjazdem</li>
-        <li>🍽️ W pełni wyposażona kuchnia z płytą kaflową</li>
-        <li>📶 Wi-Fi jest dostępne; wymagania dotyczące łącza potwierdź przed pobytem</li>
-        <li>🐕 Możliwość pobytu z psem i ewentualne opłaty potwierdź z gospodarzem</li>
-      </ul>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w okolicy</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Podczas pobytu możesz zwiedzić{' '}
+        , zaplanujcie{' '}
+        <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
+          weekend w Supraślu
+        </Link>{' '}
+        lub sprawdźcie{' '}
         <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
           atrakcje Supraśla
         </Link>
-        . Przed wyjściem sprawdź godziny otwarcia. Możesz też sprawdzić{' '}
-        <Link to="/blog/kajaki-suprasl" className="text-primary underline hover:text-primary/80">
-          spływ kajakowy rzeką Supraśl
-        </Link>{' '}
-        oraz warunki spływu u organizatora. Zobacz także{' '}
-        <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
-          propozycje weekendu w Supraślu
-        </Link>{' '}
         .
       </p>
 
-      <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-heading text-2xl font-light">Zapytaj o pobyt grupowy</h3>
-        <p className="text-muted-foreground">
-          Zadzwoń lub napisz, aby potwierdzić zasady pobytu grupowego. Wysłanie formularza nie potwierdza rezerwacji ani nie oznacza płatności.
-        </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="tel:+48722765101" className="btn-primary">
-            Zadzwoń: 722 765 101
-          </a>
-          <a href="mailto:tutinthewood@gmail.com" className="btn-outline">
-            Napisz do nas
-          </a>
-        </div>
-      </div>
+      <section aria-labelledby="hen-faq">
+        <h2 id="hen-faq" className="section-title !text-2xl md:!text-3xl">FAQ</h2>
+        <dl className="space-y-5">
+          {faqs.map(({ question, answer }) => (
+            <div key={question}>
+              <dt className="font-semibold text-foreground">{question}</dt>
+              <dd className="mt-1 text-muted-foreground">{answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
     </article>
   </SEOPageLayout>
 );

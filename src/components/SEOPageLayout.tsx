@@ -12,7 +12,11 @@ interface SEOPageLayoutProps {
   ogImage?: string;
   keywords?: string[];
   jsonLd?: object | object[];
+  showRelatedPages?: boolean;
   showCTA?: boolean;
+  ctaTitle?: string;
+  ctaDescription?: string;
+  ctaFormLabel?: string;
 }
 
 const SEOPageLayout = ({
@@ -23,7 +27,11 @@ const SEOPageLayout = ({
   ogImage,
   keywords,
   jsonLd,
+  showRelatedPages = true,
   showCTA = true,
+  ctaTitle = 'Sprawdź dostępność terminu',
+  ctaDescription = 'Wyślij zapytanie o pobyt. Formularz nie potwierdza rezerwacji ani nie oznacza płatności.',
+  ctaFormLabel,
 }: SEOPageLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -127,16 +135,14 @@ const SEOPageLayout = ({
       {/* Content */}
       <main className="max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-16">
         {children}
-        <RelatedPages />
+        {showRelatedPages ? <RelatedPages /> : null}
       </main>
 
       {showCTA ? (
         <section className="px-6 md:px-12 py-16 bg-secondary">
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="font-heading text-3xl font-light">Sprawdź dostępność terminu</h2>
-            <p className="text-muted-foreground">
-              Wyślij zapytanie o pobyt. Formularz nie potwierdza rezerwacji ani nie oznacza płatności.
-            </p>
+            <h2 className="font-heading text-3xl font-light">{ctaTitle}</h2>
+            <p className="text-muted-foreground">{ctaDescription}</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
                 <Phone className="w-4 h-4" /> 722 765 101
@@ -147,12 +153,17 @@ const SEOPageLayout = ({
               >
                 <Mail className="w-4 h-4" /> Napisz do nas
               </a>
+              {ctaFormLabel ? (
+                <a href="/#rezerwacja" className="btn-outline">
+                  {ctaFormLabel}
+                </a>
+              ) : null}
             </div>
             <p className="text-sm text-muted-foreground">
               Konne 109/1, 16-030 Supraśl · Gospodarz: Maciej
             </p>
           </div>
-        </section>
+      </section>
       ) : null}
 
       {/* Footer */}
