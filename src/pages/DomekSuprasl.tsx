@@ -6,7 +6,7 @@ const faqItems = [
   {
     question: 'Ile osób pomieści domek w Supraślu?',
     answer:
-      'Domek wygodnie pomieści do 8 osób i jest wynajmowany w całości jednej grupie. Na parterze znajduje się salon, kuchnia i łazienka, a na piętrze dwie sypialnie z dużymi łóżkami. To przestrzeń dla rodziny, przyjaciół lub kilku par podróżujących razem.',
+      'Domek wygodnie pomieści do 8 osób i jest wynajmowany w całości jednej grupie. Na parterze znajduje się salon, kuchnia i łazienka, a na piętrze dwie sypialnie z dużymi łóżkami. To przestrzeń dla rodziny, przyjaciół lub kilku par podróżujących razem. Maciej potwierdzi szczegóły pobytu.',
   },
   {
     question: 'Ile kosztuje wynajem domku?',
@@ -16,22 +16,22 @@ const faqItems = [
   {
     question: 'Czy domek ma jacuzzi albo banię ogrodową?',
     answer:
-      `Do domku można zamówić balię ogrodową z funkcją jacuzzi za ${GARDEN_TUB_PRICE} zł za pobyt. To dodatek dostępny na zapytanie, a termin korzystania potwierdza gospodarz. Napisz przed przyjazdem, jeśli zależy Wam na balii, by sprawdzić jej dostępność i ustalić szczegóły.`,
+      `Do domku można zamówić balię ogrodową z funkcją jacuzzi za ${GARDEN_TUB_PRICE} zł za pobyt. To dodatek dostępny na zapytanie, a termin korzystania potwierdza gospodarz. Napisz przed przyjazdem, jeśli zależy Wam na balii, by sprawdzić jej dostępność i ustalić szczegóły. Warto zapytać wcześniej.`,
   },
   {
     question: 'Czy można przyjechać z psem?',
     answer:
-      'Pobyt z psem jest możliwy po wcześniejszym uzgodnieniu z gospodarzem. Maciej potwierdzi zasady oraz ewentualne opłaty dla wybranego terminu. W okolicy znajdują się obszary chronione, na których obowiązują odrębne reguły dotyczące zwierząt. Przed spacerem sprawdź zasady na planowanej trasie.',
+      'Pobyt z psem jest możliwy po wcześniejszym uzgodnieniu z gospodarzem. Maciej potwierdzi zasady oraz ewentualne opłaty dla wybranego terminu. W okolicy znajdują się obszary chronione, na których obowiązują odrębne reguły dotyczące zwierząt. Przed spacerem sprawdź zasady na planowanej trasie, a pobyt uzgodnij przed rezerwacją.',
   },
   {
     question: 'Czy domek jest do wynajęcia na wyłączność?',
     answer:
-      'Tak, wynajem obejmuje cały drewniany domek i jedną grupę gości. Nie rezerwujecie pojedynczych pokoi ani nie dzielicie przestrzeni z innymi turystami. Możecie korzystać z salonu, kuchni, ogrodu, tarasu i miejsca na ognisko w ramach pobytu.',
+      'Tak, wynajem obejmuje cały drewniany domek i jedną grupę gości. Nie rezerwujecie pojedynczych pokoi ani nie dzielicie przestrzeni z innymi turystami. Możecie korzystać z salonu, kuchni, ogrodu, tarasu i miejsca na ognisko w ramach pobytu. To prywatny wypoczynek dla Waszej grupy.',
   },
   {
     question: 'Jak dojechać z Białegostoku?',
     answer:
-      'Domek znajduje się pod adresem Konne 109/1, 16-030 Supraśl, około 10 minut jazdy od centrum Supraśla. Z Białegostoku dojazd zajmuje zwykle około 30–40 minut, zależnie od ruchu i wybranej trasy. Przed podróżą sprawdź aktualną nawigację.',
+      'Domek znajduje się pod adresem Konne 109/1, 16-030 Supraśl, około 10 minut jazdy od centrum Supraśla. Z Białegostoku dojazd zajmuje zwykle około 30–40 minut, zależnie od ruchu i wybranej trasy. Przed podróżą sprawdź aktualną nawigację, by wybrać najlepszą drogę.',
   },
 ];
 
@@ -102,9 +102,9 @@ const DomekSuprasl = () => (
           Domek Supraśl – drewniany domek na wyłączność w lesie z kominkiem i jacuzzi
         </h1>
         <p className="text-muted-foreground leading-relaxed text-lg">
-          Domek Supraśl to drewniany domek na wyłączność w lesie, przygotowany dla par, rodzin i grup
-          do 8 osób. W Konne, blisko Supraśla i Puszczy Knyszyńskiej, czekają na Was zapach bali,
-          spokojne poranki i własny ogród.
+          In The Woods to drewniany domek w lesie koło Supraśla, wynajmowany w całości dla jednej
+          grupy do 8 osób. W Konne, blisko Supraśla i Puszczy Knyszyńskiej, czekają na Was zapach
+          bali, spokojne poranki i własny ogród.
         </p>
         <Link to="/#rezerwacja" className="btn-primary inline-flex">
           Zapytaj o termin
