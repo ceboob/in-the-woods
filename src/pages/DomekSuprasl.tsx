@@ -108,6 +108,29 @@ const DomekSuprasl = () => (
         </p>
       </header>
 
+      <section className="not-prose grid gap-4 sm:grid-cols-2">
+        <figure>
+          <img
+            src="/images/living-fireplace.jpg"
+            alt="Wnętrze drewnianego domku z bali koło Supraśla, salon z kominkiem"
+            className="h-64 w-full rounded-lg object-cover"
+            loading="lazy"
+            width="768"
+            height="576"
+          />
+        </figure>
+        <figure>
+          <img
+            src="/images/jacuzzi-night.jpg"
+            alt="Balia ogrodowa z jacuzzi w lesie na Podlasiu, dostępna na zapytanie"
+            className="h-64 w-full rounded-lg object-cover"
+            loading="lazy"
+            width="768"
+            height="576"
+          />
+        </figure>
+      </section>
+
       <ul className="grid gap-3 sm:grid-cols-2 text-muted-foreground">
         <li>🏡 Cały domek tylko dla Was, wygodny pobyt do 8 osób</li>
         <li>🪵 Drewniana konstrukcja z bali</li>
@@ -134,7 +157,7 @@ const DomekSuprasl = () => (
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Domek sprawdzi się na rodzinny wyjazd, workation albo weekend dla grupy przyjaciół.
-          Możecie też przyjechać we dwoje i cieszyć się spokojem, który daje własna przestrzeń.
+          To także domek na wyłączność dla dwojga, gdy planujecie spokojny czas tylko we dwoje.
           Zobaczcie{' '}
           <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
             pomysły na weekend w Supraślu
@@ -157,7 +180,7 @@ const DomekSuprasl = () => (
         <p className="text-muted-foreground leading-relaxed">
           Po dniu na świeżym powietrzu ogrzejecie się przy trzaskającym ogniu. W ogrodzie czeka
           miejsce na wieczorne ognisko, a gdy balia jest dostępna, nad ciepłą wodą unosi się para.
-          Właśnie tak może wyglądać domek z kominkiem i balią ogrodową na Podlasiu.
+          Taki domek z ogniskiem pozwala zostać na zewnątrz dłużej, gdy pogoda sprzyja.
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Balia z funkcją jacuzzi jest dodatkowo płatna i wymaga potwierdzenia dostępności.
@@ -199,6 +222,10 @@ const DomekSuprasl = () => (
           Balia ogrodowa to opcjonalny dodatek za {GARDEN_TUB_PRICE} zł za pobyt. Podaj daty i liczbę
           osób w zapytaniu, a gospodarz przygotuje wycenę i potwierdzi dostępność. Formularz jest
           zapytaniem, nie potwierdzeniem rezerwacji.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Planujecie wynajem domku na weekend w Supraślu? Napiszcie do Macieja, by sprawdzić wolny
+          termin.
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Przed wyborem terminu przeczytaj także informacje o{' '}
