@@ -115,9 +115,8 @@ const NoclegiSuprasl = () => (
         </h1>
         <p className="text-muted-foreground leading-relaxed text-lg">
           Szukacie noclegu koło Supraśla, gdzie poranek zaczyna się śpiewem ptaków, a wieczór
-          trzaskiem drewna? In The Woods to drewniany dom w lesie, wynajmowany w całości jednej
-          grupie. Czeka na Was w Konne, blisko Puszczy Knyszyńskiej i około 10 minut od centrum
-          Supraśla.
+          trzaskiem drewna? In The Woods to dom w lesie, wynajmowany w całości jednej grupie.
+          Czeka na Was w Konne, blisko Puszczy Knyszyńskiej i około 10 minut od centrum Supraśla.
         </p>
         <div className="flex flex-col gap-3 sm:flex-row not-prose">
           <a href="tel:+48722765101" className="btn-primary text-center">
@@ -205,8 +204,9 @@ const NoclegiSuprasl = () => (
         <p className="text-muted-foreground leading-relaxed">
           Okolica zaprasza na trasy Puszczy Knyszyńskiej, spacer nad rzeką Supraśl oraz wizytę w
           Monasterze Zwiastowania i Muzeum Ikon. To także propozycja dla osób szukających noclegów w
-          Puszczy Knyszyńskiej. Jeśli wpisujecie „chata w lesie Podlasie”, znajdziecie tu drewniany
-          dom koło Supraśla, zanurzony w zieleni.
+          Puszczy Knyszyńskiej. Hasło „noclegi Puszcza Knyszyńska” obejmuje również domy w okolicy
+          Supraśla. Jeśli wpisujecie „domek w Puszczy Knyszyńskiej” lub „chata w lesie Podlasie”,
+          znajdziecie tu drewniany dom koło Supraśla, blisko leśnych tras.
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Przed wyjazdem możecie ułożyć własny plan: zajrzyjcie do naszego{' '}
