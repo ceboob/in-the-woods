@@ -39,6 +39,7 @@ const attractions = [
   'Domy Tkaczy',
   'Bulwary nad rzeką Supraśl i plaża miejska',
   'Teatr Wierszalin',
+  'Pomnik rodzin supraskich',
   'Cmentarz prawosławny i zabytki wielokulturowe',
 ];
 
@@ -93,14 +94,15 @@ const AtrakcjeSuprasl = () => (
           interesuje Was duchowe dziedzictwo Podlasia.
         </li>
         <li>
-          <strong>          Muzeum Ikon w Supraślu — [X km | Y min autem/spacerem od domu].</strong> Ekspozycja pokazuje
-          sztukę ikon w zabudowaniach poklasztornych. To propozycja na spokojne zwiedzanie także wtedy,
-          gdy chcecie odpocząć od leśnych tras.
+          <strong>Muzeum Ikon Supraśl — [X km | Y min autem/spacerem z Konne].</strong> Ekspozycja
+          pokazuje sztukę ikon w zabudowaniach poklasztornych. To propozycja na spokojne zwiedzanie
+          także wtedy, gdy chcecie odpocząć od leśnych tras.
         </li>
         <li>
           <strong>Białostocki Ośrodek Drukarstwa — [X km | Y min autem/spacerem z Konne].</strong>{' '}
           Muzeum Drukarstwa i Papieru opowiada o dawnym rzemiośle i pracy z papierem. To ciekawy
-          przystanek dla rodzin i           osób, które lubią miejsca z lokalną historią. To ciekawa propozycja także dla dzieci.
+          przystanek dla rodzin i osób, które lubią miejsca z lokalną historią, a także jedna z
+          atrakcji dla dzieci w Supraślu.
         </li>
         <li>
           <strong>Pałac Buchholtzów — [X km | Y min autem/spacerem z Konne].</strong> Secesyjna
@@ -123,6 +125,11 @@ const AtrakcjeSuprasl = () => (
           kameralne wydarzenia kulturalne.
         </li>
         <li>
+          <strong>Pomnik rodzin supraskich — [X km | Y min autem/spacerem z Konne].</strong> Pomnik
+          upamiętnia mieszkańców i rodziny związane z historią miasteczka. To krótki przystanek dla
+          osób chcących lepiej poznać lokalne dziedzictwo.
+        </li>
+        <li>
           <strong>Cmentarz prawosławny i zabytki wielokulturowe — [X km | Y min autem/spacerem z Konne].</strong>{' '}
           To ciche miejsce pamięci, które przypomina o wielowyznaniowej historii Supraśla. Wybierzcie
           się tam z szacunkiem dla charakteru nekropolii.
@@ -135,11 +142,13 @@ const AtrakcjeSuprasl = () => (
       <ul className="space-y-4 text-muted-foreground">
         <li>
           <strong>Arboretum Kopna Góra — [X km | Y min autem z Konne].</strong> Leśne kolekcje roślin
-          i ścieżki tworzą cel spokojnej wycieczki na kilka godzin.
+          i ścieżki tworzą cel spokojnej wycieczki na kilka godzin. To dobre miejsce dla osób, które
+          chcą poznać przyrodnicze atrakcje Podlasia.
         </li>
         <li>
           <strong>Kruszyniany — [X km | Y min autem z Konne].</strong> Zobaczycie tu meczet i mizar,
-          a regionalną wyprawę można połączyć z kuchnią tatarską.
+          a regionalną wyprawę można połączyć z kuchnią tatarską. To ważny punkt na mapie
+          wielokulturowych zabytków Podlasia.
         </li>
         <li>
           <strong>Rezerwat Krzemienne Góry — [X km | Y min autem z Konne].</strong> To przyrodniczy
@@ -158,8 +167,9 @@ const AtrakcjeSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Aktywności sezonowe</h2>
       <p className="text-muted-foreground leading-relaxed">
-        W sezonie można zaplanować spływ kajakowy na rzece Supraśl z lokalnym organizatorem. Jesień sprzyja
-        leśnym spacerom i grzybobraniu, a zimą warto wybrać krótsze trasy dostosowane do pogody.
+        Latem można zaplanować spływ kajakowy rzeką Supraśl z lokalnym organizatorem. Jesienne
+        grzybobranie w Puszczy Knyszyńskiej zaplanujcie na terenach, gdzie zezwalają na to aktualne
+        zasady. Zimą sprawdźcie warunki na trasach spacerowych i narciarskich przed wyjściem.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
@@ -197,8 +207,9 @@ const AtrakcjeSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Odległości oznaczono placeholderami do uzupełnienia po weryfikacji w Google Maps przez
         gospodarza. Przed wizytą sprawdźcie godziny otwarcia, repertuar, dostępność plaży i zasady
-        poruszania się po terenach chronionych. Aktualne warunki zbierania grzybów ustalcie dla
-        konkretnego obszaru.
+        poruszania się po terenach chronionych. Jeśli planujecie, co warto zobaczyć na Podlasiu,
+        dopasujcie trasę do godzin otwarcia i czasu, jaki macie na zwiedzanie. Aktualne warunki
+        zbierania grzybów ustalcie dla konkretnego obszaru.
       </p>
 
       <section aria-labelledby="attractions-faq">
