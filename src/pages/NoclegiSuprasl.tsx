@@ -159,8 +159,11 @@ const NoclegiSuprasl = () => (
         <Link to="/puszcza-knyszynska-nocleg" className="text-primary underline hover:text-primary/80">
           noclegach w Puszczy Knyszyńskiej
         </Link>
-        . Dzięki temu strona nie kończy się na samej ofercie, tylko prowadzi gościa przez pełną
-        decyzję: gdzie spać, co robić i dlaczego wybrać bazę w lesie.
+        . Zobacz również drewniany{' '}
+        <Link to="/domek-suprasl" className="text-primary underline hover:text-primary/80">
+          domek na wyłączność
+        </Link>
+        , poznaj jego wnętrza i sprawdź, czy pasuje do Waszego wyjazdu.
       </p>
 
       <div className="bg-secondary p-8 text-center space-y-4 mt-12">

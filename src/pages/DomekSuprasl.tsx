@@ -2,133 +2,246 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import { Link } from 'react-router-dom';
 import { GARDEN_TUB_PRICE, MIN_NIGHTLY_RATE } from '@/lib/pricing';
 
+const faqItems = [
+  {
+    question: 'Ile osób pomieści domek w Supraślu?',
+    answer:
+      'Domek wygodnie pomieści do 8 osób i jest wynajmowany w całości jednej grupie. Na parterze znajduje się salon, kuchnia i łazienka, a na piętrze dwie sypialnie z dużymi łóżkami. To przestrzeń dla rodziny, przyjaciół lub kilku par podróżujących razem.',
+  },
+  {
+    question: 'Ile kosztuje wynajem domku?',
+    answer:
+      `Cena zaczyna się od ${MIN_NIGHTLY_RATE} zł za noc i zależy od terminu oraz liczby gości. Opcjonalna balia ogrodowa z funkcją jacuzzi kosztuje ${GARDEN_TUB_PRICE} zł za pobyt; jej dostępność potwierdza gospodarz. Napisz lub zadzwoń, podając daty i liczbę osób, aby otrzymać wycenę.`,
+  },
+  {
+    question: 'Czy domek ma jacuzzi albo banię ogrodową?',
+    answer:
+      `Do domku można zamówić balię ogrodową z funkcją jacuzzi za ${GARDEN_TUB_PRICE} zł za pobyt. To dodatek dostępny na zapytanie, a termin korzystania potwierdza gospodarz. Napisz przed przyjazdem, jeśli zależy Wam na balii, by sprawdzić jej dostępność i ustalić szczegóły.`,
+  },
+  {
+    question: 'Czy można przyjechać z psem?',
+    answer:
+      'Pobyt z psem jest możliwy po wcześniejszym uzgodnieniu z gospodarzem. Maciej potwierdzi zasady oraz ewentualne opłaty dla wybranego terminu. W okolicy znajdują się obszary chronione, na których obowiązują odrębne reguły dotyczące zwierząt. Przed spacerem sprawdź zasady na planowanej trasie.',
+  },
+  {
+    question: 'Czy domek jest do wynajęcia na wyłączność?',
+    answer:
+      'Tak, wynajem obejmuje cały drewniany domek i jedną grupę gości. Nie rezerwujecie pojedynczych pokoi ani nie dzielicie przestrzeni z innymi turystami. Możecie korzystać z salonu, kuchni, ogrodu, tarasu i miejsca na ognisko w ramach pobytu.',
+  },
+  {
+    question: 'Jak dojechać z Białegostoku?',
+    answer:
+      'Domek znajduje się pod adresem Konne 109/1, 16-030 Supraśl, około 10 minut jazdy od centrum Supraśla. Z Białegostoku dojazd zajmuje zwykle około 30–40 minut, zależnie od ruchu i wybranej trasy. Przed podróżą sprawdź aktualną nawigację.',
+  },
+];
+
+const lodgingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LodgingBusiness',
+  '@id': 'https://www.suprasl.online/domek-suprasl#lodging',
+  name: 'In The Woods',
+  url: 'https://www.suprasl.online/domek-suprasl',
+  telephone: '+48722765101',
+  email: 'tutinthewood@gmail.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Konne 109/1',
+    postalCode: '16-030',
+    addressLocality: 'Supraśl',
+    addressRegion: 'podlaskie',
+    addressCountry: 'PL',
+  },
+  maximumAttendeeCapacity: 8,
+  priceRange: `od ${MIN_NIGHTLY_RATE} zł/noc`,
+  amenityFeature: [
+    { '@type': 'LocationFeatureSpecification', name: 'Kominek', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Klimatyzacja latem', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Taras i ogród', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Bezpłatny parking', value: true },
+    {
+      '@type': 'LocationFeatureSpecification',
+      name: 'Balia ogrodowa z funkcją jacuzzi',
+      value: `Dostępna na zapytanie, ${GARDEN_TUB_PRICE} zł za pobyt`,
+    },
+  ],
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map(({ question, answer }) => ({
+    '@type': 'Question',
+    name: question,
+    acceptedAnswer: { '@type': 'Answer', text: answer },
+  })),
+};
+
 const DomekSuprasl = () => (
   <SEOPageLayout
-    title="Domek Supraśl — leśny domek do wynajęcia | In The Woods"
-    description="Prywatny dom w otoczeniu Puszczy Knyszyńskiej, niedaleko Supraśla. Kominek, ogród i opcjonalna balia ogrodowa z funkcją jacuzzi. Sprawdź szczegóły i wyślij zapytanie o pobyt."
+    title="Domek Supraśl – las, kominek i 8 osób | In The Woods"
+    description={`Domek Supraśl dla 8 osób, na wyłączność, z kominkiem i balią od ${GARDEN_TUB_PRICE} zł. Ceny od ${MIN_NIGHTLY_RATE} zł/noc. Zapytaj o termin!`}
     breadcrumbName="Domek Supraśl"
     ogImage="https://www.suprasl.online/images/living-fireplace.jpg"
+    keywords={[
+      'domek Supraśl',
+      'domek na wyłączność',
+      'domek w lesie',
+      'domek z kominkiem',
+      'domek z jacuzzi Podlasie',
+      'dom z bali Podlasie',
+      'domek w Puszczy Knyszyńskiej',
+      'domek dla 8 osób',
+      'domek koło Supraśla',
+    ]}
+    jsonLd={[lodgingSchema, faqSchema]}
+    showCTA={false}
   >
     <article className="prose prose-lg max-w-none space-y-8">
-      <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Domek Supraśl — leśny domek na wyłączność
-      </h1>
+      <header className="space-y-5">
+        <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
+          Domek Supraśl – drewniany domek na wyłączność w lesie z kominkiem i jacuzzi
+        </h1>
+        <p className="text-muted-foreground leading-relaxed text-lg">
+          Domek Supraśl to drewniany domek na wyłączność w lesie, przygotowany dla par, rodzin i grup
+          do 8 osób. W Konne, blisko Supraśla i Puszczy Knyszyńskiej, czekają na Was zapach bali,
+          spokojne poranki i własny ogród.
+        </p>
+      </header>
 
-      <p className="text-muted-foreground leading-relaxed text-lg">
-        Szukasz <strong>domku w Supraślu</strong> na wyłączność? In The Woods to drewniany{' '}
-        <strong>dom z bali</strong> w miejscowości Konne, niedaleko Supraśla i w otoczeniu
-        Puszczy Knyszyńskiej. To prywatna przestrzeń do odpoczynku w naturze.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">
-        Dom w otoczeniu Puszczy Knyszyńskiej
-      </h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Supraśl to uzdrowiskowe miasteczko w województwie podlaskim, otoczone Puszczą Knyszyńską.
-        Dom znajduje się w miejscowości Konne, niedaleko Supraśla. To miejsce na spokojny pobyt
-        z dala od miejskiego zgiełku.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        In The Woods to <strong>dom na wyłączność</strong>, który wynajmujesz w całości.
-        Żadnych sąsiednich pokoi ani współdzielonej przestrzeni z innymi gośćmi — dom i ogród są do
-        Twojej dyspozycji.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Domek z kominkiem i jacuzzi w lesie</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Dom mieści komfortowo do 8 osób. Na parterze przestronny salon z klimatycznym kominkiem, w
-        pełni wyposażona kuchnia z płytą kaflową oraz łazienka. Na piętrze — dwie sypialnie z
-        dużymi łóżkami i widokiem na las.
-      </p>
-      <ul className="text-muted-foreground space-y-2">
-        <li>🏠 Cały <strong>dom na wyłączność</strong> (do 8 osób)</li>
-        <li>🔥 Klimatyczny kominek w salonie</li>
-        <li>🛁 Opcjonalna balia ogrodowa z funkcją jacuzzi</li>
-        <li>🌳 Ogród, taras i miejsce na ognisko</li>
-        <li>🐕 Możliwość pobytu z psem i ewentualne opłaty potwierdź z gospodarzem</li>
-        <li>📶 Wi-Fi jest dostępne; wymagania dotyczące łącza potwierdź przed pobytem</li>
-        <li>❄️ Klimatyzacja w sezonie letnim</li>
+      <ul className="grid gap-3 sm:grid-cols-2 text-muted-foreground">
+        <li>🏡 Cały domek tylko dla Was, wygodny pobyt do 8 osób</li>
+        <li>🪵 Drewniana konstrukcja z bali</li>
+        <li>🔥 Salon z kominkiem i podlaską płytą kaflową</li>
+        <li>🛁 Balia ogrodowa z jacuzzi na zapytanie, 250 zł za pobyt</li>
+        <li>🌿 Taras, ogród i miejsce na ognisko</li>
+        <li>❄️ Klimatyzacja latem; Wi-Fi dostępne na zapytanie</li>
         <li>🅿️ Bezpłatny parking</li>
       </ul>
 
-      <p className="text-muted-foreground leading-relaxed">
-        Wieczorem możesz odpocząć przy kominku. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym
-        dodatkiem do pobytu; szczegóły korzystania i dostępność potwierdź przed przyjazdem.
-      </p>
+      <section>
+        <h2 className="section-title !text-2xl md:!text-3xl">
+          Drewniany domek z bali blisko Puszczy Knyszyńskiej
+        </h2>
+        <p className="text-muted-foreground leading-relaxed">
+          In The Woods to dom z bali na Podlasiu, w miejscowości Konne. Od centrum Supraśla dzieli
+          Was około 10 minut jazdy. To dobry wybór dla osób szukających domku w Puszczy Knyszyńskiej
+          i spokojnego miejsca blisko leśnych tras.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Na parterze znajdziecie salon z kominkiem, kuchnię z tradycyjną płytą kaflową oraz łazienkę.
+          Ten regionalny detal przypomina o podlaskim charakterze domu. Piętro mieści dwie sypialnie
+          z dużymi łóżkami i widokiem na las.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Domek sprawdzi się na rodzinny wyjazd, workation albo weekend dla grupy przyjaciół.
+          Możecie też przyjechać we dwoje i cieszyć się spokojem, który daje własna przestrzeń.
+          Zobaczcie{' '}
+          <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
+            pomysły na weekend w Supraślu
+          </Link>{' '}
+          oraz{' '}
+          <Link
+            to="/puszcza-knyszynska-nocleg"
+            className="text-primary underline hover:text-primary/80"
+          >
+            domek blisko Puszczy Knyszyńskiej
+          </Link>
+          .
+        </p>
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">
-        Dla kogo jest ten leśny domek do wynajęcia
-      </h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Dom może być bazą podczas wyjazdu we dwoje, pobytu rodzinnego lub spotkania grupy.{' '}
-        <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
-          Pomysły na weekend w Supraślu
-        </Link>{' '}
-        pomogą zaplanować czas.
-        Wi-Fi jest dostępne dla osób, które chcą połączyć pobyt z pracą zdalną; przerwa od ekranów
-        pozostaje indywidualnym wyborem.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Możliwość pobytu z psem i ewentualne opłaty potwierdź z gospodarzem. Wybierając trasę,
-        sprawdź zasady dostępu dla zwierząt. Nie zakładaj, że
-        można wprowadzać zwierzęta na obszary chronione.
-      </p>
+      <section>
+        <h2 className="section-title !text-2xl md:!text-3xl">
+          Wieczór przy kominku i jacuzzi pod gwiazdami
+        </h2>
+        <p className="text-muted-foreground leading-relaxed">
+          Po dniu na świeżym powietrzu ogrzejecie się przy trzaskającym ogniu. W ogrodzie czeka
+          miejsce na wieczorne ognisko, a gdy balia jest dostępna, nad ciepłą wodą unosi się para.
+          Właśnie tak może wyglądać domek z kominkiem i balią ogrodową na Podlasiu.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Balia z funkcją jacuzzi jest dodatkowo płatna i wymaga potwierdzenia dostępności.
+          Jeśli marzy się Wam domek z jacuzzi na Podlasiu, zapytajcie o tę opcję przed przyjazdem.
+        </p>
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">
-        Dostępność w różnych terminach
-      </h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Dom można wynająć o różnych porach roku, w zależności od dostępności. Przed wyjazdem
-        sprawdź pogodę, warunki dojazdu i aktualne zasady korzystania z atrakcji w okolicy.
-      </p>
+      <section>
+        <h2 className="section-title !text-2xl md:!text-3xl">Pory roku w domku w lesie</h2>
+        <p className="text-muted-foreground leading-relaxed">
+          Jesienią wracacie ze spaceru do ciepła kominka, a za oknem szumią drzewa. Zimowy wieczór
+          może przynieść śnieg, ogień w salonie i parę unoszącą się nad balią, jeśli jej dostępność
+          zostanie potwierdzona.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Latem odpoczniecie na tarasie, w cieniu ogrodu lub przy ognisku. W domku działa
+          klimatyzacja w sezonie letnim. Przez cały rok możecie obudzić się z widokiem na las i
+          posłuchać ptaków o poranku.
+        </p>
+      </section>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Cennik i rezerwacja</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Ceny zaczynają się od {MIN_NIGHTLY_RATE} zł za noc, ale zależą od terminu i liczby gości.
-        Balia ogrodowa z funkcją jacuzzi jest opcjonalna i kosztuje {GARDEN_TUB_PRICE} zł za pobyt.
-        Wyślij zapytanie, aby otrzymać wycenę i potwierdzić dostępność; formularz nie potwierdza
-        rezerwacji ani nie oznacza płatności.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Odkryj też nasze inne przewodniki:{' '}
-        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
-          noclegi Supraśl
-        </Link>
-        ,{' '}
-        <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/80">
-          dom w lesie Supraśl
-        </Link>
-        ,{' '}
-        <Link
-          to="/domek-z-jacuzzi-podlasie"
-          className="text-primary underline hover:text-primary/80"
-        >
-          domek z jacuzzi Podlasie
-        </Link>{' '}
-        oraz{' '}
-        <Link
-          to="/puszcza-knyszynska-nocleg"
-          className="text-primary underline hover:text-primary/80"
-        >
-          nocleg w Puszczy Knyszyńskiej
-        </Link>
-        .
-      </p>
+      <section>
+        <h2 className="section-title !text-2xl md:!text-3xl">Dobre wiedzieć</h2>
+        <ul className="text-muted-foreground space-y-2">
+          <li>
+            Balia ogrodowa z funkcją jacuzzi jest dostępna na zapytanie i kosztuje{' '}
+            {GARDEN_TUB_PRICE} zł za pobyt. Gospodarz potwierdza dostępność.
+          </li>
+          <li>Pobyt z psem uzgodnijcie wcześniej z gospodarzem; potwierdzi też ewentualne opłaty.</li>
+          <li>Wi-Fi jest dostępne na zapytanie, jeśli chcecie sprawdzić szczegóły przed pobytem.</li>
+          <li>Na obszarach chronionych obowiązują własne zasady, także dotyczące obecności psa.</li>
+        </ul>
+      </section>
 
-      <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-heading text-2xl font-light">Zapytaj o pobyt w domku w lesie</h3>
+      <section>
+        <h2 className="section-title !text-2xl md:!text-3xl">Cennik i rezerwacja</h2>
+        <p className="text-muted-foreground leading-relaxed">
+          Ceny zaczynają się od {MIN_NIGHTLY_RATE} zł za noc i zależą od terminu oraz liczby gości.
+          Balia ogrodowa to opcjonalny dodatek za {GARDEN_TUB_PRICE} zł za pobyt. Podaj daty i liczbę
+          osób w zapytaniu, a gospodarz przygotuje wycenę i potwierdzi dostępność. Formularz jest
+          zapytaniem, nie potwierdzeniem rezerwacji.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Przed wyborem terminu przeczytaj także informacje o{' '}
+          <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
+            noclegach w Supraślu
+          </Link>
+          .
+        </p>
+      </section>
+
+      <section>
+        <h2 className="section-title !text-2xl md:!text-3xl">Najczęstsze pytania</h2>
+        <div className="space-y-5">
+          {faqItems.map(({ question, answer }) => (
+            <div key={question}>
+              <h3 className="font-heading text-xl text-foreground">{question}</h3>
+              <p className="text-muted-foreground leading-relaxed">{answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-secondary p-8 text-center space-y-4 mt-12">
+        <h2 className="font-heading text-2xl font-light">Zapytaj o dostępność domku</h2>
         <p className="text-muted-foreground">
-          Wyślij zapytanie o dostępność i cenę. Wysłanie formularza nie potwierdza rezerwacji ani nie oznacza płatności.
+          Napiszcie, kiedy chcecie przyjechać i w ile osób. Maciej pomoże sprawdzić termin i spokojnie
+          zaplanować pobyt.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a href="tel:+48722765101" className="btn-primary">
             Zadzwoń: 722 765 101
           </a>
+          <a href="mailto:tutinthewood@gmail.com" className="btn-outline">
+            Napisz: tutinthewood@gmail.com
+          </a>
           <Link to="/#rezerwacja" className="btn-outline">
-            Przejdź do formularza zapytania
+            Formularz zapytania
           </Link>
         </div>
-      </div>
+        <p className="text-sm text-muted-foreground">
+          In The Woods · Konne 109/1, 16-030 Supraśl
+        </p>
+      </section>
     </article>
   </SEOPageLayout>
 );
