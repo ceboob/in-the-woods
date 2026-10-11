@@ -5,14 +5,13 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import HeroWelcome from '@/components/HeroWelcome';
 import BadgesBar from '@/components/BadgesBar';
-import TrustSection from '@/components/TrustSection';
+import ForWhoSection from '@/components/ForWhoSection';
 import BookingModule from '@/components/BookingModule';
 import AvailabilityCalendar from '@/components/AvailabilityCalendar';
 
 // Lazy-loaded sections below the fold
 const AmenitiesSection = lazy(() => import('@/components/AmenitiesSection'));
 const JacuzziSection = lazy(() => import('@/components/JacuzziSection'));
-const ForWhoSection = lazy(() => import('@/components/ForWhoSection'));
 const GallerySection = lazy(() => import('@/components/GallerySection'));
 const WinterSection = lazy(() => import('@/components/WinterSection'));
 const PricingSection = lazy(() => import('@/components/PricingSection'));
@@ -53,7 +52,7 @@ const Index = () => {
         <BookingModule />
         <AvailabilityCalendar />
         <BadgesBar />
-        <TrustSection />
+        <ForWhoSection />
 
         <Suspense fallback={<SectionFallback />}>
           {/* Oferta — co dostaje gość */}
@@ -66,7 +65,6 @@ const Index = () => {
           <GuideSection />
 
           <JacuzziSection />
-          <ForWhoSection />
 
           {/* Sezonowość + okolica */}
           <WinterSection />

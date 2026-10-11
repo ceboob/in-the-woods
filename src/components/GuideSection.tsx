@@ -10,15 +10,15 @@ interface CardData {
 }
 
 const Card = ({ icon: Icon, title, desc, cta, link }: CardData) => (
-  <div className="card-premium bg-card p-6 md:p-8 space-y-4">
-    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-      <Icon className="w-6 h-6 text-primary" />
+  <div className="flex h-full flex-col items-center text-center gap-4 rounded-2xl border border-border bg-card p-6">
+    <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+      <Icon className="w-7 h-7 text-primary" />
     </div>
-    <h3 className="font-heading text-xl font-semibold text-foreground">{title}</h3>
-    <p className="text-muted-foreground leading-relaxed">{desc}</p>
+    <h3 className="font-heading text-lg font-bold text-foreground">{title}</h3>
+    <p className="flex-grow text-base leading-relaxed text-[#444]">{desc}</p>
     <Link
       to={link}
-      className="inline-flex items-center gap-2 text-accent font-medium hover:underline"
+      className="mt-auto text-sm font-medium text-foreground underline underline-offset-4 decoration-primary hover:decoration-2"
     >
       {cta} →
     </Link>
