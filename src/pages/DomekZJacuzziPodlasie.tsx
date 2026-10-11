@@ -1,122 +1,144 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
+import { createLandingPageSchemas } from '@/lib/landingPageSchemas';
+import jacuzziNight from '@/assets/jacuzzi-night.webp';
 import { Link } from 'react-router-dom';
+
+const faqs = [
+  {
+    question: 'Ile kosztuje balia ogrodowa?',
+    answer:
+      'Balia ogrodowa kosztuje 250 zł za cały pobyt. To płatny dodatek do wynajmu domu, nie jest wliczona w cenę noclegu. Napisz przed rezerwacją, że chcecie z niej skorzystać; gospodarz potwierdzi dostępność i przekaże informacje o przygotowaniu oraz bezpiecznym użytkowaniu przed przyjazdem.',
+  },
+  {
+    question: 'Czy balia jest dostępna zimą?',
+    answer:
+      'Balia może być dostępna także zimą, a możliwość skorzystania z niej zależy od terminu i warunków. Gospodarz potwierdzi ją na zapytanie. Po kąpieli możecie wrócić do ciepłego salonu, gdzie czeka kominek i spokojny wieczór w domu z bali. To przyjemny plan na chłodny wieczór.',
+  },
+  {
+    question: 'Czy jacuzzi znajduje się w domu?',
+    answer:
+      'Nie, jacuzzi nie znajduje się wewnątrz domu. Balia z funkcją jacuzzi stoi w ogrodzie i jest dostępna jako płatny dodatek dla Waszej grupy. W środku znajdziecie salon z kominkiem, dwie sypialnie z widokiem na las, kuchnię i łazienkę. To wygodny układ na wspólny wyjazd.',
+  },
+  {
+    question: 'Czy to dom z jacuzzi dla 8 osób?',
+    answer:
+      'Dom jest przygotowany dla maksymalnie 8 osób i wynajmowany w całości jednej grupie. Na parterze są salon, kuchnia z płytą kaflową i łazienka, a na piętrze dwie sypialnie. Balia ogrodowa jest opcjonalnym dodatkiem za 250 zł za pobyt. Warto dopasować nocleg do składu grupy.',
+  },
+  {
+    question: 'Ile trwa dojazd z Białegostoku?',
+    answer:
+      'Z Białegostoku do Konnego dojeżdża się zwykle w około 30–40 minut. Dom stoi pod adresem Konne 109/1, około 10 minut jazdy od centrum Supraśla. To spokojna leśna baza niedaleko miasta, z całym domem i ogrodem dla Waszej grupy. Przed podróżą zaplanujcie trasę do Konnego.',
+  },
+];
 
 const DomekZJacuzziPodlasie = () => (
   <SEOPageLayout
-    title="Dom na wyłączność z balią ogrodową koło Supraśla"
-    description="In The Woods to dom na wyłączność w miejscowości Konne koło Supraśla. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem; sprawdź jej dostępność i zasady korzystania."
+    title="Domek z jacuzzi na Podlasiu – balia i kominek | In The Woods"
+    description="Domek z jacuzzi na Podlasiu: balia ogrodowa 250 zł/pobyt, cały dom na wyłączność do 8 osób. Zapytaj o termin w In The Woods."
     breadcrumbName="Domek z jacuzzi Podlasie"
     ogImage="https://www.suprasl.online/images/jacuzzi-night.jpg"
+    jsonLd={createLandingPageSchemas('/domek-z-jacuzzi-podlasie', faqs)}
+    showRelatedPages={false}
+    ctaTitle="Zapytaj o termin z balią"
+    ctaDescription="Napisz lub zadzwoń. Gospodarz potwierdzi dostępność balii i przygotuje wycenę pobytu."
+    ctaFormLabel="Zapytaj przez formularz"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Dom na wyłączność z opcjonalną balią ogrodową
+        Domek z jacuzzi na Podlasiu — balia ogrodowa w lesie na wyłączność
       </h1>
-
       <p className="text-muted-foreground leading-relaxed text-lg">
-        In The Woods to dom na wyłączność w miejscowości Konne, w okolicy Supraśla i Puszczy
-        Knyszyńskiej. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem; przed pobytem
-        potwierdź jej dostępność i warunki korzystania.
+        Domek z jacuzzi na Podlasiu to wieczór w ciepłej wodzie, gdy nad balią unosi się para, a nad
+        ogrodem widać gwiazdy. Las otula dom, a po kąpieli czeka trzask ognia w kominku.
+      </p>
+      <figure className="overflow-hidden rounded-xl">
+        <img
+          src={jacuzziNight}
+          alt="Balia ogrodowa z funkcją jacuzzi przy domku na wyłączność w lesie na Podlasiu"
+          className="w-full aspect-[16/9] object-cover"
+          loading="lazy"
+        />
+      </figure>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Balia ogrodowa z jacuzzi pod gwiazdami
+      </h2>
+      <p className="text-muted-foreground leading-relaxed">
+        Ciepła woda, szum drzew i chłodne powietrze tworzą prosty rytuał odpoczynku po dniu w
+        Puszczy Knyszyńskiej. Balia, nazywana też banią ogrodową, stoi w ogrodzie i jest przeznaczona
+        wyłącznie dla Waszej grupy.
+      </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Balia ogrodowa z funkcją jacuzzi kosztuje 250 zł za pobyt. Dopiszcie ją do zapytania, a
+        gospodarz potwierdzi dostępność i przekaże zasady korzystania.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Balia ogrodowa z funkcją jacuzzi
+        Domek z jacuzzi i kominkiem — co czeka w środku
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Przed wysłaniem zapytania ustal z gospodarzem, czy balia będzie dostępna w wybranym terminie
-        i jakie zasady korzystania obowiązują.
+        Drewniany dom z bali mieści do 8 osób i jest wynajmowany jednej grupie. Na parterze znajdziecie
+        salon z kominkiem, kuchnię z podlaskim akcentem — płytą kaflową — oraz łazienkę.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Zapoznaj się z instrukcją obsługi i zasadami bezpieczeństwa przed skorzystaniem z balii.
-        Warunki pogodowe i dostępność mogą wpływać na możliwość korzystania z niej.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Dom w okolicy Puszczy Knyszyńskiej</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Dom znajduje się w miejscowości Konne, niedaleko Supraśla. Wi-Fi jest dostępne, a przerwę
-        od ekranów możesz zaplanować dobrowolnie.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Wybierając trasę w regionie, sprawdź aktualne zasady udostępniania terenów chronionych i
-        warunki na drodze. Nie zakładaj, że można wejść do rezerwatu bez ograniczeń.
+        Na piętrze są dwie sypialnie z dużymi łóżkami i widokiem na las. Ogród, taras, altana i
+        miejsce na ognisko zapraszają, by zwolnić tempo.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Udogodnienia w domu</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Balia zimą i latem</h2>
       <p className="text-muted-foreground leading-relaxed">
-        In The Woods to nie tylko <strong>domek z jacuzzi</strong>. To kompletny{' '}
-        <strong>dom na wyłączność</strong> z kominkiem, sypialniami i kuchnią. Maksymalna liczba
-        gości wynosi 8 osób. Szczegóły wyposażenia sprawdź w opisie obiektu.
+        Zimą para nad wodą kontrastuje ze śniegiem, a po kąpieli można ogrzać się przy kominku.
+        Latem wieczór przenosi się na taras; klimatyzacja działa w sezonie letnim.
       </p>
-      <ul className="text-muted-foreground space-y-2">
-        <li>🛁 Balia ogrodowa z funkcją jacuzzi jako opcjonalny dodatek</li>
-        <li>🔥 Klimatyczny <strong>kominek</strong> w przestronnym salonie</li>
-        <li>🏡 Cały dom wynajmowany jest jednej grupie</li>
-        <li>🌲 Dom w miejscowości Konne koło Supraśla</li>
-        <li>🐕 Możliwość pobytu z psem i ewentualne opłaty potwierdź z gospodarzem</li>
-        <li>🔥 Zasady korzystania z miejsca na ognisko potwierdź przed przyjazdem</li>
-        <li>📶 Wi-Fi jest dostępne; wymagania dotyczące łącza potwierdź przed pobytem</li>
-        <li>❄️ Sprawdź szczegóły wyposażenia przed wyjazdem</li>
-      </ul>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Pobyt o różnych porach roku</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Atrakcje i warunki pobytu różnią się zależnie od pory roku. Przed planowaniem wycieczki
-        sprawdź pogodę, zasady zbierania grzybów i dostępność aktywności. Możesz też odwiedzić{' '}
-        <Link
-          to="/blog/szlaki-piesze-rowerowe-suprasl"
-          className="text-primary underline hover:text-primary/80"
-        >
-          przewodnik po trasach
+        Jacuzzi w lesie najlepiej smakuje bez pośpiechu: po spacerze, przy gwiazdach i w ciszy, którą
+        przerywają tylko ptaki albo trzask drewna.
+      </p>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Lokalizacja: Puszcza Knyszyńska i Białystok na wyciągnięcie ręki
+      </h2>
+      <p className="text-muted-foreground leading-relaxed">
+        In The Woods znajduje się pod adresem Konne 109/1, około 10 minut jazdy od centrum Supraśla.
+        To dom z jacuzzi niedaleko Białegostoku — dojazd z miasta zajmuje około 30–40 minut. Balia
+        ogrodowa na Podlasiu pozwala połączyć wieczorną kąpiel z odpoczynkiem po leśnym spacerze.
+      </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Po więcej inspiracji zajrzyjcie do przewodnika po{' '}
+        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
+          atrakcjach Supraśla
         </Link>
-        . Przed wyjściem sprawdź warunki na wybranej trasie i zasady korzystania z terenu.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Przed pobytem sprawdź cennik, zasady i dostępność dodatków. Zobacz również{' '}
+        . Sprawdźcie też{' '}
         <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
-          noclegi Supraśl
-        </Link>
-        ,{' '}
-        <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/80">
-          dom w lesie Supraśl
+          noclegi w Supraślu
         </Link>{' '}
         i{' '}
-        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
-          atrakcje Supraśla
+        <Link to="/domek-suprasl" className="text-primary underline hover:text-primary/80">
+          domek na wyłączność
         </Link>
         .
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Co można zaplanować w okolicy?</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        W Supraślu możesz odwiedzić Monaster i Muzeum Ikon; przed wizytą sprawdź aktualne godziny.
-        W okolicy możesz rozważyć{' '}
-        <Link
-          to="/blog/kruszyniany-tatarska-wies"
-          className="text-primary underline hover:text-primary/80"
-        >
-          tatarskie Kruszyniany
-        </Link>
-        , Arboretum Kopna Góra lub sprawdzić dostępność{' '}
-        <Link to="/blog/kajaki-suprasl" className="text-primary underline hover:text-primary/80">
-          spływów kajakowych rzeką Supraśl
-        </Link>
-        . Przed wyjazdem sprawdź trasę, warunki dojazdu i zasady korzystania z atrakcji.
-      </p>
+      <h2 className="section-title !text-2xl md:!text-3xl">Dobre wiedzieć</h2>
+      <ul className="text-muted-foreground space-y-2">
+        <li>Balia ogrodowa kosztuje 250 zł za pobyt i jest dostępna na zapytanie.</li>
+        <li>Instrukcję obsługi oraz zasady bezpieczeństwa otrzymacie od gospodarza.</li>
+        <li>Warunki pogodowe mogą wpływać na możliwość korzystania z balii.</li>
+        <li>Pobyt z psem i ewentualne opłaty ustala gospodarz.</li>
+        <li>W domu jest Wi-Fi, bezpłatny parking, ogród, taras i miejsce na ognisko.</li>
+      </ul>
 
-      <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-heading text-2xl font-light">Zapytaj o pobyt</h3>
-        <p className="text-muted-foreground">
-          Wyślij zapytanie o pobyt. Odpowiemy z informacją o dostępności i cenie; formularz nie potwierdza rezerwacji ani nie oznacza płatności.
-        </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="tel:+48722765101" className="btn-primary">
-            Zadzwoń: 722 765 101
-          </a>
-          <Link to="/#rezerwacja" className="btn-outline">
-            Przejdź do formularza zapytania
-          </Link>
-        </div>
-      </div>
+      <section aria-labelledby="jacuzzi-faq">
+        <h2 id="jacuzzi-faq" className="section-title !text-2xl md:!text-3xl">FAQ</h2>
+        <dl className="space-y-5">
+          {faqs.map(({ question, answer }) => (
+            <div key={question}>
+              <dt className="font-semibold text-foreground">{question}</dt>
+              <dd className="mt-1 text-muted-foreground">{answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
     </article>
   </SEOPageLayout>
 );

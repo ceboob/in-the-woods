@@ -15,6 +15,7 @@ interface SEOPageLayoutProps {
   showRelatedPages?: boolean;
   ctaTitle?: string;
   ctaDescription?: string;
+  ctaFormLabel?: string;
 }
 
 const SEOPageLayout = ({
@@ -28,6 +29,7 @@ const SEOPageLayout = ({
   showRelatedPages = true,
   ctaTitle = 'Sprawdź dostępność terminu',
   ctaDescription = 'Wyślij zapytanie o pobyt. Formularz nie potwierdza rezerwacji ani nie oznacza płatności.',
+  ctaFormLabel,
 }: SEOPageLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -149,9 +151,11 @@ const SEOPageLayout = ({
             >
               <Mail className="w-4 h-4" /> Napisz do nas
             </a>
-            <a href="/#rezerwacja" className="btn-outline">
-              Formularz zapytania
-            </a>
+            {ctaFormLabel ? (
+              <a href="/#rezerwacja" className="btn-outline">
+                {ctaFormLabel}
+              </a>
+            ) : null}
           </div>
           <p className="text-sm text-muted-foreground">
             Konne 109/1, 16-030 Supraśl · Gospodarz: Maciej

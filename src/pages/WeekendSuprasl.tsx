@@ -1,130 +1,153 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
+import { createLandingPageSchemas } from '@/lib/landingPageSchemas';
+import weekendMorning from '@/assets/terrace-breakfast.webp';
 import { Link } from 'react-router-dom';
+import { GARDEN_TUB_PRICE, MIN_NIGHTLY_RATE, MIN_NIGHTS, SEASONS, WEEKEND_SURCHARGE } from '@/lib/pricing';
+
+const faqs = [
+  {
+    question: 'Ile kosztuje weekend w domku?',
+    answer:
+      `Cena zaczyna się od ${MIN_NIGHTLY_RATE} zł za noc i zależy od terminu oraz liczby gości. W piątki i soboty obowiązuje dopłata weekendowa ${WEEKEND_SURCHARGE} zł za noc, a balia kosztuje dodatkowo ${GARDEN_TUB_PRICE} zł za pobyt. Gospodarz przygotuje dokładną wycenę dla Waszego terminu.`,
+  },
+  {
+    question: 'Czy weekend w Supraślu trzeba rezerwować z wyprzedzeniem?',
+    answer:
+      'Warto wysłać zapytanie wcześniej, szczególnie jeśli interesuje Was konkretny weekend albo sezon wysoki. Dom jest wynajmowany jednej grupie, więc dostępność zależy od kalendarza. Gospodarz odpowie, czy termin jest wolny i poda cenę; samo wysłanie formularza nie potwierdza rezerwacji. Warto podać od razu liczbę gości.',
+  },
+  {
+    question: 'Co robić w Supraślu w weekend, gdy pada deszcz?',
+    answer:
+      'Deszczowy dzień można spędzić w Muzeum Ikon, odwiedzić Monaster albo zajrzeć do Muzeum Drukarstwa w Supraślu. Po powrocie czeka salon z kominkiem, książka i ciepły posiłek z kuchni z płytą kaflową. Godziny placówek dopasujcie do aktualnego programu. Zostawcie przestrzeń na spokojny odpoczynek.',
+  },
+  {
+    question: 'Czy można przyjechać z psem na weekend w lesie na Podlasiu?',
+    answer:
+      'Pobyt z psem jest możliwy po uzgodnieniu z gospodarzem, który poda zasady i ewentualne opłaty. W okolicy wybierajcie trasy dopuszczające psy i respektujcie zasady obszarów chronionych. W domu macie ogród i taras, a leśne spacery można dopasować do Waszego rytmu.',
+  },
+  {
+    question: 'Czy balia jest dostępna na weekend?',
+    answer:
+      `Balia ogrodowa z funkcją jacuzzi jest dostępna na zapytanie i kosztuje ${GARDEN_TUB_PRICE} zł za pobyt. Warto uwzględnić ją w wiadomości o terminie, aby gospodarz potwierdził dostępność. To osobny dodatek do noclegu; w chłodny wieczór po kąpieli możecie ogrzać się przy kominku. Dodatek nie jest wliczony w cenę noclegu.`,
+  },
+];
 
 const WeekendSuprasl = () => (
   <SEOPageLayout
-    title="Weekend w Supraślu – pomysły na pobyt i zwiedzanie"
-    description="Zaplanuj weekend w Supraślu: poznaj propozycje spacerów, lokalnych atrakcji i odpoczynku w okolicy. Sprawdź dostępność noclegu i aktualne zasady zwiedzania."
+    title="Weekend w Supraślu – domek w lesie | In The Woods"
+    description="Weekend w Supraślu: cały domek tylko dla Was, kominek i balia na zapytanie. Zaplanujcie pobyt w lesie, 10 minut od centrum."
     breadcrumbName="Weekend w Supraślu"
     ogImage="https://www.suprasl.online/images/terrace-breakfast.jpg"
+    jsonLd={createLandingPageSchemas('/weekend-suprasl', faqs)}
+    showRelatedPages={false}
+    ctaTitle="Zarezerwuj weekend w lesie"
+    ctaDescription="Zapytaj o wolny termin i wycenę pobytu. Cały dom będzie do dyspozycji Waszej grupy."
+    ctaFormLabel="Zapytaj o weekend"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Weekend w Supraślu — pomysły na pobyt
+        Weekend w Supraślu — plan pobytu w leśnym domku na wyłączność
       </h1>
-
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Weekend w Supraślu można zaplanować wokół spacerów, lokalnych atrakcji i odpoczynku. Poniższe
-        pomysły dopasuj do pogody, czasu pobytu oraz aktualnych godzin otwarcia i zasad dostępu.
+        Weekend w Supraślu może zacząć się od ciszy lasu, a skończyć przy kominku po dniu pełnym
+        spacerów. Zatrzymujecie się w całym domu, a miasteczko jest około 10 minut jazdy stąd.
       </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Weekend na Podlasiu może być urlopem w rytmie relaksu w lesie. Jeśli zastanawiacie się, gdzie
+        wybrać się na weekend na Podlasiu, domek na weekend z balią na zapytanie daje Wam swobodę planu.
+      </p>
+      <figure className="overflow-hidden rounded-xl">
+        <img
+          src={weekendMorning}
+          alt="Śniadanie na tarasie leśnego domku podczas weekendu w Supraślu"
+          className="w-full aspect-[16/9] object-cover"
+          loading="lazy"
+        />
+      </figure>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Piątek — przyjazd i pierwszy wieczór w leśnym domku</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Piątek — przyjazd i pierwszy wieczór</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Po przyjeździe rozgość się i zaplanuj kolejny dzień. Wieczór możesz spędzić na odpoczynku w
-        domu; szczegóły wyposażenia i dostępność dodatków sprawdź w opisie obiektu.
+        Przyjedźcie po pracy, rozpakujcie torby i rozpalcie ogień w kominku. Przygotujcie kolację w
+        kuchni, a wieczór spędźcie na tarasie lub w balii ogrodowej, jeśli dodatek jest dostępny.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Jeśli warunki i zasady obiektu na to pozwalają, możesz skorzystać z ogniska. Balia ogrodowa
-        z funkcją jacuzzi jest opcjonalnym dodatkiem — przed pobytem potwierdź jej dostępność. Wi-Fi
-        jest dostępne, więc przerwę od ekranów możesz zaplanować według własnych potrzeb.
+        Balia kosztuje 250 zł za pobyt i wymaga wcześniejszego uzgodnienia z gospodarzem.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Sobota — odkrywanie Supraśla i Puszczy Knyszyńskiej
+        Sobota — Supraśl i Puszcza Knyszyńska
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Na początek wybierz spacer odpowiedni do pogody i swoich możliwości. Przed wejściem na teren
-        chroniony sprawdź, czy jest udostępniony i jakie zasady obowiązują.
+        Przykładowy plan — dopasujcie go do siebie: o 8:30 spokojne śniadanie, o 10:00 spacer po
+        Supraślu z Monasterem i Muzeum Ikon, a około 13:00 przerwa na obiad. Po południu wybierzcie
+        leśny szlak albo spływ kajakowy w sezonie, a wieczorem ognisko w ogrodzie.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        W Supraślu możesz odwiedzić prawosławny Monaster lub Muzeum Ikon. Przed wyjściem sprawdź
-        godziny otwarcia i warunki zwiedzania. W sezonie możesz też rozważyć{' '}
+        Więcej podpowiedzi znajdziecie w przewodniku po{' '}
         <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
-          spływy kajakowe rzeką Supraśl
+          atrakcjach Supraśla
         </Link>
-        . Przy planowaniu grzybobrania lub aktywności zimowych sprawdź lokalne zasady, warunki
-        pogodowe i dostępność tras.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Wieczorem możesz odpocząć w domu. Jeśli chcesz skorzystać z balii ogrodowej z funkcją jacuzzi,
-        wcześniej ustal jej dostępność i zasady.
+        . To weekend w lesie bez konieczności wypełniania każdej godziny planem.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Niedziela — spokojny poranek i wyjazd</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Niedziela — spokojny poranek i droga powrotna
+      </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Zostaw czas na śniadanie i krótki spacer, jeśli pozwalają na to pogoda i godzina wyjazdu.
-        Przed opuszczeniem domu zapoznaj się z zasadami wymeldowania.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Jeśli planujesz odwiedzić Arboretum Kopna Góra lub Kruszyniany, sprawdź wcześniej dojazd,
-        godziny zwiedzania i dostępność atrakcji.
+        Zjedzcie śniadanie bez pośpiechu, a potem wybierzcie się na ostatni spacer po okolicy.
+        Wracając, możecie zaplanować Arboretum Kopna Góra albo dalszą wycieczkę do Kruszynian.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Odpoczynek w lesie na weekend — dla kogo?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Weekend we dwoje czy z grupą?</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Dom na wyłączność może być bazą wypadową dla par, rodzin lub niewielkiej grupy. Przed
-        wysłaniem zapytania sprawdź maksymalną liczbę gości, wyposażenie i zasady korzystania z
-        dodatków.
+        We dwoje możecie celebrować długie śniadanie, leśny spacer i wieczór przy kominku. Weekend z
+        jacuzzi można zaplanować po uzgodnieniu dodatku. Rodziny
+        oraz grupy przyjaciół mają do dyspozycji cały dom, ogród, miejsce na ognisko i przestrzeń do
+        wspólnego odpoczynku — maksymalnie 8 osób.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Jeśli planujesz przyjazd z psem, potwierdź z gospodarzem możliwość pobytu, ewentualne opłaty
-        i informację o ogrodzeniu. Zasady wprowadzania zwierząt na okoliczne trasy sprawdź przed
-        spacerem.
+        Pobyt z psem ustala się z gospodarzem. Zobaczcie też szczegóły, jakie oferuje{' '}
+        <Link to="/domek-z-jacuzzi-podlasie" className="text-primary underline hover:text-primary/80">
+          domek z jacuzzi na Podlasiu
+        </Link>
+        .
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Pobyt w różnych porach roku</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Plan pobytu dostosuj do pory roku i dostępności atrakcji. Przed wysłaniem zapytania sprawdź
-        minimalną długość pobytu obowiązującą w wybranym terminie.
-      </p>
+      <h2 className="section-title !text-2xl md:!text-3xl">Weekend o każdej porze roku</h2>
+      <ul className="text-muted-foreground space-y-2">
+        <li>Jesień przynosi kolory lasu, grzybobranie i długie wieczory przy ogniu.</li>
+        <li>Zimą ogrzejecie się przy kominku; balia jest dostępna na zapytanie.</li>
+        <li>Wiosną obudzi się las, a poranki wypełnią się śpiewem ptaków.</li>
+        <li>Latem możecie wybrać kajaki i taras; w domu działa klimatyzacja sezonowa.</li>
+      </ul>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Praktyczne informacje</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Cena:</strong> Zależy od terminu, liczby gości i nocy objętych dopłatą weekendową.
-        Sprawdź wycenę w kalkulatorze; pobyt może podlegać sezonowemu minimum nocy.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Adres:</strong> Konne 109/1, 16-030 Supraśl. Trasę i warunki dojazdu sprawdź przed podróżą.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Więcej informacji o noclegu:</strong>{' '}
-        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
-          noclegi w Supraślu
-        </Link>
-        ,{' '}
-        <Link to="/dom-w-lesie-suprasl" className="text-primary underline hover:text-primary/80">
-          dom w lesie Supraśl
-        </Link>
-        ,{' '}
-        <Link
-          to="/domek-z-jacuzzi-podlasie"
-          className="text-primary underline hover:text-primary/80"
-        >
-          domek z jacuzzi Podlasie
-        </Link>{' '}
-        lub{' '}
-        <Link
-          to="/puszcza-knyszynska-nocleg"
-          className="text-primary underline hover:text-primary/80"
-        >
-          nocleg w Puszczy Knyszyńskiej
-        </Link>
-        . Zadzwoń pod 722 765 101 lub wyślij zapytanie przez formularz. Gospodarz odpowie z
-        informacją o dostępności i cenie.
-      </p>
+      <ul className="text-muted-foreground space-y-2">
+        <li>
+          Cena od {MIN_NIGHTLY_RATE} zł za noc; w piątki i soboty dopłata wynosi {WEEKEND_SURCHARGE}{' '}
+          zł za noc.
+        </li>
+        <li>
+          Minimum {MIN_NIGHTS} noce, a w sezonie wysokim{' '}
+          {Math.max(...SEASONS.map((season) => season.minNights))} noce.
+        </li>
+        <li>Adres: Konne 109/1, 16-030 Supraśl; dojazd z Białegostoku trwa około 30–40 minut.</li>
+        <li>
+          Więcej informacji: <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">noclegi w Supraślu</Link>.
+        </li>
+      </ul>
 
-      <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-heading text-2xl font-light">Zapytaj o pobyt</h3>
-        <p className="text-muted-foreground">Wysłanie formularza nie potwierdza rezerwacji ani nie oznacza płatności.</p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="tel:+48722765101" className="btn-primary">
-            Zadzwoń: 722 765 101
-          </a>
-          <Link to="/#rezerwacja" className="btn-outline">
-            Przejdź do formularza zapytania
-          </Link>
-        </div>
-      </div>
+      <section aria-labelledby="weekend-faq">
+        <h2 id="weekend-faq" className="section-title !text-2xl md:!text-3xl">FAQ</h2>
+        <dl className="space-y-5">
+          {faqs.map(({ question, answer }) => (
+            <div key={question}>
+              <dt className="font-semibold text-foreground">{question}</dt>
+              <dd className="mt-1 text-muted-foreground">{answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
     </article>
   </SEOPageLayout>
 );
