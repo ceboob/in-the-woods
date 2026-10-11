@@ -15,7 +15,7 @@ const faqs = [
   {
     question: 'Czy dom ma jacuzzi / banię ogrodową?',
     answer:
-      'Bania ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem i wiąże się z dodatkową opłatą. Jej dostępność w wybranym terminie potwierdza gospodarz. Gdy nad balią unosi się para, a nad drzewami widać gwiazdy, możecie odpocząć na zewnątrz, po czym wrócić do ciepła kominka.',
+      'Bania ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem i wiąże się z dodatkową opłatą. Jej dostępność w wybranym terminie potwierdza gospodarz. Gdy nad balią unosi się para, a nad drzewami widać gwiazdy, odpoczywacie na zewnątrz, po czym wracacie do kominka.',
   },
   {
     question: 'Czy to dobry nocleg na weekend w Supraślu?',
@@ -94,7 +94,7 @@ const highlights = [
 const NoclegiSuprasl = () => (
   <SEOPageLayout
     title="Noclegi Supraśl: dom w lesie na wyłączność | In The Woods"
-    description="Cały dom tylko dla Was, kominek i opcjonalna balia z jacuzzi. 10 min od Supraśla, wśród drzew. Zapytaj o termin!"
+    description="Noclegi Supraśl: cały dom tylko dla Was, kominek i opcjonalna balia z jacuzzi. 10 min od Supraśla. Zapytaj o termin!"
     breadcrumbName="Noclegi Supraśl"
     ogImage="https://www.suprasl.online/images/exterior-main.jpg"
     keywords={[
@@ -150,7 +150,7 @@ const NoclegiSuprasl = () => (
 
       <section className="space-y-4">
         <h2 className="section-title !text-2xl md:!text-3xl">
-          Dom w lesie na wyłączność w sercu Puszczy Knyszyńskiej
+          Dom w lesie na wyłączność blisko Puszczy Knyszyńskiej
         </h2>
         <p className="text-muted-foreground leading-relaxed">
           W środku znajdziecie salon z kominkiem, dwie sypialnie, łazienkę i osobną toaletę.
@@ -179,7 +179,7 @@ const NoclegiSuprasl = () => (
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Jeśli wpisujecie w wyszukiwarkę „dom z jacuzzi Podlasie”, In The Woods łączy taki odpoczynek
-          z prywatnym domem, tarasem i bliskością Puszczy Knyszyńskiej. Regionalnie mówi się też
+          z prywatnym domem i tarasem. Dom leży blisko Puszczy Knyszyńskiej. Regionalnie mówi się też
           „bania ogrodowa” — jej dostępność potwierdza gospodarz.
         </p>
         <figure className="not-prose">
@@ -215,7 +215,7 @@ const NoclegiSuprasl = () => (
           </Link>
           , wybierzcie pomysły na{' '}
           <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
-            spokojny weekend w Supraślu
+            pomysły na dwa dni w Supraślu
           </Link>{' '}
           albo poznajcie{' '}
           <Link
