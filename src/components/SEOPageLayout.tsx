@@ -13,6 +13,7 @@ interface SEOPageLayoutProps {
   keywords?: string[];
   jsonLd?: object | object[];
   showRelatedPages?: boolean;
+  showCTA?: boolean;
   ctaTitle?: string;
   ctaDescription?: string;
   ctaFormLabel?: string;
@@ -27,6 +28,7 @@ const SEOPageLayout = ({
   keywords,
   jsonLd,
   showRelatedPages = true,
+  showCTA = true,
   ctaTitle = 'Sprawdź dostępność terminu',
   ctaDescription = 'Wyślij zapytanie o pobyt. Formularz nie potwierdza rezerwacji ani nie oznacza płatności.',
   ctaFormLabel,
@@ -136,32 +138,33 @@ const SEOPageLayout = ({
         {showRelatedPages ? <RelatedPages /> : null}
       </main>
 
-      {/* CTA */}
-      <section className="px-6 md:px-12 py-16 bg-secondary">
-        <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="font-heading text-3xl font-light">{ctaTitle}</h2>
-          <p className="text-muted-foreground">{ctaDescription}</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
-              <Phone className="w-4 h-4" /> 722 765 101
-            </a>
-            <a
-              href="mailto:tutinthewood@gmail.com"
-              className="btn-outline inline-flex items-center gap-2"
-            >
-              <Mail className="w-4 h-4" /> Napisz do nas
-            </a>
-            {ctaFormLabel ? (
-              <a href="/#rezerwacja" className="btn-outline">
-                {ctaFormLabel}
+      {showCTA ? (
+        <section className="px-6 md:px-12 py-16 bg-secondary">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <h2 className="font-heading text-3xl font-light">{ctaTitle}</h2>
+            <p className="text-muted-foreground">{ctaDescription}</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
+                <Phone className="w-4 h-4" /> 722 765 101
               </a>
-            ) : null}
+              <a
+                href="mailto:tutinthewood@gmail.com"
+                className="btn-outline inline-flex items-center gap-2"
+              >
+                <Mail className="w-4 h-4" /> Napisz do nas
+              </a>
+              {ctaFormLabel ? (
+                <a href="/#rezerwacja" className="btn-outline">
+                  {ctaFormLabel}
+                </a>
+              ) : null}
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Konne 109/1, 16-030 Supraśl · Gospodarz: Maciej
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground">
-            Konne 109/1, 16-030 Supraśl · Gospodarz: Maciej
-          </p>
-        </div>
       </section>
+      ) : null}
 
       {/* Footer */}
       <footer className="bg-foreground text-white/70 px-6 md:px-12 py-8">
