@@ -5,15 +5,12 @@ import { amenityFaqs } from '@/data/amenityFaq';
 import {
   TreePine,
   Bath,
-  Waves,
   Flame,
   FlameKindling,
-  CookingPot,
   BedDouble,
-  ShowerHead,
   PawPrint,
   Baby,
-  Wifi,
+  Tv,
   Snowflake,
 } from 'lucide-react';
 
@@ -42,39 +39,21 @@ const amenities: Amenity[] = [
     link: { to: '/domek-z-jacuzzi-podlasie', label: 'Dom z jacuzzi na Podlasiu' },
   },
   {
-    icon: Waves,
-    title: 'Jacuzzi ogrodowe pod gwiazdami',
-    desc: 'Ciepła woda na świeżym powietrzu, drzewa wokół i gwiazdy nad głową. Latem wieczorne kąpiele, zimą para nad wodą i widok na las – romantyczny weekend w Supraślu we dwoje.',
-    badge: 'Hit gości',
-    featured: true,
-    // TODO (właściciel): czy jacuzzi działa całorocznie? czy jest dodatkowo płatne? dla ilu osób? jaka temperatura wody?
-  },
-  {
     icon: Flame,
-    title: 'Klimatyczny kominek w salonie',
-    desc: 'Prawdziwy ogień, zapach drewna i kieliszek wina. Dom z kominkiem to wieczory, po których nie chce się wracać do miasta.',
+    title: 'Przestronny salon i pełne wyposażenie',
+    desc: 'Szukasz idealnego noclegu w Supraślu? Na parterze naszego domu do wynajęcia znajdziesz przytulny salon z klimatycznym kominkiem. Obok znajduje się w pełni wyposażony aneks kuchenny (indukcja, lodówka, zmywarka, ekspres), w którym gotowanie podczas urlopu w Puszczy Knyszyńskiej to czysta przyjemność.',
     badge: 'Hit gości',
     featured: true,
-  },
-  {
-    icon: FlameKindling,
-    title: 'Kominek ogrodowy i ognisko',
-    desc: 'Grill, kiełbaski na patyku i rozmowy pod gwiazdami we własnym, prywatnym ogrodzie. Ognisko, które trwa do późna.',
-  },
-  {
-    icon: CookingPot,
-    title: 'Kuchnia w pełni wyposażona',
-    desc: 'Zaparz kawę w ekspresie i gotujcie razem, patrząc na ogród. Wszystko do wspólnych posiłków masz pod ręką.',
   },
   {
     icon: BedDouble,
-    title: 'Dwie komfortowe sypialnie',
-    desc: 'Na piętrze czekają duże łóżka, drewniane belki i widok na las. Budzisz się wyspany, przy śpiewie ptaków.',
+    title: 'Komfortowe sypialnie z widokiem',
+    desc: 'Drewniane schody prowadzą na piętro, oferujące doskonałe warunki do wypoczynku. Dwie sypialnie z dużymi łóżkami i sofami to gwarancja wygody. Wybierz nasze noclegi na Podlasiu i ciesz się poranną kawą na balkonie z widokiem na las. Na piętrze mieści się również elegancka łazienka.',
   },
   {
-    icon: ShowerHead,
-    title: 'Dwie łazienki',
-    desc: 'Nowoczesna łazienka i dodatkowa toaleta na parterze. Ciepła woda i wygoda dla każdego z gości, także rano w pełnym składzie.',
+    icon: FlameKindling,
+    title: 'Prywatny ogród i strefa relaksu',
+    desc: 'Nasz dom w lesie blisko Supraśla to synonim prywatności. Zadbany, w pełni ogrodzony ogród z altanką, miejscem na ognisko, grillem i placem zabaw zachęca do relaksu na świeżym powietrzu. Idealne miejsce na rodzinny weekend z dala od zgiełku miasta.',
   },
   {
     icon: PawPrint,
@@ -93,10 +72,9 @@ const amenities: Amenity[] = [
     // TODO (właściciel): czy jest łóżeczko i krzesełko dla dziecka?
   },
   {
-    icon: Wifi,
-    title: 'Smart TV i szybkie Wi-Fi Starlink',
-    desc: 'Wieczór filmowy na Smart TV albo praca zdalna z widokiem na las. Internet Starlink osiąga prędkość do 200 Mb/s.',
-    link: { to: '/blog/workation-podlasie', label: 'Workation na Podlasiu' },
+    icon: Tv,
+    title: 'Rozrywka na najwyższym poziomie',
+    desc: 'Dbając o maksymalny komfort gości, w każdym pomieszczeniu zapewniamy nowoczesny telewizor z płaskim ekranem oraz dostępem do pakietu Canal+. Niezależnie od pogody na Podlasiu, u nas zawsze znajdziesz doskonałą formę rozrywki i relaksu.',
   },
   {
     icon: Snowflake,
@@ -133,7 +111,7 @@ const AmenitiesSection = () => {
           {amenities.map((a) => (
             <li
               key={a.title}
-              className={`amenity-card relative flex flex-col items-center text-center gap-4 rounded-2xl bg-card p-6 ${
+              className={`amenity-card relative flex h-full flex-col items-center text-center gap-4 rounded-2xl bg-card p-6 ${
                 a.featured ? 'amenity-card--featured' : 'border border-border'
               }`}
             >
@@ -146,7 +124,7 @@ const AmenitiesSection = () => {
                 <a.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
               <h3 className="font-heading text-lg font-bold text-foreground">{a.title}</h3>
-              <p className="text-base leading-relaxed text-[#444]">{a.desc}</p>
+              <p className="flex-grow text-base leading-relaxed text-[#444]">{a.desc}</p>
               {a.link && (
                 <Link
                   to={a.link.to}
