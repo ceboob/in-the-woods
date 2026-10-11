@@ -74,7 +74,7 @@ const amenities: Amenity[] = [
   {
     icon: Tv,
     title: 'Rozrywka na najwyższym poziomie',
-    desc: 'Dbając o maksymalny komfort gości, w każdym pomieszczeniu zapewniamy nowoczesny telewizor z płaskim ekranem oraz dostępem do pakietu Canal+. Niezależnie od pogody na Podlasiu, u nas zawsze znajdziesz doskonałą formę rozrywki i relaksu.',
+    desc: 'Dbając o maksymalny komfort gości, w każdym pomieszczeniu zapewniamy nowoczesny telewizor z płaskim ekranem oraz dostępem do pakietu Canal+. Do tego szybkie Wi-Fi Starlink (do 200 Mb/s) na wieczór filmowy lub pracę zdalną. Niezależnie od pogody na Podlasiu, u nas zawsze znajdziesz doskonałą formę rozrywki i relaksu.',
   },
   {
     icon: Snowflake,
