@@ -20,7 +20,7 @@ const faqs = [
   {
     question: 'Czy to dobry nocleg na weekend w Supraślu?',
     answer:
-      'Tak, to wygodna baza na weekend w Supraślu, jeśli chcecie połączyć leśny odpoczynek ze zwiedzaniem. W dzień możecie odwiedzić uzdrowisko, Monaster Zwiastowania, Muzeum Ikon lub wybrać się nad rzekę Supraśl. Po powrocie czeka na Was cały dom, taras i spokojny wieczór przy kominku. W okolicy znajdziecie trasy Puszczy Knyszyńskiej.',
+      'Tak, to wygodna baza na dwa dni w Supraślu, jeśli chcecie połączyć leśny odpoczynek ze zwiedzaniem. W dzień możecie odwiedzić uzdrowisko, Monaster Zwiastowania, Muzeum Ikon lub wybrać się nad rzekę Supraśl. Po powrocie czeka na Was cały dom, taras i spokojny wieczór przy kominku. W okolicy znajdziecie trasy Puszczy Knyszyńskiej.',
   },
   {
     question: 'Czy można przyjechać z psem?',
@@ -209,15 +209,15 @@ const NoclegiSuprasl = () => (
           znajdziecie tu drewniany dom koło Supraśla, blisko leśnych tras.
         </p>
         <p className="text-muted-foreground leading-relaxed">
-          Przed wyjazdem możecie ułożyć własny plan: zajrzyjcie do naszego{' '}
+          Przed wyjazdem zajrzyjcie do naszego{' '}
           <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
             przewodnika po atrakcjach Supraśla
           </Link>
-          , wybierzcie pomysły na{' '}
+          . Możecie też zaplanować{' '}
           <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
-            pomysły na dwa dni w Supraślu
+            weekend w Supraślu
           </Link>{' '}
-          albo poznajcie{' '}
+          i poznać{' '}
           <Link
             to="/puszcza-knyszynska-nocleg"
             className="text-primary underline hover:text-primary/80"
