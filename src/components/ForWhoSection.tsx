@@ -66,6 +66,12 @@ const ForWhoSection = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-12 text-center">
+          <a href="#rezerwacja" className="btn-primary inline-flex items-center justify-center">
+            Sprawdź wolne terminy
+          </a>
+        </div>
       </div>
     </section>
   );
