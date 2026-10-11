@@ -224,6 +224,10 @@ const NoclegiSuprasl = () => (
           >
             noclegi i szlaki Puszczy Knyszyńskiej
           </Link>
+          . Poznajcie również nasz drewniany{' '}
+          <Link to="/domek-suprasl" className="text-primary underline hover:text-primary/80">
+            domek na wyłączność
+          </Link>
           .
         </p>
       </section>
