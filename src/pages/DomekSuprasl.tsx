@@ -106,6 +106,9 @@ const DomekSuprasl = () => (
           do 8 osób. W Konne, blisko Supraśla i Puszczy Knyszyńskiej, czekają na Was zapach bali,
           spokojne poranki i własny ogród.
         </p>
+        <Link to="/#rezerwacja" className="btn-primary inline-flex">
+          Zapytaj o termin
+        </Link>
       </header>
 
       <section className="not-prose grid gap-4 sm:grid-cols-2">
