@@ -2,7 +2,19 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./src/App.tsx",
+    "./src/main.tsx",
+    "./src/ssr/**/*.tsx",
+    "./src/components/*.tsx",
+    "./src/pages/**/*.{ts,tsx}",
+    "./src/routes/**/*.{ts,tsx}",
+    "./src/hooks/**/*.{ts,tsx}",
+    "./src/integrations/**/*.{ts,tsx}",
+    "./src/data/**/*.{ts,tsx}",
+    "./src/lib/**/*.{ts,tsx}",
+    "./src/components/ui/{accordion,badge,button,card,dialog,input,label,select,sonner,table,toast,toaster,tooltip}.tsx",
+  ],
   prefix: "",
   theme: {
     container: {

@@ -40,7 +40,7 @@ const Informator = () => {
         title="Informator gościa – In The Woods Supraśl"
         description="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl."
         canonical="https://www.suprasl.online/informator"
-        ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
+        ogImage="https://www.suprasl.online/images/exterior-main.webp"
       />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">

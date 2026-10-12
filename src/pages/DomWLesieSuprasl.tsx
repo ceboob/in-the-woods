@@ -6,7 +6,7 @@ const DomWLesieSuprasl = () => (
     title="Dom w lesie koło Supraśla – informacje o pobycie"
     description="Prywatny dom na wyłączność w miejscowości Konne koło Supraśla. Poznaj udogodnienia, zasady pobytu i cennik przed wysłaniem zapytania."
     breadcrumbName="Dom w lesie Supraśl"
-    ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
+    ogImage="https://www.suprasl.online/images/exterior-main.webp"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">

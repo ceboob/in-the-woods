@@ -27,7 +27,7 @@ const Dom = () => (
     title="Dom z bali na wyłączność | In The Woods Supraśl"
     description="Dom z bali na wyłączność w miejscowości Konne koło Supraśla. Sprawdź wyposażenie, zasady pobytu i dostępność opcjonalnej balii ogrodowej."
     breadcrumbName="Dom"
-    ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
+    ogImage="https://www.suprasl.online/images/exterior-main.webp"
   >
     <article className="space-y-12">
       <div>

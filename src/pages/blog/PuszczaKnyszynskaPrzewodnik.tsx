@@ -76,7 +76,7 @@ const PuszczaKnyszynskaPrzewodnik = () => (
     readTime="15 min"
     keywords={['Puszcza Knyszyńska', 'szlaki GPX', 'atrakcje', 'szlaki piesze', 'szlaki rowerowe', 'Supraśl', 'Kruszyniany']}
     faqs={faqs}
-    ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
+    ogImage="https://www.suprasl.online/images/exterior-main.webp"
     relatedArticles={[
       { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
       { title: 'Kajaki na Supraśli', slug: 'kajaki-suprasl' },

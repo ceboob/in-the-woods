@@ -7,7 +7,7 @@ const SupraslZima = () => (
     metaTitle="Supraśl zimą – noclegi i atrakcje Podlasia"
     metaDescription="Supraśl zimą: zaśnieżone szlaki Puszczy Knyszyńskiej, żubry, kulig i domek w lesie na wyłączność w In The Woods Konne."
     slug="suprasl-zima"
-    ogImage="https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-2.jpg"
+    ogImage="https://www.suprasl.online/images/winter/monaster-suprasl-zima.webp"
     publishDate="2026-09-30"
     readTime="8 min"
     keywords={[
@@ -91,7 +91,7 @@ const SupraslZima = () => (
       .
     </p>
     <img
-      src="https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-3.jpg"
+      src="/images/winter/puszcza-knyszynska-zima.webp"
       alt="Zimowy krajobraz Podlasia"
       loading="lazy"
     />
@@ -103,7 +103,7 @@ const SupraslZima = () => (
       na spacer zabrać ciepłe, nieprzemakalne obuwie.
     </p>
     <img
-      src="https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-4.jpg"
+      src="/images/winter/zubry-kopna-gora.jpeg"
       alt="Zimowa Puszcza Knyszyńska na Podlasiu"
       loading="lazy"
     />
