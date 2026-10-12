@@ -230,7 +230,7 @@ const BlogArticleLayout = ({
             {relatedArticles.map((a, i) => (
               <Link
                 key={i}
-                to={`/blog/${a.slug}`}
+                to={a.slug.startsWith('/') ? a.slug : `/blog/${a.slug}`}
                 className="block p-5 border border-border rounded-lg hover:bg-card transition-colors group"
               >
                 <span className="text-foreground group-hover:text-primary transition-colors font-medium">

@@ -23,7 +23,7 @@ const RykowiskoJeleni = () => {
   const relatedArticles = [
     { title: 'Szlak Bioróżnorodności Supraśl', slug: 'szlak-bioroznorodnosci-suprasl' },
     { title: 'Puszcza Knyszyńska – przewodnik', slug: 'puszcza-knyszynska-przewodnik' },
-    { title: 'Noclegi Supraśl — In The Woods', slug: 'noclegi-suprasl' },
+    { title: 'Noclegi Supraśl — In The Woods', slug: '/noclegi-suprasl' },
   ];
 
   return (
