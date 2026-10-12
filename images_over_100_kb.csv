@@ -1,0 +1,28 @@
+﻿Description
+Large images over a size threshold. Page speed is extremely important for users and SEO and often large resources such as images are one of the most common issues that slow down web pages. This filter simply acts as a general rule of thumb to help identify images that are fairly large in file size and may take longer to load. These should be considered for optimisation, alongside opportunities identified in the PageSpeed tab which uses the PSI API and Lighthouse to audit speed. This can help identify images that haven't been optimised in size, load offscreen, are unoptimised etc.
+
+How To Fix
+Uncompressed images bloat pages with unnecessary bytes, so ensure images are optimised with compression, properly scaled, and using the best image format to reduce file size where possible.
+
+"Address","Content Type","Size (bytes)","IMG Inlinks","Indexability","Indexability Status","Dimensions"
+"https://www.suprasl.online/assets/winter-cabin-real-nDZirFht.webp","image/webp","347648","1","Indexable","",""
+"https://www.suprasl.online/assets/winter-cabin-golden-BsQRADyz.webp","image/webp","156088","1","Indexable","",""
+"https://www.suprasl.online/images/hero-cabin.jpg","image/jpeg","781351","0","Indexable","",""
+"https://www.suprasl.online/assets/winter-forest-CCHZAxPH.webp","image/webp","653280","3","Indexable","",""
+"https://www.suprasl.online/assets/jacuzzi-night-TfJ3CNFr.webp","image/webp","296272","3","Indexable","","1442x1920"
+"https://www.suprasl.online/images/gallery-dab-puszcza.webp","image/webp","979138","1","Indexable","","1440x1920"
+"https://www.suprasl.online/assets/forest-panorama-BETvjPZJ.webp","image/webp","233974","2","Indexable","","1400x930"
+"https://www.suprasl.online/assets/kitchen-brick-CXfFJNSC.webp","image/webp","181086","1","Indexable","",""
+"https://www.suprasl.online/assets/stove-detail-BTeYwueR.webp","image/webp","184800","1","Indexable","",""
+"https://www.suprasl.online/assets/guest-guide-book-DZg5Ea05.webp","image/webp","102790","1","Indexable","",""
+"https://www.suprasl.online/assets/living-wide-Cb-JLk7X.webp","image/webp","173282","1","Indexable","",""
+"https://www.suprasl.online/assets/jacuzzi-night-lg-By1xx4cp.webp","image/webp","239252","1","Indexable","",""
+"https://www.suprasl.online/assets/exterior-main-lg-BFWeInDY.webp","image/webp","170144","1","Indexable","",""
+"https://www.suprasl.online/assets/blog-puszcza-panorama-BR3Mdv8x.webp","image/webp","106152","1","Indexable","",""
+"https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-2.jpg","image/jpeg","412358","1","Indexable","",""
+"https://www.suprasl.online/assets/terrace-breakfast-B1LNpZNi.webp","image/webp","308074","1","Indexable","",""
+"https://www.suprasl.online/images/gallery-bania-ogrod.webp","image/webp","985596","1","Indexable","","1442x1920"
+"https://www.suprasl.online/images/gallery-taras-sofa.webp","image/webp","297512","1","Indexable","","1920x1281"
+"https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-3.jpg","image/jpeg","456008","1","Indexable","","800x534"
+"https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-4.jpg","image/jpeg","732641","1","Indexable","","800x534"
+"https://www.suprasl.online/assets/exterior-main-eGFT1-HA.webp","image/webp","186042","1","Indexable","","1028x668"

@@ -1,0 +1,36 @@
+﻿Description
+Pages with unused JavaScript that are larger than necessary in bytes and reducing page speed. Bulk export the pages and JavaScript via 'Reports > PageSpeed > Reduce Unused JavaScript'.
+
+How To Fix
+Remove unused JavaScript code to reduce unnecessary bytes consumed by network activity to improve page load performance.
+
+"Address","Reduce Unused CSS Savings (ms)"
+"https://www.suprasl.online/","150"
+"https://www.suprasl.online/blog/szlaki-piesze-rowerowe-suprasl","150"
+"https://www.suprasl.online/blog/cyfrowy-detoks-las","150"
+"https://www.suprasl.online/blog/uzdrowisko-spa-suprasl","150"
+"https://www.suprasl.online/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne","300"
+"https://www.suprasl.online/wieczor-panienski-suprasl","300"
+"https://www.suprasl.online/atrakcje-suprasl","150"
+"https://www.suprasl.online/blog/szlaki-puszcza-knyszynska","300"
+"https://www.suprasl.online/blog/podlasie-z-psem","300"
+"https://www.suprasl.online/polityka-prywatnosci","150"
+"https://www.suprasl.online/domek-suprasl","150"
+"https://www.suprasl.online/blog/suprasl-z-dziecmi","150"
+"https://www.suprasl.online/blog/kajaki-suprasl","150"
+"https://www.suprasl.online/dom-w-lesie-suprasl","150"
+"https://www.suprasl.online/noclegi-suprasl","150"
+"https://www.suprasl.online/blog/puszcza-knyszynska-przewodnik","150"
+"https://www.suprasl.online/blog/puszcza-knyszynska-historie","150"
+"https://www.suprasl.online/blog/rykowisko-jeleni-puszcza-knyszynska","300"
+"https://www.suprasl.online/dom","150"
+"https://www.suprasl.online/blog/suprasl-zima","150"
+"https://www.suprasl.online/blog/weekend-suprasl-plan","300"
+"https://www.suprasl.online/blog/suprasl-na-weekend","300"
+"https://www.suprasl.online/blog/kruszyniany-tatarska-wies","150"
+"https://www.suprasl.online/blog/grzybobranie-puszcza-knyszynska","150"
+"https://www.suprasl.online/blog/co-robic-suprasl","150"
+"https://www.suprasl.online/blog/restauracje-suprasl","150"
+"https://www.suprasl.online/blog/suprasl-atrakcje-national-geographic","150"
+"https://www.suprasl.online/blog/szlak-powstania-styczniowego-suprasl","300"
+"https://www.suprasl.online/blog/supraski-system-wodny","150"
