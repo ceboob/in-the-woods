@@ -56,6 +56,8 @@ const WieczorPanienskiSuprasl = () => (
         <img
           src={firepitNight}
           alt="Ognisko w ogrodzie leśnego domku podczas wieczoru panieńskiego na Podlasiu"
+          width={400}
+          height={267}
           className="w-full aspect-[16/9] object-cover"
           loading="lazy"
         />

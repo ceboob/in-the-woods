@@ -64,6 +64,8 @@ const PuszczaKnyszynskaNocleg = () => (
         <img
           src={forestWinter}
           alt="Zimowy las przy leśnym domku na nocleg w Puszczy Knyszyńskiej"
+          width={1368}
+          height={1824}
           className="w-full aspect-[16/9] object-cover"
           loading="lazy"
         />

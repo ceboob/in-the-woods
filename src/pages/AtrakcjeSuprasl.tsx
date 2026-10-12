@@ -81,6 +81,8 @@ const AtrakcjeSuprasl = () => (
         <img
           src={monastery}
           alt="Monaster Zwiastowania NMP — jedna z najważniejszych atrakcji Supraśla"
+          width={810}
+          height={1080}
           className="w-full aspect-[16/9] object-cover"
           loading="lazy"
         />

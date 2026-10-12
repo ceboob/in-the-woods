@@ -143,6 +143,8 @@ const NoclegiSuprasl = () => (
         <img
           src="/images/gallery-taras-sofa.webp"
           alt="Taras drewnianego domu w lesie koło Supraśla"
+          width={1920}
+          height={1281}
           className="h-auto w-full rounded-lg object-cover"
           loading="lazy"
         />
@@ -186,6 +188,8 @@ const NoclegiSuprasl = () => (
           <img
             src="/images/gallery-bania-ogrod.webp"
             alt="Bania ogrodowa w ogrodzie drewnianego domu na Podlasiu"
+            width={1442}
+            height={1920}
             className="h-auto w-full rounded-lg object-cover"
             loading="lazy"
           />

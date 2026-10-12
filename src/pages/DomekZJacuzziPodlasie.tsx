@@ -55,6 +55,8 @@ const DomekZJacuzziPodlasie = () => (
         <img
           src={jacuzziNight}
           alt="Balia ogrodowa z funkcją jacuzzi przy domku na wyłączność w lesie na Podlasiu"
+          width={1442}
+          height={1920}
           className="w-full aspect-[16/9] object-cover"
           loading="lazy"
         />
