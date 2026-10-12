@@ -23,7 +23,7 @@ const Dokumenty = () => (
     title="Dokumenty i przewodnik gościa | In The Woods"
     description="Zapoznaj się z przewodnikiem po domu In The Woods i wzorem umowy najmu przed wysłaniem zapytania o pobyt."
     breadcrumbName="Dokumenty"
-    ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
+    ogImage="https://www.suprasl.online/images/exterior-main.webp"
   >
     <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
       Dokumenty i instrukcje

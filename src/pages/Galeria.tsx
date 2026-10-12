@@ -170,7 +170,7 @@ const Galeria = () => {
       title="Galeria zdjęć domku w lesie | In The Woods Supraśl"
       description="Galeria In The Woods: salon z kominkiem, kuchnia, sypialnie, ogród i balia ogrodowa z funkcją jacuzzi. Zobacz domek w Puszczy Knyszyńskiej."
       breadcrumbName="Galeria"
-      ogImage="https://www.suprasl.online/images/hero-cabin.jpg"
+      ogImage="https://www.suprasl.online/images/exterior-main.webp"
     >
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
         Galeria zdjęć domu i jego wyposażenia

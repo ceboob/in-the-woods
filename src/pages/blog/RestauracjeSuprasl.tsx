@@ -38,7 +38,7 @@ const RestauracjeSuprasl = () => (
     relatedArticles={[
       { title: 'Kuchnia regionalna — praktyczne wskazówki', slug: 'przewodnik-kulinarny-suprasl' },
       { title: 'Kruszyniany — informacje dla odwiedzających', slug: 'kruszyniany-tatarska-wies' },
-      { title: 'Atrakcje Supraśla', slug: 'atrakcje-suprasl' },
+      { title: 'Atrakcje Supraśla', slug: '/atrakcje-suprasl' },
     ]}
   >
     <article className="prose prose-lg max-w-none space-y-8">

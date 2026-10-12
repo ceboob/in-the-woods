@@ -53,8 +53,7 @@ const articles = [
     title: 'Supraśl zimą – magia Podlasia i Puszczy Knyszyńskiej',
     excerpt:
       'Odkryj zaśnieżone szlaki, ślady dzikich zwierząt, ciszę Poczopek i kulig z ogniskiem w In The Woods Konne.',
-    image:
-      'https://bialystoksubiektywnie.com/wp-content/uploads/2019/01/Bialystok-subiektywnie-blog-o-podlasiu-Zima-Podlaskie-2.jpg',
+    image: '/images/winter/puszcza-knyszynska-zima.webp',
     date: '2026-09-30',
     readTime: '8 min',
     keywords: ['Supraśl zimą', 'Podlasie zimą', 'Puszcza Knyszyńska', 'kulig Supraśl'],
