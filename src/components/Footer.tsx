@@ -67,6 +67,8 @@ const Footer = () => (
               src="/logos/ai.png"
               alt="Airbnb"
               loading="lazy"
+              width={374}
+              height={130}
               className="h-7 w-auto max-w-32 object-contain"
             />
           </a>
@@ -81,6 +83,8 @@ const Footer = () => (
               src="/logos/a.png"
               alt="Alohacamp"
               loading="lazy"
+              width={520}
+              height={130}
               className="h-7 w-auto max-w-32 object-contain"
             />
           </a>
@@ -95,6 +99,8 @@ const Footer = () => (
               src="/logos/b.png"
               alt="Booking.com"
               loading="lazy"
+              width={436}
+              height={130}
               className="h-7 w-auto max-w-32 object-contain"
             />
           </a>
@@ -109,6 +115,8 @@ const Footer = () => (
               src="/logos/d.png"
               alt="Doginclusive.pl"
               loading="lazy"
+              width={508}
+              height={130}
               className="h-7 w-auto max-w-32 object-contain"
             />
           </a>

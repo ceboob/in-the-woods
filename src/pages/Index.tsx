@@ -33,11 +33,12 @@ const SectionFallback = () => (
   </div>
 );
 
+// TODO: zatwierdź treść
 const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Dom na wynajem Supraśl – dom w lesie z jacuzzi | In The Woods"
+        title="Dom na wynajem Supraśl – las, jacuzzi | In The Woods"
         description="Noclegi Supraśl w domu w lesie: jacuzzi ogrodowe, kominek, ognisko. Dom przyjazny zwierzętom – pies gratis! Blisko Białegostoku. Sprawdź terminy!"
         canonical="https://www.suprasl.online/"
         jsonLd={homeJsonLd}

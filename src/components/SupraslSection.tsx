@@ -11,12 +11,12 @@ import {
   MapPin,
   ArrowRight,
 } from 'lucide-react';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
-import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
+import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci-optimized.webp';
+import blogKruszyniany from '@/assets/blog-kruszyniany-meczet-optimized.webp';
+import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko-optimized.webp';
 import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
-import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
+import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero-optimized.webp';
 
 const attractions = [
   { icon: Church, name: 'Monaster Zwiastowania NMP' },

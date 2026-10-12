@@ -1,6 +1,6 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
 import { createLandingPageSchemas } from '@/lib/landingPageSchemas';
-import monastery from '@/assets/blog-monaster-suprasl.jpg';
+import monastery from '@/assets/blog-monaster-suprasl-optimized.webp';
 import { Link } from 'react-router-dom';
 
 const faqs = [
@@ -81,6 +81,8 @@ const AtrakcjeSuprasl = () => (
         <img
           src={monastery}
           alt="Monaster Zwiastowania NMP — jedna z najważniejszych atrakcji Supraśla"
+          width={810}
+          height={1080}
           className="w-full aspect-[16/9] object-cover"
           loading="lazy"
         />

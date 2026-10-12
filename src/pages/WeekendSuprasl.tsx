@@ -60,6 +60,8 @@ const WeekendSuprasl = () => (
         <img
           src={weekendMorning}
           alt="Śniadanie na tarasie leśnego domku podczas weekendu w Supraślu"
+          width={1368}
+          height={1824}
           className="w-full aspect-[16/9] object-cover"
           loading="lazy"
         />
