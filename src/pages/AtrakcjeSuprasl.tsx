@@ -1,6 +1,6 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
 import { createLandingPageSchemas } from '@/lib/landingPageSchemas';
-import monastery from '@/assets/blog-monaster-suprasl.jpg';
+import monastery from '@/assets/blog-monaster-suprasl-optimized.webp';
 import { Link } from 'react-router-dom';
 
 const faqs = [

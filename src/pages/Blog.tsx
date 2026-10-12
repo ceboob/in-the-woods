@@ -2,24 +2,24 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import { Phone, ArrowRight, Calendar, Clock } from 'lucide-react';
-import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
-import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
-import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
-import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
-import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
+import blogKanal from '@/assets/blog-kanal-kopanica-optimized.webp';
+import blogPomnik from '@/assets/blog-pomnik-powstanie-optimized.webp';
+import blogMonaster from '@/assets/blog-monaster-suprasl-optimized.webp';
+import blogSzlak from '@/assets/blog-szlak-lesny-optimized.webp';
+import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci-optimized.webp';
+import blogKruszyniany from '@/assets/blog-kruszyniany-meczet-optimized.webp';
+import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko-optimized.webp';
 import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
-import blogCoRobic from '@/assets/blog-co-robic-suprasl.jpg';
-import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.jpg';
-import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.jpg';
-import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
+import blogCoRobic from '@/assets/blog-co-robic-suprasl-optimized.webp';
+import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl-optimized.webp';
+import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza-optimized.webp';
+import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero-optimized.webp';
 import blogPuszczaPanorama from '@/assets/blog-puszcza-panorama.webp';
-import blogMushrooms from '@/assets/article.jpg';
+import blogMushrooms from '@/assets/article-optimized.webp';
 import blogNoService from '@/assets/brak-internetu-w-telefonie-co-robic-1536x878.webp';
-import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1.jpg';
-import blogBike from '@/assets/puszcza_knyszynska-.jpg';
+import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1-optimized.webp';
+import blogBike from '@/assets/puszcza_knyszynska--optimized.webp';
 
 const articles = [
   {

@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
-import forestNature from '@/assets/forest-nature.jpg';
+import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci-optimized.webp';
+import forestNature from '@/assets/forest-nature-optimized.webp';
 import forestPanorama from '@/assets/forest-panorama.webp';
 
 // TODO: zatwierdź treść
