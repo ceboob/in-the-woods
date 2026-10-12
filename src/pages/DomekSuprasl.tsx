@@ -114,7 +114,7 @@ const DomekSuprasl = () => (
       <section className="not-prose grid gap-4 sm:grid-cols-2">
         <figure>
           <img
-            src="/images/living-fireplace.jpg"
+            src="/images/living-fireplace-optimized.webp"
             alt="Wnętrze drewnianego domku z bali koło Supraśla, salon z kominkiem"
             className="h-64 w-full rounded-lg object-cover"
             loading="lazy"
@@ -124,7 +124,7 @@ const DomekSuprasl = () => (
         </figure>
         <figure>
           <img
-            src="/images/jacuzzi-night.jpg"
+            src="/images/jacuzzi-night-optimized.webp"
             alt="Balia ogrodowa z jacuzzi w lesie na Podlasiu, dostępna na zapytanie"
             className="h-64 w-full rounded-lg object-cover"
             loading="lazy"
