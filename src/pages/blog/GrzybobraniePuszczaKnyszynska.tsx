@@ -1,10 +1,11 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
 
+// TODO: zatwierdź treść
 const GrzybobraniePuszczaKnyszynska = () => (
   <BlogArticleLayout
     title="Grzybobranie w Puszczy Knyszyńskiej — zasady przed spacerem"
-    metaTitle="Grzybobranie w Puszczy Knyszyńskiej — zasady i bezpieczeństwo"
+    metaTitle="Grzybobranie w Puszczy Knyszyńskiej – zasady"
     metaDescription="Zaplanuj grzybobranie z uwzględnieniem pogody, rozpoznawania gatunków i lokalnych ograniczeń. Sprawdź zasady dostępu przed wyjściem."
     slug="grzybobranie-puszcza-knyszynska"
     publishDate="2026-04-09"

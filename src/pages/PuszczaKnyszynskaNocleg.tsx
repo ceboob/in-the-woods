@@ -40,6 +40,7 @@ const faqs = [
   },
 ];
 
+// TODO: zatwierdź treść
 const PuszczaKnyszynskaNocleg = () => (
   <SEOPageLayout
     title="Nocleg w Puszczy Knyszyńskiej – domek | In The Woods"
@@ -54,7 +55,7 @@ const PuszczaKnyszynskaNocleg = () => (
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Nocleg w Puszczy Knyszyńskiej — leśny domek na wyłączność koło Supraśla
+        Nocleg w Puszczy Knyszyńskiej — domek na wyłączność
       </h1>
       <p className="text-muted-foreground leading-relaxed text-lg">
         Nocleg w Puszczy Knyszyńskiej zaczyna się tu od poranka za oknem pełnym drzew i ciszy, którą

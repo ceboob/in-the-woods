@@ -4,6 +4,7 @@ import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
 import forestNature from '@/assets/forest-nature.jpg';
 import forestPanorama from '@/assets/forest-panorama.webp';
 
+// TODO: zatwierdź treść
 const SzlakBioroznorodnosci = () => {
   const faqs = [
     {
@@ -40,7 +41,7 @@ const SzlakBioroznorodnosci = () => {
   return (
     <BlogArticleLayout
       title="Szlak Bioróżnorodności Supraśl – spacer w Puszczy"
-      metaTitle="Szlak Bioróżnorodności w Supraślu – informacje przed spacerem"
+      metaTitle="Szlak Bioróżnorodności w Supraślu – spacer po Puszczy"
       metaDescription="Planujesz spacer Szlakiem Bioróżnorodności w Supraślu? Sprawdź aktualny przebieg trasy, warunki terenowe i zasady dostępu przed wyjściem."
       slug="szlak-bioroznorodnosci-suprasl"
       publishDate="2026-03-14"

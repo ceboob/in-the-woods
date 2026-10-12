@@ -91,6 +91,7 @@ const highlights = [
   'Wyposażona kuchnia oraz Wi-Fi',
 ];
 
+// TODO: zatwierdź treść
 const NoclegiSuprasl = () => (
   <SEOPageLayout
     title="Noclegi Supraśl: dom w lesie na wyłączność | In The Woods"
@@ -111,7 +112,7 @@ const NoclegiSuprasl = () => (
       <header className="space-y-5">
         <p className="text-sm tracking-wide text-primary">Konne · około 10 minut od Supraśla</p>
         <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-          Noclegi Supraśl – prywatny dom na wyłączność w lesie z jacuzzi i kominkiem
+          Noclegi Supraśl – dom na wyłączność w lesie
         </h1>
         <p className="text-muted-foreground leading-relaxed text-lg">
           Szukacie noclegu koło Supraśla, gdzie poranek zaczyna się śpiewem ptaków, a wieczór

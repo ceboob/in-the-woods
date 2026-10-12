@@ -76,6 +76,7 @@ const faqSchema = {
   })),
 };
 
+// TODO: zatwierdź treść
 const DomekSuprasl = () => (
   <SEOPageLayout
     title="Domek Supraśl – las, kominek i 8 osób | In The Woods"
@@ -99,7 +100,7 @@ const DomekSuprasl = () => (
     <article className="prose prose-lg max-w-none space-y-8">
       <header className="space-y-5">
         <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-          Domek Supraśl – drewniany domek na wyłączność w lesie z kominkiem i jacuzzi
+          Domek Supraśl – dom w lesie na wyłączność
         </h1>
         <p className="text-muted-foreground leading-relaxed text-lg">
           In The Woods to drewniany domek w lesie koło Supraśla, wynajmowany w całości dla jednej

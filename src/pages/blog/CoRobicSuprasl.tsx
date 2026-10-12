@@ -1,10 +1,11 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
 
+// TODO: zatwierdź treść
 const CoRobicSuprasl = () => (
   <BlogArticleLayout
     title="Co robić w Supraślu? Wybrane atrakcje i wskazówki"
-    metaTitle="Co robić w Supraślu – atrakcje i wskazówki dla odwiedzających"
+    metaTitle="Co robić w Supraślu – atrakcje i wskazówki"
     metaDescription="Poznaj wybrane atrakcje Supraśla i zaplanuj wizytę. Sprawdź aktualne godziny otwarcia, zasady zwiedzania, trasy i warunki spływów."
     slug="co-robic-suprasl"
     publishDate="2026-03-25"

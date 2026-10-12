@@ -24,10 +24,11 @@ const faqs = [
   },
 ];
 
+// TODO: zatwierdź treść
 const RestauracjeSuprasl = () => (
   <BlogArticleLayout
     title="Restauracje w Supraślu — jak sprawdzić aktualną ofertę"
-    metaTitle="Restauracje w Supraślu — menu, godziny i praktyczne wskazówki"
+    metaTitle="Restauracje w Supraślu – menu i godziny otwarcia"
     metaDescription="Zaplanuj posiłek w Supraślu: sprawdź aktualne menu, godziny otwarcia, ceny i zasady rezerwacji bezpośrednio w wybranym lokalu."
     slug="restauracje-suprasl"
     publishDate="2026-03-15"

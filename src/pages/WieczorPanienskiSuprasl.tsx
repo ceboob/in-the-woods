@@ -31,6 +31,7 @@ const faqs = [
   },
 ];
 
+// TODO: zatwierdź treść
 const WieczorPanienskiSuprasl = () => (
   <SEOPageLayout
     title="Wieczór panieński w lesie koło Supraśla | In The Woods"
@@ -45,7 +46,7 @@ const WieczorPanienskiSuprasl = () => (
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Wieczór panieński w lesie koło Supraśla — domek na wyłączność dla Waszej ekipy
+        Wieczór panieński w lesie koło Supraśla
       </h1>
       <p className="text-muted-foreground leading-relaxed text-lg">
         Wieczór panieński w Supraślu może oznaczać wspólny stół, ognisko w ogrodzie i rozmowy, które
