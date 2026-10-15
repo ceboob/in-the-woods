@@ -338,11 +338,11 @@ const AvailabilityCalendar = () => {
               <span className="text-xs text-muted-foreground">Poza sezonem</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded bg-amber-100 border border-amber-300" />
+              <div className="w-3 h-3 rounded bg-amber-100 border border-amber-300 dark:bg-amber-900/40 dark:border-amber-700" />
               <span className="text-xs text-muted-foreground">Średni sezon</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded bg-orange-100 border border-orange-300" />
+              <div className="w-3 h-3 rounded bg-orange-100 border border-orange-300 dark:bg-orange-900/40 dark:border-orange-700" />
               <span className="text-xs text-muted-foreground">Wysoki sezon</span>
             </div>
             <div className="flex items-center gap-2">
@@ -401,7 +401,7 @@ const AvailabilityCalendar = () => {
                     <span>{guests}</span>
                   </div>
                   {priceCalc && priceCalc.discount > 0 && (
-                    <div className="flex justify-between text-xs text-green-700">
+                    <div className="flex justify-between text-xs text-green-700 dark:text-green-300">
                       <span>Zniżka za długi pobyt (−{LONG_STAY_DISCOUNT * 100}%)</span>
                       <span>−{priceCalc.discount} zł</span>
                     </div>

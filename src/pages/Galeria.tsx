@@ -217,8 +217,8 @@ const Galeria = () => {
                 height="300"
               />
             </ImageReveal>
-            <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors" />
-            <span className="absolute bottom-2 left-2 right-2 text-xs text-white bg-foreground/60 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity line-clamp-1">
+            <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 dark:group-hover:bg-black/20 transition-colors" />
+            <span className="absolute bottom-2 left-2 right-2 text-xs text-white bg-foreground/60 dark:bg-black/60 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity line-clamp-1">
               {img.alt}
             </span>
           </button>
@@ -231,7 +231,7 @@ const Galeria = () => {
 
       {/* Lightbox */}
       {lightboxIndex !== null && (
-        <div className="fixed inset-0 z-50 bg-foreground/95 flex items-center justify-center" onClick={closeLightbox}>
+        <div className="fixed inset-0 z-50 bg-foreground/95 dark:bg-black/95 flex items-center justify-center" onClick={closeLightbox}>
           <button onClick={closeLightbox} className="absolute top-4 right-4 text-white/80 hover:text-white p-2" aria-label="Zamknij">
             <X className="w-7 h-7" />
           </button>

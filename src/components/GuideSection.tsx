@@ -15,7 +15,7 @@ const Card = ({ icon: Icon, title, desc, cta, link }: CardData) => (
       <Icon className="w-7 h-7 text-primary" />
     </div>
     <h3 className="font-heading text-lg font-bold text-foreground">{title}</h3>
-    <p className="flex-grow text-base leading-relaxed text-[#444]">{desc}</p>
+    <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">{desc}</p>
     <Link
       to={link}
       className="mt-auto text-sm font-medium text-foreground underline underline-offset-4 decoration-primary hover:decoration-2"

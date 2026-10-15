@@ -33,7 +33,7 @@ export const SEASONS: SeasonConfig[] = [
     endDay: 31,
     minNights: 2,
     prices: { 2: 399, 4: 499, 6: 599, 8: 649 },
-    color: 'bg-amber-100 text-amber-800',
+    color: 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200',
   },
   {
     name: 'high',
@@ -44,7 +44,7 @@ export const SEASONS: SeasonConfig[] = [
     endDay: 31,
     minNights: 3,
     prices: { 2: 499, 4: 599, 6: 699, 8: 799 },
-    color: 'bg-orange-100 text-orange-800',
+    color: 'bg-orange-100 text-orange-800 dark:bg-orange-900/40 dark:text-orange-200',
   },
   {
     name: 'mid2',
@@ -55,7 +55,7 @@ export const SEASONS: SeasonConfig[] = [
     endDay: 31,
     minNights: 2,
     prices: { 2: 399, 4: 499, 6: 599, 8: 649 },
-    color: 'bg-amber-100 text-amber-800',
+    color: 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200',
   },
 ];
 

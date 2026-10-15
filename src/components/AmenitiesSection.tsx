@@ -118,7 +118,7 @@ const AmenitiesSection = () => {
                 <a.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
               <h3 className="font-heading text-lg font-bold text-foreground">{a.title}</h3>
-              <p className="flex-grow text-base leading-relaxed text-[#444]">{a.desc}</p>
+              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">{a.desc}</p>
               {a.link && (
                 <Link
                   to={a.link.to}
@@ -150,7 +150,7 @@ const AmenitiesSection = () => {
                 <summary className="cursor-pointer list-none font-medium text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-sm">
                   {f.q}
                 </summary>
-                <p className="mt-3 text-base leading-relaxed text-[#444]">{f.a}</p>
+                <p className="mt-3 text-base leading-relaxed text-[#444] dark:text-foreground/80">{f.a}</p>
               </details>
             ))}
           </div>

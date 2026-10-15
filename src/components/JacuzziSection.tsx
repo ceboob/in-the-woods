@@ -26,7 +26,7 @@ const JacuzziSection = () => {
             height="1440"
           />
         </ImageReveal>
-        <div className="absolute inset-0 bg-foreground/40" />
+        <div className="absolute inset-0 bg-foreground/40 dark:bg-black/40" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
             <p className="text-xs tracking-wide text-white/80 font-sans mb-4">

@@ -22,7 +22,7 @@ const WinterSection = () => {
             height="1080"
           />
         </ImageReveal>
-        <div className="absolute inset-0 bg-foreground/30" />
+        <div className="absolute inset-0 bg-foreground/30 dark:bg-black/30" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6 max-w-2xl">
             <h2 className="font-heading text-3xl md:text-5xl font-light text-white mb-4">
