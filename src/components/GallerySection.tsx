@@ -585,7 +585,7 @@ const GallerySection = () => {
                   height="400"
                 />
               </ImageReveal>
-              <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors duration-300" />
+              <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 dark:group-hover:bg-black/20 transition-colors duration-300" />
               {/* Caption overlay on hover */}
               <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-sm font-sans">{img.caption}</p>
@@ -610,7 +610,7 @@ const GallerySection = () => {
       {/* Lightbox */}
       {lightboxIndex !== null && (
         <div
-          className="fixed inset-0 z-50 bg-foreground/95 flex items-center justify-center animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-foreground/95 dark:bg-black/95 flex items-center justify-center animate-in fade-in duration-200"
           onClick={closeLightbox}
           role="dialog"
           aria-label="Powiększone zdjęcie galerii"

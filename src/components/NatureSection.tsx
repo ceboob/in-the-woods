@@ -27,7 +27,7 @@ const NatureSection = () => {
             height="1281"
           />
         </ImageReveal>
-        <div className="absolute inset-0 bg-foreground/30" />
+        <div className="absolute inset-0 bg-foreground/30 dark:bg-black/30" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
             <p className="text-xs tracking-wide text-white/80 font-sans mb-4">

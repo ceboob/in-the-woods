@@ -52,7 +52,7 @@ const EventsSection = () => {
                 <event.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
               <h3 className="font-heading text-lg font-bold text-foreground">{event.title}</h3>
-              <p className="flex-grow text-base leading-relaxed text-[#444]">{event.desc}</p>
+              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">{event.desc}</p>
             </div>
           ))}
         </div>

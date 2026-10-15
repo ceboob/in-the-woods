@@ -36,7 +36,7 @@ const CookieConsent = () => {
     >
       <div className="bg-card/95 backdrop-blur-sm border-t border-border shadow-lg">
         <div className="max-w-5xl mx-auto px-4 py-2 flex flex-col sm:flex-row items-start sm:items-center gap-2">
-          <p className="text-xs sm:text-sm text-[#444] flex-1">
+          <p className="text-xs sm:text-sm text-[#444] dark:text-foreground/80 flex-1">
             Ta strona używa cookies, aby zapewnić najlepszą jakość usług.
             Klikając „Akceptuję”, wyrażasz zgodę na ich użycie.{' '}
             <Link
@@ -55,7 +55,7 @@ const CookieConsent = () => {
             </button>
             <button
               onClick={reject}
-              className="border border-border text-sm px-4 py-1.5 rounded-md hover:bg-secondary transition-colors text-[#444] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="border border-border text-sm px-4 py-1.5 rounded-md hover:bg-secondary transition-colors text-[#444] dark:text-foreground/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               Odrzuć
             </button>

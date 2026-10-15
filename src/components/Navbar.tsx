@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import ThemeToggle from '@/components/ThemeToggle';
 
 interface DropdownItem {
   label: string;
@@ -150,6 +151,7 @@ const Navbar = () => {
               </button>
             ),
           )}
+          <ThemeToggle className={`inline-flex h-9 w-9 items-center justify-center rounded-full border border-current transition-colors ${scrolled ? 'text-foreground' : 'text-white'}`} />
           <button
             onClick={() => handleClick('#rezerwacja')}
             className="btn-primary whitespace-nowrap uppercase lg:tracking-wide text-xs py-2.5 px-4 lg:px-6"
@@ -159,6 +161,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile hamburger */}
+        <ThemeToggle className={`md:hidden inline-flex h-9 w-9 items-center justify-center rounded-full border border-current transition-colors ${scrolled ? 'text-foreground' : 'text-white'}`} />
         <button
           className={`md:hidden transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-white'}`}
           onClick={() => setMenuOpen(!menuOpen)}

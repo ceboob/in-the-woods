@@ -22,6 +22,14 @@
     <!-- meta description set dynamically by react-helmet-async per route -->
     <!-- canonical set dynamically by react-helmet-async per route -->
     <meta name="theme-color" content="#e8f5e4" />
+    <script>
+      try {
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#121616');
+        }
+      } catch {}
+    </script>
     <link rel="alternate" type="application/rss+xml" title="In The Woods — Blog" href="/rss.xml" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
