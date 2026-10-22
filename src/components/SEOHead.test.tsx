@@ -25,6 +25,7 @@ describe('SEOHead', () => {
     );
     expect(document.head.querySelector('link[rel="canonical"]')).toBeNull();
     expect(document.head.querySelectorAll('link[rel="alternate"][hreflang]')).toHaveLength(0);
+    expect(document.head.querySelector('script[type="application/ld+json"]')).toBeNull();
   });
 
   it('emits canonical and hreflang annotations for indexable pages', async () => {
@@ -36,6 +37,9 @@ describe('SEOHead', () => {
     );
     expect(document.head.querySelector('link[rel="canonical"]')).toHaveAttribute('href', canonical);
     expect(document.head.querySelectorAll('link[rel="alternate"][href]')).toHaveLength(2);
+    expect(
+      JSON.parse(document.head.querySelector('script[type="application/ld+json"]')?.textContent ?? '{}'),
+    ).toMatchObject({ '@type': 'WebPage', url: canonical });
   });
 
   it('does not emit the obsolete meta keywords tag', async () => {

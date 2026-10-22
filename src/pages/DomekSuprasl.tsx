@@ -35,37 +35,6 @@ const faqItems = [
   },
 ];
 
-const lodgingSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LodgingBusiness',
-  '@id': 'https://www.suprasl.online/domek-suprasl#lodging',
-  name: 'In The Woods',
-  url: 'https://www.suprasl.online/domek-suprasl',
-  telephone: '+48722765101',
-  email: 'tutinthewood@gmail.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Konne 109/1',
-    postalCode: '16-030',
-    addressLocality: 'Supraśl',
-    addressRegion: 'podlaskie',
-    addressCountry: 'PL',
-  },
-  maximumAttendeeCapacity: 8,
-  priceRange: `od ${MIN_NIGHTLY_RATE} zł/noc`,
-  amenityFeature: [
-    { '@type': 'LocationFeatureSpecification', name: 'Kominek', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Klimatyzacja latem', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Taras i ogród', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Bezpłatny parking', value: true },
-    {
-      '@type': 'LocationFeatureSpecification',
-      name: 'Balia ogrodowa z funkcją jacuzzi',
-      value: `Dostępna na zapytanie, ${GARDEN_TUB_PRICE} zł za pobyt`,
-    },
-  ],
-};
-
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -94,7 +63,7 @@ const DomekSuprasl = () => (
       'domek dla 8 osób',
       'domek koło Supraśla',
     ]}
-    jsonLd={[lodgingSchema, faqSchema]}
+    jsonLd={faqSchema}
     showCTA={false}
   >
     <article className="prose prose-lg max-w-none space-y-8">

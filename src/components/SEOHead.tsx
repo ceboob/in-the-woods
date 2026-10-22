@@ -8,6 +8,7 @@ interface SEOHeadProps {
   keywords?: string[] | string;
   type?: string;
   jsonLd?: object | object[];
+  aboutId?: string;
   noindex?: boolean;
   publishedTime?: string;
   modifiedTime?: string;
@@ -20,11 +21,27 @@ const SEOHead = ({
   ogImage = 'https://www.suprasl.online/og-image.jpg',
   type = 'website',
   jsonLd,
+  aboutId,
   noindex = false,
   publishedTime,
   modifiedTime,
 }: SEOHeadProps) => {
-  const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const jsonLdArray = [
+    ...(!noindex
+      ? [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': `${canonical}#webpage`,
+            url: canonical,
+            name: title,
+            description,
+            ...(aboutId ? { about: { '@id': aboutId } } : {}),
+          },
+        ]
+      : []),
+    ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []),
+  ];
 
   return (
     <Helmet>

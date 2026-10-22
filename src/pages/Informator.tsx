@@ -28,6 +28,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import SEOHead from '@/components/SEOHead';
+import { property } from '@/data/property';
 
 const Informator = () => {
   useEffect(() => {
@@ -41,6 +42,7 @@ const Informator = () => {
         description="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl."
         canonical="https://www.suprasl.online/informator"
         ogImage="https://www.suprasl.online/images/exterior-main.webp"
+        aboutId={`${property.canonicalUrl}#vacation-rental`}
       />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">

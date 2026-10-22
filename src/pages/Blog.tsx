@@ -327,6 +327,21 @@ const Blog = () => {
         jsonLd={[
           {
             '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            '@id': 'https://www.suprasl.online/blog#webpage',
+            url: 'https://www.suprasl.online/blog',
+            name: 'Blog Supraśl – atrakcje i szlaki | In The Woods',
+            description:
+              'Blog o Supraślu – atrakcje, szlaki, historia i turystyka w Puszczy Knyszyńskiej. Przewodnik turystyczny.',
+            mainEntity: {
+              '@type': 'Blog',
+              '@id': 'https://www.suprasl.online/blog#blog',
+              name: 'Blog In The Woods',
+              url: 'https://www.suprasl.online/blog',
+            },
+          },
+          {
+            '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.suprasl.online/' },

@@ -44,7 +44,7 @@ const BookingModule = () => {
 
   const validateForm = () => {
     const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-    const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
+    const phoneRegex = /^\+?[0-9\s-]{7,20}$/;
     if (!emailRegex.test(data.email)) {
       toast({ title: 'Błąd', description: 'Podaj poprawny adres e-mail.', variant: 'destructive' });
       return false;
@@ -86,23 +86,33 @@ const BookingModule = () => {
     } else if (step === 'summary') {
       setSending(true);
       try {
-        const { data: result, error } = await supabase.functions.invoke('rate-limit-submit', {
-          body: {
-            type: 'booking',
-            check_in: data.checkIn,
-            check_out: data.checkOut,
-            guests: data.guests,
-            name: data.name,
-            email: data.email,
-            phone: data.phone,
-            message: data.message,
+        const { data: result, error } = await supabase.functions.invoke<{ error?: string }>(
+          'rate-limit-submit',
+          {
+            body: {
+              type: 'booking',
+              check_in: data.checkIn,
+              check_out: data.checkOut,
+              guests: data.guests,
+              name: data.name,
+              email: data.email,
+              phone: data.phone,
+              message: data.message,
+            },
           },
-        });
-        const body =
-          (result ?? (error as any)?.context)
-            ? await (error as any)?.context?.json?.().catch(() => null)
+        );
+        const errorContext =
+          error && 'context' in error && error.context instanceof Response ? error.context : null;
+        const responseData =
+          result ?? (errorContext ? await errorContext.json().catch(() => null) : null);
+        const responseError =
+          responseData &&
+          typeof responseData === 'object' &&
+          'error' in responseData &&
+          typeof responseData.error === 'string'
+            ? responseData.error
             : null;
-        if (body?.error?.includes?.('Too many')) {
+        if (responseError?.includes('Too many')) {
           toast({
             title: 'Zbyt wiele prób',
             description: 'Spróbuj ponownie za minutę.',
@@ -111,7 +121,7 @@ const BookingModule = () => {
           return;
         }
         if (error) throw error;
-        if (body?.error) throw new Error(body.error);
+        if (responseError) throw new Error(responseError);
         setStep('sent');
       } catch (err) {
         console.error('Booking error:', err);

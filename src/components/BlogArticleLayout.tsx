@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft, Calendar, Clock, ChevronRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import SEOHead from '@/components/SEOHead';
+import { buildBlogPostingSchema } from '@/lib/structuredData';
 
 interface FAQ {
   question: string;
@@ -47,30 +48,15 @@ const BlogArticleLayout = ({
     window.scrollTo(0, 0);
   }, []);
 
-  const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: title,
+  const articleSchema = buildBlogPostingSchema({
+    title,
     description: metaDescription,
     url: `https://www.suprasl.online/blog/${slug}`,
-    datePublished: publishDate,
-    dateModified: dateModified || publishDate,
-    author: { '@type': 'Organization', name: 'In The Woods' },
-    publisher: {
-      '@type': 'Organization',
-      name: 'In The Woods',
-      url: 'https://www.suprasl.online',
-    },
-    mainEntityOfPage: `https://www.suprasl.online/blog/${slug}`,
-    keywords: keywords.join(', '),
-    image: {
-      '@type': 'ImageObject',
-      url: ogImage,
-      width: 1200,
-      height: 630,
-      caption: `In The Woods Supraśl — ${title}`,
-    },
-  };
+    publishDate,
+    modifiedDate: dateModified,
+    image: ogImage,
+    keywords,
+  });
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -102,8 +88,9 @@ const BlogArticleLayout = ({
     ],
   };
 
-  // Merge article, FAQ and breadcrumb JSON-LD with any provided event JSON-LD
-  const jsonLdArray: object[] = [articleSchema, faqSchema, breadcrumbSchema];
+  const jsonLdArray: object[] = [articleSchema];
+  if (showFaqSection && faqs.length > 0) jsonLdArray.push(faqSchema);
+  jsonLdArray.push(breadcrumbSchema);
   if (Array.isArray(events) && events.length > 0) {
     // prepend events so search engines see structured events first
     jsonLdArray.unshift(...events);
