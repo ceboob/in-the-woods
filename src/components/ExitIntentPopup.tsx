@@ -30,18 +30,26 @@ const ExitIntentPopup = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
+    const phoneRegex = /^\+?[0-9\s-]{7,20}$/;
     if (!phone || !phoneRegex.test(phone)) return;
 
     try {
-      const { data: result, error } = await supabase.functions.invoke('rate-limit-submit', {
-        body: { type: 'callback', phone, source: 'exit_intent' },
-      });
-      const body =
-        (result ?? (error as any)?.context)
-          ? await (error as any)?.context?.json?.().catch(() => null)
+      const { data: result, error } = await supabase.functions.invoke<{ error?: string }>(
+        'rate-limit-submit',
+        { body: { type: 'callback', phone, source: 'exit_intent' } },
+      );
+      const errorContext =
+        error && 'context' in error && error.context instanceof Response ? error.context : null;
+      const responseData =
+        result ?? (errorContext ? await errorContext.json().catch(() => null) : null);
+      const responseError =
+        responseData &&
+        typeof responseData === 'object' &&
+        'error' in responseData &&
+        typeof responseData.error === 'string'
+          ? responseData.error
           : null;
-      if (body?.error?.includes?.('Too many')) {
+      if (responseError?.includes('Too many')) {
         return;
       }
       if (error) throw error;

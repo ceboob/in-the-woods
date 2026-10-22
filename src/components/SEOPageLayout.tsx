@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import RelatedPages from '@/components/RelatedPages';
+import { property } from '@/data/property';
 
 interface SEOPageLayoutProps {
   children: ReactNode;
@@ -68,6 +69,7 @@ const SEOPageLayout = ({
         ogImage={ogImage}
         keywords={keywords}
         jsonLd={pageJsonLd.length ? pageJsonLd : undefined}
+        aboutId={`${property.canonicalUrl}#vacation-rental`}
       />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">

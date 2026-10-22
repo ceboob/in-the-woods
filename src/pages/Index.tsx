@@ -1,6 +1,8 @@
 import { lazy, Suspense } from 'react';
 import SEOHead from '@/components/SEOHead';
-import { homeJsonLd } from '@/data/amenityFaq';
+import { amenityFaqs } from '@/data/amenityFaq';
+import { property } from '@/data/property';
+import { buildVacationRentalSchema } from '@/lib/structuredData';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import HeroWelcome from '@/components/HeroWelcome';
@@ -38,10 +40,21 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Dom na wynajem Supraśl – las, jacuzzi | In The Woods"
-        description="Noclegi Supraśl w domu w lesie: jacuzzi ogrodowe, kominek, ognisko. Dom przyjazny zwierzętom – pies gratis! Blisko Białegostoku. Sprawdź terminy!"
+        title={property.name}
+        description={property.description}
         canonical="https://www.suprasl.online/"
-        jsonLd={homeJsonLd}
+        jsonLd={[
+          buildVacationRentalSchema(property),
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: amenityFaqs.map(({ q, a }) => ({
+              '@type': 'Question',
+              name: q,
+              acceptedAnswer: { '@type': 'Answer', text: a },
+            })),
+          },
+        ]}
       />
 
       <Navbar />

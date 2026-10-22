@@ -34,44 +34,6 @@ const faqs = [
   },
 ];
 
-const lodgingSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LodgingBusiness',
-  '@id': 'https://www.suprasl.online/noclegi-suprasl#lodging',
-  name: 'In The Woods — drewniany dom na wyłączność',
-  url: 'https://www.suprasl.online/noclegi-suprasl',
-  image: [
-    'https://www.suprasl.online/images/exterior-main.jpg',
-    'https://www.suprasl.online/images/living-fireplace.jpg',
-    'https://www.suprasl.online/images/jacuzzi-night.jpg',
-  ],
-  description:
-    'Drewniany dom na wyłączność w Konne koło Supraśla, blisko Puszczy Knyszyńskiej. Salon z kominkiem, dwie sypialnie, wyposażona kuchnia, taras i ogród. Balia ogrodowa z funkcją jacuzzi jest opcjonalna i dodatkowo płatna.',
-  telephone: '+48722765101',
-  email: 'tutinthewood@gmail.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Konne 109/1',
-    postalCode: '16-030',
-    addressLocality: 'Supraśl',
-    addressRegion: 'podlaskie',
-    addressCountry: 'PL',
-  },
-  amenityFeature: [
-    { '@type': 'LocationFeatureSpecification', name: 'Dom wynajmowany jednej grupie', value: true },
-    {
-      '@type': 'LocationFeatureSpecification',
-      name: 'Balia ogrodowa z funkcją jacuzzi — opcjonalna, dodatkowo płatna',
-      value: true,
-    },
-    { '@type': 'LocationFeatureSpecification', name: 'Kominek', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Wyposażona kuchnia', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Wi-Fi', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Parking', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Taras i ogród', value: true },
-  ],
-};
-
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -106,7 +68,7 @@ const NoclegiSuprasl = () => (
       'dom z jacuzzi Białystok',
       'noclegi Puszcza Knyszyńska',
     ]}
-    jsonLd={[lodgingSchema, faqSchema]}
+    jsonLd={faqSchema}
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <header className="space-y-5">
