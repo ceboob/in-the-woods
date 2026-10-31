@@ -1,8 +1,9 @@
 import { ReactNode, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import RelatedPages from '@/components/RelatedPages';
+import { property } from '@/data/property';
 
 interface SEOPageLayoutProps {
   children: ReactNode;
@@ -10,6 +11,13 @@ interface SEOPageLayoutProps {
   description: string;
   breadcrumbName?: string;
   ogImage?: string;
+  keywords?: string[];
+  jsonLd?: object | object[];
+  showRelatedPages?: boolean;
+  showCTA?: boolean;
+  ctaTitle?: string;
+  ctaDescription?: string;
+  ctaFormLabel?: string;
 }
 
 const SEOPageLayout = ({
@@ -18,12 +26,20 @@ const SEOPageLayout = ({
   description,
   breadcrumbName,
   ogImage,
+  keywords,
+  jsonLd,
+  showRelatedPages = true,
+  showCTA = true,
+  ctaTitle = 'Sprawdź dostępność terminu',
+  ctaDescription = 'Wyślij zapytanie o pobyt. Formularz nie potwierdza rezerwacji ani nie oznacza płatności.',
+  ctaFormLabel,
 }: SEOPageLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const canonical = `https://www.suprasl.online${window.location.pathname}`;
+  const { pathname } = useLocation();
+  const canonical = `https://www.suprasl.online${pathname}`;
   const breadcrumbSchema = breadcrumbName
     ? {
         '@context': 'https://schema.org',
@@ -39,6 +55,10 @@ const SEOPageLayout = ({
         ],
       }
     : null;
+  const pageJsonLd = [
+    ...(breadcrumbSchema ? [breadcrumbSchema] : []),
+    ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []),
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -47,7 +67,9 @@ const SEOPageLayout = ({
         description={description}
         canonical={canonical}
         ogImage={ogImage}
-        jsonLd={breadcrumbSchema || undefined}
+        keywords={keywords}
+        jsonLd={pageJsonLd.length ? pageJsonLd : undefined}
+        aboutId={`${property.canonicalUrl}#vacation-rental`}
       />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
@@ -115,32 +137,36 @@ const SEOPageLayout = ({
       {/* Content */}
       <main className="max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-16">
         {children}
-        <RelatedPages />
+        {showRelatedPages ? <RelatedPages /> : null}
       </main>
 
-      {/* CTA */}
-      <section className="px-6 md:px-12 py-16 bg-secondary">
-        <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="font-heading text-3xl font-light">Sprawdź dostępność terminu</h2>
-          <p className="text-muted-foreground">
-            Odpowiadamy zwykle w kilka godzin. Rezerwacja bezpośrednia — bez prowizji.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
-              <Phone className="w-4 h-4" /> 722 765 101
-            </a>
-            <a
-              href="mailto:tutinthewood@gmail.com"
-              className="btn-outline inline-flex items-center gap-2"
-            >
-              <Mail className="w-4 h-4" /> Napisz do nas
-            </a>
+      {showCTA ? (
+        <section className="px-6 md:px-12 py-16 bg-secondary">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <h2 className="font-heading text-3xl font-light">{ctaTitle}</h2>
+            <p className="text-muted-foreground">{ctaDescription}</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
+                <Phone className="w-4 h-4" /> 722 765 101
+              </a>
+              <a
+                href="mailto:tutinthewood@gmail.com"
+                className="btn-outline inline-flex items-center gap-2"
+              >
+                <Mail className="w-4 h-4" /> Napisz do nas
+              </a>
+              {ctaFormLabel ? (
+                <a href="/#rezerwacja" className="btn-outline">
+                  {ctaFormLabel}
+                </a>
+              ) : null}
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Konne 109/1, 16-030 Supraśl · Gospodarz: Maciej
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground">
-            Konne 109/1, 16-030 Supraśl · Gospodarz: Maciej
-          </p>
-        </div>
       </section>
+      ) : null}
 
       {/* Footer */}
       <footer className="bg-foreground text-white/70 px-6 md:px-12 py-8">

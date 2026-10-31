@@ -5,9 +5,13 @@ interface SEOHeadProps {
   description: string;
   canonical: string;
   ogImage?: string;
+  keywords?: string[] | string;
   type?: string;
   jsonLd?: object | object[];
+  aboutId?: string;
   noindex?: boolean;
+  publishedTime?: string;
+  modifiedTime?: string;
 }
 
 const SEOHead = ({
@@ -17,9 +21,27 @@ const SEOHead = ({
   ogImage = 'https://www.suprasl.online/og-image.jpg',
   type = 'website',
   jsonLd,
+  aboutId,
   noindex = false,
+  publishedTime,
+  modifiedTime,
 }: SEOHeadProps) => {
-  const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const jsonLdArray = [
+    ...(!noindex
+      ? [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': `${canonical}#webpage`,
+            url: canonical,
+            name: title,
+            description,
+            ...(aboutId ? { about: { '@id': aboutId } } : {}),
+          },
+        ]
+      : []),
+    ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []),
+  ];
 
   return (
     <Helmet>
@@ -28,14 +50,13 @@ const SEOHead = ({
       <meta
         name="robots"
         content={
-          noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1'
+          noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'
         }
       />
-      <link rel="canonical" href={canonical} />
+      {!noindex ? <link rel="canonical" href={canonical} /> : null}
 
-      {/* Hreflang */}
-      <link rel="alternate" hrefLang="pl" href={canonical} />
-      <link rel="alternate" hrefLang="x-default" href={canonical} />
+      {!noindex ? <link rel="alternate" hrefLang="pl" href={canonical} /> : null}
+      {!noindex ? <link rel="alternate" hrefLang="x-default" href={canonical} /> : null}
 
       {/* Open Graph */}
       <meta property="og:title" content={title} />
@@ -47,6 +68,12 @@ const SEOHead = ({
       <meta property="og:type" content={type} />
       <meta property="og:locale" content="pl_PL" />
       <meta property="og:site_name" content="In The Woods — Dom w Puszczy Knyszyńskiej" />
+      {type === 'article' && publishedTime ? (
+        <meta property="article:published_time" content={publishedTime} />
+      ) : null}
+      {type === 'article' && (modifiedTime || publishedTime) ? (
+        <meta property="article:modified_time" content={modifiedTime || publishedTime} />
+      ) : null}
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -61,7 +88,7 @@ const SEOHead = ({
       {/* JSON-LD */}
       {jsonLdArray.map((data, i) => (
         <script key={i} type="application/ld+json">
-          {JSON.stringify(data)}
+          {JSON.stringify(data).replace(/</g, '\\u003c')}
         </script>
       ))}
     </Helmet>

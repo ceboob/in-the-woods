@@ -6,16 +6,16 @@ export default {
     // Clone headers and add security headers
     const newHeaders = new Headers(response.headers);
 
-    // Content-Security-Policy
+    // Content-Security-Policy (musi być identyczna z vercel.json!)
     newHeaders.set(
       "Content-Security-Policy",
       "default-src 'self'; " +
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com; " +
+      "script-src 'self' 'unsafe-inline' https://js.stripe.com https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com; " +
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
       "font-src 'self' https://fonts.gstatic.com data:; " +
-      "img-src 'self' data: blob: https: http:; " +
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://api.stripe.com https://static.cloudflareinsights.com; " +
-      "frame-src https://js.stripe.com https://hooks.stripe.com; " +
+      "img-src 'self' data: blob: https: http: https://www.google-analytics.com https://www.googletagmanager.com; " +
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com https://api.stripe.com https://static.cloudflareinsights.com; " +
+      "frame-src https://js.stripe.com https://hooks.stripe.com https://www.googletagmanager.com; " +
       "object-src 'none'; " +
       "base-uri 'self'; " +
       "form-action 'self'; " +
@@ -44,9 +44,8 @@ export default {
       "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(self), usb=()"
     );
 
-    // X-XSS-Protection (legacy browsers)
-    newHeaders.set("X-XSS-Protection", "1; mode=block");
-
+    // X-XSS-Protection usunięte — deprecated nagłówek, ignorowany przez nowe przeglądarki;
+    // nie występuje w vercel.json (single source of truth).
     return new Response(response.body, {
       status: response.status,
       statusText: response.statusText,

@@ -23,18 +23,26 @@ Date: 2026-04-14
 2. Commit updated lockfile.
 3. Re-run CI with `npm ci && npm run build`.
 
-**Status: ⚠️ open** — lockfile sync must be done locally by the developer.
-
 ---
 
-### 2) ~~CSP is duplicated in two places and likely to drift~~ ✅ FIXED
-**Resolution**: Removed CSP meta tag from `index.html`. Single source of truth is now the HTTP header in `vercel.json`.
+### 2) CSP is duplicated in two places and likely to drift
+**Evidence**
+- CSP meta tag in `index.html`.
+- CSP response header in `vercel.json`.
+- The two values are not identical (`vercel.json` includes `upgrade-insecure-requests`, while the HTML meta CSP does not).
+
+**Why this matters on Vercel**
+- Divergent CSP definitions make production behavior harder to reason about.
+- Future edits can unintentionally weaken policy in one layer while appearing secure in the other.
+
+**Recommendation**
+- Keep a single source of truth for CSP (prefer HTTP header in `vercel.json`) and remove meta CSP from `index.html`.
 
 ---
 
 ### 3) CSP is permissive for scripts (`unsafe-inline` and `unsafe-eval`)
 **Evidence**
-- CSP allows `'unsafe-inline'` and `'unsafe-eval'` in `script-src`.
+- Both CSP definitions allow `'unsafe-inline'` and `'unsafe-eval'` in `script-src`.
 
 **Why this matters on Vercel**
 - Broad script allowances reduce XSS protection and increase impact of content injection bugs.
@@ -42,30 +50,59 @@ Date: 2026-04-14
 **Recommendation**
 - Move toward nonce/hash-based scripts and remove `unsafe-eval` first (highest value), then reduce/remove `unsafe-inline` as possible.
 
-**Status: ⚠️ open** — requires staged rollout.
-
 ## Medium-risk findings
 
-### 4) ~~Potentially broken preload path in production build~~ ✅ FIXED
-**Resolution**: Preload changed to `/images/hero-cabin.jpg` (in previous commit).
+### 4) Potentially broken preload path in production build
+**Evidence**
+- `index.html` preloads `/src/assets/exterior-main.webp`.
+- In Vite production builds, source assets are fingerprinted/relocated to `/assets/...` unless explicitly in `public/`.
+
+**Why this matters on Vercel**
+- Preload may 404 in production, wasting bandwidth and missing intended LCP optimization.
+
+**Recommendation**
+- Reference a public asset path (e.g., `/images/...`) or import the asset in application code so Vite rewrites it safely.
 
 ---
 
-### 5) ~~Legacy/deprecated browser header present~~ ✅ FIXED
-**Resolution**: Removed `X-XSS-Protection` header from `vercel.json`.
+### 5) Legacy/deprecated browser header present
+**Evidence**
+- `X-XSS-Protection: 1; mode=block` set in `vercel.json`.
+
+**Why this matters on Vercel**
+- Modern browsers ignore/deprecate it; maintaining dead headers adds noise and can mislead about actual protections.
+
+**Recommendation**
+- Remove `X-XSS-Protection`; rely on CSP + modern browser defaults.
 
 ## Low-risk / operational findings
 
 ### 6) Rewrite catch-all is acceptable for SPA but requires asset/file awareness
+**Evidence**
+- `rewrites` maps `/(.*)` to `/index.html`.
+
+**Why this matters on Vercel**
+- This is normal for SPA routing, but teams should ensure static file behavior remains as intended when adding routes/files.
+
+**Recommendation**
 - Keep as-is, but regression-test direct hits to known files (`/robots.txt`, `/sitemap.xml`, `/site.webmanifest`) after config changes.
 
+---
+
 ### 7) Supabase Edge Functions in repo are not deployed by Vercel
-- These are deployed/executed in Supabase, not Vercel. Document deployment boundaries clearly.
+**Evidence**
+- `supabase/functions/*` contains Deno functions relying on Supabase secrets.
+
+**Why this matters on Vercel**
+- These are deployed/executed in Supabase, not Vercel. Operational confusion can lead to misconfigured secrets or mistaken incident ownership.
+
+**Recommendation**
+- Document deployment boundaries clearly (frontend on Vercel, backend functions on Supabase) and maintain environment variable mapping in ops docs.
 
 ## Suggested hardening checklist
-1. ✅ ~~Consolidate CSP to header-only policy in `vercel.json`~~
-2. ✅ ~~Fix preload URL to a production-safe asset reference~~
-3. ✅ ~~Remove deprecated `X-XSS-Protection` header~~
-4. ⚠️ Fix lockfile drift and validate with `npm ci && npm run build`
-5. ⚠️ Remove `unsafe-eval` and reduce `unsafe-inline` over staged releases
-6. ℹ️ Add a short `DEPLOYMENT.md` clarifying Vercel vs Supabase runtime responsibilities
+1. Fix lockfile drift and validate with `npm ci && npm run build`.
+2. Consolidate CSP to header-only policy in `vercel.json`.
+3. Remove `unsafe-eval` and reduce `unsafe-inline` over staged releases.
+4. Fix preload URL to a production-safe asset reference.
+5. Remove deprecated `X-XSS-Protection` header.
+6. Add a short `DEPLOYMENT.md` clarifying Vercel vs Supabase runtime responsibilities.

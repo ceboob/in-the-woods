@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Luckiest+Guy&family=Marcellus+SC&family=Monoton&family=Poppins:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -45,6 +44,9 @@
     --cream: 0 0% 97.6%;
     --graphite: 0 0% 20%;
     --warm-white: 0 0% 96%;
+    --text-body: 0 0% 33.3%;
+    --text-heading: 0 0% 20%;
+    --btn-fg: 0 0% 20%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 0 0% 20%;
@@ -64,42 +66,43 @@
 
   body {
     @apply bg-background text-muted-foreground antialiased;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
-    color: hsl(0 0% 33.3%);
+    color: hsl(var(--text-body));
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 36px;
+  h1:not(.font-display) {
+    font-family: "Encode Sans SC", sans-serif;
+    font-size: clamp(2.25rem, 5vw, 4rem);
     font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-    color: hsl(0 0% 20%);
-    margin-bottom: 1.2rem;
+    line-height: 1.15;
+    letter-spacing: 0;
+    text-wrap: balance;
+    color: hsl(var(--text-heading));
+    margin-bottom: 1rem;
   }
 
   h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    line-height: 1.3;
-    color: hsl(0 0% 20%);
-    margin-bottom: 1rem;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.25;
+    color: hsl(var(--text-heading));
+    margin-bottom: 0.875rem;
   }
 
   h3 {
     font-family: "Poppins", sans-serif;
-    font-size: 22px;
+    font-size: clamp(1.375rem, 2.4vw, 1.625rem);
     font-weight: 600;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
     line-height: 1.3;
-    color: hsl(0 0% 20%);
+    color: hsl(var(--text-heading));
     margin-bottom: 0.75rem;
   }
 
@@ -107,26 +110,38 @@
   h5,
   h6 {
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    color: hsl(0 0% 20%);
+    font-weight: 500;
+    color: hsl(var(--text-heading));
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 1.25rem;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
     line-height: 1.4;
     margin-bottom: 0.5rem;
   }
 
+  h6 {
+    font-size: 1rem;
+    line-height: 1.45;
+    margin-bottom: 0.5rem;
+  }
+
   p {
-    margin-bottom: 1.2em;
-    letter-spacing: 0.01em;
-    line-height: 1.7;
+    margin-bottom: 1.1em;
+    letter-spacing: 0;
+    line-height: 1.75;
   }
 
   small,
   .text-xs,
   .text-sm {
-    letter-spacing: 0.03em;
+    letter-spacing: 0;
   }
 
   p:last-child {
@@ -145,16 +160,17 @@
 
 @layer components {
   .section-padding {
-    @apply px-6 md:px-12 lg:px-20 xl:px-32 py-24 md:py-32 lg:py-40;
+    @apply px-6 md:px-12 lg:px-20 xl:px-32 py-20 md:py-24 lg:py-28;
   }
 
   .section-title {
     @apply tracking-tight text-foreground;
     font-family: "Poppins", sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    line-height: 1.3;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.25;
+    text-wrap: balance;
   }
 
   .section-subtitle {
@@ -165,17 +181,17 @@
   }
 
   .nav-link {
-    @apply text-xs tracking-[0.15em] uppercase transition-all duration-300;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    @apply text-sm tracking-normal transition-all duration-300;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 text-sm tracking-[0.08em] uppercase transition-all duration-300;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm tracking-normal transition-all duration-300;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
     background-color: hsl(var(--primary));
-    color: hsl(0 0% 20%);
+    color: hsl(var(--btn-fg));
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -191,9 +207,9 @@
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center px-6 py-3 border text-sm tracking-[0.08em] uppercase transition-all duration-300;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    @apply inline-flex items-center justify-center px-6 py-3 border text-sm tracking-normal transition-all duration-300;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
     border-color: hsl(var(--foreground));
     color: hsl(var(--foreground));
     border-radius: 8px;
@@ -225,15 +241,17 @@
   }
 
   .font-sans {
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans", sans-serif;
   }
 
   .font-display {
     font-family: "Monoton", cursive;
+    font-weight: 400;
   }
 
   .font-accent {
-    font-family: "Marcellus SC", serif;
+    font-family: "Encode Sans SC", sans-serif;
+    font-weight: 600;
   }
 
   .logo-glow {
@@ -241,10 +259,36 @@
     filter: drop-shadow(0 0 3px hsl(var(--primary) / 0.35));
   }
 
-  .text-smallcaps {
-    font-variant: small-caps;
-    font-weight: 350;
-    letter-spacing: 0.04em;
+  .image-reveal {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .image-reveal > img {
+    display: block;
+    transition: transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .image-reveal[data-image-reveal="armed"] > img {
+    opacity: 0;
+    transform: scale(1.06);
+    transition:
+      opacity 1000ms cubic-bezier(0.22, 1, 0.36, 1),
+      transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--image-reveal-delay, 0ms);
+  }
+
+  .image-reveal[data-image-reveal="revealed"] > img {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .image-reveal:hover > img {
+      transform: scale(1.025);
+    }
   }
 
 
@@ -297,4 +341,130 @@
   .safe-area-bottom {
     padding-bottom: env(safe-area-inset-bottom, 0.5rem);
   }
+}
+
+/* Scroll reveal (armed by useScrollReveal only for below-the-fold sections) */
+[data-reveal='armed'] {
+  opacity: 0;
+  transform: translate3d(0, 35px, 0);
+  transition:
+    opacity 750ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 750ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+[data-reveal='armed'].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+[data-reveal='armed'] .card-premium {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition:
+    opacity 600ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-reveal='armed'].is-revealed .card-premium {
+  opacity: 1;
+  transform: none;
+  transition-delay: calc(var(--reveal-i, 0) * 100ms + 150ms);
+}
+@media (max-width: 767px) {
+  [data-reveal='armed'] {
+    transform: translate3d(0, 15px, 0);
+    transition-duration: 500ms;
+  }
+  [data-reveal='armed'] .card-premium {
+    transform: translate3d(0, 12px, 0);
+    transition-duration: 500ms;
+  }
+  [data-reveal='armed'].is-revealed .card-premium {
+    transition-delay: calc(var(--reveal-i, 0) * 60ms + 100ms);
+  }
+}
+.amenity-card {
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.amenity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 24px -6px rgba(0, 0, 0, 0.16);
+}
+.amenity-card--featured {
+  border: 2px solid hsl(var(--primary));
+}
+@media (prefers-reduced-motion: reduce) {
+  .amenity-card,
+  .amenity-card:hover {
+    transform: none;
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal='armed'],
+  [data-reveal='armed'] .card-premium {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .image-reveal > img {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --background: 180 10% 8%;
+  --foreground: 0 0% 90%;
+  --card: 180 8% 12%;
+  --card-foreground: 0 0% 92%;
+  --popover: 180 8% 12%;
+  --popover-foreground: 0 0% 92%;
+  --primary: 48 71% 66%;
+  --primary-foreground: 0 0% 12%;
+  --secondary: 180 6% 15%;
+  --secondary-foreground: 0 0% 90%;
+  --muted: 180 6% 16%;
+  --muted-foreground: 0 0% 70%;
+  --accent: 27 45% 58%;
+  --accent-foreground: 0 0% 10%;
+  --destructive: 0 70% 58%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 180 6% 22%;
+  --input: 180 6% 22%;
+  --ring: 48 71% 66%;
+  --teal: 186 45% 62%;
+  --forest: 186 40% 52%;
+  --forest-light: 186 40% 60%;
+  --wood: 27 45% 58%;
+  --wood-light: 30 40% 66%;
+  --cream: 180 10% 8%;
+  --graphite: 0 0% 90%;
+  --warm-white: 180 8% 12%;
+  --sidebar-background: 180 8% 10%;
+  --sidebar-foreground: 0 0% 90%;
+  --sidebar-accent: 180 6% 15%;
+  --sidebar-accent-foreground: 0 0% 90%;
+  --sidebar-border: 180 6% 22%;
+  --text-body: 0 0% 78%;
+  --text-heading: 0 0% 94%;
+  --btn-fg: 0 0% 12%;
+}
+
+[data-theme="dark"] .card-premium {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 0 0 1px hsl(0 0% 100% / 0.04);
+}
+
+[data-theme="dark"] .amenity-card {
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .logo-glow {
+  text-shadow: 0 0 12px hsl(var(--primary) / 0.5), 0 0 30px hsl(var(--primary) / 0.25);
+}
+
+[data-theme="dark"] footer.bg-foreground {
+  background-color: hsl(var(--background));
 }

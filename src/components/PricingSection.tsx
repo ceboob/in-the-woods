@@ -1,6 +1,7 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Bath, Percent, Clock, Users, TreePine, Sun, Snowflake, Leaf } from 'lucide-react';
 import StripeSecurityTooltip from '@/components/StripeSecurityTooltip';
+import { GARDEN_TUB_PRICE, LONG_STAY_DISCOUNT, SEASONS, WEEKEND_SURCHARGE } from '@/lib/pricing';
 import {
   Table,
   TableBody,
@@ -10,76 +11,71 @@ import {
   TableRow,
 } from '@/components/ui/table';
 
-const seasonData = [
-  {
-    name: 'Sezon niski',
-    period: '1 listopad – 31 marzec',
+const seasonPresentation = {
+  low: {
+    period: '1 listopada – 31 marca',
     icon: Snowflake,
-    minNights: 2,
     accent: 'border-l-4 border-l-sky-400',
-    iconColor: 'text-sky-500',
-    bgAccent: 'bg-sky-50',
-    rows: [
-      { guests: 'do 4 osób', weekday: 399, weekend: 499 },
-      { guests: 'do 6 osób', weekday: 499, weekend: 599 },
-      { guests: 'do 8 osób', weekday: 599, weekend: 699 },
-    ],
+    iconColor: 'text-sky-500 dark:text-sky-300',
+    bgAccent: 'bg-sky-50 dark:bg-sky-950/40',
   },
-  {
-    name: 'Sezon średni',
-    period: '1 kwi – 31 maj / 1 wrz – 31 paź',
+  mid: {
+    period: '1 kwietnia – 31 maja',
     icon: Leaf,
-    minNights: 2,
     accent: 'border-l-4 border-l-amber-400',
-    iconColor: 'text-amber-600',
-    bgAccent: 'bg-amber-50',
-    rows: [
-      { guests: 'do 2 osób', weekday: 399, weekend: 499 },
-      { guests: 'do 4 osób', weekday: 499, weekend: 599 },
-      { guests: 'do 6 osób', weekday: 599, weekend: 699 },
-      { guests: 'do 8 osób', weekday: 649, weekend: 749 },
-    ],
+    iconColor: 'text-amber-600 dark:text-amber-300',
+    bgAccent: 'bg-amber-50 dark:bg-amber-950/40',
   },
-  {
-    name: 'Sezon wysoki',
-    period: '1 czerwiec – 31 sierpień',
+  mid2: {
+    period: '1 września – 31 października',
+    icon: Leaf,
+    accent: 'border-l-4 border-l-amber-400',
+    iconColor: 'text-amber-600 dark:text-amber-300',
+    bgAccent: 'bg-amber-50 dark:bg-amber-950/40',
+  },
+  high: {
+    period: '1 czerwca – 31 sierpnia',
     icon: Sun,
-    minNights: 3,
     accent: 'border-l-4 border-l-orange-500',
-    iconColor: 'text-orange-600',
-    bgAccent: 'bg-orange-50',
-    rows: [
-      { guests: 'do 2 osób', weekday: 499, weekend: 599 },
-      { guests: 'do 4 osób', weekday: 599, weekend: 699 },
-      { guests: 'do 6 osób', weekday: 699, weekend: 799 },
-      { guests: 'do 8 osób', weekday: 799, weekend: 899 },
-    ],
+    iconColor: 'text-orange-600 dark:text-orange-300',
+    bgAccent: 'bg-orange-50 dark:bg-orange-950/40',
   },
-];
+} as const;
+
+const seasonData = SEASONS.map((season) => ({
+  name: season.label,
+  ...seasonPresentation[season.name as keyof typeof seasonPresentation],
+  minNights: season.minNights,
+  rows: Object.entries(season.prices).map(([guestCount, weekday]) => ({
+    guests: `do ${guestCount} osób`,
+    weekday,
+    weekend: weekday + WEEKEND_SURCHARGE,
+  })),
+}));
 
 const extras = [
   {
     icon: Bath,
-    title: 'Ruska bania',
-    desc: '250 zł za cały pobyt',
+    title: 'Balia ogrodowa z funkcją jacuzzi',
+    desc: `${GARDEN_TUB_PRICE} zł za cały pobyt`,
     note: 'niezależnie od liczby nocy',
   },
   {
     icon: Percent,
     title: 'Zniżka za długi pobyt',
-    desc: '−10% przy 7+ nocach',
-    note: 'naliczana automatycznie',
+    desc: `−${LONG_STAY_DISCOUNT * 100}% przy 7+ nocach`,
+    note: 'od ceny noclegu; bez opłaty za balię',
   },
   {
     icon: Clock,
     title: 'Minimalna rezerwacja',
-    desc: '2 noce (3 w sezonie wysokim)',
-    note: 'weekendy i długie weekendy',
+    desc: `${Math.min(...SEASONS.map((season) => season.minNights))} noce (w sezonie wysokim: ${Math.max(...SEASONS.map((season) => season.minNights))})`,
+    note: 'wymóg zależy od sezonu',
   },
 ];
 
 const PricingSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   const scrollTo = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -89,11 +85,11 @@ const PricingSection = () => {
     <section id="cennik" className="section-padding bg-secondary">
       <div
         ref={ref}
-        className={`max-w-5xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-5xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         {/* Header */}
         <div className="text-center mb-12 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Cennik
           </p>
           <h2 className="section-title">Ile kosztuje pobyt w lesie?</h2>
@@ -137,7 +133,7 @@ const PricingSection = () => {
                           <span>Goście</span>
                         </div>
                       </TableHead>
-                      <TableHead className="text-center">Pn–Czw</TableHead>
+                      <TableHead className="text-center">Nd–Czw</TableHead>
                       <TableHead className="text-center">Pt–Sb</TableHead>
                     </TableRow>
                   </TableHeader>
@@ -190,22 +186,20 @@ const PricingSection = () => {
             </h3>
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Wynajmujemy cały <strong>domek w lesie w Puszczy Knyszyńskiej</strong> na wyłączność — bez
-            współdzielenia z innymi gośćmi. Cena obejmuje dom, ogród z ogrodzeniem, kominek, parking
-            i&nbsp;dostęp do lasu wprost z&nbsp;posesji. To idealna propozycja na <strong>weekend
+            Wynajmujemy cały <strong>dom na wyłączność</strong> — bez współdzielenia z innymi
+            gośćmi. To propozycja na <strong>weekend
             w&nbsp;lesie</strong>, romantyczny wypad we dwoje, <strong>wieczór panieński na
             Podlasiu</strong> lub workation w&nbsp;ciszy natury.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Opcjonalnie możesz zarezerwować <strong>ruską banię</strong> — tradycyjną saunę opalaną drewnem,
-            dostępną przez cały pobyt za jednorazową opłatą 250&nbsp;zł. Przy rezerwacji na 7 lub
-            więcej nocy naliczamy <strong>10% zniżki</strong> od łącznej kwoty — dłuższy pobyt
-            w&nbsp;leśnym domu naprawdę się opłaca.
+            Opcjonalnie możesz zamówić <strong>balię ogrodową z funkcją jacuzzi</strong> za
+            jednorazową opłatą {GARDEN_TUB_PRICE}&nbsp;zł za pobyt. Przy pobycie na co najmniej 7 nocy
+            <strong> {LONG_STAY_DISCOUNT * 100}% zniżki obejmuje cenę noclegu</strong>; opłata za balię nie jest wliczana
+            do podstawy rabatu.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Rezerwując bezpośrednio przez naszą stronę, unikasz prowizji pośredników. Zaliczkę
-            (30%) opłacasz bezpiecznie online, resztę regulujesz na miejscu. Akceptujemy BLIK,
-            karty płatnicze i&nbsp;przelewy.
+            Szczegóły ewentualnej zaliczki i pozostałej płatności ustalisz z gospodarzem po
+            uzgodnieniu pobytu. Wysłanie zapytania nie potwierdza rezerwacji ani nie pobiera płatności.
           </p>
         </div>
 
@@ -220,17 +214,17 @@ const PricingSection = () => {
                     stripe
                   </text>
                 </svg>
-                <span className="font-medium">Zaliczka 30% · Reszta na miejscu</span>
+                <span className="font-medium">Płatność online po uzgodnieniu pobytu</span>
               </div>
             </StripeSecurityTooltip>
           </div>
           <p className="text-[11px] text-muted-foreground/70">
-            Akceptujemy BLIK, karty płatnicze i przelewy online
+            Formularz służy do wysłania zapytania, nie do dokonania płatności
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">
             <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary">
-              Sprawdź dostępność
+              Zapytaj o termin
             </button>
             <a href="tel:+48722765101" className="btn-outline">
               Zapytaj o pobyt

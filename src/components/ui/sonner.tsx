@@ -1,10 +1,19 @@
+import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { Toaster as Sonner, toast } from 'sonner';
 
 type ToasterProps = React.ComponentProps<typeof Sonner>;
 
 const Toaster = ({ ...props }: ToasterProps) => {
+  const [mounted, setMounted] = useState(false);
   const { theme = 'system' } = useTheme();
+
+  useEffect(() => {
+    // Ensure this component only renders on the client to avoid SSR issues
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <Sonner

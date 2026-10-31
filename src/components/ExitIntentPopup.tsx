@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { X, Phone, ArrowRight } from 'lucide-react';
-import { supabase } from '@/integrations/supabase/client';
+import { invokeEdgeFunction } from '@/lib/edgeFunction';
 import { pushToDataLayer } from '@/lib/gtm';
 
 const ExitIntentPopup = () => {
@@ -31,7 +31,7 @@ const ExitIntentPopup = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
+    const phoneRegex = /^\+?[0-9\s-]{7,20}$/;
     if (!phone || !phoneRegex.test(phone)) return;
 
     pushToDataLayer({
@@ -39,34 +39,36 @@ const ExitIntentPopup = () => {
       source: 'exit_intent',
     });
 
-    let isSaved = false;
-
     try {
-      const { data: result, error } = await supabase.functions.invoke('rate-limit-submit', {
-        body: { type: 'callback', phone, source: 'exit_intent' },
-      });
-      const body =
-        (result ?? (error as any)?.context)
-          ? await (error as any)?.context?.json?.().catch(() => null)
+      const { data: result, error } = await invokeEdgeFunction<{ error?: string }>(
+        'rate-limit-submit',
+        { body: { type: 'callback', phone, source: 'exit_intent' } },
+      );
+      const errorContext =
+        error && 'context' in error && error.context instanceof Response ? error.context : null;
+      const responseData =
+        result ?? (errorContext ? await errorContext.json().catch(() => null) : null);
+      const responseError =
+        responseData &&
+        typeof responseData === 'object' &&
+        'error' in responseData &&
+        typeof responseData.error === 'string'
+          ? responseData.error
           : null;
-      if (body?.error?.includes?.('Too many')) {
+      if (responseError?.includes('Too many')) {
         return;
       }
       if (error) throw error;
-
-      isSaved = true;
+      if (responseError) throw new Error(responseError);
     } catch (err) {
       console.error('Callback save error:', err);
       return;
     }
 
-    if (!isSaved) return;
-
     pushToDataLayer({
       event: 'callback_submitted',
       source: 'exit_intent',
     });
-
     setSubmitted(true);
     setTimeout(() => {
       setShow(false);
@@ -79,7 +81,7 @@ const ExitIntentPopup = () => {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       <div
-        className="absolute inset-0 bg-foreground/60 backdrop-blur-sm"
+        className="absolute inset-0 bg-foreground/60 dark:bg-black/60 backdrop-blur-sm"
         onClick={handleClose}
         aria-hidden="true"
       />
@@ -106,18 +108,17 @@ const ExitIntentPopup = () => {
             </div>
             <h3 className="font-heading text-xl font-semibold">Dziękujemy!</h3>
             <p className="text-sm text-muted-foreground">
-              Oddzwonimy w ciągu 15 minut w godzinach pracy.
+              Skontaktujemy się z Tobą w sprawie zapytania.
             </p>
           </div>
         ) : (
           <>
             <div className="text-center space-y-3 mb-6">
-              <p className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
+              <p className="text-xs tracking-wide text-primary font-medium">
                 Zanim wyjdziesz
               </p>
               <h3 className="font-heading text-2xl font-semibold leading-tight">
-                Zostaw numer —<br />
-                oddzwonimy w 15 minut
+                Zostaw numer telefonu
               </h3>
               <p className="text-sm text-muted-foreground">
                 Chętnie odpowiemy na pytania o dostępność, cenę i pobyt w In The Woods.
@@ -151,7 +152,7 @@ const ExitIntentPopup = () => {
                 </button>
               </div>
               <p className="text-xs text-center text-muted-foreground">
-                Bez zobowiązań. Dzwonimy raz, nie spamujemy.
+                Podaj numer, jeśli chcesz, abyśmy skontaktowali się w sprawie pobytu.
               </p>
             </form>
           </>

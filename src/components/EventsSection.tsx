@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
 import { PartyPopper, Heart, Users, Briefcase } from 'lucide-react';
 
@@ -11,7 +11,7 @@ const events = [
   {
     icon: PartyPopper,
     title: 'Wieczory kawalerskie',
-    desc: 'Ognisko, grill, ruska bania i absolutna wolność. Impreza w sercu Puszczy Knyszyńskiej.',
+    desc: 'Ognisko, grill, balia ogrodowa z funkcją jacuzzi i absolutna wolność. Impreza w sercu Puszczy Knyszyńskiej.',
   },
   {
     icon: Users,
@@ -26,13 +26,13 @@ const events = [
 ];
 
 const EventsSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="section-padding bg-background">
       <div
         ref={ref}
-        className={`max-w-6xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-6xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-12 space-y-4">
           <h2 className="section-title">Organizacja imprez i wydarzeń</h2>
@@ -42,17 +42,17 @@ const EventsSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
           {events.map((event, i) => (
             <div
               key={i}
-              className="card-premium p-6 text-center space-y-4"
+              className="flex h-full flex-col items-center text-center gap-4 rounded-2xl border border-border bg-card p-6"
             >
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <event.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                <event.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
-              <h3 className="font-heading text-lg font-semibold text-foreground">{event.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{event.desc}</p>
+              <h3 className="font-heading text-lg font-bold text-foreground">{event.title}</h3>
+              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">{event.desc}</p>
             </div>
           ))}
         </div>

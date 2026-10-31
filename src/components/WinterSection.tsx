@@ -1,4 +1,5 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import ImageReveal from '@/components/ImageReveal';
 import winterCabin from '@/assets/winter-cabin-real.webp';
 import winterGolden from '@/assets/winter-cabin-golden.webp';
 import winterForest from '@/assets/winter-forest.webp';
@@ -6,27 +7,29 @@ import winterForest from '@/assets/winter-forest.webp';
 const ideas = ['Domek na sylwestra w lesie', 'Ferie zimowe w puszczy', 'Walentynki w leśnym domku', 'Majówka w lesie'];
 
 const WinterSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="relative">
       <div className="relative h-[50vh] min-h-[350px]">
-        <img
-          src={winterGolden}
-          alt="Domek na sylwestra w lesie — chata In The Woods zimą, Puszcza Knyszyńska"
-          className="w-full h-full object-cover"
-          loading="lazy"
-          width="1920"
-          height="1080"
-        />
-        <div className="absolute inset-0 bg-foreground/30" />
+        <ImageReveal>
+          <img
+            src={winterGolden}
+            alt="Domek na sylwestra w lesie — chata In The Woods zimą, Puszcza Knyszyńska"
+            className="w-full h-full object-cover"
+            loading="lazy"
+            width="1920"
+            height="1080"
+          />
+        </ImageReveal>
+        <div className="absolute inset-0 bg-foreground/30 dark:bg-black/30" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6 max-w-2xl">
             <h2 className="font-heading text-3xl md:text-5xl font-light text-white mb-4">
               Domek na sylwestra i zimowy weekend w lesie
             </h2>
-            <p className="text-base text-white/80 text-smallcaps">
-              Śnieg na dachu. Kominek w środku. Gorąca bania na zewnątrz.
+            <p className="text-base text-white/80 font-sans">
+              Śnieg na dachu. Kominek w środku. Balia ogrodowa z funkcją jacuzzi na zewnątrz.
             </p>
           </div>
         </div>
@@ -34,7 +37,7 @@ const WinterSection = () => {
 
       <div
         ref={ref}
-        className={`section-padding bg-background transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`section-padding bg-background reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="max-w-5xl mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-12 space-y-4">
@@ -42,36 +45,40 @@ const WinterSection = () => {
               Zima w Puszczy Knyszyńskiej ma swój niepowtarzalny urok. Kiedy śnieg przykrywa las i
               ciszę przerywają tylko odgłosy dzięcioła, nasz domek w lesie zamienia się w przytulny azyl.
               Rano rozpalasz kominek, parzysz kawę i obserwujesz las za oknem. Po południu spacer po
-              zaśnieżonych szlakach albo narty biegowe wśród sosen. A wieczorem — gorąca bania pod
+              zaśnieżonych szlakach albo narty biegowe wśród sosen. A wieczorem — balia ogrodowa z funkcją jacuzzi pod
               rozgwieżdżonym zimowym niebem i powrót do ciepłego domu z bali na wyłączność.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 mb-12">
             <div className="overflow-hidden">
-              <img
-                src={winterCabin}
-                alt="Domek z kominkiem w lesie zimą — leśny dom na wynajem w Puszczy Knyszyńskiej"
-                className="w-full h-[280px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700"
-                loading="lazy"
-                width="800"
-                height="350"
-              />
+              <ImageReveal>
+                <img
+                  src={winterCabin}
+                  alt="Domek z kominkiem w lesie zimą — leśny dom na wynajem w Puszczy Knyszyńskiej"
+                  className="w-full h-[280px] md:h-[350px] object-cover"
+                  loading="lazy"
+                  width="800"
+                  height="350"
+                />
+              </ImageReveal>
             </div>
             <div className="overflow-hidden">
-              <img
-                src={winterForest}
-                alt="Zaśnieżony las Puszczy Knyszyńskiej — domek na odludziu podlaskie zimą"
-                className="w-full h-[280px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700"
-                loading="lazy"
-                width="800"
-                height="350"
-              />
+              <ImageReveal delay={90}>
+                <img
+                  src={winterForest}
+                  alt="Zaśnieżony las Puszczy Knyszyńskiej — domek na odludziu podlaskie zimą"
+                  className="w-full h-[280px] md:h-[350px] object-cover"
+                  loading="lazy"
+                  width="800"
+                  height="350"
+                />
+              </ImageReveal>
             </div>
           </div>
 
           <div className="text-center">
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-6">
+            <p className="text-xs tracking-wide text-muted-foreground font-sans mb-6">
               Idealne miejsce na
             </p>
             <div className="flex flex-wrap justify-center gap-3">

@@ -13,9 +13,8 @@ import {
   CreditCard,
   Loader2,
 } from 'lucide-react';
-import { supabase } from '@/integrations/supabase/client';
+import { invokeEdgeFunction } from '@/lib/edgeFunction';
 import { useToast } from '@/hooks/use-toast';
-import SocialProof from '@/components/SocialProof';
 import { pushToDataLayer } from '@/lib/gtm';
 
 interface BookingData {
@@ -46,7 +45,7 @@ const BookingModule = () => {
 
   const validateForm = () => {
     const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-    const phoneRegex = /^\+?[0-9\s\-]{7,20}$/;
+    const phoneRegex = /^\+?[0-9\s-]{7,20}$/;
     if (!emailRegex.test(data.email)) {
       toast({ title: 'Błąd', description: 'Podaj poprawny adres e-mail.', variant: 'destructive' });
       return false;
@@ -88,23 +87,33 @@ const BookingModule = () => {
     } else if (step === 'summary') {
       setSending(true);
       try {
-        const { data: result, error } = await supabase.functions.invoke('rate-limit-submit', {
-          body: {
-            type: 'booking',
-            check_in: data.checkIn,
-            check_out: data.checkOut,
-            guests: data.guests,
-            name: data.name,
-            email: data.email,
-            phone: data.phone,
-            message: data.message,
+        const { data: result, error } = await invokeEdgeFunction<{ error?: string }>(
+          'rate-limit-submit',
+          {
+            body: {
+              type: 'booking',
+              check_in: data.checkIn,
+              check_out: data.checkOut,
+              guests: data.guests,
+              name: data.name,
+              email: data.email,
+              phone: data.phone,
+              message: data.message,
+            },
           },
-        });
-        const body =
-          (result ?? (error as any)?.context)
-            ? await (error as any)?.context?.json?.().catch(() => null)
+        );
+        const errorContext =
+          error && 'context' in error && error.context instanceof Response ? error.context : null;
+        const responseData =
+          result ?? (errorContext ? await errorContext.json().catch(() => null) : null);
+        const responseError =
+          responseData &&
+          typeof responseData === 'object' &&
+          'error' in responseData &&
+          typeof responseData.error === 'string'
+            ? responseData.error
             : null;
-        if (body?.error?.includes?.('Too many')) {
+        if (responseError?.includes('Too many')) {
           toast({
             title: 'Zbyt wiele prób',
             description: 'Spróbuj ponownie za minutę.',
@@ -113,15 +122,13 @@ const BookingModule = () => {
           return;
         }
         if (error) throw error;
-        if (body?.error) throw new Error(body.error);
-
+        if (responseError) throw new Error(responseError);
         pushToDataLayer({
           event: 'booking_form_submitted',
           check_in: data.checkIn,
           check_out: data.checkOut,
           guests: Number(data.guests),
         });
-
         setStep('sent');
       } catch (err) {
         console.error('Booking error:', err);
@@ -168,8 +175,6 @@ const BookingModule = () => {
           </p>
         </div>
 
-        <SocialProof />
-
         <div className="card-premium bg-warm-white">
           {step === 'sent' ? (
             <div className="text-center py-12 space-y-4">
@@ -178,8 +183,8 @@ const BookingModule = () => {
               </div>
               <h3 className="font-heading text-2xl">Dziękujemy za zapytanie</h3>
               <p className="text-muted-foreground text-sm max-w-md mx-auto">
-                Potwierdzimy dostępność i cenę w ciągu kilku godzin. Sprawdź telefon lub skrzynkę
-                mailową.
+                Otrzymaliśmy zapytanie. Skontaktujemy się, aby potwierdzić dostępność i cenę.
+                Wysłanie formularza nie potwierdza rezerwacji ani nie oznacza płatności.
               </p>
               <button
                 onClick={() => {
@@ -217,7 +222,7 @@ const BookingModule = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="booking-checkin"
-                        className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2"
+                        className="text-sm tracking-normal text-muted-foreground flex items-center gap-2"
                       >
                         <Calendar className="w-4 h-4" /> Przyjazd
                       </label>
@@ -233,7 +238,7 @@ const BookingModule = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="booking-checkout"
-                        className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2"
+                        className="text-sm tracking-normal text-muted-foreground flex items-center gap-2"
                       >
                         <Calendar className="w-4 h-4" /> Wyjazd
                       </label>
@@ -253,7 +258,7 @@ const BookingModule = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="booking-guests"
-                        className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2"
+                        className="text-sm tracking-normal text-muted-foreground flex items-center gap-2"
                       >
                         <Users className="w-4 h-4" /> Goście
                       </label>
@@ -273,7 +278,7 @@ const BookingModule = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="booking-phone"
-                        className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2"
+                        className="text-sm tracking-normal text-muted-foreground flex items-center gap-2"
                       >
                         <Phone className="w-4 h-4" /> Telefon
                       </label>
@@ -293,7 +298,7 @@ const BookingModule = () => {
                   <div className="space-y-2">
                     <label
                       htmlFor="booking-email"
-                      className="text-xs tracking-wider uppercase text-muted-foreground flex items-center gap-2"
+                      className="text-sm tracking-normal text-muted-foreground flex items-center gap-2"
                     >
                       <Mail className="w-4 h-4" /> E-mail
                     </label>
@@ -312,7 +317,7 @@ const BookingModule = () => {
                   <div className="space-y-2">
                     <label
                       htmlFor="booking-message"
-                      className="text-xs tracking-wider uppercase text-muted-foreground"
+                      className="text-sm tracking-normal text-muted-foreground"
                     >
                       Wiadomość (opcjonalnie)
                     </label>
@@ -353,16 +358,16 @@ const BookingModule = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Telefon</span>
-                      <span>{data.phone}</span>
+                      <span data-preserve-case>{data.phone}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">E-mail</span>
-                      <span>{data.email}</span>
+                      <span data-preserve-case>{data.email}</span>
                     </div>
                     {data.message && (
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">Wiadomość</span>
-                        <span className="text-right max-w-[60%]">{data.message}</span>
+                        <span className="text-right max-w-[60%]" data-preserve-case>{data.message}</span>
                       </div>
                     )}
                   </div>
@@ -376,9 +381,9 @@ const BookingModule = () => {
                 {sending ? (
                   <Loader2 className="w-4 h-4 animate-spin mx-auto" />
                 ) : step === 'form' ? (
-                  'Sprawdź dostępność'
+                  'Dalej do podsumowania'
                 ) : (
-                  'Wyślij zapytanie'
+                  'Wyślij zapytanie o pobyt'
                 )}
               </button>
 

@@ -1,20 +1,20 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { MapPin, Navigation } from 'lucide-react';
 
 const LocationSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section id="lokalizacja" className="section-padding bg-background">
       <div
         ref={ref}
-        className={`max-w-5xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-5xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-12 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Lokalizacja
           </p>
-          <h2 className="section-title">Domek w lesie Podlasie — Puszcza Knyszyńska, Supraśl</h2>
+          <h2 className="section-title">Lokalizacja domu w Konne koło Supraśla</h2>
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
             <MapPin className="w-4 h-4 text-primary" />
             <p className="text-sm">Konne 109/1, 16-030 Supraśl</p>
@@ -23,16 +23,13 @@ const LocationSection = () => {
 
         <div className="max-w-3xl mx-auto mb-8 space-y-4 text-muted-foreground leading-relaxed text-center">
           <p>
-            Nasz leśny domek do wynajęcia znajduje się w miejscowości <strong>Konne</strong> — malowniczej
-            osadzie w samym sercu <strong>Puszczy Knyszyńskiej</strong>, przy <strong>Rezerwacie Przyrody
-            Krzemienne Góry</strong>. To domek podlaskie odludzie w najczystszej formie — gruntowa droga
-            przez las prowadzi do ogrodzonej posesji otoczonej stuletnią puszczą.
+            Dom znajduje się w miejscowości <strong>Konne</strong>, w okolicy Supraśla i Puszczy
+            Knyszyńskiej. Przed podróżą sprawdź trasę dojazdu i aktualne warunki na drodze.
           </p>
           <p>
-            Domek na odludziu podlaskie, zaledwie <strong>10 minut od Supraśla</strong> i <strong>25 minut
-            od Białegostoku</strong>. W okolicy: Monaster w Supraślu, Muzeum Ikon, szlaki piesze i rowerowe
-            Puszczy Knyszyńskiej, spływ kajakowy rzeką Supraśl, tatarska wieś Kruszyniany. Las wynajem
-            Puszcza Knyszyńska — to adres, do którego chce się wracać.
+            W Supraślu możesz odwiedzić Monaster i Muzeum Ikon, a w okolicy zaplanować spacer lub
+            aktywność sezonową. Przed wyjściem sprawdź godziny otwarcia, dostępność tras i zasady
+            obowiązujące na terenach chronionych.
           </p>
         </div>
 
@@ -45,19 +42,20 @@ const LocationSection = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Lokalizacja In The Woods — domek w lesie Supraśl"
+            title="Mapa dojazdu do In The Woods w miejscowości Konne"
             className="w-full"
           />
         </div>
 
         <div className="text-center space-y-3">
           <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-            Przy Rezerwacie Krzemienne Góry, w sercu Puszczy Knyszyńskiej — domek w lesie Supraśl.
+            Przed wyjazdem sprawdź przebieg trasy i warunki dojazdu.
           </p>
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=53.208577,23.436622"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Wyznacz trasę w Mapach Google (otworzy się w nowej karcie)"
             className="btn-outline inline-flex items-center gap-2"
           >
             <Navigation className="w-4 h-4" /> Wyznacz trasę

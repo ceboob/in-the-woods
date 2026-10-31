@@ -1,17 +1,18 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import ImageReveal from '@/components/ImageReveal';
 import salonImg from '@/assets/gallery-salon-panorama-thumb.webp';
 
 const AboutSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section id="o-miejscu" className="section-padding bg-warm-white">
       <div
         ref={ref}
-        className={`max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="space-y-6">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             O miejscu
           </p>
           <h2 className="section-title">
@@ -21,36 +22,35 @@ const AboutSection = () => {
           </h2>
           <div className="space-y-4 section-subtitle">
             <p>
-              In The Woods to drewniany dom z bala ukryty w sercu Puszczy Knyszyńskiej, tuż przy
-              rezerwacie przyrody Krzemienne Góry. Miejsce, które zabierasz na wyłączność — z dala
-              od zgiełku, blisko tego, co naprawdę ważne.
+              In The Woods to drewniany dom z bala w miejscowości Konne, w okolicy Supraśla i
+              Puszczy Knyszyńskiej. Cały dom wynajmowany jest jednej grupie.
             </p>
             <p>
               Dom powstał z pasji do natury i drewna. Każdy element wnętrza — od rzeźbionej
-              drewnianej szafki z serduszkami, przez ceglany kominek, po sossnowe belki sufitowe —
-              opowiada historię Podlasia. To nie jest sztuczna stylizacja, lecz autentyczne miejsce
-              z duszą.
+              drewnianej szafki z serduszkami, przez ceglany kominek, po sosnowe belki sufitowe —
+              tworzy charakter wnętrza.
             </p>
             <p>
-              Poranki pachną tu żywicą i kawą parzoną w ciszy. Wieczory płoną w kominku, a między
-              nimi — las, rzeka, niebo pełne gwiazd i czas, który wreszcie zwalnia. Ogrodzony teren
-              zapewnia prywatność i bezpieczeństwo — zarówno dzieciom, jak i czworonogom.
+              W domu można skorzystać z kominka, a na zewnątrz odpocząć w ogrodzie. Przed przyjazdem
+              z dziećmi lub psem sprawdź zasady pobytu i informacje o ogrodzeniu.
             </p>
             <p>
-              To nie jest kolejny nocleg. To rytuał odpoczynku w otoczeniu natury Podlasia, w
-              miejscu, gdzie rano budzi Cię śpiew ptaków, a wieczorem — trzask drewna w kominku.
+              Szczegóły wyposażenia i zasady pobytu znajdziesz na stronie obiektu. Jeśli masz pytania
+              dotyczące wybranego terminu, skontaktuj się z gospodarzem.
             </p>
           </div>
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            src={salonImg}
-            alt="Salon z kominkiem w drewnianym domu In The Woods — noclegi Supraśl"
-            className="w-full h-[400px] md:h-[550px] object-cover hover:scale-105 transition-transform duration-700"
-            loading="lazy"
-            width="600"
-            height="550"
-          />
+          <ImageReveal>
+            <img
+              src={salonImg}
+              alt="Salon z kominkiem w drewnianym domu In The Woods — noclegi Supraśl"
+              className="w-full h-[400px] md:h-[550px] object-cover"
+              loading="lazy"
+              width="600"
+              height="550"
+            />
+          </ImageReveal>
         </div>
       </div>
     </section>
