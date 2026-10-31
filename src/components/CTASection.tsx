@@ -12,11 +12,12 @@ const CTASection = () => {
       >
         <h2 className="section-title mb-4">Piszcie albo dzwońcie. Las czeka</h2>
         <p className="text-muted-foreground mb-4 text-lg">
-          Domek w lesie do wynajęcia na Podlasiu: kominek, balia pod gwiazdami i cisza, od której
-          na początku aż dzwoni w uszach.
+          Domek w&nbsp;lesie do wynajęcia na Podlasiu: kominek, balia pod gwiazdami i&nbsp;cisza, od
+          której na początku aż dzwoni w&nbsp;uszach.
         </p>
         <p className="text-muted-foreground mb-8">
-          Maciej odpisuje zwykle w kilka godzin, z ceną i wolnymi terminami. Pytanie niczego nie rezerwuje i nic nie kosztuje.
+          Maciej odpisuje zwykle w&nbsp;kilka godzin, z&nbsp;ceną i&nbsp;wolnymi terminami. Pytanie
+          niczego nie rezerwuje i&nbsp;nic nie kosztuje.
         </p>
 
         <div className="flex flex-wrap justify-center gap-6 mb-10">
@@ -35,7 +36,7 @@ const CTASection = () => {
         </div>
 
         <p className="text-xs text-muted-foreground font-sans">
-          Macie już daty? Wpiszcie je w formularzu, wtedy odpowiedź będzie szybsza.
+          Macie już daty? Wpiszcie je w&nbsp;formularzu, wtedy odpowiedź będzie szybsza.
         </p>
       </div>
     </section>

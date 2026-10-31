@@ -23,9 +23,9 @@ const navItems: NavItem[] = [
     dropdown: [
       { label: 'Opis domu', href: '/dom', isRoute: true },
       { label: 'Galeria zdjęć', href: '/galeria', isRoute: true },
-      { label: 'Dokumenty i instrukcje', href: '/dokumenty', isRoute: true },
-      { label: 'Dom w lesie', href: '/dom-w-lesie-suprasl', isRoute: true },
-      { label: 'Domek z jacuzzi', href: '/domek-z-jacuzzi-podlasie', isRoute: true },
+      { label: 'Dokumenty i\u00a0instrukcje', href: '/dokumenty', isRoute: true },
+      { label: 'Dom w\u00a0lesie', href: '/dom-w-lesie-suprasl', isRoute: true },
+      { label: 'Domek z\u00a0jacuzzi', href: '/domek-z-jacuzzi-podlasie', isRoute: true },
       { label: 'Noclegi Supraśl', href: '/noclegi-suprasl', isRoute: true },
     ],
   },
@@ -34,7 +34,11 @@ const navItems: NavItem[] = [
     href: '#lokalizacja',
     dropdown: [
       { label: 'Co zobaczyć', href: '/atrakcje-suprasl', isRoute: true },
-      { label: 'Szlaki i natura', href: '/blog/szlaki-piesze-rowerowe-suprasl', isRoute: true },
+      {
+        label: 'Szlaki i\u00a0natura',
+        href: '/blog/szlaki-piesze-rowerowe-suprasl',
+        isRoute: true,
+      },
       { label: 'Puszcza Knyszyńska', href: '/blog/puszcza-knyszynska-przewodnik', isRoute: true },
       { label: 'Restauracje', href: '/blog/przewodnik-kulinarny-suprasl', isRoute: true },
     ],
@@ -44,12 +48,12 @@ const navItems: NavItem[] = [
     href: '#',
     dropdown: [
       { label: 'Romantyczny weekend', href: '/blog/romantyczny-weekend-podlasie', isRoute: true },
-      { label: 'Z psem', href: '/domek-z-psem-podlasie', isRoute: true },
+      { label: 'Z\u00a0psem', href: '/domek-z-psem-podlasie', isRoute: true },
       { label: 'Dla rodzin', href: '/blog/suprasl-z-dziecmi', isRoute: true },
       { label: 'Wieczór panieński', href: '/wieczor-panienski-suprasl', isRoute: true },
       { label: 'Wieczór kawalerski', href: '/wieczor-kawalerski-suprasl', isRoute: true },
-      { label: 'Sylwester w lesie', href: '/sylwester-podlasie', isRoute: true },
-      { label: 'Workation', href: '/blog/workation-podlasie', isRoute: true },
+      { label: 'Sylwester w\u00a0lesie', href: '/sylwester-podlasie', isRoute: true },
+      { label: 'Praca z\u00a0lasu', href: '/blog/workation-podlasie', isRoute: true },
     ],
   },
   { label: 'Cennik', href: '#cennik' },
@@ -85,7 +89,9 @@ const Navbar = () => {
     dropdownTimeout.current = setTimeout(() => setOpenDropdown(null), 150);
   };
 
-  const textClass = scrolled ? 'text-foreground/70 hover:text-foreground' : 'text-white/70 hover:text-white';
+  const textClass = scrolled
+    ? 'text-foreground/70 hover:text-foreground'
+    : 'text-white/70 hover:text-white';
   const activeTextClass = scrolled ? 'text-foreground' : 'text-white';
 
   return (
@@ -116,7 +122,9 @@ const Navbar = () => {
                   className={`nav-link whitespace-nowrap uppercase text-xs lg:text-sm lg:tracking-wide transition-colors duration-500 inline-flex items-center gap-1 ${textClass}`}
                 >
                   {item.label}
-                  <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === item.label ? 'rotate-180' : ''}`} />
+                  <ChevronDown
+                    className={`w-3 h-3 transition-transform ${openDropdown === item.label ? 'rotate-180' : ''}`}
+                  />
                 </button>
                 {openDropdown === item.label && (
                   <div className="absolute top-full left-0 pt-2 min-w-[200px]">
@@ -153,7 +161,9 @@ const Navbar = () => {
               </button>
             ),
           )}
-          <ThemeToggle className={`inline-flex h-9 w-9 items-center justify-center rounded-full border border-current transition-colors ${scrolled ? 'text-foreground' : 'text-white'}`} />
+          <ThemeToggle
+            className={`inline-flex h-9 w-9 items-center justify-center rounded-full border border-current transition-colors ${scrolled ? 'text-foreground' : 'text-white'}`}
+          />
           <button
             onClick={() => handleClick('#rezerwacja')}
             className="btn-primary whitespace-nowrap uppercase lg:tracking-wide text-xs py-2.5 px-4 lg:px-6"
@@ -163,7 +173,9 @@ const Navbar = () => {
         </div>
 
         {/* Mobile hamburger */}
-        <ThemeToggle className={`md:hidden inline-flex h-9 w-9 items-center justify-center rounded-full border border-current transition-colors ${scrolled ? 'text-foreground' : 'text-white'}`} />
+        <ThemeToggle
+          className={`md:hidden inline-flex h-9 w-9 items-center justify-center rounded-full border border-current transition-colors ${scrolled ? 'text-foreground' : 'text-white'}`}
+        />
         <button
           className={`md:hidden transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-white'}`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -181,11 +193,15 @@ const Navbar = () => {
             item.dropdown ? (
               <div key={item.label}>
                 <button
-                  onClick={() => setMobileExpanded(mobileExpanded === item.label ? null : item.label)}
+                  onClick={() =>
+                    setMobileExpanded(mobileExpanded === item.label ? null : item.label)
+                  }
                   className="flex items-center justify-between w-full py-3 nav-link text-foreground/70 hover:text-foreground text-left"
                 >
                   {item.label}
-                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpanded === item.label ? 'rotate-180' : ''}`} />
+                  <ChevronDown
+                    className={`w-4 h-4 transition-transform ${mobileExpanded === item.label ? 'rotate-180' : ''}`}
+                  />
                 </button>
                 {mobileExpanded === item.label && (
                   <div className="pl-4 pb-2 space-y-1">

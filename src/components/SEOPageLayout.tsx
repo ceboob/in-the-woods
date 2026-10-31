@@ -31,7 +31,7 @@ const SEOPageLayout = ({
   showRelatedPages = true,
   showCTA = true,
   ctaTitle = 'Sprawdź dostępność terminu',
-  ctaDescription = 'Wyślij zapytanie o pobyt. Formularz nie potwierdza rezerwacji ani nie oznacza płatności.',
+  ctaDescription = 'Wyślij zapytanie o\u00a0pobyt. Formularz nie potwierdza rezerwacji ani nie oznacza płatności.',
   ctaFormLabel,
 }: SEOPageLayoutProps) => {
   useEffect(() => {
@@ -165,7 +165,7 @@ const SEOPageLayout = ({
               Konne 109/1, 16-030 Supraśl · Gospodarz: Maciej
             </p>
           </div>
-      </section>
+        </section>
       ) : null}
 
       {/* Footer */}
@@ -186,10 +186,10 @@ const SEOPageLayout = ({
               Domek Supraśl
             </Link>
             <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-primary transition-colors">
-              Domek z jacuzzi
+              Domek z&nbsp;jacuzzi
             </Link>
             <Link to="/dom-w-lesie-suprasl" className="hover:text-primary transition-colors">
-              Dom w lesie
+              Dom w&nbsp;lesie
             </Link>
             <Link to="/weekend-suprasl" className="hover:text-primary transition-colors">
               Weekend Supraśl
@@ -201,10 +201,10 @@ const SEOPageLayout = ({
               Wieczór kawalerski
             </Link>
             <Link to="/sylwester-podlasie" className="hover:text-primary transition-colors">
-              Sylwester w lesie
+              Sylwester w&nbsp;lesie
             </Link>
             <Link to="/domek-z-psem-podlasie" className="hover:text-primary transition-colors">
-              Domek z psem
+              Domek z&nbsp;psem
             </Link>
             <Link to="/atrakcje-suprasl" className="hover:text-primary transition-colors">
               Atrakcje Supraśla

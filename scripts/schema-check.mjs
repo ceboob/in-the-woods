@@ -9,9 +9,9 @@ const siteUrl = 'https://www.suprasl.online';
 const propertyId = `${siteUrl}/#vacation-rental`;
 
 function extractSchemas(html) {
-  return [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(
-    ([, json]) => JSON.parse(json),
-  );
+  return [
+    ...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g),
+  ].map(([, json]) => JSON.parse(json));
 }
 
 function hasType(value, type) {
@@ -21,7 +21,10 @@ function hasType(value, type) {
 }
 
 async function getHtml(route) {
-  const file = route === '/' ? path.join(distRoot, 'index.html') : path.join(distRoot, route.slice(1), 'index.html');
+  const file =
+    route === '/'
+      ? path.join(distRoot, 'index.html')
+      : path.join(distRoot, route.slice(1), 'index.html');
   return readFile(file, 'utf8');
 }
 
@@ -40,7 +43,10 @@ const vacationRentals = homeSchemas.filter((schema) => hasType(schema, 'Vacation
 assert.equal(vacationRentals.length, 1, 'Homepage must contain exactly one VacationRental');
 const rental = vacationRentals[0];
 assert.equal(rental.identifier, 'in-the-woods-suprasl');
-assert.ok(Array.isArray(rental.image) && rental.image.length >= 8, 'VacationRental needs 8+ images');
+assert.ok(
+  Array.isArray(rental.image) && rental.image.length >= 8,
+  'VacationRental needs 8+ images',
+);
 for (const image of rental.image) {
   assert.ok(image.startsWith(`${siteUrl}/`), `Image must be an absolute site URL: ${image}`);
   const imagePath = new URL(image).pathname;
@@ -54,7 +60,9 @@ assert.deepEqual(rental.geo, {
   longitude: 23.4387928,
 });
 assert.equal(rental.containsPlace.additionalType, 'EntirePlace');
-assert.ok(['EntirePlace', 'PrivateRoom', 'SharedRoom'].includes(rental.containsPlace.additionalType));
+assert.ok(
+  ['EntirePlace', 'PrivateRoom', 'SharedRoom'].includes(rental.containsPlace.additionalType),
+);
 assert.equal(rental.containsPlace.occupancy.value, 8);
 assert.ok(Number.isInteger(rental.containsPlace.occupancy.value));
 assert.ok(rental.description);
@@ -84,12 +92,19 @@ for (const route of offerRoutes.slice(1)) {
 
 const allHtmlFiles = await listHtmlFiles(distRoot);
 for (const file of allHtmlFiles) {
-  if (file === path.join(distRoot, 'index.html') || file === path.join(distRoot, '404.html')) continue;
+  if (file === path.join(distRoot, 'index.html') || file === path.join(distRoot, '404.html'))
+    continue;
   const html = await readFile(file, 'utf8');
   const schemas = extractSchemas(html);
-  assert.ok(!schemas.some((schema) => hasType(schema, 'VacationRental')), `${file} contains VacationRental`);
+  assert.ok(
+    !schemas.some((schema) => hasType(schema, 'VacationRental')),
+    `${file} contains VacationRental`,
+  );
   if (!html.includes('content="noindex, follow"')) {
-    assert.ok(schemas.some((schema) => hasType(schema, 'WebPage')), `${file} is missing WebPage schema`);
+    assert.ok(
+      schemas.some((schema) => hasType(schema, 'WebPage')),
+      `${file} is missing WebPage schema`,
+    );
   }
 }
 
@@ -98,7 +113,11 @@ assert.ok(blogSchemas.some((schema) => hasType(schema, 'Blog')));
 assert.ok(blogSchemas.some((schema) => hasType(schema, 'CollectionPage')));
 const articleSchemas = extractSchemas(await getHtml('/blog/puszcza-knyszynska-przewodnik'));
 assert.ok(articleSchemas.some((schema) => hasType(schema, 'BlogPosting')));
-assert.ok(extractSchemas(await getHtml('/informator')).some((schema) => hasType(schema, 'WebPage')));
-assert.ok(extractSchemas(await getHtml('/atrakcje-suprasl')).some((schema) => hasType(schema, 'WebPage')));
+assert.ok(
+  extractSchemas(await getHtml('/informator')).some((schema) => hasType(schema, 'WebPage')),
+);
+assert.ok(
+  extractSchemas(await getHtml('/atrakcje-suprasl')).some((schema) => hasType(schema, 'WebPage')),
+);
 
 console.log(`Structured data checks passed for ${allHtmlFiles.length} prerendered HTML files.`);

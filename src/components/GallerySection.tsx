@@ -78,9 +78,9 @@ interface GalleryImage {
 const categories: { id: Category; label: string }[] = [
   { id: 'all', label: 'Wszystkie' },
   { id: 'wnetrze', label: 'Wnętrze' },
-  { id: 'jacuzzi', label: 'Balia z hydromasażem (jacuzzi)' },
-  { id: 'ogrod', label: 'Ogród i taras' },
-  { id: 'okolica', label: 'Okolica i las' },
+  { id: 'jacuzzi', label: 'Balia z\u00a0hydromasażem (jacuzzi)' },
+  { id: 'ogrod', label: 'Ogród i\u00a0taras' },
+  { id: 'okolica', label: 'Okolica i\u00a0las' },
 ];
 
 const allImages: GalleryImage[] = [
@@ -88,8 +88,8 @@ const allImages: GalleryImage[] = [
   {
     thumb: jacuzziNight,
     full: '/images/jacuzzi-night.webp',
-    alt: 'In The Woods Supraśl — balia z hydromasażem (jacuzzi) pod gwiazdami',
-    caption: 'Balia z hydromasażem (jacuzzi) pod gwiazdami',
+    alt: 'In The Woods Supraśl — balia z\u00a0hydromasażem (jacuzzi) pod gwiazdami',
+    caption: 'Balia z\u00a0hydromasażem (jacuzzi) pod gwiazdami',
     category: ['jacuzzi'],
     className: 'col-span-2 row-span-2',
     srcSet: `${jacuzziNightSm} 640w, ${jacuzziNightMd} 1024w, ${jacuzziNight} 1442w`,
@@ -97,36 +97,36 @@ const allImages: GalleryImage[] = [
   {
     thumb: salonKominek,
     full: '/images/gallery-salon-kominek.webp',
-    alt: 'In The Woods Supraśl — salon z kominkiem i drewnianymi schodami',
-    caption: 'Salon z klimatycznym kominkiem',
+    alt: 'In The Woods Supraśl — salon z\u00a0kominkiem i\u00a0drewnianymi schodami',
+    caption: 'Salon z\u00a0klimatycznym kominkiem',
     category: ['wnetrze'],
   },
   {
     thumb: domLato,
     full: '/images/gallery-dom-lato.webp',
-    alt: 'In The Woods Supraśl — dom z bali latem w ogrodzie',
-    caption: 'Dom z bali — widok z ogrodu latem',
+    alt: 'In The Woods Supraśl — dom z\u00a0bali latem w\u00a0ogrodzie',
+    caption: 'Dom z\u00a0bali — widok z\u00a0ogrodu latem',
     category: ['ogrod'],
   },
   {
     thumb: sypialniaBalkon,
     full: '/images/gallery-sypialnia-balkon-optimized.webp',
-    alt: 'In The Woods Supraśl — sypialnia z wyjściem na balkon',
-    caption: 'Sypialnia z balkonem i widokiem na las',
+    alt: 'In The Woods Supraśl — sypialnia z\u00a0wyjściem na balkon',
+    caption: 'Sypialnia z\u00a0balkonem i\u00a0widokiem na las',
     category: ['wnetrze'],
   },
   {
     thumb: jadalniaSniadanie,
     full: '/images/gallery-jadalnia-sniadanie.webp',
     alt: 'In The Woods Supraśl — jadalnia ze śniadaniem',
-    caption: 'Poranki w jadalni z domowym śniadaniem',
+    caption: 'Poranki w\u00a0jadalni z\u00a0domowym śniadaniem',
     category: ['wnetrze'],
   },
   {
     thumb: gardenTubFront,
     full: '/images/gallery-bania-front.webp',
-    alt: 'In The Woods Supraśl — balia z hydromasażem (jacuzzi)',
-    caption: 'Balia z hydromasażem (jacuzzi)',
+    alt: 'In The Woods Supraśl — balia z\u00a0hydromasażem (jacuzzi)',
+    caption: 'Balia z\u00a0hydromasażem (jacuzzi)',
     category: ['jacuzzi'],
     className: 'col-span-2',
   },
@@ -134,42 +134,42 @@ const allImages: GalleryImage[] = [
     thumb: tarasObiad,
     full: '/images/gallery-taras-obiad-optimized.webp',
     alt: 'In The Woods Supraśl — obiad na tarasie wśród zieleni',
-    caption: 'Obiad na tarasie w otoczeniu natury',
+    caption: 'Obiad na tarasie w\u00a0otoczeniu natury',
     category: ['ogrod'],
   },
   {
     thumb: kuchniaCeramika,
     full: '/images/gallery-kuchnia-ceramika.webp',
-    alt: 'In The Woods Supraśl — kuchnia z piecem kaflowym',
-    caption: 'Kuchnia z ceglanym piecem kaflowym',
+    alt: 'In The Woods Supraśl — kuchnia z\u00a0piecem kaflowym',
+    caption: 'Kuchnia z\u00a0ceglanym piecem kaflowym',
     category: ['wnetrze'],
   },
   {
     thumb: lazienkaPrysznic,
     full: '/images/gallery-lazienka-prysznic-optimized.webp',
-    alt: 'In The Woods Supraśl — nowoczesna łazienka z prysznicem',
-    caption: 'Nowoczesna łazienka z dużym prysznicem',
+    alt: 'In The Woods Supraśl — nowoczesna łazienka z\u00a0prysznicem',
+    caption: 'Nowoczesna łazienka z\u00a0dużym prysznicem',
     category: ['wnetrze'],
   },
   {
     thumb: konneDroga,
     full: '/images/gallery-konne-droga-optimized.webp',
-    alt: 'In The Woods Supraśl — leśna droga w Puszczy Knyszyńskiej',
+    alt: 'In The Woods Supraśl — leśna droga w\u00a0Puszczy Knyszyńskiej',
     caption: 'Droga do domu przez Puszczę Knyszyńską',
     category: ['okolica'],
   },
   {
     thumb: salonPanorama,
     full: '/images/gallery-salon-panorama.webp',
-    alt: 'In The Woods Supraśl — panorama salonu z fotelem i kominkiem',
-    caption: 'Panorama salonu z kominkiem i fotelami',
+    alt: 'In The Woods Supraśl — panorama salonu z\u00a0fotelem i\u00a0kominkiem',
+    caption: 'Panorama salonu z\u00a0kominkiem i\u00a0fotelami',
     category: ['wnetrze'],
   },
   {
     thumb: ogniskoDzieci,
     full: '/images/gallery-ognisko-dzieci.webp',
-    alt: 'In The Woods Supraśl — dzieci przy ognisku w ogrodzie',
-    caption: 'Ognisko w ogrodzie — rodzinne wieczory',
+    alt: 'In The Woods Supraśl — dzieci przy ognisku w\u00a0ogrodzie',
+    caption: 'Ognisko w\u00a0ogrodzie — rodzinne wieczory',
     category: ['ogrod'],
   },
   // MORE
@@ -177,62 +177,62 @@ const allImages: GalleryImage[] = [
     thumb: salonFotele,
     full: '/images/gallery-salon-fotele.webp',
     alt: 'In The Woods Supraśl — fotele przy kominku wieczorem',
-    caption: 'Wieczór przy kominku w wygodnych fotelach',
+    caption: 'Wieczór przy kominku w\u00a0wygodnych fotelach',
     category: ['wnetrze'],
   },
   {
     thumb: jadalniaSerwis,
     full: '/images/gallery-jadalnia-serwis.webp',
-    alt: 'In The Woods Supraśl — nakryty stół z domowym jedzeniem',
-    caption: 'Nakryty stół — śniadanie w chacie',
+    alt: 'In The Woods Supraśl — nakryty stół z\u00a0domowym jedzeniem',
+    caption: 'Nakryty stół — śniadanie w\u00a0chacie',
     category: ['wnetrze'],
   },
   {
     thumb: jadalniaKwiaty,
     full: '/images/gallery-jadalnia-kwiaty.webp',
-    alt: 'In The Woods Supraśl — jadalnia z tulipanami',
-    caption: 'Jadalnia z tulipanami i drewnianymi meblami',
+    alt: 'In The Woods Supraśl — jadalnia z\u00a0tulipanami',
+    caption: 'Jadalnia z\u00a0tulipanami i\u00a0drewnianymi meblami',
     category: ['wnetrze'],
   },
   {
     thumb: toaletaDrewniana,
     full: '/images/gallery-toaleta-drewniana.webp',
     alt: 'In The Woods Supraśl — rustykalna toaleta',
-    caption: 'Toaleta w rustykalnym stylu z drewna',
+    caption: 'Toaleta w\u00a0rustykalnym stylu z\u00a0drewna',
     category: ['wnetrze'],
   },
   {
     thumb: lazienkaNowa,
     full: '/images/gallery-lazienka-nowoczesna.webp',
-    alt: 'In The Woods Supraśl — nowoczesna łazienka z kabiną',
-    caption: 'Nowoczesna łazienka z kabiną prysznicową',
+    alt: 'In The Woods Supraśl — nowoczesna łazienka z\u00a0kabiną',
+    caption: 'Nowoczesna łazienka z\u00a0kabiną prysznicową',
     category: ['wnetrze'],
   },
   {
     thumb: gardenTubHouse,
     full: '/images/gallery-bania-dom.webp',
-    alt: 'In The Woods Supraśl — balia ogrodowa na tle domu z czerwonym dachem',
-    caption: 'Balia z hydromasażem (jacuzzi) — widok na dom',
+    alt: 'In The Woods Supraśl — balia ogrodowa na tle domu z\u00a0czerwonym dachem',
+    caption: 'Balia z\u00a0hydromasażem (jacuzzi) — widok na dom',
     category: ['jacuzzi', 'ogrod'],
   },
   {
     thumb: gardenTubGarden,
     full: '/images/gallery-bania-ogrod.webp',
-    alt: 'In The Woods Supraśl — balia z hydromasażem (jacuzzi) w ogrodzie z widokiem na las',
-    caption: 'Balia z hydromasażem (jacuzzi) z widokiem na Puszczę',
+    alt: 'In The Woods Supraśl — balia z\u00a0hydromasażem (jacuzzi) w\u00a0ogrodzie z\u00a0widokiem na las',
+    caption: 'Balia z\u00a0hydromasażem (jacuzzi) z\u00a0widokiem na Puszczę',
     category: ['jacuzzi', 'ogrod'],
   },
   {
     thumb: dabPuszcza,
     full: '/images/gallery-dab-puszcza.webp',
-    alt: 'In The Woods Supraśl — stary dąb w Puszczy Knyszyńskiej',
+    alt: 'In The Woods Supraśl — stary dąb w\u00a0Puszczy Knyszyńskiej',
     caption: 'Stary dąb — Puszcza Knyszyńska',
     category: ['okolica'],
   },
   {
     thumb: drogaLesna,
     full: '/images/gallery-droga-lesna.webp',
-    alt: 'In The Woods Supraśl — leśna droga w Puszczy',
+    alt: 'In The Woods Supraśl — leśna droga w\u00a0Puszczy',
     caption: 'Leśna droga — okolica domu',
     category: ['okolica'],
   },
@@ -240,21 +240,21 @@ const allImages: GalleryImage[] = [
     thumb: tarasPies,
     full: '/images/gallery-taras-pies-wieczor.webp',
     alt: 'In The Woods Supraśl — pies na tarasie przy świecach',
-    caption: 'Pies na tarasie — wieczór w In The Woods',
+    caption: 'Pies na tarasie — wieczór w\u00a0In The Woods',
     category: ['ogrod'],
   },
   {
     thumb: tarasRelaks,
     full: '/images/gallery-taras-relaks.webp',
-    alt: 'In The Woods Supraśl — relaks na tarasie z kawą',
+    alt: 'In The Woods Supraśl — relaks na tarasie z\u00a0kawą',
     caption: 'Kawa na tarasie — letni wieczór',
     category: ['ogrod'],
   },
   {
     thumb: toaletaJasna,
     full: '/images/gallery-toaleta-jasna-optimized.webp',
-    alt: 'In The Woods Supraśl — jasna łazienka z drewnianym wykończeniem',
-    caption: 'Jasna łazienka z drewnem',
+    alt: 'In The Woods Supraśl — jasna łazienka z\u00a0drewnianym wykończeniem',
+    caption: 'Jasna łazienka z\u00a0drewnem',
     category: ['wnetrze'],
   },
   {
@@ -268,14 +268,14 @@ const allImages: GalleryImage[] = [
     thumb: domSchody,
     full: '/images/gallery-dom-schody-optimized.webp',
     alt: 'In The Woods Supraśl — schody wejściowe do domu',
-    caption: 'Wejście do domu z bali',
+    caption: 'Wejście do domu z\u00a0bali',
     category: ['ogrod'],
   },
   {
     thumb: ogniskoNocne,
     full: '/images/gallery-ognisko-nocne-optimized.webp',
     alt: 'In The Woods Supraśl — nocne ognisko przy altanie',
-    caption: 'Nocne ognisko w ogrodzie',
+    caption: 'Nocne ognisko w\u00a0ogrodzie',
     category: ['ogrod'],
   },
   {
@@ -288,71 +288,71 @@ const allImages: GalleryImage[] = [
   {
     thumb: kuchniaCegla,
     full: '/images/gallery-kuchnia-cegla-optimized.webp',
-    alt: 'In The Woods Supraśl — kuchnia z piecem kaflowym i cegłą',
-    caption: 'Kuchnia z piecem kaflowym i cegłą',
+    alt: 'In The Woods Supraśl — kuchnia z\u00a0piecem kaflowym i\u00a0cegłą',
+    caption: 'Kuchnia z\u00a0piecem kaflowym i\u00a0cegłą',
     category: ['wnetrze'],
   },
   {
     thumb: jadalniaOwoce,
     full: '/images/gallery-jadalnia-owoce-optimized.webp',
-    alt: 'In The Woods Supraśl — jadalnia z owocami na stole',
-    caption: 'Jadalnia — nakryty stół z owocami',
+    alt: 'In The Woods Supraśl — jadalnia z\u00a0owocami na stole',
+    caption: 'Jadalnia — nakryty stół z\u00a0owocami',
     category: ['wnetrze'],
   },
   {
     thumb: jacuzziNoc,
     full: '/images/gallery-jacuzzi-noc-optimized.webp',
-    alt: 'In The Woods Supraśl — jacuzzi z podświetleniem nocą',
-    caption: 'Jacuzzi z podświetleniem pod gwiazdami',
+    alt: 'In The Woods Supraśl — jacuzzi z\u00a0podświetleniem nocą',
+    caption: 'Jacuzzi z\u00a0podświetleniem pod gwiazdami',
     category: ['jacuzzi'],
   },
   {
     thumb: kuchniaZlew,
     full: '/images/gallery-kuchnia-zlew-optimized.webp',
-    alt: 'In The Woods Supraśl — kuchnia z niebieskimi talerzami',
-    caption: 'Kuchnia z ceglaną ścianą i ceramiką',
+    alt: 'In The Woods Supraśl — kuchnia z\u00a0niebieskimi talerzami',
+    caption: 'Kuchnia z\u00a0ceglaną ścianą i\u00a0ceramiką',
     category: ['wnetrze'],
   },
   {
     thumb: salonKominekSzerokie,
     full: '/images/gallery-salon-kominek-szerokie-optimized.webp',
-    alt: 'In The Woods Supraśl — panorama salonu z kominkiem',
-    caption: 'Panorama salonu — kominek i fotele',
+    alt: 'In The Woods Supraśl — panorama salonu z\u00a0kominkiem',
+    caption: 'Panorama salonu — kominek i\u00a0fotele',
     category: ['wnetrze'],
   },
   {
     thumb: polkaCeramika,
     full: '/images/gallery-polka-ceramika-optimized.webp',
-    alt: 'In The Woods Supraśl — półka z ceramiką i szufladkami',
-    caption: 'Detale wnętrza — ceramika i drewno',
+    alt: 'In The Woods Supraśl — półka z\u00a0ceramiką i\u00a0szufladkami',
+    caption: 'Detale wnętrza — ceramika i\u00a0drewno',
     category: ['wnetrze'],
   },
   {
     thumb: balkonLezak,
     full: '/images/gallery-balkon-lezak-optimized.webp',
-    alt: 'In The Woods Supraśl — balkon z leżakiem i widokiem na las',
-    caption: 'Balkon z leżakiem — widok na las',
+    alt: 'In The Woods Supraśl — balkon z\u00a0leżakiem i\u00a0widokiem na las',
+    caption: 'Balkon z\u00a0leżakiem — widok na las',
     category: ['ogrod'],
   },
   {
     thumb: lazienkaUmywalka,
     full: '/images/gallery-lazienka-umywalka-optimized.webp',
-    alt: 'In The Woods Supraśl — łazienka z podświetlanym lustrem',
-    caption: 'Łazienka z podświetlanym lustrem',
+    alt: 'In The Woods Supraśl — łazienka z\u00a0podświetlanym lustrem',
+    caption: 'Łazienka z\u00a0podświetlanym lustrem',
     category: ['wnetrze'],
   },
   {
     thumb: prysznicCiemny,
     full: '/images/gallery-prysznic-ciemny-optimized.webp',
-    alt: 'In The Woods Supraśl — prysznic z deszczownicą',
-    caption: 'Prysznic z deszczownicą — ciemne kafle',
+    alt: 'In The Woods Supraśl — prysznic z\u00a0deszczownicą',
+    caption: 'Prysznic z\u00a0deszczownicą — ciemne kafle',
     category: ['wnetrze'],
   },
   {
     thumb: sniadanieKrata,
     full: '/images/gallery-sniadanie-krata-optimized.webp',
-    alt: 'In The Woods Supraśl — śniadanie z tulipanami',
-    caption: 'Śniadanie na stole w kratę',
+    alt: 'In The Woods Supraśl — śniadanie z\u00a0tulipanami',
+    caption: 'Śniadanie na stole w\u00a0kratę',
     category: ['wnetrze'],
   },
   {
@@ -365,28 +365,28 @@ const allImages: GalleryImage[] = [
   {
     thumb: salonSchodyKwiaty,
     full: '/images/gallery-salon-schody-kwiaty-optimized.webp',
-    alt: 'In The Woods Supraśl — salon z kominkiem i kwiatami',
-    caption: 'Salon z kominkiem, schodami i kwiatami',
+    alt: 'In The Woods Supraśl — salon z\u00a0kominkiem i\u00a0kwiatami',
+    caption: 'Salon z\u00a0kominkiem, schodami i\u00a0kwiatami',
     category: ['wnetrze'],
   },
   {
     thumb: rustykalnaToaletaPolki,
     full: '/images/gallery-rustykalna-toaleta-polki-optimized.webp',
-    alt: 'In The Woods Supraśl — rustykalna toaleta z drewnianymi półkami',
-    caption: 'Rustykalna toaleta z drewnianymi półkami',
+    alt: 'In The Woods Supraśl — rustykalna toaleta z\u00a0drewnianymi półkami',
+    caption: 'Rustykalna toaleta z\u00a0drewnianymi półkami',
     category: ['wnetrze'],
   },
   {
     thumb: kuchniaNiebieskieTalerze,
     full: '/images/gallery-kuchnia-niebieskie-talerze-optimized.webp',
-    alt: 'In The Woods Supraśl — kuchnia z niebieskimi talerzami',
-    caption: 'Kuchnia — niebieskie talerze i drewno',
+    alt: 'In The Woods Supraśl — kuchnia z\u00a0niebieskimi talerzami',
+    caption: 'Kuchnia — niebieskie talerze i\u00a0drewno',
     category: ['wnetrze'],
   },
   {
     thumb: wiataLesna,
     full: '/images/gallery-wiata-lesna-optimized.webp',
-    alt: 'In The Woods Supraśl — leśna wiata w okolicy',
+    alt: 'In The Woods Supraśl — leśna wiata w\u00a0okolicy',
     caption: 'Leśna wiata — okolica domu',
     category: ['okolica'],
   },
@@ -407,8 +407,8 @@ const allImages: GalleryImage[] = [
   {
     thumb: salonFoteleSchody,
     full: '/images/gallery-salon-fotele-schody-optimized.webp',
-    alt: 'In The Woods Supraśl — salon z fotelami i schodami',
-    caption: 'Salon — fotele, schody i kominek',
+    alt: 'In The Woods Supraśl — salon z\u00a0fotelami i\u00a0schodami',
+    caption: 'Salon — fotele, schody i\u00a0kominek',
     category: ['wnetrze'],
   },
   {
@@ -421,22 +421,22 @@ const allImages: GalleryImage[] = [
   {
     thumb: poddaszeFotel,
     full: '/images/gallery-poddasze-fotel-optimized.webp',
-    alt: 'In The Woods Supraśl — poddasze z biblioteką i fotelem',
-    caption: 'Poddasze — strefa relaksu z biblioteką',
+    alt: 'In The Woods Supraśl — poddasze z\u00a0biblioteką i\u00a0fotelem',
+    caption: 'Poddasze — strefa relaksu z\u00a0biblioteką',
     category: ['wnetrze'],
   },
   {
     thumb: wejscieTaras,
     full: '/images/gallery-wejscie-taras-optimized.webp',
-    alt: 'In The Woods Supraśl — wejście na taras i schody',
+    alt: 'In The Woods Supraśl — wejście na taras i\u00a0schody',
     caption: 'Wejście na taras — widok zewnętrzny',
     category: ['ogrod'],
   },
   {
     thumb: domOgrodPanorama,
     full: '/images/gallery-dom-ogrod-panorama-optimized.webp',
-    alt: 'In The Woods Supraśl — panorama domu i ogrodu',
-    caption: 'Panorama domu z czerwonym dachem',
+    alt: 'In The Woods Supraśl — panorama domu i\u00a0ogrodu',
+    caption: 'Panorama domu z\u00a0czerwonym dachem',
     category: ['ogrod'],
   },
   {
@@ -449,22 +449,22 @@ const allImages: GalleryImage[] = [
   {
     thumb: sypialniaZieloneZaslony,
     full: '/images/gallery-sypialnia-zielone-zaslony-optimized.webp',
-    alt: 'In The Woods Supraśl — sypialnia z zielonymi zasłonami',
-    caption: 'Sypialnia z zielonymi zasłonami',
+    alt: 'In The Woods Supraśl — sypialnia z\u00a0zielonymi zasłonami',
+    caption: 'Sypialnia z\u00a0zielonymi zasłonami',
     category: ['wnetrze'],
   },
   {
     thumb: konneZnak,
     full: '/images/gallery-konne-znak-optimized.webp',
-    alt: 'In The Woods Supraśl — znak kierunkowy w lesie',
+    alt: 'In The Woods Supraśl — znak kierunkowy w\u00a0lesie',
     caption: 'Droga do Konnych — okolica domu',
     category: ['okolica'],
   },
   {
     thumb: jadalniaTulipanyZblizenie,
     full: '/images/gallery-jadalnia-tulipany-zblizenie-optimized.webp',
-    alt: 'In The Woods Supraśl — tulipany w jadalni',
-    caption: 'Tulipany w jadalni — detale wystroju',
+    alt: 'In The Woods Supraśl — tulipany w\u00a0jadalni',
+    caption: 'Tulipany w\u00a0jadalni — detale wystroju',
     category: ['wnetrze'],
   },
   {
@@ -516,7 +516,7 @@ const GallerySection = () => {
       const next = (lightboxIndex + dir + filteredImages.length) % filteredImages.length;
       setLightboxIndex(next);
     },
-    [lightboxIndex, filteredImages.length]
+    [lightboxIndex, filteredImages.length],
   );
 
   // ESC + arrow key support
@@ -543,13 +543,12 @@ const GallerySection = () => {
         className={`max-w-7xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-10 space-y-4">
-          <p className="text-xs tracking-wide text-muted-foreground font-sans">
-            Galeria
-          </p>
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">Galeria</p>
           <h2 className="section-title">Zobacz In The Woods</h2>
           <p className="section-subtitle mx-auto">
-            Autentyczne zdjęcia naszego <strong>domu z bali na wyłączność</strong> — wnętrza,
-            balia z hydromasażem (jacuzzi), ogrodzony ogród i okolica w Puszczy Knyszyńskiej.
+            Autentyczne zdjęcia naszego <strong>domu z&nbsp;bali na wyłączność</strong> — wnętrza,
+            balia z&nbsp;hydromasażem (jacuzzi), ogrodzony ogród i&nbsp;okolica w&nbsp;Puszczy
+            Knyszyńskiej.
           </p>
         </div>
 
@@ -583,7 +582,11 @@ const GallerySection = () => {
                 <img
                   src={img.thumb}
                   srcSet={img.srcSet}
-                  sizes={img.srcSet ? '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw' : undefined}
+                  sizes={
+                    img.srcSet
+                      ? '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+                      : undefined
+                  }
                   alt={img.alt}
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -650,15 +653,18 @@ const GallerySection = () => {
             <ChevronRight className="w-8 h-8" />
           </button>
 
-          <div className="max-w-5xl max-h-[85vh] px-12 relative" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="max-w-5xl max-h-[85vh] px-12 relative"
+            onClick={(e) => e.stopPropagation()}
+          >
             <img
-               src={filteredImages[lightboxIndex].full}
-               alt={filteredImages[lightboxIndex].alt}
-               className="max-w-full max-h-[75vh] object-contain mx-auto rounded"
-               decoding="async"
-               width="1200"
-               height="800"
-             />
+              src={filteredImages[lightboxIndex].full}
+              alt={filteredImages[lightboxIndex].alt}
+              className="max-w-full max-h-[75vh] object-contain mx-auto rounded"
+              decoding="async"
+              width="1200"
+              height="800"
+            />
             {/* Caption overlay at the bottom of the image */}
             <div className="absolute bottom-0 left-12 right-12 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b">
               <p className="text-white text-base font-sans">

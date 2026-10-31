@@ -57,7 +57,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Noclegi Supraśl – dom z bali na wyłączność | In The Woods"
+        title="Noclegi Supraśl – dom z&nbsp;bali na wyłączność | In The Woods"
         description={property.description}
         canonical="https://www.suprasl.online/"
         jsonLd={[

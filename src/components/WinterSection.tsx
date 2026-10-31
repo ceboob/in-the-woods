@@ -5,7 +5,12 @@ import winterCabin from '@/assets/winter-cabin-real.webp';
 import winterGolden from '@/assets/winter-cabin-golden.webp';
 import winterForest from '@/assets/winter-forest.webp';
 
-const ideas = ['Domek na sylwestra w lesie', 'Ferie zimowe w puszczy', 'Walentynki w leśnym domku', 'Majówka w lesie'];
+const ideas = [
+  'Domek na sylwestra w\u00a0lesie',
+  'Ferie zimowe w\u00a0puszczy',
+  'Walentynki w\u00a0leśnym domku',
+  'Majówka w\u00a0lesie',
+];
 
 const WinterSection = () => {
   const { ref, isVisible } = useScrollReveal();
@@ -16,7 +21,7 @@ const WinterSection = () => {
         <ImageReveal>
           <img
             src={winterGolden}
-            alt="Domek na sylwestra w lesie — chata In The Woods zimą, Puszcza Knyszyńska"
+            alt="Domek na sylwestra w&nbsp;lesie — chata In The Woods zimą, Puszcza Knyszyńska"
             className="w-full h-full object-cover"
             loading="lazy"
             width="1920"
@@ -27,10 +32,10 @@ const WinterSection = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6 max-w-2xl">
             <h2 className="font-heading text-3xl md:text-5xl font-light text-white mb-4">
-              Domek na sylwestra i zimowy weekend w lesie
+              Domek na sylwestra i&nbsp;zimowy weekend w&nbsp;lesie
             </h2>
             <p className="text-base text-white/80 font-sans">
-              Śnieg na dachu. Kominek w środku. Gorąca balia na zewnątrz.
+              Śnieg na dachu. Kominek w&nbsp;środku. Gorąca balia na zewnątrz.
             </p>
           </div>
         </div>
@@ -43,11 +48,11 @@ const WinterSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-12 space-y-4">
             <p className="section-subtitle">
-              Zimą puszcza cichnie tak, że słychać, jak spada śnieg, a jedynym hałasem jest
-              dzięcioł. Rano kominek i kawa przy oknie. Po południu spacer po zaśnieżonych szlakach
-              albo narty biegowe między sosnami. Wieczorem balia pod gwiazdami, a potem szybki
-              sprint w ręczniku z powrotem do ciepłego domu. Sylwester? Bez stania w korkach
-              i bez kolejki do szatni.
+              Zimą puszcza cichnie tak, że słychać, jak spada śnieg, a&nbsp;jedynym hałasem jest
+              dzięcioł. Rano kominek i&nbsp;kawa przy oknie. Po południu spacer po zaśnieżonych
+              szlakach albo narty biegowe między sosnami. Wieczorem balia pod gwiazdami,
+              a&nbsp;potem szybki sprint w&nbsp;ręczniku z&nbsp;powrotem do ciepłego domu.
+              Sylwester? Bez stania w&nbsp;korkach i&nbsp;bez kolejki do szatni.
             </p>
           </div>
 
@@ -56,7 +61,7 @@ const WinterSection = () => {
               <ImageReveal>
                 <img
                   src={winterCabin}
-                  alt="Domek z kominkiem w lesie zimą, Puszcza Knyszyńska"
+                  alt="Domek z&nbsp;kominkiem w&nbsp;lesie zimą, Puszcza Knyszyńska"
                   className="w-full h-[280px] md:h-[350px] object-cover"
                   loading="lazy"
                   width="800"
@@ -79,9 +84,7 @@ const WinterSection = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-xs tracking-wide text-muted-foreground font-sans mb-6">
-              Dobre na
-            </p>
+            <p className="text-xs tracking-wide text-muted-foreground font-sans mb-6">Dobre na</p>
             <div className="flex flex-wrap justify-center gap-3">
               {ideas.map((idea, i) => (
                 <span
@@ -92,8 +95,11 @@ const WinterSection = () => {
                 </span>
               ))}
             </div>
-            <Link to="/sylwester-podlasie" className="btn-outline inline-flex items-center justify-center mt-8">
-              Sylwester w lesie: zobaczcie plan
+            <Link
+              to="/sylwester-podlasie"
+              className="btn-outline inline-flex items-center justify-center mt-8"
+            >
+              Sylwester w&nbsp;lesie: zobaczcie plan
             </Link>
           </div>
         </div>

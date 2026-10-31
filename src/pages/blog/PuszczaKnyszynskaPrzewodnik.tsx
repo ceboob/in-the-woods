@@ -4,47 +4,124 @@ import { Link } from 'react-router-dom';
 import { MapPin, TreePine, Heart, Bike, Footprints, Eye, Download } from 'lucide-react';
 
 const gpxTrails = [
-  { name: 'Puszczański szlak pieszy (czerwony)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Puszczanski_pieszy_czerwony.gpx' },
-  { name: 'Skrajem Puszczy Knyszyńskiej (żółty)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Skrajem_Puszczy_Knyszynskiej_pieszy_zolty.gpx' },
-  { name: 'Śladami Powstania Styczniowego (czerwony)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Sladami_Powstania_Styczniowego_pieszy_czerwony.gpx' },
-  { name: 'Szlak Świętej Wody (niebieski)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Swietej_Wody_pieszy_niebieski.gpx' },
-  { name: 'Szlak Tatarski Duży (zielony)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Tatarski_Duzy_pieszy_zielony.gpx' },
-  { name: 'Szlak Tatarski Mały (niebieski)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Tatarski_Maly_pieszy_niebieski.gpx' },
-  { name: 'Szlak Witolda Sławińskiego (zielony)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Witolda_Slawinskiego_pieszy_zielony.gpx' },
-  { name: 'Borami Dorzecza Supraśli (zielony)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Borami_Dorzecza_Suprasli_zielony_pieszy.gpx' },
-  { name: 'Szlak Dawnego Pogranicza (żółty)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Dawnego_Pogranicza_zolty_pieszy.gpx' },
-  { name: 'Do Góran (żółty)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Do_Goran_pieszy_zolty.gpx' },
-  { name: 'Szlak Królowej Bony (niebieski)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Krolowej_Bony_niebieski_pieszy.gpx' },
-  { name: 'Szlak Napoleoński (niebieski)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Napoleonski_pieszy_niebieski.gpx' },
-  { name: 'Ścieżka Krzemianka', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Sciezka_Krzemianka.gpx' },
-  { name: 'Ścieżka Orlikowa', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Sciezka_orlikowa.gpx' },
-  { name: 'Nordic Walking Supraśl', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Nordic_walking_Suprasl.gpx' },
+  {
+    name: 'Puszczański szlak pieszy (czerwony)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Puszczanski_pieszy_czerwony.gpx',
+  },
+  {
+    name: 'Skrajem Puszczy Knyszyńskiej (żółty)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Skrajem_Puszczy_Knyszynskiej_pieszy_zolty.gpx',
+  },
+  {
+    name: 'Śladami Powstania Styczniowego (czerwony)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Sladami_Powstania_Styczniowego_pieszy_czerwony.gpx',
+  },
+  {
+    name: 'Szlak Świętej Wody (niebieski)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Swietej_Wody_pieszy_niebieski.gpx',
+  },
+  {
+    name: 'Szlak Tatarski Duży (zielony)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Tatarski_Duzy_pieszy_zielony.gpx',
+  },
+  {
+    name: 'Szlak Tatarski Mały (niebieski)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Tatarski_Maly_pieszy_niebieski.gpx',
+  },
+  {
+    name: 'Szlak Witolda Sławińskiego (zielony)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Witolda_Slawinskiego_pieszy_zielony.gpx',
+  },
+  {
+    name: 'Borami Dorzecza Supraśli (zielony)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Borami_Dorzecza_Suprasli_zielony_pieszy.gpx',
+  },
+  {
+    name: 'Szlak Dawnego Pogranicza (żółty)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Dawnego_Pogranicza_zolty_pieszy.gpx',
+  },
+  {
+    name: 'Do Góran (żółty)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Do_Goran_pieszy_zolty.gpx',
+  },
+  {
+    name: 'Szlak Królowej Bony (niebieski)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Krolowej_Bony_niebieski_pieszy.gpx',
+  },
+  {
+    name: 'Szlak Napoleoński (niebieski)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Napoleonski_pieszy_niebieski.gpx',
+  },
+  {
+    name: 'Ścieżka Krzemianka',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Sciezka_Krzemianka.gpx',
+  },
+  {
+    name: 'Ścieżka Orlikowa',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Sciezka_orlikowa.gpx',
+  },
+  {
+    name: 'Nordic Walking Supraśl',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Nordic_walking_Suprasl.gpx',
+  },
 ];
 
 const gpxBike = [
-  { name: 'Jałówka — Królowy Most (żółty, rowerowy)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Jalowka_Krolowy_Most_rowerowy_zolty.gpx' },
-  { name: 'Przez Gminę Michałowo (zielony, rowerowy)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Przez_Gmine_Michalowo_rowerowy_zielony.gpx' },
-  { name: 'Przez Puszczę Knyszyńską (niebieski, rowerowy)', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Przez_Puszcze_Knyszynska_rowerowy_niebieski.gpx' },
+  {
+    name: 'Jałówka — Królowy Most (żółty, rowerowy)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Jalowka_Krolowy_Most_rowerowy_zolty.gpx',
+  },
+  {
+    name: 'Przez Gminę Michałowo (zielony, rowerowy)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Przez_Gmine_Michalowo_rowerowy_zielony.gpx',
+  },
+  {
+    name: 'Przez Puszczę Knyszyńską (niebieski, rowerowy)',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Przez_Puszcze_Knyszynska_rowerowy_niebieski.gpx',
+  },
 ];
 
 const gpxSki = [
-  { name: 'Szlak narciarski czerwony', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Szlak_narciarski_czerwony.gpx' },
-  { name: 'Szlak narciarski niebieski', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Szlak_narciarski_niebieski.gpx' },
-  { name: 'Szlak narciarski zielony', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Szlak_narciarski_zielony.gpx' },
-  { name: 'Szlak narciarski żółty', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Szlak_narciarski_zolty.gpx' },
+  {
+    name: 'Szlak narciarski czerwony',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Szlak_narciarski_czerwony.gpx',
+  },
+  {
+    name: 'Szlak narciarski niebieski',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Szlak_narciarski_niebieski.gpx',
+  },
+  {
+    name: 'Szlak narciarski zielony',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Szlak_narciarski_zielony.gpx',
+  },
+  {
+    name: 'Szlak narciarski żółty',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Szlak_narciarski_zolty.gpx',
+  },
 ];
 
 const gpxAttractions = [
-  { name: 'Puszcza Knyszyńska — atrakcje turystyczne', url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Puszcza_Knyszy%C5%84ska_atrakcje_turystyczne.gpx' },
+  {
+    name: 'Puszcza Knyszyńska — atrakcje turystyczne',
+    url: 'https://wielkilas.pl/wp-content/uploads/2020/02/Puszcza_Knyszy%C5%84ska_atrakcje_turystyczne.gpx',
+  },
 ];
 
-const TrailList = ({ trails, title, icon: Icon }: { trails: { name: string; url: string }[]; title: string; icon: typeof Footprints }) => (
+const TrailList = ({
+  trails,
+  title,
+  icon: Icon,
+}: {
+  trails: { name: string; url: string }[];
+  title: string;
+  icon: typeof Footprints;
+}) => (
   <div className="mb-8">
     <h3 className="font-heading text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
       <Icon className="w-5 h-5 text-primary" strokeWidth={1.5} /> {title}
     </h3>
     <div className="grid gap-2">
-      {trails.map(t => (
+      {trails.map((t) => (
         <a
           key={t.url}
           href={t.url}
@@ -61,68 +138,101 @@ const TrailList = ({ trails, title, icon: Icon }: { trails: { name: string; url:
 );
 
 const faqs = [
-  { question: 'Jakie szlaki piesze są w Puszczy Knyszyńskiej?', answer: 'W Puszczy Knyszyńskiej wyznaczonych jest ponad 15 szlaków pieszych o różnym stopniu trudności, w tym Puszczański szlak pieszy, Szlak Tatarski, Szlak Świętej Wody i wiele innych. Pliki GPX dostępne do pobrania w artykule.' },
-  { question: 'Gdzie pobrać mapy GPX szlaków Puszczy Knyszyńskiej?', answer: 'Mapy GPX szlaków pieszych, rowerowych i narciarskich Puszczy Knyszyńskiej można pobrać bezpłatnie z naszego artykułu lub z portalu wielkilas.pl.' },
-  { question: 'Jakie atrakcje turystyczne są w Puszczy Knyszyńskiej?', answer: 'Puszcza Knyszyńska oferuje wieże widokowe, kładki nad wodą, rezerwaty przyrody, Kruszyniany, Monaster w Supraślu, Muzeum Ikon, Podlaskie Muzeum Kultury Ludowej i wiele szlaków pieszych i rowerowych.' },
+  {
+    question: 'Jakie szlaki piesze są w\u00a0Puszczy Knyszyńskiej?',
+    answer:
+      'W\u00a0Puszczy Knyszyńskiej wyznaczonych jest ponad 15 szlaków pieszych o\u00a0różnym stopniu trudności, w\u00a0tym Puszczański szlak pieszy, Szlak Tatarski, Szlak Świętej Wody i\u00a0wiele innych. Pliki GPX dostępne do pobrania w\u00a0artykule.',
+  },
+  {
+    question: 'Gdzie pobrać mapy GPX szlaków Puszczy Knyszyńskiej?',
+    answer:
+      'Mapy GPX szlaków pieszych, rowerowych i\u00a0narciarskich Puszczy Knyszyńskiej można pobrać bezpłatnie z\u00a0naszego artykułu lub z\u00a0portalu wielkilas.pl.',
+  },
+  {
+    question: 'Jakie atrakcje turystyczne są w\u00a0Puszczy Knyszyńskiej?',
+    answer:
+      'Puszcza Knyszyńska oferuje wieże widokowe, kładki nad wodą, rezerwaty przyrody, Kruszyniany, Monaster w\u00a0Supraślu, Muzeum Ikon, Podlaskie Muzeum Kultury Ludowej i\u00a0wiele szlaków pieszych i\u00a0rowerowych.',
+  },
 ];
 
 const PuszczaKnyszynskaPrzewodnik = () => (
   <BlogArticleLayout
-    title="Puszcza Knyszyńska – przewodnik i szlaki GPX"
-    metaTitle="Puszcza Knyszyńska – szlaki GPX i atrakcje"
-    metaDescription="Przewodnik po Puszczy Knyszyńskiej: szlaki piesze, rowerowe i narciarskie z GPX, plus atrakcje i praktyczne wskazówki."
+    title="Puszcza Knyszyńska – przewodnik i&nbsp;szlaki GPX"
+    metaTitle="Puszcza Knyszyńska – szlaki GPX i&nbsp;atrakcje"
+    metaDescription="Przewodnik po Puszczy Knyszyńskiej: szlaki piesze, rowerowe i&nbsp;narciarskie z&nbsp;GPX, plus atrakcje i&nbsp;praktyczne wskazówki."
     slug="puszcza-knyszynska-przewodnik"
     publishDate="2026-04-09"
-    readTime="15 min"
-    keywords={['Puszcza Knyszyńska', 'szlaki GPX', 'atrakcje', 'szlaki piesze', 'szlaki rowerowe', 'Supraśl', 'Kruszyniany']}
+    readTime="15&nbsp;min"
+    keywords={[
+      'Puszcza Knyszyńska',
+      'szlaki GPX',
+      'atrakcje',
+      'szlaki piesze',
+      'szlaki rowerowe',
+      'Supraśl',
+      'Kruszyniany',
+    ]}
     faqs={faqs}
     ogImage="https://www.suprasl.online/images/exterior-main.webp"
     relatedArticles={[
-      { title: 'Szlaki piesze i rowerowe z Supraśla', slug: 'szlaki-piesze-rowerowe-suprasl' },
+      {
+        title: 'Szlaki piesze i\u00a0rowerowe z\u00a0Supraśla',
+        slug: 'szlaki-piesze-rowerowe-suprasl',
+      },
       { title: 'Kajaki na Supraśli', slug: 'kajaki-suprasl' },
       { title: 'Atrakcje Supraśla: co zobaczyć', slug: '/atrakcje-suprasl' },
     ]}
   >
     <p className="text-lg leading-relaxed mb-8">
-      Puszcza Knyszyńska to rozległy kompleks leśny w województwie podlaskim, obejmujący m.in. obszar
-      Parku Krajobrazowego Puszczy Knyszyńskiej. Przed wyjściem zaplanuj trasę i sprawdź aktualne
-      zasady dostępu oraz ochrony przyrody.
+      Puszcza Knyszyńska to rozległy kompleks leśny w&nbsp;województwie podlaskim, obejmujący m.in.
+      obszar Parku Krajobrazowego Puszczy Knyszyńskiej. Przed wyjściem zaplanuj trasę i&nbsp;sprawdź
+      aktualne zasady dostępu oraz ochrony przyrody.
     </p>
 
     {/* ROMANTYCZNIE */}
     <section className="mb-12">
       <h2 className="section-title !text-2xl md:!text-3xl flex items-center gap-3">
-        <Heart className="w-6 h-6 text-primary" /> Romantyczne chwile w Puszczy
+        <Heart className="w-6 h-6 text-primary" /> Romantyczne chwile w&nbsp;Puszczy
       </h2>
       <div className="space-y-6">
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Spacer we dwoje</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Spacer we dwoje
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Niby tylko spacer, niby tylko w lesie. Ale jakże romantyczna może być zwykła przechadzka.
-            Weź za rękę najbliższą sobie osobę i udajcie się na ścieżki Puszczy Knyszyńskiej.
-            Wystarczy wejść do lasu — reszta zadzieje się sama.
+            Niby tylko spacer, niby tylko w&nbsp;lesie. Ale jakże romantyczna może być zwykła
+            przechadzka. Weź za rękę najbliższą sobie osobę i&nbsp;udajcie się na ścieżki Puszczy
+            Knyszyńskiej. Wystarczy wejść do lasu — reszta zadzieje się sama.
           </p>
         </div>
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Rykowisko jeleni</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Rykowisko jeleni
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Spektakularne widowiska we wrześniu. Wybierzcie się do lasu przed zmrokiem lub o świcie —
-            wtedy jest największa szansa na wsłuchanie się w potęgę głosu zakochanego byka.
-            Podczas rykowiska byk jelenia może stracić nawet 30% masy swojego ciała.
+            Spektakularne widowiska we wrześniu. Wybierzcie się do lasu przed zmrokiem lub
+            o&nbsp;świcie — wtedy jest największa szansa na wsłuchanie się w&nbsp;potęgę głosu
+            zakochanego byka. Podczas rykowiska byk jelenia może stracić nawet 30% masy swojego
+            ciała.
           </p>
         </div>
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Wieże widokowe</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Wieże widokowe
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Piękne panoramy, możliwość podejrzenia dzikiej zwierzyny. Jednym z najatrakcyjniejszych
-            miejsc jest wieża na Wzgórzach Świętojańskich, położona na wysokości wsi Kołodno.
+            Piękne panoramy, możliwość podejrzenia dzikiej zwierzyny. Jednym
+            z&nbsp;najatrakcyjniejszych miejsc jest wieża na Wzgórzach Świętojańskich, położona na
+            wysokości wsi Kołodno.
           </p>
         </div>
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kładki nad wodą</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Kładki nad wodą
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Przed wyruszeniem do rezerwatu Krzemianka sprawdź aktualne zasady udostępniania i
-            korzystaj wyłącznie z dozwolonych tras.
+            Przed wyruszeniem do rezerwatu Krzemianka sprawdź aktualne zasady udostępniania
+            i&nbsp;korzystaj wyłącznie z&nbsp;dozwolonych tras.
           </p>
         </div>
       </div>
@@ -131,28 +241,35 @@ const PuszczaKnyszynskaPrzewodnik = () => (
     {/* AKTYWNIE */}
     <section className="mb-12">
       <h2 className="section-title !text-2xl md:!text-3xl flex items-center gap-3">
-        <Bike className="w-6 h-6 text-primary" /> Aktywnie w Puszczy
+        <Bike className="w-6 h-6 text-primary" /> Aktywnie w&nbsp;Puszczy
       </h2>
       <div className="space-y-6">
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Spływ kajakowy rzeką Supraśl</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Spływ kajakowy rzeką Supraśl
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Płyń szeroką, otwartą doliną. Spiętrzenia wody, niskie drewniane mostki, powalone drzewa —
-            z poziomu tafli wody zobaczysz bogactwo roślin, zwierząt i dziedzictwo kulturowe regionu.
+            Płyń szeroką, otwartą doliną. Spiętrzenia wody, niskie drewniane mostki, powalone drzewa
+            — z&nbsp;poziomu tafli wody zobaczysz bogactwo roślin, zwierząt i&nbsp;dziedzictwo
+            kulturowe regionu.
           </p>
         </div>
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Rower wyczynowy i MTB</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Rower wyczynowy i&nbsp;MTB
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Deniwelacje sięgające 80 metrów! Rozległe doliny rzeczne i okazałe wzniesienia. Wyznaczona
-            trasa MTB czeka na chcących podnieść sobie adrenalinę.
+            Deniwelacje sięgające 80 metrów! Rozległe doliny rzeczne i&nbsp;okazałe wzniesienia.
+            Wyznaczona trasa MTB czeka na chcących podnieść sobie adrenalinę.
           </p>
         </div>
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Biegi przełajowe</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Biegi przełajowe
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Powietrze wzbogacone o substancje eteryczne, uspokajająca przyroda. Hitem numer jeden są
-            biegi przełajowe ULTRAśledź.
+            Powietrze wzbogacone o&nbsp;substancje eteryczne, uspokajająca przyroda. Hitem numer
+            jeden są biegi przełajowe ULTRAśledź.
           </p>
         </div>
       </div>
@@ -161,22 +278,27 @@ const PuszczaKnyszynskaPrzewodnik = () => (
     {/* SLOW */}
     <section className="mb-12">
       <h2 className="section-title !text-2xl md:!text-3xl flex items-center gap-3">
-        <TreePine className="w-6 h-6 text-primary" /> Spacery i odpoczynek w lesie
+        <TreePine className="w-6 h-6 text-primary" /> Spacery i&nbsp;odpoczynek w&nbsp;lesie
       </h2>
       <div className="space-y-6">
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kąpiele leśne (shinrin-yoku)</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Kąpiele leśne (shinrin-yoku)
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Spokojny spacer wśród drzew może być okazją do odpoczynku i wyciszenia. Warto zwolnić
-            tempo, zwrócić uwagę na otoczenie i wybrać trasę dopasowaną do swoich możliwości.
+            Spokojny spacer wśród drzew może być okazją do odpoczynku i&nbsp;wyciszenia. Warto
+            zwolnić tempo, zwrócić uwagę na otoczenie i&nbsp;wybrać trasę dopasowaną do swoich
+            możliwości.
           </p>
         </div>
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Obcowanie z naturą</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Obcowanie z&nbsp;naturą
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Wzgórza Świętojańskie i rezerwat Krzemianka to przykłady przyrodniczych miejsc w regionie.
-            Przed wycieczką sprawdź wyznaczone trasy i zasady udostępniania; dzikich zwierząt nie
-            należy zbliżać ani dokarmiać.
+            Wzgórza Świętojańskie i&nbsp;rezerwat Krzemianka to przykłady przyrodniczych miejsc
+            w&nbsp;regionie. Przed wycieczką sprawdź wyznaczone trasy i&nbsp;zasady udostępniania;
+            dzikich zwierząt nie należy zbliżać ani dokarmiać.
           </p>
         </div>
       </div>
@@ -189,25 +311,33 @@ const PuszczaKnyszynskaPrzewodnik = () => (
       </h2>
       <div className="space-y-6">
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Kruszyniany — tatarska wieś</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Kruszyniany — tatarska wieś
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Kruszyniany są związane z historią polskich Tatarów. We wsi znajdują się meczet i mizar.
-            W lokalnych jadłodajniach można szukać dań kuchni tatarskiej, w tym pierekaczewnika.
+            Kruszyniany są związane z&nbsp;historią polskich Tatarów. We wsi znajdują się meczet
+            i&nbsp;mizar. W&nbsp;lokalnych jadłodajniach można szukać dań kuchni tatarskiej,
+            w&nbsp;tym pierekaczewnika.
           </p>
         </div>
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Podlaskie Muzeum Kultury Ludowej</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Podlaskie Muzeum Kultury Ludowej
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Skansen prezentuje tradycyjną architekturę i kulturę regionu. Sprawdź oficjalne informacje
-            placówki, by potwierdzić dostępność ekspozycji, atrakcji i godziny zwiedzania.
+            Skansen prezentuje tradycyjną architekturę i&nbsp;kulturę regionu. Sprawdź oficjalne
+            informacje placówki, by potwierdzić dostępność ekspozycji, atrakcji i&nbsp;godziny
+            zwiedzania.
           </p>
         </div>
         <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">Supraśl — serce Puszczy</h3>
+          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+            Supraśl — serce Puszczy
+          </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Monaster, <strong>Muzeum Ikon</strong>, domy tkaczy i Pałac Buchholtzów to wybrane
-            miejsca związane z historią Supraśla. Godziny otwarcia i zasady zwiedzania muzeum
-            sprawdź przed wizytą.
+            Monaster, <strong>Muzeum Ikon</strong>, domy tkaczy i&nbsp;Pałac Buchholtzów to wybrane
+            miejsca związane z&nbsp;historią Supraśla. Godziny otwarcia i&nbsp;zasady zwiedzania
+            muzeum sprawdź przed wizytą.
           </p>
         </div>
       </div>
@@ -219,7 +349,7 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         <MapPin className="w-6 h-6 text-primary" /> Mapy szlaków GPX do pobrania
       </h2>
       <p className="text-muted-foreground leading-relaxed mb-6">
-        Pobierz pliki GPX na telefon lub zegarek GPS. Otworzysz je w Mapy.cz, Komoot, Locus Map
+        Pobierz pliki GPX na telefon lub zegarek GPS. Otworzysz je w&nbsp;Mapy.cz, Komoot, Locus Map
         lub Garmin Connect.
       </p>
       <TrailList trails={gpxTrails} title="Szlaki piesze" icon={Footprints} />
@@ -230,28 +360,40 @@ const PuszczaKnyszynskaPrzewodnik = () => (
 
     {/* GDZIE NOCOWAĆ */}
     <section className="mb-12">
-      <h2 className="section-title !text-2xl md:!text-3xl">Gdzie nocować w Puszczy Knyszyńskiej?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Gdzie nocować w&nbsp;Puszczy Knyszyńskiej?
+      </h2>
       <p className="text-muted-foreground leading-relaxed">
-        <strong>In The Woods</strong> to drewniany dom na wyłączność w Konnych, 10 min od Supraśla.
-        Kominek, balia ogrodowa z funkcją jacuzzi, ogrodzony ogród i las za płotem.{' '}
-        <Link to="/dom" className="text-primary underline hover:text-primary/80">Zobacz dom</Link>
-        {' '}lub{' '}
-        <Link to="/#rezerwacja" className="text-primary underline hover:text-primary/80">wyślij zapytanie o pobyt</Link>.
+        <strong>In The Woods</strong> to drewniany dom na wyłączność w&nbsp;Konnych, 10&nbsp;min od
+        Supraśla. Kominek, balia z&nbsp;hydromasażem (jacuzzi), ogrodzony ogród i&nbsp;las za
+        płotem.{' '}
+        <Link to="/dom" className="text-primary underline hover:text-primary/80">
+          Zobacz dom
+        </Link>{' '}
+        lub{' '}
+        <Link to="/#rezerwacja" className="text-primary underline hover:text-primary/80">
+          wyślij zapytanie o&nbsp;pobyt
+        </Link>
+        .
       </p>
     </section>
 
     {/* ŹRÓDŁO */}
     <div className="bg-secondary rounded-xl p-6 mt-12 border border-border">
       <p className="text-sm text-muted-foreground leading-relaxed">
-        <strong>Źródło treści i danych GPX:</strong> Stowarzyszenie Przyjaciół Puszczy Knyszyńskiej
-        „Wielki Las" i Park Krajobrazowy Puszczy Knyszyńskiej im. prof. Witolda Sławińskiego.
-        Dane udostępnione za pośrednictwem portalu{' '}
-        <a href="https://wielkilas.pl" target="_blank" rel="noopener noreferrer"
-          aria-label="Wielkilas.pl (otworzy się w nowej karcie)"
-          className="text-primary underline hover:text-primary/80">
+        <strong>Źródło treści i&nbsp;danych GPX:</strong> Stowarzyszenie Przyjaciół Puszczy
+        Knyszyńskiej „Wielki Las" i&nbsp;Park Krajobrazowy Puszczy Knyszyńskiej im. prof. Witolda
+        Sławińskiego. Dane udostępnione za pośrednictwem portalu{' '}
+        <a
+          href="https://wielkilas.pl"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Wielkilas.pl (otworzy się w&nbsp;nowej karcie)"
+          className="text-primary underline hover:text-primary/80"
+        >
           wielkilas.pl
-        </a>.
-        Dane GPX udostępnione bezpłatnie do użytku prywatnego.
+        </a>
+        . Dane GPX udostępnione bezpłatnie do użytku prywatnego.
       </p>
     </div>
   </BlogArticleLayout>

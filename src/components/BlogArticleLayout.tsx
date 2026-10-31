@@ -169,7 +169,9 @@ const BlogArticleLayout = ({
 
       {/* Article meta */}
       <div className="max-w-4xl mx-auto px-6 md:px-12 pt-8 pb-4">
-        <h1 className="font-heading text-3xl md:text-4xl font-light text-foreground mb-4">{title}</h1>
+        <h1 className="font-heading text-3xl md:text-4xl font-light text-foreground mb-4">
+          {title}
+        </h1>
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
           <span className="inline-flex items-center gap-1.5">
             <Calendar className="w-3.5 h-3.5" />
@@ -234,11 +236,12 @@ const BlogArticleLayout = ({
       <section className="px-6 md:px-12 py-16 bg-secondary">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="font-heading text-3xl font-light text-foreground">
-            Gdzie nocować w Supraślu?
+            Gdzie nocować w&nbsp;Supraślu?
           </h2>
           <p className="text-foreground/70 max-w-xl mx-auto">
-            Jeśli szukasz komfortowego noclegu w Supraślu, In The Woods oferuje prywatny dom w lesie
-            z kominkiem; balia z hydromasażem (jacuzzi) jest opcjonalnym dodatkiem.
+            Jeśli szukasz komfortowego noclegu w&nbsp;Supraślu, In The Woods oferuje prywatny dom
+            w&nbsp;lesie z&nbsp;kominkiem; balia z&nbsp;hydromasażem (jacuzzi) jest opcjonalnym
+            dodatkiem.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
@@ -272,7 +275,7 @@ const BlogArticleLayout = ({
               Domek Supraśl
             </Link>
             <Link to="/domek-z-jacuzzi-podlasie" className="hover:text-primary transition-colors">
-              Domek z jacuzzi
+              Domek z&nbsp;jacuzzi
             </Link>
             <Link to="/atrakcje-suprasl" className="hover:text-primary transition-colors">
               Atrakcje Supraśla
@@ -284,10 +287,10 @@ const BlogArticleLayout = ({
               Wieczór kawalerski
             </Link>
             <Link to="/sylwester-podlasie" className="hover:text-primary transition-colors">
-              Sylwester w lesie
+              Sylwester w&nbsp;lesie
             </Link>
             <Link to="/domek-z-psem-podlasie" className="hover:text-primary transition-colors">
-              Domek z psem
+              Domek z&nbsp;psem
             </Link>
             <Link to="/weekend-suprasl" className="hover:text-primary transition-colors">
               Weekend Supraśl
@@ -296,7 +299,9 @@ const BlogArticleLayout = ({
               Puszcza Knyszyńska
             </Link>
           </div>
-          <p className="text-xs text-white/40">© 2026 In The Woods, Maciej Cybulko. Wszelkie prawa zastrzeżone.</p>
+          <p className="text-xs text-white/40">
+            © 2026 In The Woods, Maciej Cybulko. Wszelkie prawa zastrzeżone.
+          </p>
         </div>
       </footer>
     </div>

@@ -19,13 +19,11 @@ const GuestGuideSection = () => {
         className={`max-w-4xl mx-auto text-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="space-y-4 mb-10">
-          <p className="text-xs tracking-wide text-muted-foreground font-sans">
-            Dla gości
-          </p>
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">Dla gości</p>
           <h2 className="section-title">Informator gościa</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Wszystko, co musicie wiedzieć przed przyjazdem i na miejscu: zasady, instrukcje
-            i telefon do Macieja.
+            Wszystko, co musicie wiedzieć przed przyjazdem i&nbsp;na miejscu: zasady, instrukcje
+            i&nbsp;telefon do Macieja.
           </p>
         </div>
 
@@ -51,7 +49,7 @@ const GuestGuideSection = () => {
             href="https://drive.google.com/file/d/1Kz6hA2My9p3MZuNTocCglt3-yow5LrE4/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Pobierz informator w PDF (otworzy się w nowej karcie)"
+            aria-label="Pobierz informator w&nbsp;PDF (otworzy się w&nbsp;nowej karcie)"
             className="inline-flex items-center gap-2 border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg text-sm font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" /> Pobierz PDF

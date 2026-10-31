@@ -3,47 +3,50 @@ import { Link } from 'react-router-dom';
 
 const faqs = [
   {
-    question: 'Co robić w Supraślu jesienią?',
+    question: 'Co robić w\u00a0Supraślu jesienią?',
     answer:
-      'Możesz wybrać spacer po mieście i okolicy, odwiedzić dostępne w danym terminie obiekty kulturalne lub sprawdzić bieżący program wydarzeń. Przed wyjazdem potwierdź godziny otwarcia i warunki na trasach.',
+      'Możesz wybrać spacer po mieście i\u00a0okolicy, odwiedzić dostępne w\u00a0danym terminie obiekty kulturalne lub sprawdzić bieżący program wydarzeń. Przed wyjazdem potwierdź godziny otwarcia i\u00a0warunki na trasach.',
   },
   {
-    question: 'Gdzie sprawdzić aktualne wydarzenia w Supraślu?',
+    question: 'Gdzie sprawdzić aktualne wydarzenia w\u00a0Supraślu?',
     answer:
-      'Aktualny program publikuje Centrum Kultury i Rekreacji w Supraślu. Sprawdź informacje organizatora przed zaplanowaniem udziału.',
+      'Aktualny program publikuje Centrum Kultury i\u00a0Rekreacji w\u00a0Supraślu. Sprawdź informacje organizatora przed zaplanowaniem udziału.',
   },
   {
     question: 'Czy jesienią można zwiedzić Muzeum Ikon?',
     answer:
-      'Godziny otwarcia i zasady zwiedzania mogą się zmieniać. Sprawdź informacje dla zwiedzających na stronie Muzeum Podlaskiego.',
+      'Godziny otwarcia i\u00a0zasady zwiedzania mogą się zmieniać. Sprawdź informacje dla zwiedzających na stronie Muzeum Podlaskiego.',
   },
   {
     question: 'Jak zaplanować pobyt na jesienny weekend?',
     answer:
-      'Wybierz atrakcje i trasy odpowiednie do pogody, sprawdź ich dostępność, a następnie wyślij zapytanie o nocleg i termin.',
+      'Wybierz atrakcje i\u00a0trasy odpowiednie do pogody, sprawdź ich dostępność, a\u00a0następnie wyślij zapytanie o\u00a0nocleg i\u00a0termin.',
   },
 ];
 
 const JesienWSupraslu2026 = () => (
   <BlogArticleLayout
-    title="Jesień w Supraślu 2026 – jak zaplanować pobyt"
-    metaTitle="Jesień w Supraślu 2026 – pomysły na pobyt"
-    metaDescription="Zaplanuj jesienny pobyt w Supraślu: spacery, lokalne instytucje kultury i aktualne wydarzenia. Sprawdź informacje organizatorów przed wyjazdem."
+    title="Jesień w&nbsp;Supraślu 2026 – jak zaplanować pobyt"
+    metaTitle="Jesień w&nbsp;Supraślu 2026 – pomysły na pobyt"
+    metaDescription="Zaplanuj jesienny pobyt w&nbsp;Supraślu: spacery, lokalne instytucje kultury i&nbsp;aktualne wydarzenia. Sprawdź informacje organizatorów przed wyjazdem."
     slug="jesien-w-suprasliu-2026-wydarzenia-kulturalne"
     publishDate="2026-10-03"
-    readTime="4 min"
+    readTime="4&nbsp;min"
     ogImage="https://www.suprasl.online/images/gallery-dab-puszcza.webp"
-    keywords={['jesień w Supraślu', 'Supraśl jesienią', 'wydarzenia w Supraślu']}
+    keywords={['jesień w\u00a0Supraślu', 'Supraśl jesienią', 'wydarzenia w\u00a0Supraślu']}
     faqs={faqs}
     relatedArticles={[
       { title: 'Atrakcje Supraśla: co zobaczyć', slug: '/atrakcje-suprasl' },
-      { title: 'Weekend w Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
-      { title: 'Atrakcje Supraśla – uzdrowisko w Puszczy', slug: 'suprasl-atrakcje-uzdrowisko' },
+      { title: 'Weekend w\u00a0Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
+      {
+        title: 'Atrakcje Supraśla – uzdrowisko w\u00a0Puszczy',
+        slug: 'suprasl-atrakcje-uzdrowisko',
+      },
     ]}
   >
     <img
       src="/images/gallery-dab-puszcza.webp"
-      alt="Jesienny las w okolicy Supraśla"
+      alt="Jesienny las w&nbsp;okolicy Supraśla"
       className="mb-8 w-full rounded-lg shadow-md"
       width="1200"
       height="800"
@@ -51,25 +54,25 @@ const JesienWSupraslu2026 = () => (
       decoding="async"
     />
     <p>
-      Jesień to dobry czas na spokojniejsze poznawanie Supraśla i okolicy. Pogoda może się szybko
-      zmieniać, dlatego przed wyjściem sprawdź prognozę, warunki na trasie i zasady odwiedzania
-      terenów chronionych. Godziny otwarcia muzeów i program wydarzeń również warto potwierdzić
-      przed podróżą.
+      Jesień to dobry czas na spokojniejsze poznawanie Supraśla i&nbsp;okolicy. Pogoda może się
+      szybko zmieniać, dlatego przed wyjściem sprawdź prognozę, warunki na trasie i&nbsp;zasady
+      odwiedzania terenów chronionych. Godziny otwarcia muzeów i&nbsp;program wydarzeń również warto
+      potwierdzić przed podróżą.
     </p>
 
-    <h2>Spacer i zwiedzanie</h2>
+    <h2>Spacer i&nbsp;zwiedzanie</h2>
     <p>
-      Wybierz spacer po Supraślu albo trasę dostosowaną do pogody i możliwości uczestników. W
-      przypadku rezerwatów oraz innych obszarów chronionych poruszaj się wyłącznie tam, gdzie
-      dopuszczają to oznaczenia i aktualne przepisy.
+      Wybierz spacer po Supraślu albo trasę dostosowaną do pogody i&nbsp;możliwości uczestników.
+      W&nbsp;przypadku rezerwatów oraz innych obszarów chronionych poruszaj się wyłącznie tam, gdzie
+      dopuszczają to oznaczenia i&nbsp;aktualne przepisy.
     </p>
     <p>
-      Jeśli planujesz wizytę w Muzeum Ikon, sprawdź{' '}
+      Jeśli planujesz wizytę w&nbsp;Muzeum Ikon, sprawdź{' '}
       <a
         href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Informacje dla zwiedzających Muzeum Ikon (otworzy się w nowej karcie)"
+        aria-label="Informacje dla zwiedzających Muzeum Ikon (otworzy się w&nbsp;nowej karcie)"
       >
         informacje dla zwiedzających Muzeum Podlaskiego
       </a>
@@ -78,25 +81,25 @@ const JesienWSupraslu2026 = () => (
 
     <h2>Wydarzenia kulturalne</h2>
     <p>
-      Program wydarzeń i ewentualne zmiany publikuje{' '}
+      Program wydarzeń i&nbsp;ewentualne zmiany publikuje{' '}
       <a
         href="https://ckirsuprasl.com/"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Strona Centrum Kultury i Rekreacji w Supraślu (otworzy się w nowej karcie)"
+        aria-label="Strona Centrum Kultury i&nbsp;Rekreacji w&nbsp;Supraślu (otworzy się w&nbsp;nowej karcie)"
       >
-        Centrum Kultury i Rekreacji w Supraślu
+        Centrum Kultury i&nbsp;Rekreacji w&nbsp;Supraślu
       </a>
-      . Sprawdź datę, miejsce, dostępność wejściówek i ewentualne warunki udziału bezpośrednio u
-      organizatora.
+      . Sprawdź datę, miejsce, dostępność wejściówek i&nbsp;ewentualne warunki udziału bezpośrednio
+      u&nbsp;organizatora.
     </p>
 
-    <h2>Zapytaj o pobyt</h2>
+    <h2>Zapytaj o&nbsp;pobyt</h2>
     <p>
-      Jeśli chcesz połączyć zwiedzanie z odpoczynkiem,{' '}
-      <Link to="/noclegi-suprasl">poznaj informacje o domu i pobycie</Link>, a następnie{' '}
-      <Link to="/#rezerwacja">wyślij zapytanie o termin</Link>. Wysłanie formularza jest zapytaniem,
-      a nie potwierdzeniem rezerwacji.
+      Jeśli chcesz połączyć zwiedzanie z&nbsp;odpoczynkiem,{' '}
+      <Link to="/noclegi-suprasl">poznaj informacje o&nbsp;domu i&nbsp;pobycie</Link>,
+      a&nbsp;następnie <Link to="/#rezerwacja">wyślij zapytanie o&nbsp;termin</Link>. Wysłanie
+      formularza jest zapytaniem, a&nbsp;nie potwierdzeniem rezerwacji.
     </p>
   </BlogArticleLayout>
 );

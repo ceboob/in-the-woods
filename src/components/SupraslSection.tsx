@@ -38,26 +38,24 @@ const guides = [
   {
     slug: 'szlak-bioroznorodnosci-suprasl',
     title: 'Szlak Bioróżnorodności Supraśl',
-    excerpt:
-      'Przed spacerem sprawdź aktualny przebieg, długość i warunki trasy.',
+    excerpt: 'Przed spacerem sprawdź aktualny przebieg, długość i\u00a0warunki trasy.',
     image: blogSzlakBio,
-    alt: 'Leśna ścieżka w okolicy Supraśla',
+    alt: 'Leśna ścieżka w\u00a0okolicy Supraśla',
   },
   {
     slug: 'kruszyniany-tatarska-wies',
     title: 'Kruszyniany – tatarska wieś Podlasia',
     excerpt:
-      'Informacje o meczecie, dziedzictwie tatarskim i zasadach zwiedzania Kruszynian.',
+      'Informacje o\u00a0meczecie, dziedzictwie tatarskim i\u00a0zasadach zwiedzania Kruszynian.',
     image: blogKruszyniany,
-    alt: 'Drewniany meczet w Kruszynianach',
+    alt: 'Drewniany meczet w\u00a0Kruszynianach',
   },
   {
     slug: 'suprasl-atrakcje-uzdrowisko',
     title: 'Supraśl – atrakcje uzdrowiska Podlasia',
-    excerpt:
-      'Monaster, Muzeum Ikon i spacer nad rzeką — sprawdź informacje przed wizytą.',
+    excerpt: 'Monaster, Muzeum Ikon i\u00a0spacer nad rzeką — sprawdź informacje przed wizytą.',
     image: blogSupraslUzdrowisko,
-    alt: 'Monaster Zwiastowania NMP w Supraślu',
+    alt: 'Monaster Zwiastowania NMP w\u00a0Supraślu',
   },
   {
     slug: 'kajaki-suprasl',
@@ -70,17 +68,18 @@ const guides = [
   {
     slug: 'przewodnik-kulinarny-suprasl',
     title: 'Restauracje Supraśl – gdzie zjeść',
-    excerpt: 'Kartacze, babka ziemniaczana i kuchnia tatarska — przewodnik kulinarny po Supraślu.',
+    excerpt:
+      'Kartacze, babka ziemniaczana i\u00a0kuchnia tatarska — przewodnik kulinarny po Supraślu.',
     image: blogRestauracje,
-    alt: 'Danie kuchni regionalnej w Supraślu',
+    alt: 'Danie kuchni regionalnej w\u00a0Supraślu',
   },
   {
     slug: 'puszcza-knyszynska-historie',
     title: 'Puszcza Knyszyńska – 7 niezwykłych historii',
     excerpt:
-      'Galeria Leśna Powstania Styczniowego i inne miejsca związane z historią regionu.',
+      'Galeria Leśna Powstania Styczniowego i\u00a0inne miejsca związane z\u00a0historią regionu.',
     image: blogPuszczaHistorie,
-    alt: 'Puszcza Knyszyńska historie – leśna droga w porannej mgle',
+    alt: 'Puszcza Knyszyńska historie – leśna droga w\u00a0porannej mgle',
   },
 ];
 
@@ -94,13 +93,11 @@ const SupraslSection = () => {
         className={`max-w-6xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-12 space-y-4">
-          <p className="text-xs tracking-wide text-muted-foreground font-sans">
-            Okolica
-          </p>
-          <h2 className="section-title">Puszcza Knyszyńska i Supraśl – co warto zobaczyć</h2>
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">Okolica</p>
+          <h2 className="section-title">Puszcza Knyszyńska i&nbsp;Supraśl – co warto zobaczyć</h2>
           <p className="section-subtitle mx-auto">
             Przewodnik po miejscach, które możesz uwzględnić podczas pobytu. Przed wyjazdem sprawdź
-            aktualną trasę, godziny otwarcia i zasady zwiedzania.
+            aktualną trasę, godziny otwarcia i&nbsp;zasady zwiedzania.
           </p>
         </div>
 
@@ -117,7 +114,7 @@ const SupraslSection = () => {
         {/* Nearby places */}
         <div className="max-w-2xl mx-auto mb-16">
           <p className="text-xs tracking-wide text-muted-foreground font-sans text-center mb-6">
-            Miejsca w okolicy
+            Miejsca w&nbsp;okolicy
           </p>
           <div className="grid grid-cols-2 gap-3">
             {nearby.map((n, i) => (
@@ -175,11 +172,11 @@ const SupraslSection = () => {
 
         <div className="text-center space-y-4">
           <p className="text-muted-foreground text-sm max-w-xl mx-auto leading-relaxed">
-            Puszcza Knyszyńska obejmuje rozległe tereny leśne. Przed spacerem lub wycieczką
-            rowerową sprawdź przebieg trasy i obowiązujące ograniczenia.
+            Puszcza Knyszyńska obejmuje rozległe tereny leśne. Przed spacerem lub wycieczką rowerową
+            sprawdź przebieg trasy i&nbsp;obowiązujące ograniczenia.
           </p>
           <p className="text-base md:text-lg text-foreground/80 font-sans">
-            Dom znajduje się w miejscowości Konne koło Supraśla.
+            Dom znajduje się w&nbsp;miejscowości Konne koło Supraśla.
           </p>
         </div>
       </div>
