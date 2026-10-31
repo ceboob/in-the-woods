@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { X, Phone, ArrowRight } from 'lucide-react';
-import { supabase } from '@/integrations/supabase/client';
+import { invokeEdgeFunction } from '@/lib/edgeFunction';
 
 const ExitIntentPopup = () => {
   const [show, setShow] = useState(false);
@@ -34,7 +34,7 @@ const ExitIntentPopup = () => {
     if (!phone || !phoneRegex.test(phone)) return;
 
     try {
-      const { data: result, error } = await supabase.functions.invoke<{ error?: string }>(
+      const { data: result, error } = await invokeEdgeFunction<{ error?: string }>(
         'rate-limit-submit',
         { body: { type: 'callback', phone, source: 'exit_intent' } },
       );
