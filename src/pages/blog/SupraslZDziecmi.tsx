@@ -17,9 +17,9 @@ const SupraslZDziecmi = () => (
       { question: 'Czy w restauracjach są udogodnienia dla dzieci?', answer: 'Menu i udogodnienia mogą się zmieniać. Zapytaj wybrany lokal o krzesełka, mniejsze porcje i skład potraw przed wizytą.' },
     ]}
     relatedArticles={[
-      { title: 'Supraśl na weekend — plan na 2 dni', slug: 'suprasl-na-weekend' },
-      { title: 'Co robić w Supraślu?', slug: 'co-robic-suprasl' },
-      { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
+      { title: 'Weekend w Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
+      { title: 'Atrakcje Supraśla: co zobaczyć', slug: '/atrakcje-suprasl' },
+      { title: 'Szlaki piesze i rowerowe z Supraśla', slug: 'szlaki-piesze-rowerowe-suprasl' },
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
@@ -99,7 +99,7 @@ const SupraslZDziecmi = () => (
       <li>
         <strong>Szlaki przyrodnicze</strong> — sprawdź przebieg, długość, nawierzchnię i ewentualne
         ograniczenia przed wyjściem. Więcej wskazówek w{' '}
-        <Link to="/blog/szlaki-puszcza-knyszynska">przewodniku po szlakach</Link>.
+        <Link to="/blog/szlaki-piesze-rowerowe-suprasl">przewodniku po szlakach</Link>.
       </li>
       <li>
         <strong>Rower z dziećmi</strong> — dobierz trasę do wieku i możliwości uczestników,

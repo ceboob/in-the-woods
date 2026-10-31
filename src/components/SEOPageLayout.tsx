@@ -197,6 +197,15 @@ const SEOPageLayout = ({
             <Link to="/wieczor-panienski-suprasl" className="hover:text-primary transition-colors">
               Wieczór panieński
             </Link>
+            <Link to="/wieczor-kawalerski-suprasl" className="hover:text-primary transition-colors">
+              Wieczór kawalerski
+            </Link>
+            <Link to="/sylwester-podlasie" className="hover:text-primary transition-colors">
+              Sylwester w lesie
+            </Link>
+            <Link to="/domek-z-psem-podlasie" className="hover:text-primary transition-colors">
+              Domek z psem
+            </Link>
             <Link to="/atrakcje-suprasl" className="hover:text-primary transition-colors">
               Atrakcje Supraśla
             </Link>

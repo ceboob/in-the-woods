@@ -31,8 +31,8 @@ const SzlakPowstaniaStyczniowego = () => {
   const relatedArticles = [
     { title: 'Rzeka Supraśl i okolica', slug: 'supraski-system-wodny' },
     {
-      title: 'Supraśl – perła Podlasia według podróżników',
-      slug: 'suprasl-atrakcje-national-geographic',
+      title: 'Atrakcje Supraśla: co zobaczyć',
+      slug: '/atrakcje-suprasl',
     },
     { title: 'Najlepsze szlaki piesze i rowerowe Supraśl', slug: 'szlaki-piesze-rowerowe-suprasl' },
   ];

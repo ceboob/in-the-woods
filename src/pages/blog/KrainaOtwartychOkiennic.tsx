@@ -17,8 +17,8 @@ const KrainaOtwartychOkiennic = () => (
     ]}
     relatedArticles={[
       { title: 'Kruszyniany — tatarska wieś', slug: 'kruszyniany-tatarska-wies' },
-      { title: 'Atrakcje Supraśla', slug: 'suprasl-atrakcje-national-geographic' },
-      { title: 'Weekend w Supraślu', slug: 'suprasl-na-weekend' },
+      { title: 'Atrakcje Supraśla: co zobaczyć', slug: '/atrakcje-suprasl' },
+      { title: 'Weekend w Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
     ]}
   >
     <article className="prose prose-lg max-w-none space-y-8">

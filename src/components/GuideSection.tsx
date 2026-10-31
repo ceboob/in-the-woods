@@ -68,7 +68,7 @@ const GuideSection = () => (
             title="Puszcza Knyszyńska zaraz za płotem"
             desc="Drugi największy las na Podlasiu. Szlaki piesze i rowerowe, rezerwaty i dzika zwierzyna, którą częściej słychać, niż widać."
             cta="Zaplanuj wycieczkę po puszczy"
-            link="/blog/szlaki-puszcza-knyszynska"
+            link="/blog/szlaki-piesze-rowerowe-suprasl"
           />
           <Card
             icon={Building2}
@@ -133,7 +133,7 @@ const GuideSection = () => (
             title="Szlaki rowerowe"
             desc="Leśne dukty, Green Velo i trasy na każdą kondycję, także na tę po wczorajszym ognisku."
             cta="Zobacz trasy"
-            link="/blog/szlaki-puszcza-knyszynska"
+            link="/blog/szlaki-piesze-rowerowe-suprasl"
           />
           <Card
             icon={Sparkles}

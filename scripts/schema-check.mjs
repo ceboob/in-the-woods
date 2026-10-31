@@ -70,6 +70,9 @@ const offerRoutes = [
   '/noclegi-suprasl',
   '/weekend-suprasl',
   '/wieczor-panienski-suprasl',
+  '/wieczor-kawalerski-suprasl',
+  '/sylwester-podlasie',
+  '/domek-z-psem-podlasie',
 ];
 for (const route of offerRoutes.slice(1)) {
   const schemas = extractSchemas(await getHtml(route));

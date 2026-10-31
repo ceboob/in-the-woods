@@ -78,9 +78,9 @@ const PuszczaKnyszynskaPrzewodnik = () => (
     faqs={faqs}
     ogImage="https://www.suprasl.online/images/exterior-main.webp"
     relatedArticles={[
-      { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
+      { title: 'Szlaki piesze i rowerowe z Supraśla', slug: 'szlaki-piesze-rowerowe-suprasl' },
       { title: 'Kajaki na Supraśli', slug: 'kajaki-suprasl' },
-      { title: 'Atrakcje Supraśla', slug: 'suprasl-atrakcje-national-geographic' },
+      { title: 'Atrakcje Supraśla: co zobaczyć', slug: '/atrakcje-suprasl' },
     ]}
   >
     <p className="text-lg leading-relaxed mb-8">

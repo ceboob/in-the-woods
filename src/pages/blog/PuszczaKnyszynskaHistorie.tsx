@@ -34,7 +34,7 @@ const PuszczaKnyszynskaHistorie = () => (
     ]}
     relatedArticles={[
       { title: 'Powstanie Styczniowe — kontekst historyczny', slug: 'szlak-powstania-styczniowego-suprasl' },
-      { title: 'Puszcza Knyszyńska — miejsca i zasady wizyty', slug: 'najlepsze-miejsca-puszcza-knyszynska' },
+      { title: 'Puszcza Knyszyńska: przewodnik po szlakach', slug: 'puszcza-knyszynska-przewodnik' },
       { title: 'Szlaki piesze i rowerowe', slug: 'szlaki-piesze-rowerowe-suprasl' },
     ]}
   >

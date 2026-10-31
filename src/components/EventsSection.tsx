@@ -58,12 +58,26 @@ const EventsSection = () => {
         </div>
 
         <div className="text-center">
-          <Link
-            to="/wieczor-panienski-suprasl"
-            className="btn-outline inline-flex items-center gap-2"
-          >
-            Dowiedz się więcej o imprezach
-          </Link>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link
+              to="/wieczor-panienski-suprasl"
+              className="btn-outline inline-flex items-center justify-center gap-2"
+            >
+              Wieczór panieński
+            </Link>
+            <Link
+              to="/wieczor-kawalerski-suprasl"
+              className="btn-outline inline-flex items-center justify-center gap-2"
+            >
+              Wieczór kawalerski
+            </Link>
+            <Link
+              to="/sylwester-podlasie"
+              className="btn-outline inline-flex items-center justify-center gap-2"
+            >
+              Sylwester w lesie
+            </Link>
+          </div>
         </div>
       </div>
     </section>

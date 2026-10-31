@@ -205,7 +205,7 @@ const SupraslAtrakcjeUzdrowisko = () => {
       <p>
         Lokale, menu i godziny pracy mogą się zmieniać. Przed wizytą sprawdź aktualne informacje w
         wybranej restauracji. Wskazówki znajdziesz w{' '}
-        <Link to="/blog/restauracje-suprasl">przewodniku po lokalach</Link>.
+        <Link to="/blog/przewodnik-kulinarny-suprasl">przewodniku po lokalach</Link>.
       </p>
 
       <ul>

@@ -1,5 +1,6 @@
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import ImageReveal from '@/components/ImageReveal';
+import { Link } from 'react-router-dom';
 import winterCabin from '@/assets/winter-cabin-real.webp';
 import winterGolden from '@/assets/winter-cabin-golden.webp';
 import winterForest from '@/assets/winter-forest.webp';
@@ -91,6 +92,9 @@ const WinterSection = () => {
                 </span>
               ))}
             </div>
+            <Link to="/sylwester-podlasie" className="btn-outline inline-flex items-center justify-center mt-8">
+              Sylwester w lesie: zobaczcie plan
+            </Link>
           </div>
         </div>
       </div>

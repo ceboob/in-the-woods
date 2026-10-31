@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Dog, TreePine, Snail, Home, Sparkles, Wifi, Flame, Bath } from 'lucide-react';
 
 const badges = [
-  { icon: Dog, label: 'Pies gratis', href: '/blog/podlasie-z-psem' },
+  { icon: Dog, label: 'Pies gratis', href: '/domek-z-psem-podlasie' },
   { icon: TreePine, label: 'Wypoczynek w naturze', href: '/dom-w-lesie-suprasl' },
   { icon: Snail, label: 'Spokojny wypoczynek', href: '/blog/cyfrowy-detoks-las' },
   { icon: Home, label: 'Dom na wyłączność', href: '/noclegi-suprasl' },

@@ -17,9 +17,9 @@ const GrzybobraniePuszczaKnyszynska = () => (
       { question: 'Czy wszędzie można zbierać grzyby?', answer: 'Nie. Zasady zależą od miejsca; zbieranie jest zabronione w rezerwatach przyrody i może być ograniczone na innych terenach. Sprawdź lokalne przepisy i oznakowanie.' },
     ]}
     relatedArticles={[
-      { title: 'Najlepsze miejsca w Puszczy Knyszyńskiej', slug: 'najlepsze-miejsca-puszcza-knyszynska' },
-      { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
-      { title: 'Weekend w Supraślu', slug: 'suprasl-na-weekend' },
+      { title: 'Puszcza Knyszyńska: przewodnik po szlakach', slug: 'puszcza-knyszynska-przewodnik' },
+      { title: 'Szlaki piesze i rowerowe z Supraśla', slug: 'szlaki-piesze-rowerowe-suprasl' },
+      { title: 'Weekend w Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
     ]}
   >
     <article className="prose prose-lg max-w-none space-y-8">

@@ -45,7 +45,7 @@ const KajakiSuprasl = () => {
       title: 'Najlepsze szlaki piesze i rowerowe – Supraśl',
       slug: 'szlaki-piesze-rowerowe-suprasl',
     },
-    { title: 'Restauracje Supraśl – gdzie zjeść', slug: 'restauracje-suprasl' },
+    { title: 'Gdzie zjeść w Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
   ];
 
   return (

@@ -16,12 +16,27 @@ const allPages = [
     label: 'Domek z jacuzzi',
     desc: 'Balia z hydromasażem (jacuzzi)',
   },
-  { path: '/dom-w-lesie-suprasl', label: 'Dom w lesie', desc: 'Slow travel w sercu Puszczy' },
+  { path: '/dom-w-lesie-suprasl', label: 'Dom w lesie', desc: 'Cisza, sarny i kominek' },
   { path: '/weekend-suprasl', label: 'Weekend Supraśl', desc: 'Plan idealnego weekendu' },
   {
     path: '/wieczor-panienski-suprasl',
     label: 'Wieczór panieński',
-    desc: 'Impreza w lesie z jacuzzi',
+    desc: 'Balia, ognisko i zero sąsiadów',
+  },
+  {
+    path: '/wieczor-kawalerski-suprasl',
+    label: 'Wieczór kawalerski',
+    desc: 'Grill, ognisko i balia dla ekipy',
+  },
+  {
+    path: '/sylwester-podlasie',
+    label: 'Sylwester w lesie',
+    desc: 'Kominek i balia o północy',
+  },
+  {
+    path: '/domek-z-psem-podlasie',
+    label: 'Domek z psem',
+    desc: 'Pies gratis, ogrodzony ogród',
   },
   {
     path: '/atrakcje-suprasl',

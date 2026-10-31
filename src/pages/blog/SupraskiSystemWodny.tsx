@@ -30,7 +30,7 @@ const SupraskiSystemWodny = () => (
     relatedArticles={[
       { title: 'Kajaki na rzece Supraśl', slug: 'kajaki-suprasl' },
       { title: 'Szlaki piesze i rowerowe w okolicy', slug: 'szlaki-piesze-rowerowe-suprasl' },
-      { title: 'Atrakcje Supraśla', slug: 'suprasl-atrakcje-national-geographic' },
+      { title: 'Atrakcje Supraśla: co zobaczyć', slug: '/atrakcje-suprasl' },
     ]}
   >
     <article className="prose prose-lg max-w-none space-y-8">

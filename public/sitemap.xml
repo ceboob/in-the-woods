@@ -51,6 +51,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.suprasl.online/wieczor-kawalerski-suprasl</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.suprasl.online/sylwester-podlasie</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.suprasl.online/domek-z-psem-podlasie</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.suprasl.online/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -67,11 +82,6 @@
   </url>
   <url>
     <loc>https://www.suprasl.online/blog/szlak-powstania-styczniowego-suprasl</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.suprasl.online/blog/suprasl-atrakcje-national-geographic</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -106,26 +116,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.suprasl.online/blog/restauracje-suprasl</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.suprasl.online/blog/co-robic-suprasl</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.suprasl.online/blog/weekend-suprasl-plan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.suprasl.online/blog/najlepsze-miejsca-puszcza-knyszynska</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.suprasl.online/blog/puszcza-knyszynska-historie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -147,16 +137,6 @@
   </url>
   <url>
     <loc>https://www.suprasl.online/blog/przewodnik-kulinarny-suprasl</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.suprasl.online/blog/szlaki-puszcza-knyszynska</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.suprasl.online/blog/suprasl-na-weekend</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
