@@ -22,6 +22,7 @@ export const routeDefinitions: RouteDefinition[] = [
   { path: '/domek-z-jacuzzi-podlasie', load: () => import('@/pages/DomekZJacuzziPodlasie.tsx') },
   { path: '/wieczor-panienski-suprasl', load: () => import('@/pages/WieczorPanienskiSuprasl.tsx') },
   { path: '/blog', load: () => import('@/pages/Blog.tsx') },
+  { path: '/blog/suprasl-zima', load: () => import('@/pages/blog/SupraslZima.tsx') },
   { path: '/blog/supraski-system-wodny', load: () => import('@/pages/blog/SupraskiSystemWodny.tsx') },
   {
     path: '/blog/szlak-powstania-styczniowego-suprasl',
@@ -48,6 +49,7 @@ export const routeDefinitions: RouteDefinition[] = [
     load: () => import('@/pages/blog/SupraslAtrakcjeUzdrowisko.tsx'),
   },
   { path: '/blog/kajaki-suprasl', load: () => import('@/pages/blog/KajakiSuprasl.tsx') },
+  { path: '/blog/rykowisko-jeleni-puszcza-knyszynska', load: () => import('@/pages/blog/RykowiskoJeleni.tsx') },
   { path: '/blog/restauracje-suprasl', load: () => import('@/pages/blog/RestauracjeSuprasl.tsx') },
   { path: '/blog/co-robic-suprasl', load: () => import('@/pages/blog/CoRobicSuprasl.tsx') },
   { path: '/blog/weekend-suprasl-plan', load: () => import('@/pages/blog/WeekendSupraslPlan.tsx') },
@@ -59,7 +61,10 @@ export const routeDefinitions: RouteDefinition[] = [
     path: '/blog/puszcza-knyszynska-historie',
     load: () => import('@/pages/blog/PuszczaKnyszynskaHistorie.tsx'),
   },
-  { path: '/blog/wydarzenia-suprasl-2026', load: () => import('@/pages/blog/WydarzeniaSupra2026.tsx') },
+  {
+    path: '/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne',
+    load: () => import('@/pages/blog/JesienWSupraslu2026.tsx'),
+  },
   { path: '/blog/aktywny-wypoczynek-suprasl', load: () => import('@/pages/blog/AktywnyWypoczynek.tsx') },
   { path: '/blog/uzdrowisko-spa-suprasl', load: () => import('@/pages/blog/UzdrowiSkoSPA.tsx') },
   {

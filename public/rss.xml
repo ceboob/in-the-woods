@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>In The Woods — Blog</title>
+    <link>https://www.suprasl.online/blog</link>
+    <atom:link href="https://www.suprasl.online/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Artykuły o Supraślu, Podlasiu i Puszczy Knyszyńskiej.</description>
+    <language>pl-pl</language>
+    <lastBuildDate>Sat, 03 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Jesień w Supraślu 2026 – kalendarz wydarzeń kulturalnych</title>
+      <link>https://www.suprasl.online/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne</link>
+      <guid isPermaLink="true">https://www.suprasl.online/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Koncerty fortepianowe, wernisaże, warsztaty kulinarne, bieg Bison Ultra i Jarmark Świąteczny. Sprawdź, co wydarzy się w Supraślu od października do grudnia 2026.</description>
+    </item>
+  </channel>
+</rss>

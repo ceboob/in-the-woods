@@ -1,7 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
-import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
-import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
+import blogSzlak from '@/assets/blog-szlak-lesny-optimized.webp';
+import blogPomnik from '@/assets/blog-pomnik-powstanie-optimized.webp';
 import winterForest from '@/assets/winter-forest.webp';
 
 const SzlakPowstaniaStyczniowego = () => {
@@ -29,7 +29,7 @@ const SzlakPowstaniaStyczniowego = () => {
   ];
 
   const relatedArticles = [
-    { title: 'Supraski System Wodny – zapomniany cud inżynierii', slug: 'supraski-system-wodny' },
+    { title: 'Rzeka Supraśl i okolica', slug: 'supraski-system-wodny' },
     {
       title: 'Supraśl – perła Podlasia według podróżników',
       slug: 'suprasl-atrakcje-national-geographic',
@@ -71,7 +71,7 @@ const SzlakPowstaniaStyczniowego = () => {
         mogiły powstańcze i pomniki pamięci ukryte wśród drzew.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogSzlak}
         alt="Puszcza Knyszyńska – Szlak Powstania Styczniowego, atrakcje Supraśl"
         className="w-full rounded-lg my-8"
@@ -118,7 +118,7 @@ const SzlakPowstaniaStyczniowego = () => {
         podjazdową, która przez miesiące wiązała znaczne siły carskie.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={blogPomnik}
         alt="Pomnik Powstania Styczniowego – Puszcza Knyszyńska, historia Supraśl"
         className="w-full rounded-lg my-8"
@@ -194,7 +194,7 @@ const SzlakPowstaniaStyczniowego = () => {
         zarezerwować cały dzień. Wiosną i jesienią możliwe błotniste odcinki.
       </p>
 
-      <img
+      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
         src={winterForest}
         alt="Puszcza Knyszyńska zimą – szlaki zimowe, noclegi Supraśl"
         className="w-full rounded-lg my-8"
@@ -238,7 +238,7 @@ const SzlakPowstaniaStyczniowego = () => {
         <li>
           <strong>Połącz z:</strong> wizytą w{' '}
           <Link to="/atrakcje-suprasl">monasterze w Supraślu</Link> i{' '}
-          <Link to="/blog/supraski-system-wodny">Supraskim Systemem Wodnym</Link>
+          <Link to="/blog/supraski-system-wodny">informacjami o rzece Supraśl i okolicy</Link>
         </li>
       </ul>
 

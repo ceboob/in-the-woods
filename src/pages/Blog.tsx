@@ -2,26 +2,62 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import { Phone, ArrowRight, Calendar, Clock } from 'lucide-react';
-import blogKanal from '@/assets/blog-kanal-kopanica.jpg';
-import blogPomnik from '@/assets/blog-pomnik-powstanie.jpg';
-import blogMonaster from '@/assets/blog-monaster-suprasl.jpg';
-import blogSzlak from '@/assets/blog-szlak-lesny.jpg';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci.jpg';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet.jpg';
-import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko.jpg';
+import blogKanal from '@/assets/blog-kanal-kopanica-optimized.webp';
+import blogPomnik from '@/assets/blog-pomnik-powstanie-optimized.webp';
+import blogMonaster from '@/assets/blog-monaster-suprasl-optimized.webp';
+import blogSzlak from '@/assets/blog-szlak-lesny-optimized.webp';
+import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci-optimized.webp';
+import blogKruszyniany from '@/assets/blog-kruszyniany-meczet-optimized.webp';
+import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko-optimized.webp';
 import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
-import blogCoRobic from '@/assets/blog-co-robic-suprasl.jpg';
-import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl.jpg';
-import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza.jpg';
-import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero.jpg';
-import blogWydarzenia from '@/assets/blog-wydarzenia-suprasl-hero.jpg';
-import blogMushrooms from '@/assets/article.jpg';
+import blogCoRobic from '@/assets/blog-co-robic-suprasl-optimized.webp';
+import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl-optimized.webp';
+import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza-optimized.webp';
+import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero-optimized.webp';
+import blogPuszczaPanorama from '@/assets/blog-puszcza-panorama.webp';
+import blogMushrooms from '@/assets/article-optimized.webp';
 import blogNoService from '@/assets/brak-internetu-w-telefonie-co-robic-1536x878.webp';
-import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1.jpg';
-import blogBike from '@/assets/puszcza_knyszynska-.jpg';
+import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1-optimized.webp';
+import blogBike from '@/assets/puszcza_knyszynska--optimized.webp';
 
 const articles = [
+  {
+    slug: 'jesien-w-suprasliu-2026-wydarzenia-kulturalne',
+    title: 'Jesień w Supraślu 2026 – jak zaplanować pobyt',
+    excerpt:
+      'Pomysły na jesienny pobyt w Supraślu: spacery, kultura i wskazówki, gdzie sprawdzić aktualne wydarzenia oraz godziny otwarcia.',
+    image: blogPuszczaPanorama,
+    date: '2026-10-03',
+    readTime: '4 min',
+    keywords: ['jesień w Supraślu', 'Supraśl jesienią', 'wydarzenia w Supraślu'],
+  },
+  {
+    slug: 'rykowisko-jeleni-puszcza-knyszynska',
+    title: 'Rykowisko jeleni na Podlasiu – gdzie i kiedy je usłyszeć?',
+    excerpt: 'Dowiedz się, kiedy zwykle przypada rykowisko jeleni i jak odpowiedzialnie nasłuchiwać odgłosów przyrody w okolicach Supraśla.',
+    image: blogMeadow,
+    date: '2026-08-12',
+    readTime: '6 min',
+    keywords: [
+      'rykowisko jeleni',
+      'rykowisko jeleni na Podlasiu',
+      'rykowisko w Puszczy Knyszyńskiej',
+      'kiedy jest rykowisko jeleni',
+      'gdzie usłyszeć rykowisko jeleni',
+      'obserwacja jeleni Supraśl',
+    ],
+  },
+  {
+    slug: 'suprasl-zima',
+    title: 'Supraśl zimą – magia Podlasia i Puszczy Knyszyńskiej',
+    excerpt:
+      'Odkryj zaśnieżone szlaki, ślady dzikich zwierząt, ciszę Poczopek i kulig z ogniskiem w In The Woods Konne.',
+    image: '/images/winter/puszcza-knyszynska-zima.webp',
+    date: '2026-09-30',
+    readTime: '8 min',
+    keywords: ['Supraśl zimą', 'Podlasie zimą', 'Puszcza Knyszyńska', 'kulig Supraśl'],
+  },
   {
     slug: 'puszcza-knyszynska-przewodnik',
     title: 'Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX',
@@ -42,17 +78,17 @@ const articles = [
   },
   {
     slug: 'cyfrowy-detoks-las',
-    title: 'Cyfrowy detoks w praktyce: Domek w środku lasu to najlepsze miejsce na reset',
-    excerpt: 'Potrzebujesz resetu od ekranów? Odkryj, dlaczego domek w lesie na Podlasiu to idealne miejsce na cyfrowy detoks.',
-    image: blogNoService,
+    title: 'Cyfrowy detoks w lesie: przerwa od ekranów',
+    excerpt: 'Pomysł na dobrowolną przerwę od powiadomień i ekranów podczas pobytu w leśnym otoczeniu.',
+    image: blogMeadow,
     date: '2026-04-09',
     readTime: '9 min',
-    keywords: ['cyfrowy detoks', 'domek w lesie'],
+    keywords: ['cyfrowy detoks', 'przerwa od ekranów', 'odpoczynek w lesie'],
   },
   {
     slug: 'grzybobranie-puszcza-knyszynska',
-    title: 'Jesienne grzybobranie w Puszczy Knyszyńskiej – przewodnik',
-    excerpt: 'Gdzie zbierać grzyby w Puszczy Knyszyńskiej? Najlepsze miejsca, gatunki, sezon i praktyczne porady.',
+    title: 'Grzybobranie w Puszczy Knyszyńskiej — zasady przed spacerem',
+    excerpt: 'Zaplanuj grzybobranie z uwzględnieniem pogody, rozpoznawania gatunków i lokalnych ograniczeń. Sprawdź zasady dostępu przed wyjściem.',
     image: blogMushrooms,
     date: '2026-04-09',
     readTime: '10 min',
@@ -60,8 +96,8 @@ const articles = [
   },
   {
     slug: 'workation-podlasie',
-    title: 'Workation na Podlasiu: Połącz pracę zdalną z odpoczynkiem',
-    excerpt: 'Domek w lesie z Wi-Fi, ciszą i naturą. Połącz produktywną pracę zdalną z regeneracją w Puszczy Knyszyńskiej.',
+    title: 'Praca zdalna podczas pobytu na Podlasiu',
+    excerpt: 'Co sprawdzić przed pracą zdalną poza domem: dostępność Wi-Fi, miejsce do pracy i zasady pobytu.',
     image: blogCoRobic,
     date: '2026-04-09',
     readTime: '9 min',
@@ -69,8 +105,9 @@ const articles = [
   },
   {
     slug: 'podlasie-z-psem',
-    title: 'Podlasie z psem – gdzie szukać noclegu i na co zwrócić uwagę?',
-    excerpt: 'Planujesz wakacje z psem? Ogrodzony ogród, szlaki leśne i porady na wyjazd z czworonogiem na Podlasie.',
+    title: 'Noclegi Supraśl z psem – przewodnik po Puszczy',
+    excerpt:
+      'Sprawdź, jak wybrać noclegi w Supraślu z psem, zaplanować spacery w okolicy i przygotować się do pobytu blisko Puszczy Knyszyńskiej.',
     image: blogMeadow,
     date: '2026-04-09',
     readTime: '9 min',
@@ -97,9 +134,9 @@ const articles = [
   },
   {
     slug: 'suprasl-na-weekend',
-    title: 'Supraśl na weekend – gotowy plan zwiedzania na 2 dni',
+    title: 'Supraśl na weekend – przykładowy plan zwiedzania',
     excerpt:
-      'Gotowy plan na idealny weekend w Supraślu: Monaster, Muzeum Ikon, kuchnia podlaska, Puszcza Knyszyńska i relaks. Dzień po dniu!',
+      'Pomysły na weekend w Supraślu: zwiedzanie, spacer i odpoczynek. Dopasuj plan do aktualnych godzin otwarcia, pogody i dostępności atrakcji.',
     image: blogWeekendPlan,
     date: '2026-04-09',
     readTime: '12 min',
@@ -127,39 +164,29 @@ const articles = [
   },
   {
     slug: 'uzdrowisko-spa-suprasl',
-    title: 'Uzdrowisko Supraśl: Borowina, SPA i regeneracja sił',
+    title: 'Uzdrowisko Supraśl – wellness i wypoczynek',
     excerpt:
-      'Jedyne uzdrowisko na Podlasiu. Borowina z Podsokołdy, grota solna, strefy wellness i sanatoria.',
+      'Jak sprawdzić aktualną ofertę wellness, warunki pobytu i zasady rejestracji? Szczegóły potwierdź bezpośrednio u usługodawcy.',
     image: blogSupraslUzdrowisko,
     date: '2026-04-09',
     readTime: '10 min',
-    keywords: ['uzdrowisko Supraśl', 'SPA Supraśl', 'borowina'],
+    keywords: ['uzdrowisko Supraśl', 'wellness Supraśl', 'SPA Supraśl'],
   },
   {
     slug: 'przewodnik-kulinarny-suprasl',
-    title: 'Smaki Supraśla: Gdzie zjeść kartacze i babkę ziemniaczaną?',
+    title: 'Kuchnia regionalna — gdzie szukać aktualnych informacji?',
     excerpt:
-      'Kulinarny przewodnik po Supraślu — restauracje, kuchnia tatarska, kawiarnie i lokalne produkty.',
+      'Sprawdź aktualne menu, godziny otwarcia i dostępność lokali w Supraślu oraz okolicy. Informacje o tradycyjnych produktach znajdziesz u ich oficjalnych źródeł.',
     image: blogRestauracje,
     date: '2026-04-09',
     readTime: '12 min',
     keywords: ['restauracje Supraśl', 'kuchnia podlaska', 'kartacze'],
   },
   {
-    slug: 'wydarzenia-suprasl-2026',
-    title: 'Największe imprezy i wydarzenia w Supraślu 2026 – kalendarz + daty',
-    excerpt:
-      'Pełny kalendarz wydarzeń w Supraślu na 2026: Dni Supraśla, Festiwal Wertep, Szwedaczki z pochodniami, Mistrzostwa Babki i Kiszki i więcej. Daty, opisy i gdzie nocować.',
-    image: blogWydarzenia,
-    date: '2026-07-18',
-    readTime: '14 min',
-    keywords: ['wydarzenia Supraśl 2026', 'imprezy Supraśl', 'Szwedaczki Supraśl', 'sierpień Supraśl'],
-  },
-  {
     slug: 'puszcza-knyszynska-historie',
     title: 'Puszcza Knyszyńska historie – 7 niezwykłych opowieści',
     excerpt:
-      'Galeria Leśna Powstania Styczniowego, legendy, duchy powstańców i dom w lesie z jacuzzi 300 m od atrakcji.',
+      'Galeria Leśna Powstania Styczniowego i inne miejsca związane z historią regionu.',
     image: blogPuszczaHistorie,
     date: '2026-03-28',
     readTime: '14 min',
@@ -167,9 +194,9 @@ const articles = [
   },
   {
     slug: 'co-robic-suprasl',
-    title: 'Co robić w Supraślu? Kompletny przewodnik po atrakcjach',
+    title: 'Co robić w Supraślu? Wybrane atrakcje i wskazówki',
     excerpt:
-      'Monaster, Muzeum Ikon, kajaki, szlaki w Puszczy Knyszyńskiej i kuchnia regionalna. Wszystko, co warto zobaczyć w Supraślu.',
+      'Poznaj wybrane atrakcje Supraśla i zaplanuj wizytę. Sprawdź aktualne godziny otwarcia, zasady zwiedzania, trasy i warunki spływów.',
     image: blogCoRobic,
     date: '2026-03-25',
     readTime: '10 min',
@@ -207,9 +234,9 @@ const articles = [
   },
   {
     slug: 'restauracje-suprasl',
-    title: 'Restauracje Supraśl – gdzie zjeść podczas pobytu',
+    title: 'Restauracje w Supraślu — jak sprawdzić aktualną ofertę',
     excerpt:
-      'Kartacze, babka ziemniaczana, sękacz i kuchnia tatarska. Przewodnik kulinarny po Supraślu i Podlasiu.',
+      'Sprawdź aktualne menu, godziny otwarcia, ceny i zasady rezerwacji bezpośrednio w wybranym lokalu.',
     image: blogRestauracje,
     date: '2026-03-15',
     readTime: '12 min',
@@ -217,9 +244,9 @@ const articles = [
   },
   {
     slug: 'szlak-bioroznorodnosci-suprasl',
-    title: 'Szlak Bioróżnorodności Supraśl – spacer przez naturę Puszczy Knyszyńskiej',
+    title: 'Szlak Bioróżnorodności w Supraślu – informacje przed spacerem',
     excerpt:
-      'Edukacyjna ścieżka o długości 7 km przez zróżnicowane ekosystemy Puszczy Knyszyńskiej. Flora, fauna i tablice edukacyjne.',
+      'Przed spacerem sprawdź aktualny przebieg, długość, warunki terenowe i zasady dostępu do trasy.',
     image: blogSzlakBio,
     date: '2026-03-14',
     readTime: '10 min',
@@ -247,13 +274,13 @@ const articles = [
   },
   {
     slug: 'supraski-system-wodny',
-    title: 'Supraski System Wodny – zapomniany cud inżynierii Podlasia',
+    title: 'Rzeka Supraśl i okolica — informacje dla odwiedzających',
     excerpt:
-      'Odkryj fascynującą historię supraskiego systemu wodnego – unikatowego dziedzictwa hydrotechnicznego Podlasia.',
+      'Zaplanuj spacer lub spływ w okolicy Supraśla. Sprawdź aktualny dostęp do tras, warunki na rzece i informacje u lokalnych organizatorów.',
     image: blogKanal,
     date: '2026-03-10',
-    readTime: '12 min',
-    keywords: ['Supraski System Wodny', 'atrakcje Supraśl'],
+    readTime: '4 min',
+    keywords: ['rzeka Supraśl', 'spacery Supraśl', 'kajaki Supraśl'],
   },
   {
     slug: 'szlak-powstania-styczniowego-suprasl',
@@ -267,9 +294,9 @@ const articles = [
   },
   {
     slug: 'suprasl-atrakcje-national-geographic',
-    title: 'Supraśl – perła Podlasia według podróżników',
+    title: 'Supraśl – co zobaczyć? Przewodnik dla odwiedzających',
     excerpt:
-      'Co sprawia, że Supraśl jest jednym z najpiękniejszych miasteczek Podlasia? Architektura, Monaster i slow tourism.',
+      'Poznaj wybrane atrakcje Supraśla i zaplanuj wizytę. Sprawdź aktualne godziny otwarcia, zasady zwiedzania i dostępność tras.',
     image: blogMonaster,
     date: '2026-03-05',
     readTime: '11 min',
@@ -297,24 +324,42 @@ const Blog = () => {
         title="Blog Supraśl – atrakcje i szlaki | In The Woods"
         description="Blog o Supraślu – atrakcje, szlaki, historia i turystyka w Puszczy Knyszyńskiej. Przewodnik turystyczny."
         canonical="https://www.suprasl.online/blog"
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            {
-              '@type': 'ListItem',
-              position: 1,
-              name: 'Strona główna',
-              item: 'https://www.suprasl.online/',
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            '@id': 'https://www.suprasl.online/blog#webpage',
+            url: 'https://www.suprasl.online/blog',
+            name: 'Blog Supraśl – atrakcje i szlaki | In The Woods',
+            description:
+              'Blog o Supraślu – atrakcje, szlaki, historia i turystyka w Puszczy Knyszyńskiej. Przewodnik turystyczny.',
+            mainEntity: {
+              '@type': 'Blog',
+              '@id': 'https://www.suprasl.online/blog#blog',
+              name: 'Blog In The Woods',
+              url: 'https://www.suprasl.online/blog',
             },
-            {
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.suprasl.online/' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.suprasl.online/blog' },
+            ],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'Artykuły bloga In The Woods',
+            itemListElement: articles.map((article, index) => ({
               '@type': 'ListItem',
-              position: 2,
-              name: 'Blog',
-              item: 'https://www.suprasl.online/blog',
-            },
-          ],
-        }}
+              position: index + 1,
+              name: article.title,
+              url: `https://www.suprasl.online/blog/${article.slug}`,
+            })),
+          },
+        ]}
       />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
@@ -373,21 +418,26 @@ const Blog = () => {
               to={`/blog/${article.slug}`}
               className="group border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 bg-card"
             >
-              <div className="aspect-[16/9] overflow-hidden">
-                <img
-                  src={article.image}
-                  alt={article.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  width="600"
-                  height="338"
-                />
-              </div>
+              {article.image && (
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src={article.image}
+                    srcSet={`${article.image} 600w`}
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    alt={article.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading={article.slug === 'jesien-w-suprasliu-2026-wydarzenia-kulturalne' ? 'lazy' : article.slug === articles[0].slug ? 'eager' : 'lazy'}
+                    decoding="async"
+                    width="600"
+                    height="338"
+                  />
+                </div>
+              )}
               <div className="p-6 space-y-3">
                 <div className="flex items-center gap-4 text-xs text-muted-foreground">
                   <span className="inline-flex items-center gap-1">
                     <Calendar className="w-3 h-3" />
-                    {article.date}
+                    <time dateTime={article.date}>{article.date}</time>
                   </span>
                   <span className="inline-flex items-center gap-1">
                     <Clock className="w-3 h-3" />

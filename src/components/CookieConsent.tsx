@@ -8,7 +8,8 @@ const CookieConsent = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem(COOKIE_KEY);
+    if (typeof window === 'undefined') return;
+    const consent = window.localStorage.getItem(COOKIE_KEY);
     if (!consent) {
       const timer = setTimeout(() => setVisible(true), 1500);
       return () => clearTimeout(timer);
@@ -16,24 +17,28 @@ const CookieConsent = () => {
   }, []);
 
   const accept = () => {
-    localStorage.setItem(COOKIE_KEY, 'accepted');
+    if (typeof window !== 'undefined') window.localStorage.setItem(COOKIE_KEY, 'accepted');
     setVisible(false);
   };
 
   const reject = () => {
-    localStorage.setItem(COOKIE_KEY, 'rejected');
+    if (typeof window !== 'undefined') window.localStorage.setItem(COOKIE_KEY, 'rejected');
     setVisible(false);
   };
 
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-50 animate-in slide-in-from-bottom-4 duration-500">
+    <div
+      role="region"
+      aria-label="Zgoda na cookies"
+      className="fixed bottom-0 inset-x-0 z-50 animate-in slide-in-from-bottom-4 duration-500"
+    >
       <div className="bg-card/95 backdrop-blur-sm border-t border-border shadow-lg">
-        <div className="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-          <p className="text-sm text-muted-foreground flex-1">
+        <div className="max-w-5xl mx-auto px-4 py-2 flex flex-col sm:flex-row items-start sm:items-center gap-2">
+          <p className="text-xs sm:text-sm text-[#444] dark:text-foreground/80 flex-1">
             Ta strona używa cookies, aby zapewnić najlepszą jakość usług.
-            Klikając „Akceptuję", wyrażasz zgodę na ich użycie.{' '}
+            Klikając „Akceptuję”, wyrażasz zgodę na ich użycie.{' '}
             <Link
               to="/polityka-prywatnosci"
               className="underline hover:text-foreground transition-colors"
@@ -44,19 +49,19 @@ const CookieConsent = () => {
           <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={accept}
-              className="bg-forest text-primary-foreground text-sm px-5 py-2 hover:opacity-90 transition-opacity"
+              className="bg-primary text-primary-foreground text-sm font-semibold px-4 py-1.5 rounded-md hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
             >
               Akceptuję
             </button>
             <button
               onClick={reject}
-              className="border border-border text-sm px-4 py-2 hover:bg-secondary transition-colors text-muted-foreground"
+              className="border border-border text-sm px-4 py-1.5 rounded-md hover:bg-secondary transition-colors text-[#444] dark:text-foreground/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               Odrzuć
             </button>
             <button
               onClick={reject}
-              className="p-1.5 text-muted-foreground hover:text-foreground transition-colors"
+              className="p-1.5 text-muted-foreground hover:text-foreground transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
               aria-label="Zamknij"
             >
               <X className="w-4 h-4" />

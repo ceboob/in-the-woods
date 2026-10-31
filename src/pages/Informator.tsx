@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
   ArrowLeft,
@@ -28,6 +27,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import SEOHead from '@/components/SEOHead';
+import { property } from '@/data/property';
 
 const Informator = () => {
   useEffect(() => {
@@ -36,16 +37,13 @@ const Informator = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Informator gościa – In The Woods Supraśl</title>
-        <meta name="description" content="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl." />
-        <link rel="canonical" href="https://www.suprasl.online/informator" />
-        <meta property="og:title" content="Informator gościa – In The Woods Supraśl" />
-        <meta property="og:description" content="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi." />
-        <meta property="og:url" content="https://www.suprasl.online/informator" />
-        <meta property="og:image" content="https://www.suprasl.online/images/hero-cabin.jpg" />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+      <SEOHead
+        title="Informator gościa – In The Woods Supraśl"
+        description="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl."
+        canonical="https://www.suprasl.online/informator"
+        ogImage="https://www.suprasl.online/images/exterior-main.webp"
+        aboutId={`${property.canonicalUrl}#vacation-rental`}
+      />
       {/* Navbar */}
       <nav className="bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
@@ -68,7 +66,7 @@ const Informator = () => {
             >
               Atrakcje
             </Link>
-            <a href="tel:+48790625990" className="btn-primary text-xs py-2.5 px-6">
+            <a href="tel:+48722765101" className="btn-primary text-xs py-2.5 px-6">
               Zadzwoń
             </a>
           </div>
@@ -87,7 +85,7 @@ const Informator = () => {
 
       {/* Hero Header */}
       <header className="max-w-4xl mx-auto px-6 md:px-12 pt-12 pb-8 text-center">
-        <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans mb-4">
+        <p className="text-xs tracking-wide text-muted-foreground font-sans mb-4">
           Informator gościa
         </p>
         <h1 className="font-heading text-3xl md:text-5xl font-light text-foreground mb-6">
@@ -97,12 +95,12 @@ const Informator = () => {
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
           Oddajemy do Państwa dyspozycji dom, w który włożyliśmy dużo pracy i serca, aby zapewnić
           komfortowy wypoczynek blisko natury. In The Woods to drewniany dom na wyłączność w sercu
-          Puszczy Knyszyńskiej, zaledwie 10 minut od centrum Supraśla.
+          Puszczy Knyszyńskiej, niedaleko Supraśla.
         </p>
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-4 text-base md:text-lg">
           Prosimy o traktowanie domu jak własnego i pozostawienie go w takim stanie, w jakim został
-          przekazany. Poniżej znajdziesz wszystkie zasady pobytu, instrukcje obsługi kominka i ruskiej
-          bani, regulamin jacuzzi, informacje o ekologicznej oczyszczalni ścieków oraz praktyczne
+          przekazany. Poniżej znajdziesz wszystkie zasady pobytu, instrukcje obsługi kominka i jacuzzi,
+          informacje o ekologicznej oczyszczalni ścieków oraz praktyczne
           wskazówki dotyczące życia w lesie. Ten informator pomoże Ci w pełni cieszyć się pobytem.
         </p>
       </header>
@@ -358,7 +356,7 @@ const Informator = () => {
             </AccordionContent>
           </AccordionItem>
 
-          {/* JACUZZI / BANIA */}
+          {/* JACUZZI */}
           <AccordionItem
             value="jacuzzi"
             className="bg-card border border-border rounded-lg px-6 overflow-hidden"
@@ -369,13 +367,13 @@ const Informator = () => {
                   <Bath className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
-                  Regulamin ruskiej bani i balii
+                  Regulamin jacuzzi
                 </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Balia z gorącą wodą jest dostępna po wcześniejszej rezerwacji u gospodarza.
+                Balia ogrodowa z funkcją jacuzzi jest dostępna po wcześniejszej rezerwacji u gospodarza.
               </p>
               <p className="text-muted-foreground font-medium">Zasady korzystania:</p>
               <ul className="space-y-2 text-muted-foreground">
@@ -411,28 +409,15 @@ const Informator = () => {
               <div className="bg-secondary/60 rounded-lg p-4 space-y-2">
                 <p className="text-sm font-medium text-foreground">Ważne:</p>
                 <p className="text-sm text-muted-foreground">
-                  Maksymalna temperatura wody: 40°C. Należy regularnie uzupełniać płyny. Nie dotykać
-                  pieca — gorąca powierzchnia!
+                  Przed użyciem zapoznaj się z instrukcją obsługi funkcji jacuzzi.
                 </p>
               </div>
 
-              <p className="text-muted-foreground font-medium mt-2">Instrukcja obsługi balii:</p>
+              <p className="text-muted-foreground font-medium mt-2">Instrukcja korzystania z jacuzzi:</p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Nigdy nie rozpalać pieca bez wody w balii</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Utrzymywać odpowiedni poziom wody (powyżej kratki pieca)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Regularnie kontrolować temperaturę wody</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Zamykać dopływ powietrza do pieca przy zbyt wysokiej temperaturze</span>
+                  <span>Uruchamiać funkcję jacuzzi zgodnie z instrukcją gospodarza</span>
                 </li>
               </ul>
             </AccordionContent>
@@ -487,10 +472,10 @@ const Informator = () => {
                   </p>
                   <div className="space-y-2 text-muted-foreground">
                     <a
-                      href="tel:+48790625990"
+                      href="tel:+48722765101"
                       className="flex items-center gap-2 hover:text-foreground transition-colors"
                     >
-                      <Phone className="w-4 h-4" /> 790 625 990
+                      <Phone className="w-4 h-4" /> 722 765 101
                     </a>
                     <a
                       href="tel:+48722765101"

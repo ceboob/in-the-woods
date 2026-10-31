@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft, Calendar, Clock, ChevronRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import SEOHead from '@/components/SEOHead';
+import { buildBlogPostingSchema } from '@/lib/structuredData';
 
 interface FAQ {
   question: string;
@@ -22,6 +23,9 @@ interface BlogArticleLayoutProps {
   relatedArticles?: { title: string; slug: string }[];
   ogImage?: string;
   dateModified?: string;
+  /** Optional array of Event JSON-LD objects to improve event indexing */
+  events?: object[];
+  showFaqSection?: boolean;
 }
 
 const BlogArticleLayout = ({
@@ -37,35 +41,22 @@ const BlogArticleLayout = ({
   relatedArticles = [],
   ogImage = 'https://www.suprasl.online/og-image.jpg',
   dateModified,
+  events,
+  showFaqSection = true,
 }: BlogArticleLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: title,
+  const articleSchema = buildBlogPostingSchema({
+    title,
     description: metaDescription,
     url: `https://www.suprasl.online/blog/${slug}`,
-    datePublished: publishDate,
-    dateModified: dateModified || publishDate,
-    author: { '@type': 'Organization', name: 'In The Woods' },
-    publisher: {
-      '@type': 'Organization',
-      name: 'In The Woods',
-      url: 'https://www.suprasl.online',
-    },
-    mainEntityOfPage: `https://www.suprasl.online/blog/${slug}`,
-    keywords: keywords.join(', '),
-    image: {
-      '@type': 'ImageObject',
-      url: ogImage,
-      width: 1200,
-      height: 630,
-      caption: `In The Woods Supraśl — ${title}`,
-    },
-  };
+    publishDate,
+    modifiedDate: dateModified,
+    image: ogImage,
+    keywords,
+  });
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -97,6 +88,14 @@ const BlogArticleLayout = ({
     ],
   };
 
+  const jsonLdArray: object[] = [articleSchema];
+  if (showFaqSection && faqs.length > 0) jsonLdArray.push(faqSchema);
+  jsonLdArray.push(breadcrumbSchema);
+  if (Array.isArray(events) && events.length > 0) {
+    // prepend events so search engines see structured events first
+    jsonLdArray.unshift(...events);
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
@@ -106,7 +105,7 @@ const BlogArticleLayout = ({
         ogImage={ogImage}
         keywords={keywords}
         type="article"
-        jsonLd={[articleSchema, faqSchema, breadcrumbSchema]}
+        jsonLd={jsonLdArray}
         publishedTime={publishDate}
         modifiedTime={dateModified || publishDate}
       />
@@ -174,7 +173,7 @@ const BlogArticleLayout = ({
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
           <span className="inline-flex items-center gap-1.5">
             <Calendar className="w-3.5 h-3.5" />
-            {publishDate}
+            <time dateTime={publishDate}>{publishDate}</time>
           </span>
           <span className="inline-flex items-center gap-1.5">
             <Clock className="w-3.5 h-3.5" />
@@ -191,7 +190,7 @@ const BlogArticleLayout = ({
       </article>
 
       {/* FAQ Section */}
-      {faqs.length > 0 && (
+      {showFaqSection && faqs.length > 0 && (
         <section className="max-w-4xl mx-auto px-6 md:px-12 pb-16">
           <h2 className="font-heading text-2xl md:text-3xl font-light text-foreground mb-8">
             Najczęściej zadawane pytania
@@ -218,7 +217,7 @@ const BlogArticleLayout = ({
             {relatedArticles.map((a, i) => (
               <Link
                 key={i}
-                to={`/blog/${a.slug}`}
+                to={a.slug.startsWith('/') ? a.slug : `/blog/${a.slug}`}
                 className="block p-5 border border-border rounded-lg hover:bg-card transition-colors group"
               >
                 <span className="text-foreground group-hover:text-primary transition-colors font-medium">
@@ -239,7 +238,7 @@ const BlogArticleLayout = ({
           </h2>
           <p className="text-foreground/70 max-w-xl mx-auto">
             Jeśli szukasz komfortowego noclegu w Supraślu, In The Woods oferuje prywatny dom w lesie
-            z jacuzzi i kominkiem.
+            z kominkiem; balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">

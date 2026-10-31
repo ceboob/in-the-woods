@@ -14,7 +14,7 @@ const allPages = [
   {
     path: '/domek-z-jacuzzi-podlasie',
     label: 'Domek z jacuzzi',
-    desc: 'Ruska bania i balia z gorącą wodą',
+    desc: 'Balia ogrodowa z funkcją jacuzzi',
   },
   { path: '/dom-w-lesie-suprasl', label: 'Dom w lesie', desc: 'Slow travel w sercu Puszczy' },
   { path: '/weekend-suprasl', label: 'Weekend Supraśl', desc: 'Plan idealnego weekendu' },

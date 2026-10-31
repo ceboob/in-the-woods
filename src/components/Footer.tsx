@@ -13,7 +13,7 @@ const Footer = () => (
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
         <div className="text-center md:text-left">
           <p className="logo-glow mb-2 font-display text-2xl text-white">In The Woods</p>
-          <p className="mb-3 text-sm tracking-wider text-white/70">Dom w Puszczy · Supraśl · Podlasie</p>
+          <p className="mb-3 text-sm text-white/70">Dom w Puszczy · Supraśl · Podlasie</p>
           <p className="text-xs text-white/70">Konne 109/1, 16-030 Supraśl</p>
           <p className="text-xs text-white/70">Gospodarz: Maciej</p>
         </div>
@@ -30,23 +30,23 @@ const Footer = () => (
         </div>
 
         <div className="flex flex-col items-center gap-3">
-          <span className="text-xs uppercase tracking-[0.24em] text-white/50">Social media</span>
+          <span className="text-xs tracking-wide text-white/70">Social media</span>
           <div className="flex items-center gap-3">
             <a
               href="https://www.instagram.com/krzemienna_chata/"
-              aria-label="Instagram"
+              aria-label="Instagram (otworzy się w nowej karcie)"
               className={socialLinkClass}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <Instagram className="h-5 w-5 transition-transform duration-200 group-hover:scale-110" />
             </a>
             <a
               href="https://www.facebook.com/krzemienna.chata/"
-              aria-label="Facebook"
+              aria-label="Facebook (otworzy się w nowej karcie)"
               className={socialLinkClass}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <Facebook className="h-5 w-5 transition-transform duration-200 group-hover:scale-110" />
             </a>
@@ -55,35 +55,102 @@ const Footer = () => (
       </div>
 
       <div className="mt-8 border-t border-white/15 pt-6">
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
+          <a
+            href="https://www.airbnb.pl/rooms/1165170256851279014?guests=1&adults=1&s=67&unique_share_id=cd1458aa-ed37-425b-8252-1fcae5ea10b2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Airbnb (otworzy się w nowej karcie)"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/logos/ai.png"
+              alt="Airbnb"
+              loading="lazy"
+              width={374}
+              height={130}
+              className="h-7 w-auto max-w-32 object-contain"
+            />
+          </a>
+          <a
+            href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Alohacamp (otworzy się w nowej karcie)"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/logos/a.png"
+              alt="Alohacamp"
+              loading="lazy"
+              width={520}
+              height={130}
+              className="h-7 w-auto max-w-32 object-contain"
+            />
+          </a>
+          <a
+            href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Booking.com (otworzy się w nowej karcie)"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/logos/b.png"
+              alt="Booking.com"
+              loading="lazy"
+              width={436}
+              height={130}
+              className="h-7 w-auto max-w-32 object-contain"
+            />
+          </a>
+          <a
+            href="https://doginclusive.com/oferty/in-the-woods-"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Doginclusive.pl (otworzy się w nowej karcie)"
+            className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/logos/d.png"
+              alt="Doginclusive.pl"
+              loading="lazy"
+              width={508}
+              height={130}
+              className="h-7 w-auto max-w-32 object-contain"
+            />
+          </a>
+        </div>
+
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/70">
-          <Link to="/noclegi-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/noclegi-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Noclegi Supraśl
           </Link>
-          <Link to="/domek-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/domek-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Domek Supraśl
           </Link>
-          <Link to="/domek-z-jacuzzi-podlasie" className="transition-colors hover:text-primary">
+          <Link to="/domek-z-jacuzzi-podlasie" className="text-white/90 transition-colors hover:text-primary">
             Domek z jacuzzi
           </Link>
-          <Link to="/dom-w-lesie-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/dom-w-lesie-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Dom w lesie Supraśl
           </Link>
-          <Link to="/weekend-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/weekend-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Weekend Supraśl
           </Link>
-          <Link to="/wieczor-panienski-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/wieczor-panienski-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Wieczór panieński
           </Link>
-          <Link to="/atrakcje-suprasl" className="transition-colors hover:text-primary">
+          <Link to="/atrakcje-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Atrakcje Supraśla
           </Link>
-          <Link to="/puszcza-knyszynska-nocleg" className="transition-colors hover:text-primary">
+          <Link to="/puszcza-knyszynska-nocleg" className="text-white/90 transition-colors hover:text-primary">
             Nocleg Puszcza Knyszyńska
           </Link>
-          <Link to="/informator" className="transition-colors hover:text-primary">
+          <Link to="/informator" className="text-white/90 transition-colors hover:text-primary">
             Informator gościa
           </Link>
-          <Link to="/blog" className="transition-colors hover:text-primary">
+          <Link to="/blog" className="text-white/90 transition-colors hover:text-primary">
             Blog
           </Link>
         </div>

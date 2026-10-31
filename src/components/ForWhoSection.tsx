@@ -1,69 +1,79 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Heart, Users, Dog, Laptop, Snail } from 'lucide-react';
 
 const audiences = [
   {
     icon: Heart,
     title: 'Pary',
-    desc: 'Romantyczny pobyt w lesie z balią pod gwiazdami i kominkiem. Klimatyczny domek na walentynki — domek w lesie dla 2 osób z jacuzzi, śniadanie we dwoje na tarasie i niebo pełne gwiazd.',
+    desc: 'Zaplanuj romantyczny weekend w Supraślu: rozpal kominek, odpocznij w gorącej balii pod gwiazdami i wypij poranną kawę na tarasie. To kameralne noclegi w Supraślu na rocznicę, zaręczyny lub po prostu wspólny czas.',
   },
   {
     icon: Users,
     title: 'Rodziny z dziećmi',
-    desc: 'Dom w lesie wynajem dla rodziny z dziećmi — bezpieczny ogrodzony teren z placem zabaw, ogniskiem i przestrzenią do wspólnego gotowania. Psy za darmo, las za progiem.',
+    desc: 'Dom w lesie na wynajem pomieści do 8 osób. Rodzinna przestrzeń, ogród i bliskość leśnych ścieżek ułatwiają wspólny wypoczynek. Zobacz wyposażenie i zaplanuj pobyt dopasowany do potrzeb Twojej rodziny.',
   },
   {
     icon: Users,
     title: 'Przyjaciele',
-    desc: 'Wynajem domku na odludziu na weekend z grillem w altanie, gorącą balią i rozmowami przy ognisku do rana. Dom na wyłączność — bez obcych gości.',
+    desc: 'Dom na wyłączność na Podlasiu to swoboda wspólnego wyjazdu bez obcych gości. Grillujcie w altanie, odpoczywajcie w balii ogrodowej i spędzajcie wieczory przy ognisku. Supraśl i okoliczne atrakcje są w zasięgu krótkiej wycieczki.',
   },
   {
     icon: Dog,
     title: 'Z psem',
-    desc: 'Twój pies pokocha las za progiem. Ogrodzony teren, kilometry leśnych ścieżek i psy za darmo — u nas czworonogi są pełnoprawnymi gośćmi leśnego domku.',
+    desc: 'Przyjedźcie razem — pobyt psa jest bezpłatny. Leśne otoczenie zachęca do spacerów, a ogród daje przestrzeń do odpoczynku na świeżym powietrzu. Przed wyjazdem zapoznaj się z zasadami pobytu ze zwierzętami.',
   },
   {
     icon: Laptop,
-    title: 'Workation',
-    desc: 'Praca zdalna w lesie — wynajem domku z szybkim Wi-Fi i biurkiem przy oknie z widokiem na las. Po pracy kajaki, rower lub detoks cyfrowy w lesie.',
+    title: 'Praca i wypoczynek',
+    desc: 'Zmień otoczenie i połącz spokojny pobyt w lesie z pracą zdalną. W domu jest Wi-Fi, a po zamknięciu laptopa możesz odpocząć na tarasie lub wybrać się na spacer po Puszczy Knyszyńskiej.',
   },
   {
     icon: Snail,
-    title: 'Slow travel',
-    desc: 'Slow travel Polska w najczystszej formie. Oderwanie od cywilizacji, spokojny wypoczynek w naturze i chill w lesie — bez pośpiechu, bez zasięgu, bez planu.',
+    title: 'Spokojny wypoczynek',
+    desc: 'Dom w puszczy czy chata w lesie na wynajem? Wybierz prywatną przestrzeń, śpiew ptaków i leśne ścieżki tuż obok. Odpoczywaj we własnym rytmie — bez pośpiechu i miejskiego zgiełku.',
   },
 ];
 
 const ForWhoSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="section-padding bg-secondary">
       <div
         ref={ref}
-        className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-7xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-16 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Dla kogo
           </p>
           <h2 className="section-title">Dla kogo jest dom w lesie? Twój pobyt, Twoje zasady</h2>
           <p className="section-subtitle mx-auto">
-            Leśny domek do wynajęcia na wyłączność — nie dzielisz domu z innymi gośćmi. To Twoja
-            prywatna przestrzeń w lesie, gdzie sam decydujesz o rytmie dnia.
+            Dom na wyłączność na Podlasiu, na skraju Puszczy Knyszyńskiej — bez dzielenia przestrzeni
+            z innymi gośćmi. Wybierz nocleg w Supraślu, który łączy bliskość natury z wygodnym
+            dojazdem do miasta, i wypoczywaj po swojemu.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {audiences.map((a, i) => (
-            <div key={i} className="card-premium p-6 text-center group space-y-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <a.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
+        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 list-none p-0 m-0">
+          {audiences.map((a) => (
+            <li
+              key={a.title}
+              className="flex h-full flex-col items-center text-center gap-4 rounded-2xl border border-border bg-card p-6"
+            >
+              <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                <a.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
-              <h3 className="font-heading text-lg font-semibold text-foreground">{a.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
-            </div>
+              <h3 className="font-heading text-lg font-bold text-foreground">{a.title}</h3>
+              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">{a.desc}</p>
+            </li>
           ))}
+        </ul>
+
+        <div className="mt-12 text-center">
+          <a href="#rezerwacja" className="btn-primary inline-flex items-center justify-center">
+            Sprawdź wolne terminy
+          </a>
         </div>
       </div>
     </section>

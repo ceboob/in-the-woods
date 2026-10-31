@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Star } from 'lucide-react';
 
 type Source = 'google' | 'booking' | 'airbnb' | 'doginclusive';
@@ -69,7 +69,7 @@ const testimonials = [
     source: 'airbnb' as Source,
   },
   {
-    text: 'Ruska bania pod gwiazdami to coś, co trzeba przeżyć. Do tego kominek, las i cisza — pełna regeneracja po tygodniu pracy.',
+    text: 'Balia ogrodowa z funkcją jacuzzi pod gwiazdami to coś, co trzeba przeżyć. Do tego kominek, las i cisza — pełna regeneracja po tygodniu pracy.',
     author: 'Anna i Piotr',
     context: 'Romantyczny weekend',
     date: '2026-01-10',
@@ -85,7 +85,7 @@ const testimonials = [
     source: 'booking' as Source,
   },
   {
-    text: 'Brak pełnego zasięgu telefonii komórkowej — dla nas na początku minus, ale po dwóch dniach doceniliśmy ciszę i detoks cyfrowy. Dom piękny, bania rewelacyjna.',
+    text: 'Brak pełnego zasięgu telefonii komórkowej — dla nas na początku minus, ale po dwóch dniach doceniliśmy ciszę i detoks cyfrowy. Dom piękny, jacuzzi rewelacyjne.',
     author: 'Agnieszka',
     context: 'Urlop, 4 dni',
     date: '2025-09-12',
@@ -111,16 +111,16 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="section-padding bg-secondary">
       <div
         ref={ref}
-        className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-7xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-16 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Opinie gości
           </p>
           <h2 className="section-title">Co mówią ci, którzy tu byli</h2>
@@ -146,14 +146,14 @@ const TestimonialsSection = () => {
                   </div>
                   <div className="flex items-center gap-1.5">
                     <Logo className="h-4 w-auto" />
-                    <span className="text-[10px] font-medium tracking-wide uppercase text-muted-foreground">{src.label}</span>
+                    <span className="text-xs font-medium text-muted-foreground">{src.label}</span>
                   </div>
                 </div>
-                <p className="text-foreground/80 leading-relaxed text-sm text-smallcaps">
+                <p className="text-foreground/80 leading-relaxed text-sm font-sans">
                   „{t.text}"
                 </p>
                 <div>
-                  <p className="text-xs font-medium">{t.author}</p>
+                  <p className="text-xs font-medium" data-preserve-case>{t.author}</p>
                   <p className="text-[11px] text-muted-foreground">{t.context}</p>
                 </div>
               </div>

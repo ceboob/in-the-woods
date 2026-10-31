@@ -1,14 +1,14 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Phone, User, Mail } from 'lucide-react';
 
 const ContactSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section id="kontakt" className="px-6 md:px-12 py-16 bg-background">
       <div
         ref={ref}
-        className={`max-w-3xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-3xl mx-auto text-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="space-y-4 mb-8">
           <div className="flex items-center justify-center gap-2">

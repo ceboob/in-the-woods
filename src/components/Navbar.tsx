@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import ThemeToggle from '@/components/ThemeToggle';
 
 interface DropdownItem {
   label: string;
@@ -50,7 +51,7 @@ const navItems: NavItem[] = [
     ],
   },
   { label: 'Cennik', href: '#cennik' },
-  { label: 'Przewodnik', href: '/blog', isRoute: true },
+  { label: 'Blog', href: '/blog', isRoute: true },
   { label: 'Kontakt', href: '#kontakt' },
 ];
 
@@ -100,7 +101,7 @@ const Navbar = () => {
         </button>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-3 lg:gap-6">
           {navItems.map((item) =>
             item.dropdown ? (
               <div
@@ -110,7 +111,7 @@ const Navbar = () => {
                 onMouseLeave={handleDropdownLeave}
               >
                 <button
-                  className={`nav-link transition-colors duration-500 inline-flex items-center gap-1 ${textClass}`}
+                  className={`nav-link whitespace-nowrap uppercase text-xs lg:text-sm lg:tracking-wide transition-colors duration-500 inline-flex items-center gap-1 ${textClass}`}
                 >
                   {item.label}
                   <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === item.label ? 'rotate-180' : ''}`} />
@@ -136,7 +137,7 @@ const Navbar = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`nav-link transition-colors duration-500 ${textClass}`}
+                className={`nav-link whitespace-nowrap uppercase text-xs lg:text-sm lg:tracking-wide transition-colors duration-500 ${textClass}`}
               >
                 {item.label}
               </Link>
@@ -144,21 +145,23 @@ const Navbar = () => {
               <button
                 key={item.href}
                 onClick={() => handleClick(item.href)}
-                className={`nav-link transition-colors duration-500 ${textClass}`}
+                className={`nav-link whitespace-nowrap uppercase text-xs lg:text-sm lg:tracking-wide transition-colors duration-500 ${textClass}`}
               >
                 {item.label}
               </button>
             ),
           )}
+          <ThemeToggle className={`inline-flex h-9 w-9 items-center justify-center rounded-full border border-current transition-colors ${scrolled ? 'text-foreground' : 'text-white'}`} />
           <button
             onClick={() => handleClick('#rezerwacja')}
-            className="btn-primary text-xs py-2.5 px-6"
+            className="btn-primary whitespace-nowrap uppercase lg:tracking-wide text-xs py-2.5 px-4 lg:px-6"
           >
-            Rezerwuj
+            Wyślij zapytanie
           </button>
         </div>
 
         {/* Mobile hamburger */}
+        <ThemeToggle className={`md:hidden inline-flex h-9 w-9 items-center justify-center rounded-full border border-current transition-colors ${scrolled ? 'text-foreground' : 'text-white'}`} />
         <button
           className={`md:hidden transition-colors duration-500 ${scrolled ? 'text-foreground' : 'text-white'}`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -220,7 +223,7 @@ const Navbar = () => {
             onClick={() => handleClick('#rezerwacja')}
             className="btn-primary text-xs py-2.5 px-6 w-full mt-4"
           >
-            Rezerwuj
+            Wyślij zapytanie
           </button>
         </div>
       )}

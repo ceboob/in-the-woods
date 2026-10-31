@@ -5,6 +5,8 @@ const StickyMobileCTA = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+
     const onScroll = () => {
       // Show after scrolling past hero (approx 600px)
       setVisible(window.scrollY > 600);
@@ -14,6 +16,7 @@ const StickyMobileCTA = () => {
   }, []);
 
   const scrollToBooking = () => {
+    if (typeof document === 'undefined') return;
     document.querySelector('#rezerwacja')?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -32,7 +35,7 @@ const StickyMobileCTA = () => {
           onClick={scrollToBooking}
           className="flex-1 btn-primary !py-3 !px-3 !text-xs inline-flex items-center justify-center gap-2"
         >
-          <Calendar className="w-4 h-4" /> Rezerwuj
+          <Calendar className="w-4 h-4" /> Zapytaj o pobyt
         </button>
       </div>
     </div>

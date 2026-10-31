@@ -1,25 +1,25 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
 import { BookOpen, Flame, Bath, TreePine, ShieldCheck } from 'lucide-react';
 
 const items = [
   { icon: Flame, label: 'Kominek' },
-  { icon: Bath, label: 'Ruska bania' },
+  { icon: Bath, label: 'Balia ogrodowa z funkcją jacuzzi' },
   { icon: TreePine, label: 'Natura' },
   { icon: ShieldCheck, label: 'Bezpieczeństwo' },
 ];
 
 const GuestGuideSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="section-padding bg-secondary">
       <div
         ref={ref}
-        className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        className={`max-w-4xl mx-auto text-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="space-y-4 mb-10">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Dla gości
           </p>
           <h2 className="section-title">Informator gościa</h2>
@@ -33,10 +33,10 @@ const GuestGuideSection = () => {
           {items.map(({ icon: Icon, label }) => (
             <div
               key={label}
-              className="bg-card border border-border rounded-lg p-5 flex flex-col items-center gap-3"
+              className="bg-card border border-border rounded-2xl p-5 flex flex-col items-center gap-4"
             >
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <Icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
+              <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                <Icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
               <span className="text-sm font-medium text-foreground">{label}</span>
             </div>
@@ -51,6 +51,7 @@ const GuestGuideSection = () => {
             href="https://drive.google.com/file/d/1Kz6hA2My9p3MZuNTocCglt3-yow5LrE4/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Pobierz informator w PDF (otworzy się w nowej karcie)"
             className="inline-flex items-center gap-2 border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg text-sm font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" /> Pobierz PDF

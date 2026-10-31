@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { ChevronLeft, ChevronRight, Filter, Users, Calculator } from 'lucide-react';
 import {
@@ -9,8 +9,13 @@ import {
   isWeekendDay,
   formatDateKey,
   calculateTotalPrice,
+  getMinimumNightsForStay,
+  GARDEN_TUB_PRICE,
+  LONG_STAY_DISCOUNT,
+  MIN_NIGHTLY_RATE,
   MAX_GUESTS,
   MIN_NIGHTS,
+  WEEKEND_SURCHARGE,
   BLOCKED_DATES_LAST_UPDATED,
 } from '@/lib/pricing';
 
@@ -29,6 +34,8 @@ const MONTH_NAMES = [
   'Grudzień',
 ];
 const DAY_NAMES = ['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So', 'Nd'];
+const AIRBNB_ICAL_FEED =
+  'https://www.airbnb.com/calendar/ical/1165170256851279014.ics?s=998eabbad764218a950536df0faee9d5&locale=pl';
 
 type FilterType = 'all' | 'free' | 'weekends' | 'weekly' | 'high_season';
 
@@ -52,6 +59,50 @@ const AvailabilityCalendar = () => {
   });
   const [hoverDate, setHoverDate] = useState<Date | null>(null);
   const [guests, setGuests] = useState(4);
+  const [syncedBlockedDates, setSyncedBlockedDates] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    const parseIcalToDateKeys = (icalText: string): string[] => {
+      const dates: string[] = [];
+      const eventBlocks = icalText.split('BEGIN:VEVENT').slice(1);
+
+      for (const eventBlock of eventBlocks) {
+        const block = eventBlock.split('END:VEVENT')[0];
+        const startMatch = block.match(/DTSTART[^:]*:(\d{8})/);
+        const endMatch = block.match(/DTEND[^:]*:(\d{8})/);
+        if (!startMatch || !endMatch) continue;
+
+        const formatIcalDate = (value: string) =>
+          `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}`;
+
+        const startDate = new Date(formatIcalDate(startMatch[1]));
+        const endDate = new Date(formatIcalDate(endMatch[1]));
+        const cursor = new Date(startDate);
+
+        while (cursor < endDate) {
+          dates.push(formatDateKey(cursor));
+          cursor.setDate(cursor.getDate() + 1);
+        }
+      }
+      return dates;
+    };
+
+    const syncExternalCalendars = async () => {
+      try {
+        const mergedDates = new Set<string>();
+        const response = await fetch(AIRBNB_ICAL_FEED);
+        if (response.ok) {
+          const icalText = await response.text();
+          parseIcalToDateKeys(icalText).forEach((dateKey) => mergedDates.add(dateKey));
+        }
+        setSyncedBlockedDates(mergedDates);
+      } catch (error) {
+        console.error('Nie udało się zsynchronizować kalendarza iCal', error);
+      }
+    };
+
+    void syncExternalCalendars();
+  }, []);
 
   const isPast = (date: Date) => {
     const today = new Date();
@@ -62,7 +113,7 @@ const AvailabilityCalendar = () => {
   const shouldShowDate = useCallback(
     (date: Date): boolean => {
       if (isPast(date)) return true;
-      const blocked = isDateBlocked(date);
+      const blocked = isDateBlocked(date) || syncedBlockedDates.has(formatDateKey(date));
       switch (filter) {
         case 'free':
           return !blocked;
@@ -76,7 +127,7 @@ const AvailabilityCalendar = () => {
           return true;
       }
     },
-    [filter],
+    [filter, syncedBlockedDates],
   );
 
   const calendarDays = useMemo(() => {
@@ -97,7 +148,8 @@ const AvailabilityCalendar = () => {
   }, [currentMonth]);
 
   const handleDateClick = (date: Date) => {
-    if (isPast(date) || isDateBlocked(date)) return;
+    const dateKey = formatDateKey(date);
+    if (isPast(date) || isDateBlocked(date) || syncedBlockedDates.has(dateKey)) return;
 
     if (!selectedRange.start || selectedRange.end) {
       setSelectedRange({ start: date, end: null });
@@ -108,7 +160,7 @@ const AvailabilityCalendar = () => {
         // Check if any blocked dates in range
         const current = new Date(selectedRange.start);
         while (current <= date) {
-          if (isDateBlocked(current)) {
+          if (isDateBlocked(current) || syncedBlockedDates.has(formatDateKey(current))) {
             setSelectedRange({ start: date, end: null });
             return;
           }
@@ -138,6 +190,12 @@ const AvailabilityCalendar = () => {
   }, [selectedRange.start, selectedRange.end, guests]);
 
   const nights = priceCalc?.nightPrices.length || 0;
+  const requiredMinNights =
+    selectedRange.start && selectedRange.end
+      ? getMinimumNightsForStay(selectedRange.start, selectedRange.end)
+      : selectedRange.start
+        ? getSeasonForDate(selectedRange.start).minNights
+        : MIN_NIGHTS;
 
   const prevMonth = () =>
     setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1));
@@ -160,7 +218,7 @@ const AvailabilityCalendar = () => {
         className={`max-w-xl mx-auto transition-all duration-1000 delay-200 ease-out ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-[0.97]'}`}
       >
         <div className="text-center mb-8 space-y-3">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Dostępność i ceny
           </p>
           <h2 className="section-title">Kalendarz terminów</h2>
@@ -223,7 +281,7 @@ const AvailabilityCalendar = () => {
           <div className="grid grid-cols-7 gap-1">
             {calendarDays.map((date, i) => {
               if (!date) return <div key={`empty-${i}`} />;
-              const blocked = isDateBlocked(date);
+              const blocked = isDateBlocked(date) || syncedBlockedDates.has(formatDateKey(date));
               const past = isPast(date);
               const show = shouldShowDate(date);
               const isToday = date.toDateString() === new Date().toDateString();
@@ -280,11 +338,11 @@ const AvailabilityCalendar = () => {
               <span className="text-xs text-muted-foreground">Poza sezonem</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded bg-amber-100 border border-amber-300" />
+              <div className="w-3 h-3 rounded bg-amber-100 border border-amber-300 dark:bg-amber-900/40 dark:border-amber-700" />
               <span className="text-xs text-muted-foreground">Średni sezon</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded bg-orange-100 border border-orange-300" />
+              <div className="w-3 h-3 rounded bg-orange-100 border border-orange-300 dark:bg-orange-900/40 dark:border-orange-700" />
               <span className="text-xs text-muted-foreground">Wysoki sezon</span>
             </div>
             <div className="flex items-center gap-2">
@@ -320,9 +378,10 @@ const AvailabilityCalendar = () => {
 
             {selectedRange.end ? (
               <div className="space-y-2">
-                {nights < MIN_NIGHTS && (
+                {nights < requiredMinNights && (
                   <p className="text-xs text-destructive">
-                    Minimalny pobyt to {MIN_NIGHTS} noce. Wybierz dłuższy termin.
+                    Minimalny pobyt dla wybranego terminu to {requiredMinNights} noce. Wybierz
+                    dłuższy termin.
                   </p>
                 )}
                 <div className="bg-secondary p-4 space-y-2 text-sm">
@@ -342,8 +401,8 @@ const AvailabilityCalendar = () => {
                     <span>{guests}</span>
                   </div>
                   {priceCalc && priceCalc.discount > 0 && (
-                    <div className="flex justify-between text-xs text-green-700">
-                      <span>Zniżka za długi pobyt (−10%)</span>
+                    <div className="flex justify-between text-xs text-green-700 dark:text-green-300">
+                      <span>Zniżka za długi pobyt (−{LONG_STAY_DISCOUNT * 100}%)</span>
                       <span>−{priceCalc.discount} zł</span>
                     </div>
                   )}
@@ -356,11 +415,11 @@ const AvailabilityCalendar = () => {
                 </div>
                 <p className="text-[11px] text-muted-foreground">
                   Cena orientacyjna. Dokładną ofertę potwierdzimy po wysłaniu zapytania. Przy
-                  pobytach 5+ nocy możliwy rabat.
+                  pobytach co najmniej 7 nocy rabat dotyczy ceny noclegu, bez opłaty za balię.
                 </p>
-                {nights >= MIN_NIGHTS && (
+                {nights >= requiredMinNights && (
                   <button onClick={scrollToBooking} className="btn-primary w-full mt-2">
-                    Zarezerwuj ten termin
+                    Przejdź do zapytania o pobyt
                   </button>
                 )}
               </div>
@@ -375,8 +434,10 @@ const AvailabilityCalendar = () => {
         {/* Season info */}
         <div className="mt-4 text-center space-y-1">
           <p className="text-xs text-muted-foreground">
-            Ceny od <strong>399 zł/noc</strong> za cały dom. Weekendy (pt–so):{' '}
-            <strong>+100 zł/noc</strong>. Przy 7+ nocach: <strong>−10% zniżki</strong>.
+            Ceny od <strong>{MIN_NIGHTLY_RATE} zł/noc</strong> za cały dom. Dopłata <strong>+{WEEKEND_SURCHARGE} zł</strong>{' '}
+            dotyczy nocy rozpoczynających się w piątek lub sobotę; niedziela korzysta ze stawki
+            Nd–Czw. Przy pobycie 7+ nocy rabat {LONG_STAY_DISCOUNT * 100}% obejmuje nocleg, nie opcjonalną
+            balię ({GARDEN_TUB_PRICE} zł za pobyt).
           </p>
           <p className="text-[11px] text-muted-foreground/60">
             Ostatnia aktualizacja dostępności: {new Date(BLOCKED_DATES_LAST_UPDATED).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
