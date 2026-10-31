@@ -56,7 +56,7 @@ const seasonData = SEASONS.map((season) => ({
 const extras = [
   {
     icon: Bath,
-    title: 'Balia ogrodowa z funkcją jacuzzi',
+    title: 'Balia z hydromasażem',
     desc: `${GARDEN_TUB_PRICE} zł za cały pobyt`,
     note: 'niezależnie od liczby nocy',
   },
@@ -92,9 +92,9 @@ const PricingSection = () => {
           <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Cennik
           </p>
-          <h2 className="section-title">Ile kosztuje pobyt w lesie?</h2>
+          <h2 className="section-title">Ile to kosztuje? Mniej, niż myślicie</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
-            Przejrzysty cennik za cały dom — bez ukrytych kosztów. Cena zależy od sezonu, liczby gości i&nbsp;dnia tygodnia.
+            Cena jest za cały dom, nie za osobę. Zależy od sezonu, liczby gości i&nbsp;dnia tygodnia. Wszystkie dopłaty macie niżej, bez gwiazdek drobnym drukiem.
           </p>
         </div>
 
@@ -182,24 +182,22 @@ const PricingSection = () => {
           <div className="flex items-center gap-2 mb-2">
             <TreePine className="w-5 h-5 text-primary" strokeWidth={1.5} />
             <h3 className="font-heading text-lg font-semibold text-foreground">
-              Dom w lesie na wyłączność — cennik bez niespodzianek
+              Cennik bez niespodzianek
             </h3>
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Wynajmujemy cały <strong>dom na wyłączność</strong> — bez współdzielenia z innymi
-            gośćmi. To propozycja na <strong>weekend
-            w&nbsp;lesie</strong>, romantyczny wypad we dwoje, <strong>wieczór panieński na
-            Podlasiu</strong> lub workation w&nbsp;ciszy natury.
+            Wynajmujecie cały <strong>dom na wyłączność</strong>, bez obcych za ścianą. Pasuje na{' '}
+            <strong>weekend w&nbsp;lesie</strong>, wypad we dwoje, <strong>wieczór panieński na
+            Podlasiu</strong> albo tydzień pracy z&nbsp;lasu.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Opcjonalnie możesz zamówić <strong>balię ogrodową z funkcją jacuzzi</strong> za
-            jednorazową opłatą {GARDEN_TUB_PRICE}&nbsp;zł za pobyt. Przy pobycie na co najmniej 7 nocy
-            <strong> {LONG_STAY_DISCOUNT * 100}% zniżki obejmuje cenę noclegu</strong>; opłata za balię nie jest wliczana
-            do podstawy rabatu.
+            Dopłaty, wszystkie w jednym miejscu: <strong>balia z hydromasażem</strong>{' '}
+            {GARDEN_TUB_PRICE}&nbsp;zł za cały pobyt, pies 0&nbsp;zł. Przy pobycie od 7 nocy dostajecie
+            <strong> {LONG_STAY_DISCOUNT * 100}% zniżki na nocleg</strong> (rabat nie obejmuje balii).
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Szczegóły ewentualnej zaliczki i pozostałej płatności ustalisz z gospodarzem po
-            uzgodnieniu pobytu. Wysłanie zapytania nie potwierdza rezerwacji ani nie pobiera płatności.
+            Formularz to tylko pytanie o termin. Niczego nie rezerwuje i niczego nie pobiera. O zaliczce
+            i płatności dogadacie się z Maciejem, kiedy termin będzie już Wasz.
           </p>
         </div>
 

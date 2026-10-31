@@ -10,13 +10,13 @@ const CTASection = () => {
         ref={ref}
         className={`max-w-3xl mx-auto text-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
-        <h2 className="section-title mb-4">Zapytaj o pobyt w leśnym domu na wyłączność</h2>
+        <h2 className="section-title mb-4">Piszcie albo dzwońcie. Las czeka</h2>
         <p className="text-muted-foreground mb-4 text-lg">
-          Domek w lesie wynajem na Podlasiu — szepty Puszczy Knyszyńskiej, klimatyczny kominek,
-          balia ogrodowa z funkcją jacuzzi pod gwiazdami i absolutna prywatność. Wszystko czeka na Ciebie.
+          Domek w lesie do wynajęcia na Podlasiu: kominek, balia pod gwiazdami i cisza, od której
+          na początku aż dzwoni w uszach.
         </p>
         <p className="text-muted-foreground mb-8">
-          Wysłanie zapytania nie potwierdza rezerwacji ani nie oznacza płatności. Odpowiemy z informacją o dostępności i cenie.
+          Maciej odpisuje zwykle w kilka godzin, z ceną i wolnymi terminami. Pytanie niczego nie rezerwuje i nic nie kosztuje.
         </p>
 
         <div className="flex flex-wrap justify-center gap-6 mb-10">
@@ -30,12 +30,12 @@ const CTASection = () => {
             <ShieldCheck className="w-4 h-4 text-primary" /> Dom na wyłączność
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <TreePine className="w-4 h-4 text-primary" /> Leśny domek do wynajęcia
+            <TreePine className="w-4 h-4 text-primary" /> Las za płotem
           </div>
         </div>
 
         <p className="text-xs text-muted-foreground font-sans">
-          Jeśli masz wybrany termin, możesz podać go w formularzu zapytania.
+          Macie już daty? Wpiszcie je w formularzu, wtedy odpowiedź będzie szybsza.
         </p>
       </div>
     </section>

@@ -17,7 +17,7 @@ const HeroSection = () => {
           src={heroImgLg}
           srcSet={`${heroImgSm} 640w, ${heroImgLg} 1028w`}
           sizes="100vw"
-          alt="Drewniany dom w lesie na wynajem w Supraślu z jacuzzi ogrodowym"
+          alt="Drewniany dom z bali w lesie pod Supraślem, In The Woods"
           className="w-full h-full object-cover"
           width="1028"
           height="771"
@@ -29,10 +29,10 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-white text-center leading-tight animate-fade-up logo-glow font-accent mt-8 sm:mt-0">
-          In The Woods — dom na wyłączność w Konne koło Supraśla
+          Noclegi pod Supraślem — cały dom z bali dla Was
         </h1>
         <p className="font-sans font-semibold mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white logo-glow animate-fade-up delay-100">
-          Dom na wyłączność w Supraślu, kominek, las za oknem i zero tłumów. A jak najdzie Was ochota na chill pod gwiazdami, dorzućcie ogrodową balię z jacuzzi (opcja za dopłatą, dostępność potwierdzimy przed pobytem).
+          Drewniany dom na skraju Puszczy Knyszyńskiej, 10 minut od Supraśla. Kominek, las za oknem i zero tłumów. Sąsiedzi? Głównie sarny.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
@@ -42,11 +42,11 @@ const HeroSection = () => {
           </div>
           <div className="flex items-center gap-2 text-white/90">
             <Flame className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide font-medium">Domek z kominkiem w lesie</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">Kominek i las za oknem</span>
           </div>
           <div className="flex items-center gap-2 text-white/90">
             <Sparkles className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide font-medium">Jacuzzi pod gwiazdami</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">Balia pod gwiazdami</span>
           </div>
         </div>
 
@@ -55,13 +55,13 @@ const HeroSection = () => {
             onClick={() => scrollTo('#rezerwacja')}
             className="btn-primary bg-primary text-primary-foreground hover:bg-primary/90"
           >
-            Przejdź do formularza zapytania
+            Sprawdź wolne terminy
           </button>
           <a
             href="tel:+48722765101"
             className="btn-outline border-white text-white hover:bg-primary hover:text-primary-foreground hover:border-primary inline-flex items-center justify-center gap-2"
           >
-            <Phone className="w-4 h-4" /> Zadzwoń
+            <Phone className="w-4 h-4" /> Zadzwoń do Macieja
           </a>
         </div>
 

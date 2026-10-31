@@ -6,22 +6,22 @@ const events = [
   {
     icon: Heart,
     title: 'Wieczory panieńskie',
-    desc: 'Prywatna balia pod gwiazdami, kominek i las na wyłączność. Niezapomniany wieczór w kameralnym gronie.',
+    desc: 'Balia pod gwiazdami, prosecco, kominek i las tylko dla Was. Co się dzieje w puszczy, zostaje w puszczy.',
   },
   {
     icon: PartyPopper,
     title: 'Wieczory kawalerskie',
-    desc: 'Ognisko, grill, balia ogrodowa z funkcją jacuzzi i absolutna wolność. Impreza w sercu Puszczy Knyszyńskiej.',
+    desc: 'Ognisko, grill, balia i zero sąsiadów do uciszania. Najbliżsi sąsiedzi to dziki, a one nie składają skarg.',
   },
   {
     icon: Users,
     title: 'Urodziny i rocznice',
-    desc: 'Kameralne świętowanie w otoczeniu natury. Dom na wyłączność dla do 8 osób.',
+    desc: 'Czterdziestka, rocznica albo „po prostu, bo możemy”. Cały dom dla maksymalnie 8 osób i tort przy kominku.',
   },
   {
     icon: Briefcase,
     title: 'Integracje firmowe',
-    desc: 'Team building w lesie — kominek, balia i ognisko zamiast sali konferencyjnej.',
+    desc: 'Integracja w lesie: kominek, balia i ognisko zamiast sali konferencyjnej i kolejnego flipchartu.',
   },
 ];
 
@@ -37,8 +37,8 @@ const EventsSection = () => {
         <div className="text-center mb-12 space-y-4">
           <h2 className="section-title">Organizacja imprez i wydarzeń</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Prywatny dom w lesie z jacuzzi to idealne miejsce na wyjątkowe okazje. Cisza Puszczy
-            Knyszyńskiej, premium atmosfera i pełna prywatność.
+            Panieński, kawalerski, urodziny albo integracja bez rzutnika. Jeden dom, jedna ekipa
+            i zero kelnerów nad głową.
           </p>
         </div>
 

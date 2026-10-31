@@ -4,7 +4,7 @@ import { BookOpen, Flame, Bath, TreePine, ShieldCheck } from 'lucide-react';
 
 const items = [
   { icon: Flame, label: 'Kominek' },
-  { icon: Bath, label: 'Balia ogrodowa z funkcją jacuzzi' },
+  { icon: Bath, label: 'Balia' },
   { icon: TreePine, label: 'Natura' },
   { icon: ShieldCheck, label: 'Bezpieczeństwo' },
 ];
@@ -24,8 +24,8 @@ const GuestGuideSection = () => {
           </p>
           <h2 className="section-title">Informator gościa</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Wszystko, co musisz wiedzieć przed przyjazdem i w trakcie pobytu — zasady, instrukcje,
-            kontakt.
+            Wszystko, co musicie wiedzieć przed przyjazdem i na miejscu: zasady, instrukcje
+            i telefon do Macieja.
           </p>
         </div>
 

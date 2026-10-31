@@ -115,7 +115,7 @@ const articles = [
   },
   {
     slug: 'kraina-otwartych-okiennic',
-    title: 'Kraina Otwartych Okiennic: Magiczna podróż w czasie na Podlasiu',
+    title: 'Kraina Otwartych Okiennic: podróż w czasie po Podlasiu',
     excerpt: 'Kolorowe okiennice, drewniana architektura i tradycje trwające od pokoleń. Odkryj szlak malowanych chałup.',
     image: blogKruszyniany,
     date: '2026-04-09',
@@ -154,7 +154,7 @@ const articles = [
   },
   {
     slug: 'aktywny-wypoczynek-suprasl',
-    title: 'Supraśl Aktywnie: 5 Pomysłów na Weekend w Puszczy Knyszyńskiej',
+    title: 'Supraśl aktywnie: 5 pomysłów na weekend w Puszczy Knyszyńskiej',
     excerpt:
       'Szlaki rowerowe, spływy kajakowe, nordic walking, narciarstwo biegowe i Arboretum Kopna Góra.',
     image: blogBike,
@@ -184,7 +184,7 @@ const articles = [
   },
   {
     slug: 'puszcza-knyszynska-historie',
-    title: 'Puszcza Knyszyńska historie – 7 niezwykłych opowieści',
+    title: '7 historii z Puszczy Knyszyńskiej, o których nie uczyli w szkole',
     excerpt:
       'Galeria Leśna Powstania Styczniowego i inne miejsca związane z historią regionu.',
     image: blogPuszczaHistorie,

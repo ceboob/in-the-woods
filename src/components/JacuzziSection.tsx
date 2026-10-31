@@ -4,10 +4,10 @@ import gardenTubImg from '@/assets/gallery-bania-dom-thumb.webp';
 import { Snowflake, Leaf, Bike, Heart } from 'lucide-react';
 
 const bullets = [
-  { icon: Snowflake, text: 'Idealne zimą — gorąca balia w śnieżnym lesie' },
-  { icon: Leaf, text: 'Idealne jesienią — ciepło wśród kolorowych liści' },
-  { icon: Bike, text: 'Idealne po rowerach i kajakach' },
-  { icon: Heart, text: 'Romantyczny weekend z gorącą balią pod gwiazdami' },
+  { icon: Snowflake, text: 'Zimą: para, śnieg na czapce i gorąca woda' },
+  { icon: Leaf, text: 'Jesienią: ciepło, a wokół kolorowe liście' },
+  { icon: Bike, text: 'Po rowerze i kajaku: plecy mówią dziękuję' },
+  { icon: Heart, text: 'We dwoje: gwiazdy, bąbelki i nikt nie patrzy' },
 ];
 
 const JacuzziSection = () => {
@@ -19,7 +19,7 @@ const JacuzziSection = () => {
         <ImageReveal>
           <img
             src={gardenTubImg}
-            alt="Balia ogrodowa z funkcją jacuzzi przy domu In The Woods w Puszczy Knyszyńskiej"
+            alt="Balia z hydromasażem (jacuzzi) w ogrodzie domu In The Woods w Puszczy Knyszyńskiej"
             className="w-full h-full object-cover"
             loading="lazy"
             width="1920"
@@ -30,10 +30,10 @@ const JacuzziSection = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
             <p className="text-xs tracking-wide text-white/80 font-sans mb-4">
-              Balia ogrodowa z funkcją jacuzzi
+              Balia z hydromasażem · 250 zł za pobyt
             </p>
             <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-light text-white">
-              Balia ogrodowa z funkcją jacuzzi pod gwiazdami
+              Gorąca balia (jacuzzi) pod gwiazdami
             </h2>
           </div>
         </div>
@@ -46,14 +46,14 @@ const JacuzziSection = () => {
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <p className="section-subtitle mx-auto">
-              Naszą dumą jest balia ogrodowa z funkcją jacuzzi. Każdego wieczora ogród staje się miejscem odpoczynku na świeżym powietrzu — latem pod rozgwieżdżonym niebem Puszczy Knyszyńskiej, zimą w scenerii białego puchu i rześkiego powietrza.
+              Nasza duma: balia z hydromasażem pod sosnami. Latem leżycie w niej pod gwiazdami, zimą w parze, ze śniegiem na czapce. Kosztuje 250 zł za cały pobyt. Dajcie znać przy rezerwacji, a nagrzejemy ją na Wasz przyjazd.
             </p>
             <div className="space-y-1 text-base text-foreground/80 font-sans">
               <p>Ciepła woda. Chłodne powietrze. Gwiazdy nad Puszczą Knyszyńską.</p>
             </div>
             <p className="text-muted-foreground text-sm">
-              To moment, kiedy naprawdę się resetujesz. Balia ogrodowa z funkcją jacuzzi w leśnym ogrodzie —
-              chwila odpoczynku bez pośpiechu.
+              Po 20 minutach głowa wreszcie się wyłącza, a maile przestają mieć
+              jakiekolwiek znaczenie.
             </p>
           </div>
 

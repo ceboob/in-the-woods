@@ -39,7 +39,7 @@ const Informator = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Informator gościa – In The Woods Supraśl"
-        description="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej. Noclegi Supraśl."
+        description="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej."
         canonical="https://www.suprasl.online/informator"
         ogImage="https://www.suprasl.online/images/exterior-main.webp"
         aboutId={`${property.canonicalUrl}#vacation-rental`}
@@ -93,15 +93,14 @@ const Informator = () => {
         </h1>
         <div className="w-16 h-px bg-primary mx-auto mb-8" />
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
-          Oddajemy do Państwa dyspozycji dom, w który włożyliśmy dużo pracy i serca, aby zapewnić
-          komfortowy wypoczynek blisko natury. In The Woods to drewniany dom na wyłączność w sercu
-          Puszczy Knyszyńskiej, niedaleko Supraśla.
+          Ten dom budowaliśmy i urządzaliśmy własnymi rękami, więc cieszymy się, że tu jesteście.
+          In The Woods to drewniany dom na wyłączność na skraju Puszczy Knyszyńskiej, niedaleko
+          Supraśla.
         </p>
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-4 text-base md:text-lg">
-          Prosimy o traktowanie domu jak własnego i pozostawienie go w takim stanie, w jakim został
-          przekazany. Poniżej znajdziesz wszystkie zasady pobytu, instrukcje obsługi kominka i jacuzzi,
-          informacje o ekologicznej oczyszczalni ścieków oraz praktyczne
-          wskazówki dotyczące życia w lesie. Ten informator pomoże Ci w pełni cieszyć się pobytem.
+          Traktujcie dom jak własny, tylko troszkę lepiej. Poniżej znajdziecie zasady pobytu, instrukcję
+          kominka i balii, informacje o naszej oczyszczalni ścieków i kilka rad, jak żyć w lesie
+          tak, żeby las też był zadowolony.
         </p>
       </header>
 
@@ -252,7 +251,7 @@ const Informator = () => {
                   <Droplets className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
-                  Ekologia – oczyszczalnia ścieków
+                  Czego nie wrzucać do toalety (mamy własną oczyszczalnię)
                 </h2>
               </div>
             </AccordionTrigger>
@@ -296,7 +295,7 @@ const Informator = () => {
                   <TreePine className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
-                  Dom w lesie – natura
+                  Kogo możecie spotkać w ogrodzie i w lesie
                 </h2>
               </div>
             </AccordionTrigger>
@@ -367,13 +366,13 @@ const Informator = () => {
                   <Bath className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
-                  Regulamin jacuzzi
+                  Regulamin balii (jacuzzi)
                 </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Balia ogrodowa z funkcją jacuzzi jest dostępna po wcześniejszej rezerwacji u gospodarza.
+                Balia z hydromasażem (jacuzzi) jest dostępna po wcześniejszej rezerwacji u gospodarza.
               </p>
               <p className="text-muted-foreground font-medium">Zasady korzystania:</p>
               <ul className="space-y-2 text-muted-foreground">
@@ -409,7 +408,7 @@ const Informator = () => {
               <div className="bg-secondary/60 rounded-lg p-4 space-y-2">
                 <p className="text-sm font-medium text-foreground">Ważne:</p>
                 <p className="text-sm text-muted-foreground">
-                  Przed użyciem zapoznaj się z instrukcją obsługi funkcji jacuzzi.
+                  Przed pierwszą kąpielą zapoznajcie się z instrukcją hydromasażu.
                 </p>
               </div>
 
@@ -509,8 +508,8 @@ const Informator = () => {
         <div className="mt-12 text-center space-y-4">
           <div className="w-16 h-px bg-primary mx-auto" />
           <p className="text-muted-foreground text-sm leading-relaxed max-w-lg mx-auto">
-            Dziękujemy za zapoznanie się z informatorem. Życzymy spokojnego i regenerującego pobytu
-            w In The Woods.
+            Dzięki, że doczytaliście do końca. Udanego pobytu! A jeśli coś nie działa, dzwońcie do
+            Macieja: 722 765 101.
           </p>
           <p className="font-heading text-lg text-foreground">— Maciej, gospodarz</p>
         </div>

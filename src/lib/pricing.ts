@@ -26,7 +26,7 @@ export const SEASONS: SeasonConfig[] = [
   },
   {
     name: 'mid',
-    label: 'Sezon średni',
+    label: 'Sezon średni — wiosna',
     startMonth: 4,
     startDay: 1,
     endMonth: 5,
@@ -48,7 +48,7 @@ export const SEASONS: SeasonConfig[] = [
   },
   {
     name: 'mid2',
-    label: 'Sezon średni',
+    label: 'Sezon średni — jesień',
     startMonth: 9,
     startDay: 1,
     endMonth: 10,

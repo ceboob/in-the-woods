@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const PuszczaKnyszynskaHistorie = () => (
   <BlogArticleLayout
-    title="Puszcza Knyszyńska historie – 7 niezwykłych opowieści"
-    metaTitle="Puszcza Knyszyńska historie – 7 niezwykłych opowieści"
+    title="7 historii z Puszczy Knyszyńskiej, o których nie uczyli w szkole"
+    metaTitle="7 historii z Puszczy Knyszyńskiej, o których nie uczyli w szkole"
     metaDescription="Puszcza Knyszyńska historie: 7 opowieści o regionie, miejscach pamięci i przyrodzie. Przewodnik z inspiracjami na wycieczkę."
     slug="puszcza-knyszynska-historie"
     publishDate="2026-03-28"

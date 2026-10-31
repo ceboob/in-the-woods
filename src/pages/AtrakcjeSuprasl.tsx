@@ -7,40 +7,39 @@ const faqs = [
   {
     question: 'Co warto zobaczyć w Supraślu i na Podlasiu w jeden dzień?',
     answer:
-      'W jeden dzień warto połączyć Monaster Zwiastowania NMP, Muzeum Ikon, spacer ulicą 3 Maja i odpoczynek nad rzeką Supraśl. Jeśli zostanie Wam czas, zajrzyjcie do Muzeum Drukarstwa albo na bulwary. Godziny zwiedzania i dostępność ekspozycji sprawdźcie w sekcji praktycznej przed wyjazdem.',
+      'Rano monaster i Muzeum Ikon, potem spacer ulicą 3 Maja obok Domów Tkaczy, obiad w miasteczku i leniwe popołudnie nad rzeką Supraśl. Jeśli zostanie Wam siły, dorzućcie Muzeum Drukarstwa albo bulwary.',
   },
   {
     question: 'Czy Supraśl jest uzdrowiskiem?',
     answer:
-      'Tak, Supraśl ma status uzdrowiska. Kameralne centrum, zabytki i bliskość Puszczy Knyszyńskiej tworzą dobre warunki do spokojnego zwiedzania i spacerów. Warto zostawić sobie czas na bulwary nad rzeką, zamiast próbować zmieścić wszystkie miejsca w jednej krótkiej wizycie. Miasteczko odkrywa się dobrze pieszo.',
+      'Tak, Supraśl ma oficjalny status uzdrowiska. Czuć to po powietrzu i tempie: miasteczko jest małe, zielone i najlepiej zwiedza się je pieszo, bez spinania się, że trzeba zobaczyć wszystko.',
   },
   {
     question: 'Jak daleko z Supraśla do Kruszynian?',
     answer:
-      'Kruszyniany są dalszym celem wycieczki z Supraśla i najlepiej zaplanować na nie osobną część dnia. Na miejscu czekają meczet, mizar i kuchnia tatarska. Dokładny dystans oraz czas przejazdu zależą od wybranej trasy, dlatego przed wyjazdem sprawdźcie aktualną nawigację. Warto uwzględnić przerwę na zwiedzanie.',
+      'To dalsza wycieczka, na pół dnia albo cały dzień. W Kruszynianach czeka drewniany meczet, mizar i tatarska kuchnia, dla której warto przyjechać głodnym.',
   },
   {
     question: 'Czy w Puszczy Knyszyńskiej można zbierać grzyby?',
     answer:
-      'Grzybobranie jest możliwe w miejscach, w których zezwalają na to aktualne przepisy i zasady ochrony przyrody. Puszcza obejmuje także obszary chronione, gdzie mogą obowiązywać ograniczenia. Przed wyjściem sprawdźcie status konkretnego terenu i zbierajcie grzyby wyłącznie tam, gdzie jest to dozwolone.',
+      'Tak, poza rezerwatami i miejscami oznaczonymi zakazem. Jesienią to tutaj niemal sport narodowy. Zbierajcie tylko te gatunki, które znacie na sto procent.',
   },
   {
     question: 'Gdzie zjeść kuchnię podlaską i tatarską?',
     answer:
-      'Kuchni podlaskiej szukajcie w restauracjach i lokalach w Supraślu, a tatarskich specjałów w Kruszynianach. Menu oraz godziny działania zmieniają się w zależności od miejsca i sezonu. Gospodarz In The Woods może podpowiedzieć, które lokale warto sprawdzić podczas Waszego pobytu. Zostawcie na posiłek chwilę bez pośpiechu.',
+      'Kartacze, babkę i kiszkę ziemniaczaną zjecie w Supraślu, a tatarskie pierekaczewniki i pierogi w Kruszynianach. Maciej chętnie powie, gdzie sam chodzi na obiad.',
   },
 ];
 
 const attractions = [
   'Monaster Zwiastowania NMP',
   'Muzeum Ikon',
-  'Białostocki Ośrodek Drukarstwa — Muzeum Drukarstwa i Papieru',
+  'Muzeum Drukarstwa i Papieru',
   'Pałac Buchholtzów',
   'Domy Tkaczy',
   'Bulwary nad rzeką Supraśl i plaża miejska',
   'Teatr Wierszalin',
-  'Pomnik rodzin supraskich',
-  'Cmentarz prawosławny i zabytki wielokulturowe',
+  'Cmentarz prawosławny',
 ];
 
 const attractionListSchema = {
@@ -57,7 +56,7 @@ const attractionListSchema = {
 const AtrakcjeSuprasl = () => (
   <SEOPageLayout
     title="Atrakcje Supraśla i okolic – przewodnik | In The Woods"
-    description="Atrakcje Supraśla, zabytki i Puszcza Knyszyńska. Praktyczny przewodnik z odległościami z domku w lesie. Zaplanuj zwiedzanie."
+    description="Monaster, Muzeum Ikon, Wierszalin, Krzemienne Góry, Kruszyniany. Co warto zobaczyć w Supraślu i okolicy, od ludzi, którzy tu mieszkają."
     breadcrumbName="Atrakcje Supraśla"
     ogImage="https://www.suprasl.online/images/terrace-porch.jpg"
     jsonLd={[
@@ -65,17 +64,18 @@ const AtrakcjeSuprasl = () => (
       attractionListSchema,
     ]}
     showRelatedPages={false}
-    ctaTitle="Planujecie pobyt? Zapytajcie o termin w domku w lesie"
-    ctaDescription="Gospodarz podpowie, jak połączyć zwiedzanie Supraśla ze spokojnym pobytem w miejscowości Konne."
+    ctaTitle="Planujecie pobyt? Sprawdźcie wolne terminy"
+    ctaDescription="Maciej podpowie, jak połączyć zwiedzanie Supraśla z leniuchowaniem w lesie."
     ctaFormLabel="Zapytaj o pobyt"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Atrakcje Supraśla — przewodnik po miasteczku i Puszczy Knyszyńskiej
+        Atrakcje Supraśla: co robić, kiedy wyjdziecie z balii
       </h1>
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Atrakcje Supraśla łączą zabytki, uzdrowiskowy spokój i bliskość Puszczy Knyszyńskiej.
-        Z leśnego domu dojedziecie do centrum Supraśla w około 10 minut.
+        Supraśl to małe uzdrowisko z monasterem, ikonami, rzeką i teatrem, o którym mówi się w całej
+        Polsce, a dookoła zaczyna się Puszcza Knyszyńska. Z naszego domu do centrum jedziecie około
+        10 minut. Poniżej miejsca, które sami polecamy znajomym.
       </p>
       <figure className="overflow-hidden rounded-xl">
         <img
@@ -88,134 +88,120 @@ const AtrakcjeSuprasl = () => (
         />
       </figure>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w Supraślu</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w Supraślu (około 10 minut autem od domu)</h2>
       <ul className="space-y-5 text-muted-foreground">
         <li>
-          <strong>Monaster w Supraślu, Zwiastowania NMP — [X km | Y min autem/spacerem z Konne].</strong>{' '}
-          Zespół klasztorny jest ważnym punktem historii i architektury miasteczka. Warto tu zajrzeć,
-          jeśli interesuje Was duchowe dziedzictwo Podlasia.
+          <strong>Monaster Zwiastowania NMP.</strong> Prawosławny klasztor z przełomu XV i XVI wieku,
+          serce i najbardziej rozpoznawalny widok Supraśla. Nawet jeśli nie lubicie zabytków, ten
+          robi wrażenie.
         </li>
         <li>
-          <strong>Muzeum Ikon Supraśl — [X km | Y min autem/spacerem z Konne].</strong> Ekspozycja
-          pokazuje sztukę ikon w zabudowaniach poklasztornych. To propozycja na spokojne zwiedzanie
-          także wtedy, gdy chcecie odpocząć od leśnych tras.
+          <strong>Muzeum Ikon.</strong> Ikony pokazane tak, że nawet zatwardziały ateista stoi
+          z otwartą buzią. Dobre na deszczowy dzień i na odpoczynek od leśnych tras.
         </li>
         <li>
-          <strong>Białostocki Ośrodek Drukarstwa — [X km | Y min autem/spacerem z Konne].</strong>{' '}
-          Muzeum Drukarstwa i Papieru opowiada o dawnym rzemiośle i pracy z papierem. To ciekawy
-          przystanek dla rodzin i osób, które lubią miejsca z lokalną historią, a także jedna z
-          atrakcji dla dzieci w Supraślu.
+          <strong>Muzeum Drukarstwa i Papieru.</strong> Historia drukarstwa i papiernictwa, czyli
+          rzemiosła, z którego Supraśl słynął przez wieki. Ciekawy przystanek dla rodzin i dla
+          każdego, kto lubi lokalną historię.
         </li>
         <li>
-          <strong>Pałac Buchholtzów — [X km | Y min autem/spacerem z Konne].</strong> Secesyjna
-          rezydencja przypomina o przemysłowej przeszłości Supraśla. Zobaczcie ją podczas spaceru po
-          centrum i ulicy 3 Maja.
+          <strong>Pałac Buchholtzów.</strong> Rezydencja fabrykantów, którzy zrobili z Supraśla
+          miasto włókiennicze. Zobaczycie go przy okazji spaceru po centrum i ulicy 3 Maja.
         </li>
         <li>
-          <strong>Domy Tkaczy — [X km | Y min autem/spacerem z Konne].</strong> Drewniana zabudowa
-          opowiada o tkackich tradycjach miasteczka. To krótki, niewymagający przystanek dla
-          zwiedzających, którzy chcą poczuć dawny rytm Supraśla.
+          <strong>Domy Tkaczy.</strong> Drewniane domy dla robotników fabryki z XIX wieku, przy ulicy
+          3 Maja. Każdy wygląda jak z pocztówki, więc przygotujcie telefon na zdjęcia.
         </li>
         <li>
-          <strong>Bulwary nad rzeką Supraśl i plaża miejska — [X km | Y min autem/spacerem z Konne].</strong>{' '}
-          Nad rzeką można zwolnić po spacerze po centrum i odpocząć wśród zieleni. Plaża miejska
-          sprawdzi się w ciepły dzień, szczególnie podczas rodzinnego pobytu.
+          <strong>Bulwary nad rzeką Supraśl i plaża miejska.</strong> Spacer nad wodą, lody w ręku,
+          a latem plaża. Najprostszy plan na leniwe popołudnie, także z dziećmi.
         </li>
         <li>
-          <strong>Teatr Wierszalin — [X km | Y min autem/spacerem z Konne].</strong> Teatr słynie z
-          własnego języka scenicznego i zakorzenienia w regionie. Sprawdźcie repertuar, jeśli lubicie
-          kameralne wydarzenia kulturalne.
+          <strong>Teatr Wierszalin.</strong> Teatr z Supraśla, o którym mówi się w całej Polsce.
+          Spektakle, po których gada się jeszcze w samochodzie. Bilety znikają szybko, więc
+          zajrzyjcie do repertuaru przed przyjazdem.
         </li>
         <li>
-          <strong>Pomnik rodzin supraskich — [X km | Y min autem/spacerem z Konne].</strong> Pomnik
-          upamiętnia mieszkańców i rodziny związane z historią miasteczka. To krótki przystanek dla
-          osób chcących lepiej poznać lokalne dziedzictwo.
-        </li>
-        <li>
-          <strong>Cmentarz prawosławny i zabytki wielokulturowe — [X km | Y min autem/spacerem z Konne].</strong>{' '}
-          To ciche miejsce pamięci, które przypomina o wielowyznaniowej historii Supraśla. Wybierzcie
-          się tam z szacunkiem dla charakteru nekropolii.
+          <strong>Cmentarz prawosławny.</strong> Ciche miejsce, które pokazuje wielowyznaniową
+          historię miasteczka. Idźcie tam spokojnie i z szacunkiem.
         </li>
       </ul>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Wycieczki z domku — atrakcje okolicy
+        Wycieczki z domu: atrakcje okolicy
       </h2>
       <ul className="space-y-4 text-muted-foreground">
         <li>
-          <strong>Arboretum Kopna Góra — [X km | Y min autem z Konne].</strong> Leśne kolekcje roślin
-          i ścieżki tworzą cel spokojnej wycieczki na kilka godzin. To dobre miejsce dla osób, które
-          chcą poznać przyrodnicze atrakcje Podlasia.
+          <strong>Arboretum w Kopnej Górze.</strong> Kilka godzin łażenia między drzewami z całego
+          świata. Dzieci zbierają szyszki, dorośli udają, że nie. Jedna z najładniejszych
+          przyrodniczych atrakcji Podlasia.
         </li>
         <li>
-          <strong>Kruszyniany — [X km | Y min autem z Konne].</strong> Zobaczycie tu meczet i mizar,
-          a regionalną wyprawę można połączyć z kuchnią tatarską. To ważny punkt na mapie
-          wielokulturowych zabytków Podlasia.
+          <strong>Kruszyniany.</strong> Tatarska wieś z drewnianym meczetem i mizarem. Wycieczka na
+          pół dnia albo cały dzień, najlepiej połączona z obiadem w tatarskiej kuchni.
         </li>
         <li>
-          <strong>Rezerwat Krzemienne Góry — [X km | Y min autem z Konne].</strong> To przyrodniczy
-          zakątek w pobliżu domu, dobry kierunek dla osób szukających leśnego spaceru.
+          <strong>Rezerwat Krzemienne Góry.</strong> Przyrodniczy zakątek niedaleko domu, dobry na
+          leśny spacer bez długiego dojazdu.
         </li>
         <li>
-          <strong>Szlaki Puszczy Knyszyńskiej — [X km | Y min autem/spacerem od domu].</strong>{' '}
-          Wybierzcie trasę na krótki spacer lub dłuższy dzień wśród drzew; to część atrakcji Podlasia
-          blisko domu.
+          <strong>Szlaki Puszczy Knyszyńskiej.</strong> Zaczynają się właściwie za płotem. Krótki
+          spacer przed śniadaniem albo cały dzień w lesie z kanapkami w plecaku.
         </li>
         <li>
-          <strong>Białystok — [X km | Y min autem z Konne].</strong> Pałac Branickich i Stare Miasto
-          pozwalają urozmaicić pobyt miejskim spacerem i architekturą.
+          <strong>Białystok (30–40 minut autem).</strong> Pałac Branickich, nazywany Wersalem Północy,
+          i spacer po centrum, jeśli po dwóch dniach w lesie zatęsknicie za miastem.
         </li>
       </ul>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Aktywności sezonowe</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Co robić o różnych porach roku</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Latem można zaplanować spływ kajakowy rzeką Supraśl z lokalnym organizatorem. Jesienne
-        grzybobranie w Puszczy Knyszyńskiej zaplanujcie na terenach, gdzie zezwalają na to aktualne
-        zasady. Zimą sprawdźcie warunki na trasach spacerowych i narciarskich przed wyjściem.
+        Latem kajaki na rzece Supraśl, która płynie spokojnie, więc dacie radę nawet bez
+        doświadczenia. Jesienią grzybobranie poza rezerwatami. Zimą spacery po śniegu i narty
+        biegowe, a potem szybki powrót do kominka.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Gdzie zjeść — kuchnia podlaska i tatarska
+        Gdzie zjeść: kuchnia podlaska i tatarska
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        W Supraślu znajdziecie lokale z kuchnią regionalną, a w Kruszynianach warto poszukać tatarskich
-        specjałów. Zajrzyjcie do naszego{' '}
+        W Supraślu zjecie kartacze, babkę ziemniaczaną i sękacz, a w Kruszynianach tatarskie
+        specjały. Lokale opisaliśmy w naszym{' '}
         <Link to="/blog/przewodnik-kulinarny-suprasl" className="text-primary underline hover:text-primary/80">
-          przewodnika po restauracjach Supraśla
+          przewodniku kulinarnym po Supraślu
         </Link>
-        ; gospodarz chętnie podpowie też miejsca warte sprawdzenia.
+        , a Maciej chętnie powie, gdzie sam chodzi na obiad.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Baza wypadowa: domek w lesie koło Supraśla
+        Baza wypadowa: dom w lesie koło Supraśla
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        In The Woods to drewniany dom do 8 osób w miejscowości Konne, wynajmowany na wyłączność. Zobaczcie{' '}
+        In The Woods to drewniany dom dla maksymalnie 8 osób w Konnem, wynajmowany w całości. Gotowy
+        plan znajdziecie na stronie o{' '}
         <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
-          pomysły na weekend w Supraślu
-        </Link>{' '}
-        i{' '}
-        <Link to="/puszcza-knyszynska-nocleg" className="text-primary underline hover:text-primary/80">
-          nocleg w Puszczy Knyszyńskiej
+          weekendzie w Supraślu
         </Link>
-        . Szczegóły oferty znajdziecie na stronie{' '}
+        , trasy na stronie o{' '}
+        <Link to="/puszcza-knyszynska-nocleg" className="text-primary underline hover:text-primary/80">
+          noclegu w Puszczy Knyszyńskiej
+        </Link>
+        , a ceny i szczegóły na stronie o{' '}
         <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
-          noclegi w Supraślu
+          noclegach w Supraślu
         </Link>
         .
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Praktycznie przed zwiedzaniem</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Zanim ruszycie: godziny, bilety, zasady</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Odległości oznaczono placeholderami do uzupełnienia po weryfikacji w Google Maps przez
-        gospodarza. Przed wizytą sprawdźcie godziny otwarcia, repertuar, dostępność plaży i zasady
-        poruszania się po terenach chronionych. Jeśli planujecie, co warto zobaczyć na Podlasiu,
-        dopasujcie trasę do godzin otwarcia i czasu, jaki macie na zwiedzanie. Aktualne warunki
-        zbierania grzybów ustalcie dla konkretnego obszaru.
+        Muzea i teatr mają swoje godziny i repertuar, które zmieniają się w ciągu roku, więc zajrzyjcie
+        na ich strony przed wyjazdem. W rezerwatach chodzicie wyznaczonymi ścieżkami, a grzyby
+        zbieracie poza nimi.
       </p>
 
       <section aria-labelledby="attractions-faq">
-        <h2 id="attractions-faq" className="section-title !text-2xl md:!text-3xl">FAQ</h2>
+        <h2 id="attractions-faq" className="section-title !text-2xl md:!text-3xl">Najczęstsze pytania</h2>
         <dl className="space-y-5">
           {faqs.map(({ question, answer }) => (
             <div key={question}>

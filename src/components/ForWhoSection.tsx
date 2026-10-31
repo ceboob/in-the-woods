@@ -5,32 +5,32 @@ const audiences = [
   {
     icon: Heart,
     title: 'Pary',
-    desc: 'Zaplanuj romantyczny weekend w Supraślu: rozpal kominek, odpocznij w gorącej balii pod gwiazdami i wypij poranną kawę na tarasie. To kameralne noclegi w Supraślu na rocznicę, zaręczyny lub po prostu wspólny czas.',
+    desc: 'We dwoje, cały dom i zero sąsiadów za ścianą. Kominek, balia pod gwiazdami, kawa na tarasie i nikt nie zapuka z pytaniem, czy wszystko w porządku. Dobre miejsce na rocznicę, zaręczyny albo po prostu na „wreszcie mamy czas”.',
   },
   {
     icon: Users,
     title: 'Rodziny z dziećmi',
-    desc: 'Dom w lesie na wynajem pomieści do 8 osób. Rodzinna przestrzeń, ogród i bliskość leśnych ścieżek ułatwiają wspólny wypoczynek. Zobacz wyposażenie i zaplanuj pobyt dopasowany do potrzeb Twojej rodziny.',
+    desc: 'Do 8 osób, czyli dwie rodziny z dzieciakami albo trzy pokolenia naraz. Ogrodzony ogród z placem zabaw, ognisko i las za płotem. Dzieci zapominają o tablecie (sprawdzone, działa przez jakieś 40 minut).',
   },
   {
     icon: Users,
     title: 'Przyjaciele',
-    desc: 'Dom na wyłączność na Podlasiu to swoboda wspólnego wyjazdu bez obcych gości. Grillujcie w altanie, odpoczywajcie w balii ogrodowej i spędzajcie wieczory przy ognisku. Supraśl i okoliczne atrakcje są w zasięgu krótkiej wycieczki.',
+    desc: 'Grill w altanie, balia, ognisko i nikt obcy przy stole. Możecie gadać głupoty do rana. Puszcza nie takie rzeczy słyszała i nikomu nie powie.',
   },
   {
     icon: Dog,
     title: 'Z psem',
-    desc: 'Przyjedźcie razem — pobyt psa jest bezpłatny. Leśne otoczenie zachęca do spacerów, a ogród daje przestrzeń do odpoczynku na świeżym powietrzu. Przed wyjazdem zapoznaj się z zasadami pobytu ze zwierzętami.',
+    desc: 'Pies jedzie gratis. Bez dopłat i bez kręcenia nosem. Ogród jest ogrodzony, a las zaczyna się zaraz za nim. Wasz pupil będzie tu szczęśliwszy niż Wy, i to jest w porządku.',
   },
   {
     icon: Laptop,
-    title: 'Praca i wypoczynek',
-    desc: 'Zmień otoczenie i połącz spokojny pobyt w lesie z pracą zdalną. W domu jest Wi-Fi, a po zamknięciu laptopa możesz odpocząć na tarasie lub wybrać się na spacer po Puszczy Knyszyńskiej.',
+    title: 'Praca z lasu',
+    desc: 'Starlink do 200 Mb/s w środku lasu. Spotkanie na Teamsie o 10:00, balia o 16:00. Szef nie musi wiedzieć, w jakiej kolejności.',
   },
   {
     icon: Snail,
     title: 'Spokojny wypoczynek',
-    desc: 'Dom w puszczy czy chata w lesie na wynajem? Wybierz prywatną przestrzeń, śpiew ptaków i leśne ścieżki tuż obok. Odpoczywaj we własnym rytmie — bez pośpiechu i miejskiego zgiełku.',
+    desc: 'Cisza, ptaki i leśne ścieżki zaraz za furtką. Bez planu, bez pośpiechu i bez miejskiego hałasu. Najtrudniejsza decyzja dnia: taras czy kanapa przy kominku?',
   },
 ];
 
@@ -47,11 +47,10 @@ const ForWhoSection = () => {
           <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Dla kogo
           </p>
-          <h2 className="section-title">Dla kogo jest dom w lesie? Twój pobyt, Twoje zasady</h2>
+          <h2 className="section-title">Dla kogo jest ten dom? Dla Was. Serio, dla prawie każdego</h2>
           <p className="section-subtitle mx-auto">
-            Dom na wyłączność na Podlasiu, na skraju Puszczy Knyszyńskiej — bez dzielenia przestrzeni
-            z innymi gośćmi. Wybierz nocleg w Supraślu, który łączy bliskość natury z wygodnym
-            dojazdem do miasta, i wypoczywaj po swojemu.
+            Dom na wyłączność na Podlasiu, na skraju Puszczy Knyszyńskiej. Bez dzielenia kuchni, łazienki
+            i ciszy z obcymi. Do Supraśla macie 10 minut, do Białegostoku 30–40.
           </p>
         </div>
 
