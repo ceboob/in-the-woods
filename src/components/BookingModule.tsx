@@ -13,7 +13,7 @@ import {
   CreditCard,
   Loader2,
 } from 'lucide-react';
-import { supabase } from '@/integrations/supabase/client';
+import { invokeEdgeFunction } from '@/lib/edgeFunction';
 import { useToast } from '@/hooks/use-toast';
 
 interface BookingData {
@@ -86,7 +86,7 @@ const BookingModule = () => {
     } else if (step === 'summary') {
       setSending(true);
       try {
-        const { data: result, error } = await supabase.functions.invoke<{ error?: string }>(
+        const { data: result, error } = await invokeEdgeFunction<{ error?: string }>(
           'rate-limit-submit',
           {
             body: {

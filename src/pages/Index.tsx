@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import SEOHead from '@/components/SEOHead';
 import { amenityFaqs } from '@/data/amenityFaq';
 import { property } from '@/data/property';
@@ -35,8 +35,25 @@ const SectionFallback = () => (
   </div>
 );
 
+// Mount the exit-intent popup only after first interaction or a delay
+const useDeferredMount = (delayMs: number) => {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    const events = ['scroll', 'pointerdown', 'keydown', 'touchstart', 'mousemove'];
+    const go = () => setReady(true);
+    const timer = window.setTimeout(go, delayMs);
+    events.forEach((e) => window.addEventListener(e, go, { once: true, passive: true }));
+    return () => {
+      window.clearTimeout(timer);
+      events.forEach((e) => window.removeEventListener(e, go));
+    };
+  }, [delayMs]);
+  return ready;
+};
+
 // TODO: zatwierdź treść
 const Index = () => {
+  const showExitPopup = useDeferredMount(8000);
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -104,7 +121,7 @@ const Index = () => {
 
       <Suspense fallback={null}>
         <Footer />
-        <ExitIntentPopup />
+        {showExitPopup && <ExitIntentPopup />}
         <StickyMobileCTA />
       </Suspense>
     </div>

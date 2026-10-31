@@ -1,12 +1,13 @@
-import { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { Toaster as Sonner } from '@/components/ui/sonner';
-import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import CookieConsent from './components/CookieConsent';
 import ClientRoutes from './routes/ClientRoutes';
+
+const Sonner = lazy(() => import('@/components/ui/sonner').then((m) => ({ default: m.Toaster })));
+const Toaster = lazy(() => import('@/components/ui/toaster').then((m) => ({ default: m.Toaster })));
 
 const queryClient = new QueryClient();
 
@@ -20,8 +21,10 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <HelmetProvider>
       <TooltipProvider>
-        <Toaster />
-        <Sonner />
+        <Suspense fallback={null}>
+          <Toaster />
+          <Sonner />
+        </Suspense>
         <BrowserRouter>
           <Suspense fallback={<PageLoader />}>
             <ClientRoutes />
