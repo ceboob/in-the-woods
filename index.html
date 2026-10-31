@@ -8,15 +8,46 @@
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W5GVLN7L');</script>
+    <script>
+    (function(w,d,l,i){
+      // dataLayer queues events until gtm.js loads
+      w[l]=w[l]||[];
+      var loaded=false;
+      function load(){
+        if(loaded)return; loaded=true;
+        ['scroll','pointerdown','keydown','touchstart'].forEach(function(e){w.removeEventListener(e,load)});
+        w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+        var j=d.createElement('script');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i;
+        d.head.appendChild(j);
+      }
+      function idle(){
+        if('requestIdleCallback' in w){w.requestIdleCallback(load,{timeout:4000});}
+        else{setTimeout(load,3000);}
+      }
+      ['scroll','pointerdown','keydown','touchstart'].forEach(function(e){
+        w.addEventListener(e,load,{once:true,passive:true});
+      });
+      if(d.readyState==='complete'){idle();}
+      else{w.addEventListener('load',function(){setTimeout(idle,1500)});}
+    })(window,document,'dataLayer','GTM-W5GVLN7L');
+    </script>
     <!-- End Google Tag Manager -->
 
-    <link rel="dns-prefetch" href="https://xqtffcnrepvmzizfsprv.supabase.co" />
-    <link rel="preconnect" href="https://xqtffcnrepvmzizfsprv.supabase.co" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600;700&family=Monoton&family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600;700&family=Monoton&family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      />
+    </noscript>
     <title>Noclegi Supraśl – In The Woods | dom w lesie z jacuzzi</title>
     <!-- title set dynamically by react-helmet-async per route -->
     <!-- meta description set dynamically by react-helmet-async per route -->
