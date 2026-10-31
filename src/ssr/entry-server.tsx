@@ -5,7 +5,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { Route, Routes } from 'react-router-dom';
 import { StaticRouter } from 'react-router-dom/server';
 import type { ReactElement } from 'react';
-import type { FilledContext } from 'react-helmet-async';
+import type { HelmetServerState } from 'react-helmet-async';
 import { Toaster as Sonner } from '@/components/ui/sonner';
 import CookieConsent from '@/components/CookieConsent';
 import { Toaster } from '@/components/ui/toaster';
@@ -13,7 +13,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { prerenderRoutes, routeDefinitions } from '@/routes/routeDefinitions';
 
 type HelmetContext = {
-  helmet?: FilledContext['helmet'];
+  helmet?: HelmetServerState;
 };
 
 export { prerenderRoutes };
