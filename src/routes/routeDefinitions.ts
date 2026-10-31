@@ -21,16 +21,15 @@ export const routeDefinitions: RouteDefinition[] = [
   { path: '/domek-suprasl', load: () => import('@/pages/DomekSuprasl.tsx') },
   { path: '/domek-z-jacuzzi-podlasie', load: () => import('@/pages/DomekZJacuzziPodlasie.tsx') },
   { path: '/wieczor-panienski-suprasl', load: () => import('@/pages/WieczorPanienskiSuprasl.tsx') },
+  { path: '/wieczor-kawalerski-suprasl', load: () => import('@/pages/WieczorKawalerskiSuprasl.tsx') },
+  { path: '/sylwester-podlasie', load: () => import('@/pages/SylwesterPodlasie.tsx') },
+  { path: '/domek-z-psem-podlasie', load: () => import('@/pages/DomekZPsemPodlasie.tsx') },
   { path: '/blog', load: () => import('@/pages/Blog.tsx') },
   { path: '/blog/suprasl-zima', load: () => import('@/pages/blog/SupraslZima.tsx') },
   { path: '/blog/supraski-system-wodny', load: () => import('@/pages/blog/SupraskiSystemWodny.tsx') },
   {
     path: '/blog/szlak-powstania-styczniowego-suprasl',
     load: () => import('@/pages/blog/SzlakPowstaniaStyczniowego.tsx'),
-  },
-  {
-    path: '/blog/suprasl-atrakcje-national-geographic',
-    load: () => import('@/pages/blog/SupraslAtrakcje.tsx'),
   },
   {
     path: '/blog/szlaki-piesze-rowerowe-suprasl',
@@ -50,13 +49,6 @@ export const routeDefinitions: RouteDefinition[] = [
   },
   { path: '/blog/kajaki-suprasl', load: () => import('@/pages/blog/KajakiSuprasl.tsx') },
   { path: '/blog/rykowisko-jeleni-puszcza-knyszynska', load: () => import('@/pages/blog/RykowiskoJeleni.tsx') },
-  { path: '/blog/restauracje-suprasl', load: () => import('@/pages/blog/RestauracjeSuprasl.tsx') },
-  { path: '/blog/co-robic-suprasl', load: () => import('@/pages/blog/CoRobicSuprasl.tsx') },
-  { path: '/blog/weekend-suprasl-plan', load: () => import('@/pages/blog/WeekendSupraslPlan.tsx') },
-  {
-    path: '/blog/najlepsze-miejsca-puszcza-knyszynska',
-    load: () => import('@/pages/blog/NajlepszeMiejscaPuszcza.tsx'),
-  },
   {
     path: '/blog/puszcza-knyszynska-historie',
     load: () => import('@/pages/blog/PuszczaKnyszynskaHistorie.tsx'),
@@ -71,8 +63,6 @@ export const routeDefinitions: RouteDefinition[] = [
     path: '/blog/przewodnik-kulinarny-suprasl',
     load: () => import('@/pages/blog/PrzewodnikKulinarny.tsx'),
   },
-  { path: '/blog/szlaki-puszcza-knyszynska', load: () => import('@/pages/blog/SzlakiPuszczaKnyszynska.tsx') },
-  { path: '/blog/suprasl-na-weekend', load: () => import('@/pages/blog/SupraslNaWeekend.tsx') },
   { path: '/blog/suprasl-z-dziecmi', load: () => import('@/pages/blog/SupraslZDziecmi.tsx') },
   {
     path: '/blog/romantyczny-weekend-podlasie',

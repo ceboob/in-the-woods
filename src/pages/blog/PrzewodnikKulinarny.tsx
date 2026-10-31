@@ -17,7 +17,6 @@ const PrzewodnikKulinarny = () => (
       { question: 'Gdzie sprawdzić opis pierekaczewnika?', answer: 'Oficjalny opis produktu znajduje się na stronie Ministerstwa Rolnictwa wskazanej w artykule.' },
     ]}
     relatedArticles={[
-      { title: 'Restauracje Supraśl – gdzie zjeść', slug: 'restauracje-suprasl' },
       { title: 'Kruszyniany – tatarska wieś Podlasia', slug: 'kruszyniany-tatarska-wies' },
       { title: 'Aktywny wypoczynek w Supraślu', slug: 'aktywny-wypoczynek-suprasl' },
       { title: 'Uzdrowisko Supraśl – SPA i wellness', slug: 'uzdrowisko-spa-suprasl' },
@@ -37,13 +36,8 @@ const PrzewodnikKulinarny = () => (
 
     <h2>Restauracje i kawiarnie</h2>
     <p>
-      Sprawdź aktualną listę lokali, menu i godziny pracy przed wyjazdem. Wskazówki znajdziesz w{' '}
-      <Link to="/blog/restauracje-suprasl">przewodniku po restauracjach Supraśla</Link>.
-    </p>
-
-    <p>
-      Więcej szczegółów i recenzji znajdziesz w naszym{' '}
-      <Link to="/blog/restauracje-suprasl">przewodniku po restauracjach Supraśla</Link>.
+      Menu i godziny otwarcia lokali zmieniają się z sezonem, więc przed wyjazdem zajrzyjcie na ich
+      strony albo zapytajcie Macieja, gdzie sam chodzi na obiad.
     </p>
 
     <h2>Kuchnia regionalna vs. kuchnia tatarska – gdzie szukać unikalnych smaków?</h2>

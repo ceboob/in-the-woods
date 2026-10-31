@@ -16,55 +16,55 @@ const faqs = [
   {
     question: 'Gdzie znaleźć nocleg w Puszczy Knyszyńskiej?',
     answer:
-      'In The Woods to drewniany dom na wyłączność w miejscowości Konne, blisko Supraśla i Puszczy Knyszyńskiej. Dom mieści do 8 osób i ma salon z kominkiem, dwie sypialnie z widokiem na las oraz ogród. To baza do odpoczynku i odkrywania okolicznych tras.',
+      'Na przykład u nas. In The Woods to drewniany dom na wyłączność w Konnem, na skraju puszczy, 10 minut od Supraśla. Do 8 osób, salon z kominkiem, dwie sypialnie z widokiem na las i ogród, z którego wychodzicie prosto na leśne dukty.',
   },
   {
     question: 'Ile kosztuje nocleg w Puszczy Knyszyńskiej?',
     answer:
-      `Cena noclegu zaczyna się od ${MIN_NIGHTLY_RATE} zł za noc i zależy od terminu oraz liczby gości. Balia ogrodowa z funkcją jacuzzi jest dodatkowo płatna: ${GARDEN_TUB_PRICE} zł za pobyt. Minimalny pobyt to ${MIN_NIGHTS} noce, a w sezonie wysokim ${highSeasonMinNights} noce. Ostateczna wycena uwzględnia wybrany pobyt.`,
+      `Cena noclegu zaczyna się od ${MIN_NIGHTLY_RATE} zł za noc i zależy od terminu oraz liczby gości. Balia z hydromasażem to dodatek: ${GARDEN_TUB_PRICE} zł za cały pobyt. Minimalny pobyt to ${MIN_NIGHTS} noce, a w wakacje ${highSeasonMinNights}. Cena jest za cały dom, nie za osobę.`,
   },
   {
     question: 'Czy można przyjechać z psem?',
     answer:
-      'Tak, pobyt z psem jest możliwy po uzgodnieniu z gospodarzem, który poda zasady i ewentualne opłaty. Wybierajcie trasy, na których obecność psa jest dozwolona, szczególnie w pobliżu terenów chronionych. Ogród i taras zapewniają dodatkowe miejsce do odpoczynku przy domu. Spacer może stać się częścią każdego dnia.',
+      'Tak, i to za darmo. W lesie i rezerwatach trzymajcie go na smyczy, bo puszcza to dom dzików i saren. Po spacerze pies może się wyszaleć w ogrodzonym ogrodzie.',
   },
   {
     question: 'Jak daleko dom znajduje się od Supraśla?',
     answer:
-      'In The Woods leży w miejscowości Konne, około 10 minut jazdy od centrum Supraśla. Adres to Konne 109/1, 16-030 Supraśl. Dzięki temu można połączyć spokojny nocleg w lesie z wizytą w miasteczku, jego zabytkach, muzeach i restauracjach. Spacer po centrum dobrze uzupełni pobyt.',
+      'Około 10 minut samochodem. Adres: Konne 109/1, 16-030 Supraśl. Rano las, w południe monaster i Muzeum Ikon, na obiad babka ziemniaczana w miasteczku.',
   },
   {
     question: 'Czy dom jest dostępny zimą?',
     answer:
-      'Tak, dom jest dostępny przez cały rok. Zimą możecie odpocząć przy kominku, obserwować las za oknem i wybrać się na spacer. Balia ogrodowa kosztuje 250 zł za pobyt i jest dostępna na zapytanie, a warunki jej używania gospodarz ustala dla terminu.',
+      'Tak, dom jest całoroczny. Zimą grzeje kominek, a za oknem leży śnieg. Balię zamawiacie przy rezerwacji (250 zł za cały pobyt), a w siarczysty mróz Maciej powie Wam wprost, czy da się ją nagrzać.',
   },
 ];
 
 // TODO: zatwierdź treść
 const PuszczaKnyszynskaNocleg = () => (
   <SEOPageLayout
-    title="Nocleg w Puszczy Knyszyńskiej – domek | In The Woods"
-    description="Nocleg w Puszczy Knyszyńskiej: cały dom na wyłączność od 399 zł/noc, kominek i balia na zapytanie. Zapytaj o termin."
+    title="Nocleg w Puszczy Knyszyńskiej – dom przy szlakach | In The Woods"
+    description="Las zaczyna się za płotem. Cały dom z bali na wyłączność, baza na Krzemienne Góry, Kopną Górę i kajaki na Supraśli. Od 399 zł za noc."
     breadcrumbName="Puszcza Knyszyńska"
     ogImage="https://www.suprasl.online/images/winter-cabin-golden.jpg"
     jsonLd={createLandingPageSchemas('/puszcza-knyszynska-nocleg', faqs)}
     showRelatedPages={false}
-    ctaTitle="Zapytaj o nocleg w puszczy"
-    ctaDescription="Podaj termin i liczbę gości, a gospodarz przygotuje informację o dostępności oraz wycenę."
+    ctaTitle="Sprawdźcie wolne terminy w puszczy"
+    ctaDescription="Podajcie daty i liczbę osób, a Maciej odpisze z ceną, zwykle w kilka godzin."
     ctaFormLabel="Zapytaj o nocleg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Nocleg w Puszczy Knyszyńskiej — domek na wyłączność
+        Nocleg w Puszczy Knyszyńskiej: dom z bali przy szlakach
       </h1>
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Nocleg w Puszczy Knyszyńskiej zaczyna się tu od poranka za oknem pełnym drzew i ciszy, którą
-        przerywają ptaki. In The Woods to drewniany dom w miejscowości Konne, około 10 minut od centrum Supraśla.
+        Budzicie się, a za oknem tylko drzewa. Kawa na tarasie, buty na nogi i jesteście w lesie.
+        In The Woods to drewniany dom w Konnem, na skraju puszczy, około 10 minut od centrum Supraśla.
       </p>
       <figure className="overflow-hidden rounded-xl">
         <img
           src={forestWinter}
-          alt="Zimowy las przy leśnym domku na nocleg w Puszczy Knyszyńskiej"
+          alt="Zimowy las Puszczy Knyszyńskiej przy domu In The Woods"
           width={1368}
           height={1824}
           className="w-full aspect-[16/9] object-cover"
@@ -73,29 +73,29 @@ const PuszczaKnyszynskaNocleg = () => (
       </figure>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Puszcza Knyszyńska — las, który wycisza
+        Puszcza Knyszyńska: las, który wyłącza głowę
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Puszcza Knyszyńska to rozległy kompleks leśny Podlasia, z terenami chronionymi i miejscami,
-        gdzie łatwo zwolnić krok. W okolicy domu znajduje się rezerwat Krzemienne Góry, a za oknem
-        czekają zmieniające się kolory lasu, śpiew ptaków i chłodne, pachnące żywicą powietrze.
+        To drugi co do wielkości las Podlasia, z rezerwatami, rzekami i zwierzyną, którą częściej
+        słychać, niż widać. Niedaleko domu jest rezerwat Krzemienne Góry, a w powietrzu czuć żywicę
+        i mokry mech. Po dwóch dniach przestajecie sprawdzać telefon co pięć minut.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Domek w lesie na wyłączność</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Dom tylko dla Was</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Dom mieści do {MAX_GUESTS} osób. Na parterze są salon z kominkiem, kuchnia z płytą kaflową i
-        łazienka, a na piętrze dwie sypialnie z dużymi łóżkami i widokiem na las.
+        Dom mieści maksymalnie {MAX_GUESTS} osób. Na dole salon z kominkiem i kuchnia z tradycyjną
+        kuchnią kaflową, na górze dwie sypialnie z dużymi łóżkami i widokiem na las.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Ogród, taras, altana i miejsce na ognisko dają przestrzeń na odpoczynek na zewnątrz.
-        Klimatyzacja działa w sezonie letnim, a Wi-Fi i bezpłatny parking są dostępne dla gości.
+        Na zewnątrz ogród, taras, altana i miejsce na ognisko. W środku klimatyzacja i Starlink do
+        200 Mb/s, a przed domem bezpłatny parking.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Szlaki i aktywności w puszczy</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Co robić w puszczy</h2>
       <p className="text-muted-foreground leading-relaxed">
-        W okolicy możecie wybierać trasy spacerowe i rowerowe, jesienią zaplanować grzybobranie, a w
-        sezonie letnim sprawdzić spływy kajakowe. Zimą leśne spacery mają inny rytm — krótszy dzień
-        zachęca, by wrócić do kominka przed zmrokiem.
+        Wiosną i latem: rower, piesze trasy i kajaki na rzece Supraśl. Jesienią grzybobranie, które
+        tutaj jest sportem narodowym. Zimą krótkie spacery po śniegu i szybki powrót do kominka, zanim
+        zrobi się ciemno.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Więcej pomysłów znajdziecie w przewodniku po{' '}
@@ -106,47 +106,46 @@ const PuszczaKnyszynskaNocleg = () => (
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Zimowy weekend i sylwester w puszczy
+        Zima i sylwester w puszczy
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Dom jest dostępny przez cały rok. Zimą ogrzejecie dłonie przy kominku, a śnieg zmienia leśne
-        ścieżki i ogród w cichą scenerię. Nocleg na sylwestra w lesie pozwala zamknąć rok spokojniej,
-        w gronie Waszej grupy.
+        Dom jest całoroczny. Zimą puszcza cichnie tak, że słychać, jak spada śnieg. Sylwester w lesie?
+        Fajerwerki zostawcie miastu: tu macie ognisko, balię i gwiazdy. Wasz pies podziękuje.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Zobaczcie także{' '}
         <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
           weekend w Supraślu
         </Link>{' '}
-        albo szczegóły oferty{' '}
+        albo zajrzyjcie na stronę o{' '}
         <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
-          noclegi w Supraślu
+          noclegach w Supraślu
         </Link>
         .
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Dobre wiedzieć</h2>
       <ul className="text-muted-foreground space-y-2">
-        <li>Balia ogrodowa z funkcją jacuzzi kosztuje 250 zł za pobyt i jest dostępna na zapytanie.</li>
-        <li>Pobyt z psem oraz ewentualne opłaty ustala gospodarz.</li>
-        <li>Przed wizytą w rezerwacie Krzemienne Góry sprawdźcie zasady udostępniania.</li>
-        <li>Na obszarach chronionych obowiązują lokalne zasady; wybierajcie dostępne trasy.</li>
+        <li>Balia z hydromasażem kosztuje 250 zł za cały pobyt. Zamawiacie ją przy rezerwacji.</li>
+        <li>Pies przyjeżdża gratis.</li>
+        <li>W rezerwacie Krzemienne Góry trzymajcie się wyznaczonych ścieżek.</li>
+        <li>Do lasu zabierzcie coś na kleszcze. Jest ich tu więcej niż turystów.</li>
       </ul>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Cennik i rezerwacja</h2>
       <ul className="text-muted-foreground space-y-2">
         <li>Cena od {MIN_NIGHTLY_RATE} zł za noc, zależnie od terminu i liczby gości.</li>
-        <li>Balia ogrodowa: {GARDEN_TUB_PRICE} zł za pobyt, na zapytanie.</li>
+        <li>Balia z hydromasażem: {GARDEN_TUB_PRICE} zł za cały pobyt.</li>
         <li>
-          Minimum {MIN_NIGHTS} noce, a w sezonie wysokim {highSeasonMinNights} noce.
+          Minimum {MIN_NIGHTS} noce, a w wakacje {highSeasonMinNights}.
         </li>
       </ul>
       <p className="text-muted-foreground leading-relaxed">
-        Formularz służy do wysłania zapytania o dostępność i wycenę; nie potwierdza rezerwacji.
+        Formularz to tylko pytanie o termin. Niczego nie rezerwuje i niczego nie pobiera.
       </p>
 
       <section aria-labelledby="forest-faq">
-        <h2 id="forest-faq" className="section-title !text-2xl md:!text-3xl">FAQ</h2>
+        <h2 id="forest-faq" className="section-title !text-2xl md:!text-3xl">Najczęstsze pytania</h2>
         <dl className="space-y-5">
           {faqs.map(({ question, answer }) => (
             <div key={question}>

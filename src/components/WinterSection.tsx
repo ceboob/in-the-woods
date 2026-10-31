@@ -1,5 +1,6 @@
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import ImageReveal from '@/components/ImageReveal';
+import { Link } from 'react-router-dom';
 import winterCabin from '@/assets/winter-cabin-real.webp';
 import winterGolden from '@/assets/winter-cabin-golden.webp';
 import winterForest from '@/assets/winter-forest.webp';
@@ -29,7 +30,7 @@ const WinterSection = () => {
               Domek na sylwestra i zimowy weekend w lesie
             </h2>
             <p className="text-base text-white/80 font-sans">
-              Śnieg na dachu. Kominek w środku. Balia ogrodowa z funkcją jacuzzi na zewnątrz.
+              Śnieg na dachu. Kominek w środku. Gorąca balia na zewnątrz.
             </p>
           </div>
         </div>
@@ -42,11 +43,11 @@ const WinterSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-12 space-y-4">
             <p className="section-subtitle">
-              Zima w Puszczy Knyszyńskiej ma swój niepowtarzalny urok. Kiedy śnieg przykrywa las i
-              ciszę przerywają tylko odgłosy dzięcioła, nasz domek w lesie zamienia się w przytulny azyl.
-              Rano rozpalasz kominek, parzysz kawę i obserwujesz las za oknem. Po południu spacer po
-              zaśnieżonych szlakach albo narty biegowe wśród sosen. A wieczorem — balia ogrodowa z funkcją jacuzzi pod
-              rozgwieżdżonym zimowym niebem i powrót do ciepłego domu z bali na wyłączność.
+              Zimą puszcza cichnie tak, że słychać, jak spada śnieg, a jedynym hałasem jest
+              dzięcioł. Rano kominek i kawa przy oknie. Po południu spacer po zaśnieżonych szlakach
+              albo narty biegowe między sosnami. Wieczorem balia pod gwiazdami, a potem szybki
+              sprint w ręczniku z powrotem do ciepłego domu. Sylwester? Bez stania w korkach
+              i bez kolejki do szatni.
             </p>
           </div>
 
@@ -55,7 +56,7 @@ const WinterSection = () => {
               <ImageReveal>
                 <img
                   src={winterCabin}
-                  alt="Domek z kominkiem w lesie zimą — leśny dom na wynajem w Puszczy Knyszyńskiej"
+                  alt="Domek z kominkiem w lesie zimą, Puszcza Knyszyńska"
                   className="w-full h-[280px] md:h-[350px] object-cover"
                   loading="lazy"
                   width="800"
@@ -67,7 +68,7 @@ const WinterSection = () => {
               <ImageReveal delay={90}>
                 <img
                   src={winterForest}
-                  alt="Zaśnieżony las Puszczy Knyszyńskiej — domek na odludziu podlaskie zimą"
+                  alt="Zaśnieżony las Puszczy Knyszyńskiej koło domu In The Woods zimą"
                   className="w-full h-[280px] md:h-[350px] object-cover"
                   loading="lazy"
                   width="800"
@@ -79,7 +80,7 @@ const WinterSection = () => {
 
           <div className="text-center">
             <p className="text-xs tracking-wide text-muted-foreground font-sans mb-6">
-              Idealne miejsce na
+              Dobre na
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {ideas.map((idea, i) => (
@@ -91,6 +92,9 @@ const WinterSection = () => {
                 </span>
               ))}
             </div>
+            <Link to="/sylwester-podlasie" className="btn-outline inline-flex items-center justify-center mt-8">
+              Sylwester w lesie: zobaczcie plan
+            </Link>
           </div>
         </div>
       </div>

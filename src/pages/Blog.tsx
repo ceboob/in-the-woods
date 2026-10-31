@@ -12,8 +12,6 @@ import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko-opt
 import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
 import blogCoRobic from '@/assets/blog-co-robic-suprasl-optimized.webp';
-import blogWeekendPlan from '@/assets/blog-weekend-plan-suprasl-optimized.webp';
-import blogNajlepszeMiejsca from '@/assets/blog-najlepsze-miejsca-puszcza-optimized.webp';
 import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero-optimized.webp';
 import blogPuszczaPanorama from '@/assets/blog-puszcza-panorama.webp';
 import blogMushrooms from '@/assets/article-optimized.webp';
@@ -115,32 +113,12 @@ const articles = [
   },
   {
     slug: 'kraina-otwartych-okiennic',
-    title: 'Kraina Otwartych Okiennic: Magiczna podróż w czasie na Podlasiu',
+    title: 'Kraina Otwartych Okiennic: podróż w czasie po Podlasiu',
     excerpt: 'Kolorowe okiennice, drewniana architektura i tradycje trwające od pokoleń. Odkryj szlak malowanych chałup.',
     image: blogKruszyniany,
     date: '2026-04-09',
     readTime: '11 min',
     keywords: ['Kraina Otwartych Okiennic', 'szlak Podlasie'],
-  },
-  {
-    slug: 'szlaki-puszcza-knyszynska',
-    title: 'Puszcza Knyszyńska na piechotę i rowerem – najlepsze szlaki z Supraśla',
-    excerpt:
-      'Szlaki piesze i rowerowe dla rodzin i zaawansowanych. Green Velo, Arboretum Kopna Góra, Wzgórza Świętojańskie. Mapy i praktyczne porady.',
-    image: blogBike,
-    date: '2026-04-09',
-    readTime: '14 min',
-    keywords: ['szlaki Puszcza Knyszyńska', 'szlaki rowerowe Supraśl'],
-  },
-  {
-    slug: 'suprasl-na-weekend',
-    title: 'Supraśl na weekend – przykładowy plan zwiedzania',
-    excerpt:
-      'Pomysły na weekend w Supraślu: zwiedzanie, spacer i odpoczynek. Dopasuj plan do aktualnych godzin otwarcia, pogody i dostępności atrakcji.',
-    image: blogWeekendPlan,
-    date: '2026-04-09',
-    readTime: '12 min',
-    keywords: ['Supraśl na weekend', 'plan Supraśl 2 dni'],
   },
   {
     slug: 'suprasl-z-dziecmi',
@@ -154,7 +132,7 @@ const articles = [
   },
   {
     slug: 'aktywny-wypoczynek-suprasl',
-    title: 'Supraśl Aktywnie: 5 Pomysłów na Weekend w Puszczy Knyszyńskiej',
+    title: 'Supraśl aktywnie: 5 pomysłów na weekend w Puszczy Knyszyńskiej',
     excerpt:
       'Szlaki rowerowe, spływy kajakowe, nordic walking, narciarstwo biegowe i Arboretum Kopna Góra.',
     image: blogBike,
@@ -184,43 +162,13 @@ const articles = [
   },
   {
     slug: 'puszcza-knyszynska-historie',
-    title: 'Puszcza Knyszyńska historie – 7 niezwykłych opowieści',
+    title: '7 historii z Puszczy Knyszyńskiej, o których nie uczyli w szkole',
     excerpt:
       'Galeria Leśna Powstania Styczniowego i inne miejsca związane z historią regionu.',
     image: blogPuszczaHistorie,
     date: '2026-03-28',
     readTime: '14 min',
     keywords: ['Puszcza Knyszyńska historie', 'Galeria Leśna'],
-  },
-  {
-    slug: 'co-robic-suprasl',
-    title: 'Co robić w Supraślu? Wybrane atrakcje i wskazówki',
-    excerpt:
-      'Poznaj wybrane atrakcje Supraśla i zaplanuj wizytę. Sprawdź aktualne godziny otwarcia, zasady zwiedzania, trasy i warunki spływów.',
-    image: blogCoRobic,
-    date: '2026-03-25',
-    readTime: '10 min',
-    keywords: ['co robić w Supraślu', 'Supraśl atrakcje'],
-  },
-  {
-    slug: 'weekend-suprasl-plan',
-    title: 'Weekend w Supraślu – plan pobytu na 2-3 dni',
-    excerpt:
-      'Sprawdzony plan na weekend w Supraślu: zwiedzanie, szlaki, kajaki, kuchnia regionalna i relaks w jacuzzi pod gwiazdami.',
-    image: blogWeekendPlan,
-    date: '2026-03-25',
-    readTime: '9 min',
-    keywords: ['weekend Supraśl', 'plan pobytu Supraśl'],
-  },
-  {
-    slug: 'najlepsze-miejsca-puszcza-knyszynska',
-    title: 'Najlepsze miejsca w Puszczy Knyszyńskiej – co warto zobaczyć',
-    excerpt:
-      'Rezerwaty, szlaki, arboretum, rzeki i dzikie ostępy. Kompletny przewodnik po największym lesie Podlasia.',
-    image: blogNajlepszeMiejsca,
-    date: '2026-03-25',
-    readTime: '11 min',
-    keywords: ['Puszcza Knyszyńska', 'najlepsze miejsca'],
   },
   {
     slug: 'kajaki-suprasl',
@@ -231,16 +179,6 @@ const articles = [
     date: '2026-03-15',
     readTime: '11 min',
     keywords: ['kajaki Supraśl', 'spływ Supraśl'],
-  },
-  {
-    slug: 'restauracje-suprasl',
-    title: 'Restauracje w Supraślu — jak sprawdzić aktualną ofertę',
-    excerpt:
-      'Sprawdź aktualne menu, godziny otwarcia, ceny i zasady rezerwacji bezpośrednio w wybranym lokalu.',
-    image: blogRestauracje,
-    date: '2026-03-15',
-    readTime: '12 min',
-    keywords: ['restauracje Supraśl', 'gdzie zjeść Supraśl'],
   },
   {
     slug: 'szlak-bioroznorodnosci-suprasl',
@@ -291,16 +229,6 @@ const articles = [
     date: '2026-03-08',
     readTime: '10 min',
     keywords: ['Szlak Powstania Styczniowego', 'historia Supraśl'],
-  },
-  {
-    slug: 'suprasl-atrakcje-national-geographic',
-    title: 'Supraśl – co zobaczyć? Przewodnik dla odwiedzających',
-    excerpt:
-      'Poznaj wybrane atrakcje Supraśla i zaplanuj wizytę. Sprawdź aktualne godziny otwarcia, zasady zwiedzania i dostępność tras.',
-    image: blogMonaster,
-    date: '2026-03-05',
-    readTime: '11 min',
-    keywords: ['Supraśl atrakcje', 'co zobaczyć Supraśl'],
   },
   {
     slug: 'szlaki-piesze-rowerowe-suprasl',

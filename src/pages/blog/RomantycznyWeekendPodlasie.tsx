@@ -18,7 +18,7 @@ const RomantycznyWeekendPodlasie = () => (
     ]}
     relatedArticles={[
       { title: 'Cyfrowy detoks w lesie', slug: 'cyfrowy-detoks-las' },
-      { title: 'Weekend w Supraślu — plan na 2 dni', slug: 'suprasl-na-weekend' },
+      { title: 'Weekend w Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
       { title: 'Workation na Podlasiu', slug: 'workation-podlasie' },
     ]}
   >

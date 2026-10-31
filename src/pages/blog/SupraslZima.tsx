@@ -53,8 +53,7 @@ const SupraslZima = () => (
     ]}
     relatedArticles={[
       { title: 'Puszcza Knyszyńska – przewodnik po szlakach', slug: 'puszcza-knyszynska-przewodnik' },
-      { title: 'Weekend w Supraślu – plan pobytu', slug: 'weekend-suprasl-plan' },
-      { title: 'Najlepsze miejsca w Puszczy Knyszyńskiej', slug: 'najlepsze-miejsca-puszcza-knyszynska' },
+      { title: 'Weekend w Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
     ]}
   >
     <p>

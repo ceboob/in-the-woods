@@ -1,6 +1,41 @@
 {
   "redirects": [
     {
+      "source": "/blog/weekend-suprasl-plan",
+      "destination": "/weekend-suprasl",
+      "permanent": true
+    },
+    {
+      "source": "/blog/suprasl-na-weekend",
+      "destination": "/weekend-suprasl",
+      "permanent": true
+    },
+    {
+      "source": "/blog/co-robic-suprasl",
+      "destination": "/atrakcje-suprasl",
+      "permanent": true
+    },
+    {
+      "source": "/blog/suprasl-atrakcje-national-geographic",
+      "destination": "/atrakcje-suprasl",
+      "permanent": true
+    },
+    {
+      "source": "/blog/szlaki-puszcza-knyszynska",
+      "destination": "/blog/szlaki-piesze-rowerowe-suprasl",
+      "permanent": true
+    },
+    {
+      "source": "/blog/najlepsze-miejsca-puszcza-knyszynska",
+      "destination": "/blog/puszcza-knyszynska-przewodnik",
+      "permanent": true
+    },
+    {
+      "source": "/blog/restauracje-suprasl",
+      "destination": "/blog/przewodnik-kulinarny-suprasl",
+      "permanent": true
+    },
+    {
       "source": "/blog/wydarzenia-suprasl-2026",
       "destination": "/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne",
       "permanent": true

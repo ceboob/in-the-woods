@@ -36,8 +36,8 @@ const JesienWSupraslu2026 = () => (
     keywords={['jesień w Supraślu', 'Supraśl jesienią', 'wydarzenia w Supraślu']}
     faqs={faqs}
     relatedArticles={[
-      { title: 'Co robić w Supraślu – kompletny przewodnik', slug: 'co-robic-suprasl' },
-      { title: 'Weekend w Supraślu – plan pobytu na 2-3 dni', slug: 'weekend-suprasl-plan' },
+      { title: 'Atrakcje Supraśla: co zobaczyć', slug: '/atrakcje-suprasl' },
+      { title: 'Weekend w Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
       { title: 'Atrakcje Supraśla – uzdrowisko w Puszczy', slug: 'suprasl-atrakcje-uzdrowisko' },
     ]}
   >

@@ -17,7 +17,7 @@ const WorkationPodlasie = () => (
     ]}
     relatedArticles={[
       { title: 'Cyfrowy detoks w lesie', slug: 'cyfrowy-detoks-las' },
-      { title: 'Weekend w Supraślu', slug: 'suprasl-na-weekend' },
+      { title: 'Weekend w Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
       { title: 'Romantyczny weekend na Podlasiu', slug: 'romantyczny-weekend-podlasie' },
     ]}
   >
@@ -54,7 +54,7 @@ const WorkationPodlasie = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w okolicy</h2>
       <p className="text-muted-foreground leading-relaxed">
         W Supraślu znajdziesz m.in. Monaster i Muzeum Ikon; przed wizytą sprawdź godziny otwarcia.
-        <Link to="/blog/szlaki-puszcza-knyszynska" className="text-primary hover:underline">Informacje o trasach</Link>{' '}
+        <Link to="/blog/szlaki-piesze-rowerowe-suprasl" className="text-primary hover:underline">Informacje o trasach</Link>{' '}
         pomagają zaplanować wyjście. Dostępność <Link to="/blog/kajaki-suprasl" className="text-primary hover:underline">spływów kajakowych</Link>{' '}
         potwierdź u organizatora. Dostępność balii ogrodowej z funkcją jacuzzi potwierdź z
         gospodarzem.

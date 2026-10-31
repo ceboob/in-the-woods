@@ -78,7 +78,7 @@ interface GalleryImage {
 const categories: { id: Category; label: string }[] = [
   { id: 'all', label: 'Wszystkie' },
   { id: 'wnetrze', label: 'Wnętrze' },
-  { id: 'jacuzzi', label: 'Balia ogrodowa z funkcją jacuzzi' },
+  { id: 'jacuzzi', label: 'Balia z hydromasażem (jacuzzi)' },
   { id: 'ogrod', label: 'Ogród i taras' },
   { id: 'okolica', label: 'Okolica i las' },
 ];
@@ -88,8 +88,8 @@ const allImages: GalleryImage[] = [
   {
     thumb: jacuzziNight,
     full: '/images/jacuzzi-night.webp',
-    alt: 'In The Woods Supraśl — balia ogrodowa z funkcją jacuzzi pod gwiazdami',
-    caption: 'Balia ogrodowa z funkcją jacuzzi pod gwiazdami',
+    alt: 'In The Woods Supraśl — balia z hydromasażem (jacuzzi) pod gwiazdami',
+    caption: 'Balia z hydromasażem (jacuzzi) pod gwiazdami',
     category: ['jacuzzi'],
     className: 'col-span-2 row-span-2',
     srcSet: `${jacuzziNightSm} 640w, ${jacuzziNightMd} 1024w, ${jacuzziNight} 1442w`,
@@ -125,8 +125,8 @@ const allImages: GalleryImage[] = [
   {
     thumb: gardenTubFront,
     full: '/images/gallery-bania-front.webp',
-    alt: 'In The Woods Supraśl — balia ogrodowa z funkcją jacuzzi',
-    caption: 'Balia ogrodowa z funkcją jacuzzi',
+    alt: 'In The Woods Supraśl — balia z hydromasażem (jacuzzi)',
+    caption: 'Balia z hydromasażem (jacuzzi)',
     category: ['jacuzzi'],
     className: 'col-span-2',
   },
@@ -212,14 +212,14 @@ const allImages: GalleryImage[] = [
     thumb: gardenTubHouse,
     full: '/images/gallery-bania-dom.webp',
     alt: 'In The Woods Supraśl — balia ogrodowa na tle domu z czerwonym dachem',
-    caption: 'Balia ogrodowa z funkcją jacuzzi — widok na dom',
+    caption: 'Balia z hydromasażem (jacuzzi) — widok na dom',
     category: ['jacuzzi', 'ogrod'],
   },
   {
     thumb: gardenTubGarden,
     full: '/images/gallery-bania-ogrod.webp',
-    alt: 'In The Woods Supraśl — balia ogrodowa z funkcją jacuzzi w ogrodzie z widokiem na las',
-    caption: 'Balia ogrodowa z funkcją jacuzzi z widokiem na Puszczę',
+    alt: 'In The Woods Supraśl — balia z hydromasażem (jacuzzi) w ogrodzie z widokiem na las',
+    caption: 'Balia z hydromasażem (jacuzzi) z widokiem na Puszczę',
     category: ['jacuzzi', 'ogrod'],
   },
   {
@@ -549,7 +549,7 @@ const GallerySection = () => {
           <h2 className="section-title">Zobacz In The Woods</h2>
           <p className="section-subtitle mx-auto">
             Autentyczne zdjęcia naszego <strong>domu z bali na wyłączność</strong> — wnętrza,
-            balia ogrodowa z funkcją jacuzzi, ogrodzony ogród i okolica w Puszczy Knyszyńskiej.
+            balia z hydromasażem (jacuzzi), ogrodzony ogród i okolica w Puszczy Knyszyńskiej.
           </p>
         </div>
 

@@ -35,8 +35,8 @@ const SzlakiPieszeRowerowe = () => {
       slug: 'szlak-powstania-styczniowego-suprasl',
     },
     {
-      title: 'Supraśl – perła Podlasia według podróżników',
-      slug: 'suprasl-atrakcje-national-geographic',
+      title: 'Atrakcje Supraśla: co zobaczyć',
+      slug: '/atrakcje-suprasl',
     },
   ];
 

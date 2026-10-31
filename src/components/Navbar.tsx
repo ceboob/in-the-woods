@@ -34,7 +34,7 @@ const navItems: NavItem[] = [
     href: '#lokalizacja',
     dropdown: [
       { label: 'Co zobaczyć', href: '/atrakcje-suprasl', isRoute: true },
-      { label: 'Szlaki i natura', href: '/blog/szlaki-puszcza-knyszynska', isRoute: true },
+      { label: 'Szlaki i natura', href: '/blog/szlaki-piesze-rowerowe-suprasl', isRoute: true },
       { label: 'Puszcza Knyszyńska', href: '/blog/puszcza-knyszynska-przewodnik', isRoute: true },
       { label: 'Restauracje', href: '/blog/przewodnik-kulinarny-suprasl', isRoute: true },
     ],
@@ -44,9 +44,11 @@ const navItems: NavItem[] = [
     href: '#',
     dropdown: [
       { label: 'Romantyczny weekend', href: '/blog/romantyczny-weekend-podlasie', isRoute: true },
-      { label: 'Z psem', href: '/blog/podlasie-z-psem', isRoute: true },
+      { label: 'Z psem', href: '/domek-z-psem-podlasie', isRoute: true },
       { label: 'Dla rodzin', href: '/blog/suprasl-z-dziecmi', isRoute: true },
       { label: 'Wieczór panieński', href: '/wieczor-panienski-suprasl', isRoute: true },
+      { label: 'Wieczór kawalerski', href: '/wieczor-kawalerski-suprasl', isRoute: true },
+      { label: 'Sylwester w lesie', href: '/sylwester-podlasie', isRoute: true },
       { label: 'Workation', href: '/blog/workation-podlasie', isRoute: true },
     ],
   },

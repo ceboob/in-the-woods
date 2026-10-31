@@ -38,9 +38,9 @@ const PodlasieZPsem = () => (
       },
     ]}
     relatedArticles={[
-      { title: 'Szlaki Puszczy Knyszyńskiej', slug: 'szlaki-puszcza-knyszynska' },
+      { title: 'Szlaki piesze i rowerowe z Supraśla', slug: 'szlaki-piesze-rowerowe-suprasl' },
       { title: 'Cyfrowy detoks w lesie', slug: 'cyfrowy-detoks-las' },
-      { title: 'Weekend w Supraślu', slug: 'suprasl-na-weekend' },
+      { title: 'Weekend w Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
     ]}
   >
     <article className="prose prose-lg max-w-none space-y-8">

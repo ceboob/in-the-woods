@@ -7,54 +7,55 @@ const faqs = [
   {
     question: 'Ile kosztuje balia ogrodowa?',
     answer:
-      'Balia ogrodowa kosztuje 250 zł za cały pobyt. To płatny dodatek do wynajmu domu, nie jest wliczona w cenę noclegu. Napisz przed rezerwacją, że chcecie z niej skorzystać; gospodarz potwierdzi dostępność i przekaże informacje o przygotowaniu oraz bezpiecznym użytkowaniu przed przyjazdem.',
+      '250 zł za cały pobyt, nie za noc i nie za godzinę. To dodatek, który nie jest wliczony w cenę noclegu. Zaznaczcie go przy rezerwacji, a nagrzejemy balię na Wasz przyjazd i powiemy, jak z niej korzystać.',
   },
   {
-    question: 'Czy balia jest dostępna zimą?',
+    question: 'Czy balia działa zimą?',
     answer:
-      'Balia może być dostępna także zimą, a możliwość skorzystania z niej zależy od terminu i warunków. Gospodarz potwierdzi ją na zapytanie. Po kąpieli możecie wrócić do ciepłego salonu, gdzie czeka kominek i spokojny wieczór w domu z bali. To przyjemny plan na chłodny wieczór.',
+      'Tak, i zimą smakuje najlepiej: para nad wodą, śnieg dookoła i gwiazdy. W siarczysty mróz Maciej powie Wam wprost, czy da się ją bezpiecznie nagrzać. Po kąpieli czeka kominek.',
   },
   {
-    question: 'Czy jacuzzi znajduje się w domu?',
+    question: 'Czy jacuzzi jest w domu?',
     answer:
-      'Nie, jacuzzi nie znajduje się wewnątrz domu. Balia z funkcją jacuzzi stoi w ogrodzie i jest dostępna jako płatny dodatek dla Waszej grupy. W środku znajdziecie salon z kominkiem, dwie sypialnie z widokiem na las, kuchnię i łazienkę. To wygodny układ na wspólny wyjazd.',
+      'Nie. Balia z hydromasażem, czyli nasze jacuzzi, stoi w ogrodzie, pod sosnami. W środku macie salon z kominkiem, dwie sypialnie, kuchnię i łazienkę.',
   },
   {
-    question: 'Czy to dom z jacuzzi dla 8 osób?',
+    question: 'Czy to domek z jacuzzi dla 8 osób?',
     answer:
-      'Dom jest przygotowany dla maksymalnie 8 osób i wynajmowany w całości jednej grupie. Na parterze są salon, kuchnia z płytą kaflową i łazienka, a na piętrze dwie sypialnie. Balia ogrodowa jest opcjonalnym dodatkiem za 250 zł za pobyt. Warto dopasować nocleg do składu grupy.',
+      'Dom mieści maksymalnie 8 osób i wynajmujecie go w całości. Balia jest dla całej Waszej ekipy, a ile osób zmieści się w niej naraz, Maciej powie przy rezerwacji.',
   },
   {
     question: 'Ile trwa dojazd z Białegostoku?',
     answer:
-      'Z Białegostoku do Konnego dojeżdża się zwykle w około 30–40 minut. Dom stoi pod adresem Konne 109/1, około 10 minut jazdy od centrum Supraśla. To spokojna leśna baza niedaleko miasta, z całym domem i ogrodem dla Waszej grupy. Przed podróżą zaplanujcie trasę do Konnego.',
+      'Zwykle 30–40 minut samochodem. Adres: Konne 109/1, 16-030 Supraśl, około 10 minut od centrum Supraśla.',
   },
 ];
 
 const DomekZJacuzziPodlasie = () => (
   <SEOPageLayout
-    title="Domek z jacuzzi na Podlasiu – balia i kominek | In The Woods"
-    description="Domek z jacuzzi na Podlasiu: balia ogrodowa 250 zł/pobyt, cały dom na wyłączność do 8 osób. Zapytaj o termin w In The Woods."
+    title="Domek z balią i jacuzzi na Podlasiu – pod Białymstokiem | In The Woods"
+    description="Gorąca balia z hydromasażem pod sosnami, latem i zimą. 250 zł za cały pobyt, nie za godzinę. Cały dom dla Waszej ekipy do 8 osób."
     breadcrumbName="Domek z jacuzzi Podlasie"
     ogImage="https://www.suprasl.online/images/jacuzzi-night.jpg"
     jsonLd={createLandingPageSchemas('/domek-z-jacuzzi-podlasie', faqs)}
     showRelatedPages={false}
-    ctaTitle="Zapytaj o termin z balią"
-    ctaDescription="Napisz lub zadzwoń. Gospodarz potwierdzi dostępność balii i przygotuje wycenę pobytu."
+    ctaTitle="Zarezerwujcie termin z balią"
+    ctaDescription="Napiszcie albo zadzwońcie. Maciej odpisze z ceną i nagrzeje balię na Wasz przyjazd."
     ctaFormLabel="Zapytaj przez formularz"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Domek z jacuzzi na Podlasiu — balia ogrodowa w lesie na wyłączność
+        Domek z balią (jacuzzi) na Podlasiu: gorąca woda pod sosnami
       </h1>
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Domek z jacuzzi na Podlasiu to wieczór w ciepłej wodzie, gdy nad balią unosi się para, a nad
-        ogrodem widać gwiazdy. Las otula dom, a po kąpieli czeka trzask ognia w kominku.
+        Wieczór, gorąca woda, para nad balią i gwiazdy nad sosnami. Po dwudziestu minutach zapominacie,
+        jak macie na imię. Potem szybki sprint w ręczniku do kominka. Tak wygląda nasz domek z jacuzzi
+        na Podlasiu, a dokładniej: z balią z hydromasażem w ogrodzie.
       </p>
       <figure className="overflow-hidden rounded-xl">
         <img
           src={jacuzziNight}
-          alt="Balia ogrodowa z funkcją jacuzzi przy domku na wyłączność w lesie na Podlasiu"
+          alt="Balia z hydromasażem nocą w ogrodzie domku w lesie na Podlasiu"
           width={1442}
           height={1920}
           className="w-full aspect-[16/9] object-cover"
@@ -63,47 +64,44 @@ const DomekZJacuzziPodlasie = () => (
       </figure>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Balia ogrodowa z jacuzzi pod gwiazdami
+        Balia pod gwiazdami: jak to działa
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Ciepła woda, szum drzew i chłodne powietrze tworzą prosty rytuał odpoczynku po dniu w
-        Puszczy Knyszyńskiej. Balia, nazywana też banią ogrodową, stoi w ogrodzie i jest przeznaczona
-        wyłącznie dla Waszej grupy.
+        Gorąca woda, zimne powietrze i szum sosen. Balia stoi w ogrodzie i jest tylko dla Was. Na
+        Podlasiu mówi się na nią też „ruska bania”, a dzięki hydromasażowi działa jak jacuzzi.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Balia ogrodowa z funkcją jacuzzi kosztuje 250 zł za pobyt. Dopiszcie ją do zapytania, a
-        gospodarz potwierdzi dostępność i przekaże zasady korzystania.
+        Kosztuje 250 zł za cały pobyt. Zaznaczcie ją w zapytaniu, a nagrzejemy ją na Wasz przyjazd
+        i pokażemy, jak z niej korzystać.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Domek z jacuzzi i kominkiem — co czeka w środku
+        Domek z balią i kominkiem: co jest w środku
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Drewniany dom z bali mieści do 8 osób i jest wynajmowany jednej grupie. Na parterze znajdziecie
-        salon z kominkiem, kuchnię z podlaskim akcentem — płytą kaflową — oraz łazienkę.
+        Drewniany dom z bali dla maksymalnie 8 osób, wynajmowany w całości jednej ekipie. Na dole salon
+        z kominkiem i kuchnia z tradycyjną kuchnią kaflową.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Na piętrze są dwie sypialnie z dużymi łóżkami i widokiem na las. Ogród, taras, altana i
-        miejsce na ognisko zapraszają, by zwolnić tempo.
+        Na górze dwie sypialnie z dużymi łóżkami i widokiem na las. Na zewnątrz ogród, taras, altana
+        i miejsce na ognisko.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Balia zimą i latem</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Zimą para nad wodą kontrastuje ze śniegiem, a po kąpieli można ogrzać się przy kominku.
-        Latem wieczór przenosi się na taras; klimatyzacja działa w sezonie letnim.
+        Zimą: para, śnieg na czapce i woda tak gorąca, że zapominacie o mrozie. Latem balia po
+        całym dniu na rowerze albo w kajaku, a w domu chłodzi klimatyzacja.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Jacuzzi w lesie najlepiej smakuje bez pośpiechu: po spacerze, przy gwiazdach i w ciszy, którą
-        przerywają tylko ptaki albo trzask drewna.
+        Najlepsza pora? Po zmroku, kiedy widać gwiazdy, a jedynym dźwiękiem jest szum drzew i bąbelki.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Lokalizacja: Puszcza Knyszyńska i Białystok na wyciągnięcie ręki
+        Domek z jacuzzi koło Białegostoku, w środku puszczy
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        In The Woods znajduje się pod adresem Konne 109/1, około 10 minut jazdy od centrum Supraśla.
-        To dom z jacuzzi niedaleko Białegostoku — dojazd z miasta zajmuje około 30–40 minut. Balia
-        ogrodowa na Podlasiu pozwala połączyć wieczorną kąpiel z odpoczynkiem po leśnym spacerze.
+        Adres: Konne 109/1, 16-030 Supraśl, około 10 minut od centrum Supraśla. Z Białegostoku
+        jedziecie 30–40 minut, więc w piątek po pracy zdążycie jeszcze na wieczorną balię.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Po więcej inspiracji zajrzyjcie do przewodnika po{' '}
@@ -123,15 +121,15 @@ const DomekZJacuzziPodlasie = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Dobre wiedzieć</h2>
       <ul className="text-muted-foreground space-y-2">
-        <li>Balia ogrodowa kosztuje 250 zł za pobyt i jest dostępna na zapytanie.</li>
-        <li>Instrukcję obsługi oraz zasady bezpieczeństwa otrzymacie od gospodarza.</li>
-        <li>Warunki pogodowe mogą wpływać na możliwość korzystania z balii.</li>
-        <li>Pobyt z psem i ewentualne opłaty ustala gospodarz.</li>
-        <li>W domu jest Wi-Fi, bezpłatny parking, ogród, taras i miejsce na ognisko.</li>
+        <li>Balia kosztuje 250 zł za cały pobyt. Zamawiacie ją przy rezerwacji.</li>
+        <li>Jak z niej korzystać, pokaże Wam Maciej. Instrukcja jest też w informatorze.</li>
+        <li>W siarczysty mróz albo burzę lepiej z niej nie korzystać. Zdrowy rozsądek wygrywa.</li>
+        <li>Pies przyjeżdża gratis, ale do balii raczej nie wchodzi.</li>
+        <li>Do tego Starlink, bezpłatny parking, ogród, taras i miejsce na ognisko.</li>
       </ul>
 
       <section aria-labelledby="jacuzzi-faq">
-        <h2 id="jacuzzi-faq" className="section-title !text-2xl md:!text-3xl">FAQ</h2>
+        <h2 id="jacuzzi-faq" className="section-title !text-2xl md:!text-3xl">Najczęstsze pytania</h2>
         <dl className="space-y-5">
           {faqs.map(({ question, answer }) => (
             <div key={question}>

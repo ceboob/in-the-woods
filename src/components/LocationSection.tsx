@@ -14,7 +14,7 @@ const LocationSection = () => {
           <p className="text-xs tracking-wide text-muted-foreground font-sans">
             Lokalizacja
           </p>
-          <h2 className="section-title">Lokalizacja domu w Konne koło Supraśla</h2>
+          <h2 className="section-title">Gdzie jesteśmy: Konne koło Supraśla</h2>
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
             <MapPin className="w-4 h-4 text-primary" />
             <p className="text-sm">Konne 109/1, 16-030 Supraśl</p>
@@ -23,13 +23,12 @@ const LocationSection = () => {
 
         <div className="max-w-3xl mx-auto mb-8 space-y-4 text-muted-foreground leading-relaxed text-center">
           <p>
-            Dom znajduje się w miejscowości <strong>Konne</strong>, w okolicy Supraśla i Puszczy
-            Knyszyńskiej. Przed podróżą sprawdź trasę dojazdu i aktualne warunki na drodze.
+            Dom stoi w <strong>Konnem</strong>, na skraju Puszczy Knyszyńskiej. Do centrum Supraśla macie
+            około 10 minut, do Białegostoku 30–40 minut samochodem.
           </p>
           <p>
-            W Supraślu możesz odwiedzić Monaster i Muzeum Ikon, a w okolicy zaplanować spacer lub
-            aktywność sezonową. Przed wyjściem sprawdź godziny otwarcia, dostępność tras i zasady
-            obowiązujące na terenach chronionych.
+            W Supraślu czekają monaster, Muzeum Ikon i bulwary nad rzeką. Las macie od razu za płotem,
+            więc na pierwszy spacer nie musicie nawet odpalać auta.
           </p>
         </div>
 
@@ -49,7 +48,7 @@ const LocationSection = () => {
 
         <div className="text-center space-y-3">
           <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-            Przed wyjazdem sprawdź przebieg trasy i warunki dojazdu.
+            Adres: Konne 109/1, 16-030 Supraśl. Kliknijcie przycisk poniżej, a Mapy Google poprowadzą Was pod same drzwi.
           </p>
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=53.208577,23.436622"

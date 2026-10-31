@@ -18,9 +18,8 @@ const UzdrowiSkoSPA = () => (
     ]}
     relatedArticles={[
       { title: 'Aktywny wypoczynek w Puszczy Knyszyńskiej', slug: 'aktywny-wypoczynek-suprasl' },
-      { title: 'Co robić w Supraślu? Kompletny przewodnik', slug: 'co-robic-suprasl' },
-      { title: 'Restauracje Supraśl – gdzie zjeść', slug: 'restauracje-suprasl' },
-      { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
+      { title: 'Atrakcje Supraśla: co zobaczyć', slug: '/atrakcje-suprasl' },
+      { title: 'Gdzie zjeść w Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
   >
     <h2>Wypoczynek w Supraślu</h2>

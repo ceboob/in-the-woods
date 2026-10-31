@@ -25,14 +25,14 @@ type Amenity = {
 const amenities: Amenity[] = [
   {
     icon: TreePine,
-    title: 'Dom w lesie, cisza na wyciągnięcie ręki',
-    desc: 'Nasz całoroczny dom do wynajęcia pomieści komfortowo do 8 osób. Stoi na skraju Puszczy Knyszyńskiej – rano budzą Cię ptaki zamiast sąsiadów, a do centrum Supraśla i rzeki dotrzesz w kilka minut. O idealne warunki do wypoczynku dbamy przez cały rok. Zimą ogrzejesz się przy klimatycznym kominku lub tradycyjnej płycie kaflowej, a latem przyjemny chłód zapewni klimatyzacja z pompą ciepła.',
+    title: 'Dom w lesie, cisza w pakiecie',
+    desc: 'Całoroczny dom do wynajęcia dla maksymalnie 8 osób, na skraju Puszczy Knyszyńskiej. Rano budzą Was ptaki, nie sąsiedzi. Do centrum Supraśla jedziecie około 10 minut. Zimą grzeje kominek i kaflowa kuchnia, latem chłodzi klimatyzacja z pompą ciepła.',
     // TODO (właściciel): podaj dokładny czas dojścia/dojazdu do centrum i rzeki.
   },
   {
     icon: Bath,
-    title: 'Jacuzzi na wyłączność gości',
-    desc: 'Po spacerze po lesie zanurz się w ciepłej wodzie. To dom z jacuzzi na wynajem tylko dla Waszej grupy – bez obcych i bez kolejki.',
+    title: 'Balia z hydromasażem (+250 zł za pobyt)',
+    desc: 'Po spacerze po lesie wskakujecie do gorącej wody pod sosnami. Balia stoi w ogrodzie, jest tylko dla Was i działa jak jacuzzi: bąbelki, para, gwiazdy. Kosztuje 250 zł za cały pobyt, nie za godzinę.',
     badge: 'Hit gości',
     featured: true,
     link: { to: '/domek-z-jacuzzi-podlasie', label: 'Dom z jacuzzi na Podlasiu' },
@@ -40,24 +40,24 @@ const amenities: Amenity[] = [
   {
     icon: Flame,
     title: 'Przestronny salon i pełne wyposażenie',
-    desc: 'Szukasz idealnego noclegu w Supraślu? Na parterze naszego domu do wynajęcia znajdziesz przytulny salon z klimatycznym kominkiem. Obok znajduje się w pełni wyposażony aneks kuchenny (indukcja, lodówka, zmywarka, ekspres), w którym gotowanie podczas urlopu w Puszczy Knyszyńskiej to czysta przyjemność.',
+    desc: 'Na parterze salon z kominkiem i drewnianymi belkami. Wieczorem trzaska ogień, w telewizorze leci Canal+, a i tak wszyscy gapią się w ogień. Obok kuchnia z indukcją, lodówką, zmywarką i ekspresem, więc zmywanie macie z głowy.',
     badge: 'Hit gości',
     featured: true,
   },
   {
     icon: BedDouble,
     title: 'Komfortowe sypialnie z widokiem',
-    desc: 'Drewniane schody prowadzą na piętro, oferujące doskonałe warunki do wypoczynku. Dwie sypialnie z dużymi łóżkami i sofami to gwarancja wygody. Wybierz nasze noclegi na Podlasiu i ciesz się poranną kawą na balkonie z widokiem na las. Na piętrze mieści się również elegancka łazienka.',
+    desc: 'Na piętro prowadzą drewniane schody. Tam dwie sypialnie z dużymi łóżkami i sofami, łazienka i balkon, na którym poranna kawa smakuje lasem. Budzą Was ptaki. Wredne, punktualne ptaki.',
   },
   {
     icon: FlameKindling,
     title: 'Prywatny ogród i strefa relaksu',
-    desc: 'Nasz dom w lesie blisko Supraśla to synonim prywatności. Zadbany, w pełni ogrodzony ogród z altanką, miejscem na ognisko, grillem i placem zabaw zachęca do relaksu na świeżym powietrzu. Idealne miejsce na rodzinny weekend z dala od zgiełku miasta.',
+    desc: 'Ogrodzony ogród z altaną, grillem, miejscem na ognisko i placem zabaw. Wszystko tylko dla Was, więc kiełbaski możecie piec do nocy i nikt nie zajmie Wam leżaka.',
   },
   {
     icon: PawPrint,
     title: 'Dom przyjazny zwierzętom – pobyt z psem za darmo',
-    desc: 'Nie pobieramy żadnych dodatkowych opłat za zwierzęta – pies lub inny pupil nocuje u nas całkowicie bezpłatnie. Czekają na niego leśne ścieżki Puszczy Knyszyńskiej i ogród do zabawy. Nocleg z psem, bez opłat za zwierzęta.',
+    desc: 'Pies albo inny pupil nocuje u nas za darmo. Zero dopłat. Czekają na niego leśne ścieżki Puszczy Knyszyńskiej i ogród, w którym może się wyszaleć.',
     badge: 'Zwierzęta gratis · 0 zł za pupila',
     featured: true,
     link: { to: '/blog/podlasie-z-psem', label: 'Podlasie z psem – poradnik' },
@@ -66,14 +66,14 @@ const amenities: Amenity[] = [
   {
     icon: Baby,
     title: 'Wypoczynek z dziećmi',
-    desc: 'Przestrzeń do zabawy, las tuż obok i spokojne, bezpieczne otoczenie – dzieci odpoczywają od ekranów, Ty od pośpiechu.',
+    desc: 'Plac zabaw, ognisko, las tuż obok i zero ruchu ulicznego. Dzieci odpoczywają od ekranów, a Wy od pilnowania ich na każdym kroku.',
     link: { to: '/blog/suprasl-z-dziecmi', label: 'Supraśl z dziećmi' },
     // TODO (właściciel): czy jest łóżeczko i krzesełko dla dziecka?
   },
   {
     icon: Tv,
-    title: 'Rozrywka na najwyższym poziomie',
-    desc: 'Dbając o maksymalny komfort gości, w każdym pomieszczeniu zapewniamy nowoczesny telewizor z płaskim ekranem oraz dostępem do pakietu Canal+. Do tego szybkie Wi-Fi Starlink (do 200 Mb/s) na wieczór filmowy lub pracę zdalną. Niezależnie od pogody na Podlasiu, u nas zawsze znajdziesz doskonałą formę rozrywki i relaksu.',
+    title: 'Na deszczowy dzień',
+    desc: 'Pada? Trudno. Telewizory z Canal+, Starlink do 200 Mb/s na wieczór filmowy albo pracę zdalną i kominek, który wygrywa z każdym serialem. Drzemka też się liczy.',
   },
 ];
 
@@ -91,13 +91,11 @@ const AmenitiesSection = () => {
             Dom i udogodnienia
           </p>
           <h2 id="dom-wyposazenie" className="section-title">
-            Dom w lesie w Supraślu – wyposażenie, które robi różnicę
+            Co jest w domu (krótko, bo zdjęcia powiedzą więcej)
           </h2>
           <p className="section-subtitle mx-auto">
-            Dom na wynajem w Supraślu, tuż przy Puszczy Knyszyńskiej, to miejsce na weekend we
-            dwoje, rodzinny wypoczynek albo wyjazd z psem – bez dodatkowych opłat. Czeka na Ciebie
-            kominek, jacuzzi ogrodowe, ognisko i pełne wyposażenie. Dom na wyłączność dla
-            maksymalnie 8 osób.
+            Dom z bali do wynajęcia pod Supraślem, dla maksymalnie 8 osób. Dwie sypialnie, salon z kominkiem,
+            pełna kuchnia, taras, ogród, Starlink, klimatyzacja i Canal+. Balia z hydromasażem za dopłatą.
           </p>
         </div>
 
@@ -139,7 +137,7 @@ const AmenitiesSection = () => {
 
         <div className="mt-16 max-w-3xl mx-auto">
           <h3 className="font-heading text-xl font-bold text-foreground text-center mb-6">
-            Najczęstsze pytania o dom w lesie
+            Szybkie pytania o dom
           </h3>
           <div className="space-y-2">
             {amenityFaqs.map((f) => (

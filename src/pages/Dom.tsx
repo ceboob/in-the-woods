@@ -19,7 +19,7 @@ const amenities = [
   { icon: Car, label: 'Parking' },
   { icon: Dog, label: 'Pobyt z psem — zapytaj' },
   { icon: Baby, label: 'Plac zabaw' },
-  { icon: Bath, label: 'Balia ogrodowa z funkcją jacuzzi' },
+  { icon: Bath, label: 'Balia z hydromasażem (jacuzzi)' },
 ];
 
 const Dom = () => (
@@ -35,10 +35,9 @@ const Dom = () => (
           Dom z bali na wyłączność w miejscowości Konne
         </h1>
         <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
-          Drewniany <strong>dom na wyłączność</strong> w miejscowości Konne koło Supraśla. Do
-          dyspozycji gości są kominek, wyposażona kuchnia i dwie sypialnie na piętrze. Balia ogrodowa
-          z funkcją jacuzzi jest opcjonalnym dodatkiem. Dom może pomieścić do 8 osób. Możliwość pobytu
-          z psem i ewentualne opłaty potwierdź z gospodarzem.
+          Drewniany <strong>dom na wyłączność</strong> w Konnem koło Supraśla, dla maksymalnie 8 osób.
+          Macie kominek, pełną kuchnię i dwie sypialnie na piętrze. Balia z hydromasażem kosztuje 250 zł
+          za cały pobyt, a pies przyjeżdża gratis.
         </p>
       </div>
 

@@ -238,7 +238,7 @@ const BlogArticleLayout = ({
           </h2>
           <p className="text-foreground/70 max-w-xl mx-auto">
             Jeśli szukasz komfortowego noclegu w Supraślu, In The Woods oferuje prywatny dom w lesie
-            z kominkiem; balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem.
+            z kominkiem; balia z hydromasażem (jacuzzi) jest opcjonalnym dodatkiem.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
@@ -279,6 +279,15 @@ const BlogArticleLayout = ({
             </Link>
             <Link to="/wieczor-panienski-suprasl" className="hover:text-primary transition-colors">
               Wieczór panieński
+            </Link>
+            <Link to="/wieczor-kawalerski-suprasl" className="hover:text-primary transition-colors">
+              Wieczór kawalerski
+            </Link>
+            <Link to="/sylwester-podlasie" className="hover:text-primary transition-colors">
+              Sylwester w lesie
+            </Link>
+            <Link to="/domek-z-psem-podlasie" className="hover:text-primary transition-colors">
+              Domek z psem
             </Link>
             <Link to="/weekend-suprasl" className="hover:text-primary transition-colors">
               Weekend Supraśl

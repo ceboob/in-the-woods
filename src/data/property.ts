@@ -1,8 +1,8 @@
 export const property = {
   identifier: 'in-the-woods-suprasl',
-  name: 'In The Woods — dom na wyłączność w Konne koło Supraśla',
+  name: 'In The Woods — dom z bali na wyłączność koło Supraśla',
   description:
-    'Drewniany dom na wyłączność w miejscowości Konne koło Supraśla, przy Puszczy Knyszyńskiej. Dwie sypialnie, salon z kominkiem, wyposażona kuchnia, ogród i taras. Balia ogrodowa z funkcją jacuzzi jest opcjonalnym dodatkiem.',
+    'Cały dom z bali dla 8 osób na skraju Puszczy Knyszyńskiej, 10 min od Supraśla. Kominek, balia z hydromasażem, Starlink, pies gratis. Od 399 zł za dom, nie za osobę.',
   url: 'https://www.suprasl.online/',
   canonicalUrl: 'https://www.suprasl.online/',
   address: {
@@ -29,7 +29,7 @@ export const property = {
     'Parking',
     'Ogród i taras',
     'Miejsce na ognisko',
-    'Balia ogrodowa z funkcją jacuzzi — opcjonalna i dodatkowo płatna',
+    'Balia ogrodowa z hydromasażem (jacuzzi) — dodatkowo płatna',
   ],
   images: [
     '/images/exterior-main.webp',

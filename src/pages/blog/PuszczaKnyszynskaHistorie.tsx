@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const PuszczaKnyszynskaHistorie = () => (
   <BlogArticleLayout
-    title="Puszcza Knyszyńska historie – 7 niezwykłych opowieści"
-    metaTitle="Puszcza Knyszyńska historie – 7 niezwykłych opowieści"
+    title="7 historii z Puszczy Knyszyńskiej, o których nie uczyli w szkole"
+    metaTitle="7 historii z Puszczy Knyszyńskiej, o których nie uczyli w szkole"
     metaDescription="Puszcza Knyszyńska historie: 7 opowieści o regionie, miejscach pamięci i przyrodzie. Przewodnik z inspiracjami na wycieczkę."
     slug="puszcza-knyszynska-historie"
     publishDate="2026-03-28"
@@ -34,7 +34,7 @@ const PuszczaKnyszynskaHistorie = () => (
     ]}
     relatedArticles={[
       { title: 'Powstanie Styczniowe — kontekst historyczny', slug: 'szlak-powstania-styczniowego-suprasl' },
-      { title: 'Puszcza Knyszyńska — miejsca i zasady wizyty', slug: 'najlepsze-miejsca-puszcza-knyszynska' },
+      { title: 'Puszcza Knyszyńska: przewodnik po szlakach', slug: 'puszcza-knyszynska-przewodnik' },
       { title: 'Szlaki piesze i rowerowe', slug: 'szlaki-piesze-rowerowe-suprasl' },
     ]}
   >

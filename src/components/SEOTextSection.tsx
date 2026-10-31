@@ -11,47 +11,45 @@ const SEOTextSection = () => {
         className={`max-w-4xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-12 space-y-4">
-          <h2 className="section-title">Pobyt w okolicy Supraśla</h2>
+          <h2 className="section-title">Nocleg pod Supraślem w pigułce</h2>
         </div>
 
         <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground leading-relaxed">
           <p>
-            In The Woods to dom wynajmowany na wyłączność w miejscowości Konne koło Supraśla. Na
-            miejscu dostępne są m.in. kominek, kuchnia, taras i Wi-Fi. Balia ogrodowa z funkcją
-            jacuzzi jest opcjonalnym dodatkiem; jej dostępność potwierdź przed pobytem. Więcej
-            informacji znajdziesz na stronie{' '}
+            In The Woods to dom z bali w Konnem koło Supraśla, wynajmowany w całości jednej ekipie. Macie
+            kominek, kuchnię, taras, ogród i Starlinka. Balia z hydromasażem to dodatek za 250 zł za pobyt.
+            Szczegóły znajdziecie na stronie o{' '}
             <Link
               to="/noclegi-suprasl"
               className="text-primary underline hover:text-primary/80 transition-colors"
             >
-              noclegu i zasad pobytu
+              noclegach w Supraślu
             </Link>
             .
           </p>
 
           <h3 className="font-heading text-xl text-foreground">Zaplanuj czas w Supraślu</h3>
           <p>
-            W Supraślu i okolicy możesz odwiedzić Monaster, Muzeum Ikon, wybrać spacer lub rozważyć
-            aktywności sezonowe. Przed wyjściem sprawdź godziny otwarcia, warunki pogodowe i zasady
-            dostępu do tras. Zobacz aktualne{' '}
+            Monaster, Muzeum Ikon, kajaki, rower i babka ziemniaczana: w Supraślu i okolicy nudzić się
+            nie da. Zajrzyjcie do naszego przewodnika, w którym zebraliśmy{' '}
             <Link
               to="/atrakcje-suprasl"
               className="text-primary underline hover:text-primary/80 transition-colors"
             >
-              informacje o atrakcjach
+              atrakcje Supraśla
             </Link>
             .
           </p>
 
-          <h3 className="font-heading text-xl text-foreground">Przed wysłaniem zapytania</h3>
+          <h3 className="font-heading text-xl text-foreground">Zanim napiszecie</h3>
           <p>
-            Sprawdź cennik, minimalną długość pobytu i wyposażenie. Jeśli planujesz przyjazd z psem,
-            potwierdź możliwość pobytu, opłaty i warunki dotyczące ogrodzenia z gospodarzem.
-            Wysłanie formularza jest zapytaniem — nie potwierdza rezerwacji ani nie oznacza płatności.
+            Rzućcie okiem na cennik i minimalną długość pobytu (zwykle 2 noce, w wakacje 3). Pies jedzie
+            gratis, więc tu nie ma czego doliczać. Formularz to tylko pytanie o termin: niczego
+            nie rezerwuje i niczego nie pobiera.
           </p>
 
           <p>
-            Inspiracji do ułożenia planu szukaj w przewodnikach o{' '}
+            Gotowe plany macie w przewodnikach o{' '}
             <Link
               to="/weekend-suprasl"
               className="text-primary underline hover:text-primary/80 transition-colors"
@@ -72,7 +70,7 @@ const SEOTextSection = () => {
             >
               spływach kajakowych
             </Link>
-            . Szczegóły każdej aktywności potwierdź u jej organizatora.
+            .
           </p>
         </div>
       </div>

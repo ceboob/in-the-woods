@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 import { Dog, TreePine, Snail, Home, Sparkles, Wifi, Flame, Bath } from 'lucide-react';
 
 const badges = [
-  { icon: Dog, label: 'Zasady pobytu ze zwierzęciem', href: '/blog/podlasie-z-psem' },
+  { icon: Dog, label: 'Pies gratis', href: '/domek-z-psem-podlasie' },
   { icon: TreePine, label: 'Wypoczynek w naturze', href: '/dom-w-lesie-suprasl' },
   { icon: Snail, label: 'Spokojny wypoczynek', href: '/blog/cyfrowy-detoks-las' },
   { icon: Home, label: 'Dom na wyłączność', href: '/noclegi-suprasl' },
-  { icon: Bath, label: 'Balia ogrodowa', href: '/domek-z-jacuzzi-podlasie' },
+  { icon: Bath, label: 'Domek z balią', href: '/domek-z-jacuzzi-podlasie' },
   { icon: Flame, label: 'Kominek', href: '#dom' },
-  { icon: Sparkles, label: 'Balia ogrodowa z funkcją jacuzzi', href: '#jacuzzi' },
-  { icon: Wifi, label: 'Wi-Fi dostępne', href: '/blog/workation-podlasie' },
+  { icon: Sparkles, label: 'Jacuzzi pod gwiazdami', href: '#jacuzzi' },
+  { icon: Wifi, label: 'Starlink 200 Mb/s', href: '/blog/workation-podlasie' },
 ];
 
 const BadgesBar = () => (

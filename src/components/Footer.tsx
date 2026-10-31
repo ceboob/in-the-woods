@@ -141,6 +141,15 @@ const Footer = () => (
           <Link to="/wieczor-panienski-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Wieczór panieński
           </Link>
+          <Link to="/wieczor-kawalerski-suprasl" className="text-white/90 transition-colors hover:text-primary">
+            Wieczór kawalerski
+          </Link>
+          <Link to="/sylwester-podlasie" className="text-white/90 transition-colors hover:text-primary">
+            Sylwester w lesie
+          </Link>
+          <Link to="/domek-z-psem-podlasie" className="text-white/90 transition-colors hover:text-primary">
+            Domek z psem
+          </Link>
           <Link to="/atrakcje-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Atrakcje Supraśla
           </Link>

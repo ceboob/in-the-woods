@@ -70,7 +70,7 @@ interface GalleryImage {
   category: string;
 }
 
-const categories = ['Wszystkie', 'Salon', 'Kuchnia i jadalnia', 'Sypialnie', 'Łazienki', 'Taras i ogród', 'Balia ogrodowa z funkcją jacuzzi', 'Okolica'];
+const categories = ['Wszystkie', 'Salon', 'Kuchnia i jadalnia', 'Sypialnie', 'Łazienki', 'Taras i ogród', 'Balia z hydromasażem', 'Okolica'];
 
 const images: GalleryImage[] = [
   // Salon
@@ -130,12 +130,12 @@ const images: GalleryImage[] = [
   { thumb: ogniskoDzieci, alt: 'Dzieci siedzące przy ognisku', category: 'Taras i ogród' },
   { thumb: ogniskoNocne, alt: 'Ognisko płonące po zmroku przy altanie', category: 'Taras i ogród' },
 
-  // Balia ogrodowa z funkcją jacuzzi
-  { thumb: jacuzziNight, alt: 'Podświetlona balia ogrodowa wieczorem', category: 'Balia ogrodowa z funkcją jacuzzi' },
-  { thumb: gardenTubFront, alt: 'Balia ogrodowa widziana od frontu', category: 'Balia ogrodowa z funkcją jacuzzi' },
-  { thumb: gardenTubHouse, alt: 'Balia ogrodowa obok drewnianego domu', category: 'Balia ogrodowa z funkcją jacuzzi' },
-  { thumb: gardenTubGarden, alt: 'Balia ogrodowa otoczona zielenią', category: 'Balia ogrodowa z funkcją jacuzzi' },
-  { thumb: jacuzziNoc, alt: 'Balia z podświetleniem po zmroku', category: 'Balia ogrodowa z funkcją jacuzzi' },
+  // Balia z hydromasażem (jacuzzi)
+  { thumb: jacuzziNight, alt: 'Podświetlona balia ogrodowa wieczorem', category: 'Balia z hydromasażem' },
+  { thumb: gardenTubFront, alt: 'Balia ogrodowa widziana od frontu', category: 'Balia z hydromasażem' },
+  { thumb: gardenTubHouse, alt: 'Balia ogrodowa obok drewnianego domu', category: 'Balia z hydromasażem' },
+  { thumb: gardenTubGarden, alt: 'Balia ogrodowa otoczona zielenią', category: 'Balia z hydromasażem' },
+  { thumb: jacuzziNoc, alt: 'Balia z podświetleniem po zmroku', category: 'Balia z hydromasażem' },
 
   // Okolica
   { thumb: drogaLesna, alt: 'Leśna droga biegnąca między drzewami', category: 'Okolica' },
@@ -175,7 +175,7 @@ const Galeria = () => {
   return (
     <SEOPageLayout
       title="Galeria zdjęć domku w lesie | In The Woods Supraśl"
-      description="Galeria In The Woods: salon z kominkiem, kuchnia, sypialnie, ogród i balia ogrodowa z funkcją jacuzzi. Zobacz domek w Puszczy Knyszyńskiej."
+      description="Galeria In The Woods: salon z kominkiem, kuchnia, sypialnie, ogród i balia z hydromasażem (jacuzzi). Zobacz domek w Puszczy Knyszyńskiej."
       breadcrumbName="Galeria"
       ogImage="https://www.suprasl.online/images/exterior-main.webp"
     >
@@ -183,7 +183,7 @@ const Galeria = () => {
         Galeria zdjęć domu i jego wyposażenia
       </h1>
       <p className="text-muted-foreground text-lg mb-10 max-w-2xl">
-        Zobacz zdjęcia salonu, kuchni, sypialni, ogrodu i balii ogrodowej z funkcją jacuzzi.
+        Zobacz zdjęcia salonu, kuchni, sypialni, ogrodu i balii z hydromasażem (jacuzzi).
         Kliknij kategorię, aby filtrować obrazy.
       </p>
 

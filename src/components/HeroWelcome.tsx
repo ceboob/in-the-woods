@@ -4,23 +4,23 @@ import { TreePine, Home, Volume2, Heart } from 'lucide-react';
 const benefits = [
   {
     icon: TreePine,
-    title: 'Slow w sercu natury',
-    text: 'Dom stoi w miejscowości Konne, niedaleko Supraśla i Puszczy Knyszyńskiej, czyli w dobrym miejscu na leśne spacery i weekend bez planu. Przed podróżą sprawdźcie aktualną trasę i warunki dojazdu.',
+    title: 'Tu się nigdzie nie spieszycie',
+    text: 'Dom stoi w Konnem, 10 minut od Supraśla, a las zaczyna się za płotem. Idealne miejsce na weekend bez planu, bez budzika i bez sprawdzania maili co pięć minut.',
   },
   {
     icon: Home,
     title: 'Kominek, kafle i balia pod gwiazdami',
-    text: 'Drewniane belki, kominek i płyta kaflowa sprawiają, że wieczory same robią się dłuższe. A kiedy najdzie Was ochota na chill pod gwiazdami, możecie dorzucić ogrodową balię z jacuzzi (opcja za dopłatą, dostępność potwierdzimy przed pobytem). Szczegóły wyposażenia ogrodu i zasady korzystania z miejsca na ognisko ustalimy przed Waszym przyjazdem.',
+    text: 'Drewniane belki, kominek i kaflowa kuchnia sprawiają, że wieczory same robią się dłuższe. Chcecie więcej? Dorzućcie gorącą balię z hydromasażem w ogrodzie: 250 zł za cały pobyt, dajcie znać przy rezerwacji, a nagrzejemy ją na Wasz przyjazd.',
   },
   {
     icon: Volume2,
     title: 'Cały dom tylko dla Was',
-    text: 'Dom wynajmujemy jednej grupie naraz, więc macie tu pełną prywatność. Szczegóły pobytu i dostępne udogodnienia znajdziecie w opisie obiektu.',
+    text: 'Dom wynajmujemy jednej ekipie naraz. Żadnych obcych przy śniadaniu, żadnego pukania w ścianę, że za głośno. Bo nie ma komu.',
   },
   {
     icon: Heart,
     title: 'Spokojny pobyt wśród zieleni',
-    text: 'Odpoczywajcie we własnym tempie, bez zegarka. Pobyt z psem jest możliwy, a ewentualne opłaty i informacje o ogrodzeniu potwierdźcie z gospodarzem.',
+    text: 'Odpoczywajcie we własnym tempie, bez zegarka. Pies jedzie z Wami gratis, a ogrodzony ogród to dla niego osobny plac zabaw.',
   },
 ];
 
@@ -37,12 +37,12 @@ const HeroWelcome = () => {
           Od gospodarza
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl text-foreground mb-6 text-center font-heading">
-          Prywatny azyl w lesie koło Supraśla – dom z bali na wyłączność
+          Dom z bali w lesie koło Supraśla. Cały. Wasz.
         </h2>
 
         <div className="space-y-4 text-muted-foreground font-sans text-base md:text-lg leading-relaxed text-center">
           <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed font-sans">
-            Wynajmujecie cały dom z bali tylko dla siebie i nikt nie będzie Wam tu przeszkadzał. Nasz całoroczny drewniany dom w lesie koło Supraśla stworzyliśmy z sercem i pasją, żebyście mogli zwolnić tempo, posłuchać szumu drzew i po prostu pobyć razem. Wyślijcie zapytanie o wolny termin, a odpowiemy z informacją o dostępności i cenie.
+            Wynajmujecie cały dom z bali tylko dla siebie. Ten całoroczny drewniany dom urządzaliśmy własnymi rękami, żebyście mogli tu zwolnić, posłuchać szumu sosen i po prostu pobyć razem. Napiszcie, kiedy chcecie przyjechać, a odpiszemy z ceną i wolnymi terminami, zwykle w kilka godzin.
           </p>
         </div>
 
@@ -69,11 +69,11 @@ const HeroWelcome = () => {
           style={{ transitionDelay: isVisible ? '700ms' : '0ms' }}
         >
           <p className="text-muted-foreground font-sans text-base leading-relaxed max-w-xl mx-auto">
-            Traktujcie ten dom jak własny – z szacunkiem i uśmiechem. Zostawcie go tak, jakbyście
-            chcieli go zastać za rok, kiedy tu wrócicie.
+            Traktujcie ten dom jak własny, tylko troszkę lepiej. Zostawcie go tak, jak sami
+            chcielibyście go zastać, kiedy tu wrócicie.
           </p>
           <p className="text-base sm:text-lg md:text-xl text-foreground/80 leading-relaxed mt-4 font-sans">
-            Pamiętajcie: dom jest dla ludzi, a&nbsp;nie ludzie dla domu. Bawcie się dobrze!
+            Kanapa jest do leżenia, a kominek do gapienia się w ogień. Korzystajcie śmiało i bawcie się dobrze!
           </p>
           <p className="mt-4 text-sm text-muted-foreground">— Maciej, gospodarz</p>
           <a

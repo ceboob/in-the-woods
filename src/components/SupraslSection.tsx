@@ -68,7 +68,7 @@ const guides = [
     alt: 'Kajaki na rzece Supraśl',
   },
   {
-    slug: 'restauracje-suprasl',
+    slug: 'przewodnik-kulinarny-suprasl',
     title: 'Restauracje Supraśl – gdzie zjeść',
     excerpt: 'Kartacze, babka ziemniaczana i kuchnia tatarska — przewodnik kulinarny po Supraślu.',
     image: blogRestauracje,

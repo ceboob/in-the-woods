@@ -18,7 +18,7 @@ const CyfrowyDetoksLas = () => (
     relatedArticles={[
       { title: 'Romantyczny weekend na Podlasiu', slug: 'romantyczny-weekend-podlasie' },
       { title: 'Workation na Podlasiu', slug: 'workation-podlasie' },
-      { title: 'Najlepsze miejsca w Puszczy Knyszyńskiej', slug: 'najlepsze-miejsca-puszcza-knyszynska' },
+      { title: 'Puszcza Knyszyńska: przewodnik po szlakach', slug: 'puszcza-knyszynska-przewodnik' },
     ]}
   >
     <article className="prose prose-lg max-w-none space-y-8">
