@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { X, Phone, ArrowRight } from 'lucide-react';
 import { invokeEdgeFunction } from '@/lib/edgeFunction';
+import { pushToDataLayer } from '@/lib/gtm';
 
 const ExitIntentPopup = () => {
   const [show, setShow] = useState(false);
@@ -33,6 +34,11 @@ const ExitIntentPopup = () => {
     const phoneRegex = /^\+?[0-9\s-]{7,20}$/;
     if (!phone || !phoneRegex.test(phone)) return;
 
+    pushToDataLayer({
+      event: 'callback_click',
+      source: 'exit_intent',
+    });
+
     try {
       const { data: result, error } = await invokeEdgeFunction<{ error?: string }>(
         'rate-limit-submit',
@@ -53,10 +59,16 @@ const ExitIntentPopup = () => {
         return;
       }
       if (error) throw error;
+      if (responseError) throw new Error(responseError);
     } catch (err) {
       console.error('Callback save error:', err);
+      return;
     }
 
+    pushToDataLayer({
+      event: 'callback_submitted',
+      source: 'exit_intent',
+    });
     setSubmitted(true);
     setTimeout(() => {
       setShow(false);

@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import ImageReveal from '@/components/ImageReveal';
+import { pushToDataLayer } from '@/lib/gtm';
 import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
 
 import jacuzziNight from '@/assets/jacuzzi-night-lg.webp';
@@ -496,6 +497,12 @@ const GallerySection = () => {
     const realIndex = filteredImages.indexOf(img);
     setLightboxIndex(realIndex);
     document.body.style.overflow = 'hidden';
+    pushToDataLayer({
+      event: 'gallery_open',
+      gallery_category: activeCategory,
+      image_alt: img?.alt,
+      image_index: realIndex,
+    });
   };
 
   const closeLightbox = useCallback(() => {

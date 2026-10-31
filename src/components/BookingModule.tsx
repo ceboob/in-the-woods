@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { invokeEdgeFunction } from '@/lib/edgeFunction';
 import { useToast } from '@/hooks/use-toast';
+import { pushToDataLayer } from '@/lib/gtm';
 
 interface BookingData {
   checkIn: string;
@@ -122,6 +123,12 @@ const BookingModule = () => {
         }
         if (error) throw error;
         if (responseError) throw new Error(responseError);
+        pushToDataLayer({
+          event: 'booking_form_submitted',
+          check_in: data.checkIn,
+          check_out: data.checkOut,
+          guests: Number(data.guests),
+        });
         setStep('sent');
       } catch (err) {
         console.error('Booking error:', err);

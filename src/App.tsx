@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import CookieConsent from './components/CookieConsent';
+import GTMTracker from './components/GTMTracker';
 import ClientRoutes from './routes/ClientRoutes';
 
 const Sonner = lazy(() => import('@/components/ui/sonner').then((m) => ({ default: m.Toaster })));
@@ -26,6 +27,7 @@ const App = () => (
           <Sonner />
         </Suspense>
         <BrowserRouter>
+          <GTMTracker />
           <Suspense fallback={<PageLoader />}>
             <ClientRoutes />
             <CookieConsent />
