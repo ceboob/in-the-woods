@@ -8,8 +8,8 @@ const WydarzeniaSupra2026 = () => (
     metaTitle="Wydarzenia Supraśl 2026 – kalendarz i daty"
     metaDescription="Największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku – daty festiwali, kalendarz i noclegi Supraśl."
     slug="wydarzenia-suprasl-2026"
-    publishDate="2026-03-30"
-    readTime="12 min"
+    publishDate="2026-07-18"
+    readTime="14 min"
     keywords={[
       'największe imprezy i wydarzenia w Supraślu i okolicach w 2026 roku',
       'wydarzenia Supraśl 2026',
@@ -25,7 +25,7 @@ const WydarzeniaSupra2026 = () => (
       {
         question: 'Jakie są największe imprezy w Supraślu w 2026 roku?',
         answer:
-          'Największe imprezy w Supraślu w 2026 to: Mistrzostwa Świata w Pieczeniu Babki i Kiszki (czerwiec), Dni Supraśla (lipiec), Festiwal Wertep (lipiec–sierpień), Podlaskie Święto Chleba (sierpień) oraz Festiwal Muzyki Cerkiewnej (maj). Każde z nich przyciąga tysiące turystów z całej Polski.',
+          'Największe imprezy w Supraślu w 2026 to: Dni Supraśla (lipiec), Festiwal Wertep (lipiec–sierpień), Szwedaczki Supraślskie – spacery z pochodniami (sierpień), Światowe Mistrzostwa w Pieczeniu Babki i Kiszki (8 sierpnia), Nocny Rajd Rowerowy 60 km (21 sierpnia) oraz Supraśl Maraton Leśny (29 sierpnia). Warto też zobaczyć wystawę „Popiełuszko w rzeźbie" w Parku przy Domu Ludowym.',
       },
       {
         question: 'Kiedy jest sezon turystyczny w Supraślu?',
@@ -35,7 +35,7 @@ const WydarzeniaSupra2026 = () => (
       {
         question: 'Czy wydarzenia w Supraślu są darmowe?',
         answer:
-          'Większość wydarzeń w Supraślu jest bezpłatna — Dni Supraśla, jarmarki regionalne, kino letnie i koncerty plenerowe to imprezy otwarte. Niektóre wydarzenia, jak Festiwal Wertep, mogą wymagać biletów na wybrane spektakle.',
+          'Większość wydarzeń w Supraślu jest bezpłatna — spacery z pochodniami (Szwedaczki), kino letnie, koncerty na rynku i pikniki rodzinne to imprezy otwarte. Niektóre wydarzenia, jak Festiwal Wertep, mogą wymagać biletów na wybrane spektakle.',
       },
       {
         question: 'Gdzie nocować podczas wydarzeń w Supraślu?',
@@ -72,19 +72,19 @@ const WydarzeniaSupra2026 = () => (
       </p>
       <ol className="list-decimal list-inside space-y-1 text-foreground/80">
         <li>
-          <strong>Mistrzostwa Świata w Pieczeniu Babki i Kiszki</strong> — 27–28 czerwca 2026
+          <strong>Szwedaczki Supraślskie</strong> — wieczorne spacery z pochodniami (cały sierpień)
         </li>
         <li>
-          <strong>Dni Supraśla</strong> — 10–12 lipca 2026
+          <strong>Koncert Pamięci Powstańców Warszawskich</strong> — 1 sierpnia 2026
         </li>
         <li>
-          <strong>Festiwal Wertep</strong> — 24 lipca – 2 sierpnia 2026
+          <strong>Światowe Mistrzostwa w Pieczeniu Babki i Kiszki</strong> — 8 sierpnia 2026
         </li>
         <li>
-          <strong>Podlaskie Święto Chleba</strong> — 9 sierpnia 2026
+          <strong>Nocny Rajd Rowerowy 60 km</strong> — 21 sierpnia 2026
         </li>
         <li>
-          <strong>Festiwal Muzyki Cerkiewnej</strong> — 20–24 maja 2026
+          <strong>Supraśl Maraton Leśny</strong> — 29 sierpnia 2026
         </li>
       </ol>
       <p className="mt-3 text-sm text-muted-foreground">
@@ -142,25 +142,6 @@ const WydarzeniaSupra2026 = () => (
       <strong>Dojazd z Supraśla:</strong> 25 minut samochodem.
     </p>
 
-    <h3>Mistrzostwa Świata w Pieczeniu Babki i Kiszki Ziemniaczanej – 27–28 czerwca 2026</h3>
-    <p>
-      To najbardziej „podlaskie" wydarzenie, jakie możesz sobie wyobrazić. Mistrzostwa Świata w
-      Pieczeniu Babki i Kiszki Ziemniaczanej gromadzą najlepszych kucharzy regionalnych, którzy
-      rywalizują w przygotowaniu tradycyjnych specjałów kuchni podlaskiej. Impreza odbywa się na
-      łonie natury — w leśnej scenerii, przy akompaniamencie muzyki ludowej, warsztatów rękodzieła i
-      degustacji.
-    </p>
-    <p>
-      Klimat jest wyjątkowy — pachnący babką las, dzieci bawiące się na łące, starsi mieszkańcy
-      dzielący się przepisami swoich babć. To autentyczność, jakiej nie znajdziesz na żadnym
-      festiwalu gastronomicznym w dużym mieście.
-    </p>
-    <p>
-      <strong>Dla kogo:</strong> foodies, rodziny z dziećmi, miłośnicy tradycji.
-      <br />
-      <strong>Lokalizacja:</strong> okolice Supraśla, Podlasie.
-    </p>
-
     <h3>Dni Supraśla – 10–12 lipca 2026</h3>
     <p>
       Dni Supraśla to trzydniowe święto całego miasteczka. Koncerty plenerowe gwiazd polskiej sceny
@@ -177,6 +158,34 @@ const WydarzeniaSupra2026 = () => (
       <strong>Dla kogo:</strong> wszyscy — rodziny, pary, grupy przyjaciół.
       <br />
       <strong>Lokalizacja:</strong> centrum Supraśla, Park Zdrojowy.
+    </p>
+
+    <h3>Wystawa plenerowa „Popiełuszko w rzeźbie" – lipiec–sierpień 2026</h3>
+    <p>
+      W Parku przy Domu Ludowym w Supraślu prezentowana jest plenerowa wystawa rzeźb poświęcona
+      ks. Jerzemu Popiełuszce. To poruszająca ekspozycja łącząca sztukę z historią — rzeźby w
+      otoczeniu parkowej zieleni tworzą wyjątkowy, refleksyjny klimat. Idealna na spokojny spacer
+      pomiędzy innymi wydarzeniami.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> miłośnicy sztuki, historii i spacerskich klimatów.
+      <br />
+      <strong>Lokalizacja:</strong> Park przy Domu Ludowym, Supraśl.
+    </p>
+
+    <h3>Szwedaczki Supraślskie – wieczorne spacery z pochodniami – cały sierpień 2026</h3>
+    <p>
+      Szwedaczki to unikalna propozycja na letnie wieczory w Supraślu — spacery z pochodniami po
+      zmroku, podczas których odkrywasz miasteczko z zupełnie nowej strony. Klimatyczne oświetlenie,
+      opowieści i atmosfera sprzyjająca rozmowom. To jedno z tych doświadczeń, które zapamiętasz na
+      długo.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> pary, rodziny, wszyscy szukający wyjątkowego wieczoru.
+      <br />
+      <strong>Lokalizacja:</strong> Supraśl (trasa spaceru).
+      <br />
+      <strong>Rezerwacje:</strong> 666 238 280 (Kopart Pracownia Artystyczna Supraśl)
     </p>
 
     <h3>Festiwal Wertep – 24 lipca – 2 sierpnia 2026</h3>
@@ -199,74 +208,233 @@ const WydarzeniaSupra2026 = () => (
       <strong>Więcej:</strong> wertep.pl (strona festiwalu)
     </p>
 
-    <h3>Podlaskie Święto Chleba – 9 sierpnia 2026</h3>
+    <h3>Koncert Pamięci Powstańców Warszawskich – 1 sierpnia 2026 (20:00)</h3>
     <p>
-      Podlaskie Święto Chleba to hołd złożony najbardziej podstawowemu i szlachetnemu z pokarmów.
-      Piekarze z całego Podlasia prezentują swoje wypieki — od tradycyjnego chleba na zakwasie,
-      przez sękacze, po regionalne ciasta i bułki. Można kupić świeży chleb prosto z pieca, wziąć
-      udział w warsztatach pieczenia i posłuchać opowieści o dawnych metodach wypieku.
+      Wieczór wspomnień i muzyki w Ogrodzie Saskim w Supraślu. Koncert upamiętniający rocznicę
+      wybuchu Powstania Warszawskiego to moment refleksji i wspólnego przeżywania historii. W
+      parkowej scenerii, przy dźwiękach muzyki, Supraśl oddaje hołd bohaterom tamtych dni.
     </p>
     <p>
-      <strong>Dla kogo:</strong> smakosze, rodziny, miłośnicy tradycji kulinarnych.
+      <strong>Dla kogo:</strong> wszyscy — to wydarzenie łączące pokolenia.
       <br />
-      <strong>Lokalizacja:</strong> okolice Supraśla.
+      <strong>Lokalizacja:</strong> Ogród Saski, Supraśl.
     </p>
 
-    <h3>Kino letnie – lipiec–sierpień 2026 (weekendy)</h3>
+    <h3>Ogród społeczny w Supraślu – warsztaty – 1 sierpnia 2026 (10:00 i 16:00)</h3>
     <p>
-      Letnie projekcje filmowe pod gwiazdami to już tradycja w Supraślu. Co weekend w lipcu i
-      sierpniu w Parku Zdrojowym lub na terenie obiektów kulturalnych wyświetlane są filmy — od
-      polskiego kina autorskiego po klasyki światowe. Koc, ciepły napój i film pod rozgwieżdżonym
-      niebem Puszczy Knyszyńskiej — brzmi idealnie?
+      Dwa bloki warsztatowe w Ogrodzie CKiR w Supraślu: o 10:00 warsztaty z budowy podwyższonych
+      grządek, a o 16:00 warsztaty wyplatania z wikliny. To praktyczna lekcja ogrodnictwa i
+      rzemiosła — idealna dla rodzin, które chcą spędzić aktywnie czas na świeżym powietrzu.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> rodziny, ogrodnicy, miłośnicy rękodzieła.
+      <br />
+      <strong>Lokalizacja:</strong> Ogród CKiR, Supraśl.
+    </p>
+
+    <h3>Autentycznie – las i człowiek – 5 sierpnia 2026 (17:30)</h3>
+    <p>
+      Edukacyjne spotkanie przyrodnicze organizowane przez Zgłębianie Natury. To okazja, by
+      zgłębić relację człowieka z lasem — Puszcza Knyszyńska jest idealnym tłem do takich
+      rozmów. Zajęcia prowadzone w Bibliotece Publicznej w Supraślu.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> miłośnicy przyrody, rodziny z dziećmi, edukatorzy.
+      <br />
+      <strong>Lokalizacja:</strong> Biblioteka Publiczna, Supraśl.
+      <br />
+      <strong>Zapisy:</strong> 733 866 717
+    </p>
+
+    <h3>Kino kulinarne – 7 sierpnia 2026 (21:00)</h3>
+    <p>
+      Seans filmowy połączony z tematycznym jedzeniem od Wspólnego Stołu w Domu Ludowym w
+      Supraślu. Kino kulinarne to wyjątkowe doświadczenie — oglądasz film, a jednocześnie
+      kosztujesz potraw nawiązujących do jego fabuły. Idealna propozycja na letni wieczór.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> kinomani, foodies, pary.
+      <br />
+      <strong>Lokalizacja:</strong> Dom Ludowy, Supraśl.
+    </p>
+
+    <h3>Światowe Mistrzostwa w pieczeniu babki i kiszki – 8 sierpnia 2026 (14:00)</h3>
+    <p>
+      To kultowe wydarzenie kulinarne Supraśla wraca w sierpniu! Na amfiteatrze w Supraślu
+      spotkają się mistrzowie pieczenia babki ziemniaczanej i kiszki — tradycyjnych potraw
+      kuchni podlaskiej. Degustacje, konkursy i atmosfera jakiej nie znajdziesz w żadnej
+      restauracji.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> foodies, rodziny, miłośnicy tradycji.
+      <br />
+      <strong>Lokalizacja:</strong> Amfiteatr, Supraśl.
+    </p>
+
+    <h3>Kino letnie – U Pana Boga za piecem – 13 sierpnia 2026 (21:00)</h3>
+    <p>
+      Letnia projekcja kultowego polskiego filmu na Rynku w Supraślu. Koc, gwiazdy i
+      film pod gołym niebem — to już tradycja letnich wieczorów w supraskim rynku. Wstęp
+      wolny.
     </p>
     <p>
       <strong>Dla kogo:</strong> pary, rodziny, miłośnicy kina.
       <br />
-      <strong>Lokalizacja:</strong> Park Zdrojowy, Supraśl.
+      <strong>Lokalizacja:</strong> Rynek, Supraśl.
     </p>
 
-    <h3>Jarmarki regionalne – maj–wrzesień 2026</h3>
+    <h3>Noc Wilków – spacer po Puszczy Knyszyńskiej – 14 sierpnia 2026 (17:30)</h3>
     <p>
-      Przez cały sezon turystyczny w Supraślu i okolicach odbywają się jarmarki regionalne.
-      Rękodzieło podlaskie, miody, sery, wędliny, wikliniarstwo, kowalstwo artystyczne — to tylko
-      część tego, co znajdziesz na stoiskach. Jarmarki to doskonała okazja do kupienia autentycznych
-      pamiątek i posmakowania lokalnych przysmaków.
+      Spacer po Puszczy Knyszyńskiej w ramach cyklu „Noc Wilków" organizowany przez Siedzibę
+      Parku Krajobrazowego Puszczy Knyszyńskiej. To okazja, by poznać nocne życie lasu z
+      przewodnikiem — owady, ssaki, ptaki i tajemnice Puszczy, które wychodzą po zmroku.
     </p>
     <p>
-      <strong>Dla kogo:</strong> miłośnicy rękodzieła, turyści szukający pamiątek.
+      <strong>Dla kogo:</strong> miłośnicy przyrody, rodziny z dziećmi, turyści.
       <br />
-      <strong>Lokalizacja:</strong> rynek w Supraślu, Park Zdrojowy.
+      <strong>Lokalizacja:</strong> Siedziba Parku Krajobrazowego Puszczy Knyszyńskiej.
     </p>
 
-    <h3>Warsztaty rękodzieła – cały sezon 2026</h3>
+    <h3>Święto Wojska Polskiego – 15 sierpnia 2026 (12:00)</h3>
     <p>
-      W sezonie turystycznym Supraśl oferuje liczne warsztaty rękodzieła — od tkactwa i garncarstwa,
-      przez malowanie ikon, po tradycyjne metody wypieku chleba. To doskonała aktywność dla rodzin z
-      dziećmi i par szukających czegoś więcej niż zwykłe zwiedzanie.
+      Uroczyste obchody Święta Wojska Polskiego w Ogrodzie Saskim w Supraślu. To dzień
+      wyjątkowej atmosfery — okazja do wspólnego świętowania w parkowej scenerii z
+      rodziną i bliskimi.
     </p>
     <p>
-      <strong>Dla kogo:</strong> rodziny, pary, grupy.
+      <strong>Dla kogo:</strong> wszyscy — rodziny, turyści, mieszkańcy.
       <br />
-      <strong>Lokalizacja:</strong> różne lokalizacje w Supraślu.
+      <strong>Lokalizacja:</strong> Ogród Saski, Supraśl.
     </p>
 
-    <h3>Koncerty plenerowe – czerwiec–sierpień 2026</h3>
+    <h3>Spacer historyczny z leśnikiem – 15 sierpnia 2026 (11:00)</h3>
     <p>
-      Park Zdrojowy w Supraślu zamienia się latem w naturalną salę koncertową. Koncerty muzyki
-      klasycznej, jazzowej i folkowej odbywają się regularnie przez cały sezon. Grają zarówno
-      lokalni artyści, jak i uznane zespoły z całej Polski. Akustyka parkowego amfiteatru w
-      otoczeniu stuletnich drzew tworzy niezapomnianą atmosferę.
+      Spacer z leśnikiem po Arboretum w Kopnej Górze. To edukacyjna wycieczka, podczas
+      której dowiesz się o drzewach, krzewach i ekosystemach Puszczy Knyszyńskiej od
+      prawdziwego specjalisty. Idealne uzupełnienie wizyty w Supraślu.
     </p>
     <p>
-      <strong>Dla kogo:</strong> melomani, pary, rodziny.
+      <strong>Dla kogo:</strong> rodziny, turyści, miłośnicy przyrody.
       <br />
-      <strong>Lokalizacja:</strong> Park Zdrojowy, amfiteatr, Supraśl.
+      <strong>Lokalizacja:</strong> Arboretum, Kopna Góra.
+    </p>
+
+    <h3>II Turnus Półkolonii Letnich – 17–21 sierpnia 2026</h3>
+    <p>
+      Drugi turnus półkolonii letnich dla dzieci w Supraślu. Pięć dni pełnych zabawy,
+      warsztatów i odkrywania Puszczy Knyszyńskiej pod okiem opiekunów. Idealne dla
+      rodzin szukających aktywnego wypoczynku dla swoich pociech.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> rodziny z dziećmi.
+      <br />
+      <strong>Lokalizacja:</strong> Supraśl.
+      <br />
+      <strong>Informacje:</strong> 513 683 254
+    </p>
+
+    <h3>Nocny Rajd Rowerowy – 60 km po Puszczy – 21 sierpnia 2026 (19:00)</h3>
+    <p>
+      60-kilometrowy nocny rajd rowerowy po Puszczy Knyszyńskiej startujący z Supraśla.
+      To wyzwanie dla zaawansowanych rowerzystów, którzy chcą poczuć Puszczę nocą —
+      latarki, gwiazdy i absolutna cisza lasu. Niezapomniane przeżycie.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> rowerzyści, sportowcy, śmiałkowie.
+      <br />
+      <strong>Lokalizacja:</strong> start/meta Supraśl, trasa Puszcza Knyszyńska.
+    </p>
+
+    <h3>Noc Nietoperzy – spacer po Puszczy – 21 sierpnia 2026 (17:30)</h3>
+    <p>
+      Spacer po Puszczy Knyszyńskiej poświęcony nietoperzom, organizowany przez Siedzibę
+      Parku Krajobrazowego. Dowiedz się, jakie gatunki nietoperzy żyją w Puszczy i jak
+      obserwować je w ich naturalnym środowisku. Fascynujące i edukacyjne doświadczenie.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> miłośnicy przyrody, rodziny z dziećmi.
+      <br />
+      <strong>Lokalizacja:</strong> Siedziba Parku Krajobrazowego Puszczy Knyszyńskiej.
+    </p>
+
+    <h3>Szanty w Supraślu – koncert na rynku – 22 sierpnia 2026</h3>
+    <p>
+      Koncert szantowy na Rynku w Supraślu. Morskie klimaty w sercu Podlasia —
+      to połączenie, które zaskakuje i zachwyca. Wspólne śpiewanie, gitarowe riffy i
+      atmosfera letniego festiwalu. Idealny wieczór z rodziną lub przyjaciółmi.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> wszyscy — rodziny, pary, grupy przyjaciół.
+      <br />
+      <strong>Lokalizacja:</strong> Rynek, Supraśl.
+    </p>
+
+    <h3>Murmures du soir / Szepty wieczorne – recital pieśni francuskich – 29 sierpnia 2026 (18:00)</h3>
+    <p>
+      Recital pieśni francuskich w Domu Ludowym w Supraślu. Wieczór z piosenkami
+      Édith Piaf, Charlesa Aznavoura i innych legend francuskiej muzyki. Kameralna
+      atmosfera, piękne melodie i klimat jak w paryskiej kawiarni — tylko w Supraślu.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> melomani, pary, miłośnicy kultury francuskiej.
+      <br />
+      <strong>Lokalizacja:</strong> Dom Ludowy, Supraśl.
+    </p>
+
+    <h3>Turniej Rummikub – 29 sierpnia 2026 (11:00)</h3>
+    <p>
+      Turniej gry planszowej Rummikub w Bibliotece Publicznej w Supraślu. Świetna
+      rozrywka dla całej rodziny — rywalizacja, śmiech i nowe znajomości. Idealny
+      pomysł na przedpołudnie w deszczowy dzień.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> rodziny, grupy przyjaciół, gracze.
+      <br />
+      <strong>Lokalizacja:</strong> Biblioteka Publiczna, Supraśl.
+    </p>
+
+    <h3>Piknik z Żubrami – 29 sierpnia 2026</h3>
+    <p>
+      Plenerowa impreza rodzinna na zakończenie wakacji w Zagrodzie Pokazowej Żubrów w
+      Kopnej Górze. Piknik z żubrami to idealny sposób na pożegnanie lata —
+      spotkanie z tymi majestatycznymi zwierzętami, jedzenie z grilla i zabawa na
+      świeżym powietrzu.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> rodziny z dziećmi, turyści.
+      <br />
+      <strong>Lokalizacja:</strong> Zagroda Pokazowa Żubrów, Kopna Góra.
+    </p>
+
+    <h3>Supraśl Maraton Leśny – 29 sierpnia 2026 (18:00)</h3>
+    <p>
+      Maraton, półmaraton i bieg na 10 km oraz biegi dla dzieci — wszystko w scenerii
+      Puszczy Knyszyńskiej. Supraśl Maraton Leśny to wydarzenie biegowe, które łączy
+      sport z naturą. Trasy prowadzą przez najpiękniejsze zakątki lasu, a meta czeka
+      w centrum Supraśla.
+    </p>
+    <p>
+      <strong>Dla kogo:</strong> biegacze, rodziny, sportowcy amatorzy.
+      <br />
+      <strong>Lokalizacja:</strong> Supraśl i Puszcza Knyszyńska.
     </p>
 
     {/* ===== SEKCJA 4: KALENDARZ ===== */}
     <h2>Kalendarz wydarzeń Supraśl 2026 – kiedy najlepiej przyjechać?</h2>
 
-    <p>Poniższy kalendarz pomoże Ci zaplanować pobyt tak, by trafić na najciekawsze wydarzenia:</p>
+    <p>
+      Poniższy kalendarz pomoże Ci zaplanować pobyt tak, by trafić na najciekawsze wydarzenia. Daty
+      wydarzeń organizowanych przez Centrum Kultury i Rekreacji zostały potwierdzone w{' '}
+      <a
+        href="https://ckirsuprasl.com/kalendarz/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        oficjalnym kalendarzu CKiR Supraśl
+      </a>{' '}
+      — aktualne terminy zawsze sprawdzaj tam przed wyjazdem.
+    </p>
 
     <div className="overflow-x-auto my-6 not-prose">
       <table className="w-full border-collapse text-sm">
@@ -294,14 +462,14 @@ const WydarzeniaSupra2026 = () => (
           <tr className="bg-accent/20">
             <td className="border border-border px-4 py-3 font-medium">Czerwiec</td>
             <td className="border border-border px-4 py-3">
-              Mistrzostwa Babki i Kiszki, koncerty plenerowe, warsztaty
+              Bez dużych imprez (wg kalendarza CKiR) — idealny na pobyt bez tłumów
             </td>
-            <td className="border border-border px-4 py-3">🟢 Idealny na rodziny</td>
+            <td className="border border-border px-4 py-3">🟢 Spokojny, rodzinny miesiąc</td>
           </tr>
           <tr>
             <td className="border border-border px-4 py-3 font-medium">Lipiec</td>
             <td className="border border-border px-4 py-3">
-              Dni Supraśla, Festiwal Wertep, kino letnie, jarmarki
+              Dni Supraśla, Festiwal Wertep, Popiełuszko w rzeźbie (wystawa)
             </td>
             <td className="border border-border px-4 py-3">
               🔴 Szczyt sezonu — rezerwuj wcześnie!
@@ -310,7 +478,10 @@ const WydarzeniaSupra2026 = () => (
           <tr className="bg-accent/20">
             <td className="border border-border px-4 py-3 font-medium">Sierpień</td>
             <td className="border border-border px-4 py-3">
-              Festiwal Wertep, Święto Chleba, kino letnie, koncerty
+              Szwedaczki z pochodniami, Koncert Powstańców, Mistrzostwa Babki i Kiszki (8.08),
+              kino letnie „U Pana Boga za piecem" (13.08), Noc Wilków / Noc Nietoperzy,
+              Nocny Rajd Rowerowy (21.08), Turniej Rummikub, Murmures du soir, Maraton Leśny,
+              Piknik z Żubrami
             </td>
             <td className="border border-border px-4 py-3">
               🔴 Szczyt sezonu — rezerwuj wcześnie!
@@ -319,7 +490,8 @@ const WydarzeniaSupra2026 = () => (
           <tr>
             <td className="border border-border px-4 py-3 font-medium">Wrzesień</td>
             <td className="border border-border px-4 py-3">
-              Jarmarki, warsztaty, ostatnie koncerty
+              Supraska Jesień Chopinowska (5.09), wystawa „Strój" (10.09),
+              festiwal historyczny „Rzeczpospolita Przez Wieki" (11–13.09)
             </td>
             <td className="border border-border px-4 py-3">🟡 Złota jesień, spokój</td>
           </tr>
@@ -411,7 +583,9 @@ const WydarzeniaSupra2026 = () => (
       — w międzyczasie eksploruj
       <Link to="/blog/szlaki-piesze-rowerowe-suprasl">szlaki Puszczy Knyszyńskiej</Link>,
       <Link to="/blog/kajaki-suprasl">spływy kajakowe</Link> i{' '}
-      <Link to="/blog/restauracje-suprasl">restauracje Supraśla</Link>.
+      <Link to="/blog/restauracje-suprasl">restauracje Supraśla</Link>. W sierpniu natomiast
+      warto zaplanować dłuższy pobyt — od spaceru z pochodniami (Szwedaczki) przez Mistrzostwa
+      Babki i Kiszki (8 sierpnia) aż po Nocny Rajd Rowerowy i Maraton Leśny pod koniec miesiąca.
     </p>
 
     {/* ===== SEKCJA 8: PODSUMOWANIE ===== */}
@@ -420,8 +594,9 @@ const WydarzeniaSupra2026 = () => (
     <p>
       Supraśl to jedno z najbardziej niedocenionych miejsc na turystycznej mapie Polski. W 2026 roku
       kalendarz wydarzeń jest wyjątkowo bogaty — od duchowego Festiwalu Muzyki Cerkiewnej w maju,
-      przez kulinarne Mistrzostwa Babki i Kiszki w czerwcu, aż po artystyczny Festiwal Wertep w
-      lipcu i sierpniu.
+      przez kulinarne Mistrzostwa Babki i Kiszki w sierpniu, aż po wrześniowy festiwal historyczny
+      „Rzeczpospolita Przez Wieki". Sierpień przynosi cały wachlarz atrakcji: spacery z pochodniami
+      (Szwedaczki), koncerty na rynku, nocne rajdy rowerowe i biegi po Puszczy Knyszyńskiej.
     </p>
     <p>
       To miejsce, gdzie autentyczność spotyka się z naturą, a każde wydarzenie ma w sobie duszę — bo

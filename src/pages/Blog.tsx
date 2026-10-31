@@ -149,11 +149,11 @@ const articles = [
     slug: 'wydarzenia-suprasl-2026',
     title: 'Największe imprezy i wydarzenia w Supraślu 2026 – kalendarz + daty',
     excerpt:
-      'Pełny kalendarz wydarzeń w Supraślu na 2026: Dni Supraśla, Festiwal Wertep, Święto Chleba i więcej. Daty, opisy i gdzie nocować.',
+      'Pełny kalendarz wydarzeń w Supraślu na 2026: Dni Supraśla, Festiwal Wertep, Szwedaczki z pochodniami, Mistrzostwa Babki i Kiszki i więcej. Daty, opisy i gdzie nocować.',
     image: blogWydarzenia,
-    date: '2026-03-30',
-    readTime: '12 min',
-    keywords: ['wydarzenia Supraśl 2026', 'imprezy Supraśl', 'festiwale Podlasie'],
+    date: '2026-07-18',
+    readTime: '14 min',
+    keywords: ['wydarzenia Supraśl 2026', 'imprezy Supraśl', 'Szwedaczki Supraśl', 'sierpień Supraśl'],
   },
   {
     slug: 'puszcza-knyszynska-historie',
