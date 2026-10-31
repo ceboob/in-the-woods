@@ -1,5 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Analytics } from '@vercel/analytics/react';
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { TooltipProvider } from '@/components/ui/tooltip';
@@ -33,6 +34,7 @@ const App = () => (
             <CookieConsent />
           </Suspense>
         </BrowserRouter>
+        <Analytics />
       </TooltipProvider>
     </HelmetProvider>
   </QueryClientProvider>
