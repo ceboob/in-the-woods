@@ -1,43 +1,60 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { MapPin, Navigation } from 'lucide-react';
 
 const LocationSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section id="lokalizacja" className="section-padding bg-background">
-      <div ref={ref} className={`max-w-5xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div
+        ref={ref}
+        className={`max-w-5xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
+      >
         <div className="text-center mb-12 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">Lokalizacja</p>
-          <h2 className="section-title">Jak do nas trafić</h2>
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
+            Lokalizacja
+          </p>
+          <h2 className="section-title">Gdzie jesteśmy: Konne koło Supraśla</h2>
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
-            <MapPin className="w-4 h-4 text-forest" />
+            <MapPin className="w-4 h-4 text-primary" />
             <p className="text-sm">Konne 109/1, 16-030 Supraśl</p>
           </div>
         </div>
 
-        <div className="overflow-hidden border border-border mb-6">
+        <div className="max-w-3xl mx-auto mb-8 space-y-4 text-muted-foreground leading-relaxed text-center">
+          <p>
+            Dom stoi w <strong>Konnem</strong>, na skraju Puszczy Knyszyńskiej. Do centrum Supraśla macie
+            około 10 minut, do Białegostoku 30–40 minut samochodem.
+          </p>
+          <p>
+            W Supraślu czekają monaster, Muzeum Ikon i bulwary nad rzeką. Las macie od razu za płotem,
+            więc na pierwszy spacer nie musicie nawet odpalać auta.
+          </p>
+        </div>
+
+        <div className="overflow-hidden border border-border mb-6 rounded-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2365.5!2d23.436622!3d53.208577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTPCsDEyJzMwLjkiTiAyM8KwMjYnMTIuMCJF!5e0!3m2!1spl!2spl!4v1710000000000"
+            src="https://maps.google.com/maps?q=53.208577,23.436622&z=14&output=embed&hl=pl"
             width="100%"
             height="400"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Lokalizacja In The Woods"
+            title="Mapa dojazdu do In The Woods w miejscowości Konne"
             className="w-full"
           />
         </div>
 
         <div className="text-center space-y-3">
           <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-            Przy rezerwacie Krzemienne Góry, w sercu Puszczy Knyszyńskiej.
+            Adres: Konne 109/1, 16-030 Supraśl. Kliknijcie przycisk poniżej, a Mapy Google poprowadzą Was pod same drzwi.
           </p>
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=53.208577,23.436622"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Wyznacz trasę w Mapach Google (otworzy się w nowej karcie)"
             className="btn-outline inline-flex items-center gap-2"
           >
             <Navigation className="w-4 h-4" /> Wyznacz trasę

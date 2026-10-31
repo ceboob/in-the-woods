@@ -1,74 +1,76 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
 
 const SEOTextSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="section-padding bg-secondary">
-      <div ref={ref} className={`max-w-4xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div
+        ref={ref}
+        className={`max-w-4xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
+      >
         <div className="text-center mb-12 space-y-4">
-          <h2 className="section-title">Noclegi Supraśl – wyjątkowy dom w lesie</h2>
+          <h2 className="section-title">Nocleg pod Supraślem w pigułce</h2>
         </div>
 
         <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground leading-relaxed">
           <p>
-            Szukasz <strong>noclegu w Supraślu</strong>? In The Woods – noclegi Supraśl to prywatny <strong>dom w lesie z jacuzzi</strong>,
-            położony w sercu Puszczy Knyszyńskiej, zaledwie 10 minut jazdy od centrum Supraśla i 25 minut od Białegostoku.
-            To wyjątkowa alternatywa dla hotelu — <Link to="/domek-suprasl" className="text-forest underline hover:text-forest-light transition-colors">domek Supraśl</Link> na wyłączność, 
-            otoczony lasem i ciszą natury, z ogrodzonym terenem, kominkiem i ruską banią w ogrodzie.
+            In The Woods to dom z bali w Konnem koło Supraśla, wynajmowany w całości jednej ekipie. Macie
+            kominek, kuchnię, taras, ogród i Starlinka. Balia z hydromasażem to dodatek za 250 zł za pobyt.
+            Szczegóły znajdziecie na stronie o{' '}
+            <Link
+              to="/noclegi-suprasl"
+              className="text-primary underline hover:text-primary/80 transition-colors"
+            >
+              noclegach w Supraślu
+            </Link>
+            .
           </p>
 
-          <h3 className="font-serif text-xl text-foreground">Noclegi Supraśl – dom na wynajem</h3>
+          <h3 className="font-heading text-xl text-foreground">Zaplanuj czas w Supraślu</h3>
           <p>
-            Nasz <strong>dom Supraśl</strong> oferuje kominek z prawdziwym ogniem, w pełni wyposażoną kuchnię z ceglanym piecem, 
-            dwie sypialnie na poddaszu z drewnianymi belkami, nowoczesną łazienkę, ogród z altaną i taras z widokiem na las.
-            Goście mogą skorzystać z prywatnej ruskiej bani z balią — drewnianej beczki z gorącą wodą podgrzewaną na drewno, 
-            idealnej po dniu spędzonym na szlakach
-            <Link to="/puszcza-knyszynska-nocleg" className="text-forest underline hover:text-forest-light transition-colors"> Puszczy Knyszyńskiej</Link>.
-            To jeden z nielicznych <strong>noclegów w Puszczy Knyszyńskiej</strong> łączących komfort z prawdziwą bliskością natury — 
-            300 metrów od Galerii Leśnej Powstania Styczniowego i rezerwatu Krzemienne Góry.
+            Monaster, Muzeum Ikon, kajaki, rower i babka ziemniaczana: w Supraślu i okolicy nudzić się
+            nie da. Zajrzyjcie do naszego przewodnika, w którym zebraliśmy{' '}
+            <Link
+              to="/atrakcje-suprasl"
+              className="text-primary underline hover:text-primary/80 transition-colors"
+            >
+              atrakcje Supraśla
+            </Link>
+            .
           </p>
 
-          <h3 className="font-serif text-xl text-foreground">Domek z jacuzzi Podlasie</h3>
+          <h3 className="font-heading text-xl text-foreground">Zanim napiszecie</h3>
           <p>
-            Szukasz <Link to="/domek-z-jacuzzi-podlasie" className="text-forest underline hover:text-forest-light transition-colors">domku z jacuzzi na Podlasiu</Link>?
-            Nasza ruska bania z balią z gorącą wodą to wyjątkowy element oferty. Gorąca woda pod gwiazdami, 
-            w otoczeniu Puszczy Knyszyńskiej — to rytuał relaksu, który goście wspominają najczęściej.
-            Bania mieści 4–6 osób, podgrzewana jest naturalnie drewnem i działa przez cały rok.
-            Obiekt znajduje się przy rezerwacie przyrody Krzemienne Góry — w otoczeniu starych drzew i leśnych ścieżek.
+            Rzućcie okiem na cennik i minimalną długość pobytu (zwykle 2 noce, w wakacje 3). Pies jedzie
+            gratis, więc tu nie ma czego doliczać. Formularz to tylko pytanie o termin: niczego
+            nie rezerwuje i niczego nie pobiera.
           </p>
 
-          <h3 className="font-serif text-xl text-foreground">Dom w lesie Puszcza Knyszyńska</h3>
           <p>
-            In The Woods to autentyczny <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light transition-colors">dom w lesie</Link> — 
-            drewniany dom z bala w leśnej osadzie Konne, otoczony stuletnią puszczą. 
-            Do domu prowadzi gruntowa droga przez las, a ogrodzony teren zapewnia prywatność i bezpieczeństwo.
-            Wnętrze zachwyca autentycznością: rzeźbione drewniane szafki, ceglany kominek, sossnowe belki 
-            i ceramika z Podlasia. To nie jest stylizowany "domek" — to prawdziwe miejsce z duszą, 
-            idealne na <Link to="/noclegi-suprasl" className="text-forest underline hover:text-forest-light transition-colors">nocleg w Supraślu</Link> z dala od zgiełku.
-          </p>
-
-          <h3 className="font-serif text-xl text-foreground">Weekend w Supraślu</h3>
-          <p>
-            In The Woods to doskonały wybór na <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light transition-colors">weekend w Supraślu</Link> —
-            zarówno romantyczny wypad we dwoje, jak i dłuższy pobyt z rodziną czy przyjaciółmi. 
-            Organizujemy również <Link to="/wieczor-panienski-suprasl" className="text-forest underline hover:text-forest-light transition-colors">wieczory panieńskie</Link> i 
-            imprezy okolicznościowe. Odkryj
-            <Link to="/atrakcje-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> atrakcje Supraśla</Link>,
-            <Link to="/blog/szlaki-piesze-rowerowe-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> szlaki piesze i rowerowe</Link>,
-            <Link to="/blog/kajaki-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> spływ kajakowy rzeką Supraśl</Link> oraz
-            <Link to="/blog/restauracje-suprasl" className="text-forest underline hover:text-forest-light transition-colors"> najlepsze restauracje w Supraślu</Link>.
-          </p>
-
-          <h3 className="font-serif text-xl text-foreground">Sprawdź noclegi w Supraślu</h3>
-          <p>
-            Szukasz sprawdzonego <Link to="/noclegi-suprasl" className="text-forest underline hover:text-forest-light transition-colors">noclegu w Supraślu</Link>?
-            Sprawdź nasz <Link to="/blog/weekend-suprasl-plan" className="text-forest underline hover:text-forest-light transition-colors">plan na weekend w Supraślu</Link>,
-            dowiedz się <Link to="/blog/co-robic-suprasl" className="text-forest underline hover:text-forest-light transition-colors">co robić w Supraślu</Link>,
-            odkryj <Link to="/blog/suprasl-atrakcje-uzdrowisko" className="text-forest underline hover:text-forest-light transition-colors">Supraśl jako uzdrowisko</Link> i 
-            poznaj <Link to="/blog/kruszyniany-tatarska-wies" className="text-forest underline hover:text-forest-light transition-colors">tatarską wieś Kruszyniany</Link> — 
-            jedną z najciekawszych atrakcji Podlasia, zaledwie godzinę jazdy od In The Woods.
+            Gotowe plany macie w przewodnikach o{' '}
+            <Link
+              to="/weekend-suprasl"
+              className="text-primary underline hover:text-primary/80 transition-colors"
+            >
+              weekendzie w Supraślu
+            </Link>
+            ,{' '}
+            <Link
+              to="/blog/szlaki-piesze-rowerowe-suprasl"
+              className="text-primary underline hover:text-primary/80 transition-colors"
+            >
+              trasach spacerowych
+            </Link>{' '}
+            i{' '}
+            <Link
+              to="/blog/kajaki-suprasl"
+              className="text-primary underline hover:text-primary/80 transition-colors"
+            >
+              spływach kajakowych
+            </Link>
+            .
           </p>
         </div>
       </div>

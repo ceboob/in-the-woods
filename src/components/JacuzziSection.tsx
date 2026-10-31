@@ -1,61 +1,72 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import baniaImg from '@/assets/gallery-bania-dom-thumb.webp';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import ImageReveal from '@/components/ImageReveal';
+import gardenTubImg from '@/assets/gallery-bania-dom-thumb.webp';
 import { Snowflake, Leaf, Bike, Heart } from 'lucide-react';
 
 const bullets = [
-  { icon: Snowflake, text: 'Idealne zimą' },
-  { icon: Leaf, text: 'Idealne jesienią' },
-  { icon: Bike, text: 'Idealne po rowerach' },
-  { icon: Heart, text: 'Idealne na romantyczny weekend' },
+  { icon: Snowflake, text: 'Zimą: para, śnieg na czapce i gorąca woda' },
+  { icon: Leaf, text: 'Jesienią: ciepło, a wokół kolorowe liście' },
+  { icon: Bike, text: 'Po rowerze i kajaku: plecy mówią dziękuję' },
+  { icon: Heart, text: 'We dwoje: gwiazdy, bąbelki i nikt nie patrzy' },
 ];
 
 const JacuzziSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section id="jacuzzi" className="relative">
       <div className="relative h-[50vh] min-h-[400px]">
-        <img 
-          src={baniaImg} 
-          alt="Ruska bania z balią na tle drewnianej chaty In The Woods — noclegi Supraśl z prywatnym SPA" 
-          className="w-full h-full object-cover" 
-          loading="lazy"
-          width="1920"
-          height="1440"
-        />
-        <div className="absolute inset-0 bg-graphite/40" />
+        <ImageReveal>
+          <img
+            src={gardenTubImg}
+            alt="Balia z hydromasażem (jacuzzi) w ogrodzie domu In The Woods w Puszczy Knyszyńskiej"
+            className="w-full h-full object-cover"
+            loading="lazy"
+            width="1920"
+            height="1440"
+          />
+        </ImageReveal>
+        <div className="absolute inset-0 bg-foreground/40 dark:bg-black/40" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
-            <p className="text-xs tracking-[0.3em] uppercase text-cream/80 font-sans mb-4">WYJĄTKOWE CHWILE</p>
-            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-cream">Prywatna ruska bania pod gwiazdami</h2>
+            <p className="text-xs tracking-wide text-white/80 font-sans mb-4">
+              Balia z hydromasażem · 250 zł za pobyt
+            </p>
+            <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-light text-white">
+              Gorąca balia (jacuzzi) pod gwiazdami
+            </h2>
           </div>
         </div>
       </div>
 
-      <div ref={ref} className={`section-padding bg-background transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div
+        ref={ref}
+        className={`section-padding bg-background reveal-section ${isVisible ? 'is-revealed' : ''}`}
+      >
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <p className="section-subtitle mx-auto">
-              Nową atrakcją w Naszej chacie jest prywatna ruska bania — drewniana beczka 
-              z gorącą wodą i podgrzewaniem na drewno, ustawiona w ogrodzie z widokiem na las. 
-              Każdego wieczora zamienia się w Twoją prywatną strefę relaksu i SPA. 
-              Bania mieści wygodnie 4–6 osób i działa przez cały rok — latem 
-              pod wieczornym niebem, zimą wśród śniegu i mroźnego powietrza.
+              Nasza duma: balia z hydromasażem pod sosnami. Latem leżycie w niej pod gwiazdami, zimą w parze, ze śniegiem na czapce. Kosztuje 250 zł za cały pobyt. Dajcie znać przy rezerwacji, a nagrzejemy ją na Wasz przyjazd.
             </p>
-            <div className="space-y-1 font-serif text-lg md:text-xl italic text-foreground/80">
-              <p>Ciepła woda. Chłodne powietrze. Gwiazdy.</p>
+            <div className="space-y-1 text-base text-foreground/80 font-sans">
+              <p>Ciepła woda. Chłodne powietrze. Gwiazdy nad Puszczą Knyszyńską.</p>
             </div>
             <p className="text-muted-foreground text-sm">
-              To moment, kiedy naprawdę się resetujesz. Woda podgrzewana jest naturalnie drewnem — 
-              bez chemii, bez pośpiechu. Przygotowanie bani trwa ok. 2 godzin, a przyjemność — całą noc.
+              Po 20 minutach głowa wreszcie się wyłącza, a maile przestają mieć
+              jakiekolwiek znaczenie.
             </p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {bullets.map((b, i) => (
-              <div key={i} className="flex flex-col items-center gap-2 py-4 border border-border bg-card">
-                <b.icon className="w-5 h-5 text-forest" strokeWidth={1.5} />
-                <span className="text-xs text-muted-foreground tracking-wide">{b.text}</span>
+              <div
+                key={i}
+                className="flex flex-col items-center gap-4 rounded-2xl border border-border bg-card p-5"
+              >
+                <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                  <b.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
+                </div>
+                <span className="text-sm font-medium text-foreground">{b.text}</span>
               </div>
             ))}
           </div>

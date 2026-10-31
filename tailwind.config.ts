@@ -1,8 +1,22 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
+import tailwindcssTypography from "@tailwindcss/typography";
 
 export default {
-  darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  darkMode: ["selector", '[data-theme="dark"]'],
+  content: [
+    "./src/App.tsx",
+    "./src/main.tsx",
+    "./src/ssr/**/*.tsx",
+    "./src/components/*.tsx",
+    "./src/pages/**/*.{ts,tsx}",
+    "./src/routes/**/*.{ts,tsx}",
+    "./src/hooks/**/*.{ts,tsx}",
+    "./src/integrations/**/*.{ts,tsx}",
+    "./src/data/**/*.{ts,tsx}",
+    "./src/lib/**/*.{ts,tsx}",
+    "./src/components/ui/{accordion,badge,button,card,dialog,input,label,select,sonner,table,toast,toaster,tooltip}.tsx",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -14,10 +28,12 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Grand Hotel"', 'cursive'],
-        script: ['"Sacramento"', 'cursive'],
-        serif: ['"Mulish"', 'system-ui', 'sans-serif'],
-        sans: ['"Mulish"', 'system-ui', 'sans-serif'],
+        display: ['"Monoton"', 'cursive'],
+        accent: ['"Encode Sans SC"', 'sans-serif'],
+        heading: ['"Poppins"', 'sans-serif'],
+        script: ['"Poppins"', 'sans-serif'],
+        serif: ['"Poppins"', 'sans-serif'],
+        sans: ['"Noto Sans"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -64,6 +80,7 @@ export default {
         cream: "hsl(var(--cream))",
         graphite: "hsl(var(--graphite))",
         "warm-white": "hsl(var(--warm-white))",
+        teal: "hsl(var(--teal))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -96,5 +113,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [tailwindcssAnimate, tailwindcssTypography],
 } satisfies Config;

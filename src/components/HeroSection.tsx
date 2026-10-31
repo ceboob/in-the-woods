@@ -1,5 +1,6 @@
-import heroImg from '@/assets/exterior-main.webp';
-import { Phone, Star, Users, TreePine, Sparkles } from 'lucide-react';
+import heroImgSm from '@/assets/exterior-main-sm.webp';
+import heroImgLg from '@/assets/exterior-main-lg.webp';
+import { Phone, Users, Flame, Sparkles } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollTo = (id: string) => {
@@ -7,63 +8,67 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Noclegi Supraśl — dom w lesie z jacuzzi, In The Woods, Puszcza Knyszyńska" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
-        <div className="absolute inset-0 bg-gradient-to-b from-graphite/60 via-graphite/30 to-graphite/70" />
+        <img
+          src={heroImgLg}
+          srcSet={`${heroImgSm} 640w, ${heroImgLg} 1028w`}
+          sizes="100vw"
+          alt="Drewniany dom z bali w lesie pod Supraślem, In The Woods"
+          className="w-full h-full object-cover"
+          width="1028"
+          height="771"
+          loading="eager"
+          {...{ fetchpriority: 'high' }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#333333]/75 via-[#333333]/50 to-[#333333]/80" />
       </div>
-      
+
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-tight mb-4 animate-fade-up" style={{ letterSpacing: '0.01em' }}>
-          In The Woods – noclegi Supraśl
+        <h1 className="text-2xl sm:text-3xl md:text-4xl text-white text-center leading-tight animate-fade-up logo-glow font-accent mt-8 sm:mt-0">
+          Noclegi pod Supraślem — cały dom z bali dla Was
         </h1>
-        <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-cream/70 mb-3 animate-fade-in">
-          Dom w lesie z jacuzzi blisko Supraśla
+        <p className="font-sans font-semibold mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white logo-glow animate-fade-up delay-100">
+          Drewniany dom na skraju Puszczy Knyszyńskiej, 10 minut od Supraśla. Kominek, las za oknem i zero tłumów. Sąsiedzi? Głównie sarny.
         </p>
 
-        <div className="flex flex-col items-center gap-1 mb-10 animate-fade-up delay-100">
-          <p className="font-serif text-lg md:text-xl text-cream/90 italic">Prywatny dom w lesie.</p>
-          <p className="font-serif text-lg md:text-xl text-cream/90 italic">Kominek. Ruska bania. Cisza natury.</p>
-        </div>
-
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
-          <div className="flex items-center gap-2 text-cream/80">
+          <div className="flex items-center gap-2 text-white/90">
             <Users className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide">Dom na wyłączność</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">Dom z bali na wyłączność</span>
           </div>
-          <div className="flex items-center gap-2 text-cream/80">
-            <TreePine className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide">10 min od Supraśla</span>
+          <div className="flex items-center gap-2 text-white/90">
+            <Flame className="w-4 h-4" />
+            <span className="text-xs md:text-sm tracking-wide font-medium">Kominek i las za oknem</span>
           </div>
-          <div className="flex items-center gap-2 text-cream/80">
+          <div className="flex items-center gap-2 text-white/90">
             <Sparkles className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide">Jacuzzi pod gwiazdami</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">Balia pod gwiazdami</span>
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-up delay-300">
-          <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary bg-cream text-graphite hover:bg-cream/90">
-            Sprawdź dostępność
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6 animate-fade-up delay-300">
+          <button
+            onClick={() => scrollTo('#rezerwacja')}
+            className="btn-primary bg-primary text-primary-foreground hover:bg-primary/90"
+          >
+            Sprawdź wolne terminy
           </button>
-          <a href="tel:+48722765101" className="btn-outline border-cream text-cream hover:bg-cream hover:text-graphite inline-flex items-center justify-center gap-2">
-            <Phone className="w-4 h-4" /> Zadzwoń
+          <a
+            href="tel:+48722765101"
+            className="btn-outline border-white text-white hover:bg-primary hover:text-primary-foreground hover:border-primary inline-flex items-center justify-center gap-2"
+          >
+            <Phone className="w-4 h-4" /> Zadzwoń do Macieja
           </a>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6 animate-fade-in delay-400">
-          <div className="flex items-center gap-1.5 text-cream/60 text-xs">
-            <Star className="w-3.5 h-3.5 fill-cream/60 text-cream/60" />
-            <span>5★ opinie</span>
-          </div>
-          <span className="text-cream/30">·</span>
-          <span className="text-cream/60 text-xs">Ponad 100 zadowolonych gości</span>
-          <span className="text-cream/30">·</span>
-          <span className="text-cream/60 text-xs">Rezerwacje bezpośrednie</span>
-        </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-px h-12 bg-cream/40" />
+        <div className="w-px h-12 bg-white/40" />
       </div>
     </section>
   );

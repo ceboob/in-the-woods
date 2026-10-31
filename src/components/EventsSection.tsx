@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
 import { PartyPopper, Heart, Users, Briefcase } from 'lucide-react';
 
@@ -6,53 +6,78 @@ const events = [
   {
     icon: Heart,
     title: 'Wieczory panieńskie',
-    desc: 'Prywatna balia pod gwiazdami, kominek i las na wyłączność. Niezapomniany wieczór w kameralnym gronie.',
+    desc: 'Balia pod gwiazdami, prosecco, kominek i las tylko dla Was. Co się dzieje w puszczy, zostaje w puszczy.',
   },
   {
     icon: PartyPopper,
     title: 'Wieczory kawalerskie',
-    desc: 'Ognisko, grill, ruska bania i absolutna wolność. Impreza w sercu Puszczy Knyszyńskiej.',
+    desc: 'Ognisko, grill, balia i zero sąsiadów do uciszania. Najbliżsi sąsiedzi to dziki, a one nie składają skarg.',
   },
   {
     icon: Users,
     title: 'Urodziny i rocznice',
-    desc: 'Kameralne świętowanie w otoczeniu natury. Dom na wyłączność dla do 8 osób.',
+    desc: 'Czterdziestka, rocznica albo „po prostu, bo możemy”. Cały dom dla maksymalnie 8 osób i tort przy kominku.',
   },
   {
     icon: Briefcase,
     title: 'Integracje firmowe',
-    desc: 'Team building w lesie — kominek, balia i ognisko zamiast sali konferencyjnej.',
+    desc: 'Integracja w lesie: kominek, balia i ognisko zamiast sali konferencyjnej i kolejnego flipchartu.',
   },
 ];
 
 const EventsSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="section-padding bg-background">
-      <div ref={ref} className={`max-w-6xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div
+        ref={ref}
+        className={`max-w-6xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
+      >
         <div className="text-center mb-12 space-y-4">
           <h2 className="section-title">Organizacja imprez i wydarzeń</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Prywatny dom w lesie z jacuzzi to idealne miejsce na wyjątkowe okazje. 
-            Cisza Puszczy Knyszyńskiej, premium atmosfera i pełna prywatność.
+            Panieński, kawalerski, urodziny albo integracja bez rzutnika. Jeden dom, jedna ekipa
+            i zero kelnerów nad głową.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
           {events.map((event, i) => (
-            <div key={i} className="bg-card border border-border rounded-xl p-6 text-center space-y-3 hover:shadow-md transition-shadow">
-              <event.icon className="w-8 h-8 text-forest mx-auto" strokeWidth={1.5} />
-              <h3 className="font-serif text-lg font-medium text-foreground">{event.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{event.desc}</p>
+            <div
+              key={i}
+              className="flex h-full flex-col items-center text-center gap-4 rounded-2xl border border-border bg-card p-6"
+            >
+              <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                <event.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
+              </div>
+              <h3 className="font-heading text-lg font-bold text-foreground">{event.title}</h3>
+              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">{event.desc}</p>
             </div>
           ))}
         </div>
 
         <div className="text-center">
-          <Link to="/wieczor-panienski-suprasl" className="btn-outline inline-flex items-center gap-2">
-            Dowiedz się więcej o imprezach
-          </Link>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link
+              to="/wieczor-panienski-suprasl"
+              className="btn-outline inline-flex items-center justify-center gap-2"
+            >
+              Wieczór panieński
+            </Link>
+            <Link
+              to="/wieczor-kawalerski-suprasl"
+              className="btn-outline inline-flex items-center justify-center gap-2"
+            >
+              Wieczór kawalerski
+            </Link>
+            <Link
+              to="/sylwester-podlasie"
+              className="btn-outline inline-flex items-center justify-center gap-2"
+            >
+              Sylwester w lesie
+            </Link>
+          </div>
         </div>
       </div>
     </section>

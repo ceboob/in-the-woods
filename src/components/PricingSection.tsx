@@ -1,31 +1,81 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Check, Star, Bath, Dog, Flame } from 'lucide-react';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import { Bath, Percent, Clock, Users, TreePine, Sun, Snowflake, Leaf } from 'lucide-react';
+import StripeSecurityTooltip from '@/components/StripeSecurityTooltip';
+import { GARDEN_TUB_PRICE, LONG_STAY_DISCOUNT, SEASONS, WEEKEND_SURCHARGE } from '@/lib/pricing';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
 
-const packages = [
-  {
-    name: 'Pobyt w tygodniu',
-    price: '399',
-    note: 'poza sezonem',
-    features: ['Dom i ogród tylko dla Was', 'Ogród, taras, kominek', 'Maksymalnie 6 osób dorosłych', 'Zwierzęta mile widziane'],
-    featured: false,
+const seasonPresentation = {
+  low: {
+    period: '1 listopada – 31 marca',
+    icon: Snowflake,
+    accent: 'border-l-4 border-l-sky-400',
+    iconColor: 'text-sky-500 dark:text-sky-300',
+    bgAccent: 'bg-sky-50 dark:bg-sky-950/40',
   },
-  {
-    name: 'Weekend + bania',
-    price: '549',
-    note: 'poza sezonem / min. 2 noce',
-    features: ['Maksymalnie 6 osób dorosłych', 'Drewno opałowe w cenie', 'Dom i ogród tylko dla Was', 'Priorytetowa dostępność'],
-    featured: true,
+  mid: {
+    period: '1 kwietnia – 31 maja',
+    icon: Leaf,
+    accent: 'border-l-4 border-l-amber-400',
+    iconColor: 'text-amber-600 dark:text-amber-300',
+    bgAccent: 'bg-amber-50 dark:bg-amber-950/40',
   },
-];
+  mid2: {
+    period: '1 września – 31 października',
+    icon: Leaf,
+    accent: 'border-l-4 border-l-amber-400',
+    iconColor: 'text-amber-600 dark:text-amber-300',
+    bgAccent: 'bg-amber-50 dark:bg-amber-950/40',
+  },
+  high: {
+    period: '1 czerwca – 31 sierpnia',
+    icon: Sun,
+    accent: 'border-l-4 border-l-orange-500',
+    iconColor: 'text-orange-600 dark:text-orange-300',
+    bgAccent: 'bg-orange-50 dark:bg-orange-950/40',
+  },
+} as const;
+
+const seasonData = SEASONS.map((season) => ({
+  name: season.label,
+  ...seasonPresentation[season.name as keyof typeof seasonPresentation],
+  minNights: season.minNights,
+  rows: Object.entries(season.prices).map(([guestCount, weekday]) => ({
+    guests: `do ${guestCount} osób`,
+    weekday,
+    weekend: weekday + WEEKEND_SURCHARGE,
+  })),
+}));
 
 const extras = [
-  { icon: Bath, text: 'Ruska bania — 250 zł za cały pobyt ' },
-  { icon: Dog, text: 'Pobyt z psem — bezpłatny' },
-  { icon: Flame, text: 'Drewno do ogniska — 50 zł / 25 dm³' },
+  {
+    icon: Bath,
+    title: 'Balia z hydromasażem',
+    desc: `${GARDEN_TUB_PRICE} zł za cały pobyt`,
+    note: 'niezależnie od liczby nocy',
+  },
+  {
+    icon: Percent,
+    title: 'Zniżka za długi pobyt',
+    desc: `−${LONG_STAY_DISCOUNT * 100}% przy 7+ nocach`,
+    note: 'od ceny noclegu; bez opłaty za balię',
+  },
+  {
+    icon: Clock,
+    title: 'Minimalna rezerwacja',
+    desc: `${Math.min(...SEASONS.map((season) => season.minNights))} noce (w sezonie wysokim: ${Math.max(...SEASONS.map((season) => season.minNights))})`,
+    note: 'wymóg zależy od sezonu',
+  },
 ];
 
 const PricingSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   const scrollTo = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -33,57 +83,146 @@ const PricingSection = () => {
 
   return (
     <section id="cennik" className="section-padding bg-secondary">
-      <div ref={ref} className={`max-w-5xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div
+        ref={ref}
+        className={`max-w-5xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
+      >
+        {/* Header */}
         <div className="text-center mb-12 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">Cennik</p>
-          <h2 className="section-title">Prosto i przejrzyście</h2>
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
+            Cennik
+          </p>
+          <h2 className="section-title">Ile to kosztuje? Mniej, niż myślicie</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
+            Cena jest za cały dom, nie za osobę. Zależy od sezonu, liczby gości i&nbsp;dnia tygodnia. Wszystkie dopłaty macie niżej, bez gwiazdek drobnym drukiem.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-10">
-          {packages.map((pkg, i) => (
-            <div key={i} className={`${pkg.featured ? 'border-2 border-forest' : 'border border-border'} bg-card p-8 text-center space-y-4 relative`}>
-              {pkg.featured && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-forest text-primary-foreground text-xs tracking-wider uppercase px-4 py-1 flex items-center gap-1">
-                  <Star className="w-3 h-3" /> Najczęściej wybierany
+        {/* Season tables */}
+        <div className="space-y-6 mb-12">
+          {seasonData.map((season) => {
+            const Icon = season.icon;
+            return (
+              <div
+                key={season.name}
+                className={`bg-card border border-border overflow-hidden ${season.accent}`}
+              >
+                {/* Season header */}
+                <div className={`flex items-center justify-between px-5 py-4 ${season.bgAccent}`}>
+                  <div className="flex items-center gap-3">
+                    <Icon className={`w-5 h-5 ${season.iconColor}`} strokeWidth={1.5} />
+                    <div>
+                      <h3 className="font-heading text-base font-semibold text-foreground">
+                        {season.name}
+                      </h3>
+                      <p className="text-xs text-muted-foreground">{season.period}</p>
+                    </div>
+                  </div>
+                  <span className="text-xs bg-card border border-border px-3 py-1 rounded-full text-muted-foreground whitespace-nowrap">
+                    min. {season.minNights} {season.minNights === 2 ? 'noce' : 'noce'}
+                  </span>
                 </div>
-              )}
-              <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">{pkg.name}</p>
-              <div>
-                <span className="font-serif text-4xl md:text-5xl font-light text-foreground">{pkg.price}</span>
-                <span className="text-muted-foreground ml-1">zł / noc</span>
+
+                {/* Price table */}
+                <Table>
+                  <TableHeader>
+                    <TableRow className="hover:bg-transparent">
+                      <TableHead className="w-1/3">
+                        <div className="flex items-center gap-1.5">
+                          <Users className="w-3.5 h-3.5" />
+                          <span>Goście</span>
+                        </div>
+                      </TableHead>
+                      <TableHead className="text-center">Nd–Czw</TableHead>
+                      <TableHead className="text-center">Pt–Sb</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {season.rows.map((row, i) => (
+                      <TableRow key={i}>
+                        <TableCell className="font-medium text-sm">{row.guests}</TableCell>
+                        <TableCell className="text-center">
+                          <span className="font-heading text-lg font-semibold text-foreground">
+                            {row.weekday}
+                          </span>
+                          <span className="text-xs text-muted-foreground ml-1">zł</span>
+                        </TableCell>
+                        <TableCell className="text-center">
+                          <span className="font-heading text-lg font-semibold text-foreground">
+                            {row.weekend}
+                          </span>
+                          <span className="text-xs text-muted-foreground ml-1">zł</span>
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
               </div>
-              <p className="text-xs text-muted-foreground">{pkg.note}</p>
-              <ul className="text-sm text-muted-foreground space-y-2 text-left pt-4">
-                {pkg.features.map((f, j) => (
-                  <li key={j} className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-forest" /> {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
-        {/* Extras */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
+        {/* Extras grid */}
+        <div className="grid sm:grid-cols-3 gap-4 mb-10">
           {extras.map((e, i) => (
-            <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-              <e.icon className="w-4 h-4 text-forest" strokeWidth={1.5} />
-              <span>{e.text}</span>
+            <div
+              key={i}
+              className="bg-card border border-border p-5 text-center space-y-2"
+            >
+              <e.icon className="w-6 h-6 text-primary mx-auto" strokeWidth={1.5} />
+              <p className="font-heading text-sm font-semibold text-foreground">{e.title}</p>
+              <p className="text-sm text-muted-foreground">{e.desc}</p>
+              <p className="text-[11px] text-muted-foreground/70">{e.note}</p>
             </div>
           ))}
         </div>
 
+        {/* SEO content block */}
+        <div className="bg-card border border-border p-6 md:p-8 mb-10 space-y-4">
+          <div className="flex items-center gap-2 mb-2">
+            <TreePine className="w-5 h-5 text-primary" strokeWidth={1.5} />
+            <h3 className="font-heading text-lg font-semibold text-foreground">
+              Cennik bez niespodzianek
+            </h3>
+          </div>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Wynajmujecie cały <strong>dom na wyłączność</strong>, bez obcych za ścianą. Pasuje na{' '}
+            <strong>weekend w&nbsp;lesie</strong>, wypad we dwoje, <strong>wieczór panieński na
+            Podlasiu</strong> albo tydzień pracy z&nbsp;lasu.
+          </p>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Dopłaty, wszystkie w jednym miejscu: <strong>balia z hydromasażem</strong>{' '}
+            {GARDEN_TUB_PRICE}&nbsp;zł za cały pobyt, pies 0&nbsp;zł. Przy pobycie od 7 nocy dostajecie
+            <strong> {LONG_STAY_DISCOUNT * 100}% zniżki na nocleg</strong> (rabat nie obejmuje balii).
+          </p>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Formularz to tylko pytanie o termin. Niczego nie rezerwuje i niczego nie pobiera. O zaliczce
+            i płatności dogadacie się z Maciejem, kiedy termin będzie już Wasz.
+          </p>
+        </div>
+
+        {/* Payment & CTA */}
         <div className="text-center space-y-3">
-          <p className="text-xs text-muted-foreground">
-            Cena zależy od terminu, liczby gości i sezonu. Wyślij zapytanie, aby otrzymać dokładną ofertę.
+          <div className="flex items-center justify-center gap-3 pb-1">
+            <StripeSecurityTooltip>
+              <div className="flex items-center gap-2.5 text-xs text-muted-foreground bg-background/80 border border-border rounded-full px-5 py-2.5 cursor-help">
+                <svg viewBox="0 0 60 25" className="w-12 h-5 shrink-0" aria-label="Stripe" role="img">
+                  <rect width="60" height="25" rx="4" fill="#635BFF" />
+                  <text x="30" y="17" textAnchor="middle" fill="white" fontFamily="Arial, sans-serif" fontSize="13" fontWeight="700">
+                    stripe
+                  </text>
+                </svg>
+                <span className="font-medium">Płatność online po uzgodnieniu pobytu</span>
+              </div>
+            </StripeSecurityTooltip>
+          </div>
+          <p className="text-[11px] text-muted-foreground/70">
+            Formularz służy do wysłania zapytania, nie do dokonania płatności
           </p>
-          <p className="text-xs text-muted-foreground font-medium">
-            Rezerwacja bezpośrednia — bez prowizji pośredników.
-          </p>
+
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">
             <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary">
-              Sprawdź dostępność
+              Zapytaj o termin
             </button>
             <a href="tel:+48722765101" className="btn-outline">
               Zapytaj o pobyt

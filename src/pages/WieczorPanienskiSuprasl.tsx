@@ -1,100 +1,132 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
+import { createLandingPageSchemas } from '@/lib/landingPageSchemas';
+import firepitNight from '@/assets/gallery-ognisko-nocne-thumb.webp';
 import { Link } from 'react-router-dom';
+
+const faqs = [
+  {
+    question: 'Czy można zorganizować wieczór panieński w domku?',
+    answer:
+      'Można, i to jest jedno z lepszych miejsc na panieński pod Białymstokiem. Napiszcie Maciejowi, ile Was będzie, czy wpadną goście z zewnątrz i jak głośno planujecie świętować. Wszystko ustalicie przed rezerwacją, więc na miejscu nie będzie niespodzianek.',
+  },
+  {
+    question: 'Ile osób zmieści się w domku na wieczór panieński?',
+    answer:
+      'Nocować może maksymalnie 8 osób. Macie dwie sypialnie, salon z kominkiem, kuchnię, łazienkę i ogród. Jeśli ktoś ma wpaść tylko na wieczór, dogadajcie to z Maciejem przed rezerwacją.',
+  },
+  {
+    question: 'Ile kosztuje wieczór panieński w In The Woods?',
+    answer:
+      'Od 399 zł za noc za cały dom, czyli w 8 osób wychodzi mniej, niż myślicie. W piątki i soboty dochodzi dopłata weekendowa. Balia to 250 zł za cały pobyt i warto ją wziąć, bo panieński bez balii to jak tort bez świeczek.',
+  },
+  {
+    question: 'Jakie zasady obowiązują podczas wieczoru panieńskiego?',
+    answer:
+      'Ciszę nocną, gości z zewnątrz i dekoracje ustalacie z Maciejem przed rezerwacją. Napiszcie wprost, co planujecie, a on odpowie równie wprost, co da się zrobić.',
+  },
+  {
+    question: 'Jak dojechać na panieński z Białegostoku?',
+    answer:
+      'Z Białegostoku jedziecie 30–40 minut. Adres: Konne 109/1, 16-030 Supraśl. Parking jest przy domu.',
+  },
+];
 
 const WieczorPanienskiSuprasl = () => (
   <SEOPageLayout
-    title="Wieczór panieński Supraśl – impreza w lesie z jacuzzi | In The Woods"
-    description="Wieczór panieński w Supraślu — prywatny dom w lesie z jacuzzi, kominkiem i ogrodem. Organizuj niezapomniane imprezy okolicznościowe w Puszczy Knyszyńskiej."
+    title="Wieczór panieński na Podlasiu – dom z balią | In The Woods"
+    description="Balia, prosecco, ognisko i zero sąsiadów do uciszania. Cały dom dla ekipy do 8 osób, 30–40 min od Białegostoku."
     breadcrumbName="Wieczór panieński Supraśl"
     ogImage="https://www.suprasl.online/images/kitchen-dining.jpg"
+    jsonLd={createLandingPageSchemas('/wieczor-panienski-suprasl', faqs)}
+    showRelatedPages={false}
+    ctaTitle="Zarezerwujcie dom na panieński"
+    ctaDescription="Napiszcie, jak wyobrażacie sobie ten wieczór. Maciej odpisze z wolnymi terminami i ceną."
+    ctaFormLabel="Zapytaj o termin"
   >
     <article className="prose prose-lg max-w-none space-y-8">
-      <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">Wieczór panieński Supraśl – niezapomniana impreza w lesie</h1>
-
+      <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
+        Wieczór panieński w lesie koło Supraśla. Co się dzieje w puszczy, zostaje w puszczy
+      </h1>
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Szukasz wyjątkowego miejsca na <strong>wieczór panieński w Supraślu</strong>? Zapomnij o zatłoczonych klubach 
-        i hotelowych salach. In The Woods to prywatny dom w Puszczy Knyszyńskiej z jacuzzi, kominkiem 
-        i ogrodem — idealne miejsce na niezapomniane świętowanie w gronie najbliższych przyjaciółek.
+        Panieński bez klubu, bez bramkarza i bez sąsiadów, którzy dzwonią na policję o pierwszej. Cały
+        dom z bali tylko dla Was, gorąca balia pod gwiazdami, ognisko i kominek. Najbliżsi sąsiedzi to
+        dziki, a one nie składają skarg. Do Białegostoku 30–40 minut.
+      </p>
+      <figure className="overflow-hidden rounded-xl">
+        <img
+          src={firepitNight}
+          alt="Ognisko nocą w ogrodzie domu w lesie, wieczór panieński na Podlasiu"
+          width={400}
+          height={267}
+          className="w-full aspect-[16/9] object-cover"
+          loading="lazy"
+        />
+      </figure>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">Cały domek tylko dla Was</h2>
+      <p className="text-muted-foreground leading-relaxed">
+        Drewniany dom z bali dla maksymalnie 8 osób, wynajmowany w całości jednej ekipie. Dwie
+        sypialnie, salon z kominkiem, kuchnia, ogród, taras, altana i miejsce na ognisko. Z Białegostoku
+        jedziecie 30–40 minut, czyli dokładnie tyle, ile trwa jedna playlista na rozgrzewkę.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Dlaczego wieczór panieński w lesie</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Trend na <strong>wieczory panieńskie w naturze</strong> rośnie z roku na rok. Coraz więcej pań przyszłych 
-        wybiera intymną atmosferę leśnego domu zamiast głośnych imprez w mieście. I trudno się dziwić — 
-        połączenie prywatności, natury i komfortu tworzy doświadczenie, które pamięta się na lata.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        In The Woods oferuje to, czego nie znajdziesz w żadnym innym miejscu w okolicach Supraśla: 
-        cały dom na wyłączność, gorącą balię pod gwiazdami, kominek w salonie, ognisko w ogrodzie 
-        i absolutną prywatność otoczoną Puszczą Knyszyńską.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Scenariusz idealnego wieczoru panieńskiego</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Popołudnie:</strong> Przyjazd i rozlokowanie się w domu. Wspólne gotowanie w pełni wyposażonej kuchni 
-        lub zamówienie cateringu z lokalnych <Link to="/blog/restauracje-suprasl" className="text-forest underline hover:text-forest-light">restauracji Supraśla</Link>. 
-        Degustacja prosecco na tarasie z widokiem na las.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Wieczór:</strong> Rozpalenie ruskiej bani — tradycyjnej łaźni parowej z Podlasia. 
-        Relaks w gorącej balii pod gwiazdami przy muzyce i rozmowach. Potem ognisko w ogrodzie 
-        z piankami marshmallow i wspomnieniami.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Noc:</strong> Kominek w salonie, gry planszowe, filmy na projektorze lub po prostu 
-        rozmowy do białego rana w ciszy Puszczy Knyszyńskiej.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        <strong>Rano:</strong> Poranna kawa na tarasie, spacer leśnymi ścieżkami rezerwatu Krzemienne Góry 
-        i wspólne śniadanie w kuchni pełnej słońca.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Wieczory kawalerskie i imprezy okolicznościowe</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        In The Woods to doskonałe miejsce nie tylko na wieczory panieńskie. Organizujemy również:
-      </p>
-      <ul className="text-muted-foreground space-y-2">
-        <li>🎉 <strong>Wieczory kawalerskie</strong> — balia, ognisko, grill i las na wyłączność</li>
-        <li>🎂 <strong>Urodziny i rocznice</strong> — kameralna atmosfera w otoczeniu natury</li>
-        <li>👫 <strong>Spotkania grupowe</strong> — do 8 osób w komfortowych warunkach</li>
-        <li>💼 <strong>Integracje firmowe</strong> — team building w lesie z kominkiem i balią</li>
-      </ul>
-      <p className="text-muted-foreground leading-relaxed">
-        Każda impreza w In The Woods to wydarzenie na wyłączność — żadnych innych gości, 
-        żadnych ograniczeń ciszy nocnej jak w hotelu. Tylko Wy, las i wolność.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Co oferujemy</h2>
-      <ul className="text-muted-foreground space-y-2">
-        <li>🏡 Cały dom na wyłączność (do 8 osób, 3 sypialnie)</li>
-        <li>🛁 Prywatna ruska bania z balią z gorącą wodą</li>
-        <li>🔥 Kominek w salonie</li>
-        <li>🌲 Ogrodzony ogród z miejscem na ognisko i grill</li>
-        <li>🍽️ W pełni wyposażona kuchnia</li>
-        <li>📶 Szybkie Wi-Fi i klimatyzacja</li>
-        <li>🅿️ Bezpłatny parking</li>
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Pomysły na panieński w lesie
+      </h2>
+      <ul className="text-muted-foreground space-y-3">
+        <li>
+          🛁 Balia z hydromasażem pod gwiazdami, prosecco w ręku i zero paparazzi. 250 zł za cały pobyt.
+        </li>
+        <li>🔥 Ognisko, kiełbaski i toasty za przyszłą pannę młodą. Dużo toastów.</li>
+        <li>🎲 Planszówki przy kominku i rozmowy, których nikt potem nie powtórzy.</li>
+        <li>📷 Sesja zdjęciowa w lesie o złotej godzinie. Instagram sam się nie zrobi.</li>
+        <li>🛶 W sezonie spływ kajakowy rzeką Supraśl, żeby następnego dnia przewietrzyć głowy.</li>
+        <li>🍲 Wspólne gotowanie w pełnej kuchni. Albo pizza na wynos i udawanie, że to Wy.</li>
       </ul>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w okolicy</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Przykładowy plan wieczoru panieńskiego</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Między imprezowymi aktywnościami warto zwiedzić <Link to="/atrakcje-suprasl" className="text-forest underline hover:text-forest-light">atrakcje Supraśla</Link>: 
-        Monaster, bulwary nad rzeką, lokalne kawiarnie. Można też wybrać się na <Link to="/blog/kajaki-suprasl" className="text-forest underline hover:text-forest-light">spływ 
-        kajakowy rzeką Supraśl</Link> — świetna aktywność grupowa na dzień przed lub po imprezie.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Supraśl to zaledwie 25 minut od Białegostoku, więc dojazd jest wygodny zarówno samochodem, 
-        jak i taksówką. Sprawdź też <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light">weekend w Supraślu</Link> — 
-        może impreza przerodzi się w dłuższy wypad?
+        Po południu przyjazd i rozpakowywanie dekoracji, o których panna młoda nie miała wiedzieć.
+        Wieczorem balia albo ognisko, potem gry i rozmowy przy kominku, aż ktoś zaśnie na kanapie.
+        Rano wspólne śniadanie, kawa na tarasie i krótki spacer do lasu, żeby przewietrzyć głowy.
       </p>
 
-      <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-serif text-2xl font-light">Zaplanuj imprezę w In The Woods</h3>
-        <p className="text-muted-foreground">Zadzwoń i opowiedz nam o swoich planach. Pomożemy zorganizować niezapomniany wieczór.</p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="tel:+48722765101" className="btn-primary">Zadzwoń: 722 765 101</a>
-          <a href="mailto:tutinthewood@gmail.com" className="btn-outline">Napisz do nas</a>
-        </div>
-      </div>
+      <h2 className="section-title !text-2xl md:!text-3xl">Dobre wiedzieć</h2>
+      <ul className="text-muted-foreground space-y-2">
+        <li>
+          Liczbę osób, ciszę nocną i gości z zewnątrz ustalcie z Maciejem przed rezerwacją.
+        </li>
+        <li>Balia kosztuje 250 zł za cały pobyt. Zamawiacie ją przy rezerwacji.</li>
+        <li>Pies przyjeżdża gratis, jeśli też jest druhną.</li>
+        <li>Formularz to tylko pytanie o termin. Rezerwację potwierdzimy osobno, mailem.</li>
+      </ul>
+      <p className="text-muted-foreground leading-relaxed">
+        Więcej o balii znajdziecie na stronie{' '}
+        <Link to="/domek-z-jacuzzi-podlasie" className="text-primary underline hover:text-primary/80">
+          domek z balią na Podlasiu
+        </Link>
+        , plan na dwa dni na stronie o{' '}
+        <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
+          weekendzie w Supraślu
+        </Link>
+        , a pomysły na sobotę w{' '}
+        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
+          przewodniku po atrakcjach Supraśla
+        </Link>
+        .
+      </p>
+
+      <section aria-labelledby="hen-faq">
+        <h2 id="hen-faq" className="section-title !text-2xl md:!text-3xl">Najczęstsze pytania</h2>
+        <dl className="space-y-5">
+          {faqs.map(({ question, answer }) => (
+            <div key={question}>
+              <dt className="font-semibold text-foreground">{question}</dt>
+              <dd className="mt-1 text-muted-foreground">{answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
     </article>
   </SEOPageLayout>
 );

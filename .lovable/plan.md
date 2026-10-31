@@ -1,33 +1,30 @@
 
 
-## Plan: Dokończ galerię end-to-end
+## Plan: Zamiana pochylonego tekstu (italic) na normalny styl
 
-### 1. Usuń 3 zdjęcia z galerii
-Usunąć z tablic `heroImages`/`moreImages` oraz z importów:
-- **`foteleVintage`** (linia 30, 100) — "dwoma fotelami"
-- **`ogniskoDziecko`** (linia 28, 99) — "chłopca przy ognisku"
-- **`altanaPies`** (linia 31, 101) — "psa na stole"
+### Problem
+Na stronie w wielu sekcjach używany jest tekst pochylony (`italic`) z klasą `font-serif` — w Hero, Jacuzzi, Relax, Winter, Supraśl, CTA i opiniach. Użytkownik chce zamienić ten styl na zwykły (nie-italic), mniejszy tekst w standardowym stylu body (Poppins regular).
 
-### 2. Dodaj 4 nowe unikalne zdjęcia
-Pliki już istnieją w `src/assets/` i `public/images/`. Dodać importy i wpisy do `moreImages`:
-- `gallery-sypialnia-zielone-zaslony` — Sypialnia z zielonymi zasłonami i widokiem na ogród
-- `gallery-konne-znak` — Znak kierunkowy na leśnej drodze w okolicy Konnych
-- `gallery-jadalnia-tulipany-zblizenie` — Zbliżenie na tulipany w jadalni
-- `gallery-taras-sofa-wejscie` — Sofa na tarasie przy wejściu do domu
+### Zmiany do wprowadzenia
 
-### 3. Optymalizacja ładowania galerii
-- Pierwsze 2 zdjęcia hero: `loading="eager"` + `fetchPriority="high"`
-- Pozostałe hero: `loading="lazy"` (już jest)
-- Zdjęcia w `moreImages` (ukryte za toggle): nie renderowane do DOM dopóki `showAll=false` (już działa)
-- Dodać `decoding="async"` do wszystkich `<img>`
+**Pliki do edycji (7 komponentów + 1 CSS):**
 
-### 4. Weryfikacja i publikacja
-- Build test (`npx vite build`)
-- Publikacja strony
+1. **`src/components/HeroSection.tsx`** — 2 linie: usunąć `italic`, zmienić `font-serif text-lg md:text-xl` → `text-base md:text-lg font-normal`
 
-### Pliki do edycji
-- `src/components/GallerySection.tsx` — jedyny plik
+2. **`src/components/JacuzziSection.tsx`** — 1 div: usunąć `italic font-serif`, zmienić `text-lg md:text-xl` → `text-base`
 
-### Wynik
-Galeria: ~52 unikalne zdjęcia, bez 3 wskazanych, z 4 nowymi, zoptymalizowana pod ładowanie.
+3. **`src/components/RelaxSection.tsx`** — 4 elementy: usunąć `italic font-serif`, dostosować rozmiar do `text-base`
+
+4. **`src/components/WinterSection.tsx`** — 1 linia: usunąć `italic font-serif`, zmienić na `text-base font-normal`
+
+5. **`src/components/SupraslSection.tsx`** — 1 linia: usunąć `italic font-serif`, zmienić `text-xl md:text-2xl` → `text-base md:text-lg`
+
+6. **`src/components/CTASection.tsx`** — 1 linia: usunąć `italic`
+
+7. **`src/components/TestimonialsSection.tsx`** — 1 linia w kartach opinii: usunąć `italic font-serif`
+
+8. **`src/index.css`** — usunąć klasę `.font-script` (italic Poppins) jeśli nie jest już nigdzie używana
+
+### Podsumowanie
+Wszystkie wystąpienia pochylonego tekstu (`italic` + `font-serif`) zostaną zamienione na zwykły tekst Poppins regular w mniejszym rozmiarze, zachowując kolory i pozycjonowanie bez zmian.
 

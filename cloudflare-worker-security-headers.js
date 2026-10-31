@@ -1,0 +1,55 @@
+export default {
+  async fetch(request, env, ctx) {
+    // Fetch the original response from the origin
+    const response = await fetch(request);
+
+    // Clone headers and add security headers
+    const newHeaders = new Headers(response.headers);
+
+    // Content-Security-Policy (musi być identyczna z vercel.json!)
+    newHeaders.set(
+      "Content-Security-Policy",
+      "default-src 'self'; " +
+      "script-src 'self' 'unsafe-inline' https://js.stripe.com https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com; " +
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
+      "font-src 'self' https://fonts.gstatic.com data:; " +
+      "img-src 'self' data: blob: https: http: https://www.google-analytics.com https://www.googletagmanager.com; " +
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com https://api.stripe.com https://static.cloudflareinsights.com; " +
+      "frame-src https://js.stripe.com https://hooks.stripe.com https://www.googletagmanager.com; " +
+      "object-src 'none'; " +
+      "base-uri 'self'; " +
+      "form-action 'self'; " +
+      "frame-ancestors 'self'; " +
+      "upgrade-insecure-requests"
+    );
+
+    // X-Frame-Options
+    newHeaders.set("X-Frame-Options", "SAMEORIGIN");
+
+    // Strict-Transport-Security (2 years, includeSubDomains, preload)
+    newHeaders.set(
+      "Strict-Transport-Security",
+      "max-age=63072000; includeSubDomains; preload"
+    );
+
+    // X-Content-Type-Options
+    newHeaders.set("X-Content-Type-Options", "nosniff");
+
+    // Referrer-Policy
+    newHeaders.set("Referrer-Policy", "strict-origin-when-cross-origin");
+
+    // Permissions-Policy
+    newHeaders.set(
+      "Permissions-Policy",
+      "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(self), usb=()"
+    );
+
+    // X-XSS-Protection usunięte — deprecated nagłówek, ignorowany przez nowe przeglądarki;
+    // nie występuje w vercel.json (single source of truth).
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers: newHeaders,
+    });
+  },
+};

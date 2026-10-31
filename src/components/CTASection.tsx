@@ -1,31 +1,45 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Clock, ShieldCheck, CreditCard } from 'lucide-react';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import { Clock, ShieldCheck, CreditCard, TreePine } from 'lucide-react';
 
 const CTASection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="px-6 md:px-12 py-20 md:py-28 bg-background">
-      <div ref={ref} className={`max-w-3xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <h2 className="section-title mb-4">Sprawdź dostępność noclegu w Supraślu</h2>
-        <p className="text-muted-foreground mb-8">Odpowiadamy zwykle w kilka godzin. Rezerwacja bezpośrednia — bez prowizji.</p>
+      <div
+        ref={ref}
+        className={`max-w-3xl mx-auto text-center reveal-section ${isVisible ? 'is-revealed' : ''}`}
+      >
+        <h2 className="section-title mb-4">Piszcie albo dzwońcie. Las czeka</h2>
+        <p className="text-muted-foreground mb-4 text-lg">
+          Domek w lesie do wynajęcia na Podlasiu: kominek, balia pod gwiazdami i cisza, od której
+          na początku aż dzwoni w uszach.
+        </p>
+        <p className="text-muted-foreground mb-8">
+          Maciej odpisuje zwykle w kilka godzin, z ceną i wolnymi terminami. Pytanie niczego nie rezerwuje i nic nie kosztuje.
+        </p>
 
         <div className="flex flex-wrap justify-center gap-6 mb-10">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Clock className="w-4 h-4 text-forest" /> Szybka odpowiedź
+            <Clock className="w-4 h-4 text-primary" /> Szybka odpowiedź
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <CreditCard className="w-4 h-4 text-forest" /> Bez prowizji pośrednika
+            <CreditCard className="w-4 h-4 text-primary" /> Bez prowizji pośrednika
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <ShieldCheck className="w-4 h-4 text-forest" /> Bezpośrednia rezerwacja
+            <ShieldCheck className="w-4 h-4 text-primary" /> Dom na wyłączność
+          </div>
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <TreePine className="w-4 h-4 text-primary" /> Las za płotem
           </div>
         </div>
 
-        <p className="text-xs text-muted-foreground italic">Najlepsze terminy są rezerwowane z wyprzedzeniem.</p>
+        <p className="text-xs text-muted-foreground font-sans">
+          Macie już daty? Wpiszcie je w formularzu, wtedy odpowiedź będzie szybsza.
+        </p>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default CTASection;

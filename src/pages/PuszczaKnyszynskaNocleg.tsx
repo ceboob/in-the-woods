@@ -1,128 +1,160 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
+import { createLandingPageSchemas } from '@/lib/landingPageSchemas';
+import forestWinter from '@/assets/winter-forest.webp';
 import { Link } from 'react-router-dom';
+import {
+  GARDEN_TUB_PRICE,
+  MAX_GUESTS,
+  MIN_NIGHTLY_RATE,
+  MIN_NIGHTS,
+  SEASONS,
+} from '@/lib/pricing';
 
+const highSeasonMinNights = Math.max(...SEASONS.map((season) => season.minNights));
+
+const faqs = [
+  {
+    question: 'Gdzie znaleźć nocleg w Puszczy Knyszyńskiej?',
+    answer:
+      'Na przykład u nas. In The Woods to drewniany dom na wyłączność w Konnem, na skraju puszczy, 10 minut od Supraśla. Do 8 osób, salon z kominkiem, dwie sypialnie z widokiem na las i ogród, z którego wychodzicie prosto na leśne dukty.',
+  },
+  {
+    question: 'Ile kosztuje nocleg w Puszczy Knyszyńskiej?',
+    answer:
+      `Cena noclegu zaczyna się od ${MIN_NIGHTLY_RATE} zł za noc i zależy od terminu oraz liczby gości. Balia z hydromasażem to dodatek: ${GARDEN_TUB_PRICE} zł za cały pobyt. Minimalny pobyt to ${MIN_NIGHTS} noce, a w wakacje ${highSeasonMinNights}. Cena jest za cały dom, nie za osobę.`,
+  },
+  {
+    question: 'Czy można przyjechać z psem?',
+    answer:
+      'Tak, i to za darmo. W lesie i rezerwatach trzymajcie go na smyczy, bo puszcza to dom dzików i saren. Po spacerze pies może się wyszaleć w ogrodzonym ogrodzie.',
+  },
+  {
+    question: 'Jak daleko dom znajduje się od Supraśla?',
+    answer:
+      'Około 10 minut samochodem. Adres: Konne 109/1, 16-030 Supraśl. Rano las, w południe monaster i Muzeum Ikon, na obiad babka ziemniaczana w miasteczku.',
+  },
+  {
+    question: 'Czy dom jest dostępny zimą?',
+    answer:
+      'Tak, dom jest całoroczny. Zimą grzeje kominek, a za oknem leży śnieg. Balię zamawiacie przy rezerwacji (250 zł za cały pobyt), a w siarczysty mróz Maciej powie Wam wprost, czy da się ją nagrzać.',
+  },
+];
+
+// TODO: zatwierdź treść
 const PuszczaKnyszynskaNocleg = () => (
   <SEOPageLayout
-    title="Nocleg w Puszczy Knyszyńskiej – dom w lesie | In The Woods"
-    description="Nocleg w Puszczy Knyszyńskiej — prywatny dom w lesie blisko Supraśla. Kominek, ruska bania, ogród. Rezerwat przyrody za progiem."
+    title="Nocleg w Puszczy Knyszyńskiej – dom przy szlakach | In The Woods"
+    description="Las zaczyna się za płotem. Cały dom z bali na wyłączność, baza na Krzemienne Góry, Kopną Górę i kajaki na Supraśli. Od 399 zł za noc."
     breadcrumbName="Puszcza Knyszyńska"
     ogImage="https://www.suprasl.online/images/winter-cabin-golden.jpg"
+    jsonLd={createLandingPageSchemas('/puszcza-knyszynska-nocleg', faqs)}
+    showRelatedPages={false}
+    ctaTitle="Sprawdźcie wolne terminy w puszczy"
+    ctaDescription="Podajcie daty i liczbę osób, a Maciej odpisze z ceną, zwykle w kilka godzin."
+    ctaFormLabel="Zapytaj o nocleg"
   >
     <article className="prose prose-lg max-w-none space-y-8">
-      <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">Nocleg w Puszczy Knyszyńskiej – dom w sercu natury</h1>
-
+      <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
+        Nocleg w Puszczy Knyszyńskiej: dom z bali przy szlakach
+      </h1>
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Puszcza Knyszyńska to jeden z największych i najlepiej zachowanych kompleksów leśnych w Polsce. 
-        Jeśli szukasz <strong>noclegu w Puszczy Knyszyńskiej</strong>, który oferuje prawdziwy kontakt z naturą 
-        bez rezygnacji z komfortu, In The Woods jest miejscem idealnym.
+        Budzicie się, a za oknem tylko drzewa. Kawa na tarasie, buty na nogi i jesteście w lesie.
+        In The Woods to drewniany dom w Konnem, na skraju puszczy, około 10 minut od centrum Supraśla.
+      </p>
+      <figure className="overflow-hidden rounded-xl">
+        <img
+          src={forestWinter}
+          alt="Zimowy las Puszczy Knyszyńskiej przy domu In The Woods"
+          width={1368}
+          height={1824}
+          className="w-full aspect-[16/9] object-cover"
+          loading="lazy"
+        />
+      </figure>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Puszcza Knyszyńska: las, który wyłącza głowę
+      </h2>
+      <p className="text-muted-foreground leading-relaxed">
+        To drugi co do wielkości las Podlasia, z rezerwatami, rzekami i zwierzyną, którą częściej
+        słychać, niż widać. Niedaleko domu jest rezerwat Krzemienne Góry, a w powietrzu czuć żywicę
+        i mokry mech. Po dwóch dniach przestajecie sprawdzać telefon co pięć minut.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Puszcza Knyszyńska — dlaczego warto</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Dom tylko dla Was</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Puszcza Knyszyńska to Park Krajobrazowy rozciągający się na ponad 132 tysiącach hektarów w północno-wschodniej Polsce. 
-        To mozaika starych drzewostanów, torfowisk, łąk i dolin rzecznych, będąca ostoją wielu gatunków roślin i zwierząt, 
-        w tym łosi, żubrów, rysiów i wilków.
+        Dom mieści maksymalnie {MAX_GUESTS} osób. Na dole salon z kominkiem i kuchnia z tradycyjną
+        kuchnią kaflową, na górze dwie sypialnie z dużymi łóżkami i widokiem na las.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Puszcza oferuje wyjątkowe warunki do wypoczynku i regeneracji. Czyste powietrze, cisza przerywana jedynie śpiewem ptaków, 
-        stare drzewostany tworzące naturalne katedry — to doświadczenie, które trudno znaleźć gdzie indziej w Polsce.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Region jest stosunkowo mało zurbanizowany, co oznacza brak sztucznego oświetlenia i zgiełku. Nocne niebo nad Puszczą 
-        Knyszyńską to jedno z najciemniejszych w Polsce — idealne do obserwacji gwiazd, szczególnie z gorącej ruskiej bani.
+        Na zewnątrz ogród, taras, altana i miejsce na ognisko. W środku klimatyzacja i Starlink do
+        200 Mb/s, a przed domem bezpłatny parking.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">In The Woods — Twój dom w Puszczy</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Co robić w puszczy</h2>
       <p className="text-muted-foreground leading-relaxed">
-        In The Woods to prywatny <Link to="/dom-w-lesie-suprasl" className="text-forest underline hover:text-forest-light">dom w lesie</Link> położony 
-        przy rezerwacie przyrody Krzemienne Góry, w samym sercu Puszczy Knyszyńskiej. To jeden z nielicznych noclegów, 
-        gdzie las zaczyna się dosłownie za płotem ogrodu.
+        Wiosną i latem: rower, piesze trasy i kajaki na rzece Supraśl. Jesienią grzybobranie, które
+        tutaj jest sportem narodowym. Zimą krótkie spacery po śniegu i szybki powrót do kominka, zanim
+        zrobi się ciemno.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Dom jest drewniany, przytulny i w pełni wyposażony. Salon z prawdziwym kominkiem, dwie sypialnie na piętrze, 
-        kuchnia z jadalnią, łazienka i dodatkowa toaleta. Ogrodzony ogród z tarasem, altaną i miejscem na ognisko. 
-        Prywatna ruska bania z balią z gorącą wodą.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Dom mieści komfortowo 6–8 osób i wynajmowany jest na wyłączność. Żadnych innych gości, żadnych wspólnych przestrzeni. 
-        Tylko Wy, Wasz dom i puszcza za oknem.
+        Więcej pomysłów znajdziecie w przewodniku po{' '}
+        <Link to="/atrakcje-suprasl" className="text-primary underline hover:text-primary/80">
+          atrakcjach Supraśla
+        </Link>
+        .
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Szlaki i aktywności w Puszczy Knyszyńskiej</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Zima i sylwester w puszczy
+      </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Puszcza Knyszyńska oferuje setki kilometrów szlaków pieszych i rowerowych. Od krótkich, godzinnych spacerów 
-        po wielodniowe wyprawy — każdy znajdzie coś dla siebie. Szlaki są dobrze oznakowane i utrzymane.
+        Dom jest całoroczny. Zimą puszcza cichnie tak, że słychać, jak spada śnieg. Sylwester w lesie?
+        Fajerwerki zostawcie miastu: tu macie ognisko, balię i gwiazdy. Wasz pies podziękuje.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Z In The Woods możesz ruszyć na spacer do rezerwatu Krzemienne Góry bez użycia samochodu. 
-        Stary drzewostan, mchy, paprocie i cisza — to leśna kąpiel (shinrin-yoku) w najczystszej formie.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Rzeka Supraśl, przepływająca nieopodal, oferuje spływy kajakowe o różnej długości. Trasy prowadzą przez 
-        dziewiczy krajobraz puszczy — to jedna z najpopularniejszych aktywności w regionie. 
-        Wypożyczalnie kajaków zapewniają transport do punktu startowego i odbierają z mety.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Trasy rowerowe prowadzą przez lasy, łąki i malownicze wsie. Szlak „Dolina Supraśli" to jedna z najpiękniejszych 
-        tras rowerowych w regionie. Warto zabrać własne rowery lub wypożyczyć je w Supraślu.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Grzybobranie jesienią to tradycja, którą Puszcza Knyszyńska celebruje jak mało który las w Polsce. 
-        Borowiki, podgrzybki, kurki, maślaki — sezon grzybowy trwa od sierpnia do listopada. 
-        Wielu gości In The Woods planuje pobyty specjalnie w tym okresie.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Zimą Puszcza zamienia się w magiczną krainę śniegu. Narty biegowe, rakiety śnieżne, spacery po zaśnieżonych szlakach — 
-        a po powrocie do domu czeka kominek i gorąca ruska bania. Zimowy <strong>nocleg w Puszczy Knyszyńskiej</strong> 
-        to doświadczenie jak z bajki.
+        Zobaczcie także{' '}
+        <Link to="/weekend-suprasl" className="text-primary underline hover:text-primary/80">
+          weekend w Supraślu
+        </Link>{' '}
+        albo zajrzyjcie na stronę o{' '}
+        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
+          noclegach w Supraślu
+        </Link>
+        .
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Przyroda Puszczy Knyszyńskiej</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Dobre wiedzieć</h2>
+      <ul className="text-muted-foreground space-y-2">
+        <li>Balia z hydromasażem kosztuje 250 zł za cały pobyt. Zamawiacie ją przy rezerwacji.</li>
+        <li>Pies przyjeżdża gratis.</li>
+        <li>W rezerwacie Krzemienne Góry trzymajcie się wyznaczonych ścieżek.</li>
+        <li>Do lasu zabierzcie coś na kleszcze. Jest ich tu więcej niż turystów.</li>
+      </ul>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">Cennik i rezerwacja</h2>
+      <ul className="text-muted-foreground space-y-2">
+        <li>Cena od {MIN_NIGHTLY_RATE} zł za noc, zależnie od terminu i liczby gości.</li>
+        <li>Balia z hydromasażem: {GARDEN_TUB_PRICE} zł za cały pobyt.</li>
+        <li>
+          Minimum {MIN_NIGHTS} noce, a w wakacje {highSeasonMinNights}.
+        </li>
+      </ul>
       <p className="text-muted-foreground leading-relaxed">
-        Puszcza Knyszyńska jest domem dla wielu gatunków zwierząt, w tym łosi, saren, dzików, lisów, 
-        a także rzadszych gatunków jak rysie, wilki i żubry. Bogate ptactwo — w tym bociany czarne, dzięcioły 
-        i ptaki drapieżne — czyni region rajem dla ornitologów.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Flora puszczy jest równie bogata. Stare drzewostany dębowe, grabowe i sosnowe, chronione gatunki roślin, 
-        malownicze torfowiska — każdy zakątek puszczy kryje przyrodnicze skarby. Wiosną i latem łąki puszczy 
-        zamieniają się w kolorowe dywany kwiatów.
+        Formularz to tylko pytanie o termin. Niczego nie rezerwuje i niczego nie pobiera.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Lokalizacja i dojazd</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        In The Woods znajduje się w miejscowości Konne (Konne 109/1, 16-030 Supraśl), przy rezerwacie Krzemienne Góry. 
-        10 minut samochodem od Supraśla, 25 minut od Białegostoku, 2,5 godziny od Warszawy.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Mimo położenia w sercu puszczy, dojazd jest wygodny — droga asfaltowa prowadzi bezpośrednio do domu. 
-        Parking na terenie posesji zapewnia bezpieczeństwo samochodu.
-      </p>
-
-      <h2 className="section-title !text-2xl md:!text-3xl">Rezerwacja noclegu w Puszczy Knyszyńskiej</h2>
-      <p className="text-muted-foreground leading-relaxed">
-        Rezerwacja jest bezpośrednia — bez prowizji pośredników. Ceny zaczynają się od 399 zł/noc w tygodniu 
-        i 549 zł/noc w weekendy. Ruska bania: 250 zł za cały pobyt. Pobyt z psem: bezpłatny. 
-        Minimalny czas pobytu to 2 noce.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Zadzwoń do gospodarza Macieja pod numer 722 765 101 lub wyślij zapytanie przez formularz na stronie. 
-        Odpowiadamy zwykle w kilka godzin.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Sprawdź również pełną ofertę <Link to="/noclegi-suprasl" className="text-forest underline hover:text-forest-light">noclegów w Supraślu</Link>, 
-        zaplanuj <Link to="/weekend-suprasl" className="text-forest underline hover:text-forest-light">weekend w Supraślu</Link> 
-        lub odkryj <Link to="/atrakcje-suprasl" className="text-forest underline hover:text-forest-light">atrakcje Supraśla</Link>.
-      </p>
-
-      <div className="bg-secondary p-8 text-center space-y-4 mt-12">
-        <h3 className="font-serif text-2xl font-light">Zarezerwuj nocleg w Puszczy Knyszyńskiej</h3>
-        <p className="text-muted-foreground">Prywatny dom w lesie. Kominek. Ruska bania. Cisza.</p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="tel:+48722765101" className="btn-primary">Zadzwoń: 722 765 101</a>
-          <Link to="/#rezerwacja" className="btn-outline">Sprawdź dostępność</Link>
-        </div>
-      </div>
+      <section aria-labelledby="forest-faq">
+        <h2 id="forest-faq" className="section-title !text-2xl md:!text-3xl">Najczęstsze pytania</h2>
+        <dl className="space-y-5">
+          {faqs.map(({ question, answer }) => (
+            <div key={question}>
+              <dt className="font-semibold text-foreground">{question}</dt>
+              <dd className="mt-1 text-muted-foreground">{answer}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
     </article>
   </SEOPageLayout>
 );

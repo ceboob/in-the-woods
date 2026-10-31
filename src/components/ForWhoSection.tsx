@@ -1,57 +1,78 @@
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Heart, Users, Dog, Laptop, PartyPopper } from 'lucide-react';
+import { useScrollReveal } from '@/hooks/useScrollAnimation';
+import { Heart, Users, Dog, Laptop, Snail } from 'lucide-react';
 
 const audiences = [
-  { 
-    icon: Heart, 
-    title: 'Pary', 
-    desc: 'Romantyczny azyl z balią pod gwiazdami, kominkiem i leśną ciszą. Śniadanie we dwoje na tarasie, wieczorna kąpiel w bani i niebo pełne gwiazd — czas tylko dla Was.',
+  {
+    icon: Heart,
+    title: 'Pary',
+    desc: 'We dwoje, cały dom i zero sąsiadów za ścianą. Kominek, balia pod gwiazdami, kawa na tarasie i nikt nie zapuka z pytaniem, czy wszystko w porządku. Dobre miejsce na rocznicę, zaręczyny albo po prostu na „wreszcie mamy czas”.',
   },
-  { 
-    icon: Users, 
-    title: 'Rodziny', 
-    desc: 'Bezpieczny ogrodzony teren z placem zabaw, ogniskiem i przestrzenią do wspólnego gotowania. Dzieci biegają po ogrodzie, a rodzice odpoczywają na tarasie z widokiem na las.',
+  {
+    icon: Users,
+    title: 'Rodziny z dziećmi',
+    desc: 'Do 8 osób, czyli dwie rodziny z dzieciakami albo trzy pokolenia naraz. Ogrodzony ogród z placem zabaw, ognisko i las za płotem. Dzieci zapominają o tablecie (sprawdzone, działa przez jakieś 40 minut).',
   },
-  { 
-    icon: Users, 
-    title: 'Przyjaciele', 
-    desc: 'Kameralne spotkania z grillem w altanie, gorącą balią i rozmowami przy ognisku, które trwają do rana. Dom na wyłączność — bez obcych gości.',
+  {
+    icon: Users,
+    title: 'Przyjaciele',
+    desc: 'Grill w altanie, balia, ognisko i nikt obcy przy stole. Możecie gadać głupoty do rana. Puszcza nie takie rzeczy słyszała i nikomu nie powie.',
   },
-  { 
-    icon: Dog, 
-    title: 'Z psem', 
-    desc: 'Twój pies pokocha las za progiem. Ogrodzony teren, kilometry leśnych ścieżek i altana z miską wody — u nas czworonogi są pełnoprawnymi gośćmi.',
+  {
+    icon: Dog,
+    title: 'Z psem',
+    desc: 'Pies jedzie gratis. Bez dopłat i bez kręcenia nosem. Ogród jest ogrodzony, a las zaczyna się zaraz za nim. Wasz pupil będzie tu szczęśliwszy niż Wy, i to jest w porządku.',
   },
-  { 
-    icon: Laptop, 
-    title: 'Workation', 
-    desc: 'Szybkie Wi-Fi, biurko przy oknie z widokiem na las i kawa parzzona w ciszy. Po pracy — kajaki, rower lub spacer. Praca nigdy nie wyglądała tak dobrze.',
+  {
+    icon: Laptop,
+    title: 'Praca z lasu',
+    desc: 'Starlink do 200 Mb/s w środku lasu. Spotkanie na Teamsie o 10:00, balia o 16:00. Szef nie musi wiedzieć, w jakiej kolejności.',
+  },
+  {
+    icon: Snail,
+    title: 'Spokojny wypoczynek',
+    desc: 'Cisza, ptaki i leśne ścieżki zaraz za furtką. Bez planu, bez pośpiechu i bez miejskiego hałasu. Najtrudniejsza decyzja dnia: taras czy kanapa przy kominku?',
   },
 ];
 
 const ForWhoSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section className="section-padding bg-secondary">
-      <div ref={ref} className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div
+        ref={ref}
+        className={`max-w-7xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
+      >
         <div className="text-center mb-16 space-y-4">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-sans">Dla kogo</p>
-          <h2 className="section-title">Twój pobyt, Twoje zasady</h2>
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">
+            Dla kogo
+          </p>
+          <h2 className="section-title">Dla kogo jest ten dom? Dla Was. Serio, dla prawie każdego</h2>
           <p className="section-subtitle mx-auto">
-            In The Woods wynajmujesz na wyłączność — nie dzielisz domu z innymi gośćmi. 
-            To Twoja prywatna przestrzeń w lesie, gdzie sam decydujesz o rytmie dnia.
+            Dom na wyłączność na Podlasiu, na skraju Puszczy Knyszyńskiej. Bez dzielenia kuchni, łazienki
+            i ciszy z obcymi. Do Supraśla macie 10 minut, do Białegostoku 30–40.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          {audiences.map((a, i) => (
-            <div key={i} className="card-premium text-center group">
-              <a.icon className="w-8 h-8 mx-auto mb-4 text-forest group-hover:text-forest-light transition-colors duration-300" strokeWidth={1.5} />
-              <h3 className="font-serif text-lg font-medium mb-2">{a.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
-            </div>
+        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 list-none p-0 m-0">
+          {audiences.map((a) => (
+            <li
+              key={a.title}
+              className="flex h-full flex-col items-center text-center gap-4 rounded-2xl border border-border bg-card p-6"
+            >
+              <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center">
+                <a.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
+              </div>
+              <h3 className="font-heading text-lg font-bold text-foreground">{a.title}</h3>
+              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">{a.desc}</p>
+            </li>
           ))}
+        </ul>
+
+        <div className="mt-12 text-center">
+          <a href="#rezerwacja" className="btn-primary inline-flex items-center justify-center">
+            Sprawdź wolne terminy
+          </a>
         </div>
       </div>
     </section>
