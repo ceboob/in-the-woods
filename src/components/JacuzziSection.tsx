@@ -4,10 +4,10 @@ import gardenTubImg from '@/assets/gallery-bania-dom-thumb.webp';
 import { Snowflake, Leaf, Bike, Heart } from 'lucide-react';
 
 const bullets = [
-  { icon: Snowflake, text: 'Zimą: para, śnieg na czapce i gorąca woda' },
-  { icon: Leaf, text: 'Jesienią: ciepło, a wokół kolorowe liście' },
-  { icon: Bike, text: 'Po rowerze i kajaku: plecy mówią dziękuję' },
-  { icon: Heart, text: 'We dwoje: gwiazdy, bąbelki i nikt nie patrzy' },
+  { icon: Snowflake, text: 'Zimą: para, śnieg na czapce i\u00a0gorąca woda' },
+  { icon: Leaf, text: 'Jesienią: ciepło, a\u00a0wokół kolorowe liście' },
+  { icon: Bike, text: 'Po rowerze i\u00a0kajaku: plecy mówią dziękuję' },
+  { icon: Heart, text: 'We dwoje: gwiazdy, bąbelki i\u00a0nikt nie patrzy' },
 ];
 
 const JacuzziSection = () => {
@@ -19,7 +19,7 @@ const JacuzziSection = () => {
         <ImageReveal>
           <img
             src={gardenTubImg}
-            alt="Balia z hydromasażem (jacuzzi) w ogrodzie domu In The Woods w Puszczy Knyszyńskiej"
+            alt="Balia z&nbsp;hydromasażem (jacuzzi) w&nbsp;ogrodzie domu In The Woods w&nbsp;Puszczy Knyszyńskiej"
             className="w-full h-full object-cover"
             loading="lazy"
             width="1920"
@@ -30,7 +30,7 @@ const JacuzziSection = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
             <p className="text-xs tracking-wide text-white/80 font-sans mb-4">
-              Balia z hydromasażem · 250 zł za pobyt
+              Balia z&nbsp;hydromasażem · 250&nbsp;zł za pobyt
             </p>
             <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-light text-white">
               Gorąca balia (jacuzzi) pod gwiazdami
@@ -46,14 +46,16 @@ const JacuzziSection = () => {
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <p className="section-subtitle mx-auto">
-              Nasza duma: balia z hydromasażem pod sosnami. Latem leżycie w niej pod gwiazdami, zimą w parze, ze śniegiem na czapce. Kosztuje 250 zł za cały pobyt. Dajcie znać przy rezerwacji, a nagrzejemy ją na Wasz przyjazd.
+              Nasza duma: balia z&nbsp;hydromasażem pod sosnami. Latem leżycie w&nbsp;niej pod
+              gwiazdami, zimą w&nbsp;parze, ze śniegiem na czapce. Kosztuje 250&nbsp;zł za cały
+              pobyt. Dajcie znać przy rezerwacji, a&nbsp;nagrzejemy ją na Wasz przyjazd.
             </p>
             <div className="space-y-1 text-base text-foreground/80 font-sans">
               <p>Ciepła woda. Chłodne powietrze. Gwiazdy nad Puszczą Knyszyńską.</p>
             </div>
             <p className="text-muted-foreground text-sm">
-              Po 20 minutach głowa wreszcie się wyłącza, a maile przestają mieć
-              jakiekolwiek znaczenie.
+              Po 20 minutach głowa wreszcie się wyłącza, a&nbsp;maile przestają mieć jakiekolwiek
+              znaczenie.
             </p>
           </div>
 

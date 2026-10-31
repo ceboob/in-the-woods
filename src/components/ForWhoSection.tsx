@@ -5,32 +5,32 @@ const audiences = [
   {
     icon: Heart,
     title: 'Pary',
-    desc: 'We dwoje, cały dom i zero sąsiadów za ścianą. Kominek, balia pod gwiazdami, kawa na tarasie i nikt nie zapuka z pytaniem, czy wszystko w porządku. Dobre miejsce na rocznicę, zaręczyny albo po prostu na „wreszcie mamy czas”.',
+    desc: 'We dwoje, cały dom i\u00a0zero sąsiadów za ścianą. Kominek, balia pod gwiazdami, kawa na tarasie i\u00a0nikt nie zapuka z\u00a0pytaniem, czy wszystko w\u00a0porządku. Dobre miejsce na rocznicę, zaręczyny albo po prostu na „wreszcie mamy czas”.',
   },
   {
     icon: Users,
-    title: 'Rodziny z dziećmi',
-    desc: 'Do 8 osób, czyli dwie rodziny z dzieciakami albo trzy pokolenia naraz. Ogrodzony ogród z placem zabaw, ognisko i las za płotem. Dzieci zapominają o tablecie (sprawdzone, działa przez jakieś 40 minut).',
+    title: 'Rodziny z\u00a0dziećmi',
+    desc: 'Do 8\u00a0osób, czyli dwie rodziny z\u00a0dzieciakami albo trzy pokolenia naraz. Ogrodzony ogród z\u00a0placem zabaw, ognisko i\u00a0las za płotem. Dzieci zapominają o\u00a0tablecie (sprawdzone, działa przez jakieś 40\u00a0minut).',
   },
   {
     icon: Users,
     title: 'Przyjaciele',
-    desc: 'Grill w altanie, balia, ognisko i nikt obcy przy stole. Możecie gadać głupoty do rana. Puszcza nie takie rzeczy słyszała i nikomu nie powie.',
+    desc: 'Grill w\u00a0altanie, balia, ognisko i\u00a0nikt obcy przy stole. Możecie gadać głupoty do rana. Puszcza nie takie rzeczy słyszała i\u00a0nikomu nie powie.',
   },
   {
     icon: Dog,
-    title: 'Z psem',
-    desc: 'Pies jedzie gratis. Bez dopłat i bez kręcenia nosem. Ogród jest ogrodzony, a las zaczyna się zaraz za nim. Wasz pupil będzie tu szczęśliwszy niż Wy, i to jest w porządku.',
+    title: 'Z\u00a0psem',
+    desc: 'Pies jedzie gratis. Bez dopłat i\u00a0bez kręcenia nosem. Ogród jest ogrodzony, a\u00a0las zaczyna się zaraz za nim. Wasz pupil będzie tu szczęśliwszy niż Wy, i\u00a0to jest w\u00a0porządku.',
   },
   {
     icon: Laptop,
-    title: 'Praca z lasu',
-    desc: 'Starlink do 200 Mb/s w środku lasu. Spotkanie na Teamsie o 10:00, balia o 16:00. Szef nie musi wiedzieć, w jakiej kolejności.',
+    title: 'Praca z\u00a0lasu',
+    desc: 'Starlink do 200\u00a0Mb/s w\u00a0środku lasu. Spotkanie na Teamsie o\u00a010:00, balia o\u00a016:00. Szef nie musi wiedzieć, w\u00a0jakiej kolejności.',
   },
   {
     icon: Snail,
     title: 'Spokojny wypoczynek',
-    desc: 'Cisza, ptaki i leśne ścieżki zaraz za furtką. Bez planu, bez pośpiechu i bez miejskiego hałasu. Najtrudniejsza decyzja dnia: taras czy kanapa przy kominku?',
+    desc: 'Cisza, ptaki i\u00a0leśne ścieżki zaraz za furtką. Bez planu, bez pośpiechu i\u00a0bez miejskiego hałasu. Najtrudniejsza decyzja dnia: taras czy kanapa przy kominku?',
   },
 ];
 
@@ -44,13 +44,14 @@ const ForWhoSection = () => {
         className={`max-w-7xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-16 space-y-4">
-          <p className="text-xs tracking-wide text-muted-foreground font-sans">
-            Dla kogo
-          </p>
-          <h2 className="section-title">Dla kogo jest ten dom? Dla Was. Serio, dla prawie każdego</h2>
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">Dla kogo</p>
+          <h2 className="section-title">
+            Dla kogo jest ten dom? Dla Was. Serio, dla prawie każdego
+          </h2>
           <p className="section-subtitle mx-auto">
-            Dom na wyłączność na Podlasiu, na skraju Puszczy Knyszyńskiej. Bez dzielenia kuchni, łazienki
-            i ciszy z obcymi. Do Supraśla macie 10 minut, do Białegostoku 30–40.
+            Dom na wyłączność na Podlasiu, na skraju Puszczy Knyszyńskiej. Bez dzielenia kuchni,
+            łazienki i&nbsp;ciszy z&nbsp;obcymi. Do Supraśla macie 10&nbsp;minut, do Białegostoku
+            30–40.
           </p>
         </div>
 
@@ -64,7 +65,9 @@ const ForWhoSection = () => {
                 <a.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
               <h3 className="font-heading text-lg font-bold text-foreground">{a.title}</h3>
-              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">{a.desc}</p>
+              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">
+                {a.desc}
+              </p>
             </li>
           ))}
         </ul>

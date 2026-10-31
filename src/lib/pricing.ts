@@ -64,7 +64,7 @@ export const MIN_NIGHTLY_RATE = Math.min(
 );
 
 export const WEEKEND_SURCHARGE = 100; // PLN per night on Fri/Sat
-export const LONG_STAY_DISCOUNT = 0.10; // 10% discount for 7+ nights
+export const LONG_STAY_DISCOUNT = 0.1; // 10% discount for 7+ nights
 export const GARDEN_TUB_PRICE = 250; // PLN per stay
 export const MIN_NIGHTS = 2;
 export const BASE_GUESTS = 4;
@@ -80,12 +80,14 @@ export function getSeasonForDate(date: Date): SeasonConfig {
     let beforeEnd: boolean;
 
     if (season.startMonth <= season.endMonth) {
-      afterStart = month > season.startMonth || (month === season.startMonth && day >= season.startDay);
+      afterStart =
+        month > season.startMonth || (month === season.startMonth && day >= season.startDay);
       beforeEnd = month < season.endMonth || (month === season.endMonth && day <= season.endDay);
       if (afterStart && beforeEnd) return season;
     } else {
       // Wrapping season (Nov–Mar)
-      afterStart = month > season.startMonth || (month === season.startMonth && day >= season.startDay);
+      afterStart =
+        month > season.startMonth || (month === season.startMonth && day >= season.startDay);
       beforeEnd = month < season.endMonth || (month === season.endMonth && day <= season.endDay);
       if (afterStart || beforeEnd) return season;
     }
@@ -100,7 +102,7 @@ export function getPriceForDate(date: Date, guests: number = 4): number {
 
   // Find closest guest tier
   const tiers = [2, 4, 6, 8];
-  const tier = tiers.find(t => guests <= t) || 8;
+  const tier = tiers.find((t) => guests <= t) || 8;
   const basePrice = season.prices[tier] || season.prices[4];
 
   return basePrice + (isWeekend ? WEEKEND_SURCHARGE : 0);
@@ -110,7 +112,12 @@ export function calculateTotalPrice(
   checkIn: Date,
   checkOut: Date,
   guests: number,
-): { nightPrices: { date: Date; price: number }[]; total: number; extraGuestTotal: number; discount: number } {
+): {
+  nightPrices: { date: Date; price: number }[];
+  total: number;
+  extraGuestTotal: number;
+  discount: number;
+} {
   const nightPrices: { date: Date; price: number }[] = [];
   const current = new Date(checkIn);
 
@@ -147,40 +154,46 @@ export const BLOCKED_DATES_LAST_UPDATED = '2026-10-04';
 
 export const BLOCKED_DATES: Set<string> = new Set([
   // 13.08.2026 - 03.09.2026
-  ...[13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31].map((d) => `2026-08-${String(d).padStart(2, '0')}`),
-  ...[1,2,3].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
+  ...[13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31].map(
+    (d) => `2026-08-${String(d).padStart(2, '0')}`,
+  ),
+  ...[1, 2, 3].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
 
   // 08.09.2026 - 27.09.2026
-  ...[8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
+  ...[8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27].map(
+    (d) => `2026-09-${String(d).padStart(2, '0')}`,
+  ),
 
   // 29.09.2026 - 12.10.2026
-  ...[29,30].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
-  ...[1,2,3,4,5,6,7,8,9,10,11,12].map((d) => `2026-10-${String(d).padStart(2, '0')}`),
+  ...[29, 30].map((d) => `2026-09-${String(d).padStart(2, '0')}`),
+  ...[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((d) => `2026-10-${String(d).padStart(2, '0')}`),
 
   // 16.10.2026 - 27.10.2026
-  ...[16,17,18,19,20,21,22,23,24,25,26,27].map((d) => `2026-10-${String(d).padStart(2, '0')}`),
+  ...[16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27].map(
+    (d) => `2026-10-${String(d).padStart(2, '0')}`,
+  ),
 
   // 29.10.2026 - 31.10.2026
-  ...[29,30,31].map((d) => `2026-10-${String(d).padStart(2, '0')}`),
+  ...[29, 30, 31].map((d) => `2026-10-${String(d).padStart(2, '0')}`),
 
   // 06.11.2026 - 07.11.2026
-  ...[6,7].map((d) => `2026-11-${String(d).padStart(2, '0')}`),
+  ...[6, 7].map((d) => `2026-11-${String(d).padStart(2, '0')}`),
 
   // 09.11.2026 - 14.11.2026
-  ...[9,10,11,12,13,14].map((d) => `2026-11-${String(d).padStart(2, '0')}`),
+  ...[9, 10, 11, 12, 13, 14].map((d) => `2026-11-${String(d).padStart(2, '0')}`),
 
   // 11.12.2026 - 12.12.2026
-  ...[11,12].map((d) => `2026-12-${String(d).padStart(2, '0')}`),
+  ...[11, 12].map((d) => `2026-12-${String(d).padStart(2, '0')}`),
 
   // 23.12.2026 - 25.12.2026
-  ...[23,24,25].map((d) => `2026-12-${String(d).padStart(2, '0')}`),
+  ...[23, 24, 25].map((d) => `2026-12-${String(d).padStart(2, '0')}`),
 
   // 30.12.2026 - 01.01.2027
-  ...[30,31].map((d) => `2026-12-${String(d).padStart(2, '0')}`),
+  ...[30, 31].map((d) => `2026-12-${String(d).padStart(2, '0')}`),
   ...[1].map((d) => `2027-01-${String(d).padStart(2, '0')}`),
 
   // 25.03.2027 - 28.03.2027
-  ...[25,26,27,28].map((d) => `2027-03-${String(d).padStart(2, '0')}`),
+  ...[25, 26, 27, 28].map((d) => `2027-03-${String(d).padStart(2, '0')}`),
 ]);
 
 export function formatDateKey(date: Date): string {

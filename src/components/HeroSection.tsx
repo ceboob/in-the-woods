@@ -17,7 +17,7 @@ const HeroSection = () => {
           src={heroImgLg}
           srcSet={`${heroImgSm} 640w, ${heroImgLg} 1028w`}
           sizes="100vw"
-          alt="Drewniany dom z bali w lesie pod Supraślem, In The Woods"
+          alt="Drewniany dom z&nbsp;bali w&nbsp;lesie pod Supraślem, In The Woods"
           className="w-full h-full object-cover"
           width="1028"
           height="771"
@@ -29,24 +29,31 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-white text-center leading-tight animate-fade-up logo-glow font-accent mt-8 sm:mt-0">
-          Noclegi pod Supraślem — cały dom z bali dla Was
+          Noclegi pod Supraślem — cały dom z&nbsp;bali dla Was
         </h1>
         <p className="font-sans font-semibold mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white logo-glow animate-fade-up delay-100">
-          Drewniany dom na skraju Puszczy Knyszyńskiej, 10 minut od Supraśla. Kominek, las za oknem i zero tłumów. Sąsiedzi? Głównie sarny.
+          Drewniany dom na skraju Puszczy Knyszyńskiej, 10&nbsp;minut od Supraśla. Kominek, las za
+          oknem i&nbsp;zero tłumów. Sąsiedzi? Głównie sarny.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">
           <div className="flex items-center gap-2 text-white/90">
             <Users className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide font-medium">Dom z bali na wyłączność</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">
+              Dom z&nbsp;bali na wyłączność
+            </span>
           </div>
           <div className="flex items-center gap-2 text-white/90">
             <Flame className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide font-medium">Kominek i las za oknem</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">
+              Kominek i&nbsp;las za oknem
+            </span>
           </div>
           <div className="flex items-center gap-2 text-white/90">
             <Sparkles className="w-4 h-4" />
-            <span className="text-xs md:text-sm tracking-wide font-medium">Balia pod gwiazdami</span>
+            <span className="text-xs md:text-sm tracking-wide font-medium">
+              Balia pod gwiazdami
+            </span>
           </div>
         </div>
 
@@ -64,7 +71,6 @@ const HeroSection = () => {
             <Phone className="w-4 h-4" /> Zadzwoń do Macieja
           </a>
         </div>
-
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">

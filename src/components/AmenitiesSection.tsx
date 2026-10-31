@@ -2,16 +2,7 @@ import type { LucideIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useScrollReveal } from '@/hooks/useScrollAnimation';
 import { amenityFaqs } from '@/data/amenityFaq';
-import {
-  TreePine,
-  Bath,
-  Flame,
-  FlameKindling,
-  BedDouble,
-  PawPrint,
-  Baby,
-  Tv,
-} from 'lucide-react';
+import { TreePine, Bath, Flame, FlameKindling, BedDouble, PawPrint, Baby, Tv } from 'lucide-react';
 
 type Amenity = {
   icon: LucideIcon;
@@ -25,55 +16,55 @@ type Amenity = {
 const amenities: Amenity[] = [
   {
     icon: TreePine,
-    title: 'Dom w lesie, cisza w pakiecie',
-    desc: 'Całoroczny dom do wynajęcia dla maksymalnie 8 osób, na skraju Puszczy Knyszyńskiej. Rano budzą Was ptaki, nie sąsiedzi. Do centrum Supraśla jedziecie około 10 minut. Zimą grzeje kominek i kaflowa kuchnia, latem chłodzi klimatyzacja z pompą ciepła.',
+    title: 'Dom w\u00a0lesie, cisza w\u00a0pakiecie',
+    desc: 'Całoroczny dom do wynajęcia dla maksymalnie 8\u00a0osób, na skraju Puszczy Knyszyńskiej. Rano budzą Was ptaki, nie sąsiedzi. Do centrum Supraśla jedziecie około 10\u00a0minut. Zimą grzeje kominek i\u00a0kaflowa kuchnia, latem chłodzi klimatyzacja z\u00a0pompą ciepła.',
     // TODO (właściciel): podaj dokładny czas dojścia/dojazdu do centrum i rzeki.
   },
   {
     icon: Bath,
-    title: 'Balia z hydromasażem (+250 zł za pobyt)',
-    desc: 'Po spacerze po lesie wskakujecie do gorącej wody pod sosnami. Balia stoi w ogrodzie, jest tylko dla Was i działa jak jacuzzi: bąbelki, para, gwiazdy. Kosztuje 250 zł za cały pobyt, nie za godzinę.',
-    badge: 'Hit gości',
+    title: 'Balia z\u00a0hydromasażem (+250\u00a0zł za pobyt)',
+    desc: 'Po spacerze po lesie wskakujecie do gorącej wody pod sosnami. Balia stoi w\u00a0ogrodzie, jest tylko dla Was i\u00a0działa jak jacuzzi: bąbelki, para, gwiazdy. Kosztuje 250\u00a0zł za cały pobyt, nie za godzinę.',
+    badge: 'Goście to kochają',
     featured: true,
-    link: { to: '/domek-z-jacuzzi-podlasie', label: 'Dom z jacuzzi na Podlasiu' },
+    link: { to: '/domek-z-jacuzzi-podlasie', label: 'Dom z\u00a0jacuzzi na Podlasiu' },
   },
   {
     icon: Flame,
-    title: 'Przestronny salon i pełne wyposażenie',
-    desc: 'Na parterze salon z kominkiem i drewnianymi belkami. Wieczorem trzaska ogień, w telewizorze leci Canal+, a i tak wszyscy gapią się w ogień. Obok kuchnia z indukcją, lodówką, zmywarką i ekspresem, więc zmywanie macie z głowy.',
-    badge: 'Hit gości',
+    title: 'Przestronny salon i\u00a0pełne wyposażenie',
+    desc: 'Na parterze salon z\u00a0kominkiem i\u00a0drewnianymi belkami. Wieczorem trzaska ogień, w\u00a0telewizorze leci Canal+, a\u00a0i\u00a0tak wszyscy gapią się w\u00a0ogień. Obok kuchnia z\u00a0indukcją, lodówką, zmywarką i\u00a0ekspresem, więc zmywanie macie z\u00a0głowy.',
+    badge: 'Goście to kochają',
     featured: true,
   },
   {
     icon: BedDouble,
-    title: 'Komfortowe sypialnie z widokiem',
-    desc: 'Na piętro prowadzą drewniane schody. Tam dwie sypialnie z dużymi łóżkami i sofami, łazienka i balkon, na którym poranna kawa smakuje lasem. Budzą Was ptaki. Wredne, punktualne ptaki.',
+    title: 'Komfortowe sypialnie z\u00a0widokiem',
+    desc: 'Na piętro prowadzą drewniane schody. Tam dwie sypialnie z\u00a0dużymi łóżkami i\u00a0sofami, łazienka i\u00a0balkon, na którym poranna kawa smakuje lasem. Budzą Was ptaki. Wredne, punktualne ptaki.',
   },
   {
     icon: FlameKindling,
-    title: 'Prywatny ogród i strefa relaksu',
-    desc: 'Ogrodzony ogród z altaną, grillem, miejscem na ognisko i placem zabaw. Wszystko tylko dla Was, więc kiełbaski możecie piec do nocy i nikt nie zajmie Wam leżaka.',
+    title: 'Prywatny ogród i\u00a0strefa relaksu',
+    desc: 'Ogrodzony ogród z\u00a0altaną, grillem, miejscem na ognisko i\u00a0placem zabaw. Wszystko tylko dla Was, więc kiełbaski możecie piec do nocy i\u00a0nikt nie zajmie Wam leżaka.',
   },
   {
     icon: PawPrint,
-    title: 'Dom przyjazny zwierzętom – pobyt z psem za darmo',
-    desc: 'Pies albo inny pupil nocuje u nas za darmo. Zero dopłat. Czekają na niego leśne ścieżki Puszczy Knyszyńskiej i ogród, w którym może się wyszaleć.',
-    badge: 'Zwierzęta gratis · 0 zł za pupila',
+    title: 'Dom przyjazny zwierzętom – pobyt z\u00a0psem za darmo',
+    desc: 'Pies albo inny pupil nocuje u\u00a0nas za darmo. Zero dopłat. Czekają na niego leśne ścieżki Puszczy Knyszyńskiej i\u00a0ogród, w\u00a0którym może się wyszaleć.',
+    badge: 'Zwierzęta gratis · 0\u00a0zł za pupila',
     featured: true,
-    link: { to: '/blog/podlasie-z-psem', label: 'Podlasie z psem – poradnik' },
+    link: { to: '/blog/podlasie-z-psem', label: 'Podlasie z\u00a0psem – poradnik' },
     // TODO (właściciel): czy jest limit liczby/wielkości zwierząt i czy ogród jest ogrodzony? Nie dopisuj ograniczeń bez potwierdzenia.
   },
   {
     icon: Baby,
-    title: 'Wypoczynek z dziećmi',
-    desc: 'Plac zabaw, ognisko, las tuż obok i zero ruchu ulicznego. Dzieci odpoczywają od ekranów, a Wy od pilnowania ich na każdym kroku.',
-    link: { to: '/blog/suprasl-z-dziecmi', label: 'Supraśl z dziećmi' },
+    title: 'Wypoczynek z\u00a0dziećmi',
+    desc: 'Plac zabaw, ognisko, las tuż obok i\u00a0zero ruchu ulicznego. Dzieci odpoczywają od ekranów, a\u00a0Wy od pilnowania ich na każdym kroku.',
+    link: { to: '/blog/suprasl-z-dziecmi', label: 'Supraśl z\u00a0dziećmi' },
     // TODO (właściciel): czy jest łóżeczko i krzesełko dla dziecka?
   },
   {
     icon: Tv,
     title: 'Na deszczowy dzień',
-    desc: 'Pada? Trudno. Telewizory z Canal+, Starlink do 200 Mb/s na wieczór filmowy albo pracę zdalną i kominek, który wygrywa z każdym serialem. Drzemka też się liczy.',
+    desc: 'Pada? Trudno. Telewizory z\u00a0Canal+, Starlink do 200\u00a0Mb/s na wieczór filmowy albo pracę zdalną i\u00a0kominek, który wygrywa z\u00a0każdym serialem. Drzemka też się liczy.',
   },
 ];
 
@@ -88,14 +79,15 @@ const AmenitiesSection = () => {
       >
         <div className="text-center mb-16 space-y-4">
           <p className="text-xs tracking-wide text-muted-foreground font-sans">
-            Dom i udogodnienia
+            Dom i&nbsp;udogodnienia
           </p>
           <h2 id="dom-wyposazenie" className="section-title">
-            Co jest w domu (krótko, bo zdjęcia powiedzą więcej)
+            Co jest w&nbsp;domu (krótko, bo zdjęcia powiedzą więcej)
           </h2>
           <p className="section-subtitle mx-auto">
-            Dom z bali do wynajęcia pod Supraślem, dla maksymalnie 8 osób. Dwie sypialnie, salon z kominkiem,
-            pełna kuchnia, taras, ogród, Starlink, klimatyzacja i Canal+. Balia z hydromasażem za dopłatą.
+            Dom z&nbsp;bali do wynajęcia pod Supraślem, dla maksymalnie 8&nbsp;osób. Dwie sypialnie,
+            salon z&nbsp;kominkiem, pełna kuchnia, taras, ogród, Starlink, klimatyzacja
+            i&nbsp;Canal+. Balia z&nbsp;hydromasażem za dopłatą.
           </p>
         </div>
 
@@ -116,7 +108,9 @@ const AmenitiesSection = () => {
                 <a.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
               <h3 className="font-heading text-lg font-bold text-foreground">{a.title}</h3>
-              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">{a.desc}</p>
+              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">
+                {a.desc}
+              </p>
               {a.link && (
                 <Link
                   to={a.link.to}
@@ -137,7 +131,7 @@ const AmenitiesSection = () => {
 
         <div className="mt-16 max-w-3xl mx-auto">
           <h3 className="font-heading text-xl font-bold text-foreground text-center mb-6">
-            Szybkie pytania o dom
+            Szybkie pytania o&nbsp;dom
           </h3>
           <div className="space-y-2">
             {amenityFaqs.map((f) => (
@@ -148,7 +142,9 @@ const AmenitiesSection = () => {
                 <summary className="cursor-pointer list-none font-medium text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-sm">
                   {f.q}
                 </summary>
-                <p className="mt-3 text-base leading-relaxed text-[#444] dark:text-foreground/80">{f.a}</p>
+                <p className="mt-3 text-base leading-relaxed text-[#444] dark:text-foreground/80">
+                  {f.a}
+                </p>
               </details>
             ))}
           </div>

@@ -6,22 +6,22 @@ const events = [
   {
     icon: Heart,
     title: 'Wieczory panieńskie',
-    desc: 'Balia pod gwiazdami, prosecco, kominek i las tylko dla Was. Co się dzieje w puszczy, zostaje w puszczy.',
+    desc: 'Balia pod gwiazdami, prosecco, kominek i\u00a0las tylko dla Was. Co się dzieje w\u00a0puszczy, zostaje w\u00a0puszczy.',
   },
   {
     icon: PartyPopper,
     title: 'Wieczory kawalerskie',
-    desc: 'Ognisko, grill, balia i zero sąsiadów do uciszania. Najbliżsi sąsiedzi to dziki, a one nie składają skarg.',
+    desc: 'Ognisko, grill, balia i\u00a0zero sąsiadów do uciszania. Najbliżsi sąsiedzi to dziki, a\u00a0one nie składają skarg.',
   },
   {
     icon: Users,
-    title: 'Urodziny i rocznice',
-    desc: 'Czterdziestka, rocznica albo „po prostu, bo możemy”. Cały dom dla maksymalnie 8 osób i tort przy kominku.',
+    title: 'Urodziny i\u00a0rocznice',
+    desc: 'Czterdziestka, rocznica albo „po prostu, bo możemy”. Cały dom dla maksymalnie 8\u00a0osób i\u00a0tort przy kominku.',
   },
   {
     icon: Briefcase,
     title: 'Integracje firmowe',
-    desc: 'Integracja w lesie: kominek, balia i ognisko zamiast sali konferencyjnej i kolejnego flipchartu.',
+    desc: 'Integracja w\u00a0lesie: kominek, balia i\u00a0ognisko zamiast sali konferencyjnej i\u00a0kolejnego flipchartu.',
   },
 ];
 
@@ -35,10 +35,10 @@ const EventsSection = () => {
         className={`max-w-6xl mx-auto reveal-section ${isVisible ? 'is-revealed' : ''}`}
       >
         <div className="text-center mb-12 space-y-4">
-          <h2 className="section-title">Organizacja imprez i wydarzeń</h2>
+          <h2 className="section-title">Organizacja imprez i&nbsp;wydarzeń</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Panieński, kawalerski, urodziny albo integracja bez rzutnika. Jeden dom, jedna ekipa
-            i zero kelnerów nad głową.
+            i&nbsp;zero kelnerów nad głową.
           </p>
         </div>
 
@@ -52,7 +52,9 @@ const EventsSection = () => {
                 <event.icon className="w-7 h-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
               </div>
               <h3 className="font-heading text-lg font-bold text-foreground">{event.title}</h3>
-              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">{event.desc}</p>
+              <p className="flex-grow text-base leading-relaxed text-[#444] dark:text-foreground/80">
+                {event.desc}
+              </p>
             </div>
           ))}
         </div>
@@ -75,7 +77,7 @@ const EventsSection = () => {
               to="/sylwester-podlasie"
               className="btn-outline inline-flex items-center justify-center gap-2"
             >
-              Sylwester w lesie
+              Sylwester w&nbsp;lesie
             </Link>
           </div>
         </div>

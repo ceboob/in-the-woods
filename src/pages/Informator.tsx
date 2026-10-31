@@ -39,7 +39,7 @@ const Informator = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Informator gościa – In The Woods Supraśl"
-        description="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o domu w Puszczy Knyszyńskiej."
+        description="Informator gościa In The Woods – zasady pobytu, instrukcja kominka, regulamin jacuzzi, informacje o&nbsp;domu w&nbsp;Puszczy Knyszyńskiej."
         canonical="https://www.suprasl.online/informator"
         ogImage="https://www.suprasl.online/images/exterior-main.webp"
         aboutId={`${property.canonicalUrl}#vacation-rental`}
@@ -89,18 +89,18 @@ const Informator = () => {
           Informator gościa
         </p>
         <h1 className="font-heading text-3xl md:text-5xl font-light text-foreground mb-6">
-          Witamy w In The Woods
+          Witamy w&nbsp;In The Woods
         </h1>
         <div className="w-16 h-px bg-primary mx-auto mb-8" />
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
-          Ten dom budowaliśmy i urządzaliśmy własnymi rękami, więc cieszymy się, że tu jesteście.
-          In The Woods to drewniany dom na wyłączność na skraju Puszczy Knyszyńskiej, niedaleko
-          Supraśla.
+          Ten dom budowaliśmy i&nbsp;urządzaliśmy własnymi rękami, więc cieszymy się, że tu
+          jesteście. In The Woods to drewniany dom na wyłączność na skraju Puszczy Knyszyńskiej,
+          niedaleko Supraśla.
         </p>
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-4 text-base md:text-lg">
-          Traktujcie dom jak własny, tylko troszkę lepiej. Poniżej znajdziecie zasady pobytu, instrukcję
-          kominka i balii, informacje o naszej oczyszczalni ścieków i kilka rad, jak żyć w lesie
-          tak, żeby las też był zadowolony.
+          Traktujcie dom jak własny, tylko troszkę lepiej. Poniżej znajdziecie zasady pobytu,
+          instrukcję kominka i&nbsp;balii, informacje o&nbsp;naszej oczyszczalni ścieków
+          i&nbsp;kilka rad, jak żyć w&nbsp;lesie tak, żeby las też był zadowolony.
         </p>
       </header>
 
@@ -117,7 +117,7 @@ const Informator = () => {
           />
           <img
             src={livingWide}
-            alt="Salon z kominkiem — dom na wynajem Supraśl"
+            alt="Salon z&nbsp;kominkiem — dom na wynajem Supraśl"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
             width="400"
@@ -125,7 +125,7 @@ const Informator = () => {
           />
           <img
             src={stoveDetail}
-            alt="Kaflowy piec kuchenny — chata w Puszczy"
+            alt="Kaflowy piec kuchenny — chata w&nbsp;Puszczy"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
             width="400"
@@ -133,7 +133,7 @@ const Informator = () => {
           />
           <img
             src={kitchenBrick}
-            alt="Kuchnia z ceglanym piecem — dom Supraśl"
+            alt="Kuchnia z&nbsp;ceglanym piecem — dom Supraśl"
             className="w-full h-[180px] md:h-[220px] object-cover rounded-lg"
             loading="lazy"
             width="400"
@@ -167,15 +167,15 @@ const Informator = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Dbanie o wyposażenie domu i jego otoczenia</span>
+                  <span>Dbanie o&nbsp;wyposażenie domu i&nbsp;jego otoczenia</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Utrzymanie porządku w trakcie i po pobycie</span>
+                  <span>Utrzymanie porządku w&nbsp;trakcie i&nbsp;po pobycie</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Szanowanie otaczającej nas natury i przyrody</span>
+                  <span>Szanowanie otaczającej nas natury i&nbsp;przyrody</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
@@ -196,13 +196,13 @@ const Informator = () => {
                   <Flame className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
-                  Instrukcja korzystania z kominka
+                  Instrukcja korzystania z&nbsp;kominka
                 </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Kominek jest głównym źródłem ogrzewania domu w okresie jesienno-zimowym.
+                Kominek jest głównym źródłem ogrzewania domu w&nbsp;okresie jesienno-zimowym.
               </p>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
@@ -215,7 +215,7 @@ const Informator = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Nie używać drewna z ogrodu ani lasu</span>
+                  <span>Nie używać drewna z&nbsp;ogrodu ani lasu</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
@@ -231,7 +231,7 @@ const Informator = () => {
                   <AlertTriangle className="w-4 h-4 text-wood" /> Ważne informacje
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  W okresie letnim palenie w kominku jest zabronione.
+                  W&nbsp;okresie letnim palenie w&nbsp;kominku jest zabronione.
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Ogrzewanie elektryczne jest dodatkowo płatne według zużycia energii.
@@ -257,8 +257,8 @@ const Informator = () => {
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Obiekt korzysta z ekologicznej oczyszczalni ścieków. Prosimy o przestrzeganie
-                poniższych zasad.
+                Obiekt korzysta z&nbsp;ekologicznej oczyszczalni ścieków. Prosimy
+                o&nbsp;przestrzeganie poniższych zasad.
               </p>
               <p className="text-muted-foreground font-medium">
                 Do toalety można wrzucać wyłącznie papier toaletowy.
@@ -275,7 +275,7 @@ const Informator = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-destructive mt-2 shrink-0" />
-                  <span>Plastiku i innych odpadów</span>
+                  <span>Plastiku i&nbsp;innych odpadów</span>
                 </li>
               </ul>
               <p className="text-muted-foreground">
@@ -295,14 +295,14 @@ const Informator = () => {
                   <TreePine className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
                 <h2 className="font-heading text-lg md:text-xl font-medium text-left">
-                  Kogo możecie spotkać w ogrodzie i w lesie
+                  Kogo możecie spotkać w&nbsp;ogrodzie i&nbsp;w&nbsp;lesie
                 </h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Dom znajduje się w środku lasu, w bezpośrednim sąsiedztwie Puszczy Knyszyńskiej. Z
-                tego powodu mogą pojawić się:
+                Dom znajduje się w&nbsp;środku lasu, w&nbsp;bezpośrednim sąsiedztwie Puszczy
+                Knyszyńskiej. Z&nbsp;tego powodu mogą pojawić się:
               </p>
               <div className="flex flex-wrap gap-3">
                 {['Owady', 'Komary', 'Kleszcze', 'Myszy leśne'].map((item) => (
@@ -311,7 +311,7 @@ const Informator = () => {
                     className="flex items-center gap-2 bg-secondary/60 rounded-full px-4 py-2 text-sm text-muted-foreground"
                   >
                     <Bug className="w-3.5 h-3.5" /> {item}
-                   </span>
+                  </span>
                 ))}
               </div>
               <p className="text-muted-foreground font-medium mt-2">Zalecamy:</p>
@@ -322,11 +322,11 @@ const Informator = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Zamykanie okien wieczorem i w nocy</span>
+                  <span>Zamykanie okien wieczorem i&nbsp;w&nbsp;nocy</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Chowanie jedzenia i zamykanie szafek kuchennych</span>
+                  <span>Chowanie jedzenia i&nbsp;zamykanie szafek kuchennych</span>
                 </li>
               </ul>
             </AccordionContent>
@@ -342,15 +342,13 @@ const Informator = () => {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <Cross className="w-5 h-5 text-primary" strokeWidth={1.5} />
                 </div>
-                <h2 className="font-heading text-lg md:text-xl font-medium text-left">
-                  Apteczka
-                </h2>
+                <h2 className="font-heading text-lg md:text-xl font-medium text-left">Apteczka</h2>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-6">
               <p className="text-muted-foreground leading-relaxed">
-                Apteczka pierwszej pomocy znajduje się w szufladzie nad stołem w jadalni. Zawiera
-                podstawowe środki opatrunkowe i leki.
+                Apteczka pierwszej pomocy znajduje się w&nbsp;szufladzie nad stołem w&nbsp;jadalni.
+                Zawiera podstawowe środki opatrunkowe i&nbsp;leki.
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -372,7 +370,8 @@ const Informator = () => {
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Balia z hydromasażem (jacuzzi) jest dostępna po wcześniejszej rezerwacji u gospodarza.
+                Balia z&nbsp;hydromasażem (jacuzzi) jest dostępna po wcześniejszej rezerwacji
+                u&nbsp;gospodarza.
               </p>
               <p className="text-muted-foreground font-medium">Zasady korzystania:</p>
               <ul className="space-y-2 text-muted-foreground">
@@ -394,11 +393,11 @@ const Informator = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Zakaz używania olejków, pianek i kosmetyków</span>
+                  <span>Zakaz używania olejków, pianek i&nbsp;kosmetyków</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Zakaz szkła w pobliżu balii</span>
+                  <span>Zakaz szkła w&nbsp;pobliżu balii</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
@@ -408,15 +407,17 @@ const Informator = () => {
               <div className="bg-secondary/60 rounded-lg p-4 space-y-2">
                 <p className="text-sm font-medium text-foreground">Ważne:</p>
                 <p className="text-sm text-muted-foreground">
-                  Przed pierwszą kąpielą zapoznajcie się z instrukcją hydromasażu.
+                  Przed pierwszą kąpielą zapoznajcie się z&nbsp;instrukcją hydromasażu.
                 </p>
               </div>
 
-              <p className="text-muted-foreground font-medium mt-2">Instrukcja korzystania z jacuzzi:</p>
+              <p className="text-muted-foreground font-medium mt-2">
+                Instrukcja korzystania z&nbsp;jacuzzi:
+              </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Uruchamiać funkcję jacuzzi zgodnie z instrukcją gospodarza</span>
+                  <span>Uruchamiać funkcję jacuzzi zgodnie z&nbsp;instrukcją gospodarza</span>
                 </li>
               </ul>
             </AccordionContent>
@@ -439,7 +440,8 @@ const Informator = () => {
             </AccordionTrigger>
             <AccordionContent className="pb-6 space-y-3">
               <p className="text-muted-foreground leading-relaxed">
-                Goście ponoszą odpowiedzialność za szkody powstałe z ich winy w trakcie pobytu.
+                Goście ponoszą odpowiedzialność za szkody powstałe z&nbsp;ich winy w&nbsp;trakcie
+                pobytu.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Wszelkie nieprawidłowości, usterki lub uszkodzenia prosimy niezwłocznie zgłaszać
@@ -508,8 +510,8 @@ const Informator = () => {
         <div className="mt-12 text-center space-y-4">
           <div className="w-16 h-px bg-primary mx-auto" />
           <p className="text-muted-foreground text-sm leading-relaxed max-w-lg mx-auto">
-            Dzięki, że doczytaliście do końca. Udanego pobytu! A jeśli coś nie działa, dzwońcie do
-            Macieja: 722 765 101.
+            Dzięki, że doczytaliście do końca. Udanego pobytu! A&nbsp;jeśli coś nie działa, dzwońcie
+            do Macieja: 722 765 101.
           </p>
           <p className="font-heading text-lg text-foreground">— Maciej, gospodarz</p>
         </div>

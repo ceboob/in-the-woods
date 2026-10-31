@@ -56,7 +56,7 @@ const seasonData = SEASONS.map((season) => ({
 const extras = [
   {
     icon: Bath,
-    title: 'Balia z hydromasażem',
+    title: 'Balia z\u00a0hydromasażem',
     desc: `${GARDEN_TUB_PRICE} zł za cały pobyt`,
     note: 'niezależnie od liczby nocy',
   },
@@ -69,7 +69,7 @@ const extras = [
   {
     icon: Clock,
     title: 'Minimalna rezerwacja',
-    desc: `${Math.min(...SEASONS.map((season) => season.minNights))} noce (w sezonie wysokim: ${Math.max(...SEASONS.map((season) => season.minNights))})`,
+    desc: `${Math.min(...SEASONS.map((season) => season.minNights))} noce (w\u00a0sezonie wysokim: ${Math.max(...SEASONS.map((season) => season.minNights))})`,
     note: 'wymóg zależy od sezonu',
   },
 ];
@@ -89,12 +89,11 @@ const PricingSection = () => {
       >
         {/* Header */}
         <div className="text-center mb-12 space-y-4">
-          <p className="text-xs tracking-wide text-muted-foreground font-sans">
-            Cennik
-          </p>
+          <p className="text-xs tracking-wide text-muted-foreground font-sans">Cennik</p>
           <h2 className="section-title">Ile to kosztuje? Mniej, niż myślicie</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
-            Cena jest za cały dom, nie za osobę. Zależy od sezonu, liczby gości i&nbsp;dnia tygodnia. Wszystkie dopłaty macie niżej, bez gwiazdek drobnym drukiem.
+            Cena jest za cały dom, nie za osobę. Zależy od sezonu, liczby gości i&nbsp;dnia
+            tygodnia. Wszystkie dopłaty macie niżej, bez gwiazdek drobnym drukiem.
           </p>
         </div>
 
@@ -165,10 +164,7 @@ const PricingSection = () => {
         {/* Extras grid */}
         <div className="grid sm:grid-cols-3 gap-4 mb-10">
           {extras.map((e, i) => (
-            <div
-              key={i}
-              className="bg-card border border-border p-5 text-center space-y-2"
-            >
+            <div key={i} className="bg-card border border-border p-5 text-center space-y-2">
               <e.icon className="w-6 h-6 text-primary mx-auto" strokeWidth={1.5} />
               <p className="font-heading text-sm font-semibold text-foreground">{e.title}</p>
               <p className="text-sm text-muted-foreground">{e.desc}</p>
@@ -187,17 +183,20 @@ const PricingSection = () => {
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Wynajmujecie cały <strong>dom na wyłączność</strong>, bez obcych za ścianą. Pasuje na{' '}
-            <strong>weekend w&nbsp;lesie</strong>, wypad we dwoje, <strong>wieczór panieński na
-            Podlasiu</strong> albo tydzień pracy z&nbsp;lasu.
+            <strong>weekend w&nbsp;lesie</strong>, wypad we dwoje,{' '}
+            <strong>wieczór panieński na Podlasiu</strong> albo tydzień pracy z&nbsp;lasu.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Dopłaty, wszystkie w jednym miejscu: <strong>balia z hydromasażem</strong>{' '}
-            {GARDEN_TUB_PRICE}&nbsp;zł za cały pobyt, pies 0&nbsp;zł. Przy pobycie od 7 nocy dostajecie
-            <strong> {LONG_STAY_DISCOUNT * 100}% zniżki na nocleg</strong> (rabat nie obejmuje balii).
+            Dopłaty, wszystkie w&nbsp;jednym miejscu: <strong>balia z&nbsp;hydromasażem</strong>{' '}
+            {GARDEN_TUB_PRICE}&nbsp;zł za cały pobyt, pies 0&nbsp;zł. Przy pobycie od 7&nbsp;nocy
+            dostajecie
+            <strong> {LONG_STAY_DISCOUNT * 100}% zniżki na nocleg</strong> (rabat nie obejmuje
+            balii).
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Formularz to tylko pytanie o termin. Niczego nie rezerwuje i niczego nie pobiera. O zaliczce
-            i płatności dogadacie się z Maciejem, kiedy termin będzie już Wasz.
+            Formularz to tylko pytanie o&nbsp;termin. Niczego nie rezerwuje i&nbsp;niczego nie
+            pobiera. O&nbsp;zaliczce i&nbsp;płatności dogadacie się z&nbsp;Maciejem, kiedy termin
+            będzie już Wasz.
           </p>
         </div>
 
@@ -206,9 +205,22 @@ const PricingSection = () => {
           <div className="flex items-center justify-center gap-3 pb-1">
             <StripeSecurityTooltip>
               <div className="flex items-center gap-2.5 text-xs text-muted-foreground bg-background/80 border border-border rounded-full px-5 py-2.5 cursor-help">
-                <svg viewBox="0 0 60 25" className="w-12 h-5 shrink-0" aria-label="Stripe" role="img">
+                <svg
+                  viewBox="0 0 60 25"
+                  className="w-12 h-5 shrink-0"
+                  aria-label="Stripe"
+                  role="img"
+                >
                   <rect width="60" height="25" rx="4" fill="#635BFF" />
-                  <text x="30" y="17" textAnchor="middle" fill="white" fontFamily="Arial, sans-serif" fontSize="13" fontWeight="700">
+                  <text
+                    x="30"
+                    y="17"
+                    textAnchor="middle"
+                    fill="white"
+                    fontFamily="Arial, sans-serif"
+                    fontSize="13"
+                    fontWeight="700"
+                  >
                     stripe
                   </text>
                 </svg>
@@ -222,10 +234,10 @@ const PricingSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">
             <button onClick={() => scrollTo('#rezerwacja')} className="btn-primary">
-              Zapytaj o termin
+              Zapytaj o&nbsp;termin
             </button>
             <a href="tel:+48722765101" className="btn-outline">
-              Zapytaj o pobyt
+              Zapytaj o&nbsp;pobyt
             </a>
           </div>
         </div>

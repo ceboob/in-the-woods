@@ -21,12 +21,18 @@ export const routeDefinitions: RouteDefinition[] = [
   { path: '/domek-suprasl', load: () => import('@/pages/DomekSuprasl.tsx') },
   { path: '/domek-z-jacuzzi-podlasie', load: () => import('@/pages/DomekZJacuzziPodlasie.tsx') },
   { path: '/wieczor-panienski-suprasl', load: () => import('@/pages/WieczorPanienskiSuprasl.tsx') },
-  { path: '/wieczor-kawalerski-suprasl', load: () => import('@/pages/WieczorKawalerskiSuprasl.tsx') },
+  {
+    path: '/wieczor-kawalerski-suprasl',
+    load: () => import('@/pages/WieczorKawalerskiSuprasl.tsx'),
+  },
   { path: '/sylwester-podlasie', load: () => import('@/pages/SylwesterPodlasie.tsx') },
   { path: '/domek-z-psem-podlasie', load: () => import('@/pages/DomekZPsemPodlasie.tsx') },
   { path: '/blog', load: () => import('@/pages/Blog.tsx') },
   { path: '/blog/suprasl-zima', load: () => import('@/pages/blog/SupraslZima.tsx') },
-  { path: '/blog/supraski-system-wodny', load: () => import('@/pages/blog/SupraskiSystemWodny.tsx') },
+  {
+    path: '/blog/supraski-system-wodny',
+    load: () => import('@/pages/blog/SupraskiSystemWodny.tsx'),
+  },
   {
     path: '/blog/szlak-powstania-styczniowego-suprasl',
     load: () => import('@/pages/blog/SzlakPowstaniaStyczniowego.tsx'),
@@ -48,7 +54,10 @@ export const routeDefinitions: RouteDefinition[] = [
     load: () => import('@/pages/blog/SupraslAtrakcjeUzdrowisko.tsx'),
   },
   { path: '/blog/kajaki-suprasl', load: () => import('@/pages/blog/KajakiSuprasl.tsx') },
-  { path: '/blog/rykowisko-jeleni-puszcza-knyszynska', load: () => import('@/pages/blog/RykowiskoJeleni.tsx') },
+  {
+    path: '/blog/rykowisko-jeleni-puszcza-knyszynska',
+    load: () => import('@/pages/blog/RykowiskoJeleni.tsx'),
+  },
   {
     path: '/blog/puszcza-knyszynska-historie',
     load: () => import('@/pages/blog/PuszczaKnyszynskaHistorie.tsx'),
@@ -57,7 +66,10 @@ export const routeDefinitions: RouteDefinition[] = [
     path: '/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne',
     load: () => import('@/pages/blog/JesienWSupraslu2026.tsx'),
   },
-  { path: '/blog/aktywny-wypoczynek-suprasl', load: () => import('@/pages/blog/AktywnyWypoczynek.tsx') },
+  {
+    path: '/blog/aktywny-wypoczynek-suprasl',
+    load: () => import('@/pages/blog/AktywnyWypoczynek.tsx'),
+  },
   { path: '/blog/uzdrowisko-spa-suprasl', load: () => import('@/pages/blog/UzdrowiSkoSPA.tsx') },
   {
     path: '/blog/przewodnik-kulinarny-suprasl',

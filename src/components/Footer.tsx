@@ -13,7 +13,7 @@ const Footer = () => (
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
         <div className="text-center md:text-left">
           <p className="logo-glow mb-2 font-display text-2xl text-white">In The Woods</p>
-          <p className="mb-3 text-sm text-white/70">Dom w Puszczy · Supraśl · Podlasie</p>
+          <p className="mb-3 text-sm text-white/70">Dom w&nbsp;Puszczy · Supraśl · Podlasie</p>
           <p className="text-xs text-white/70">Konne 109/1, 16-030 Supraśl</p>
           <p className="text-xs text-white/70">Gospodarz: Maciej</p>
         </div>
@@ -34,7 +34,7 @@ const Footer = () => (
           <div className="flex items-center gap-3">
             <a
               href="https://www.instagram.com/krzemienna_chata/"
-              aria-label="Instagram (otworzy się w nowej karcie)"
+              aria-label="Instagram (otworzy się w&nbsp;nowej karcie)"
               className={socialLinkClass}
               target="_blank"
               rel="noopener noreferrer"
@@ -43,7 +43,7 @@ const Footer = () => (
             </a>
             <a
               href="https://www.facebook.com/krzemienna.chata/"
-              aria-label="Facebook (otworzy się w nowej karcie)"
+              aria-label="Facebook (otworzy się w&nbsp;nowej karcie)"
               className={socialLinkClass}
               target="_blank"
               rel="noopener noreferrer"
@@ -60,7 +60,7 @@ const Footer = () => (
             href="https://www.airbnb.pl/rooms/1165170256851279014?guests=1&adults=1&s=67&unique_share_id=cd1458aa-ed37-425b-8252-1fcae5ea10b2"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Airbnb (otworzy się w nowej karcie)"
+            aria-label="Airbnb (otworzy się w&nbsp;nowej karcie)"
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
@@ -76,7 +76,7 @@ const Footer = () => (
             href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Alohacamp (otworzy się w nowej karcie)"
+            aria-label="Alohacamp (otworzy się w&nbsp;nowej karcie)"
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
@@ -92,7 +92,7 @@ const Footer = () => (
             href="https://alohacamp.com/pl/property/dom-w-puszczy-z-ruska-bania-5875"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Booking.com (otworzy się w nowej karcie)"
+            aria-label="Booking.com (otworzy się w&nbsp;nowej karcie)"
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
@@ -108,7 +108,7 @@ const Footer = () => (
             href="https://doginclusive.com/oferty/in-the-woods-"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Doginclusive.pl (otworzy się w nowej karcie)"
+            aria-label="Doginclusive.pl (otworzy się w&nbsp;nowej karcie)"
             className="bg-white rounded-md px-3 py-2 hover:opacity-90 transition-opacity"
           >
             <img
@@ -123,37 +123,67 @@ const Footer = () => (
         </div>
 
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/70">
-          <Link to="/noclegi-suprasl" className="text-white/90 transition-colors hover:text-primary">
+          <Link
+            to="/noclegi-suprasl"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
             Noclegi Supraśl
           </Link>
           <Link to="/domek-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Domek Supraśl
           </Link>
-          <Link to="/domek-z-jacuzzi-podlasie" className="text-white/90 transition-colors hover:text-primary">
-            Domek z jacuzzi
+          <Link
+            to="/domek-z-jacuzzi-podlasie"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
+            Domek z&nbsp;jacuzzi
           </Link>
-          <Link to="/dom-w-lesie-suprasl" className="text-white/90 transition-colors hover:text-primary">
-            Dom w lesie Supraśl
+          <Link
+            to="/dom-w-lesie-suprasl"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
+            Dom w&nbsp;lesie Supraśl
           </Link>
-          <Link to="/weekend-suprasl" className="text-white/90 transition-colors hover:text-primary">
+          <Link
+            to="/weekend-suprasl"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
             Weekend Supraśl
           </Link>
-          <Link to="/wieczor-panienski-suprasl" className="text-white/90 transition-colors hover:text-primary">
+          <Link
+            to="/wieczor-panienski-suprasl"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
             Wieczór panieński
           </Link>
-          <Link to="/wieczor-kawalerski-suprasl" className="text-white/90 transition-colors hover:text-primary">
+          <Link
+            to="/wieczor-kawalerski-suprasl"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
             Wieczór kawalerski
           </Link>
-          <Link to="/sylwester-podlasie" className="text-white/90 transition-colors hover:text-primary">
-            Sylwester w lesie
+          <Link
+            to="/sylwester-podlasie"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
+            Sylwester w&nbsp;lesie
           </Link>
-          <Link to="/domek-z-psem-podlasie" className="text-white/90 transition-colors hover:text-primary">
-            Domek z psem
+          <Link
+            to="/domek-z-psem-podlasie"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
+            Domek z&nbsp;psem
           </Link>
-          <Link to="/atrakcje-suprasl" className="text-white/90 transition-colors hover:text-primary">
+          <Link
+            to="/atrakcje-suprasl"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
             Atrakcje Supraśla
           </Link>
-          <Link to="/puszcza-knyszynska-nocleg" className="text-white/90 transition-colors hover:text-primary">
+          <Link
+            to="/puszcza-knyszynska-nocleg"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
             Nocleg Puszcza Knyszyńska
           </Link>
           <Link to="/informator" className="text-white/90 transition-colors hover:text-primary">
@@ -166,7 +196,9 @@ const Footer = () => (
       </div>
 
       <div className="mt-6 text-center">
-        <p className="text-xs text-white/60">© 2026 In The Woods, Maciej Cybulko. Wszelkie prawa zastrzeżone.</p>
+        <p className="text-xs text-white/60">
+          © 2026 In The Woods, Maciej Cybulko. Wszelkie prawa zastrzeżone.
+        </p>
       </div>
     </div>
   </footer>

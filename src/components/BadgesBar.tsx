@@ -3,13 +3,13 @@ import { Dog, TreePine, Snail, Home, Sparkles, Wifi, Flame, Bath } from 'lucide-
 
 const badges = [
   { icon: Dog, label: 'Pies gratis', href: '/domek-z-psem-podlasie' },
-  { icon: TreePine, label: 'Wypoczynek w naturze', href: '/dom-w-lesie-suprasl' },
+  { icon: TreePine, label: 'Wypoczynek w\u00a0naturze', href: '/dom-w-lesie-suprasl' },
   { icon: Snail, label: 'Spokojny wypoczynek', href: '/blog/cyfrowy-detoks-las' },
   { icon: Home, label: 'Dom na wyłączność', href: '/noclegi-suprasl' },
-  { icon: Bath, label: 'Domek z balią', href: '/domek-z-jacuzzi-podlasie' },
+  { icon: Bath, label: 'Domek z\u00a0balią', href: '/domek-z-jacuzzi-podlasie' },
   { icon: Flame, label: 'Kominek', href: '#dom' },
   { icon: Sparkles, label: 'Jacuzzi pod gwiazdami', href: '#jacuzzi' },
-  { icon: Wifi, label: 'Starlink 200 Mb/s', href: '/blog/workation-podlasie' },
+  { icon: Wifi, label: 'Starlink 200\u00a0Mb/s', href: '/blog/workation-podlasie' },
 ];
 
 const BadgesBar = () => (

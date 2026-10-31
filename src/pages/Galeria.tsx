@@ -70,88 +70,214 @@ interface GalleryImage {
   category: string;
 }
 
-const categories = ['Wszystkie', 'Salon', 'Kuchnia i jadalnia', 'Sypialnie', 'Łazienki', 'Taras i ogród', 'Balia z hydromasażem', 'Okolica'];
+const categories = [
+  'Wszystkie',
+  'Salon',
+  'Kuchnia i\u00a0jadalnia',
+  'Sypialnie',
+  'Łazienki',
+  'Taras i\u00a0ogród',
+  'Balia z\u00a0hydromasażem',
+  'Okolica',
+];
 
 const images: GalleryImage[] = [
   // Salon
-  { thumb: salonKominek, alt: 'Salon z kominkiem i drewnianymi belkami', category: 'Salon' },
-  { thumb: salonPanorama, alt: 'Widok na salon i fotel przy oknie', category: 'Salon' },
+  {
+    thumb: salonKominek,
+    alt: 'Salon z\u00a0kominkiem i\u00a0drewnianymi belkami',
+    category: 'Salon',
+  },
+  { thumb: salonPanorama, alt: 'Widok na salon i\u00a0fotel przy oknie', category: 'Salon' },
   { thumb: salonFotele, alt: 'Fotele ustawione przy kominku', category: 'Salon' },
-  { thumb: salonKominekSzerokie, alt: 'Panoramiczny widok na salon z kominkiem', category: 'Salon' },
-  { thumb: salonFoteleSchody, alt: 'Fotele w salonie obok drewnianych schodów', category: 'Salon' },
-  { thumb: salonSchodyKwiaty, alt: 'Schody i kwiaty w salonie', category: 'Salon' },
+  {
+    thumb: salonKominekSzerokie,
+    alt: 'Panoramiczny widok na salon z\u00a0kominkiem',
+    category: 'Salon',
+  },
+  {
+    thumb: salonFoteleSchody,
+    alt: 'Fotele w\u00a0salonie obok drewnianych schodów',
+    category: 'Salon',
+  },
+  { thumb: salonSchodyKwiaty, alt: 'Schody i\u00a0kwiaty w\u00a0salonie', category: 'Salon' },
   { thumb: kominekZblizenie, alt: 'Zbliżenie na kominek', category: 'Salon' },
   { thumb: polkaCeramika, alt: 'Ceramiczne naczynia na drewnianej półce', category: 'Salon' },
   { thumb: ramkiWnetrze, alt: 'Ramki na ścianie we wnętrzu domu', category: 'Salon' },
   { thumb: poddaszeFotel, alt: 'Fotel na poddaszu przy oknie', category: 'Salon' },
-  { thumb: piecKaflowyZblizenie, alt: 'Zbliżenie na piec kaflowy i ceglaną ścianę', category: 'Salon' },
+  {
+    thumb: piecKaflowyZblizenie,
+    alt: 'Zbliżenie na piec kaflowy i\u00a0ceglaną ścianę',
+    category: 'Salon',
+  },
   { thumb: informatorGosci, alt: 'Informator dla gości leżący na stole', category: 'Salon' },
 
   // Kuchnia i jadalnia
-  { thumb: kuchniaCeramika, alt: 'Ceramiczne naczynia w kuchni z płytą kaflową', category: 'Kuchnia i jadalnia' },
-  { thumb: kuchniaCegla, alt: 'Kuchnia z ceglaną ścianą i płytą kaflową', category: 'Kuchnia i jadalnia' },
-  { thumb: kuchniaZlew, alt: 'Zlew i drewniany blat w kuchni', category: 'Kuchnia i jadalnia' },
-  { thumb: kuchniaNiebieskieTalerze, alt: 'Niebieskie talerze w kuchni', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaSniadanie, alt: 'Śniadanie podane na stole w jadalni', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaSerwis, alt: 'Zastawa stołowa przygotowana do posiłku', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaKwiaty, alt: 'Kwiaty na stole w jadalni', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaOwoce, alt: 'Owoce podane na stole w jadalni', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaKacik, alt: 'Kącik jadalniany przy kominku', category: 'Kuchnia i jadalnia' },
-  { thumb: jadalniaTulipanyZblizenie, alt: 'Tulipany w wazonie na stole', category: 'Kuchnia i jadalnia' },
-  { thumb: sniadanieKrata, alt: 'Śniadanie podane na stole przykrytym obrusem w kratę', category: 'Kuchnia i jadalnia' },
+  {
+    thumb: kuchniaCeramika,
+    alt: 'Ceramiczne naczynia przy kuchni kaflowej',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
+  {
+    thumb: kuchniaCegla,
+    alt: 'Kuchnia z\u00a0ceglaną ścianą i\u00a0tradycyjną kuchnią kaflową',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
+  {
+    thumb: kuchniaZlew,
+    alt: 'Zlew i\u00a0drewniany blat w\u00a0kuchni',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
+  {
+    thumb: kuchniaNiebieskieTalerze,
+    alt: 'Niebieskie talerze w\u00a0kuchni',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
+  {
+    thumb: jadalniaSniadanie,
+    alt: 'Śniadanie podane na stole w\u00a0jadalni',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
+  {
+    thumb: jadalniaSerwis,
+    alt: 'Zastawa stołowa przygotowana do posiłku',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
+  {
+    thumb: jadalniaKwiaty,
+    alt: 'Kwiaty na stole w\u00a0jadalni',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
+  {
+    thumb: jadalniaOwoce,
+    alt: 'Owoce podane na stole w\u00a0jadalni',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
+  {
+    thumb: jadalniaKacik,
+    alt: 'Kącik jadalniany przy kominku',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
+  {
+    thumb: jadalniaTulipanyZblizenie,
+    alt: 'Tulipany w\u00a0wazonie na stole',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
+  {
+    thumb: sniadanieKrata,
+    alt: 'Śniadanie podane na stole przykrytym obrusem w\u00a0kratę',
+    category: 'Kuchnia i\u00a0jadalnia',
+  },
 
   // Sypialnie
-  { thumb: sypialniaGorna, alt: 'Sypialnia na piętrze z drewnianymi belkami', category: 'Sypialnie' },
-  { thumb: sypialniaBalkon, alt: 'Sypialnia z wyjściem na balkon', category: 'Sypialnie' },
-  { thumb: sypialniaZieloneZaslony, alt: 'Sypialnia z zielonymi zasłonami', category: 'Sypialnie' },
+  {
+    thumb: sypialniaGorna,
+    alt: 'Sypialnia na piętrze z\u00a0drewnianymi belkami',
+    category: 'Sypialnie',
+  },
+  { thumb: sypialniaBalkon, alt: 'Sypialnia z\u00a0wyjściem na balkon', category: 'Sypialnie' },
+  {
+    thumb: sypialniaZieloneZaslony,
+    alt: 'Sypialnia z\u00a0zielonymi zasłonami',
+    category: 'Sypialnie',
+  },
   { thumb: balkonLezak, alt: 'Leżak ustawiony na balkonie', category: 'Sypialnie' },
 
   // Łazienki
-  { thumb: lazienkaPrysznic, alt: 'Prysznic w jasnej łazience', category: 'Łazienki' },
-  { thumb: lazienkaNowa, alt: 'Kabina prysznicowa w łazience', category: 'Łazienki' },
+  { thumb: lazienkaPrysznic, alt: 'Prysznic w\u00a0jasnej łazience', category: 'Łazienki' },
+  { thumb: lazienkaNowa, alt: 'Kabina prysznicowa w\u00a0łazience', category: 'Łazienki' },
   { thumb: lazienkaUmywalka, alt: 'Umywalka pod podświetlanym lustrem', category: 'Łazienki' },
-  { thumb: prysznicCiemny, alt: 'Prysznic z deszczownicą i ciemnymi płytkami', category: 'Łazienki' },
-  { thumb: toaletaDrewniana, alt: 'Toaleta z drewnianymi elementami', category: 'Łazienki' },
-  { thumb: toaletaJasna, alt: 'Jasna toaleta z umywalką', category: 'Łazienki' },
-  { thumb: rustykalnaToaletaPolki, alt: 'Drewniane półki w toalecie', category: 'Łazienki' },
+  {
+    thumb: prysznicCiemny,
+    alt: 'Prysznic z\u00a0deszczownicą i\u00a0ciemnymi płytkami',
+    category: 'Łazienki',
+  },
+  { thumb: toaletaDrewniana, alt: 'Toaleta z\u00a0drewnianymi elementami', category: 'Łazienki' },
+  { thumb: toaletaJasna, alt: 'Jasna toaleta z\u00a0umywalką', category: 'Łazienki' },
+  { thumb: rustykalnaToaletaPolki, alt: 'Drewniane półki w\u00a0toalecie', category: 'Łazienki' },
 
   // Taras i ogród
-  { thumb: tarasGrill, alt: 'Grill na tarasie obok stołu i krzeseł', category: 'Taras i ogród' },
-  { thumb: tarasSofa, alt: 'Sofa i stolik na tarasie', category: 'Taras i ogród' },
-  { thumb: tarasObiad, alt: 'Posiłek podany na tarasie', category: 'Taras i ogród' },
-  { thumb: tarasPies, alt: 'Pies odpoczywający na tarasie', category: 'Taras i ogród' },
-  { thumb: tarasRelaks, alt: 'Fotele i stolik na tarasie', category: 'Taras i ogród' },
-  { thumb: tarasSofaWejscie, alt: 'Sofa ustawiona przy wejściu na taras', category: 'Taras i ogród' },
-  { thumb: wejscieTaras, alt: 'Wejście do domu z tarasu', category: 'Taras i ogród' },
-  { thumb: domLato, alt: 'Drewniany dom latem wśród zieleni', category: 'Taras i ogród' },
-  { thumb: domSchody, alt: 'Drewniane schody przy wejściu do domu', category: 'Taras i ogród' },
-  { thumb: domOgrodPanorama, alt: 'Dom i ogród widziane z tarasu', category: 'Taras i ogród' },
-  { thumb: ogrodZielen, alt: 'Zielony ogród przy domu', category: 'Taras i ogród' },
-  { thumb: ogniskoDzieci, alt: 'Dzieci siedzące przy ognisku', category: 'Taras i ogród' },
-  { thumb: ogniskoNocne, alt: 'Ognisko płonące po zmroku przy altanie', category: 'Taras i ogród' },
+  {
+    thumb: tarasGrill,
+    alt: 'Grill na tarasie obok stołu i\u00a0krzeseł',
+    category: 'Taras i\u00a0ogród',
+  },
+  { thumb: tarasSofa, alt: 'Sofa i\u00a0stolik na tarasie', category: 'Taras i\u00a0ogród' },
+  { thumb: tarasObiad, alt: 'Posiłek podany na tarasie', category: 'Taras i\u00a0ogród' },
+  { thumb: tarasPies, alt: 'Pies odpoczywający na tarasie', category: 'Taras i\u00a0ogród' },
+  { thumb: tarasRelaks, alt: 'Fotele i\u00a0stolik na tarasie', category: 'Taras i\u00a0ogród' },
+  {
+    thumb: tarasSofaWejscie,
+    alt: 'Sofa ustawiona przy wejściu na taras',
+    category: 'Taras i\u00a0ogród',
+  },
+  { thumb: wejscieTaras, alt: 'Wejście do domu z\u00a0tarasu', category: 'Taras i\u00a0ogród' },
+  { thumb: domLato, alt: 'Drewniany dom latem wśród zieleni', category: 'Taras i\u00a0ogród' },
+  {
+    thumb: domSchody,
+    alt: 'Drewniane schody przy wejściu do domu',
+    category: 'Taras i\u00a0ogród',
+  },
+  {
+    thumb: domOgrodPanorama,
+    alt: 'Dom i\u00a0ogród widziane z\u00a0tarasu',
+    category: 'Taras i\u00a0ogród',
+  },
+  { thumb: ogrodZielen, alt: 'Zielony ogród przy domu', category: 'Taras i\u00a0ogród' },
+  { thumb: ogniskoDzieci, alt: 'Dzieci siedzące przy ognisku', category: 'Taras i\u00a0ogród' },
+  {
+    thumb: ogniskoNocne,
+    alt: 'Ognisko płonące po zmroku przy altanie',
+    category: 'Taras i\u00a0ogród',
+  },
 
   // Balia z hydromasażem (jacuzzi)
-  { thumb: jacuzziNight, alt: 'Podświetlona balia ogrodowa wieczorem', category: 'Balia z hydromasażem' },
-  { thumb: gardenTubFront, alt: 'Balia ogrodowa widziana od frontu', category: 'Balia z hydromasażem' },
-  { thumb: gardenTubHouse, alt: 'Balia ogrodowa obok drewnianego domu', category: 'Balia z hydromasażem' },
-  { thumb: gardenTubGarden, alt: 'Balia ogrodowa otoczona zielenią', category: 'Balia z hydromasażem' },
-  { thumb: jacuzziNoc, alt: 'Balia z podświetleniem po zmroku', category: 'Balia z hydromasażem' },
+  {
+    thumb: jacuzziNight,
+    alt: 'Podświetlona balia ogrodowa wieczorem',
+    category: 'Balia z\u00a0hydromasażem',
+  },
+  {
+    thumb: gardenTubFront,
+    alt: 'Balia ogrodowa widziana od frontu',
+    category: 'Balia z\u00a0hydromasażem',
+  },
+  {
+    thumb: gardenTubHouse,
+    alt: 'Balia ogrodowa obok drewnianego domu',
+    category: 'Balia z\u00a0hydromasażem',
+  },
+  {
+    thumb: gardenTubGarden,
+    alt: 'Balia ogrodowa otoczona zielenią',
+    category: 'Balia z\u00a0hydromasażem',
+  },
+  {
+    thumb: jacuzziNoc,
+    alt: 'Balia z\u00a0podświetleniem po zmroku',
+    category: 'Balia z\u00a0hydromasażem',
+  },
 
   // Okolica
   { thumb: drogaLesna, alt: 'Leśna droga biegnąca między drzewami', category: 'Okolica' },
   { thumb: drogaLesnaPlot, alt: 'Leśna droga wzdłuż ogrodzenia', category: 'Okolica' },
   { thumb: konneDroga, alt: 'Droga do miejscowości Konne', category: 'Okolica' },
-  { thumb: konneZnak, alt: 'Znak drogowy w miejscowości Konne', category: 'Okolica' },
-  { thumb: dabPuszcza, alt: 'Rozłożysty dąb w lesie', category: 'Okolica' },
-  { thumb: wiataLesna, alt: 'Drewniana wiata w lesie', category: 'Okolica' },
-  { thumb: tablicaSzurakowo, alt: 'Tablica informacyjna przy szlaku w Szurakowie', category: 'Okolica' },
+  { thumb: konneZnak, alt: 'Znak drogowy w\u00a0miejscowości Konne', category: 'Okolica' },
+  { thumb: dabPuszcza, alt: 'Rozłożysty dąb w\u00a0lesie', category: 'Okolica' },
+  { thumb: wiataLesna, alt: 'Drewniana wiata w\u00a0lesie', category: 'Okolica' },
+  {
+    thumb: tablicaSzurakowo,
+    alt: 'Tablica informacyjna przy szlaku w\u00a0Szurakowie',
+    category: 'Okolica',
+  },
 ];
 
 const Galeria = () => {
   const [activeCategory, setActiveCategory] = useState('Wszystkie');
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  const filtered = activeCategory === 'Wszystkie' ? images : images.filter(i => i.category === activeCategory);
+  const filtered =
+    activeCategory === 'Wszystkie' ? images : images.filter((i) => i.category === activeCategory);
 
   const openLightbox = (i: number) => {
     setLightboxIndex(i);
@@ -174,22 +300,22 @@ const Galeria = () => {
 
   return (
     <SEOPageLayout
-      title="Galeria zdjęć domku w lesie | In The Woods Supraśl"
-      description="Galeria In The Woods: salon z kominkiem, kuchnia, sypialnie, ogród i balia z hydromasażem (jacuzzi). Zobacz domek w Puszczy Knyszyńskiej."
+      title="Galeria zdjęć domku w&nbsp;lesie | In The Woods Supraśl"
+      description="Galeria In The Woods: salon z&nbsp;kominkiem, kuchnia, sypialnie, ogród i&nbsp;balia z&nbsp;hydromasażem (jacuzzi). Zobacz domek w&nbsp;Puszczy Knyszyńskiej."
       breadcrumbName="Galeria"
       ogImage="https://www.suprasl.online/images/exterior-main.webp"
     >
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Galeria zdjęć domu i jego wyposażenia
+        Galeria zdjęć domu i&nbsp;jego wyposażenia
       </h1>
       <p className="text-muted-foreground text-lg mb-10 max-w-2xl">
-        Zobacz zdjęcia salonu, kuchni, sypialni, ogrodu i balii z hydromasażem (jacuzzi).
+        Zobacz zdjęcia salonu, kuchni, sypialni, ogrodu i&nbsp;balii z&nbsp;hydromasażem (jacuzzi).
         Kliknij kategorię, aby filtrować obrazy.
       </p>
 
       {/* Category filters */}
       <div className="flex flex-wrap gap-2 mb-10">
-        {categories.map(cat => (
+        {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
@@ -233,30 +359,54 @@ const Galeria = () => {
       </div>
 
       <p className="text-center text-muted-foreground text-sm mt-8">
-        {filtered.length} zdjęć {activeCategory !== 'Wszystkie' ? `w kategorii „${activeCategory}"` : 'łącznie'}
+        {filtered.length} zdjęć{' '}
+        {activeCategory !== 'Wszystkie' ? `w\u00a0kategorii „${activeCategory}"` : 'łącznie'}
       </p>
 
       {/* Lightbox */}
       {lightboxIndex !== null && (
-        <div className="fixed inset-0 z-50 bg-foreground/95 dark:bg-black/95 flex items-center justify-center" onClick={closeLightbox}>
-          <button onClick={closeLightbox} className="absolute top-4 right-4 text-white/80 hover:text-white p-2" aria-label="Zamknij">
+        <div
+          className="fixed inset-0 z-50 bg-foreground/95 dark:bg-black/95 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
+          <button
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 text-white/80 hover:text-white p-2"
+            aria-label="Zamknij"
+          >
             <X className="w-7 h-7" />
           </button>
-          <button onClick={e => { e.stopPropagation(); navigate(-1); }} className="absolute left-4 text-white/80 hover:text-white p-2" aria-label="Poprzednie">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              navigate(-1);
+            }}
+            className="absolute left-4 text-white/80 hover:text-white p-2"
+            aria-label="Poprzednie"
+          >
             <ChevronLeft className="w-8 h-8" />
           </button>
           <img
-             src={filtered[lightboxIndex].thumb}
-             alt={filtered[lightboxIndex].alt}
-             className="max-h-[85vh] max-w-[90vw] object-contain rounded"
-             onClick={e => e.stopPropagation()}
-             width="800"
-             height="600"
+            src={filtered[lightboxIndex].thumb}
+            alt={filtered[lightboxIndex].alt}
+            className="max-h-[85vh] max-w-[90vw] object-contain rounded"
+            onClick={(e) => e.stopPropagation()}
+            width="800"
+            height="600"
           />
-          <button onClick={e => { e.stopPropagation(); navigate(1); }} className="absolute right-4 text-white/80 hover:text-white p-2" aria-label="Następne">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              navigate(1);
+            }}
+            className="absolute right-4 text-white/80 hover:text-white p-2"
+            aria-label="Następne"
+          >
             <ChevronRight className="w-8 h-8" />
           </button>
-          <p className="absolute bottom-4 text-white/70 text-sm text-center px-8">{filtered[lightboxIndex].alt}</p>
+          <p className="absolute bottom-4 text-white/70 text-sm text-center px-8">
+            {filtered[lightboxIndex].alt}
+          </p>
         </div>
       )}
     </SEOPageLayout>
