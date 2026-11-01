@@ -10,7 +10,7 @@ const faqs = [
   {
     question: 'Gdzie na romantyczny weekend na Podlasiu?',
     answer:
-      'Najwięcej romantycznych miejsc na krótki wyjazd jest w\u00a0okolicach Supraśla: monaster, bulwary nad rzeką, Arboretum w\u00a0Kopnej Górze i\u00a0Puszcza Knyszyńska. Na jednodniowe wycieczki macie stamtąd Tykocin, Kruszyniany i\u00a0Krainę Otwartych Okiennic.',
+      'Najwięcej romantycznych miejsc na krótki wyjazd jest w\u00a0okolicach Supraśla: monaster, bulwary nad rzeką, Arboretum w\u00a0Kopnej Górze, wieża widokowa na Górze Św. Anny i\u00a0nocne niebo w\u00a0Puszczy Knyszyńskiej. Na jednodniowe wycieczki macie stamtąd Tykocin, Kruszyniany i\u00a0Krainę Otwartych Okiennic.',
   },
   {
     question: 'Ile kosztuje romantyczny weekend na Podlasiu w\u00a0domku?',
@@ -36,11 +36,11 @@ const RomantycznyWeekendPodlasie = () => (
   <BlogArticleLayout
     title="Romantyczne miejsca na Podlasiu – weekend we dwoje"
     metaTitle="Romantyczne miejsca na Podlasiu | Weekend we dwoje"
-    metaDescription="9 romantycznych miejsc na Podlasiu: monaster w&nbsp;Supraślu, Tykocin, arboretum, Kraina Otwartych Okiennic. Plan weekendu we dwoje i&nbsp;domek z&nbsp;balią w&nbsp;lesie."
+    metaDescription="13 romantycznych miejsc na Podlasiu: monaster w&nbsp;Supraślu, Góra Św. Anny, Noc Kupały, Tykocin, nocne niebo w&nbsp;puszczy. Plan weekendu we dwoje i&nbsp;domek z&nbsp;balią."
     slug="romantyczny-weekend-podlasie"
     publishDate="2026-04-09"
     dateModified="2026-11-01"
-    readTime="10&nbsp;min"
+    readTime="12&nbsp;min"
     keywords={[
       'romantyczne miejsca na Podlasiu',
       'romantyczny weekend Podlasie',
@@ -51,7 +51,10 @@ const RomantycznyWeekendPodlasie = () => (
     faqs={faqs}
     relatedArticles={[
       { title: 'Gdzie zjeść w\u00a0Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
-      { title: 'Co zobaczyć w\u00a0Białymstoku i\u00a0okolicach', slug: 'bialystok-i-okolice-co-zobaczyc' },
+      {
+        title: 'Co zobaczyć w\u00a0Białymstoku i\u00a0okolicach',
+        slug: 'bialystok-i-okolice-co-zobaczyc',
+      },
       {
         title: 'Rykowisko jeleni w\u00a0Puszczy Knyszyńskiej',
         slug: 'rykowisko-jeleni-puszcza-knyszynska',
@@ -78,13 +81,15 @@ const RomantycznyWeekendPodlasie = () => (
       height="1363"
     />
 
-    <h2>9 romantycznych miejsc na Podlasiu</h2>
+    <h2>13 romantycznych miejsc na Podlasiu</h2>
 
     <h3>1. Monaster w&nbsp;Supraślu o&nbsp;zachodzie słońca</h3>
     <p>
-      Białe mury Monasteru Zwiastowania Przenajświętszej Bogurodzicy najpiękniej wyglądają
-      wieczorem, gdy słońce kładzie się na kopułach. Zajrzyjcie do Muzeum Ikon, a&nbsp;potem
-      zejdźcie nad rzekę. Więcej o&nbsp;miasteczku w&nbsp;tekście{' '}
+      Ceglana cerkiew Zwiastowania z&nbsp;białymi wieżami to połączenie gotyku i&nbsp;Bizancjum,
+      odbudowane po wysadzeniu w&nbsp;1944 roku. Najpiękniej wygląda wieczorem, gdy słońce kładzie
+      się na kopułach. Zajrzyjcie do Muzeum Ikon, gdzie wiszą ocalałe XVI-wieczne freski,
+      a&nbsp;potem zejdźcie nad rzekę. Na teren monasteru wchodzi się w&nbsp;stosownym stroju.
+      Więcej o&nbsp;miasteczku w&nbsp;tekście{' '}
       <Link to="/blog/suprasl-atrakcje-uzdrowisko">Supraśl – atrakcje i&nbsp;uzdrowisko</Link>.
     </p>
 
@@ -101,9 +106,10 @@ const RomantycznyWeekendPodlasie = () => (
 
     <h3>2. Bulwary nad rzeką Supraśl</h3>
     <p>
-      Spacerowe ścieżki wzdłuż rzeki, ławki, kładki i&nbsp;widok na monaster. Najlepiej z&nbsp;kawą
-      na wynos rano albo z&nbsp;lodami w&nbsp;letni wieczór. Kto ma ochotę na więcej, wypożycza
-      dwuosobowy kajak i&nbsp;płynie przez puszczę.
+      Bulwary Wiktora Wołkowa ciągną się ponad kilometr wzdłuż rzeki: ławki, trawniki, kładka
+      i&nbsp;widok na monaster na wzgórzu. Najlepiej z&nbsp;kawą na wynos rano albo z&nbsp;lodami
+      w&nbsp;letni wieczór. Kto ma ochotę na więcej, wypożycza dwuosobowy kajak i&nbsp;płynie przez
+      puszczę.
     </p>
 
     <img
@@ -133,14 +139,42 @@ const RomantycznyWeekendPodlasie = () => (
       <Link to="/blog/puszcza-knyszynska-przewodnik">przewodniku po Puszczy Knyszyńskiej</Link>.
     </p>
 
-    <h3>5. Tykocin nad Narwią</h3>
+    <h3>5. Nocny spacer po puszczy i&nbsp;niebo pełne gwiazd</h3>
+    <p>
+      Najbardziej romantyczna atrakcja Podlasia jest darmowa i&nbsp;zaczyna się po zmroku. Wyjdźcie
+      leśną drogą kawałek od domu, zgaście latarki i&nbsp;poczekajcie, aż oczy przyzwyczają się do
+      ciemności. Słychać puszczyki, czasem jelenia, a&nbsp;nad głową widać Drogę Mleczną. Najlepiej
+      w&nbsp;nowiu, a&nbsp;w&nbsp;sierpniu podczas Perseidów spadające gwiazdy liczy się
+      w&nbsp;dziesiątkach. Życzenia wypowiadajcie po cichu, bo w&nbsp;lesie wszystko słychać.
+    </p>
+
+    <h3>6. Góra Świętej Anny i&nbsp;Szlak Wzgórz Świętojańskich</h3>
+    <p>
+      Puszczę Knyszyńską wyrzeźbił lodowiec, więc są tu wzgórza i&nbsp;doliny jak w&nbsp;niskich
+      górach. Szlak Wzgórz Świętojańskich ma 27&nbsp;km i&nbsp;biegnie przez gminy Supraśl, Gródek
+      i&nbsp;Michałowo, ale nie musicie iść całego. Wybierzcie odcinek kończący się na Górze Świętej
+      Anny przy wsi Kołodno, gdzie stoi wieża widokowa z&nbsp;panoramą puszczy i&nbsp;doliny Płoski.
+      Z&nbsp;Supraśla dojedziecie ul. Cieliczańską przez Cieliczankę do Kołodna, a&nbsp;dalej leśnym
+      duktem pieszo. Przyjdźcie na zachód słońca.
+    </p>
+
+    <h3>7. Noc Kupały nad rzeką Supraśl</h3>
+    <p>
+      W&nbsp;okolicach najkrótszej nocy roku, z&nbsp;21 na 22&nbsp;czerwca, w&nbsp;Załukach nad
+      Supraślą (gmina Gródek) odbywa się Kupalnoczka. To słowiańskie święto ognia, wody
+      i&nbsp;miłości: koncerty, korowód z&nbsp;pochodniami i&nbsp;puszczanie wianków na rzekę.
+      Legenda mówi, że kto tej nocy znajdzie kwiat paproci, ma szczęście w&nbsp;miłości. Szukanie we
+      dwoje jest dozwolone.
+    </p>
+
+    <h3>8. Tykocin nad Narwią</h3>
     <p>
       Brukowany rynek, barokowy kościół, Wielka Synagoga i&nbsp;odbudowany zamek nad rzeką. Tykocin
       to około godziny drogi z&nbsp;Supraśla i&nbsp;idealny cel na sobotnie popołudnie. Zostańcie na
       zachód słońca nad Narwią.
     </p>
 
-    <h3>6. Pałac Branickich w&nbsp;Białymstoku</h3>
+    <h3>9. Pałac Branickich w&nbsp;Białymstoku</h3>
     <p>
       Nazywany Wersalem Północy, z&nbsp;ogrodami, w&nbsp;których spacer jest bezpłatny. Romantycznie
       robi się zwłaszcza po zmroku, kiedy pałac jest podświetlony. Cały plan zwiedzania znajdziecie
@@ -151,21 +185,30 @@ const RomantycznyWeekendPodlasie = () => (
       .
     </p>
 
-    <h3>7. Kraina Otwartych Okiennic</h3>
+    <h3>10. Kraina Otwartych Okiennic</h3>
     <p>
       Trześcianka, Soce i&nbsp;Puchły to wsie z&nbsp;kolorowymi, rzeźbionymi okiennicami, jakby czas
       się tu zatrzymał. Najlepiej objechać je powoli, z&nbsp;postojami na zdjęcia.{' '}
       <Link to="/blog/kraina-otwartych-okiennic">Trasę opisaliśmy tutaj</Link>.
     </p>
 
-    <h3>8. Kruszyniany i&nbsp;drewniany meczet</h3>
+    <h3>11. Kruszyniany i&nbsp;drewniany meczet</h3>
     <p>
       Tatarska wieś z&nbsp;zielonym meczetem i&nbsp;obiadem, o&nbsp;którym będziecie rozmawiać
       w&nbsp;drodze powrotnej. Pierekaczewnik na deser obowiązkowo. Szczegóły:{' '}
       <Link to="/blog/kruszyniany-tatarska-wies">Kruszyniany – tatarska wieś</Link>.
     </p>
 
-    <h3>9. Balia pod gwiazdami w&nbsp;Konnem</h3>
+    <h3>12. Folwark Żylicze – historia miłości z&nbsp;awionetką w&nbsp;tle</h3>
+    <p>
+      W&nbsp;dolinie rzeki Nietupy, we wsi Ciumicze, do dawnego majątku rodu de Virion prowadzi
+      aleja 200-letnich lip. Przed wojną folwark wydzierżawili Maria i&nbsp;Jacek Korytowscy,
+      zakochani, których związku nie zaakceptowała rodzina. Przylecieli tu awionetką
+      i&nbsp;wylądowali na łące obok dworu. Dziś folwark odnawiają nowi właściciele. Spacer pod
+      lipami to najlepsza okazja, żeby opowiedzieć sobie własną historię.
+    </p>
+
+    <h3>13. Balia pod gwiazdami w&nbsp;Konnem</h3>
     <p>
       Na koniec miejsce, którego nie znajdziecie w&nbsp;przewodnikach: Wasz własny ogród. Gorąca
       woda, chłodne powietrze, nad głową niebo bez łuny miasta. Jedyny tłum, jaki tu spotkacie, to

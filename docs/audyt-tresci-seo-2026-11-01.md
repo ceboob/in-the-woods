@@ -1,17 +1,20 @@
 # Treści i SEO: rozbudowa i audyt (2026-11-01)
 
-Wzorce: artykuły o romantycznych miejscach i weekendzie na Podlasiu, o Białymstoku i okolicach oraz o tym, gdzie zjeść w Supraślu (maciejowkaborki33.pl, tasteaway.pl, robimypodroze.pl, TripAdvisor).
-Ograniczenie: sieć tego środowiska blokuje te domeny (proxy 403), więc nie dało się ich przeczytać. Fakty zebrano przez wyszukiwarkę z innych źródeł: Orły Gastronomii 2024, TripAdvisor (wynik wyszukiwania), Portal Podlasia, culture.pl, samorzad.gov.pl i National Geographic. Teksty są autorskie i nie kopiują wzorców.
+Wzorce: artykuły o romantycznych miejscach i weekendzie na Podlasiu oraz o Białymstoku i okolicach (Maciejówka Borki, 2022), o jedzeniu w Supraślu (TasteAway, 2021), przewodnik po Supraślu (RobiMy Podróże, 2020/2021) oraz ranking restauracji na TripAdvisorze.
+
+Źródła: domeny wzorców są zablokowane w sieci środowiska, więc pierwsza wersja powstała na podstawie wyszukiwarki. Druga runda korzystała z zrzutów PDF wszystkich pięciu artykułów od właściciela strony. Z PDF-ów wzięto tylko fakty: adresy, nazwy, daty i historię miejsc. Teksty są napisane od nowa, bez kopiowania zdań.
+
+**Zdjęcia ze wzorców nie zostały użyte.** RobiMy Podróże w stopce zastrzega: „Nie zgadzamy się na wykorzystywanie naszych zdjęć i treści”. Zdjęcia TasteAway i Maciejówki też są chronione prawem autorskim. W tekstach użyto wyłącznie zdjęć, które już są w repozytorium (dom, monaster, rzeka, Kruszyniany, puszcza).
 
 ## 1. Co zostało zmienione
 
 | Strona | Fraza główna | Co się zmieniło |
 |---|---|---|
-| `/blog/przewodnik-kulinarny-suprasl` | gdzie zjeść w Supraślu | Przedtem pusty tekst, w którym 13 razy powtarzało się „sprawdź…”. Teraz pełny przewodnik: 5 dań kuchni podlaskiej, opisane lokale (Łukaszówka, Bar Jarzębinka, Spiżarnia Smaków, Ojcowizna, Prowincja, Bohema, Ostoja, Papu Bistro), Kruszyniany i Tatarska Jurta, mistrzostwa babki (8.08.2026), plan kulinarnego weekendu, 3 zdjęcia, 5 FAQ i CTA |
-| `/blog/romantyczny-weekend-podlasie` | romantyczne miejsca na Podlasiu | Nowe ujęcie: 9 miejsc (monaster, bulwary, Arboretum Kopna Góra, puszcza, Tykocin, Pałac Branickich, Kraina Otwartych Okiennic, Kruszyniany, balia), plan od piątku do niedzieli, sekcja „dom zamiast hotelu”, 4 zdjęcia, 5 FAQ (rocznica, termin) |
-| `/blog/bialystok-i-okolice-co-zobaczyc` (**nowy**) | co warto zobaczyć w Białymstoku i okolicach | Białystok (pałac, rynek, Sybir, Zamenhof, Bojary, zoo), okolice (Supraśl, Kopna Góra, Święta Woda, Choroszcz, Tykocin, Waniewo, Kruszyniany i Bohoniki, okiennice), plan na 3 dni, sekcja „nocleg koło Białegostoku”, 5 FAQ |
-| `/weekend-suprasl` | weekend w Supraślu / weekend na Podlasiu | Nowe sekcje: „4 pomysły na niedzielną wycieczkę”, „co spakować”, nowe FAQ „co zobaczyć na Podlasiu w weekend”, linki do trzech tekstów z bloga |
-| `/atrakcje-suprasl` | atrakcje Supraśla | Dopisane: Arboretum, Święta Woda, Tykocin, Białystok z linkiem, Łukaszówka. Lista `ItemList` w JSON-LD rozszerzona o 5 pozycji |
+| `/blog/przewodnik-kulinarny-suprasl` | gdzie zjeść w Supraślu | Przedtem pusty tekst, w którym 13 razy powtarzało się „sprawdź…”. Teraz pełny przewodnik: 5 dań kuchni podlaskiej, lokale z adresami i daniami (Jarzębinka, Łukaszówka, Spiżarnia Smaków, Prowincja w Domu Ludowym i inne), kawiarnie i bulwary, Kruszyniany, Tejsza w Tykocinie, „Co przywieźć z Podlasia” (giełda przy Andersa, Czarna Wieś), mistrzostwa babki, plan weekendu, 5 FAQ i CTA |
+| `/blog/romantyczny-weekend-podlasie` | romantyczne miejsca na Podlasiu | 13 miejsc: monaster, bulwary, arboretum, puszcza, nocne niebo i Perseidy, Góra Św. Anny i Szlak Wzgórz Świętojańskich, Noc Kupały w Załukach, Tykocin, Pałac Branickich, okiennice, Kruszyniany, Folwark Żylicze, balia. Do tego plan weekendu, 4 zdjęcia i 5 FAQ |
+| `/blog/bialystok-i-okolice-co-zobaczyc` (**nowy**) | co warto zobaczyć w Białymstoku i okolicach | Białystok (pałac i zegar na wieży, Planty, Fara, sobór, Sybir, Zamenhof, Bojary, taras na dachu opery, zoo, wieczory i gdzie zjeść), okolice (Supraśl, Kopna Góra, Święta Woda, Czarna Wieś Kościelna, Choroszcz, Tykocin z Tejszą, Kurowo i Waniewo, Szlak Tatarski, okiennice), plan na 3 dni, nocleg, 5 FAQ |
+| `/weekend-suprasl` | weekend w Supraślu / weekend na Podlasiu | Nowe sekcje: „5 pomysłów na niedzielną wycieczkę” (z Górą Św. Anny), „co spakować”, zakupy w drodze powrotnej, nowe FAQ, linki do trzech tekstów z bloga |
+| `/atrakcje-suprasl` | atrakcje Supraśla | Konkrety przy każdym zabytku (historia, zasady wejścia, dostępność), nowe pozycje: Dom Ludowy, Biały Dworek, Supraśl filmowy („U Pana Boga…”), arboretum, Święta Woda, Tykocin. Lista `ItemList` w JSON-LD rozszerzona o 7 pozycji |
 | `/blog` | – | Nowa karta wpisu, nowe tytuły i zajawki dwóch przepisanych tekstów |
 
 Linkowanie wewnętrzne: trzy teksty z bloga i dwie strony ofertowe linkują teraz do siebie nawzajem (klaster „weekend na Podlasiu”). Każdy tekst kończy się CTA do rezerwacji (`/#rezerwacja`) i numerem telefonu.
@@ -25,9 +28,12 @@ Linkowanie wewnętrzne: trzy teksty z bloga i dwie strony ofertowe linkują tera
 
 ## 3. Do potwierdzenia przez właściciela (przed deployem)
 
-1. **Lokale:** czy nadal działają i czy rekomendacje się zgadzają (Łukaszówka, Jarzębinka, Spiżarnia Smaków, Ojcowizna, Prowincja, Bohema, Ostoja, Papu Bistro). Najlepiej, żeby Maciej dopisał po jednym zdaniu od siebie, np. ulubione danie. To najsilniejszy sygnał E-E-A-T
-2. Zdanie „babka bywa, że kończy się po 15:00” to typowa obserwacja, nie sprawdzony fakt. Jeśli się nie zgadza, trzeba je usunąć
-3. Czasy dojazdu z Konnego (Tykocin, Kruszyniany, okiennice „ok. 1 h”, Kopna Góra „kilkanaście minut”)
+Fakty ze źródeł pochodzą z lat 2020–2022 i mogły się zmienić:
+1. **Lokale i adresy:** Bar Jarzębinka (ul. 3 Maja 22), Łukaszówka (ul. Nowy Świat 2), Spiżarnia Smaków (ul. 3 Maja 5, piekarnia i kawiarnia), Prowincja (Dom Ludowy), Ojcowizna, Bohema, Ostoja, Papu Bistro. W Białymstoku: Świętojańska 21, Kwestia Czasu, Lipcowy Ogród, Bar Topolanka, Cziora. Celowo nie podano cen ani godzin otwarcia
+2. **Dania z kart** (kluska supraska, ciasto Marcinek, podpiwek, podlaski talerz) zgodnie ze stanem w źródłach. Najlepiej, żeby Maciej dopisał przy każdym lokalu jedno zdanie od siebie. To najsilniejszy sygnał E-E-A-T
+3. **Monaster:** w poniedziałki zamknięty, a codziennie po południu obowiązuje „cisza monasterska”. Wierszalin latem zwykle nie gra
+4. **Wydarzenia:** Kupalnoczka w Załukach (okolice 21/22 czerwca), Święto Grzyba w Michałowie, festiwale w Białymstoku. Daty trzeba co roku sprawdzać
+5. **Czasy dojazdu z Konnego:** Tykocin, Kruszyniany i Kraina Otwartych Okiennic ok. 1 h, Góra Św. Anny i Kopna Góra „kilkanaście minut”
 
 ## 4. Obszary wymagające modyfikacji (priorytety)
 
@@ -38,7 +44,7 @@ Linkowanie wewnętrzne: trzy teksty z bloga i dwie strony ofertowe linkują tera
 4. **Opinie gości na stronie i w Google.** Recenzje to najsilniejszy czynnik konwersji w noclegach. Po każdym pobycie warto prosić o opinię w Wizytówce Google (link w mailu po wyjeździe) i pokazywać 3–5 najnowszych cytatów na stronach ofertowych
 
 ### P2: ryzyka i porządki
-5. **Licencje zdjęć.** `blog-co-robic-suprasl*.webp` ma znak wodny „ADVENTUM, fot. Paweł Pomykalski”, a jest używany na liście bloga. Trzeba potwierdzić zgodę autora albo wymienić zdjęcie
+5. **Licencje zdjęć.** Zdjęć ze stron-wzorców nie wolno używać (patrz wyżej). `blog-co-robic-suprasl*.webp` ma znak wodny „ADVENTUM, fot. Paweł Pomykalski”, a jest używany na liście bloga. Trzeba potwierdzić zgodę autora albo wymienić zdjęcie
 6. **Obrazy wygenerowane przez AI z fikcyjnymi szyldami** (`blog-lukaszowka-suprasl.jpg`, `blog-bohema-suprasl.jpg`, `blog-bar-jarzebinka.jpg`). Celowo ich nie użyto: podpisane jako konkretne lokale wprowadzałyby w błąd. Można je usunąć z repo
 7. **Daty wydarzeń** zawsze z kalendarza CKiR. Gdy pojawi się termin mistrzostw babki w 2027, trzeba go wpisać do przewodnika kulinarnego i tekstu o wydarzeniach
 8. Pozostałości z audytu 2026-10-31: CSP etap 2, los workera Cloudflare

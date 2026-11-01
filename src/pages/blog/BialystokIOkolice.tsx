@@ -9,7 +9,7 @@ const faqs = [
   {
     question: 'Co warto zobaczyć w\u00a0Białymstoku w\u00a0jeden dzień?',
     answer:
-      'Pałac Branickich z\u00a0ogrodami, Rynek Kościuszki z\u00a0Ratuszem, katedrę i\u00a0cerkiew św. Mikołaja, a\u00a0po południu Muzeum Pamięci Sybiru albo Centrum Zamenhofa. Na koniec spacer po drewnianych Bojarach.',
+      'Pałac Branickich z\u00a0ogrodami i\u00a0Plantami, Rynek Kościuszki z\u00a0Ratuszem, Farę i\u00a0sobór św. Mikołaja, a\u00a0po południu Muzeum Pamięci Sybiru. Na koniec spacer po drewnianych Bojarach i\u00a0zachód słońca z\u00a0tarasu na dachu Opery i\u00a0Filharmonii Podlaskiej.',
   },
   {
     question: 'Co zobaczyć w\u00a0okolicach Białegostoku?',
@@ -40,7 +40,7 @@ const BialystokIOkolice = () => (
     metaDescription="Co warto zobaczyć w&nbsp;Białymstoku i&nbsp;okolicach: Pałac Branickich, Bojary, Tykocin, Supraśl, Kruszyniany i&nbsp;kładka w&nbsp;Waniewie. Gotowy plan na 3&nbsp;dni i&nbsp;nocleg w&nbsp;lesie."
     slug="bialystok-i-okolice-co-zobaczyc"
     publishDate="2026-11-01"
-    readTime="11&nbsp;min"
+    readTime="14&nbsp;min"
     keywords={[
       'co warto zobaczyć w\u00a0Białymstoku',
       'Białystok i\u00a0okolice atrakcje',
@@ -76,27 +76,32 @@ const BialystokIOkolice = () => (
 
     <h2>Co warto zobaczyć w&nbsp;Białymstoku</h2>
 
-    <h3>Pałac Branickich i&nbsp;ogrody</h3>
+    <h3>Pałac Branickich, ogrody i&nbsp;Planty</h3>
     <p>
-      Wizytówka miasta, XVIII-wieczna rezydencja hetmana Jana Klemensa Branickiego, nazywana
-      Wersalem Północy. Ogrody z&nbsp;rzeźbami, alejami i&nbsp;pawilonami można obejść bezpłatnie,
-      a&nbsp;w&nbsp;pałacu działa muzeum historii medycyny i&nbsp;farmacji. Wieczorem, gdy fasada
-      jest podświetlona, robi się tu naprawdę romantycznie.
+      Wizytówka miasta, późnobarokowa rezydencja hetmana Jana Klemensa Branickiego, nazywana
+      Wersalem Północy. Ogrody z&nbsp;rzeźbami, przystrzyżonymi szpalerami i&nbsp;stawami
+      obejdziecie bezpłatnie. Na wieży zegarowej działa jeden z&nbsp;najstarszych zegarów wieżowych
+      w&nbsp;Polsce, chodzący od ponad 260 lat. W&nbsp;prawym skrzydle i&nbsp;XVII-wiecznych
+      piwnicach mieści się Muzeum Historii Medycyny i&nbsp;Farmacji. Obok pałacu zaczynają się
+      Planty, prawie 15&nbsp;hektarów zieleni w&nbsp;samym centrum, z&nbsp;fontannami podświetlanymi
+      wiosną i&nbsp;latem po zmroku.
     </p>
 
-    <h3>Rynek Kościuszki i&nbsp;Ratusz</h3>
+    <h3>Rynek Kościuszki, Fara i&nbsp;sobór św. Mikołaja</h3>
     <p>
       Kilka minut spacerem od pałacu. W&nbsp;Ratuszu mieści się Muzeum Podlaskie z&nbsp;galerią
-      malarstwa polskiego, a&nbsp;wokół rynku kawiarnie i&nbsp;ogródki. Obok stoją bazylika
-      archikatedralna Wniebowzięcia NMP i&nbsp;prawosławna cerkiew św. Mikołaja, czyli dwa oblicza
-      Podlasia na jednej ulicy.
+      malarstwa polskiego, które organizuje też spacery z&nbsp;przewodnikiem po mieście. Przy ul.
+      Kościelnej stoi bazylika archikatedralna, czyli Fara. Większy, czerwony kościół neogotycki
+      przyciąga wzrok, ale starszy jest mały, biały kościół obok, najstarsza murowana budowla
+      Białegostoku. Przy ul. Lipowej stoi prawosławny sobór św. Mikołaja z&nbsp;1846 roku. Wejdźcie
+      podczas niedzielnej liturgii, żeby usłyszeć śpiew chóru.
     </p>
 
     <h3>Muzeum Pamięci Sybiru</h3>
     <p>
-      Jedno z&nbsp;najnowocześniejszych muzeów historycznych w&nbsp;Polsce, opowiadające
-      o&nbsp;zesłaniach na Syberię. Zarezerwujcie co najmniej dwie godziny, wychodzi się stamtąd
-      w&nbsp;ciszy.
+      Nowoczesne muzeum przy ul. Węglowej 1, z&nbsp;ponad 2&nbsp;tys. m² ekspozycji o&nbsp;Polakach
+      zesłanych na Syberię, w&nbsp;carskiej Rosji i&nbsp;w&nbsp;ZSRR. Zarezerwujcie co najmniej dwie
+      godziny, wychodzi się stamtąd w&nbsp;ciszy.
     </p>
 
     <h3>Śladami Zamenhofa i&nbsp;Szlak Dziedzictwa Żydowskiego</h3>
@@ -108,16 +113,37 @@ const BialystokIOkolice = () => (
 
     <h3>Bojary – drewniany Białystok</h3>
     <p>
-      Osiedle drewnianych domów z&nbsp;gankami i&nbsp;rzeźbionymi okiennicami tuż przy centrum.
-      Najlepsze na spokojny spacer z&nbsp;aparatem i&nbsp;przedsmak tego, co zobaczycie
-      w&nbsp;Supraślu.
+      Dawna wieś wchłonięta przez miasto w&nbsp;XVIII wieku, dziś osiedle drewnianych domów
+      z&nbsp;gankami i&nbsp;okiennicami, kilka minut od centrum, między blokami. Przejdźcie ulicami
+      Staszica, Koszykową i&nbsp;Wiktorii. Mieszkańcy od lat walczą o&nbsp;zachowanie tej zabudowy,
+      a&nbsp;efekt widać na każdym podwórku. To dobry przedsmak drewnianego Supraśla.
+    </p>
+
+    <h3>Opera i&nbsp;Filharmonia Podlaska – taras widokowy na dachu</h3>
+    <p>
+      Nawet jeśli nie idziecie na spektakl, wejdźcie na dach gmachu przy ul. Odeskiej 1. Jest tam
+      ogród i&nbsp;taras widokowy z&nbsp;panoramą miasta oraz rzeźba „Głowa kompozytora” Teresy
+      Murak. Podobno włożenie dłoni w&nbsp;jej usta przynosi szczęście.
     </p>
 
     <h3>Z&nbsp;dziećmi: Akcent ZOO i&nbsp;Muzeum Wojska</h3>
     <p>
-      Akcent ZOO w&nbsp;Parku Zwierzynieckim pokazuje zwierzęta, które żyją w&nbsp;Polsce, m.in.
-      żubry i&nbsp;wilki. Starsze dzieci wciągnie Muzeum Wojska. Więcej pomysłów w&nbsp;tekście{' '}
-      <Link to="/blog/suprasl-z-dziecmi">Supraśl z&nbsp;dziećmi</Link>.
+      Kameralne Akcent ZOO przy ul. Podleśnej, w&nbsp;Parku Zwierzynieckim, pokazuje zwierzęta
+      żyjące w&nbsp;Polsce, m.in. żubry i&nbsp;wilki. Starsze dzieci wciągnie Muzeum Wojska. Więcej
+      pomysłów w&nbsp;tekście <Link to="/blog/suprasl-z-dziecmi">Supraśl z&nbsp;dziećmi</Link>.
+    </p>
+
+    <h3>Białystok wieczorem i&nbsp;gdzie zjeść</h3>
+    <p>
+      Wiosną i&nbsp;latem centrum żyje do późna: ogródki przy Rynku Kościuszki, festiwale na
+      dziedzińcu Pałacu Branickich, a&nbsp;w&nbsp;studyjnym Kinie Forum ambitne filmy
+      i&nbsp;festiwal krótkich metraży Żubroffka. Zamiast pierwszej knajpy przy rynku wybierzcie
+      sprawdzone adresy: Świętojańska 21 obok filharmonii (kuchnia regionalna w&nbsp;nowoczesnym
+      wydaniu i&nbsp;pizza na zakwasie), Kwestię Czasu przy ul. Akademickiej (polskie dania
+      w&nbsp;nowej odsłonie, dużo opcji wege) albo Lipcowy Ogród w&nbsp;Hotelu Podlasie (pierogi
+      z&nbsp;kurkami, babka i&nbsp;smaki kresowe). Tanio i&nbsp;domowo zjecie w&nbsp;barach
+      mlecznych Społem, np. w&nbsp;Barze Topolanka, a&nbsp;chaczapuri w&nbsp;gruzińskiej piekarni
+      Cziora.
     </p>
 
     <h2>Co zobaczyć w&nbsp;okolicach Białegostoku</h2>
@@ -154,8 +180,17 @@ const BialystokIOkolice = () => (
     <h3>Wasilków i&nbsp;Sanktuarium Świętej Wody</h3>
     <p>
       Między Białymstokiem a&nbsp;Supraślem leży Święta Woda: sanktuarium ze źródełkiem i&nbsp;Górą
-      Krzyży, na której pielgrzymi stawiają tysiące krzyży. Krótki przystanek, który zostaje
-      w&nbsp;głowie.
+      Krzyży, na której pielgrzymi postawili tysiące krzyży. Historia łączy się z&nbsp;Supraślem:
+      w&nbsp;1719 roku dzierżawca supraskiej papierni miał tu odzyskać wzrok po wypiciu wody ze
+      źródła i&nbsp;w&nbsp;podzięce ufundował kaplicę. Weźcie butelkę na wodę.
+    </p>
+
+    <h3>Czarna Wieś Kościelna – szlak rękodzieła</h3>
+    <p>
+      Około 24&nbsp;km od Białegostoku, w&nbsp;Puszczy Knyszyńskiej. We wsi działa kuźnia prowadzona
+      przez kolejne pokolenia kowali i&nbsp;pracownie garncarskie, w&nbsp;których ulepicie własny
+      dzbanek. Kupicie tu też domowe kiszonki i&nbsp;kwas z&nbsp;buraka. Latem po drodze możecie się
+      wykąpać w&nbsp;zalewie Czapielówka w&nbsp;Czarnej Białostockiej.
     </p>
 
     <h3>Choroszcz – letni pałac Branickich</h3>
@@ -166,15 +201,24 @@ const BialystokIOkolice = () => (
 
     <h3>Tykocin nad Narwią</h3>
     <p>
-      Jedno z&nbsp;najpiękniejszych miasteczek Podlasia: brukowany rynek z&nbsp;pomnikiem
-      Czarnieckiego, barokowy kościół Trójcy Przenajświętszej, Wielka Synagoga z&nbsp;muzeum
-      i&nbsp;odbudowany zamek nad rzeką. Plan na pół dnia, a&nbsp;przy dobrej pogodzie na cały.
+      Miasteczko założone w&nbsp;1425 roku, przez osiemnaście pokoleń dom dla społeczności
+      żydowskiej. Zobaczcie barokowy kościół Trójcy Przenajświętszej ufundowany przez Jana Klemensa
+      Branickiego i&nbsp;sąsiedni Alumnat, dawny przytułek dla weteranów, dziś hotel
+      z&nbsp;restauracją i&nbsp;ogródkiem nad Narwią. Obowiązkowo wejdźcie do Wielkiej Synagogi,
+      jednej z&nbsp;najstarszych i&nbsp;drugiej co do wielkości w&nbsp;Polsce. Bilety kupicie online
+      albo na miejscu, razem z&nbsp;audioprzewodnikiem. W&nbsp;jej piwnicach od 1978 roku działa
+      restauracja Tejsza z&nbsp;kuchnią żydowską: kugel, śledzie, cymes. Na koniec odbudowany
+      królewski zamek z&nbsp;XV wieku, zwiedzany z&nbsp;przewodnikiem.
     </p>
 
-    <h3>Narwiański Park Narodowy i&nbsp;kładka w&nbsp;Waniewie</h3>
+    <h3>Narwiański Park Narodowy: Kurowo i&nbsp;kładka Waniewo–Śliwno</h3>
     <p>
-      Polska Amazonka w&nbsp;miniaturze: drewniana kładka przez rozlewiska Narwi z&nbsp;pływającymi
-      platformami, które przeciągacie liną. Dzieci zachwycone, dorośli też, choć udają, że nie.
+      Polska Amazonka w&nbsp;miniaturze, czyli rozlewiska Narwi. W&nbsp;Kurowie zacznijcie od
+      Ośrodka Edukacji Przyrodniczej „Młynarzówka”, gdzie kupicie bilety do parku
+      i&nbsp;sprawdzicie, czy kładki są dostępne. Stamtąd prowadzi ścieżka „Kładka Wśród Bagien”.
+      Około 7&nbsp;km dalej, w&nbsp;Waniewie, zaczyna się kładka do Śliwna z&nbsp;pływającymi
+      platformami, które przeciągacie przez rzekę liną. Dzieci zachwycone, dorośli też, choć udają,
+      że nie. Weźcie kalosze, bo przy wysokiej wodzie część trasy bywa zalana.
     </p>
 
     <h3>Kruszyniany i&nbsp;Bohoniki – Szlak Tatarski</h3>

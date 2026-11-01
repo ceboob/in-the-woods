@@ -96,8 +96,9 @@ const WeekendSuprasl = () => (
       </h2>
       <p className="text-muted-foreground leading-relaxed">
         Śniadanie o&nbsp;9:00 (albo o&nbsp;11:00, nikt nie patrzy). Około 10:30 Supraśl: monaster
-        i&nbsp;Muzeum Ikon. O&nbsp;13:00 obiad, czyli babka ziemniaczana albo kartacze, po których
-        dieta poczeka do poniedziałku (gdzie najlepsze, piszemy w&nbsp;tekście{' '}
+        i&nbsp;Muzeum Ikon (monaster jest zamknięty w&nbsp;poniedziałki, więc sobota to dobry
+        wybór). O&nbsp;13:00 obiad, czyli babka ziemniaczana albo kartacze, po których dieta poczeka
+        do poniedziałku (gdzie najlepsze, piszemy w&nbsp;tekście{' '}
         <Link
           to="/blog/przewodnik-kulinarny-suprasl"
           className="text-primary underline hover:text-primary/80"
@@ -117,13 +118,14 @@ const WeekendSuprasl = () => (
 
       <h2 className="section-title !text-2xl md:!text-3xl">Niedziela: śniadanie do południa</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Długie śniadanie, ostatni spacer po lesie i&nbsp;pakowanie, którego nikt nie lubi.
-        W&nbsp;drodze powrotnej możecie zajrzeć do Arboretum w&nbsp;Kopnej Górze albo pojechać
-        dalej, do tatarskich Kruszynian.
+        Długie śniadanie, ostatni spacer po lesie i&nbsp;pakowanie, którego nikt nie lubi. Jeśli
+        wracacie przez Białystok, zajedźcie na giełdę przy ul. Andersa 40 po babkę, sękacz, miód
+        i&nbsp;sery korycińskie na wynos. W&nbsp;drodze powrotnej możecie zajrzeć do Arboretum
+        w&nbsp;Kopnej Górze albo pojechać dalej, do tatarskich Kruszynian.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Weekend na Podlasiu: 4&nbsp;pomysły na niedzielną wycieczkę
+        Weekend na Podlasiu: 5&nbsp;pomysłów na niedzielną wycieczkę
       </h2>
       <p className="text-muted-foreground leading-relaxed">
         Supraśl to dobra baza na cały region. Jeśli w&nbsp;niedzielę macie jeszcze energię,
@@ -138,6 +140,17 @@ const WeekendSuprasl = () => (
             className="text-primary underline hover:text-primary/80"
           >
             co warto zobaczyć w&nbsp;Białymstoku i&nbsp;okolicach
+          </Link>
+          .
+        </li>
+        <li>
+          <strong>Góra Świętej Anny (kilkanaście minut):</strong> leśny spacer do wieży widokowej
+          koło Kołodna z&nbsp;panoramą puszczy i&nbsp;doliny Płoski. Idealne na zachód słońca.{' '}
+          <Link
+            to="/blog/romantyczny-weekend-podlasie"
+            className="text-primary underline hover:text-primary/80"
+          >
+            Więcej romantycznych miejsc
           </Link>
           .
         </li>

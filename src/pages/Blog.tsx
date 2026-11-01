@@ -81,7 +81,7 @@ const articles = [
     slug: 'romantyczny-weekend-podlasie',
     title: 'Romantyczne miejsca na Podlasiu – weekend we dwoje',
     excerpt:
-      'Monaster o\u00a0zachodzie słońca, Tykocin nad Narwią, arboretum i\u00a0balia pod gwiazdami. 9\u00a0romantycznych miejsc i\u00a0plan weekendu we dwoje.',
+      'Monaster o\u00a0zachodzie słońca, Góra Św. Anny, Noc Kupały i\u00a0balia pod gwiazdami. 13\u00a0romantycznych miejsc i\u00a0plan weekendu we dwoje.',
     image: blogMonaster,
     date: '2026-04-09',
     readTime: '10\u00a0min',

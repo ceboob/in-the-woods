@@ -9,7 +9,7 @@ const faqs = [
   {
     question: 'Gdzie zjeść babkę ziemniaczaną w\u00a0Supraślu?',
     answer:
-      'Najpewniej w\u00a0Łukaszówce, której właścicielka wygrywała Światowe Mistrzostwa w\u00a0Pieczeniu Babki i\u00a0Kiszki Ziemniaczanej. Babkę mają też w\u00a0karcie bary z\u00a0domową kuchnią w\u00a0centrum, m.in. Bar Jarzębinka. W\u00a0sezonie bywa, że babka kończy się po 15:00, więc na obiad lepiej przyjść wcześniej.',
+      'Dwa pewniaki to Bar Jarzębinka przy ul. 3\u00a0Maja 22 i\u00a0Łukaszówka przy ul. Nowy Świat 2, której właścicielka wygrywała mistrzostwa w\u00a0pieczeniu babki i\u00a0kiszki ziemniaczanej. W\u00a0sezonie w\u00a0Jarzębince bywa tłoczno, więc na obiad przyjdźcie przed szczytem.',
   },
   {
     question: 'Co trzeba zjeść na Podlasiu?',
@@ -41,7 +41,7 @@ const PrzewodnikKulinarny = () => (
     slug="przewodnik-kulinarny-suprasl"
     publishDate="2026-04-09"
     dateModified="2026-11-01"
-    readTime="9&nbsp;min"
+    readTime="11&nbsp;min"
     keywords={[
       'gdzie zjeść w\u00a0Supraślu',
       'restauracje Supraśl',
@@ -54,7 +54,10 @@ const PrzewodnikKulinarny = () => (
     relatedArticles={[
       { title: 'Kruszyniany – tatarska wieś Podlasia', slug: 'kruszyniany-tatarska-wies' },
       { title: 'Romantyczne miejsca na Podlasiu', slug: 'romantyczny-weekend-podlasie' },
-      { title: 'Co zobaczyć w\u00a0Białymstoku i\u00a0okolicach', slug: 'bialystok-i-okolice-co-zobaczyc' },
+      {
+        title: 'Co zobaczyć w\u00a0Białymstoku i\u00a0okolicach',
+        slug: 'bialystok-i-okolice-co-zobaczyc',
+      },
     ]}
   >
     <p className="text-lg leading-relaxed">
@@ -116,60 +119,67 @@ const PrzewodnikKulinarny = () => (
 
     <h2>Restauracje w&nbsp;Supraślu: gdzie iść na obiad</h2>
     <p>
-      Centrum Supraśla da się przejść w&nbsp;kwadrans, a&nbsp;większość lokali stoi przy ulicy
-      3&nbsp;Maja, Piłsudskiego i&nbsp;placu Kościuszki. Oto miejsca, które goście polecają nam
+      Centrum Supraśla przejdziecie w&nbsp;kwadrans, a&nbsp;większość lokali stoi przy ulicach
+      3&nbsp;Maja, Piłsudskiego i&nbsp;Nowy Świat. Oto miejsca, do których goście chodzą
       najczęściej, i&nbsp;co w&nbsp;nich zamówić.
     </p>
 
-    <h3>Łukaszówka – babka mistrzyni świata</h3>
+    <h3>Bar Jarzębinka (ul. 3&nbsp;Maja 22) – kultowa babka i&nbsp;podlaski talerz</h3>
     <p>
-      Domowa kuchnia w&nbsp;drewnianym wnętrzu. Właścicielka, Maria Łukaszewicz, ma na koncie
-      zwycięstwa w&nbsp;mistrzostwach w&nbsp;pieczeniu babki i&nbsp;kiszki ziemniaczanej, więc
-      zamawiacie babkę. Pierogi też bronią się same. Dobre miejsce na pierwszy obiad, żeby od razu
-      wiedzieć, o&nbsp;co tu chodzi.
+      Mały, drewniany bar, w&nbsp;którym zamawia się przy ladzie, a&nbsp;w&nbsp;sezonie poluje na
+      wolny stolik. Kolejka ma sens: babka ziemniaczana uchodzi tu za jedną z&nbsp;najlepszych
+      w&nbsp;okolicy, a&nbsp;obok niej w&nbsp;karcie są kiszka i&nbsp;kartacze. Głodni mogą zamówić
+      „podlaski talerz”, ale porcje są ogromne, więc jedno danie spokojnie podzielicie na dwoje. Do
+      tego domowy podpiwek, a&nbsp;na deser ciasto Marcinek.
     </p>
 
-    <h3>Bar Jarzębinka – obiad jak u&nbsp;babci</h3>
+    <h3>Łukaszówka (ul. Nowy Świat 2) – domowe obiady i&nbsp;babka mistrzyni</h3>
     <p>
-      Jeden z&nbsp;najczęściej ocenianych lokali w&nbsp;Supraślu, z&nbsp;ponad setką opinii
-      w&nbsp;serwisach podróżniczych. Bar z&nbsp;krótką kartą, dużymi porcjami i&nbsp;bez udawania.
-      Na szybki obiad po spacerze po monasterze idealny.
+      Właścicielka, Maria Łukaszewicz, wygrywała mistrzostwa w&nbsp;pieczeniu babki i&nbsp;kiszki
+      ziemniaczanej, a&nbsp;to widać w&nbsp;karcie. Na tablicy z&nbsp;daniami regionalnymi są
+      kartacze litewskie z&nbsp;mięsem, kluska supraska, babka z&nbsp;sosem pieczarkowym
+      i&nbsp;kiszka (czasem tylko na zamówienie). Do tego pierogi, od ruskich po te z&nbsp;kaszą
+      gryczaną i&nbsp;białym serem, oraz domowe obiady w&nbsp;stylu „jak u&nbsp;babci”. Na drogę
+      weźcie pączki pieczone według rodzinnego przepisu.
     </p>
 
-    <h3>Spiżarnia Smaków i&nbsp;Ojcowizna – regionalnie, ale staranniej</h3>
+    <h3>Spiżarnia Smaków (ul. 3&nbsp;Maja 5) – ciepłe wypieki na start</h3>
     <p>
-      Spiżarnia Smaków przy ul. 3&nbsp;Maja zebrała jedne z&nbsp;najwyższych ocen w&nbsp;rankingu
-      Orły Gastronomii dla Supraśla. Ojcowizna przy placu Kościuszki to dobry adres na dłuższy obiad
-      z&nbsp;kuchnią regionalną. Oba miejsca polecamy, gdy chcecie zjeść lokalnie, ale przy obrusie.
+      Wbrew nazwie to nie restauracja, tylko piekarnia z&nbsp;kawiarnią w&nbsp;drewnianym domu. Tu
+      zaczyna się dzień: rogale z&nbsp;czekoladą, pączki z&nbsp;różą, strucle i&nbsp;drożdżówki,
+      często jeszcze ciepłe. Spiżarnia zebrała jedną z&nbsp;najwyższych not w&nbsp;rankingu Orły
+      Gastronomii dla Supraśla. Weźcie kawę na wynos i&nbsp;idźcie z&nbsp;nią pod monaster.
     </p>
 
-    <h3>Prowincja, Bohema, Ostoja – na kolację we dwoje i&nbsp;w&nbsp;większej grupie</h3>
+    <h3>Prowincja w&nbsp;Domu Ludowym – kolacja z&nbsp;architekturą w&nbsp;tle</h3>
     <p>
-      Restauracja Prowincja przy ul. Piłsudskiego to jedno z&nbsp;najpopularniejszych miejsc
-      w&nbsp;miasteczku, z&nbsp;ponad tysiącem opinii w&nbsp;sieci. Bohema i&nbsp;Restauracja Ostoja
-      to dobre adresy na kolację albo większą ekipę. W&nbsp;weekendy wiosną i&nbsp;latem rezerwujcie
-      stolik dzień wcześniej.
+      Restauracja mieści się w&nbsp;drewnianym, modernistycznym Domu Ludowym z&nbsp;1934 roku,
+      z&nbsp;charakterystyczną przeszkloną klatką schodową, którą miejscowi nazywają termometrem. To
+      jedno z&nbsp;najpopularniejszych miejsc w&nbsp;miasteczku, z&nbsp;ponad tysiącem opinii
+      w&nbsp;sieci. Przed wejściem jest skwer z&nbsp;wiklinowymi zwierzętami, na którym dzieci zajmą
+      się sobą, zanim przyjdzie zupa.
     </p>
 
-    <h3>Szybko i&nbsp;na luzie: bistra przy placu Kościuszki</h3>
+    <h3>Ojcowizna, Bohema, Ostoja i&nbsp;bistra – na każdą okazję</h3>
     <p>
-      Po spływie kajakowym nikt nie ma siły na trzy dania. Wtedy sprawdza się Papu Bistro przy placu
-      Kościuszki i&nbsp;bistra w&nbsp;okolicy alei Niepodległości: burger, zupa, coś na słodko
-      i&nbsp;kawa na drogę.
+      Ojcowizna przy placu Kościuszki to dobry adres na dłuższy obiad z&nbsp;kuchnią regionalną.
+      Bohema i&nbsp;Restauracja Ostoja sprawdzą się na kolację albo przy większej ekipie. Po spływie
+      kajakowym wystarczy Papu Bistro przy placu Kościuszki: burger, zupa i&nbsp;kawa na drogę.
+      W&nbsp;wiosenne i&nbsp;letnie weekendy rezerwujcie stolik dzień wcześniej.
     </p>
 
     <p className="text-sm">
-      Karty i&nbsp;godziny lokali zmieniają się z&nbsp;sezonem, a&nbsp;poza sezonem część miejsc
-      otwiera się tylko w&nbsp;weekendy. Zanim pojedziecie, zerknijcie na ich profil w&nbsp;mapach
-      albo zapytajcie Macieja, gdzie aktualnie jest najlepsza babka.
+      Karty, ceny i&nbsp;godziny lokali zmieniają się z&nbsp;sezonem. Poza sezonem część miejsc jest
+      otwarta tylko od wtorku do niedzieli albo tylko w&nbsp;weekendy. Zanim pojedziecie, zerknijcie
+      na ich profil w&nbsp;mapach albo zapytajcie Macieja, gdzie aktualnie jest najlepsza babka.
     </p>
 
     <h2>Słodko: kawiarnie, sękacz i&nbsp;lody nad rzeką</h2>
     <p>
-      Supraśl to miasteczko spacerowe, więc kawa i&nbsp;ciasto są tu częścią programu. Kawiarnie
-      w&nbsp;centrum serwują domowe wypieki, a&nbsp;latem lody zjecie na bulwarach nad rzeką
-      Supraśl. Sękacz i&nbsp;miód kupicie na straganach przy imprezach i&nbsp;w&nbsp;sklepach
-      z&nbsp;produktami regionalnymi.
+      Supraśl to miasteczko spacerowe, więc kawa i&nbsp;ciasto są tu częścią programu. Rano wypieki
+      ze Spiżarni Smaków, po południu ciasto w&nbsp;jednej z&nbsp;kawiarni w&nbsp;centrum,
+      a&nbsp;latem lody na Bulwarach Wiktora Wołkowa. To ponad kilometr alejek wzdłuż rzeki,
+      z&nbsp;kąpieliskiem, ławkami i&nbsp;widokiem na monaster z&nbsp;kładki.
     </p>
 
     <h2>Kulinarna wycieczka: Kruszyniany i&nbsp;kuchnia tatarska</h2>
@@ -180,6 +190,38 @@ const PrzewodnikKulinarny = () => (
       o&nbsp;trasie znajdziecie w&nbsp;przewodniku{' '}
       <Link to="/blog/kruszyniany-tatarska-wies">Kruszyniany – tatarska wieś Podlasia</Link>.
     </p>
+
+    <h2>Kuchnia żydowska w&nbsp;Tykocinie</h2>
+    <p>
+      Godzinę drogi od Supraśla, w&nbsp;piwnicach Wielkiej Synagogi w&nbsp;Tykocinie, działa
+      restauracja Tejsza, prowadzona od 1978 roku. Zamówcie kugel (żydowską wersję babki
+      ziemniaczanej), śledzie po żydowsku, wątróbkę i&nbsp;cymes. Obiad połączcie ze zwiedzaniem
+      synagogi i&nbsp;zamku. Całą trasę opisaliśmy w&nbsp;tekście{' '}
+      <Link to="/blog/bialystok-i-okolice-co-zobaczyc">
+        co warto zobaczyć w&nbsp;Białymstoku i&nbsp;okolicach
+      </Link>
+      .
+    </p>
+
+    <h2>Co przywieźć z&nbsp;Podlasia?</h2>
+    <p>Najlepsze pamiątki z&nbsp;Podlasia są jadalne. Gdzie ich szukać:</p>
+    <ul>
+      <li>
+        <strong>Giełda rolno-towarowa w&nbsp;Białymstoku (ul. Andersa 40).</strong> Leży przy drodze
+        krajowej nr&nbsp;65, którą wracacie w&nbsp;stronę Warszawy. W&nbsp;halach i&nbsp;przed nimi
+        kupicie babkę i&nbsp;kiszkę na wynos, sękacz, wędliny, słoninę, miody z&nbsp;lokalnych
+        pasiek, sery korycińskie i&nbsp;oleje tłoczone na zimno.
+      </li>
+      <li>
+        <strong>Czarna Wieś Kościelna.</strong> Wieś na szlaku podlaskiego rękodzieła,
+        z&nbsp;kuźnią, pracowniami garncarskimi i&nbsp;domowymi kiszonkami. Kwas z&nbsp;buraka to
+        idealny napój po kartaczach.
+      </li>
+      <li>
+        <strong>Supraśl.</strong> Pączki z&nbsp;Łukaszówki i&nbsp;drożdżówki ze Spiżarni Smaków,
+        o&nbsp;ile przeżyją drogę do auta.
+      </li>
+    </ul>
 
     <h2>Mistrzostwa w&nbsp;Pieczeniu Babki i&nbsp;Kiszki Ziemniaczanej</h2>
     <p>
@@ -202,12 +244,12 @@ const PrzewodnikKulinarny = () => (
       </li>
       <li>
         <strong>Sobota:</strong> śniadanie na tarasie, monaster i&nbsp;Muzeum Ikon, o&nbsp;13:00
-        babka w&nbsp;Łukaszówce. Po południu spacer bulwarami albo{' '}
+        babka w&nbsp;Jarzębince albo Łukaszówce. Po południu spacer bulwarami albo{' '}
         <Link to="/blog/kajaki-suprasl">kajaki na Supraśli</Link>, wieczorem kolacja w&nbsp;mieście.
       </li>
       <li>
-        <strong>Niedziela:</strong> wyjazd do Kruszynian na pierekaczewnik, po drodze sękacz
-        i&nbsp;ser na wynos.
+        <strong>Niedziela:</strong> pierekaczewnik w&nbsp;Kruszynianach albo kugel w&nbsp;Tykocinie,
+        a&nbsp;w&nbsp;drodze powrotnej zakupy na giełdzie przy ul. Andersa w&nbsp;Białymstoku.
       </li>
     </ol>
 
