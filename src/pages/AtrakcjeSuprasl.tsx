@@ -40,6 +40,11 @@ const attractions = [
   'Bulwary nad rzeką Supraśl i\u00a0plaża miejska',
   'Teatr Wierszalin',
   'Cmentarz prawosławny',
+  'Arboretum w\u00a0Kopnej Górze',
+  'Sanktuarium Świętej Wody w\u00a0Wasilkowie',
+  'Pałac Branickich w\u00a0Białymstoku',
+  'Tykocin',
+  'Kruszyniany',
 ];
 
 const attractionListSchema = {
@@ -151,9 +156,30 @@ const AtrakcjeSuprasl = () => (
           spacer przed śniadaniem albo cały dzień w&nbsp;lesie z&nbsp;kanapkami w&nbsp;plecaku.
         </li>
         <li>
+          <strong>Arboretum w&nbsp;Kopnej Górze.</strong> Ponad 20&nbsp;hektarów drzew
+          i&nbsp;krzewów z&nbsp;całego świata, kilkanaście minut od domu. Najpiękniejsze w&nbsp;maju
+          i&nbsp;październiku.
+        </li>
+        <li>
+          <strong>Sanktuarium Świętej Wody w&nbsp;Wasilkowie.</strong> Źródełko i&nbsp;Góra Krzyży
+          z&nbsp;tysiącami krzyży, po drodze między Supraślem a&nbsp;Białymstokiem.
+        </li>
+        <li>
           <strong>Białystok (30–40&nbsp;minut autem).</strong> Pałac Branickich, nazywany Wersalem
-          Północy, i&nbsp;spacer po centrum, jeśli po dwóch dniach w&nbsp;lesie zatęsknicie za
-          miastem.
+          Północy, Rynek Kościuszki i&nbsp;drewniane Bojary, jeśli po dwóch dniach w&nbsp;lesie
+          zatęsknicie za miastem. Rozpisaliśmy to w&nbsp;tekście{' '}
+          <Link
+            to="/blog/bialystok-i-okolice-co-zobaczyc"
+            className="text-primary underline hover:text-primary/80"
+          >
+            co warto zobaczyć w&nbsp;Białymstoku i&nbsp;okolicach
+          </Link>
+          .
+        </li>
+        <li>
+          <strong>Tykocin nad Narwią (około godziny).</strong> Rynek, Wielka Synagoga
+          i&nbsp;odbudowany zamek. W&nbsp;pakiecie z&nbsp;kładką w&nbsp;Waniewie to gotowy plan na
+          niedzielę.
         </li>
       </ul>
 
@@ -168,7 +194,8 @@ const AtrakcjeSuprasl = () => (
         Gdzie zjeść: kuchnia podlaska i&nbsp;tatarska
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        W&nbsp;Supraślu zjecie kartacze, babkę ziemniaczaną i&nbsp;sękacz,
+        W&nbsp;Supraślu zjecie kartacze, babkę ziemniaczaną i&nbsp;sękacz, m.in. w&nbsp;Łukaszówce,
+        której właścicielka wygrywała mistrzostwa w&nbsp;pieczeniu babki,
         a&nbsp;w&nbsp;Kruszynianach tatarskie specjały. Lokale opisaliśmy w&nbsp;naszym{' '}
         <Link
           to="/blog/przewodnik-kulinarny-suprasl"

@@ -72,6 +72,10 @@ export const routeDefinitions: RouteDefinition[] = [
   },
   { path: '/blog/uzdrowisko-spa-suprasl', load: () => import('@/pages/blog/UzdrowiSkoSPA.tsx') },
   {
+    path: '/blog/bialystok-i-okolice-co-zobaczyc',
+    load: () => import('@/pages/blog/BialystokIOkolice.tsx'),
+  },
+  {
     path: '/blog/przewodnik-kulinarny-suprasl',
     load: () => import('@/pages/blog/PrzewodnikKulinarny.tsx'),
   },

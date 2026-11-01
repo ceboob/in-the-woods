@@ -31,6 +31,11 @@ const faqs = [
       'Tak, za darmo. W\u00a0lesie i\u00a0rezerwatach trzymajcie go na smyczy, a\u00a0po spacerze może się wyszaleć w\u00a0ogrodzonym ogrodzie.',
   },
   {
+    question: 'Co zobaczyć na Podlasiu w\u00a0weekend?',
+    answer:
+      'Z\u00a0bazą w\u00a0Supraślu zobaczycie w\u00a0dwa dni monaster i\u00a0Muzeum Ikon, Puszczę Knyszyńską i\u00a0jedną wycieczkę: Białystok z\u00a0Pałacem Branickich, Tykocin nad Narwią, tatarskie Kruszyniany albo Krainę Otwartych Okiennic. Każda trasa zajmuje pół dnia.',
+  },
+  {
     question: 'Czy balia jest dostępna na weekend?',
     answer: `Tak. Balia z\u00a0hydromasażem kosztuje ${GARDEN_TUB_PRICE} zł za cały pobyt i\u00a0nie jest wliczona w\u00a0cenę noclegu. Zaznaczcie ją przy rezerwacji, a\u00a0nagrzejemy ją na piątkowy wieczór.`,
   },
@@ -92,8 +97,15 @@ const WeekendSuprasl = () => (
       <p className="text-muted-foreground leading-relaxed">
         Śniadanie o&nbsp;9:00 (albo o&nbsp;11:00, nikt nie patrzy). Około 10:30 Supraśl: monaster
         i&nbsp;Muzeum Ikon. O&nbsp;13:00 obiad, czyli babka ziemniaczana albo kartacze, po których
-        dieta poczeka do poniedziałku. Po południu leśny szlak, rower albo, w&nbsp;sezonie, kajaki
-        na rzece Supraśl. Wieczorem ognisko w&nbsp;ogrodzie i&nbsp;kiełbaski.
+        dieta poczeka do poniedziałku (gdzie najlepsze, piszemy w&nbsp;tekście{' '}
+        <Link
+          to="/blog/przewodnik-kulinarny-suprasl"
+          className="text-primary underline hover:text-primary/80"
+        >
+          gdzie zjeść w&nbsp;Supraślu
+        </Link>
+        ). Po południu leśny szlak, rower albo, w&nbsp;sezonie, kajaki na rzece Supraśl. Wieczorem
+        ognisko w&nbsp;ogrodzie i&nbsp;kiełbaski.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Więcej podpowiedzi znajdziecie w&nbsp;przewodniku po{' '}
@@ -110,11 +122,74 @@ const WeekendSuprasl = () => (
         dalej, do tatarskich Kruszynian.
       </p>
 
+      <h2 className="section-title !text-2xl md:!text-3xl">
+        Weekend na Podlasiu: 4&nbsp;pomysły na niedzielną wycieczkę
+      </h2>
+      <p className="text-muted-foreground leading-relaxed">
+        Supraśl to dobra baza na cały region. Jeśli w&nbsp;niedzielę macie jeszcze energię,
+        wybierzcie jedną trasę i&nbsp;połączcie ją z&nbsp;powrotem do domu:
+      </p>
+      <ul className="text-muted-foreground space-y-2">
+        <li>
+          <strong>Białystok (30–40&nbsp;min):</strong> Pałac Branickich z&nbsp;ogrodami, Rynek
+          Kościuszki i&nbsp;drewniane Bojary. Pełny plan:{' '}
+          <Link
+            to="/blog/bialystok-i-okolice-co-zobaczyc"
+            className="text-primary underline hover:text-primary/80"
+          >
+            co warto zobaczyć w&nbsp;Białymstoku i&nbsp;okolicach
+          </Link>
+          .
+        </li>
+        <li>
+          <strong>Tykocin i&nbsp;Waniewo (ok. 1&nbsp;h):</strong> rynek, Wielka Synagoga
+          i&nbsp;zamek nad Narwią, a&nbsp;potem pływające kładki w&nbsp;Narwiańskim Parku Narodowym.
+        </li>
+        <li>
+          <strong>Kruszyniany (ok. 1&nbsp;h):</strong> drewniany meczet i&nbsp;tatarski obiad.{' '}
+          <Link
+            to="/blog/kruszyniany-tatarska-wies"
+            className="text-primary underline hover:text-primary/80"
+          >
+            Przewodnik po Kruszynianach
+          </Link>
+          .
+        </li>
+        <li>
+          <strong>Kraina Otwartych Okiennic (ok. 1&nbsp;h):</strong> kolorowe wsie Trześcianka, Soce
+          i&nbsp;Puchły.{' '}
+          <Link
+            to="/blog/kraina-otwartych-okiennic"
+            className="text-primary underline hover:text-primary/80"
+          >
+            Trasa krok po kroku
+          </Link>
+          .
+        </li>
+      </ul>
+
+      <h2 className="section-title !text-2xl md:!text-3xl">Co spakować na weekend w&nbsp;lesie</h2>
+      <ul className="text-muted-foreground space-y-2">
+        <li>Kalosze albo buty za kostkę, bo puszcza lubi błoto.</li>
+        <li>Strój kąpielowy do balii, również zimą.</li>
+        <li>Środek na kleszcze i&nbsp;komary od wiosny do jesieni.</li>
+        <li>Latarkę czołową na wieczorny spacer i&nbsp;oglądanie gwiazd.</li>
+        <li>
+          Pościel, ręczniki i&nbsp;drewno do kominka już czekają, więc bagażnik zostaje na sękacz.
+        </li>
+      </ul>
+
       <h2 className="section-title !text-2xl md:!text-3xl">Weekend we dwoje czy z&nbsp;ekipą?</h2>
       <p className="text-muted-foreground leading-relaxed">
         We dwoje: długie śniadanie, spacer, kominek i&nbsp;balia, w&nbsp;której nikt Wam nie
-        przeszkodzi. Romantyczny weekend na Podlasiu bez świadków. Z&nbsp;ekipą: cały dom, ogród,
-        ognisko i&nbsp;miejsce dla maksymalnie 8&nbsp;osób.
+        przeszkodzi. Pomysły znajdziecie w&nbsp;tekście{' '}
+        <Link
+          to="/blog/romantyczny-weekend-podlasie"
+          className="text-primary underline hover:text-primary/80"
+        >
+          romantyczne miejsca na Podlasiu
+        </Link>
+        . Z&nbsp;ekipą: cały dom, ogród, ognisko i&nbsp;miejsce dla maksymalnie 8&nbsp;osób.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Pies jedzie gratis. Wszystko o&nbsp;balii znajdziecie na stronie{' '}

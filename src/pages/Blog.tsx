@@ -21,6 +21,16 @@ import blogBike from '@/assets/puszcza_knyszynska--optimized.webp';
 
 const articles = [
   {
+    slug: 'bialystok-i-okolice-co-zobaczyc',
+    title: 'Co warto zobaczyć w\u00a0Białymstoku i\u00a0okolicach – plan na 3\u00a0dni',
+    excerpt:
+      'Pałac Branickich, drewniane Bojary, Tykocin, kładka w\u00a0Waniewie i\u00a0tatarskie meczety. Długi weekend na Podlasiu z\u00a0bazą w\u00a0lesie koło Supraśla.',
+    image: blogPuszczaPanorama,
+    date: '2026-11-01',
+    readTime: '11\u00a0min',
+    keywords: ['co zobaczyć w\u00a0Białymstoku', 'Białystok i\u00a0okolice', 'weekend na Podlasiu'],
+  },
+  {
     slug: 'jesien-w-suprasliu-2026-wydarzenia-kulturalne',
     title: 'Jesień w\u00a0Supraślu 2026 – jak zaplanować pobyt',
     excerpt:
@@ -69,13 +79,13 @@ const articles = [
   },
   {
     slug: 'romantyczny-weekend-podlasie',
-    title: 'Pomysł na romantyczny weekend we dwoje na Podlasiu',
+    title: 'Romantyczne miejsca na Podlasiu – weekend we dwoje',
     excerpt:
-      'Domek z\u00a0kominkiem, gorąca balia pod gwiazdami, kolacja przy świecach w\u00a0sercu Puszczy Knyszyńskiej. Zaplanujcie wypad we dwoje.',
-    image: blogCoRobic,
+      'Monaster o\u00a0zachodzie słońca, Tykocin nad Narwią, arboretum i\u00a0balia pod gwiazdami. 9\u00a0romantycznych miejsc i\u00a0plan weekendu we dwoje.',
+    image: blogMonaster,
     date: '2026-04-09',
     readTime: '10\u00a0min',
-    keywords: ['romantyczny weekend Podlasie', 'domek z\u00a0kominkiem'],
+    keywords: ['romantyczne miejsca na Podlasiu', 'weekend we dwoje'],
   },
   {
     slug: 'cyfrowy-detoks-las',
@@ -159,13 +169,13 @@ const articles = [
   },
   {
     slug: 'przewodnik-kulinarny-suprasl',
-    title: 'Kuchnia regionalna — gdzie szukać aktualnych informacji?',
+    title: 'Gdzie zjeść w\u00a0Supraślu? Babka, kartacze i\u00a0najlepsze lokale',
     excerpt:
-      'Kartacze, babka ziemniaczana, sękacz i\u00a0tatarskie pierekaczewniki. Gdzie zjeść w\u00a0Supraślu i\u00a0okolicy, żeby potem nie żałować.',
+      'Babka mistrzyni świata, kartacze, sękacz i\u00a0tatarski pierekaczewnik. Restauracje, bary i\u00a0plan kulinarnego weekendu w\u00a0Supraślu.',
     image: blogRestauracje,
     date: '2026-04-09',
-    readTime: '12\u00a0min',
-    keywords: ['restauracje Supraśl', 'kuchnia podlaska', 'kartacze'],
+    readTime: '9\u00a0min',
+    keywords: ['gdzie zjeść w\u00a0Supraślu', 'restauracje Supraśl', 'babka ziemniaczana'],
   },
   {
     slug: 'puszcza-knyszynska-historie',
