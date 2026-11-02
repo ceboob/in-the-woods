@@ -8,6 +8,48 @@ const corsHeaders = {
 
 const RATE_LIMIT_SECONDS = 60;
 
+/**
+ * Sends a plain-text notification e-mail to the host via Resend (https://resend.com).
+ * Required secret: RESEND_API_KEY. Optional: NOTIFY_EMAIL (comma-separated recipients),
+ * NOTIFY_FROM (must be a sender on a domain verified in Resend).
+ * Never throws: the inquiry is already saved, so a mail failure must not fail the request,
+ * but it is logged loudly so it shows up in the function logs.
+ */
+async function notifyHost(subject: string, text: string, replyTo?: string): Promise<void> {
+  const apiKey = Deno.env.get("RESEND_API_KEY");
+  if (!apiKey) {
+    console.error("Host notification NOT sent: RESEND_API_KEY secret is not set.");
+    return;
+  }
+  const to = (Deno.env.get("NOTIFY_EMAIL") || "tutinthewood@gmail.com")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  const from = Deno.env.get("NOTIFY_FROM") || "In The Woods <onboarding@resend.dev>";
+
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from,
+        to,
+        subject,
+        text,
+        ...(replyTo ? { reply_to: replyTo } : {}),
+      }),
+    });
+    if (!res.ok) {
+      console.error(`Host notification failed (${res.status}):`, await res.text());
+    }
+  } catch (err) {
+    console.error("Host notification error:", err);
+  }
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
@@ -123,32 +165,22 @@ Deno.serve(async (req) => {
         );
       }
 
-      // Notify host about new booking inquiry
-      try {
-        const HOST_EMAIL = "tutinthewood@gmail.com";
-        const notifBody = `Nowe zapytanie rezerwacyjne:\n\nPrzyjazd: ${check_in}\nWyjazd: ${check_out}\nGoście: ${guests}\nTelefon: ${phone}\nE-mail: ${email}\nImię: ${name || '—'}\nWiadomość: ${message || '—'}`;
-        
-        // Try sending via transactional email system (if configured)
-        const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
-        const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY")!;
-        const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-        
-        await fetch(`${supabaseUrl}/functions/v1/send-transactional-email`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${serviceKey}`,
-          },
-          body: JSON.stringify({
-            templateName: "host-booking-notification",
-            recipientEmail: HOST_EMAIL,
-            idempotencyKey: `booking-notify-${Date.now()}`,
-            templateData: { check_in, check_out, guests, name, email, phone, message },
-          }),
-        }).catch((e) => console.log("Email notification skipped (not configured yet):", e.message));
-      } catch (notifErr) {
-        console.log("Host notification error (non-blocking):", notifErr);
-      }
+      await notifyHost(
+        `Nowe zapytanie o rezerwację: ${check_in} – ${check_out}`,
+        [
+          "Nowe zapytanie rezerwacyjne ze strony suprasl.online",
+          "",
+          `Przyjazd: ${check_in}`,
+          `Wyjazd: ${check_out}`,
+          `Goście: ${guests ?? "—"}`,
+          `Imię: ${name || "—"}`,
+          `Telefon: ${phone}`,
+          `E-mail: ${email}`,
+          "",
+          `Wiadomość: ${message || "—"}`,
+        ].join("\n"),
+        email,
+      );
     } else {
       // callback
       const { phone, source } = body;
@@ -180,6 +212,16 @@ Deno.serve(async (req) => {
           { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
         );
       }
+
+      await notifyHost(
+        `Prośba o telefon: ${phone}`,
+        [
+          "Nowa prośba o kontakt telefoniczny ze strony suprasl.online",
+          "",
+          `Telefon: ${phone}`,
+          `Źródło: ${source || "exit_intent"}`,
+        ].join("\n"),
+      );
     }
 
     return new Response(JSON.stringify({ success: true }), {
