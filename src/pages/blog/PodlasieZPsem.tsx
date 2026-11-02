@@ -5,7 +5,7 @@ const PodlasieZPsem = () => (
   <BlogArticleLayout
     title="Noclegi Supraśl z&nbsp;psem – przewodnik po Puszczy"
     metaTitle="Noclegi Supraśl z&nbsp;psem – przewodnik | In The Woods"
-    metaDescription="Planujesz wyjazd z&nbsp;psem na Podlasie? Sprawdź, jak wybrać noclegi w&nbsp;Supraślu, zaplanować spacery i&nbsp;przygotować się do pobytu blisko Puszczy Knyszyńskiej."
+    metaDescription="Wyjazd z&nbsp;psem na Podlasie: jak wybrać nocleg w&nbsp;Supraślu, gdzie iść na spacer i&nbsp;jak przygotować się do pobytu w&nbsp;Puszczy Knyszyńskiej."
     slug="podlasie-z-psem"
     publishDate="2026-04-09"
     readTime="9&nbsp;min"

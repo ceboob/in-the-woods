@@ -37,7 +37,7 @@ const BialystokIOkolice = () => (
   <BlogArticleLayout
     title="Co warto zobaczyć w Białymstoku i okolicach – plan na 3 dni"
     metaTitle="Co zobaczyć w Białymstoku i okolicach? Plan na 3 dni"
-    metaDescription="Co warto zobaczyć w&nbsp;Białymstoku i&nbsp;okolicach: Pałac Branickich, Bojary, Tykocin, Supraśl, Kruszyniany i&nbsp;kładka w&nbsp;Waniewie. Gotowy plan na 3&nbsp;dni i&nbsp;nocleg w&nbsp;lesie."
+    metaDescription="Co zobaczyć w&nbsp;Białymstoku i&nbsp;okolicach: Pałac Branickich, Bojary, Tykocin, Supraśl i&nbsp;kładka w&nbsp;Waniewie. Plan na 3&nbsp;dni i&nbsp;nocleg w&nbsp;lesie."
     slug="bialystok-i-okolice-co-zobaczyc"
     publishDate="2026-11-01"
     readTime="14&nbsp;min"

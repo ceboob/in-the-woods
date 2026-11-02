@@ -37,7 +37,7 @@ const PrzewodnikKulinarny = () => (
   <BlogArticleLayout
     title="Gdzie zjeść w Supraślu? Babka, kartacze i najlepsze lokale"
     metaTitle="Gdzie zjeść w Supraślu? Restauracje i kuchnia podlaska"
-    metaDescription="Gdzie zjeść w&nbsp;Supraślu: babka ziemniaczana, kartacze, pierekaczewnik. Sprawdzone restauracje, bary i&nbsp;kawiarnie oraz plan kulinarnego weekendu na Podlasiu."
+    metaDescription="Gdzie zjeść w&nbsp;Supraślu: babka ziemniaczana, kartacze i&nbsp;pierekaczewnik. Sprawdzone lokale i&nbsp;plan kulinarnego weekendu na Podlasiu."
     slug="przewodnik-kulinarny-suprasl"
     publishDate="2026-04-09"
     dateModified="2026-11-01"

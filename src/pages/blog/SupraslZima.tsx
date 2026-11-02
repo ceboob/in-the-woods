@@ -100,6 +100,8 @@ const SupraslZima = () => (
     <img
       src="/images/winter/puszcza-knyszynska-zima.webp"
       alt="Zimowy krajobraz Podlasia"
+      width={700}
+      height={1516}
       loading="lazy"
     />
     <p>
@@ -113,6 +115,8 @@ const SupraslZima = () => (
     <img
       src="/images/winter/zubry-kopna-gora.jpeg"
       alt="Zimowa Puszcza Knyszyńska na Podlasiu"
+      width={792}
+      height={302}
       loading="lazy"
     />
     <p>

@@ -1,4 +1,5 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
+import gardenTubThumb from '@/assets/gallery-bania-ogrod-thumb.webp';
 import { Link } from 'react-router-dom';
 
 const faqs = [
@@ -142,11 +143,13 @@ const NoclegiSuprasl = () => (
         </p>
         <figure className="not-prose">
           <img
-            src="/images/gallery-bania-ogrod.webp"
+            src={gardenTubThumb}
+            srcSet={`${gardenTubThumb} 451w, /images/gallery-bania-ogrod.webp 900w`}
+            sizes="(min-width: 768px) 448px, 100vw"
             alt="Balia z&nbsp;hydromasażem w&nbsp;ogrodzie drewnianego domu na Podlasiu"
-            width={1442}
-            height={1920}
-            className="h-auto w-full rounded-lg object-cover"
+            width={900}
+            height={1198}
+            className="mx-auto h-auto w-full max-w-md rounded-lg object-cover"
             loading="lazy"
           />
         </figure>

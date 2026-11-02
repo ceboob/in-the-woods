@@ -36,7 +36,7 @@ const RomantycznyWeekendPodlasie = () => (
   <BlogArticleLayout
     title="Romantyczne miejsca na Podlasiu – weekend we dwoje"
     metaTitle="Romantyczne miejsca na Podlasiu | Weekend we dwoje"
-    metaDescription="13 romantycznych miejsc na Podlasiu: monaster w&nbsp;Supraślu, Góra Św. Anny, Noc Kupały, Tykocin, nocne niebo w&nbsp;puszczy. Plan weekendu we dwoje i&nbsp;domek z&nbsp;balią."
+    metaDescription="13 romantycznych miejsc na Podlasiu: monaster w&nbsp;Supraślu, Góra Św. Anny, Tykocin, nocne niebo. Plan weekendu we dwoje i&nbsp;domek z&nbsp;balią."
     slug="romantyczny-weekend-podlasie"
     publishDate="2026-04-09"
     dateModified="2026-11-01"

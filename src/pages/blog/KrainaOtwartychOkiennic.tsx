@@ -5,7 +5,7 @@ const KrainaOtwartychOkiennic = () => (
   <BlogArticleLayout
     title="Kraina Otwartych Okiennic — informacje przed wizytą"
     metaTitle="Kraina Otwartych Okiennic — wsie i&nbsp;wskazówki do zwiedzania"
-    metaDescription="Poznaj Trześciankę, Soce i&nbsp;Puchły. Sprawdź regionalne informacje o&nbsp;Krainie Otwartych Okiennic i&nbsp;zaplanuj wizytę z&nbsp;poszanowaniem prywatności mieszkańców."
+    metaDescription="Trześcianka, Soce i&nbsp;Puchły na szlaku Krainy Otwartych Okiennic. Zaplanuj wizytę z&nbsp;szacunkiem dla prywatności mieszkańców."
     slug="kraina-otwartych-okiennic"
     publishDate="2026-04-09"
     readTime="11&nbsp;min"
