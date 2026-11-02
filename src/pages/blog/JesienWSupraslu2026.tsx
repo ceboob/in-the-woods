@@ -1,4 +1,5 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
+import oakForestThumb from '@/assets/gallery-dab-puszcza-thumb.webp';
 import { Link } from 'react-router-dom';
 
 const faqs = [
@@ -45,11 +46,13 @@ const JesienWSupraslu2026 = () => (
     ]}
   >
     <img
-      src="/images/gallery-dab-puszcza.webp"
+      src={oakForestThumb}
+      srcSet={`${oakForestThumb} 450w, /images/gallery-dab-puszcza.webp 900w`}
+      sizes="(min-width: 768px) 448px, 100vw"
       alt="Jesienny las w&nbsp;okolicy Supraśla"
-      className="mb-8 w-full rounded-lg shadow-md"
-      width="1200"
-      height="800"
+      className="mx-auto mb-8 h-auto w-full max-w-md rounded-lg shadow-md"
+      width="900"
+      height="1200"
       loading="lazy"
       decoding="async"
     />

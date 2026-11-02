@@ -5,7 +5,7 @@ const PrzewodnikKulinarny = () => (
   <BlogArticleLayout
     title="Kuchnia regionalna — gdzie szukać aktualnych informacji?"
     metaTitle="Kuchnia regionalna w&nbsp;okolicy Supraśla — praktyczne wskazówki"
-    metaDescription="Sprawdź aktualne menu, godziny otwarcia i&nbsp;dostępność lokali w&nbsp;Supraślu oraz okolicy. Informacje o&nbsp;tradycyjnych produktach znajdziesz u&nbsp;ich oficjalnych źródeł."
+    metaDescription="Gdzie zjeść w&nbsp;Supraślu i&nbsp;co zamówić z&nbsp;kuchni podlaskiej. Aktualne menu i&nbsp;godziny otwarcia sprawdź bezpośrednio u&nbsp;lokali."
     slug="przewodnik-kulinarny-suprasl"
     publishDate="2026-04-09"
     readTime="12&nbsp;min"

@@ -92,7 +92,7 @@ const allImages: GalleryImage[] = [
     caption: 'Balia z\u00a0hydromasażem (jacuzzi) pod gwiazdami',
     category: ['jacuzzi'],
     className: 'col-span-2 row-span-2',
-    srcSet: `${jacuzziNightSm} 640w, ${jacuzziNightMd} 1024w, ${jacuzziNight} 1442w`,
+    srcSet: `${jacuzziNightSm} 640w, ${jacuzziNightMd} 900w, ${jacuzziNight} 1442w`,
   },
   {
     thumb: salonKominek,

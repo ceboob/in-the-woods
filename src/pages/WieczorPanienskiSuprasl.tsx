@@ -45,11 +45,10 @@ const WieczorPanienskiSuprasl = () => (
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-        Wieczór panieński w&nbsp;lesie koło Supraśla. Co się dzieje w&nbsp;puszczy, zostaje
-        w&nbsp;puszczy
+        Wieczór panieński w&nbsp;lesie koło Supraśla
       </h1>
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Panieński bez klubu, bez bramkarza i&nbsp;bez sąsiadów, którzy dzwonią na policję
+        Co się dzieje w&nbsp;puszczy, zostaje w&nbsp;puszczy. Panieński bez klubu, bez bramkarza i&nbsp;bez sąsiadów, którzy dzwonią na policję
         o&nbsp;pierwszej. Cały dom z&nbsp;bali tylko dla Was, gorąca balia pod gwiazdami, ognisko
         i&nbsp;kominek. Najbliżsi sąsiedzi to dziki, a&nbsp;one nie składają skarg. Do Białegostoku
         30–40&nbsp;minut.

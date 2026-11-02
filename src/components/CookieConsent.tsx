@@ -26,12 +26,14 @@ const CookieConsent = () => {
     setVisible(false);
   };
 
-  if (!visible) return null;
-
+  // The banner markup is always rendered (also in the prerendered HTML) and only
+  // toggled with the `hidden` attribute. This keeps its text and the privacy-policy
+  // link in the raw HTML, so crawlers don't see them as JavaScript-only content/links.
   return (
     <div
       role="region"
       aria-label="Zgoda na cookies"
+      hidden={!visible}
       className="fixed bottom-0 inset-x-0 z-50 animate-in slide-in-from-bottom-4 duration-500"
     >
       <div className="bg-card/95 backdrop-blur-sm border-t border-border shadow-lg">
