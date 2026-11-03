@@ -243,6 +243,17 @@ const BlogArticleLayout = ({
             w&nbsp;lesie z&nbsp;kominkiem; balia z&nbsp;hydromasażem (jacuzzi) jest opcjonalnym
             dodatkiem.
           </p>
+          <p className="text-foreground/70 max-w-xl mx-auto text-sm">
+            Zobacz{' '}
+            <Link to="/noclegi-suprasl" className="text-primary underline">
+              noclegi w&nbsp;Supraślu: cały dom dla 8&nbsp;osób
+            </Link>{' '}
+            albo{' '}
+            <Link to="/nocleg-bialystok-okolice" className="text-primary underline">
+              nocleg pod Białymstokiem, 30&nbsp;minut od miasta
+            </Link>
+            .
+          </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="tel:+48722765101" className="btn-primary inline-flex items-center gap-2">
               <Phone className="w-4 h-4" /> Sprawdź dostępność

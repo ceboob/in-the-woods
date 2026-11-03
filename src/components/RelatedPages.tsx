@@ -7,6 +7,11 @@ const allPages = [
     desc: 'Prywatny dom na wynajem blisko Supraśla',
   },
   {
+    path: '/nocleg-bialystok-okolice',
+    label: 'Nocleg koło Białegostoku',
+    desc: 'Dom 30–40\u00a0min od miasta',
+  },
+  {
     path: '/domek-suprasl',
     label: 'Domek Supraśl',
     desc: 'Dom na wyłączność w\u00a0Puszczy Knyszyńskiej',

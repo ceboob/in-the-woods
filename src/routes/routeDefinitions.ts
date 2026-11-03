@@ -13,6 +13,10 @@ export type RouteDefinition = {
 export const routeDefinitions: RouteDefinition[] = [
   { path: '/', load: () => import('@/pages/Index.tsx') },
   { path: '/noclegi-suprasl', load: () => import('@/pages/NoclegiSuprasl.tsx') },
+  {
+    path: '/nocleg-bialystok-okolice',
+    load: () => import('@/pages/NoclegBialystokOkolice.tsx'),
+  },
   { path: '/dom-w-lesie-suprasl', load: () => import('@/pages/DomWLesieSuprasl.tsx') },
   { path: '/weekend-suprasl', load: () => import('@/pages/WeekendSuprasl.tsx') },
   { path: '/atrakcje-suprasl', load: () => import('@/pages/AtrakcjeSuprasl.tsx') },
