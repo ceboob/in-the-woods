@@ -129,6 +129,12 @@ const Footer = () => (
           >
             Noclegi Supraśl
           </Link>
+          <Link
+            to="/nocleg-bialystok-okolice"
+            className="text-white/90 transition-colors hover:text-primary"
+          >
+            Nocleg koło Białegostoku
+          </Link>
           <Link to="/domek-suprasl" className="text-white/90 transition-colors hover:text-primary">
             Domek Supraśl
           </Link>

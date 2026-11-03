@@ -25,6 +25,7 @@ const contentFiles = listFiles('src')
 
 const landingPages = [
   '/noclegi-suprasl',
+  '/nocleg-bialystok-okolice',
   '/domek-suprasl',
   '/dom-w-lesie-suprasl',
   '/domek-z-jacuzzi-podlasie',

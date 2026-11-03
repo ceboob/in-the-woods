@@ -55,8 +55,8 @@ const highlights = [
 
 const NoclegiSuprasl = () => (
   <SEOPageLayout
-    title="Nocleg Supraśl dla grupy do 8&nbsp;osób – cały dom | In The Woods"
-    description="Zamiast trzech pokoi w&nbsp;pensjonacie: cały drewniany dom pod Supraślem. 10&nbsp;min do centrum, 30–40&nbsp;min z&nbsp;Białegostoku. Sprawdź wolne terminy."
+    title="Noclegi Supraśl – cały dom do 8 osób | In The Woods"
+    description="Noclegi w Supraślu: cały drewniany dom na wyłączność, od 399 zł za noc za dom. Kominek, balia, pies gratis. 10 min do centrum, 30–40 min z Białegostoku."
     breadcrumbName="Noclegi Supraśl"
     ogImage="https://www.suprasl.online/images/exterior-main.jpg"
     keywords={[
@@ -64,6 +64,8 @@ const NoclegiSuprasl = () => (
       'nocleg Supraśl dla grupy',
       'noclegi Supraśl dla 8\u00a0osób',
       'nocleg pod Białymstokiem',
+      'nocleg w Supraślu',
+      'dom do wynajęcia Supraśl',
     ]}
     jsonLd={faqSchema}
   >
@@ -162,7 +164,14 @@ const NoclegiSuprasl = () => (
         <p className="text-muted-foreground leading-relaxed">
           Adres: Konne 109/1, 16-030 Supraśl. Do centrum Supraśla jedziecie około 10&nbsp;minut, do
           Białegostoku 30–40&nbsp;minut. Mieszkacie w&nbsp;Białymstoku? To nocleg pod Białymstokiem
-          na weekend, który nie wymaga brania urlopu.
+          na weekend, który nie wymaga brania urlopu. Szczegóły dojazdu i{' '}
+          <Link
+            to="/nocleg-bialystok-okolice"
+            className="text-primary underline hover:text-primary/80"
+          >
+            nocleg koło Białegostoku
+          </Link>{' '}
+          opisaliśmy osobno.
         </p>
         <p className="text-muted-foreground leading-relaxed">
           W&nbsp;okolicy macie szlaki Puszczy Knyszyńskiej, spacer nad rzeką Supraśl, monaster
