@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
 
 const RykowiskoJeleni = () => {
+  const [playVideo, setPlayVideo] = useState(false);
+
   const faqs = [
     {
       question: 'Kiedy najlepiej wybrać się na rykowisko?',
@@ -103,14 +106,54 @@ const RykowiskoJeleni = () => {
       </p>
 
       <div style={{ position: 'relative', paddingTop: '56.25%', marginBottom: '1rem' }}>
-        <iframe
-          src="https://www.youtube.com/embed/OJxB-s1MeIw"
-          title="Rykowisko jeleni - Puszcza Knyszyńska"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-        />
+        {playVideo ? (
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/OJxB-s1MeIw?autoplay=1"
+            title="Rykowisko jeleni - Puszcza Knyszyńska"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+          />
+        ) : (
+          <button
+            type="button"
+            onClick={() => setPlayVideo(true)}
+            aria-label="Odtwórz nagranie: Rykowisko jeleni w Puszczy Knyszyńskiej"
+            style={{
+              position: 'absolute',
+              inset: 0,
+              width: '100%',
+              height: '100%',
+              border: 0,
+              padding: 0,
+              cursor: 'pointer',
+              background: '#111',
+            }}
+          >
+            <img
+              src="https://i.ytimg.com/vi/OJxB-s1MeIw/hqdefault.jpg"
+              alt="Rykowisko jeleni w Puszczy Knyszyńskiej – miniatura nagrania"
+              width={480}
+              height={360}
+              loading="lazy"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85 }}
+            />
+            <span
+              aria-hidden="true"
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                fontSize: '3.5rem',
+                color: '#fff',
+              }}
+            >
+              ▶
+            </span>
+          </button>
+        )}
       </div>
 
       <h2>Odpoczynek po spacerze</h2>

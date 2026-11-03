@@ -103,6 +103,8 @@ const SupraslZima = () => (
     <img
       src={winterForest}
       alt="Zaśnieżony las w zimowej scenerii"
+      width={650}
+      height={866}
       className="w-full rounded-lg my-8"
       loading="lazy"
     />
@@ -117,6 +119,8 @@ const SupraslZima = () => (
       <img
         src={commonsForest}
         alt="Leśna droga w Parku Krajobrazowym Puszczy Knyszyńskiej w okolicy Kołodna"
+        width={600}
+        height={400}
         className="w-full rounded-lg"
         loading="lazy"
       />
@@ -172,6 +176,8 @@ const SupraslZima = () => (
       <img
         src={commonsBison}
         alt="Stado dzikich żubrów na skraju Puszczy Knyszyńskiej"
+        width={600}
+        height={400}
         className="w-full rounded-lg"
         loading="lazy"
       />

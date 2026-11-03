@@ -73,7 +73,7 @@ const PrzewodnikKulinarny = () => (
       decoding="async"
       sizes="(min-width: 768px) 768px, 100vw"
       src={blogRestauracje}
-      alt="Drewniany dom z&nbsp;okiennicami w&nbsp;centrum Supraśla – klimat miasteczka, w&nbsp;którym zjecie babkę ziemniaczaną"
+      alt="Drewniany dom z&nbsp;okiennicami w&nbsp;Supraślu – klimat miasteczka, w&nbsp;którym zjecie babkę"
       className="w-full rounded-lg my-8"
       width="620"
       height="413"
