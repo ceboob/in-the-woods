@@ -254,7 +254,7 @@ const AtrakcjeSuprasl = () => (
           noclegu w&nbsp;Puszczy Knyszyńskiej
         </Link>
         , a&nbsp;ceny i&nbsp;szczegóły na stronie o{' '}
-        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
+        <Link to="/" className="text-primary underline hover:text-primary/80">
           noclegach w&nbsp;Supraślu
         </Link>
         .

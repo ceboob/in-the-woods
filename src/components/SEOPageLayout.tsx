@@ -79,7 +79,7 @@ const SEOPageLayout = ({
           </Link>
           <div className="hidden md:flex items-center gap-6">
             <Link
-              to="/noclegi-suprasl"
+              to="/"
               className="nav-link text-foreground/70 hover:text-foreground"
             >
               Noclegi
@@ -179,7 +179,7 @@ const SEOPageLayout = ({
             <Link to="/blog" className="hover:text-primary transition-colors">
               Blog
             </Link>
-            <Link to="/noclegi-suprasl" className="hover:text-primary transition-colors">
+            <Link to="/" className="hover:text-primary transition-colors">
               Noclegi Supraśl
             </Link>
             <Link to="/domek-suprasl" className="hover:text-primary transition-colors">

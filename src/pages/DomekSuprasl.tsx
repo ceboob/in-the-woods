@@ -185,7 +185,7 @@ const DomekSuprasl = () => (
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Porównujecie oferty? Zajrzyjcie też na stronę o{' '}
-          <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
+          <Link to="/" className="text-primary underline hover:text-primary/80">
             noclegach w&nbsp;Supraślu dla grupy
           </Link>
           .

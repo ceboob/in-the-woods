@@ -271,7 +271,7 @@ const SzlakPowstaniaStyczniowego = () => {
       <p>
         Po powrocie z&nbsp;trasy można rozpalić kominek, zrelaksować się w&nbsp;jacuzzi pod
         gwiazdami i&nbsp;zaplanować kolejny dzień odkrywania regionu. To{' '}
-        <Link to="/noclegi-suprasl">nocleg w&nbsp;Supraślu</Link>, który łączy bliskość natury
+        <Link to="/">nocleg w&nbsp;Supraślu</Link>, który łączy bliskość natury
         z&nbsp;domowym komfortem — idealne zakończenie dnia spędzonego na historycznych szlakach
         Puszczy Knyszyńskiej.
       </p>

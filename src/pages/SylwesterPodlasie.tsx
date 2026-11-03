@@ -138,7 +138,7 @@ const SylwesterPodlasie = () => (
         <li>Ciszę nocną i&nbsp;gości z&nbsp;zewnątrz ustalcie z&nbsp;Maciejem przed przyjazdem.</li>
         <li>
           Szukacie czegoś więcej o&nbsp;domu? Zajrzyjcie na stronę o{' '}
-          <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
+          <Link to="/" className="text-primary underline hover:text-primary/80">
             noclegach w&nbsp;Supraślu
           </Link>
           .

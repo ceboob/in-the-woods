@@ -124,7 +124,7 @@ const Footer = () => (
 
         <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/70">
           <Link
-            to="/noclegi-suprasl"
+            to="/"
             className="text-white/90 transition-colors hover:text-primary"
           >
             Noclegi Supraśl

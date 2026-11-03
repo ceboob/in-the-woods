@@ -113,7 +113,7 @@ const PuszczaKnyszynskaNocleg = () => (
           weekend w&nbsp;Supraślu
         </Link>{' '}
         albo zajrzyjcie na stronę o{' '}
-        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
+        <Link to="/" className="text-primary underline hover:text-primary/80">
           noclegach w&nbsp;Supraślu
         </Link>
         .

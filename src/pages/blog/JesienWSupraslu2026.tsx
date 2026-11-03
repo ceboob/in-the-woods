@@ -100,7 +100,7 @@ const JesienWSupraslu2026 = () => (
     <h2>Zapytaj o&nbsp;pobyt</h2>
     <p>
       Jeśli chcesz połączyć zwiedzanie z&nbsp;odpoczynkiem,{' '}
-      <Link to="/noclegi-suprasl">poznaj informacje o&nbsp;domu i&nbsp;pobycie</Link>,
+      <Link to="/">poznaj informacje o&nbsp;domu i&nbsp;pobycie</Link>,
       a&nbsp;następnie <Link to="/#rezerwacja">wyślij zapytanie o&nbsp;termin</Link>. Wysłanie
       formularza jest zapytaniem, a&nbsp;nie potwierdzeniem rezerwacji.
     </p>

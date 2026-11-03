@@ -144,7 +144,7 @@ const SupraslZDziecmi = () => (
     </p>
     <p>
       Dom mieści komfortowo do 8&nbsp;osób, co sprawdza się przy wyjazdach wielopokoleniowych.{' '}
-      <Link to="/noclegi-suprasl">Sprawdź dostępne terminy →</Link>
+      <Link to="/">Sprawdź dostępne terminy →</Link>
     </p>
   </BlogArticleLayout>
 );

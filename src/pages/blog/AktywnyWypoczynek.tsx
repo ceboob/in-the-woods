@@ -111,7 +111,7 @@ const AktywnyWypoczynek = () => (
       Po dniu pełnym wrażeń wracasz do swojego azylu ciszy i&nbsp;natury.{' '}
       <Link to="/">In The Woods</Link> — prywatny dom w&nbsp;lesie z&nbsp;kominkiem i&nbsp;balią
       z&nbsp;hydromasażem (jacuzzi) — to idealna baza wypadowa na aktywny weekend w&nbsp;Puszczy
-      Knyszyńskiej. <Link to="/noclegi-suprasl">Sprawdź dostępne terminy</Link>.
+      Knyszyńskiej. <Link to="/">Sprawdź dostępne terminy</Link>.
     </p>
   </BlogArticleLayout>
 );

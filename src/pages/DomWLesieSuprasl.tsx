@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const DomWLesieSuprasl = () => (
   <SEOPageLayout
-    title="Dom w lesie na Podlasiu – cisza i kominek | In The Woods"
+    title="Domek w lesie na Podlasiu, pod Supraślem | In The Woods"
     description="Najbliżsi sąsiedzi to sarny. Drewniany dom w&nbsp;Puszczy Knyszyńskiej, z&nbsp;kominkiem i&nbsp;balią. Odludzie, ale z&nbsp;internetem 200&nbsp;Mb/s."
     breadcrumbName="Dom w&nbsp;lesie Supraśl"
     ogImage="https://www.suprasl.online/images/exterior-main.webp"
@@ -79,7 +79,7 @@ const DomWLesieSuprasl = () => (
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Porównujecie opcje? Zajrzyjcie na stronę o{' '}
-        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
+        <Link to="/" className="text-primary underline hover:text-primary/80">
           noclegach w&nbsp;Supraślu
         </Link>
         , weźcie gotowy{' '}

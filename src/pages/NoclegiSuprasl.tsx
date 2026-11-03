@@ -55,13 +55,14 @@ const highlights = [
 
 const NoclegiSuprasl = () => (
   <SEOPageLayout
-    title="Noclegi Supraśl – cały dom do 8 osób | In The Woods"
-    description="Noclegi w Supraślu: cały drewniany dom na wyłączność, od 399 zł za noc za dom. Kominek, balia, pies gratis. 10 min do centrum, 30–40 min z Białegostoku."
-    breadcrumbName="Noclegi Supraśl"
+    title="Pensjonat w Supraślu czy cały dom? | In The Woods"
+    description="Zamiast pokoi w pensjonacie: cały drewniany dom dla grupy do 8 osób, 10 min od Supraśla. Od 399 zł za noc za dom, nie za osobę. Kominek, balia, pies gratis."
+    breadcrumbName="Pensjonat czy cały dom"
     ogImage="https://www.suprasl.online/images/exterior-main.jpg"
     keywords={[
-      'noclegi Supraśl',
+      'pensjonat Supraśl',
       'nocleg Supraśl dla grupy',
+      'rodzinne noclegi Supraśl',
       'noclegi Supraśl dla 8\u00a0osób',
       'nocleg pod Białymstokiem',
       'nocleg w Supraślu',
@@ -75,14 +76,18 @@ const NoclegiSuprasl = () => (
           Konne · około 10&nbsp;minut od Supraśla
         </p>
         <h1 className="section-title !text-3xl md:!text-4xl lg:!text-5xl mb-6">
-          Noclegi Supraśl: cały dom zamiast pokoju w&nbsp;pensjonacie
+          Pensjonat w&nbsp;Supraślu czy cały dom dla Waszej grupy?
         </h1>
         <p className="text-muted-foreground leading-relaxed text-lg">
           Szukacie noclegu w&nbsp;Supraślu dla całej ekipy? Zamiast trzech pokoi w&nbsp;pensjonacie
           i&nbsp;proszenia sąsiadów o&nbsp;ciszę macie cały drewniany dom dla maksymalnie
           8&nbsp;osób. Stoi w&nbsp;Konnem, 10&nbsp;minut od centrum Supraśla i&nbsp;30–40&nbsp;minut
           od Białegostoku, a&nbsp;za płotem zaczyna się puszcza. Od 399&nbsp;zł za noc, za cały dom.
-          Nie za osobę.
+          Nie za osobę. Pełną ofertę, zdjęcia i&nbsp;kalendarz znajdziecie na stronie{' '}
+          <Link to="/" className="text-primary underline hover:text-primary/80">
+            noclegi Supraśl – In The Woods
+          </Link>
+          .
         </p>
         <div className="flex flex-col gap-3 sm:flex-row not-prose">
           <a href="tel:+48722765101" className="btn-primary text-center">

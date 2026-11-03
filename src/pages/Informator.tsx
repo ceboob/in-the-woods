@@ -55,7 +55,7 @@ const Informator = () => {
               Strona główna
             </Link>
             <Link
-              to="/noclegi-suprasl"
+              to="/"
               className="nav-link text-foreground/70 hover:text-foreground"
             >
               Noclegi
@@ -525,7 +525,7 @@ const Informator = () => {
             <Link to="/" className="hover:text-white transition-colors">
               Strona główna
             </Link>
-            <Link to="/noclegi-suprasl" className="hover:text-white transition-colors">
+            <Link to="/" className="hover:text-white transition-colors">
               Noclegi Supraśl
             </Link>
             <Link to="/informator" className="hover:text-white transition-colors">

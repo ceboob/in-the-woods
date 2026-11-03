@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 const allPages = [
   {
     path: '/noclegi-suprasl',
-    label: 'Noclegi Supraśl',
-    desc: 'Prywatny dom na wynajem blisko Supraśla',
+    label: 'Dom zamiast pensjonatu',
+    desc: 'Nocleg dla grupy do 8\u00a0osób w\u00a0Supraślu',
   },
   {
     path: '/nocleg-bialystok-okolice',

@@ -73,7 +73,7 @@ const SupraslZima = () => (
     <p>
       Jeżeli szukają Państwo miejsca na <strong>weekend Supraśl</strong> lub ferie, warto wybrać
       domek w&nbsp;lesie zamiast zatłoczonego hotelu.{' '}
-      <Link to="/noclegi-suprasl" className="font-medium">
+      <Link to="/" className="font-medium">
         Noclegi w&nbsp;Supraślu w&nbsp;In The Woods
       </Link>{' '}
       oznaczają prywatność całego domu, bliskość Puszczy Knyszyńskiej i&nbsp;wygodną bazę na zimowe
