@@ -14,6 +14,7 @@ import {
   Loader2,
 } from 'lucide-react';
 import { invokeEdgeFunction } from '@/lib/edgeFunction';
+import { notifyHost } from '@/lib/notifyHost';
 import { useToast } from '@/hooks/use-toast';
 import { pushToDataLayer } from '@/lib/gtm';
 
@@ -87,21 +88,22 @@ const BookingModule = () => {
     } else if (step === 'summary') {
       setSending(true);
       try {
-        const { data: result, error } = await invokeEdgeFunction<{ error?: string }>(
-          'rate-limit-submit',
-          {
-            body: {
-              type: 'booking',
-              check_in: data.checkIn,
-              check_out: data.checkOut,
-              guests: data.guests,
-              name: data.name,
-              email: data.email,
-              phone: data.phone,
-              message: data.message,
-            },
-          },
-        );
+        const payload = {
+          type: 'booking',
+          check_in: data.checkIn,
+          check_out: data.checkOut,
+          guests: data.guests,
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          message: data.message,
+        };
+        // Save in the database and e-mail the host in parallel; the inquiry counts as
+        // delivered if either of them succeeds.
+        const [{ data: result, error }, emailed] = await Promise.all([
+          invokeEdgeFunction<{ error?: string }>('rate-limit-submit', { body: payload }),
+          notifyHost(payload),
+        ]);
         const errorContext =
           error && 'context' in error && error.context instanceof Response ? error.context : null;
         const responseData =
@@ -121,8 +123,8 @@ const BookingModule = () => {
           });
           return;
         }
-        if (error) throw error;
-        if (responseError) throw new Error(responseError);
+        if (!emailed && error) throw error;
+        if (!emailed && responseError) throw new Error(responseError);
         pushToDataLayer({
           event: 'booking_form_submitted',
           check_in: data.checkIn,

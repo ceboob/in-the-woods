@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { X, Phone, ArrowRight } from 'lucide-react';
 import { invokeEdgeFunction } from '@/lib/edgeFunction';
+import { notifyHost } from '@/lib/notifyHost';
 import { pushToDataLayer } from '@/lib/gtm';
 
 const ExitIntentPopup = () => {
@@ -40,10 +41,11 @@ const ExitIntentPopup = () => {
     });
 
     try {
-      const { data: result, error } = await invokeEdgeFunction<{ error?: string }>(
-        'rate-limit-submit',
-        { body: { type: 'callback', phone, source: 'exit_intent' } },
-      );
+      const payload = { type: 'callback', phone, source: 'exit_intent' };
+      const [{ data: result, error }, emailed] = await Promise.all([
+        invokeEdgeFunction<{ error?: string }>('rate-limit-submit', { body: payload }),
+        notifyHost(payload),
+      ]);
       const errorContext =
         error && 'context' in error && error.context instanceof Response ? error.context : null;
       const responseData =
@@ -58,8 +60,8 @@ const ExitIntentPopup = () => {
       if (responseError?.includes('Too many')) {
         return;
       }
-      if (error) throw error;
-      if (responseError) throw new Error(responseError);
+      if (!emailed && error) throw error;
+      if (!emailed && responseError) throw new Error(responseError);
     } catch (err) {
       console.error('Callback save error:', err);
       return;
