@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import RelatedPages from '@/components/RelatedPages';
+import GuideLinks from '@/components/GuideLinks';
 import { property } from '@/data/property';
 
 interface SEOPageLayoutProps {
@@ -213,6 +214,7 @@ const SEOPageLayout = ({
               Puszcza Knyszyńska
             </Link>
           </div>
+          <GuideLinks />
           <p className="text-xs text-white/40">© 2026 In The Woods. Wszelkie prawa zastrzeżone.</p>
         </div>
       </footer>
