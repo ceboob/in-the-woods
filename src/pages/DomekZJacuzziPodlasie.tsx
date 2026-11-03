@@ -33,8 +33,8 @@ const faqs = [
 
 const DomekZJacuzziPodlasie = () => (
   <SEOPageLayout
-    title="Domek z balią i jacuzzi na Podlasiu | In The Woods"
-    description="Gorąca balia z&nbsp;hydromasażem pod sosnami, latem i&nbsp;zimą. 250&nbsp;zł za cały pobyt, nie za godzinę. Cały dom dla Waszej ekipy do 8&nbsp;osób."
+    title="Domek z jacuzzi na Podlasiu – balia w lesie | In The Woods"
+    description="Domek z jacuzzi (balią z hydromasażem) w lesie na Podlasiu, 10 min od Supraśla. Cały dom na wyłączność do 8 osób, od 399 zł/noc. Balia 250 zł za pobyt."
     breadcrumbName="Domek z&nbsp;jacuzzi Podlasie"
     ogImage="https://www.suprasl.online/images/jacuzzi-night.jpg"
     jsonLd={createLandingPageSchemas('/domek-z-jacuzzi-podlasie', faqs)}
@@ -112,7 +112,7 @@ const DomekZJacuzziPodlasie = () => (
           atrakcjach Supraśla
         </Link>
         . Sprawdźcie też{' '}
-        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
+        <Link to="/" className="text-primary underline hover:text-primary/80">
           noclegi w&nbsp;Supraślu
         </Link>{' '}
         i{' '}

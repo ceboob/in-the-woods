@@ -125,7 +125,7 @@ const BlogArticleLayout = ({
               Blog
             </Link>
             <Link
-              to="/noclegi-suprasl"
+              to="/"
               className="nav-link text-foreground/70 hover:text-foreground"
             >
               Noclegi
@@ -245,7 +245,7 @@ const BlogArticleLayout = ({
           </p>
           <p className="text-foreground/70 max-w-xl mx-auto text-sm">
             Zobacz{' '}
-            <Link to="/noclegi-suprasl" className="text-primary underline">
+            <Link to="/" className="text-primary underline">
               noclegi w&nbsp;Supraślu: cały dom dla 8&nbsp;osób
             </Link>{' '}
             albo{' '}
@@ -279,7 +279,7 @@ const BlogArticleLayout = ({
             <Link to="/blog" className="hover:text-primary transition-colors">
               Blog
             </Link>
-            <Link to="/noclegi-suprasl" className="hover:text-primary transition-colors">
+            <Link to="/" className="hover:text-primary transition-colors">
               Noclegi Supraśl
             </Link>
             <Link to="/domek-suprasl" className="hover:text-primary transition-colors">

@@ -18,13 +18,13 @@ const SEOTextSection = () => {
           <p>
             In The Woods to dom z&nbsp;bali w&nbsp;Konnem koło Supraśla, wynajmowany w&nbsp;całości
             jednej ekipie. Macie kominek, kuchnię, taras, ogród i&nbsp;Starlinka. Balia
-            z&nbsp;hydromasażem to dodatek za 250&nbsp;zł za pobyt. Szczegóły znajdziecie na stronie
-            o{' '}
+            z&nbsp;hydromasażem to dodatek za 250&nbsp;zł za pobyt. Jeśli wahacie się między pensjonatem a&nbsp;domem,
+            zajrzyjcie do{' '}
             <Link
               to="/noclegi-suprasl"
               className="text-primary underline hover:text-primary/80 transition-colors"
             >
-              noclegach w&nbsp;Supraślu
+              porównania: pensjonat w&nbsp;Supraślu czy cały dom
             </Link>
             .
           </p>

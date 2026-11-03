@@ -268,7 +268,7 @@ const SzlakiPieszeRowerowe = () => {
       </p>
 
       <p>
-        <Link to="/noclegi-suprasl">In The Woods</Link> to prywatny{' '}
+        <Link to="/">In The Woods</Link> to prywatny{' '}
         <Link to="/dom-w-lesie-suprasl">dom w&nbsp;lesie</Link> z&nbsp;jacuzzi, kominkiem
         i&nbsp;pełną kuchnią. Położona w&nbsp;sercu puszczy, blisko Supraśla — idealna baza na
         aktywny <Link to="/weekend-suprasl">weekend w&nbsp;Supraślu</Link>.

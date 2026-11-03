@@ -290,7 +290,7 @@ const KajakiSuprasl = () => {
       </p>
 
       <p>
-        Sprawdź dostępność <Link to="/noclegi-suprasl">noclegu w&nbsp;Supraślu</Link>{' '}
+        Sprawdź dostępność <Link to="/">noclegu w&nbsp;Supraślu</Link>{' '}
         i&nbsp;zaplanuj swój weekendowy wypad łączący kajaki, przyrodę i&nbsp;relaks w&nbsp;sercu
         Puszczy Knyszyńskiej.
       </p>

@@ -26,7 +26,7 @@ const navItems: NavItem[] = [
       { label: 'Dokumenty i\u00a0instrukcje', href: '/dokumenty', isRoute: true },
       { label: 'Dom w\u00a0lesie', href: '/dom-w-lesie-suprasl', isRoute: true },
       { label: 'Domek z\u00a0jacuzzi', href: '/domek-z-jacuzzi-podlasie', isRoute: true },
-      { label: 'Noclegi Supraśl', href: '/noclegi-suprasl', isRoute: true },
+      { label: 'Dom zamiast pensjonatu', href: '/noclegi-suprasl', isRoute: true },
     ],
   },
   {

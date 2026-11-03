@@ -256,7 +256,7 @@ const SupraslAtrakcjeUzdrowisko = () => {
       <p>
         Jeśli szukasz{' '}
         <strong>
-          <Link to="/noclegi-suprasl">noclegu w&nbsp;Supraślu</Link>
+          <Link to="/">noclegu w&nbsp;Supraślu</Link>
         </strong>
         , <Link to="/">In The Woods</Link> to dom na wyłączność w&nbsp;miejscowości Konne koło
         Supraśla. Sprawdź lokalizację, wyposażenie i&nbsp;dostępność opcjonalnych dodatków przed

@@ -126,7 +126,7 @@ const DomekZPsemPodlasie = () => (
         z&nbsp;kominkiem, pełna kuchnia, taras i&nbsp;balia z&nbsp;hydromasażem za{' '}
         {GARDEN_TUB_PRICE} zł za cały pobyt. Do Supraśla 10&nbsp;minut, do Białegostoku 30–40.
         Wszystko o&nbsp;domu znajdziecie na stronie o{' '}
-        <Link to="/noclegi-suprasl" className="text-primary underline hover:text-primary/80">
+        <Link to="/" className="text-primary underline hover:text-primary/80">
           noclegach w&nbsp;Supraślu
         </Link>
         .

@@ -229,7 +229,7 @@ const SzlakBioroznorodnosci = () => {
       <p>
         Po spacerze możesz odpocząć w <Link to="/">In The Woods</Link> —{' '}
         <strong>
-          <Link to="/noclegi-suprasl">dom w&nbsp;lesie z&nbsp;jacuzzi</Link>
+          <Link to="/">dom w&nbsp;lesie z&nbsp;jacuzzi</Link>
         </strong>{' '}
         w&nbsp;okolicach Supraśla. Balia z&nbsp;hydromasażem (jacuzzi) jest opcjonalnym dodatkiem;
         jej dostępność potwierdź przed pobytem.
@@ -238,7 +238,7 @@ const SzlakBioroznorodnosci = () => {
       <p>
         Jeśli szukasz{' '}
         <strong>
-          <Link to="/noclegi-suprasl">noclegu w&nbsp;okolicy Supraśla</Link>
+          <Link to="/">noclegu w&nbsp;okolicy Supraśla</Link>
         </strong>
         , sprawdź warunki pobytu, wyposażenie i&nbsp;dojazd do planowanych tras.
       </p>

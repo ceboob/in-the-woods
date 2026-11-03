@@ -112,7 +112,7 @@ const UzdrowiSkoSPA = () => (
     <p>
       Jeśli szukasz noclegu w&nbsp;okolicy, sprawdź ofertę <Link to="/">In The Woods</Link>. Balia
       z&nbsp;hydromasażem (jacuzzi) jest opcjonalnym dodatkiem; dostępność i&nbsp;warunki
-      korzystania potwierdź przed pobytem. <Link to="/noclegi-suprasl">Sprawdź noclegi</Link>.
+      korzystania potwierdź przed pobytem. <Link to="/">Sprawdź noclegi</Link>.
     </p>
   </BlogArticleLayout>
 );

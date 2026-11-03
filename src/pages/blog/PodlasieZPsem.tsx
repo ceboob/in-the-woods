@@ -161,7 +161,7 @@ const PodlasieZPsem = () => (
           informator gościa
         </Link>{' '}
         oraz{' '}
-        <Link to="/noclegi-suprasl" className="text-primary hover:underline font-medium">
+        <Link to="/" className="text-primary hover:underline font-medium">
           szczegóły noclegu w&nbsp;Supraślu
         </Link>
         .

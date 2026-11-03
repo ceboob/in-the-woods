@@ -205,7 +205,7 @@ const KruszynianyTatarskaWies = () => {
         Kruszyniany możesz uwzględnić w planie pobytu w{' '}
         <Link to="/">In The Woods</Link>. Nasz{' '}
         <strong>
-          <Link to="/noclegi-suprasl">dom na wyłączność</Link>
+          <Link to="/">dom na wyłączność</Link>
         </strong>{' '}
         w miejscowości Konne koło Supraśla. Przed wyjazdem sprawdź trasę do Kruszynian i warunki
         pobytu.
@@ -214,7 +214,7 @@ const KruszynianyTatarskaWies = () => {
       <p>
         Jeśli szukasz{' '}
         <strong>
-          <Link to="/noclegi-suprasl">noclegu w Supraślu</Link>
+          <Link to="/">noclegu w Supraślu</Link>
         </strong>
         , In The Woods to dom na wyłączność. Sprawdź jego lokalizację, wyposażenie i dostępność
         opcjonalnych dodatków przed wysłaniem zapytania.

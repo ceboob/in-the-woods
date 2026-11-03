@@ -290,7 +290,7 @@ const BialystokIOkolice = () => (
     />
 
     <p>
-      Sprawdźcie <Link to="/noclegi-suprasl">ceny i&nbsp;szczegóły noclegu</Link> albo od razu{' '}
+      Sprawdźcie <Link to="/">ceny i&nbsp;szczegóły noclegu</Link> albo od razu{' '}
       <Link to="/#rezerwacja">wolne terminy w&nbsp;kalendarzu</Link>. Maciej odpowiada zwykle
       w&nbsp;kilka godzin, a&nbsp;przez telefon jeszcze szybciej:{' '}
       <a href="tel:+48722765101">722&nbsp;765&nbsp;101</a>.

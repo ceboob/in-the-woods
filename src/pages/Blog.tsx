@@ -328,7 +328,7 @@ const Blog = () => {
               Blog
             </Link>
             <Link
-              to="/noclegi-suprasl"
+              to="/"
               className="nav-link text-foreground/70 hover:text-foreground"
             >
               Noclegi
@@ -446,7 +446,7 @@ const Blog = () => {
             <Link to="/blog" className="hover:text-white transition-colors">
               Blog
             </Link>
-            <Link to="/noclegi-suprasl" className="hover:text-white transition-colors">
+            <Link to="/" className="hover:text-white transition-colors">
               Noclegi Supraśl
             </Link>
             <Link to="/domek-suprasl" className="hover:text-white transition-colors">

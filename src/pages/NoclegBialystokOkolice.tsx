@@ -127,7 +127,7 @@ const NoclegBialystokOkolice = () => (
         </p>
         <p className="text-muted-foreground leading-relaxed">
           Pełną ofertę domu opisaliśmy na stronie{' '}
-          <Link to="/noclegi-suprasl" className={linkClass}>
+          <Link to="/" className={linkClass}>
             noclegi w&nbsp;Supraślu
           </Link>
           , a&nbsp;wnętrza zobaczycie na stronie{' '}
