@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
+import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
 
 const RykowiskoJeleni = () => {
   const [playVideo, setPlayVideo] = useState(false);
@@ -51,13 +52,14 @@ const RykowiskoJeleni = () => {
       ]}
       faqs={faqs}
       relatedArticles={relatedArticles}
+      dateModified="2026-11-04"
     >
       <p>
         Na styku lata i&nbsp;jesieni, gdy dni stają się krótsze, a&nbsp;noce chłodniejsze,
         w&nbsp;podlaskich lasach rozpoczyna się jedno z&nbsp;najbardziej fascynujących zjawisk
         przyrodniczych – rykowisko jeleni. To wyjątkowy czas, by wsłuchać się w&nbsp;las
-        i&nbsp;obserwować jego rytm, nie zbliżając się do zwierząt. Jeśli planujesz jesienny
-        spacer, wybierz ogólnodostępną trasę i&nbsp;zachowaj ciszę.
+        i&nbsp;obserwować jego rytm, nie zbliżając się do zwierząt. Jeśli planujesz jesienny spacer,
+        wybierz ogólnodostępną trasę i&nbsp;zachowaj ciszę.
       </p>
 
       <h2>Czym jest rykowisko jeleni i&nbsp;kiedy się odbywa?</h2>
@@ -67,6 +69,7 @@ const RykowiskoJeleni = () => {
         o&nbsp;względy samic (łań). Byki wydają donośne, głębokie ryki, które pełnią funkcję
         demonstracji siły – odstraszają rywali i&nbsp;wyzywają na pojedynek.
       </p>
+
       <p>
         Rykowisko można usłyszeć w&nbsp;terenie, ale jego przebieg i&nbsp;możliwość nasłuchiwania
         zależą od miejsca, pogody oraz zachowania zwierząt. Nie podchodź do jeleni ani nie próbuj
@@ -101,9 +104,12 @@ const RykowiskoJeleni = () => {
         </li>
       </ul>
 
-      <p>
-        W&nbsp;tym nagraniu usłyszysz rykowisko z&nbsp;okolic Puszczy Knyszyńskiej:
-      </p>
+      <BlogInlineCta
+        title="Jesienne nasłuchiwanie z noclegiem w lesie"
+        text="Dom na wyłączność w Konnych, 10 min od Supraśla — z kominkiem i ogrodzonym ogrodem. Sprawdź wolne terminy lub zadzwoń."
+      />
+
+      <p>W&nbsp;tym nagraniu usłyszysz rykowisko z&nbsp;okolic Puszczy Knyszyńskiej:</p>
 
       <div style={{ position: 'relative', paddingTop: '56.25%', marginBottom: '1rem' }}>
         {playVideo ? (

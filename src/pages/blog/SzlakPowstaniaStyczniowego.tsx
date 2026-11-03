@@ -1,6 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
+import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
 import winterForest from '@/assets/winter-forest.webp';
 import { commonsPhotos } from '@/lib/commonsPhotos';
 
@@ -57,6 +58,14 @@ const SzlakPowstaniaStyczniowego = () => {
       ]}
       faqs={faqs}
       relatedArticles={relatedArticles}
+      ogImage="https://www.suprasl.online/images/blog/og-szlak-powstania-styczniowego.jpg"
+      dateModified="2026-11-03"
+      heroImage={{
+        src: '/images/blog/szlak-powstania-styczniowego-galeria-rzezb.webp',
+        alt: 'Drewniane rzeźby przy Szlaku Powstania Styczniowego w Puszczy Knyszyńskiej: krzyż, rzeźba Piety i drewniana kaplica',
+        width: 1600,
+        height: 1067,
+      }}
     >
       <h2>Szlak Powstania Styczniowego Supraśl</h2>
 
@@ -158,6 +167,42 @@ const SzlakPowstaniaStyczniowego = () => {
         historii.
       </p>
 
+      <BlogFigure
+        src="/images/blog/szlak-powstania-styczniowego-rzezby-i-wiaty.webp"
+        alt="Drewniane rzeźby, wiaty i tablica informacyjna przy szlaku upamiętniającym Powstanie Styczniowe"
+        width={1600}
+        height={900}
+        caption="Rzeźby i&nbsp;wiaty z&nbsp;tablicą informacyjną — miejsce na chwilę zadumy."
+      />
+
+      <BlogFigure
+        src="/images/blog/szlak-powstania-styczniowego-rzezby-cztery-pory.webp"
+        alt="Cztery ujęcia drewnianych rzeźb przy szlaku wiosną i zimą"
+        width={1198}
+        height={664}
+        caption="Te same rzeźby wiosną i&nbsp;zimą — szlak zmienia charakter wraz z&nbsp;porami roku."
+      />
+
+      <div className="not-prose">
+        <BlogFigure
+          src="/images/blog/szlak-powstania-styczniowego-kaplica-i-plot.webp"
+          alt="Rzeźby i drewniana kaplica z parasolowym dachem za drewnianym płotem"
+          width={800}
+          height={800}
+        />
+        <BlogFigure
+          src="/images/blog/szlak-powstania-styczniowego-rzezby-z-tylu.webp"
+          alt="Drewniane rzeźby upamiętniające powstańców widziane z tyłu, na tle lasu"
+          width={1600}
+          height={1061}
+        />
+      </div>
+
+      <BlogInlineCta
+        title="Zaplanuj nocleg przy szlaku"
+        text="Po całym dniu na szlaku warto wrócić do ciszy i kominka. Dom In The Woods w Konne koło Supraśla jest do dyspozycji na wyłączność — sprawdź wolne terminy lub zadzwoń."
+      />
+
       <h2>Szlaki spacerowe</h2>
 
       <p>
@@ -247,17 +292,18 @@ const SzlakPowstaniaStyczniowego = () => {
 
       <p>
         In The Woods to idealna baza noclegowa dla osób chcących odkrywać historyczne szlaki
-        Supraśla. Prywatny <Link to="/dom-w-lesie-suprasl">dom w&nbsp;lesie</Link> z&nbsp;jacuzzi
-        i&nbsp;kominkiem, położony w&nbsp;Puszczy Knyszyńskiej, zapewnia komfort i&nbsp;ciszę po
-        całym dniu wędrówki.
+        Supraśla. Prywatny <Link to="/dom-w-lesie-suprasl">dom w&nbsp;lesie</Link> z&nbsp;kominkiem
+        i&nbsp;w pełni wyposażoną kuchnią, dla maksymalnie 8&nbsp;osób, położony w&nbsp;Konne
+        niedaleko Supraśla, zapewnia komfort i&nbsp;ciszę po całym dniu wędrówki.
       </p>
 
       <p>
-        Po powrocie z&nbsp;trasy można rozpalić kominek, zrelaksować się w&nbsp;jacuzzi pod
-        gwiazdami i&nbsp;zaplanować kolejny dzień odkrywania regionu. To{' '}
-        <Link to="/">nocleg w&nbsp;Supraślu</Link>, który łączy bliskość natury
-        z&nbsp;domowym komfortem — idealne zakończenie dnia spędzonego na historycznych szlakach
-        Puszczy Knyszyńskiej.
+        Po powrocie z&nbsp;trasy można rozpalić kominek i&nbsp;zaplanować kolejny dzień odkrywania
+        regionu (jacuzzi jest opcjonalne i&nbsp;wymaga potwierdzenia przez gospodarza). To{' '}
+        <Link to="/">nocleg w&nbsp;Supraślu</Link>, który łączy bliskość natury z&nbsp;domowym
+        komfortem — idealne zakończenie dnia spędzonego na historycznych szlakach Puszczy
+        Knyszyńskiej. <Link to="/#rezerwacja">Sprawdź wolne terminy</Link> lub zadzwoń:{' '}
+        <a href="tel:+48722765101">+48 722 765 101</a>.
       </p>
     </BlogArticleLayout>
   );

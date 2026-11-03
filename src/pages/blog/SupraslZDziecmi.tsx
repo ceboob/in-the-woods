@@ -1,5 +1,6 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
+import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
 
 const SupraslZDziecmi = () => (
   <BlogArticleLayout
@@ -46,6 +47,7 @@ const SupraslZDziecmi = () => (
       },
       { title: 'Przewodnik kulinarny po Supraślu', slug: 'przewodnik-kulinarny-suprasl' },
     ]}
+    dateModified="2026-11-04"
   >
     <h2>Supraśl dla rodzin: co robić z&nbsp;dziećmi w&nbsp;okolicy</h2>
 
@@ -65,11 +67,19 @@ const SupraslZDziecmi = () => (
       z&nbsp;wygodną nawierzchnią. Nie dokarmiaj dzikich ptaków.
     </p>
 
+    <BlogFigure
+      src="/images/blog/suprasl-z-dziecmi-plaza-nad-rzeka.webp"
+      alt="Plaża nad rzeką Supraśl z piaszczystym brzegiem, placem zabaw i wiatą wypoczynkową"
+      width={1024}
+      height={683}
+      caption="Piaszczysty brzeg nad rzeką Supraśl — miejsce na rodzinny odpoczynek w&nbsp;sezonie."
+    />
+
     <h2>Muzeum Sztuki Drukarskiej i&nbsp;Papiernictwa – interaktywne warsztaty</h2>
     <p>
-      Muzeum Sztuki Drukarskiej i&nbsp;Papiernictwa to propozycja dla rodzin, które lubią
-      odkrywać, jak powstaje papier i&nbsp;druk. Aktualny program zajęć oraz zasady zwiedzania
-      znajdziesz na stronie muzeum.
+      Muzeum Sztuki Drukarskiej i&nbsp;Papiernictwa to propozycja dla rodzin, które lubią odkrywać,
+      jak powstaje papier i&nbsp;druk. Aktualny program zajęć oraz zasady zwiedzania znajdziesz na
+      stronie muzeum.
     </p>
     <p>
       <strong>Wskazówka:</strong> Warsztaty mogą wymagać wcześniejszych zapisów — informację
@@ -86,8 +96,8 @@ const SupraslZDziecmi = () => (
 
     <h3>Park Linowy</h3>
     <p>
-      W&nbsp;parku linowym wybierz trasę odpowiednią do wzrostu i&nbsp;wieku dziecka. Każda trasa
-      ma własne zasady bezpieczeństwa, które poznacie przed wejściem.
+      W&nbsp;parku linowym wybierz trasę odpowiednią do wzrostu i&nbsp;wieku dziecka. Każda trasa ma
+      własne zasady bezpieczeństwa, które poznacie przed wejściem.
     </p>
 
     <h3>Bajkowa Kolejka</h3>
@@ -95,6 +105,14 @@ const SupraslZDziecmi = () => (
       Bajkowa Kolejka kursuje sezonowo. Aktualny rozkład i&nbsp;zasady przejazdu znajdziecie
       w&nbsp;informacjach przewoźnika.
     </p>
+
+    <BlogFigure
+      src="/images/blog/suprasl-z-dziecmi-kolejka-bajkowa.webp"
+      alt="Kolorowa Kolejka Bajkowa w Supraślu stojąca na brukowanym placu"
+      width={744}
+      height={800}
+      caption="Bajkowa Kolejka — wesoła atrakcja dla najmłodszych."
+    />
 
     <h2>Posiłek z&nbsp;dziećmi</h2>
     <p>
@@ -126,10 +144,14 @@ const SupraslZDziecmi = () => (
       <li>
         <strong>Spływ kajakowy</strong> — dobierzcie trasę i&nbsp;sprzęt do wieku dzieci oraz
         warunków na rzece. Wypożyczalnia poinformuje o&nbsp;minimalnym wieku i&nbsp;zasadach opieki.
-        Więcej w{' '}
-        <Link to="/blog/kajaki-suprasl">przewodniku po spływach</Link>.
+        Więcej w <Link to="/blog/kajaki-suprasl">przewodniku po spływach</Link>.
       </li>
     </ul>
+
+    <BlogInlineCta
+      title="Rodzinny wyjazd z bazą w lesie"
+      text="Cały dom na wyłączność dla Waszej rodziny — do 8 osób, z ogrodzonym ogrodem, kominkiem i w pełni wyposażoną kuchnią. Sprawdź wolne terminy lub zadzwoń."
+    />
 
     <h2>Gdzie nocować z&nbsp;rodziną?</h2>
     <p>

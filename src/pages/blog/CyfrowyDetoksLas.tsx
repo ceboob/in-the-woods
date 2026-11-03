@@ -1,5 +1,6 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
+import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
 
 const CyfrowyDetoksLas = () => (
   <BlogArticleLayout
@@ -40,6 +41,7 @@ const CyfrowyDetoksLas = () => (
         slug: 'puszcza-knyszynska-przewodnik',
       },
     ]}
+    dateModified="2026-11-04"
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <p className="text-muted-foreground leading-relaxed text-lg">
@@ -97,6 +99,11 @@ const CyfrowyDetoksLas = () => (
           albo chcesz skorzystać z&nbsp;balii, zapytaj gospodarza o&nbsp;zasady i&nbsp;dostępność.
         </li>
       </ul>
+
+      <BlogInlineCta
+        title="Zaplanuj swój reset w lesie"
+        text="Dom na wyłączność koło Supraśla, z kominkiem i ogrodzonym ogrodem. Sprawdź wolne terminy lub zadzwoń."
+      />
 
       <h2 className="section-title !text-2xl md:!text-3xl">
         Praktyczne wskazówki na cyfrowy detoks

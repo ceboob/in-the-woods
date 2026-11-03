@@ -23,6 +23,7 @@ interface BlogArticleLayoutProps {
   faqs: FAQ[];
   relatedArticles?: { title: string; slug: string }[];
   ogImage?: string;
+  heroImage?: { src: string; alt: string; width: number; height: number; caption?: string };
   dateModified?: string;
   /** Optional array of Event JSON-LD objects to improve event indexing */
   events?: object[];
@@ -41,6 +42,7 @@ const BlogArticleLayout = ({
   faqs,
   relatedArticles = [],
   ogImage = 'https://www.suprasl.online/og-image.jpg',
+  heroImage,
   dateModified,
   events,
   showFaqSection = true,
@@ -184,6 +186,26 @@ const BlogArticleLayout = ({
           </span>
         </div>
       </div>
+
+      {heroImage && (
+        <figure className="max-w-4xl mx-auto px-6 md:px-12 pb-6">
+          <img
+            src={heroImage.src}
+            alt={heroImage.alt}
+            width={heroImage.width}
+            height={heroImage.height}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+          {heroImage.caption && (
+            <figcaption className="text-sm text-muted-foreground mt-2">
+              {heroImage.caption}
+            </figcaption>
+          )}
+        </figure>
+      )}
 
       {/* Content */}
       <article className="max-w-4xl mx-auto px-6 md:px-12 pb-12">

@@ -1,5 +1,6 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
+import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
 
 const PodlasieZPsem = () => (
   <BlogArticleLayout
@@ -45,6 +46,14 @@ const PodlasieZPsem = () => (
       { title: 'Cyfrowy detoks w\u00a0lesie', slug: 'cyfrowy-detoks-las' },
       { title: 'Weekend w\u00a0Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
     ]}
+    ogImage="https://www.suprasl.online/images/blog/og-podlasie-z-psem.jpg"
+    dateModified="2026-11-04"
+    heroImage={{
+      src: '/images/blog/og-podlasie-z-psem.webp',
+      alt: 'Owczarek niemiecki z patykiem w pysku biegnący po trawie, obok szczeniak',
+      width: 1200,
+      height: 630,
+    }}
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <p className="text-muted-foreground leading-relaxed text-lg">
@@ -98,6 +107,14 @@ const PodlasieZPsem = () => (
         </li>
       </ul>
 
+      <BlogFigure
+        src="/images/blog/podlasie-z-psem-beagle-w-parku.webp"
+        alt="Pies rasy beagle w szelkach wyglądający zza pnia drzewa w parku"
+        width={800}
+        height={532}
+        caption="Dobrze dobrana smycz lub szelki i&nbsp;spokojne tempo to podstawa udanego spaceru."
+      />
+
       <h2 className="section-title !text-2xl md:!text-3xl">
         Spacery z&nbsp;psem w&nbsp;okolicy Supraśla
       </h2>
@@ -109,6 +126,14 @@ const PodlasieZPsem = () => (
         Mapa pomaga zaplanować spacer, ale zasady wstępu z&nbsp;psem zależą od konkretnego miejsca.
         Do rezerwatu nie wchodź z&nbsp;pupilem, jeśli nie zezwalają na to oznaczenia lub regulamin.
       </p>
+
+      <BlogFigure
+        src="/images/blog/podlasie-z-psem-bulterier-w-lesie.webp"
+        alt="Biały bulterier w leśnej scenerii opierający łapy o pień powalonego drzewa"
+        width={848}
+        height={566}
+        caption="Las to dla psa wiele nowych zapachów — daj mu czas na spokojne poznawanie okolicy."
+      />
 
       <h2 className="section-title !text-2xl md:!text-3xl">
         Pies w&nbsp;lesie – spokojnie i&nbsp;z&nbsp;troską o&nbsp;przyrodę
@@ -137,6 +162,11 @@ const PodlasieZPsem = () => (
           <strong>Uszanuj oznakowanie</strong> — korzystaj z&nbsp;tras dostępnych dla psów.
         </li>
       </ol>
+
+      <BlogInlineCta
+        title="Planujesz wyjazd z psem?"
+        text="Przyjazd z psem do In The Woods ustalamy indywidualnie przy rezerwacji. Sprawdź wolne terminy lub zadzwoń — chętnie odpowiemy na pytania."
+      />
 
       <h2 className="section-title !text-2xl md:!text-3xl">
         Dom w&nbsp;lesie koło Supraśla – poznaj In The Woods

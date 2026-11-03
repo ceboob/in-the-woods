@@ -1,5 +1,5 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
-import oakForestThumb from '@/assets/gallery-dab-puszcza-thumb.webp';
+import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
 import { Link } from 'react-router-dom';
 
 const faqs = [
@@ -34,6 +34,7 @@ const JesienWSupraslu2026 = () => (
     publishDate="2026-10-03"
     readTime="4&nbsp;min"
     ogImage="https://www.suprasl.online/images/gallery-dab-puszcza.webp"
+    dateModified="2026-11-04"
     keywords={['jesień w\u00a0Supraślu', 'Supraśl jesienią', 'wydarzenia w\u00a0Supraślu']}
     faqs={faqs}
     relatedArticles={[
@@ -45,17 +46,6 @@ const JesienWSupraslu2026 = () => (
       },
     ]}
   >
-    <img
-      src={oakForestThumb}
-      srcSet={`${oakForestThumb} 450w, /images/gallery-dab-puszcza.webp 900w`}
-      sizes="(min-width: 768px) 448px, 100vw"
-      alt="Jesienny las w&nbsp;okolicy Supraśla"
-      className="mx-auto mb-8 h-auto w-full max-w-md rounded-lg shadow-md"
-      width="900"
-      height="1200"
-      loading="lazy"
-      decoding="async"
-    />
     <p>
       🍂 Jesienią Supraśl i&nbsp;Puszcza Knyszyńska zwalniają tempo. Złote liście zachęcają do
       spacerów, a&nbsp;krótszy dzień sprzyja wieczorom w&nbsp;mieście. Ubierz się warstwowo
@@ -96,11 +86,17 @@ const JesienWSupraslu2026 = () => (
       i&nbsp;ewentualne zasady udziału.
     </p>
 
+    <BlogInlineCta
+      title="Jesienny weekend w lesie"
+      text="Dom na wyłączność w Konnych, 10 min od Supraśla — z kominkiem i ogrodzonym ogrodem. Sprawdź wolne terminy lub zadzwoń."
+    />
+
     <h2>Jesienny weekend w&nbsp;In The Woods</h2>
     <p>
       Jeśli chcesz połączyć zwiedzanie z&nbsp;odpoczynkiem,{' '}
-      <Link to="/">poznaj dom In The Woods</Link> i&nbsp;<Link to="/#rezerwacja">zapytaj o&nbsp;termin</Link>.
-      Formularz służy do wysłania zapytania — rezerwacja jest potwierdzana osobno.
+      <Link to="/">poznaj dom In The Woods</Link> i&nbsp;
+      <Link to="/#rezerwacja">zapytaj o&nbsp;termin</Link>. Formularz służy do wysłania zapytania —
+      rezerwacja jest potwierdzana osobno.
     </p>
   </BlogArticleLayout>
 );
