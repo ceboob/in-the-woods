@@ -1,30 +1,29 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
+import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
-import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
-import riverKayak from '@/assets/river-kayak-optimized.webp';
-import forestPanorama from '@/assets/forest-panorama.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 
 const KajakiSuprasl = () => {
   const faqs = [
     {
       question: 'Czy kajaki w\u00a0Supraślu są trudne?',
       answer:
-        'Trudność spływu zależy od odcinka, poziomu wody i\u00a0pogody. Przed rezerwacją zapytaj organizatora o\u00a0aktualne warunki oraz o\u00a0to, czy trasa jest odpowiednia dla osób początkujących.',
+        'Poziom trudności zależy od odcinka, poziomu wody i\u00a0pogody. Wypożyczalnia pomoże dobrać trasę do Twojego doświadczenia i\u00a0poda informacje o\u00a0warunkach na rzece.',
     },
     {
       question: 'Ile trwa spływ kajakowy rzeką Supraśl?',
       answer:
-        'Czas zależy od wybranego odcinka, warunków na rzece i\u00a0przerw. Potwierdź przewidywany czas oraz miejsce startu i\u00a0zakończenia u\u00a0organizatora.',
+        'To zależy od wybranego odcinka, poziomu wody i\u00a0liczby przerw. Przy rezerwacji wypożyczalnia poda orientacyjny czas oraz miejsca startu i\u00a0zakończenia.',
     },
     {
       question: 'Czy kajaki Supraśl są odpowiednie dla dzieci?',
       answer:
-        'Możliwość udziału dzieci zależy od warunków, sprzętu i\u00a0zasad organizatora. Przed rezerwacją zapytaj o\u00a0minimalny wiek, wymagany nadzór i\u00a0dostępne wyposażenie.',
+        'Rodzinny spływ warto dobrać do wieku i\u00a0umiejętności dzieci. Wypożyczalnia poinformuje o\u00a0minimalnym wieku, wyposażeniu i\u00a0wymaganym nadzorze dorosłych.',
     },
     {
       question: 'Kiedy najlepszy sezon na kajaki w\u00a0Supraślu?',
       answer:
-        'Terminy spływów i\u00a0warunki na rzece zmieniają się. Sprawdź aktualne informacje u\u00a0organizatora i\u00a0nie wypływaj przy niesprzyjającej pogodzie lub nieodpowiednim stanie wody.',
+        'Sezon zwykle przypada od maja do września, ale możliwość spływu zależy od pogody i\u00a0poziomu wody. Wypożyczalnia poinformuje, czy warunki w\u00a0danym terminie pozwalają na spływ.',
     },
     {
       question: 'Gdzie nocować po spływie kajakowym w\u00a0Supraślu?',
@@ -71,31 +70,23 @@ const KajakiSuprasl = () => {
       <h2>Kajaki Supraśl – przewodnik po spływach rzeką Supraśl</h2>
 
       <p>
-        <strong>Kajaki w&nbsp;Supraślu</strong> to jedna z&nbsp;najpopularniejszych atrakcji
-        turystycznych Puszczy Knyszyńskiej. Rzeka Supraśl, płynąca przez malownicze tereny leśne
-        i&nbsp;łąkowe, oferuje możliwość spływu zależy od warunków na rzece, pogody i&nbsp;oferty
-        lokalnych organizatorów. Przed wyprawą sprawdź trasę, czas spływu i&nbsp;dostępne
-        wyposażenie. <strong>Spływ kajakowy rzeką Supraśl</strong> zaplanuj zgodnie ze swoimi
-        umiejętnościami i&nbsp;zaleceniami organizatora.
+        <strong>Spływ kajakowy rzeką Supraśl</strong> pozwala zobaczyć leśne i&nbsp;łąkowe okolice
+        z&nbsp;perspektywy wody. Długość trasy, czas na rzece i&nbsp;dostępny sprzęt zależą od oferty
+        wypożyczalni, pogody oraz poziomu wody. Wybierz odcinek odpowiedni do swojego doświadczenia
+        i&nbsp;przed rezerwacją dopytaj o&nbsp;szczegóły.
       </p>
 
       <p>
         Jeśli planujesz <Link to="/weekend-suprasl">weekend w&nbsp;Supraślu</Link> i&nbsp;szukasz
-        niezapomnianych wrażeń na łonie natury, spływ kajakowy powinien znaleźć się na szczycie
-        Twojej listy. To aktywność, która łączy sport, relaks i&nbsp;obcowanie z&nbsp;przyrodą
-        w&nbsp;jednym — idealnie wpisując się w&nbsp;filozofię slow tourism, z&nbsp;której słynie
-        ten region.
+        chwili wytchnienia na łonie natury, taki spływ może być dobrym punktem weekendowego planu.
+        To sposób na ruch, relaks i&nbsp;spokojne podziwianie przyrody — bez pośpiechu i&nbsp;presji
+        na pokonywanie kolejnych kilometrów.
       </p>
 
-      <img
+      <CommonsPhoto
+        photo={commonsPhotos.river}
+        alt="Rzeka Supraśl w Parku Krajobrazowym Puszczy Knyszyńskiej"
         loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={blogKajaki}
-        alt="kajaki Supraśl – spływ kajakowy rzeką Supraśl w&nbsp;Puszczy Knyszyńskiej"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
       />
 
       <h2>Dlaczego warto wybrać kajaki w&nbsp;Supraślu?</h2>
@@ -117,9 +108,8 @@ const KajakiSuprasl = () => {
       <h3>Wyjątkowe walory rzeki Supraśl</h3>
 
       <p>
-        Warunki na rzece mogą zależeć od pogody, poziomu wody i&nbsp;wybranego odcinka. Przed
-        wyprawą sprawdź komunikaty i&nbsp;zapytaj organizatora, czy aktualna trasa odpowiada Twojemu
-        doświadczeniu.
+        Warunki na rzece zależą od pogody, poziomu wody i&nbsp;wybranego odcinka. Dobierz trasę
+        z&nbsp;wypożyczalnią do swojego doświadczenia i&nbsp;aktualnych warunków.
       </p>
 
       <p>
@@ -127,24 +117,17 @@ const KajakiSuprasl = () => {
         nie zatrzymuj się w&nbsp;miejscach, w&nbsp;których jest to zabronione lub niebezpieczne.
       </p>
 
-      <img
+      <CommonsPhoto
+        photo={commonsPhotos.forest}
+        alt="Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna"
         loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={riverKayak}
-        alt="rzeka Supraśl – spokojna rzeka w&nbsp;Puszczy Knyszyńskiej idealna na kajaki"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
       />
 
       <h2>Jak wygląda spływ rzeką Supraśl?</h2>
 
       <p>
-        Typowy spływ kajakowy rzeką Supraśl zaczyna się od odbioru kajaków w&nbsp;jednym
-        z&nbsp;punktów wypożyczalni zlokalizowanych w&nbsp;okolicach Supraśla lub okolicznych
-        miejscowości. Zakres usług i&nbsp;transport sprzętu zależą od organizatora. Przed rezerwacją
-        potwierdź miejsce startu i&nbsp;zakończenia, transport oraz zasady odbioru kajaków.
+        Spływ zwykle zaczyna się od odbioru sprzętu w&nbsp;wypożyczalni. Miejsce startu, zakończenia
+        i&nbsp;transport kajaków zależą od trasy; wypożyczalnia poda szczegóły wybranej oferty.
       </p>
 
       <p>
@@ -156,58 +139,47 @@ const KajakiSuprasl = () => {
       <h3>Co zabrać na spływ?</h3>
 
       <p>
-        Przygotuj odzież odpowiednią do pogody i&nbsp;rzeczy chroniące przed zamoczeniem. Przed
-        wyprawą ustal z&nbsp;organizatorem, jaki sprzęt zapewnia, w&nbsp;tym kamizelki asekuracyjne
-        lub ratunkowe, oraz co należy zabrać samodzielnie.
+        Zabierz ubranie dopasowane do pogody i&nbsp;rzeczy, które mogą się zamoczyć. Wypożyczalnia
+        poinformuje Cię, jaki sprzęt zapewnia — w&nbsp;tym kamizelki — a&nbsp;co warto przygotować
+        we własnym zakresie.
       </p>
 
       <h2>Jak wybrać trasę kajakową?</h2>
 
       <p>
-        Organizatorzy mogą oferować różne odcinki. Przed wyborem trasy zapytaj o&nbsp;dystans,
-        przewidywany czas, trudność oraz warunki na rzece w&nbsp;planowanym terminie.
+        Organizatorzy oferują różne odcinki rzeki. Przy wyborze porównaj dystans, orientacyjny czas
+        i&nbsp;trudność, a&nbsp;także zapytaj o&nbsp;warunki na wodzie w&nbsp;planowanym terminie.
       </p>
 
       <p>
-        Nie publikujemy stałych długości ani czasów tras, ponieważ mogą się zmieniać wraz
-        z&nbsp;ofertą organizatorów i&nbsp;warunkami na rzece. Szczegóły potwierdź przed wyjazdem.
+        Długość i&nbsp;czas spływu zależą od oferty oraz warunków na rzece. Wypożyczalnia pomoże
+        dobrać odpowiedni odcinek.
       </p>
 
       <h2>Kajaki dla początkujących</h2>
 
       <p>
-        Osoby początkujące powinny wybrać trasę po konsultacji z&nbsp;organizatorem. Nie zakładaj,
-        że warunki na rzece są zawsze łatwe ani że każda trasa będzie odpowiednia dla każdego.
+        Jeśli to Twój pierwszy spływ, zacznij od krótszego odcinka. Powiedz o&nbsp;tym
+        wypożyczalni — pomoże dobrać trasę do Twoich umiejętności i&nbsp;warunków na rzece.
       </p>
 
       <p>
-        Zapytaj organizatora o&nbsp;instruktaż, wymagane wyposażenie oraz zasady zachowania na
-        wodzie.
+        Przed wejściem do kajaka posłuchaj instruktażu i&nbsp;załóż kamizelkę asekuracyjną.
+        Na wodzie trzymaj się ustalonych zasad i&nbsp;nie zbliżaj się do dzikich zwierząt.
       </p>
 
       <h2>Kajaki rodzinne</h2>
 
       <p>
-        Udział dzieci wymaga dobrania trasy, sprzętu i&nbsp;opieki do ich wieku oraz umiejętności.
-        Potwierdź minimalny wiek, zasady nadzoru i&nbsp;wymagane wyposażenie u&nbsp;organizatora;
-        opiekun powinien ocenić warunki przed rozpoczęciem spływu.
+        Wybierając trasę dla rodziny, weź pod uwagę wiek i&nbsp;umiejętności dzieci. Wypożyczalnia
+        wyjaśni, jakie zasady nadzoru i&nbsp;wyposażenia obowiązują; ostateczną decyzję podejmijcie
+        wspólnie, biorąc pod uwagę pogodę i&nbsp;warunki na rzece.
       </p>
 
       <p>
-        Dostępne typy sprzętu i&nbsp;dopuszczalną liczbę osób w&nbsp;jednostce potwierdź
-        w&nbsp;wypożyczalni.
+        Wypożyczalnia podpowie, jaki kajak będzie odpowiedni dla Waszej grupy i&nbsp;ile osób może
+        bezpiecznie płynąć w&nbsp;jednej jednostce.
       </p>
-
-      <img
-        loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={forestPanorama}
-        alt="Puszcza Knyszyńska – panorama leśna nad rzeką Supraśl"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
-      />
 
       <h2>Kiedy najlepiej płynąć?</h2>
 
@@ -220,9 +192,9 @@ const KajakiSuprasl = () => {
       </p>
 
       <p>
-        Warto unikać spływów tuż po intensywnych opadach deszczu, gdy poziom wody może być
-        podwyższony. Najlepiej planować wyprawę na dni z&nbsp;pogodną prognozą — choć lekki deszcz
-        podczas spływu ma swój niezwykły klimat, szczególnie w&nbsp;otoczeniu puszczy.
+        Po intensywnych opadach poziom wody może się podnieść, a&nbsp;warunki na rzece pogorszyć.
+        Jeśli prognoza zapowiada burzę lub silny wiatr, przełóż spływ — bezpieczeństwo jest ważniejsze
+        niż plan.
       </p>
 
       <h2>Obserwacja przyrody podczas spływu</h2>
@@ -235,17 +207,17 @@ const KajakiSuprasl = () => {
       </p>
 
       <p>
-        Warto zabrać lornetkę i&nbsp;aparat fotograficzny — szczególnie o&nbsp;poranku i&nbsp;pod
-        wieczór, gdy zwierzęta są najbardziej aktywne. Obserwuj zwierzęta z&nbsp;dystansu i&nbsp;nie
-        płosz ich ani nie dokarmiaj.
+        Lornetka przyda się szczególnie rano i&nbsp;wieczorem. Obserwuj zwierzęta z&nbsp;dystansu,
+        nie płosz ich i&nbsp;nie dokarmiaj.
       </p>
 
       <h2>Praktyczne wskazówki</h2>
 
       <h3>Rezerwacja</h3>
       <p>
-        Sprawdź dostępność sprzętu i&nbsp;zasady rezerwacji bezpośrednio u&nbsp;organizatora.
-        Potwierdzenie terminu oraz warunków uzyskaj przed przyjazdem.
+        Wypożyczalnia poda Ci dostępne terminy, zasady rezerwacji i&nbsp;warunki na rzece. Ustalcie
+        je przed przyjazdem, zwłaszcza jeśli planujesz transport kajaków lub spływ w&nbsp;większej
+        grupie.
       </p>
 
       <h3>Bezpieczeństwo</h3>
@@ -257,8 +229,8 @@ const KajakiSuprasl = () => {
 
       <h3>Dojazd</h3>
       <p>
-        Przed wyjazdem sprawdź adres organizatora, miejsce startu i&nbsp;zakończenia oraz dostępne
-        opcje dojazdu i&nbsp;transportu. Informacje te mogą różnić się zależnie od wybranej trasy.
+        Miejsce startu spływu nie zawsze pokrywa się z&nbsp;adresem wypożyczalni. Przed wyjazdem
+        ustal miejsce zbiórki i&nbsp;transport między końcem trasy a&nbsp;punktem startowym.
       </p>
 
       <h2>Slow tourism na wodzie</h2>
@@ -290,7 +262,7 @@ const KajakiSuprasl = () => {
       </p>
 
       <p>
-        Sprawdź dostępność <Link to="/">noclegu w&nbsp;Supraślu</Link>{' '}
+        Zobacz <Link to="/">wolne terminy noclegu w&nbsp;Supraślu</Link>{' '}
         i&nbsp;zaplanuj swój weekendowy wypad łączący kajaki, przyrodę i&nbsp;relaks w&nbsp;sercu
         Puszczy Knyszyńskiej.
       </p>

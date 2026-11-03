@@ -1,9 +1,8 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
+import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
-import monaster from '@/assets/blog-monaster-suprasl-optimized.webp';
-import kruszyniany from '@/assets/blog-kruszyniany-meczet-optimized.webp';
-import puszczaPanorama from '@/assets/blog-puszcza-panorama.webp';
 import cabinGarden from '@/assets/cabin-day-garden.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 
 const faqs = [
   {
@@ -24,7 +23,7 @@ const faqs = [
   {
     question: 'Czy ogrody Pałacu Branickich są płatne?',
     answer:
-      'Spacer po ogrodach pałacowych jest bezpłatny. Za zwiedzanie wnętrz i\u00a0wystaw płaci się osobno, a\u00a0godziny warto sprawdzić przed wyjazdem.',
+      'Spacer po ogrodach pałacowych jest bezpłatny. Zwiedzanie wnętrz i\u00a0wystaw wymaga osobnego biletu; godziny otwarcia zależą od sezonu.',
   },
   {
     question: 'Ile czasu potrzeba na Białystok i\u00a0okolice?',
@@ -63,15 +62,11 @@ const BialystokIOkolice = () => (
       zmieścić to w&nbsp;długim weekendzie i&nbsp;nie spędzić go w&nbsp;samochodzie.
     </p>
 
-    <img
+    <CommonsPhoto
+      photo={commonsPhotos.bialystok}
+      alt="Pałac Branickich w Białymstoku po zmroku"
+      caption="Pałac Branickich w Białymstoku"
       loading="eager"
-      decoding="async"
-      sizes="(min-width: 768px) 768px, 100vw"
-      src={puszczaPanorama}
-      alt="Panorama Puszczy Knyszyńskiej, która zaczyna się tuż za Białymstokiem"
-      className="w-full rounded-lg my-8"
-      width="930"
-      height="480"
     />
 
     <h2>Co warto zobaczyć w&nbsp;Białymstoku</h2>
@@ -157,15 +152,11 @@ const BialystokIOkolice = () => (
       <Link to="/blog/przewodnik-kulinarny-suprasl">przewodniku kulinarnym</Link>.
     </p>
 
-    <img
+    <CommonsPhoto
+      photo={commonsPhotos.monastery}
+      alt="Monaster Zwiastowania w Supraślu nad rzeką Supraśl"
       loading="lazy"
-      decoding="async"
-      sizes="(min-width: 768px) 768px, 100vw"
-      src={monaster}
-      alt="Monaster Zwiastowania w&nbsp;Supraślu – najważniejsza atrakcja w&nbsp;okolicach Białegostoku"
-      className="w-full rounded-lg my-8 aspect-[4/3] object-cover"
-      width="810"
-      height="1080"
+      className="aspect-[4/3] object-cover"
     />
 
     <h3>Puszcza Knyszyńska i&nbsp;Arboretum w&nbsp;Kopnej Górze</h3>
@@ -229,15 +220,10 @@ const BialystokIOkolice = () => (
       <Link to="/blog/kruszyniany-tatarska-wies">przewodniku po Kruszynianach</Link>.
     </p>
 
-    <img
+    <CommonsPhoto
+      photo={commonsPhotos.mosque}
+      alt="Drewniany meczet tatarski w Kruszynianach"
       loading="lazy"
-      decoding="async"
-      sizes="(min-width: 768px) 768px, 100vw"
-      src={kruszyniany}
-      alt="Drewniany meczet w&nbsp;Kruszynianach na Szlaku Tatarskim koło Białegostoku"
-      className="w-full rounded-lg my-8"
-      width="1024"
-      height="683"
     />
 
     <h3>Kraina Otwartych Okiennic</h3>
@@ -290,7 +276,7 @@ const BialystokIOkolice = () => (
     />
 
     <p>
-      Sprawdźcie <Link to="/">ceny i&nbsp;szczegóły noclegu</Link> albo od razu{' '}
+      Zobaczcie <Link to="/">ceny i&nbsp;szczegóły noclegu</Link> lub od razu{' '}
       <Link to="/#rezerwacja">wolne terminy w&nbsp;kalendarzu</Link>. Maciej odpowiada zwykle
       w&nbsp;kilka godzin, a&nbsp;przez telefon jeszcze szybciej:{' '}
       <a href="tel:+48722765101">722&nbsp;765&nbsp;101</a>.

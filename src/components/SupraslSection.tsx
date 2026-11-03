@@ -11,12 +11,8 @@ import {
   MapPin,
   ArrowRight,
 } from 'lucide-react';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci-optimized.webp';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet-optimized.webp';
-import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko-optimized.webp';
-import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
-import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero-optimized.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 
 const attractions = [
   { icon: Church, name: 'Monaster Zwiastowania NMP' },
@@ -38,32 +34,34 @@ const guides = [
   {
     slug: 'szlak-bioroznorodnosci-suprasl',
     title: 'Szlak Bioróżnorodności Supraśl',
-    excerpt: 'Przed spacerem sprawdź aktualny przebieg, długość i\u00a0warunki trasy.',
-    image: blogSzlakBio,
-    alt: 'Leśna ścieżka w\u00a0okolicy Supraśla',
+    excerpt: 'Leśny spacer wśród drzew i przyrodniczych ciekawostek niedaleko Supraśla.',
+    image: commonsPhotos.forest.image,
+    alt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
+    imageCredit: commonsPhotos.forest,
   },
   {
     slug: 'kruszyniany-tatarska-wies',
     title: 'Kruszyniany – tatarska wieś Podlasia',
-    excerpt:
-      'Informacje o\u00a0meczecie, dziedzictwie tatarskim i\u00a0zasadach zwiedzania Kruszynian.',
-    image: blogKruszyniany,
+    excerpt: 'Drewniany meczet, tatarska historia i regionalna kuchnia — pomysł na całodniową wycieczkę.',
+    image: commonsPhotos.mosque.image,
     alt: 'Drewniany meczet w\u00a0Kruszynianach',
+    imageCredit: commonsPhotos.mosque,
   },
   {
     slug: 'suprasl-atrakcje-uzdrowisko',
     title: 'Supraśl – atrakcje uzdrowiska Podlasia',
-    excerpt: 'Monaster, Muzeum Ikon i\u00a0spacer nad rzeką — sprawdź informacje przed wizytą.',
-    image: blogSupraslUzdrowisko,
+    excerpt: 'Monaster, Muzeum Ikon i bulwary nad Supraślą — najciekawsze miejsca w uzdrowisku.',
+    image: commonsPhotos.monastery.image,
     alt: 'Monaster Zwiastowania NMP w\u00a0Supraślu',
+    imageCredit: commonsPhotos.monastery,
   },
   {
     slug: 'kajaki-suprasl',
     title: 'Kajaki Supraśl – spływy rzeką Supraśl',
-    excerpt:
-      'Informacje, które warto sprawdzić przed zaplanowaniem spływu kajakowego rzeką Supraśl.',
-    image: blogKajaki,
-    alt: 'Kajaki na rzece Supraśl',
+    excerpt: 'Supraśl oglądana z poziomu wody i leśne brzegi, które zmieniają się z porami roku.',
+    image: commonsPhotos.river.image,
+    alt: 'Rzeka Supraśl w Parku Krajobrazowym Puszczy Knyszyńskiej',
+    imageCredit: commonsPhotos.river,
   },
   {
     slug: 'przewodnik-kulinarny-suprasl',
@@ -71,15 +69,16 @@ const guides = [
     excerpt:
       'Kartacze, babka ziemniaczana i\u00a0kuchnia tatarska — przewodnik kulinarny po Supraślu.',
     image: blogRestauracje,
-    alt: 'Danie kuchni regionalnej w\u00a0Supraślu',
+    alt: 'Drewniany budynek w Supraślu',
   },
   {
     slug: 'puszcza-knyszynska-historie',
     title: 'Puszcza Knyszyńska – 7 niezwykłych historii',
     excerpt:
       'Galeria Leśna Powstania Styczniowego i\u00a0inne miejsca związane z\u00a0historią regionu.',
-    image: blogPuszczaHistorie,
-    alt: 'Puszcza Knyszyńska historie – leśna droga w\u00a0porannej mgle',
+    image: commonsPhotos.forest.image,
+    alt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
+    imageCredit: commonsPhotos.forest,
   },
 ];
 
@@ -96,8 +95,8 @@ const SupraslSection = () => {
           <p className="text-xs tracking-wide text-muted-foreground font-sans">Okolica</p>
           <h2 className="section-title">Puszcza Knyszyńska i&nbsp;Supraśl – co warto zobaczyć</h2>
           <p className="section-subtitle mx-auto">
-            Przewodnik po miejscach, które możesz uwzględnić podczas pobytu. Przed wyjazdem sprawdź
-            aktualną trasę, godziny otwarcia i&nbsp;zasady zwiedzania.
+            Zebraliśmy miejsca na spokojny spacer, rodzinną wycieczkę i&nbsp;aktywny dzień na wodzie.
+            Każde pokazuje inny fragment Supraśla i&nbsp;Puszczy Knyszyńskiej.
           </p>
         </div>
 
@@ -118,14 +117,10 @@ const SupraslSection = () => {
           </p>
           <div className="grid grid-cols-2 gap-3">
             {nearby.map((n, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-between py-3 px-5 bg-card border border-border"
-              >
+              <div key={i} className="flex items-center py-3 px-5 bg-card border border-border">
                 <span className="text-sm text-foreground flex items-center gap-2">
                   <MapPin className="w-3.5 h-3.5 text-primary" /> {n.name}
                 </span>
-                <span className="text-xs text-muted-foreground">Sprawdź trasę</span>
               </div>
             ))}
           </div>
@@ -138,42 +133,66 @@ const SupraslSection = () => {
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {guides.map((guide, i) => (
-              <Link
+              <article
                 key={guide.slug}
-                to={`/blog/${guide.slug}`}
-                className="group border border-border rounded-lg overflow-hidden bg-card hover:shadow-lg transition-all duration-300"
+                className="border border-border rounded-lg overflow-hidden bg-card hover:shadow-lg transition-all duration-300"
               >
-                <div className="aspect-[16/10] overflow-hidden">
-                  <ImageReveal delay={Math.min(i * 70, 280)}>
-                    <img
-                      src={guide.image}
-                      alt={guide.alt}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                      width="500"
-                      height="313"
-                    />
-                  </ImageReveal>
-                </div>
-                <div className="p-5 space-y-3">
-                  <h3 className="font-heading text-lg font-medium text-foreground group-hover:text-primary transition-colors leading-snug">
-                    {guide.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{guide.excerpt}</p>
-                  <span className="inline-flex items-center gap-1.5 text-sm text-primary font-medium">
-                    Czytaj więcej{' '}
-                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </div>
-              </Link>
+                <Link to={`/blog/${guide.slug}`} className="group block">
+                  <div className="aspect-[16/10] overflow-hidden">
+                    <ImageReveal delay={Math.min(i * 70, 280)}>
+                      <img
+                        src={guide.image}
+                        alt={guide.alt}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                        width="500"
+                        height="313"
+                      />
+                    </ImageReveal>
+                  </div>
+                  <div className="p-5 space-y-3">
+                    <h3 className="font-heading text-lg font-medium text-foreground group-hover:text-primary transition-colors leading-snug">
+                      {guide.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{guide.excerpt}</p>
+                    <span className="inline-flex items-center gap-1.5 text-sm text-primary font-medium">
+                      Czytaj więcej{' '}
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </div>
+                </Link>
+                {'imageCredit' in guide && (
+                  <p className="px-5 pb-4 text-xs text-muted-foreground">
+                    Zdjęcie:{' '}
+                    <a
+                      href={guide.imageCredit.source}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-2 hover:text-foreground"
+                    >
+                      {guide.imageCredit.author}
+                    </a>
+                    {' · '}
+                    <a
+                      href={guide.imageCredit.licenseUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-2 hover:text-foreground"
+                    >
+                      {guide.imageCredit.license}
+                    </a>
+                  </p>
+                )}
+              </article>
             ))}
           </div>
         </div>
 
         <div className="text-center space-y-4">
           <p className="text-muted-foreground text-sm max-w-xl mx-auto leading-relaxed">
-            Puszcza Knyszyńska obejmuje rozległe tereny leśne. Przed spacerem lub wycieczką rowerową
-            sprawdź przebieg trasy i&nbsp;obowiązujące ograniczenia.
+            W&nbsp;Puszczy Knyszyńskiej znajdziesz trasy na krótki spacer i&nbsp;całodniową wyprawę.
+            Wybierz szlak dopasowany do pory roku i&nbsp;pamiętaj o&nbsp;zasadach na terenach
+            chronionych.
           </p>
           <p className="text-base md:text-lg text-foreground/80 font-sans">
             Dom znajduje się w&nbsp;miejscowości Konne koło Supraśla.

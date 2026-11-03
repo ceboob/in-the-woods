@@ -29,8 +29,8 @@ const RykowiskoJeleni = () => {
   return (
     <BlogArticleLayout
       title="Rykowisko jeleni na Podlasiu – gdzie i&nbsp;kiedy je usłyszeć?"
-      metaTitle="Rykowisko jeleni na Podlasiu – kiedy i&nbsp;gdzie je usłyszeć?"
-      metaDescription="Sprawdź, kiedy zwykle przypada rykowisko jeleni i&nbsp;jak odpowiedzialnie nasłuchiwać odgłosów przyrody w&nbsp;okolicach Supraśla."
+      metaTitle="Rykowisko jeleni na Podlasiu – kiedy i&nbsp;jak słuchać?"
+      metaDescription="Dowiedz się, kiedy zwykle odbywa się rykowisko jeleni i&nbsp;jak nasłuchiwać go odpowiedzialnie w&nbsp;okolicach Supraśla."
       slug="rykowisko-jeleni-puszcza-knyszynska"
       publishDate="2026-08-12"
       readTime="6&nbsp;min"
@@ -52,9 +52,9 @@ const RykowiskoJeleni = () => {
       <p>
         Na styku lata i&nbsp;jesieni, gdy dni stają się krótsze, a&nbsp;noce chłodniejsze,
         w&nbsp;podlaskich lasach rozpoczyna się jedno z&nbsp;najbardziej fascynujących zjawisk
-        przyrodniczych – rykowisko jeleni. Dla miłośników dzikiej przyrody może być okazją do
-        poznawania jej z&nbsp;odpowiedniego dystansu. Jeśli planujesz jesienny weekend, sprawdź
-        lokalne warunki i&nbsp;wybierz dozwolone trasy.
+        przyrodniczych – rykowisko jeleni. To wyjątkowy czas, by wsłuchać się w&nbsp;las
+        i&nbsp;obserwować jego rytm, nie zbliżając się do zwierząt. Jeśli planujesz jesienny
+        spacer, wybierz ogólnodostępną trasę i&nbsp;zachowaj ciszę.
       </p>
 
       <h2>Czym jest rykowisko jeleni i&nbsp;kiedy się odbywa?</h2>
@@ -72,16 +72,17 @@ const RykowiskoJeleni = () => {
 
       <h2>Nasłuchiwanie w&nbsp;okolicach Supraśla</h2>
       <p>
-        Jeśli interesuje Cię nasłuchiwanie w&nbsp;okolicach Supraśla, sprawdź aktualne informacje
-        u&nbsp;lokalnego organizatora lub zarządcy terenu. Nie zakładaj, że zorganizowana wyprawa
-        jest dostępna ani że zwierzęta pojawią się w&nbsp;wybranym miejscu.
+        Jeśli chcesz wybrać się na nasłuchiwanie z&nbsp;przewodnikiem, informacje o&nbsp;terminach
+        i&nbsp;zasadach publikuje lokalny organizator. Pamiętaj, że spotkania z&nbsp;dzikimi
+        zwierzętami nie da się zagwarantować — rykowisko najlepiej podziwiać bez pośpiechu
+        i&nbsp;z&nbsp;bezpiecznej odległości.
       </p>
 
       <h2>Jak przygotować się na jesienne nasłuchiwanie?</h2>
       <ul>
         <li>
-          <strong>Sprawdź zasady:</strong> przed wyjściem poznaj regulamin i&nbsp;ograniczenia
-          dotyczące wybranej trasy.
+          <strong>Trzymaj się zasad:</strong> korzystaj z&nbsp;dozwolonych tras i&nbsp;respektuj
+          oznaczenia w&nbsp;terenie.
         </li>
         <li>
           <strong>Ubierz się odpowiednio:</strong> dobierz odzież i&nbsp;obuwie do prognozy pogody
@@ -98,8 +99,7 @@ const RykowiskoJeleni = () => {
       </ul>
 
       <p>
-        Zanim wyruszysz do lasu, zobacz i&nbsp;posłuchaj, jak wygląda ten zjawiskowy spektakl na
-        nagraniu z&nbsp;okolicznych lasów:
+        W&nbsp;tym nagraniu usłyszysz rykowisko z&nbsp;okolic Puszczy Knyszyńskiej:
       </p>
 
       <div style={{ position: 'relative', paddingTop: '56.25%', marginBottom: '1rem' }}>
@@ -120,15 +120,15 @@ const RykowiskoJeleni = () => {
         opcjonalny dodatek.
       </p>
       <p>
-        Szczegóły wyposażenia, warunki pobytu z&nbsp;psem i&nbsp;dostępność dodatków potwierdź przed
-        wysłaniem zapytania o&nbsp;termin.
+        Przy rezerwacji napisz, jeśli planujesz przyjazd z&nbsp;psem lub interesuje Cię balia —
+        ustalimy dostępność i&nbsp;szczegóły pobytu.
       </p>
 
       <p>
         <Link to="/" className="btn-primary">
-          Sprawdź informacje o&nbsp;noclegu
+          Poznaj dom In The Woods
         </Link>{' '}
-        — przed wysłaniem zapytania potwierdź dostępność i&nbsp;warunki pobytu.
+        i&nbsp;zaplanuj pobyt w&nbsp;swoim tempie.
       </p>
     </BlogArticleLayout>
   );

@@ -1,31 +1,29 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
+import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci-optimized.webp';
-import forestNature from '@/assets/forest-nature-optimized.webp';
-import forestPanorama from '@/assets/forest-panorama.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 
-// TODO: zatwierdź treść
 const SzlakBioroznorodnosci = () => {
   const faqs = [
     {
       question: 'Jak długi jest Szlak Bioróżnorodności w\u00a0Supraślu?',
       answer:
-        'Przed wyjściem sprawdź aktualny przebieg i\u00a0długość trasy na miejscu lub w\u00a0informacji zarządcy. Czas przejścia zależy od warunków i\u00a0tempa spaceru.',
+        'Długość i&nbsp;czas przejścia zależą od dostępnego odcinka oraz tempa spaceru. Informacje o&nbsp;trasie publikuje jej zarządca.',
     },
     {
       question: 'Czy Szlak Bioróżnorodności jest odpowiedni dla dzieci?',
       answer:
-        'Oceń stan trasy, jej długość i\u00a0warunki terenowe przed wyjściem. Dostosuj spacer do wieku i\u00a0możliwości dzieci.',
+        'To może być ciekawy spacer dla rodzin, jeśli długość i&nbsp;nawierzchnia odpowiadają wiekowi dzieci. Wybierzcie trasę bez pośpiechu.',
     },
     {
       question: 'Kiedy najlepiej odwiedzić Szlak Bioróżnorodności?',
       answer:
-        'Warunki zmieniają się w\u00a0ciągu roku. Przed wyjściem sprawdź pogodę, stan trasy i\u00a0ewentualne ograniczenia w\u00a0dostępie.',
+        'Każda pora roku pokazuje las z&nbsp;innej strony. Wybierz pogodny dzień i&nbsp;ubierz się odpowiednio do warunków na trasie.',
     },
     {
       question: 'Gdzie nocować blisko Szlaku Bioróżnorodności?',
       answer:
-        'In The Woods to dom w\u00a0okolicach Supraśla. Przed wyjazdem sprawdź trasę do wybranego odcinka szlaku i\u00a0warunki pobytu.',
+        'In The Woods to dom na wyłączność w&nbsp;Konnem, niedaleko Supraśla. Z&nbsp;tej bazy łatwo zaplanować wycieczkę po okolicy.',
     },
   ];
 
@@ -42,7 +40,7 @@ const SzlakBioroznorodnosci = () => {
     <BlogArticleLayout
       title="Szlak Bioróżnorodności Supraśl – spacer w&nbsp;Puszczy"
       metaTitle="Szlak Bioróżnorodności w&nbsp;Supraślu – spacer po Puszczy"
-      metaDescription="Planujesz spacer Szlakiem Bioróżnorodności w&nbsp;Supraślu? Sprawdź aktualny przebieg trasy, warunki terenowe i&nbsp;zasady dostępu przed wyjściem."
+      metaDescription="Poznaj Szlak Bioróżnorodności w&nbsp;Supraślu i&nbsp;zaplanuj spokojny spacer pośród przyrody Puszczy Knyszyńskiej."
       slug="szlak-bioroznorodnosci-suprasl"
       publishDate="2026-03-14"
       readTime="10&nbsp;min"
@@ -60,34 +58,27 @@ const SzlakBioroznorodnosci = () => {
       <h2>Szlak Bioróżnorodności Supraśl — spacer po puszczy</h2>
 
       <p>
-        <strong>Szlak Bioróżnorodności w&nbsp;Supraślu</strong> może być celem spaceru
-        w&nbsp;okolicach Puszczy Knyszyńskiej. Przed wyjściem sprawdź aktualny przebieg, długość
-        i&nbsp;dostępność trasy w&nbsp;lokalnej informacji lub u&nbsp;jej zarządcy.
+        <strong>Szlak Bioróżnorodności w&nbsp;Supraślu</strong> to propozycja spaceru
+        w&nbsp;otoczeniu Puszczy Knyszyńskiej. 🐦 Na trasie można zwolnić, wsłuchać się w&nbsp;las
+        i&nbsp;przyjrzeć się jego mieszkańcom.
       </p>
 
       <p>
         Jeśli szukasz <Link to="/atrakcje-suprasl">atrakcji w&nbsp;Supraślu</Link>, które łączą
-        aktywny wypoczynek z&nbsp;poznawaniem przyrody, sprawdź informacje o&nbsp;szlaku
-        i&nbsp;zdecyduj, czy jego aktualne warunki odpowiadają Twoim planom.
+        ruch z&nbsp;poznawaniem przyrody, ten szlak może być dobrym punktem planu.
       </p>
 
-      <img
+      <CommonsPhoto
+        photo={commonsPhotos.forest}
+        alt="Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna"
         loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={blogSzlakBio}
-        alt="Szlak Bioróżnorodności Supraśl – ścieżka edukacyjna w&nbsp;Puszczy Knyszyńskiej"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
       />
 
       <h2>Czym jest Szlak Bioróżnorodności?</h2>
 
       <p>
-        Szlak jest trasą w&nbsp;okolicach Supraśla. Przebieg, oznakowanie i&nbsp;elementy edukacyjne
-        mogą się zmieniać, dlatego przed spacerem warto sprawdzić aktualne informacje
-        u&nbsp;zarządcy.
+        Szlak prowadzi przez okolice Supraśla, a&nbsp;jego oznakowanie i&nbsp;stan mogą zależeć od
+        pory roku. Informacje zarządcy pomogą przygotować się do spaceru.
       </p>
 
       <p>
@@ -98,8 +89,8 @@ const SzlakBioroznorodnosci = () => {
       <h2>Jak wygląda trasa?</h2>
 
       <p>
-        Długość, nawierzchnia i&nbsp;trudność mogą zależeć od wybranego odcinka oraz aktualnego
-        stanu trasy. Przed wyjściem sprawdź mapę i&nbsp;przygotuj się do warunków terenowych.
+        Długość, nawierzchnia i&nbsp;trudność zależą od wybranego odcinka. Wygodne buty i&nbsp;mapa
+        pomogą cieszyć się spacerem niezależnie od pogody.
       </p>
 
       <h3>Etapy trasy</h3>
@@ -123,15 +114,10 @@ const SzlakBioroznorodnosci = () => {
         </li>
       </ul>
 
-      <img
+      <CommonsPhoto
+        photo={commonsPhotos.river}
+        alt="Rzeka Supraśl w Parku Krajobrazowym Puszczy Knyszyńskiej"
         loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={forestNature}
-        alt="Puszcza Knyszyńska – las mieszany na Szlaku Bioróżnorodności"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
       />
 
       <h2>Co można zobaczyć?</h2>
@@ -153,27 +139,16 @@ const SzlakBioroznorodnosci = () => {
       <h3>Grzyby i&nbsp;porosty</h3>
 
       <p>
-        Zbieranie grzybów może być ograniczone na niektórych terenach. Przed wyjściem sprawdź
-        właściwe przepisy i&nbsp;oznakowanie; nie zbieraj grzybów, których nie rozpoznajesz.
+        Na niektórych terenach zbieranie grzybów jest ograniczone. Respektuj oznakowanie
+        i&nbsp;zostaw w&nbsp;lesie gatunki, których nie rozpoznajesz.
       </p>
-
-      <img
-        loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={forestPanorama}
-        alt="Panorama Puszczy Knyszyńskiej – szlaki przyrodnicze Supraśl"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
-      />
 
       <h2>Dlaczego warto odwiedzić?</h2>
 
       <p>
         Szlak Bioróżnorodności to jedna z&nbsp;propozycji spaceru w&nbsp;okolicy. Zobacz także{' '}
-        <Link to="/atrakcje-suprasl">mapie atrakcji Supraśla</Link>. Oto kilka powodów, dla których
-        warto go odwiedzić:
+        <Link to="/atrakcje-suprasl">mapę atrakcji Supraśla</Link>. Oto, co może sprawić, że spacer
+        będzie ciekawy:
       </p>
 
       <ul>
@@ -203,8 +178,8 @@ const SzlakBioroznorodnosci = () => {
       <h3>Jak dojechać?</h3>
 
       <p>
-        Przed wyjazdem sprawdź mapę, punkt rozpoczęcia trasy i&nbsp;aktualny dojazd. Nie zakładaj,
-        że początek szlaku jest dostępny z&nbsp;miejsca noclegu.
+        Początek szlaku może znajdować się poza centrum miasta. Zaplanuj dojazd do wybranego
+        wejścia, zanim wyruszysz z&nbsp;noclegu.
       </p>
 
       <h3>Co zabrać ze sobą?</h3>
@@ -220,8 +195,8 @@ const SzlakBioroznorodnosci = () => {
       <h3>Czas przejścia</h3>
 
       <p>
-        Czas przejścia zależy od długości wybranego odcinka, pogody i&nbsp;tempa spaceru. Sprawdź
-        informacje o&nbsp;trasie przed wyjściem i&nbsp;zaplanuj powrót przed zmrokiem.
+        Czas przejścia zależy od długości odcinka, pogody i&nbsp;tempa spaceru. Zostaw sobie zapas
+        czasu na odpoczynek i&nbsp;powrót przed zmrokiem.
       </p>
 
       <h2>Gdzie nocować w&nbsp;Supraślu?</h2>
@@ -231,16 +206,13 @@ const SzlakBioroznorodnosci = () => {
         <strong>
           <Link to="/">dom w&nbsp;lesie z&nbsp;jacuzzi</Link>
         </strong>{' '}
-        w&nbsp;okolicach Supraśla. Balia z&nbsp;hydromasażem (jacuzzi) jest opcjonalnym dodatkiem;
-        jej dostępność potwierdź przed pobytem.
+        w&nbsp;okolicach Supraśla. Balia z&nbsp;hydromasażem (jacuzzi) jest opcjonalnym dodatkiem —
+        zapytaj nas o&nbsp;dostępność przy rezerwacji.
       </p>
 
       <p>
-        Jeśli szukasz{' '}
-        <strong>
-          <Link to="/">noclegu w&nbsp;okolicy Supraśla</Link>
-        </strong>
-        , sprawdź warunki pobytu, wyposażenie i&nbsp;dojazd do planowanych tras.
+        Informacje o&nbsp;wyposażeniu domu i&nbsp;dojeździe do okolicznych tras znajdziesz na
+        stronie <Link to="/">In The Woods</Link>.
       </p>
     </BlogArticleLayout>
   );

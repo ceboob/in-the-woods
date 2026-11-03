@@ -20,22 +20,22 @@ const AktywnyWypoczynek = () => (
       {
         question: 'Jak wybrać trasę rowerową dla rodziny?',
         answer:
-          'Dobierz dystans, nawierzchnię i\u00a0przewyższenia do możliwości uczestników. Przed wyjazdem sprawdź aktualny przebieg trasy i\u00a0warunki na drodze.',
+            'Dopasuj dystans, nawierzchnię i\u00a0przewyższenia do możliwości całej rodziny. Mapa tras pomaga zaplanować przejazd i\u00a0uwzględnić ewentualne utrudnienia.',
       },
       {
         question: 'Gdzie wypożyczyć kajak w\u00a0Supraślu?',
         answer:
-          'Sprawdź aktualnych organizatorów spływów i\u00a0potwierdź dostępność, trasę, transport oraz wymagane wyposażenie bezpośrednio przed rezerwacją.',
+          'W\u00a0okolicy działają organizatorzy spływów, a\u00a0trasa, transport i\u00a0sprzęt zależą od wybranej oferty. O\u00a0terminy i\u00a0szczegóły zapytaj wypożyczalnię.',
       },
       {
         question: 'Czy w\u00a0Puszczy Knyszyńskiej można uprawiać nordic walking?',
         answer:
-          'Wybierz trasę dopuszczoną do ruchu turystycznego i\u00a0odpowiednią do swoich możliwości. Sprawdź oznakowanie i\u00a0ograniczenia na terenach chronionych.',
+            'Tak — wybierz trasę turystyczną dopasowaną do swoich możliwości i\u00a0poruszaj się zgodnie z\u00a0oznakowaniem, szczególnie na terenach chronionych.',
       },
       {
         question: 'Czy zimą w\u00a0Supraślu można jeździć na nartach biegowych?',
         answer:
-          'Możliwość jazdy zależy od warunków śniegowych i\u00a0dostępności tras. Przed wyjściem sprawdź aktualne warunki i\u00a0komunikaty lokalnych służb.',
+            'Tak, jeśli dopisze śnieg. Dostępność tras zależy od pogody i\u00a0warunków w\u00a0terenie.',
       },
     ]}
     relatedArticles={[
@@ -55,30 +55,26 @@ const AktywnyWypoczynek = () => (
 
     <h2>1. Najpiękniejsze szlaki rowerowe dla każdego</h2>
     <p>
-      Przed wyjazdem wybierz trasę rowerową dostosowaną do umiejętności i&nbsp;sprawdź jej aktualny
-      przebieg, nawierzchnię oraz ograniczenia. Dostępność wypożyczalni, sprzętu i&nbsp;usług
-      potwierdź bezpośrednio u&nbsp;lokalnych organizatorów.
+      🚴 Wybierz trasę odpowiednią do swoich umiejętności. Mapa pomoże ocenić jej przebieg,
+      nawierzchnię i&nbsp;ewentualne utrudnienia. Jeśli nie masz własnego roweru, lokalna
+      wypożyczalnia poinformuje Cię o&nbsp;dostępnych modelach i&nbsp;warunkach wynajmu.
     </p>
 
     <h2>2. Spływ kajakowy rzeką Supraśl – trasy i&nbsp;praktyczne porady</h2>
     <p>
       Spływ rzeką Supraśl może być jedną z&nbsp;propozycji aktywnego wypoczynku. Dobierz odcinek do
-      doświadczenia i&nbsp;sprawdź warunki na wodzie u&nbsp;organizatora.
+      swojego doświadczenia, a&nbsp;warunki na wodzie omów z&nbsp;organizatorem.
     </p>
     <p>
-      Długość, czas i&nbsp;warunki trasy mogą się różnić. Szczegóły potwierdź przed wyjazdem; więcej
-      praktycznych wskazówek znajdziesz w&nbsp;naszym{' '}
+      Długość i&nbsp;czas spływu zależą od wybranego odcinka oraz poziomu wody. Wypożyczalnia pomoże
+      dobrać trasę do Twojego doświadczenia, a&nbsp;więcej wskazówek znajdziesz w&nbsp;naszym{' '}
       <Link to="/blog/kajaki-suprasl">przewodniku po spływach kajakowych</Link>.
-    </p>
-    <p>
-      Zakres usług, dostępność sprzętu i&nbsp;terminy spływów potwierdź bezpośrednio
-      u&nbsp;organizatora.
     </p>
 
     <h2>3. Szlaki piesze i&nbsp;nordic walking – odkryj Wzgórza Świętojańskie</h2>
     <p>
-      W&nbsp;okolicy Supraśla znajdziesz trasy spacerowe. Przed wyruszeniem sprawdź przebieg
-      i&nbsp;długość wybranej trasy oraz ograniczenia na terenach chronionych.
+      🌿 W&nbsp;okolicy Supraśla znajdziesz leśne dukty i&nbsp;trasy spacerowe. Wybierz odcinek
+      odpowiedni do swoich planów, a&nbsp;na terenach chronionych trzymaj się oznakowanych dróg.
     </p>
     <p>
       Na spacer lub nordic walking wybierz publicznie dostępną trasę i&nbsp;stosuj się do lokalnego
@@ -88,8 +84,8 @@ const AktywnyWypoczynek = () => (
 
     <h2>4. Narciarstwo biegowe zimą – gdzie znaleźć najlepsze trasy?</h2>
     <p>
-      Zimowa aktywność na zewnątrz zależy od pogody i&nbsp;warunków na trasach. Przed wyjściem
-      sprawdź komunikaty i&nbsp;wybierz drogę udostępnioną dla planowanej formy ruchu.
+      ❄️ Zimowa aktywność zależy od pogody i&nbsp;ilości śniegu. Gdy warunki sprzyjają, wybierz
+      trasę udostępnioną dla narciarzy biegowych; w&nbsp;razie odwilży postaw na spacer.
     </p>
     <p>
       Po mroźnym dniu na trasie warto wrócić do ciepłego domu i&nbsp;rozgrzać się przy kominku.
@@ -100,18 +96,17 @@ const AktywnyWypoczynek = () => (
 
     <h2>5. Arboretum w&nbsp;Kopnej Górze – leśny ogród botaniczny</h2>
     <p>
-      <strong>Arboretum im. Powstańców 1863 w&nbsp;Kopnej Górze</strong> zostało założone
-      w&nbsp;1988 roku i&nbsp;zajmuje 26 hektarów. Sprawdź u&nbsp;Nadleśnictwa Supraśl aktualne
-      informacje o&nbsp;dojeździe, dostępności i&nbsp;zasadach zwiedzania.
+      🌳 <strong>Arboretum im. Powstańców 1863 w&nbsp;Kopnej Górze</strong> powstało w&nbsp;1988
+      roku i&nbsp;zajmuje 26 hektarów. To dobry pomysł na spokojny spacer wśród drzew i&nbsp;krzewów.
+      Nadleśnictwo Supraśl publikuje informacje o&nbsp;godzinach i&nbsp;zasadach zwiedzania.
     </p>
-    <p>Szczegóły oferty i&nbsp;dostępność obiektu mogą się zmieniać; potwierdź je przed wizytą.</p>
 
     <h2>Gdzie nocować po aktywnym dniu?</h2>
     <p>
       Po dniu pełnym wrażeń wracasz do swojego azylu ciszy i&nbsp;natury.{' '}
       <Link to="/">In The Woods</Link> — prywatny dom w&nbsp;lesie z&nbsp;kominkiem i&nbsp;balią
       z&nbsp;hydromasażem (jacuzzi) — to idealna baza wypadowa na aktywny weekend w&nbsp;Puszczy
-      Knyszyńskiej. <Link to="/">Sprawdź dostępne terminy</Link>.
+      Knyszyńskiej. <Link to="/">Zobacz wolne terminy</Link>.
     </p>
   </BlogArticleLayout>
 );

@@ -1,8 +1,8 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
+import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
-import blogSzlak from '@/assets/blog-szlak-lesny-optimized.webp';
-import blogPomnik from '@/assets/blog-pomnik-powstanie-optimized.webp';
 import winterForest from '@/assets/winter-forest.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 
 const SzlakPowstaniaStyczniowego = () => {
   const faqs = [
@@ -74,15 +74,10 @@ const SzlakPowstaniaStyczniowego = () => {
         miejsca bitew, mogiły powstańcze i&nbsp;pomniki pamięci ukryte wśród drzew.
       </p>
 
-      <img
+      <CommonsPhoto
+        photo={commonsPhotos.forest}
+        alt="Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna"
         loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={blogSzlak}
-        alt="Puszcza Knyszyńska – Szlak Powstania Styczniowego, atrakcje Supraśl"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
       />
 
       <h2>Historia Powstania w&nbsp;regionie</h2>
@@ -124,17 +119,6 @@ const SzlakPowstaniaStyczniowego = () => {
         całej puszczy. Powstańcy atakowali posterunki, przechwytywali transporty i&nbsp;prowadzili
         wojnę podjazdową, która przez miesiące wiązała znaczne siły carskie.
       </p>
-
-      <img
-        loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={blogPomnik}
-        alt="Pomnik Powstania Styczniowego – Puszcza Knyszyńska, historia Supraśl"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
-      />
 
       <h2>Miejsca pamięci</h2>
 

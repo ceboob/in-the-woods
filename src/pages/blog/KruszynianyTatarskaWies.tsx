@@ -1,29 +1,29 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
+import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet-optimized.webp';
-import blogRzeka from '@/assets/blog-rzeka-suprasl-optimized.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 
 const KruszynianyTatarskaWies = () => {
   const faqs = [
     {
       question: 'Jak daleko są Kruszyniany od Supraśla?',
       answer:
-        'Czas dojazdu zależy od trasy i warunków na drodze. Sprawdź aktualną mapę oraz godziny zwiedzania przed wyjazdem.',
+        'Czas przejazdu zależy od wybranej drogi i&nbsp;warunków na trasie. Najwygodniej zaplanować Kruszyniany jako całodniową wycieczkę.',
     },
     {
       question: 'Czy meczet w Kruszynianach jest otwarty dla turystów?',
       answer:
-        'Dostępność meczetu i zasady zwiedzania mogą się zmieniać. Potwierdź je przed wizytą u opiekunów obiektu.',
+        'Meczet jest miejscem kultu, a&nbsp;możliwość zwiedzania zależy od bieżących zasad. Informacji udzielają opiekunowie obiektu.',
     },
     {
       question: 'Gdzie można zjeść kuchnię tatarską w Kruszynianach?',
       answer:
-        'Oferta lokali i godziny pracy mogą się zmieniać. Sprawdź dostępność potraw i stolików bezpośrednio w wybranym miejscu.',
+        'W&nbsp;Kruszynianach można spróbować kuchni tatarskiej. Menu i&nbsp;godziny różnią się między lokalami, dlatego przed wizytą zajrzyj do wybranego miejsca.',
     },
     {
       question: 'Gdzie nocować odwiedzając Kruszyniany?',
       answer:
-        'In The Woods to dom na wyłączność w miejscowości Konne koło Supraśla. Przed podróżą do Kruszynian sprawdź trasę i warunki dojazdu.',
+        'In The Woods to dom na wyłączność w&nbsp;Konnem, niedaleko Supraśla. Kruszyniany możesz odwiedzić podczas pobytu w&nbsp;regionie.',
     },
   ];
 
@@ -57,22 +57,21 @@ const KruszynianyTatarskaWies = () => {
 
       <p>
         Na wschodnim krańcu Podlasia, wśród falistych wzgórz i zielonych łąk, leży{' '}
-        <strong>Kruszyniany</strong> — miejscowość związana z historią polskich Tatarów. Przed
-        wyjazdem sprawdź aktualne informacje o dostępności obiektów i zasadach zwiedzania.
+        <strong>Kruszyniany</strong> to jedna z&nbsp;najważniejszych miejscowości związanych
+        z&nbsp;historią polskich Tatarów. Wizyta w&nbsp;drewnianym meczecie, mizarze i&nbsp;lokalnej
+        restauracji pozwala poznać tę kulturę z&nbsp;bliska. 🕌
       </p>
 
       <p>
-        Kruszyniany mogą być częścią wycieczki po regionie. Przed wyjazdem sprawdź aktualną trasę,
-        warunki dojazdu i dostępność miejsc, które chcesz odwiedzić.
+        Warto przeznaczyć na tę wycieczkę kilka godzin i&nbsp;zostawić sobie czas na spokojne
+        zwiedzanie. Dojazd zaplanuj z&nbsp;uwzględnieniem wybranej trasy i&nbsp;warunków na drodze.
       </p>
 
-      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
-        src={blogKruszyniany}
-        alt="Meczet w Kruszynianach – tatarska wieś Podlasie"
-        className="w-full rounded-lg my-8"
-      width="800"
-               height="600"
-             />
+      <CommonsPhoto
+        photo={commonsPhotos.mosque}
+        alt="Drewniany meczet tatarski w Kruszynianach"
+        loading="lazy"
+      />
 
       <h2>Historia Tatarów na Podlasiu</h2>
 
@@ -91,33 +90,36 @@ const KruszynianyTatarskaWies = () => {
       <h3>Tatarzy pod Wiedniem</h3>
 
       <p>
-        Szczegóły historii Tatarów w regionie warto poznawać w muzeach i publikacjach instytucji
-        zajmujących się dziedzictwem. Przed wizytą sprawdź, jakie materiały i wystawy są dostępne.
+        Więcej o&nbsp;historii Tatarów przeczytasz w&nbsp;publikacjach poświęconych dziedzictwu
+        regionu. Warto połączyć lekturę z&nbsp;wizytą w&nbsp;miejscach, które wciąż są częścią
+        codziennego życia lokalnej społeczności.
       </p>
 
       <h2>Meczet w Kruszynianach</h2>
 
       <p>
-        W Kruszynianach znajduje się drewniany meczet. Aktualne informacje o jego historii,
-        dostępności i zasadach zwiedzania potwierdź u opiekunów obiektu.
+        W&nbsp;Kruszynianach stoi drewniany meczet, jeden z&nbsp;charakterystycznych zabytków
+        Podlasia. To także miejsce modlitwy, dlatego podczas zwiedzania warto zachować ciszę
+        i&nbsp;stosować się do wskazówek opiekunów.
       </p>
 
       <p>
-        Meczet jest miejscem kultu. Nie zakładaj, że zwiedzanie jest możliwe w każdym terminie;
-        sprawdź zasady wejścia i zachowuj się z szacunkiem dla osób modlących się.
+        Możliwość wejścia do środka zależy od aktualnych zasad i&nbsp;terminu. Informacje
+        o&nbsp;zwiedzaniu najlepiej uzyskać u&nbsp;opiekunów meczetu.
       </p>
 
       <h3>Cmentarz muzułmański (mizar)</h3>
 
       <p>
-        Mizar jest cmentarzem muzułmańskim. Przed wizytą sprawdź zasady dostępu, nie naruszaj
-        nagrobków i stosuj się do informacji na miejscu.
+        Mizar to muzułmański cmentarz i&nbsp;miejsce pamięci. Zachowaj ciszę, nie dotykaj
+        nagrobków i&nbsp;respektuj oznaczenia oraz prośby opiekunów.
       </p>
 
       <h2>Kuchnia tatarska</h2>
 
       <p>
-        Jeśli chcesz spróbować kuchni tatarskiej, przed podróżą sprawdź menu i dostępność lokali.
+        🍽️ Kuchnia tatarska to ważna część wizyty w&nbsp;Kruszynianach. Lokalne menu może się
+        różnić, dlatego warto wybrać restaurację i&nbsp;zajrzeć do jej aktualnej oferty.
       </p>
 
       <h3>Co warto spróbować?</h3>
@@ -134,34 +136,26 @@ const KruszynianyTatarskaWies = () => {
           >
             Opis produktu na stronie Ministerstwa Rolnictwa
           </a>
-          . Dostępność w lokalnym menu sprawdź przed wyjazdem.
+          . W&nbsp;zależności od lokalu może pojawiać się w&nbsp;menu w&nbsp;różnych terminach.
         </li>
         <li>
-          <strong>Czebureki</strong> — zapytaj lokalny punkt o aktualną ofertę
+          <strong>Czebureki</strong> — smażone pierogi z&nbsp;nadzieniem
         </li>
         <li>
-          <strong>Kołduny</strong> — zapytaj lokalny punkt o aktualną ofertę
+          <strong>Kołduny</strong> — małe pierożki podawane najczęściej w&nbsp;rosole
         </li>
         <li>
-          <strong>Karta</strong> — zapytaj lokalny punkt o aktualną ofertę
+          <strong>Kartacze</strong> — sycące kluski ziemniaczane znane w&nbsp;regionalnej kuchni
         </li>
         <li>
-          <strong>Pieremiacze</strong> — zapytaj lokalny punkt o aktualną ofertę
+          <strong>Pieremiacze</strong> — drożdżowe placki z&nbsp;mięsnym nadzieniem
         </li>
       </ul>
 
       <p>
-        Dostępność potraw, godziny pracy i konieczność rezerwacji stolika potwierdź bezpośrednio w
-        wybranym lokalu.
+        Lokale mają własne menu i&nbsp;godziny otwarcia. Jeśli zależy Ci na konkretnym daniu,
+        zadzwoń przed przyjazdem — unikniesz rozczarowania, gdy akurat nie będzie go w&nbsp;ofercie.
       </p>
-
-      <img loading="lazy" decoding="async" sizes="(min-width: 768px) 768px, 100vw"
-        src={blogRzeka}
-        alt="Krajobraz Podlasia – okolice Kruszynian i Supraśla"
-        className="w-full rounded-lg my-8"
-      width="800"
-               height="600"
-             />
 
       <h2>Dlaczego warto odwiedzić Kruszyniany?</h2>
 
@@ -174,7 +168,7 @@ const KruszynianyTatarskaWies = () => {
           społecznością
         </li>
         <li>
-          <strong>Kuchnia</strong> — aktualną ofertę potraw sprawdź w lokalnych punktach
+          <strong>Kuchnia</strong> — spróbuj lokalnych dań tatarskich i&nbsp;podlaskich
         </li>
         <li>
           <strong>Krajobraz</strong> — okolice Kruszynian to piękne, pagórkowate tereny z rozległymi
@@ -189,13 +183,13 @@ const KruszynianyTatarskaWies = () => {
 
       <ul>
         <li>
-          <strong>Dojazd:</strong> Sprawdź aktualną trasę i warunki na drodze przed podróżą.
+          <strong>Dojazd:</strong> Wybierz trasę z&nbsp;wyprzedzeniem i&nbsp;zostaw zapas czasu na przejazd.
         </li>
         <li>
-          <strong>Czas wizyty:</strong> Dopasuj plan do godzin dostępności obiektów i czasu dojazdu.
+          <strong>Czas wizyty:</strong> Zarezerwuj kilka godzin na spokojne zwiedzanie i&nbsp;posiłek.
         </li>
         <li>
-          <strong>Przed wizytą:</strong> Sprawdź aktualne zasady zwiedzania obiektów i ofertę lokali.
+          <strong>Zwiedzanie:</strong> Meczet i&nbsp;mizar są ważnymi miejscami kultu i&nbsp;pamięci — uszanuj lokalne zasady.
         </li>
       </ul>
 
@@ -207,8 +201,8 @@ const KruszynianyTatarskaWies = () => {
         <strong>
           <Link to="/">dom na wyłączność</Link>
         </strong>{' '}
-        w miejscowości Konne koło Supraśla. Przed wyjazdem sprawdź trasę do Kruszynian i warunki
-        pobytu.
+        w&nbsp;miejscowości Konne koło Supraśla to wygodna baza do odkrywania regionu. Dojazd do
+        Kruszynian możesz zaplanować jako całodniowy wypad.
       </p>
 
       <p>
@@ -216,8 +210,8 @@ const KruszynianyTatarskaWies = () => {
         <strong>
           <Link to="/">noclegu w Supraślu</Link>
         </strong>
-        , In The Woods to dom na wyłączność. Sprawdź jego lokalizację, wyposażenie i dostępność
-        opcjonalnych dodatków przed wysłaniem zapytania.
+        , In The Woods to dom na wyłączność. Zobacz opis wyposażenia i&nbsp;napisz do nas, jeśli
+        chcesz zapytać o&nbsp;opcjonalne dodatki.
       </p>
     </BlogArticleLayout>
   );

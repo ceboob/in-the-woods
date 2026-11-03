@@ -1,5 +1,8 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
+import winterForest from '@/assets/winter-forest.webp';
+import commonsForest from '@/assets/commons-puszcza-knyszynska-kolodno-600.jpg';
+import commonsBison from '@/assets/commons-zubry-puszcza-knyszynska-600.jpg';
 
 const SupraslZima = () => (
   <BlogArticleLayout
@@ -7,7 +10,7 @@ const SupraslZima = () => (
     metaTitle="Supraśl zimą – noclegi i&nbsp;atrakcje Podlasia"
     metaDescription="Supraśl zimą: zaśnieżone szlaki Puszczy Knyszyńskiej, żubry, kulig i&nbsp;domek w&nbsp;lesie na wyłączność w&nbsp;In The Woods Konne."
     slug="suprasl-zima"
-    ogImage="https://www.suprasl.online/images/winter/monaster-suprasl-zima.webp"
+    ogImage={winterForest}
     publishDate="2026-09-30"
     readTime="8&nbsp;min"
     keywords={[
@@ -62,8 +65,8 @@ const SupraslZima = () => (
     <p>
       Zimą Podlasie nie potrzebuje wielkich atrakcji ani głośnych kurortów, by zachwycić. Wystarczy
       skrzypiący pod butami śnieg, para unosząca się nad rzeką i&nbsp;las, który po mroźnej nocy
-      wygląda jak kraina z&nbsp;baśni. <strong>Supraśl zimą</strong> to propozycja dla Państwa,
-      jeśli marzą Państwo o&nbsp;spokojnym wyjeździe, blisko natury i&nbsp;z&nbsp;dala od tłumów.
+      wygląda jak kraina z&nbsp;baśni. <strong>Supraśl zimą</strong> to propozycja dla Ciebie,
+      jeśli marzysz o&nbsp;spokojnym wyjeździe blisko natury i&nbsp;z&nbsp;dala od tłumów.
     </p>
     <p>
       Zamiast kolejek do wyciągów czekają tu leśne ścieżki, ciche przystanki edukacyjne i&nbsp;czas,
@@ -71,7 +74,7 @@ const SupraslZima = () => (
       <strong>ferie na Podlasiu</strong> i&nbsp;zimowy pobyt w&nbsp;okolicach Supraśla.
     </p>
     <p>
-      Jeżeli szukają Państwo miejsca na <strong>weekend Supraśl</strong> lub ferie, warto wybrać
+      Jeśli szukasz miejsca na <strong>weekend w&nbsp;Supraślu</strong> lub ferie, warto wybrać
       domek w&nbsp;lesie zamiast zatłoczonego hotelu.{' '}
       <Link to="/" className="font-medium">
         Noclegi w&nbsp;Supraślu w&nbsp;In The Woods
@@ -81,12 +84,12 @@ const SupraslZima = () => (
       blisko Białegostoku.
     </p>
 
-    <h2>Magia Puszczy Knyszyńskiej</h2>
+    <h2>❄️ Magia Puszczy Knyszyńskiej</h2>
     <p>
       Kiedy puszcza przykrywa się świeżym śniegiem, dobrze znane ścieżki zmieniają się nie do
       poznania. Białe pnie, miękkie światło i&nbsp;oszronione gałęzie tworzą zachwycający zimowy
       pejzaż. To właśnie ten fotograficzny, jasny nastrój bywa nazywany leśnym „light mode”. Zimowe
-      kadry i&nbsp;inspiracje znajdą Państwo w&nbsp;relacji{' '}
+      kadry i&nbsp;inspiracje znajdziesz w&nbsp;relacji{' '}
       <a
         href="https://jedrzejwojnar.com/en/blog/puszcza-knyszynska-w-light-mode/"
         target="_blank"
@@ -98,31 +101,51 @@ const SupraslZima = () => (
       .
     </p>
     <img
-      src="/images/winter/puszcza-knyszynska-zima.webp"
-      alt="Zimowy krajobraz Podlasia"
-      width={700}
-      height={1516}
+      src={winterForest}
+      alt="Zaśnieżony las w zimowej scenerii"
+      className="w-full rounded-lg my-8"
       loading="lazy"
     />
     <p>
       Na spacer warto wybrać leśne drogi wokół Supraśla oraz malownicze odcinki wzdłuż rzeki
       Supraśl. Zimą woda, śnieg i&nbsp;ciche nadrzeczne zarośla układają się w&nbsp;spokojną
-      scenerię, którą najlepiej odkrywać niespiesznie. Przy odpowiednich warunkach śnieg utrzymuje
-      się na długo, a&nbsp;głęboki mróz osadza na lesie delikatną warstwę szadzi. Przed wyjściem
-      proszę sprawdzić pogodę i&nbsp;stan tras, a&nbsp;na spacer zabrać ciepłe, nieprzemakalne
-      obuwie.
+      scenerię, którą najlepiej odkrywać niespiesznie. Śnieg i&nbsp;szadź najpiękniej wyglądają
+      o&nbsp;poranku, po mroźnej nocy. Przed spacerem rzuć okiem na prognozę, wybierz trasę
+      odpowiednią do pogody i&nbsp;załóż ciepłe, nieprzemakalne obuwie.
     </p>
-    <img
-      src="/images/winter/zubry-kopna-gora.jpeg"
-      alt="Zimowa Puszcza Knyszyńska na Podlasiu"
-      width={792}
-      height={302}
-      loading="lazy"
-    />
+    <figure className="my-8">
+      <img
+        src={commonsForest}
+        alt="Leśna droga w Parku Krajobrazowym Puszczy Knyszyńskiej w okolicy Kołodna"
+        className="w-full rounded-lg"
+        loading="lazy"
+      />
+      <figcaption className="mt-2 text-sm text-muted-foreground">
+        Puszcza Knyszyńska w okolicy Kołodna. Fot.{' '}
+        <a
+          href="https://commons.wikimedia.org/wiki/File:Park_Krajobrazowy_Puszczy_Knyszy%C5%84skiej_w_okolicy_Ko%C5%82odna.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          Adrian Grycuk
+        </a>
+        , licencja{' '}
+        <a
+          href="https://creativecommons.org/licenses/by-sa/3.0/pl/deed.pl"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          CC BY-SA 3.0 PL
+        </a>
+        .
+      </figcaption>
+    </figure>
     <p>
       Warto też zaplanować wycieczkę w&nbsp;okolice Rezerwatu Krzemianka. Leśne ścieżki
       i&nbsp;przyrodniczy charakter tego miejsca pozwalają zwolnić i&nbsp;wsłuchać się w&nbsp;zimowy
-      las. Aktualne inspiracje do odkrywania okolicznych szlaków znajdą Państwo w&nbsp;artykule{' '}
+      las. Więcej inspiracji do odkrywania okolicznych szlaków znajdziesz w&nbsp;artykule{' '}
       <a
         href="https://podlaskie.tv/suprasl-zima-malownicze-sciezki-wsrod-lasow-puszczy-knyszynskiej/"
         target="_blank"
@@ -133,7 +156,7 @@ const SupraslZima = () => (
       </a>
       .
     </p>
-    <h2>Spotkanie z&nbsp;dziką naturą</h2>
+    <h2>🦬 Spotkanie z&nbsp;dziką naturą</h2>
     <p>
       Zimowy spacer to także okazja, by dostrzec ślady obecności mieszkańców puszczy. Na śniegu
       można wypatrzyć tropy jeleni i&nbsp;łosi, a&nbsp;przy odrobinie szczęścia również ślady
@@ -141,16 +164,44 @@ const SupraslZima = () => (
       z&nbsp;dystansu — las jest ich domem, a&nbsp;spotkanie z&nbsp;nimi zawsze pozostaje
       niespodzianką.
     </p>
-    <img
-      src="https://cdn.kucharz.net/jedrzejwojnar.com/kolonia-ponure/ponure-007.jpg"
-      alt="Leśny krajobraz w&nbsp;Kolonii Ponure"
-      loading="lazy"
-    />
     <p>
-      Jeśli chcą Państwo zobaczyć te potężne zwierzęta z&nbsp;bliska, polecamy Zagrodę Pokazową
-      Żubrów w&nbsp;Kopnej Górze. To dobra okazja, by spokojnie poznać symbol regionu
+      W&nbsp;Puszczy Knyszyńskiej żyją dzikie żubry. Na zdjęciu stado sfotografowane na skraju
+      puszczy — obserwuj je z&nbsp;bezpiecznej odległości i&nbsp;nie podchodź do zwierząt.
+    </p>
+    <figure className="my-8">
+      <img
+        src={commonsBison}
+        alt="Stado dzikich żubrów na skraju Puszczy Knyszyńskiej"
+        className="w-full rounded-lg"
+        loading="lazy"
+      />
+      <figcaption className="mt-2 text-sm text-muted-foreground">
+        Fot.{' '}
+        <a
+          href="https://commons.wikimedia.org/wiki/File:2020_%C5%BCubry_01.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          And-kulak
+        </a>
+        , licencja{' '}
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          CC BY-SA 4.0
+        </a>
+        .
+      </figcaption>
+    </figure>
+    <p>
+      Jeśli chcesz zobaczyć te potężne zwierzęta z&nbsp;bliska, odwiedź Zagrodę Pokazową Żubrów
+      w&nbsp;Kopnej Górze. To dobra okazja, by spokojnie poznać symbol regionu
       i&nbsp;dowiedzieć się więcej o&nbsp;jego ochronie. Informacje o&nbsp;zagrodzie
-      i&nbsp;pobliskim Poczopecu zebrano także w&nbsp;przewodniku{' '}
+      i&nbsp;pobliskim Poczopku zebrano także w&nbsp;przewodniku{' '}
       <a
         href="https://bialystokwedlugani.com/2026/01/11/2-x-puszcza-knyszynska-kopna-gora-poczopek/"
         target="_blank"
@@ -162,16 +213,15 @@ const SupraslZima = () => (
       .
     </p>
     <p>
-      Dzikich stad można wypatrywać również w&nbsp;rozległych okolicach Krynek. Proszę jednak
-      pamiętać, że żubry żyjące na wolności nie pojawiają się na zamówienie — obserwacji nie da się
-      zagwarantować. Zachowajmy dystans i&nbsp;nie dokarmiajmy zwierząt.
+      Dzikich stad można wypatrywać również w&nbsp;okolicach Krynek. Spotkanie z&nbsp;nimi
+      w&nbsp;naturze jest jednak kwestią szczęścia — zachowaj dystans i&nbsp;nigdy ich nie dokarmiaj.
     </p>
-    <h2>Poczopek i&nbsp;Kopna Góra – cisza, która pozwala odetchnąć</h2>
+    <h2>🌲 Poczopek i&nbsp;Kopna Góra – cisza, która pozwala odetchnąć</h2>
     <p>
       Zimowa wycieczka do Poczopek i&nbsp;Silvarium to propozycja dla osób, które lubią przyrodę
-      podaną w&nbsp;przystępny, edukacyjny sposób. Można spacerować leśnymi alejkami, zatrzymywać
-      się przy przyrodniczych ekspozycjach i&nbsp;po prostu cieszyć ciszą. Przed wyjazdem warto
-      sprawdzić aktualne zasady zwiedzania i&nbsp;dostępność ścieżek — zimą mogą zależeć od pogody.
+      podaną w&nbsp;przystępny, edukacyjny sposób. Możesz spacerować leśnymi alejkami, zatrzymywać
+      się przy przyrodniczych ekspozycjach i&nbsp;po prostu cieszyć ciszą. Zimą część ścieżek może
+      być niedostępna po intensywnych opadach lub roztopach.
     </p>
     <p>
       W&nbsp;Kopnej Górze spokojny kontakt z&nbsp;lasem łączy się z&nbsp;możliwością odwiedzenia
@@ -185,11 +235,6 @@ const SupraslZima = () => (
       Poczopeku zajrzeć do Silvarium. Edukacyjne ekspozycje i&nbsp;leśne alejki Silvarium są dobrym
       wyborem także wtedy, gdy zimowa pogoda zachęca do krótszego spaceru.
     </p>
-    <img
-      src="https://cdn.kucharz.net/jedrzejwojnar.com/rezerwat-bartoszycha/bartoszycha-009.jpg"
-      alt="Leśny krajobraz rezerwatu Bartoszycha"
-      loading="lazy"
-    />
     <p>
       Więcej pomysłów na spokojne odkrywanie regionu i&nbsp;opowieści o&nbsp;tym, jak wygląda{' '}
       <strong>Podlasie zimą</strong>, można znaleźć w&nbsp;artykule{' '}
@@ -204,7 +249,7 @@ const SupraslZima = () => (
       .
     </p>
 
-    <h2>Zimowy relaks w&nbsp;In The Woods</h2>
+    <h2>🔥 Zimowy relaks w&nbsp;In The Woods</h2>
     <p>
       Po dniu spędzonym na mroźnym powietrzu dobrze wrócić do ciepłego, spokojnego miejsca.{' '}
       <Link to="/" className="font-medium">
@@ -212,25 +257,25 @@ const SupraslZima = () => (
       </Link>{' '}
       to całoroczny dom na wynajem w&nbsp;cichej miejscowości Konne, niedaleko Supraśla
       i&nbsp;Puszczy Knyszyńskiej. To wygodna baza dla osób szukających prywatności, leśnych
-      spacerów i&nbsp;kameralnego wypoczynku. Jeśli interesują Państwa{' '}
+      spacerów i&nbsp;kameralnego wypoczynku. Jeśli szukasz{' '}
       <strong>noclegi Supraśl</strong>, noclegi w&nbsp;Puszczy Knyszyńskiej albo{' '}
       <strong>domek z&nbsp;jacuzzi na Podlasiu</strong>, tutaj można połączyć odkrywanie regionu
       z&nbsp;wieczornym odpoczynkiem we własnym tempie.
     </p>
     <p>
-      Dla gości zatrzymujących się w&nbsp;In The Woods możemy zorganizować tradycyjny, niezapomniany
+      Dla gości zatrzymujących się w&nbsp;In The Woods możemy zorganizować tradycyjny
       <strong> kulig Supraśl</strong> — przejazd saniami przez zimowy las, zakończony ciepłym,
-      trzaskającym ogniskiem. Organizację, termin i&nbsp;szczegóły ustalamy indywidualnie; możliwość
-      kuligu zależy od warunków pogodowych i&nbsp;śniegowych. Prosimy zapytać o&nbsp;tę atrakcję
-      przy rezerwacji pobytu.
+      trzaskającym ogniskiem. Termin i&nbsp;szczegóły ustalamy indywidualnie, a&nbsp;możliwość
+      kuligu zależy od pogody i&nbsp;ilości śniegu. Zapytaj o&nbsp;tę atrakcję przy rezerwacji
+      pobytu.
     </p>
-    <h2>Zaplanujcie Państwo zimowy wyjazd na Podlasie</h2>
+    <h2>✨ Zaplanuj zimowy wyjazd na Podlasie</h2>
     <p>
       Poranny spacer nad rzeką, popołudnie wśród świerków i&nbsp;wieczór przy ogniu — tak może
-      wyglądać dzień w&nbsp;Supraślu i&nbsp;okolicach. Jeśli marzą Państwo o&nbsp;zimowym wyjeździe
+      wyglądać dzień w&nbsp;Supraślu i&nbsp;okolicach. Jeśli marzysz o&nbsp;zimowym wyjeździe
       bez tłumów, rezerwacja pobytu w&nbsp;In The Woods pozwoli cieszyć się bliskością puszczy przez
-      cały rok. Prosimy <a href="tel:+48722765101">zadzwonić pod numer 722 765 101</a> lub{' '}
-      <Link to="/#rezerwacja">sprawdzić dostępność i&nbsp;zaplanować pobyt</Link>.
+      cały rok. Zadzwoń pod numer <a href="tel:+48722765101">722 765 101</a> albo{' '}
+      <Link to="/#rezerwacja">zobacz kalendarz wolnych terminów</Link>.
     </p>
   </BlogArticleLayout>
 );

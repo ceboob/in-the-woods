@@ -6,22 +6,22 @@ const faqs = [
   {
     question: 'Co robić w\u00a0Supraślu jesienią?',
     answer:
-      'Możesz wybrać spacer po mieście i\u00a0okolicy, odwiedzić dostępne w\u00a0danym terminie obiekty kulturalne lub sprawdzić bieżący program wydarzeń. Przed wyjazdem potwierdź godziny otwarcia i\u00a0warunki na trasach.',
+      'Wybierz spacer po mieście lub lesie, zajrzyj do lokalnych instytucji kultury albo zaplanuj wieczór wokół wydarzenia, które odbywa się w&nbsp;Twoim terminie.',
   },
   {
-    question: 'Gdzie sprawdzić aktualne wydarzenia w\u00a0Supraślu?',
+    question: 'Gdzie znaleźć informacje o\u00a0aktualnych wydarzeniach w\u00a0Supraślu?',
     answer:
-      'Aktualny program publikuje Centrum Kultury i\u00a0Rekreacji w\u00a0Supraślu. Sprawdź informacje organizatora przed zaplanowaniem udziału.',
+      'Program publikuje Centrum Kultury i&nbsp;Rekreacji w&nbsp;Supraślu. To najlepsze miejsce, by znaleźć datę, lokalizację i&nbsp;informacje o&nbsp;biletach.',
   },
   {
     question: 'Czy jesienią można zwiedzić Muzeum Ikon?',
     answer:
-      'Godziny otwarcia i\u00a0zasady zwiedzania mogą się zmieniać. Sprawdź informacje dla zwiedzających na stronie Muzeum Podlaskiego.',
+      'Muzeum Ikon mieści się w&nbsp;Supraślu. Godziny otwarcia i&nbsp;zasady zwiedzania publikuje Muzeum Podlaskie.',
   },
   {
     question: 'Jak zaplanować pobyt na jesienny weekend?',
     answer:
-      'Wybierz atrakcje i\u00a0trasy odpowiednie do pogody, sprawdź ich dostępność, a\u00a0następnie wyślij zapytanie o\u00a0nocleg i\u00a0termin.',
+      'Dopasuj plan do pogody i\u00a0godzin otwarcia. Jeśli chcesz połączyć zwiedzanie z\u00a0noclegiem, wyślij zapytanie o\u00a0termin.',
   },
 ];
 
@@ -29,7 +29,7 @@ const JesienWSupraslu2026 = () => (
   <BlogArticleLayout
     title="Jesień w&nbsp;Supraślu 2026 – jak zaplanować pobyt"
     metaTitle="Jesień w&nbsp;Supraślu 2026 – pomysły na pobyt"
-    metaDescription="Zaplanuj jesienny pobyt w&nbsp;Supraślu: spacery, lokalne instytucje kultury i&nbsp;aktualne wydarzenia. Sprawdź informacje organizatorów przed wyjazdem."
+    metaDescription="Jesienny Supraśl: spacery wśród kolorowych drzew, lokalna kultura i&nbsp;wydarzenia. Zainspiruj się pomysłami na spokojny pobyt."
     slug="jesien-w-suprasliu-2026-wydarzenia-kulturalne"
     publishDate="2026-10-03"
     readTime="4&nbsp;min"
@@ -57,10 +57,9 @@ const JesienWSupraslu2026 = () => (
       decoding="async"
     />
     <p>
-      Jesień to dobry czas na spokojniejsze poznawanie Supraśla i&nbsp;okolicy. Pogoda może się
-      szybko zmieniać, dlatego przed wyjściem sprawdź prognozę, warunki na trasie i&nbsp;zasady
-      odwiedzania terenów chronionych. Godziny otwarcia muzeów i&nbsp;program wydarzeń również warto
-      potwierdzić przed podróżą.
+      🍂 Jesienią Supraśl i&nbsp;Puszcza Knyszyńska zwalniają tempo. Złote liście zachęcają do
+      spacerów, a&nbsp;krótszy dzień sprzyja wieczorom w&nbsp;mieście. Ubierz się warstwowo
+      i&nbsp;wybierz trasę odpowiednią do pogody; w&nbsp;rezerwatach trzymaj się oznakowanych dróg.
     </p>
 
     <h2>Spacer i&nbsp;zwiedzanie</h2>
@@ -70,7 +69,7 @@ const JesienWSupraslu2026 = () => (
       dopuszczają to oznaczenia i&nbsp;aktualne przepisy.
     </p>
     <p>
-      Jeśli planujesz wizytę w&nbsp;Muzeum Ikon, sprawdź{' '}
+      Informacje dla odwiedzających Muzeum Ikon publikuje{' '}
       <a
         href="https://muzeumpodlaskie.pl/oddzialy/muzeum-ikon-w-supraslu/"
         target="_blank"
@@ -84,7 +83,7 @@ const JesienWSupraslu2026 = () => (
 
     <h2>Wydarzenia kulturalne</h2>
     <p>
-      Program wydarzeń i&nbsp;ewentualne zmiany publikuje{' '}
+      Program wydarzeń, daty i&nbsp;informacje o&nbsp;wejściówkach publikuje{' '}
       <a
         href="https://ckirsuprasl.com/"
         target="_blank"
@@ -93,16 +92,15 @@ const JesienWSupraslu2026 = () => (
       >
         Centrum Kultury i&nbsp;Rekreacji w&nbsp;Supraślu
       </a>
-      . Sprawdź datę, miejsce, dostępność wejściówek i&nbsp;ewentualne warunki udziału bezpośrednio
-      u&nbsp;organizatora.
+      . Przed wyborem wydarzenia zajrzyj do jego opisu — tam znajdziesz miejsce, godziny
+      i&nbsp;ewentualne zasady udziału.
     </p>
 
-    <h2>Zapytaj o&nbsp;pobyt</h2>
+    <h2>Jesienny weekend w&nbsp;In The Woods</h2>
     <p>
       Jeśli chcesz połączyć zwiedzanie z&nbsp;odpoczynkiem,{' '}
-      <Link to="/">poznaj informacje o&nbsp;domu i&nbsp;pobycie</Link>,
-      a&nbsp;następnie <Link to="/#rezerwacja">wyślij zapytanie o&nbsp;termin</Link>. Wysłanie
-      formularza jest zapytaniem, a&nbsp;nie potwierdzeniem rezerwacji.
+      <Link to="/">poznaj dom In The Woods</Link> i&nbsp;<Link to="/#rezerwacja">zapytaj o&nbsp;termin</Link>.
+      Formularz służy do wysłania zapytania — rezerwacja jest potwierdzana osobno.
     </p>
   </BlogArticleLayout>
 );

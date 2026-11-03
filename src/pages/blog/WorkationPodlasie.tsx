@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const WorkationPodlasie = () => (
   <BlogArticleLayout
     title="Praca zdalna podczas pobytu na Podlasiu"
-    metaTitle="Praca zdalna na Podlasiu – informacje przed pobytem"
-    metaDescription="Planujesz pracować zdalnie podczas pobytu na Podlasiu? Sprawdź dostępność Wi-Fi, warunki pracy i&nbsp;zasady pobytu przed wysłaniem zapytania."
+    metaTitle="Praca zdalna na Podlasiu – workation w&nbsp;lesie"
+    metaDescription="Pracuj zdalnie w&nbsp;otoczeniu Puszczy Knyszyńskiej. Zobacz, jakie miejsce do pracy i&nbsp;udogodnienia czekają w&nbsp;domu In The Woods."
     slug="workation-podlasie"
     publishDate="2026-04-09"
     readTime="9&nbsp;min"
@@ -19,7 +19,7 @@ const WorkationPodlasie = () => (
       {
         question: 'Czy w\u00a0domu jest Wi-Fi?',
         answer:
-          'Tak, Wi-Fi jest dostępne. Jeśli do pracy potrzebujesz określonej prędkości lub stabilności połączenia, potwierdź parametry przed pobytem.',
+          'Tak, Wi-Fi jest dostępne. Jeśli Twoja praca wymaga konkretnej prędkości lub stabilności połączenia, napisz do nas — podamy aktualne informacje.',
       },
       {
         question: 'Czy jest miejsce do pracy?',
@@ -29,7 +29,7 @@ const WorkationPodlasie = () => (
       {
         question: 'Na ile dni zaplanować pobyt?',
         answer:
-          'Minimalna długość pobytu zależy od sezonu. Sprawdź cennik i\u00a0kalendarz dla wybranego terminu.',
+          'Minimalny czas pobytu zależy od terminu i&nbsp;sezonu. Aktualne ceny i&nbsp;dostępność znajdziesz w&nbsp;kalendarzu rezerwacji.',
       },
     ]}
     relatedArticles={[
@@ -40,9 +40,9 @@ const WorkationPodlasie = () => (
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <p className="text-muted-foreground leading-relaxed text-lg">
-        Pracując zdalnie podczas wyjazdu, warto wcześniej sprawdzić warunki połączenia
-        internetowego, miejsce do pracy i&nbsp;zasady pobytu. Wi-Fi jest dostępne; jego parametry
-        potwierdź, jeśli są istotne dla Twoich obowiązków.
+        💻 Praca zdalna nie musi oznaczać kolejnego dnia przy tym samym widoku za oknem. W&nbsp;In
+        The Woods możesz połączyć obowiązki z&nbsp;wypoczynkiem blisko lasu. Wi-Fi jest dostępne;
+        jeśli potrzebujesz konkretnych parametrów łącza, napisz do nas przed rezerwacją.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Praca zdalna podczas wyjazdu</h2>
@@ -52,48 +52,49 @@ const WorkationPodlasie = () => (
         z&nbsp;własnymi potrzebami.
       </p>
 
-      <h2 className="section-title !text-2xl md:!text-3xl">Co sprawdzić przed przyjazdem?</h2>
+      <h2 className="section-title !text-2xl md:!text-3xl">Jak wygodnie pracować z&nbsp;lasu?</h2>
       <ul className="space-y-3 text-muted-foreground">
         <li>
-          💻 <strong>Połączenie internetowe</strong> — potwierdź parametry odpowiednie do swoich
-          zadań
+          💻 <strong>Połączenie internetowe</strong> — jeśli Twoje zadania wymagają stabilnego łącza,
+          zapytaj nas o&nbsp;aktualne parametry
         </li>
         <li>
-          🪑 <strong>Miejsce do pracy</strong> — zapytaj o&nbsp;dostępne wyposażenie i&nbsp;układ
+          🪑 <strong>Miejsce do pracy</strong> — na poddaszu czeka kameralna strefa z&nbsp;fotelem
+          i&nbsp;widokiem na drzewa; jeśli potrzebujesz biurka, daj nam znać
         </li>
         <li>
-          🏡 <strong>Zasady pobytu</strong> — sprawdź liczbę gości, godziny i&nbsp;warunki
-          korzystania z&nbsp;domu
+          🏡 <strong>Organizacja pobytu</strong> — zaplanuj godziny pracy tak, by zostawić sobie
+          przestrzeń na odpoczynek
         </li>
         <li>
-          🌲 <strong>Przerwy poza domem</strong> — wybieraj trasy po sprawdzeniu ich dostępności
-          i&nbsp;zasad
+          🌲 <strong>Przerwy poza domem</strong> — krótki spacer po lesie pomoże przewietrzyć głowę
         </li>
         <li>
-          🛁 <strong>Dodatki</strong> — potwierdź dostępność i&nbsp;warunki korzystania z&nbsp;balii
+          🛁 <strong>Po pracy</strong> — balia z&nbsp;hydromasażem jest opcjonalnym dodatkiem;
+          dostępność ustalamy przy rezerwacji
         </li>
       </ul>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Przykładowy plan dnia</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Zaplanuj bloki pracy i&nbsp;przerwy zgodnie z&nbsp;własnym grafikiem. Przed spacerem sprawdź
-        pogodę, dostępność tras i&nbsp;zasady na terenach chronionych. Atrakcje oraz balia wymagają
-        osobnego sprawdzenia godzin i&nbsp;dostępności.
+        Zacznij dzień od najważniejszych zadań, a&nbsp;przerwę wykorzystaj na spacer lub kawę
+        na tarasie. Jeśli wybierasz się na dłuższą trasę, przygotuj się do pogody i&nbsp;trzymaj się
+        oznakowanych dróg.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w&nbsp;okolicy</h2>
       <p className="text-muted-foreground leading-relaxed">
-        W&nbsp;Supraślu znajdziesz m.in. Monaster i&nbsp;Muzeum Ikon; przed wizytą sprawdź godziny
-        otwarcia.
+        W&nbsp;Supraślu znajdziesz m.in. Monaster i&nbsp;Muzeum Ikon. Informacje o&nbsp;godzinach
+        i&nbsp;zasadach zwiedzania muzeum publikuje{' '}
         <Link to="/blog/szlaki-piesze-rowerowe-suprasl" className="text-primary hover:underline">
           Informacje o&nbsp;trasach
         </Link>{' '}
-        pomagają zaplanować wyjście. Dostępność{' '}
+        pomogą zaplanować wyjście. O&nbsp;terminach spływów informują{' '}
         <Link to="/blog/kajaki-suprasl" className="text-primary hover:underline">
           spływów kajakowych
         </Link>{' '}
-        potwierdź u&nbsp;organizatora. Dostępność balii z&nbsp;hydromasażem (jacuzzi) potwierdź
-        z&nbsp;gospodarzem.
+        lokalne wypożyczalnie. Balia z&nbsp;hydromasażem (jacuzzi) jest dostępna jako opcjonalny
+        dodatek — szczegóły ustalisz z&nbsp;gospodarzem.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
@@ -103,8 +104,8 @@ const WorkationPodlasie = () => (
         <Link to="/" className="text-primary hover:underline font-medium">
           In The Woods
         </Link>{' '}
-        to dom na wyłączność w&nbsp;okolicach Supraśla. Potwierdź dostępność miejsca do pracy
-        i&nbsp;parametry Wi-Fi przed wysłaniem zapytania. Zadzwoń:{' '}
+        to dom na wyłączność w&nbsp;okolicach Supraśla. Napisz do nas, jeśli chcesz ustalić
+        szczegóły miejsca do pracy lub łącza internetowego. Zadzwoń:{' '}
         <a href="tel:+48722765101" className="text-primary hover:underline">
           722 765 101
         </a>
