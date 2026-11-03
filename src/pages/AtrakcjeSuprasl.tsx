@@ -39,7 +39,14 @@ const attractions = [
   'Domy Tkaczy',
   'Bulwary nad rzeką Supraśl i\u00a0plaża miejska',
   'Teatr Wierszalin',
+  'Dom Ludowy',
+  'Biały Dworek – Park Krajobrazowy Puszczy Knyszyńskiej',
   'Cmentarz prawosławny',
+  'Arboretum w\u00a0Kopnej Górze',
+  'Sanktuarium Świętej Wody w\u00a0Wasilkowie',
+  'Pałac Branickich w\u00a0Białymstoku',
+  'Tykocin',
+  'Kruszyniany',
 ];
 
 const attractionListSchema = {
@@ -91,36 +98,65 @@ const AtrakcjeSuprasl = () => (
       </h2>
       <ul className="space-y-5 text-muted-foreground">
         <li>
-          <strong>Monaster Zwiastowania NMP.</strong> Prawosławny klasztor z&nbsp;przełomu XV
-          i&nbsp;XVI wieku, serce i&nbsp;najbardziej rozpoznawalny widok Supraśla. Nawet jeśli nie
-          lubicie zabytków, ten robi wrażenie.
+          <strong>Monaster Zwiastowania NMP.</strong> Prawosławny klasztor założony około 1500 roku
+          przez mnichów z&nbsp;Gródka, serce i&nbsp;najbardziej rozpoznawalny widok Supraśla.
+          Ceglana cerkiew z&nbsp;gotyckimi wieżami i&nbsp;bizantyjskimi kopułami została wysadzona
+          w&nbsp;1944 roku i&nbsp;odbudowana. Wstęp za dobrowolną cegiełkę w&nbsp;furcie, obowiązuje
+          stosowny strój, a&nbsp;w&nbsp;poniedziałki i&nbsp;podczas popołudniowej „ciszy
+          monasterskiej” teren jest zamknięty.
         </li>
         <li>
-          <strong>Muzeum Ikon.</strong> Ikony pokazane tak, że nawet zatwardziały ateista stoi
-          z&nbsp;otwartą buzią. Dobre na deszczowy dzień i&nbsp;na odpoczynek od leśnych tras.
+          <strong>Muzeum Ikon (ul. Klasztorna 1).</strong> Około 1,2&nbsp;tys. ikon, w&nbsp;dużej
+          części przejętych przez celników na wschodniej granicy, pokazanych w&nbsp;9 salach
+          urządzonych jak grota pustelnika, cerkiew czy wiejska chata. Są tu też ocalałe XVI-wieczne
+          freski z&nbsp;wysadzonej cerkwi. Ikony pokazane tak, że nawet zatwardziały ateista stoi
+          z&nbsp;otwartą buzią. Zarezerwujcie od godziny do pół dnia.
         </li>
         <li>
-          <strong>Muzeum Drukarstwa i&nbsp;Papieru.</strong> Historia drukarstwa
-          i&nbsp;papiernictwa, czyli rzemiosła, z&nbsp;którego Supraśl słynął przez wieki. Ciekawy
-          przystanek dla rodzin i&nbsp;dla każdego, kto lubi lokalną historię.
+          <strong>Muzeum Sztuki Drukarskiej i&nbsp;Papiernictwa.</strong> Tuż obok Muzeum Ikon.
+          Drukarnia działała w&nbsp;klasztorze od 1695 roku, a&nbsp;papiernia była pierwszą we
+          wschodniej Polsce. W&nbsp;muzeum zobaczycie dawne maszyny drukarskie i&nbsp;własnoręcznie
+          zrobicie kartkę papieru, co dzieci uwielbiają. Uwaga: do budynku prowadzą schody, nie ma
+          podjazdu dla wózków.
         </li>
         <li>
-          <strong>Pałac Buchholtzów.</strong> Rezydencja fabrykantów, którzy zrobili z&nbsp;Supraśla
-          miasto włókiennicze. Zobaczycie go przy okazji spaceru po centrum i&nbsp;ulicy 3 Maja.
+          <strong>Pałac Buchholtzów i&nbsp;Dom Jansena.</strong> Secesyjna rezydencja fabrykantów,
+          którzy po powstaniu listopadowym przenieśli tu fabryki włókiennicze, a&nbsp;naprzeciwko
+          dawne zabudowania fabryczne. Dziś oba budynki należą do liceum plastycznego. Zobaczycie je
+          na końcu ulicy 3&nbsp;Maja.
         </li>
         <li>
-          <strong>Domy Tkaczy.</strong> Drewniane domy dla robotników fabryki z&nbsp;XIX wieku, przy
-          ulicy 3 Maja. Każdy wygląda jak z&nbsp;pocztówki, więc przygotujcie telefon na zdjęcia.
+          <strong>Domy Tkaczy i&nbsp;drewniany Supraśl.</strong> Parterowe domy z&nbsp;lat 30. XIX
+          wieku przy ulicy 3&nbsp;Maja, w&nbsp;których mieszkały rodziny tkaczy. Zwróćcie uwagę na
+          masywne okiennice i&nbsp;kominy zwane „nogawicami”. Przy ul. Konarskiego stoi
+          XVIII-wieczny Dom Ogrodnika, który bywał też karczmą i&nbsp;pocztą. Każdy dom wygląda jak
+          z&nbsp;pocztówki, więc przygotujcie telefon.
         </li>
         <li>
-          <strong>Bulwary nad rzeką Supraśl i&nbsp;plaża miejska.</strong> Spacer nad wodą, lody
-          w&nbsp;ręku, a&nbsp;latem plaża. Najprostszy plan na leniwe popołudnie, także
+          <strong>Bulwary Wiktora Wołkowa i&nbsp;plaża miejska.</strong> Około 1,1&nbsp;km alejek
+          wzdłuż rzeki, kąpielisko, korty, boiska, minigolf i&nbsp;siłownia pod chmurką,
+          a&nbsp;z&nbsp;kładki widok na monaster. Najprostszy plan na leniwe popołudnie, także
           z&nbsp;dziećmi.
         </li>
         <li>
           <strong>Teatr Wierszalin.</strong> Teatr z&nbsp;Supraśla, o&nbsp;którym mówi się
-          w&nbsp;całej Polsce. Spektakle, po których gada się jeszcze w&nbsp;samochodzie. Bilety
-          znikają szybko, więc zajrzyjcie do repertuaru przed przyjazdem.
+          w&nbsp;całej Polsce, założony w&nbsp;1991 roku przez Piotra Tomaszuka. Gra
+          w&nbsp;drewnianym domu wśród rzeźb, inspirując się podlaskim folklorem i&nbsp;mitami.
+          Spektakle, po których gada się jeszcze w&nbsp;samochodzie. Latem scena zwykle odpoczywa,
+          więc na teatr najlepiej przyjechać jesienią albo zimą.
+        </li>
+        <li>
+          <strong>Dom Ludowy i&nbsp;Biały Dworek.</strong> Drewniany, modernistyczny Dom Ludowy
+          z&nbsp;1934 roku z&nbsp;przeszkloną klatką schodową to unikat na skalę kraju, dziś mieści
+          restaurację Prowincja. Biały Dworek z&nbsp;1822 roku jest siedzibą Parku Krajobrazowego
+          Puszczy Knyszyńskiej, z&nbsp;wystawą o&nbsp;faunie i&nbsp;florze puszczy. Dobry start
+          przed leśnymi szlakami.
+        </li>
+        <li>
+          <strong>Supraśl filmowy.</strong> To tutaj Jacek Bromski kręcił trylogię „U&nbsp;Pana
+          Boga…”. Filmowy posterunek w&nbsp;Królowym Moście stoi przy ul. Zielonej, a&nbsp;dom
+          komendanta zagrał Dom Kleina przy ul. 3&nbsp;Maja. Fani znajdą też komin z&nbsp;pamiętnej
+          sceny. Kościół św. Trójcy przy Piłsudskiego widać z&nbsp;kolei w&nbsp;serialu „Blondynka”.
         </li>
         <li>
           <strong>Cmentarz prawosławny.</strong> Ciche miejsce, które pokazuje wielowyznaniową
@@ -151,9 +187,30 @@ const AtrakcjeSuprasl = () => (
           spacer przed śniadaniem albo cały dzień w&nbsp;lesie z&nbsp;kanapkami w&nbsp;plecaku.
         </li>
         <li>
+          <strong>Arboretum w&nbsp;Kopnej Górze.</strong> Ponad 20&nbsp;hektarów drzew
+          i&nbsp;krzewów z&nbsp;całego świata, kilkanaście minut od domu. Najpiękniejsze w&nbsp;maju
+          i&nbsp;październiku.
+        </li>
+        <li>
+          <strong>Sanktuarium Świętej Wody w&nbsp;Wasilkowie.</strong> Źródełko i&nbsp;Góra Krzyży
+          z&nbsp;tysiącami krzyży, po drodze między Supraślem a&nbsp;Białymstokiem.
+        </li>
+        <li>
           <strong>Białystok (30–40&nbsp;minut autem).</strong> Pałac Branickich, nazywany Wersalem
-          Północy, i&nbsp;spacer po centrum, jeśli po dwóch dniach w&nbsp;lesie zatęsknicie za
-          miastem.
+          Północy, Rynek Kościuszki i&nbsp;drewniane Bojary, jeśli po dwóch dniach w&nbsp;lesie
+          zatęsknicie za miastem. Rozpisaliśmy to w&nbsp;tekście{' '}
+          <Link
+            to="/blog/bialystok-i-okolice-co-zobaczyc"
+            className="text-primary underline hover:text-primary/80"
+          >
+            co warto zobaczyć w&nbsp;Białymstoku i&nbsp;okolicach
+          </Link>
+          .
+        </li>
+        <li>
+          <strong>Tykocin nad Narwią (około godziny).</strong> Rynek, Wielka Synagoga
+          i&nbsp;odbudowany zamek. W&nbsp;pakiecie z&nbsp;kładką w&nbsp;Waniewie to gotowy plan na
+          niedzielę.
         </li>
       </ul>
 
@@ -168,7 +225,8 @@ const AtrakcjeSuprasl = () => (
         Gdzie zjeść: kuchnia podlaska i&nbsp;tatarska
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        W&nbsp;Supraślu zjecie kartacze, babkę ziemniaczaną i&nbsp;sękacz,
+        W&nbsp;Supraślu zjecie kartacze, babkę ziemniaczaną i&nbsp;sękacz, m.in. w&nbsp;Łukaszówce,
+        której właścicielka wygrywała mistrzostwa w&nbsp;pieczeniu babki,
         a&nbsp;w&nbsp;Kruszynianach tatarskie specjały. Lokale opisaliśmy w&nbsp;naszym{' '}
         <Link
           to="/blog/przewodnik-kulinarny-suprasl"
