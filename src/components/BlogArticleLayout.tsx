@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, ArrowLeft, Calendar, Clock, ChevronRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import SEOHead from '@/components/SEOHead';
+import GuideLinks from '@/components/GuideLinks';
 import { buildBlogPostingSchema } from '@/lib/structuredData';
 
 interface FAQ {
@@ -310,6 +311,7 @@ const BlogArticleLayout = ({
               Puszcza Knyszyńska
             </Link>
           </div>
+          <GuideLinks />
           <p className="text-xs text-white/40">
             © 2026 In The Woods, Maciej Cybulko. Wszelkie prawa zastrzeżone.
           </p>

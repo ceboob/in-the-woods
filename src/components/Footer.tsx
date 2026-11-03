@@ -1,5 +1,6 @@
 import { Instagram, Facebook, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import GuideLinks from '@/components/GuideLinks';
 
 const socialLinkClass =
   'group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/75 shadow-sm backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/50 hover:bg-primary/10 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-foreground';
@@ -199,6 +200,10 @@ const Footer = () => (
             Blog
           </Link>
         </div>
+      </div>
+
+      <div className="mt-6 text-center">
+        <GuideLinks />
       </div>
 
       <div className="mt-6 text-center">
