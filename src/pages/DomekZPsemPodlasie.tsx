@@ -93,8 +93,8 @@ const DomekZPsemPodlasie = () => (
       <p className="text-muted-foreground leading-relaxed">
         Puszcza Knyszyńska to kilometry leśnych duktów, na których częściej spotkacie sarnę niż
         człowieka. Właśnie dlatego trzymajcie psa na smyczy: w&nbsp;lesie mieszkają dziki, sarny
-        i&nbsp;łosie, a&nbsp;w&nbsp;rezerwatach obowiązują dodatkowe zasady. Po spacerze sprawdźcie
-        psa pod kątem kleszczy, bo tych tu nie brakuje.
+        i&nbsp;łosie, a&nbsp;w&nbsp;rezerwatach obowiązują dodatkowe zasady. Po spacerze obejrzyjcie
+        sierść psa pod kątem kleszczy.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Więcej praktycznych rad o&nbsp;wyjeździe z&nbsp;psem znajdziecie we wpisie{' '}

@@ -1,25 +1,25 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
+import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
-import blogSzlak from '@/assets/blog-szlak-lesny-optimized.webp';
-import blogRowerowa from '@/assets/blog-trasa-rowerowa-optimized.webp';
 import jacuzziNight from '@/assets/jacuzzi-night.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 
 const SzlakiPieszeRowerowe = () => {
   const faqs = [
     {
       question: 'Jakie szlaki piesze są w\u00a0Supraślu?',
       answer:
-        'W\u00a0okolicy są trasy spacerowe i\u00a0rowerowe. Przed wyjściem sprawdź ich aktualny przebieg, długość, warunki i\u00a0zasady udostępniania terenów chronionych.',
+        'W&nbsp;okolicy znajdziesz leśne dukty i&nbsp;oznaczone trasy o&nbsp;różnej długości. Przed wyruszeniem wybierz wariant odpowiedni do pogody i&nbsp;swoich możliwości.',
     },
     {
       question: 'Czy w\u00a0Supraślu są trasy rowerowe?',
       answer:
-        'Przed wyprawą sprawdź aktualne mapy tras rowerowych, ich nawierzchnię i\u00a0ograniczenia w\u00a0terenie.',
+        'Tak. Przez region prowadzą szlaki rowerowe, w&nbsp;tym długodystansowy Green Velo. Mapy tras pomogą dobrać dystans i&nbsp;nawierzchnię do roweru oraz kondycji.',
     },
     {
       question: 'Czy szlaki są odpowiednie dla rodzin z\u00a0dziećmi?',
       answer:
-        'Część tras może być odpowiednia dla rodzin, ale trudność, nawierzchnia i\u00a0dostępność zależą od konkretnego odcinka. Sprawdź aktualne oznaczenia i\u00a0warunki przed wyjściem.',
+        'Wiele tras nadaje się na rodzinny spacer, ale nawierzchnia i&nbsp;dystans różnią się między odcinkami. Wybierz trasę, którą dzieci przejdą bez pośpiechu.',
     },
     {
       question: 'Gdzie nocować po wędrówce?',
@@ -42,7 +42,7 @@ const SzlakiPieszeRowerowe = () => {
 
   return (
     <BlogArticleLayout
-      title="Szlaki Supraśl – przewodnik turystyczny"
+      title="Szlaki piesze i&nbsp;rowerowe w&nbsp;Supraślu"
       metaTitle="Szlaki piesze i&nbsp;rowerowe Supraśl | Przewodnik"
       metaDescription="Najlepsze szlaki piesze i&nbsp;rowerowe w&nbsp;Supraślu i&nbsp;Puszczy Knyszyńskiej. Trasy rodzinne, przyrodnicze, rowerowe. Kompletny przewodnik turystyczny."
       slug="szlaki-piesze-rowerowe-suprasl"
@@ -62,27 +62,21 @@ const SzlakiPieszeRowerowe = () => {
       <h2>Szlaki Supraśl – przewodnik turystyczny</h2>
 
       <p>
-        Supraśl i&nbsp;Puszcza Knyszyńska to raj dla miłośników aktywnego wypoczynku na łonie
-        natury. Setki kilometrów szlaków pieszych i&nbsp;rowerowych prowadzą przez jedne
-        z&nbsp;najpiękniejszych i&nbsp;najlepiej zachowanych lasów w&nbsp;Polsce, oferując
-        doświadczenia dla każdego — od spokojnych spacerów po wymagające trasy MTB.
+        Supraśl i&nbsp;Puszcza Knyszyńska to dobry kierunek na aktywny wypoczynek. Leśne dukty
+        i&nbsp;oznaczone szlaki pozwalają wybrać zarówno krótki spacer, jak i&nbsp;dłuższą wyprawę
+        rowerową. 🌲
       </p>
 
       <p>
-        Ten przewodnik zbiera najlepsze szlaki w&nbsp;okolicy Supraśla: piesze, rowerowe, rodzinne
-        i&nbsp;przyrodnicze. Niezależnie od tego, czy jesteś doświadczonym turystą, czy szukasz
-        łatwej trasy na popołudniowy spacer — znajdziesz tu coś dla siebie.
+        Zebraliśmy tu pomysły na trasy piesze, rowerowe i&nbsp;rodzinne. Dobierz długość
+        i&nbsp;tempo do swoich planów, a&nbsp;na terenach chronionych poruszaj się wyłącznie po
+        udostępnionych drogach.
       </p>
 
-      <img
+      <CommonsPhoto
+        photo={commonsPhotos.forest}
+        alt="Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna"
         loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={blogSzlak}
-        alt="Puszcza Knyszyńska – szlaki piesze i&nbsp;rowerowe Supraśl"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
       />
 
       <h2>Najlepsze szlaki piesze</h2>
@@ -90,9 +84,8 @@ const SzlakiPieszeRowerowe = () => {
       <h3>1. Rezerwat Krzemienne Góry — zasady odwiedzania</h3>
 
       <p>
-        Rezerwat chroni cenne przyrodniczo tereny. Nie zakładaj, że można swobodnie poruszać się po
-        jego całym obszarze ani że przebiega przez niego ogólnodostępna pętla turystyczna. Przed
-        wizytą sprawdź{' '}
+        Rezerwat chroni cenne przyrodniczo tereny, dlatego nie każdy jego fragment jest dostępny
+        dla turystów. Informacje o&nbsp;dozwolonych trasach publikuje{' '}
         <a
           href="https://www.gov.pl/web/rdos-bialystok/podlaskierezerwaty--rezerwat-przyrody-krzemienne-gory"
           target="_blank"
@@ -107,15 +100,15 @@ const SzlakiPieszeRowerowe = () => {
       <h3>2. Szlak wzdłuż rzeki Supraśl</h3>
 
       <p>
-        Jeśli planujesz spacer nad rzeką Supraśl, wybierz publicznie dostępną drogę i&nbsp;sprawdź
-        jej przebieg, nawierzchnię oraz długość przed wyruszeniem.
+        Nad rzeką wybieraj drogi publiczne i&nbsp;oznaczone przejścia. Mapa pomoże ocenić długość
+        odcinka oraz rodzaj nawierzchni.
       </p>
 
       <p>
         W&nbsp;Supraślu można też poznać{' '}
         <Link to="/blog/supraski-system-wodny">informacje o&nbsp;rzece Supraśl i&nbsp;okolicy</Link>
-        . Sprawdź na mapie położenie obiektów i&nbsp;wybierz sposób zwiedzania odpowiedni do
-        warunków.
+        . Położenie atrakcji i&nbsp;tras zobaczysz na mapie; zaplanuj spacer tak, by nie wchodzić na
+        tereny prywatne ani objęte ograniczeniami.
       </p>
 
       <h3>3. Szlak Powstania Styczniowego</h3>
@@ -127,25 +120,20 @@ const SzlakiPieszeRowerowe = () => {
         <Link to="/blog/szlak-powstania-styczniowego-suprasl">dedykowanym artykule</Link>.
       </p>
 
-      <p>Długość i&nbsp;trudność wariantów sprawdź na aktualnej mapie przed wycieczką.</p>
+      <p>Długość i&nbsp;trudność wariantów zależą od wybranej trasy — mapa pomoże dobrać odpowiedni odcinek.</p>
 
       <h3>4. Arboretum w&nbsp;Kopnej Górze</h3>
 
       <p>
         Arboretum im. Powstańców 1863 w&nbsp;Kopnej Górze zajmuje 26 hektarów i&nbsp;zostało
-        założone w&nbsp;1988 roku. Przed wizytą sprawdź dojazd, dostępność i&nbsp;zasady zwiedzania
-        u&nbsp;Nadleśnictwa Supraśl.
+        założone w&nbsp;1988 roku. To ciekawy przystanek na spacer wśród drzew i&nbsp;krzewów;
+        Nadleśnictwo Supraśl publikuje informacje o&nbsp;godzinach i&nbsp;zasadach zwiedzania.
       </p>
 
-      <img
+      <CommonsPhoto
+        photo={commonsPhotos.suprasl}
+        alt="Widok ogólny Supraśla nad rzeką Supraśl"
         loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={blogRowerowa}
-        alt="Trasy rowerowe Supraśl – Puszcza Knyszyńska"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
       />
 
       <h2>Najlepsze trasy rowerowe</h2>
@@ -153,65 +141,63 @@ const SzlakiPieszeRowerowe = () => {
       <h3>1. Green Velo i&nbsp;inne trasy rowerowe</h3>
 
       <p>
-        Green Velo to długodystansowy szlak rowerowy. Przed zaplanowaniem wycieczki sprawdź jego
-        aktualny przebieg, połączenia z&nbsp;lokalnymi trasami i&nbsp;rodzaj nawierzchni.
+        Green Velo to długodystansowy szlak rowerowy. Zanim ruszysz, zaplanuj odcinek, który chcesz
+        przejechać, i&nbsp;zobacz, jak łączy się z&nbsp;lokalnymi trasami.
       </p>
 
       <h3>2. Pętla przez Puszczę Knyszyńską</h3>
 
       <p>
-        Planując lokalną pętlę, zweryfikuj jej przebieg, nawierzchnię i&nbsp;długość na aktualnej
-        mapie. W&nbsp;terenie stosuj się do znaków oraz ograniczeń wstępu.
+        Lokalne pętle różnią się długością i&nbsp;nawierzchnią. Korzystaj z&nbsp;map oraz znaków
+        w&nbsp;terenie, pamiętając o&nbsp;ograniczeniach wstępu.
       </p>
 
       <h3>3. MTB — trasy w&nbsp;Puszczy Knyszyńskiej</h3>
 
       <p>
-        Wybierając trasę MTB, sprawdź, czy dany odcinek jest dostępny dla rowerów i&nbsp;czy jego
-        nawierzchnia oraz poziom trudności odpowiadają Twoim umiejętnościom.
+        Wybierając trasę MTB, korzystaj z&nbsp;odcinków przeznaczonych dla rowerów i&nbsp;dopasuj
+        poziom trudności do swoich umiejętności.
       </p>
 
       <p>
-        Wybierz trasę udostępnioną dla rowerów, sprawdź jej przebieg i&nbsp;warunki przed wyjazdem.
-        Nie wjeżdżaj na drogi ani ścieżki objęte ograniczeniami.
+        Korzystaj wyłącznie z&nbsp;tras udostępnionych dla rowerów i&nbsp;respektuj ograniczenia
+        w&nbsp;terenie.
       </p>
 
       <h2>Szlaki rodzinne</h2>
 
       <p>
-        Nie każdy szlak musi być wyzwaniem — w&nbsp;okolicach Supraśla jest wiele tras idealnych dla
-        rodzin z&nbsp;dziećmi, osób starszych i&nbsp;tych, którzy po prostu chcą spokojnie
-        pospacerować.
+        Nie każdy spacer musi być długi. W&nbsp;okolicach Supraśla są krótsze trasy, które można
+        dopasować do rodzinnego tempa i&nbsp;możliwości uczestników.
       </p>
 
       <h3>Ścieżki przyrodnicze w&nbsp;okolicy</h3>
 
       <p>
-        Przed wyjściem sprawdź dostępność trasy, jej długość, nawierzchnię i&nbsp;ograniczenia.
-        Dobierz spacer do możliwości uczestników i&nbsp;nie wchodź poza miejsca udostępnione do
-        ruchu.
+        Przed wyruszeniem wybierz trasę o&nbsp;odpowiedniej długości i&nbsp;nawierzchni. Na miejscu
+        trzymaj się oznakowanych dróg.
       </p>
 
       <h3>Spacer po Supraślu</h3>
 
       <p>
-        Przed spacerem z&nbsp;wózkiem sprawdź przebieg trasy, nawierzchnię i&nbsp;dostępność
-        przejść.
+        Na spacer z&nbsp;wózkiem wybierz utwardzoną trasę i&nbsp;zwróć uwagę na przejścia oraz
+        ewentualne nierówności.
       </p>
 
       <h3>Trasa rowerowa dla rodziny</h3>
 
       <p>
-        Dobierz dystans i&nbsp;nawierzchnię do umiejętności uczestników, a&nbsp;przed wyjazdem
-        sprawdź oznaczenia, warunki i&nbsp;dozwolony przebieg trasy.
+        Dobierz dystans i&nbsp;nawierzchnię do umiejętności całej grupy, a&nbsp;w&nbsp;terenie
+        kieruj się oznaczeniami szlaku.
       </p>
 
       <h2>Odpowiedzialnie na szlaku</h2>
       <p>
-        Puszcza Knyszyńska obejmuje tereny o&nbsp;różnych zasadach ochrony i&nbsp;udostępniania.
-        Poruszaj się wyłącznie po dozwolonych trasach, nie zbieraj roślin ani grzybów
-        w&nbsp;rezerwatach i&nbsp;nie niepokój zwierząt. Aktualne informacje sprawdzaj
-        u&nbsp;właściwego zarządcy terenu.
+        Puszcza Knyszyńska obejmuje tereny o&nbsp;różnych zasadach ochrony. Poruszaj się po
+        udostępnionych trasach, nie zbieraj roślin ani grzybów w&nbsp;rezerwatach i&nbsp;nie
+        niepokój zwierząt. Tablice oraz komunikaty zarządcy podpowiedzą, jakie zasady obowiązują
+        w&nbsp;danym miejscu.
       </p>
 
       <h3>Obserwacja przyrody</h3>
@@ -244,8 +230,7 @@ const SzlakiPieszeRowerowe = () => {
           zakładaj, że po drodze będzie dostęp do sklepu lub wody pitnej
         </li>
         <li>
-          <strong>Mapa:</strong> przed wyjściem przygotuj mapę i&nbsp;sprawdź, czy na wybranej
-          trasie masz dostęp do potrzebnych informacji
+          <strong>Mapa:</strong> miej przy sobie mapę offline, zwłaszcza na dłuższej trasie
         </li>
         <li>
           <strong>Kleszcze:</strong> w&nbsp;sezonie (kwiecień–październik) używaj repelentów
@@ -256,7 +241,7 @@ const SzlakiPieszeRowerowe = () => {
           warstwę
         </li>
         <li>
-          <strong>Rower:</strong> dostępność wypożyczalni i&nbsp;sprzętu potwierdź przed przyjazdem
+          <strong>Rower:</strong> jeśli nie masz własnego, w&nbsp;okolicy działają wypożyczalnie
         </li>
       </ul>
 
@@ -264,7 +249,7 @@ const SzlakiPieszeRowerowe = () => {
 
       <p>
         Po aktywnym dniu możesz odpocząć w&nbsp;domu. Balia z&nbsp;hydromasażem (jacuzzi) jest
-        opcjonalnym dodatkiem do pobytu; dostępność potwierdź przed przyjazdem.
+        opcjonalnym dodatkiem do pobytu — zapytaj nas o&nbsp;nią przy rezerwacji.
       </p>
 
       <p>

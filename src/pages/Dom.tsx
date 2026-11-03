@@ -263,8 +263,8 @@ const Dom = () => (
               korzystania z&nbsp;ogniska ustalcie z&nbsp;Maciejem. Pies przyjeżdża gratis.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Dom znajduje się w&nbsp;okolicy Puszczy Knyszyńskiej. Przed spacerem sprawdź aktualną
-              mapę, dostępność tras oraz zasady obowiązujące na terenach chronionych.
+              Dom znajduje się w&nbsp;okolicy Puszczy Knyszyńskiej. Wybieraj oznakowane szlaki
+              i&nbsp;zwracaj uwagę na ograniczenia obowiązujące na terenach chronionych.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3">

@@ -287,9 +287,9 @@ const PrzewodnikKulinarny = () => (
 
     <p>
       Zobaczcie <Link to="/weekend-suprasl">gotowy plan weekendu w&nbsp;Supraślu</Link> albo od razu{' '}
-      <Link to="/#rezerwacja">sprawdźcie wolne terminy</Link>. Wolicie zadzwonić? Maciej odbiera pod
-      numerem <a href="tel:+48722765101">722&nbsp;765&nbsp;101</a> i&nbsp;chętnie powie, gdzie sam
-      chodzi na obiad.
+      <Link to="/#rezerwacja">zobaczcie kalendarz wolnych terminów</Link>. Wolicie zadzwonić?
+      Maciej odbiera pod numerem <a href="tel:+48722765101">722&nbsp;765&nbsp;101</a> i&nbsp;chętnie
+      podpowie, gdzie sam chodzi na obiad.
     </p>
   </BlogArticleLayout>
 );

@@ -5,7 +5,7 @@ const CyfrowyDetoksLas = () => (
   <BlogArticleLayout
     title="Cyfrowy detoks w&nbsp;lesie: przerwa od ekranów"
     metaTitle="Cyfrowy detoks w&nbsp;lesie – pomysł na przerwę od ekranów"
-    metaDescription="Cyfrowy detoks nie wymaga rezygnacji z&nbsp;dostępu do internetu. Sprawdź, jak zaplanować dobrowolną przerwę od ekranów podczas pobytu w&nbsp;lesie."
+    metaDescription="Cyfrowy detoks nie wymaga rezygnacji z&nbsp;internetu. Poznaj proste pomysły na dobrowolną przerwę od ekranów podczas pobytu w&nbsp;lesie."
     slug="cyfrowy-detoks-las"
     publishDate="2026-04-09"
     readTime="9&nbsp;min"
@@ -93,8 +93,8 @@ const CyfrowyDetoksLas = () => (
           📖 <strong>Popołudnie:</strong> Książka przy kominku, hamak w&nbsp;ogrodzie, drzemka.
         </li>
         <li>
-          🔥 <strong>Wieczór:</strong> Odpoczynek w&nbsp;domu lub ogrodzie. Zasady ogniska
-          i&nbsp;dostępność balii potwierdź przed pobytem.
+          🔥 <strong>Wieczór:</strong> Odpoczynek w&nbsp;domu lub ogrodzie. Jeśli planujesz ognisko
+          albo chcesz skorzystać z&nbsp;balii, zapytaj gospodarza o&nbsp;zasady i&nbsp;dostępność.
         </li>
       </ul>
 

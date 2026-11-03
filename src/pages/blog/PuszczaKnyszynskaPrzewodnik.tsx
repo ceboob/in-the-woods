@@ -185,8 +185,8 @@ const PuszczaKnyszynskaPrzewodnik = () => (
   >
     <p className="text-lg leading-relaxed mb-8">
       Puszcza Knyszyńska to rozległy kompleks leśny w&nbsp;województwie podlaskim, obejmujący m.in.
-      obszar Parku Krajobrazowego Puszczy Knyszyńskiej. Przed wyjściem zaplanuj trasę i&nbsp;sprawdź
-      aktualne zasady dostępu oraz ochrony przyrody.
+      obszar Parku Krajobrazowego Puszczy Knyszyńskiej. Wybierając trasę, trzymaj się oznakowanych
+      dróg i&nbsp;respektuj ograniczenia wprowadzane dla ochrony przyrody.
     </p>
 
     {/* ROMANTYCZNIE */}
@@ -231,8 +231,8 @@ const PuszczaKnyszynskaPrzewodnik = () => (
             Kładki nad wodą
           </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Przed wyruszeniem do rezerwatu Krzemianka sprawdź aktualne zasady udostępniania
-            i&nbsp;korzystaj wyłącznie z&nbsp;dozwolonych tras.
+            Rezerwat Krzemianka odwiedzaj wyłącznie trasami udostępnionymi dla turystów i&nbsp;zgodnie
+            z&nbsp;oznaczeniami na miejscu.
           </p>
         </div>
       </div>
@@ -297,8 +297,8 @@ const PuszczaKnyszynskaPrzewodnik = () => (
           </h3>
           <p className="text-muted-foreground leading-relaxed">
             Wzgórza Świętojańskie i&nbsp;rezerwat Krzemianka to przykłady przyrodniczych miejsc
-            w&nbsp;regionie. Przed wycieczką sprawdź wyznaczone trasy i&nbsp;zasady udostępniania;
-            dzikich zwierząt nie należy zbliżać ani dokarmiać.
+            w&nbsp;regionie. Korzystaj z&nbsp;wyznaczonych tras, a&nbsp;dzikich zwierząt nie
+            zbliżaj ani nie dokarmiaj.
           </p>
         </div>
       </div>
@@ -325,9 +325,8 @@ const PuszczaKnyszynskaPrzewodnik = () => (
             Podlaskie Muzeum Kultury Ludowej
           </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Skansen prezentuje tradycyjną architekturę i&nbsp;kulturę regionu. Sprawdź oficjalne
-            informacje placówki, by potwierdzić dostępność ekspozycji, atrakcji i&nbsp;godziny
-            zwiedzania.
+            Skansen prezentuje tradycyjną architekturę i&nbsp;kulturę regionu. Godziny zwiedzania
+            i&nbsp;dostępność ekspozycji zależą od sezonu.
           </p>
         </div>
         <div>
@@ -336,8 +335,8 @@ const PuszczaKnyszynskaPrzewodnik = () => (
           </h3>
           <p className="text-muted-foreground leading-relaxed">
             Monaster, <strong>Muzeum Ikon</strong>, domy tkaczy i&nbsp;Pałac Buchholtzów to wybrane
-            miejsca związane z&nbsp;historią Supraśla. Godziny otwarcia i&nbsp;zasady zwiedzania
-            muzeum sprawdź przed wizytą.
+            miejsca związane z&nbsp;historią Supraśla. Muzeum Ikon uzupełnia spacer o&nbsp;spotkanie
+            ze sztuką i&nbsp;historią regionu.
           </p>
         </div>
       </div>

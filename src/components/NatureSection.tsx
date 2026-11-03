@@ -49,14 +49,14 @@ const NatureSection = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-6">
             <p className="section-subtitle">
-              In The Woods znajduje się w miejscowości Konne koło Supraśla. Przed spacerem sprawdź
-              przebieg tras i aktualne zasady ochrony przyrody; nie zakładaj, że wszystkie tereny są
-              udostępnione.
+              In The Woods znajduje się w miejscowości Konne koło Supraśla. Wybierz trasę
+              odpowiednią do pogody i swoich możliwości; część terenów chronionych może być
+              niedostępna dla odwiedzających.
             </p>
             <p className="section-subtitle">
-              W Supraślu możesz odwiedzić Monaster i Muzeum Ikon; przed wyjazdem sprawdź aktualne
-              godziny i zasady zwiedzania. Spływ kajakowy, jeśli go planujesz, potwierdź u
-              organizatora. Informacje o dojeździe do domu otrzymasz przed pobytem.
+              W Supraślu możesz odwiedzić Monaster i Muzeum Ikon — godziny otwarcia zależą od
+              sezonu. Spływy kajakowe organizują lokalne wypożyczalnie, a szczegóły trasy ustalisz
+              przy rezerwacji. Informacje o dojeździe do domu otrzymasz przed pobytem.
             </p>
             <div className="grid grid-cols-2 gap-4">
               {activities.map((a, i) => (

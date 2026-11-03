@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const UzdrowiSkoSPA = () => (
   <BlogArticleLayout
     title="Uzdrowisko Supraśl: wellness i&nbsp;wypoczynek"
-    metaTitle="Uzdrowisko Supraśl – informacje o&nbsp;wellness i&nbsp;pobycie"
-    metaDescription="Poznaj możliwości wypoczynku w&nbsp;Supraślu. Sprawdź aktualną ofertę zabiegów bezpośrednio u&nbsp;usługodawców i&nbsp;zaplanuj pobyt zgodnie ze swoimi potrzebami."
+    metaTitle="Uzdrowisko Supraśl – wellness i&nbsp;wypoczynek"
+    metaDescription="Poznaj uzdrowiskowy charakter Supraśla, lokalne propozycje wellness i&nbsp;pomysły na spokojny wypoczynek w&nbsp;otoczeniu Puszczy Knyszyńskiej."
     slug="uzdrowisko-spa-suprasl"
     publishDate="2026-04-09"
     readTime="10&nbsp;min"
@@ -19,17 +19,17 @@ const UzdrowiSkoSPA = () => (
       {
         question: 'Czy do sanatorium w\u00a0Supraślu potrzebne jest skierowanie?',
         answer:
-          'Wymagania zależą od rodzaju pobytu i\u00a0świadczeniodawcy. Potwierdź zasady skierowania oraz rejestracji bezpośrednio w\u00a0wybranej placówce.',
+          'To zależy od rodzaju pobytu i&nbsp;placówki. Wybrany ośrodek poinformuje Cię, czy potrzebne jest skierowanie i&nbsp;jak wygląda rejestracja.',
       },
       {
         question: 'Jakie zabiegi SPA są dostępne w\u00a0Supraślu?',
         answer:
-          'Oferta i\u00a0dostępność usług zależą od konkretnego obiektu. Przed wizytą sprawdź aktualny zakres, ceny i\u00a0ewentualne przeciwwskazania u\u00a0usługodawcy.',
+          'Oferta zależy od obiektu i&nbsp;terminu. Szczegóły zabiegów, ceny oraz ewentualne przeciwwskazania poda wybrany usługodawca.',
       },
       {
-        question: 'Gdzie sprawdzić informacje o\u00a0tężniach i\u00a0pijalniach?',
+        question: 'Gdzie znaleźć informacje o\u00a0tężniach i\u00a0pijalniach?',
         answer:
-          'Aktualną lokalizację, dostępność i\u00a0zasady korzystania potwierdź w\u00a0lokalnej informacji turystycznej lub u\u00a0operatora obiektu.',
+          'Informacje o&nbsp;lokalizacji i&nbsp;zasadach korzystania znajdziesz u&nbsp;operatora obiektu lub w&nbsp;lokalnej informacji turystycznej.',
       },
     ]}
     relatedArticles={[
@@ -44,26 +44,26 @@ const UzdrowiSkoSPA = () => (
     <h2>Wypoczynek w&nbsp;Supraślu</h2>
 
     <p>
-      Supraśl jest uzdrowiskiem położonym w&nbsp;sąsiedztwie Puszczy Knyszyńskiej. Zakres świadczeń
-      i&nbsp;warunki pobytu leczniczego potwierdź bezpośrednio w&nbsp;odpowiedniej placówce.
+      Supraśl łączy uzdrowiskowy charakter z&nbsp;bliskością Puszczy Knyszyńskiej. Możesz tu
+      zaplanować spokojny spacer, wizytę w&nbsp;lokalnym gabinecie wellness albo pobyt leczniczy
+      w&nbsp;sanatorium — każda placówka ma własny zakres usług i&nbsp;zasady przyjęć.
     </p>
 
     <h2>Zabiegi uzdrowiskowe w&nbsp;Supraślu</h2>
     <p>
-      W&nbsp;okolicy Supraśla można znaleźć ofertę zabiegów uzdrowiskowych i&nbsp;wellness.
-      Szczegóły dotyczące pochodzenia surowców, wskazań i&nbsp;dostępności warto potwierdzić
-      u&nbsp;usługodawcy.
+      W&nbsp;okolicy działają placówki oferujące zabiegi uzdrowiskowe i&nbsp;wellness. Jeśli
+      interesuje Cię konkretny rodzaj terapii, zapytaj wybrany ośrodek o&nbsp;jej przebieg
+      i&nbsp;wskazania.
     </p>
     <p>
       Zabiegi mogą być elementem oferty konkretnego ośrodka, ale nie zastępują konsultacji
-      medycznej. Przed skorzystaniem z&nbsp;nich zapoznaj się z&nbsp;przeciwwskazaniami
-      i&nbsp;zaleceniami personelu.
+      medycznej. Przed zabiegiem omów z&nbsp;personelem przeciwwskazania i&nbsp;zalecenia — zadbaj
+      o&nbsp;komfort i&nbsp;bezpieczeństwo.
     </p>
 
-    <h2>Jak sprawdzić ofertę zabiegów?</h2>
+    <h2>Jak wybrać zabieg?</h2>
     <p>
-      Zakres usług i&nbsp;wskazania zależą od placówki. Informacji o&nbsp;dostępnych świadczeniach
-      udzielają bezpośrednio sanatoria i&nbsp;gabinety:
+      Przed wyborem porozmawiaj z&nbsp;personelem placówki. Przydadzą się informacje o:
     </p>
     <ul>
       <li>Rodzaje zabiegów i&nbsp;ich dostępność</li>
@@ -77,8 +77,7 @@ const UzdrowiSkoSPA = () => (
 
     <h2>Jak wybrać ofertę?</h2>
     <p>
-      Przed rezerwacją pobytu porównaj zakres usług i&nbsp;potwierdź szczegóły bezpośrednio
-      u&nbsp;usługodawcy:
+      Porównując oferty, zwróć uwagę na:
     </p>
     <ul>
       <li>Zakres usług, terminy i&nbsp;całkowity koszt</li>
@@ -86,33 +85,33 @@ const UzdrowiSkoSPA = () => (
       <li>Przeciwwskazania oraz zalecenia personelu</li>
     </ul>
     <p>
-      Warunki pobytów leczniczych, ewentualne skierowanie, dostępność i&nbsp;ceny należy potwierdzić
-      w&nbsp;wybranym ośrodku lub u&nbsp;właściwego świadczeniodawcy.
+      Informacje o&nbsp;pobytach leczniczych, skierowaniach i&nbsp;kosztach otrzymasz
+      w&nbsp;wybranym ośrodku.
     </p>
 
     <h2>Nie tylko leczenie – relaks w&nbsp;strefie wellness</h2>
     <p>
-      Jeśli interesują Cię usługi wellness, sprawdź ich dostępność bezpośrednio w&nbsp;wybranym
-      obiekcie. Oferta może się różnić i&nbsp;nie należy traktować jej jako metody leczenia. Zobacz
-      propozycje <Link to="/blog/aktywny-wypoczynek-suprasl">aktywności na świeżym powietrzu</Link>.
+      Jeśli wolisz łagodniejszy odpoczynek, zapytaj wybrany obiekt o&nbsp;ofertę wellness. To
+      propozycja relaksu, nie metoda leczenia. Możesz też wybrać{' '}
+      <Link to="/blog/aktywny-wypoczynek-suprasl">spacer lub inną aktywność na świeżym powietrzu</Link>.
     </p>
     <p>
-      Przed skorzystaniem z&nbsp;usługi zapoznaj się z&nbsp;jej zakresem, ceną, przeciwwskazaniami
-      i&nbsp;zaleceniami personelu.
+      Zanim umówisz zabieg, poznaj jego cenę i&nbsp;przebieg oraz skonsultuj ewentualne
+      przeciwwskazania z&nbsp;personelem.
     </p>
 
     <h2>Pijalnia wód i&nbsp;tężnie – gdzie ich szukać?</h2>
     <p>
-      Przed planowaną wizytą w&nbsp;tężni lub pijalni sprawdź, czy obiekt działa i&nbsp;jakie zasady
-      korzystania obowiązują. Nie przypisujemy takim wizytom efektów zdrowotnych.
+      Tężnie i&nbsp;pijalnie mogą działać sezonowo, a&nbsp;godziny ich pracy publikuje operator.
+      Sam pobyt nie zastępuje konsultacji ani leczenia.
     </p>
-    <p>Informacje o&nbsp;pijalniach wód w&nbsp;regionie potwierdź u&nbsp;lokalnych operatorów.</p>
+    <p>O&nbsp;lokalizacji i&nbsp;godzinach działania pijalni poinformuje jej operator.</p>
 
     <h2>Gdzie nocować podczas pobytu uzdrowiskowego?</h2>
     <p>
-      Jeśli szukasz noclegu w&nbsp;okolicy, sprawdź ofertę <Link to="/">In The Woods</Link>. Balia
-      z&nbsp;hydromasażem (jacuzzi) jest opcjonalnym dodatkiem; dostępność i&nbsp;warunki
-      korzystania potwierdź przed pobytem. <Link to="/">Sprawdź noclegi</Link>.
+      Jeśli szukasz noclegu w&nbsp;okolicy, poznaj ofertę <Link to="/">In The Woods</Link>. Balia
+      z&nbsp;hydromasażem (jacuzzi) jest opcjonalnym dodatkiem — zapytaj nas o&nbsp;jej dostępność
+      podczas rezerwacji.
     </p>
   </BlogArticleLayout>
 );

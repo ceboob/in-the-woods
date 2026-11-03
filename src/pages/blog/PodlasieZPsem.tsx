@@ -34,7 +34,7 @@ const PodlasieZPsem = () => (
       {
         question: 'Czy balia z\u00a0hydromasażem jest dostępna podczas każdego pobytu?',
         answer:
-          'Tak, jeśli zamówicie ją przy rezerwacji. Kosztuje 250\u00a0zł za cały pobyt, a\u00a0w\u00a0siarczysty mróz Maciej powie wprost, czy da się ją nagrzać.',
+          'Balia jest opcjonalnym dodatkiem i&nbsp;kosztuje 250&nbsp;zł za cały pobyt. Jej dostępność w&nbsp;wybranym terminie ustalisz z&nbsp;gospodarzem.',
       },
     ]}
     relatedArticles={[
@@ -59,9 +59,8 @@ const PodlasieZPsem = () => (
       </h2>
       <p className="text-muted-foreground leading-relaxed">
         Okolice Supraśla to dobry kierunek, jeśli lubisz bliskość przyrody i&nbsp;niespieszne
-        spacery. Puszcza Knyszyńska daje wiele możliwości kontaktu z&nbsp;lasem, ale dostępność tras
-        dla psów zależy od konkretnego miejsca. Przed wyjściem sprawdź oznakowanie i&nbsp;lokalne
-        zasady.
+        spacery. Puszcza Knyszyńska ma wiele leśnych dróg, ale nie każda jest dostępna dla psów.
+        Wybieraj oznakowane trasy i&nbsp;zwracaj uwagę na lokalne zasady.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Zaplanuj dzień w&nbsp;rytmie swojego pupila: krótszy spacer rano, przerwę na odpoczynek
@@ -70,11 +69,11 @@ const PodlasieZPsem = () => (
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
-        Noclegi Supraśl z&nbsp;psem – co sprawdzić przed rezerwacją?
+        Noclegi w&nbsp;Supraślu z&nbsp;psem – na co zwrócić uwagę?
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Przyjazny psom nocleg to nie tylko informacja w&nbsp;opisie. Przed rezerwacją napisz do
-        gospodarza i&nbsp;ustal szczegóły pobytu:
+        Zanim wybierzesz nocleg, porozmawiaj z&nbsp;gospodarzem o&nbsp;warunkach pobytu ze
+        zwierzęciem. Zapytaj o:
       </p>
       <ul className="space-y-3 text-muted-foreground">
         <li>
@@ -82,16 +81,16 @@ const PodlasieZPsem = () => (
           obowiązują opłaty i&nbsp;jakie zasady warto znać.
         </li>
         <li>
-          <strong>Ogród i&nbsp;przestrzeń</strong> — sprawdź, czy teren jest ogrodzony i&nbsp;czy
-          pies może przebywać na nim bez smyczy.
+          <strong>Ogród i&nbsp;przestrzeń</strong> — dowiedz się, czy teren jest ogrodzony
+          i&nbsp;czy pies może przebywać na nim bez smyczy.
         </li>
         <li>
           <strong>Codzienne warunki</strong> — ustal, z&nbsp;których pomieszczeń pies może korzystać
           i&nbsp;czy może zostać sam w&nbsp;domu.
         </li>
         <li>
-          <strong>Spacery w&nbsp;okolicy</strong> — zapytaj o&nbsp;pobliskie trasy, a&nbsp;przed
-          wyjściem sprawdź zasady dostępu dla psów.
+          <strong>Spacery w&nbsp;okolicy</strong> — gospodarz podpowie pobliskie trasy; na terenach
+          chronionych obowiązują osobne zasady dotyczące psów.
         </li>
         <li>
           <strong>Potrzeby pupila</strong> — zabierz smycz, miskę i&nbsp;wodę, a&nbsp;długość
@@ -103,15 +102,12 @@ const PodlasieZPsem = () => (
         Spacery z&nbsp;psem w&nbsp;okolicy Supraśla
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Wybieraj leśne dukty i&nbsp;ścieżki, na których można spacerować z&nbsp;psem. Długość
-        i&nbsp;nawierzchnię dostosuj do jego możliwości, a&nbsp;przed wyjściem sprawdź aktualne
-        oznakowanie. Zasady mogą się różnić zależnie od rodzaju terenu.
+        Wybieraj leśne dukty i&nbsp;ścieżki, na których wolno spacerować z&nbsp;psem. Długość
+        i&nbsp;nawierzchnię dopasuj do jego możliwości, a&nbsp;na trasie trzymaj się oznakowania.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Jeśli planujesz spacer w&nbsp;okolicy Supraśla, potraktuj mapę jako punkt wyjścia,
-        a&nbsp;nie potwierdzenie, że każda trasa jest dostępna dla psów. Do rezerwatu nie wchodź
-        z&nbsp;pupilem bez sprawdzenia obowiązujących zasad. Jeśli masz wątpliwości, wybierz trasę
-        z&nbsp;potwierdzonym dostępem dla psów.
+        Mapa pomaga zaplanować spacer, ale zasady wstępu z&nbsp;psem zależą od konkretnego miejsca.
+        Do rezerwatu nie wchodź z&nbsp;pupilem, jeśli nie zezwalają na to oznaczenia lub regulamin.
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">
@@ -131,14 +127,14 @@ const PodlasieZPsem = () => (
           w&nbsp;lesie.
         </li>
         <li>
-          <strong>Sprawdź sierść po spacerze</strong> — zwróć uwagę na kleszcze, szczególnie
+          <strong>Obejrzyj sierść po spacerze</strong> — zwróć uwagę na kleszcze, szczególnie
           w&nbsp;okolicy uszu, łap i&nbsp;brzucha.
         </li>
         <li>
           <strong>Pamiętaj o&nbsp;wodzie</strong> — na dłuższą trasę zabierz butelkę oraz miskę.
         </li>
         <li>
-          <strong>Uszanuj oznakowanie</strong> — sprawdź, czy wybrany teren jest dostępny dla psów.
+          <strong>Uszanuj oznakowanie</strong> — korzystaj z&nbsp;tras dostępnych dla psów.
         </li>
       </ol>
 
@@ -147,16 +143,16 @@ const PodlasieZPsem = () => (
       </h2>
       <p className="text-muted-foreground leading-relaxed">
         In The Woods to dom z&nbsp;bali wynajmowany na wyłączność w&nbsp;Konnem, na skraju Puszczy
-        Knyszyńskiej. Pies przyjeżdża u&nbsp;nas gratis, ogród jest ogrodzony, a&nbsp;las zaczyna
-        się za płotem. Wszystko o&nbsp;pobycie z&nbsp;psem zebraliśmy na stronie{' '}
+        Knyszyńskiej. Ogród jest ogrodzony, a&nbsp;las zaczyna się za płotem. Przyjazd z&nbsp;psem
+        ustal z&nbsp;nami przy rezerwacji. Więcej informacji znajdziesz na stronie{' '}
         <Link to="/domek-z-psem-podlasie" className="text-primary hover:underline font-medium">
           domek z&nbsp;psem na Podlasiu
         </Link>
         .
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Do tego balia z&nbsp;hydromasażem (jacuzzi) za 250&nbsp;zł za cały pobyt, na wieczór po
-        długim spacerze. Sprawdź także{' '}
+        Balia z&nbsp;hydromasażem (jacuzzi) to opcjonalny dodatek za 250&nbsp;zł za cały pobyt.
+        Zobacz także{' '}
         <Link to="/informator" className="text-primary hover:underline font-medium">
           informator gościa
         </Link>{' '}
@@ -167,7 +163,7 @@ const PodlasieZPsem = () => (
         .
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Masz pytanie o&nbsp;przyjazd z&nbsp;psem albo chcesz spokojnie porównać warunki? Zajrzyj na{' '}
+        Masz pytanie o&nbsp;przyjazd z&nbsp;psem? Zajrzyj na{' '}
         <Link to="/" className="text-primary hover:underline font-medium">
           stronę główną In The Woods
         </Link>{' '}

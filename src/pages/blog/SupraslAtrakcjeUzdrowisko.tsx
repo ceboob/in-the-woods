@@ -1,8 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
+import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
-import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko-optimized.webp';
-import blogMonaster from '@/assets/blog-monaster-suprasl-optimized.webp';
-import blogRzeka from '@/assets/blog-rzeka-suprasl-optimized.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 
 const SupraslAtrakcjeUzdrowisko = () => {
   const faqs = [
@@ -14,7 +13,7 @@ const SupraslAtrakcjeUzdrowisko = () => {
     {
       question: 'Czy Supraśl to uzdrowisko?',
       answer:
-        'Supraśl ma status uzdrowiska. Sam pobyt ani lokalny klimat nie zastępują konsultacji medycznej; warunki świadczeń leczniczych sprawdź bezpośrednio w\u00a0placówce.',
+        'Supraśl ma status uzdrowiska. Pobyt ani lokalny klimat nie zastępują konsultacji medycznej; o\u00a0dostępnych świadczeniach i\u00a0ich warunkach poinformuje wybrana placówka.',
     },
     {
       question: 'Ile czasu potrzeba na zwiedzanie Supraśla?',
@@ -24,12 +23,12 @@ const SupraslAtrakcjeUzdrowisko = () => {
     {
       question: 'Gdzie nocować w\u00a0Supraślu?',
       answer:
-        'In The Woods to dom na wyłączność w\u00a0miejscowości Konne koło Supraśla. Trasę do obiektu, wyposażenie i\u00a0dostępność opcjonalnych dodatków sprawdź przed pobytem.',
+        'In The Woods to dom na wyłączność w\u00a0miejscowości Konne koło Supraśla. W\u00a0opisie obiektu znajdziesz informacje o\u00a0dojeździe, wyposażeniu i\u00a0dodatkach.',
     },
     {
       question: 'Jak dojechać do Supraśla?',
       answer:
-        'Przed podróżą sprawdź aktualną trasę oraz rozkład transportu publicznego. Czas dojazdu zależy od miejsca wyjazdu i\u00a0warunków na drodze.',
+        'Do Supraśla można dojechać samochodem lub autobusem z\u00a0Białegostoku. Czas podróży zależy od wybranej trasy i\u00a0warunków na drodze.',
     },
   ];
 
@@ -47,7 +46,7 @@ const SupraslAtrakcjeUzdrowisko = () => {
     <BlogArticleLayout
       title="Supraśl – atrakcje i&nbsp;informacje dla odwiedzających"
       metaTitle="Atrakcje Supraśla – Monaster, Muzeum Ikon i&nbsp;okolica"
-      metaDescription="Przewodnik po wybranych atrakcjach Supraśla: Monaster, Muzeum Ikon, rzeka i&nbsp;lokalna kultura. Przed wizytą sprawdź aktualne godziny i&nbsp;zasady."
+      metaDescription="Przewodnik po atrakcjach Supraśla: Monaster, Muzeum Ikon, rzeka i&nbsp;lokalna kultura. Podpowiadamy, co zobaczyć podczas krótkiego pobytu."
       slug="suprasl-atrakcje-uzdrowisko"
       publishDate="2026-03-14"
       readTime="12&nbsp;min"
@@ -68,67 +67,56 @@ const SupraslAtrakcjeUzdrowisko = () => {
 
       <p>
         <strong>Supraśl</strong> to miejscowość w&nbsp;województwie podlaskim, położona
-        w&nbsp;sąsiedztwie Puszczy Knyszyńskiej. W&nbsp;planie wizyty można połączyć zwiedzanie
-        zabytków i&nbsp;instytucji kultury ze spacerem. Sprawdź propozycje na{' '}
+        w&nbsp;sąsiedztwie Puszczy Knyszyńskiej. Zwiedzanie zabytków i&nbsp;instytucji kultury łatwo
+        połączyć tu ze spacerem. Zobacz propozycje na{' '}
         <Link to="/weekend-suprasl">weekend w&nbsp;Supraślu</Link>.
       </p>
 
       <p>
-        Poniżej znajdziesz informacje o&nbsp;wybranych miejscach. Godziny otwarcia, dostępność
-        i&nbsp;zasady zwiedzania mogą się zmieniać, dlatego potwierdź je u&nbsp;organizatorów przed
-        wyjazdem.
+        Poniżej znajdziesz informacje o&nbsp;wybranych miejscach. Godziny otwarcia i&nbsp;zasady
+        zwiedzania mogą się różnić w&nbsp;zależności od sezonu oraz dnia tygodnia.
       </p>
 
-      <img
+      <CommonsPhoto
+        photo={commonsPhotos.suprasl}
+        alt="Widok ogólny Supraśla nad rzeką Supraśl"
         loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={blogSupraslUzdrowisko}
-        alt="Supraśl atrakcje – Monaster Zwiastowania NMP, uzdrowisko Podlasia"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
       />
 
       <h2>Monaster Zwiastowania Najświętszej Maryi Panny</h2>
 
       <p>
         <strong>Monaster Zwiastowania NMP w&nbsp;Supraślu</strong> jest ważnym zabytkiem
-        i&nbsp;miejscem dziedzictwa prawosławnego. Przed zwiedzaniem potwierdź aktualne zasady
-        wejścia i&nbsp;nabożeństw.
+        i&nbsp;miejscem dziedzictwa prawosławnego. Zwiedzanie odbywa się z&nbsp;poszanowaniem
+        nabożeństw i&nbsp;zasad obowiązujących w&nbsp;świątyni.
       </p>
 
       <p>
-        Informacje o&nbsp;dostępnych częściach kompleksu i&nbsp;zwiedzaniu znajdziesz u&nbsp;jego
-        opiekunów. Nie zakładaj, że wszystkie pomieszczenia są udostępnione w&nbsp;każdym terminie.
+        Nie wszystkie części kompleksu są udostępniane zwiedzającym. Na miejscu znajdziesz
+        informacje o&nbsp;dostępnych przestrzeniach i&nbsp;możliwościach zwiedzania.
       </p>
 
       <h3>Co warto zobaczyć w&nbsp;monasterze?</h3>
 
       <ul>
         <li>
-          <strong>Cerkiew Zwiastowania NMP</strong> — sprawdź zasady jej zwiedzania
+          <strong>Cerkiew Zwiastowania NMP</strong> — pamiętaj o&nbsp;zachowaniu ciszy
         </li>
         <li>
-          <strong>Dzwonnica</strong> — dostępność potwierdź na miejscu
+          <strong>Dzwonnica</strong> — wejście może być ograniczone
         </li>
         <li>
-          <strong>Ogrody klasztorne</strong> — sprawdź, czy są dostępne dla odwiedzających
+          <strong>Ogrody klasztorne</strong> — dostęp zależy od zasad obowiązujących na terenie monasteru
         </li>
         <li>
-          <strong>Sklep klasztorny</strong> — aktualną ofertę potwierdź u&nbsp;gospodarzy monasteru
+          <strong>Sklep klasztorny</strong> — oferta produktów może się zmieniać
         </li>
       </ul>
 
-      <img
+      <CommonsPhoto
+        photo={commonsPhotos.monastery}
+        alt="Monaster Zwiastowania w Supraślu nad rzeką Supraśl"
         loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={blogMonaster}
-        alt="Monaster Supraśl – cerkiew i&nbsp;ogrody klasztorne"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
       />
 
       <h2>Muzeum Ikon</h2>
@@ -149,32 +137,27 @@ const SupraslAtrakcjeUzdrowisko = () => {
       </p>
 
       <p>
-        Szczegóły ekspozycji i&nbsp;dostępne formy zwiedzania mogą zależeć od aktualnego programu
-        muzeum; przed wizytą potwierdź je u&nbsp;organizatora.
+        Wystawy i&nbsp;formy zwiedzania zależą od aktualnego programu muzeum; szczegółów szukaj na
+        stronie Muzeum Podlaskiego.
       </p>
 
       <h2>Bulwary nad rzeką Supraśl</h2>
 
       <p>
-        Rzeka Supraśl jest jednym z&nbsp;elementów lokalnego krajobrazu. Przed zaplanowaniem spaceru
-        nad wodą sprawdź dostępne wejścia, przebieg tras i&nbsp;ewentualne ograniczenia.
+        Bulwary nad rzeką Supraśl to dobry kierunek na spokojny spacer. Trzymaj się wyznaczonych
+        ścieżek i&nbsp;zwracaj uwagę na oznakowanie przy wodzie.
       </p>
 
       <p>
-        Możliwość spływu zależy od organizatora, warunków i&nbsp;terminu. Informacje o{' '}
-        <Link to="/blog/kajaki-suprasl">spływach kajakowych</Link> potwierdź bezpośrednio
-        u&nbsp;organizatora.
+        Sezon i&nbsp;warunki na rzece wpływają na dostępność spływów. Więcej o{' '}
+        <Link to="/blog/kajaki-suprasl">spływach kajakowych</Link> przeczytasz w&nbsp;osobnym
+        przewodniku.
       </p>
 
-      <img
+      <CommonsPhoto
+        photo={commonsPhotos.river}
+        alt="Rzeka Supraśl w Parku Krajobrazowym Puszczy Knyszyńskiej"
         loading="lazy"
-        decoding="async"
-        sizes="(min-width: 768px) 768px, 100vw"
-        src={blogRzeka}
-        alt="Rzeka Supraśl"
-        className="w-full rounded-lg my-8"
-        width="800"
-        height="600"
       />
 
       <h2>Charakter uzdrowiskowy</h2>
@@ -200,8 +183,8 @@ const SupraslAtrakcjeUzdrowisko = () => {
       <h2>Teatr Wierszalin</h2>
 
       <p>
-        W&nbsp;Supraślu działa Teatr Wierszalin. Repertuar, miejsce przedstawienia i&nbsp;zasady
-        zakupu biletów sprawdź na{' '}
+        W&nbsp;Supraślu działa Teatr Wierszalin. Repertuar, miejsce przedstawienia i&nbsp;informacje
+        o&nbsp;biletach znajdziesz na{' '}
         <a
           href="https://wierszalin.pl/"
           target="_blank"
@@ -216,15 +199,15 @@ const SupraslAtrakcjeUzdrowisko = () => {
       <h2>Rzeka Supraśl</h2>
 
       <p>
-        Informacje o&nbsp;dostępie do rzeki, trasach i&nbsp;spływach kajakowych uzyskaj od lokalnych
-        organizatorów. Warunki na wodzie mogą się zmieniać; stosuj się do ich zaleceń.
+        Rzeka i&nbsp;jej dolina zmieniają się wraz z&nbsp;porą roku. Jeśli planujesz spływ, wybierz
+        trasę dopasowaną do swoich umiejętności i&nbsp;stosuj się do wskazówek organizatora.
       </p>
 
       <h2>Restauracje i&nbsp;kultura kulinarna</h2>
 
       <p>
-        Lokale, menu i&nbsp;godziny pracy mogą się zmieniać. Przed wizytą sprawdź aktualne
-        informacje w&nbsp;wybranej restauracji. Wskazówki znajdziesz w{' '}
+        Restauracje, kawiarnie i&nbsp;lokalne jadłodajnie pozwalają poznać regionalne smaki.
+        Wskazówki znajdziesz w{' '}
         <Link to="/blog/przewodnik-kulinarny-suprasl">przewodniku po lokalach</Link>.
       </p>
 
@@ -246,8 +229,9 @@ const SupraslAtrakcjeUzdrowisko = () => {
       <h2>Puszcza Knyszyńska — serce regionu</h2>
 
       <p>
-        W&nbsp;okolicy Supraśla znajdują się tereny leśne i&nbsp;trasy turystyczne. Ich przebieg,
-        stan i&nbsp;zasady korzystania sprawdź w&nbsp;aktualnych informacjach zarządcy oraz w{' '}
+        W&nbsp;okolicy Supraśla znajdują się liczne leśne trasy turystyczne. Wybieraj oznakowane
+        szlaki, respektuj czasowe zamknięcia i&nbsp;zasady ochrony przyrody. Więcej propozycji
+        znajdziesz w{' '}
         <Link to="/blog/szlaki-piesze-rowerowe-suprasl">przewodniku po trasach</Link>.
       </p>
 
@@ -259,8 +243,8 @@ const SupraslAtrakcjeUzdrowisko = () => {
           <Link to="/">noclegu w&nbsp;Supraślu</Link>
         </strong>
         , <Link to="/">In The Woods</Link> to dom na wyłączność w&nbsp;miejscowości Konne koło
-        Supraśla. Sprawdź lokalizację, wyposażenie i&nbsp;dostępność opcjonalnych dodatków przed
-        wysłaniem zapytania.
+        Supraśla. To spokojna baza wypadowa na spacery, zwiedzanie miasta i&nbsp;wycieczki
+        po&nbsp;Puszczy Knyszyńskiej.
       </p>
 
       <p>

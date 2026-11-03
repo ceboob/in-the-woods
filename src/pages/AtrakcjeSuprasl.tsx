@@ -1,6 +1,7 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
+import CommonsPhoto from '@/components/CommonsPhoto';
 import { createLandingPageSchemas } from '@/lib/landingPageSchemas';
-import monastery from '@/assets/blog-monaster-suprasl-optimized.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 import { Link } from 'react-router-dom';
 
 const faqs = [
@@ -82,16 +83,12 @@ const AtrakcjeSuprasl = () => (
         domu do centrum jedziecie około 10&nbsp;minut. Poniżej miejsca, które sami polecamy
         znajomym.
       </p>
-      <figure className="overflow-hidden rounded-xl">
-        <img
-          src={monastery}
-          alt="Monaster Zwiastowania NMP — jedna z&nbsp;najważniejszych atrakcji Supraśla"
-          width={810}
-          height={1080}
-          className="w-full aspect-[16/9] object-cover"
-          loading="lazy"
-        />
-      </figure>
+      <CommonsPhoto
+        photo={commonsPhotos.monastery}
+        alt="Monaster Zwiastowania w Supraślu nad rzeką Supraśl"
+        loading="lazy"
+        className="aspect-[16/9] object-cover"
+      />
 
       <h2 className="section-title !text-2xl md:!text-3xl">
         Atrakcje w&nbsp;Supraślu (około 10&nbsp;minut autem od domu)
@@ -264,9 +261,9 @@ const AtrakcjeSuprasl = () => (
         Zanim ruszycie: godziny, bilety, zasady
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Muzea i&nbsp;teatr mają swoje godziny i&nbsp;repertuar, które zmieniają się w&nbsp;ciągu
-        roku, więc zajrzyjcie na ich strony przed wyjazdem. W&nbsp;rezerwatach chodzicie
-        wyznaczonymi ścieżkami, a&nbsp;grzyby zbieracie poza nimi.
+        Godziny otwarcia muzeów i&nbsp;repertuar teatru zmieniają się w&nbsp;ciągu roku. Aktualne
+        informacje znajdziecie na stronach poszczególnych instytucji. W&nbsp;rezerwatach trzymajcie
+        się wyznaczonych ścieżek, a&nbsp;grzyby zbierajcie poza ich granicami.
       </p>
 
       <section aria-labelledby="attractions-faq">

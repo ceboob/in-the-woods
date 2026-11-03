@@ -5,7 +5,7 @@ const SupraslZDziecmi = () => (
   <BlogArticleLayout
     title="Supraśl z&nbsp;dziećmi – atrakcje dla rodzin"
     metaTitle="Supraśl z&nbsp;dziećmi – rodzinny przewodnik"
-    metaDescription="Pomysły na rodzinny pobyt w&nbsp;Supraślu: spacery, obiekty kultury i&nbsp;sezonowe atrakcje. Przed wyjazdem sprawdź dostępność i&nbsp;zasady u&nbsp;organizatorów."
+    metaDescription="Rodzinny Supraśl: spacery nad rzeką, leśne trasy, kultura i&nbsp;sezonowe atrakcje. Pomysły na wspólny dzień w&nbsp;mieście i&nbsp;okolicy."
     slug="suprasl-z-dziecmi"
     publishDate="2026-04-09"
     readTime="11&nbsp;min"
@@ -19,22 +19,22 @@ const SupraslZDziecmi = () => (
       {
         question: 'Od jakiego wieku dzieci mogą uczestniczyć w\u00a0spływie kajakowym?',
         answer:
-          'Minimalny wiek, wymagany nadzór i\u00a0wyposażenie zależą od organizatora oraz warunków na rzece. Potwierdź zasady przed rezerwacją.',
+          'To zależy od trasy, warunków na rzece i&nbsp;zasad wypożyczalni. Przed wyborem spływu zapytaj o&nbsp;minimalny wiek, kamizelki i&nbsp;opiekę dorosłych.',
       },
       {
-        question: 'Jak sprawdzić, które atrakcje są dostępne?',
+        question: 'Gdzie znaleźć godziny otwarcia i\u00a0program atrakcji?',
         answer:
-          'Sprawdź aktualne godziny, sezon działania, zasady wstępu i\u00a0ewentualne ograniczenia bezpośrednio u\u00a0organizatora atrakcji.',
+          'Godziny i&nbsp;program atrakcji sezonowych mogą się różnić. Najpewniejsze informacje znajdziesz na stronie wybranego miejsca lub u&nbsp;jego obsługi.',
       },
       {
         question: 'Czy Arboretum Kopna Góra jest odpowiednie dla małych dzieci?',
         answer:
-          'Arboretum może być celem rodzinnego spaceru. Przed wyjazdem sprawdź u\u00a0Nadleśnictwa Supraśl aktualne informacje o\u00a0dostępności tras i\u00a0warunkach zwiedzania.',
+          'Arboretum może być ciekawym celem rodzinnego spaceru. Trasy, godziny i&nbsp;zasady zwiedzania opisuje Nadleśnictwo Supraśl.',
       },
       {
         question: 'Czy w\u00a0restauracjach są udogodnienia dla dzieci?',
         answer:
-          'Menu i\u00a0udogodnienia mogą się zmieniać. Zapytaj wybrany lokal o\u00a0krzesełka, mniejsze porcje i\u00a0skład potraw przed wizytą.',
+          'To zależy od lokalu. Przy rezerwacji możesz zapytać o&nbsp;krzesełko, mniejsze porcje lub skład potraw.',
       },
     ]}
     relatedArticles={[
@@ -50,63 +50,57 @@ const SupraslZDziecmi = () => (
     <h2>Supraśl dla rodzin: co robić z&nbsp;dziećmi w&nbsp;okolicy</h2>
 
     <p>
-      <strong>Supraśl to świetne miejsce na rodzinny wyjazd!</strong> Sprawdź, jakie atrakcje
-      czekają na najmłodszych w&nbsp;samym mieście i&nbsp;jego najbliższej okolicy. Nuda się nie
-      uda!
+      <strong>Supraśl to dobry kierunek na rodzinny wyjazd</strong> — można tu połączyć spacer nad
+      rzeką, spotkanie z&nbsp;kulturą i&nbsp;chwilę wytchnienia wśród drzew. Oto kilka pomysłów na
+      wspólny dzień, który łatwo dopasować do wieku i&nbsp;temperamentu dzieci. 🌿
     </p>
 
     <h2>Plaża miejska i&nbsp;bulwary – zabawa nad wodą</h2>
     <p>
-      <strong>Okolice rzeki Supraśl</strong> mogą być miejscem spaceru i&nbsp;odpoczynku. Przed
-      planowaniem kąpieli sprawdź, czy w&nbsp;wybranym miejscu i&nbsp;terminie jest ona dozwolona
-      oraz czy działa kąpielisko z&nbsp;nadzorem.
+      <strong>Okolice rzeki Supraśl</strong> mogą być miejscem spaceru i&nbsp;odpoczynku. Kąpiel
+      wybieraj wyłącznie w&nbsp;miejscach do tego przeznaczonych i&nbsp;nadzorowanych.
     </p>
     <p>
-      Bulwary nad rzeką mogą być propozycją spaceru. Sprawdź nawierzchnię i&nbsp;dostępność trasy,
-      jeśli planujesz przejazd wózkiem. Nie dokarmiaj dzikich ptaków.
+      Bulwary nad rzeką mogą być propozycją spaceru. Jeśli jedziesz wózkiem, wybierz odcinek
+      z&nbsp;wygodną nawierzchnią. Nie dokarmiaj dzikich ptaków.
     </p>
 
     <h2>Muzeum Sztuki Drukarskiej i&nbsp;Papiernictwa – interaktywne warsztaty</h2>
     <p>
-      Przed wizytą w&nbsp;lokalnym muzeum sprawdź, jakie ekspozycje i&nbsp;zajęcia są dostępne dla
-      dzieci w&nbsp;wybranym terminie.
+      Muzeum Sztuki Drukarskiej i&nbsp;Papiernictwa to propozycja dla rodzin, które lubią
+      odkrywać, jak powstaje papier i&nbsp;druk. Aktualny program zajęć oraz zasady zwiedzania
+      znajdziesz na stronie muzeum.
     </p>
     <p>
-      <strong>Wskazówka:</strong> Program, rezerwacje i&nbsp;czas zwiedzania potwierdź bezpośrednio
-      w&nbsp;muzeum.
+      <strong>Wskazówka:</strong> Warsztaty mogą wymagać wcześniejszych zapisów — informację
+      o&nbsp;rezerwacji miejsca podaje muzeum.
     </p>
 
     <h2>Aktywności dla rodzin</h2>
 
     <h3>Wioska Indiańska</h3>
     <p>
-      W&nbsp;okolicy można znaleźć sezonowe atrakcje dla rodzin. Ich dostępność, program
-      i&nbsp;ograniczenia wiekowe warto sprawdzić bezpośrednio u&nbsp;organizatorów przed wyjazdem.
+      W&nbsp;okolicy działają także sezonowe atrakcje rodzinne. Ich program i&nbsp;ograniczenia
+      wiekowe zależą od miejsca, więc wybierzcie propozycję odpowiednią dla dzieci.
     </p>
 
     <h3>Park Linowy</h3>
     <p>
-      Jeśli planujesz wizytę w&nbsp;parku linowym, sprawdź u&nbsp;organizatora dostępne trasy,
-      ograniczenia wiekowe i&nbsp;wzrostowe oraz obowiązujące zasady bezpieczeństwa.
+      W&nbsp;parku linowym wybierz trasę odpowiednią do wzrostu i&nbsp;wieku dziecka. Każda trasa
+      ma własne zasady bezpieczeństwa, które poznacie przed wejściem.
     </p>
 
     <h3>Bajkowa Kolejka</h3>
     <p>
-      Przed zaplanowaniem przejazdu kolejką lub innej sezonowej atrakcji sprawdź aktualny
-      harmonogram i&nbsp;warunki uczestnictwa u&nbsp;organizatora.
+      Bajkowa Kolejka kursuje sezonowo. Aktualny rozkład i&nbsp;zasady przejazdu znajdziecie
+      w&nbsp;informacjach przewoźnika.
     </p>
 
     <h2>Posiłek z&nbsp;dziećmi</h2>
     <p>
-      Przed wyborem lokalu sprawdź aktualne menu i&nbsp;zapytaj o&nbsp;udogodnienia dla dzieci.
-      Oferta może się zmieniać.
+      🍽️ Menu i&nbsp;udogodnienia różnią się w&nbsp;zależności od lokalu. Przy rezerwacji warto
+      dopytać o&nbsp;krzesełko, mniejsze porcje lub dania dla dzieci.
     </p>
-    <ul>
-      <li>
-        Sprawdź, czy lokal oferuje krzesełko, mniejsze porcje lub dania odpowiednie dla potrzeb
-        Twojej rodziny.
-      </li>
-    </ul>
     <p>
       Więcej restauracji z&nbsp;recenzjami znajdziesz w{' '}
       <Link to="/blog/przewodnik-kulinarny-suprasl">przewodniku kulinarnym po Supraślu</Link>.
@@ -117,21 +111,22 @@ const SupraslZDziecmi = () => (
     <ul>
       <li>
         <strong>Arboretum im. Powstańców 1863 w&nbsp;Kopnej Górze</strong> — założone w&nbsp;1988
-        roku, zajmuje 26 hektarów. Sprawdź u&nbsp;Nadleśnictwa Supraśl dostępność tras i&nbsp;zasady
-        zwiedzania.
+        roku, zajmuje 26 hektarów. To spokojna przestrzeń na wspólny spacer wśród drzew
+        i&nbsp;krzewów; zasady zwiedzania podaje Nadleśnictwo Supraśl.
       </li>
       <li>
-        <strong>Szlaki przyrodnicze</strong> — sprawdź przebieg, długość, nawierzchnię
-        i&nbsp;ewentualne ograniczenia przed wyjściem. Więcej wskazówek w{' '}
+        <strong>Szlaki przyrodnicze</strong> — wybierz trasę odpowiednią do wieku dzieci
+        i&nbsp;rodzaju nawierzchni. Więcej wskazówek w{' '}
         <Link to="/blog/szlaki-piesze-rowerowe-suprasl">przewodniku po szlakach</Link>.
       </li>
       <li>
         <strong>Rower z&nbsp;dziećmi</strong> — dobierz trasę do wieku i&nbsp;możliwości
-        uczestników, sprawdź nawierzchnię i&nbsp;warunki na drodze oraz używaj kasków.
+        uczestników, zwracaj uwagę na nawierzchnię i&nbsp;warunki na drodze oraz używaj kasków.
       </li>
       <li>
-        <strong>Spływ kajakowy</strong> — przed rezerwacją zapytaj organizatora o&nbsp;warunki na
-        rzece, wyposażenie, minimalny wiek dzieci i&nbsp;wymagany nadzór osoby dorosłej. Szczegóły w{' '}
+        <strong>Spływ kajakowy</strong> — dobierzcie trasę i&nbsp;sprzęt do wieku dzieci oraz
+        warunków na rzece. Wypożyczalnia poinformuje o&nbsp;minimalnym wieku i&nbsp;zasadach opieki.
+        Więcej w{' '}
         <Link to="/blog/kajaki-suprasl">przewodniku po spływach</Link>.
       </li>
     </ul>
@@ -144,7 +139,7 @@ const SupraslZDziecmi = () => (
     </p>
     <p>
       Dom mieści komfortowo do 8&nbsp;osób, co sprawdza się przy wyjazdach wielopokoleniowych.{' '}
-      <Link to="/">Sprawdź dostępne terminy →</Link>
+      <Link to="/">Zobacz wolne terminy →</Link>
     </p>
   </BlogArticleLayout>
 );

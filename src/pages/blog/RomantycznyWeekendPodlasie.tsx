@@ -1,10 +1,11 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
+import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
 import { GARDEN_TUB_PRICE, MIN_NIGHTLY_RATE } from '@/lib/pricing';
 import jacuzziNight from '@/assets/jacuzzi-night-md.webp';
-import monaster from '@/assets/blog-monaster-suprasl-optimized.webp';
 import rzeka from '@/assets/blog-rzeka-suprasl-optimized.webp';
 import livingFireplace from '@/assets/living-fireplace.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 
 const faqs = [
   {
@@ -93,15 +94,11 @@ const RomantycznyWeekendPodlasie = () => (
       <Link to="/blog/suprasl-atrakcje-uzdrowisko">Supraśl – atrakcje i&nbsp;uzdrowisko</Link>.
     </p>
 
-    <img
+    <CommonsPhoto
+      photo={commonsPhotos.monastery}
+      alt="Monaster Zwiastowania w Supraślu nad rzeką Supraśl"
       loading="lazy"
-      decoding="async"
-      sizes="(min-width: 768px) 768px, 100vw"
-      src={monaster}
-      alt="Monaster Zwiastowania w&nbsp;Supraślu – romantyczne miejsce na spacer we dwoje"
-      className="w-full rounded-lg my-8 aspect-[4/3] object-cover"
-      width="810"
-      height="1080"
+      className="aspect-[4/3] object-cover"
     />
 
     <h3>2. Bulwary nad rzeką Supraśl</h3>

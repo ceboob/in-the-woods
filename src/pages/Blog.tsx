@@ -3,21 +3,12 @@ import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import { Phone, ArrowRight, Calendar, Clock } from 'lucide-react';
 import blogKanal from '@/assets/blog-kanal-kopanica-optimized.webp';
-import blogPomnik from '@/assets/blog-pomnik-powstanie-optimized.webp';
-import blogMonaster from '@/assets/blog-monaster-suprasl-optimized.webp';
-import blogSzlak from '@/assets/blog-szlak-lesny-optimized.webp';
-import blogSzlakBio from '@/assets/blog-szlak-bioroznorodnosci-optimized.webp';
-import blogKruszyniany from '@/assets/blog-kruszyniany-meczet-optimized.webp';
-import blogSupraslUzdrowisko from '@/assets/blog-suprasl-atrakcje-uzdrowisko-optimized.webp';
-import blogKajaki from '@/assets/blog-kajaki-suprasl.jpg';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
-import blogCoRobic from '@/assets/blog-co-robic-suprasl-optimized.webp';
-import blogPuszczaHistorie from '@/assets/blog-puszcza-historie-hero-optimized.webp';
-import blogPuszczaPanorama from '@/assets/blog-puszcza-panorama.webp';
 import blogMushrooms from '@/assets/article-optimized.webp';
-import blogNoService from '@/assets/brak-internetu-w-telefonie-co-robic-1536x878.webp';
 import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1-optimized.webp';
 import blogBike from '@/assets/puszcza_knyszynska--optimized.webp';
+import winterForest from '@/assets/winter-forest.webp';
+import { commonsPhotos } from '@/lib/commonsPhotos';
 
 const articles = [
   {
@@ -25,7 +16,10 @@ const articles = [
     title: 'Co warto zobaczyć w\u00a0Białymstoku i\u00a0okolicach – plan na 3\u00a0dni',
     excerpt:
       'Pałac Branickich, drewniane Bojary, Tykocin, kładka w\u00a0Waniewie i\u00a0tatarskie meczety. Długi weekend na Podlasiu z\u00a0bazą w\u00a0lesie koło Supraśla.',
-    image: blogPuszczaPanorama,
+    image: commonsPhotos.bialystok.image,
+    imageAlt: 'Pałac Branickich w Białymstoku po zmroku',
+    imageCredit: commonsPhotos.bialystok,
+    imageSrcSet: `${commonsPhotos.bialystok.image} 960w`,
     date: '2026-11-01',
     readTime: '11\u00a0min',
     keywords: ['co zobaczyć w\u00a0Białymstoku', 'Białystok i\u00a0okolice', 'weekend na Podlasiu'],
@@ -35,7 +29,10 @@ const articles = [
     title: 'Jesień w\u00a0Supraślu 2026 – jak zaplanować pobyt',
     excerpt:
       'Koncerty, spektakle, grzyby i\u00a0kolorowy las. Jak zaplanować jesienny pobyt w\u00a0Supraślu, żeby nie przegapić tego, co najlepsze.',
-    image: blogPuszczaPanorama,
+    image: commonsPhotos.forest.image,
+    imageAlt: 'Park Krajobrazowy Puszczy Knyszyńskiej w okolicy Kołodna',
+    imageCredit: commonsPhotos.forest,
+    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
     date: '2026-10-03',
     readTime: '4\u00a0min',
     keywords: ['jesień w\u00a0Supraślu', 'Supraśl jesienią', 'wydarzenia w\u00a0Supraślu'],
@@ -62,7 +59,8 @@ const articles = [
     title: 'Supraśl zimą – magia Podlasia i\u00a0Puszczy Knyszyńskiej',
     excerpt:
       'Odkryj zaśnieżone szlaki, ślady dzikich zwierząt, ciszę Poczopek i\u00a0kulig z\u00a0ogniskiem w\u00a0In The Woods Konne.',
-    image: '/images/winter/puszcza-knyszynska-zima.webp',
+    image: winterForest,
+    imageAlt: 'Zaśnieżony las w zimowej scenerii',
     date: '2026-09-30',
     readTime: '8\u00a0min',
     keywords: ['Supraśl zimą', 'Podlasie zimą', 'Puszcza Knyszyńska', 'kulig Supraśl'],
@@ -72,7 +70,10 @@ const articles = [
     title: 'Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX',
     excerpt:
       'Odkryj Puszczę Knyszyńską: najpiękniejsze szlaki piesze, rowerowe i\u00a0narciarskie z\u00a0mapami GPX do pobrania. Kajaki, rykowisko, Kruszyniany i\u00a0Supraśl.',
-    image: blogMeadow,
+    image: commonsPhotos.forest.image,
+    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
+    imageCredit: commonsPhotos.forest,
+    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
     date: '2026-04-09',
     readTime: '15\u00a0min',
     keywords: ['Puszcza Knyszyńska', 'szlaki GPX', 'atrakcje', 'przewodnik'],
@@ -82,7 +83,10 @@ const articles = [
     title: 'Romantyczne miejsca na Podlasiu – weekend we dwoje',
     excerpt:
       'Monaster o\u00a0zachodzie słońca, Góra Św. Anny, Noc Kupały i\u00a0balia pod gwiazdami. 13\u00a0romantycznych miejsc i\u00a0plan weekendu we dwoje.',
-    image: blogMonaster,
+    image: commonsPhotos.monastery.image,
+    imageAlt: 'Monaster Zwiastowania w Supraślu nad rzeką Supraśl',
+    imageCredit: commonsPhotos.monastery,
+    imageSrcSet: `${commonsPhotos.monastery.image} 960w`,
     date: '2026-04-09',
     readTime: '10\u00a0min',
     keywords: ['romantyczne miejsca na Podlasiu', 'weekend we dwoje'],
@@ -92,7 +96,10 @@ const articles = [
     title: 'Cyfrowy detoks w\u00a0lesie: przerwa od ekranów',
     excerpt:
       'Telefon do szuflady, las za oknem. Jak zrobić sobie przerwę od powiadomień i\u00a0nie zwariować po pierwszej godzinie.',
-    image: blogMeadow,
+    image: commonsPhotos.forest.image,
+    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
+    imageCredit: commonsPhotos.forest,
+    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
     date: '2026-04-09',
     readTime: '9\u00a0min',
     keywords: ['cyfrowy detoks', 'przerwa od ekranów', 'odpoczynek w\u00a0lesie'],
@@ -112,7 +119,10 @@ const articles = [
     title: 'Praca zdalna podczas pobytu na Podlasiu',
     excerpt:
       'Starlink, widok na sosny i\u00a0balia po pracy. Jak pracować zdalnie z\u00a0lasu i\u00a0nie dać się namówić na wieczną drzemkę.',
-    image: blogCoRobic,
+    image: commonsPhotos.forest.image,
+    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
+    imageCredit: commonsPhotos.forest,
+    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
     date: '2026-04-09',
     readTime: '9\u00a0min',
     keywords: ['workation Podlasie', 'praca zdalna w\u00a0lesie'],
@@ -122,7 +132,10 @@ const articles = [
     title: 'Noclegi Supraśl z\u00a0psem – przewodnik po Puszczy',
     excerpt:
       'Spacery, smycz, kleszcze i\u00a0nocleg, gdzie pies jedzie gratis. Praktyczny przewodnik po Supraślu z\u00a0psem.',
-    image: blogMeadow,
+    image: commonsPhotos.forest.image,
+    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
+    imageCredit: commonsPhotos.forest,
+    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
     date: '2026-04-09',
     readTime: '9\u00a0min',
     keywords: ['Podlasie z\u00a0psem', 'nocleg z\u00a0psem Supraśl'],
@@ -132,7 +145,10 @@ const articles = [
     title: 'Kraina Otwartych Okiennic: podróż w\u00a0czasie po Podlasiu',
     excerpt:
       'Kolorowe okiennice, drewniane chałupy i\u00a0wsie, w\u00a0których czas płynie wolniej. Szlak, którego nie da się przejechać bez zatrzymywania się co kilometr.',
-    image: blogKruszyniany,
+    image: commonsPhotos.woodenHouse.image,
+    imageAlt: 'Tradycyjny drewniany dom w Golakowej Szyi, na szlaku Krainy Otwartych Okiennic',
+    imageCredit: commonsPhotos.woodenHouse,
+    imageSrcSet: `${commonsPhotos.woodenHouse.image} 600w`,
     date: '2026-04-09',
     readTime: '11\u00a0min',
     keywords: ['Kraina Otwartych Okiennic', 'szlak Podlasie'],
@@ -142,7 +158,10 @@ const articles = [
     title: 'Supraśl z\u00a0dziećmi – atrakcje dla rodzin',
     excerpt:
       'Plaża miejska, muzea interaktywne, Park Linowy, łatwe szlaki w\u00a0Puszczy Knyszyńskiej i\u00a0restauracje przyjazne dzieciom. Rodzinny wyjazd na Podlasie!',
-    image: blogCoRobic,
+    image: commonsPhotos.suprasl.image,
+    imageAlt: 'Widok ogólny Supraśla',
+    imageCredit: commonsPhotos.suprasl,
+    imageSrcSet: `${commonsPhotos.suprasl.image} 600w`,
     date: '2026-04-09',
     readTime: '11\u00a0min',
     keywords: ['Supraśl z\u00a0dziećmi', 'atrakcje dla dzieci Supraśl'],
@@ -162,7 +181,10 @@ const articles = [
     title: 'Uzdrowisko Supraśl – wellness i\u00a0wypoczynek',
     excerpt:
       'Supraśl to prawdziwe uzdrowisko. Gdzie iść na zabiegi i\u00a0masaż, kiedy las i\u00a0balia to za mało.',
-    image: blogSupraslUzdrowisko,
+    image: commonsPhotos.suprasl.image,
+    imageAlt: 'Supraśl nad rzeką Supraśl, z widokiem na monaster',
+    imageCredit: commonsPhotos.suprasl,
+    imageSrcSet: `${commonsPhotos.suprasl.image} 600w`,
     date: '2026-04-09',
     readTime: '10\u00a0min',
     keywords: ['uzdrowisko Supraśl', 'wellness Supraśl', 'SPA Supraśl'],
@@ -182,7 +204,10 @@ const articles = [
     title: '7 historii z\u00a0Puszczy Knyszyńskiej, o\u00a0których nie uczyli w\u00a0szkole',
     excerpt:
       'Galeria Leśna Powstania Styczniowego i\u00a0inne miejsca związane z\u00a0historią regionu.',
-    image: blogPuszczaHistorie,
+    image: commonsPhotos.forest.image,
+    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
+    imageCredit: commonsPhotos.forest,
+    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
     date: '2026-03-28',
     readTime: '14\u00a0min',
     keywords: ['Puszcza Knyszyńska historie', 'Galeria Leśna'],
@@ -192,7 +217,10 @@ const articles = [
     title: 'Kajaki Supraśl – przewodnik po spływach rzeką Supraśl',
     excerpt:
       'Spokojna rzeka, dzika przyroda i\u00a0Puszcza Knyszyńska z\u00a0poziomu wody. Wszystko o\u00a0spływach kajakowych w\u00a0Supraślu.',
-    image: blogKajaki,
+    image: commonsPhotos.river.image,
+    imageAlt: 'Rzeka Supraśl w Parku Krajobrazowym Puszczy Knyszyńskiej',
+    imageCredit: commonsPhotos.river,
+    imageSrcSet: `${commonsPhotos.river.image} 960w`,
     date: '2026-03-15',
     readTime: '11\u00a0min',
     keywords: ['kajaki Supraśl', 'spływ Supraśl'],
@@ -202,7 +230,10 @@ const articles = [
     title: 'Szlak Bioróżnorodności w\u00a0Supraślu – informacje przed spacerem',
     excerpt:
       'Leśna ścieżka przy Supraślu, dobra na spacer z\u00a0dziećmi i\u00a0na pierwszą randkę z\u00a0puszczą.',
-    image: blogSzlakBio,
+    image: commonsPhotos.forest.image,
+    imageAlt: 'Park Krajobrazowy Puszczy Knyszyńskiej w okolicy Kołodna',
+    imageCredit: commonsPhotos.forest,
+    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
     date: '2026-03-14',
     readTime: '10\u00a0min',
     keywords: ['Supraśl szlak bioróżnorodności', 'atrakcje Supraśl'],
@@ -212,7 +243,10 @@ const articles = [
     title: 'Kruszyniany – tatarska wieś Podlasia',
     excerpt:
       'Drewniany meczet, mizar i\u00a0tatarska kuchnia, dla której warto przyjechać głodnym. Kruszyniany to wycieczka na cały dzień.',
-    image: blogKruszyniany,
+    image: commonsPhotos.mosque.image,
+    imageAlt: 'Drewniany meczet tatarski w Kruszynianach',
+    imageCredit: commonsPhotos.mosque,
+    imageSrcSet: `${commonsPhotos.mosque.image} 960w`,
     date: '2026-03-14',
     readTime: '9\u00a0min',
     keywords: ['Kruszyniany atrakcje', 'tatarska wieś Podlasie'],
@@ -222,7 +256,10 @@ const articles = [
     title: 'Supraśl – atrakcje uzdrowiska Podlasia',
     excerpt:
       'Monaster, Muzeum Ikon, bulwary i\u00a0Teatr Wierszalin. Co zobaczyć w\u00a0uzdrowisku Supraśl, gdy wyjdziecie z\u00a0lasu.',
-    image: blogSupraslUzdrowisko,
+    image: commonsPhotos.monastery.image,
+    imageAlt: 'Monaster Zwiastowania w Supraślu nad rzeką Supraśl',
+    imageCredit: commonsPhotos.monastery,
+    imageSrcSet: `${commonsPhotos.monastery.image} 960w`,
     date: '2026-03-14',
     readTime: '12\u00a0min',
     keywords: ['Supraśl atrakcje', 'co zobaczyć Supraśl'],
@@ -242,7 +279,10 @@ const articles = [
     title: 'Szlak Powstania Styczniowego w\u00a0Puszczy Knyszyńskiej',
     excerpt:
       'Śladami powstańców styczniowych przez najpiękniejsze zakątki Puszczy Knyszyńskiej. Historia, miejsca pamięci i\u00a0szlaki.',
-    image: blogPomnik,
+    image: commonsPhotos.forest.image,
+    imageAlt: 'Las w Parku Krajobrazowym Puszczy Knyszyńskiej',
+    imageCredit: commonsPhotos.forest,
+    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
     date: '2026-03-08',
     readTime: '10\u00a0min',
     keywords: ['Szlak Powstania Styczniowego', 'historia Supraśl'],
@@ -252,7 +292,10 @@ const articles = [
     title: 'Najlepsze szlaki piesze i\u00a0rowerowe – Supraśl i\u00a0Puszcza Knyszyńska',
     excerpt:
       'Szlaki piesze i\u00a0rowerowe z\u00a0Supraśla: od krótkich spacerów po całodniowe trasy przez Puszczę Knyszyńską.',
-    image: blogBike,
+    image: commonsPhotos.forest.image,
+    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
+    imageCredit: commonsPhotos.forest,
+    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
     date: '2026-03-01',
     readTime: '13\u00a0min',
     keywords: ['szlaki Supraśl', 'trasy rowerowe Supraśl'],
@@ -359,8 +402,8 @@ const Blog = () => {
             Blog — Supraśl i&nbsp;okolice
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Szlaki, knajpy, rykowisko i&nbsp;tatarskie pierogi. Piszą gospodarze z&nbsp;Konnego,
-            którzy sprawdzili to na własnych nogach (i&nbsp;żołądkach).
+            🌲 Szlaki, miejsca warte odwiedzenia i&nbsp;smaki Podlasia. Piszemy o&nbsp;Supraślu
+            i&nbsp;Puszczy Knyszyńskiej z&nbsp;perspektywy gospodarzy mieszkających w&nbsp;Konnem.
           </p>
         </div>
       </header>
@@ -368,54 +411,86 @@ const Blog = () => {
       {/* Articles Grid */}
       <section className="max-w-6xl mx-auto px-6 md:px-12 py-16">
         <div className="grid md:grid-cols-2 gap-8">
-          {articles.map((article) => (
-            <Link
-              key={article.slug}
-              to={`/blog/${article.slug}`}
-              className="group border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 bg-card"
-            >
-              {article.image && (
-                <div className="aspect-[16/9] overflow-hidden">
-                  <img
-                    src={article.image}
-                    srcSet={`${article.image} 600w`}
-                    sizes="(min-width: 768px) 50vw, 100vw"
-                    alt={article.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading={
-                      article.slug === 'jesien-w-suprasliu-2026-wydarzenia-kulturalne'
-                        ? 'lazy'
-                        : article.slug === articles[0].slug
-                          ? 'eager'
-                          : 'lazy'
-                    }
-                    decoding="async"
-                    width="600"
-                    height="338"
-                  />
-                </div>
-              )}
-              <div className="p-6 space-y-3">
-                <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                  <span className="inline-flex items-center gap-1">
-                    <Calendar className="w-3 h-3" />
-                    <time dateTime={article.date}>{article.date}</time>
-                  </span>
-                  <span className="inline-flex items-center gap-1">
-                    <Clock className="w-3 h-3" />
-                    {article.readTime}
-                  </span>
-                </div>
-                <h2 className="font-heading text-xl font-light text-foreground group-hover:text-primary transition-colors">
-                  {article.title}
-                </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed">{article.excerpt}</p>
-                <span className="inline-flex items-center gap-1 text-sm text-primary font-medium">
-                  Czytaj więcej <ArrowRight className="w-3.5 h-3.5" />
-                </span>
-              </div>
-            </Link>
-          ))}
+          {articles.map((article) => {
+            const imageAlt = 'imageAlt' in article ? article.imageAlt : article.title;
+            const imageCredit = 'imageCredit' in article ? article.imageCredit : undefined;
+            const imageSrcSet =
+              'imageSrcSet' in article ? article.imageSrcSet : `${article.image} 600w`;
+
+            return (
+              <article
+                key={article.slug}
+                className="border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 bg-card"
+              >
+                <Link to={`/blog/${article.slug}`} className="group block">
+                  {article.image && (
+                    <div className="aspect-[16/9] overflow-hidden">
+                      <img
+                        src={article.image}
+                        srcSet={imageSrcSet}
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                        alt={imageAlt}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading={
+                          article.slug === 'jesien-w-suprasliu-2026-wydarzenia-kulturalne'
+                            ? 'lazy'
+                            : article.slug === articles[0].slug
+                              ? 'eager'
+                              : 'lazy'
+                        }
+                        decoding="async"
+                        width="600"
+                        height="338"
+                      />
+                    </div>
+                  )}
+                  <div className="p-6 space-y-3">
+                    <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                      <span className="inline-flex items-center gap-1">
+                        <Calendar className="w-3 h-3" />
+                        <time dateTime={article.date}>{article.date}</time>
+                      </span>
+                      <span className="inline-flex items-center gap-1">
+                        <Clock className="w-3 h-3" />
+                        {article.readTime}
+                      </span>
+                    </div>
+                    <h2 className="font-heading text-xl font-light text-foreground group-hover:text-primary transition-colors">
+                      {article.title}
+                    </h2>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {article.excerpt}
+                    </p>
+                    <span className="inline-flex items-center gap-1 text-sm text-primary font-medium">
+                      Czytaj więcej <ArrowRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
+                </Link>
+                {imageCredit && (
+                  <p className="px-6 pb-4 text-xs text-muted-foreground">
+                    Zdjęcie:{' '}
+                    <a
+                      href={imageCredit.source}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-2 hover:text-foreground"
+                    >
+                      {imageCredit.author}
+                    </a>
+                    {' · '}
+                    <a
+                      href={imageCredit.licenseUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-2 hover:text-foreground"
+                    >
+                      {imageCredit.license}
+                    </a>
+                  </p>
+                )}
+              </article>
+            );
+          })}
         </div>
       </section>
 
@@ -423,7 +498,7 @@ const Blog = () => {
       <section className="px-6 md:px-12 py-16 bg-secondary">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="font-heading text-3xl font-light text-foreground">
-            Planujecie wizytę w&nbsp;Supraślu??
+            Planujecie wizytę w&nbsp;Supraślu?
           </h2>
           <p className="text-muted-foreground">
             Śpijcie u&nbsp;nas: cały dom z&nbsp;bali w&nbsp;lesie, z&nbsp;kominkiem i&nbsp;balią,
