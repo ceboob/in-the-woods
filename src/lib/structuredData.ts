@@ -6,6 +6,7 @@ export function buildVacationRentalSchema(property: Property) {
   return {
     '@context': 'https://schema.org',
     '@type': 'VacationRental',
+    additionalType: 'House',
     '@id': `${property.canonicalUrl}#vacation-rental`,
     name: property.name,
     description: property.description,

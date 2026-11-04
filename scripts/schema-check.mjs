@@ -59,6 +59,7 @@ assert.deepEqual(rental.geo, {
   latitude: 53.2075206,
   longitude: 23.4387928,
 });
+assert.equal(rental.additionalType, 'House');
 assert.equal(rental.containsPlace.additionalType, 'EntirePlace');
 assert.ok(
   ['EntirePlace', 'PrivateRoom', 'SharedRoom'].includes(rental.containsPlace.additionalType),
