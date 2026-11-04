@@ -53,6 +53,13 @@ const RykowiskoJeleni = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
       dateModified="2026-11-04"
+      ogImage="https://www.suprasl.online/images/blog/og-rykowisko-jeleni-puszcza-knyszynska.jpg"
+      heroImage={{
+        src: '/images/blog/og-rykowisko-jeleni-puszcza-knyszynska.webp',
+        alt: 'Rykowisko jeleni w Puszczy Knyszyńskiej',
+        width: 1200,
+        height: 630,
+      }}
     >
       <p>
         Na styku lata i&nbsp;jesieni, gdy dni stają się krótsze, a&nbsp;noce chłodniejsze,
@@ -76,6 +83,13 @@ const RykowiskoJeleni = () => {
         ich nawoływać.
       </p>
 
+      <BlogFigure
+        src="/images/blog/rykowisko-byki-w-walce.webp"
+        alt="Dwa byki jelenia w walce podczas rykowiska"
+        width={1600}
+        height={1065}
+        caption="Rykowisko to czas rywalizacji byków – obserwuj z&nbsp;daleka i&nbsp;w&nbsp;ciszy."
+      />
       <h2>Nasłuchiwanie w&nbsp;okolicach Supraśla</h2>
       <p>
         Jeśli chcesz wybrać się na nasłuchiwanie z&nbsp;przewodnikiem, informacje o&nbsp;terminach

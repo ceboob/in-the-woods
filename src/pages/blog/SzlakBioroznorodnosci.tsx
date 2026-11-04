@@ -56,6 +56,13 @@ const SzlakBioroznorodnosci = () => {
       faqs={faqs}
       relatedArticles={relatedArticles}
       dateModified="2026-11-03"
+      ogImage="https://www.suprasl.online/images/blog/og-szlak-bioroznorodnosci.jpg"
+      heroImage={{
+        src: '/images/blog/og-szlak-bioroznorodnosci.webp',
+        alt: 'Szlak Bioróżnorodności w Supraślu – drewniany pomost nad rzeką w Puszczy Knyszyńskiej',
+        width: 1200,
+        height: 630,
+      }}
     >
       <h2>Szlak Bioróżnorodności Supraśl — spacer po puszczy</h2>
 
@@ -121,6 +128,20 @@ const SzlakBioroznorodnosci = () => {
         text="Wyruszaj na szlak z wypoczętą głową. In The Woods w Konne koło Supraśla to dom na wyłączność dla maksymalnie 8 osób — sprawdź wolne terminy lub zadzwoń."
       />
 
+      <BlogFigure
+        src="/images/blog/szlak-bioroznorodnosci-wiaty-i-wieza.webp"
+        alt="Wiaty i wieża widokowa przy Szlaku Bioróżnorodności w Supraślu"
+        width={1600}
+        height={900}
+        caption="Wiaty i&nbsp;wieża widokowa na trasie szlaku."
+      />
+      <BlogFigure
+        src="/images/blog/szlak-bioroznorodnosci-tablica-informacyjna.webp"
+        alt="Tablica informacyjna na Szlaku Bioróżnorodności"
+        width={1600}
+        height={1200}
+        caption="Tablice edukacyjne objaśniają przyrodę puszczy."
+      />
       <h2>Co można zobaczyć?</h2>
 
       <h3>Flora Puszczy Knyszyńskiej</h3>
@@ -144,6 +165,20 @@ const SzlakBioroznorodnosci = () => {
         i&nbsp;zostaw w&nbsp;lesie gatunki, których nie rozpoznajesz.
       </p>
 
+      <BlogFigure
+        src="/images/blog/szlak-bioroznorodnosci-most-nad-rzeka.webp"
+        alt="Most nad rzeką na trasie Szlaku Bioróżnorodności"
+        width={1600}
+        height={1075}
+        caption="Przeprawa nad rzeką na szlaku."
+      />
+      <BlogFigure
+        src="/images/blog/szlak-bioroznorodnosci-rzeka-wiosna.webp"
+        alt="Rzeka w Puszczy Knyszyńskiej wiosną"
+        width={1600}
+        height={1068}
+        caption="Rzeka płynąca przez puszczę."
+      />
       <h2>Dlaczego warto odwiedzić?</h2>
 
       <p>

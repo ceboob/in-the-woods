@@ -1,6 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
+import { BlogFigure } from '@/components/BlogArticleParts';
 import { GARDEN_TUB_PRICE, MIN_NIGHTLY_RATE } from '@/lib/pricing';
 import jacuzziNight from '@/assets/jacuzzi-night-md.webp';
 import rzeka from '@/assets/blog-rzeka-suprasl-optimized.webp';
@@ -80,6 +81,14 @@ const RomantycznyWeekendPodlasie = () => (
       className="w-full rounded-lg my-8 aspect-[16/10] object-cover"
       width="1024"
       height="1363"
+    />
+
+    <BlogFigure
+      src="/images/blog/romantyczny-weekend-para-w-lesie.webp"
+      alt="Przytulona para na leśnej drodze"
+      width={1600}
+      height={1067}
+      caption="Weekend we dwoje – cisza, las i&nbsp;czas tylko dla siebie."
     />
 
     <h2>13 romantycznych miejsc na Podlasiu</h2>
@@ -211,6 +220,21 @@ const RomantycznyWeekendPodlasie = () => (
       woda, chłodne powietrze, nad głową niebo bez łuny miasta. Jedyny tłum, jaki tu spotkacie, to
       komary w&nbsp;lipcu.
     </p>
+
+    <BlogFigure
+      src="/images/blog/romantyczny-weekend-kladka-nad-rozlewiskiem.webp"
+      alt="Drewniana kładka nad podlaskim rozlewiskiem"
+      width={1600}
+      height={1200}
+      caption="Drewniane kładki nad rozlewiskami to idealne miejsce na spacer we dwoje."
+    />
+    <BlogFigure
+      src="/images/blog/romantyczny-weekend-mglisty-wschod-slonca.webp"
+      alt="Wschód słońca nad mglistą łąką z samotnym drzewem"
+      width={1600}
+      height={1000}
+      caption="Poranna mgła i&nbsp;wschód słońca nad podlaskimi łąkami."
+    />
 
     <h2>Plan romantycznego weekendu na Podlasiu</h2>
     <h3>Piątek: przyjazd i&nbsp;pierwszy wieczór</h3>
