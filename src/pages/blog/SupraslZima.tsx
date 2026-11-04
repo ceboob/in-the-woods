@@ -1,5 +1,6 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
+import { BlogFigure } from '@/components/BlogArticleParts';
 import winterForest from '@/assets/winter-forest.webp';
 import commonsForest from '@/assets/commons-puszcza-knyszynska-kolodno-600.jpg';
 import commonsBison from '@/assets/commons-zubry-puszcza-knyszynska-600.jpg';
@@ -65,8 +66,8 @@ const SupraslZima = () => (
     <p>
       Zimą Podlasie nie potrzebuje wielkich atrakcji ani głośnych kurortów, by zachwycić. Wystarczy
       skrzypiący pod butami śnieg, para unosząca się nad rzeką i&nbsp;las, który po mroźnej nocy
-      wygląda jak kraina z&nbsp;baśni. <strong>Supraśl zimą</strong> to propozycja dla Ciebie,
-      jeśli marzysz o&nbsp;spokojnym wyjeździe blisko natury i&nbsp;z&nbsp;dala od tłumów.
+      wygląda jak kraina z&nbsp;baśni. <strong>Supraśl zimą</strong> to propozycja dla Ciebie, jeśli
+      marzysz o&nbsp;spokojnym wyjeździe blisko natury i&nbsp;z&nbsp;dala od tłumów.
     </p>
     <p>
       Zamiast kolejek do wyciągów czekają tu leśne ścieżki, ciche przystanki edukacyjne i&nbsp;czas,
@@ -160,6 +161,20 @@ const SupraslZima = () => (
       </a>
       .
     </p>
+    <BlogFigure
+      src="/images/blog/zima-suprasl-klasztor-w-sniegu.webp"
+      alt="Zimowy Supraśl – drewniany dom i monaster pod śniegiem"
+      width={1600}
+      height={1200}
+      caption="Supraśl zimą – śnieg zmienia znane miejsca nie do poznania."
+    />
+    <BlogFigure
+      src="/images/blog/zima-suprasl-droga-przy-tablicy.webp"
+      alt="Zaśnieżona droga w okolicach Supraśla przy tablicy informacyjnej"
+      width={1600}
+      height={1023}
+      caption="Zaśnieżone drogi i szlaki w&nbsp;okolicy Supraśla."
+    />
     <h2>🦬 Spotkanie z&nbsp;dziką naturą</h2>
     <p>
       Zimowy spacer to także okazja, by dostrzec ślady obecności mieszkańców puszczy. Na śniegu
@@ -205,9 +220,9 @@ const SupraslZima = () => (
     </figure>
     <p>
       Jeśli chcesz zobaczyć te potężne zwierzęta z&nbsp;bliska, odwiedź Zagrodę Pokazową Żubrów
-      w&nbsp;Kopnej Górze. To dobra okazja, by spokojnie poznać symbol regionu
-      i&nbsp;dowiedzieć się więcej o&nbsp;jego ochronie. Informacje o&nbsp;zagrodzie
-      i&nbsp;pobliskim Poczopku zebrano także w&nbsp;przewodniku{' '}
+      w&nbsp;Kopnej Górze. To dobra okazja, by spokojnie poznać symbol regionu i&nbsp;dowiedzieć się
+      więcej o&nbsp;jego ochronie. Informacje o&nbsp;zagrodzie i&nbsp;pobliskim Poczopku zebrano
+      także w&nbsp;przewodniku{' '}
       <a
         href="https://bialystokwedlugani.com/2026/01/11/2-x-puszcza-knyszynska-kopna-gora-poczopek/"
         target="_blank"
@@ -220,7 +235,8 @@ const SupraslZima = () => (
     </p>
     <p>
       Dzikich stad można wypatrywać również w&nbsp;okolicach Krynek. Spotkanie z&nbsp;nimi
-      w&nbsp;naturze jest jednak kwestią szczęścia — zachowaj dystans i&nbsp;nigdy ich nie dokarmiaj.
+      w&nbsp;naturze jest jednak kwestią szczęścia — zachowaj dystans i&nbsp;nigdy ich nie
+      dokarmiaj.
     </p>
     <h2>🌲 Poczopek i&nbsp;Kopna Góra – cisza, która pozwala odetchnąć</h2>
     <p>
@@ -263,10 +279,9 @@ const SupraslZima = () => (
       </Link>{' '}
       to całoroczny dom na wynajem w&nbsp;cichej miejscowości Konne, niedaleko Supraśla
       i&nbsp;Puszczy Knyszyńskiej. To wygodna baza dla osób szukających prywatności, leśnych
-      spacerów i&nbsp;kameralnego wypoczynku. Jeśli szukasz{' '}
-      <strong>noclegi Supraśl</strong>, noclegi w&nbsp;Puszczy Knyszyńskiej albo{' '}
-      <strong>domek z&nbsp;jacuzzi na Podlasiu</strong>, tutaj można połączyć odkrywanie regionu
-      z&nbsp;wieczornym odpoczynkiem we własnym tempie.
+      spacerów i&nbsp;kameralnego wypoczynku. Jeśli szukasz <strong>noclegi Supraśl</strong>,
+      noclegi w&nbsp;Puszczy Knyszyńskiej albo <strong>domek z&nbsp;jacuzzi na Podlasiu</strong>,
+      tutaj można połączyć odkrywanie regionu z&nbsp;wieczornym odpoczynkiem we własnym tempie.
     </p>
     <p>
       Dla gości zatrzymujących się w&nbsp;In The Woods możemy zorganizować tradycyjny
@@ -275,11 +290,24 @@ const SupraslZima = () => (
       kuligu zależy od pogody i&nbsp;ilości śniegu. Zapytaj o&nbsp;tę atrakcję przy rezerwacji
       pobytu.
     </p>
+    <BlogFigure
+      src="/images/blog/zima-kulig-konie-w-lesie.webp"
+      alt="Dwa konie ciągnące sanie przez zaśnieżony las"
+      width={1600}
+      height={1068}
+      caption="Kulig z&nbsp;ogniskiem – zimowa atrakcja dla gości In The Woods."
+    />
+    <p>
+      <strong>Kulig z&nbsp;ogniskiem wymaga wcześniejszej organizacji</strong> — szczegóły (termin,
+      liczba osób, przebieg) uzgadniamy indywidualnie i&nbsp;z&nbsp;dużym wyprzedzeniem. Skontaktuj
+      się z&nbsp;nami telefonicznie pod numerem <a href="tel:+48722765101">722 765 101</a> lub
+      mailowo: <a href="mailto:tutinthewood@gmail.com">tutinthewood@gmail.com</a>.
+    </p>
     <h2>✨ Zaplanuj zimowy wyjazd na Podlasie</h2>
     <p>
       Poranny spacer nad rzeką, popołudnie wśród świerków i&nbsp;wieczór przy ogniu — tak może
-      wyglądać dzień w&nbsp;Supraślu i&nbsp;okolicach. Jeśli marzysz o&nbsp;zimowym wyjeździe
-      bez tłumów, rezerwacja pobytu w&nbsp;In The Woods pozwoli cieszyć się bliskością puszczy przez
+      wyglądać dzień w&nbsp;Supraślu i&nbsp;okolicach. Jeśli marzysz o&nbsp;zimowym wyjeździe bez
+      tłumów, rezerwacja pobytu w&nbsp;In The Woods pozwoli cieszyć się bliskością puszczy przez
       cały rok. Zadzwoń pod numer <a href="tel:+48722765101">722 765 101</a> albo{' '}
       <Link to="/#rezerwacja">zobacz kalendarz wolnych terminów</Link>.
     </p>

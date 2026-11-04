@@ -1,5 +1,5 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
-import oakForestThumb from '@/assets/gallery-dab-puszcza-thumb.webp';
+import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
 import { Link } from 'react-router-dom';
 
 const faqs = [
@@ -33,7 +33,14 @@ const JesienWSupraslu2026 = () => (
     slug="jesien-w-suprasliu-2026-wydarzenia-kulturalne"
     publishDate="2026-10-03"
     readTime="4&nbsp;min"
-    ogImage="https://www.suprasl.online/images/gallery-dab-puszcza.webp"
+    ogImage="https://www.suprasl.online/images/blog/og-jesien-w-suprasliu-2026.jpg"
+    heroImage={{
+      src: '/images/blog/og-jesien-w-suprasliu-2026.webp',
+      alt: 'Jesień w Supraślu – kolorowe drzewa nad wodą',
+      width: 1200,
+      height: 630,
+    }}
+    dateModified="2026-11-04"
     keywords={['jesień w\u00a0Supraślu', 'Supraśl jesienią', 'wydarzenia w\u00a0Supraślu']}
     faqs={faqs}
     relatedArticles={[
@@ -45,17 +52,6 @@ const JesienWSupraslu2026 = () => (
       },
     ]}
   >
-    <img
-      src={oakForestThumb}
-      srcSet={`${oakForestThumb} 450w, /images/gallery-dab-puszcza.webp 900w`}
-      sizes="(min-width: 768px) 448px, 100vw"
-      alt="Jesienny las w&nbsp;okolicy Supraśla"
-      className="mx-auto mb-8 h-auto w-full max-w-md rounded-lg shadow-md"
-      width="900"
-      height="1200"
-      loading="lazy"
-      decoding="async"
-    />
     <p>
       🍂 Jesienią Supraśl i&nbsp;Puszcza Knyszyńska zwalniają tempo. Złote liście zachęcają do
       spacerów, a&nbsp;krótszy dzień sprzyja wieczorom w&nbsp;mieście. Ubierz się warstwowo
@@ -80,6 +76,32 @@ const JesienWSupraslu2026 = () => (
       </a>
       .
     </p>
+    <BlogFigure
+      src="/images/blog/jesien-suprasl-monaster-zza-drzew.webp"
+      alt="Monaster w Supraślu widoczny zza jesiennych drzew"
+      width={1600}
+      height={1156}
+      caption="Monaster w&nbsp;Supraślu jesienią."
+    />
+    <BlogFigure
+      src="/images/blog/jesien-suprasl-monaster-w-wodzie.webp"
+      alt="Odbicie monasteru w Supraślu w wodzie"
+      width={1600}
+      height={1068}
+    />
+    <BlogFigure
+      src="/images/blog/jesien-suprasl-skwer-z-lisci.webp"
+      alt="Jesienny skwer w Supraślu z ławką i kolorowymi liśćmi"
+      width={1600}
+      height={1200}
+      caption="Spacer wśród kolorowych liści."
+    />
+    <BlogFigure
+      src="/images/blog/jesien-suprasl-zlote-brzozy-nad-stawem.webp"
+      alt="Złote brzozy nad stawem jesienią"
+      width={1600}
+      height={1067}
+    />
 
     <h2>Wydarzenia kulturalne</h2>
     <p>
@@ -96,11 +118,17 @@ const JesienWSupraslu2026 = () => (
       i&nbsp;ewentualne zasady udziału.
     </p>
 
+    <BlogInlineCta
+      title="Jesienny weekend w lesie"
+      text="Dom na wyłączność w Konnych, 10 min od Supraśla — z kominkiem i ogrodzonym ogrodem. Sprawdź wolne terminy lub zadzwoń."
+    />
+
     <h2>Jesienny weekend w&nbsp;In The Woods</h2>
     <p>
       Jeśli chcesz połączyć zwiedzanie z&nbsp;odpoczynkiem,{' '}
-      <Link to="/">poznaj dom In The Woods</Link> i&nbsp;<Link to="/#rezerwacja">zapytaj o&nbsp;termin</Link>.
-      Formularz służy do wysłania zapytania — rezerwacja jest potwierdzana osobno.
+      <Link to="/">poznaj dom In The Woods</Link> i&nbsp;
+      <Link to="/#rezerwacja">zapytaj o&nbsp;termin</Link>. Formularz służy do wysłania zapytania —
+      rezerwacja jest potwierdzana osobno.
     </p>
   </BlogArticleLayout>
 );

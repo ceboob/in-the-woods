@@ -1,5 +1,6 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
+import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
 
 const WorkationPodlasie = () => (
   <BlogArticleLayout
@@ -37,6 +38,14 @@ const WorkationPodlasie = () => (
       { title: 'Weekend w\u00a0Supraślu: plan od piątku do niedzieli', slug: '/weekend-suprasl' },
       { title: 'Romantyczny weekend na Podlasiu', slug: 'romantyczny-weekend-podlasie' },
     ]}
+    ogImage="https://www.suprasl.online/images/blog/og-workation-podlasie.jpg"
+    dateModified="2026-11-04"
+    heroImage={{
+      src: '/images/blog/og-workation-podlasie.webp',
+      alt: 'Wschód słońca nad łąką we mgle — poranek na Podlasiu',
+      width: 1200,
+      height: 630,
+    }}
   >
     <article className="prose prose-lg max-w-none space-y-8">
       <p className="text-muted-foreground leading-relaxed text-lg">
@@ -55,8 +64,8 @@ const WorkationPodlasie = () => (
       <h2 className="section-title !text-2xl md:!text-3xl">Jak wygodnie pracować z&nbsp;lasu?</h2>
       <ul className="space-y-3 text-muted-foreground">
         <li>
-          💻 <strong>Połączenie internetowe</strong> — jeśli Twoje zadania wymagają stabilnego łącza,
-          zapytaj nas o&nbsp;aktualne parametry
+          💻 <strong>Połączenie internetowe</strong> — jeśli Twoje zadania wymagają stabilnego
+          łącza, zapytaj nas o&nbsp;aktualne parametry
         </li>
         <li>
           🪑 <strong>Miejsce do pracy</strong> — na poddaszu czeka kameralna strefa z&nbsp;fotelem
@@ -75,12 +84,42 @@ const WorkationPodlasie = () => (
         </li>
       </ul>
 
+      <BlogFigure
+        src="/images/blog/workation-podlasie-brzozy-we-mgle.webp"
+        alt="Brzozy we mgle w porannym świetle"
+        width={1024}
+        height={768}
+        caption="Poranny spacer wśród brzóz to dobry sposób na zaczęcie dnia przed pracą."
+      />
+
+      <BlogInlineCta
+        title="Pracuj z widokiem na las"
+        text="Dom na wyłączność koło Supraśla z Wi-Fi i kameralną strefą pracy na poddaszu. Sprawdź wolne terminy lub zadzwoń i zapytaj o warunki pracy."
+      />
+
       <h2 className="section-title !text-2xl md:!text-3xl">Przykładowy plan dnia</h2>
       <p className="text-muted-foreground leading-relaxed">
-        Zacznij dzień od najważniejszych zadań, a&nbsp;przerwę wykorzystaj na spacer lub kawę
-        na tarasie. Jeśli wybierasz się na dłuższą trasę, przygotuj się do pogody i&nbsp;trzymaj się
+        Zacznij dzień od najważniejszych zadań, a&nbsp;przerwę wykorzystaj na spacer lub kawę na
+        tarasie. Jeśli wybierasz się na dłuższą trasę, przygotuj się do pogody i&nbsp;trzymaj się
         oznakowanych dróg.
       </p>
+
+      <div className="not-prose">
+        <BlogFigure
+          src="/images/blog/workation-podlasie-poranek-we-mgle.webp"
+          alt="Poranek we mgle nad polami i drzewami"
+          width={1000}
+          height={667}
+          caption="Mglisty poranek przed pierwszym spotkaniem."
+        />
+        <BlogFigure
+          src="/images/blog/workation-podlasie-wschod-slonca-nad-laka.webp"
+          alt="Wschód słońca nad łąką na Podlasiu"
+          width={1920}
+          height={1280}
+          caption="Wschód słońca nad łąką — zasłużona przerwa."
+        />
+      </div>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Atrakcje w&nbsp;okolicy</h2>
       <p className="text-muted-foreground leading-relaxed">
@@ -108,7 +147,11 @@ const WorkationPodlasie = () => (
         szczegóły miejsca do pracy lub łącza internetowego. Zadzwoń:{' '}
         <a href="tel:+48722765101" className="text-primary hover:underline">
           722 765 101
-        </a>
+        </a>{' '}
+        lub{' '}
+        <Link to="/#rezerwacja" className="text-primary hover:underline">
+          sprawdź wolne terminy
+        </Link>
         .
       </p>
     </article>

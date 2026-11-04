@@ -1,5 +1,6 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
+import { BlogFigure } from '@/components/BlogArticleParts';
 
 const GrzybobraniePuszczaKnyszynska = () => (
   <BlogArticleLayout
@@ -52,6 +53,13 @@ const GrzybobraniePuszczaKnyszynska = () => (
       </p>
 
       <h2 className="section-title !text-2xl md:!text-3xl">Kiedy planować grzybobranie?</h2>
+      <BlogFigure
+        src="/images/blog/grzybobranie-puszcza-kosz-i-kurki.webp"
+        alt="Wiklinowy koszyk i kurki na mchu w sosnowym lesie"
+        width={1600}
+        height={899}
+        caption="Koszyk wiklinowy to podstawa grzybiarza."
+      />
       <p className="text-muted-foreground leading-relaxed">
         Sezon i&nbsp;liczba grzybów zmieniają się wraz z&nbsp;pogodą. Warto śledzić lokalne
         komunikaty nadleśnictwa — zwłaszcza gdy planujesz wycieczkę w&nbsp;okolice rezerwatu.
@@ -70,6 +78,13 @@ const GrzybobraniePuszczaKnyszynska = () => (
         i&nbsp;stosuj się do zasad ochrony przyrody.
       </p>
 
+      <BlogFigure
+        src="/images/blog/grzybobranie-puszcza-grzyb-przy-drzewie.webp"
+        alt="Borowik szlachetny rosnący przy pniu drzewa"
+        width={1600}
+        height={1061}
+        caption="Zbieraj tylko grzyby, które rozpoznajesz bez wątpliwości."
+      />
       <h2 className="section-title !text-2xl md:!text-3xl">Zanim wyruszysz na grzyby</h2>
       <ul className="space-y-3 text-muted-foreground">
         <li>Występowanie poszczególnych gatunków zależy od pory roku i&nbsp;pogody.</li>
@@ -84,10 +99,16 @@ const GrzybobraniePuszczaKnyszynska = () => (
         gdzie zezwalają na to przepisy i&nbsp;lokalne oznaczenia.
       </p>
       <p className="text-muted-foreground leading-relaxed">
-        Zasady różnią się zależnie od miejsca. Jeśli nie masz pewności, czy wolno tu zbierać,
-        zostaw grzyby w&nbsp;lesie i&nbsp;skontaktuj się z&nbsp;nadleśnictwem.
+        Zasady różnią się zależnie od miejsca. Jeśli nie masz pewności, czy wolno tu zbierać, zostaw
+        grzyby w&nbsp;lesie i&nbsp;skontaktuj się z&nbsp;nadleśnictwem.
       </p>
 
+      <BlogFigure
+        src="/images/blog/grzybobranie-puszcza-grzyby-w-mchu.webp"
+        alt="Trzy borowiki w mchu w leśnym runie"
+        width={1600}
+        height={1061}
+      />
       <h2 className="section-title !text-2xl md:!text-3xl">Praktyczne porady</h2>
       <ol className="space-y-3 text-muted-foreground list-decimal list-inside">
         <li>

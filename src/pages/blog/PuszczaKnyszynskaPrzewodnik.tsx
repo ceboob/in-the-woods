@@ -1,6 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import RelatedPages from '@/components/RelatedPages';
 import { Link } from 'react-router-dom';
+import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
 import { MapPin, TreePine, Heart, Bike, Footprints, Eye, Download } from 'lucide-react';
 
 const gpxTrails = [
@@ -173,7 +174,14 @@ const PuszczaKnyszynskaPrzewodnik = () => (
       'Kruszyniany',
     ]}
     faqs={faqs}
-    ogImage="https://www.suprasl.online/images/exterior-main.webp"
+    ogImage="https://www.suprasl.online/images/blog/og-puszcza-knyszynska-przewodnik.jpg"
+    dateModified="2026-11-04"
+    heroImage={{
+      src: '/images/blog/og-puszcza-knyszynska-przewodnik.webp',
+      alt: 'Rowerzysta na leśnej drodze w Puszczy Knyszyńskiej',
+      width: 1200,
+      height: 630,
+    }}
     relatedArticles={[
       {
         title: 'Szlaki piesze i\u00a0rowerowe z\u00a0Supraśla',
@@ -231,8 +239,8 @@ const PuszczaKnyszynskaPrzewodnik = () => (
             Kładki nad wodą
           </h3>
           <p className="text-muted-foreground leading-relaxed">
-            Rezerwat Krzemianka odwiedzaj wyłącznie trasami udostępnionymi dla turystów i&nbsp;zgodnie
-            z&nbsp;oznaczeniami na miejscu.
+            Rezerwat Krzemianka odwiedzaj wyłącznie trasami udostępnionymi dla turystów
+            i&nbsp;zgodnie z&nbsp;oznaczeniami na miejscu.
           </p>
         </div>
       </div>
@@ -273,6 +281,28 @@ const PuszczaKnyszynskaPrzewodnik = () => (
           </p>
         </div>
       </div>
+
+      <div className="not-prose">
+        <BlogFigure
+          src="/images/blog/puszcza-knyszynska-rowerzysta-lesna-droga.webp"
+          alt="Rowerzysta jadący leśną drogą w Puszczy Knyszyńskiej"
+          width={1521}
+          height={1080}
+          caption="Leśne drogi Puszczy — dla rowerzystów w&nbsp;każdym tempie."
+        />
+        <BlogFigure
+          src="/images/blog/puszcza-knyszynska-rowerzysta-na-wzgorzu.webp"
+          alt="Rowerzysta na wzgórzu z widokiem na okolicę"
+          width={1098}
+          height={646}
+          caption="Wzniesienia i&nbsp;widoki na trasach rowerowych."
+        />
+      </div>
+
+      <BlogInlineCta
+        title="Wypad do Puszczy z bazą w lesie"
+        text="Dom na wyłączność w Konnych, 10 min od Supraśla. Sprawdź wolne terminy lub zadzwoń."
+      />
     </section>
 
     {/* SLOW */}
@@ -297,8 +327,8 @@ const PuszczaKnyszynskaPrzewodnik = () => (
           </h3>
           <p className="text-muted-foreground leading-relaxed">
             Wzgórza Świętojańskie i&nbsp;rezerwat Krzemianka to przykłady przyrodniczych miejsc
-            w&nbsp;regionie. Korzystaj z&nbsp;wyznaczonych tras, a&nbsp;dzikich zwierząt nie
-            zbliżaj ani nie dokarmiaj.
+            w&nbsp;regionie. Korzystaj z&nbsp;wyznaczonych tras, a&nbsp;dzikich zwierząt nie zbliżaj
+            ani nie dokarmiaj.
           </p>
         </div>
       </div>
@@ -372,7 +402,11 @@ const PuszczaKnyszynskaPrzewodnik = () => (
         lub{' '}
         <Link to="/#rezerwacja" className="text-primary underline hover:text-primary/80">
           wyślij zapytanie o&nbsp;pobyt
-        </Link>
+        </Link>{' '}
+        albo zadzwoń:{' '}
+        <a href="tel:+48722765101" className="text-primary underline hover:text-primary/80">
+          722&nbsp;765&nbsp;101
+        </a>
         .
       </p>
     </section>

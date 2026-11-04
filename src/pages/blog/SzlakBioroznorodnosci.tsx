@@ -1,6 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
+import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
 import { commonsPhotos } from '@/lib/commonsPhotos';
 
 const SzlakBioroznorodnosci = () => {
@@ -54,6 +55,14 @@ const SzlakBioroznorodnosci = () => {
       ]}
       faqs={faqs}
       relatedArticles={relatedArticles}
+      dateModified="2026-11-03"
+      ogImage="https://www.suprasl.online/images/blog/og-szlak-bioroznorodnosci.jpg"
+      heroImage={{
+        src: '/images/blog/og-szlak-bioroznorodnosci.webp',
+        alt: 'Szlak Bioróżnorodności w Supraślu – drewniany pomost nad rzeką w Puszczy Knyszyńskiej',
+        width: 1200,
+        height: 630,
+      }}
     >
       <h2>Szlak Bioróżnorodności Supraśl — spacer po puszczy</h2>
 
@@ -64,15 +73,9 @@ const SzlakBioroznorodnosci = () => {
       </p>
 
       <p>
-        Jeśli szukasz <Link to="/atrakcje-suprasl">atrakcji w&nbsp;Supraślu</Link>, które łączą
-        ruch z&nbsp;poznawaniem przyrody, ten szlak może być dobrym punktem planu.
+        Jeśli szukasz <Link to="/atrakcje-suprasl">atrakcji w&nbsp;Supraślu</Link>, które łączą ruch
+        z&nbsp;poznawaniem przyrody, ten szlak może być dobrym punktem planu.
       </p>
-
-      <CommonsPhoto
-        photo={commonsPhotos.forest}
-        alt="Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna"
-        loading="lazy"
-      />
 
       <h2>Czym jest Szlak Bioróżnorodności?</h2>
 
@@ -120,6 +123,25 @@ const SzlakBioroznorodnosci = () => {
         loading="lazy"
       />
 
+      <BlogInlineCta
+        title="Spacer rano, odpoczynek w domu w lesie"
+        text="Wyruszaj na szlak z wypoczętą głową. In The Woods w Konne koło Supraśla to dom na wyłączność dla maksymalnie 8 osób — sprawdź wolne terminy lub zadzwoń."
+      />
+
+      <BlogFigure
+        src="/images/blog/szlak-bioroznorodnosci-wiaty-i-wieza.webp"
+        alt="Wiaty i wieża widokowa przy Szlaku Bioróżnorodności w Supraślu"
+        width={1600}
+        height={900}
+        caption="Wiaty i&nbsp;wieża widokowa na trasie szlaku."
+      />
+      <BlogFigure
+        src="/images/blog/szlak-bioroznorodnosci-tablica-informacyjna.webp"
+        alt="Tablica informacyjna na Szlaku Bioróżnorodności"
+        width={1600}
+        height={1200}
+        caption="Tablice edukacyjne objaśniają przyrodę puszczy."
+      />
       <h2>Co można zobaczyć?</h2>
 
       <h3>Flora Puszczy Knyszyńskiej</h3>
@@ -143,6 +165,20 @@ const SzlakBioroznorodnosci = () => {
         i&nbsp;zostaw w&nbsp;lesie gatunki, których nie rozpoznajesz.
       </p>
 
+      <BlogFigure
+        src="/images/blog/szlak-bioroznorodnosci-most-nad-rzeka.webp"
+        alt="Most nad rzeką na trasie Szlaku Bioróżnorodności"
+        width={1600}
+        height={1075}
+        caption="Przeprawa nad rzeką na szlaku."
+      />
+      <BlogFigure
+        src="/images/blog/szlak-bioroznorodnosci-rzeka-wiosna.webp"
+        alt="Rzeka w Puszczy Knyszyńskiej wiosną"
+        width={1600}
+        height={1068}
+        caption="Rzeka płynąca przez puszczę."
+      />
       <h2>Dlaczego warto odwiedzić?</h2>
 
       <p>
@@ -212,7 +248,11 @@ const SzlakBioroznorodnosci = () => {
 
       <p>
         Informacje o&nbsp;wyposażeniu domu i&nbsp;dojeździe do okolicznych tras znajdziesz na
-        stronie <Link to="/">In The Woods</Link>.
+        stronie <Link to="/">In The Woods</Link>. Chcesz zarezerwować termin?{' '}
+        <Link to="/#rezerwacja">Sprawdź dostępność</Link> albo zadzwoń:{' '}
+        <a href="tel:+48722765101">+48 722 765 101</a>. Szukasz więcej pomysłów? Zobacz{' '}
+        <Link to="/weekend-suprasl">weekend w&nbsp;Supraślu</Link> i{' '}
+        <Link to="/puszcza-knyszynska-nocleg">nocleg w&nbsp;Puszczy Knyszyńskiej</Link>.
       </p>
     </BlogArticleLayout>
   );

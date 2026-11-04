@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 import { Phone, ArrowRight, Calendar, Clock } from 'lucide-react';
 import blogKanal from '@/assets/blog-kanal-kopanica-optimized.webp';
+import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1-optimized.webp';
 import blogRestauracje from '@/assets/blog-restauracje-suprasl.jpg';
 import blogMushrooms from '@/assets/article-optimized.webp';
-import blogMeadow from '@/assets/Fot.-Andrzej-Stachurski-1-optimized.webp';
 import blogBike from '@/assets/puszcza_knyszynska--optimized.webp';
 import winterForest from '@/assets/winter-forest.webp';
 import { commonsPhotos } from '@/lib/commonsPhotos';
@@ -70,10 +70,9 @@ const articles = [
     title: 'Puszcza Knyszyńska — kompletny przewodnik: atrakcje, szlaki, mapy GPX',
     excerpt:
       'Odkryj Puszczę Knyszyńską: najpiękniejsze szlaki piesze, rowerowe i\u00a0narciarskie z\u00a0mapami GPX do pobrania. Kajaki, rykowisko, Kruszyniany i\u00a0Supraśl.',
-    image: commonsPhotos.forest.image,
-    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
-    imageCredit: commonsPhotos.forest,
-    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
+    image: '/images/blog/og-puszcza-knyszynska-przewodnik.webp',
+    imageAlt: 'Rowerzysta na leśnej drodze w Puszczy Knyszyńskiej',
+    imageSrcSet: '/images/blog/og-puszcza-knyszynska-przewodnik.webp 1200w',
     date: '2026-04-09',
     readTime: '15\u00a0min',
     keywords: ['Puszcza Knyszyńska', 'szlaki GPX', 'atrakcje', 'przewodnik'],
@@ -119,10 +118,9 @@ const articles = [
     title: 'Praca zdalna podczas pobytu na Podlasiu',
     excerpt:
       'Starlink, widok na sosny i\u00a0balia po pracy. Jak pracować zdalnie z\u00a0lasu i\u00a0nie dać się namówić na wieczną drzemkę.',
-    image: commonsPhotos.forest.image,
-    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
-    imageCredit: commonsPhotos.forest,
-    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
+    image: '/images/blog/og-workation-podlasie.webp',
+    imageAlt: 'Wschód słońca nad łąką we mgle — poranek na Podlasiu',
+    imageSrcSet: '/images/blog/og-workation-podlasie.webp 1200w',
     date: '2026-04-09',
     readTime: '9\u00a0min',
     keywords: ['workation Podlasie', 'praca zdalna w\u00a0lesie'],
@@ -132,10 +130,9 @@ const articles = [
     title: 'Noclegi Supraśl z\u00a0psem – przewodnik po Puszczy',
     excerpt:
       'Spacery, smycz, kleszcze i\u00a0nocleg, gdzie pies jedzie gratis. Praktyczny przewodnik po Supraślu z\u00a0psem.',
-    image: commonsPhotos.forest.image,
-    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
-    imageCredit: commonsPhotos.forest,
-    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
+    image: '/images/blog/og-podlasie-z-psem.webp',
+    imageAlt: 'Owczarek niemiecki z patykiem w pysku biegnący po trawie',
+    imageSrcSet: '/images/blog/og-podlasie-z-psem.webp 1200w',
     date: '2026-04-09',
     readTime: '9\u00a0min',
     keywords: ['Podlasie z\u00a0psem', 'nocleg z\u00a0psem Supraśl'],
@@ -204,10 +201,9 @@ const articles = [
     title: '7 historii z\u00a0Puszczy Knyszyńskiej, o\u00a0których nie uczyli w\u00a0szkole',
     excerpt:
       'Galeria Leśna Powstania Styczniowego i\u00a0inne miejsca związane z\u00a0historią regionu.',
-    image: commonsPhotos.forest.image,
-    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
-    imageCredit: commonsPhotos.forest,
-    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
+    image: '/images/blog/puszcza-knyszynska-sciezka-w-sloncu.webp',
+    imageAlt: 'Słoneczna ścieżka w Puszczy Knyszyńskiej',
+    imageSrcSet: '/images/blog/puszcza-knyszynska-sciezka-w-sloncu.webp 1280w',
     date: '2026-03-28',
     readTime: '14\u00a0min',
     keywords: ['Puszcza Knyszyńska historie', 'Galeria Leśna'],
@@ -279,10 +275,9 @@ const articles = [
     title: 'Szlak Powstania Styczniowego w\u00a0Puszczy Knyszyńskiej',
     excerpt:
       'Śladami powstańców styczniowych przez najpiękniejsze zakątki Puszczy Knyszyńskiej. Historia, miejsca pamięci i\u00a0szlaki.',
-    image: commonsPhotos.forest.image,
-    imageAlt: 'Las w Parku Krajobrazowym Puszczy Knyszyńskiej',
-    imageCredit: commonsPhotos.forest,
-    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
+    image: '/images/blog/szlak-powstania-styczniowego-galeria-rzezb.webp',
+    imageAlt: 'Drewniane rzeźby przy Szlaku Powstania Styczniowego',
+    imageSrcSet: '/images/blog/szlak-powstania-styczniowego-galeria-rzezb.webp 1600w',
     date: '2026-03-08',
     readTime: '10\u00a0min',
     keywords: ['Szlak Powstania Styczniowego', 'historia Supraśl'],
@@ -292,10 +287,9 @@ const articles = [
     title: 'Najlepsze szlaki piesze i\u00a0rowerowe – Supraśl i\u00a0Puszcza Knyszyńska',
     excerpt:
       'Szlaki piesze i\u00a0rowerowe z\u00a0Supraśla: od krótkich spacerów po całodniowe trasy przez Puszczę Knyszyńską.',
-    image: commonsPhotos.forest.image,
-    imageAlt: 'Leśny krajobraz Puszczy Knyszyńskiej w okolicy Kołodna',
-    imageCredit: commonsPhotos.forest,
-    imageSrcSet: `${commonsPhotos.forest.image} 600w`,
+    image: '/images/blog/szlaki-suprasl-droga-lesna.webp',
+    imageAlt: 'Leśna droga w Puszczy Knyszyńskiej w okolicach Supraśla',
+    imageSrcSet: '/images/blog/szlaki-suprasl-droga-lesna.webp 1600w',
     date: '2026-03-01',
     readTime: '13\u00a0min',
     keywords: ['szlaki Supraśl', 'trasy rowerowe Supraśl'],

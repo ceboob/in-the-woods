@@ -1,6 +1,7 @@
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import CommonsPhoto from '@/components/CommonsPhoto';
 import { Link } from 'react-router-dom';
+import { BlogInlineCta } from '@/components/BlogArticleParts';
 import jacuzziNight from '@/assets/jacuzzi-night.webp';
 import { commonsPhotos } from '@/lib/commonsPhotos';
 
@@ -58,6 +59,14 @@ const SzlakiPieszeRowerowe = () => {
       ]}
       faqs={faqs}
       relatedArticles={relatedArticles}
+      ogImage="https://www.suprasl.online/images/blog/og-szlaki-piesze-rowerowe.jpg"
+      dateModified="2026-11-03"
+      heroImage={{
+        src: '/images/blog/og-szlaki-piesze-rowerowe.webp',
+        alt: 'Leśna droga w Puszczy Knyszyńskiej w okolicach Supraśla — trasa na spacer i rower',
+        width: 1200,
+        height: 630,
+      }}
     >
       <h2>Szlaki Supraśl – przewodnik turystyczny</h2>
 
@@ -84,8 +93,8 @@ const SzlakiPieszeRowerowe = () => {
       <h3>1. Rezerwat Krzemienne Góry — zasady odwiedzania</h3>
 
       <p>
-        Rezerwat chroni cenne przyrodniczo tereny, dlatego nie każdy jego fragment jest dostępny
-        dla turystów. Informacje o&nbsp;dozwolonych trasach publikuje{' '}
+        Rezerwat chroni cenne przyrodniczo tereny, dlatego nie każdy jego fragment jest dostępny dla
+        turystów. Informacje o&nbsp;dozwolonych trasach publikuje{' '}
         <a
           href="https://www.gov.pl/web/rdos-bialystok/podlaskierezerwaty--rezerwat-przyrody-krzemienne-gory"
           target="_blank"
@@ -120,7 +129,10 @@ const SzlakiPieszeRowerowe = () => {
         <Link to="/blog/szlak-powstania-styczniowego-suprasl">dedykowanym artykule</Link>.
       </p>
 
-      <p>Długość i&nbsp;trudność wariantów zależą od wybranej trasy — mapa pomoże dobrać odpowiedni odcinek.</p>
+      <p>
+        Długość i&nbsp;trudność wariantów zależą od wybranej trasy — mapa pomoże dobrać odpowiedni
+        odcinek.
+      </p>
 
       <h3>4. Arboretum w&nbsp;Kopnej Górze</h3>
 
@@ -134,6 +146,11 @@ const SzlakiPieszeRowerowe = () => {
         photo={commonsPhotos.suprasl}
         alt="Widok ogólny Supraśla nad rzeką Supraśl"
         loading="lazy"
+      />
+
+      <BlogInlineCta
+        title="Wyrusz na szlak z bazy w lesie"
+        text="Z domu In The Woods w Konne koło Supraśla łatwo zaplanować pieszą lub rowerową wycieczkę po okolicy. Dom jest do dyspozycji na wyłączność — sprawdź wolne terminy lub zadzwoń."
       />
 
       <h2>Najlepsze trasy rowerowe</h2>
@@ -256,7 +273,10 @@ const SzlakiPieszeRowerowe = () => {
         <Link to="/">In The Woods</Link> to prywatny{' '}
         <Link to="/dom-w-lesie-suprasl">dom w&nbsp;lesie</Link> z&nbsp;jacuzzi, kominkiem
         i&nbsp;pełną kuchnią. Położona w&nbsp;sercu puszczy, blisko Supraśla — idealna baza na
-        aktywny <Link to="/weekend-suprasl">weekend w&nbsp;Supraślu</Link>.
+        aktywny <Link to="/weekend-suprasl">weekend w&nbsp;Supraślu</Link>.{' '}
+        <Link to="/#rezerwacja">Sprawdź wolne terminy</Link> lub zadzwoń:{' '}
+        <a href="tel:+48722765101">+48 722 765 101</a>. Zobacz też{' '}
+        <Link to="/atrakcje-suprasl">atrakcje w&nbsp;Supraślu</Link>.
       </p>
     </BlogArticleLayout>
   );
