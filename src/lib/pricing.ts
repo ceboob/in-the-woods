@@ -149,8 +149,8 @@ export function isWeekendDay(date: Date): boolean {
   return dow === 5 || dow === 6 || dow === 0;
 }
 
-// Blocked dates — last update: 2026-11-03
-export const BLOCKED_DATES_LAST_UPDATED = '2026-11-03';
+// Blocked dates — last update: 2026-11-04
+export const BLOCKED_DATES_LAST_UPDATED = '2026-11-04';
 
 export const BLOCKED_DATES: Set<string> = new Set([
   // 13.08.2026 - 03.09.2026
@@ -197,6 +197,9 @@ export const BLOCKED_DATES: Set<string> = new Set([
 
   // 25.03.2027 - 28.03.2027
   ...[25, 26, 27, 28].map((d) => `2027-03-${String(d).padStart(2, '0')}`),
+
+  // 11.06.2027 - 13.06.2027
+  ...[11, 12, 13].map((d) => `2027-06-${String(d).padStart(2, '0')}`),
 ]);
 
 export function formatDateKey(date: Date): string {
