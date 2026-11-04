@@ -150,7 +150,7 @@ const SzlakiPieszeRowerowe = () => {
 
       <BlogInlineCta
         title="Wyrusz na szlak z bazy w lesie"
-        text="Z domu In The Woods w Konne koło Supraśla łatwo zaplanować pieszą lub rowerową wycieczkę po okolicy. Dom jest do dyspozycji na wyłączność — sprawdź wolne terminy lub zadzwoń."
+        text="Z domu In The Woods w Konnem koło Supraśla łatwo zaplanować pieszą lub rowerową wycieczkę po okolicy. Dom jest do dyspozycji na wyłączność — sprawdź wolne terminy lub zadzwoń."
       />
 
       <h2>Najlepsze trasy rowerowe</h2>

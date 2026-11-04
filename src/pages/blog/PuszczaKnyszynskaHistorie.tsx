@@ -96,7 +96,7 @@ const PuszczaKnyszynskaHistorie = () => (
 
       <BlogInlineCta
         title="Zostań dłużej niż na jeden spacer"
-        text="Puszcza najlepiej pokazuje się o poranku i o zmierzchu. Dom na wyłączność w Konne koło Supraśla to wygodna baza na dłuższe odkrywanie okolicy — sprawdź wolne terminy lub zadzwoń."
+        text="Puszcza najlepiej pokazuje się o poranku i o zmierzchu. Dom na wyłączność w Konnem koło Supraśla to wygodna baza na dłuższe odkrywanie okolicy — sprawdź wolne terminy lub zadzwoń."
       />
 
       <h2>Jak odwiedzać miejsca pamięci?</h2>

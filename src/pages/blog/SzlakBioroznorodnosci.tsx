@@ -125,7 +125,7 @@ const SzlakBioroznorodnosci = () => {
 
       <BlogInlineCta
         title="Spacer rano, odpoczynek w domu w lesie"
-        text="Wyruszaj na szlak z wypoczętą głową. In The Woods w Konne koło Supraśla to dom na wyłączność dla maksymalnie 8 osób — sprawdź wolne terminy lub zadzwoń."
+        text="Wyruszaj na szlak z wypoczętą głową. In The Woods w Konnem koło Supraśla to dom na wyłączność dla maksymalnie 8 osób — sprawdź wolne terminy lub zadzwoń."
       />
 
       <BlogFigure

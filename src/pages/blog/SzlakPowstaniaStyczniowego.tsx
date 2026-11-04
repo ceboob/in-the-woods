@@ -200,7 +200,7 @@ const SzlakPowstaniaStyczniowego = () => {
 
       <BlogInlineCta
         title="Zaplanuj nocleg przy szlaku"
-        text="Po całym dniu na szlaku warto wrócić do ciszy i kominka. Dom In The Woods w Konne koło Supraśla jest do dyspozycji na wyłączność — sprawdź wolne terminy lub zadzwoń."
+        text="Po całym dniu na szlaku warto wrócić do ciszy i kominka. Dom In The Woods w Konnem koło Supraśla jest do dyspozycji na wyłączność — sprawdź wolne terminy lub zadzwoń."
       />
 
       <h2>Szlaki spacerowe</h2>
@@ -293,7 +293,7 @@ const SzlakPowstaniaStyczniowego = () => {
       <p>
         In The Woods to idealna baza noclegowa dla osób chcących odkrywać historyczne szlaki
         Supraśla. Prywatny <Link to="/dom-w-lesie-suprasl">dom w&nbsp;lesie</Link> z&nbsp;kominkiem
-        i&nbsp;w pełni wyposażoną kuchnią, dla maksymalnie 8&nbsp;osób, położony w&nbsp;Konne
+        i&nbsp;w pełni wyposażoną kuchnią, dla maksymalnie 8&nbsp;osób, położony w&nbsp;Konnem
         niedaleko Supraśla, zapewnia komfort i&nbsp;ciszę po całym dniu wędrówki.
       </p>
 
