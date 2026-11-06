@@ -81,13 +81,13 @@ const articles = [
     slug: 'romantyczny-weekend-podlasie',
     title: 'Romantyczne miejsca na Podlasiu – weekend we dwoje',
     excerpt:
-      'Monaster o\u00a0zachodzie słońca, Góra Św. Anny, Noc Kupały i\u00a0balia pod gwiazdami. 13\u00a0romantycznych miejsc i\u00a0plan weekendu we dwoje.',
+      'Monaster o\u00a0zachodzie słońca, Kopna Góra, gwiazdy nad puszczą i\u00a0SPA w\u00a0Lipowym Moście. 13\u00a0romantycznych miejsc ze zdjęciami, czasem dojazdu i\u00a0planem weekendu we dwoje.',
     image: commonsPhotos.monastery.image,
     imageAlt: 'Monaster Zwiastowania w Supraślu nad rzeką Supraśl',
     imageCredit: commonsPhotos.monastery,
     imageSrcSet: `${commonsPhotos.monastery.image} 960w`,
     date: '2026-04-09',
-    readTime: '10\u00a0min',
+    readTime: '13\u00a0min',
     keywords: ['romantyczne miejsca na Podlasiu', 'weekend we dwoje'],
   },
   {
