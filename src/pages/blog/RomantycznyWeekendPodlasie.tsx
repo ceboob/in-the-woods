@@ -523,19 +523,45 @@ const PlaceSection = ({ place, index }: { place: Place; index: number }) => (
   </section>
 );
 
-/** Prawdziwe opinie gości (ocena 10/10), przepisane bez zmian. */
-const guestReviews = [
+/**
+ * Prawdziwe opinie gości z Booking.com (ocena ogólna 10/10). Fragmenty oznaczone (…);
+ * tłumaczenia pochodzą z Booking.com.
+ */
+const guestReviews: {
+  id: string;
+  author?: string;
+  date: string;
+  title?: string;
+  text: string;
+  translatedFrom?: string;
+}[] = [
   {
+    id: 'iryna-2026-01',
+    author: 'Iryna',
+    date: 'styczeń 2026',
+    title: 'Wszystko było super, po prostu bajka.',
+    text: 'Naprawdę nam się tam podobało. Przyjechaliśmy tam na Sylwestra 🎄 i okazało się, że to bajka. Nie było ludzi, było cicho, były wysokie drzewa, dużo śniegu, kadź [balia], po prostu bajka. 😍 (…)',
+    translatedFrom: 'rosyjskiego',
+  },
+  {
+    id: 'darek-2026-04',
+    author: 'Darek',
+    date: 'kwiecień 2026',
+    title: 'Dom z duszą i fantastyczna lokalizacja! Cisza „zakłócona” jedynie śpiewem ptaków!',
+    text: 'Lokalizacja była fantastyczna. Dom znajdował się w środku lasu. (…) Można było usiąść na werandzie lub w jacuzzi, zupełnie bez przeszkód, i po prostu cieszyć się kakofonią śpiewu ptaków lub rozgwieżdżonego nieba… Atmosfera pełna przygód! Gospodarz był bardzo pomocny i bardzo miły! (…)',
+    translatedFrom: 'norweskiego',
+  },
+  {
+    id: 'natalia-2025-10',
+    author: 'Natalia',
+    date: 'październik 2025',
+    title: 'Cudowne miejsce na odpoczynek ❤️',
+    text: 'Cudowna lokalizacja i okolica domku, po zjechaniu z głównej drogi dojazdowej, 6 km jedzie się przez las. Idealne miejsce na odpoczynek, spacery po lesie, słuchanie ptaków, a nocą jeleni i łosi – każdej nocy było słychać „buczenie” dochodzące z lasu 🦌 🫎 Piękne gwiaździste niebo w bezchmurne noce 🌌 Właściciel bardzo pomocny, przygotował dodatkowo drewno na ogniska. (…)',
+  },
+  {
+    id: 'gosc-2025-04',
     date: 'kwiecień 2025',
     text: 'Piękny dom utrzymany w wiejskim klimatem zlokalizowany pośrodku lasu! Cisza, spokój, śpiew ptaków. Świetna opcja na zrelaksowanie się i odpoczynek od dużego miasta. Kominek, balia, duży ogródek. W domku wszystko, co potrzebne. Bardzo dobry kontakt z właścicielem. Marzymy o szybkim powrocie!',
-  },
-  {
-    date: 'sierpień 2025',
-    text: 'Pięknie, cicho. Idealne warunki do jazdy na rowerze i spacerów. Dom położony w samym środku lasu. Jacuzzi, boisko do gry, grill. Dobre miejsce dla grup z dziećmi. My byliśmy grupa 4 przyjaciół i też polecamy. W przyszłym roku również planujemy tam być i koniecznie w tym samym miejscu.',
-  },
-  {
-    date: 'październik 2025',
-    text: 'Cudowna lokalizacja i okolica domku, po zjechaniu z głównej drogi dojazdowej, 6 km jedzie się przez las. Idealne miejsce na odpoczynek, spacery po lesie, słuchanie ptaków, a nocą jeleni i łosi – każdej nocy było słychać „buczenie” dochodzące z lasu 🦌 🫎 Piękne gwiaździste niebo w bezchmurne noce 🌌 Właściciel bardzo pomocny, przygotował dodatkowo drewno na ogniska. Do tego duża ilość drewna do palenia w kominku 🔥 Posesja ogrodzona i bardzo zadbana. WIFI – dobry zasięg w całym domku.',
   },
 ];
 
@@ -637,8 +663,8 @@ const RomantycznyWeekendPodlasie = () => (
           i&nbsp;balia z&nbsp;hydromasażem w&nbsp;ogrodzie.
         </li>
         <li>
-          <strong>Opinie gości:</strong> 10/10 – „Cisza, spokój, śpiew ptaków” i&nbsp;„piękne
-          gwiaździste niebo”.{' '}
+          <strong>Opinie gości na Booking.com:</strong> 10/10 – „Cisza, spokój, śpiew ptaków”
+          i&nbsp;„piękne gwiaździste niebo”.{' '}
           <a href="#opinie-gosci" className="underline decoration-primary underline-offset-2">
             Przeczytajcie opinie
           </a>
@@ -846,13 +872,13 @@ const RomantycznyWeekendPodlasie = () => (
 
     <h2 id="opinie-gosci">Co mówią goście In The Woods</h2>
     <p>
-      Nie musicie wierzyć nam na słowo. Oto, co napisali goście po pobycie w&nbsp;naszym domu, bez
-      skracania.
+      Nie musicie wierzyć nam na słowo. Oto fragmenty opinii, które goście zostawili po pobycie na{' '}
+      <strong>Booking.com</strong> – każda z&nbsp;oceną 10/10.
     </p>
-    <div className="not-prose my-6 grid gap-4 md:grid-cols-3">
+    <div className="not-prose my-6 grid gap-4 md:grid-cols-2">
       {guestReviews.map((review) => (
         <figure
-          key={review.date}
+          key={review.id}
           className="flex flex-col rounded-lg border border-border bg-card p-5 shadow-sm"
         >
           <p className="flex items-center gap-1 text-primary" aria-label="Ocena 10 na 10">
@@ -861,11 +887,20 @@ const RomantycznyWeekendPodlasie = () => (
             ))}
             <span className="ml-2 text-sm font-medium text-foreground">10/10</span>
           </p>
-          <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-foreground/85">
+          {review.title ? (
+            <p className="mt-3 font-medium text-foreground leading-snug">{review.title}</p>
+          ) : null}
+          <blockquote className="mt-2 flex-1 text-sm leading-relaxed text-foreground/85">
             „{review.text}”
           </blockquote>
           <figcaption className="mt-3 text-xs text-muted-foreground">
-            Opinia gościa · {review.date}
+            <strong className="text-foreground">{review.author ?? 'Gość'}</strong> · Booking.com ·{' '}
+            {review.date}
+            {review.translatedFrom ? (
+              <span className="block">
+                Przetłumaczono z&nbsp;{review.translatedFrom} przez Booking.com
+              </span>
+            ) : null}
           </figcaption>
         </figure>
       ))}
