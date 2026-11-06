@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Car, ExternalLink, Footprints, Lightbulb, MapPin } from 'lucide-react';
+import { Car, ExternalLink, Footprints, Lightbulb, MapPin, Star } from 'lucide-react';
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
 import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
@@ -523,6 +523,22 @@ const PlaceSection = ({ place, index }: { place: Place; index: number }) => (
   </section>
 );
 
+/** Prawdziwe opinie gości (ocena 10/10), przepisane bez zmian. */
+const guestReviews = [
+  {
+    date: 'kwiecień 2025',
+    text: 'Piękny dom utrzymany w wiejskim klimatem zlokalizowany pośrodku lasu! Cisza, spokój, śpiew ptaków. Świetna opcja na zrelaksowanie się i odpoczynek od dużego miasta. Kominek, balia, duży ogródek. W domku wszystko, co potrzebne. Bardzo dobry kontakt z właścicielem. Marzymy o szybkim powrocie!',
+  },
+  {
+    date: 'sierpień 2025',
+    text: 'Pięknie, cicho. Idealne warunki do jazdy na rowerze i spacerów. Dom położony w samym środku lasu. Jacuzzi, boisko do gry, grill. Dobre miejsce dla grup z dziećmi. My byliśmy grupa 4 przyjaciół i też polecamy. W przyszłym roku również planujemy tam być i koniecznie w tym samym miejscu.',
+  },
+  {
+    date: 'październik 2025',
+    text: 'Cudowna lokalizacja i okolica domku, po zjechaniu z głównej drogi dojazdowej, 6 km jedzie się przez las. Idealne miejsce na odpoczynek, spacery po lesie, słuchanie ptaków, a nocą jeleni i łosi – każdej nocy było słychać „buczenie” dochodzące z lasu 🦌 🫎 Piękne gwiaździste niebo w bezchmurne noce 🌌 Właściciel bardzo pomocny, przygotował dodatkowo drewno na ogniska. Do tego duża ilość drewna do palenia w kominku 🔥 Posesja ogrodzona i bardzo zadbana. WIFI – dobry zasięg w całym domku.',
+  },
+];
+
 const faqs = [
   {
     question: 'Gdzie na romantyczny weekend na Podlasiu?',
@@ -621,6 +637,13 @@ const RomantycznyWeekendPodlasie = () => (
           i&nbsp;balia z&nbsp;hydromasażem w&nbsp;ogrodzie.
         </li>
         <li>
+          <strong>Opinie gości:</strong> 10/10 – „Cisza, spokój, śpiew ptaków” i&nbsp;„piękne
+          gwiaździste niebo”.{' '}
+          <a href="#opinie-gosci" className="underline decoration-primary underline-offset-2">
+            Przeczytajcie opinie
+          </a>
+        </li>
+        <li>
           <strong>Najlepsze terminy:</strong> maj, sierpień (Perseidy), wrzesień–październik
           i&nbsp;walentynki.
         </li>
@@ -653,6 +676,11 @@ const RomantycznyWeekendPodlasie = () => (
         <li>
           <a href="#dlaczego-dom" className="underline decoration-primary underline-offset-2">
             Dlaczego dom w&nbsp;lesie, a&nbsp;nie hotel
+          </a>
+        </li>
+        <li>
+          <a href="#opinie-gosci" className="underline decoration-primary underline-offset-2">
+            Co mówią goście
           </a>
         </li>
       </ol>
@@ -815,6 +843,33 @@ const RomantycznyWeekendPodlasie = () => (
       width="1600"
       height="968"
     />
+
+    <h2 id="opinie-gosci">Co mówią goście In The Woods</h2>
+    <p>
+      Nie musicie wierzyć nam na słowo. Oto, co napisali goście po pobycie w&nbsp;naszym domu, bez
+      skracania.
+    </p>
+    <div className="not-prose my-6 grid gap-4 md:grid-cols-3">
+      {guestReviews.map((review) => (
+        <figure
+          key={review.date}
+          className="flex flex-col rounded-lg border border-border bg-card p-5 shadow-sm"
+        >
+          <p className="flex items-center gap-1 text-primary" aria-label="Ocena 10 na 10">
+            {Array.from({ length: 5 }, (_, i) => (
+              <Star key={i} className="w-4 h-4 fill-current" aria-hidden="true" />
+            ))}
+            <span className="ml-2 text-sm font-medium text-foreground">10/10</span>
+          </p>
+          <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-foreground/85">
+            „{review.text}”
+          </blockquote>
+          <figcaption className="mt-3 text-xs text-muted-foreground">
+            Opinia gościa · {review.date}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
 
     <aside className="not-prose my-8 rounded-lg border border-border bg-card p-6">
       <p className="font-heading text-lg text-foreground mb-2">Kto poleca te miejsca?</p>
