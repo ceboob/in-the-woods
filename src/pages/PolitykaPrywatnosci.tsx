@@ -42,8 +42,15 @@ const PolitykaPrywatnosci = () => {
               <li>• anonimowej analizy statystyk odwiedzin.</li>
             </ul>
             <p className="text-sm text-muted-foreground leading-relaxed">
+              Jeśli pobierasz z bloga materiał w zamian za adres e-mail (np. checklistę), zbieramy
+              wyłącznie ten adres, aby wysyłać Ci wiadomości dotyczące pobytu i okazjonalne
+              propozycje terminów. Zgodę możesz wycofać w każdej chwili, pisząc na
+              tutinthewood@gmail.com. Adres przechowujemy do czasu wycofania zgody.
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
               Podstawą prawną przetwarzania jest art. 6 ust. 1 lit. b RODO (wykonanie umowy) oraz
-              art. 6 ust. 1 lit. a RODO (zgoda — w zakresie cookies analitycznych).
+              art. 6 ust. 1 lit. a RODO (zgoda — w zakresie cookies analitycznych oraz wiadomości
+              e-mail wysyłanych po pobraniu materiałów z bloga).
             </p>
           </section>
 

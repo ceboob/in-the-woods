@@ -93,6 +93,20 @@ export async function POST(request: Request): Promise<Response> {
       `Telefon: ${phone}`,
       `Źródło: ${str(body.source, 50) || 'exit_intent'}`,
     ];
+  } else if (body.type === 'lead') {
+    const email = str(body.email, 200);
+    if (!EMAIL_RE.test(email)) return json(400, { error: 'Invalid email' });
+    if (body.consent !== true) return json(400, { error: 'Consent required' });
+    const source = str(body.source, 80) || 'blog';
+    subject = `Nowy zapis po checklistę: ${email}`;
+    replyTo = email;
+    lines = [
+      'Nowy zapis po materiał do pobrania ze strony suprasl.online',
+      '',
+      `E-mail: ${email}`,
+      `Materiał: ${source}`,
+      'Zgoda na kontakt e-mailowy: tak',
+    ];
   } else {
     return json(400, { error: 'Invalid type' });
   }

@@ -1,8 +1,9 @@
 import type { ReactNode } from 'react';
-import { Car, Footprints, MapPin } from 'lucide-react';
+import { Car, ExternalLink, Footprints, Lightbulb, MapPin } from 'lucide-react';
 import BlogArticleLayout from '@/components/BlogArticleLayout';
 import { Link } from 'react-router-dom';
 import { BlogFigure, BlogInlineCta } from '@/components/BlogArticleParts';
+import LeadMagnetChecklist from '@/components/LeadMagnetChecklist';
 import { GARDEN_TUB_PRICE, MIN_NIGHTLY_RATE } from '@/lib/pricing';
 import jacuzziNight from '@/assets/jacuzzi-night-md.webp';
 import livingFireplace from '@/assets/living-fireplace.webp';
@@ -11,18 +12,22 @@ const SITE_URL = 'https://www.suprasl.online';
 const SLUG = 'romantyczny-weekend-podlasie';
 const IMG = '/images/blog';
 
-const mapLinkClass =
+const linkClass =
   'inline-flex items-center gap-1.5 text-sm text-foreground underline decoration-primary underline-offset-2 hover:text-primary';
 
 interface Place {
   id: string;
   name: string;
+  /** Krótka nazwa do tabeli i spisu treści. */
+  shortName: string;
   /** Czas jazdy autem z domu w Konnem; 0 = na miejscu, bez dojazdu. */
   minutes: number;
   distance: string;
   /** true, gdy czas pochodzi z trasy Map Google; false, gdy jest szacunkiem. */
   verified: boolean;
   mapUrl?: string;
+  /** Zewnętrzne, wiarygodne źródło o miejscu. */
+  source?: { label: string; url: string };
   locality: string;
   image: string;
   width: number;
@@ -30,36 +35,49 @@ interface Place {
   alt: string;
   caption: string;
   body: ReactNode;
+  tip?: ReactNode;
 }
 
 const places: Place[] = [
   {
     id: 'monaster-suprasl',
     name: 'Monaster w\u00a0Supraślu o\u00a0zachodzie słońca',
+    shortName: 'Monaster w\u00a0Supraślu',
     minutes: 13,
     distance: '8,8\u00a0km',
     verified: true,
     mapUrl: 'https://maps.app.goo.gl/PCdZaVoPY6jAjEM49',
+    source: {
+      label: 'Monaster Zwiastowania w\u00a0Supraślu – Wikipedia',
+      url: 'https://pl.wikipedia.org/wiki/Monaster_Zwiastowania_Przenajświętszej_Bogurodzicy_w_Supraślu',
+    },
     locality: 'Supraśl',
     image: `${IMG}/romantyczny-monaster-suprasl-zachod-slonca.webp`,
     width: 515,
     height: 595,
-    alt: 'Zachód słońca nad rzeką Supraśl z\u00a0białymi wieżami monasteru w\u00a0tle',
+    alt: 'Romantyczny zachód słońca nad rzeką Supraśl z\u00a0białymi wieżami monasteru w\u00a0tle',
     caption: 'Złota godzina nad rzeką, a\u00a0w\u00a0tle wieże monasteru.',
     body: (
       <>
-        Ceglana cerkiew Zwiastowania z&nbsp;białymi wieżami łączy gotyk z&nbsp;Bizancjum. Wysadzona
-        w&nbsp;1944 roku, dziś znów stoi na wzgórzu nad rzeką. Najpiękniej wygląda wieczorem, gdy
-        słońce kładzie się na kopułach, a&nbsp;miasteczko powoli cichnie. Zajrzyjcie do Muzeum Ikon,
-        gdzie zachowały się XVI-wieczne freski, a&nbsp;potem zejdźcie nad wodę. Na teren monasteru
-        wchodzi się w&nbsp;stosownym stroju. Więcej o&nbsp;miasteczku przeczytacie w&nbsp;tekście{' '}
-        <Link to="/blog/suprasl-atrakcje-uzdrowisko">Supraśl – atrakcje i&nbsp;uzdrowisko</Link>.
+        <p>
+          Ceglana cerkiew Zwiastowania z&nbsp;białymi wieżami łączy gotyk z&nbsp;Bizancjum.
+          Wysadzona w&nbsp;1944 roku, dziś znów stoi na wzgórzu nad rzeką.{' '}
+          <strong>Najpiękniej wygląda wieczorem</strong>, gdy słońce kładzie się na kopułach,
+          a&nbsp;miasteczko powoli cichnie.
+        </p>
+        <p>
+          Zajrzyjcie do Muzeum Ikon z&nbsp;ocalałymi XVI-wiecznymi freskami, a&nbsp;potem zejdźcie
+          nad wodę. Więcej o&nbsp;miasteczku:{' '}
+          <Link to="/blog/suprasl-atrakcje-uzdrowisko">Supraśl – atrakcje i&nbsp;uzdrowisko</Link>.
+        </p>
       </>
     ),
+    tip: 'Na teren monasteru wchodzi się w\u00a0stroju zakrywającym ramiona i\u00a0kolana. W\u00a0poniedziałki teren monasteru jest zamknięty.',
   },
   {
     id: 'bulwary-suprasl',
     name: 'Bulwary nad rzeką Supraśl',
+    shortName: 'Bulwary nad rzeką Supraśl',
     minutes: 13,
     distance: '8,9\u00a0km',
     verified: true,
@@ -68,78 +86,106 @@ const places: Place[] = [
     image: `${IMG}/romantyczny-bulwary-suprasl.webp`,
     width: 1000,
     height: 668,
-    alt: 'Bulwary nad rzeką Supraśl o\u00a0zachodzie słońca, odbicie nieba w\u00a0wodzie',
+    alt: 'Bulwary nad rzeką Supraśl o\u00a0zachodzie słońca – spacer we dwoje w\u00a0Supraślu',
     caption: 'Bulwary Wiktora Wołkowa – ławka, rzeka i\u00a0nigdzie się nie spieszycie.',
     body: (
       <>
-        Bulwary Wiktora Wołkowa ciągną się ponad kilometr wzdłuż rzeki: ławki, trawa, kładka
-        i&nbsp;widok na monaster na wzgórzu. Rano z&nbsp;kawą na wynos, w&nbsp;letni wieczór
-        z&nbsp;lodami w&nbsp;dłoni. Kto ma ochotę na więcej, bierze dwuosobowy kajak i&nbsp;płynie
-        leniwie przez puszczę (o&nbsp;spływach piszemy w&nbsp;tekście{' '}
-        <Link to="/blog/kajaki-suprasl">kajaki na rzece Supraśl</Link>).
+        <p>
+          Bulwary Wiktora Wołkowa ciągną się <strong>ponad kilometr wzdłuż rzeki</strong>: ławki,
+          trawa, kładka i&nbsp;widok na monaster na wzgórzu. Rano z&nbsp;kawą na wynos, w&nbsp;letni
+          wieczór z&nbsp;lodami w&nbsp;dłoni.
+        </p>
+        <p>
+          Kto ma ochotę na więcej, bierze dwuosobowy kajak i&nbsp;płynie leniwie przez puszczę.
+          Trasy spływów opisaliśmy w&nbsp;tekście{' '}
+          <Link to="/blog/kajaki-suprasl">kajaki na rzece Supraśl</Link>.
+        </p>
       </>
     ),
   },
   {
     id: 'puszcza-knyszynska-kopna-gora',
     name: 'Puszcza Knyszyńska i\u00a0Kopna Góra — romantyczny zakątek Podlasia',
+    shortName: 'Puszcza Knyszyńska i\u00a0Kopna Góra',
     minutes: 14,
     distance: '7,3\u00a0km',
     verified: true,
     mapUrl: 'https://maps.app.goo.gl/8xVgRhPjExV26aWE8',
+    source: {
+      label: 'Park Krajobrazowy Puszczy Knyszyńskiej – Wikipedia',
+      url: 'https://pl.wikipedia.org/wiki/Park_Krajobrazowy_Puszczy_Knyszyńskiej',
+    },
     locality: 'Kopna Góra',
     image: `${IMG}/romantyczny-kopna-gora-puszcza-knyszynska.webp`,
     width: 400,
     height: 225,
-    alt: 'Kopna Góra z\u00a0lotu ptaka – alejki, zieleń i\u00a0staw na skraju Puszczy Knyszyńskiej',
+    alt: 'Kopna Góra z\u00a0lotu ptaka – alejki, zieleń i\u00a0staw w\u00a0Puszczy Knyszyńskiej',
     caption: 'Kopna Góra – alejki, staw i\u00a0las dookoła.',
     body: (
       <>
-        Puszcza Knyszyńska to idealne miejsce na spokojny wypad we dwoje. Ciche leśne ścieżki,
-        zapach drzew i&nbsp;kojąca bliskość natury zachęcają do niespiesznych spacerów z&nbsp;dala
-        od miejskiego zgiełku. Można tu po prostu iść przed siebie, rozmawiać albo cieszyć się
-        chwilą ciszy.
-        <br />
-        <br />
-        Szczególnym przystankiem jest Kopna Góra. Warto odwiedzić tamtejsze arboretum (około
-        26&nbsp;hektarów drzew i&nbsp;krzewów z&nbsp;całego świata), gdzie zacienione alejki
-        i&nbsp;różnorodne drzewa tworzą nastrojową scenerię o&nbsp;każdej porze roku: w&nbsp;maju
-        kwitną różaneczniki, jesienią klony płoną czerwienią. Romantycznym akcentem może być też
-        wspólne wejście na wieżę widokową i&nbsp;podziwianie leśnych panoram. To miejsca,
-        w&nbsp;których prosty spacer łatwo zamienia się we wspomnienie. Trasy dla dwojga opisaliśmy
-        w&nbsp;
-        <Link to="/blog/puszcza-knyszynska-przewodnik">przewodniku po Puszczy Knyszyńskiej</Link>,
-        a&nbsp;we wrześniu posłuchajcie{' '}
-        <Link to="/blog/rykowisko-jeleni-puszcza-knyszynska">rykowiska jeleni</Link>.
+        <p>
+          Puszcza Knyszyńska to idealne miejsce na spokojny wypad we dwoje.{' '}
+          <strong>Ciche leśne ścieżki, zapach drzew i&nbsp;kojąca bliskość natury</strong> zachęcają
+          do niespiesznych spacerów z&nbsp;dala od miejskiego zgiełku. Można tu po prostu iść przed
+          siebie, rozmawiać albo cieszyć się chwilą ciszy.
+        </p>
+        <p>
+          Szczególnym przystankiem jest Kopna Góra. Warto odwiedzić tamtejsze arboretum, około
+          26&nbsp;hektarów drzew i&nbsp;krzewów z&nbsp;całego świata. Zacienione alejki tworzą
+          nastrojową scenerię o&nbsp;każdej porze roku: w&nbsp;maju kwitną różaneczniki, jesienią
+          klony płoną czerwienią.
+        </p>
+        <p>
+          Romantycznym akcentem może być też <strong>wspólne wejście na wieżę widokową</strong>{' '}
+          i&nbsp;podziwianie leśnych panoram. To miejsca, w&nbsp;których prosty spacer łatwo
+          zamienia się we wspomnienie. Trasy dla dwojga znajdziecie w&nbsp;
+          <Link to="/blog/puszcza-knyszynska-przewodnik">przewodniku po Puszczy Knyszyńskiej</Link>.
+        </p>
+      </>
+    ),
+    tip: (
+      <>
+        We wrześniu przyjedźcie o&nbsp;zmierzchu i&nbsp;posłuchajcie{' '}
+        <Link to="/blog/rykowisko-jeleni-puszcza-knyszynska">rykowiska jeleni</Link>. Weźcie ciepłą
+        herbatę w&nbsp;termosie.
       </>
     ),
   },
   {
     id: 'nocne-niebo',
     name: 'Nocny spacer po puszczy i\u00a0niebo pełne gwiazd',
+    shortName: 'Nocny spacer i\u00a0gwiazdy',
     minutes: 0,
     distance: 'na miejscu',
     verified: true,
+    source: { label: 'Perseidy – Wikipedia', url: 'https://pl.wikipedia.org/wiki/Perseidy' },
     locality: 'Konne',
     image: `${IMG}/romantyczny-nocne-niebo-puszcza.webp`,
     width: 1000,
     height: 667,
-    alt: 'Rozgwieżdżone niebo nad samotnym drzewem w\u00a0Puszczy Knyszyńskiej',
-    caption: 'Bez łuny miasta Droga Mleczna widać gołym okiem.',
+    alt: 'Rozgwieżdżone niebo nad samotnym drzewem w\u00a0Puszczy Knyszyńskiej – nocny spacer we dwoje',
+    caption: 'Bez łuny miasta Drogę Mleczną widać gołym okiem.',
     body: (
       <>
-        Ta atrakcja czeka na Was na miejscu i&nbsp;jest <strong>wliczona w&nbsp;cenę pobytu</strong>
-        . Po zmroku wyjdźcie leśną drogą kawałek od domu, zgaście latarki i&nbsp;poczekajcie, aż
-        oczy oswoją się z&nbsp;ciemnością. Słychać puszczyki, czasem jelenia, a&nbsp;nad głową
-        rozlewa się Droga Mleczna. Od połowy lipca niebo zamienia się w&nbsp;istną autostradę, po
-        której suną mniejsze i&nbsp;większe „gwiazdki” – to Perseidy, które najgęściej spadają około
-        12–13 sierpnia. Życzenia wypowiadajcie po cichu, bo w&nbsp;lesie wszystko słychać.
+        <p>
+          Ta atrakcja czeka na Was na miejscu i&nbsp;jest{' '}
+          <strong>wliczona w&nbsp;cenę pobytu</strong>. Po zmroku wyjdźcie leśną drogą kawałek od
+          domu, zgaście latarki i&nbsp;poczekajcie, aż oczy oswoją się z&nbsp;ciemnością. Słychać
+          puszczyki, czasem jelenia, a&nbsp;nad głową rozlewa się Droga Mleczna.
+        </p>
+        <p>
+          <strong>Od połowy lipca niebo zamienia się w&nbsp;istną autostradę</strong>, po której
+          suną mniejsze i&nbsp;większe „gwiazdki”. To Perseidy, które najgęściej spadają około 12–13
+          sierpnia. Życzenia wypowiadajcie po cichu, bo w&nbsp;lesie wszystko słychać.
+        </p>
       </>
     ),
+    tip: 'Najwięcej gwiazd zobaczycie w\u00a0bezksiężycową noc. Weźcie koc i\u00a0latarkę z\u00a0czerwonym światłem – nie oślepia.',
   },
   {
     id: 'gora-swietej-anny',
     name: 'Góra Świętej Anny i\u00a0Szlak Wzgórz Świętojańskich',
+    shortName: 'Góra Świętej Anny',
     minutes: 20,
     distance: 'ok. 15\u00a0km',
     verified: false,
@@ -152,41 +198,55 @@ const places: Place[] = [
     caption: 'Z\u00a0wieży na Górze Świętej Anny puszcza wygląda jak zielone morze.',
     body: (
       <>
-        Puszczę Knyszyńską wyrzeźbił lodowiec, więc są tu wzgórza i&nbsp;doliny jak w&nbsp;niskich
-        górach. Szlak Wzgórz Świętojańskich ma 27&nbsp;km, ale nie musicie iść całego. Wybierzcie
-        odcinek kończący się na Górze Świętej Anny przy wsi Kołodno, gdzie stoi wieża widokowa
-        z&nbsp;panoramą puszczy i&nbsp;doliny Płoski. Dojedziecie przez Supraśl i&nbsp;Cieliczankę,
-        a&nbsp;ostatni kawałek przejdziecie leśnym duktem. Przyjdźcie na zachód słońca, weźcie koc
-        i&nbsp;termos.
+        <p>
+          Puszczę Knyszyńską wyrzeźbił lodowiec, więc są tu wzgórza i&nbsp;doliny jak w&nbsp;niskich
+          górach. Szlak Wzgórz Świętojańskich ma 27&nbsp;km, ale nie musicie iść całego.
+        </p>
+        <p>
+          Wybierzcie odcinek kończący się na Górze Świętej Anny przy wsi Kołodno.{' '}
+          <strong>Stoi tu wieża widokowa z&nbsp;panoramą puszczy</strong> i&nbsp;doliny Płoski.
+          Dojedziecie przez Supraśl i&nbsp;Cieliczankę, a&nbsp;ostatni kawałek przejdziecie leśnym
+          duktem.
+        </p>
       </>
     ),
+    tip: 'Przyjdźcie na zachód słońca, z\u00a0kocem i\u00a0termosem. Wracajcie z\u00a0latarką.',
   },
   {
     id: 'noc-kupaly',
     name: 'Noc Kupały nad rzeką Supraśl',
+    shortName: 'Noc Kupały w\u00a0Załukach',
     minutes: 25,
     distance: 'ok. 22\u00a0km',
     verified: false,
     mapUrl: 'https://maps.app.goo.gl/pcj737XNxdoLM7iW7',
+    source: { label: 'Noc Kupały – Wikipedia', url: 'https://pl.wikipedia.org/wiki/Noc_Kupały' },
     locality: 'Załuki',
     image: `${IMG}/romantyczny-noc-kupaly.webp`,
     width: 500,
     height: 333,
-    alt: 'Dziewczęta w\u00a0wiankach puszczają świece na wodę podczas Nocy Kupały',
+    alt: 'Dziewczęta w\u00a0wiankach puszczają świece na wodę podczas Nocy Kupały na Podlasiu',
     caption: 'Wianki i\u00a0świece na wodzie – najkrótsza noc roku.',
     body: (
       <>
-        W&nbsp;okolicach najkrótszej nocy roku, z&nbsp;21 na 22&nbsp;czerwca, w&nbsp;Załukach nad
-        rzeką Supraśl (gmina Gródek) odbywa się Kupalnoczka. To słowiańskie święto ognia, wody
-        i&nbsp;miłości: koncerty, korowód z&nbsp;pochodniami i&nbsp;wianki puszczane na rzekę.
-        Legenda mówi, że kto tej nocy znajdzie kwiat paproci, będzie miał szczęście w&nbsp;miłości.
-        Szukanie we dwoje jest dozwolone. Dokładną datę sprawdźcie przed wyjazdem.
+        <p>
+          W&nbsp;okolicach najkrótszej nocy roku, z&nbsp;21 na 22&nbsp;czerwca, w&nbsp;Załukach nad
+          rzeką Supraśl (gmina Gródek) odbywa się Kupalnoczka.{' '}
+          <strong>To słowiańskie święto ognia, wody i&nbsp;miłości</strong>: koncerty, korowód
+          z&nbsp;pochodniami i&nbsp;wianki puszczane na rzekę.
+        </p>
+        <p>
+          Legenda mówi, że kto tej nocy znajdzie kwiat paproci, będzie miał szczęście
+          w&nbsp;miłości. Szukanie we dwoje jest dozwolone.
+        </p>
       </>
     ),
+    tip: 'Dokładną datę wydarzenia sprawdźcie przed wyjazdem. Czerwcowe weekendy rezerwujcie wcześniej.',
   },
   {
     id: 'golf-park-lipowy-most',
     name: 'Golf Park Lipowy Most – SPA, kolacja i\u00a0golf we dwoje',
+    shortName: 'Golf Park Lipowy Most',
     minutes: 35,
     distance: 'ok. 35\u00a0km',
     verified: false,
@@ -195,26 +255,36 @@ const places: Place[] = [
     image: `${IMG}/romantyczny-golf-park-lipowy-most.webp`,
     width: 664,
     height: 429,
-    alt: 'Hotel Golf Park Lipowy Most odbijający się w\u00a0stawie wśród zieleni',
+    alt: 'Hotel Golf Park Lipowy Most odbijający się w\u00a0stawie – SPA dla par na Podlasiu',
     caption: 'Golf Park Lipowy Most – elegancki przystanek na dzień we dwoje.',
     body: (
       <>
-        Golf Park Lipowy Most to wyjątkowe miejsce na romantyczne chwile we dwoje. Relaksujące SPA,
-        wyśmienita kuchnia i&nbsp;elegancki wystrój tworzą atmosferę sprzyjającą odpoczynkowi
-        i&nbsp;celebrowaniu wspólnego czasu. Dodatkową atrakcją jest gra w&nbsp;golfa: malownicze
-        otoczenie, odrobina zdrowej rywalizacji i&nbsp;piękne widoki sprawiają, że każda chwila
-        nabiera wyjątkowego charakteru. Dobry pomysł na rocznicę – rano SPA, wieczorem powrót do
-        kominka w&nbsp;lesie.
+        <p>
+          Golf Park Lipowy Most to wyjątkowe miejsce na romantyczne chwile we dwoje.{' '}
+          <strong>Relaksujące SPA, wyśmienita kuchnia i&nbsp;elegancki wystrój</strong> tworzą
+          atmosferę sprzyjającą odpoczynkowi i&nbsp;celebrowaniu wspólnego czasu.
+        </p>
+        <p>
+          Dodatkową atrakcją jest gra w&nbsp;golfa: malownicze otoczenie, odrobina zdrowej
+          rywalizacji i&nbsp;piękne widoki sprawiają, że każda chwila nabiera wyjątkowego
+          charakteru.
+        </p>
       </>
     ),
+    tip: 'Pomysł na rocznicę: rano SPA, wieczorem powrót do kominka w\u00a0lesie. Zabiegi rezerwujcie z\u00a0wyprzedzeniem.',
   },
   {
     id: 'palac-branickich',
     name: 'Pałac Branickich w\u00a0Białymstoku',
+    shortName: 'Pałac Branickich',
     minutes: 30,
     distance: '24,1\u00a0km',
     verified: true,
     mapUrl: 'https://maps.app.goo.gl/jufjryakEiQgpsZU9',
+    source: {
+      label: 'Pałac Branickich w\u00a0Białymstoku – Wikipedia',
+      url: 'https://pl.wikipedia.org/wiki/Pałac_Branickich_w_Białymstoku',
+    },
     locality: 'Białystok',
     image: `${IMG}/romantyczny-palac-branickich.webp`,
     width: 1200,
@@ -223,44 +293,56 @@ const places: Place[] = [
     caption: 'Ogrody Wersalu Północy – spacer jest bezpłatny.',
     body: (
       <>
-        Nazywany Wersalem Północy, z&nbsp;barokowymi ogrodami, po których spacer jest bezpłatny.
-        Romantycznie robi się zwłaszcza po zmroku, gdy pałac jest podświetlony. Cały plan zwiedzania
-        znajdziecie w&nbsp;tekście{' '}
-        <Link to="/blog/bialystok-i-okolice-co-zobaczyc">
-          co warto zobaczyć w&nbsp;Białymstoku i&nbsp;okolicach
-        </Link>
-        .
+        <p>
+          Nazywany Wersalem Północy, z&nbsp;barokowymi ogrodami,{' '}
+          <strong>po których spacer jest bezpłatny</strong>. Romantycznie robi się zwłaszcza po
+          zmroku, gdy pałac jest podświetlony.
+        </p>
+        <p>
+          Cały plan zwiedzania znajdziecie w&nbsp;tekście{' '}
+          <Link to="/blog/bialystok-i-okolice-co-zobaczyc">
+            co warto zobaczyć w&nbsp;Białymstoku i&nbsp;okolicach
+          </Link>
+          .
+        </p>
       </>
     ),
   },
   {
     id: 'tykocin',
     name: 'Tykocin nad Narwią',
+    shortName: 'Tykocin nad Narwią',
     minutes: 51,
     distance: '53,2\u00a0km',
     verified: true,
     mapUrl: 'https://maps.app.goo.gl/FXWScdR9pvjX8fce7',
+    source: { label: 'Tykocin – Wikipedia', url: 'https://pl.wikipedia.org/wiki/Tykocin' },
     locality: 'Tykocin',
     image: `${IMG}/romantyczny-tykocin-narew.webp`,
     width: 900,
     height: 600,
-    alt: 'Odbudowany ceglany zamek w\u00a0Tykocinie z\u00a0brukowanym dziedzińcem',
+    alt: 'Odbudowany ceglany zamek w\u00a0Tykocinie nad Narwią z\u00a0brukowanym dziedzińcem',
     caption: 'Zamek w\u00a0Tykocinie – a\u00a0za nim zakola Narwi.',
     body: (
-      <>
-        Brukowany rynek, barokowy kościół, Wielka Synagoga i&nbsp;odbudowany zamek nad rzeką.
-        Tykocin to idealny cel na sobotnie popołudnie albo przystanek w&nbsp;drodze do domu.
+      <p>
+        Brukowany rynek, barokowy kościół, Wielka Synagoga i&nbsp;odbudowany zamek nad rzeką.{' '}
+        <strong>Idealny cel na sobotnie popołudnie</strong> albo przystanek w&nbsp;drodze do domu.
         Zostańcie na zachód słońca nad rozlewiskami Narwi.
-      </>
+      </p>
     ),
   },
   {
     id: 'kruszyniany',
     name: 'Kruszyniany i\u00a0drewniany meczet',
+    shortName: 'Kruszyniany',
     minutes: 41,
     distance: '37,9\u00a0km',
     verified: true,
     mapUrl: 'https://maps.app.goo.gl/cDamJceauoargynF6',
+    source: {
+      label: 'Meczet w\u00a0Kruszynianach – Wikipedia',
+      url: 'https://pl.wikipedia.org/wiki/Meczet_w_Kruszynianach',
+    },
     locality: 'Kruszyniany',
     image: `${IMG}/romantyczny-kruszyniany-meczet.webp`,
     width: 1000,
@@ -268,16 +350,17 @@ const places: Place[] = [
     alt: 'Zielony drewniany meczet w\u00a0Kruszynianach o\u00a0zachodzie słońca',
     caption: 'Zielony meczet w\u00a0Kruszynianach – jeden z\u00a0najstarszych w\u00a0Polsce.',
     body: (
-      <>
+      <p>
         Tatarska wieś z&nbsp;zielonym meczetem i&nbsp;obiadem, o&nbsp;którym będziecie rozmawiać
-        w&nbsp;drodze powrotnej. Pierekaczewnik na deser obowiązkowo. Szczegóły:{' '}
+        w&nbsp;drodze powrotnej. <strong>Pierekaczewnik na deser obowiązkowo.</strong> Szczegóły:{' '}
         <Link to="/blog/kruszyniany-tatarska-wies">Kruszyniany – tatarska wieś</Link>.
-      </>
+      </p>
     ),
   },
   {
     id: 'folwark-zylicze',
     name: 'Folwark Żylicze – historia miłości z\u00a0awionetką w\u00a0tle',
+    shortName: 'Folwark Żylicze',
     minutes: 40,
     distance: 'ok. 40\u00a0km',
     verified: false,
@@ -286,22 +369,27 @@ const places: Place[] = [
     image: `${IMG}/romantyczny-folwark-zylicze.webp`,
     width: 506,
     height: 367,
-    alt: 'Stary, bielony budynek folwarku Żylicze wśród drzew',
+    alt: 'Stary, bielony dwór Folwarku Żylicze wśród drzew na Podlasiu',
     caption: 'Folwark Żylicze – miejsce z\u00a0historią miłosną.',
     body: (
       <>
-        W&nbsp;dolinie rzeki Nietupy, we wsi Ciumicze, do dawnego majątku rodu de Virion prowadzi
-        aleja 200-letnich lip. Przed wojną folwark wydzierżawili Maria i&nbsp;Jacek Korytowscy,
-        zakochani, których związku nie zaakceptowała rodzina. Przylecieli tu awionetką
-        i&nbsp;wylądowali na łące obok dworu. Dziś folwark odnawiają nowi właściciele. Spacer pod
-        lipami to dobra okazja, żeby opowiedzieć sobie własną historię. Łatwo połączyć go
-        z&nbsp;Kruszynianami w&nbsp;jedną wycieczkę.
+        <p>
+          W&nbsp;dolinie rzeki Nietupy, we wsi Ciumicze, do dawnego majątku rodu de Virion prowadzi{' '}
+          <strong>aleja 200-letnich lip</strong>. Przed wojną folwark wydzierżawili Maria
+          i&nbsp;Jacek Korytowscy, zakochani, których związku nie zaakceptowała rodzina.
+        </p>
+        <p>
+          Przylecieli tu awionetką i&nbsp;wylądowali na łące obok dworu. Dziś folwark odnawiają nowi
+          właściciele. Spacer pod lipami to dobra okazja, żeby opowiedzieć sobie własną historię.
+        </p>
       </>
     ),
+    tip: 'Połączcie Żylicze z\u00a0Kruszynianami w\u00a0jedną niespieszną wycieczkę.',
   },
   {
     id: 'kraina-otwartych-okiennic',
     name: 'Kraina Otwartych Okiennic',
+    shortName: 'Kraina Otwartych Okiennic',
     minutes: 55,
     distance: 'ok. 55\u00a0km',
     verified: false,
@@ -310,20 +398,21 @@ const places: Place[] = [
     image: `${IMG}/romantyczny-kraina-otwartych-okiennic.webp`,
     width: 678,
     height: 452,
-    alt: 'Drewniany dom z\u00a0zielonymi, rzeźbionymi okiennicami w\u00a0Krainie Otwartych Okiennic',
+    alt: 'Drewniany dom z\u00a0zielonymi, rzeźbionymi okiennicami w\u00a0Krainie Otwartych Okiennic na Podlasiu',
     caption: 'Rzeźbione okiennice w\u00a0Trześciance.',
     body: (
-      <>
-        Trześcianka, Soce i&nbsp;Puchły to wsie z&nbsp;kolorowymi, rzeźbionymi okiennicami, jakby
-        czas się tu zatrzymał. Objedźcie je powoli, z&nbsp;postojami na zdjęcia i&nbsp;szacunkiem
-        dla prywatności mieszkańców.{' '}
+      <p>
+        Trześcianka, Soce i&nbsp;Puchły to wsie z&nbsp;kolorowymi, rzeźbionymi okiennicami,{' '}
+        <strong>jakby czas się tu zatrzymał</strong>. Objedźcie je powoli, z&nbsp;postojami na
+        zdjęcia i&nbsp;szacunkiem dla prywatności mieszkańców.{' '}
         <Link to="/blog/kraina-otwartych-okiennic">Trasę opisaliśmy tutaj</Link>.
-      </>
+      </p>
     ),
   },
   {
     id: 'balia-pod-gwiazdami',
     name: 'Balia pod gwiazdami w\u00a0Konnem',
+    shortName: 'Balia pod gwiazdami',
     minutes: 0,
     distance: 'na miejscu',
     verified: true,
@@ -331,15 +420,19 @@ const places: Place[] = [
     image: jacuzziNight,
     width: 1024,
     height: 1363,
-    alt: 'Balia z\u00a0hydromasażem nocą w\u00a0ogrodzie domu In The Woods',
+    alt: 'Balia z\u00a0hydromasażem nocą w\u00a0ogrodzie domu In The Woods – romantyczny wieczór na Podlasiu',
     caption: 'Gorąca woda, chłodne powietrze i\u00a0niebo bez łuny miasta.',
     body: (
       <>
-        Na koniec miejsce, którego nie znajdziecie w&nbsp;przewodnikach: Wasz własny ogród. Gorąca
-        woda, chłodne powietrze, nad głową niebo bez łuny miasta. Jedyny tłum, jaki tu spotkacie, to
-        komary w&nbsp;lipcu. Balię z&nbsp;hydromasażem zamawiacie przy rezerwacji (
-        {GARDEN_TUB_PRICE}
-        &nbsp;zł za cały pobyt), a&nbsp;my nagrzejemy ją na Wasz przyjazd.
+        <p>
+          Na koniec miejsce, którego nie znajdziecie w&nbsp;przewodnikach:{' '}
+          <strong>Wasz własny ogród</strong>. Gorąca woda, chłodne powietrze, nad głową niebo bez
+          łuny miasta. Jedyny tłum, jaki tu spotkacie, to komary w&nbsp;lipcu.
+        </p>
+        <p>
+          Balię z&nbsp;hydromasażem zamawiacie przy rezerwacji ({GARDEN_TUB_PRICE}&nbsp;zł za cały
+          pobyt), a&nbsp;my nagrzejemy ją na Wasz przyjazd.
+        </p>
       </>
     ),
   },
@@ -372,6 +465,7 @@ const placeListSchema = {
         addressCountry: 'PL',
       },
       ...(p.mapUrl ? { hasMap: p.mapUrl } : {}),
+      ...(p.source ? { sameAs: p.source.url } : {}),
     },
   })),
 };
@@ -405,14 +499,27 @@ const PlaceSection = ({ place, index }: { place: Place; index: number }) => (
       caption={place.caption}
       className={`mx-auto ${place.height > place.width ? 'max-w-sm' : 'max-w-2xl'}`}
     />
-    <p>{place.body}</p>
-    {place.mapUrl ? (
-      <p className="not-prose">
-        <a href={place.mapUrl} target="_blank" rel="noopener noreferrer" className={mapLinkClass}>
-          <MapPin className="w-4 h-4" aria-hidden="true" /> Zobacz na mapie i&nbsp;wyznacz trasę
-        </a>
-      </p>
+    {place.body}
+    {place.tip ? (
+      <aside className="not-prose my-4 flex gap-3 rounded-lg border-l-4 border-primary bg-secondary/50 px-4 py-3 text-sm text-foreground/85 leading-relaxed">
+        <Lightbulb className="w-5 h-5 shrink-0 text-primary" aria-hidden="true" />
+        <span>
+          <strong className="text-foreground">Wskazówka dla dwojga:</strong> {place.tip}
+        </span>
+      </aside>
     ) : null}
+    <p className="not-prose flex flex-wrap gap-x-5 gap-y-2">
+      {place.mapUrl ? (
+        <a href={place.mapUrl} target="_blank" rel="noopener noreferrer" className={linkClass}>
+          <MapPin className="w-4 h-4" aria-hidden="true" /> Mapa i&nbsp;trasa
+        </a>
+      ) : null}
+      {place.source ? (
+        <a href={place.source.url} target="_blank" rel="noopener" className={linkClass}>
+          <ExternalLink className="w-4 h-4" aria-hidden="true" /> {place.source.label}
+        </a>
+      ) : null}
+    </p>
   </section>
 );
 
@@ -451,11 +558,13 @@ const faqs = [
   },
 ];
 
+const ctaText = `Kominek, balia pod gwiazdami i\u00a0puszcza za furtką, 10\u00a0minut od Supraśla. Cały dom tylko dla Was, od ${MIN_NIGHTLY_RATE}\u00a0zł za noc.`;
+
 const RomantycznyWeekendPodlasie = () => (
   <BlogArticleLayout
     title="Romantyczne miejsca na Podlasiu – weekend we dwoje"
     metaTitle="Romantyczne miejsca na Podlasiu: 13 pomysłów na weekend we dwoje"
-    metaDescription="13 romantycznych miejsc na Podlasiu ze zdjęciami i&nbsp;czasem dojazdu: monaster o&nbsp;zachodzie, Kopna Góra, gwiazdy nad puszczą, SPA. Plan weekendu i&nbsp;dom z&nbsp;balią."
+    metaDescription="13 romantycznych miejsc na Podlasiu ze zdjęciami i&nbsp;czasem dojazdu: monaster o&nbsp;zachodzie, Kopna Góra, gwiazdy nad puszczą, SPA. Plan weekendu i&nbsp;checklista PDF."
     slug={SLUG}
     publishDate="2026-04-09"
     dateModified="2026-11-06"
@@ -486,11 +595,14 @@ const RomantycznyWeekendPodlasie = () => (
   >
     <p className="text-lg leading-relaxed">
       Wyobraźcie sobie weekend, w&nbsp;którym jedynym powiadomieniem jest trzask drewna
-      w&nbsp;kominku. Podlasie to najmniej zaludniony region Polski: ciemne niebo, puste drogi
-      i&nbsp;lasy, w&nbsp;których słychać własne myśli. Zebraliśmy{' '}
-      <strong>13 romantycznych miejsc na Podlasiu</strong> ze zdjęciami i&nbsp;czasem dojazdu
-      z&nbsp;naszego domu w&nbsp;Puszczy Knyszyńskiej, a&nbsp;do tego niespieszny plan weekendu we
-      dwoje. Bez listy obowiązków – wybierzcie dwa, trzy miejsca, resztę zostawcie na następny raz.
+      w&nbsp;kominku. <strong>Romantyczny weekend na Podlasiu</strong> to ciemne niebo, puste drogi
+      i&nbsp;lasy, w&nbsp;których słychać własne myśli.
+    </p>
+    <p>
+      Zebraliśmy <strong>13 romantycznych miejsc na Podlasiu</strong> ze zdjęciami i&nbsp;czasem
+      dojazdu z&nbsp;naszego domu w&nbsp;Puszczy Knyszyńskiej, a&nbsp;do tego niespieszny plan
+      weekendu we dwoje. Bez listy obowiązków: wybierzcie dwa, trzy miejsca, resztę zostawcie na
+      następny raz.
     </p>
 
     <aside className="not-prose my-8 rounded-lg border border-border bg-secondary/40 p-6">
@@ -515,17 +627,43 @@ const RomantycznyWeekendPodlasie = () => (
       </ul>
     </aside>
 
+    <nav aria-labelledby="spis-tresci" className="not-prose my-8">
+      <p id="spis-tresci" className="font-heading text-lg text-foreground mb-2">
+        Spis treści
+      </p>
+      <ol className="list-decimal pl-5 space-y-1 text-sm text-foreground/80">
+        <li>
+          <a href="#czasy-dojazdu" className="underline decoration-primary underline-offset-2">
+            Czasy dojazdu z&nbsp;domu
+          </a>
+        </li>
+        <li>
+          <a
+            href="#romantyczne-miejsca"
+            className="underline decoration-primary underline-offset-2"
+          >
+            13 romantycznych miejsc na Podlasiu
+          </a>
+        </li>
+        <li>
+          <a href="#plan-weekendu" className="underline decoration-primary underline-offset-2">
+            Plan romantycznego weekendu
+          </a>
+        </li>
+        <li>
+          <a href="#dlaczego-dom" className="underline decoration-primary underline-offset-2">
+            Dlaczego dom w&nbsp;lesie, a&nbsp;nie hotel
+          </a>
+        </li>
+      </ol>
+    </nav>
+
     <BlogFigure
       src="/images/blog/romantyczny-weekend-para-w-lesie.webp"
-      alt="Przytulona para na leśnej drodze w&nbsp;Puszczy Knyszyńskiej"
+      alt="Przytulona para na leśnej drodze – romantyczny weekend w&nbsp;Puszczy Knyszyńskiej"
       width={1600}
       height={1067}
       caption="Weekend we dwoje – cisza, las i&nbsp;czas tylko dla siebie."
-    />
-
-    <BlogInlineCta
-      title="Cały dom w&nbsp;lesie tylko dla Was dwojga"
-      text={`Kominek, balia pod gwiazdami i\u00a0puszcza za progiem, 10\u00a0minut od Supraśla. Nocleg od ${MIN_NIGHTLY_RATE}\u00a0zł za noc za cały dom.`}
     />
 
     <h2 id="czasy-dojazdu">Ile jedziecie: czasy dojazdu z&nbsp;domu</h2>
@@ -552,7 +690,7 @@ const RomantycznyWeekendPodlasie = () => (
                   href={`#${p.id}`}
                   className="text-foreground underline decoration-primary underline-offset-2 hover:text-primary"
                 >
-                  {p.name.split(/ [–—] /)[0]}
+                  {p.shortName}
                 </a>
               </td>
               <td className="py-2 pr-4 whitespace-nowrap">
@@ -578,74 +716,74 @@ const RomantycznyWeekendPodlasie = () => (
     </div>
     <p className="text-sm text-muted-foreground">
       Najszybsze trasy samochodem liczone od domu In The Woods w&nbsp;Konnem, bez korków. Oznaczenie
-      „ok.” to czas przybliżony – dokładną trasę wyznaczycie jednym kliknięciem pod opisem każdego
+      „ok.” to czas przybliżony. Dokładną trasę wyznaczycie jednym kliknięciem pod opisem każdego
       miejsca.
     </p>
 
-    <h2>13 romantycznych miejsc na Podlasiu</h2>
+    <h2 id="romantyczne-miejsca">13 romantycznych miejsc na Podlasiu</h2>
 
     {places.slice(0, 7).map((place, i) => (
       <PlaceSection key={place.id} place={place} index={i} />
     ))}
 
     <BlogInlineCta
-      title="Rano spacer, wieczorem kominek"
-      text="Po dniu w&nbsp;puszczy wracacie do własnego domu, nie do hotelowego pokoju. Sprawdźcie, czy Wasz termin jest wolny."
+      title="Rano spacer, wieczorem kominek – w&nbsp;Waszym własnym domu"
+      text={ctaText}
     />
 
     {places.slice(7).map((place, i) => (
       <PlaceSection key={place.id} place={place} index={i + 7} />
     ))}
 
-    <BlogFigure
-      src="/images/blog/romantyczny-weekend-kladka-nad-rozlewiskiem.webp"
-      alt="Drewniana kładka nad podlaskim rozlewiskiem"
-      width={1600}
-      height={1200}
-      caption="Drewniane kładki nad rozlewiskami to dobre miejsce na spacer we dwoje."
+    <LeadMagnetChecklist
+      source="checklista-romantyczny-weekend"
+      title="Darmowa checklista: romantyczny weekend na Podlasiu"
+      text="Jedna strona do wydruku: co zarezerwować przed wyjazdem, co spakować na wieczór pod gwiazdami, gotowy plan weekendu i&nbsp;czasy dojazdu do wszystkich 13 miejsc. Zostawcie e-mail, a&nbsp;plik pobierzecie od razu."
+      fileUrl="/downloads/checklista-romantyczny-weekend-podlasie.pdf"
+      fileName="checklista-romantyczny-weekend-podlasie.pdf"
     />
 
-    <h2>Plan romantycznego weekendu na Podlasiu</h2>
+    <h2 id="plan-weekendu">Plan romantycznego weekendu na Podlasiu</h2>
     <h3>Piątek: przyjazd i&nbsp;pierwszy wieczór</h3>
-    <p>
-      Przyjedźcie przed zmrokiem. Rozpalcie kominek, otwórzcie wino i&nbsp;po prostu nic nie róbcie.
-      Jeśli zamówiliście balię, będzie już ciepła. Przed snem krótki spacer pod gwiazdami.
-    </p>
+    <ul>
+      <li>
+        <strong>Przyjedźcie przed zmrokiem</strong>, rozpalcie kominek i&nbsp;otwórzcie wino.
+      </li>
+      <li>Jeśli zamówiliście balię, będzie już ciepła.</li>
+      <li>Przed snem krótki spacer pod gwiazdami.</li>
+    </ul>
     <h3>Sobota: Supraśl i&nbsp;puszcza</h3>
-    <p>
-      Kawa na tarasie, spacer po bulwarach i&nbsp;do monasteru, obiad z&nbsp;babką ziemniaczaną
-      (gdzie najlepsza, piszemy w&nbsp;
-      <Link to="/blog/przewodnik-kulinarny-suprasl">przewodniku kulinarnym po Supraślu</Link>), po
-      południu arboretum w&nbsp;Kopnej Górze albo kajak. Na zachód słońca wieża na Górze Świętej
-      Anny. Wieczorem kolacja przy świecach w&nbsp;domu albo w&nbsp;restauracji w&nbsp;miasteczku.
-    </p>
+    <ul>
+      <li>Kawa na tarasie, potem bulwary i&nbsp;monaster.</li>
+      <li>
+        Obiad z&nbsp;babką ziemniaczaną – gdzie najlepsza, piszemy w&nbsp;
+        <Link to="/blog/przewodnik-kulinarny-suprasl">przewodniku kulinarnym po Supraślu</Link>.
+      </li>
+      <li>Po południu arboretum w&nbsp;Kopnej Górze albo kajak.</li>
+      <li>
+        <strong>Na zachód słońca wieża na Górze Świętej Anny</strong>, wieczorem kolacja przy
+        świecach.
+      </li>
+    </ul>
     <h3>Niedziela: powoli</h3>
-    <p>
-      Bez budzika, śniadanie do południa, ostatni spacer po lesie. W&nbsp;drodze do domu możecie
-      zahaczyć o&nbsp;Tykocin albo Pałac Branickich. A&nbsp;jeśli zostajecie dłużej – jeden dzień
-      oddajcie Kruszynianom i&nbsp;Żyliczom, drugi SPA w&nbsp;Lipowym Moście.
-    </p>
+    <ul>
+      <li>Bez budzika, śniadanie do południa, ostatni spacer po lesie.</li>
+      <li>W&nbsp;drodze do domu Tykocin albo Pałac Branickich.</li>
+      <li>
+        Zostajecie dłużej? Jeden dzień oddajcie Kruszynianom i&nbsp;Żyliczom, drugi SPA
+        w&nbsp;Lipowym Moście.
+      </li>
+    </ul>
 
     <BlogFigure
       src="/images/blog/romantyczny-weekend-mglisty-wschod-slonca.webp"
-      alt="Wschód słońca nad mglistą łąką z samotnym drzewem"
+      alt="Wschód słońca nad mglistą łąką z samotnym drzewem na Podlasiu"
       width={1600}
       height={1000}
       caption="Poranna mgła i&nbsp;wschód słońca nad podlaskimi łąkami."
     />
 
-    <img
-      loading="lazy"
-      decoding="async"
-      sizes="(min-width: 768px) 768px, 100vw"
-      src={livingFireplace}
-      alt="Salon z&nbsp;kominkiem w&nbsp;domu In The Woods – wieczór we dwoje na Podlasiu"
-      className="w-full rounded-lg my-8"
-      width="1600"
-      height="968"
-    />
-
-    <h2>Dlaczego dom w&nbsp;lesie, a&nbsp;nie hotel?</h2>
+    <h2 id="dlaczego-dom">Dlaczego dom w&nbsp;lesie, a&nbsp;nie hotel?</h2>
     <ul>
       <li>
         <strong>Cały dom tylko dla Was</strong> – bez recepcji, korytarzy i&nbsp;sąsiadów za ścianą.
@@ -658,8 +796,8 @@ const RomantycznyWeekendPodlasie = () => (
         <strong>Kuchnia kaflowa</strong> – kolacja we dwoje gotowana razem, bez karty dań.
       </li>
       <li>
-        <strong>Gwiazdy w&nbsp;cenie</strong> – z&nbsp;dala od świateł miasta Drogę Mleczną widać
-        gołym okiem, a&nbsp;nocny spacer po puszczy zaczyna się za furtką.
+        <strong>Gwiazdy w&nbsp;cenie</strong> – Drogę Mleczną widać gołym okiem, a&nbsp;nocny spacer
+        po puszczy zaczyna się za furtką.
       </li>
       <li>
         <strong>10&nbsp;minut do Supraśla</strong> – restauracje i&nbsp;zabytki blisko, ale nie za
@@ -667,21 +805,47 @@ const RomantycznyWeekendPodlasie = () => (
       </li>
     </ul>
 
-    <h2>Zarezerwujcie weekend we dwoje</h2>
+    <img
+      loading="lazy"
+      decoding="async"
+      sizes="(min-width: 768px) 768px, 100vw"
+      src={livingFireplace}
+      alt="Salon z&nbsp;kominkiem w&nbsp;domu In The Woods – romantyczny wieczór we dwoje na Podlasiu"
+      className="w-full rounded-lg my-8"
+      width="1600"
+      height="968"
+    />
+
+    <aside className="not-prose my-8 rounded-lg border border-border bg-card p-6">
+      <p className="font-heading text-lg text-foreground mb-2">Kto poleca te miejsca?</p>
+      <p className="text-foreground/80 leading-relaxed">
+        Ten przewodnik przygotował <strong>Maciej, gospodarz In The Woods</strong>. Dom stoi
+        w&nbsp;Konnem, na skraju Puszczy Knyszyńskiej, a&nbsp;wszystkie miejsca z&nbsp;listy są
+        w&nbsp;zasięgu jednego dnia. Na miejscu podpowiemy, gdzie najładniej zachodzi słońce
+        i&nbsp;kiedy wyjść na gwiazdy.
+      </p>
+      <blockquote className="mt-4 border-l-4 border-primary pl-4 italic text-foreground/80">
+        „Kanapa jest do leżenia, a&nbsp;kominek do gapienia się w&nbsp;ogień. Korzystajcie śmiało
+        i&nbsp;bawcie się dobrze!”
+        <footer className="mt-1 not-italic text-sm text-muted-foreground">
+          — Maciej, gospodarz
+        </footer>
+      </blockquote>
+    </aside>
+
+    <h2>Zarezerwujcie romantyczny weekend we dwoje</h2>
     <p>
       <Link to="/">In The Woods</Link> to drewniany dom na wyłączność w&nbsp;Konnem koło Supraśla.
       Szczegóły balii znajdziecie na stronie{' '}
       <Link to="/domek-z-jacuzzi-podlasie">domku z&nbsp;balią na Podlasiu</Link>, gotowy rozkład
       dnia w&nbsp;<Link to="/weekend-suprasl">planie weekendu w&nbsp;Supraślu</Link>, a&nbsp;więcej
-      miejsc w&nbsp;okolicy na stronie{' '}
-      <Link to="/atrakcje-suprasl">atrakcje Supraśla z&nbsp;czasem dojazdu</Link>. Weekendy
-      walentynkowe, sierpniowe i&nbsp;wrześniowe znikają pierwsze.
+      miejsc na stronie <Link to="/atrakcje-suprasl">atrakcje Supraśla z&nbsp;czasem dojazdu</Link>.
+    </p>
+    <p>
+      <strong>Weekendy walentynkowe, sierpniowe i&nbsp;wrześniowe znikają pierwsze.</strong>
     </p>
 
-    <BlogInlineCta
-      title="Zarezerwujcie swój weekend we dwoje"
-      text="Sprawdźcie wolne terminy w&nbsp;kalendarzu albo zadzwońcie – podpowiemy, kiedy nagrzać balię i&nbsp;gdzie najpiękniej zachodzi słońce."
-    />
+    <BlogInlineCta title="Sprawdźcie wolny termin na weekend we dwoje" text={ctaText} />
   </BlogArticleLayout>
 );
 
