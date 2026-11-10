@@ -910,7 +910,7 @@ const RomantycznyWeekendPodlasie = () => (
       <p className="font-heading text-lg text-foreground mb-2">Kto poleca te miejsca?</p>
       <p className="text-foreground/80 leading-relaxed">
         Ten przewodnik przygotował <strong>Maciej, gospodarz In The Woods</strong>. Dom stoi
-        w&nbsp;Konnem, na skraju Puszczy Knyszyńskiej, a&nbsp;wszystkie miejsca z&nbsp;listy są
+        w&nbsp;Konnem, w&nbsp;sercu Puszczy Knyszyńskiej, a&nbsp;wszystkie miejsca z&nbsp;listy są
         w&nbsp;zasięgu jednego dnia. Na miejscu podpowiemy, gdzie najładniej zachodzi słońce
         i&nbsp;kiedy wyjść na gwiazdy.
       </p>

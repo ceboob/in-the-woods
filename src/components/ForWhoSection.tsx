@@ -49,7 +49,7 @@ const ForWhoSection = () => {
             Dla kogo jest ten dom? Dla Was. Serio, dla prawie każdego
           </h2>
           <p className="section-subtitle mx-auto">
-            Dom na wyłączność na Podlasiu, na skraju Puszczy Knyszyńskiej. Bez dzielenia kuchni,
+            Dom na wyłączność na Podlasiu, w&nbsp;sercu Puszczy Knyszyńskiej. Bez dzielenia kuchni,
             łazienki i&nbsp;ciszy z&nbsp;obcymi. Do Supraśla macie 10&nbsp;minut, do Białegostoku
             30–40.
           </p>

@@ -21,7 +21,7 @@ const LocationSection = () => {
 
         <div className="max-w-3xl mx-auto mb-8 space-y-4 text-muted-foreground leading-relaxed text-center">
           <p>
-            Dom stoi w <strong>Konnem</strong>, na skraju Puszczy Knyszyńskiej. Do centrum Supraśla
+            Dom stoi w <strong>Konnem</strong>, w&nbsp;sercu Puszczy Knyszyńskiej. Do centrum Supraśla
             macie około 10&nbsp;minut, do Białegostoku 30–40&nbsp;minut samochodem.
           </p>
           <p>

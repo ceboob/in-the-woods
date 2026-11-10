@@ -14,7 +14,7 @@ const DomWLesieSuprasl = () => (
       </h1>
 
       <p className="text-muted-foreground leading-relaxed text-lg">
-        In The Woods to drewniany dom z&nbsp;bali w&nbsp;Konnem, na skraju Puszczy Knyszyńskiej,
+        In The Woods to drewniany dom z&nbsp;bali w&nbsp;Konnem, w&nbsp;sercu Puszczy Knyszyńskiej,
         około 10&nbsp;minut od Supraśla. Wynajmujecie go w&nbsp;całości: salon z&nbsp;kominkiem,
         kuchnię, dwie sypialnie, taras i&nbsp;ogród. Najbliżsi sąsiedzi? Głównie sarny. I&nbsp;jeden
         bardzo pracowity dzięcioł.

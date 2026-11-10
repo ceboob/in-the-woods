@@ -2,7 +2,7 @@ export const property = {
   identifier: 'in-the-woods-suprasl',
   name: 'In The Woods — dom z\u00a0bali na wyłączność koło Supraśla',
   description:
-    'Cały dom z bali dla 8 osób na skraju Puszczy Knyszyńskiej, 10 min od Supraśla. Kominek, balia, Starlink, pies gratis. Od 399 zł za dom.',
+    'Cały dom z bali dla 8 osób w sercu Puszczy Knyszyńskiej, 10 min od Supraśla. Kominek, balia, Starlink, pies gratis. Od 399 zł za dom.',
   url: 'https://www.suprasl.online/',
   canonicalUrl: 'https://www.suprasl.online/',
   address: {

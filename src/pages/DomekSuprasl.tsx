@@ -66,8 +66,9 @@ const DomekSuprasl = () => (
         </h1>
         <p className="text-muted-foreground leading-relaxed text-lg">
           In The Woods to drewniany domek z&nbsp;bali pod Supraślem, wynajmowany w&nbsp;całości
-          jednej ekipie do 8&nbsp;osób. W&nbsp;Konnem, na skraju Puszczy Knyszyńskiej, czeka na Was
-          zapach drewna, trzask kominka i&nbsp;cisza, od której na początku aż dzwoni w&nbsp;uszach.
+          jednej ekipie do 8&nbsp;osób. W&nbsp;Konnem, w&nbsp;sercu Puszczy Knyszyńskiej, czeka na
+          Was zapach drewna, trzask kominka i&nbsp;cisza, od której na początku aż dzwoni
+          w&nbsp;uszach.
         </p>
         <Link to="/#rezerwacja" className="btn-primary inline-flex">
           Sprawdź wolne terminy

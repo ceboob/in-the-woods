@@ -17,7 +17,7 @@ const amenities: Amenity[] = [
   {
     icon: TreePine,
     title: 'Dom w\u00a0lesie, cisza w\u00a0pakiecie',
-    desc: 'Całoroczny dom do wynajęcia dla maksymalnie 8\u00a0osób, na skraju Puszczy Knyszyńskiej. Rano budzą Was ptaki, nie sąsiedzi. Do centrum Supraśla jedziecie około 10\u00a0minut. Zimą grzeje kominek i\u00a0kaflowa kuchnia, latem chłodzi klimatyzacja z\u00a0pompą ciepła.',
+    desc: 'Całoroczny dom do wynajęcia dla maksymalnie 8\u00a0osób, w\u00a0sercu Puszczy Knyszyńskiej. Rano budzą Was ptaki, nie sąsiedzi. Do centrum Supraśla jedziecie około 10\u00a0minut. Zimą grzeje kominek i\u00a0kaflowa kuchnia, latem chłodzi klimatyzacja z\u00a0pompą ciepła.',
     // TODO (właściciel): podaj dokładny czas dojścia/dojazdu do centrum i rzeki.
   },
   {

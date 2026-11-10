@@ -172,9 +172,9 @@ const PodlasieZPsem = () => (
         Dom w&nbsp;lesie koło Supraśla – poznaj In The Woods
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        In The Woods to dom z&nbsp;bali wynajmowany na wyłączność w&nbsp;Konnem, na skraju Puszczy
-        Knyszyńskiej. Ogród jest ogrodzony, a&nbsp;las zaczyna się za płotem. Przyjazd z&nbsp;psem
-        ustal z&nbsp;nami przy rezerwacji. Więcej informacji znajdziesz na stronie{' '}
+        In The Woods to dom z&nbsp;bali wynajmowany na wyłączność w&nbsp;Konnem, w&nbsp;sercu
+        Puszczy Knyszyńskiej. Ogród jest ogrodzony, a&nbsp;las zaczyna się za płotem. Przyjazd
+        z&nbsp;psem ustal z&nbsp;nami przy rezerwacji. Więcej informacji znajdziesz na stronie{' '}
         <Link to="/domek-z-psem-podlasie" className="text-primary hover:underline font-medium">
           domek z&nbsp;psem na Podlasiu
         </Link>

@@ -94,7 +94,7 @@ const Informator = () => {
         <div className="w-16 h-px bg-primary mx-auto mb-8" />
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
           Ten dom budowaliśmy i&nbsp;urządzaliśmy własnymi rękami, więc cieszymy się, że tu
-          jesteście. In The Woods to drewniany dom na wyłączność na skraju Puszczy Knyszyńskiej,
+          jesteście. In The Woods to drewniany dom na wyłączność w&nbsp;sercu Puszczy Knyszyńskiej,
           niedaleko Supraśla.
         </p>
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-4 text-base md:text-lg">

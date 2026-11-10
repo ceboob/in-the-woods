@@ -32,8 +32,8 @@ const HeroSection = () => {
           Noclegi pod Supraślem — cały dom z&nbsp;bali dla Was
         </h1>
         <p className="font-sans font-semibold mt-4 mb-10 mx-auto max-w-2xl text-center text-base sm:text-lg text-white logo-glow animate-fade-up delay-100">
-          Drewniany dom na skraju Puszczy Knyszyńskiej, 10&nbsp;minut od Supraśla. Kominek, las za
-          oknem i&nbsp;zero tłumów. Sąsiedzi? Głównie sarny.
+          Drewniany dom w&nbsp;sercu Puszczy Knyszyńskiej, 10&nbsp;minut od Supraśla. Kominek, las
+          za oknem i&nbsp;zero tłumów. Sąsiedzi? Głównie sarny.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 animate-fade-up delay-200">

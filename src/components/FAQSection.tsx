@@ -10,7 +10,7 @@ import {
 const faqs = [
   {
     q: 'Gdzie znajduje się In The Woods?',
-    a: 'W\u00a0Konnem pod Supraślem (Konne 109/1, 16-030 Supraśl), na skraju Puszczy Knyszyńskiej. Do centrum Supraśla jedziecie około 10\u00a0minut, do Białegostoku 30–40.',
+    a: 'W\u00a0Konnem pod Supraślem (Konne 109/1, 16-030 Supraśl), w\u00a0sercu Puszczy Knyszyńskiej. Do centrum Supraśla jedziecie około 10\u00a0minut, do Białegostoku 30–40.',
   },
   {
     q: 'Ile kosztuje wynajem domku w\u00a0lesie na weekend?',
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: 'Czy można wynająć dom w\u00a0Puszczy Knyszyńskiej?',
-    a: 'Można, i\u00a0to właśnie ten. Dom stoi na skraju Puszczy Knyszyńskiej, a\u00a0pierwszy leśny dukt zaczyna się zaraz za płotem.',
+    a: 'Można, i\u00a0to właśnie ten. Dom stoi w\u00a0sercu Puszczy Knyszyńskiej, a\u00a0pierwszy leśny dukt zaczyna się zaraz za płotem.',
   },
   {
     q: 'Czy Supraśl jest dobry na weekend?',
