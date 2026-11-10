@@ -2,8 +2,14 @@
 import { createClient } from '@supabase/supabase-js';
 import type { Database } from './types';
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+// Bez zmiennych środowiskowych (np. lokalny build/prerender) createClient rzuca wyjątek
+// już przy imporcie i wywraca prerender wszystkich tras. Placeholder pozwala zbudować
+// statyczne strony; panel admina i tak wymaga prawdziwej konfiguracji.
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://placeholder.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || 'placeholder-key';
+if (!import.meta.env.VITE_SUPABASE_URL || !import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY) {
+  console.warn('Brak VITE_SUPABASE_URL lub VITE_SUPABASE_PUBLISHABLE_KEY – Supabase nie zadziała.');
+}
 const isBrowser = typeof window !== 'undefined';
 
 // Import the supabase client like this:
