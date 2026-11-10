@@ -1,6 +1,6 @@
 # Plan zgłaszania stron do Google Search Console
 
-Wszystkie 42 strony z `sitemap.xml`, po 10 dziennie. W GSC: pole **„Sprawdź adres URL”** → wklej adres → **„Poproś o zindeksowanie”**. Odhaczajcie `[x]` po zgłoszeniu.
+Wszystkie 42 strony z `sitemap.xml`, po 10 dziennie (plus ponowne zgłoszenie strony głównej po zmianie faviconu 10.11). W GSC: pole **„Sprawdź adres URL”** → wklej adres → **„Poproś o zindeksowanie”**. Odhaczajcie `[x]` po zgłoszeniu.
 
 Kolejność: najpierw strony zmienione ostatnio i sezonowe (Sylwester, zima), potem strony sprzedażowe, na końcu blog i strony pomocnicze.
 
@@ -43,21 +43,24 @@ Kolejność: najpierw strony zmienione ostatnio i sezonowe (Sylwester, zima), po
 - [ ] https://www.suprasl.online/blog/puszcza-knyszynska-przewodnik — Blog – przewodnik
 - [ ] https://www.suprasl.online/blog/uzdrowisko-spa-suprasl — Blog – przewodnik
 
-## Dzień 4 (10 stron)
+## Dzień 4 – 10.11 (10 stron) – kolejna dziesiątka
 
+Zmiana 10.11: nowy favicon (domek z sercem). Google pobiera favicon razem ze stroną główną, dlatego jest ona pierwsza na liście, mimo że była już zgłaszana w dniu 1. Nowa ikona może pojawić się w wynikach wyszukiwania dopiero po kilku dniach lub tygodniach.
+
+- [ ] https://www.suprasl.online/ — Zmiana 10.11 – nowy favicon (zgłoszenie ponowne)
 - [ ] https://www.suprasl.online/blog/suprasl-z-dziecmi — Blog
 - [ ] https://www.suprasl.online/blog/podlasie-z-psem — Blog
 - [ ] https://www.suprasl.online/blog/aktywny-wypoczynek-suprasl — Blog
-- [ ] https://www.suprasl.online/blog/kajaki-suprasl — Blog – sezon letni
-- [ ] https://www.suprasl.online/blog/supraski-system-wodny — Blog
-- [ ] https://www.suprasl.online/blog/grzybobranie-puszcza-knyszynska — Blog – sezon jesienny
 - [ ] https://www.suprasl.online/blog/rykowisko-jeleni-puszcza-knyszynska — Blog – sezon jesienny
+- [ ] https://www.suprasl.online/blog/grzybobranie-puszcza-knyszynska — Blog – sezon jesienny
 - [ ] https://www.suprasl.online/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne — Blog – wydarzenia
+- [ ] https://www.suprasl.online/blog/supraski-system-wodny — Blog
+- [ ] https://www.suprasl.online/blog/kajaki-suprasl — Blog – sezon letni
 - [ ] https://www.suprasl.online/galeria — Galeria
+
+## Dzień 5 (3 strony)
+
 - [ ] https://www.suprasl.online/dom — Opis domu
-
-## Dzień 5 (2 stron)
-
 - [ ] https://www.suprasl.online/dokumenty — Dokumenty
 - [ ] https://www.suprasl.online/polityka-prywatnosci — Zmieniona 6.11 – zgoda e-mail (niski priorytet)
 
