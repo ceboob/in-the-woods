@@ -1,44 +1,46 @@
-﻿Dzień;Adres URL;Powód;Zgłoszono (data)
-1;https://www.suprasl.online/blog/romantyczny-weekend-podlasie;Zmieniony 6.11 – nowy tytuł, zdjęcia, opinie, FAQ;
-1;https://www.suprasl.online/blog;Zmieniona karta artykułu;
-1;https://www.suprasl.online/atrakcje-suprasl;Zmieniona 4.11 – zdjęcia i czasy dojazdu;
-1;https://www.suprasl.online/;Strona główna – poprawione dane strukturalne;
-1;https://www.suprasl.online/sylwester-podlasie;Sezon: rezerwacje sylwestrowe;
-1;https://www.suprasl.online/noclegi-suprasl;Główna strona sprzedażowa;
-1;https://www.suprasl.online/domek-z-jacuzzi-podlasie;Strona sprzedażowa – balia;
-1;https://www.suprasl.online/blog/suprasl-zima;Sezon: zima;
-1;https://www.suprasl.online/dom-w-lesie-suprasl;Strona sprzedażowa;
-1;https://www.suprasl.online/weekend-suprasl;Strona sprzedażowa – plan weekendu;
-2;https://www.suprasl.online/;Zmiana 10.11 – nowy favicon (zgłoszenie ponowne);
-2;https://www.suprasl.online/domek-suprasl;Strona sprzedażowa;
-2;https://www.suprasl.online/nocleg-bialystok-okolice;Strona sprzedażowa;
-2;https://www.suprasl.online/puszcza-knyszynska-nocleg;Strona sprzedażowa;
-2;https://www.suprasl.online/domek-z-psem-podlasie;Strona sprzedażowa;
-2;https://www.suprasl.online/wieczor-panienski-suprasl;Strona sprzedażowa – grupy;
-2;https://www.suprasl.online/wieczor-kawalerski-suprasl;Strona sprzedażowa – grupy;
-2;https://www.suprasl.online/informator;Informator dla gości;
-2;https://www.suprasl.online/blog/cyfrowy-detoks-las;Blog – blisko oferty;
-2;https://www.suprasl.online/blog/workation-podlasie;Blog – blisko oferty;
-3;https://www.suprasl.online/blog/suprasl-atrakcje-uzdrowisko;Blog – przewodnik;
-3;https://www.suprasl.online/blog/puszcza-knyszynska-historie;Zmieniony 4.11 – odmiana „w Konnem”;
-3;https://www.suprasl.online/blog/szlak-bioroznorodnosci-suprasl;Zmieniony 4.11 – odmiana „w Konnem”;
-3;https://www.suprasl.online/blog/szlak-powstania-styczniowego-suprasl;Zmieniony 4.11 – odmiana „w Konnem”;
-3;https://www.suprasl.online/blog/szlaki-piesze-rowerowe-suprasl;Zmieniony 4.11 – odmiana „w Konnem”;
-3;https://www.suprasl.online/blog/przewodnik-kulinarny-suprasl;Blog – przewodnik;
-3;https://www.suprasl.online/blog/bialystok-i-okolice-co-zobaczyc;Blog – przewodnik;
-3;https://www.suprasl.online/blog/kruszyniany-tatarska-wies;Blog – przewodnik;
-3;https://www.suprasl.online/blog/kraina-otwartych-okiennic;Blog – przewodnik;
-3;https://www.suprasl.online/blog/puszcza-knyszynska-przewodnik;Blog – przewodnik;
-4;https://www.suprasl.online/blog/uzdrowisko-spa-suprasl;Blog – przewodnik;
-4;https://www.suprasl.online/blog/suprasl-z-dziecmi;Blog;
-4;https://www.suprasl.online/blog/podlasie-z-psem;Blog;
-4;https://www.suprasl.online/blog/aktywny-wypoczynek-suprasl;Blog;
-4;https://www.suprasl.online/blog/kajaki-suprasl;Blog – sezon letni;
-4;https://www.suprasl.online/blog/supraski-system-wodny;Blog;
-4;https://www.suprasl.online/blog/grzybobranie-puszcza-knyszynska;Blog – sezon jesienny;
-4;https://www.suprasl.online/blog/rykowisko-jeleni-puszcza-knyszynska;Blog – sezon jesienny;
-4;https://www.suprasl.online/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne;Blog – wydarzenia;
-4;https://www.suprasl.online/galeria;Galeria;
-5;https://www.suprasl.online/dom;Opis domu;
-5;https://www.suprasl.online/dokumenty;Dokumenty;
-5;https://www.suprasl.online/polityka-prywatnosci;Zmieniona 6.11 – zgoda e-mail (niski priorytet);
+﻿Dzień;Data;Adres URL;Powód;Zgłoszono (data)
+1;10.11;https://www.suprasl.online/;Ponownie: nowy favicon i „w sercu puszczy” w hero, FAQ i lokalizacji;
+1;10.11;https://www.suprasl.online/puszcza-knyszynska-nocleg;Nowy tekst 10.11 – serce puszczy, rzeka 200 m, kraina pstrąga;
+1;10.11;https://www.suprasl.online/dom-w-lesie-suprasl;Ponownie: zmienione położenie domu 10.11;
+1;10.11;https://www.suprasl.online/domek-suprasl;Zmienione położenie domu 10.11;
+1;10.11;https://www.suprasl.online/informator;Zmienione położenie domu 10.11;
+1;10.11;https://www.suprasl.online/blog/romantyczny-weekend-podlasie;Ponownie: zmienione położenie domu 10.11;
+1;10.11;https://www.suprasl.online/blog/podlasie-z-psem;Zmienione położenie domu 10.11;
+2;11.11;https://www.suprasl.online/nocleg-bialystok-okolice;Strona sprzedażowa;
+2;11.11;https://www.suprasl.online/domek-z-psem-podlasie;Strona sprzedażowa;
+2;11.11;https://www.suprasl.online/wieczor-panienski-suprasl;Strona sprzedażowa – grupy;
+2;11.11;https://www.suprasl.online/wieczor-kawalerski-suprasl;Strona sprzedażowa – grupy;
+2;11.11;https://www.suprasl.online/blog/supraski-system-wodny;Blog – kraina pstrąga, link z nowego tekstu o puszczy;
+2;11.11;https://www.suprasl.online/blog/cyfrowy-detoks-las;Blog – blisko oferty;
+2;11.11;https://www.suprasl.online/blog/workation-podlasie;Blog – blisko oferty;
+3;12.11;https://www.suprasl.online/blog/suprasl-atrakcje-uzdrowisko;Blog – przewodnik;
+3;12.11;https://www.suprasl.online/blog/szlaki-piesze-rowerowe-suprasl;Blog – link z nowego tekstu o puszczy;
+3;12.11;https://www.suprasl.online/blog/puszcza-knyszynska-historie;Zmieniony 4.11 – odmiana „w Konnem”;
+3;12.11;https://www.suprasl.online/blog/szlak-bioroznorodnosci-suprasl;Zmieniony 4.11 – odmiana „w Konnem”;
+3;12.11;https://www.suprasl.online/blog/szlak-powstania-styczniowego-suprasl;Zmieniony 4.11 – odmiana „w Konnem”;
+3;12.11;https://www.suprasl.online/blog/przewodnik-kulinarny-suprasl;Blog – przewodnik;
+3;12.11;https://www.suprasl.online/blog/bialystok-i-okolice-co-zobaczyc;Blog – przewodnik;
+4;13.11;https://www.suprasl.online/blog/kruszyniany-tatarska-wies;Blog – przewodnik;
+4;13.11;https://www.suprasl.online/blog/kraina-otwartych-okiennic;Blog – przewodnik;
+4;13.11;https://www.suprasl.online/blog/puszcza-knyszynska-przewodnik;Blog – przewodnik;
+4;13.11;https://www.suprasl.online/blog/uzdrowisko-spa-suprasl;Blog – przewodnik;
+4;13.11;https://www.suprasl.online/blog/suprasl-z-dziecmi;Blog;
+4;13.11;https://www.suprasl.online/blog/aktywny-wypoczynek-suprasl;Blog;
+4;13.11;https://www.suprasl.online/blog/jesien-w-suprasliu-2026-wydarzenia-kulturalne;Blog – wydarzenia;
+5;14.11;https://www.suprasl.online/blog/kajaki-suprasl;Blog – link z nowego tekstu o puszczy;
+5;14.11;https://www.suprasl.online/blog/grzybobranie-puszcza-knyszynska;Blog – link z nowego tekstu o puszczy;
+5;14.11;https://www.suprasl.online/blog/rykowisko-jeleni-puszcza-knyszynska;Blog – sezon jesienny;
+5;14.11;https://www.suprasl.online/galeria;Galeria;
+5;14.11;https://www.suprasl.online/dom;Opis domu;
+5;14.11;https://www.suprasl.online/dokumenty;Dokumenty;
+5;14.11;https://www.suprasl.online/polityka-prywatnosci;Zmieniona 6.11 – zgoda e-mail (niski priorytet);
+wcześniej;7.11;https://www.suprasl.online/blog/romantyczny-weekend-podlasie;Zgłoszona;7.11
+wcześniej;7.11;https://www.suprasl.online/blog;Zgłoszona;7.11
+wcześniej;7.11;https://www.suprasl.online/atrakcje-suprasl;Zgłoszona;7.11
+wcześniej;7.11;https://www.suprasl.online/;Zgłoszona;7.11
+wcześniej;7.11;https://www.suprasl.online/sylwester-podlasie;Zgłoszona;7.11
+wcześniej;7.11;https://www.suprasl.online/noclegi-suprasl;Zgłoszona;7.11
+wcześniej;7.11;https://www.suprasl.online/domek-z-jacuzzi-podlasie;Zgłoszona;7.11
+wcześniej;7.11;https://www.suprasl.online/blog/suprasl-zima;Zgłoszona;7.11
+wcześniej;7.11;https://www.suprasl.online/dom-w-lesie-suprasl;Zgłoszona;7.11
+wcześniej;7.11;https://www.suprasl.online/weekend-suprasl;Zgłoszona;7.11
